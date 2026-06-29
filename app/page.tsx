@@ -1,23 +1,25 @@
-import Hero from "@/components/Hero";
-import Features from "@/components/Features";
-import Description from "@/components/Description";
-import Specifications from "@/components/Specifications";
-import Documents from "@/components/Documents";
-import Compatibility from "@/components/Compatibility";
-import Analogs from "@/components/Analogs";
-import RequestQuote from "@/components/RequestQuote";
+import Header from "@/components/home/Header";
+import Hero from "@/components/home/Hero";
+import Search from "@/components/home/Search";
+import Categories from "@/components/home/Categories";
+import Advantages from "@/components/home/Advantages";
+import FeaturedProducts from "@/components/home/FeaturedProducts";
+import Manufacturers from "@/components/home/Manufacturers";
+import CTA from "@/components/home/CTA";
+import Footer from "@/components/home/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-50">
+    <>
+      <Header />
       <Hero />
-      <Features />
-      <Description />
-      <Specifications />
-      <Documents />
-      <Compatibility />
-      <Analogs />
-      <RequestQuote />
-    </main>
+      <Search />
+      <Categories />
+      <Advantages />
+      <FeaturedProducts />
+      <Manufacturers />
+      <CTA />
+      <Footer />
+    </>
   );
 }
