@@ -7,7 +7,7 @@ import Compatibility from "@/components/Compatibility";
 import Analogs from "@/components/Analogs";
 import RequestQuote from "@/components/RequestQuote";
 
-export default function Home() {
+export default function FS510Page() {
   return (
     <main className="min-h-screen bg-gray-50">
       <Hero />
