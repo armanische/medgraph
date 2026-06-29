@@ -1,50 +1,52 @@
-const analogs = [
-  {
-    model: "FS500",
-    brand: "Alba Healthcare",
-    note: "Электростатический фильтр",
-  },
-  {
-    model: "Hygrobac S",
-    brand: "Medtronic",
-    note: "Высокая эффективность фильтрации",
-  },
-  {
-    model: "BB100",
-    brand: "Intersurgical",
-    note: "Аналогичный класс изделия",
-  },
-];
-
 export default function Analogs() {
+  const analogs = [
+    {
+      name: "FS500",
+      manufacturer: "Alba Healthcare",
+      filter: "Электростатический",
+      vt: "50–1500 мл",
+    },
+    {
+      name: "DAR Adult HMEF",
+      manufacturer: "Medtronic",
+      filter: "Электростатический",
+      vt: "150–2000 мл",
+    },
+    {
+      name: "Hygrobac S",
+      manufacturer: "Mallinckrodt",
+      filter: "Механический",
+      vt: "150–2000 мл",
+    },
+  ];
+
   return (
-    <section
-      id="analogs"
-      className="max-w-7xl mx-auto px-8 py-20"
-    >
+    <section className="max-w-7xl mx-auto px-8 py-20">
       <h2 className="text-3xl font-bold mb-8">
-        Возможные аналоги
+        Аналоги
       </h2>
 
-      <div className="overflow-hidden rounded-2xl border bg-white">
+      <table className="w-full bg-white rounded-xl overflow-hidden shadow">
+        <thead className="bg-gray-100">
+          <tr>
+            <th className="text-left p-4">Модель</th>
+            <th className="text-left p-4">Производитель</th>
+            <th className="text-left p-4">Фильтр</th>
+            <th className="text-left p-4">VT</th>
+          </tr>
+        </thead>
 
-        <div className="grid grid-cols-3 bg-gray-100 font-semibold px-6 py-4">
-          <div>Модель</div>
-          <div>Производитель</div>
-          <div>Комментарий</div>
-        </div>
-
-        {analogs.map((item) => (
-          <div
-            key={item.model}
-            className="grid grid-cols-3 px-6 py-4 border-t"
-          >
-            <div>{item.model}</div>
-            <div>{item.brand}</div>
-            <div>{item.note}</div>
-          </div>
-        ))}
-      </div>
+        <tbody>
+          {analogs.map((a) => (
+            <tr key={a.name} className="border-t">
+              <td className="p-4 font-semibold">{a.name}</td>
+              <td className="p-4">{a.manufacturer}</td>
+              <td className="p-4">{a.filter}</td>
+              <td className="p-4">{a.vt}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </section>
   );
 }
