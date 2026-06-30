@@ -8,7 +8,8 @@ export default function AdminPage() {
         <h1 className="text-5xl font-bold">CyberMedica CMS</h1>
 
         <p className="mt-4 text-xl text-gray-600">
-          Добавление нового изделия
+          Прототип редактора. Сейчас сохраняет локальные черновики; публикация
+          будет подключена через PostgreSQL / Supabase.
         </p>
 
         <AdminForm />

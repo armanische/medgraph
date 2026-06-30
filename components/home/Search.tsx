@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 
-import { products } from "@/data/products";
+import { searchProducts } from "@/lib/products";
 
 const popularQueries = [
   "FS510",
@@ -22,20 +22,7 @@ export default function Search() {
 
     if (!value) return [];
 
-    return products.filter((product) => {
-      return (
-        product.name.toLowerCase().includes(value) ||
-        product.manufacturer.toLowerCase().includes(value) ||
-        product.category.toLowerCase().includes(value) ||
-        product.specifications.ru.toLowerCase().includes(value) ||
-        product.analogs.some((analog) =>
-          analog.toLowerCase().includes(value)
-        ) ||
-        product.compatibility.some((item) =>
-          item.toLowerCase().includes(value)
-        )
-      );
-    });
+    return searchProducts(value);
   }, [query]);
 
   function handleSearch() {
@@ -44,7 +31,7 @@ export default function Search() {
       return;
     }
 
-    router.push("/catalog");
+    router.push(`/catalog?q=${encodeURIComponent(query.trim())}`);
   }
 
   return (

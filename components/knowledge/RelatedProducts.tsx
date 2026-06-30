@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { Product } from "@/types/product";
+import { products } from "@/data/products";
 
 interface Props {
   product: Product;
@@ -14,21 +14,30 @@ export default function RelatedProducts({ product }: Props) {
 
       <div className="grid gap-4">
 
-        {product.analogs.map((item) => (
-          <Link
+        {product.analogs.map((item) => {
+          const related = products.find(
+            (candidate) =>
+              candidate.slug !== product.slug &&
+              candidate.name.toLowerCase().includes(item.toLowerCase())
+          );
+
+          return (
+          <div
             key={item}
-            href="#"
-            className="rounded-2xl border p-5 transition hover:border-blue-600 hover:bg-blue-50"
+            className="rounded-2xl border p-5"
           >
             <div className="font-semibold">
               {item}
             </div>
 
             <div className="mt-2 text-sm text-gray-500">
-              Открыть Knowledge Page →
+              {related
+                ? `Страница доступна: /knowledge/${related.slug}`
+                : "Сравнение готовится"}
             </div>
-          </Link>
-        ))}
+          </div>
+          );
+        })}
 
       </div>
     </section>

@@ -25,10 +25,13 @@ export default function Hero({ product }: HeroProps) {
         </p>
 
         <div className="mt-10 flex flex-wrap gap-4">
-          <Button href="/request">Получить КП</Button>
+          <Button href={`/request?product=${product.slug}`}>Получить КП</Button>
 
           <Button
-            href={product.documents[0]?.url}
+            href={
+              product.documents.find((document) => document.kind === "registration")
+                ?.url
+            }
             target="_blank"
             variant="secondary"
           >
@@ -36,7 +39,9 @@ export default function Hero({ product }: HeroProps) {
           </Button>
 
           <Button
-            href={product.documents[1]?.url}
+            href={
+              product.documents.find((document) => document.kind === "manual")?.url
+            }
             target="_blank"
             variant="secondary"
           >

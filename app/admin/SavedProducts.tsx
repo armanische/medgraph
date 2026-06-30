@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useMemo, useSyncExternalStore } from "react";
 
 interface CmsProduct {
   name: string;
@@ -11,26 +11,37 @@ interface CmsProduct {
 }
 
 export default function SavedProducts() {
-  const [items, setItems] = useState<CmsProduct[]>([]);
+  const snapshot = useSyncExternalStore(
+    (onStoreChange) => {
+      window.addEventListener("storage", onStoreChange);
+      window.addEventListener("cms-products-changed", onStoreChange);
 
-  function loadItems() {
-    const saved = JSON.parse(localStorage.getItem("cms-products") || "[]");
-    setItems(saved);
-  }
+      return () => {
+        window.removeEventListener("storage", onStoreChange);
+        window.removeEventListener("cms-products-changed", onStoreChange);
+      };
+    },
+    () => localStorage.getItem("cms-products") || "[]",
+    () => "[]"
+  );
+
+  const items = useMemo(() => {
+    try {
+      return JSON.parse(snapshot) as CmsProduct[];
+    } catch {
+      return [];
+    }
+  }, [snapshot]);
 
   function clearItems() {
     localStorage.removeItem("cms-products");
-    setItems([]);
+    window.dispatchEvent(new Event("cms-products-changed"));
   }
-
-  useEffect(() => {
-    loadItems();
-  }, []);
 
   return (
     <div className="mt-12 rounded-3xl border bg-white p-10 shadow">
       <div className="flex items-center justify-between gap-4">
-        <h2 className="text-3xl font-bold">Сохраненные изделия</h2>
+        <h2 className="text-3xl font-bold">Локальные черновики</h2>
 
         <button
           type="button"
@@ -58,8 +69,8 @@ export default function SavedProducts() {
                 {item.description || "Описание не указано"}
               </div>
 
-              <div className="mt-3 text-sm text-blue-600">
-                /knowledge/{item.slug}
+              <div className="mt-3 text-sm text-gray-500">
+                Будущий адрес: /knowledge/{item.slug}
               </div>
             </div>
           ))}

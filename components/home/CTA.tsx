@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function CTA() {
   return (
     <section className="bg-blue-600 py-24 text-white">
@@ -11,9 +13,12 @@ export default function CTA() {
           коммерческое предложение.
         </p>
 
-        <button className="mt-10 rounded-2xl bg-white px-8 py-4 font-bold text-blue-700 transition hover:bg-gray-100">
+        <Link
+          href="/request"
+          className="mt-10 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-blue-700 transition hover:bg-gray-100"
+        >
           Запросить КП
-        </button>
+        </Link>
       </div>
     </section>
   );

@@ -46,6 +46,7 @@ export default function AdminForm() {
       "cms-products",
       JSON.stringify([...existing, product])
     );
+    window.dispatchEvent(new Event("cms-products-changed"));
 
     setSaved(true);
   }
@@ -99,7 +100,8 @@ export default function AdminForm() {
 
         {saved && (
           <div className="rounded-xl bg-green-50 p-4 font-semibold text-green-700">
-            Изделие сохранено
+            Черновик сохранён в этом браузере. Для публикации потребуется
+            подключение базы данных.
           </div>
         )}
       </div>
