@@ -1,9 +1,16 @@
+export interface ProductHighlight {
+  label: string;
+  value: string;
+}
+
 export interface Product {
   slug: string;
   name: string;
   manufacturer: string;
   category: string;
   description: string;
+
+  highlights: ProductHighlight[];
 
   specifications: {
     vt: string;
@@ -17,9 +24,7 @@ export interface Product {
   };
 
   compatibility: string[];
-
   analogs: string[];
-
   images: string[];
 
   documents: {

@@ -1,0 +1,29 @@
+[
+  {
+    "slug": "fs510",
+    "name": "Тепловлагообменный фильтр FS510",
+    "manufacturer": "Alba Healthcare",
+    "category": "Анестезиология и реанимация",
+    "description": "Тепловлагообменный фильтр HMEF с электростатическим вирусно-бактериальным фильтром.",
+    "specifications": {
+      "vt": "100–2000 мл",
+      "filtration": "≥99.999%",
+      "humidity": ">30 мл H₂O/л",
+      "resistance": "<1.8 см H₂O",
+      "weight": "27 г",
+      "deadSpace": "<28 мл",
+      "ru": "ФСЗ 2009/04992",
+      "country": "США"
+    },
+    "analogs": [
+      "FS500",
+      "DAR Adult HMEF",
+      "Hygrobac S"
+    ],
+    "compatibility": [
+      "Hamilton C1",
+      "Hamilton C3",
+      "Hamilton T1"
+    ]
+  }
+]

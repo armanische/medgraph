@@ -11,6 +11,7 @@ export default function Header() {
         <nav className="hidden gap-8 lg:flex">
           <Link href="/">Главная</Link>
           <Link href="/catalog">Каталог</Link>
+          <Link href="/manufacturers">Производители</Link>
           <Link href="/knowledge/fs510">FS510</Link>
         </nav>
 
