@@ -12,7 +12,7 @@ export default function Header() {
           <Link href="/">Главная</Link>
           <Link href="/catalog">Каталог</Link>
           <Link href="/manufacturers">Производители</Link>
-          <Link href="/knowledge/fs510">База знаний</Link>
+          <Link href="/products/fs510">База знаний</Link>
         </nav>
 
         <Link
