@@ -2,11 +2,14 @@
   "name": "medgraph",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "import:roszdravnadzor": "node scripts/importers/roszdravnadzor.ts",
+    "test": "node --test tests/importers/*.test.ts"
   },
   "dependencies": {
     "next": "16.2.9",
@@ -20,6 +23,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
+    "playwright-core": "1.61.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   },
