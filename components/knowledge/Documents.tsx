@@ -6,30 +6,32 @@ interface DocumentsProps {
 
 export default function Documents({ product }: DocumentsProps) {
   return (
-    <section className="rounded-3xl border bg-white p-10 shadow-sm">
-      <h2 className="mb-8 text-3xl font-bold">
+    <section className="cm-card p-6">
+      <div className="cm-label mb-2">Evidence Sources</div>
+      <h2 className="mb-5 text-base font-bold">
         Документы
       </h2>
 
-      <div className="space-y-4">
+      <div className="space-y-2">
         {product.documents.map((document) => (
           <a
             key={document.title}
             href={document.url}
             target="_blank"
-            className="flex items-center justify-between rounded-2xl border p-5 transition hover:border-blue-600 hover:bg-blue-50"
+            rel="noreferrer"
+            className="flex items-center justify-between rounded-lg border border-[var(--cm-rule)] bg-cm-surface-low p-4 transition hover:border-cm-teal/30"
           >
             <div>
-              <div className="font-semibold">
+              <div className="text-xs font-semibold">
                 {document.title}
               </div>
 
-              <div className="mt-1 text-sm text-gray-500">
+              <div className="mt-1 font-mono text-[9px] text-cm-dim">
                 PDF-документ
               </div>
             </div>
 
-            <div className="text-blue-600 font-semibold">
+            <div className="text-xs font-semibold text-cm-teal">
               Скачать →
             </div>
           </a>

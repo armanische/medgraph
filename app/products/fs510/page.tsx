@@ -42,27 +42,27 @@ function PageState({
   message: string;
 }) {
   return (
-    <main className="min-h-[calc(100vh-4rem)] bg-[#F4F7F8] px-5 py-16 text-[#163247] sm:px-8">
-      <section className="mx-auto max-w-3xl rounded-3xl border border-[#163247]/10 bg-white p-8 shadow-[0_20px_60px_rgba(22,50,71,0.07)] sm:p-12">
-        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#0B7182]">
+    <main className="min-h-[calc(100vh-4rem)] bg-cm-canvas px-5 py-16 text-cm-ink">
+      <section className="mx-auto max-w-2xl cm-card p-7 sm:p-9">
+        <p className="cm-label !text-cm-teal">
           {eyebrow}
         </p>
-        <h1 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
+        <h1 className="mt-3 text-2xl font-extrabold tracking-[-0.025em]">
           {title}
         </h1>
-        <p className="mt-5 max-w-2xl text-base leading-7 text-[#5D707C]">
+        <p className="mt-4 max-w-xl text-[13px] leading-7 text-cm-slate">
           {message}
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Link
             href="/catalog"
-            className="inline-flex min-h-11 items-center justify-center rounded-xl bg-[#0B7182] px-5 py-3 font-semibold text-white transition hover:bg-[#075B69]"
+            className="cm-button-primary"
           >
             Перейти в каталог
           </Link>
           <Link
             href="/request?product=fs510"
-            className="inline-flex min-h-11 items-center justify-center rounded-xl border border-[#163247]/15 bg-white px-5 py-3 font-semibold transition hover:border-[#0B7182]/50 hover:text-[#0B7182]"
+            className="cm-button-secondary"
           >
             Связаться с нами
           </Link>
@@ -102,16 +102,16 @@ export default async function Fs510ProductPage() {
   const publishedDate = formatDate(product.publication.publishedAt);
 
   return (
-    <main className="min-h-screen bg-[#F4F7F8] text-[#163247]">
-      <div className="border-b border-[#163247]/8 bg-white">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-5 py-3 text-xs sm:px-8">
-          <div className="flex items-center gap-2 font-semibold text-[#0B7182]">
-            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#DDF2EC]">
-              <Checkmark className="h-4 w-4" />
+    <main className="min-h-screen bg-cm-canvas text-cm-ink">
+      <div className="border-b border-[var(--cm-rule)] bg-white">
+        <div className="cm-container flex flex-wrap items-center justify-between gap-3 py-2.5 text-[10px]">
+          <div className="flex items-center gap-2 font-mono font-semibold uppercase tracking-[0.06em] text-cm-verified">
+            <span className="flex size-5 items-center justify-center rounded-full bg-cm-verified">
+              <Checkmark className="size-3.5 text-white" />
             </span>
             CyberMedica Verified
           </div>
-          <div className="flex flex-wrap gap-x-5 gap-y-1 text-[#667985]">
+          <div className="flex flex-wrap gap-x-5 gap-y-1 font-mono text-cm-dim">
             <span>
               Проверено:{" "}
               <time dateTime={product.publication.verifiedAt}>
@@ -128,32 +128,34 @@ export default async function Fs510ProductPage() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-7xl px-5 py-7 sm:px-8 sm:py-10">
+      <div className="cm-container py-6">
         <nav
           aria-label="Хлебные крошки"
-          className="mb-6 flex flex-wrap items-center gap-2 text-sm text-[#6E7F89]"
+          className="mb-4 flex flex-wrap items-center gap-2 font-mono text-[10px] text-cm-dim"
         >
-          <Link href="/" className="transition hover:text-[#0B7182]">
+          <Link href="/" className="transition hover:text-cm-teal">
             Главная
           </Link>
           <span aria-hidden="true">/</span>
-          <Link href="/catalog" className="transition hover:text-[#0B7182]">
+          <Link href="/catalog" className="transition hover:text-cm-teal">
             Каталог
           </Link>
           <span aria-hidden="true">/</span>
-          <span className="font-medium text-[#163247]">FS510</span>
+          <span className="font-medium text-cm-ink">FS510</span>
         </nav>
 
-        <section className="relative overflow-hidden rounded-[2rem] border border-[#163247]/8 bg-white shadow-[0_28px_80px_rgba(22,50,71,0.08)]">
-          <div
-            aria-hidden="true"
-            className="absolute -right-32 -top-32 h-80 w-80 rounded-full bg-[#BEE9E2]/35 blur-3xl"
-          />
-          <div className="relative grid lg:grid-cols-[0.82fr_1.18fr]">
-            <div className="relative flex min-h-[360px] items-center justify-center overflow-hidden bg-[linear-gradient(145deg,#E4F3F0_0%,#F7FAFA_70%)] p-9 sm:min-h-[460px] sm:p-14">
+        <section className="cm-card overflow-hidden">
+          <div className="flex items-center justify-between gap-4 border-b border-[var(--cm-rule)] bg-cm-surface-low px-5 py-3">
+            <span className="cm-label">Medical Device Record · CMR-FS510</span>
+            <span className="rounded-md border border-[var(--cm-verified-border)] bg-cm-verified-soft px-2 py-1 font-mono text-[9px] font-semibold text-cm-verified">
+              CyberMedica Verified
+            </span>
+          </div>
+          <div className="grid lg:grid-cols-[22.5rem_1fr]">
+            <div className="relative flex min-h-[320px] items-center justify-center overflow-hidden border-b border-[var(--cm-rule)] bg-[radial-gradient(ellipse_at_center,#c8e8f0_0%,#dcf0f5_38%,#f4f7fa_72%)] p-10 lg:border-r lg:border-b-0">
               <div
                 aria-hidden="true"
-                className="absolute inset-x-10 bottom-8 h-16 rounded-[100%] bg-[#163247]/10 blur-2xl"
+                className="absolute inset-x-12 bottom-10 h-12 rounded-[100%] bg-cm-ink/10 blur-2xl"
               />
               <Image
                 src={product.heroImage.src}
@@ -161,69 +163,69 @@ export default async function Fs510ProductPage() {
                 width={760}
                 height={760}
                 priority
-                className="relative max-h-[420px] w-full object-contain mix-blend-multiply drop-shadow-[0_22px_25px_rgba(22,50,71,0.14)]"
+                className="relative max-h-[270px] w-full object-contain mix-blend-multiply drop-shadow-[0_16px_28px_rgba(11,19,32,0.14)]"
               />
-              <div className="absolute left-5 top-5 rounded-xl border border-white/70 bg-white/80 px-3 py-2 text-xs font-semibold text-[#0B7182] shadow-sm backdrop-blur sm:left-7 sm:top-7">
+              <div className="absolute left-4 top-4 rounded border border-white/70 bg-white/80 px-2 py-1 font-mono text-[9px] text-cm-teal backdrop-blur">
                 Фото изделия
               </div>
             </div>
 
-            <div className="p-7 sm:p-10 lg:p-12 xl:p-14">
+            <div className="p-6 sm:p-8">
               <div className="flex flex-wrap gap-2">
-                <span className="inline-flex items-center gap-1.5 rounded-full bg-[#DDF2EC] px-3 py-1.5 text-xs font-semibold text-[#0B7182]">
-                  <Checkmark className="h-4 w-4" />
+                <span className="inline-flex items-center gap-1.5 rounded-md border border-[var(--cm-verified-border)] bg-cm-verified-soft px-2.5 py-1 font-mono text-[9px] font-semibold text-cm-verified">
+                  <Checkmark className="size-3" />
                   {product.publication.status}
                 </span>
-                <span className="rounded-full border border-[#163247]/10 bg-white px-3 py-1.5 text-xs font-medium text-[#5D707C]">
+                <span className="rounded border border-[var(--cm-rule)] bg-white px-2.5 py-1 font-mono text-[9px] text-cm-dim">
                   {product.category}
                 </span>
               </div>
 
-              <p className="mt-7 font-mono text-sm font-semibold tracking-[0.12em] text-[#0B7182]">
+              <p className="mt-5 font-mono text-[10px] font-semibold tracking-[0.1em] text-cm-teal">
                 FS510 · HMEF
               </p>
-              <h1 className="mt-3 max-w-3xl text-3xl font-semibold leading-[1.08] tracking-[-0.035em] sm:text-5xl">
+              <h1 className="mt-2 max-w-2xl text-2xl font-extrabold leading-[1.12] tracking-[-0.03em] sm:text-3xl">
                 {product.name}
               </h1>
-              <p className="mt-5 max-w-3xl text-base leading-7 text-[#5D707C] sm:text-lg">
+              <p className="mt-4 max-w-2xl text-[13px] leading-6 text-cm-slate">
                 {product.description}
               </p>
 
-              <dl className="mt-8 grid gap-px overflow-hidden rounded-2xl border border-[#163247]/8 bg-[#163247]/8 sm:grid-cols-3">
-                <div className="bg-[#FAFCFC] p-4">
-                  <dt className="text-[11px] font-semibold uppercase tracking-wider text-[#71818B]">
+              <dl className="mt-6 divide-y divide-[var(--cm-rule)] border-y border-[var(--cm-rule)]">
+                <div className="flex items-center justify-between gap-4 py-2.5">
+                  <dt className="cm-label">
                     Производитель
                   </dt>
-                  <dd className="mt-2 font-semibold">{product.manufacturer}</dd>
+                  <dd className="text-xs font-semibold">{product.manufacturer}</dd>
                 </div>
-                <div className="bg-[#FAFCFC] p-4">
-                  <dt className="text-[11px] font-semibold uppercase tracking-wider text-[#71818B]">
+                <div className="flex items-center justify-between gap-4 py-2.5">
+                  <dt className="cm-label">
                     Регистрационное удостоверение
                   </dt>
-                  <dd className="mt-2 font-mono text-sm font-semibold">
+                  <dd className="font-mono text-[11px] font-semibold">
                     {product.registration.number}
                   </dd>
                 </div>
-                <div className="bg-[#FAFCFC] p-4">
-                  <dt className="text-[11px] font-semibold uppercase tracking-wider text-[#71818B]">
+                <div className="flex items-center justify-between gap-4 py-2.5">
+                  <dt className="cm-label">
                     Статус РУ
                   </dt>
-                  <dd className="mt-2 font-semibold text-[#0B7182]">
+                  <dd className="text-xs font-semibold text-cm-verified">
                     {product.registration.status}
                   </dd>
                 </div>
               </dl>
 
-              <div className="mt-7 flex flex-wrap items-center gap-3">
+              <div className="mt-6 flex flex-wrap items-center gap-2">
                 <Link
                   href="/request?product=fs510"
-                  className="inline-flex min-h-12 items-center justify-center rounded-xl bg-[#0B7182] px-6 py-3 font-semibold text-white shadow-[0_10px_25px_rgba(11,113,130,0.2)] transition hover:bg-[#075B69]"
+                  className="cm-button-primary"
                 >
                   Запросить КП
                 </Link>
                 <a
                   href="#evidence"
-                  className="inline-flex min-h-12 items-center justify-center rounded-xl border border-[#163247]/12 bg-white px-5 py-3 font-semibold transition hover:border-[#0B7182]/40 hover:text-[#0B7182]"
+                  className="cm-button-secondary"
                 >
                   Смотреть доказательства
                 </a>
@@ -234,7 +236,7 @@ export default async function Fs510ProductPage() {
 
         <nav
           aria-label="Разделы карточки"
-          className="mt-5 flex gap-2 overflow-x-auto rounded-2xl border border-[#163247]/8 bg-white p-2 text-sm font-semibold shadow-sm"
+          className="sticky top-24 z-30 mt-3 flex gap-0 overflow-x-auto border-y border-[var(--cm-rule)] bg-white/95 px-2 text-xs font-medium backdrop-blur lg:top-14"
         >
           {[
             ["#overview", "Ключевое"],
@@ -245,26 +247,26 @@ export default async function Fs510ProductPage() {
             <a
               key={href}
               href={href}
-              className="min-h-10 shrink-0 rounded-xl px-4 py-2.5 text-[#5D707C] transition hover:bg-[#EAF5F3] hover:text-[#0B7182]"
+              className="min-h-10 shrink-0 border-b-2 border-transparent px-4 py-3 text-cm-slate transition hover:border-cm-teal hover:text-cm-teal"
             >
               {label}
             </a>
           ))}
         </nav>
 
-        <section id="overview" className="scroll-mt-24 pt-10">
-          <div className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr]">
-            <div className="rounded-3xl bg-[#163247] p-7 text-white sm:p-9">
-              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#8DD8D0]">
+        <section id="overview" className="scroll-mt-28 pt-5">
+          <div className="grid gap-3 lg:grid-cols-[0.92fr_1.08fr]">
+            <div className="rounded-lg bg-cm-ink p-6 text-white">
+              <p className="cm-label !text-white/40">
                 Для быстрого решения
               </p>
-              <h2 className="mt-3 text-3xl font-semibold tracking-tight">
+              <h2 className="mt-2 text-xl font-bold tracking-[-0.02em]">
                 Ключевое за 30 секунд
               </h2>
-              <ul className="mt-7 space-y-5">
+              <ul className="mt-6 space-y-4">
                 {product.keySummary.map((item, index) => (
-                  <li key={item} className="flex gap-4 leading-7 text-white/85">
-                    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#0B7182] text-xs font-bold text-white">
+                  <li key={item} className="flex gap-3 text-xs leading-6 text-white/70">
+                    <span className="flex size-6 shrink-0 items-center justify-center rounded-md bg-cm-teal font-mono text-[9px] font-bold text-white">
                       {index + 1}
                     </span>
                     <span>{item}</span>
@@ -273,30 +275,30 @@ export default async function Fs510ProductPage() {
               </ul>
             </div>
 
-            <div className="rounded-3xl border border-[#163247]/8 bg-white p-7 sm:p-9">
+            <div className="cm-card p-6">
               <div className="flex flex-wrap items-end justify-between gap-4">
                 <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#0B7182]">
+                  <p className="cm-label !text-cm-teal">
                     Product snapshot
                   </p>
-                  <h2 className="mt-3 text-3xl font-semibold tracking-tight">
+                  <h2 className="mt-2 text-xl font-bold tracking-[-0.02em]">
                     Ключевые характеристики
                   </h2>
                 </div>
-                <span className="rounded-full bg-[#EEF3F4] px-3 py-1.5 text-xs font-semibold text-[#5D707C]">
+                <span className="rounded border border-[var(--cm-rule)] bg-cm-surface-low px-2 py-1 font-mono text-[9px] text-cm-dim">
                   {product.characteristics.length} параметра
                 </span>
               </div>
-              <dl className="mt-7 grid gap-3 sm:grid-cols-2">
+              <dl className="mt-5 grid gap-px overflow-hidden rounded-lg border border-[var(--cm-rule)] bg-[var(--cm-rule)] sm:grid-cols-2">
                 {product.characteristics.map((item) => (
                   <div
                     key={item.label}
-                    className="rounded-2xl border border-[#163247]/8 bg-[#F8FAFA] p-5"
+                    className="bg-white p-4"
                   >
-                    <dt className="text-sm leading-5 text-[#667985]">
+                    <dt className="font-mono text-[9px] uppercase tracking-[0.06em] text-cm-dim">
                       {item.label}
                     </dt>
-                    <dd className="mt-3 font-mono text-lg font-semibold">
+                    <dd className="mt-2 font-mono text-base font-bold">
                       {item.value}
                     </dd>
                   </div>
@@ -306,22 +308,22 @@ export default async function Fs510ProductPage() {
           </div>
         </section>
 
-        <section id="claims" className="scroll-mt-24 pt-14">
+        <section id="claims" className="scroll-mt-28 pt-10">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#0B7182]">
+            <p className="cm-label !text-cm-teal">
               Published claim projection
             </p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
+            <h2 className="mt-2 text-xl font-bold tracking-[-0.02em] sm:text-2xl">
               Что именно проверено — и в каких границах
             </h2>
-            <p className="mt-4 leading-7 text-[#5D707C]">
+            <p className="mt-3 max-w-2xl text-xs leading-6 text-cm-slate">
               Каждый опубликованный факт показан вместе со Scope и ограничениями.
               Это не общая рекомендация и не обещание применимости за пределами
               указанного контекста.
             </p>
           </div>
 
-          <div className="mt-7 grid gap-5 lg:grid-cols-2">
+          <div className="mt-5 grid gap-3 lg:grid-cols-2">
             {product.claims.map((claim) => {
               const source = product.sources.find(
                 (item) => item.id === claim.sourceId,
@@ -330,57 +332,57 @@ export default async function Fs510ProductPage() {
               return (
                 <article
                   key={claim.code}
-                  className="overflow-hidden rounded-3xl border border-[#163247]/8 bg-white shadow-[0_14px_40px_rgba(22,50,71,0.04)]"
+                  className="cm-card overflow-hidden border-t-2 border-t-cm-teal"
                 >
-                  <div className="border-b border-[#163247]/8 p-6 sm:p-7">
+                  <div className="border-b border-[var(--cm-rule)] p-5">
                     <div className="flex flex-wrap items-start justify-between gap-4">
                       <div>
-                        <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.1em] text-[#0B7182]">
+                        <p className="font-mono text-[9px] font-semibold uppercase tracking-[0.08em] text-cm-teal">
                           {claim.code}
                         </p>
-                        <h3 className="mt-2 text-xl font-semibold">
+                        <h3 className="mt-2 text-sm font-bold">
                           {claim.displayName}
                         </h3>
                       </div>
-                      <span className="rounded-xl bg-[#DDF2EC] px-3 py-2 font-mono text-sm font-bold text-[#0B7182]">
+                      <span className="rounded-md bg-cm-teal-soft px-3 py-2 font-mono text-base font-bold text-cm-teal">
                         {claim.formattedValue}
                       </span>
                     </div>
-                    <p className="mt-5 text-sm leading-6 text-[#5D707C]">
+                    <p className="mt-4 text-xs leading-5 text-cm-slate">
                       {claim.scope.summary}
                     </p>
                   </div>
 
-                  <div className="grid gap-px bg-[#163247]/8 sm:grid-cols-2">
-                    <div className="bg-[#F9FBFB] p-6">
-                      <h4 className="text-xs font-semibold uppercase tracking-[0.14em] text-[#0B7182]">
+                  <div className="grid gap-px bg-[var(--cm-rule)] sm:grid-cols-2">
+                    <div className="bg-cm-surface-low p-5">
+                      <h4 className="cm-label !text-cm-teal">
                         Scope · применимо к
                       </h4>
-                      <ul className="mt-4 space-y-3">
+                      <ul className="mt-3 space-y-2.5">
                         {claim.scope.appliesTo.map((item) => (
                           <li
                             key={item}
-                            className="flex gap-2.5 text-sm leading-5"
+                            className="flex gap-2 text-[11px] leading-5"
                           >
-                            <Checkmark className="mt-0.5 h-4 w-4 shrink-0 text-[#0B7182]" />
+                            <Checkmark className="mt-0.5 size-3.5 shrink-0 text-cm-verified" />
                             <span>{item}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
-                    <div className="bg-[#FFFDFC] p-6">
-                      <h4 className="text-xs font-semibold uppercase tracking-[0.14em] text-[#A25D35]">
+                    <div className="bg-cm-warning-soft p-5">
+                      <h4 className="cm-label !text-cm-warning">
                         Ограничения
                       </h4>
-                      <ul className="mt-4 space-y-3">
+                      <ul className="mt-3 space-y-2.5">
                         {claim.limitations.map((item) => (
                           <li
                             key={item}
-                            className="flex gap-2.5 text-sm leading-5 text-[#5D5550]"
+                            className="flex gap-2 text-[11px] leading-5 text-cm-slate"
                           >
                             <span
                               aria-hidden="true"
-                              className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C77A4D]"
+                              className="mt-1.5 size-1.5 shrink-0 rounded-full bg-cm-warning"
                             />
                             <span>{item}</span>
                           </li>
@@ -389,17 +391,17 @@ export default async function Fs510ProductPage() {
                     </div>
                   </div>
 
-                  <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[#163247]/8 px-6 py-4 text-xs text-[#667985] sm:px-7">
+                  <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[var(--cm-rule)] px-5 py-3 font-mono text-[9px] text-cm-dim">
                     <span>
                       Publication:{" "}
-                      <span className="font-mono text-[#163247]">
+                      <span className="text-cm-ink">
                         {claim.publicationKey}
                       </span>
                     </span>
                     {source ? (
                       <a
                         href={`#source-${source.id}`}
-                        className="font-semibold text-[#0B7182] hover:underline"
+                        className="font-sans text-[10px] font-semibold text-cm-teal hover:underline"
                       >
                         Перейти к доказательству ↓
                       </a>
@@ -411,55 +413,59 @@ export default async function Fs510ProductPage() {
           </div>
         </section>
 
-        <section id="evidence" className="scroll-mt-24 pt-14">
+        <section id="evidence" className="scroll-mt-28 pt-10">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div className="max-w-3xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#0B7182]">
+              <p className="cm-label !text-cm-teal">
                 Data provenance
               </p>
-              <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
+              <h2 className="mt-2 text-xl font-bold tracking-[-0.02em] sm:text-2xl">
                 От источника до публикации
               </h2>
-              <p className="mt-4 leading-7 text-[#5D707C]">
+              <p className="mt-3 max-w-2xl text-xs leading-6 text-cm-slate">
                 Цепочка показывает происхождение каждого опубликованного Claim.
                 Документ можно открыть напрямую, а Evidence — сверить по локатору.
               </p>
             </div>
-            <span className="rounded-full bg-[#DDF2EC] px-3 py-1.5 text-xs font-semibold text-[#0B7182]">
+            <span className="rounded border border-cm-teal/20 bg-cm-teal-soft px-2.5 py-1 font-mono text-[9px] text-cm-teal">
               {product.sources.length} доказательных цепочки
             </span>
           </div>
 
-          <div className="mt-7 space-y-6">
+          <div className="mt-5 space-y-3">
             {product.sources.map((source) => (
               <article
                 id={`source-${source.id}`}
                 key={source.id}
-                className="scroll-mt-24 rounded-3xl border border-[#163247]/8 bg-[#EDF4F3] p-4 sm:p-6"
+                className="scroll-mt-28 cm-card overflow-hidden"
               >
-                <ProvenanceChain source={source} />
+                <div className="border-b border-[var(--cm-rule)] bg-cm-surface-low px-5 py-3">
+                  <span className="cm-label">Evidence Provenance Record</span>
+                </div>
+                <div className="overflow-x-auto p-5">
+                  <ProvenanceChain source={source} />
 
-                <div className="mt-4 grid gap-4 rounded-2xl border border-[#163247]/8 bg-white p-5 sm:p-6 lg:grid-cols-[1fr_auto] lg:items-center">
+                <div className="mt-5 grid gap-4 rounded-lg border border-[var(--cm-rule)] bg-cm-surface-low p-5 lg:grid-cols-[1fr_auto] lg:items-center">
                   <div>
                     <div className="flex flex-wrap items-center gap-2">
-                      <span className="rounded-full bg-[#DDF2EC] px-2.5 py-1 text-[11px] font-semibold text-[#0B7182]">
+                      <span className="rounded-md border border-[var(--cm-verified-border)] bg-cm-verified-soft px-2 py-1 font-mono text-[9px] font-semibold text-cm-verified">
                         {source.verification.status}
                       </span>
-                      <span className="font-mono text-[11px] text-[#71818B]">
+                      <span className="font-mono text-[9px] text-cm-dim">
                         {source.publication.publicKey}
                       </span>
                     </div>
-                    <h3 className="mt-3 text-lg font-semibold">
+                    <h3 className="mt-3 text-sm font-bold">
                       {source.document.title}
                     </h3>
-                    <p className="mt-1 text-sm text-[#667985]">
+                    <p className="mt-1 font-mono text-[9px] text-cm-dim">
                       {source.source.name} · {source.document.type} ·{" "}
                       {source.documentVersion.label}
                     </p>
-                    <blockquote className="mt-4 border-l-2 border-[#0B7182] pl-4 text-sm leading-6 text-[#435A68]">
+                    <blockquote className="mt-4 border-l-2 border-cm-teal pl-4 font-mono text-[10px] leading-5 text-cm-slate">
                       «{source.evidence.excerpt}»
                     </blockquote>
-                    <p className="mt-3 text-xs text-[#71818B]">
+                    <p className="mt-3 font-mono text-[9px] text-cm-dim">
                       Локатор: {source.evidence.locator}
                     </p>
                   </div>
@@ -467,54 +473,55 @@ export default async function Fs510ProductPage() {
                     href={source.document.url}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex min-h-12 shrink-0 items-center justify-center rounded-xl border border-[#0B7182]/25 bg-white px-5 py-3 text-sm font-semibold text-[#0B7182] transition hover:bg-[#EAF5F3]"
+                    className="cm-button-secondary shrink-0 !text-cm-teal"
                   >
                     Открыть документ ↗
                   </a>
+                </div>
                 </div>
               </article>
             ))}
           </div>
         </section>
 
-        <section id="history" className="scroll-mt-24 pt-14">
-          <div className="grid gap-8 rounded-[2rem] border border-[#163247]/8 bg-white p-7 sm:p-9 lg:grid-cols-[0.72fr_1.28fr] lg:p-11">
+        <section id="history" className="scroll-mt-28 pt-10">
+          <div className="cm-card grid gap-7 p-6 lg:grid-cols-[0.72fr_1.28fr]">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#0B7182]">
+              <p className="cm-label !text-cm-teal">
                 Audit trail
               </p>
-              <h2 className="mt-3 text-3xl font-semibold tracking-tight">
+              <h2 className="mt-2 text-xl font-bold tracking-[-0.02em]">
                 История публикаций
               </h2>
-              <p className="mt-4 leading-7 text-[#5D707C]">
+              <p className="mt-3 text-xs leading-6 text-cm-slate">
                 Здесь отображаются только события, переданные публичной
                 проекцией. Portal не читает журнал Factory напрямую.
               </p>
             </div>
 
-            <ol className="relative ml-3 border-l border-[#0B7182]/25">
+            <ol className="relative ml-2 border-l border-cm-teal/25">
               {product.publicationHistory.map((item) => (
                 <li
                   key={`${item.publicationKey}-${item.effectiveAt}`}
-                  className="relative pb-8 pl-7 last:pb-0"
+                  className="relative pb-6 pl-6 last:pb-0"
                 >
-                  <span className="absolute -left-2 top-1 flex h-4 w-4 items-center justify-center rounded-full border-4 border-white bg-[#0B7182] ring-1 ring-[#0B7182]/20" />
+                  <span className="absolute -left-[5px] top-1 size-2.5 rounded-full border-2 border-white bg-cm-teal ring-1 ring-cm-teal/20" />
                   <div className="flex flex-wrap items-center gap-2">
                     <time
                       dateTime={item.effectiveAt}
-                      className="text-sm font-semibold text-[#0B7182]"
+                      className="font-mono text-[10px] font-semibold text-cm-teal"
                     >
                       {formatDate(item.effectiveAt)}
                     </time>
-                    <span className="rounded-full bg-[#EEF3F4] px-2 py-1 font-mono text-[10px] uppercase tracking-wider text-[#667985]">
+                    <span className="rounded bg-cm-surface-low px-2 py-1 font-mono text-[8px] uppercase tracking-wider text-cm-dim">
                       {item.event}
                     </span>
                   </div>
-                  <h3 className="mt-2 font-semibold">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-6 text-[#5D707C]">
+                  <h3 className="mt-2 text-xs font-semibold">{item.title}</h3>
+                  <p className="mt-1 text-[11px] leading-5 text-cm-slate">
                     {item.description}
                   </p>
-                  <p className="mt-2 font-mono text-[11px] text-[#71818B]">
+                  <p className="mt-2 font-mono text-[9px] text-cm-dim">
                     {item.publicationKey}
                   </p>
                 </li>
@@ -523,23 +530,23 @@ export default async function Fs510ProductPage() {
           </div>
         </section>
 
-        <section className="mt-10 overflow-hidden rounded-[2rem] bg-[#0B7182] p-7 text-white sm:p-10">
+        <section className="mt-8 overflow-hidden rounded-lg bg-cm-teal p-6 text-white">
           <div className="flex flex-col gap-7 sm:flex-row sm:items-center sm:justify-between">
             <div className="max-w-3xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#A8E1DB]">
+              <p className="cm-label !text-white/55">
                 Коммерческое предложение
               </p>
-              <h2 className="mt-3 text-2xl font-semibold sm:text-3xl">
+              <h2 className="mt-2 text-xl font-bold">
                 Нужны цена, срок поставки или подтверждение характеристик?
               </h2>
-              <p className="mt-3 text-sm leading-6 text-white/75">
+              <p className="mt-2 text-xs leading-6 text-white/70">
                 Укажите организацию и количество — подготовим ответ для вашей
                 закупочной задачи.
               </p>
             </div>
             <Link
               href="/request?product=fs510"
-              className="inline-flex min-h-12 shrink-0 items-center justify-center rounded-xl bg-white px-6 py-3 font-semibold text-[#0B7182] transition hover:bg-[#EAF5F3]"
+              className="cm-button-secondary shrink-0 !border-white !text-cm-teal"
             >
               Запросить КП
             </Link>

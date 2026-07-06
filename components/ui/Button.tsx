@@ -16,8 +16,8 @@ export default function Button({
 }: ButtonProps) {
   const className =
     variant === "primary"
-      ? "inline-flex items-center justify-center rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700"
-      : "inline-flex items-center justify-center rounded-xl border border-gray-300 bg-white px-6 py-3 font-semibold transition hover:bg-gray-50";
+      ? "cm-button-primary"
+      : "cm-button-secondary";
 
   if (href) {
     return (

@@ -2,10 +2,11 @@ import "./globals.css";
 
 import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
+import Footer from "@/components/home/Footer";
 
 export const metadata: Metadata = {
   title: "CyberMedica",
-  description: "Knowledge Platform медицинского оборудования",
+  description: "Платформа доказательных данных о медицинских изделиях",
 };
 
 export default function RootLayout({
@@ -15,9 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className="bg-gray-50 text-gray-900 antialiased">
+      <body className="bg-cm-canvas text-cm-ink antialiased">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

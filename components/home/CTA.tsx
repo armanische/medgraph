@@ -2,23 +2,15 @@ import Link from "next/link";
 
 export default function CTA() {
   return (
-    <section className="bg-blue-600 py-24 text-white">
-      <div className="mx-auto max-w-7xl px-8 text-center">
-        <h2 className="text-5xl font-bold tracking-tight">
-          Не нашли нужное изделие?
-        </h2>
-
-        <p className="mx-auto mt-6 max-w-3xl text-xl text-blue-100">
-          Отправьте запрос — подберем изделие, аналоги, документы и подготовим
-          коммерческое предложение.
-        </p>
-
-        <Link
-          href="/request"
-          className="mt-10 inline-flex rounded-2xl bg-white px-8 py-4 font-bold text-blue-700 transition hover:bg-gray-100"
-        >
-          Запросить КП
-        </Link>
+    <section className="border-t border-[var(--cm-rule)] bg-white">
+      <div className="cm-container flex flex-col gap-6 py-10 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <h2 className="text-[15px] font-bold">Не нашли нужное изделие?</h2>
+          <p className="mt-1 text-[13px] text-cm-slate">
+            Опишите задачу — специалист проверит документы, параметры и доступные варианты.
+          </p>
+        </div>
+        <Link href="/request" className="cm-button-primary shrink-0">Запросить КП</Link>
       </div>
     </section>
   );

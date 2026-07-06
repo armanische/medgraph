@@ -15,17 +15,20 @@ export default async function CatalogPage({
   const { q = "" } = await searchParams;
 
   return (
-    <main className="min-h-screen bg-gray-50">
-      <div className="mx-auto max-w-7xl px-8 py-16">
-
-        <h1 className="text-5xl font-bold">
-          Каталог медицинских изделий
-        </h1>
-
-        <p className="mt-4 max-w-3xl text-xl text-gray-600">
+    <main className="min-h-screen bg-cm-canvas">
+      <header className="border-b border-[var(--cm-rule)] bg-white">
+        <div className="cm-container py-8">
+          <div className="cm-label">Главная · Каталог</div>
+          <h1 className="mt-3 text-2xl font-extrabold tracking-[-0.025em]">
+            Каталог медицинских изделий
+          </h1>
+          <p className="mt-3 max-w-2xl text-[13px] leading-6 text-cm-slate">
           Ищите по названию, регистрационному удостоверению, производителю,
           аналогам и совместимому оборудованию.
-        </p>
+          </p>
+        </div>
+      </header>
+      <div className="cm-container py-7">
         <CatalogExplorer initialQuery={q} />
       </div>
     </main>

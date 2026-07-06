@@ -14,19 +14,19 @@ function ListCard({
   tone?: "blue" | "amber" | "green";
 }) {
   const marker = {
-    blue: "bg-blue-100 text-blue-700",
-    amber: "bg-amber-100 text-amber-700",
-    green: "bg-emerald-100 text-emerald-700",
+    blue: "bg-cm-teal-soft text-cm-teal",
+    amber: "bg-cm-warning-soft text-cm-warning",
+    green: "bg-cm-verified-soft text-cm-verified",
   }[tone];
 
   return (
-    <section className="rounded-3xl border bg-white p-8 shadow-sm">
-      <h2 className="text-2xl font-bold">{title}</h2>
-      <ul className="mt-6 space-y-4">
+    <section className="cm-card p-6">
+      <h2 className="text-base font-bold">{title}</h2>
+      <ul className="mt-4 space-y-3">
         {items.map((item, index) => (
-          <li key={item} className="flex gap-3 leading-7 text-gray-700">
+          <li key={item} className="flex gap-3 text-xs leading-6 text-cm-slate">
             <span
-              className={`mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold ${marker}`}
+              className={`mt-1 flex size-5 shrink-0 items-center justify-center rounded font-mono text-[9px] font-bold ${marker}`}
             >
               {index + 1}
             </span>
@@ -50,22 +50,22 @@ export default function KnowledgeDetails({
 
   return (
     <>
-      <section className="rounded-3xl border bg-white p-8 shadow-sm">
-        <div className="text-sm font-bold uppercase tracking-widest text-blue-600">
+      <section className="cm-card p-6">
+        <div className="cm-label !text-cm-teal">
           Классификаторы
         </div>
-        <h2 className="mt-3 text-3xl font-bold">РУ, КТРУ, НКМИ и ОКПД2</h2>
-        <div className="mt-8 grid gap-4 md:grid-cols-2">
+        <h2 className="mt-2 text-base font-bold">РУ, КТРУ, НКМИ и ОКПД2</h2>
+        <div className="mt-5 grid gap-2 md:grid-cols-2">
           {identifiers.map(([label, value]) => (
-            <div key={label} className="rounded-2xl bg-gray-50 p-5">
-              <div className="text-sm text-gray-500">{label}</div>
-              <div className="mt-2 font-semibold">{value}</div>
+            <div key={label} className="rounded-md border border-[var(--cm-rule)] bg-cm-surface-low p-4">
+              <div className="cm-label">{label}</div>
+              <div className="mt-2 font-mono text-[11px] font-semibold">{value}</div>
             </div>
           ))}
         </div>
       </section>
 
-      <div className="grid gap-8 lg:grid-cols-2">
+      <div className="grid gap-3 lg:grid-cols-2">
         <ListCard title="Применение" items={product.applications} tone="green" />
         <ListCard
           title="Отличия и подбор аналогов"
@@ -73,7 +73,7 @@ export default function KnowledgeDetails({
         />
       </div>
 
-      <div className="grid gap-8 lg:grid-cols-2">
+      <div className="grid gap-3 lg:grid-cols-2">
         <ListCard
           title="Ошибки при выборе"
           items={product.selectionMistakes}
@@ -86,18 +86,18 @@ export default function KnowledgeDetails({
         />
       </div>
 
-      <section className="rounded-3xl border bg-white p-8 shadow-sm">
-        <h2 className="text-3xl font-bold">Частые вопросы</h2>
-        <div className="mt-6 divide-y">
+      <section className="cm-card p-6">
+        <h2 className="text-base font-bold">Частые вопросы</h2>
+        <div className="mt-4 divide-y divide-[var(--cm-rule)]">
           {product.faq.map((item) => (
-            <details key={item.question} className="group py-5">
-              <summary className="cursor-pointer list-none pr-8 text-lg font-semibold">
+            <details key={item.question} className="group py-4">
+              <summary className="cursor-pointer list-none pr-8 text-xs font-semibold">
                 {item.question}
-                <span className="float-right text-blue-600 group-open:rotate-45">
+                <span className="float-right text-cm-teal group-open:rotate-45">
                   +
                 </span>
               </summary>
-              <p className="mt-4 max-w-4xl leading-7 text-gray-600">
+              <p className="mt-3 max-w-4xl text-xs leading-6 text-cm-slate">
                 {item.answer}
               </p>
             </details>
@@ -105,17 +105,17 @@ export default function KnowledgeDetails({
         </div>
       </section>
 
-      <section className="rounded-3xl border bg-white p-8 shadow-sm">
-        <h2 className="text-3xl font-bold">История закупок</h2>
+      <section className="cm-card p-6">
+        <h2 className="text-base font-bold">История закупок</h2>
         {product.procurementHistory.length === 0 ? (
-          <p className="mt-5 rounded-2xl bg-gray-50 p-5 text-gray-600">
+          <p className="mt-4 rounded-md border border-dashed border-[var(--cm-rule-strong)] bg-cm-surface-low p-4 text-xs leading-6 text-cm-slate">
             Данные о закупках готовятся к публикации. Для проверки конкретной
             закупки отправьте запрос — мы сопоставим характеристики и документы.
           </p>
         ) : (
-          <div className="mt-6 overflow-x-auto">
-            <table className="w-full text-left">
-              <thead className="text-sm text-gray-500">
+          <div className="mt-4 overflow-x-auto">
+            <table className="w-full text-left text-xs">
+              <thead className="font-mono text-[9px] uppercase tracking-[0.06em] text-cm-dim">
                 <tr>
                   <th className="pb-4">Заказчик</th>
                   <th className="pb-4">Дата</th>
@@ -123,7 +123,7 @@ export default function KnowledgeDetails({
                   <th className="pb-4">Цена</th>
                 </tr>
               </thead>
-              <tbody className="divide-y">
+              <tbody className="divide-y divide-[var(--cm-rule)]">
                 {product.procurementHistory.map((record) => (
                   <tr key={`${record.customer}-${record.date}`}>
                     <td className="py-4">{record.customer}</td>

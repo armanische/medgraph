@@ -12,20 +12,20 @@ export const metadata: Metadata = {
 
 export default function ManufacturersPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <section className="mx-auto max-w-7xl px-8 py-16">
-        <div className="max-w-3xl">
-          <div className="text-sm font-bold uppercase tracking-widest text-blue-600">
-            База производителей
-          </div>
-          <h1 className="mt-4 text-5xl font-bold">Производители</h1>
-          <p className="mt-5 text-xl leading-8 text-gray-600">
+    <main className="min-h-screen bg-cm-canvas">
+      <header className="border-b border-[var(--cm-rule)] bg-white">
+        <div className="cm-container py-8">
+          <div className="cm-label">База производителей</div>
+          <h1 className="mt-3 text-2xl font-extrabold tracking-[-0.025em]">Производители</h1>
+          <p className="mt-3 max-w-2xl text-[13px] leading-6 text-cm-slate">
             Изделия, регистрационные документы, категории и совместимость —
             собраны в одном месте.
           </p>
         </div>
+      </header>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
+      <section className="cm-container py-7">
+        <div className="grid gap-2 md:grid-cols-2">
           {manufacturers.map((manufacturer) => {
             const productCount = getManufacturerProducts(
               manufacturer.slug
@@ -35,33 +35,33 @@ export default function ManufacturersPage() {
               <Link
                 key={manufacturer.slug}
                 href={`/manufacturers/${manufacturer.slug}`}
-                className="rounded-3xl border bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg"
+                className="group cm-card p-5 transition hover:border-cm-teal/30 hover:shadow-[0_2px_8px_rgba(11,19,32,0.06)]"
               >
                 <div className="flex items-center justify-between gap-4">
-                  <div className="text-sm font-semibold text-blue-600">
+                  <div className="font-mono text-[10px] text-cm-teal">
                     {manufacturer.country}
                   </div>
-                  <div className="rounded-full bg-gray-100 px-3 py-1 text-xs text-gray-600">
+                  <div className="rounded border border-[var(--cm-rule)] bg-cm-surface-low px-2.5 py-1 font-mono text-[9px] text-cm-dim">
                     Изделий в базе: {productCount}
                   </div>
                 </div>
-                <h2 className="mt-4 text-3xl font-bold">
+                <h2 className="mt-4 text-lg font-bold">
                   {manufacturer.name}
                 </h2>
-                <p className="mt-4 leading-7 text-gray-600">
+                <p className="mt-3 text-xs leading-6 text-cm-slate">
                   {manufacturer.description}
                 </p>
-                <div className="mt-6 flex flex-wrap gap-2">
+                <div className="mt-5 flex flex-wrap gap-1.5">
                   {manufacturer.categories.map((category) => (
                     <span
                       key={category}
-                      className="rounded-full bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700"
+                      className="rounded-md border border-cm-teal/15 bg-cm-teal-soft px-2.5 py-1 text-[10px] font-medium text-cm-teal"
                     >
                       {category}
                     </span>
                   ))}
                 </div>
-                <div className="mt-8 font-semibold text-blue-600">
+                <div className="mt-5 border-t border-[var(--cm-rule)] pt-4 text-xs font-semibold text-cm-dim group-hover:text-cm-teal">
                   Открыть производителя →
                 </div>
               </Link>

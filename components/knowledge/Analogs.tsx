@@ -8,18 +8,19 @@ export default function Analogs({
   product,
 }: AnalogsProps) {
   return (
-    <section className="rounded-3xl border bg-white p-10 shadow-sm">
-      <h2 className="mb-8 text-3xl font-bold">
+    <section className="cm-card p-6">
+      <div className="cm-label mb-2">Comparison Candidates</div>
+      <h2 className="mb-5 text-base font-bold">
         Аналоги
       </h2>
 
-      <div className="space-y-3">
+      <div className="space-y-2">
         {product.analogs.map((item) => (
           <div
             key={item}
-            className="rounded-2xl border p-4 transition hover:border-blue-500 hover:bg-blue-50"
+            className="rounded-md border border-[var(--cm-rule)] bg-cm-surface-low p-3"
           >
-            <div className="font-semibold">
+            <div className="text-xs font-semibold">
               {item}
             </div>
           </div>

@@ -8,22 +8,23 @@ export default function Compatibility({
   product,
 }: CompatibilityProps) {
   return (
-    <section className="rounded-3xl border bg-white p-10 shadow-sm">
-      <h2 className="mb-8 text-3xl font-bold">
+    <section className="cm-card p-6">
+      <div className="cm-label mb-2">Confirmed · ISO 5356-1</div>
+      <h2 className="mb-5 text-base font-bold">
         Совместимость
       </h2>
 
-      <div className="space-y-3">
+      <div className="grid gap-2 sm:grid-cols-2">
         {product.compatibility.map((item) => (
           <div
             key={item}
-            className="flex items-center rounded-2xl border p-4"
+            className="flex items-center rounded-md border border-[var(--cm-rule)] bg-cm-surface-low p-3"
           >
-            <div className="mr-4 text-green-600 text-xl">
+            <div className="mr-3 text-sm text-cm-verified">
               ✓
             </div>
 
-            <div className="font-medium">
+            <div className="text-xs font-medium">
               {item}
             </div>
           </div>

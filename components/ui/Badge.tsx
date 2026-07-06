@@ -8,7 +8,7 @@ export default function Badge({
   children,
 }: BadgeProps) {
   return (
-    <span className="inline-flex rounded-full bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">
+    <span className="inline-flex rounded-md border border-[rgba(11,123,142,0.2)] bg-cm-teal-soft px-2.5 py-1 font-mono text-[10px] font-semibold text-cm-teal">
       {children}
     </span>
   );

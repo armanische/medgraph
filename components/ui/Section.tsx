@@ -8,7 +8,7 @@ export default function Section({
   children,
 }: SectionProps) {
   return (
-    <section className="py-20">
+    <section className="py-14 sm:py-16">
       {children}
     </section>
   );

@@ -1,52 +1,37 @@
+import Link from "next/link";
+
 const categories = [
-  {
-    title: "Анестезиология и реанимация",
-    description: "Контуры, фильтры, маски, трубки, аспирация, ИВЛ.",
-    count: "30+ групп",
-  },
-  {
-    title: "Гибкая эндоскопия",
-    description: "Эндоскопы, расходники, принадлежности и совместимость.",
-    count: "20+ групп",
-  },
-  {
-    title: "Неонатология",
-    description: "Оборудование и расходные материалы для новорожденных.",
-    count: "15+ групп",
-  },
-  {
-    title: "Операционный блок",
-    description: "Светильники, столы, коагуляторы, аспираторы.",
-    count: "25+ групп",
-  },
+  ["Анестезиология и реанимация", "Контуры, фильтры, маски, трубки, аспирация, ИВЛ.", "30+ групп"],
+  ["Гибкая эндоскопия", "Эндоскопы, расходники, принадлежности и совместимость.", "20+ групп"],
+  ["Неонатология", "Оборудование и расходные материалы для новорождённых.", "15+ групп"],
+  ["Операционный блок", "Светильники, столы, коагуляторы, аспираторы.", "25+ групп"],
 ];
 
 export default function Categories() {
   return (
-    <section className="bg-gray-50 py-24">
-      <div className="mx-auto max-w-7xl px-8">
-        <h2 className="text-4xl font-bold tracking-tight">
-          Категории
-        </h2>
-
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
-          {categories.map((category) => (
-            <div
-              key={category.title}
-              className="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm"
+    <section className="border-y border-[var(--cm-rule)] bg-white py-14">
+      <div className="cm-container">
+        <div className="flex items-end justify-between gap-5">
+          <div>
+            <div className="cm-label">Классификация</div>
+            <h2 className="mt-2 text-xl font-extrabold tracking-[-0.025em]">Категории изделий</h2>
+          </div>
+          <Link href="/catalog" className="text-xs font-semibold text-cm-teal">Весь каталог →</Link>
+        </div>
+        <div className="mt-6 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+          {categories.map(([title, description, count], index) => (
+            <Link
+              href="/catalog"
+              key={title}
+              className="cm-card group p-5 transition hover:border-cm-teal/30"
             >
-              <div className="text-sm font-semibold text-blue-600">
-                {category.count}
+              <div className="flex size-8 items-center justify-center rounded-md bg-cm-teal-soft font-mono text-[10px] font-bold text-cm-teal">
+                {String(index + 1).padStart(2, "0")}
               </div>
-
-              <h3 className="mt-4 text-2xl font-bold">
-                {category.title}
-              </h3>
-
-              <p className="mt-4 text-gray-600">
-                {category.description}
-              </p>
-            </div>
+              <h3 className="mt-4 text-[13px] font-bold leading-5">{title}</h3>
+              <p className="mt-2 text-[11px] leading-5 text-cm-slate">{description}</p>
+              <div className="mt-4 font-mono text-[9px] text-cm-dim">{count}</div>
+            </Link>
           ))}
         </div>
       </div>

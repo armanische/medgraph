@@ -8,7 +8,7 @@ export default function Container({
   children,
 }: ContainerProps) {
   return (
-    <div className="mx-auto max-w-7xl px-8">
+    <div className="cm-container">
       {children}
     </div>
   );

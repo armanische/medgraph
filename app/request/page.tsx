@@ -23,17 +23,28 @@ export default async function RequestPage({
       : "";
 
   return (
-    <main className="min-h-screen bg-gray-50">
-      <section className="mx-auto max-w-3xl px-8 py-20">
-        <div className="rounded-3xl border bg-white p-8 shadow-sm md:p-10">
-          <div className="text-sm font-semibold text-blue-600">
+    <main className="min-h-screen bg-cm-canvas">
+      <section className="cm-container grid gap-6 py-10 lg:grid-cols-[0.72fr_1.28fr]">
+        <div className="pt-4">
+          <div className="cm-label !text-cm-teal">
             Коммерческое предложение
           </div>
-          <h1 className="mt-4 text-4xl font-bold">Запросить КП</h1>
-          <p className="mt-4 leading-7 text-gray-600">
+          <h1 className="mt-3 text-3xl font-extrabold tracking-[-0.03em]">Запросить КП</h1>
+          <p className="mt-4 max-w-md text-[13px] leading-7 text-cm-slate">
             Опишите задачу — мы проверим изделие, аналоги, документы и
             совместимость, затем подготовим предложение.
           </p>
+          <div className="mt-8 space-y-3 border-t border-[var(--cm-rule)] pt-6 text-xs text-cm-slate">
+            {["Запрос не влияет на статус проверки данных", "Ответ направляется указанному контактному лицу", "Персональные данные используются только для ответа"].map((item) => (
+              <div key={item} className="flex gap-2"><span className="text-cm-teal">✓</span>{item}</div>
+            ))}
+          </div>
+        </div>
+        <div className="cm-card p-6 sm:p-8">
+          <div className="flex items-center justify-between border-b border-[var(--cm-rule)] pb-4">
+            <span className="cm-label">Request Form</span>
+            <span className="font-mono text-[9px] text-cm-dim">152-ФЗ</span>
+          </div>
           <RequestForm initialMessage={initialMessage} />
         </div>
       </section>

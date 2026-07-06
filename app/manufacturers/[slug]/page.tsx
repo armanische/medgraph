@@ -42,66 +42,72 @@ export default async function ManufacturerPage({
   const products = getManufacturerProducts(manufacturer.slug);
 
   return (
-    <main className="min-h-screen bg-gray-50">
-      <section className="mx-auto max-w-7xl px-8 py-16">
-        <Link href="/manufacturers" className="font-semibold text-blue-600">
+    <main className="min-h-screen bg-cm-canvas">
+      <section className="cm-container py-8">
+        <Link href="/manufacturers" className="text-xs font-semibold text-cm-teal">
           ← Все производители
         </Link>
-        <div className="mt-8 rounded-3xl bg-slate-950 p-10 text-white md:p-14">
-          <div className="text-sm font-bold uppercase tracking-widest text-blue-300">
-            {manufacturer.country}
+        <div className="mt-6 cm-card overflow-hidden">
+          <div className="flex items-center justify-between gap-4 border-b border-[var(--cm-rule)] bg-cm-surface-low px-5 py-3">
+            <span className="cm-label">Manufacturer Record</span>
+            <span className="rounded-md border border-[var(--cm-verified-border)] bg-cm-verified-soft px-2 py-1 font-mono text-[9px] font-semibold text-cm-verified">
+              CyberMedica Verified
+            </span>
           </div>
-          <h1 className="mt-4 text-5xl font-bold">{manufacturer.name}</h1>
-          <p className="mt-6 max-w-3xl text-xl leading-8 text-slate-300">
-            {manufacturer.description}
-          </p>
-          <div className="mt-8 flex flex-wrap gap-2">
-            {manufacturer.categories.map((category) => (
-              <span
-                key={category}
-                className="rounded-full bg-white/10 px-4 py-2 text-sm"
-              >
-                {category}
-              </span>
-            ))}
+          <div className="grid gap-8 p-6 sm:p-8 lg:grid-cols-[1fr_18rem]">
+            <div>
+              <div className="font-mono text-[10px] uppercase tracking-[0.08em] text-cm-teal">{manufacturer.country}</div>
+              <h1 className="mt-3 text-3xl font-extrabold tracking-[-0.03em]">{manufacturer.name}</h1>
+              <p className="mt-4 max-w-2xl text-[13px] leading-7 text-cm-slate">{manufacturer.description}</p>
+              <div className="mt-6 flex flex-wrap gap-1.5">
+                {manufacturer.categories.map((category) => (
+                  <span key={category} className="rounded-md border border-cm-teal/15 bg-cm-teal-soft px-2.5 py-1 text-[10px] text-cm-teal">
+                    {category}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <dl className="divide-y divide-[var(--cm-rule)] border-t border-[var(--cm-rule)] lg:border-t-0">
+              <div className="flex justify-between gap-4 py-3"><dt className="cm-label">Страна</dt><dd className="text-xs font-semibold">{manufacturer.country}</dd></div>
+              <div className="flex justify-between gap-4 py-3"><dt className="cm-label">Изделий</dt><dd className="font-mono text-xs font-semibold">{products.length}</dd></div>
+              <div className="flex justify-between gap-4 py-3"><dt className="cm-label">Статус</dt><dd className="text-xs font-semibold text-cm-verified">Проверено</dd></div>
+            </dl>
           </div>
         </div>
 
-        <div className="mt-12 flex items-end justify-between gap-6">
+        <div className="mt-10 flex items-end justify-between gap-6">
           <div>
-            <div className="text-sm font-bold uppercase tracking-widest text-blue-600">
-              База знаний
-            </div>
-            <h2 className="mt-3 text-3xl font-bold">Изделия производителя</h2>
+            <div className="cm-label">База знаний</div>
+            <h2 className="mt-2 text-xl font-bold">Изделия производителя</h2>
           </div>
-          <Link href="/request" className="font-semibold text-blue-600">
+          <Link href="/request" className="text-xs font-semibold text-cm-teal">
             Запросить подбор →
           </Link>
         </div>
 
         {products.length > 0 ? (
-          <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <div className="mt-5 grid gap-2 md:grid-cols-2 xl:grid-cols-3">
             {products.map((product) => (
               <Link
                 key={product.slug}
                 href={`/knowledge/${product.slug}`}
-                className="rounded-3xl border bg-white p-8 shadow-sm transition hover:shadow-lg"
+                className="group cm-card flex min-h-56 flex-col p-5 transition hover:border-cm-teal/30"
               >
-                <div className="text-sm font-semibold text-blue-600">
+                <div className="font-mono text-[9px] uppercase tracking-[0.08em] text-cm-dim">
                   {product.category}
                 </div>
-                <h3 className="mt-4 text-2xl font-bold">{product.name}</h3>
-                <p className="mt-4 text-gray-600">{product.description}</p>
-                <div className="mt-8 font-semibold text-blue-600">
+                <h3 className="mt-4 text-sm font-bold leading-5">{product.name}</h3>
+                <p className="mt-3 text-xs leading-6 text-cm-slate">{product.description}</p>
+                <div className="mt-auto border-t border-[var(--cm-rule)] pt-4 text-xs font-semibold text-cm-dim group-hover:text-cm-teal">
                   Открыть Knowledge Page →
                 </div>
               </Link>
             ))}
           </div>
         ) : (
-          <div className="mt-8 rounded-3xl border border-dashed bg-white p-10">
-            <h3 className="text-xl font-bold">Карточки готовятся</h3>
-            <p className="mt-3 text-gray-600">
+          <div className="mt-5 cm-card border-dashed p-8">
+            <h3 className="text-sm font-bold">Карточки готовятся</h3>
+            <p className="mt-2 text-xs text-cm-slate">
               Мы наполняем базу изделиями и документами этого производителя.
             </p>
           </div>

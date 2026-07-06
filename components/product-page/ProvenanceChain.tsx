@@ -37,29 +37,38 @@ export function ProvenanceChain({ source }: { source: PublicProductSource }) {
   return (
     <ol
       aria-label="Цепочка происхождения данных"
-      className="grid gap-2 md:grid-cols-3 xl:grid-cols-6"
+      className="flex min-w-[700px] items-start pb-2"
     >
       {stages.map((stage, index) => (
         <li
           key={stage.label}
-          className="group relative min-w-0 rounded-2xl border border-[#163247]/10 bg-white p-4"
+          className="group relative flex min-w-0 flex-1 flex-col items-center px-2 text-center"
         >
-          <div className="flex items-center gap-2">
-            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#E1F2EF] font-mono text-[10px] font-bold text-[#0B7182]">
+          <div className="flex flex-col items-center gap-2">
+            <span className="font-mono text-[8px] tracking-[0.08em] text-cm-dim">
               {String(index + 1).padStart(2, "0")}
             </span>
-            <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[#667985]">
+            <span className={`flex size-11 items-center justify-center rounded-lg border font-mono text-[10px] font-bold ${
+              index === 4
+                ? "border-[var(--cm-verified-border)] bg-cm-verified-soft text-cm-verified"
+                : index === 5
+                  ? "border-cm-teal/25 bg-cm-teal-soft text-cm-teal"
+                  : "border-[var(--cm-rule)] bg-cm-surface-low text-cm-slate"
+            }`}>
+              {stage.label.slice(0, 3).toUpperCase()}
+            </span>
+            <span className="font-mono text-[8px] font-semibold uppercase tracking-[0.1em] text-cm-dim">
               {stage.label}
             </span>
           </div>
-          <p className="mt-3 line-clamp-2 text-sm font-semibold leading-5 text-[#163247]">
+          <p className="mt-2 line-clamp-2 max-w-24 text-[10px] font-semibold leading-4 text-cm-ink">
             {stage.value}
           </p>
-          <p className="mt-1 truncate text-xs text-[#74838D]">{stage.detail}</p>
+          <p className="mt-1 max-w-24 truncate font-mono text-[8px] text-cm-dim">{stage.detail}</p>
           {index < stages.length - 1 ? (
             <span
               aria-hidden="true"
-              className="absolute -right-2.5 top-1/2 z-10 hidden h-5 w-5 -translate-y-1/2 items-center justify-center rounded-full border border-[#163247]/10 bg-[#F4F7F8] text-[10px] text-[#0B7182] xl:flex"
+              className="absolute -right-2 top-9 z-10 flex text-[10px] text-cm-dim"
             >
               →
             </span>

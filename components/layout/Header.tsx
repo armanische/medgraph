@@ -1,27 +1,91 @@
 import Link from "next/link";
 
-export default function Header() {
+function BrandMark() {
   return (
-    <header className="sticky top-0 z-50 border-b bg-white/90 backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-8">
-        <Link href="/" className="text-2xl font-bold">
-          Cyber<span className="text-blue-600">Medica</span>
+    <span
+      aria-hidden="true"
+      className="flex size-7 items-center justify-center rounded-md bg-cm-ink text-white"
+    >
+      <svg viewBox="0 0 24 24" className="size-3.5" fill="none">
+        <path
+          d="M3 12h4l2.2-5 4.2 10 2.1-5H21"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    </span>
+  );
+}
+
+export default function Header() {
+  const navItems = [
+    ["/catalog", "Каталог"],
+    ["/products/fs510", "База знаний"],
+    ["/manufacturers", "Производители"],
+    ["/request", "Поставщикам"],
+  ];
+
+  return (
+    <header className="sticky top-0 z-50 border-b border-[var(--cm-rule)] bg-white/95 backdrop-blur-lg">
+      <div className="cm-container flex min-h-14 items-center gap-4">
+        <Link
+          href="/"
+          className="flex shrink-0 items-center gap-2"
+          aria-label="CyberMedica — главная"
+        >
+          <BrandMark />
+          <span className="text-sm font-extrabold tracking-[-0.02em]">
+            Cyber<span className="text-cm-teal">Medica</span>
+          </span>
         </Link>
 
-        <nav className="hidden gap-8 lg:flex">
-          <Link href="/">Главная</Link>
-          <Link href="/catalog">Каталог</Link>
-          <Link href="/manufacturers">Производители</Link>
-          <Link href="/products/fs510">База знаний</Link>
+        <nav
+          aria-label="Основная навигация"
+          className="ml-auto hidden items-center gap-0.5 lg:flex"
+        >
+          {navItems.map(([href, label]) => (
+            <Link
+              key={href}
+              className="rounded-md px-3 py-2 text-xs text-cm-slate hover:bg-cm-surface-low hover:text-cm-ink"
+              href={href}
+            >
+              {label}
+            </Link>
+          ))}
         </nav>
 
         <Link
-          href="/request"
-          className="rounded-xl bg-blue-600 px-5 py-2 text-white"
+          href="/catalog"
+          className="ml-auto hidden min-h-9 items-center gap-2 rounded-md border border-[var(--cm-rule)] bg-white px-3 text-xs font-medium text-cm-slate transition hover:border-[var(--cm-rule-strong)] hover:text-cm-ink sm:inline-flex lg:ml-3"
         >
-          Получить КП
+          <svg viewBox="0 0 24 24" className="size-3.5" fill="none" aria-hidden="true">
+            <circle cx="11" cy="11" r="6" stroke="currentColor" strokeWidth="1.8" />
+            <path d="m16 16 4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+          </svg>
+          Поиск
+        </Link>
+
+        <Link href="/request" className="cm-button-primary min-h-9 px-3.5 py-2 text-xs">
+          Запросить КП
         </Link>
       </div>
+
+      <nav
+        aria-label="Мобильная навигация"
+        className="flex min-h-10 items-center gap-1 overflow-x-auto border-t border-[var(--cm-rule)] px-4 lg:hidden"
+      >
+        {navItems.map(([href, label]) => (
+          <Link
+            key={href}
+            href={href}
+            className="shrink-0 rounded px-2.5 py-2 text-xs text-cm-slate hover:text-cm-teal"
+          >
+            {label}
+          </Link>
+        ))}
+      </nav>
     </header>
   );
 }

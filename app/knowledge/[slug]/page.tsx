@@ -48,18 +48,18 @@ export default async function KnowledgePage({
   }
 
   return (
-    <main className="bg-gray-50">
-      <div className="mx-auto max-w-7xl space-y-8 px-8 py-16">
+    <main className="bg-cm-canvas">
+      <div className="cm-container space-y-3 py-7">
         <Hero product={product} />
 
-        <div className="grid gap-8 lg:grid-cols-2">
+        <div className="grid gap-3 lg:grid-cols-2">
           <Specifications product={product} />
           <Documents product={product} />
         </div>
 
         <KnowledgeDetails product={product} />
 
-        <div className="grid gap-8 lg:grid-cols-2">
+        <div className="grid gap-3 lg:grid-cols-2">
           <Compatibility product={product} />
           <Analogs product={product} />
         </div>
