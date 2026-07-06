@@ -11,6 +11,7 @@ interface ReplayElement {
   name?: string | null;
   id?: string | null;
   role?: string | null;
+  className?: string | null;
   isVisible?: boolean;
 }
 
@@ -56,6 +57,7 @@ function descriptor(element: ReplayElement) {
     element.name,
     element.id,
     element.role,
+    element.className,
   ]
     .filter(Boolean)
     .join(" ");
@@ -67,7 +69,9 @@ function isSearchInput(element: ReplayElement) {
     element.isVisible !== false &&
     (/input|textarea/i.test(element.tag ?? "") ||
       /searchbox|combobox|textbox/i.test(element.role ?? "")) &&
-    /регистрац|удостовер|(?:^|\s)ру(?:\s|$)|номер|поиск|search/i.test(value)
+    /регистрац|удостовер|(?:^|\s)ру(?:\s|$)|номер|поиск|search|input-search/i.test(
+      value,
+    )
   );
 }
 
@@ -132,6 +136,12 @@ export async function replayRoszdravnadzorDiagnostics(inputPath: string) {
     /download-by-path-public/i.test(searchableNetwork(entry)),
   );
   const strategies = selectorStrategies(allElements);
+  const candidateResponses = medProductResponses.map((entry) => ({
+    url: entry.url ?? "unknown",
+    preview:
+      entry.bodyPreview?.replace(/\s+/g, " ").trim().slice(0, 300) ??
+      "unavailable",
+  }));
 
   let recommendation =
     "Inspect page.html and visible-text.txt, then update provider selectors.";
@@ -170,6 +180,13 @@ export async function replayRoszdravnadzorDiagnostics(inputPath: string) {
     "Selector strategies:",
     ...(strategies.length
       ? strategies.map((strategy) => `- ${strategy}`)
+      : ["- none detected"]),
+    "Candidate network responses:",
+    ...(candidateResponses.length
+      ? candidateResponses.flatMap((candidate) => [
+          `- URL: ${candidate.url}`,
+          `  Preview: ${candidate.preview}`,
+        ])
       : ["- none detected"]),
     `Recommended next action: ${recommendation}`,
   ];

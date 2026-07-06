@@ -146,10 +146,26 @@ function normalizeSpace(value: string) {
 }
 
 function normalizeRegistrationNumber(value: string) {
-  return normalizeSpace(value)
+  return value
     .replace(/[№#]/g, "")
-    .replace(/\s*\/\s*/g, "/")
+    .normalize("NFKC")
+    .replace(/\s+/g, "")
     .toLocaleUpperCase("ru-RU");
+}
+
+interface NetworkRegistryMatch {
+  record: Record<string, unknown>;
+  registrationNumber: string;
+  registryRecordId: string | null;
+  payloadIndex: number;
+  path: string;
+}
+
+interface RegistryAcquisition {
+  source: "network" | "dom";
+  record: Record<string, unknown> | null;
+  registryRecordId: string | null;
+  recordUrl: string;
 }
 
 interface RoszdravnadzorTlsPolicy {
@@ -281,56 +297,165 @@ function valueFromDom(
   );
 }
 
-function findMatchingApiRecord(payloads: unknown[], registrationNumber: string) {
+function registrationNumberFromEntries(
+  entries: ScalarEntry[],
+  registrationNumber: string,
+) {
   const target = normalizeRegistrationNumber(registrationNumber);
-  const queue: Array<{ value: unknown; depth: number }> = payloads.map(
-    (value) => ({ value, depth: 0 }),
+  return (
+    entries.find(
+      (entry) =>
+        normalizeRegistrationNumber(entry.value) === target &&
+        REGISTRATION_NUMBER_PATH_PATTERNS.some((pattern) =>
+          pattern.test(entry.path),
+        ),
+    )?.value ?? null
   );
+}
+
+function registryRecordIdFromPayload(record: Record<string, unknown> | null) {
+  if (!record) return null;
+  const entries = collectScalarEntries(record);
+  const prioritizedPatterns = [
+    /(?:^|\.)(?:medProductId|med_product_id)$/i,
+    /(?:^|\.)(?:productId|product_id)$/i,
+    /(?:^|\.)(?:registryRecordId|recordId)$/i,
+    /(?:^|\.)id$/i,
+  ];
+  return findValue(entries, prioritizedPatterns);
+}
+
+function findNetworkRegistryRecord(
+  payloads: unknown[],
+  registrationNumber: string,
+): NetworkRegistryMatch | null {
+  const queue: Array<{
+    value: unknown;
+    depth: number;
+    payloadIndex: number;
+    path: string;
+  }> = payloads.map((value, payloadIndex) => ({
+    value,
+    depth: 0,
+    payloadIndex,
+    path: "$",
+  }));
   let cursor = 0;
+  let best:
+    | {
+        match: NetworkRegistryMatch;
+        score: number;
+      }
+    | null = null;
 
   while (cursor < queue.length) {
     const current = queue[cursor];
     cursor += 1;
     if (!current || current.depth > 9) continue;
     if (Array.isArray(current.value)) {
-      current.value.forEach((item) =>
-        queue.push({ value: item, depth: current.depth + 1 }),
+      current.value.forEach((item, index) =>
+        queue.push({
+          value: item,
+          depth: current.depth + 1,
+          payloadIndex: current.payloadIndex,
+          path: `${current.path}[${index}]`,
+        }),
       );
       continue;
     }
     if (typeof current.value !== "object" || current.value === null) continue;
     const record = current.value as Record<string, unknown>;
-    if (
-      Object.values(record).some(
-        (item) =>
-          typeof item === "string" &&
-          normalizeRegistrationNumber(item) === target,
-      )
-    ) {
-      return record;
+    const entries = collectScalarEntries(record);
+    const observed = registrationNumberFromEntries(entries, registrationNumber);
+    if (observed) {
+      const registryRecordId = registryRecordIdFromPayload(record);
+      const fieldScore = [
+        /medical.*device.*name|product.*name|наименован.*издел/i,
+        /manufacturer|producer|производител/i,
+        /status|state|статус/i,
+        /issue.*date|registration.*date|updated.*date|modified.*date/i,
+        /file|document|документ/i,
+      ].filter((pattern) => entries.some((entry) => pattern.test(entry.path)))
+        .length;
+      // A logical record is normally the deepest compact object containing
+      // the registration number and its sibling fields. Broad API envelopes
+      // remain candidates, but lose to the contained record.
+      const score =
+        100 +
+        fieldScore * 10 +
+        (registryRecordId ? 20 : 0) +
+        current.depth * 3 -
+        Math.min(entries.length, 100);
+      if (!best || score > best.score) {
+        best = {
+          score,
+          match: {
+            record,
+            registrationNumber: observed,
+            registryRecordId,
+            payloadIndex: current.payloadIndex,
+            path: current.path,
+          },
+        };
+      }
     }
-    Object.values(record).forEach((item) =>
-      queue.push({ value: item, depth: current.depth + 1 }),
+    Object.entries(record).forEach(([key, item]) =>
+      queue.push({
+        value: item,
+        depth: current.depth + 1,
+        payloadIndex: current.payloadIndex,
+        path: `${current.path}.${key}`,
+      }),
     );
   }
-  return null;
+  return best?.match ?? null;
 }
 
-function registryRecordIdFromPayload(record: Record<string, unknown> | null) {
-  if (!record) return null;
-  for (const key of ["id", "medProductId", "med_product_id", "recordId"]) {
-    const value = record[key];
-    if (typeof value === "string" || typeof value === "number") {
-      return String(value);
-    }
+function findMatchingApiRecord(payloads: unknown[], registrationNumber: string) {
+  return findNetworkRegistryRecord(payloads, registrationNumber)?.record ?? null;
+}
+
+function resolveRegistryAcquisition(input: {
+  payloads: unknown[];
+  registrationNumber: string;
+  payloadUrls?: string[];
+  domRecordUrl: string | null;
+}): RegistryAcquisition | null {
+  const networkMatch = findNetworkRegistryRecord(
+    input.payloads,
+    input.registrationNumber,
+  );
+  if (networkMatch) {
+    const detailUrl = networkMatch.registryRecordId
+      ? `${OFFICIAL_ORIGIN}/widget/med-product/${encodeURIComponent(
+          networkMatch.registryRecordId,
+        )}`
+      : null;
+    return {
+      source: "network",
+      record: networkMatch.record,
+      registryRecordId: networkMatch.registryRecordId,
+      recordUrl:
+        detailUrl ??
+        input.payloadUrls?.[networkMatch.payloadIndex] ??
+        WIDGET_URL,
+    };
   }
-  return null;
+  if (!input.domRecordUrl) return null;
+  return {
+    source: "dom",
+    record: null,
+    registryRecordId: registryRecordIdFromUrl(input.domRecordUrl),
+    recordUrl: input.domRecordUrl,
+  };
 }
 
 const REGISTRATION_NUMBER_PATH_PATTERNS = [
   /registration.*number/i,
   /certificate.*number/i,
   /reg.*number/i,
+  /(?:^|\.)noRu$/i,
+  /(?:^|\.)numberRu$/i,
   /регистрац.*номер/i,
 ];
 const REGISTRATION_NUMBER_LABEL_PATTERNS = [
@@ -577,17 +702,20 @@ function scoreSearchDescriptor(input: {
   role?: string | null;
   name?: string | null;
   label?: string | null;
+  className?: string | null;
 }) {
   const placeholder = (input.placeholder ?? "").toLocaleLowerCase("ru-RU");
   const ariaLabel = (input.ariaLabel ?? "").toLocaleLowerCase("ru-RU");
   const role = (input.role ?? "").toLocaleLowerCase("ru-RU");
   const name = (input.name ?? "").toLocaleLowerCase("ru-RU");
   const label = (input.label ?? "").toLocaleLowerCase("ru-RU");
+  const className = (input.className ?? "").toLocaleLowerCase("ru-RU");
   const terms = /регистрац|удостовер|(?:^|\s)ру(?:\s|$)|номер|поиск/iu;
   return (
     (terms.test(placeholder) ? 50 : 0) +
     (terms.test(ariaLabel) ? 45 : 0) +
     (terms.test(label) ? 40 : 0) +
+    (/(?:^|\s)input-search(?:\s|$)/.test(className) ? 60 : 0) +
     (/searchbox|combobox|textbox/.test(role) ? 20 : 0) +
     (terms.test(name) ? 10 : 0)
   );
@@ -606,7 +734,12 @@ async function hasVisibleSearchButton(scope: SearchScopeLike) {
         (await button.getAttribute("aria-label").catch(() => null)) ?? ""
       }`,
     );
-    if (/найти|поиск|искать|применить/i.test(label)) return true;
+    if (
+      !/расширенн.*поиск/i.test(label) &&
+      /найти|поиск|искать|применить/i.test(label)
+    ) {
+      return true;
+    }
   }
   return false;
 }
@@ -635,6 +768,7 @@ async function findSearchInputInScope(scope: SearchScopeLike) {
       ariaLabel: await input.getAttribute("aria-label").catch(() => null),
       role: await input.getAttribute("role").catch(() => null),
       name: await input.getAttribute("name").catch(() => null),
+      className: await input.getAttribute("class").catch(() => null),
       label,
     });
     if (score > selectedScore) {
@@ -683,12 +817,19 @@ function networkMarkers(value: string, query: string) {
   const normalizedQuery = normalizeRegistrationNumber(query);
   return [
     ["ФСЗ", /ФСЗ/i],
-    [normalizedQuery, new RegExp(normalizedQuery.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i")],
+    [
+      normalizedQuery,
+      normalizeRegistrationNumber(value).includes(normalizedQuery),
+    ],
     ["med-product", /med-product/i],
     ["download-by-path-public", /download-by-path-public/i],
     ["files", /files/i],
-  ].flatMap(([label, pattern]) =>
-    (pattern as RegExp).test(value) ? [label as string] : [],
+  ].flatMap(([label, matcher]) =>
+    (typeof matcher === "boolean"
+      ? matcher
+      : (matcher as RegExp).test(value))
+      ? [label as string]
+      : [],
   );
 }
 
@@ -698,10 +839,10 @@ async function submitSearch(
   warnings: string[],
 ) {
   const { input, scope } = await findSearchInput(page);
-  await input.fill(registrationNumber);
   const responsePromise = page
     .waitForResponse(isRegistryApiResponse, { timeout: DOM_TIMEOUT_MS })
     .catch(() => null);
+  await input.fill(registrationNumber);
   const clicked = await clickSearchButton(scope);
   if (!clicked) await input.press("Enter");
   const response = await responsePromise;
@@ -710,13 +851,6 @@ async function submitSearch(
       "No registry JSON response was observed after search submission.",
     );
   }
-  await page
-    .waitForSelector('a[href*="/widget/med-product/"]', {
-      timeout: DOM_TIMEOUT_MS,
-    })
-    .catch(() => {
-      warnings.push("Registry result link did not appear before timeout.");
-    });
   if (!clicked) {
     warnings.push("Search button was not found; Enter fallback was used.");
   }
@@ -737,7 +871,10 @@ async function clickSearchButton(scope: SearchScopeLike) {
       }`,
     );
     const type = await button.getAttribute("type").catch(() => null);
-    if (!/найти|поиск|искать|применить/i.test(label) && type !== "submit") {
+    if (
+      /расширенн.*поиск/i.test(label) ||
+      (!/найти|поиск|искать|применить/i.test(label) && type !== "submit")
+    ) {
       continue;
     }
     await button.click();
@@ -754,10 +891,9 @@ async function findRegistryRecordUrl(
     ({ expected }: { expected: string }) => {
       const normalize = (value: string) =>
         value
-          .replace(/\s+/g, " ")
-          .trim()
           .replace(/[№#]/g, "")
-          .replace(/\s*\/\s*/g, "/")
+          .normalize("NFKC")
+          .replace(/\s+/g, "")
           .toLocaleUpperCase("ru-RU");
       const anchors = Array.from(
         document.querySelectorAll<HTMLAnchorElement>(
@@ -870,6 +1006,7 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
       });
       page = await context.newPage();
       const capturedPayloads: unknown[] = [];
+      const capturedPayloadUrls: string[] = [];
       const jsonArtifacts: RawArtifact[] = [];
       const htmlArtifacts: RawArtifact[] = [];
       const pendingCaptures: Promise<void>[] = [];
@@ -902,9 +1039,12 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
             try {
               const payload = JSON.parse(bytes.toString("utf8"));
               capturedPayloads.push(payload);
+              capturedPayloadUrls.push(response.url());
+              const markers = networkMarkers(searchable, query);
               if (
                 /med-product|registry|reestr/i.test(response.url()) ||
-                findMatchingApiRecord([payload], query)
+                markers.includes(normalizeRegistrationNumber(query)) ||
+                markers.includes("med-product")
               ) {
                 jsonArtifacts.push(
                   await this.artifactStore.saveBytes({
@@ -918,7 +1058,9 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
               }
             } catch {
               this.warnings.push(
-                `Registry JSON response could not be parsed: ${response.url()}`,
+                `Registry JSON response could not be parsed: ${response.url()}; preview: ${
+                  preview?.replace(/\s+/g, " ").slice(0, 300) ?? "unavailable"
+                }`,
               );
             }
           }
@@ -949,24 +1091,65 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
       if (initialBlock) throw new Error(initialBlock);
 
       let registryRecordUrl: string | null = this.detailFallback?.url ?? null;
+      let networkAcquisition: RegistryAcquisition | null = null;
       if (!this.detailFallback) {
         let searchFailure: unknown = null;
         try {
           await submitSearch(page, query, this.warnings);
-          registryRecordUrl = await findRegistryRecordUrl(page, query);
         } catch (error) {
           searchFailure = error;
         }
         await Promise.allSettled(pendingCaptures);
 
-        if (!registryRecordUrl) {
-          const networkRecord = findMatchingApiRecord(capturedPayloads, query);
-          if (networkRecord) {
+        networkAcquisition = resolveRegistryAcquisition({
+          payloads: capturedPayloads,
+          payloadUrls: capturedPayloadUrls,
+          registrationNumber: query,
+          domRecordUrl: null,
+        });
+        if (networkAcquisition) {
+          registryRecordUrl = networkAcquisition.recordUrl;
+          this.warnings.push(
+            "Registry record was extracted from a validated JSON/XHR response before DOM fallback.",
+          );
+        } else if (!searchFailure) {
+          await page
+            .waitForSelector('a[href*="/widget/med-product/"]', {
+              timeout: DOM_TIMEOUT_MS,
+            })
+            .catch(() => {
+              this.warnings.push(
+                "Registry result link did not appear before timeout.",
+              );
+            });
+          const domRecordUrl = await findRegistryRecordUrl(page, query);
+          registryRecordUrl = resolveRegistryAcquisition({
+            payloads: capturedPayloads,
+            payloadUrls: capturedPayloadUrls,
+            registrationNumber: query,
+            domRecordUrl,
+          })?.recordUrl ?? null;
+        }
+        if (!networkAcquisition) {
+          const relevantInvalidResponses = networkDiagnostics.filter(
+            (entry) =>
+              /json/i.test(entry.contentType) ||
+              /xhr|fetch/i.test(entry.resourceType),
+          ).filter(
+            (entry) =>
+              entry.markers.includes("med-product") ||
+              entry.markers.includes("ФСЗ") ||
+              /med-product|registry|reestr/i.test(entry.url),
+          );
+          relevantInvalidResponses.forEach((entry) => {
             this.warnings.push(
-              "Registry record was recovered from an observed network response after DOM result detection failed.",
+              "Relevant registry response failed exact registration validation: " +
+                `${entry.url}; preview: ${
+                  entry.bodyPreview?.replace(/\s+/g, " ").slice(0, 300) ??
+                  "unavailable"
+                }`,
             );
-            registryRecordUrl = WIDGET_URL;
-          }
+          });
         }
         if (!registryRecordUrl) {
           if (searchFailure) throw searchFailure;
@@ -981,18 +1164,28 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
       const resolvedRegistryRecordUrl = registryRecordUrl;
 
       if (resolvedRegistryRecordUrl !== page.url()) {
-        await page.goto(resolvedRegistryRecordUrl, {
-          waitUntil: "domcontentloaded",
-          timeout: NAVIGATION_TIMEOUT_MS,
-        });
-        await page.waitForSelector("body", { timeout: DOM_TIMEOUT_MS });
-        await page
-          .waitForLoadState("networkidle", { timeout: DOM_TIMEOUT_MS })
-          .catch(() => {
-            this.warnings.push(
-              "Registry detail page did not reach network idle before timeout.",
-            );
+        try {
+          await page.goto(resolvedRegistryRecordUrl, {
+            waitUntil: "domcontentloaded",
+            timeout: NAVIGATION_TIMEOUT_MS,
           });
+          await page.waitForSelector("body", { timeout: DOM_TIMEOUT_MS });
+          await page
+            .waitForLoadState("networkidle", { timeout: DOM_TIMEOUT_MS })
+            .catch(() => {
+              this.warnings.push(
+                "Registry detail page did not reach network idle before timeout.",
+              );
+            });
+        } catch (error) {
+          if (!networkAcquisition) throw error;
+          this.warnings.push(
+            "Validated network record was retained, but its optional detail " +
+              `page could not be opened: ${
+                error instanceof Error ? error.message : "unknown error"
+              }`,
+          );
+        }
       }
       const block = await detectTechnicalBlock(page);
       if (block) throw new Error(block);
@@ -1017,6 +1210,7 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
         registrationNumber: query,
         registryRecordId:
           this.detailFallback?.id ??
+          networkAcquisition?.registryRecordId ??
           registryRecordIdFromUrl(resolvedRegistryRecordUrl) ??
           registryRecordIdFromPayload(apiRecord),
         sourceUrl: resolvedRegistryRecordUrl,
@@ -1027,6 +1221,9 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
         metadata: {
           domData,
           detailIdFallbackEnabled: Boolean(this.detailFallback),
+          acquisitionSource:
+            networkAcquisition?.source ??
+            (this.detailFallback ? "manual_detail" : "dom"),
         },
       };
       const registrationEvidence = evaluateRegistrationEvidence({
@@ -1111,6 +1308,7 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
           /medical.*device.*name/i,
           /product.*name/i,
           /наименован.*медицинск.*издел/i,
+          /(?:^|\.)name$/i,
         ]) ??
         valueFromDom(domData.pairs, [
           /наименован.*медицинск.*издел/i,
@@ -1127,13 +1325,20 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
           /производител/i,
         ]),
       status:
-        findValue(entries, [/status/i, /state/i, /статус/i]) ??
+        findValue(entries, [
+          /(?:^|\.)status\.name$/i,
+          /(?:^|\.)status\.code$/i,
+          /status/i,
+          /state/i,
+          /статус/i,
+        ]) ??
         valueFromDom(domData.pairs, [/^статус/i]),
       issueDate:
         findValue(entries, [
           /issue.*date/i,
           /registration.*date/i,
           /date.*registration/i,
+          /(?:^|\.)dateRu$/i,
           /дата первичн.*регистрац/i,
         ]) ??
         valueFromDom(domData.pairs, [
@@ -1145,6 +1350,7 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
           /updated.*date/i,
           /change.*date/i,
           /modified.*date/i,
+          /(?:^|\.)updateDate$/i,
           /дата внесен.*изменен/i,
         ]) ?? valueFromDom(domData.pairs, [/дата внесен.*изменен/i]),
       sourceUrl: rawRecord.sourceUrl,
@@ -1401,9 +1607,12 @@ export {
   createTlsBlockedOutput,
   evaluateRegistrationEvidence,
   findMatchingApiRecord,
+  findNetworkRegistryRecord,
   findSearchInputInScope,
   normalizeDocumentLinks,
+  normalizeRegistrationNumber,
   observedRegistrationNumber,
+  resolveRegistryAcquisition,
   resolveDetailFallback,
   resolveRoszdravnadzorTlsPolicy,
   runImport,

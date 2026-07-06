@@ -25,8 +25,11 @@ import {
   createTlsBlockedOutput,
   evaluateRegistrationEvidence,
   findMatchingApiRecord,
+  findNetworkRegistryRecord,
   normalizeDocumentLinks,
+  normalizeRegistrationNumber,
   resolveDetailFallback,
+  resolveRegistryAcquisition,
   resolveRoszdravnadzorTlsPolicy,
   scoreSearchDescriptor,
 } from "../../scripts/importers/roszdravnadzor.ts";
@@ -536,12 +539,157 @@ test("search input is ranked by searchbox role", () => {
   assert.ok(scoreSearchDescriptor({ role: "searchbox" }) >= 20);
 });
 
+test("widget input-search class outranks generic comboboxes", () => {
+  assert.ok(
+    scoreSearchDescriptor({ className: "input-search" }) >
+      scoreSearchDescriptor({ role: "combobox" }),
+  );
+});
+
 test("observed network payload can supply record when DOM search fails", () => {
   const record = findMatchingApiRecord(
     [{ data: [{ id: 37042, registrationNumber: "ФСЗ 2009/04992" }] }],
     "ФСЗ 2009/04992",
   );
   assert.equal(record?.id, 37042);
+});
+
+test("registration number normalization accepts explicit equivalent forms", () => {
+  const expected = normalizeRegistrationNumber("ФСЗ 2009/04992");
+  assert.equal(normalizeRegistrationNumber("ФСЗ2009/04992"), expected);
+  assert.equal(normalizeRegistrationNumber("ФСЗ № 2009 / 04992"), expected);
+});
+
+test("network-first extraction returns a nested registry record", () => {
+  const match = findNetworkRegistryRecord(
+    [
+      {
+        response: {
+          items: [
+            {
+              medProductId: 37042,
+              registrationNumber: "ФСЗ № 2009/04992",
+              medicalDeviceName: "Фильтр дыхательный FS510",
+              manufacturer: { name: "Alba Healthcare" },
+              status: "Действует",
+              issueDate: "2009-12-01",
+              updatedDate: "2026-06-01",
+              documents: [
+                {
+                  title: "Регистрационное удостоверение",
+                  path: "/documents/fs510.pdf",
+                },
+              ],
+            },
+          ],
+        },
+      },
+    ],
+    "ФСЗ2009/04992",
+  );
+
+  assert.equal(match?.registryRecordId, "37042");
+  assert.equal(match?.record.medicalDeviceName, "Фильтр дыхательный FS510");
+  assert.equal(match?.registrationNumber, "ФСЗ № 2009/04992");
+});
+
+test("network-first extraction rejects a different registration number", () => {
+  const match = findNetworkRegistryRecord(
+    [
+      {
+        data: [
+          {
+            productId: 37042,
+            registrationNumber: "ФСЗ 2009/00001",
+          },
+        ],
+      },
+    ],
+    "ФСЗ 2009/04992",
+  );
+  assert.equal(match, null);
+});
+
+test("network-first extraction rejects an echoed query with wrong records", () => {
+  const match = findNetworkRegistryRecord(
+    [
+      {
+        query: "ФСЗ 2009/04992",
+        content: [
+          {
+            id: 1,
+            noRu: "ФСЗ 2009/00001",
+            name: "Другое изделие",
+          },
+        ],
+      },
+    ],
+    "ФСЗ 2009/04992",
+  );
+  assert.equal(match, null);
+});
+
+test("network-first acquisition does not require a DOM result URL", () => {
+  const acquisition = resolveRegistryAcquisition({
+    payloads: [
+      {
+        data: {
+          productId: "37042",
+          registrationNumber: "ФСЗ2009/04992",
+          productName: "FS510",
+        },
+      },
+    ],
+    payloadUrls: [
+      "https://elk.roszdravnadzor.gov.ru/public-gateway/med-product/search",
+    ],
+    registrationNumber: "ФСЗ № 2009/04992",
+    domRecordUrl: null,
+  });
+
+  assert.equal(acquisition?.source, "network");
+  assert.equal(acquisition?.registryRecordId, "37042");
+  assert.equal(
+    acquisition?.recordUrl,
+    "https://elk.roszdravnadzor.gov.ru/widget/med-product/37042",
+  );
+});
+
+test("Roszdravnadzor noRu response is normalized from the network record", async () => {
+  const payload = {
+    content: [
+      {
+        id: 37042,
+        noRu: "ФСЗ № 2009/04992",
+        dateRu: "2009-12-01",
+        name: "Фильтр дыхательный FS510",
+        producer: { name: "Alba Healthcare" },
+        status: { id: 1, code: "active", name: "Действует" },
+      },
+    ],
+  };
+  const adapter = new RoszdravnadzorAdapter(
+    new ContentAddressedArtifactStore(),
+  );
+  const normalized = await adapter.normalize({
+    provider: "roszdravnadzor",
+    query: "ФСЗ 2009/04992",
+    registrationNumber: "ФСЗ 2009/04992",
+    registryRecordId: "37042",
+    sourceUrl:
+      "https://elk.roszdravnadzor.gov.ru/widget/med-product/37042",
+    capturedAt: "2026-07-06T00:00:00.000Z",
+    payloads: [payload],
+    htmlArtifacts: [],
+    jsonArtifacts: [],
+    metadata: { domData: { pairs: [], links: [] } },
+  });
+
+  assert.equal(normalized.registrationNumber, "ФСЗ № 2009/04992");
+  assert.equal(normalized.medicalDeviceName, "Фильтр дыхательный FS510");
+  assert.equal(normalized.manufacturer, "Alba Healthcare");
+  assert.equal(normalized.status, "Действует");
+  assert.equal(normalized.issueDate, "2009-12-01");
 });
 
 test("explicit detail ID resolves observed detail URL and warning", () => {
@@ -651,6 +799,10 @@ test("diagnostics replay is offline and produces a human-readable report", async
     assert.match(report, /Search inputs found: 1/);
     assert.match(report, /JSON\/XHR\/fetch responses: 1/);
     assert.match(report, /placeholder:/);
+    assert.match(
+      report,
+      /Candidate network responses:[\s\S]*med-product\/search[\s\S]*registrationNumber/,
+    );
     assert.match(report, /Recommended next action:/);
   } finally {
     globalThis.fetch = originalFetch;
