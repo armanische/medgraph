@@ -18,6 +18,19 @@ CHROME_PATH="/path/to/chrome" \
   npm run import:roszdravnadzor -- "ФСЗ 2009/04992"
 ```
 
+Проверка TLS включена по умолчанию. Если локальная dev-среда не доверяет
+сертификату виджета, разрешён только явный временный запуск:
+
+```bash
+ROSRZN_IGNORE_HTTPS_ERRORS=1 \
+  npm run import:roszdravnadzor -- "ФСЗ 2009/04992"
+```
+
+Флаг не действует при `NODE_ENV=production`. При его использовании importer
+передаёт Playwright `ignoreHTTPSErrors: true` и обязательно записывает security
+warning в output и `ImportManifest`. Без флага
+`ERR_CERT_AUTHORITY_INVALID` завершает импорт со статусом `blocked`.
+
 ## Pipeline
 
 ```text
@@ -62,6 +75,7 @@ Documents.
 ## Безопасность
 
 - CAPTCHA, авторизация и ограничения сайта не обходятся.
+- TLS проверяется по умолчанию; dev-only bypass всегда маркируется warning.
 - Документы принимаются только с allowlisted HTTPS host.
 - Разрешены PDF, DOC, DOCX и generic binary.
 - PDF проверяется по magic bytes `%PDF-`; остальные сигнатуры подключаются

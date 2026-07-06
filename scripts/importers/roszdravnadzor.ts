@@ -25,6 +25,11 @@ const DOWNLOAD_ENDPOINT =
 const DOM_TIMEOUT_MS = 15_000;
 const NAVIGATION_TIMEOUT_MS = 45_000;
 const MAX_CAPTURED_JSON_RESPONSES = 100;
+const IGNORE_HTTPS_ERRORS_ENV = "ROSRZN_IGNORE_HTTPS_ERRORS";
+const TLS_BYPASS_WARNING =
+  "SECURITY WARNING: TLS certificate validation was disabled for this import " +
+  "because ROSRZN_IGNORE_HTTPS_ERRORS=1. Development use only; transport " +
+  "authenticity was not verified.";
 
 interface ScalarEntry {
   path: string;
@@ -94,6 +99,7 @@ interface BrowserLike {
   newContext(options: {
     locale: string;
     userAgent: string;
+    ignoreHTTPSErrors?: boolean;
   }): Promise<BrowserContextLike>;
   close(): Promise<void>;
 }
@@ -116,6 +122,66 @@ function normalizeRegistrationNumber(value: string) {
     .replace(/[№#]/g, "")
     .replace(/\s*\/\s*/g, "/")
     .toLocaleUpperCase("ru-RU");
+}
+
+interface RoszdravnadzorTlsPolicy {
+  ignoreHTTPSErrors: boolean;
+  warning: string | null;
+}
+
+function resolveRoszdravnadzorTlsPolicy(
+  environment: NodeJS.ProcessEnv = process.env,
+): RoszdravnadzorTlsPolicy {
+  const requested = environment[IGNORE_HTTPS_ERRORS_ENV] === "1";
+
+  if (!requested) {
+    return { ignoreHTTPSErrors: false, warning: null };
+  }
+
+  if (environment.NODE_ENV === "production") {
+    return {
+      ignoreHTTPSErrors: false,
+      warning:
+        "ROSRZN_IGNORE_HTTPS_ERRORS=1 was ignored because NODE_ENV=production. " +
+        "TLS certificate validation remains enabled.",
+    };
+  }
+
+  return {
+    ignoreHTTPSErrors: true,
+    warning: TLS_BYPASS_WARNING,
+  };
+}
+
+function isCertificateAuthorityError(error: unknown) {
+  if (!(error instanceof Error)) return false;
+  return /ERR_CERT_AUTHORITY_INVALID|certificate authority invalid/i.test(
+    `${error.name} ${error.message}`,
+  );
+}
+
+function createTlsBlockedOutput(
+  error: unknown,
+  query: string,
+  priorWarnings: string[] = [],
+): ImportOutput | null {
+  if (!isCertificateAuthorityError(error)) return null;
+
+  return {
+    normalizedRecord: null,
+    ingestionPlan: null,
+    manifestPath: null,
+    downloadedArtifactPaths: [],
+    status: "blocked",
+    warnings: [
+      ...priorWarnings,
+      "TLS certificate validation failed " +
+        "(ERR_CERT_AUTHORITY_INVALID). Import was blocked; no registry data " +
+        "was accepted. Fix the certificate trust chain or, for local " +
+        "development only, run: " +
+        `ROSRZN_IGNORE_HTTPS_ERRORS=1 npm run import:roszdravnadzor -- ${JSON.stringify(query)}`,
+    ],
+  };
 }
 
 function stableSlug(value: string) {
@@ -565,13 +631,19 @@ function registryRecordIdFromUrl(value: string) {
 
 class RoszdravnadzorAdapter implements ProviderAdapter {
   readonly provider = PROVIDER;
-  readonly warnings: string[] = [];
+  readonly warnings: string[];
   private readonly artifactStore: ContentAddressedArtifactStore;
   private readonly downloader: StreamingDownloader;
+  private readonly tlsPolicy: RoszdravnadzorTlsPolicy;
 
-  constructor(artifactStore: ContentAddressedArtifactStore) {
+  constructor(
+    artifactStore: ContentAddressedArtifactStore,
+    options: { environment?: NodeJS.ProcessEnv } = {},
+  ) {
     this.artifactStore = artifactStore;
     this.downloader = new StreamingDownloader({ artifactStore });
+    this.tlsPolicy = resolveRoszdravnadzorTlsPolicy(options.environment);
+    this.warnings = this.tlsPolicy.warning ? [this.tlsPolicy.warning] : [];
   }
 
   async fetchRawRecord(query: string): Promise<RawRegistryRecord | null> {
@@ -595,6 +667,7 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
         locale: "ru-RU",
         userAgent:
           "CyberMedica-Regulatory-Importer/0.2 (+manual ingestion review)",
+        ignoreHTTPSErrors: this.tlsPolicy.ignoreHTTPSErrors,
       });
       page = await context.newPage();
       const capturedPayloads: unknown[] = [];
@@ -876,7 +949,28 @@ async function runImport(query: string): Promise<ImportOutput> {
   const artifactStore = new ContentAddressedArtifactStore();
   const manifestStore = new ImportManifestStore();
   const adapter = new RoszdravnadzorAdapter(artifactStore);
-  const rawRecord = await adapter.fetchRawRecord(query);
+  let rawRecord: RawRegistryRecord | null;
+  try {
+    rawRecord = await adapter.fetchRawRecord(query);
+  } catch (error) {
+    const blockedOutput = createTlsBlockedOutput(
+      error,
+      query,
+      adapter.warnings,
+    );
+    if (blockedOutput) return blockedOutput;
+    return {
+      normalizedRecord: null,
+      ingestionPlan: null,
+      manifestPath: null,
+      downloadedArtifactPaths: [],
+      status: "blocked",
+      warnings: [
+        ...adapter.warnings,
+        error instanceof Error ? error.message : "Unknown importer error.",
+      ],
+    };
+  }
 
   if (!rawRecord) {
     return {
@@ -979,6 +1073,8 @@ if (
 
 export {
   RoszdravnadzorAdapter,
+  createTlsBlockedOutput,
   normalizeDocumentLinks,
+  resolveRoszdravnadzorTlsPolicy,
   runImport,
 };

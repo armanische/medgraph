@@ -20,7 +20,12 @@ import {
   type ImportManifest,
 } from "../../scripts/importers/core/manifest-store.ts";
 import { determineImportStatus } from "../../scripts/importers/core/status.ts";
-import { normalizeDocumentLinks } from "../../scripts/importers/roszdravnadzor.ts";
+import {
+  RoszdravnadzorAdapter,
+  createTlsBlockedOutput,
+  normalizeDocumentLinks,
+  resolveRoszdravnadzorTlsPolicy,
+} from "../../scripts/importers/roszdravnadzor.ts";
 
 const OFFICIAL_DOCUMENT_URL =
   "https://elk.roszdravnadzor.gov.ru/public-gateway/med-product/api/v1/files/download-by-path-public?id=1";
@@ -359,4 +364,67 @@ test("stale manifest lock is recovered using timestamp metadata", async () => {
     (await listFiles(root)).some((path) => path.endsWith(".lock")),
     false,
   );
+});
+
+test("HTTPS certificate authority error blocks import without dev flag", () => {
+  const policy = resolveRoszdravnadzorTlsPolicy({
+    NODE_ENV: "development",
+  });
+  const output = createTlsBlockedOutput(
+    new Error("page.goto: net::ERR_CERT_AUTHORITY_INVALID"),
+    "ФСЗ 2009/04992",
+  );
+
+  assert.equal(policy.ignoreHTTPSErrors, false);
+  assert.equal(policy.warning, null);
+  assert.equal(output?.status, "blocked");
+  assert.match(
+    output?.warnings.join(" ") ?? "",
+    /TLS certificate validation failed/,
+  );
+  assert.match(
+    output?.warnings.join(" ") ?? "",
+    /ROSRZN_IGNORE_HTTPS_ERRORS=1 npm run import:roszdravnadzor/,
+  );
+});
+
+test("dev TLS bypass warning is persisted in ImportManifest", async () => {
+  const policy = resolveRoszdravnadzorTlsPolicy({
+    NODE_ENV: "development",
+    ROSRZN_IGNORE_HTTPS_ERRORS: "1",
+  });
+  assert.equal(policy.ignoreHTTPSErrors, true);
+  assert.match(policy.warning ?? "", /TLS certificate validation was disabled/);
+
+  const root = await createTemporaryRoot();
+  const adapter = new RoszdravnadzorAdapter(
+    new ContentAddressedArtifactStore({ rootDirectory: root }),
+    {
+      environment: {
+        NODE_ENV: "development",
+        ROSRZN_IGNORE_HTTPS_ERRORS: "1",
+      },
+    },
+  );
+  const plan = createPlan([]);
+  plan.warnings = [...adapter.warnings];
+  const manifestStore = new ImportManifestStore(join(root, "import-manifest.json"));
+  const merged = await manifestStore.merge(plan);
+
+  assert.equal(merged.record.status, "completed");
+  assert.deepEqual(merged.record.warnings, plan.warnings);
+  assert.match(
+    merged.record.warnings.join(" "),
+    /ROSRZN_IGNORE_HTTPS_ERRORS=1/,
+  );
+});
+
+test("dev TLS bypass flag is ignored in production", () => {
+  const policy = resolveRoszdravnadzorTlsPolicy({
+    NODE_ENV: "production",
+    ROSRZN_IGNORE_HTTPS_ERRORS: "1",
+  });
+
+  assert.equal(policy.ignoreHTTPSErrors, false);
+  assert.match(policy.warning ?? "", /ignored because NODE_ENV=production/);
 });
