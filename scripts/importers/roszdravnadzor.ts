@@ -15,6 +15,10 @@ import type {
 import { StreamingDownloader } from "./core/downloader.ts";
 import { ImportManifestStore } from "./core/manifest-store.ts";
 import { determineImportStatus } from "./core/status.ts";
+import {
+  type NetworkDiagnosticEntry,
+  writeRoszdravnadzorDiagnostics,
+} from "./roszdravnadzor-diagnostics.ts";
 
 const PROVIDER = "roszdravnadzor";
 const WIDGET_URL = "https://elk.roszdravnadzor.gov.ru/widget/";
@@ -26,6 +30,9 @@ const DOM_TIMEOUT_MS = 15_000;
 const NAVIGATION_TIMEOUT_MS = 45_000;
 const MAX_CAPTURED_JSON_RESPONSES = 100;
 const IGNORE_HTTPS_ERRORS_ENV = "ROSRZN_IGNORE_HTTPS_ERRORS";
+const DETAIL_ID_ENV = "ROSRZN_DETAIL_ID";
+const BROWSER_USER_AGENT =
+  "CyberMedica-Regulatory-Importer/0.3 (+manual ingestion review)";
 const TLS_BYPASS_WARNING =
   "SECURITY WARNING: TLS certificate validation was disabled for this import " +
   "because ROSRZN_IGNORE_HTTPS_ERRORS=1. Development use only; transport " +
@@ -50,22 +57,43 @@ interface LocatorLike {
   fill(value: string): Promise<void>;
   press(key: string): Promise<void>;
   click(): Promise<void>;
+  boundingBox(): Promise<
+    { x: number; y: number; width: number; height: number } | null
+  >;
+  evaluate<TResult>(callback: (element: Element) => TResult): Promise<TResult>;
 }
 
 interface BrowserResponseLike {
   url(): string;
   headers(): Record<string, string>;
   body(): Promise<Buffer>;
+  status?(): number;
+  request?(): {
+    method(): string;
+    resourceType(): string;
+  };
 }
 
-interface PageLike {
+interface SearchScopeLike {
   locator(selector: string): LocatorLike;
+}
+
+interface FrameLike extends SearchScopeLike {
+  url(): string;
+  name(): string;
+  frameElement(): Promise<LocatorLike>;
+}
+
+interface PageLike extends SearchScopeLike {
   goto(
     url: string,
     options: { waitUntil: string; timeout: number },
   ): Promise<unknown>;
   url(): string;
+  title(): Promise<string>;
   content(): Promise<string>;
+  frames(): FrameLike[];
+  screenshot(options: { path: string; fullPage: boolean }): Promise<unknown>;
   waitForSelector(
     selector: string,
     options: { timeout: number; state?: string },
@@ -129,8 +157,18 @@ interface RoszdravnadzorTlsPolicy {
   warning: string | null;
 }
 
+class ImporterDiagnosticError extends Error {
+  readonly diagnosticsPath: string;
+
+  constructor(message: string, diagnosticsPath: string) {
+    super(message);
+    this.name = "ImporterDiagnosticError";
+    this.diagnosticsPath = diagnosticsPath;
+  }
+}
+
 function resolveRoszdravnadzorTlsPolicy(
-  environment: NodeJS.ProcessEnv = process.env,
+  environment: Readonly<Record<string, string | undefined>> = process.env,
 ): RoszdravnadzorTlsPolicy {
   const requested = environment[IGNORE_HTTPS_ERRORS_ENV] === "1";
 
@@ -276,6 +314,92 @@ function findMatchingApiRecord(payloads: unknown[], registrationNumber: string) 
     );
   }
   return null;
+}
+
+function registryRecordIdFromPayload(record: Record<string, unknown> | null) {
+  if (!record) return null;
+  for (const key of ["id", "medProductId", "med_product_id", "recordId"]) {
+    const value = record[key];
+    if (typeof value === "string" || typeof value === "number") {
+      return String(value);
+    }
+  }
+  return null;
+}
+
+const REGISTRATION_NUMBER_PATH_PATTERNS = [
+  /registration.*number/i,
+  /certificate.*number/i,
+  /reg.*number/i,
+  /регистрац.*номер/i,
+];
+const REGISTRATION_NUMBER_LABEL_PATTERNS = [
+  /регистрационн.*номер/i,
+  /номер регистрационн/i,
+];
+
+function observedRegistrationNumber(rawRecord: RawRegistryRecord) {
+  const matchingRecord = findMatchingApiRecord(
+    rawRecord.payloads,
+    rawRecord.registrationNumber,
+  );
+  const entries = collectScalarEntries(
+    matchingRecord ?? rawRecord.payloads,
+  );
+  const domData =
+    (rawRecord.metadata.domData as DomData | undefined) ?? {
+      pairs: [],
+      links: [],
+    };
+  return (
+    findValue(entries, REGISTRATION_NUMBER_PATH_PATTERNS) ??
+    valueFromDom(domData.pairs, REGISTRATION_NUMBER_LABEL_PATTERNS)
+  );
+}
+
+function evaluateRegistrationEvidence(input: {
+  query: string;
+  observedRegistrationNumber: string | null;
+  detailIdFallbackEnabled: boolean;
+}) {
+  if (!input.observedRegistrationNumber) {
+    return input.detailIdFallbackEnabled
+      ? {
+          outcome: "unverified" as const,
+          warning:
+            "Manual detail fallback registration number could not be verified from DOM or observed JSON. Import may continue only with an explicit warning.",
+        }
+      : { outcome: "not_observed" as const, warning: null };
+  }
+  if (
+    normalizeRegistrationNumber(input.observedRegistrationNumber) !==
+    normalizeRegistrationNumber(input.query)
+  ) {
+    return {
+      outcome: "mismatch" as const,
+      warning:
+        "The extracted registry record does not match the requested registration number. No ingestion plan or manifest was created.",
+    };
+  }
+  return { outcome: "match" as const, warning: null };
+}
+
+function resolveDetailFallback(
+  environment: Readonly<Record<string, string | undefined>> = process.env,
+) {
+  const value = environment[DETAIL_ID_ENV]?.trim();
+  if (!value) return null;
+  if (!/^\d+$/.test(value)) {
+    throw new Error(`${DETAIL_ID_ENV} must contain an explicit numeric detail ID.`);
+  }
+  return {
+    id: value,
+    url: `${OFFICIAL_ORIGIN}/widget/med-product/${value}`,
+    warning:
+      "Manual Roszdravnadzor detail ID fallback was used. " +
+      `${DETAIL_ID_ENV}=${value}. ` +
+      "Widget search was intentionally skipped.",
+  };
 }
 
 function documentTypeFor(title: string, url: string) {
@@ -447,47 +571,124 @@ async function detectTechnicalBlock(page: PageLike) {
   return null;
 }
 
-async function findSearchInput(page: PageLike) {
-  await page.waitForSelector("input", {
-    timeout: DOM_TIMEOUT_MS,
-    state: "visible",
-  });
-  const inputs = page.locator("input");
+function scoreSearchDescriptor(input: {
+  placeholder?: string | null;
+  ariaLabel?: string | null;
+  role?: string | null;
+  name?: string | null;
+  label?: string | null;
+}) {
+  const placeholder = (input.placeholder ?? "").toLocaleLowerCase("ru-RU");
+  const ariaLabel = (input.ariaLabel ?? "").toLocaleLowerCase("ru-RU");
+  const role = (input.role ?? "").toLocaleLowerCase("ru-RU");
+  const name = (input.name ?? "").toLocaleLowerCase("ru-RU");
+  const label = (input.label ?? "").toLocaleLowerCase("ru-RU");
+  const terms = /регистрац|удостовер|(?:^|\s)ру(?:\s|$)|номер|поиск/iu;
+  return (
+    (terms.test(placeholder) ? 50 : 0) +
+    (terms.test(ariaLabel) ? 45 : 0) +
+    (terms.test(label) ? 40 : 0) +
+    (/searchbox|combobox|textbox/.test(role) ? 20 : 0) +
+    (terms.test(name) ? 10 : 0)
+  );
+}
+
+async function hasVisibleSearchButton(scope: SearchScopeLike) {
+  const buttons = scope.locator('button, input[type="submit"], [role="button"]');
+  const count = await buttons.count().catch(() => 0);
+  for (let index = 0; index < Math.min(count, 80); index += 1) {
+    const button = buttons.nth(index);
+    if (!(await button.isVisible().catch(() => false))) continue;
+    const label = normalizeSpace(
+      `${await button.innerText().catch(() => "")} ${
+        (await button.getAttribute("value").catch(() => null)) ?? ""
+      } ${
+        (await button.getAttribute("aria-label").catch(() => null)) ?? ""
+      }`,
+    );
+    if (/найти|поиск|искать|применить/i.test(label)) return true;
+  }
+  return false;
+}
+
+async function findSearchInputInScope(scope: SearchScopeLike) {
+  const inputs = scope.locator(
+    'input, textarea, [role="searchbox"], [role="combobox"], [role="textbox"]',
+  );
   const inputCount = await inputs.count();
   let selected: LocatorLike | null = null;
   let selectedScore = 0;
 
-  for (let index = 0; index < Math.min(inputCount, 40); index += 1) {
+  for (let index = 0; index < Math.min(inputCount, 80); index += 1) {
     const input = inputs.nth(index);
     if (!(await input.isVisible().catch(() => false))) continue;
-    const descriptor = [
-      await input.getAttribute("placeholder"),
-      await input.getAttribute("aria-label"),
-      await input.getAttribute("name"),
-    ]
-      .filter(Boolean)
-      .join(" ")
-      .toLocaleLowerCase("ru-RU");
-    const score =
-      (descriptor.includes("регистрац") ? 10 : 0) +
-      (descriptor.includes("номер") ? 4 : 0) +
-      (descriptor.includes("поиск") ? 2 : 0);
+    const id = await input.getAttribute("id").catch(() => null);
+    const escapedId = id?.replace(/["\\]/g, "\\$&") ?? "";
+    const label = escapedId
+      ? await scope
+          .locator(`label[for="${escapedId}"]`)
+          .innerText()
+          .catch(() => "")
+      : "";
+    const score = scoreSearchDescriptor({
+      placeholder: await input.getAttribute("placeholder").catch(() => null),
+      ariaLabel: await input.getAttribute("aria-label").catch(() => null),
+      role: await input.getAttribute("role").catch(() => null),
+      name: await input.getAttribute("name").catch(() => null),
+      label,
+    });
     if (score > selectedScore) {
       selected = input;
       selectedScore = score;
     }
   }
 
-  if (!selected) {
-    throw new Error("Registration-number search input was not found.");
+  if (selected) return selected;
+  if (await hasVisibleSearchButton(scope)) {
+    for (let index = 0; index < Math.min(inputCount, 80); index += 1) {
+      const input = inputs.nth(index);
+      if (await input.isVisible().catch(() => false)) return input;
+    }
   }
-  return selected;
+  return null;
+}
+
+async function findSearchInput(page: PageLike) {
+  await page
+    .waitForSelector(
+      'input, textarea, [role="searchbox"], [role="combobox"], [role="textbox"]',
+      { timeout: DOM_TIMEOUT_MS, state: "visible" },
+    )
+    .catch(() => undefined);
+  const pageInput = await findSearchInputInScope(page);
+  if (pageInput) return { input: pageInput, scope: page as SearchScopeLike };
+
+  for (const frame of page.frames().slice(1)) {
+    const frameInput = await findSearchInputInScope(frame).catch(() => null);
+    if (frameInput) return { input: frameInput, scope: frame as SearchScopeLike };
+  }
+  throw new Error("Registration-number search input was not found.");
 }
 
 function isRegistryApiResponse(response: BrowserResponseLike) {
+  const contentType = response.headers()["content-type"] ?? "";
+  const resourceType = response.request?.().resourceType() ?? "";
   return (
-    response.url().includes("/public-gateway/med-product/") &&
-    (response.headers()["content-type"] ?? "").includes("json")
+    (contentType.includes("json") || /xhr|fetch/i.test(resourceType)) &&
+    /med-product|registry|reestr|реестр/i.test(response.url())
+  );
+}
+
+function networkMarkers(value: string, query: string) {
+  const normalizedQuery = normalizeRegistrationNumber(query);
+  return [
+    ["ФСЗ", /ФСЗ/i],
+    [normalizedQuery, new RegExp(normalizedQuery.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i")],
+    ["med-product", /med-product/i],
+    ["download-by-path-public", /download-by-path-public/i],
+    ["files", /files/i],
+  ].flatMap(([label, pattern]) =>
+    (pattern as RegExp).test(value) ? [label as string] : [],
   );
 }
 
@@ -496,12 +697,13 @@ async function submitSearch(
   registrationNumber: string,
   warnings: string[],
 ) {
-  const input = await findSearchInput(page);
+  const { input, scope } = await findSearchInput(page);
   await input.fill(registrationNumber);
   const responsePromise = page
     .waitForResponse(isRegistryApiResponse, { timeout: DOM_TIMEOUT_MS })
     .catch(() => null);
-  await input.press("Enter");
+  const clicked = await clickSearchButton(scope);
+  if (!clicked) await input.press("Enter");
   const response = await responsePromise;
   if (!response) {
     warnings.push(
@@ -515,45 +717,33 @@ async function submitSearch(
     .catch(() => {
       warnings.push("Registry result link did not appear before timeout.");
     });
+  if (!clicked) {
+    warnings.push("Search button was not found; Enter fallback was used.");
+  }
 }
 
-async function clickSearchButton(page: PageLike, warnings: string[]) {
-  const buttons = page.locator('button, input[type="submit"]');
+async function clickSearchButton(scope: SearchScopeLike) {
+  const buttons = scope.locator('button, input[type="submit"], [role="button"]');
   const count = await buttons.count();
 
-  for (let index = 0; index < Math.min(count, 40); index += 1) {
+  for (let index = 0; index < Math.min(count, 80); index += 1) {
     const button = buttons.nth(index);
     if (!(await button.isVisible().catch(() => false))) continue;
     const label = normalizeSpace(
       `${await button.innerText().catch(() => "")} ${
         (await button.getAttribute("value")) ?? ""
+      } ${
+        (await button.getAttribute("aria-label")) ?? ""
       }`,
-    ).toLocaleLowerCase("ru-RU");
-    if (!label.includes("найти") && !label.includes("поиск")) continue;
-
-    const responsePromise = page
-      .waitForResponse(isRegistryApiResponse, { timeout: DOM_TIMEOUT_MS })
-      .catch(() => null);
-    await button.click();
-    const response = await responsePromise;
-    if (!response) {
-      warnings.push(
-        "No registry JSON response was observed after search button click.",
-      );
+    );
+    const type = await button.getAttribute("type").catch(() => null);
+    if (!/найти|поиск|искать|применить/i.test(label) && type !== "submit") {
+      continue;
     }
-    await page
-      .waitForSelector('a[href*="/widget/med-product/"]', {
-        timeout: DOM_TIMEOUT_MS,
-      })
-      .catch(() => {
-        warnings.push(
-          "Registry result link did not appear after search button click.",
-        );
-      });
-    return;
+    await button.click();
+    return true;
   }
-
-  warnings.push("Search button was not found after Enter submission.");
+  return false;
 }
 
 async function findRegistryRecordUrl(
@@ -635,15 +825,24 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
   private readonly artifactStore: ContentAddressedArtifactStore;
   private readonly downloader: StreamingDownloader;
   private readonly tlsPolicy: RoszdravnadzorTlsPolicy;
+  private readonly detailFallback: ReturnType<typeof resolveDetailFallback>;
+  private readonly diagnosticsRootDirectory?: string;
 
   constructor(
     artifactStore: ContentAddressedArtifactStore,
-    options: { environment?: NodeJS.ProcessEnv } = {},
+    options: {
+      environment?: Readonly<Record<string, string | undefined>>;
+      diagnosticsRootDirectory?: string;
+    } = {},
   ) {
+    const environment = options.environment ?? process.env;
     this.artifactStore = artifactStore;
     this.downloader = new StreamingDownloader({ artifactStore });
-    this.tlsPolicy = resolveRoszdravnadzorTlsPolicy(options.environment);
+    this.tlsPolicy = resolveRoszdravnadzorTlsPolicy(environment);
+    this.detailFallback = resolveDetailFallback(environment);
+    this.diagnosticsRootDirectory = options.diagnosticsRootDirectory;
     this.warnings = this.tlsPolicy.warning ? [this.tlsPolicy.warning] : [];
+    if (this.detailFallback) this.warnings.push(this.detailFallback.warning);
   }
 
   async fetchRawRecord(query: string): Promise<RawRegistryRecord | null> {
@@ -662,11 +861,11 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
     let context: BrowserContextLike | null = null;
     let page: PageLike | null = null;
 
+    const networkDiagnostics: NetworkDiagnosticEntry[] = [];
     try {
       context = await browser.newContext({
         locale: "ru-RU",
-        userAgent:
-          "CyberMedica-Regulatory-Importer/0.2 (+manual ingestion review)",
+        userAgent: BROWSER_USER_AGENT,
         ignoreHTTPSErrors: this.tlsPolicy.ignoreHTTPSErrors,
       });
       page = await context.newPage();
@@ -676,29 +875,52 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
       const pendingCaptures: Promise<void>[] = [];
 
       page.on("response", (response) => {
-        if (
-          !isRegistryApiResponse(response) ||
-          pendingCaptures.length >= MAX_CAPTURED_JSON_RESPONSES
-        ) {
-          return;
-        }
+        if (pendingCaptures.length >= MAX_CAPTURED_JSON_RESPONSES) return;
         const capture = (async () => {
-          const bytes = await response.body();
-          const artifact = await this.artifactStore.saveBytes({
-            kind: "registry-json",
-            sourceUrl: response.url(),
-            contentType:
-              response.headers()["content-type"] ?? "application/json",
-            extension: ".json",
-            bytes,
+          const contentType = response.headers()["content-type"] ?? "";
+          const resourceType = response.request?.().resourceType() ?? "unknown";
+          const shouldPreview =
+            contentType.includes("json") || /xhr|fetch/i.test(resourceType);
+          let bytes: Buffer | null = null;
+          let preview: string | null = null;
+          if (shouldPreview) {
+            bytes = await response.body().catch(() => null);
+            preview = bytes?.toString("utf8").slice(0, 2_000) ?? null;
+          }
+          const searchable = `${response.url()} ${preview ?? ""}`;
+          networkDiagnostics.push({
+            url: response.url(),
+            method: response.request?.().method() ?? "GET",
+            status: response.status?.() ?? null,
+            contentType,
+            resourceType,
+            bodyPreview: preview,
+            markers: networkMarkers(searchable, query),
           });
-          jsonArtifacts.push(artifact);
-          try {
-            capturedPayloads.push(JSON.parse(bytes.toString("utf8")));
-          } catch {
-            this.warnings.push(
-              `Registry JSON response could not be parsed: ${response.url()}`,
-            );
+
+          if (bytes && contentType.includes("json")) {
+            try {
+              const payload = JSON.parse(bytes.toString("utf8"));
+              capturedPayloads.push(payload);
+              if (
+                /med-product|registry|reestr/i.test(response.url()) ||
+                findMatchingApiRecord([payload], query)
+              ) {
+                jsonArtifacts.push(
+                  await this.artifactStore.saveBytes({
+                    kind: "registry-json",
+                    sourceUrl: response.url(),
+                    contentType: contentType || "application/json",
+                    extension: ".json",
+                    bytes,
+                  }),
+                );
+              }
+            } catch {
+              this.warnings.push(
+                `Registry JSON response could not be parsed: ${response.url()}`,
+              );
+            }
           }
         })().catch((error) => {
           this.warnings.push(
@@ -710,23 +932,8 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
         pendingCaptures.push(capture);
       });
 
-      await page.goto(WIDGET_URL, {
-        waitUntil: "domcontentloaded",
-        timeout: NAVIGATION_TIMEOUT_MS,
-      });
-      await page.waitForSelector("body", { timeout: DOM_TIMEOUT_MS });
-      const initialBlock = await detectTechnicalBlock(page);
-      if (initialBlock) throw new Error(initialBlock);
-
-      await submitSearch(page, query, this.warnings);
-      let registryRecordUrl = await findRegistryRecordUrl(page, query);
-      if (!registryRecordUrl) {
-        await clickSearchButton(page, this.warnings);
-        registryRecordUrl = await findRegistryRecordUrl(page, query);
-      }
-      if (!registryRecordUrl) return null;
-
-      await page.goto(registryRecordUrl, {
+      const initialUrl = this.detailFallback?.url ?? WIDGET_URL;
+      await page.goto(initialUrl, {
         waitUntil: "domcontentloaded",
         timeout: NAVIGATION_TIMEOUT_MS,
       });
@@ -735,9 +942,58 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
         .waitForLoadState("networkidle", { timeout: DOM_TIMEOUT_MS })
         .catch(() => {
           this.warnings.push(
-            "Registry detail page did not reach network idle before timeout.",
+            "Initial page did not reach network idle before timeout.",
           );
         });
+      const initialBlock = await detectTechnicalBlock(page);
+      if (initialBlock) throw new Error(initialBlock);
+
+      let registryRecordUrl: string | null = this.detailFallback?.url ?? null;
+      if (!this.detailFallback) {
+        let searchFailure: unknown = null;
+        try {
+          await submitSearch(page, query, this.warnings);
+          registryRecordUrl = await findRegistryRecordUrl(page, query);
+        } catch (error) {
+          searchFailure = error;
+        }
+        await Promise.allSettled(pendingCaptures);
+
+        if (!registryRecordUrl) {
+          const networkRecord = findMatchingApiRecord(capturedPayloads, query);
+          if (networkRecord) {
+            this.warnings.push(
+              "Registry record was recovered from an observed network response after DOM result detection failed.",
+            );
+            registryRecordUrl = WIDGET_URL;
+          }
+        }
+        if (!registryRecordUrl) {
+          if (searchFailure) throw searchFailure;
+          throw new Error(
+            "Registry record could not be extracted from DOM or observed network responses.",
+          );
+        }
+      }
+      if (!registryRecordUrl) {
+        throw new Error("Registry record URL resolution failed.");
+      }
+      const resolvedRegistryRecordUrl = registryRecordUrl;
+
+      if (resolvedRegistryRecordUrl !== page.url()) {
+        await page.goto(resolvedRegistryRecordUrl, {
+          waitUntil: "domcontentloaded",
+          timeout: NAVIGATION_TIMEOUT_MS,
+        });
+        await page.waitForSelector("body", { timeout: DOM_TIMEOUT_MS });
+        await page
+          .waitForLoadState("networkidle", { timeout: DOM_TIMEOUT_MS })
+          .catch(() => {
+            this.warnings.push(
+              "Registry detail page did not reach network idle before timeout.",
+            );
+          });
+      }
       const block = await detectTechnicalBlock(page);
       if (block) throw new Error(block);
 
@@ -746,26 +1002,77 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
       htmlArtifacts.push(
         await this.artifactStore.saveBytes({
           kind: "registry-html",
-          sourceUrl: registryRecordUrl,
+          sourceUrl: resolvedRegistryRecordUrl,
           contentType: "text/html; charset=utf-8",
           extension: ".html",
           bytes: Buffer.from(html, "utf8"),
         }),
       );
       const domData = await collectDomData(page);
+      const apiRecord = findMatchingApiRecord(capturedPayloads, query);
 
-      return {
+      const rawRecord: RawRegistryRecord = {
         provider: PROVIDER,
         query,
         registrationNumber: query,
-        registryRecordId: registryRecordIdFromUrl(registryRecordUrl),
-        sourceUrl: registryRecordUrl,
+        registryRecordId:
+          this.detailFallback?.id ??
+          registryRecordIdFromUrl(resolvedRegistryRecordUrl) ??
+          registryRecordIdFromPayload(apiRecord),
+        sourceUrl: resolvedRegistryRecordUrl,
         capturedAt: new Date().toISOString(),
         payloads: capturedPayloads,
         htmlArtifacts,
         jsonArtifacts,
-        metadata: { domData },
+        metadata: {
+          domData,
+          detailIdFallbackEnabled: Boolean(this.detailFallback),
+        },
       };
+      const registrationEvidence = evaluateRegistrationEvidence({
+        query,
+        observedRegistrationNumber: observedRegistrationNumber(rawRecord),
+        detailIdFallbackEnabled: Boolean(this.detailFallback),
+      });
+      rawRecord.metadata.registrationEvidenceOutcome =
+        registrationEvidence.outcome;
+      if (registrationEvidence.outcome === "mismatch") {
+        throw new Error(registrationEvidence.warning);
+      }
+      if (
+        registrationEvidence.warning &&
+        !this.warnings.includes(registrationEvidence.warning)
+      ) {
+        this.warnings.push(registrationEvidence.warning);
+      }
+      return rawRecord;
+    } catch (error) {
+      if (page && !isCertificateAuthorityError(error)) {
+        const reason =
+          error instanceof Error ? error.message : "Unknown browser failure.";
+        const diagnosticsPath = await writeRoszdravnadzorDiagnostics({
+          page,
+          query,
+          reason,
+          tlsBypassEnabled: this.tlsPolicy.ignoreHTTPSErrors,
+          detailIdFallbackEnabled: Boolean(this.detailFallback),
+          network: networkDiagnostics,
+          rootDirectory: this.diagnosticsRootDirectory,
+        }).catch((diagnosticError) => {
+          this.warnings.push(
+            `Diagnostic capture failed: ${
+              diagnosticError instanceof Error
+                ? diagnosticError.message
+                : "unknown error"
+            }`,
+          );
+          return null;
+        });
+        if (diagnosticsPath) {
+          throw new ImporterDiagnosticError(reason, diagnosticsPath);
+        }
+      }
+      throw error;
     } finally {
       await page?.close().catch(() => undefined);
       await context?.close().catch(() => undefined);
@@ -778,24 +1085,14 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
       rawRecord.payloads,
       rawRecord.registrationNumber,
     );
-    const entries = apiRecord ? collectScalarEntries(apiRecord) : [];
+    const entries = collectScalarEntries(apiRecord ?? rawRecord.payloads);
     const domData =
       (rawRecord.metadata.domData as DomData | undefined) ?? {
         pairs: [],
         links: [],
       };
     const registrationNumber =
-      findValue(entries, [
-        /registration.*number/i,
-        /certificate.*number/i,
-        /reg.*number/i,
-        /регистрац.*номер/i,
-      ]) ??
-      valueFromDom(domData.pairs, [
-        /регистрационн.*номер/i,
-        /номер регистрационн/i,
-      ]) ??
-      rawRecord.registrationNumber;
+      observedRegistrationNumber(rawRecord) ?? rawRecord.registrationNumber;
 
     const documentLinks = normalizeDocumentLinks(registrationNumber, [
       ...collectDocumentLinksFromJson(
@@ -894,10 +1191,10 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
       warnings.some((warning) =>
         /no downloadable documents|was not downloaded/i.test(warning),
       );
-    const normalizedRecordCreated = Boolean(
-      hasNormalizedIdentity &&
-        (normalizedRecord.medicalDeviceName || normalizedRecord.manufacturer),
-    );
+    // Registration number + exact source URL form the minimum normalized
+    // identity. Missing descriptive fields remain explicit warnings and must
+    // not leak an undocumented "partial" public output status.
+    const normalizedRecordCreated = hasNormalizedIdentity;
     const status = determineImportStatus({
       registryRecordFound: true,
       normalizedRecordCreated,
@@ -969,6 +1266,9 @@ async function runImport(query: string): Promise<ImportOutput> {
         ...adapter.warnings,
         error instanceof Error ? error.message : "Unknown importer error.",
       ],
+      ...(error instanceof ImporterDiagnosticError
+        ? { diagnosticsPath: error.diagnosticsPath }
+        : {}),
     };
   }
 
@@ -987,6 +1287,30 @@ async function runImport(query: string): Promise<ImportOutput> {
   }
 
   const normalizedRecord = await adapter.normalize(rawRecord);
+  const registrationEvidence = evaluateRegistrationEvidence({
+    query,
+    observedRegistrationNumber: observedRegistrationNumber(rawRecord),
+    detailIdFallbackEnabled:
+      rawRecord.metadata.detailIdFallbackEnabled === true,
+  });
+  if (registrationEvidence.outcome === "mismatch") {
+    return {
+      normalizedRecord: null,
+      ingestionPlan: null,
+      manifestPath: null,
+      downloadedArtifactPaths: [],
+      status: "blocked",
+      warnings: [
+        ...adapter.warnings,
+        registrationEvidence.warning,
+      ],
+    };
+  }
+  if (registrationEvidence.warning) {
+    if (!adapter.warnings.includes(registrationEvidence.warning)) {
+      adapter.warnings.push(registrationEvidence.warning);
+    }
+  }
   const initialPlan = await adapter.createIngestionPlan(
     rawRecord,
     normalizedRecord,
@@ -995,9 +1319,7 @@ async function runImport(query: string): Promise<ImportOutput> {
   const finalStatus = determineImportStatus({
     registryRecordFound: true,
     normalizedRecordCreated: Boolean(
-      normalizedRecord.registrationNumber &&
-        normalizedRecord.sourceUrl &&
-        (normalizedRecord.medicalDeviceName || normalizedRecord.manufacturer),
+      normalizedRecord.registrationNumber && normalizedRecord.sourceUrl,
     ),
     downloadedDocumentCount: merged.plan.downloadedFiles.length,
     documentOutcomeWarningCount: merged.plan.warnings.filter((warning) =>
@@ -1014,7 +1336,10 @@ async function runImport(query: string): Promise<ImportOutput> {
     downloadedArtifactPaths: finalPlan.downloadedFiles.map(
       (artifact) => artifact.filePath,
     ),
-    status: finalPlan.status,
+    status:
+      finalPlan.status === "completed" && finalPlan.warnings.length > 0
+        ? "completed_with_warnings"
+        : finalPlan.status,
     warnings: finalPlan.warnings,
   };
 }
@@ -1074,7 +1399,13 @@ if (
 export {
   RoszdravnadzorAdapter,
   createTlsBlockedOutput,
+  evaluateRegistrationEvidence,
+  findMatchingApiRecord,
+  findSearchInputInScope,
   normalizeDocumentLinks,
+  observedRegistrationNumber,
+  resolveDetailFallback,
   resolveRoszdravnadzorTlsPolicy,
   runImport,
+  scoreSearchDescriptor,
 };

@@ -4,6 +4,8 @@ export type ImportStatus =
   | "blocked"
   | "not-found";
 
+export type ImportOutputStatus = ImportStatus | "completed_with_warnings";
+
 export type ArtifactKind =
   | "registry-json"
   | "registry-html"
@@ -136,8 +138,9 @@ export interface ImportOutput {
   ingestionPlan: IngestionPlan | null;
   manifestPath: string | null;
   downloadedArtifactPaths: string[];
-  status: ImportStatus;
+  status: ImportOutputStatus;
   warnings: string[];
+  diagnosticsPath?: string;
 }
 
 export interface ProviderAdapter {

@@ -9,6 +9,7 @@
     "start": "next start",
     "lint": "eslint",
     "import:roszdravnadzor": "node scripts/importers/roszdravnadzor.ts",
+    "replay:roszdravnadzor": "node scripts/importers/roszdravnadzor-replay.ts",
     "test": "node --test tests/importers/*.test.ts"
   },
   "dependencies": {

@@ -23,9 +23,15 @@ import { determineImportStatus } from "../../scripts/importers/core/status.ts";
 import {
   RoszdravnadzorAdapter,
   createTlsBlockedOutput,
+  evaluateRegistrationEvidence,
+  findMatchingApiRecord,
   normalizeDocumentLinks,
+  resolveDetailFallback,
   resolveRoszdravnadzorTlsPolicy,
+  scoreSearchDescriptor,
 } from "../../scripts/importers/roszdravnadzor.ts";
+import { writeRoszdravnadzorDiagnostics } from "../../scripts/importers/roszdravnadzor-diagnostics.ts";
+import { replayRoszdravnadzorDiagnostics } from "../../scripts/importers/roszdravnadzor-replay.ts";
 
 const OFFICIAL_DOCUMENT_URL =
   "https://elk.roszdravnadzor.gov.ru/public-gateway/med-product/api/v1/files/download-by-path-public?id=1";
@@ -427,4 +433,238 @@ test("dev TLS bypass flag is ignored in production", () => {
 
   assert.equal(policy.ignoreHTTPSErrors, false);
   assert.match(policy.warning ?? "", /ignored because NODE_ENV=production/);
+});
+
+test("missing search input creates complete diagnosticsPath", async () => {
+  const root = await createTemporaryRoot();
+  type FakeElement = {
+    tag: string;
+    attrs: Record<string, string>;
+    text: string;
+  };
+  const elements: FakeElement[] = [{
+    tag: "button",
+    attrs: { type: "button", "aria-label": "Меню" },
+    text: "Меню",
+  }];
+  const locator = (items: FakeElement[]) => ({
+    count: async () => items.length,
+    nth: (index: number) => locator(items.slice(index, index + 1)),
+    isVisible: async () => true,
+    getAttribute: async (name: string) =>
+      name === "tagName" ? items[0]?.tag ?? null : items[0]?.attrs[name as keyof typeof items[0]["attrs"]] ?? null,
+    innerText: async () => items[0]?.text ?? "",
+    boundingBox: async () => ({ x: 0, y: 0, width: 100, height: 30 }),
+    evaluate: async () => items[0]?.tag ?? null,
+  });
+  const page = {
+    url: () => "https://elk.roszdravnadzor.gov.ru/widget/",
+    title: async () => "Реестр",
+    content: async () => "<html><body><button>Меню</button></body></html>",
+    locator: (selector: string) =>
+      locator(selector === "body" ? [{ tag: "body", attrs: {}, text: "Меню" }] : elements),
+    frames: () => [{
+      url: () => "https://elk.roszdravnadzor.gov.ru/frame",
+      name: () => "registry-frame",
+      locator: () => locator([]),
+      frameElement: async () => locator([{
+        tag: "iframe",
+        attrs: { title: "Реестр РУ" },
+        text: "",
+      }]),
+    }, {
+      url: () => "https://elk.roszdravnadzor.gov.ru/child",
+      name: () => "child",
+      locator: () => locator([]),
+      frameElement: async () => locator([{
+        tag: "iframe",
+        attrs: { title: "Форма поиска" },
+        text: "",
+      }]),
+    }],
+    screenshot: async ({ path }: { path: string }) =>
+      writeFile(path, Buffer.from("png")),
+    evaluate: async () => "Test Agent",
+  };
+
+  const diagnosticsPath = await writeRoszdravnadzorDiagnostics({
+    page: page as never,
+    query: "ФСЗ 2009/04992",
+    reason: "Registration-number search input was not found.",
+    tlsBypassEnabled: false,
+    detailIdFallbackEnabled: false,
+    network: [],
+    rootDirectory: root,
+    now: new Date("2026-07-06T10:00:00.000Z"),
+  });
+  const files = (await readdir(diagnosticsPath)).sort();
+  assert.deepEqual(files, [
+    "elements.json",
+    "iframes.json",
+    "metadata.json",
+    "network.json",
+    "page.html",
+    "screenshot.png",
+    "visible-text.txt",
+  ]);
+  const metadata = JSON.parse(
+    await readFile(join(diagnosticsPath, "metadata.json"), "utf8"),
+  );
+  assert.equal(metadata.status, "blocked");
+  assert.match(metadata.reason, /search input/i);
+  assert.equal(metadata.detailIdFallbackEnabled, false);
+  assert.equal(metadata.diagnosticsVersion, "1.0");
+  const iframeData = JSON.parse(
+    await readFile(join(diagnosticsPath, "iframes.json"), "utf8"),
+  );
+  assert.equal(iframeData.length, 1);
+  assert.equal(iframeData[0].title, "Форма поиска");
+});
+
+test("search input is ranked by placeholder", () => {
+  assert.ok(
+    scoreSearchDescriptor({ placeholder: "Номер регистрационного удостоверения" }) >=
+      50,
+  );
+});
+
+test("search input is ranked by aria-label", () => {
+  assert.ok(scoreSearchDescriptor({ ariaLabel: "Поиск РУ" }) >= 45);
+});
+
+test("search input is ranked by searchbox role", () => {
+  assert.ok(scoreSearchDescriptor({ role: "searchbox" }) >= 20);
+});
+
+test("observed network payload can supply record when DOM search fails", () => {
+  const record = findMatchingApiRecord(
+    [{ data: [{ id: 37042, registrationNumber: "ФСЗ 2009/04992" }] }],
+    "ФСЗ 2009/04992",
+  );
+  assert.equal(record?.id, 37042);
+});
+
+test("explicit detail ID resolves observed detail URL and warning", () => {
+  const fallback = resolveDetailFallback({ ROSRZN_DETAIL_ID: "37042" });
+  assert.equal(
+    fallback?.url,
+    "https://elk.roszdravnadzor.gov.ru/widget/med-product/37042",
+  );
+  assert.match(fallback?.warning ?? "", /search was intentionally skipped/i);
+});
+
+test("detail fallback warning and TLS dev warning coexist", () => {
+  const adapter = new RoszdravnadzorAdapter(
+    new ContentAddressedArtifactStore(),
+    {
+      environment: {
+        NODE_ENV: "development",
+        ROSRZN_IGNORE_HTTPS_ERRORS: "1",
+        ROSRZN_DETAIL_ID: "37042",
+      },
+    },
+  );
+  assert.match(adapter.warnings.join(" "), /TLS certificate validation was disabled/);
+  assert.match(
+    adapter.warnings.join(" "),
+    /Manual Roszdravnadzor detail ID fallback was used/,
+  );
+});
+
+test("detail fallback registration mismatch blocks ingestion", () => {
+  const result = evaluateRegistrationEvidence({
+    query: "ФСЗ 2009/04992",
+    observedRegistrationNumber: "ФСЗ 2009/00001",
+    detailIdFallbackEnabled: true,
+  });
+  assert.equal(result.outcome, "mismatch");
+  assert.match(result.warning ?? "", /does not match/);
+});
+
+test("unverifiable detail fallback is never silently completed", () => {
+  const result = evaluateRegistrationEvidence({
+    query: "ФСЗ 2009/04992",
+    observedRegistrationNumber: null,
+    detailIdFallbackEnabled: true,
+  });
+  assert.equal(result.outcome, "unverified");
+  assert.match(result.warning ?? "", /could not be verified/);
+});
+
+test("diagnostics replay is offline and produces a human-readable report", async () => {
+  const root = await createTemporaryRoot();
+  await Promise.all([
+    writeFile(
+      join(root, "metadata.json"),
+      JSON.stringify({
+        url: "https://elk.roszdravnadzor.gov.ru/widget/",
+        title: "Реестр",
+        timestamp: "2026-07-06T10:00:00.000Z",
+        query: "ФСЗ 2009/04992",
+        status: "blocked",
+        reason: "Registration-number search input was not found.",
+        userAgent: "Test Agent",
+        tlsBypassEnabled: false,
+        detailIdFallbackEnabled: false,
+        diagnosticsVersion: "1.0",
+      }),
+    ),
+    writeFile(
+      join(root, "elements.json"),
+      JSON.stringify([
+        {
+          tag: "input",
+          placeholder: "Номер регистрационного удостоверения",
+          isVisible: true,
+        },
+        {
+          tag: "button",
+          textContent: "Найти",
+          isVisible: true,
+        },
+      ]),
+    ),
+    writeFile(join(root, "iframes.json"), "[]"),
+    writeFile(
+      join(root, "network.json"),
+      JSON.stringify([
+        {
+          url: "https://elk.roszdravnadzor.gov.ru/med-product/search",
+          contentType: "application/json",
+          resourceType: "xhr",
+          bodyPreview: '{"registrationNumber":"ФСЗ 2009/04992"}',
+          markers: ["ФСЗ", "med-product"],
+        },
+      ]),
+    ),
+  ]);
+
+  const originalFetch = globalThis.fetch;
+  let networkCalled = false;
+  globalThis.fetch = (async () => {
+    networkCalled = true;
+    throw new Error("Replay must not use network.");
+  }) as typeof fetch;
+  try {
+    const report = await replayRoszdravnadzorDiagnostics(root);
+    assert.equal(networkCalled, false);
+    assert.match(report, /Search inputs found: 1/);
+    assert.match(report, /JSON\/XHR\/fetch responses: 1/);
+    assert.match(report, /placeholder:/);
+    assert.match(report, /Recommended next action:/);
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+});
+
+test("importer source has no publication, verified claim, or Supabase write", async () => {
+  const source = await readFile(
+    join(process.cwd(), "scripts/importers/roszdravnadzor.ts"),
+    "utf8",
+  );
+  assert.doesNotMatch(source, /supabase(?:Url|Client|\.from)|service_role/i);
+  assert.doesNotMatch(source, /verificationStatus:\s*["']verified/i);
+  assert.doesNotMatch(source, /createVerification|verification\.(?:insert|create)/i);
+  assert.doesNotMatch(source, /autoPublish:\s*true/i);
+  assert.doesNotMatch(source, /publication\.(?:insert|create|publish)/i);
 });

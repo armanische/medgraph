@@ -1,6 +1,6 @@
-# Regulatory importer prototype
+# Roszdravnadzor Importer MVP
 
-Серверный ingestion-прототип для ручного импорта публичной реестровой записи
+Серверный ingestion-модуль для ручного импорта публичной реестровой записи
 Росздравнадзора. Он не подключён к Supabase, Portal, Projection, Publication или
 Verification.
 
@@ -30,6 +30,67 @@ ROSRZN_IGNORE_HTTPS_ERRORS=1 \
 передаёт Playwright `ignoreHTTPSErrors: true` и обязательно записывает security
 warning в output и `ImportManifest`. Без флага
 `ERR_CERT_AUTHORITY_INVALID` завершает импорт со статусом `blocked`.
+
+Если оператор уже знает идентификатор detail-страницы, можно явно пропустить
+поиск в widget:
+
+```bash
+ROSRZN_IGNORE_HTTPS_ERRORS=1 ROSRZN_DETAIL_ID=37042 \
+  npm run import:roszdravnadzor -- "ФСЗ 2009/04992"
+```
+
+`ROSRZN_DETAIL_ID` не вычисляется и не подбирается импортёром. При его
+использовании output и manifest содержат предупреждение о ручном fallback.
+
+Если поле поиска или запись не обнаружены ни в DOM, ни в реально наблюдавшихся
+JSON/XHR/fetch-ответах, импорт завершается как `blocked` и создаёт:
+
+```text
+tmp/roszdravnadzor/diagnostics/<timestamp>/
+├── screenshot.png
+├── page.html
+├── visible-text.txt
+├── elements.json
+├── iframes.json
+├── network.json
+└── metadata.json
+```
+
+Папка возвращается в `diagnosticsPath`. Диагностика не является Evidence и не
+поступает в ingestion pipeline.
+
+Диагностику можно проанализировать без повторного обращения к сайту:
+
+```bash
+npm run replay:roszdravnadzor -- \
+  tmp/roszdravnadzor/diagnostics/<timestamp>
+```
+
+Replay читает только локальные JSON-файлы, показывает найденные элементы,
+iframe, наблюдавшиеся JSON/XHR/fetch-ответы, возможные selector strategies и
+следующее безопасное действие. Replay не изменяет файлы и не использует сеть.
+
+## Устранение ошибок
+
+### `ERR_CERT_AUTHORITY_INVALID`
+
+По умолчанию импорт должен оставаться заблокированным. Сначала исправьте
+локальную цепочку доверия сертификата. Только для разработки разрешён явный
+временный запуск с `ROSRZN_IGNORE_HTTPS_ERRORS=1`. Security warning останется в
+output и manifest; в production флаг игнорируется.
+
+### `Registration-number search input was not found`
+
+1. Откройте путь `diagnosticsPath` из blocked output.
+2. Запустите `replay:roszdravnadzor`.
+3. Проверьте `elements.json`, `iframes.json` и наблюдавшиеся network responses.
+4. Если оператору известен реальный detail ID, повторите импорт с
+   `ROSRZN_DETAIL_ID`. ID нельзя угадывать.
+
+Detail fallback сверяет найденный номер РУ с запросом. Несовпадение блокирует
+импорт до создания IngestionPlan и ImportManifest. Если номер невозможно
+извлечь, импорт может продолжиться только с явным warning и статусом
+`completed_with_warnings`.
 
 ## Pipeline
 
@@ -95,6 +156,7 @@ Documents.
 - `downloadedArtifactPaths`;
 - `status`;
 - `warnings`.
+- `diagnosticsPath` для browser-level blocked failure.
 
 `claimCandidates` всегда имеют `candidate`, `unverified` и
 `autoPublish: false`. Importer не создаёт Claims, Verification или Publication.
@@ -107,5 +169,5 @@ npm run lint
 npm run build
 ```
 
-Прототип остаётся единичным ручным ingestion-процессом. Перед записью данных в
+Importer остаётся единичным ручным ingestion-процессом. Перед записью данных в
 Knowledge Factory необходим human review.
