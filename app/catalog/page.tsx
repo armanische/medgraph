@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import CatalogExplorer from "@/components/catalog/CatalogExplorer";
+import {
+  getDraftCatalogCategories,
+  getDraftCatalogProducts,
+} from "@/lib/catalog-drafts";
 
 export const metadata: Metadata = {
   title: "Каталог медицинских изделий | CyberMedica",
@@ -13,6 +17,8 @@ export default async function CatalogPage({
   searchParams: Promise<{ q?: string }>;
 }) {
   const { q = "" } = await searchParams;
+  const products = getDraftCatalogProducts();
+  const categories = getDraftCatalogCategories();
 
   return (
     <main className="min-h-screen bg-cm-canvas">
@@ -20,16 +26,20 @@ export default async function CatalogPage({
         <div className="cm-container py-8">
           <div className="cm-label">Главная · Каталог</div>
           <h1 className="mt-3 text-2xl font-extrabold tracking-[-0.025em]">
-            Каталог медицинских изделий
+            Draft-каталог медицинских изделий
           </h1>
           <p className="mt-3 max-w-2xl text-[13px] leading-6 text-cm-slate">
-          Ищите по названию, регистрационному удостоверению, производителю,
-          аналогам и совместимому оборудованию.
+            Позиции из seed-каталога проходят независимое исследование:
+            источники, документы, candidate facts и review readiness.
           </p>
         </div>
       </header>
       <div className="cm-container py-7">
-        <CatalogExplorer initialQuery={q} />
+        <CatalogExplorer
+          initialQuery={q}
+          products={products}
+          categories={categories}
+        />
       </div>
     </main>
   );

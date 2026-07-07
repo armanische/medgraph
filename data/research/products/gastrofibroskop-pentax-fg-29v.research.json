@@ -1,0 +1,134 @@
+{
+  "productSlug": "gastrofibroskop-pentax-fg-29v",
+  "titleFromCatalog": "Гастрофиброскоп Pentax FG-29V",
+  "normalizedTitle": "Гастрофиброскоп Pentax FG-29V",
+  "manufacturerCandidate": {
+    "candidates": [
+      {
+        "name": "Pentax Medical",
+        "officialHosts": [
+          "pentaxmedical.com"
+        ],
+        "confidence": 0.94,
+        "reason": "Manufacturer candidate matched product/model tokens; official source confirmation is still required.",
+        "status": "candidate"
+      }
+    ],
+    "selected": {
+      "name": "Pentax Medical",
+      "officialHosts": [
+        "pentaxmedical.com"
+      ],
+      "confidence": 0.94,
+      "reason": "Manufacturer candidate matched product/model tokens; official source confirmation is still required.",
+      "status": "candidate"
+    },
+    "ambiguous": false,
+    "warnings": []
+  },
+  "modelCandidate": "FG-29V",
+  "category": "Гибкая эндоскопия",
+  "researchStatus": "needs_source",
+  "sourcesFound": 0,
+  "officialSourcesFound": 0,
+  "documentsFound": 0,
+  "documentsDownloaded": 0,
+  "characteristicsExtracted": 0,
+  "candidateClaimsCreated": 0,
+  "conflictsFound": 0,
+  "missingCriticalFields": [
+    "manufacturer",
+    "model",
+    "deviceType",
+    "registrationNumber",
+    "officialSource",
+    "document"
+  ],
+  "missingOptionalFields": [
+    "intendedUse",
+    "dimensions",
+    "weight",
+    "display",
+    "battery",
+    "power",
+    "operatingModes",
+    "measurementRanges",
+    "accuracy",
+    "interfaces",
+    "compatibility",
+    "consumables",
+    "accessories",
+    "safetyFeatures",
+    "warnings",
+    "contraindications",
+    "environment",
+    "storage",
+    "maintenance",
+    "serviceInterval",
+    "softwareVersion",
+    "warrantyService"
+  ],
+  "warnings": [
+    "Independent research could not run due to network restriction."
+  ],
+  "generatedAt": "2026-07-06T00:00:00.000Z",
+  "sources": [],
+  "documents": [],
+  "documentVersions": [],
+  "facts": [],
+  "evidenceCandidates": [],
+  "characteristics": [],
+  "candidateClaims": [],
+  "reviewReadiness": {
+    "sourceQualityScore": 0,
+    "documentCoverageScore": 0,
+    "characteristicCoverageScore": 0,
+    "conflictPenalty": 0,
+    "readinessScore": 0
+  },
+  "reviewStatus": "pending",
+  "reviewPriority": "high",
+  "reviewReasons": [
+    "blocking_issue:no_official_source",
+    "blocking_issue:no_document",
+    "blocking_issue:missing_registration"
+  ],
+  "suggestedReviewerRole": "medical_data_reviewer",
+  "blockingIssues": [
+    "no_official_source",
+    "no_document",
+    "missing_registration"
+  ],
+  "sourceQualityScore": 0,
+  "readinessScore": 0,
+  "conflicts": [],
+  "missingCharacteristics": [
+    "manufacturer",
+    "model",
+    "deviceType",
+    "intendedUse",
+    "registrationNumber",
+    "dimensions",
+    "weight",
+    "display",
+    "battery",
+    "power",
+    "operatingModes",
+    "measurementRanges",
+    "accuracy",
+    "interfaces",
+    "compatibility",
+    "consumables",
+    "accessories",
+    "safetyFeatures",
+    "warnings",
+    "contraindications",
+    "environment",
+    "storage",
+    "maintenance",
+    "serviceInterval",
+    "softwareVersion",
+    "warrantyService"
+  ],
+  "uniqueArtifacts": 0
+}

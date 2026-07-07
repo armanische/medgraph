@@ -1,0 +1,178 @@
+{
+  "generatedAt": "2026-07-06T00:00:00.000Z",
+  "sourceFile": "Каталог Кибермедика.pdf",
+  "extractedPositions": 50,
+  "uniqueProducts": 49,
+  "successfullyNormalized": 49,
+  "requiresManualReview": 49,
+  "independentSourcesFound": 0,
+  "productsWithoutSources": 49,
+  "suspectedDuplicates": [
+    {
+      "canonicalKey": "gehealthcarelogiqe9",
+      "kept": {
+        "title": "Экспертный узи-аппарат GE Logiq E9",
+        "page": 9
+      },
+      "duplicate": {
+        "title": "Экспертный узи-аппарат Logiq E9 GE",
+        "page": 9
+      }
+    }
+  ],
+  "uncertainRecognitions": [
+    {
+      "title": "Инкубатор интенсивной терапии ИДН-03 «Данио»",
+      "page": 3,
+      "reasons": [
+        "brand_candidate_missing"
+      ]
+    },
+    {
+      "title": "Открытая реанимационная система Phoenix CIC 101",
+      "page": 3,
+      "reasons": [
+        "brand_candidate_missing"
+      ]
+    },
+    {
+      "title": "Фетальный монитор Уникос-03",
+      "page": 4,
+      "reasons": [
+        "brand_candidate_missing"
+      ]
+    },
+    {
+      "title": "Электрический аспиратор Vacus 7308",
+      "page": 4,
+      "reasons": [
+        "brand_candidate_missing"
+      ]
+    },
+    {
+      "title": "Аппарат поддержки дыхания АПДН-01",
+      "page": 4,
+      "reasons": [
+        "brand_candidate_missing"
+      ]
+    },
+    {
+      "title": "Анализатор гипербилирубинемии Билитест",
+      "page": 5,
+      "reasons": [
+        "brand_candidate_missing"
+      ]
+    },
+    {
+      "title": "Система отоакустической эмиссии OtoRead",
+      "page": 5,
+      "reasons": [
+        "brand_candidate_missing"
+      ]
+    },
+    {
+      "title": "Устройства обогрева РТ300СИ для новорожденных",
+      "page": 5,
+      "reasons": [
+        "brand_candidate_missing"
+      ]
+    },
+    {
+      "title": "Кольпоскоп КС-02-302 Zoom Комфорт",
+      "page": 5,
+      "reasons": [
+        "brand_candidate_missing"
+      ]
+    },
+    {
+      "title": "Аппарат ИВЛ «Авента-У»",
+      "page": 7,
+      "reasons": [
+        "brand_candidate_missing"
+      ]
+    },
+    {
+      "title": "Аппарат ИВЛ Фаза-21",
+      "page": 7,
+      "reasons": [
+        "brand_candidate_missing"
+      ]
+    },
+    {
+      "title": "Монитор МИТАР-01 «Р-Д»",
+      "page": 8,
+      "reasons": [
+        "brand_candidate_missing"
+      ]
+    },
+    {
+      "title": "Рентгенодиагностический комплекс КРТ Электрон",
+      "page": 9,
+      "reasons": [
+        "model_candidate_missing"
+      ]
+    },
+    {
+      "title": "Экспресс-анализатор ИХА Nano-Checker 710",
+      "page": 10,
+      "reasons": [
+        "brand_candidate_missing"
+      ]
+    },
+    {
+      "title": "Электрокардиограф ЭК12Т-01 «Р-Д»/260",
+      "page": 10,
+      "reasons": [
+        "brand_candidate_missing"
+      ]
+    },
+    {
+      "title": "Энцефалограф «Нейрон-Спектр-1»",
+      "page": 10,
+      "reasons": [
+        "brand_candidate_missing"
+      ]
+    },
+    {
+      "title": "УФ-установка передвижная Альфа-06",
+      "page": 11,
+      "reasons": [
+        "brand_candidate_missing"
+      ]
+    },
+    {
+      "title": "Аэрозольный распылитель «Ультраспрейер Р»",
+      "page": 11,
+      "reasons": [
+        "brand_candidate_missing"
+      ]
+    },
+    {
+      "title": "Кровать функциональная электрическая MB-95",
+      "page": 11,
+      "reasons": [
+        "brand_candidate_missing"
+      ]
+    },
+    {
+      "title": "Видеобронхоскоп VME-5B портативный",
+      "page": 12,
+      "reasons": [
+        "brand_candidate_missing"
+      ]
+    },
+    {
+      "title": "Стол общехирургический ОМ-ДЕЛЬТА ПЛЮС 02",
+      "page": 12,
+      "reasons": [
+        "brand_candidate_missing"
+      ]
+    }
+  ],
+  "warnings": [
+    "Каталог используется только как перечень позиций, не как источник характеристик",
+    "No LLM or OCR was used. Extraction is rule-based and remains unverified.",
+    "Independent research could not run due to network restriction.",
+    "Manufacturer could not be resolved."
+  ]
+}
