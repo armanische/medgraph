@@ -5,17 +5,20 @@ import { useMemo, useState } from "react";
 
 import {
   draftStatusLabel,
-  searchDraftCatalogProducts,
+  searchDraftCatalogCards,
 } from "@/lib/catalog-drafts";
-import type { DraftCatalogProduct } from "@/scripts/importers/catalog/types";
+import type {
+  DraftCatalogCard,
+  DraftResearchStatus,
+} from "@/types/catalog-draft";
 
 interface CatalogExplorerProps {
   initialQuery?: string;
-  products: DraftCatalogProduct[];
+  products: DraftCatalogCard[];
   categories: string[];
 }
 
-function statusClass(status: DraftCatalogProduct["researchStatus"]) {
+function statusClass(status: DraftResearchStatus) {
   if (status === "research_ready") return "border-cm-teal/30 bg-cm-teal/10 text-cm-teal";
   if (status === "partially_researched") return "border-blue-200 bg-blue-50 text-blue-700";
   if (status === "blocked") return "border-red-200 bg-red-50 text-red-700";
@@ -32,7 +35,7 @@ export default function CatalogExplorer({
   const [status, setStatus] = useState("Все статусы");
 
   const results = useMemo(() => {
-    const matches = searchDraftCatalogProducts(query, products);
+    const matches = searchDraftCatalogCards(query, products);
     return matches.filter((product) => {
       const categoryMatches =
         category === "Все категории" || product.category === category;

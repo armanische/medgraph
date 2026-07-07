@@ -18,9 +18,6 @@
   "totalEvidenceCandidates": 0,
   "totalCandidateClaims": 0,
   "totalConflicts": 0,
-  "totalCharacteristicsExtracted": 0,
-  "totalCandidateClaimsCreated": 0,
-  "totalUniqueArtifacts": 0,
   "totalMissingCharacteristics": 1274,
   "duplicateProducts": [
     {
@@ -138,7 +135,7 @@
     "tsentralnaya-stantsiya-monitoringa-comen-cms"
   ],
   "productsReadyForHumanReview": [],
-  "generatedAt": "2026-07-06T00:00:00.000Z",
+  "generatedAt": "2026-07-07T15:31:54.281Z",
   "warnings": [
     "Каталог используется только как перечень позиций, не как источник характеристик",
     "No LLM or OCR was used. Extraction is rule-based and remains unverified.",

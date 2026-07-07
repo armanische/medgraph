@@ -1,4 +1,4 @@
-import { randomUUID } from "node:crypto";
+import { createHash, randomUUID } from "node:crypto";
 import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
@@ -73,6 +73,14 @@ const PRODUCT_REPORT_DIRECTORY = resolve(
   "data/research/products",
 );
 
+export interface CatalogResearchPaths {
+  seedPath: string;
+  productsPath: string;
+  importReportPath: string;
+  researchReportPath: string;
+  productReportDirectory: string;
+}
+
 const OFFICIAL_SOURCE_TYPES = new Set([
   "manufacturer_product_page",
   "official_manufacturer",
@@ -96,6 +104,7 @@ export interface CatalogResearchDependencies {
   conflictDetector: ConflictDetector;
   missingDetector: MissingInformationDetector;
   manifest: CatalogResearchManifest;
+  paths?: Partial<CatalogResearchPaths>;
   generatedAt?: string;
 }
 
@@ -113,7 +122,7 @@ export function validateCatalogProductsFile(
         claim.status !== "candidate" ||
         claim.verificationStatus !== "unverified" ||
         claim.autoPublish !== false ||
-        claim.evidenceCandidates.length === 0
+        claim.evidenceCandidateIds.length === 0
       ) {
         throw new Error(
           `Generated Candidate Claim ${claim.claimId} violates publication safeguards.`,
@@ -256,15 +265,37 @@ function researchStatus(input: {
 function documentVersions(documents: DocumentCandidate[]) {
   return documents.flatMap((document) =>
     document.sha256 && document.artifactPath
-      ? [{
-          documentKey: `sha256:${document.sha256}`,
-          documentVersionId: `sha256:${document.sha256}`,
-          sha256: document.sha256,
-          sourceUrl: document.url,
-          artifactPath: document.artifactPath,
-        }]
+      ? [
+          {
+            documentKey: catalogResearchDocumentKey(document),
+            documentVersionId: `${catalogResearchDocumentKey(document)}:${document.sha256}`,
+            sha256: document.sha256,
+            sourceUrl: document.url,
+            artifactPath: document.artifactPath,
+          },
+        ]
       : [],
   );
+}
+
+function catalogResearchDocumentKey(document: Pick<DocumentCandidate, "url">) {
+  return `catalog-research:${createHash("sha256")
+    .update(document.url)
+    .digest("hex")
+    .slice(0, 32)}`;
+}
+
+function resolvePaths(
+  paths: Partial<CatalogResearchPaths> = {},
+): CatalogResearchPaths {
+  return {
+    seedPath: paths.seedPath ?? SEED_PATH,
+    productsPath: paths.productsPath ?? PRODUCTS_PATH,
+    importReportPath: paths.importReportPath ?? IMPORT_REPORT_PATH,
+    researchReportPath: paths.researchReportPath ?? RESEARCH_REPORT_PATH,
+    productReportDirectory:
+      paths.productReportDirectory ?? PRODUCT_REPORT_DIRECTORY,
+  };
 }
 
 function reviewReadiness(input: {
@@ -418,6 +449,10 @@ export async function researchProduct(
       ]),
     ).values(),
   ];
+  const evidenceBuilder = new DefaultEvidenceBuilder();
+  const evidenceCandidates = deduplicatedCharacteristics.map((characteristic) =>
+    evidenceBuilder.build(characteristic),
+  );
   const candidateClaims = dependencies.claimBuilder.build(
     item,
     deduplicatedCharacteristics,
@@ -468,9 +503,6 @@ export async function researchProduct(
     blockingIssues: issues,
   });
   const priority = reviewPriority(issues);
-  const evidenceCandidates = candidateClaims.flatMap(
-    (claim) => claim.evidenceCandidates,
-  );
   const versions = documentVersions(downloadedDocuments);
   const readinessBreakdown = reviewReadiness({
     sources,
@@ -557,6 +589,7 @@ export async function researchProduct(
     documents: downloadedDocuments,
     characteristics: deduplicatedCharacteristics,
     sourceCandidates: sources,
+    evidenceCandidates,
     candidateClaims,
     researchStatus: status,
     status: "draft",
@@ -673,21 +706,6 @@ function aggregateReport(
       (sum, report) => sum + report.conflicts.length,
       0,
     ),
-    totalCharacteristicsExtracted: reports.reduce(
-      (sum, report) => sum + report.characteristicsExtracted,
-      0,
-    ),
-    totalCandidateClaimsCreated: reports.reduce(
-      (sum, report) => sum + report.candidateClaimsCreated,
-      0,
-    ),
-    totalUniqueArtifacts: new Set(
-      reports.flatMap((report) =>
-        report.documents
-          .map((document) => document.sha256)
-          .filter((value): value is string => Boolean(value)),
-      ),
-    ).size,
     totalMissingCharacteristics: reports.reduce(
       (sum, report) => sum + report.missingCharacteristics.length,
       0,
@@ -748,6 +766,7 @@ function resolveDependencies(
     missingDetector:
       dependencies.missingDetector ?? new DefaultMissingInformationDetector(),
     manifest: dependencies.manifest ?? new CatalogResearchManifest(),
+    paths: dependencies.paths,
     generatedAt,
   } satisfies CatalogResearchDependencies;
 }
@@ -756,9 +775,10 @@ export async function runCatalogResearch(
   dependencies: Partial<CatalogResearchDependencies> = {},
 ) {
   const generatedAt = dependencies.generatedAt ?? new Date().toISOString();
-  const seed = JSON.parse(await readFile(SEED_PATH, "utf8")) as CatalogSeed;
+  const paths = resolvePaths(dependencies.paths);
+  const seed = JSON.parse(await readFile(paths.seedPath, "utf8")) as CatalogSeed;
   const importReport = JSON.parse(
-    await readFile(IMPORT_REPORT_PATH, "utf8"),
+    await readFile(paths.importReportPath, "utf8"),
   ) as CatalogImportReport;
   const resolvedDependencies = resolveDependencies(dependencies, generatedAt);
   const result = await researchCatalogProducts(seed, resolvedDependencies);
@@ -786,21 +806,21 @@ export async function runCatalogResearch(
   };
 
   await Promise.all([
-    writeJsonAtomic(PRODUCTS_PATH, output),
-    writeJsonAtomic(RESEARCH_REPORT_PATH, aggregate),
-    writeJsonAtomic(IMPORT_REPORT_PATH, updatedImportReport),
+    writeJsonAtomic(paths.productsPath, output),
+    writeJsonAtomic(paths.researchReportPath, aggregate),
+    writeJsonAtomic(paths.importReportPath, updatedImportReport),
     ...result.reports.map((report) =>
       writeJsonAtomic(
-        join(PRODUCT_REPORT_DIRECTORY, `${report.productSlug}.research.json`),
+        join(paths.productReportDirectory, `${report.productSlug}.research.json`),
         report,
       ),
     ),
   ]);
 
   return {
-    productsPath: PRODUCTS_PATH,
-    aggregateReportPath: RESEARCH_REPORT_PATH,
-    productReportsDirectory: PRODUCT_REPORT_DIRECTORY,
+    productsPath: paths.productsPath,
+    aggregateReportPath: paths.researchReportPath,
+    productReportsDirectory: paths.productReportDirectory,
     output,
     aggregate,
   };
@@ -813,6 +833,7 @@ export async function runSingleProductResearch(
   const normalizedTitle = query.replace(/\s+/g, " ").trim();
   if (!normalizedTitle) throw new Error("Product query is required.");
   const generatedAt = dependencies.generatedAt ?? new Date().toISOString();
+  const paths = resolvePaths(dependencies.paths);
   let existing: CatalogProductsFile = {
     generatedAt,
     researchProvider: "uninitialized",
@@ -820,7 +841,7 @@ export async function runSingleProductResearch(
   };
   try {
     existing = JSON.parse(
-      await readFile(PRODUCTS_PATH, "utf8"),
+      await readFile(paths.productsPath, "utf8"),
     ) as CatalogProductsFile;
   } catch {
     // First single-product research run creates the generated draft file.
@@ -855,13 +876,13 @@ export async function runSingleProductResearch(
   };
   validateCatalogProductsFile(output);
   await Promise.all([
-    writeJsonAtomic(PRODUCTS_PATH, output),
+    writeJsonAtomic(paths.productsPath, output),
     writeJsonAtomic(
-      join(PRODUCT_REPORT_DIRECTORY, `${item.slug}.research.json`),
+      join(paths.productReportDirectory, `${item.slug}.research.json`),
       result.report,
     ),
   ]);
-  return { item, ...result, productsPath: PRODUCTS_PATH };
+  return { item, ...result, productsPath: paths.productsPath };
 }
 
 async function main() {
@@ -876,10 +897,9 @@ async function main() {
         products: result.aggregate.uniqueProducts,
         sourcesFound: result.aggregate.totalSourcesFound,
         documentsFound: result.aggregate.totalDocumentsFound,
-        characteristicsExtracted:
-          result.aggregate.totalCharacteristicsExtracted,
-        candidateClaimsCreated: result.aggregate.totalCandidateClaimsCreated,
-        uniqueArtifacts: result.aggregate.totalUniqueArtifacts,
+        characteristicsExtracted: result.aggregate.totalFactsExtracted,
+        candidateClaimsCreated: result.aggregate.totalCandidateClaims,
+        uniqueArtifacts: result.aggregate.totalArtifactsCreated,
         conflicts: result.aggregate.totalConflicts,
         productsReadyForHumanReview:
           result.aggregate.productsReadyForHumanReview.length,

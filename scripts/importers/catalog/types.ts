@@ -165,6 +165,7 @@ export interface CandidateCharacteristic {
   rawText: string;
   sourceUrl: string;
   sourceTitle: string;
+  documentKey: string | null;
   documentTitle: string | null;
   documentType: DocumentCandidateType | null;
   documentSha256: string | null;
@@ -189,7 +190,6 @@ export interface CharacteristicExtractor {
 }
 
 export interface EvidenceCandidate {
-  evidenceId: string;
   evidenceCandidateId: string;
   kind: "document_excerpt" | "html_metadata";
   sourceUrl: string;
@@ -283,7 +283,6 @@ export interface CandidateClaim {
   scopePayload: Record<string, unknown>;
   rawText: string;
   evidenceCandidateIds: string[];
-  evidenceCandidates: EvidenceCandidate[];
   confidence: number;
   extractionMethod: CandidateCharacteristic["extractionMethod"];
   status: "candidate";
@@ -384,6 +383,7 @@ export interface DraftCatalogProduct {
   documents: DocumentCandidate[];
   characteristics: CandidateCharacteristic[];
   sourceCandidates: SourceCandidate[];
+  evidenceCandidates: EvidenceCandidate[];
   candidateClaims: CandidateClaim[];
   researchStatus: ResearchStatus;
   status: "draft";
@@ -433,9 +433,6 @@ export interface CatalogResearchAggregateReport {
   totalEvidenceCandidates: number;
   totalCandidateClaims: number;
   totalConflicts: number;
-  totalCharacteristicsExtracted: number;
-  totalCandidateClaimsCreated: number;
-  totalUniqueArtifacts: number;
   totalMissingCharacteristics: number;
   duplicateProducts: CatalogImportReport["suspectedDuplicates"];
   productsWithoutSources: string[];

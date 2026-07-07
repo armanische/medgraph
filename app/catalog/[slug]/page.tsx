@@ -219,12 +219,12 @@ export default async function DraftCatalogProductPage({
 
           <Section title="Evidence Candidates">
             <ListEmptyWhen
-              empty={product.candidateClaims.flatMap((claim) => claim.evidenceCandidates).length === 0}
+              empty={product.evidenceCandidates.length === 0}
               message="Evidence Candidates пока не созданы."
             >
               <div className="space-y-3">
-                {product.candidateClaims.flatMap((claim) => claim.evidenceCandidates).map((evidence) => (
-                  <div key={evidence.evidenceId} className="rounded-lg border border-[var(--cm-rule)] bg-white p-4">
+                {product.evidenceCandidates.map((evidence) => (
+                  <div key={evidence.evidenceCandidateId} className="rounded-lg border border-[var(--cm-rule)] bg-white p-4">
                     <div className="text-xs leading-6 text-cm-slate">
                       “{evidence.quotedText}”
                     </div>

@@ -48,7 +48,7 @@ function stableId(prefix: string, values: string[]) {
 }
 
 export function validateCandidateClaim(value: CandidateClaim) {
-  if (value.evidenceCandidates.length === 0) {
+  if (value.evidenceCandidateIds.length === 0) {
     throw new Error("Candidate Claim requires at least one Evidence candidate.");
   }
   if (value.autoPublish !== false || value.verificationStatus !== "unverified") {
@@ -86,8 +86,7 @@ export class DefaultCandidateClaimBuilder implements CandidateClaimBuilder {
         },
         scopePayload: {},
         rawText: characteristic.rawText,
-        evidenceCandidateIds: [evidence.evidenceId],
-        evidenceCandidates: [evidence],
+        evidenceCandidateIds: [evidence.evidenceCandidateId],
         confidence: characteristic.confidence,
         extractionMethod: characteristic.extractionMethod,
         status: "candidate",

@@ -1,9 +1,18 @@
+import { createHash } from "node:crypto";
+
 import type {
   CandidateCharacteristic,
   CharacteristicCategory,
   CharacteristicExtractionInput,
   CharacteristicExtractor,
 } from "./types.ts";
+
+function catalogResearchDocumentKey(url: string) {
+  return `catalog-research:${createHash("sha256")
+    .update(url)
+    .digest("hex")
+    .slice(0, 32)}`;
+}
 
 interface ExtractionRule {
   category: CharacteristicCategory;
@@ -256,11 +265,14 @@ export class RuleBasedCharacteristicExtractor
             rawText: cleanValue(match[0]),
             sourceUrl: input.source.sourceUrl,
             sourceTitle: input.source.sourceTitle,
+            documentKey: input.document
+              ? catalogResearchDocumentKey(input.document.url)
+              : null,
             documentTitle: input.document?.title ?? null,
             documentType: input.document?.documentType ?? null,
             documentSha256: input.document?.sha256 ?? null,
             documentVersion: input.document?.sha256
-              ? `sha256:${input.document.sha256}`
+              ? `${catalogResearchDocumentKey(input.document.url)}:${input.document.sha256}`
               : null,
             locator: locatorFor(input.text, match.index ?? 0),
             extractionMethod: input.extractionMethod,

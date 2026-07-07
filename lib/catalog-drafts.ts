@@ -1,28 +1,49 @@
 import catalogProducts from "@/data/catalog-products.generated.json";
 import type {
   CatalogProductsFile,
-  DraftCatalogProduct,
-} from "@/scripts/importers/catalog/types";
+  DraftCatalogCard,
+  DraftResearchStatus,
+} from "@/types/catalog-draft";
 
-const data = catalogProducts as CatalogProductsFile;
+const data = catalogProducts as unknown as CatalogProductsFile;
 
 export function getDraftCatalogProducts() {
   return data.products;
+}
+
+export function getDraftCatalogCards(): DraftCatalogCard[] {
+  return data.products.map((product) => ({
+    slug: product.slug,
+    title: product.title,
+    titleFromCatalog: product.titleFromCatalog,
+    brand: product.brand,
+    manufacturer: product.manufacturer,
+    model: product.model,
+    category: product.category,
+    researchStatus: product.researchStatus,
+    readinessScore: product.readinessScore,
+    sourcesSummary: product.sourcesSummary,
+    documentsSummary: product.documentsSummary,
+    candidateClaimsCount: product.candidateClaimsCount,
+    missingCriticalFields: product.missingCriticalFields,
+  }));
 }
 
 export function getDraftCatalogProduct(slug: string) {
   return data.products.find((product) => product.slug === slug) ?? null;
 }
 
-export function getDraftCatalogCategories() {
+export function getDraftCatalogCategories(
+  products: Pick<DraftCatalogCard, "category">[] = data.products,
+) {
   return Array.from(
-    new Set(data.products.map((product) => product.category).filter(Boolean)),
+    new Set(products.map((product) => product.category).filter(Boolean)),
   ).sort((left, right) => left.localeCompare(right, "ru-RU"));
 }
 
-export function searchDraftCatalogProducts(
+export function searchDraftCatalogCards(
   query: string,
-  products: DraftCatalogProduct[] = data.products,
+  products: DraftCatalogCard[] = getDraftCatalogCards(),
 ) {
   const normalized = query.trim().toLocaleLowerCase("ru-RU");
   if (!normalized) return products;
@@ -35,8 +56,6 @@ export function searchDraftCatalogProducts(
       product.model,
       product.category,
       product.slug,
-      ...product.sourceCandidates.map((source) => source.sourceTitle),
-      ...product.documents.map((document) => document.title),
     ]
       .filter(Boolean)
       .join(" ")
@@ -45,8 +64,8 @@ export function searchDraftCatalogProducts(
   );
 }
 
-export function draftStatusLabel(status: DraftCatalogProduct["researchStatus"]) {
-  const labels: Record<DraftCatalogProduct["researchStatus"], string> = {
+export function draftStatusLabel(status: DraftResearchStatus) {
+  const labels: Record<DraftResearchStatus, string> = {
     needs_source: "Needs source",
     partially_researched: "Partially researched",
     research_ready: "Research ready",

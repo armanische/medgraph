@@ -149,24 +149,19 @@ function stableId(prefix: string, parts: string[]) {
 
 export class DefaultEvidenceBuilder implements EvidenceBuilder {
   build(characteristic: CandidateCharacteristic) {
+    const evidenceCandidateId = stableId("evidence", [
+      characteristic.sourceUrl,
+      characteristic.rawText,
+    ]);
     return {
-      evidenceId: stableId("evidence", [
-        characteristic.sourceUrl,
-        characteristic.rawText,
-      ]),
-      evidenceCandidateId: stableId("evidence", [
-        characteristic.sourceUrl,
-        characteristic.rawText,
-      ]),
+      evidenceCandidateId,
       kind:
         characteristic.extractionMethod === "html_metadata"
           ? ("html_metadata" as const)
           : ("document_excerpt" as const),
       sourceUrl: characteristic.sourceUrl,
       sourceTitle: characteristic.sourceTitle,
-      documentKey: characteristic.documentSha256
-        ? `sha256:${characteristic.documentSha256}`
-        : null,
+      documentKey: characteristic.documentKey,
       documentVersionId: characteristic.documentVersion,
       documentTitle: characteristic.documentTitle,
       documentType: characteristic.documentType,

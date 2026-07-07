@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import CatalogExplorer from "@/components/catalog/CatalogExplorer";
 import {
+  getDraftCatalogCards,
   getDraftCatalogCategories,
-  getDraftCatalogProducts,
 } from "@/lib/catalog-drafts";
 
 export const metadata: Metadata = {
@@ -17,8 +17,8 @@ export default async function CatalogPage({
   searchParams: Promise<{ q?: string }>;
 }) {
   const { q = "" } = await searchParams;
-  const products = getDraftCatalogProducts();
-  const categories = getDraftCatalogCategories();
+  const products = getDraftCatalogCards();
+  const categories = getDraftCatalogCategories(products);
 
   return (
     <main className="min-h-screen bg-cm-canvas">

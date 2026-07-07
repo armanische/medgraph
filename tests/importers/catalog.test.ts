@@ -49,14 +49,6 @@ const FIXTURE = resolve(
   process.cwd(),
   "tests/fixtures/catalog/catalog-extract.txt",
 );
-const GENERATED_PRODUCTS = resolve(
-  process.cwd(),
-  "data/catalog-products.generated.json",
-);
-const AGGREGATE_REPORT = resolve(
-  process.cwd(),
-  "data/catalog-research-report.generated.json",
-);
 
 const noDownload: DocumentDownloader = {
   async download(document) {
@@ -287,6 +279,7 @@ test("characteristic requires sourceUrl and sourceTitle", () => {
         rawText: "Weight: 12 kg",
         sourceUrl: "",
         sourceTitle: "",
+        documentKey: null,
         documentTitle: null,
         documentType: null,
         documentSha256: null,
@@ -320,7 +313,6 @@ test("candidate claim requires evidence and cannot auto-publish", () => {
         scopePayload: {},
         rawText: "Weight: 12 kg",
         evidenceCandidateIds: [],
-        evidenceCandidates: [],
         confidence: 0.8,
         extractionMethod: "rule_based",
         status: "candidate",
@@ -351,9 +343,10 @@ test("mock provider produces documents, characteristics and candidate claims", a
       (claim) =>
         claim.autoPublish === false &&
         claim.verificationStatus === "unverified" &&
-        claim.evidenceCandidates.length > 0,
+        claim.evidenceCandidateIds.length > 0,
     ),
   );
+  assert.equal(product.evidenceCandidates.length, product.candidateClaims.length);
   assert.ok(
     product.characteristics.every(
       (characteristic) =>
@@ -374,6 +367,7 @@ test("evidence includes document hash, version, locator and confidence", () => {
     rawText: "Weight: 12 kg",
     sourceUrl: "https://example.org/datasheet.pdf",
     sourceTitle: "Datasheet",
+    documentKey: "catalog-research:example",
     documentTitle: "Datasheet",
     documentType: "datasheet",
     documentSha256: "a".repeat(64),
@@ -401,6 +395,7 @@ test("conflict and missing-information detectors never choose a value", async ()
     category: "weight" as const,
     label: "Weight",
     unit: "kg",
+    documentKey: "catalog-research:example",
     documentTitle: "Datasheet",
     documentType: "datasheet" as const,
     documentSha256: "a".repeat(64),
@@ -517,17 +512,33 @@ test("network failure does not crash the whole pipeline", async () => {
 });
 
 test("generated research data and per-product reports exist", async () => {
+  const { seed, report: importReport } = await fixtureSeed();
+  const root = await mkdtemp(join(tmpdir(), "catalog-research-output-"));
+  const seedPath = join(root, "catalog-seed.generated.json");
+  const productsPath = join(root, "catalog-products.generated.json");
+  const importReportPath = join(root, "catalog-import-report.generated.json");
+  const researchReportPath = join(root, "catalog-research-report.generated.json");
+  const productReportDirectory = join(root, "research/products");
+  await writeFile(seedPath, JSON.stringify(seed, null, 2));
+  await writeFile(importReportPath, JSON.stringify(importReport, null, 2));
   await runCatalogResearch({
     provider: new CompositeResearchProvider([
       new ManualSourceSeedResearchProvider(),
       new NoNetworkResearchProvider(),
     ]),
     generatedAt: "2026-07-06T00:00:00.000Z",
+    paths: {
+      seedPath,
+      productsPath,
+      importReportPath,
+      researchReportPath,
+      productReportDirectory,
+    },
   });
-  await access(GENERATED_PRODUCTS);
-  await access(AGGREGATE_REPORT);
-  const products = JSON.parse(await readFile(GENERATED_PRODUCTS, "utf8"));
-  const aggregate = JSON.parse(await readFile(AGGREGATE_REPORT, "utf8"));
+  await access(productsPath);
+  await access(researchReportPath);
+  const products = JSON.parse(await readFile(productsPath, "utf8"));
+  const aggregate = JSON.parse(await readFile(researchReportPath, "utf8"));
   assert.equal(products.products.length, aggregate.uniqueProducts);
   assert.equal(products.products.length, aggregate.totalProducts);
   assert.equal(products.products.length, aggregate.processedProducts);
@@ -538,8 +549,7 @@ test("generated research data and per-product reports exist", async () => {
   assert.equal(validateCatalogProductsFile(products), products);
   await access(
     resolve(
-      process.cwd(),
-      "data/research/products",
+      productReportDirectory,
       `${products.products[0].slug}.research.json`,
     ),
   );
