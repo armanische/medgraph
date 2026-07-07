@@ -13,6 +13,8 @@ import type {
   DownloadedArtifact,
   IngestionPlan,
   NormalizedDocumentLink,
+  NormalizedRecord,
+  RawRegistryRecord,
 } from "../../scripts/importers/core/contracts.ts";
 import { StreamingDownloader } from "../../scripts/importers/core/downloader.ts";
 import {
@@ -104,6 +106,91 @@ function documentLink(): NormalizedDocumentLink {
     title: "Регистрационное удостоверение",
     url: OFFICIAL_DOCUMENT_URL,
   };
+}
+
+function createRawRecordForDownload(): RawRegistryRecord {
+  return {
+    provider: "roszdravnadzor",
+    query: "ФСЗ 2009/04992",
+    registrationNumber: "ФСЗ 2009/04992",
+    registryRecordId: "167894",
+    sourceUrl:
+      "https://elk.roszdravnadzor.gov.ru/widget/med-product/167894",
+    capturedAt: "2026-07-07T00:00:00.000Z",
+    payloads: [],
+    htmlArtifacts: [],
+    jsonArtifacts: [],
+    metadata: { domData: { pairs: [], links: [] } },
+  };
+}
+
+function createNormalizedRecordForDownload(
+  links: NormalizedDocumentLink[] = [documentLink()],
+): NormalizedRecord {
+  return {
+    provider: "roszdravnadzor",
+    query: "ФСЗ 2009/04992",
+    registrationNumber: "ФСЗ 2009/04992",
+    registryRecordId: "167894",
+    medicalDeviceName: "Фильтр дыхательный FS510",
+    manufacturer: "Alba Healthcare",
+    status: "Действует",
+    issueDate: "2009-12-01",
+    updatedDate: null,
+    sourceUrl:
+      "https://elk.roszdravnadzor.gov.ru/widget/med-product/167894",
+    documentLinks: links,
+  };
+}
+
+function attachFakeBrowserContext(
+  adapter: RoszdravnadzorAdapter,
+  fetchImplementation: (
+    url: string,
+    options?: { headers?: Record<string, string> },
+  ) => Promise<Response>,
+) {
+  Object.assign(
+    adapter as unknown as {
+      context: {
+        request: {
+          fetch: (
+            url: string,
+            options?: { headers?: Record<string, string> },
+          ) => Promise<{
+            ok(): boolean;
+            status(): number;
+            statusText(): string;
+            headers(): Record<string, string>;
+            body(): Promise<Buffer>;
+            url(): string;
+          }>;
+        };
+      };
+      page: null;
+    },
+    {
+      context: {
+        request: {
+          fetch: async (
+            url: string,
+            options?: { headers?: Record<string, string> },
+          ) => {
+            const response = await fetchImplementation(url, options);
+            return {
+              ok: () => response.ok,
+              status: () => response.status,
+              statusText: () => response.statusText,
+              headers: () => Object.fromEntries(response.headers.entries()),
+              body: async () => Buffer.from(await response.arrayBuffer()),
+              url: () => response.url || url,
+            };
+          },
+        },
+      },
+      page: null,
+    },
+  );
 }
 
 test("same import twice creates one content-addressed artifact and one version", async () => {
@@ -209,6 +296,46 @@ test("multiple PDFs are modeled as separate logical documents", () => {
   assert.equal(new Set(documents.map((item) => item.documentKey)).size, 3);
   assert.deepEqual(
     documents.map((item) => item.documentType),
+    ["registration", "application", "ifu"],
+  );
+});
+
+test("equivalent Roszdravnadzor download URLs are normalized and deduplicated", () => {
+  const documents = normalizeDocumentLinks("ФСЗ 2009/04992", [
+    {
+      title: "Регистрационное удостоверение",
+      url:
+        "https://elk.roszdravnadzor.gov.ru/public-gateway/med-product/api/v1/files/download-by-path-public?id=8706944&path=/RU/FSZ/R.pdf",
+    },
+    {
+      title: "Регистрационное удостоверение",
+      url:
+        "https://elk.roszdravnadzor.gov.ru/public-gateway/med-product/api/v1/files/download-by-path-public?path=/RU/FSZ/R.pdf&id=8706944",
+    },
+  ]);
+
+  assert.equal(documents.length, 1);
+  assert.equal(documents[0].documentType, "registration");
+});
+
+test("Roszdravnadzor filename suffixes classify conservative document types", () => {
+  const documents = normalizeDocumentLinks("ФСЗ 2009/04992", [
+    {
+      title: "Документ",
+      url: `${OFFICIAL_DOCUMENT_URL}&path=/files/123_R.pdf`,
+    },
+    {
+      title: "Документ",
+      url: `${OFFICIAL_DOCUMENT_URL}&path=/files/123_P.pdf`,
+    },
+    {
+      title: "Документ",
+      url: `${OFFICIAL_DOCUMENT_URL}&path=/files/123_I.pdf`,
+    },
+  ]);
+
+  assert.deepEqual(
+    documents.map((document) => document.documentType),
     ["registration", "application", "ifu"],
   );
 });
@@ -345,6 +472,199 @@ test("HTTP 404 is not retried", async () => {
   assert.equal(attempts, 1);
   assert.equal(result.artifact, null);
   assert.match(result.failure?.reason ?? "", /404/);
+});
+
+test("browser-context downloader is used when safe fetch fails and passes Referer", async () => {
+  const root = await createTemporaryRoot();
+  let safeFetchAttempts = 0;
+  let browserFetchAttempts = 0;
+  let observedReferer: string | undefined;
+  const adapter = new RoszdravnadzorAdapter(
+    new ContentAddressedArtifactStore({ rootDirectory: root }),
+    {
+      downloadFetchImplementation: (async () => {
+        safeFetchAttempts += 1;
+        throw new Error("fetch failed");
+      }) as typeof fetch,
+    },
+  );
+  attachFakeBrowserContext(adapter, async (_url, options) => {
+    browserFetchAttempts += 1;
+    observedReferer = options?.headers?.Referer;
+    return new Response(
+      await readFile(join(FIXTURE_DIRECTORY, "registration-v1.pdf")),
+      {
+        status: 200,
+        headers: { "content-type": "application/pdf" },
+      },
+    );
+  });
+
+  const plan = await adapter.createIngestionPlan(
+    createRawRecordForDownload(),
+    createNormalizedRecordForDownload(),
+  );
+
+  assert.equal(safeFetchAttempts, 3);
+  assert.equal(browserFetchAttempts, 1);
+  assert.equal(
+    observedReferer,
+    "https://elk.roszdravnadzor.gov.ru/widget/med-product/167894",
+  );
+  assert.equal(plan.downloadedFiles.length, 1);
+  assert.equal(plan.failedDownloads.length, 0);
+  assert.match(plan.warnings.join(" "), /browser context/i);
+});
+
+test("downloaded Roszdravnadzor document creates Document and DocumentVersion after manifest merge", async () => {
+  const root = await createTemporaryRoot();
+  const adapter = new RoszdravnadzorAdapter(
+    new ContentAddressedArtifactStore({ rootDirectory: root }),
+    {
+      downloadFetchImplementation: (async () => {
+        throw new Error("fetch failed");
+      }) as typeof fetch,
+    },
+  );
+  attachFakeBrowserContext(adapter, async () =>
+    new Response(await readFile(join(FIXTURE_DIRECTORY, "registration-v1.pdf")), {
+      status: 200,
+      headers: { "content-type": "application/pdf" },
+    }),
+  );
+  const plan = await adapter.createIngestionPlan(
+    createRawRecordForDownload(),
+    createNormalizedRecordForDownload(),
+  );
+  const manifestStore = new ImportManifestStore(join(root, "import-manifest.json"));
+  const merged = await manifestStore.merge(plan);
+
+  assert.equal(merged.plan.downloadedFiles.length, 1);
+  assert.equal(merged.plan.documents.length, 1);
+  assert.equal(merged.plan.documentVersions.length, 1);
+  assert.equal(
+    merged.plan.documentVersions[0].sha256,
+    merged.plan.downloadedFiles[0].sha256,
+  );
+});
+
+test("browser-context fallback still enforces PDF magic bytes", async () => {
+  const root = await createTemporaryRoot();
+  const adapter = new RoszdravnadzorAdapter(
+    new ContentAddressedArtifactStore({ rootDirectory: root }),
+    {
+      downloadFetchImplementation: (async () => {
+        throw new Error("fetch failed");
+      }) as typeof fetch,
+    },
+  );
+  attachFakeBrowserContext(adapter, async () =>
+    new Response("not a PDF", {
+      status: 200,
+      headers: { "content-type": "application/pdf" },
+    }),
+  );
+
+  const plan = await adapter.createIngestionPlan(
+    createRawRecordForDownload(),
+    createNormalizedRecordForDownload(),
+  );
+
+  assert.equal(plan.downloadedFiles.length, 0);
+  assert.equal(plan.failedDownloads.length, 1);
+  assert.match(plan.failedDownloads[0].reason, /PDF signature/i);
+  assert.equal((await listFiles(join(root, "artifacts"))).length, 0);
+});
+
+test("failed browser-context download remains in failedDownloads", async () => {
+  const root = await createTemporaryRoot();
+  const adapter = new RoszdravnadzorAdapter(
+    new ContentAddressedArtifactStore({ rootDirectory: root }),
+    {
+      downloadFetchImplementation: (async () => {
+        throw new Error("fetch failed");
+      }) as typeof fetch,
+    },
+  );
+  attachFakeBrowserContext(adapter, async () =>
+    new Response("temporary", {
+      status: 503,
+      headers: { "content-type": "text/plain" },
+    }),
+  );
+
+  const plan = await adapter.createIngestionPlan(
+    createRawRecordForDownload(),
+    createNormalizedRecordForDownload(),
+  );
+
+  assert.equal(plan.downloadedFiles.length, 0);
+  assert.equal(plan.failedDownloads.length, 1);
+  assert.match(plan.failedDownloads[0].reason, /browser-context downloader failed/);
+  assert.match(plan.warnings.join(" "), /was not downloaded/);
+});
+
+test("HTTP 403 from safe downloader can be retried through browser context", async () => {
+  const root = await createTemporaryRoot();
+  let browserFetchAttempts = 0;
+  const adapter = new RoszdravnadzorAdapter(
+    new ContentAddressedArtifactStore({ rootDirectory: root }),
+    {
+      downloadFetchImplementation: (async () =>
+        new Response("forbidden", { status: 403 })) as typeof fetch,
+    },
+  );
+  attachFakeBrowserContext(adapter, async () => {
+    browserFetchAttempts += 1;
+    return new Response(
+      await readFile(join(FIXTURE_DIRECTORY, "registration-v1.pdf")),
+      {
+        status: 200,
+        headers: { "content-type": "application/pdf" },
+      },
+    );
+  });
+
+  const plan = await adapter.createIngestionPlan(
+    createRawRecordForDownload(),
+    createNormalizedRecordForDownload(),
+  );
+
+  assert.equal(browserFetchAttempts, 1);
+  assert.equal(plan.downloadedFiles.length, 1);
+  assert.equal(plan.failedDownloads.length, 0);
+});
+
+test("HTTP 404 from safe downloader is not blindly retried through browser context", async () => {
+  const root = await createTemporaryRoot();
+  let browserFetchAttempts = 0;
+  const adapter = new RoszdravnadzorAdapter(
+    new ContentAddressedArtifactStore({ rootDirectory: root }),
+    {
+      downloadFetchImplementation: (async () =>
+        new Response("missing", { status: 404 })) as typeof fetch,
+    },
+  );
+  attachFakeBrowserContext(adapter, async () => {
+    browserFetchAttempts += 1;
+    return new Response(
+      await readFile(join(FIXTURE_DIRECTORY, "registration-v1.pdf")),
+      {
+        status: 200,
+        headers: { "content-type": "application/pdf" },
+      },
+    );
+  });
+
+  const plan = await adapter.createIngestionPlan(
+    createRawRecordForDownload(),
+    createNormalizedRecordForDownload(),
+  );
+
+  assert.equal(browserFetchAttempts, 0);
+  assert.equal(plan.downloadedFiles.length, 0);
+  assert.equal(plan.failedDownloads.length, 1);
+  assert.match(plan.failedDownloads[0].reason, /404/);
 });
 
 test("stale manifest lock is recovered using timestamp metadata", async () => {

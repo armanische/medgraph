@@ -4,6 +4,8 @@ import { pathToFileURL } from "node:url";
 
 import { ContentAddressedArtifactStore } from "./core/artifact-store.ts";
 import type {
+  DownloadedArtifact,
+  FailedDownload,
   ImportOutput,
   IngestionPlan,
   NormalizedDocumentLink,
@@ -12,7 +14,10 @@ import type {
   RawArtifact,
   RawRegistryRecord,
 } from "./core/contracts.ts";
-import { StreamingDownloader } from "./core/downloader.ts";
+import {
+  DownloadRejectedError,
+  StreamingDownloader,
+} from "./core/downloader.ts";
 import { ImportManifestStore } from "./core/manifest-store.ts";
 import { determineImportStatus } from "./core/status.ts";
 import {
@@ -119,6 +124,24 @@ interface PageLike extends SearchScopeLike {
 }
 
 interface BrowserContextLike {
+  request?: {
+    fetch(
+      url: string,
+      options?: {
+        method?: string;
+        headers?: Record<string, string>;
+        timeout?: number;
+        maxRedirects?: number;
+      },
+    ): Promise<{
+      ok(): boolean;
+      status(): number;
+      statusText(): string;
+      headers(): Record<string, string>;
+      body(): Promise<Buffer>;
+      url(): string;
+    }>;
+  };
   newPage(): Promise<PageLike>;
   close(): Promise<void>;
 }
@@ -529,6 +552,17 @@ function resolveDetailFallback(
 
 function documentTypeFor(title: string, url: string) {
   const value = `${title} ${url}`.toLocaleLowerCase("ru-RU");
+  const path =
+    new URL(url, OFFICIAL_ORIGIN).searchParams.get("path") ??
+    new URL(url, OFFICIAL_ORIGIN).pathname;
+  const filename = decodeURIComponent(path).split(/[\\/]/).at(-1) ?? "";
+  if (/_i(?:\.[a-z0-9]+)?$/i.test(filename)) return "ifu" as const;
+  if (/_p(?:\.[a-z0-9]+)?$/i.test(filename)) {
+    return "application" as const;
+  }
+  if (/_r(?:\.[a-z0-9]+)?$/i.test(filename)) {
+    return "registration" as const;
+  }
   if (/инструк|руководств|manual|ifu/.test(value)) return "ifu" as const;
   if (/приложен|application|appendix/.test(value)) {
     return "application" as const;
@@ -590,11 +624,30 @@ function collectDocumentLinksFromJson(payloads: unknown[]) {
   return links;
 }
 
+function canonicalDocumentUrlKey(url: URL) {
+  if (/download-by-path-public/i.test(url.pathname)) {
+    const id = url.searchParams.get("id") ?? "";
+    const path = url.searchParams.get("path") ?? "";
+    if (id || path) {
+      return `${url.origin}${url.pathname}?id=${id}&path=${path}`;
+    }
+  }
+
+  const sortedParams = Array.from(url.searchParams.entries()).sort(
+    ([leftKey, leftValue], [rightKey, rightValue]) =>
+      `${leftKey}=${leftValue}`.localeCompare(`${rightKey}=${rightValue}`),
+  );
+  const query = sortedParams
+    .map(([key, item]) => `${key}=${item}`)
+    .join("&");
+  return `${url.origin}${url.pathname}${query ? `?${query}` : ""}`;
+}
+
 function normalizeDocumentLinks(
   registrationNumber: string,
   values: Array<{ title: string; url: string }>,
 ) {
-  const seenUrls = new Set<string>();
+  const seenDocumentUrls = new Set<string>();
   const baseIdentityCounts = new Map<string, number>();
   const documents: NormalizedDocumentLink[] = [];
 
@@ -607,12 +660,13 @@ function normalizeDocumentLinks(
     }
     if (
       url.protocol !== "https:" ||
-      url.hostname !== "elk.roszdravnadzor.gov.ru" ||
-      seenUrls.has(url.href)
+      url.hostname !== "elk.roszdravnadzor.gov.ru"
     ) {
       continue;
     }
-    seenUrls.add(url.href);
+    const documentUrlKey = canonicalDocumentUrlKey(url);
+    if (seenDocumentUrls.has(documentUrlKey)) continue;
+    seenDocumentUrls.add(documentUrlKey);
 
     const title = normalizeSpace(value.title) || "Документ Росздравнадзора";
     const documentType = documentTypeFor(title, url.href);
@@ -955,6 +1009,143 @@ function registryRecordIdFromUrl(value: string) {
   return match?.[1] ?? null;
 }
 
+function headersToRecord(headers: HeadersInit | undefined) {
+  const record: Record<string, string> = {};
+  if (!headers) return record;
+  if (headers instanceof Headers) {
+    headers.forEach((value, key) => {
+      record[key] = value;
+    });
+    return record;
+  }
+  if (Array.isArray(headers)) {
+    headers.forEach(([key, value]) => {
+      record[key] = value;
+    });
+    return record;
+  }
+  return { ...headers };
+}
+
+function contentLengthExceedsLimit(
+  headers: Record<string, string>,
+  maxBytes: number,
+) {
+  const length = headers["content-length"] ?? headers["Content-Length"];
+  if (!length) return false;
+  const parsed = Number(length);
+  return Number.isFinite(parsed) && parsed > maxBytes;
+}
+
+function shouldUseBrowserContextFallback(failure: FailedDownload) {
+  if (/HTTP\s+404\b/i.test(failure.reason)) return false;
+  return (
+    failure.retryable ||
+    /HTTP\s+403\b/i.test(failure.reason) ||
+    /fetch failed|network|TLS|certificate|ERR_CERT|context|socket|ECONN/i.test(
+      failure.reason,
+    )
+  );
+}
+
+function createBrowserContextFetch(options: {
+  context: BrowserContextLike;
+  page: PageLike | null;
+  referer: string;
+  maxBytes: number;
+}): typeof fetch {
+  return (async (input, init) => {
+    const url = String(input);
+    const initHeaders = headersToRecord(init?.headers);
+    const headers = {
+      ...initHeaders,
+      Referer: options.referer,
+      "User-Agent": BROWSER_USER_AGENT,
+    };
+
+    if (options.context.request) {
+      try {
+        const response = await options.context.request.fetch(url, {
+          method: init?.method ?? "GET",
+          headers,
+          timeout: DOM_TIMEOUT_MS,
+          maxRedirects: 5,
+        });
+        const responseHeaders = response.headers();
+        if (contentLengthExceedsLimit(responseHeaders, options.maxBytes)) {
+          throw new DownloadRejectedError(
+            `Artifact exceeds maximum size of ${options.maxBytes} bytes.`,
+          );
+        }
+        const body = await response.body();
+        if (body.byteLength > options.maxBytes) {
+          throw new DownloadRejectedError(
+            `Artifact exceeds maximum size of ${options.maxBytes} bytes.`,
+          );
+        }
+        const responseBody = new ArrayBuffer(body.byteLength);
+        new Uint8Array(responseBody).set(body);
+        return new Response(responseBody, {
+          status: response.status(),
+          statusText: response.statusText(),
+          headers: responseHeaders,
+        });
+      } catch (error) {
+        if (!options.page) throw error;
+      }
+    }
+
+    if (!options.page) {
+      throw new Error("Browser page is not available for document download.");
+    }
+
+    const browserResponse = await options.page.evaluate(
+      async ({ fetchUrl, accept, referer, maxBytes }) => {
+        const response = await fetch(fetchUrl, {
+          method: "GET",
+          credentials: "include",
+          redirect: "follow",
+          referrer: referer,
+          headers: { Accept: accept },
+        });
+        const contentLength = response.headers.get("content-length");
+        if (contentLength && Number(contentLength) > maxBytes) {
+          throw new Error(
+            `Artifact exceeds maximum size of ${maxBytes} bytes.`,
+          );
+        }
+        const arrayBuffer = await response.arrayBuffer();
+        if (arrayBuffer.byteLength > maxBytes) {
+          throw new Error(
+            `Artifact exceeds maximum size of ${maxBytes} bytes.`,
+          );
+        }
+        return {
+          status: response.status,
+          statusText: response.statusText,
+          headers: Array.from(response.headers.entries()),
+          bytes: Array.from(new Uint8Array(arrayBuffer)),
+        };
+      },
+      {
+        fetchUrl: url,
+        accept:
+          initHeaders.Accept ??
+          initHeaders.accept ??
+          "application/pdf,application/octet-stream,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        referer: options.referer,
+        maxBytes: options.maxBytes,
+      },
+    );
+
+    return new Response(Uint8Array.from(browserResponse.bytes), {
+      status: browserResponse.status,
+      statusText: browserResponse.statusText,
+      headers: browserResponse.headers,
+    });
+  }) as typeof fetch;
+}
+
 class RoszdravnadzorAdapter implements ProviderAdapter {
   readonly provider = PROVIDER;
   readonly warnings: string[];
@@ -963,22 +1154,38 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
   private readonly tlsPolicy: RoszdravnadzorTlsPolicy;
   private readonly detailFallback: ReturnType<typeof resolveDetailFallback>;
   private readonly diagnosticsRootDirectory?: string;
+  private browser: BrowserLike | null = null;
+  private context: BrowserContextLike | null = null;
+  private page: PageLike | null = null;
 
   constructor(
     artifactStore: ContentAddressedArtifactStore,
     options: {
       environment?: Readonly<Record<string, string | undefined>>;
       diagnosticsRootDirectory?: string;
+      downloadFetchImplementation?: typeof fetch;
     } = {},
   ) {
     const environment = options.environment ?? process.env;
     this.artifactStore = artifactStore;
-    this.downloader = new StreamingDownloader({ artifactStore });
+    this.downloader = new StreamingDownloader({
+      artifactStore,
+      fetchImplementation: options.downloadFetchImplementation,
+    });
     this.tlsPolicy = resolveRoszdravnadzorTlsPolicy(environment);
     this.detailFallback = resolveDetailFallback(environment);
     this.diagnosticsRootDirectory = options.diagnosticsRootDirectory;
     this.warnings = this.tlsPolicy.warning ? [this.tlsPolicy.warning] : [];
     if (this.detailFallback) this.warnings.push(this.detailFallback.warning);
+  }
+
+  async close() {
+    await this.page?.close().catch(() => undefined);
+    await this.context?.close().catch(() => undefined);
+    await this.browser?.close().catch(() => undefined);
+    this.page = null;
+    this.context = null;
+    this.browser = null;
   }
 
   async fetchRawRecord(query: string): Promise<RawRegistryRecord | null> {
@@ -994,6 +1201,7 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
       executablePath,
       headless: true,
     });
+    this.browser = browser;
     let context: BrowserContextLike | null = null;
     let page: PageLike | null = null;
 
@@ -1004,7 +1212,9 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
         userAgent: BROWSER_USER_AGENT,
         ignoreHTTPSErrors: this.tlsPolicy.ignoreHTTPSErrors,
       });
+      this.context = context;
       page = await context.newPage();
+      this.page = page;
       const capturedPayloads: unknown[] = [];
       const capturedPayloadUrls: string[] = [];
       const jsonArtifacts: RawArtifact[] = [];
@@ -1269,11 +1479,8 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
           throw new ImporterDiagnosticError(reason, diagnosticsPath);
         }
       }
+      await this.close();
       throw error;
-    } finally {
-      await page?.close().catch(() => undefined);
-      await context?.close().catch(() => undefined);
-      await browser.close();
     }
   }
 
@@ -1358,6 +1565,53 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
     };
   }
 
+  private async downloadDocumentWithFallback(
+    link: NormalizedDocumentLink,
+    referer: string,
+  ): Promise<{
+    artifact: DownloadedArtifact | null;
+    failure: FailedDownload | null;
+  }> {
+    const primary = await this.downloader.download(link);
+    if (primary.artifact || !primary.failure) return primary;
+    if (!shouldUseBrowserContextFallback(primary.failure)) return primary;
+
+    if (!this.context) {
+      return primary;
+    }
+
+    this.warnings.push(
+      `Retrying document “${link.title}” through Roszdravnadzor browser context after safe downloader failure: ${primary.failure.reason}`,
+    );
+    const browserDownloader = new StreamingDownloader({
+      artifactStore: this.artifactStore,
+      fetchImplementation: createBrowserContextFetch({
+        context: this.context,
+        page: this.page,
+        referer,
+        maxBytes: this.artifactStore.maxBytes,
+      }),
+      maxAttempts: 1,
+      defaultHeaders: {
+        Referer: referer,
+      },
+    });
+    const fallback = await browserDownloader.download(link);
+    if (fallback.artifact) return fallback;
+    if (!fallback.failure) return fallback;
+
+    return {
+      artifact: null,
+      failure: {
+        ...fallback.failure,
+        reason:
+          `safe downloader failed: ${primary.failure.reason}; ` +
+          `browser-context downloader failed: ${fallback.failure.reason}`,
+        retryable: fallback.failure.retryable,
+      },
+    };
+  }
+
   async createIngestionPlan(
     rawRecord: RawRegistryRecord,
     normalizedRecord: NormalizedRecord,
@@ -1366,7 +1620,10 @@ class RoszdravnadzorAdapter implements ProviderAdapter {
     const failedDownloads = [];
 
     for (const link of normalizedRecord.documentLinks) {
-      const result = await this.downloader.download(link);
+      const result = await this.downloadDocumentWithFallback(
+        link,
+        rawRecord.sourceUrl,
+      );
       if (result.artifact) downloadedFiles.push(result.artifact);
       if (result.failure) failedDownloads.push(result.failure);
     }
@@ -1454,100 +1711,104 @@ async function runImport(query: string): Promise<ImportOutput> {
   const adapter = new RoszdravnadzorAdapter(artifactStore);
   let rawRecord: RawRegistryRecord | null;
   try {
-    rawRecord = await adapter.fetchRawRecord(query);
-  } catch (error) {
-    const blockedOutput = createTlsBlockedOutput(
-      error,
-      query,
-      adapter.warnings,
-    );
-    if (blockedOutput) return blockedOutput;
-    return {
-      normalizedRecord: null,
-      ingestionPlan: null,
-      manifestPath: null,
-      downloadedArtifactPaths: [],
-      status: "blocked",
-      warnings: [
-        ...adapter.warnings,
-        error instanceof Error ? error.message : "Unknown importer error.",
-      ],
-      ...(error instanceof ImporterDiagnosticError
-        ? { diagnosticsPath: error.diagnosticsPath }
-        : {}),
-    };
-  }
-
-  if (!rawRecord) {
-    return {
-      normalizedRecord: null,
-      ingestionPlan: null,
-      manifestPath: null,
-      downloadedArtifactPaths: [],
-      status: "not-found",
-      warnings: [
-        ...adapter.warnings,
-        `Exact registry record was not found for ${query}.`,
-      ],
-    };
-  }
-
-  const normalizedRecord = await adapter.normalize(rawRecord);
-  const registrationEvidence = evaluateRegistrationEvidence({
-    query,
-    observedRegistrationNumber: observedRegistrationNumber(rawRecord),
-    detailIdFallbackEnabled:
-      rawRecord.metadata.detailIdFallbackEnabled === true,
-  });
-  if (registrationEvidence.outcome === "mismatch") {
-    return {
-      normalizedRecord: null,
-      ingestionPlan: null,
-      manifestPath: null,
-      downloadedArtifactPaths: [],
-      status: "blocked",
-      warnings: [
-        ...adapter.warnings,
-        registrationEvidence.warning,
-      ],
-    };
-  }
-  if (registrationEvidence.warning) {
-    if (!adapter.warnings.includes(registrationEvidence.warning)) {
-      adapter.warnings.push(registrationEvidence.warning);
+    try {
+      rawRecord = await adapter.fetchRawRecord(query);
+    } catch (error) {
+      const blockedOutput = createTlsBlockedOutput(
+        error,
+        query,
+        adapter.warnings,
+      );
+      if (blockedOutput) return blockedOutput;
+      return {
+        normalizedRecord: null,
+        ingestionPlan: null,
+        manifestPath: null,
+        downloadedArtifactPaths: [],
+        status: "blocked",
+        warnings: [
+          ...adapter.warnings,
+          error instanceof Error ? error.message : "Unknown importer error.",
+        ],
+        ...(error instanceof ImporterDiagnosticError
+          ? { diagnosticsPath: error.diagnosticsPath }
+          : {}),
+      };
     }
-  }
-  const initialPlan = await adapter.createIngestionPlan(
-    rawRecord,
-    normalizedRecord,
-  );
-  const merged = await manifestStore.merge(initialPlan);
-  const finalStatus = determineImportStatus({
-    registryRecordFound: true,
-    normalizedRecordCreated: Boolean(
-      normalizedRecord.registrationNumber && normalizedRecord.sourceUrl,
-    ),
-    downloadedDocumentCount: merged.plan.downloadedFiles.length,
-    documentOutcomeWarningCount: merged.plan.warnings.filter((warning) =>
-      /no downloadable documents|was not downloaded/i.test(warning),
-    ).length,
-    manifestWritten: true,
-  });
-  const finalPlan = { ...merged.plan, status: finalStatus };
 
-  return {
-    normalizedRecord,
-    ingestionPlan: finalPlan,
-    manifestPath: merged.manifestPath,
-    downloadedArtifactPaths: finalPlan.downloadedFiles.map(
-      (artifact) => artifact.filePath,
-    ),
-    status:
-      finalPlan.status === "completed" && finalPlan.warnings.length > 0
-        ? "completed_with_warnings"
-        : finalPlan.status,
-    warnings: finalPlan.warnings,
-  };
+    if (!rawRecord) {
+      return {
+        normalizedRecord: null,
+        ingestionPlan: null,
+        manifestPath: null,
+        downloadedArtifactPaths: [],
+        status: "not-found",
+        warnings: [
+          ...adapter.warnings,
+          `Exact registry record was not found for ${query}.`,
+        ],
+      };
+    }
+
+    const normalizedRecord = await adapter.normalize(rawRecord);
+    const registrationEvidence = evaluateRegistrationEvidence({
+      query,
+      observedRegistrationNumber: observedRegistrationNumber(rawRecord),
+      detailIdFallbackEnabled:
+        rawRecord.metadata.detailIdFallbackEnabled === true,
+    });
+    if (registrationEvidence.outcome === "mismatch") {
+      return {
+        normalizedRecord: null,
+        ingestionPlan: null,
+        manifestPath: null,
+        downloadedArtifactPaths: [],
+        status: "blocked",
+        warnings: [
+          ...adapter.warnings,
+          registrationEvidence.warning,
+        ],
+      };
+    }
+    if (registrationEvidence.warning) {
+      if (!adapter.warnings.includes(registrationEvidence.warning)) {
+        adapter.warnings.push(registrationEvidence.warning);
+      }
+    }
+    const initialPlan = await adapter.createIngestionPlan(
+      rawRecord,
+      normalizedRecord,
+    );
+    const merged = await manifestStore.merge(initialPlan);
+    const finalStatus = determineImportStatus({
+      registryRecordFound: true,
+      normalizedRecordCreated: Boolean(
+        normalizedRecord.registrationNumber && normalizedRecord.sourceUrl,
+      ),
+      downloadedDocumentCount: merged.plan.downloadedFiles.length,
+      documentOutcomeWarningCount: merged.plan.warnings.filter((warning) =>
+        /no downloadable documents|was not downloaded/i.test(warning),
+      ).length,
+      manifestWritten: true,
+    });
+    const finalPlan = { ...merged.plan, status: finalStatus };
+
+    return {
+      normalizedRecord,
+      ingestionPlan: finalPlan,
+      manifestPath: merged.manifestPath,
+      downloadedArtifactPaths: finalPlan.downloadedFiles.map(
+        (artifact) => artifact.filePath,
+      ),
+      status:
+        finalPlan.status === "completed" && finalPlan.warnings.length > 0
+          ? "completed_with_warnings"
+          : finalPlan.status,
+      warnings: finalPlan.warnings,
+    };
+  } finally {
+    await adapter.close();
+  }
 }
 
 async function main() {

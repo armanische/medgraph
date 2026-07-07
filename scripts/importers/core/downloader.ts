@@ -24,6 +24,7 @@ export interface DownloaderOptions {
   maxAttempts?: number;
   acceptedHosts?: string[];
   signatureValidator?: DocumentSignatureValidator;
+  defaultHeaders?: Record<string, string>;
 }
 
 export interface DocumentSignatureValidator {
@@ -138,6 +139,7 @@ export class StreamingDownloader {
   private readonly maxAttempts: number;
   private readonly acceptedHosts: Set<string>;
   private readonly signatureValidator: DocumentSignatureValidator;
+  private readonly defaultHeaders: Record<string, string>;
 
   constructor(options: DownloaderOptions) {
     this.artifactStore = options.artifactStore;
@@ -149,6 +151,7 @@ export class StreamingDownloader {
     );
     this.signatureValidator =
       options.signatureValidator ?? defaultDocumentSignatureValidator;
+    this.defaultHeaders = options.defaultHeaders ?? {};
   }
 
   private assertAcceptedUrl(value: string) {
@@ -166,6 +169,7 @@ export class StreamingDownloader {
       redirect: "follow",
       signal: AbortSignal.timeout(this.timeoutMs),
       headers: {
+        ...this.defaultHeaders,
         Accept:
           "application/pdf,application/octet-stream,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document",
         "User-Agent":
