@@ -47,17 +47,17 @@ export default function Search() {
         aria-hidden="true"
         className="absolute bottom-[-14rem] left-[40%] size-[24rem] rounded-full bg-cm-verified/7 blur-3xl"
       />
-      <div className="cm-container relative grid gap-10 py-16 sm:py-20 lg:grid-cols-[minmax(0,1.06fr)_minmax(22rem,0.94fr)] lg:items-center lg:py-22 xl:gap-12">
-        <div className="max-w-[45.5rem]">
+      <div className="cm-container relative grid gap-10 py-16 sm:py-20 lg:grid-cols-[minmax(0,1.12fr)_minmax(21rem,0.88fr)] lg:items-center lg:py-22 xl:gap-12">
+        <div className="max-w-[47rem]">
           <div className="cm-label mb-4 flex items-center gap-2 !text-cm-teal">
             <span className="size-1.5 rounded-full bg-cm-teal" />
             Evidence Platform · Medical Devices
           </div>
 
-          <h1 className="cm-balanced max-w-[43.5rem] text-[2.55rem] font-extrabold leading-[1.015] tracking-[-0.03em] text-cm-ink sm:text-[3.35rem] md:text-[3.85rem] lg:text-[3.55rem] xl:text-[4rem]">
+          <h1 className="cm-balanced max-w-[45rem] text-[2.55rem] font-extrabold leading-[1.015] tracking-[-0.03em] text-cm-ink sm:text-[3.35rem] md:text-[3.85rem] lg:text-[3.35rem] xl:text-[3.55rem]">
             База знаний
             <br />
-            <span className="font-bold text-cm-teal">медицинских изделий</span>
+            <span className="font-bold text-cm-teal lg:whitespace-nowrap">медицинских изделий</span>
           </h1>
           <p className="mt-5 max-w-[36.5rem] text-base leading-7 text-cm-slate sm:text-[17px] sm:leading-8">
             Экспертная платформа для клиницистов, инженеров и закупочных команд:
