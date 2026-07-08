@@ -43,7 +43,7 @@ function PageState({
 }) {
   return (
     <main className="min-h-[calc(100vh-4rem)] bg-cm-canvas px-5 py-16 text-cm-ink">
-      <section className="mx-auto grid max-w-4xl overflow-hidden rounded-2xl border border-[var(--cm-rule)] bg-white shadow-[0_24px_70px_rgba(11,19,32,0.10)] lg:grid-cols-[1fr_18rem]">
+      <section className="mx-auto grid max-w-4xl overflow-hidden rounded-lg border border-[var(--cm-rule)] bg-white shadow-[0_16px_46px_rgba(11,19,32,0.07)] lg:grid-cols-[1fr_17rem]">
         <div className="p-7 sm:p-9">
           <p className="cm-label !text-cm-teal">
             {eyebrow}
@@ -69,18 +69,18 @@ function PageState({
             </Link>
           </div>
         </div>
-        <div className="cm-technical-surface border-t border-[var(--cm-rule)] bg-cm-surface-low p-6 lg:border-l lg:border-t-0">
-          <div className="rounded-xl border border-white/80 bg-white/88 p-4 shadow-[0_18px_44px_rgba(11,19,32,0.08)] backdrop-blur">
+        <div className="border-t border-[var(--cm-rule)] bg-cm-surface-low/70 p-5 lg:border-l lg:border-t-0">
+          <div className="rounded-lg border border-[var(--cm-rule)] bg-white/88 p-4 shadow-[0_10px_30px_rgba(11,19,32,0.055)] backdrop-blur">
             <div className="flex items-center justify-between gap-3">
-              <div className="cm-label !text-cm-teal">Verified Record</div>
-              <span className="rounded-full border border-[var(--cm-verified-border)] bg-cm-verified-soft px-2 py-0.5 font-mono text-[8px] font-semibold text-cm-verified">
-                VERIFIED
+              <div className="cm-label !text-cm-teal">Временная карточка</div>
+              <span className="rounded-md border border-cm-teal/20 bg-cm-teal-soft px-2 py-1 font-mono text-[8px] font-semibold text-cm-teal">
+                обновляется
               </span>
             </div>
             <dl className="mt-4 space-y-3 text-xs">
               {[
-                ["Last updated", "В процессе"],
-                ["Published projection", "public_api"],
+                ["Данные", "В процессе"],
+                ["Источник", "Публичная карточка"],
                 ["Статус", "Обновляется"],
               ].map(([label, value]) => (
                 <div key={label}>
@@ -89,9 +89,9 @@ function PageState({
                 </div>
               ))}
             </dl>
-            <div className="mt-4 rounded-lg border border-[var(--cm-rule)] bg-cm-surface-low p-3 text-[11px] leading-5 text-cm-slate">
-              Карточка остаётся недоступной, пока опубликованная projection не
-              отвечает корректно.
+            <div className="mt-4 rounded-md border border-[var(--cm-rule)] bg-cm-surface-low p-3 text-[11px] leading-5 text-cm-slate">
+              Мы показываем временное состояние, пока карточка изделия
+              обновляется и проходит проверку доступности.
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@ function PageState({
 }
 
 export default async function Fs510ProductPage() {
-  // Resolve environment and projection data at request time, not during build.
+  // Resolve environment and product data at request time, not during build.
   await connection();
   const result = await getPublicProductPage("fs510");
 
@@ -137,7 +137,7 @@ export default async function Fs510ProductPage() {
             <span className="flex size-5 items-center justify-center rounded-full bg-cm-verified">
               <Checkmark className="size-3.5 text-white" />
             </span>
-            CyberMedica Verified
+            Проверено CyberMedica
           </div>
           <div className="flex flex-wrap gap-x-5 gap-y-1 font-mono text-cm-dim">
             <span>
@@ -174,9 +174,9 @@ export default async function Fs510ProductPage() {
 
         <section className="cm-card overflow-hidden">
           <div className="flex items-center justify-between gap-4 border-b border-[var(--cm-rule)] bg-cm-surface-low px-5 py-3">
-            <span className="cm-label">Medical Device Record · CMR-FS510</span>
+            <span className="cm-label">Карточка медицинского изделия · CMR-FS510</span>
             <span className="rounded-md border border-[var(--cm-verified-border)] bg-cm-verified-soft px-2 py-1 font-mono text-[9px] font-semibold text-cm-verified">
-              CyberMedica Verified
+              Проверено
             </span>
           </div>
           <div className="grid lg:grid-cols-[22.5rem_1fr]">
@@ -202,7 +202,7 @@ export default async function Fs510ProductPage() {
               <div className="flex flex-wrap gap-2">
                 <span className="inline-flex items-center gap-1.5 rounded-md border border-[var(--cm-verified-border)] bg-cm-verified-soft px-2.5 py-1 font-mono text-[9px] font-semibold text-cm-verified">
                   <Checkmark className="size-3" />
-                  {product.publication.status}
+                  {displayStatus(product.publication.status)}
                 </span>
                 <span className="rounded border border-[var(--cm-rule)] bg-white px-2.5 py-1 font-mono text-[9px] text-cm-dim">
                   {product.category}
@@ -255,7 +255,7 @@ export default async function Fs510ProductPage() {
                   href="#evidence"
                   className="cm-button-secondary"
                 >
-                  Смотреть доказательства
+                  Смотреть документы
                 </a>
               </div>
             </div>
@@ -268,8 +268,8 @@ export default async function Fs510ProductPage() {
         >
           {[
             ["#overview", "Ключевое"],
-            ["#claims", "Проверенные Claims"],
-            ["#evidence", "Источники"],
+            ["#claims", "Проверенные факты"],
+            ["#evidence", "Документы"],
             ["#history", "История"],
           ].map(([href, label]) => (
             <a
@@ -307,7 +307,7 @@ export default async function Fs510ProductPage() {
               <div className="flex flex-wrap items-end justify-between gap-4">
                 <div>
                   <p className="cm-label !text-cm-teal">
-                    Product snapshot
+                    Характеристики
                   </p>
                   <h2 className="mt-2 text-xl font-bold tracking-[-0.02em]">
                     Ключевые характеристики
@@ -339,13 +339,13 @@ export default async function Fs510ProductPage() {
         <section id="claims" className="scroll-mt-28 pt-10">
           <div className="max-w-3xl">
             <p className="cm-label !text-cm-teal">
-              Published claim projection
+              Проверенные факты
             </p>
             <h2 className="mt-2 text-xl font-bold tracking-[-0.02em] sm:text-2xl">
               Что именно проверено — и в каких границах
             </h2>
             <p className="mt-3 max-w-2xl text-xs leading-6 text-cm-slate">
-              Каждый опубликованный факт показан вместе со Scope и ограничениями.
+              Каждый опубликованный факт показан вместе с областью применения и ограничениями.
               Это не общая рекомендация и не обещание применимости за пределами
               указанного контекста.
             </p>
@@ -384,7 +384,7 @@ export default async function Fs510ProductPage() {
                   <div className="grid gap-px bg-[var(--cm-rule)] sm:grid-cols-2">
                     <div className="bg-cm-surface-low p-5">
                       <h4 className="cm-label !text-cm-teal">
-                        Scope · применимо к
+                        Применимо к
                       </h4>
                       <ul className="mt-3 space-y-2.5">
                         {claim.scope.appliesTo.map((item) => (
@@ -421,17 +421,14 @@ export default async function Fs510ProductPage() {
 
                   <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[var(--cm-rule)] px-5 py-3 font-mono text-[9px] text-cm-dim">
                     <span>
-                      Publication:{" "}
-                      <span className="text-cm-ink">
-                        {claim.publicationKey}
-                      </span>
+                      Публикация: <span className="text-cm-ink">проверенная запись</span>
                     </span>
                     {source ? (
                       <a
                         href={`#source-${source.id}`}
                         className="font-sans text-[10px] font-semibold text-cm-teal hover:underline"
                       >
-                        Перейти к доказательству ↓
+                        Перейти к документу ↓
                       </a>
                     ) : null}
                   </div>
@@ -445,18 +442,18 @@ export default async function Fs510ProductPage() {
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div className="max-w-3xl">
               <p className="cm-label !text-cm-teal">
-                Data provenance
+                Источник данных
               </p>
               <h2 className="mt-2 text-xl font-bold tracking-[-0.02em] sm:text-2xl">
                 От источника до публикации
               </h2>
               <p className="mt-3 max-w-2xl text-xs leading-6 text-cm-slate">
-                Цепочка показывает происхождение каждого опубликованного Claim.
-                Документ можно открыть напрямую, а Evidence — сверить по локатору.
+                Цепочка показывает происхождение каждого опубликованного факта.
+                Документ можно открыть напрямую, а основание — сверить по локатору.
               </p>
             </div>
             <span className="rounded border border-cm-teal/20 bg-cm-teal-soft px-2.5 py-1 font-mono text-[9px] text-cm-teal">
-              {product.sources.length} доказательных цепочки
+              {product.sources.length} источника данных
             </span>
           </div>
 
@@ -477,17 +474,17 @@ export default async function Fs510ProductPage() {
                   <div>
                     <div className="flex flex-wrap items-center gap-2">
                       <span className="rounded-md border border-[var(--cm-verified-border)] bg-cm-verified-soft px-2 py-1 font-mono text-[9px] font-semibold text-cm-verified">
-                        {source.verification.status}
+                        {displayStatus(source.verification.status)}
                       </span>
                       <span className="font-mono text-[9px] text-cm-dim">
-                        {source.publication.publicKey}
+                        Публичная запись
                       </span>
                     </div>
                     <h3 className="mt-3 text-sm font-bold">
                       {source.document.title}
                     </h3>
                     <p className="mt-1 font-mono text-[9px] text-cm-dim">
-                      {source.source.name} · {source.document.type} ·{" "}
+                      {source.source.name} · {displayDocumentType(source.document.type)} ·{" "}
                       {source.documentVersion.label}
                     </p>
                     <blockquote className="mt-4 border-l-2 border-cm-teal pl-4 font-mono text-[10px] leading-5 text-cm-slate">
@@ -516,14 +513,14 @@ export default async function Fs510ProductPage() {
           <div className="cm-card grid gap-7 p-6 lg:grid-cols-[0.72fr_1.28fr]">
             <div>
               <p className="cm-label !text-cm-teal">
-                Audit trail
+                История изменений
               </p>
               <h2 className="mt-2 text-xl font-bold tracking-[-0.02em]">
                 История публикаций
               </h2>
               <p className="mt-3 text-xs leading-6 text-cm-slate">
-                Здесь отображаются только события, переданные публичной
-                проекцией. Portal не читает журнал Factory напрямую.
+                Здесь отображаются опубликованные события карточки изделия:
+                проверка данных, документы и изменения публичной записи.
               </p>
             </div>
 
@@ -542,15 +539,12 @@ export default async function Fs510ProductPage() {
                       {formatDate(item.effectiveAt)}
                     </time>
                     <span className="rounded bg-cm-surface-low px-2 py-1 font-mono text-[8px] uppercase tracking-wider text-cm-dim">
-                      {item.event}
+                      {displayEvent(item.event)}
                     </span>
                   </div>
                   <h3 className="mt-2 text-xs font-semibold">{item.title}</h3>
                   <p className="mt-1 text-[11px] leading-5 text-cm-slate">
                     {item.description}
-                  </p>
-                  <p className="mt-2 font-mono text-[9px] text-cm-dim">
-                    {item.publicationKey}
                   </p>
                 </li>
               ))}
@@ -583,4 +577,28 @@ export default async function Fs510ProductPage() {
       </div>
     </main>
   );
+}
+
+function displayStatus(status: string) {
+  const normalized = status.toLowerCase();
+  if (normalized.includes("verified")) return "Проверено";
+  if (normalized.includes("published")) return "Опубликовано";
+  if (normalized.includes("active")) return "Активно";
+  return status;
+}
+
+function displayDocumentType(type: string) {
+  const normalized = type.toLowerCase();
+  if (normalized.includes("registration")) return "Регистрационный документ";
+  if (normalized.includes("manual")) return "Инструкция";
+  if (normalized.includes("declaration")) return "Декларация";
+  return "Документ";
+}
+
+function displayEvent(event: string) {
+  const normalized = event.toLowerCase();
+  if (normalized.includes("publish")) return "публикация";
+  if (normalized.includes("verify")) return "проверка";
+  if (normalized.includes("update")) return "обновление";
+  return event;
 }

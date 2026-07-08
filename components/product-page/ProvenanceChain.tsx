@@ -3,34 +3,40 @@ import type { PublicProductSource } from "@/types/public-product-page";
 export function ProvenanceChain({ source }: { source: PublicProductSource }) {
   const stages = [
     {
-      label: "Source",
+      label: "Источник",
       value: source.source.name,
       detail: source.source.type,
+      short: "ист",
     },
     {
-      label: "Document",
+      label: "Документ",
       value: source.document.title,
       detail: source.document.type,
+      short: "док",
     },
     {
-      label: "Version",
+      label: "Версия",
       value: source.documentVersion.label,
       detail: "Зафиксированная версия",
+      short: "вер",
     },
     {
-      label: "Evidence",
+      label: "Основание",
       value: source.evidence.locator,
       detail: "Точный локатор",
+      short: "осн",
     },
     {
-      label: "Verification",
-      value: source.verification.status,
+      label: "Проверка",
+      value: displayStatus(source.verification.status),
       detail: source.verification.verifiedAt,
+      short: "прв",
     },
     {
-      label: "Publication",
-      value: source.publication.status,
+      label: "Публикация",
+      value: displayStatus(source.publication.status),
       detail: source.publication.publishedAt,
+      short: "пуб",
     },
   ];
 
@@ -48,14 +54,14 @@ export function ProvenanceChain({ source }: { source: PublicProductSource }) {
             <span className="font-mono text-[8px] tracking-[0.08em] text-cm-dim">
               {String(index + 1).padStart(2, "0")}
             </span>
-            <span className={`flex size-11 items-center justify-center rounded-lg border font-mono text-[10px] font-bold ${
+            <span className={`flex size-11 items-center justify-center rounded-lg border font-mono text-[10px] font-bold uppercase ${
               index === 4
                 ? "border-[var(--cm-verified-border)] bg-cm-verified-soft text-cm-verified"
                 : index === 5
                   ? "border-cm-teal/25 bg-cm-teal-soft text-cm-teal"
                   : "border-[var(--cm-rule)] bg-cm-surface-low text-cm-slate"
             }`}>
-              {stage.label.slice(0, 3).toUpperCase()}
+              {stage.short}
             </span>
             <span className="font-mono text-[8px] font-semibold uppercase tracking-[0.1em] text-cm-dim">
               {stage.label}
@@ -77,4 +83,12 @@ export function ProvenanceChain({ source }: { source: PublicProductSource }) {
       ))}
     </ol>
   );
+}
+
+function displayStatus(status: string) {
+  const normalized = status.toLowerCase();
+  if (normalized.includes("verified")) return "Проверено";
+  if (normalized.includes("published")) return "Опубликовано";
+  if (normalized.includes("active")) return "Активно";
+  return status;
 }

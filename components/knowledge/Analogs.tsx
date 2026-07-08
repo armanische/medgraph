@@ -9,7 +9,7 @@ export default function Analogs({
 }: AnalogsProps) {
   return (
     <section className="cm-card p-6">
-      <div className="cm-label mb-2">Comparison Candidates</div>
+      <div className="cm-label mb-2 !text-cm-teal">Аналоги</div>
       <h2 className="mb-5 text-base font-bold">
         Аналоги
       </h2>
@@ -27,7 +27,7 @@ export default function Analogs({
           {product.analogs.map((item) => (
             <div
               key={item}
-              className="rounded-lg border border-[var(--cm-rule)] bg-cm-surface-low p-3 transition duration-200 hover:-translate-y-px hover:border-cm-teal/30 hover:bg-white hover:shadow-[0_10px_24px_rgba(11,19,32,0.05)]"
+              className="rounded-lg border border-[var(--cm-rule)] bg-cm-surface-low/70 p-3 transition duration-200 hover:-translate-y-px hover:border-cm-teal/30 hover:bg-white hover:shadow-[0_10px_24px_rgba(11,19,32,0.05)]"
             >
               <div className="text-xs font-semibold">
                 {item}

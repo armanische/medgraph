@@ -7,7 +7,7 @@ interface DocumentsProps {
 export default function Documents({ product }: DocumentsProps) {
   return (
     <section className="cm-card p-6">
-      <div className="cm-label mb-2">Evidence Sources</div>
+      <div className="cm-label mb-2 !text-cm-teal">Подтверждающие документы</div>
       <h2 className="mb-5 text-base font-bold">
         Документы
       </h2>
@@ -33,7 +33,7 @@ export default function Documents({ product }: DocumentsProps) {
               href={document.url}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center justify-between rounded-lg border border-[var(--cm-rule)] bg-cm-surface-low p-4 shadow-[0_8px_22px_rgba(11,19,32,0.035)] transition duration-200 hover:-translate-y-px hover:border-cm-teal/30 hover:bg-white hover:shadow-[0_14px_34px_rgba(11,19,32,0.07)]"
+              className="flex items-center justify-between gap-4 rounded-lg border border-[var(--cm-rule)] bg-cm-surface-low/70 p-4 shadow-[0_8px_22px_rgba(11,19,32,0.03)] transition duration-200 hover:-translate-y-px hover:border-cm-teal/30 hover:bg-white hover:shadow-[0_14px_34px_rgba(11,19,32,0.06)]"
             >
               <div>
                 <div className="text-xs font-semibold">
@@ -47,7 +47,7 @@ export default function Documents({ product }: DocumentsProps) {
                 </div>
               </div>
 
-              <div className="text-xs font-semibold text-cm-teal">
+              <div className="shrink-0 text-xs font-semibold text-cm-teal">
                 Скачать →
               </div>
             </a>

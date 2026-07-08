@@ -4,7 +4,6 @@ import { Product } from "@/types/product";
 
 import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
-import Card from "@/components/ui/Card";
 
 interface HeroProps {
   product: Product;
@@ -12,20 +11,20 @@ interface HeroProps {
 
 export default function Hero({ product }: HeroProps) {
   return (
-    <section className="cm-card grid overflow-hidden lg:grid-cols-[1fr_22rem]">
+    <section className="cm-card grid overflow-hidden lg:grid-cols-[minmax(0,1fr)_22rem]">
       <div className="p-6 sm:p-8">
         <Badge>{product.category}</Badge>
 
-        <h1 className="mt-4 text-2xl font-extrabold leading-tight tracking-[-0.03em] sm:text-3xl">
+        <h1 className="mt-4 max-w-3xl text-2xl font-extrabold leading-[1.12] tracking-[-0.03em] sm:text-3xl">
           {product.name}
         </h1>
 
-        <p className="mt-4 text-[13px] leading-7 text-cm-slate">
+        <p className="mt-4 max-w-3xl text-[13px] leading-7 text-cm-slate">
           {product.description}
         </p>
 
         <div className="mt-6 flex flex-wrap gap-2">
-          <Button href={`/request?product=${product.slug}`}>Получить КП</Button>
+          <Button href={`/request?product=${product.slug}`}>Запросить КП</Button>
 
           <Button
             href={
@@ -51,7 +50,7 @@ export default function Hero({ product }: HeroProps) {
 
         <div className="mt-7 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-[var(--cm-rule)] bg-[var(--cm-rule)]">
           {product.highlights.map((item) => (
-            <Card key={item.label} className="!rounded-none !border-0 p-4">
+            <div key={item.label} className="bg-white p-4">
               <div className="font-mono text-lg font-bold text-cm-teal">
                 {item.value}
               </div>
@@ -59,7 +58,7 @@ export default function Hero({ product }: HeroProps) {
               <div className="mt-2 font-mono text-[9px] uppercase tracking-[0.06em] text-cm-dim">
                 {item.label}
               </div>
-            </Card>
+            </div>
           ))}
         </div>
       </div>
@@ -73,10 +72,10 @@ export default function Hero({ product }: HeroProps) {
           className="max-h-72 w-full object-contain mix-blend-multiply drop-shadow-[0_16px_28px_rgba(11,19,32,0.14)]"
           priority
         />
-        <div className="absolute bottom-4 left-4 right-4 rounded-xl border border-white/70 bg-white/85 p-4 shadow-[0_16px_40px_rgba(11,19,32,0.12)] backdrop-blur">
+        <div className="absolute bottom-4 left-4 right-4 rounded-lg border border-white/70 bg-white/86 p-4 shadow-[0_12px_34px_rgba(11,19,32,0.09)] backdrop-blur">
           <div className="flex items-center justify-between gap-3">
             <div className="font-mono text-[10px] font-semibold uppercase tracking-[0.08em] text-cm-teal">
-              Verified Record
+              Проверенная запись
             </div>
             <span className="rounded border border-cm-teal/20 bg-cm-teal-soft px-2 py-1 font-mono text-[9px] text-cm-teal">
               Активно
