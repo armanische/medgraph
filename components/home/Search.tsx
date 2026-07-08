@@ -9,7 +9,7 @@ const popularQueries = ["FS510", "Hamilton C3", "Mindray SV300", "Airtraq", "Amb
 const chipClassName =
   "inline-flex min-h-8 items-center rounded-md border border-cm-teal/18 bg-white/76 px-3.5 font-mono text-[10px] font-semibold text-cm-teal transition duration-200 hover:border-cm-teal/35 hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cm-teal";
 const audienceCardClassName =
-  "flex h-full min-h-14 items-center gap-2.5 rounded-md border border-[var(--cm-rule)] bg-white/72 px-3.5 py-3 text-xs font-medium leading-5 text-cm-slate shadow-[0_6px_20px_rgba(11,19,32,0.025)] transition duration-200 hover:border-cm-teal/24 hover:bg-white";
+  "flex h-full min-h-11 items-center gap-2 rounded-md border border-[var(--cm-rule)] bg-white/64 px-3 py-2 text-xs font-medium leading-5 text-cm-slate transition duration-200 hover:border-cm-teal/22 hover:bg-white/88";
 
 function SearchIcon() {
   return (
@@ -148,7 +148,7 @@ export default function Search() {
                 key={item}
                 className={audienceCardClassName}
               >
-                <span className="flex size-4 shrink-0 items-center justify-center rounded-full border border-cm-teal/28 bg-cm-teal-soft text-[9px] font-bold leading-none text-cm-teal">
+                <span className="flex size-3.5 shrink-0 items-center justify-center rounded-full border border-cm-teal/24 bg-cm-teal-soft text-[8px] font-bold leading-none text-cm-teal">
                   ✓
                 </span>
                 <span className="flex-1">{item}</span>
