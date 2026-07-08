@@ -1,5 +1,9 @@
 import { NextResponse } from "next/server";
 
+const RATE_LIMIT_WINDOW_MS = 15 * 60 * 1000;
+const RATE_LIMIT_MAX_REQUESTS = 5;
+const RATE_LIMIT_STORE_MAX_ENTRIES = 5_000;
+
 const limits = {
   company: 160,
   name: 120,
@@ -8,13 +12,112 @@ const limits = {
   message: 3000,
 };
 
+const rateLimitStore = new Map<
+  string,
+  { count: number; resetAt: number; lastSeenAt: number }
+>();
+
 function readField(formData: FormData, field: keyof typeof limits) {
   return String(formData.get(field) || "")
     .trim()
     .slice(0, limits[field]);
 }
 
+function getClientIp(request: Request) {
+  const forwardedFor = request.headers.get("x-forwarded-for");
+  const forwardedIp = forwardedFor?.split(",")[0]?.trim();
+
+  return (
+    request.headers.get("cf-connecting-ip")?.trim() ||
+    request.headers.get("x-real-ip")?.trim() ||
+    forwardedIp ||
+    "unknown"
+  );
+}
+
+function getRateLimitKey(request: Request) {
+  const ip = getClientIp(request);
+  const userAgent = request.headers.get("user-agent")?.trim() || "unknown";
+  return `${ip}::${userAgent.slice(0, 180)}`;
+}
+
+function cleanupRateLimitStore(now: number) {
+  if (rateLimitStore.size < RATE_LIMIT_STORE_MAX_ENTRIES) return;
+
+  for (const [key, bucket] of rateLimitStore) {
+    if (bucket.resetAt <= now) {
+      rateLimitStore.delete(key);
+    }
+  }
+
+  if (rateLimitStore.size < RATE_LIMIT_STORE_MAX_ENTRIES) return;
+
+  const oldestKeys = [...rateLimitStore.entries()]
+    .sort(([, left], [, right]) => left.lastSeenAt - right.lastSeenAt)
+    .slice(0, Math.ceil(RATE_LIMIT_STORE_MAX_ENTRIES / 5))
+    .map(([key]) => key);
+
+  for (const key of oldestKeys) rateLimitStore.delete(key);
+}
+
+function checkRateLimit(request: Request) {
+  const now = Date.now();
+  cleanupRateLimitStore(now);
+
+  const key = getRateLimitKey(request);
+  const current = rateLimitStore.get(key);
+
+  if (!current || current.resetAt <= now) {
+    rateLimitStore.set(key, {
+      count: 1,
+      resetAt: now + RATE_LIMIT_WINDOW_MS,
+      lastSeenAt: now,
+    });
+    return { allowed: true, retryAfterSeconds: 0 };
+  }
+
+  current.count += 1;
+  current.lastSeenAt = now;
+
+  if (current.count <= RATE_LIMIT_MAX_REQUESTS) {
+    return { allowed: true, retryAfterSeconds: 0 };
+  }
+
+  return {
+    allowed: false,
+    retryAfterSeconds: Math.max(1, Math.ceil((current.resetAt - now) / 1000)),
+  };
+}
+
 export async function POST(request: Request) {
+  const userAgent = request.headers.get("user-agent")?.trim();
+
+  if (!userAgent) {
+    return NextResponse.json(
+      {
+        ok: false,
+        error: "Не удалось принять заявку. Обновите страницу и попробуйте снова.",
+      },
+      { status: 400 },
+    );
+  }
+
+  const rateLimit = checkRateLimit(request);
+
+  if (!rateLimit.allowed) {
+    return NextResponse.json(
+      {
+        ok: false,
+        error:
+          "Слишком много запросов за короткое время. Пожалуйста, попробуйте позже.",
+      },
+      {
+        status: 429,
+        headers: { "Retry-After": String(rateLimit.retryAfterSeconds) },
+      },
+    );
+  }
+
   const contentLength = Number(request.headers.get("content-length") || 0);
 
   if (contentLength > 100_000) {

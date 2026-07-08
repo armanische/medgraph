@@ -1,9 +1,6 @@
 import "server-only";
 
-import {
-  createServerSupabaseClient,
-  SupabaseConfigurationError,
-} from "@/lib/supabase/server";
+import { createServerSupabaseClient } from "@/lib/supabase/server";
 import type {
   PublicProductClaim,
   PublicProductCharacteristic,
@@ -286,12 +283,10 @@ export async function getPublicProductPage(
 
     return { status: "success", product };
   } catch (error) {
-    const message =
-      error instanceof SupabaseConfigurationError
-        ? error.message
-        : "Не удалось загрузить опубликованные данные. Попробуйте ещё раз позже.";
-
     console.error("Failed to load public product projection", error);
-    return { status: "error", message };
+    return {
+      status: "error",
+      message: "Опубликованная карточка временно недоступна.",
+    };
   }
 }

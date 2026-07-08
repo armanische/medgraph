@@ -1,7 +1,16 @@
+import { notFound } from "next/navigation";
+
 import AdminForm from "./AdminForm";
 import SavedProducts from "./SavedProducts";
 
 export default function AdminPage() {
+  if (
+    process.env.NODE_ENV === "production" &&
+    process.env.CYBERMEDICA_ENABLE_ADMIN !== "1"
+  ) {
+    notFound();
+  }
+
   return (
     <main className="min-h-screen bg-gray-100">
       <section className="mx-auto max-w-5xl px-8 py-16">
