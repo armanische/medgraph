@@ -51,13 +51,13 @@ export default function Search() {
           </div>
 
           <h1 className="cm-balanced max-w-[44rem] text-[2.3rem] font-extrabold leading-[1.04] tracking-[-0.045em] sm:text-[3rem] md:text-[3.35rem] lg:text-[3.05rem] xl:text-[3.45rem]">
-            Экспертная база знаний{" "}
-            <span className="text-cm-teal">для медицинских изделий</span>
+            База знаний
+              <br />
+              <span className="text-cm-teal">медицинских изделий</span>
           </h1>
           <p className="mt-5 max-w-xl text-[15px] leading-7 text-cm-slate">
-            Каждая опубликованная характеристика верифицирована и ссылается на
-            первичный источник. Платформа для врачей, инженеров и специалистов
-            по закупкам.
+            Экспертная платформа для проверки характеристик, документов и
+            совместимости медицинских изделий.
           </p>
 
           <div className="relative mt-8 max-w-xl">
@@ -177,21 +177,21 @@ export default function Search() {
             />
             <div className="flex items-center justify-between gap-4">
               <div>
-                <div className="cm-label !text-cm-teal">Clinical Intelligence</div>
+                <div className="cm-label !text-cm-teal">Экспертная проверка</div>
                 <h2 className="mt-2 text-lg font-extrabold tracking-[-0.03em]">
-                  Verified / Research Record
+                  Проверенная запись
                 </h2>
               </div>
               <div className="rounded-xl border border-cm-verified/20 bg-cm-verified-soft px-3 py-2 font-mono text-[10px] font-semibold text-cm-verified">
-                LIVE
+                Актуально
               </div>
             </div>
 
             <div className="relative mt-6 grid gap-3">
               {[
-                ["Опубликованная запись", "FS510", "CyberMedica Verified"],
-                ["Draft research", "49 изделий", "ожидают источники"],
-                ["Provenance", "Source → Evidence", "без выдуманных фактов"],
+                ["Опубликованная запись", "FS510", "проверено CyberMedica"],
+                ["Исследование в работе", "49 изделий", "ожидают источники"],
+                ["Подтверждение данными", "Документ → подтверждение", "без неподтверждённых фактов"],
               ].map(([label, value, note]) => (
                 <div
                   key={label}
@@ -211,10 +211,10 @@ export default function Search() {
 
             <div className="relative mt-5 rounded-xl bg-cm-ink p-4 text-white shadow-[0_18px_44px_rgba(11,19,32,0.16)]">
               <div className="font-mono text-[10px] uppercase tracking-[0.08em] text-white/45">
-                Product rule
+                Правило публикации
               </div>
               <p className="mt-2 text-sm font-semibold leading-6">
-                Если факт нельзя проверить — он не показывается как факт.
+                Если факт нельзя подтвердить документом — он не публикуется как проверенный.
               </p>
             </div>
           </div>

@@ -468,7 +468,7 @@ export default async function Fs510ProductPage() {
                 className="scroll-mt-28 cm-card overflow-hidden"
               >
                 <div className="border-b border-[var(--cm-rule)] bg-cm-surface-low px-5 py-3">
-                  <span className="cm-label">Evidence Provenance Record</span>
+                  <span className="cm-label">Запись о подтверждении данных</span>
                 </div>
                 <div className="overflow-x-auto p-5">
                   <ProvenanceChain source={source} />

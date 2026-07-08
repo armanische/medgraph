@@ -56,7 +56,7 @@ export default async function DraftCatalogProductPage({
         <div className="cm-container py-8">
           <div className="cm-label">
             <Link href="/catalog" className="hover:text-cm-teal">Каталог</Link>
-            {" · Draft research"}
+            {" · исследование в работе"}
           </div>
           <div className="mt-5 grid gap-6 lg:grid-cols-[1fr_20rem]">
             <div>
