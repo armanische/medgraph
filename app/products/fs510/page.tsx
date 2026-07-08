@@ -65,7 +65,7 @@ function PageState({
               href="/request?product=fs510"
               className="cm-button-secondary"
             >
-              Связаться с нами
+              Запросить КП
             </Link>
           </div>
         </div>

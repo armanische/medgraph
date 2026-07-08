@@ -122,7 +122,10 @@ export async function POST(request: Request) {
 
   if (contentLength > 100_000) {
     return NextResponse.json(
-      { ok: false, error: "Запрос слишком большой." },
+      {
+        ok: false,
+        error: "Описание получилось слишком длинным. Сократите текст и отправьте заявку ещё раз.",
+      },
       { status: 413 }
     );
   }
@@ -133,7 +136,10 @@ export async function POST(request: Request) {
     formData = await request.formData();
   } catch {
     return NextResponse.json(
-      { ok: false, error: "Не удалось прочитать форму." },
+      {
+        ok: false,
+        error: "Форму не удалось обработать. Обновите страницу и попробуйте снова.",
+      },
       { status: 400 }
     );
   }
@@ -180,7 +186,7 @@ export async function POST(request: Request) {
       {
         ok: false,
         error:
-          "Приём заявок ещё не подключён. Настройте CYBERMEDICA_LEADS_WEBHOOK_URL.",
+          "Приём заявок временно недоступен. Пожалуйста, свяжитесь с нами позже.",
       },
       { status: 503 }
     );

@@ -4,7 +4,7 @@ import RequestForm from "@/components/request/RequestForm";
 import { getProduct } from "@/lib/products";
 
 export const metadata: Metadata = {
-  title: "Запросить коммерческое предложение | CyberMedica",
+  title: "Запросить коммерческое предложение",
   description:
     "Отправьте запрос на медицинское изделие, аналог, документы или подбор совместимости.",
 };
@@ -24,27 +24,48 @@ export default async function RequestPage({
 
   return (
     <main className="min-h-screen bg-cm-canvas">
-      <section className="cm-container grid gap-6 py-10 lg:grid-cols-[0.74fr_1.26fr]">
-        <div className="cm-technical-surface rounded-2xl border border-[var(--cm-rule)] bg-white/70 p-6 pt-6 shadow-[0_18px_48px_rgba(11,19,32,0.06)]">
+      <section className="cm-container grid gap-6 py-10 lg:grid-cols-[0.78fr_1.22fr]">
+        <div className="rounded-lg border border-[var(--cm-rule)] bg-white/78 p-6 pt-6 shadow-[0_14px_42px_rgba(11,19,32,0.055)]">
           <div className="cm-label !text-cm-teal">
-            Коммерческое предложение
+            Деловая заявка
           </div>
           <h1 className="cm-balanced mt-3 text-3xl font-extrabold tracking-[-0.03em]">
             Запросить КП
           </h1>
-          <p className="mt-4 max-w-md text-[13px] leading-7 text-cm-slate">
-            Опишите задачу — мы проверим изделие, аналоги, документы и
-            совместимость, затем подготовим предложение.
+          <p className="mt-4 max-w-md text-sm leading-7 text-cm-slate">
+            Опишите изделие, закупочную задачу или параметры. Мы поможем
+            подобрать позицию, проверить документы и подготовить коммерческое
+            предложение.
           </p>
           <div className="mt-8 space-y-3 border-t border-[var(--cm-rule)] pt-6 text-xs text-cm-slate">
-            {["Запрос не влияет на статус проверки данных", "Ответ направляется указанному контактному лицу", "Персональные данные используются только для ответа"].map((item) => (
-              <div key={item} className="flex gap-2 rounded-lg bg-white/68 p-3 shadow-[0_8px_22px_rgba(11,19,32,0.035)]"><span className="text-cm-teal">✓</span>{item}</div>
+            {[
+              ["1", "Уточним задачу", "изделие, количество, сроки и важные характеристики"],
+              ["2", "Проверим документы", "регистрационные сведения, инструкции и совместимость"],
+              ["3", "Подготовим ответ", "КП или консультацию по доступным вариантам"],
+            ].map(([number, title, text]) => (
+              <div key={title} className="rounded-md border border-[var(--cm-rule)] bg-white/72 p-3">
+                <div className="flex gap-2">
+                  <span className="flex size-5 shrink-0 items-center justify-center rounded-md bg-cm-teal-soft font-mono text-[9px] font-bold text-cm-teal">
+                    {number}
+                  </span>
+                  <div>
+                    <div className="font-semibold text-cm-ink">{title}</div>
+                    <div className="mt-1 leading-5">{text}</div>
+                  </div>
+                </div>
+              </div>
             ))}
+          </div>
+          <div className="mt-5 rounded-md border border-[var(--cm-rule)] bg-cm-surface-low/70 p-4 text-[11px] leading-6 text-cm-slate">
+            Ответ обычно готовится в течение рабочего дня. Данные заявки не
+            публикуются и используются только для ответа. CyberMedica помогает
+            с проверкой информации, но не заменяет официальную экспертизу или
+            регистратора.
           </div>
         </div>
         <div className="cm-card p-6 sm:p-8">
           <div className="flex items-center justify-between border-b border-[var(--cm-rule)] pb-4">
-            <span className="cm-label">Request Form</span>
+            <span className="cm-label !text-cm-teal">Заявка</span>
             <span className="font-mono text-[9px] text-cm-dim">152-ФЗ</span>
           </div>
           <RequestForm initialMessage={initialMessage} />

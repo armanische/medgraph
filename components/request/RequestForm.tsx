@@ -32,21 +32,21 @@ export default function RequestForm({
       if (!response.ok || !result.ok) {
         setError(
           result.error ||
-            "Не удалось отправить заявку. Попробуйте ещё раз или свяжитесь с нами напрямую."
+            "Заявку не удалось отправить. Попробуйте ещё раз или напишите нам — мы поможем с запросом вручную."
         );
         return;
       }
 
       router.push("/thanks");
     } catch {
-      setError("Нет связи с сервером. Проверьте интернет и попробуйте ещё раз.");
+      setError("Не получилось отправить заявку. Проверьте подключение и попробуйте ещё раз.");
     } finally {
       setPending(false);
     }
   }
 
   const fieldClassName =
-    "cm-field text-[13px]";
+    "cm-field text-[13px] placeholder:text-cm-dim";
 
   return (
     <form className="mt-6 space-y-5" onSubmit={handleSubmit}>
@@ -59,7 +59,7 @@ export default function RequestForm({
           required
           maxLength={160}
           autoComplete="organization"
-          placeholder="Название организации"
+          placeholder="Например, ГКБ №1 или ООО «Медтехника»"
           className={fieldClassName}
         />
       </label>
@@ -73,7 +73,7 @@ export default function RequestForm({
           required
           maxLength={120}
           autoComplete="name"
-          placeholder="Имя и должность"
+          placeholder="Имя, должность или роль в закупке"
           className={fieldClassName}
         />
       </label>
@@ -97,7 +97,7 @@ export default function RequestForm({
             type="email"
             maxLength={160}
             autoComplete="email"
-            placeholder="name@company.ru"
+            placeholder="name@clinic.ru"
             className={fieldClassName}
           />
         </label>
@@ -116,7 +116,7 @@ export default function RequestForm({
           required
           maxLength={3000}
           defaultValue={initialMessage}
-          placeholder="Изделие, количество, важные параметры или номер закупки"
+          placeholder="Изделие, количество, сроки, важные характеристики, номер закупки или ссылка на техническое задание"
           rows={6}
           className={fieldClassName}
         />
@@ -133,7 +133,7 @@ export default function RequestForm({
       {error && (
         <div
           role="alert"
-          className="rounded-lg border border-red-200 bg-[var(--cm-danger-soft)] p-4 text-xs text-[var(--cm-danger)]"
+          className="rounded-md border border-red-200 bg-[var(--cm-danger-soft)] p-4 text-xs leading-6 text-[var(--cm-danger)]"
         >
           {error}
         </div>
@@ -141,14 +141,14 @@ export default function RequestForm({
 
       <button
         disabled={pending}
-        className="cm-button-primary w-full disabled:cursor-wait disabled:opacity-60"
+        className="cm-button-primary w-full min-h-12 disabled:cursor-wait disabled:opacity-60"
       >
-        {pending ? "Отправляем…" : "Отправить запрос"}
+        {pending ? "Отправляем заявку…" : "Отправить заявку"}
       </button>
 
       <p className="text-center text-[10px] leading-5 text-cm-dim">
-        Нажимая кнопку, вы соглашаетесь на обработку данных для ответа на
-        запрос.
+        Нажимая кнопку, вы передаёте данные только для подготовки ответа на
+        вашу заявку.
       </p>
     </form>
   );

@@ -81,7 +81,7 @@ export default async function ManufacturerPage({
             <h2 className="mt-2 text-xl font-bold">Изделия производителя</h2>
           </div>
           <Link href="/request" className="text-xs font-semibold text-cm-teal">
-            Запросить подбор →
+            Запросить КП →
           </Link>
         </div>
 

@@ -36,7 +36,7 @@ export default function Header() {
         </nav>
 
         <button className="bg-blue-600 hover:bg-blue-700 transition text-white px-6 py-3 rounded-xl font-medium">
-          Получить КП
+          Запросить КП
         </button>
 
       </div>
