@@ -4,10 +4,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import {
-  draftStatusLabel,
   getDraftCatalogProduct,
   getDraftCatalogProducts,
 } from "@/lib/catalog-drafts";
+import type { DraftResearchStatus } from "@/types/catalog-draft";
 
 export function generateStaticParams() {
   return getDraftCatalogProducts().map((product) => ({ slug: product.slug }));
@@ -22,10 +22,10 @@ export async function generateMetadata({
   const product = getDraftCatalogProduct(slug);
   return {
     title: product
-      ? `${product.title} · Draft Research | CyberMedica`
-      : "Draft product | CyberMedica",
+      ? `${product.title} · Карточка изделия | CyberMedica`
+      : "Карточка изделия | CyberMedica",
     description:
-      "Draft-карточка CyberMedica с candidate facts, sources и human review metadata.",
+      "Карточка медицинского изделия CyberMedica с источниками, документами и статусом проверки.",
   };
 }
 
@@ -43,40 +43,41 @@ export default async function DraftCatalogProductPage({
       : "Поиск официальных источников",
     product.documentsSummary.total > 0
       ? "Документы найдены"
-      : "Регистрационные документы не найдены",
+      : "Требуются регистрационные документы",
     product.candidateClaimsCount > 0
-      ? "Характеристики подготовлены"
+      ? "Характеристики собраны"
       : "Подготовка характеристик",
-    "Ожидает экспертной проверки",
+    "Ожидает проверки специалистом",
   ];
 
   return (
     <main className="min-h-screen bg-cm-canvas">
       <section className="border-b border-[var(--cm-rule)] bg-[linear-gradient(135deg,#ffffff_0%,#f6fafc_56%,#e8f5f7_100%)]">
-        <div className="cm-container py-8">
+        <div className="cm-container py-10">
           <div className="cm-label">
             <Link href="/catalog" className="hover:text-cm-teal">Каталог</Link>
-            {" · исследование в работе"}
+            {" · карточка изделия"}
           </div>
-          <div className="mt-5 grid gap-6 lg:grid-cols-[1fr_20rem]">
+          <div className="mt-5 grid gap-7 lg:grid-cols-[minmax(0,1fr)_19rem] lg:items-start">
             <div>
               <div className="flex flex-wrap gap-2">
-                <Badge tone="warning">Draft</Badge>
                 <Badge tone={product.researchStatus === "research_ready" ? "good" : "neutral"}>
-                  {draftStatusLabel(product.researchStatus)}
+                  {researchStatusLabel(product.researchStatus)}
                 </Badge>
-                <Badge tone="neutral">Verification not performed</Badge>
+                <Badge tone="neutral">Экспертная проверка ожидается</Badge>
               </div>
-              <h1 className="mt-4 max-w-4xl text-3xl font-extrabold tracking-[-0.035em]">
+              <h1 className="mt-4 max-w-4xl text-3xl font-extrabold tracking-[-0.03em]">
                 {product.title}
               </h1>
               <p className="mt-4 max-w-3xl text-sm leading-7 text-cm-slate">
-                {product.warning}
+                Запись проходит независимую проверку CyberMedica: источники,
+                документы и характеристики будут опубликованы как проверенные
+                только после экспертного подтверждения.
               </p>
               <div className="mt-5 flex flex-wrap gap-2">
                 <Link
                   href={`/request?product=${encodeURIComponent(product.title)}`}
-                  className="cm-button-primary shadow-[0_10px_28px_rgba(11,123,142,0.18)]"
+                  className="cm-button-primary shadow-[0_12px_30px_rgba(11,19,32,0.16)]"
                 >
                   Запросить КП
                 </Link>
@@ -85,34 +86,34 @@ export default async function DraftCatalogProductPage({
                 </Link>
               </div>
             </div>
-            <div className="cm-card overflow-hidden bg-white/85 p-4 shadow-[0_18px_50px_rgba(11,19,32,0.08)] backdrop-blur">
-              <div className="-mx-4 -mt-4 mb-4 border-b border-[var(--cm-rule)] bg-cm-surface-low px-4 py-3">
-                <div className="cm-label !text-cm-teal">Research status</div>
+            <div className="cm-card overflow-hidden bg-white/82 p-4 shadow-[0_14px_40px_rgba(11,19,32,0.06)] backdrop-blur">
+              <div className="-mx-4 -mt-4 mb-4 border-b border-[var(--cm-rule)] bg-white px-4 py-3">
+                <div className="cm-label !text-cm-teal">Готовность записи</div>
               </div>
-              <div className="cm-label">Review readiness</div>
+              <div className="cm-label">Проверка</div>
               <div className="mt-3 font-mono text-4xl font-bold text-cm-ink">
                 {displayMetric(product.readinessScore)}
               </div>
               <div className="mt-4 grid grid-cols-2 gap-2 text-[11px]">
-                <Metric label="Sources" value={displayMetric(product.sourcesSummary.total)} />
-                <Metric label="Official" value={displayMetric(product.sourcesSummary.official)} />
-                <Metric label="Documents" value={displayMetric(product.documentsSummary.total)} />
-                <Metric label="Claims" value={displayMetric(product.candidateClaimsCount)} />
+                <Metric label="Источники" value={displayMetric(product.sourcesSummary.total)} />
+                <Metric label="Официальные" value={displayMetric(product.sourcesSummary.official)} />
+                <Metric label="Документы" value={displayMetric(product.documentsSummary.total)} />
+                <Metric label="Характеристики" value={displayMetric(product.candidateClaimsCount)} />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <div className="cm-container grid gap-6 py-7 lg:grid-cols-[1fr_20rem]">
+      <div className="cm-container grid gap-6 py-8 lg:grid-cols-[minmax(0,1fr)_19rem]">
         <div className="space-y-6">
-          <Section title="Research summary">
+          <Section title="Сводка проверки">
             <div className="grid gap-3 md:grid-cols-3">
-              <Metric label="Source quality" value={displayMetric(product.sourceQualityScore)} />
-              <Metric label="Conflicts" value={displayMetric(product.conflicts.length)} />
-              <Metric label="Review" value="Ожидает" />
+              <Metric label="Качество источников" value={displayMetric(product.sourceQualityScore)} />
+              <Metric label="Расхождения" value={displayMetric(product.conflicts.length)} />
+              <Metric label="Статус" value="Ожидает" />
             </div>
-            <div className="mt-4 rounded-xl border border-[var(--cm-rule)] bg-white p-4 shadow-[0_8px_24px_rgba(11,19,32,0.04)]">
+            <div className="mt-4 rounded-lg border border-[var(--cm-rule)] bg-white p-4 shadow-[0_8px_24px_rgba(11,19,32,0.035)]">
               <div className="text-xs font-semibold">Исследование продолжается</div>
               <ul className="mt-4 grid gap-3 text-xs text-cm-slate sm:grid-cols-2">
                 {researchSteps.map((step, index) => (
@@ -129,7 +130,7 @@ export default async function DraftCatalogProductPage({
               </ul>
             </div>
             {product.researchWarnings.length > 0 && (
-              <div className="mt-4 rounded-lg border border-amber-200 bg-amber-50 p-4 text-xs leading-6 text-amber-900">
+              <div className="mt-4 rounded-md border border-amber-200 bg-amber-50 p-4 text-xs leading-6 text-amber-900">
                 {product.researchWarnings.slice(0, 4).map((warning) => (
                   <div key={warning}>• {warning}</div>
                 ))}
@@ -137,7 +138,7 @@ export default async function DraftCatalogProductPage({
             )}
           </Section>
 
-          <Section title="Sources">
+          <Section title="Источники">
             <ListEmptyWhen
               empty={product.sourceCandidates.length === 0}
               message="Официальные источники пока не найдены."
@@ -147,16 +148,16 @@ export default async function DraftCatalogProductPage({
                   <a
                     key={source.sourceUrl}
                     href={source.sourceUrl}
-                    className="block rounded-lg border border-[var(--cm-rule)] bg-white p-4 shadow-[0_8px_22px_rgba(11,19,32,0.035)] transition duration-200 hover:-translate-y-px hover:border-cm-teal/35 hover:shadow-[0_14px_34px_rgba(11,19,32,0.07)]"
+                    className="block rounded-lg border border-[var(--cm-rule)] bg-white p-4 shadow-[0_8px_22px_rgba(11,19,32,0.03)] transition duration-200 hover:-translate-y-px hover:border-cm-teal/30 hover:shadow-[0_14px_34px_rgba(11,19,32,0.06)]"
                     rel="noreferrer"
                     target="_blank"
                   >
                     <div className="flex flex-wrap items-center justify-between gap-2">
                       <div className="text-sm font-semibold">{source.sourceTitle}</div>
-                      <Badge tone="neutral">{source.sourceType}</Badge>
+                      <Badge tone="neutral">Источник</Badge>
                     </div>
                     <div className="mt-2 font-mono text-[10px] text-cm-dim">
-                      {source.publisher} · confidence {source.confidence}
+                      {source.publisher} · надежность {source.confidence}
                     </div>
                     <p className="mt-2 text-xs leading-5 text-cm-slate">{source.reason}</p>
                   </a>
@@ -165,7 +166,7 @@ export default async function DraftCatalogProductPage({
             </ListEmptyWhen>
           </Section>
 
-          <Section title="Documents">
+          <Section title="Документы">
             <ListEmptyWhen
               empty={product.documents.length === 0}
               title="Нет документов"
@@ -176,14 +177,14 @@ export default async function DraftCatalogProductPage({
                   <a
                     key={document.url}
                     href={document.url}
-                    className="rounded-lg border border-[var(--cm-rule)] bg-white p-4 shadow-[0_8px_22px_rgba(11,19,32,0.035)] transition duration-200 hover:-translate-y-px hover:border-cm-teal/35 hover:shadow-[0_14px_34px_rgba(11,19,32,0.07)]"
+                    className="rounded-lg border border-[var(--cm-rule)] bg-white p-4 shadow-[0_8px_22px_rgba(11,19,32,0.03)] transition duration-200 hover:-translate-y-px hover:border-cm-teal/30 hover:shadow-[0_14px_34px_rgba(11,19,32,0.06)]"
                     rel="noreferrer"
                     target="_blank"
                   >
                     <Badge tone="neutral">{document.documentType}</Badge>
                     <div className="mt-3 text-sm font-semibold">{document.title}</div>
                     <div className="mt-2 font-mono text-[10px] leading-5 text-cm-dim">
-                      {document.sha256 ? `sha256:${document.sha256.slice(0, 12)}…` : "Нет данных"}
+                      {document.sha256 ? "Файл сохранён для проверки" : "Файл ожидается"}
                     </div>
                   </a>
                 ))}
@@ -191,7 +192,7 @@ export default async function DraftCatalogProductPage({
             </ListEmptyWhen>
           </Section>
 
-          <Section title="Facts / Characteristics">
+          <Section title="Характеристики">
             <ListEmptyWhen
               empty={product.characteristics.length === 0}
               title="Нет характеристик"
@@ -215,7 +216,7 @@ export default async function DraftCatalogProductPage({
                         {fact.rawText}
                       </div>
                       <div className="mt-2 font-mono text-[10px] text-cm-dim">
-                        {fact.sourceTitle} · {fact.extractionMethod} · confidence {fact.confidence}
+                        {fact.sourceTitle} · надежность {fact.confidence}
                       </div>
                     </div>
                   </div>
@@ -224,26 +225,26 @@ export default async function DraftCatalogProductPage({
             </ListEmptyWhen>
           </Section>
 
-          <Section title="Candidate Claims">
+          <Section title="Факты на проверке">
             <ListEmptyWhen
               empty={product.candidateClaims.length === 0}
-              title="Нет кандидатных утверждений"
-              message="Утверждения будут подготовлены после появления подтверждающих источников."
+              title="Нет фактов на проверке"
+              message="Факты будут подготовлены после появления подтверждающих источников."
             >
               <div className="space-y-3">
                 {product.candidateClaims.map((claim) => (
                   <div key={claim.claimId} className="cm-card p-4">
                     <div className="flex flex-wrap items-center gap-2">
-                      <Badge tone="neutral">{claim.suggestedClaimType}</Badge>
-                      <Badge tone="warning">unverified</Badge>
-                      <Badge tone="neutral">autoPublish false</Badge>
+                      <Badge tone="neutral">Факт</Badge>
+                      <Badge tone="warning">на проверке</Badge>
+                      <Badge tone="neutral">не опубликовано</Badge>
                     </div>
                     <div className="mt-3 text-sm">
                       {claim.valuePayload.value}
                       {claim.valuePayload.unit ? ` ${claim.valuePayload.unit}` : ""}
                     </div>
                     <div className="mt-2 font-mono text-[10px] text-cm-dim">
-                      Evidence: {claim.evidenceCandidateIds.join(", ")}
+                      Оснований: {claim.evidenceCandidateIds.length}
                     </div>
                   </div>
                 ))}
@@ -251,7 +252,7 @@ export default async function DraftCatalogProductPage({
             </ListEmptyWhen>
           </Section>
 
-          <Section title="Evidence Candidates">
+          <Section title="Основания">
             <ListEmptyWhen
               empty={product.evidenceCandidates.length === 0}
               title="Нет доказательств"
@@ -264,7 +265,7 @@ export default async function DraftCatalogProductPage({
                       “{evidence.quotedText}”
                     </div>
                     <div className="mt-3 font-mono text-[10px] text-cm-dim">
-                      {evidence.sourceTitle} · {evidence.documentVersionId ?? "no document version"}
+                      {evidence.sourceTitle} · документ ожидает проверки
                     </div>
                   </div>
                 ))}
@@ -285,7 +286,7 @@ export default async function DraftCatalogProductPage({
             </div>
           </Section>
 
-          <Section title="Conflicts">
+          <Section title="Расхождения">
             <ListEmptyWhen
               empty={product.conflicts.length === 0}
               message="Конфликты не выявлены."
@@ -305,12 +306,12 @@ export default async function DraftCatalogProductPage({
             </ListEmptyWhen>
           </Section>
 
-          <Section title="Review queue metadata">
+          <Section title="Проверка специалистом">
             <div className="space-y-2 text-xs leading-6 text-cm-slate">
-              <div>Status: {product.reviewStatus}</div>
-              <div>Priority: {product.reviewPriority}</div>
-              <div>Reviewer: {product.suggestedReviewerRole}</div>
-              <div>Blocking: {product.blockingIssues.join(", ") || "none"}</div>
+              <div>Состояние: ожидает проверки</div>
+              <div>Приоритет: {priorityLabel(product.reviewPriority)}</div>
+              <div>Роль: медицинский эксперт данных</div>
+              <div>Блокирующие вопросы: {product.blockingIssues.length || "нет"}</div>
             </div>
           </Section>
         </aside>
@@ -327,8 +328,8 @@ function Section({
   children: ReactNode;
 }) {
   return (
-    <section className="cm-card p-5">
-      <h2 className="text-sm font-bold">{title}</h2>
+    <section className="cm-card p-5 shadow-[0_8px_30px_rgba(11,19,32,0.035)]">
+      <h2 className="text-sm font-bold tracking-[-0.01em]">{title}</h2>
       <div className="mt-4">{children}</div>
     </section>
   );
@@ -343,10 +344,10 @@ function Badge({
 }) {
   const className =
     tone === "good"
-      ? "border-cm-teal/30 bg-cm-teal/10 text-cm-teal"
+      ? "border-cm-teal/24 bg-cm-teal-soft/70 text-cm-teal"
       : tone === "warning"
         ? "border-amber-200 bg-amber-50 text-amber-800"
-        : "border-[var(--cm-rule)] bg-cm-surface-low text-cm-dim";
+        : "border-[var(--cm-rule)] bg-white/80 text-cm-slate";
   return (
     <span className={`rounded-md border px-2 py-1 font-mono text-[9px] font-semibold ${className}`}>
       {children}
@@ -356,7 +357,7 @@ function Badge({
 
 function Metric({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-lg border border-[var(--cm-rule)] bg-cm-surface-low p-3">
+    <div className="rounded-md border border-[var(--cm-rule)] bg-cm-surface-low/75 p-3">
       <div className="cm-label text-[8px]">{label}</div>
       <div className="mt-1 font-mono text-[13px] font-semibold text-cm-ink">
         {value}
@@ -367,6 +368,25 @@ function Metric({ label, value }: { label: string; value: string }) {
 
 function displayMetric(value: number) {
   return value > 0 ? String(value) : "—";
+}
+
+function researchStatusLabel(status: DraftResearchStatus) {
+  const labels: Record<DraftResearchStatus, string> = {
+    needs_source: "Требуются документы",
+    partially_researched: "В работе",
+    research_ready: "Готово к проверке",
+    blocked: "Нужна проверка",
+  };
+  return labels[status];
+}
+
+function priorityLabel(priority: "high" | "medium" | "low") {
+  const labels = {
+    high: "высокий",
+    medium: "средний",
+    low: "низкий",
+  } as const;
+  return labels[priority];
 }
 
 function ListEmptyWhen({

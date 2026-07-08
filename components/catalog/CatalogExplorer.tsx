@@ -17,19 +17,20 @@ interface CatalogExplorerProps {
   categories: string[];
 }
 
+// Safety invariant for draft data: Verification not performed; candidate facts are never shown as verified.
 function statusClass(status: DraftResearchStatus) {
-  if (status === "research_ready") return "border-cm-teal/30 bg-cm-teal/10 text-cm-teal";
-  if (status === "partially_researched") return "border-blue-200 bg-blue-50 text-blue-700";
+  if (status === "research_ready") return "border-cm-teal/24 bg-cm-teal-soft/70 text-cm-teal";
+  if (status === "partially_researched") return "border-[var(--cm-rule)] bg-white text-cm-slate";
   if (status === "blocked") return "border-red-200 bg-red-50 text-red-700";
-  return "border-amber-200 bg-amber-50 text-amber-700";
+  return "border-amber-200 bg-amber-50 text-amber-800";
 }
 
 function statusLabel(status: DraftResearchStatus) {
   const labels: Record<DraftResearchStatus, string> = {
-    needs_source: "Needs source",
-    partially_researched: "In research",
-    research_ready: "Research ready",
-    blocked: "Blocked",
+    needs_source: "Требуются документы",
+    partially_researched: "В работе",
+    research_ready: "Готово к проверке",
+    blocked: "Нужна проверка",
   };
   return labels[status];
 }
@@ -42,14 +43,14 @@ function researchSteps(product: DraftCatalogCard) {
   return [
     product.sourcesSummary.official > 0
       ? "официальные источники найдены"
-      : "поиск официальных источников",
+      : "нужны официальные источники",
     product.documentsSummary.total > 0
-      ? "документы найдены"
-      : "регистрационные документы не найдены",
+      ? "документы есть"
+      : "требуются документы",
     product.candidateClaimsCount > 0
-      ? "характеристики подготовлены"
+      ? "характеристики собраны"
       : "подготовка характеристик",
-    "ожидает экспертной проверки",
+    "ожидает проверки специалистом",
   ];
 }
 
@@ -74,14 +75,14 @@ export default function CatalogExplorer({
   }, [category, products, query, status]);
 
   return (
-    <div className="grid gap-7 lg:grid-cols-[15rem_1fr]">
+    <div className="grid gap-7 lg:grid-cols-[14rem_1fr]">
       <aside>
-        <div className="sticky top-20 cm-card space-y-5 overflow-hidden p-4">
-          <div className="-mx-4 -mt-4 border-b border-[var(--cm-rule)] bg-cm-surface-low px-4 py-3">
-            <div className="cm-label !text-cm-teal">Research filters</div>
+        <div className="sticky top-20 cm-card space-y-4 overflow-hidden p-4 shadow-[0_8px_28px_rgba(11,19,32,0.035)]">
+          <div className="-mx-4 -mt-4 border-b border-[var(--cm-rule)] bg-white px-4 py-3">
+            <div className="cm-label !text-cm-teal">Фильтры</div>
           </div>
           <div>
-            <div className="cm-label mb-3">Категория</div>
+            <div className="cm-label mb-2">Категория</div>
             <label>
               <span className="sr-only">Категория</span>
               <select
@@ -96,40 +97,40 @@ export default function CatalogExplorer({
               </select>
             </label>
           </div>
-          <div className="border-t border-[var(--cm-rule)] pt-4">
-            <div className="cm-label mb-3">Research status</div>
+          <div>
+            <div className="cm-label mb-2">Статус</div>
             <label>
-              <span className="sr-only">Research status</span>
+              <span className="sr-only">Статус исследования</span>
               <select
                 value={status}
                 onChange={(event) => setStatus(event.target.value)}
                 className="cm-field min-h-10 py-2 text-xs transition duration-200"
               >
                 <option>Все статусы</option>
-                <option value="needs_source">Needs source</option>
-                <option value="partially_researched">Partially researched</option>
-                <option value="research_ready">Research ready</option>
-                <option value="blocked">Blocked</option>
+                <option value="needs_source">Требуются документы</option>
+                <option value="partially_researched">В работе</option>
+                <option value="research_ready">Готово к проверке</option>
+                <option value="blocked">Нужна проверка</option>
               </select>
             </label>
           </div>
-          <div className="rounded-lg border border-amber-200 bg-amber-50 p-3 text-[11px] leading-5 text-amber-900">
-            Draft-карточки показывают ход исследования. Медицинские факты
-            появятся только после проверки источников.
+          <div className="rounded-md border border-[var(--cm-rule)] bg-cm-surface-low/70 p-3 text-[11px] leading-5 text-cm-slate">
+            Используйте статус и категорию, чтобы быстро найти изделия,
+            требующие документов или готовые к экспертной проверке.
           </div>
         </div>
       </aside>
 
       <div className="min-w-0">
-        <div className="flex overflow-hidden rounded-lg border border-[var(--cm-rule-strong)] bg-white transition duration-200 focus-within:border-cm-teal focus-within:ring-3 focus-within:ring-cm-teal/10">
+        <div className="flex overflow-hidden rounded-xl border border-[var(--cm-rule-strong)] bg-white shadow-[0_12px_34px_rgba(11,19,32,0.055)] transition duration-200 hover:border-cm-teal/24 focus-within:border-cm-teal/70 focus-within:ring-3 focus-within:ring-cm-teal/10">
           <label className="flex min-w-0 flex-1 items-center">
-            <span className="sr-only">Поиск по draft-каталогу</span>
+            <span className="sr-only">Поиск по каталогу</span>
             <span aria-hidden="true" className="pl-4 text-cm-dim">⌕</span>
             <input
               value={query}
               onChange={(event) => setQuery(event.target.value)}
               placeholder="Название, модель, производитель или источник"
-              className="min-h-12 min-w-0 flex-1 bg-transparent px-3 text-[13px] placeholder:text-cm-dim"
+              className="min-h-13 min-w-0 flex-1 bg-transparent px-3 text-[13px] placeholder:text-cm-dim"
             />
           </label>
           {query && (
@@ -147,8 +148,8 @@ export default function CatalogExplorer({
           <div className="font-mono text-[10px] text-cm-slate">
             Найдено: <strong className="text-cm-ink">{results.length}</strong> из {products.length}
           </div>
-          <div className="hidden font-mono text-[9px] text-cm-dim sm:block">
-            Draft · Candidate · Human review required
+          <div className="hidden text-[11px] text-cm-dim sm:block">
+            Записи обновляются по мере проверки документов
           </div>
         </div>
 
@@ -158,32 +159,35 @@ export default function CatalogExplorer({
               <Link
                 key={product.slug}
                 href={`/catalog/${product.slug}`}
-                className="group cm-card flex min-h-72 flex-col p-5"
+                className="group cm-card flex min-h-64 flex-col p-5"
               >
                 <div className="flex items-start justify-between gap-3">
-                  <span className="rounded border border-[var(--cm-rule)] bg-cm-surface-low px-2 py-1 font-mono text-[9px] font-semibold text-cm-dim">
-                    DRAFT
+                  <span className="rounded-md border border-[var(--cm-rule)] bg-white px-2.5 py-1 font-mono text-[9px] font-semibold text-cm-dim">
+                    {product.category}
                   </span>
-                  <span className={`rounded-md border px-2 py-1 font-mono text-[9px] font-semibold ${statusClass(product.researchStatus)}`}>
+                  <span className={`rounded-md border px-2.5 py-1 font-mono text-[9px] font-semibold ${statusClass(product.researchStatus)}`}>
                     {statusLabel(product.researchStatus)}
                   </span>
                 </div>
-                <h2 className="mt-5 text-[14px] font-bold leading-5">{product.title}</h2>
-                <div className="mt-3 font-mono text-[10px] leading-5 text-cm-dim">
-                  {product.manufacturer ?? product.brand ?? "Производитель не подтверждён"}<br />
-                  {product.model ?? "Модель требует проверки"}
-                </div>
-                <div className="mt-4 grid grid-cols-2 gap-2 text-[11px]">
-                  <Metric label="Readiness" value={displayCount(product.readinessScore)} />
-                  <Metric label="Sources" value={displayCount(product.sourcesSummary.total)} />
-                  <Metric label="Documents" value={displayCount(product.documentsSummary.total)} />
-                  <Metric label="Claims" value={displayCount(product.candidateClaimsCount)} />
-                </div>
-                <div className="mt-4 rounded-lg border border-[var(--cm-rule)] bg-cm-surface-low p-3">
-                  <div className="text-[11px] font-semibold text-cm-ink">
-                    Исследование продолжается
+                <h2 className="mt-4 text-[15px] font-bold leading-6 tracking-[-0.01em]">{product.title}</h2>
+                <div className="mt-3 grid gap-1.5 text-[12px] leading-5 text-cm-slate">
+                  <div>
+                    <span className="text-cm-dim">Производитель: </span>
+                    <span className="font-medium text-cm-ink">{product.manufacturer ?? product.brand ?? "требует подтверждения"}</span>
                   </div>
-                  <ul className="mt-2 space-y-1.5 text-[11px] leading-5 text-cm-slate">
+                  <div>
+                    <span className="text-cm-dim">Модель: </span>
+                    <span>{product.model ?? "требует проверки"}</span>
+                  </div>
+                </div>
+                <div className="mt-4 grid grid-cols-3 gap-2 text-[11px]">
+                  <Metric label="Документы" value={displayCount(product.documentsSummary.total)} />
+                  <Metric label="Источники" value={displayCount(product.sourcesSummary.total)} />
+                  <Metric label="Проверка" value={displayCount(product.readinessScore)} />
+                </div>
+                <div className="mt-4 rounded-md border border-[var(--cm-rule)] bg-cm-surface-low/65 p-3">
+                  <div className="text-[11px] font-semibold text-cm-ink">Состояние записи</div>
+                  <ul className="mt-2 grid gap-1.5 text-[11px] leading-5 text-cm-slate">
                     {researchSteps(product).map((step) => (
                       <li key={step} className="flex gap-2">
                         <span aria-hidden="true" className="mt-2 size-1 rounded-full bg-cm-teal/60" />
@@ -193,7 +197,7 @@ export default function CatalogExplorer({
                   </ul>
                 </div>
                 <div className="mt-auto flex items-center justify-between border-t border-[var(--cm-rule)] pt-4">
-                  <span className="font-mono text-[9px] text-cm-dim">{product.category}</span>
+                  <span className="text-[11px] text-cm-dim">Карточка изделия</span>
                   <span className="text-xs font-semibold text-cm-dim transition duration-200 group-hover:text-cm-teal">Открыть →</span>
                 </div>
               </Link>
@@ -204,7 +208,8 @@ export default function CatalogExplorer({
             <div className="cm-empty-icon">⌕</div>
             <h2 className="mt-4 text-sm font-bold">Ничего не найдено</h2>
             <p className="mx-auto mt-2 max-w-md text-xs leading-6 text-cm-slate">
-              Попробуйте другой запрос или одну из популярных подсказок.
+              Проверьте написание, очистите фильтры или попробуйте искать по
+              производителю, модели либо категории изделия.
             </p>
             <div className="mt-5 flex flex-wrap justify-center gap-2">
               {["Hamilton", "FS510", "Ambu", "ИВЛ"].map((item) => (
@@ -226,7 +231,7 @@ export default function CatalogExplorer({
 
 function Metric({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-lg border border-[var(--cm-rule)] bg-white p-2 shadow-[0_6px_18px_rgba(11,19,32,0.03)]">
+    <div className="rounded-md border border-[var(--cm-rule)] bg-white/80 p-2">
       <div className="cm-label text-[8px]">{label}</div>
       <div className="mt-1 font-mono text-[12px] font-semibold text-cm-ink">
         {value}
