@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 function BrandMark() {
   return (
@@ -20,12 +23,15 @@ function BrandMark() {
 }
 
 export default function Header() {
+  const pathname = usePathname();
   const navItems = [
     ["/catalog", "Каталог"],
     ["/products/fs510", "База знаний"],
     ["/manufacturers", "Производители"],
     ["/request", "Поставщикам"],
   ];
+  const isActive = (href: string) =>
+    href === "/" ? pathname === href : pathname.startsWith(href);
 
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--cm-rule)] bg-white/95 backdrop-blur-lg">
@@ -48,8 +54,13 @@ export default function Header() {
           {navItems.map(([href, label]) => (
             <Link
               key={href}
-              className="rounded-md px-3 py-2 text-xs text-cm-slate transition duration-150 hover:bg-cm-surface-low hover:text-cm-ink"
+              className={`rounded-md px-3 py-2 text-xs transition duration-150 hover:bg-cm-surface-low hover:text-cm-ink ${
+                isActive(href)
+                  ? "bg-cm-teal-soft text-cm-teal"
+                  : "text-cm-slate"
+              }`}
               href={href}
+              aria-current={isActive(href) ? "page" : undefined}
             >
               {label}
             </Link>
@@ -80,7 +91,12 @@ export default function Header() {
           <Link
             key={href}
             href={href}
-            className="shrink-0 rounded px-2.5 py-2 text-xs text-cm-slate transition duration-150 hover:text-cm-teal"
+            className={`shrink-0 rounded px-2.5 py-2 text-xs transition duration-150 hover:text-cm-teal ${
+              isActive(href)
+                ? "bg-cm-teal-soft text-cm-teal"
+                : "text-cm-slate"
+            }`}
+            aria-current={isActive(href) ? "page" : undefined}
           >
             {label}
           </Link>

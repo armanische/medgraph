@@ -34,8 +34,16 @@ export default function Search() {
   }
 
   return (
-    <section className="border-b border-[var(--cm-rule)] bg-white">
-      <div className="cm-container py-16 sm:py-20">
+    <section className="relative overflow-hidden border-b border-[var(--cm-rule)] bg-[linear-gradient(135deg,#ffffff_0%,#f6fafc_48%,#e8f5f7_100%)]">
+      <div
+        aria-hidden="true"
+        className="absolute right-[-12rem] top-[-10rem] size-[30rem] rounded-full bg-cm-teal/10 blur-3xl"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute bottom-[-14rem] left-[40%] size-[24rem] rounded-full bg-cm-verified/10 blur-3xl"
+      />
+      <div className="cm-container relative grid gap-10 py-16 sm:py-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
         <div className="max-w-2xl">
           <div className="cm-label mb-7 flex items-center gap-2 !text-cm-teal">
             <span className="size-1.5 rounded-full bg-cm-teal" />
@@ -71,7 +79,7 @@ export default function Search() {
               </label>
               <button
                 onClick={handleSearch}
-                className="min-h-12 shrink-0 bg-cm-ink px-5 text-xs font-semibold text-white transition hover:bg-cm-teal"
+                className="min-h-12 shrink-0 bg-cm-ink px-5 text-xs font-semibold text-white transition duration-150 hover:bg-cm-teal"
               >
                 Найти
               </button>
@@ -83,7 +91,7 @@ export default function Search() {
                   <button
                     key={product.slug}
                     onClick={() => router.push(`/knowledge/${product.slug}`)}
-                    className="block w-full rounded-md p-3 text-left hover:bg-cm-surface-low"
+                    className="block w-full rounded-md p-3 text-left transition duration-150 hover:bg-cm-surface-low"
                   >
                     <span className="block text-[13px] font-semibold">{product.name}</span>
                     <span className="mt-1 block font-mono text-[10px] text-cm-dim">
@@ -126,8 +134,6 @@ export default function Search() {
               </button>
             ))}
           </div>
-        </div>
-
         <div className="mt-14 flex flex-wrap gap-x-7 gap-y-3 border-t border-[var(--cm-rule)] pt-7">
           {[
             "Врачам и клиницистам",
@@ -142,6 +148,58 @@ export default function Search() {
               {item}
             </div>
           ))}
+        </div>
+        </div>
+
+        <div className="lg:pl-6">
+          <div className="cm-card relative overflow-hidden border-cm-teal/20 bg-white/82 p-5 shadow-[0_24px_70px_rgba(11,19,32,0.10)] backdrop-blur">
+            <div
+              aria-hidden="true"
+              className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-cm-teal via-cm-verified to-cm-teal"
+            />
+            <div className="flex items-center justify-between gap-4">
+              <div>
+                <div className="cm-label !text-cm-teal">Clinical Intelligence</div>
+                <h2 className="mt-2 text-lg font-extrabold tracking-[-0.03em]">
+                  Verified / Research Record
+                </h2>
+              </div>
+              <div className="rounded-xl border border-cm-verified/20 bg-cm-verified-soft px-3 py-2 font-mono text-[10px] font-semibold text-cm-verified">
+                LIVE
+              </div>
+            </div>
+
+            <div className="mt-6 grid gap-3">
+              {[
+                ["Опубликованная запись", "FS510", "CyberMedica Verified"],
+                ["Draft research", "49 изделий", "ожидают источники"],
+                ["Provenance", "Source → Evidence", "без выдуманных фактов"],
+              ].map(([label, value, note]) => (
+                <div
+                  key={label}
+                  className="rounded-xl border border-[var(--cm-rule)] bg-cm-surface-low p-4 transition duration-200 hover:-translate-y-0.5 hover:bg-white"
+                >
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <div className="cm-label text-[8px]">{label}</div>
+                      <div className="mt-2 text-sm font-bold">{value}</div>
+                      <div className="mt-1 text-[11px] text-cm-slate">{note}</div>
+                    </div>
+                    <span className="mt-1 size-2 rounded-full bg-cm-teal" />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-5 rounded-xl bg-cm-ink p-4 text-white">
+              <div className="font-mono text-[10px] uppercase tracking-[0.08em] text-white/45">
+                Product rule
+              </div>
+              <p className="mt-2 text-sm font-semibold leading-6">
+                Если факт нельзя проверить — он не показывается как факт.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -52,13 +52,13 @@ export default async function DraftCatalogProductPage({
 
   return (
     <main className="min-h-screen bg-cm-canvas">
-      <section className="border-b border-[var(--cm-rule)] bg-white">
+      <section className="border-b border-[var(--cm-rule)] bg-[linear-gradient(135deg,#ffffff_0%,#f6fafc_56%,#e8f5f7_100%)]">
         <div className="cm-container py-8">
           <div className="cm-label">
             <Link href="/catalog" className="hover:text-cm-teal">Каталог</Link>
             {" · Draft research"}
           </div>
-          <div className="mt-5 grid gap-6 lg:grid-cols-[1fr_18rem]">
+          <div className="mt-5 grid gap-6 lg:grid-cols-[1fr_20rem]">
             <div>
               <div className="flex flex-wrap gap-2">
                 <Badge tone="warning">Draft</Badge>
@@ -76,7 +76,7 @@ export default async function DraftCatalogProductPage({
               <div className="mt-5 flex flex-wrap gap-2">
                 <Link
                   href={`/request?product=${encodeURIComponent(product.title)}`}
-                  className="cm-button-primary"
+                  className="cm-button-primary shadow-[0_10px_28px_rgba(11,123,142,0.18)]"
                 >
                   Запросить КП
                 </Link>
@@ -85,7 +85,10 @@ export default async function DraftCatalogProductPage({
                 </Link>
               </div>
             </div>
-            <div className="cm-card p-4">
+            <div className="cm-card overflow-hidden bg-white/85 p-4 shadow-[0_18px_50px_rgba(11,19,32,0.08)] backdrop-blur">
+              <div className="-mx-4 -mt-4 mb-4 border-b border-[var(--cm-rule)] bg-cm-surface-low px-4 py-3">
+                <div className="cm-label !text-cm-teal">Research status</div>
+              </div>
               <div className="cm-label">Review readiness</div>
               <div className="mt-3 font-mono text-4xl font-bold text-cm-ink">
                 {displayMetric(product.readinessScore)}
@@ -109,12 +112,17 @@ export default async function DraftCatalogProductPage({
               <Metric label="Conflicts" value={displayMetric(product.conflicts.length)} />
               <Metric label="Review" value="Ожидает" />
             </div>
-            <div className="mt-4 rounded-lg border border-[var(--cm-rule)] bg-cm-surface-low p-4">
+            <div className="mt-4 rounded-xl border border-[var(--cm-rule)] bg-white p-4 shadow-[0_8px_24px_rgba(11,19,32,0.04)]">
               <div className="text-xs font-semibold">Исследование продолжается</div>
-              <ul className="mt-3 grid gap-2 text-xs text-cm-slate sm:grid-cols-2">
-                {researchSteps.map((step) => (
+              <ul className="mt-4 grid gap-3 text-xs text-cm-slate sm:grid-cols-2">
+                {researchSteps.map((step, index) => (
                   <li key={step} className="flex gap-2">
-                    <span aria-hidden="true" className="mt-2 size-1 rounded-full bg-cm-teal/60" />
+                    <span
+                      aria-hidden="true"
+                      className="flex size-5 shrink-0 items-center justify-center rounded-full border border-cm-teal/20 bg-cm-teal-soft font-mono text-[9px] font-bold text-cm-teal"
+                    >
+                      {index + 1}
+                    </span>
                     <span>{step}</span>
                   </li>
                 ))}

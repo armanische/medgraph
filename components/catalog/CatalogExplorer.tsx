@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 
 import {
-  draftStatusLabel,
   searchDraftCatalogCards,
 } from "@/lib/catalog-drafts";
 import type {
@@ -23,6 +22,16 @@ function statusClass(status: DraftResearchStatus) {
   if (status === "partially_researched") return "border-blue-200 bg-blue-50 text-blue-700";
   if (status === "blocked") return "border-red-200 bg-red-50 text-red-700";
   return "border-amber-200 bg-amber-50 text-amber-700";
+}
+
+function statusLabel(status: DraftResearchStatus) {
+  const labels: Record<DraftResearchStatus, string> = {
+    needs_source: "Needs source",
+    partially_researched: "In research",
+    research_ready: "Research ready",
+    blocked: "Blocked",
+  };
+  return labels[status];
 }
 
 function displayCount(value: number) {
@@ -65,9 +74,12 @@ export default function CatalogExplorer({
   }, [category, products, query, status]);
 
   return (
-    <div className="grid gap-7 lg:grid-cols-[14rem_1fr]">
+    <div className="grid gap-7 lg:grid-cols-[15rem_1fr]">
       <aside>
-        <div className="sticky top-20 cm-card space-y-5 p-4">
+        <div className="sticky top-20 cm-card space-y-5 overflow-hidden p-4 shadow-[0_14px_38px_rgba(11,19,32,0.04)]">
+          <div className="-mx-4 -mt-4 border-b border-[var(--cm-rule)] bg-cm-surface-low px-4 py-3">
+            <div className="cm-label !text-cm-teal">Research filters</div>
+          </div>
           <div>
             <div className="cm-label mb-3">Категория</div>
             <label>
@@ -102,8 +114,8 @@ export default function CatalogExplorer({
             </label>
           </div>
           <div className="rounded-lg border border-amber-200 bg-amber-50 p-3 text-[11px] leading-5 text-amber-900">
-            Карточки созданы автоматически и не прошли Verification. Данные
-            являются кандидатными и требуют проверки.
+            Draft-карточки показывают ход исследования. Медицинские факты
+            появятся только после проверки источников.
           </div>
         </div>
       </aside>
@@ -149,11 +161,11 @@ export default function CatalogExplorer({
                 className="group cm-card flex min-h-72 flex-col p-5 transition duration-200 hover:-translate-y-0.5 hover:border-cm-teal/30 hover:shadow-[0_10px_28px_rgba(11,19,32,0.08)]"
               >
                 <div className="flex items-start justify-between gap-3">
-                  <span className="rounded border border-[var(--cm-rule)] bg-cm-surface-low px-2 py-1 font-mono text-[9px] text-cm-dim">
+                  <span className="rounded border border-[var(--cm-rule)] bg-cm-surface-low px-2 py-1 font-mono text-[9px] font-semibold text-cm-dim">
                     DRAFT
                   </span>
                   <span className={`rounded-md border px-2 py-1 font-mono text-[9px] font-semibold ${statusClass(product.researchStatus)}`}>
-                    {draftStatusLabel(product.researchStatus)}
+                    {statusLabel(product.researchStatus)}
                   </span>
                 </div>
                 <h2 className="mt-5 text-[14px] font-bold leading-5">{product.title}</h2>
@@ -214,7 +226,7 @@ export default function CatalogExplorer({
 
 function Metric({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-lg border border-[var(--cm-rule)] bg-cm-surface-low p-2">
+    <div className="rounded-lg border border-[var(--cm-rule)] bg-white p-2">
       <div className="cm-label text-[8px]">{label}</div>
       <div className="mt-1 font-mono text-[12px] font-semibold text-cm-ink">
         {value}

@@ -43,29 +43,48 @@ function PageState({
 }) {
   return (
     <main className="min-h-[calc(100vh-4rem)] bg-cm-canvas px-5 py-16 text-cm-ink">
-      <section className="mx-auto max-w-2xl cm-card p-7 sm:p-9">
-        <p className="cm-label !text-cm-teal">
-          {eyebrow}
-        </p>
-        <h1 className="mt-3 text-2xl font-extrabold tracking-[-0.025em]">
-          {title}
-        </h1>
-        <p className="mt-4 max-w-xl text-[13px] leading-7 text-cm-slate">
-          {message}
-        </p>
-        <div className="mt-8 flex flex-wrap gap-3">
-          <Link
-            href="/catalog"
-            className="cm-button-primary"
-          >
-            Перейти в каталог
-          </Link>
-          <Link
-            href="/request?product=fs510"
-            className="cm-button-secondary"
-          >
-            Связаться с нами
-          </Link>
+      <section className="mx-auto grid max-w-4xl overflow-hidden rounded-2xl border border-[var(--cm-rule)] bg-white shadow-[0_24px_70px_rgba(11,19,32,0.10)] lg:grid-cols-[1fr_18rem]">
+        <div className="p-7 sm:p-9">
+          <p className="cm-label !text-cm-teal">
+            {eyebrow}
+          </p>
+          <h1 className="mt-3 text-2xl font-extrabold tracking-[-0.025em]">
+            {title}
+          </h1>
+          <p className="mt-4 max-w-xl text-[13px] leading-7 text-cm-slate">
+            {message}
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link
+              href="/catalog"
+              className="cm-button-primary"
+            >
+              Перейти в каталог
+            </Link>
+            <Link
+              href="/request?product=fs510"
+              className="cm-button-secondary"
+            >
+              Связаться с нами
+            </Link>
+          </div>
+        </div>
+        <div className="border-t border-[var(--cm-rule)] bg-[radial-gradient(ellipse_at_center,#dcf0f4_0%,#f4f7fa_70%)] p-6 lg:border-l lg:border-t-0">
+          <div className="rounded-xl border border-white/80 bg-white/85 p-4 backdrop-blur">
+            <div className="cm-label !text-cm-teal">Verified Record</div>
+            <dl className="mt-4 space-y-3 text-xs">
+              {[
+                ["Источник", "Projection"],
+                ["Документ", "FS510"],
+                ["Статус", "Обновляется"],
+              ].map(([label, value]) => (
+                <div key={label}>
+                  <dt className="cm-label text-[8px]">{label}</dt>
+                  <dd className="mt-1 font-semibold">{value}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
         </div>
       </section>
     </main>

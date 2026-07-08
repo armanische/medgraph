@@ -10,20 +10,28 @@ export default function PlatformStats() {
   ] as const;
 
   return (
-    <section className="border-b border-[var(--cm-rule)] bg-white">
-      <div className="cm-container py-5">
-        <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+    <section className="border-b border-[var(--cm-rule)] bg-cm-canvas">
+      <div className="cm-container py-6">
+        <div className="cm-card overflow-hidden bg-white shadow-[0_14px_44px_rgba(11,19,32,0.05)]">
+          <div className="border-b border-[var(--cm-rule)] bg-cm-surface-low px-5 py-3">
+            <div className="cm-label !text-cm-teal">Platform snapshot</div>
+          </div>
+          <div className="grid gap-px bg-[var(--cm-rule)] sm:grid-cols-2 lg:grid-cols-4">
           {items.map(([label, value]) => (
             <div
               key={label}
-              className="rounded-xl border border-[var(--cm-rule)] bg-cm-surface-low p-4 transition duration-200 hover:-translate-y-0.5 hover:border-cm-teal/30 hover:bg-white"
+              className="bg-white p-5 transition duration-200 hover:bg-cm-surface-low"
             >
               <div className="font-mono text-2xl font-bold tracking-[-0.03em] text-cm-ink">
                 {value}
               </div>
               <div className="mt-1 cm-label">{label}</div>
+              <div className="mt-3 h-1 rounded-full bg-cm-surface-low">
+                <div className="h-1 w-2/3 rounded-full bg-cm-teal/60" />
+              </div>
             </div>
           ))}
+          </div>
         </div>
       </div>
     </section>

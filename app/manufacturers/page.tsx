@@ -16,7 +16,7 @@ export default function ManufacturersPage() {
 
   return (
     <main className="min-h-screen bg-cm-canvas">
-      <header className="border-b border-[var(--cm-rule)] bg-white">
+      <header className="border-b border-[var(--cm-rule)] bg-[linear-gradient(135deg,#ffffff_0%,#f6fafc_58%,#e8f5f7_100%)]">
         <div className="cm-container py-8">
           <div className="cm-label">База производителей</div>
           <h1 className="mt-3 text-2xl font-extrabold tracking-[-0.025em]">Производители</h1>
@@ -24,7 +24,7 @@ export default function ManufacturersPage() {
             Изделия, регистрационные документы, категории и совместимость —
             собраны в одном месте.
           </p>
-          <div className="mt-6 grid gap-2 sm:grid-cols-3">
+          <div className="mt-6 grid gap-2 overflow-hidden rounded-2xl border border-[var(--cm-rule)] bg-[var(--cm-rule)] shadow-[0_14px_44px_rgba(11,19,32,0.06)] sm:grid-cols-3">
             {[
               ["Производителей", stats.manufacturers],
               ["Изделий", stats.devices],
@@ -32,7 +32,7 @@ export default function ManufacturersPage() {
             ].map(([label, value]) => (
               <div
                 key={label}
-                className="rounded-xl border border-[var(--cm-rule)] bg-cm-surface-low p-4"
+                className="bg-white p-5"
               >
                 <div className="font-mono text-2xl font-bold text-cm-ink">
                   {value}
@@ -45,7 +45,7 @@ export default function ManufacturersPage() {
       </header>
 
       <section className="cm-container py-7">
-        <div className="grid gap-2 md:grid-cols-2">
+        <div className="grid gap-3 md:grid-cols-2">
           {manufacturers.map((manufacturer) => {
             const productCount = getManufacturerProducts(
               manufacturer.slug
@@ -55,8 +55,12 @@ export default function ManufacturersPage() {
               <Link
                 key={manufacturer.slug}
                 href={`/manufacturers/${manufacturer.slug}`}
-                className="group cm-card p-5 transition duration-200 hover:-translate-y-0.5 hover:border-cm-teal/30 hover:shadow-[0_10px_28px_rgba(11,19,32,0.08)]"
+                className="group cm-card relative overflow-hidden p-5 transition duration-200 hover:-translate-y-0.5 hover:border-cm-teal/30 hover:shadow-[0_18px_44px_rgba(11,19,32,0.10)]"
               >
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-cm-teal/70 to-cm-verified/60 opacity-0 transition duration-200 group-hover:opacity-100"
+                />
                 <div className="flex items-center justify-between gap-4">
                   <div className="font-mono text-[10px] text-cm-teal">
                     {manufacturer.country}

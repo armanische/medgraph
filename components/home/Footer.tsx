@@ -12,7 +12,17 @@ export default function Footer() {
 
   return (
     <footer className="bg-cm-ink text-white">
-      <div className="cm-container grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-[1.35fr_1fr_1fr_1fr]">
+      <div className="cm-container border-b border-white/6 py-6">
+        <div className="rounded-2xl border border-white/8 bg-white/[0.03] p-4">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <div className="cm-label !text-white/30">Engineering principle</div>
+            <div className="max-w-2xl text-xs leading-6 text-white/55">
+              Нет происхождения данных — нет публичного факта.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="cm-container grid gap-10 py-10 sm:grid-cols-2 lg:grid-cols-[1.35fr_1fr_1fr_1fr]">
         <div>
           <div className="flex items-center gap-2 text-sm font-bold">
             <span className="flex size-6 items-center justify-center rounded-md bg-white/8">
@@ -51,7 +61,7 @@ export default function Footer() {
           </p>
         </div>
       </div>
-      <div className="border-t border-white/6">
+      <div>
         <div className="cm-container flex flex-col gap-2 py-4 font-mono text-[9px] text-white/25 sm:flex-row sm:justify-between">
           <span>© 2026 CyberMedica. Все права защищены.</span>
           <span>
