@@ -15,9 +15,10 @@ export default function Compatibility({
       </h2>
 
       {product.compatibility.length === 0 ? (
-        <div className="rounded-lg border border-dashed border-[var(--cm-rule)] bg-cm-surface-low p-5">
-          <div className="text-xs font-semibold">Нет совместимости</div>
-          <p className="mt-2 text-xs leading-6 text-cm-slate">
+        <div className="cm-empty-state px-5 py-7">
+          <div className="cm-empty-icon">↔</div>
+          <div className="mt-4 text-xs font-semibold">Нет совместимости</div>
+          <p className="mx-auto mt-2 max-w-sm text-xs leading-6 text-cm-slate">
             Совместимость еще анализируется.
           </p>
         </div>
@@ -26,7 +27,7 @@ export default function Compatibility({
           {product.compatibility.map((item) => (
             <div
               key={item}
-              className="flex items-center rounded-md border border-[var(--cm-rule)] bg-cm-surface-low p-3 transition duration-150 hover:border-cm-teal/30 hover:bg-white"
+              className="flex items-center rounded-lg border border-[var(--cm-rule)] bg-cm-surface-low p-3 transition duration-200 hover:-translate-y-px hover:border-cm-teal/30 hover:bg-white hover:shadow-[0_10px_24px_rgba(11,19,32,0.05)]"
             >
               <div className="mr-3 text-sm text-cm-verified">
                 ✓

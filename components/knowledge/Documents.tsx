@@ -13,9 +13,15 @@ export default function Documents({ product }: DocumentsProps) {
       </h2>
 
       {product.documents.length === 0 ? (
-        <div className="rounded-lg border border-dashed border-[var(--cm-rule)] bg-cm-surface-low p-5">
-          <div className="text-xs font-semibold">Нет документов</div>
-          <p className="mt-2 text-xs leading-6 text-cm-slate">
+        <div className="cm-empty-state px-5 py-7">
+          <div className="cm-empty-icon">
+            <svg viewBox="0 0 24 24" className="size-4" fill="none" aria-hidden="true">
+              <path d="M7 4h7l3 3v13H7z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" />
+              <path d="M14 4v4h4M9 12h6M9 16h4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+            </svg>
+          </div>
+          <div className="mt-4 text-xs font-semibold">Нет документов</div>
+          <p className="mx-auto mt-2 max-w-sm text-xs leading-6 text-cm-slate">
             Документы еще не добавлены. Исследование продолжается.
           </p>
         </div>
@@ -27,7 +33,7 @@ export default function Documents({ product }: DocumentsProps) {
               href={document.url}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center justify-between rounded-lg border border-[var(--cm-rule)] bg-cm-surface-low p-4 transition duration-200 hover:-translate-y-0.5 hover:border-cm-teal/30 hover:bg-white"
+              className="flex items-center justify-between rounded-lg border border-[var(--cm-rule)] bg-cm-surface-low p-4 shadow-[0_8px_22px_rgba(11,19,32,0.035)] transition duration-200 hover:-translate-y-px hover:border-cm-teal/30 hover:bg-white hover:shadow-[0_14px_34px_rgba(11,19,32,0.07)]"
             >
               <div>
                 <div className="text-xs font-semibold">

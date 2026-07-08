@@ -147,7 +147,7 @@ export default async function DraftCatalogProductPage({
                   <a
                     key={source.sourceUrl}
                     href={source.sourceUrl}
-                    className="block rounded-lg border border-[var(--cm-rule)] bg-white p-4 hover:border-cm-teal/40"
+                    className="block rounded-lg border border-[var(--cm-rule)] bg-white p-4 shadow-[0_8px_22px_rgba(11,19,32,0.035)] transition duration-200 hover:-translate-y-px hover:border-cm-teal/35 hover:shadow-[0_14px_34px_rgba(11,19,32,0.07)]"
                     rel="noreferrer"
                     target="_blank"
                   >
@@ -176,7 +176,7 @@ export default async function DraftCatalogProductPage({
                   <a
                     key={document.url}
                     href={document.url}
-                    className="rounded-lg border border-[var(--cm-rule)] bg-white p-4 hover:border-cm-teal/40"
+                    className="rounded-lg border border-[var(--cm-rule)] bg-white p-4 shadow-[0_8px_22px_rgba(11,19,32,0.035)] transition duration-200 hover:-translate-y-px hover:border-cm-teal/35 hover:shadow-[0_14px_34px_rgba(11,19,32,0.07)]"
                     rel="noreferrer"
                     target="_blank"
                   >
@@ -382,9 +382,23 @@ function ListEmptyWhen({
 }) {
   if (empty) {
     return (
-      <div className="rounded-lg border border-dashed border-[var(--cm-rule)] bg-cm-surface-low p-5 text-xs leading-6 text-cm-slate">
-        {title && <div className="mb-1 font-semibold text-cm-ink">{title}</div>}
-        <div>{message}</div>
+      <div className="cm-empty-state px-5 py-7 text-xs leading-6 text-cm-slate">
+        <div className="cm-empty-icon">
+          <svg viewBox="0 0 24 24" className="size-4" fill="none" aria-hidden="true">
+            <path
+              d="M7 4h7l3 3v13H7z"
+              stroke="currentColor"
+              strokeWidth="1.7"
+              strokeLinejoin="round"
+            />
+            <path d="M14 4v4h4M9 12h6M9 16h4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+          </svg>
+        </div>
+        {title && <div className="mt-4 font-semibold text-cm-ink">{title}</div>}
+        <div className="mx-auto mt-2 max-w-sm">{message}</div>
+        <Link href="/request" className="cm-button-secondary mt-5 min-h-9 px-3 py-2 text-xs">
+          Запросить проверку
+        </Link>
       </div>
     );
   }

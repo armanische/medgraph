@@ -39,18 +39,18 @@ export default function Footer() {
         <div>
           <div className="cm-label !text-white/25">Платформа</div>
           <div className="mt-4 flex flex-col gap-2.5 text-xs text-white/45">
-            <Link href="/catalog" className="transition duration-150 hover:text-white">Каталог</Link>
-            <Link href="/products/fs510" className="transition duration-150 hover:text-white">База знаний</Link>
-            <Link href="/manufacturers" className="transition duration-150 hover:text-white">Производители</Link>
+            <Link href="/catalog" className="transition duration-200 hover:text-white">Каталог</Link>
+            <Link href="/products/fs510" className="transition duration-200 hover:text-white">База знаний</Link>
+            <Link href="/manufacturers" className="transition duration-200 hover:text-white">Производители</Link>
           </div>
         </div>
 
         <div>
           <div className="cm-label !text-white/25">Специалистам</div>
           <div className="mt-4 flex flex-col gap-2.5 text-xs text-white/45">
-            <Link href="/request" className="transition duration-150 hover:text-white">Закупщикам</Link>
-            <Link href="/request" className="transition duration-150 hover:text-white">Поставщикам</Link>
-            <Link href="/request" className="transition duration-150 hover:text-white">Запросить КП</Link>
+            <Link href="/request" className="transition duration-200 hover:text-white">Закупщикам</Link>
+            <Link href="/request" className="transition duration-200 hover:text-white">Поставщикам</Link>
+            <Link href="/request" className="transition duration-200 hover:text-white">Запросить КП</Link>
           </div>
         </div>
 

@@ -69,13 +69,18 @@ function PageState({
             </Link>
           </div>
         </div>
-        <div className="border-t border-[var(--cm-rule)] bg-[radial-gradient(ellipse_at_center,#dcf0f4_0%,#f4f7fa_70%)] p-6 lg:border-l lg:border-t-0">
-          <div className="rounded-xl border border-white/80 bg-white/85 p-4 backdrop-blur">
-            <div className="cm-label !text-cm-teal">Verified Record</div>
+        <div className="cm-technical-surface border-t border-[var(--cm-rule)] bg-cm-surface-low p-6 lg:border-l lg:border-t-0">
+          <div className="rounded-xl border border-white/80 bg-white/88 p-4 shadow-[0_18px_44px_rgba(11,19,32,0.08)] backdrop-blur">
+            <div className="flex items-center justify-between gap-3">
+              <div className="cm-label !text-cm-teal">Verified Record</div>
+              <span className="rounded-full border border-[var(--cm-verified-border)] bg-cm-verified-soft px-2 py-0.5 font-mono text-[8px] font-semibold text-cm-verified">
+                VERIFIED
+              </span>
+            </div>
             <dl className="mt-4 space-y-3 text-xs">
               {[
-                ["Источник", "Projection"],
-                ["Документ", "FS510"],
+                ["Last updated", "В процессе"],
+                ["Published projection", "public_api"],
                 ["Статус", "Обновляется"],
               ].map(([label, value]) => (
                 <div key={label}>
@@ -84,6 +89,10 @@ function PageState({
                 </div>
               ))}
             </dl>
+            <div className="mt-4 rounded-lg border border-[var(--cm-rule)] bg-cm-surface-low p-3 text-[11px] leading-5 text-cm-slate">
+              Карточка остаётся недоступной, пока опубликованная projection не
+              отвечает корректно.
+            </div>
           </div>
         </div>
       </section>

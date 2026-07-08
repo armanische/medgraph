@@ -10,7 +10,7 @@ export default function WhyCyberMedica() {
     <section className="cm-container py-14">
       <div className="cm-label">Принципы платформы</div>
       <h2 className="mt-2 text-xl font-extrabold tracking-[-0.025em]">Почему CyberMedica</h2>
-      <div className="mt-6 grid gap-2 md:grid-cols-2">
+      <div className="mt-6 grid gap-3 md:grid-cols-2">
         {items.map(([number, title, text]) => (
           <div key={title} className="cm-card flex gap-4 p-5">
             <span className="font-mono text-sm font-bold text-cm-teal">{number}</span>

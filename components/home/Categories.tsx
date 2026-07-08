@@ -18,12 +18,12 @@ export default function Categories() {
           </div>
           <Link href="/catalog" className="text-xs font-semibold text-cm-teal">Весь каталог →</Link>
         </div>
-        <div className="mt-6 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {categories.map(([title, description, count], index) => (
             <Link
               href="/catalog"
               key={title}
-              className="cm-card group p-5 transition hover:border-cm-teal/30"
+              className="cm-card group p-5"
             >
               <div className="flex size-8 items-center justify-center rounded-md bg-cm-teal-soft font-mono text-[10px] font-bold text-cm-teal">
                 {String(index + 1).padStart(2, "0")}

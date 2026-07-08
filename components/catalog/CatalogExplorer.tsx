@@ -76,7 +76,7 @@ export default function CatalogExplorer({
   return (
     <div className="grid gap-7 lg:grid-cols-[15rem_1fr]">
       <aside>
-        <div className="sticky top-20 cm-card space-y-5 overflow-hidden p-4 shadow-[0_14px_38px_rgba(11,19,32,0.04)]">
+        <div className="sticky top-20 cm-card space-y-5 overflow-hidden p-4">
           <div className="-mx-4 -mt-4 border-b border-[var(--cm-rule)] bg-cm-surface-low px-4 py-3">
             <div className="cm-label !text-cm-teal">Research filters</div>
           </div>
@@ -87,7 +87,7 @@ export default function CatalogExplorer({
               <select
                 value={category}
                 onChange={(event) => setCategory(event.target.value)}
-                className="cm-field min-h-10 py-2 text-xs transition duration-150"
+                className="cm-field min-h-10 py-2 text-xs transition duration-200"
               >
                 <option>Все категории</option>
                 {categories.map((item) => (
@@ -103,7 +103,7 @@ export default function CatalogExplorer({
               <select
                 value={status}
                 onChange={(event) => setStatus(event.target.value)}
-                className="cm-field min-h-10 py-2 text-xs transition duration-150"
+                className="cm-field min-h-10 py-2 text-xs transition duration-200"
               >
                 <option>Все статусы</option>
                 <option value="needs_source">Needs source</option>
@@ -121,7 +121,7 @@ export default function CatalogExplorer({
       </aside>
 
       <div className="min-w-0">
-        <div className="flex overflow-hidden rounded-lg border border-[var(--cm-rule-strong)] bg-white transition duration-150 focus-within:border-cm-teal focus-within:ring-3 focus-within:ring-cm-teal/10">
+        <div className="flex overflow-hidden rounded-lg border border-[var(--cm-rule-strong)] bg-white transition duration-200 focus-within:border-cm-teal focus-within:ring-3 focus-within:ring-cm-teal/10">
           <label className="flex min-w-0 flex-1 items-center">
             <span className="sr-only">Поиск по draft-каталогу</span>
             <span aria-hidden="true" className="pl-4 text-cm-dim">⌕</span>
@@ -136,7 +136,7 @@ export default function CatalogExplorer({
             <button
               onClick={() => setQuery("")}
               aria-label="Очистить поиск"
-              className="px-4 text-cm-dim transition duration-150 hover:text-cm-ink"
+              className="px-4 text-cm-dim transition duration-200 hover:text-cm-ink"
             >
               ×
             </button>
@@ -158,7 +158,7 @@ export default function CatalogExplorer({
               <Link
                 key={product.slug}
                 href={`/catalog/${product.slug}`}
-                className="group cm-card flex min-h-72 flex-col p-5 transition duration-200 hover:-translate-y-0.5 hover:border-cm-teal/30 hover:shadow-[0_10px_28px_rgba(11,19,32,0.08)]"
+                className="group cm-card flex min-h-72 flex-col p-5"
               >
                 <div className="flex items-start justify-between gap-3">
                   <span className="rounded border border-[var(--cm-rule)] bg-cm-surface-low px-2 py-1 font-mono text-[9px] font-semibold text-cm-dim">
@@ -194,14 +194,14 @@ export default function CatalogExplorer({
                 </div>
                 <div className="mt-auto flex items-center justify-between border-t border-[var(--cm-rule)] pt-4">
                   <span className="font-mono text-[9px] text-cm-dim">{product.category}</span>
-                  <span className="text-xs font-semibold text-cm-dim transition duration-150 group-hover:text-cm-teal">Открыть →</span>
+                  <span className="text-xs font-semibold text-cm-dim transition duration-200 group-hover:text-cm-teal">Открыть →</span>
                 </div>
               </Link>
             ))}
           </div>
         ) : (
-          <div className="mt-4 cm-card border-dashed px-6 py-16 text-center">
-            <div className="mx-auto flex size-12 items-center justify-center rounded-2xl bg-cm-teal-soft text-cm-teal">⌕</div>
+          <div className="cm-empty-state mt-4">
+            <div className="cm-empty-icon">⌕</div>
             <h2 className="mt-4 text-sm font-bold">Ничего не найдено</h2>
             <p className="mx-auto mt-2 max-w-md text-xs leading-6 text-cm-slate">
               Попробуйте другой запрос или одну из популярных подсказок.
@@ -211,7 +211,7 @@ export default function CatalogExplorer({
                 <button
                   key={item}
                   onClick={() => setQuery(item)}
-                  className="rounded-full border border-cm-teal/20 bg-cm-teal-soft px-3 py-1.5 font-mono text-[10px] text-cm-teal transition duration-150 hover:border-cm-teal/50 hover:bg-white"
+                  className="rounded-full border border-cm-teal/20 bg-cm-teal-soft px-3 py-1.5 font-mono text-[10px] text-cm-teal transition duration-200 hover:border-cm-teal/50 hover:bg-white"
                 >
                   {item}
                 </button>
@@ -226,7 +226,7 @@ export default function CatalogExplorer({
 
 function Metric({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-lg border border-[var(--cm-rule)] bg-white p-2">
+    <div className="rounded-lg border border-[var(--cm-rule)] bg-white p-2 shadow-[0_6px_18px_rgba(11,19,32,0.03)]">
       <div className="cm-label text-[8px]">{label}</div>
       <div className="mt-1 font-mono text-[12px] font-semibold text-cm-ink">
         {value}

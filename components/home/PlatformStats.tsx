@@ -12,7 +12,7 @@ export default function PlatformStats() {
   return (
     <section className="border-b border-[var(--cm-rule)] bg-cm-canvas">
       <div className="cm-container py-6">
-        <div className="cm-card overflow-hidden bg-white shadow-[0_14px_44px_rgba(11,19,32,0.05)]">
+        <div className="cm-card overflow-hidden bg-white">
           <div className="border-b border-[var(--cm-rule)] bg-cm-surface-low px-5 py-3">
             <div className="cm-label !text-cm-teal">Platform snapshot</div>
           </div>
@@ -20,7 +20,7 @@ export default function PlatformStats() {
           {items.map(([label, value]) => (
             <div
               key={label}
-              className="bg-white p-5 transition duration-200 hover:bg-cm-surface-low"
+              className="bg-white p-5 transition duration-200 hover:bg-cm-surface-low/70"
             >
               <div className="font-mono text-2xl font-bold tracking-[-0.03em] text-cm-ink">
                 {value}

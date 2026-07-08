@@ -43,17 +43,16 @@ export default function Search() {
         aria-hidden="true"
         className="absolute bottom-[-14rem] left-[40%] size-[24rem] rounded-full bg-cm-verified/10 blur-3xl"
       />
-      <div className="cm-container relative grid gap-10 py-16 sm:py-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-        <div className="max-w-2xl">
+      <div className="cm-container relative grid gap-10 py-16 sm:py-20 lg:grid-cols-[minmax(0,1.18fr)_minmax(24rem,0.82fr)] lg:items-center xl:gap-14">
+        <div className="max-w-[46rem]">
           <div className="cm-label mb-7 flex items-center gap-2 !text-cm-teal">
             <span className="size-1.5 rounded-full bg-cm-teal" />
             Evidence Platform · Medical Devices
           </div>
 
-          <h1 className="text-[2.35rem] font-extrabold leading-[1.04] tracking-[-0.04em] sm:text-[3.15rem]">
-            Экспертная база знаний
-            <br />
-            <span className="text-cm-teal">медицинских изделий</span>
+          <h1 className="cm-balanced max-w-[44rem] text-[2.3rem] font-extrabold leading-[1.04] tracking-[-0.045em] sm:text-[3rem] md:text-[3.35rem] lg:text-[3.05rem] xl:text-[3.45rem]">
+            Экспертная база знаний{" "}
+            <span className="text-cm-teal">для медицинских изделий</span>
           </h1>
           <p className="mt-5 max-w-xl text-[15px] leading-7 text-cm-slate">
             Каждая опубликованная характеристика верифицирована и ссылается на
@@ -79,7 +78,7 @@ export default function Search() {
               </label>
               <button
                 onClick={handleSearch}
-                className="min-h-12 shrink-0 bg-cm-ink px-5 text-xs font-semibold text-white transition duration-150 hover:bg-cm-teal"
+                className="min-h-12 shrink-0 bg-cm-ink px-5 text-xs font-semibold text-white transition duration-200 hover:bg-cm-teal"
               >
                 Найти
               </button>
@@ -91,7 +90,7 @@ export default function Search() {
                   <button
                     key={product.slug}
                     onClick={() => router.push(`/knowledge/${product.slug}`)}
-                    className="block w-full rounded-md p-3 text-left transition duration-150 hover:bg-cm-surface-low"
+                    className="block w-full rounded-md p-3 text-left transition duration-200 hover:bg-cm-surface-low"
                   >
                     <span className="block text-[13px] font-semibold">{product.name}</span>
                     <span className="mt-1 block font-mono text-[10px] text-cm-dim">
@@ -113,7 +112,7 @@ export default function Search() {
                     <button
                       key={item}
                       onClick={() => setQuery(item)}
-                      className="rounded-full border border-cm-teal/20 bg-cm-teal-soft px-3 py-1 font-mono text-[10px] text-cm-teal transition duration-150 hover:border-cm-teal/50 hover:bg-white"
+                  className="rounded-full border border-cm-teal/20 bg-cm-teal-soft px-3 py-1 font-mono text-[10px] text-cm-teal transition duration-200 hover:-translate-y-px hover:border-cm-teal/50 hover:bg-white"
                     >
                       {item}
                     </button>
@@ -128,20 +127,23 @@ export default function Search() {
               <button
                 key={item}
                 onClick={() => setQuery(item)}
-                className="rounded-full border border-cm-teal/20 bg-cm-teal-soft px-3 py-1 font-mono text-[10px] text-cm-teal transition duration-150 hover:border-cm-teal/40 hover:bg-white"
+                className="rounded-full border border-cm-teal/20 bg-cm-teal-soft px-3 py-1 font-mono text-[10px] text-cm-teal transition duration-200 hover:-translate-y-px hover:border-cm-teal/40 hover:bg-white"
               >
                 {item}
               </button>
             ))}
           </div>
-        <div className="mt-14 flex flex-wrap gap-x-7 gap-y-3 border-t border-[var(--cm-rule)] pt-7">
+        <div className="mt-14 grid gap-3 border-t border-[var(--cm-rule)] pt-7 sm:grid-cols-2 xl:grid-cols-4">
           {[
             "Врачам и клиницистам",
             "Медицинским инженерам",
             "Специалистам по закупкам",
             "Поставщикам",
           ].map((item) => (
-            <div key={item} className="flex items-center gap-2 text-xs text-cm-slate">
+            <div
+              key={item}
+              className="flex min-h-11 items-center gap-2 rounded-lg border border-[var(--cm-rule)] bg-white/70 px-3 text-xs text-cm-slate shadow-[0_8px_24px_rgba(11,19,32,0.035)]"
+            >
               <span className="flex size-4 items-center justify-center rounded-full border border-cm-teal/30 bg-cm-teal-soft text-[9px] font-bold text-cm-teal">
                 ✓
               </span>
@@ -151,11 +153,27 @@ export default function Search() {
         </div>
         </div>
 
-        <div className="lg:pl-6">
-          <div className="cm-card relative overflow-hidden border-cm-teal/20 bg-white/82 p-5 shadow-[0_24px_70px_rgba(11,19,32,0.10)] backdrop-blur">
+        <div className="lg:pl-2">
+          <div className="cm-card cm-technical-surface relative overflow-hidden border-cm-teal/20 bg-white/86 p-5 shadow-[0_24px_70px_rgba(11,19,32,0.10)] backdrop-blur">
             <div
               aria-hidden="true"
               className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-cm-teal via-cm-verified to-cm-teal"
+            />
+            <div
+              aria-hidden="true"
+              className="absolute -right-20 top-10 size-52 rounded-full border border-cm-teal/15"
+            />
+            <div
+              aria-hidden="true"
+              className="absolute -right-9 top-24 h-px w-44 rotate-[-28deg] bg-cm-teal/20"
+            />
+            <div
+              aria-hidden="true"
+              className="absolute bottom-24 left-7 h-20 w-px bg-cm-teal/20"
+            />
+            <div
+              aria-hidden="true"
+              className="absolute bottom-14 left-7 h-px w-28 bg-cm-teal/20"
             />
             <div className="flex items-center justify-between gap-4">
               <div>
@@ -169,7 +187,7 @@ export default function Search() {
               </div>
             </div>
 
-            <div className="mt-6 grid gap-3">
+            <div className="relative mt-6 grid gap-3">
               {[
                 ["Опубликованная запись", "FS510", "CyberMedica Verified"],
                 ["Draft research", "49 изделий", "ожидают источники"],
@@ -177,7 +195,7 @@ export default function Search() {
               ].map(([label, value, note]) => (
                 <div
                   key={label}
-                  className="rounded-xl border border-[var(--cm-rule)] bg-cm-surface-low p-4 transition duration-200 hover:-translate-y-0.5 hover:bg-white"
+                  className="rounded-xl border border-[var(--cm-rule)] bg-white/78 p-4 shadow-[0_10px_28px_rgba(11,19,32,0.045)] backdrop-blur transition duration-200 hover:-translate-y-px hover:border-cm-teal/25 hover:bg-white hover:shadow-[0_14px_34px_rgba(11,19,32,0.07)]"
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div>
@@ -191,7 +209,7 @@ export default function Search() {
               ))}
             </div>
 
-            <div className="mt-5 rounded-xl bg-cm-ink p-4 text-white">
+            <div className="relative mt-5 rounded-xl bg-cm-ink p-4 text-white shadow-[0_18px_44px_rgba(11,19,32,0.16)]">
               <div className="font-mono text-[10px] uppercase tracking-[0.08em] text-white/45">
                 Product rule
               </div>

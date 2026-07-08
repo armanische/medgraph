@@ -16,12 +16,12 @@ export default function FeaturedProducts() {
         </Link>
       </div>
 
-      <div className="grid gap-2 md:grid-cols-2 xl:grid-cols-3">
+      <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
         {products.map((product) => (
           <Link
             key={product.slug}
             href={`/knowledge/${product.slug}`}
-            className="group cm-card flex min-h-56 flex-col p-5 transition hover:border-cm-teal/30 hover:shadow-[0_2px_8px_rgba(11,19,32,0.06)]"
+            className="group cm-card flex min-h-56 flex-col p-5"
           >
             <div className="flex items-center justify-between gap-3">
               <span className="font-mono text-[9px] uppercase tracking-[0.08em] text-cm-dim">

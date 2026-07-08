@@ -55,7 +55,7 @@ export default function ManufacturersPage() {
               <Link
                 key={manufacturer.slug}
                 href={`/manufacturers/${manufacturer.slug}`}
-                className="group cm-card relative overflow-hidden p-5 transition duration-200 hover:-translate-y-0.5 hover:border-cm-teal/30 hover:shadow-[0_18px_44px_rgba(11,19,32,0.10)]"
+              className="group cm-card relative overflow-hidden p-5"
               >
                 <div
                   aria-hidden="true"
@@ -79,13 +79,13 @@ export default function ManufacturersPage() {
                   {manufacturer.categories.map((category) => (
                     <span
                       key={category}
-                      className="rounded-md border border-cm-teal/15 bg-cm-teal-soft px-2.5 py-1 text-[10px] font-medium text-cm-teal transition duration-150 group-hover:border-cm-teal/30"
+                      className="rounded-md border border-cm-teal/15 bg-cm-teal-soft px-2.5 py-1 text-[10px] font-medium text-cm-teal transition duration-200 group-hover:border-cm-teal/30"
                     >
                       {category}
                     </span>
                   ))}
                 </div>
-                <div className="mt-5 border-t border-[var(--cm-rule)] pt-4 text-xs font-semibold text-cm-dim transition duration-150 group-hover:text-cm-teal">
+                <div className="mt-5 border-t border-[var(--cm-rule)] pt-4 text-xs font-semibold text-cm-dim transition duration-200 group-hover:text-cm-teal">
                   Открыть производителя →
                 </div>
               </Link>

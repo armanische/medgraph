@@ -93,7 +93,7 @@ export default function KnowledgeDetails({
             <details key={item.question} className="group py-4" open={index === 0}>
               <summary className="cursor-pointer list-none pr-8 text-xs font-semibold">
                 {item.question}
-                <span className="float-right text-cm-teal transition duration-150 group-open:rotate-45">
+                <span className="float-right text-cm-teal transition duration-200 group-open:rotate-45">
                   +
                 </span>
               </summary>
@@ -108,10 +108,16 @@ export default function KnowledgeDetails({
       <section className="cm-card p-6">
         <h2 className="text-base font-bold">История закупок</h2>
         {product.procurementHistory.length === 0 ? (
-          <p className="mt-4 rounded-md border border-dashed border-[var(--cm-rule-strong)] bg-cm-surface-low p-4 text-xs leading-6 text-cm-slate">
-            Данные о закупках готовятся к публикации. Для проверки конкретной
-            закупки отправьте запрос — мы сопоставим характеристики и документы.
-          </p>
+          <div className="cm-empty-state mt-4 px-5 py-7">
+            <div className="cm-empty-icon">↗</div>
+            <div className="mt-4 text-xs font-semibold text-cm-ink">
+              История закупок готовится
+            </div>
+            <p className="mx-auto mt-2 max-w-md text-xs leading-6 text-cm-slate">
+              Для проверки конкретной закупки отправьте запрос — мы сопоставим
+              характеристики и документы.
+            </p>
+          </div>
         ) : (
           <div className="mt-4 overflow-x-auto">
             <table className="w-full text-left text-xs">

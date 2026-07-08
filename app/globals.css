@@ -20,6 +20,12 @@
   --cm-warning-soft: #fefce8;
   --cm-danger: #b42318;
   --cm-danger-soft: #fff1f0;
+  --cm-radius-card: 0.875rem;
+  --cm-radius-control: 0.625rem;
+  --cm-shadow-card: 0 1px 2px rgba(11, 19, 32, 0.04),
+    0 14px 42px rgba(11, 19, 32, 0.045);
+  --cm-shadow-card-hover: 0 1px 2px rgba(11, 19, 32, 0.05),
+    0 20px 54px rgba(11, 19, 32, 0.08);
   --background: var(--cm-canvas);
   --foreground: var(--cm-ink);
 }
@@ -87,20 +93,28 @@ textarea {
 }
 
 .cm-container {
-  width: min(100% - 2rem, 68.75rem);
+  width: min(100% - 2rem, 72rem);
   margin-inline: auto;
 }
 
 .cm-card {
   border: 1px solid var(--cm-rule);
-  border-radius: 0.5625rem;
+  border-radius: var(--cm-radius-card);
   background: var(--cm-surface);
+  box-shadow: var(--cm-shadow-card);
   transition:
     border-color 180ms ease,
     box-shadow 180ms ease,
     transform 180ms ease,
     background-color 180ms ease,
     opacity 180ms ease;
+}
+
+.cm-card:is(a, button):hover,
+a.cm-card:hover {
+  border-color: rgba(11, 123, 142, 0.28);
+  box-shadow: var(--cm-shadow-card-hover);
+  transform: translateY(-2px);
 }
 
 .cm-label {
@@ -119,7 +133,7 @@ textarea {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  border-radius: 0.4375rem;
+  border-radius: var(--cm-radius-control);
   padding: 0.625rem 1.25rem;
   font-size: 0.8125rem;
   font-weight: 600;
@@ -127,6 +141,7 @@ textarea {
     color 160ms ease,
     background-color 160ms ease,
     border-color 160ms ease,
+    box-shadow 160ms ease,
     transform 160ms ease,
     opacity 160ms ease;
 }
@@ -140,6 +155,8 @@ textarea {
 .cm-button-primary:hover {
   border-color: var(--cm-teal-dark);
   background: var(--cm-teal-dark);
+  box-shadow: 0 10px 26px rgba(11, 123, 142, 0.18);
+  transform: translateY(-1px);
 }
 
 .cm-button-secondary {
@@ -151,19 +168,77 @@ textarea {
 .cm-button-secondary:hover {
   border-color: rgba(11, 123, 142, 0.4);
   color: var(--cm-teal);
+  box-shadow: 0 10px 24px rgba(11, 19, 32, 0.06);
+  transform: translateY(-1px);
 }
 
 .cm-field {
   min-height: 2.875rem;
   width: 100%;
   border: 1px solid var(--cm-rule-strong);
-  border-radius: 0.4375rem;
+  border-radius: var(--cm-radius-control);
   background: var(--cm-surface);
   padding: 0.75rem 0.875rem;
   color: var(--cm-ink);
   transition:
     border-color 160ms ease,
     box-shadow 160ms ease;
+}
+
+.cm-empty-state {
+  border: 1px dashed var(--cm-rule-strong);
+  border-radius: var(--cm-radius-card);
+  background:
+    radial-gradient(circle at top left, rgba(11, 123, 142, 0.08), transparent 34%),
+    var(--cm-surface);
+  padding: 2rem;
+  text-align: center;
+}
+
+.cm-empty-icon {
+  margin-inline: auto;
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(11, 123, 142, 0.18);
+  border-radius: 1rem;
+  background: var(--cm-teal-soft);
+  color: var(--cm-teal);
+}
+
+.cm-technical-surface {
+  background-image:
+    linear-gradient(rgba(11, 123, 142, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(11, 123, 142, 0.08) 1px, transparent 1px),
+    radial-gradient(circle at 70% 18%, rgba(11, 123, 142, 0.16), transparent 24%),
+    radial-gradient(circle at 20% 80%, rgba(4, 120, 87, 0.12), transparent 24%);
+  background-position:
+    -1px -1px,
+    -1px -1px,
+    center,
+    center;
+  background-size:
+    28px 28px,
+    28px 28px,
+    100% 100%,
+    100% 100%;
+}
+
+.cm-balanced {
+  text-wrap: balance;
+}
+
+.cm-link {
+  transition:
+    color 180ms ease,
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+.cm-link:hover {
+  color: var(--cm-teal);
 }
 
 .cm-field::placeholder {
@@ -203,7 +278,7 @@ textarea {
 
 @media (min-width: 640px) {
   .cm-container {
-    width: min(100% - 3rem, 68.75rem);
+    width: min(100% - 3rem, 72rem);
   }
 }
 

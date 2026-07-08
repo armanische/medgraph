@@ -24,19 +24,21 @@ export default async function RequestPage({
 
   return (
     <main className="min-h-screen bg-cm-canvas">
-      <section className="cm-container grid gap-6 py-10 lg:grid-cols-[0.72fr_1.28fr]">
-        <div className="pt-4">
+      <section className="cm-container grid gap-6 py-10 lg:grid-cols-[0.74fr_1.26fr]">
+        <div className="cm-technical-surface rounded-2xl border border-[var(--cm-rule)] bg-white/70 p-6 pt-6 shadow-[0_18px_48px_rgba(11,19,32,0.06)]">
           <div className="cm-label !text-cm-teal">
             Коммерческое предложение
           </div>
-          <h1 className="mt-3 text-3xl font-extrabold tracking-[-0.03em]">Запросить КП</h1>
+          <h1 className="cm-balanced mt-3 text-3xl font-extrabold tracking-[-0.03em]">
+            Запросить КП
+          </h1>
           <p className="mt-4 max-w-md text-[13px] leading-7 text-cm-slate">
             Опишите задачу — мы проверим изделие, аналоги, документы и
             совместимость, затем подготовим предложение.
           </p>
           <div className="mt-8 space-y-3 border-t border-[var(--cm-rule)] pt-6 text-xs text-cm-slate">
             {["Запрос не влияет на статус проверки данных", "Ответ направляется указанному контактному лицу", "Персональные данные используются только для ответа"].map((item) => (
-              <div key={item} className="flex gap-2"><span className="text-cm-teal">✓</span>{item}</div>
+              <div key={item} className="flex gap-2 rounded-lg bg-white/68 p-3 shadow-[0_8px_22px_rgba(11,19,32,0.035)]"><span className="text-cm-teal">✓</span>{item}</div>
             ))}
           </div>
         </div>

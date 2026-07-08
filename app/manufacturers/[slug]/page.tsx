@@ -86,12 +86,12 @@ export default async function ManufacturerPage({
         </div>
 
         {products.length > 0 ? (
-          <div className="mt-5 grid gap-2 md:grid-cols-2 xl:grid-cols-3">
+          <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
             {products.map((product) => (
               <Link
                 key={product.slug}
                 href={`/knowledge/${product.slug}`}
-                className="group cm-card flex min-h-56 flex-col p-5 transition hover:border-cm-teal/30"
+                className="group cm-card flex min-h-56 flex-col p-5"
               >
                 <div className="font-mono text-[9px] uppercase tracking-[0.08em] text-cm-dim">
                   {product.category}
@@ -105,9 +105,10 @@ export default async function ManufacturerPage({
             ))}
           </div>
         ) : (
-          <div className="mt-5 cm-card border-dashed p-8">
-            <h3 className="text-sm font-bold">Карточки готовятся</h3>
-            <p className="mt-2 text-xs text-cm-slate">
+          <div className="cm-empty-state mt-5">
+            <div className="cm-empty-icon">⌁</div>
+            <h3 className="mt-4 text-sm font-bold">Карточки готовятся</h3>
+            <p className="mx-auto mt-2 max-w-md text-xs leading-6 text-cm-slate">
               Мы наполняем базу изделиями и документами этого производителя.
             </p>
           </div>
