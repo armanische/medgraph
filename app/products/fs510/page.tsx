@@ -8,9 +8,12 @@ import { formatDate } from "@/lib/date";
 import { getPublicProductPage } from "@/lib/public-product-page";
 
 export const metadata: Metadata = {
-  title: "FS510 — проверенная карточка изделия | CyberMedica",
+  title: "FS510 — карточка медицинского изделия",
   description:
-    "Регистрационные сведения, ключевые характеристики и доказательства по фильтру FS510.",
+    "Профессиональная карточка фильтра FS510: регистрационные сведения, документы, характеристики и источник данных.",
+  alternates: {
+    canonical: "/products/fs510",
+  },
 };
 
 function Checkmark({ className = "" }: { className?: string }) {

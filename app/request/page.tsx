@@ -6,7 +6,10 @@ import { getProduct } from "@/lib/products";
 export const metadata: Metadata = {
   title: "Запросить коммерческое предложение",
   description:
-    "Отправьте запрос на медицинское изделие, аналог, документы или подбор совместимости.",
+    "Отправьте деловую заявку на медицинское изделие, документы, аналоги, совместимость или коммерческое предложение.",
+  alternates: {
+    canonical: "/request",
+  },
 };
 
 export default async function RequestPage({

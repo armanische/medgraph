@@ -22,10 +22,15 @@ export async function generateMetadata({
   const product = getDraftCatalogProduct(slug);
   return {
     title: product
-      ? `${product.title} · Карточка изделия | CyberMedica`
-      : "Карточка изделия | CyberMedica",
+      ? `${product.title} — карточка медицинского изделия`
+      : "Карточка медицинского изделия",
     description:
       "Карточка медицинского изделия CyberMedica с источниками, документами и статусом проверки.",
+    alternates: product
+      ? {
+          canonical: `/catalog/${product.slug}`,
+        }
+      : undefined,
   };
 }
 

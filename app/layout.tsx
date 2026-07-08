@@ -4,33 +4,52 @@ import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/home/Footer";
 
+const allowIndexing = process.env.CYBERMEDICA_ALLOW_INDEXING === "1";
+const siteUrl = "https://cybermedica.ru";
+const siteTitle = "CyberMedica — экспертная база медицинских изделий";
+const siteDescription =
+  "CyberMedica помогает врачам, инженерам и закупщикам проверять медицинские изделия: регистрационные документы, характеристики, совместимость, аналоги и источники данных.";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cybermedica.ru"),
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "CyberMedica — доказательная база медицинских изделий",
+    default: siteTitle,
     template: "%s | CyberMedica",
   },
-  description:
-    "Профессиональная платформа доказательной информации о медицинских изделиях: источники, документы, проверка и публикация данных.",
+  description: siteDescription,
   applicationName: "CyberMedica",
+  authors: [{ name: "CyberMedica" }],
+  creator: "CyberMedica",
+  publisher: "CyberMedica",
+  keywords: [
+    "CyberMedica",
+    "медицинские изделия",
+    "регистрационные документы",
+    "медицинское оборудование",
+    "совместимость медицинских изделий",
+    "аналоги медицинских изделий",
+    "закупки медицинского оборудования",
+    "база знаний медицинских изделий",
+  ],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "CyberMedica — доказательная база медицинских изделий",
-    description:
-      "Профессиональная платформа доказательной информации о медицинских изделиях.",
-    url: "https://cybermedica.ru",
+    title: siteTitle,
+    description: siteDescription,
+    url: siteUrl,
     siteName: "CyberMedica",
     locale: "ru_RU",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "CyberMedica — доказательная база медицинских изделий",
-    description:
-      "Профессиональная платформа доказательной информации о медицинских изделиях.",
+    title: siteTitle,
+    description: siteDescription,
   },
   robots: {
-    index: false,
-    follow: false,
+    index: allowIndexing,
+    follow: allowIndexing,
   },
 };
 

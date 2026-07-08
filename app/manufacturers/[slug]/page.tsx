@@ -23,10 +23,13 @@ export async function generateMetadata({
 
   return manufacturer
     ? {
-        title: `${manufacturer.name}: изделия и документы | CyberMedica`,
+        title: `${manufacturer.name}: изделия и документы`,
         description: manufacturer.description,
+        alternates: {
+          canonical: `/manufacturers/${manufacturer.slug}`,
+        },
       }
-    : { title: "Производитель не найден | CyberMedica" };
+    : { title: "Производитель не найден" };
 }
 
 export default async function ManufacturerPage({

@@ -6,9 +6,12 @@ import { getManufacturerProducts } from "@/lib/products";
 import { getPlatformStats } from "@/lib/platform-stats";
 
 export const metadata: Metadata = {
-  title: "Производители медицинских изделий | CyberMedica",
+  title: "Производители медицинских изделий",
   description:
-    "Производители, категории, изделия, документы и совместимость в базе CyberMedica.",
+    "Производители медицинских изделий, категории, документы и связанные карточки в экспертной базе CyberMedica.",
+  alternates: {
+    canonical: "/manufacturers",
+  },
 };
 
 export default function ManufacturersPage() {

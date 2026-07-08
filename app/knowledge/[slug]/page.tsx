@@ -27,13 +27,16 @@ export async function generateMetadata({
 
   if (!product) {
     return {
-      title: "Изделие не найдено | CyberMedica",
+      title: "Изделие не найдено",
     };
   }
 
   return {
     title: `${product.name} — характеристики, РУ, аналоги и совместимость`,
     description: product.description,
+    alternates: {
+      canonical: `/knowledge/${product.slug}`,
+    },
   };
 }
 

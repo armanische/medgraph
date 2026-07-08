@@ -6,9 +6,12 @@ import {
 } from "@/lib/catalog-drafts";
 
 export const metadata: Metadata = {
-  title: "Каталог медицинских изделий | CyberMedica",
+  title: "Каталог медицинских изделий",
   description:
-    "Поиск медицинских изделий по названию, РУ, аналогам и совместимости.",
+    "Поиск медицинских изделий по названию, производителю, категории, документам, аналогам и совместимости.",
+  alternates: {
+    canonical: "/catalog",
+  },
 };
 
 export default async function CatalogPage({
