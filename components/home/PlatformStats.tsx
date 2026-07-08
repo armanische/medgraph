@@ -11,18 +11,18 @@ export default function PlatformStats() {
 
   return (
     <section className="border-b border-[var(--cm-rule)] bg-cm-canvas">
-      <div className="cm-container py-6">
-        <div className="cm-card overflow-hidden bg-white">
-          <div className="border-b border-[var(--cm-rule)] bg-cm-surface-low px-5 py-3">
+      <div className="cm-container py-9 sm:py-11">
+        <div className="cm-card overflow-hidden bg-white/92">
+          <div className="border-b border-[var(--cm-rule)] bg-white px-5 py-3.5">
             <div className="cm-label !text-cm-teal">Platform snapshot</div>
           </div>
           <div className="grid gap-px bg-[var(--cm-rule)] sm:grid-cols-2 lg:grid-cols-4">
           {items.map(([label, value]) => (
             <div
               key={label}
-              className="bg-white p-5 transition duration-200 hover:bg-cm-surface-low/70"
+              className="bg-white p-5 transition duration-200 hover:bg-cm-surface-low/55"
             >
-              <div className="font-mono text-2xl font-bold tracking-[-0.03em] text-cm-ink">
+              <div className="font-mono text-2xl font-bold text-cm-ink">
                 {value}
               </div>
               <div className="mt-1 cm-label">{label}</div>
