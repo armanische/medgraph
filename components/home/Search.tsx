@@ -47,24 +47,24 @@ export default function Search() {
         aria-hidden="true"
         className="absolute bottom-[-14rem] left-[40%] size-[24rem] rounded-full bg-cm-verified/7 blur-3xl"
       />
-      <div className="cm-container relative grid gap-12 py-18 sm:py-22 lg:grid-cols-[minmax(0,1.14fr)_minmax(22rem,0.86fr)] lg:items-center lg:py-24 xl:gap-15">
-        <div className="max-w-[47rem]">
-          <div className="cm-label mb-5 flex items-center gap-2 !text-cm-teal">
+      <div className="cm-container relative grid gap-10 py-16 sm:py-20 lg:grid-cols-[minmax(0,1.06fr)_minmax(22rem,0.94fr)] lg:items-center lg:py-22 xl:gap-12">
+        <div className="max-w-[45.5rem]">
+          <div className="cm-label mb-4 flex items-center gap-2 !text-cm-teal">
             <span className="size-1.5 rounded-full bg-cm-teal" />
             Evidence Platform · Medical Devices
           </div>
 
-          <h1 className="cm-balanced max-w-[44.5rem] text-[2.55rem] font-extrabold leading-[1.01] tracking-[-0.032em] text-cm-ink sm:text-[3.35rem] md:text-[3.85rem] lg:text-[3.55rem] xl:text-[4rem]">
+          <h1 className="cm-balanced max-w-[43.5rem] text-[2.55rem] font-extrabold leading-[1.015] tracking-[-0.03em] text-cm-ink sm:text-[3.35rem] md:text-[3.85rem] lg:text-[3.55rem] xl:text-[4rem]">
             База знаний
             <br />
             <span className="font-bold text-cm-teal">медицинских изделий</span>
           </h1>
-          <p className="mt-6 max-w-[38rem] text-base leading-8 text-cm-slate sm:text-[17px]">
+          <p className="mt-5 max-w-[36.5rem] text-base leading-7 text-cm-slate sm:text-[17px] sm:leading-8">
             Экспертная платформа для клиницистов, инженеров и закупочных команд:
             проверенные характеристики, документы и совместимость в одной записи.
           </p>
 
-          <div className="relative mt-8 max-w-[39rem]">
+          <div className="relative mt-7 max-w-[38rem]">
             <div className="flex overflow-hidden rounded-xl border border-[var(--cm-rule-strong)] bg-white shadow-[0_14px_40px_rgba(11,19,32,0.065)] transition duration-200 hover:border-cm-teal/25 focus-within:border-cm-teal/70 focus-within:shadow-[0_16px_44px_rgba(11,123,142,0.10)] focus-within:ring-3 focus-within:ring-cm-teal/10">
               <label className="flex min-h-14 min-w-0 flex-1 items-center gap-3 px-4 sm:min-h-16 sm:px-5">
                 <span className="sr-only">Поиск медицинского изделия</span>
@@ -126,7 +126,7 @@ export default function Search() {
             )}
           </div>
 
-          <div className="mt-3.5 flex flex-wrap gap-2">
+          <div className="mt-3 flex flex-wrap gap-2">
             {popularQueries.map((item) => (
               <button
                 key={item}
@@ -137,7 +137,7 @@ export default function Search() {
               </button>
             ))}
           </div>
-          <div className="mt-12 grid auto-rows-fr gap-3 border-t border-[var(--cm-rule)] pt-7 sm:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-10 grid auto-rows-fr gap-3 border-t border-[var(--cm-rule)] pt-6 sm:grid-cols-2 xl:grid-cols-4">
             {[
               "Врачам и клиницистам",
               "Медицинским инженерам",
@@ -158,7 +158,7 @@ export default function Search() {
         </div>
 
         <div className="hidden lg:block lg:pl-2">
-          <div className="relative overflow-hidden rounded-lg border border-[var(--cm-rule)] bg-white/68 p-5 shadow-[0_14px_46px_rgba(11,19,32,0.055)] backdrop-blur">
+          <div className="relative overflow-hidden rounded-lg border border-[var(--cm-rule)] bg-white/62 p-4 shadow-[0_12px_38px_rgba(11,19,32,0.045)] backdrop-blur">
             <div
               aria-hidden="true"
               className="absolute inset-x-0 top-0 h-px bg-cm-teal/25"
@@ -170,16 +170,16 @@ export default function Search() {
             <div className="flex items-center justify-between gap-4">
               <div>
                 <div className="cm-label !text-cm-teal">Экспертная проверка</div>
-                <h2 className="mt-2 text-lg font-extrabold tracking-[-0.02em]">
+                <h2 className="mt-2 text-[17px] font-bold tracking-[-0.018em]">
                   Проверенная запись
                 </h2>
               </div>
-              <div className="rounded-md border border-cm-verified/20 bg-cm-verified-soft px-3 py-2 font-mono text-[10px] font-semibold text-cm-verified">
+              <div className="rounded-md border border-cm-verified/18 bg-cm-verified-soft/80 px-3 py-2 font-mono text-[10px] font-semibold text-cm-verified">
                 Актуально
               </div>
             </div>
 
-            <div className="relative mt-6 grid gap-2.5">
+            <div className="relative mt-5 grid gap-2.5">
               {[
                 ["Опубликованная запись", "FS510", "проверено CyberMedica"],
                 ["Исследование в работе", "49 изделий", "ожидают источники"],
@@ -189,8 +189,8 @@ export default function Search() {
                   key={label}
                   className={
                     index === 0
-                      ? "rounded-md border border-cm-teal/22 bg-white/82 p-4 shadow-[0_8px_24px_rgba(11,19,32,0.04)] backdrop-blur transition duration-200 hover:border-cm-teal/30 hover:bg-white"
-                      : "rounded-md border border-[var(--cm-rule)] bg-white/54 p-4 backdrop-blur transition duration-200 hover:border-cm-teal/18 hover:bg-white/72"
+                      ? "rounded-md border border-cm-teal/18 bg-white/76 p-3.5 shadow-[0_7px_20px_rgba(11,19,32,0.035)] backdrop-blur transition duration-200 hover:border-cm-teal/26 hover:bg-white"
+                      : "rounded-md border border-[var(--cm-rule)] bg-white/46 p-3.5 backdrop-blur transition duration-200 hover:border-cm-teal/14 hover:bg-white/64"
                   }
                 >
                   <div className="flex items-start justify-between gap-4">
@@ -207,7 +207,7 @@ export default function Search() {
               ))}
             </div>
 
-            <div className="relative mt-5 rounded-md border border-white/8 bg-cm-ink p-4 text-white shadow-[0_14px_34px_rgba(11,19,32,0.13)]">
+            <div className="relative mt-4 rounded-md border border-white/8 bg-cm-ink/95 p-3.5 text-white shadow-[0_12px_28px_rgba(11,19,32,0.11)]">
               <div className="font-mono text-[10px] uppercase tracking-[0.08em] text-white/45">
                 Правило публикации
               </div>
