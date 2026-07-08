@@ -1,0 +1,113 @@
+{
+  "product": {
+    "productSlug": "apparat-ivl-hamilton-t1",
+    "manufacturer": "Hamilton Medical",
+    "productName": "Аппарат ИВЛ Hamilton T1",
+    "model": "Hamilton T1",
+    "category": "Реанимационное оборудование"
+  },
+  "sourceCandidates": [
+    {
+      "sourceId": "source_113292dd31b3774e80cf6ad5",
+      "productSlug": "apparat-ivl-hamilton-t1",
+      "manufacturer": "Hamilton Medical",
+      "productName": "Аппарат ИВЛ Hamilton T1",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.hamilton-medical.com/de_CH/Prehospital-transport/Products/HAMILTON-T1.html",
+      "title": "HAMILTON-T1 official product page",
+      "snippet": "Official manufacturer page observed during MVP-020 pilot; document downloads are linked from the page but must still be downloaded and hashed.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official manufacturer page observed during MVP-020 pilot; document downloads are linked from the page but must still be downloaded and hashed."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_a0a294b8748ef28b01a28146",
+      "sourceId": "source_113292dd31b3774e80cf6ad5",
+      "productSlug": "apparat-ivl-hamilton-t1",
+      "documentType": "user_manual",
+      "url": "https://www.hamilton-medical.com/de_CH/Prehospital-transport/Products/HAMILTON-T1.html",
+      "title": "HAMILTON-T1 Bedienungshandbuch download listed on product page",
+      "language": "de",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Known document listing, not a downloaded PDF artifact yet."
+      ]
+    },
+    {
+      "documentId": "document_b4c763a8922b584279c8c49d",
+      "sourceId": "source_113292dd31b3774e80cf6ad5",
+      "productSlug": "apparat-ivl-hamilton-t1",
+      "documentType": "datasheet",
+      "url": "https://www.hamilton-medical.com/de_CH/Prehospital-transport/Products/HAMILTON-T1.html",
+      "title": "HAMILTON-T1 technical specification download listed on product page",
+      "language": "de",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Known document listing, not a downloaded PDF artifact yet."
+      ]
+    },
+    {
+      "documentId": "document_5260b51b05d6cf9497ea190a",
+      "sourceId": "source_113292dd31b3774e80cf6ad5",
+      "productSlug": "apparat-ivl-hamilton-t1",
+      "documentType": "brochure",
+      "url": "https://www.hamilton-medical.com/de_CH/Prehospital-transport/Products/HAMILTON-T1.html",
+      "title": "HAMILTON-T1 brochure download listed on product page",
+      "language": "de",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Brochure is discovery context only and cannot replace IFU/manual."
+      ]
+    }
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "apparat-ivl-hamilton-t1",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

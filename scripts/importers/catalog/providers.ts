@@ -155,6 +155,7 @@ function sourceConfidence(type: SourceCandidateType) {
   }
   if (
     type === "official_manufacturer" ||
+    type === "official_manufacturer_page" ||
     type === "manufacturer_product_page"
   ) return 0.85;
   if (type === "official_distributor") return 0.65;
@@ -166,6 +167,7 @@ export class DefaultSourceRanker implements SourceRanker {
   rank(source: SourceCandidate) {
     const scores: Record<SourceCandidateType, number> = {
       manufacturer_product_page: 100,
+      official_manufacturer_page: 100,
       official_manufacturer: 100,
       regulatory_registry: 98,
       fda: 98,

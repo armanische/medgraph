@@ -1,0 +1,49 @@
+{
+  "product": {
+    "productSlug": "otkrytaya-reanimatsionnaya-sistema-phoenix-cic-101",
+    "manufacturer": null,
+    "productName": "Открытая реанимационная система Phoenix CIC 101",
+    "model": "Phoenix CIC 101",
+    "category": "Акушерство и гинекология"
+  },
+  "sourceCandidates": [],
+  "documentCandidates": [],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "otkrytaya-reanimatsionnaya-sistema-phoenix-cic-101",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "otkrytaya-reanimatsionnaya-sistema-phoenix-cic-101",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "otkrytaya-reanimatsionnaya-sistema-phoenix-cic-101",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 0,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 0,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": false,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "No source candidates found; product remains needs_source.",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

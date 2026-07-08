@@ -1,0 +1,91 @@
+{
+  "product": {
+    "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+    "manufacturer": "Ambu",
+    "productName": "Одноразовый эндоскоп aScope 4 Broncho Ambu",
+    "model": "aScope 4 Broncho",
+    "category": "Прочее оборудование"
+  },
+  "sourceCandidates": [
+    {
+      "sourceId": "source_f0b2dbdbe5c1064f6e2d66e8",
+      "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+      "manufacturer": "Ambu",
+      "productName": "Одноразовый эндоскоп aScope 4 Broncho Ambu",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.ambu.com/",
+      "title": "Ambu official website",
+      "snippet": "Official manufacturer site; used only as source discovery entry point.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official manufacturer site; used only as source discovery entry point."
+      ]
+    },
+    {
+      "sourceId": "source_bbf33338d411d00a659983a0",
+      "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+      "manufacturer": "Ambu",
+      "productName": "Одноразовый эндоскоп aScope 4 Broncho Ambu",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.ambu.com/endoscopy/pulmonology/products",
+      "title": "Ambu pulmonology products",
+      "snippet": "Official Ambu pulmonology products page observed during MVP-020 pilot; exact aScope 4 IFU still required.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official Ambu pulmonology products page observed during MVP-020 pilot; exact aScope 4 IFU still required."
+      ]
+    }
+  ],
+  "documentCandidates": [],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 2,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 2,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "product": {
+    "productSlug": "shpritsevoi-nasos-fresenius-kabi-agilia-sp-mc",
+    "manufacturer": "Fresenius Kabi",
+    "productName": "Шприцевой насос Fresenius Kabi Agilia SP MC",
+    "model": "Agilia SP MC",
+    "category": "Прочее оборудование"
+  },
+  "sourceCandidates": [],
+  "documentCandidates": [],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "shpritsevoi-nasos-fresenius-kabi-agilia-sp-mc",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "shpritsevoi-nasos-fresenius-kabi-agilia-sp-mc",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "shpritsevoi-nasos-fresenius-kabi-agilia-sp-mc",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 0,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 0,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": false,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "No source candidates found; product remains needs_source.",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

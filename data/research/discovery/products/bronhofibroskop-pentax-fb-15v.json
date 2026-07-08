@@ -1,0 +1,49 @@
+{
+  "product": {
+    "productSlug": "bronhofibroskop-pentax-fb-15v",
+    "manufacturer": "Pentax Medical",
+    "productName": "Бронхофиброскоп Pentax FB-15V",
+    "model": "FB-15V",
+    "category": "Гибкая эндоскопия"
+  },
+  "sourceCandidates": [],
+  "documentCandidates": [],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "bronhofibroskop-pentax-fb-15v",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "bronhofibroskop-pentax-fb-15v",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "bronhofibroskop-pentax-fb-15v",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 0,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 0,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": false,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "No source candidates found; product remains needs_source.",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

@@ -20,6 +20,17 @@ import {
   DefaultMissingInformationDetector,
 } from "../../scripts/importers/catalog/knowledge-engine.ts";
 import {
+  canSourceSupportPublication,
+  discoverProduct,
+  ManualSeedDiscoveryProvider,
+  MockDiscoveryProvider,
+  NoNetworkDiscoveryProvider,
+  runDiscoveryForProducts,
+  trustTierForSourceType,
+  type DiscoveryProductInput,
+  type SourceCandidate as DiscoverySourceCandidate,
+} from "../../scripts/importers/catalog/discovery.ts";
+import {
   CompositeResearchProvider,
   DefaultSourceRanker,
   ManualSourceSeedResearchProvider,
@@ -578,6 +589,7 @@ test("knowledge engine has no forbidden writes or publication", async () => {
       "claims.ts",
       "knowledge-engine.ts",
       "research-manifest.ts",
+      "discovery.ts",
     ].map((file) =>
       readFile(
         resolve(process.cwd(), "scripts/importers/catalog", file),
@@ -590,4 +602,200 @@ test("knowledge engine has no forbidden writes or publication", async () => {
   assert.doesNotMatch(source, /verificationStatus:\s*["']verified/i);
   assert.doesNotMatch(source, /autoPublish:\s*true/i);
   assert.doesNotMatch(source, /createPublication|publishClaim/i);
+});
+
+const discoveryProduct: DiscoveryProductInput = {
+  productSlug: "apparat-ivl-hamilton-t1",
+  manufacturer: "Hamilton Medical",
+  productName: "Аппарат ИВЛ Hamilton T1",
+  model: "Hamilton T1",
+  category: "Реанимационное оборудование",
+};
+
+function discoverySource(
+  overrides: Partial<DiscoverySourceCandidate> = {},
+): DiscoverySourceCandidate {
+  return {
+    sourceId: "source_hamilton_t1",
+    productSlug: discoveryProduct.productSlug,
+    manufacturer: discoveryProduct.manufacturer,
+    productName: discoveryProduct.productName,
+    sourceType: "official_manufacturer_page",
+    url: "https://www.hamilton-medical.com/de_CH/Prehospital-transport/Products/HAMILTON-T1.html",
+    title: "HAMILTON-T1 official product page",
+    snippet: "Official product page candidate.",
+    discoveredBy: "test",
+    confidence: 0.92,
+    trustTier: 1,
+    requiresHumanReview: true,
+    reasons: ["test candidate", "snippet is not evidence"],
+    ...overrides,
+  };
+}
+
+test("discovery official manufacturer page receives trust tier 1", () => {
+  assert.equal(trustTierForSourceType("official_manufacturer_page"), 1);
+  assert.equal(trustTierForSourceType("manufacturer_document"), 1);
+  assert.equal(trustTierForSourceType("regulator_record"), 1);
+});
+
+test("discovery distributor page cannot become publication source", () => {
+  const source = discoverySource({
+    sourceType: "distributor_page",
+    url: "https://dealer.example.org/hamilton-t1",
+    trustTier: 3,
+    confidence: 0.45,
+  });
+  assert.equal(canSourceSupportPublication(source), false);
+});
+
+test("discovery missing required document creates MissingDocumentTask", async () => {
+  const report = await discoverProduct(
+    discoveryProduct,
+    new MockDiscoveryProvider({
+      sources: async () => [discoverySource()],
+      documents: async () => [],
+    }),
+  );
+  assert.equal(report.missingDocumentTasks.length, 3);
+  assert.ok(
+    report.missingDocumentTasks.some(
+      (task) => task.requiredDocumentType === "registration_certificate",
+    ),
+  );
+  assert.equal(report.readiness.hasRequiredDocuments, false);
+  assert.equal(report.readiness.canProceedToExtraction, false);
+});
+
+test("discovery duplicate URLs are deduplicated", async () => {
+  const source = discoverySource();
+  const report = await discoverProduct(
+    discoveryProduct,
+    new MockDiscoveryProvider({
+      sources: async () => [source, { ...source }],
+      documents: async () => [
+        {
+          documentId: "doc_a",
+          sourceId: source.sourceId,
+          productSlug: source.productSlug,
+          documentType: "datasheet",
+          url: "https://www.hamilton-medical.com/t1-datasheet.pdf",
+          title: "HAMILTON-T1 Datasheet",
+          language: "en",
+          confidence: 0.92,
+          trustTier: 1,
+          requiresHumanReview: true,
+          reasons: ["test"],
+        },
+        {
+          documentId: "doc_b",
+          sourceId: source.sourceId,
+          productSlug: source.productSlug,
+          documentType: "datasheet",
+          url: "https://www.hamilton-medical.com/t1-datasheet.pdf",
+          title: "HAMILTON-T1 Datasheet duplicate",
+          language: "en",
+          confidence: 0.92,
+          trustTier: 1,
+          requiresHumanReview: true,
+          reasons: ["test"],
+        },
+      ],
+    }),
+  );
+  assert.equal(report.sourceCandidates.length, 1);
+  assert.equal(report.documentCandidates.length, 1);
+});
+
+test("discovery no-network provider creates blocked needs_source without fake data", async () => {
+  const report = await discoverProduct(
+    discoveryProduct,
+    new NoNetworkDiscoveryProvider(),
+  );
+  assert.equal(report.sourceCandidates.length, 0);
+  assert.equal(report.documentCandidates.length, 0);
+  assert.equal(report.readiness.canProceedToExtraction, false);
+  assert.ok(report.warnings.some((warning) => warning.includes("needs_source")));
+});
+
+test("manual discovery seeds produce deterministic report", async () => {
+  const root = await mkdtemp(join(tmpdir(), "cybermedica-discovery-seeds-"));
+  const seedPath = join(root, "source-seeds.manual.json");
+  await writeFile(
+    seedPath,
+    JSON.stringify({
+      products: [
+        {
+          slug: discoveryProduct.productSlug,
+          officialSources: [
+            {
+              url: "https://www.hamilton-medical.com/de_CH/Prehospital-transport/Products/HAMILTON-T1.html",
+              sourceType: "official_manufacturer_page",
+              publisher: "Hamilton Medical",
+              title: "HAMILTON-T1 official product page",
+              trustTier: 1,
+              documents: [
+                {
+                  url: "https://www.hamilton-medical.com/t1-datasheet.pdf",
+                  documentType: "datasheet",
+                  title: "HAMILTON-T1 Datasheet",
+                  language: "en",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    }),
+  );
+  const first = await discoverProduct(
+    discoveryProduct,
+    new ManualSeedDiscoveryProvider(seedPath),
+  );
+  const second = await discoverProduct(
+    discoveryProduct,
+    new ManualSeedDiscoveryProvider(seedPath),
+  );
+  assert.deepEqual(first, second);
+  assert.equal(first.sourceCandidates.length, 1);
+  assert.equal(first.documentCandidates.length, 1);
+});
+
+test("discovery commands are idempotent", async () => {
+  const root = await mkdtemp(join(tmpdir(), "cybermedica-discovery-output-"));
+  const productReportDirectory = join(root, "products");
+  const aggregateReportPath = join(root, "discovery-report.generated.json");
+  const provider = new MockDiscoveryProvider({
+    sources: async () => [discoverySource()],
+    documents: async (source) => [
+      {
+        documentId: "doc_datasheet",
+        sourceId: source.sourceId,
+        productSlug: source.productSlug,
+        documentType: "datasheet",
+        url: "https://www.hamilton-medical.com/t1-datasheet.pdf",
+        title: "HAMILTON-T1 Datasheet",
+        language: "en",
+        confidence: 0.92,
+        trustTier: 1,
+        requiresHumanReview: true,
+        reasons: ["test"],
+      },
+    ],
+  });
+  await runDiscoveryForProducts({
+    products: [discoveryProduct],
+    provider,
+    productReportDirectory,
+    aggregateReportPath,
+  });
+  const first = await readFile(aggregateReportPath, "utf8");
+  await runDiscoveryForProducts({
+    products: [discoveryProduct],
+    provider,
+    productReportDirectory,
+    aggregateReportPath,
+  });
+  const second = await readFile(aggregateReportPath, "utf8");
+  assert.equal(first, second);
 });

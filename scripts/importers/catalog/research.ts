@@ -82,6 +82,7 @@ export interface CatalogResearchPaths {
 }
 
 const OFFICIAL_SOURCE_TYPES = new Set([
+  "official_manufacturer_page",
   "manufacturer_product_page",
   "official_manufacturer",
   "datasheet",

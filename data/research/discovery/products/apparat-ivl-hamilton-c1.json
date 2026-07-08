@@ -1,0 +1,70 @@
+{
+  "product": {
+    "productSlug": "apparat-ivl-hamilton-c1",
+    "manufacturer": "Hamilton Medical",
+    "productName": "Аппарат ИВЛ Hamilton C1",
+    "model": "Hamilton C1",
+    "category": "Акушерство и гинекология"
+  },
+  "sourceCandidates": [
+    {
+      "sourceId": "source_3df1f4c5f184e1e5e78f0692",
+      "productSlug": "apparat-ivl-hamilton-c1",
+      "manufacturer": "Hamilton Medical",
+      "productName": "Аппарат ИВЛ Hamilton C1",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.hamilton-medical.com/en/Products.html",
+      "title": "Hamilton Medical products index",
+      "snippet": "Official manufacturer products index; exact HAMILTON-C1 page still requires follow-up discovery.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official manufacturer products index; exact HAMILTON-C1 page still requires follow-up discovery."
+      ]
+    }
+  ],
+  "documentCandidates": [],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "apparat-ivl-hamilton-c1",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "apparat-ivl-hamilton-c1",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "apparat-ivl-hamilton-c1",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "product": {
+    "productSlug": "ambu-ascope-5-broncho",
+    "manufacturer": "Ambu",
+    "productName": "Ambu aScope 5 Broncho",
+    "model": "aScope 5 Broncho",
+    "category": "Эндоскопия"
+  },
+  "sourceCandidates": [
+    {
+      "sourceId": "source_135a7c318a84fe4d599d81dc",
+      "productSlug": "ambu-ascope-5-broncho",
+      "manufacturer": "Ambu",
+      "productName": "Ambu aScope 5 Broncho",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.ambu.com/endoscopy/pulmonology/bronchoscopes/product/ascope-5-broncho",
+      "title": "Ambu aScope 5 Broncho official product page",
+      "snippet": "Official product page observed during MVP-020 pilot; IFU and datasheet still require artifact capture.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official product page observed during MVP-020 pilot; IFU and datasheet still require artifact capture."
+      ]
+    }
+  ],
+  "documentCandidates": [],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "ambu-ascope-5-broncho",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "ambu-ascope-5-broncho",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "ambu-ascope-5-broncho",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "product": {
+    "productSlug": "ekspress-analizator-iha-nano-checker-710",
+    "manufacturer": null,
+    "productName": "Экспресс-анализатор ИХА Nano-Checker 710",
+    "model": "Nano-Checker 710",
+    "category": "Функциональная диагностика"
+  },
+  "sourceCandidates": [],
+  "documentCandidates": [],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "ekspress-analizator-iha-nano-checker-710",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "ekspress-analizator-iha-nano-checker-710",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "ekspress-analizator-iha-nano-checker-710",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 0,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 0,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": false,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "No source candidates found; product remains needs_source.",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

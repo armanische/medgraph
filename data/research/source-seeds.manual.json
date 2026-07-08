@@ -1,3 +1,106 @@
 {
-  "products": []
+  "products": [
+    {
+      "slug": "apparat-ivl-hamilton-t1",
+      "productName": "Аппарат ИВЛ Hamilton T1",
+      "manufacturer": "Hamilton Medical",
+      "model": "Hamilton T1",
+      "category": "Реанимационное оборудование",
+      "officialSources": [
+        {
+          "url": "https://www.hamilton-medical.com/de_CH/Prehospital-transport/Products/HAMILTON-T1.html",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Hamilton Medical",
+          "title": "HAMILTON-T1 official product page",
+          "notes": "Official manufacturer page observed during MVP-020 pilot; document downloads are linked from the page but must still be downloaded and hashed.",
+          "trustTier": 1,
+          "documents": [
+            {
+              "url": "https://www.hamilton-medical.com/de_CH/Prehospital-transport/Products/HAMILTON-T1.html",
+              "documentType": "user_manual",
+              "title": "HAMILTON-T1 Bedienungshandbuch download listed on product page",
+              "language": "de",
+              "trustTier": 1,
+              "notes": "Known document listing, not a downloaded PDF artifact yet."
+            },
+            {
+              "url": "https://www.hamilton-medical.com/de_CH/Prehospital-transport/Products/HAMILTON-T1.html",
+              "documentType": "datasheet",
+              "title": "HAMILTON-T1 technical specification download listed on product page",
+              "language": "de",
+              "trustTier": 1,
+              "notes": "Known document listing, not a downloaded PDF artifact yet."
+            },
+            {
+              "url": "https://www.hamilton-medical.com/de_CH/Prehospital-transport/Products/HAMILTON-T1.html",
+              "documentType": "brochure",
+              "title": "HAMILTON-T1 brochure download listed on product page",
+              "language": "de",
+              "trustTier": 1,
+              "notes": "Brochure is discovery context only and cannot replace IFU/manual."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "apparat-ivl-hamilton-c1",
+      "productName": "Аппарат ИВЛ Hamilton C1",
+      "manufacturer": "Hamilton Medical",
+      "model": "Hamilton C1",
+      "category": "Акушерство и гинекология",
+      "officialSources": [
+        {
+          "url": "https://www.hamilton-medical.com/en/Products.html",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Hamilton Medical",
+          "title": "Hamilton Medical products index",
+          "notes": "Official manufacturer products index; exact HAMILTON-C1 page still requires follow-up discovery.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+      "productName": "Одноразовый эндоскоп aScope 4 Broncho Ambu",
+      "manufacturer": "Ambu",
+      "model": "aScope 4 Broncho",
+      "category": "Прочее оборудование",
+      "officialSources": [
+        {
+          "url": "https://www.ambu.com/endoscopy/pulmonology/products",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Ambu",
+          "title": "Ambu pulmonology products",
+          "notes": "Official Ambu pulmonology products page observed during MVP-020 pilot; exact aScope 4 IFU still required.",
+          "trustTier": 1
+        },
+        {
+          "url": "https://www.ambu.com/",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Ambu",
+          "title": "Ambu official website",
+          "notes": "Official manufacturer site; used only as source discovery entry point.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "ambu-ascope-5-broncho",
+      "productName": "Ambu aScope 5 Broncho",
+      "manufacturer": "Ambu",
+      "model": "aScope 5 Broncho",
+      "category": "Эндоскопия",
+      "officialSources": [
+        {
+          "url": "https://www.ambu.com/endoscopy/pulmonology/bronchoscopes/product/ascope-5-broncho",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Ambu",
+          "title": "Ambu aScope 5 Broncho official product page",
+          "notes": "Official product page observed during MVP-020 pilot; IFU and datasheet still require artifact capture.",
+          "trustTier": 1
+        }
+      ]
+    }
+  ]
 }
