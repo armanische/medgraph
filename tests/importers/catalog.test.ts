@@ -32,6 +32,10 @@ import {
   type SourceCandidate as DiscoverySourceCandidate,
 } from "../../scripts/importers/catalog/discovery.ts";
 import {
+  classifyManufacturerDocumentLink,
+  DefaultManufacturerDocumentLinkResolver,
+} from "../../scripts/importers/catalog/document-link-resolver.ts";
+import {
   CompositeResearchProvider,
   DefaultSourceRanker,
   ManualSourceSeedResearchProvider,
@@ -68,6 +72,10 @@ import {
 const FIXTURE = resolve(
   process.cwd(),
   "tests/fixtures/catalog/catalog-extract.txt",
+);
+const DOCUMENT_RESOLVER_FIXTURE_DIRECTORY = resolve(
+  process.cwd(),
+  "tests/fixtures/catalog/document-resolver",
 );
 
 const noDownload: DocumentDownloader = {
@@ -599,6 +607,7 @@ test("knowledge engine has no forbidden writes or publication", async () => {
       "knowledge-engine.ts",
       "research-manifest.ts",
       "discovery.ts",
+      "document-link-resolver.ts",
       "trusted-documents.ts",
     ].map((file) =>
       readFile(
@@ -641,6 +650,20 @@ function discoverySource(
     reasons: ["test candidate", "snippet is not evidence"],
     ...overrides,
   };
+}
+
+async function resolverForFixture(fileName: string) {
+  const html = await readFile(
+    join(DOCUMENT_RESOLVER_FIXTURE_DIRECTORY, fileName),
+    "utf8",
+  );
+  return new DefaultManufacturerDocumentLinkResolver({
+    fetchImplementation: (async () =>
+      new Response(html, {
+        status: 200,
+        headers: { "content-type": "text/html; charset=utf-8" },
+      })) as typeof fetch,
+  });
 }
 
 test("discovery official manufacturer page receives trust tier 1", () => {
@@ -796,6 +819,7 @@ test("discovery commands are idempotent", async () => {
   await runDiscoveryForProducts({
     products: [discoveryProduct],
     provider,
+    resolver: null,
     productReportDirectory,
     aggregateReportPath,
   });
@@ -803,11 +827,167 @@ test("discovery commands are idempotent", async () => {
   await runDiscoveryForProducts({
     products: [discoveryProduct],
     provider,
+    resolver: null,
     productReportDirectory,
     aggregateReportPath,
   });
   const second = await readFile(aggregateReportPath, "utf8");
   assert.equal(first, second);
+});
+
+test("manufacturer resolver turns direct PDF links into DocumentCandidates", async () => {
+  const resolver = await resolverForFixture("direct-pdf.html");
+  const result = await resolver.resolve(discoverySource());
+
+  assert.equal(result.links.length, 3);
+  assert.ok(
+    result.links.some(
+      (link) =>
+        link.documentCandidate.documentType === "user_manual" &&
+        link.documentCandidate.url ===
+          "https://www.hamilton-medical.com/downloads/hamilton-t1-user-manual.pdf",
+    ),
+  );
+  assert.ok(
+    result.links.every(
+      (link) =>
+        link.documentCandidate.trustTier === 1 &&
+        link.documentCandidate.requiresHumanReview === true,
+    ),
+  );
+});
+
+test("manufacturer resolver normalizes relative PDF links", async () => {
+  const resolver = await resolverForFixture("relative-links.html");
+  const result = await resolver.resolve(discoverySource());
+
+  assert.ok(
+    result.links.some(
+      (link) =>
+        link.documentCandidate.documentType === "brochure" &&
+        link.documentCandidate.url ===
+          "https://www.hamilton-medical.com/documents/hamilton-t1-brochure.pdf",
+    ),
+  );
+  assert.ok(
+    result.links.some(
+      (link) =>
+        link.documentCandidate.documentType === "service_manual" &&
+        link.documentCandidate.url ===
+          "https://www.hamilton-medical.com/de_CH/Prehospital-transport/downloads/hamilton-t1-service-manual.pdf",
+    ),
+  );
+});
+
+test("manufacturer document classifier is conservative", () => {
+  assert.equal(
+    classifyManufacturerDocumentLink({
+      url: "https://www.hamilton-medical.com/manual.pdf",
+      linkText: "User manual",
+    }).documentType,
+    "user_manual",
+  );
+  assert.equal(
+    classifyManufacturerDocumentLink({
+      url: "https://www.hamilton-medical.com/doc.pdf?type=ifu",
+      linkText: "Instructions for use",
+    }).documentType,
+    "ifu",
+  );
+  assert.equal(
+    classifyManufacturerDocumentLink({
+      url: "https://www.hamilton-medical.com/specification.pdf",
+      linkText: "Technical specifications",
+    }).documentType,
+    "datasheet",
+  );
+  assert.equal(
+    classifyManufacturerDocumentLink({
+      url: "https://www.hamilton-medical.com/brochure.pdf",
+      linkText: "Brochure",
+    }).documentType,
+    "brochure",
+  );
+  assert.equal(
+    classifyManufacturerDocumentLink({
+      url: "https://www.hamilton-medical.com/file.pdf",
+      linkText: "Download",
+    }).documentType,
+    "unknown",
+  );
+});
+
+test("manufacturer resolver reads document links from download buttons", async () => {
+  const resolver = await resolverForFixture("download-buttons.html");
+  const result = await resolver.resolve(discoverySource());
+
+  assert.equal(result.links.length, 2);
+  assert.ok(
+    result.links.some(
+      (link) => link.documentCandidate.documentType === "datasheet",
+    ),
+  );
+  assert.ok(
+    result.links.some(
+      (link) => link.documentCandidate.documentType === "certificate",
+    ),
+  );
+});
+
+test("manufacturer resolver rejects offsite untrusted PDFs", async () => {
+  const resolver = await resolverForFixture("offsite-untrusted.html");
+  const result = await resolver.resolve(discoverySource());
+
+  assert.equal(result.links.length, 0);
+  assert.ok(
+    result.warnings.some((warning) => warning.includes("offsite document URL")),
+  );
+});
+
+test("manufacturer resolver creates no fake documents when no links are found", async () => {
+  const resolver = await resolverForFixture("non-document-links.html");
+  const result = await resolver.resolve(discoverySource());
+
+  assert.equal(result.links.length, 0);
+  assert.ok(result.warnings.some((warning) => warning.includes("no document links")));
+});
+
+test("discovery integrates resolved document links and dedupes URLs", async () => {
+  const resolver = await resolverForFixture("same-host-mixed.html");
+  const source = discoverySource({
+    manufacturer: "Ambu",
+    url: "https://www.ambu.com/endoscopy/pulmonology/bronchoscopes/product/ascope-5-broncho",
+  });
+  const report = await discoverProduct(
+    discoveryProduct,
+    new MockDiscoveryProvider({
+      sources: async () => [source],
+      documents: async () => [
+        {
+          documentId: "manual_seed_doc",
+          sourceId: source.sourceId,
+          productSlug: source.productSlug,
+          documentType: "user_manual",
+          url: "https://www.ambu.com/downloads/ascope-5-user-manual.pdf",
+          title: "Manual from seed",
+          language: "en",
+          confidence: 0.92,
+          trustTier: 1,
+          requiresHumanReview: true,
+          reasons: ["test"],
+        },
+      ],
+    }),
+    resolver,
+  );
+
+  assert.equal(report.resolvedDocumentLinks.length, 3);
+  assert.equal(report.documentCandidates.length, 3);
+  assert.ok(
+    report.documentCandidates.some(
+      (document) => document.documentType === "certificate",
+    ),
+  );
 });
 
 function trustedDiscoveryReport(
@@ -817,6 +997,8 @@ function trustedDiscoveryReport(
     product: discoveryProduct,
     sourceCandidates: [discoverySource()],
     documentCandidates: documents,
+    resolvedDocumentLinks: [],
+    resolverWarnings: [],
     missingDocumentTasks: [],
     trustSummary: {
       tier1: documents.filter((document) => document.trustTier === 1).length,

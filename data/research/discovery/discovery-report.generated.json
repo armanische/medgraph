@@ -1,15 +1,19 @@
 {
   "productsProcessed": 49,
   "officialSourcesFound": 4,
-  "documentsFound": 3,
+  "documentsFound": 6,
   "requiredDocumentsMissing": 145,
   "productsReadyForExtraction": 0,
   "productsBlocked": 49,
+  "resolvedDocumentLinksFound": 3,
+  "productsWithResolvedDocuments": 1,
+  "productsStillMissingDocuments": 49,
   "productReports": [
     {
       "productSlug": "inkubator-idn-02-danio-uomz",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -17,6 +21,7 @@
       "productSlug": "inkubator-intensivnoi-terapii-idn-03-danio",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -24,6 +29,7 @@
       "productSlug": "apparat-ivl-sle-6000",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -31,6 +37,7 @@
       "productSlug": "otkrytaya-reanimatsionnaya-sistema-phoenix-cic-101",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -38,6 +45,7 @@
       "productSlug": "apparat-ivl-hamilton-c1",
       "sources": 1,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -45,6 +53,7 @@
       "productSlug": "fetalnyi-monitor-unikos-03",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -52,6 +61,7 @@
       "productSlug": "fetalnyi-monitor-ge-corometrics-259-cx",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -59,6 +69,7 @@
       "productSlug": "monitor-materi-ploda-g6b-general-meditech",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -66,6 +77,7 @@
       "productSlug": "elektricheskii-aspirator-vacus-7308",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -73,6 +85,7 @@
       "productSlug": "apparat-podderzhki-dyhaniya-apdn-01",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -80,6 +93,7 @@
       "productSlug": "analizator-giperbilirubinemii-bilitest",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -87,6 +101,7 @@
       "productSlug": "sistema-otoakusticheskoi-emissii-otoread",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -94,6 +109,7 @@
       "productSlug": "portativnyi-aspirator-vacus-7018-dixion",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -101,6 +117,7 @@
       "productSlug": "ustroistva-obogreva-rt300si-dlya-novorozhdennyh",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -108,6 +125,7 @@
       "productSlug": "kolposkop-ks-02-302-zoom-komfort",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -115,6 +133,7 @@
       "productSlug": "videoendoskopicheskaya-sistema-sonoscape-hd-350",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -122,6 +141,7 @@
       "productSlug": "videoendoskopicheskaya-sistema-sonoscape-hd-500",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -129,6 +149,7 @@
       "productSlug": "videoendoskopicheskaya-sistema-sonoscape-hd-550",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -136,6 +157,7 @@
       "productSlug": "gastrofibroskop-pentax-fg-29v",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -143,6 +165,7 @@
       "productSlug": "bronhofibroskop-pentax-fb-15v",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -150,6 +173,7 @@
       "productSlug": "narkozno-dyhatelnyi-apparat-wato-ex-35",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -157,13 +181,15 @@
       "productSlug": "apparat-ivl-mindray-sv800-sv600",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
     {
       "productSlug": "apparat-ivl-hamilton-t1",
       "sources": 1,
-      "documents": 3,
+      "documents": 6,
+      "resolvedDocumentLinks": 3,
       "missingDocumentTasks": 1,
       "canProceedToExtraction": false
     },
@@ -171,6 +197,7 @@
       "productSlug": "apparat-ivl-aventa-u",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -178,6 +205,7 @@
       "productSlug": "apparat-ivl-faza-21",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -185,6 +213,7 @@
       "productSlug": "monitor-patsienta-benevision-n17-n15-n12",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -192,6 +221,7 @@
       "productSlug": "svetilnik-smotrovoi-mindray-hyled-9300",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -199,6 +229,7 @@
       "productSlug": "narkozno-dyhatelnyi-apparat-mindray-a8",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -206,6 +237,7 @@
       "productSlug": "monitor-mitar-01-r-d",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -213,6 +245,7 @@
       "productSlug": "monitor-patsienta-comen-n10",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -220,6 +253,7 @@
       "productSlug": "portativnyi-uzi-apparat-mindray-m9",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -227,6 +261,7 @@
       "productSlug": "ekspertnyi-uzi-apparat-ge-logiq-e9",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -234,6 +269,7 @@
       "productSlug": "gemodializnyi-apparat-b-braun-dialog",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -241,6 +277,7 @@
       "productSlug": "rentgenodiagnosticheskii-kompleks-krt-elektron",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -248,6 +285,7 @@
       "productSlug": "ekspress-analizator-iha-nano-checker-710",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -255,6 +293,7 @@
       "productSlug": "elektrokardiograf-ek12t-01-r-d-260",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -262,6 +301,7 @@
       "productSlug": "holter-in-33-medikom",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -269,6 +309,7 @@
       "productSlug": "spirometr-mir-spirolab",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -276,6 +317,7 @@
       "productSlug": "entsefalograf-neiron-spektr-1",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -283,6 +325,7 @@
       "productSlug": "uf-ustanovka-peredvizhnaya-alfa-06",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -290,6 +333,7 @@
       "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
       "sources": 2,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -297,6 +341,7 @@
       "productSlug": "aerozolnyi-raspylitel-ultraspreier-r",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -304,6 +349,7 @@
       "productSlug": "videolaringoskop-dlya-intubatsii-trahei-airtraq",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -311,6 +357,7 @@
       "productSlug": "krovat-funktsionalnaya-elektricheskaya-mb-95",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -318,6 +365,7 @@
       "productSlug": "videobronhoskop-vme-5b-portativnyi",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -325,6 +373,7 @@
       "productSlug": "shpritsevoi-nasos-fresenius-kabi-agilia-sp-mc",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -332,6 +381,7 @@
       "productSlug": "kontsentrator-kisloroda-longfian-jay-10",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -339,6 +389,7 @@
       "productSlug": "stol-obschehirurgicheskii-om-delta-plyus-02",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
@@ -346,6 +397,7 @@
       "productSlug": "tsentralnaya-stantsiya-monitoringa-comen-cms",
       "sources": 0,
       "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     }

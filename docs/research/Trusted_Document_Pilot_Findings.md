@@ -4,16 +4,18 @@ MVP-022 tested the transition from discovery reports to trusted document process
 
 The run used existing discovery outputs under `data/research/discovery/products`.
 
+MVP-023 added a manufacturer document link resolver before the download step. This resolved the main MVP-022 blocker: some manual seeds pointed to official product pages, not direct document URLs.
+
 ## Summary
 
 - Product reports processed: 50
-- Download attempts: 3
-- Downloaded artifacts: 0
+- Download attempts: 6
+- Downloaded artifacts: 3
 - Failed downloads: 3
-- Document versions: 0
-- Extracted fact candidates: 0
-- Candidate claims: 0
-- Products ready for review: 0
+- Document versions: 3
+- Extracted fact candidates: 8
+- Candidate claims: 8
+- Products ready for review: 1
 
 No fake data was created.
 
@@ -21,25 +23,27 @@ No fake data was created.
 
 ### Hamilton T1
 
-Discovery produced three document candidates:
+Discovery initially produced three manual document candidates that pointed to the product page URL. MVP-023 then resolved three direct PDF candidates from the official Hamilton page:
 
-- user manual candidate;
-- datasheet candidate;
-- brochure candidate.
+- technical specification / datasheet PDF;
+- user manual PDF;
+- brochure PDF.
 
-All three currently point to the Hamilton product page URL rather than a direct downloadable PDF URL.
+The original product-page candidates were preserved for traceability, but trusted download rejected them as `text/html`.
 
 Download result:
 
-- attempted: 3
-- downloaded: 0
+- attempted: 6
+- downloaded: 3
 - failed: 3
-- failure: controlled fetch failure in the current environment
-- ready for extraction: no
+- document versions: 3
+- extracted fact candidates: 8
+- candidate claims: 8
+- ready for review: yes, candidate-only
 
 Finding:
 
-The source is useful for human document discovery, but the pipeline needs direct PDF/document URLs before artifact storage and extraction can proceed.
+The resolver successfully turned official product-page links into direct PDF `DocumentCandidate` records. Registration certificate remains missing, so the product is not publication-ready.
 
 ### Hamilton C1
 
@@ -93,13 +97,15 @@ The pilot confirms that manual product-page discovery is not enough for extracti
 - Failed downloads did not stop the run.
 - The report shape now carries document versions, extracted facts, candidate claims, warnings, and review readiness.
 - Candidate claim handoff remains unverified and non-publishing.
+- MVP-023 resolver found same-host Hamilton PDF links from the official product page.
+- Offsite PubMed and social URLs were rejected by host policy.
 
 ## What Blocked Extraction
 
-- Current Hamilton T1 document candidates are not direct PDF artifacts.
-- Ambu candidates do not yet include document URLs.
+- Some legacy manual Hamilton candidates still point to HTML product pages and are rejected by trusted download.
+- Ambu pages timed out in the pilot run and did not produce document candidates.
 - Network access may fail in local preview conditions.
-- No document version means no extraction and no candidate claims.
+- Products without document versions still produce no extraction and no candidate claims.
 
 ## Automation Recommendations
 

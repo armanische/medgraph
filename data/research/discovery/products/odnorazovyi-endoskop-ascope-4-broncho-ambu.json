@@ -51,6 +51,11 @@
     }
   ],
   "documentCandidates": [],
+  "resolvedDocumentLinks": [],
+  "resolverWarnings": [
+    "Resolver fetch failed for https://www.ambu.com/: The operation was aborted due to timeout",
+    "Resolver fetch failed for https://www.ambu.com/endoscopy/pulmonology/products: The operation was aborted due to timeout"
+  ],
   "missingDocumentTasks": [
     {
       "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
@@ -86,6 +91,8 @@
     "canProceedToExtraction": false
   },
   "warnings": [
+    "Resolver fetch failed for https://www.ambu.com/: The operation was aborted due to timeout",
+    "Resolver fetch failed for https://www.ambu.com/endoscopy/pulmonology/products: The operation was aborted due to timeout",
     "Discovery creates candidates only; no verified claims or publication."
   ]
 }

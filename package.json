@@ -13,6 +13,7 @@
     "import:catalog-seed": "node scripts/importers/catalog/seed.ts",
     "discover:catalog-sources": "node scripts/importers/catalog/discovery.ts",
     "discover:product": "node scripts/importers/catalog/discover-product.ts",
+    "resolve:documents": "node scripts/importers/catalog/discovery.ts",
     "download:discovered-documents": "node scripts/importers/catalog/trusted-documents.ts download",
     "extract:discovered-documents": "node scripts/importers/catalog/trusted-documents.ts extract",
     "process:trusted-documents": "node scripts/importers/catalog/trusted-documents.ts process",

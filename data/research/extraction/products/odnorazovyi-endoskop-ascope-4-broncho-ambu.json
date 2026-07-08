@@ -11,6 +11,8 @@
   "evidenceCandidates": [],
   "candidateClaims": [],
   "warnings": [
+    "Resolver fetch failed for https://www.ambu.com/: The operation was aborted due to timeout",
+    "Resolver fetch failed for https://www.ambu.com/endoscopy/pulmonology/products: The operation was aborted due to timeout",
     "Discovery creates candidates only; no verified claims or publication.",
     "No DocumentCandidate records were available for download."
   ],

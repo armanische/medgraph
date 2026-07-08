@@ -3,6 +3,11 @@ import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 
+import {
+  DefaultManufacturerDocumentLinkResolver,
+  type ManufacturerDocumentLinkResolver,
+  type ResolvedDocumentLink,
+} from "./document-link-resolver.ts";
 import type { CatalogSeed, CatalogSeedItem } from "./types.ts";
 
 const SEED_PATH = resolve(process.cwd(), "data/catalog-seed.generated.json");
@@ -134,6 +139,17 @@ export interface DiscoveryProductReport {
   product: DiscoveryProductInput;
   sourceCandidates: SourceCandidate[];
   documentCandidates: DocumentCandidate[];
+  resolvedDocumentLinks: Array<{
+    documentId: string;
+    url: string;
+    title: string;
+    documentTypeGuess: DiscoveryDocumentType;
+    parentSourceId: string;
+    linkText: string;
+    resolvedFromUrl: string;
+    warnings: string[];
+  }>;
+  resolverWarnings: string[];
   missingDocumentTasks: MissingDocumentTask[];
   trustSummary: {
     tier1: number;
@@ -159,10 +175,14 @@ export interface DiscoveryAggregateReport {
   requiredDocumentsMissing: number;
   productsReadyForExtraction: number;
   productsBlocked: number;
+  resolvedDocumentLinksFound: number;
+  productsWithResolvedDocuments: number;
+  productsStillMissingDocuments: number;
   productReports: Array<{
     productSlug: string;
     sources: number;
     documents: number;
+    resolvedDocumentLinks: number;
     missingDocumentTasks: number;
     canProceedToExtraction: boolean;
   }>;
@@ -594,11 +614,40 @@ function dedupeDocuments(documents: DocumentCandidate[]) {
   );
 }
 
+function resolvedLinkReport(link: ResolvedDocumentLink) {
+  return {
+    documentId: link.documentCandidate.documentId,
+    url: link.documentCandidate.url,
+    title: link.documentCandidate.title,
+    documentTypeGuess: link.documentTypeGuess,
+    parentSourceId: link.parentSourceId,
+    linkText: link.linkText,
+    resolvedFromUrl: link.resolvedFromUrl,
+    warnings: link.warnings,
+  };
+}
+
+function dedupeResolvedLinks(links: ResolvedDocumentLink[]) {
+  return [
+    ...new Map(
+      links.map((link) => [
+        `${link.documentCandidate.url}\u001f${link.documentCandidate.documentType}`,
+        link,
+      ]),
+    ).values(),
+  ].sort((left, right) =>
+    left.documentCandidate.url.localeCompare(right.documentCandidate.url),
+  );
+}
+
 export async function discoverProduct(
   product: DiscoveryProductInput,
   provider: DiscoveryProvider,
+  resolver?: ManufacturerDocumentLinkResolver | null,
 ): Promise<DiscoveryProductReport> {
   const warnings: string[] = [];
+  const resolverWarnings: string[] = [];
+  const resolvedLinks: ResolvedDocumentLink[] = [];
   let sources: SourceCandidate[] = [];
   try {
     sources = await provider.discoverSources(product);
@@ -631,7 +680,35 @@ export async function discoverProduct(
       }
     }),
   );
-  const documents = dedupeDocuments(documentResults.flat());
+  if (resolver) {
+    const resolvedResults = await Promise.all(
+      safeSources
+        .filter((source) => source.sourceType === "official_manufacturer_page")
+        .map(async (source) => {
+          try {
+            return await resolver.resolve(source);
+          } catch (error) {
+            return {
+              links: [],
+              warnings: [
+                `Resolver failed for ${source.url}: ${
+                  error instanceof Error ? error.message : "unknown error"
+                }`,
+              ],
+            };
+          }
+        }),
+    );
+    for (const result of resolvedResults) {
+      resolvedLinks.push(...result.links);
+      resolverWarnings.push(...result.warnings);
+    }
+  }
+  const resolved = dedupeResolvedLinks(resolvedLinks);
+  const documents = dedupeDocuments([
+    ...documentResults.flat(),
+    ...resolved.map((link) => link.documentCandidate),
+  ]);
   const missingTasks = missingDocumentTasks(product, documents);
   const hasOfficialManufacturerPage = safeSources.some(
     (source) => source.sourceType === "official_manufacturer_page",
@@ -651,6 +728,8 @@ export async function discoverProduct(
     product,
     sourceCandidates: safeSources,
     documentCandidates: documents,
+    resolvedDocumentLinks: resolved.map(resolvedLinkReport),
+    resolverWarnings,
     missingDocumentTasks: missingTasks,
     trustSummary: {
       tier1: safeSources.filter((source) => source.trustTier === 1).length,
@@ -671,6 +750,7 @@ export async function discoverProduct(
     },
     warnings: [
       ...warnings,
+      ...resolverWarnings,
       ...(!safeSources.length
         ? ["No source candidates found; product remains needs_source."]
         : []),
@@ -682,15 +762,20 @@ export async function discoverProduct(
 export async function runDiscoveryForProducts(input: {
   products: DiscoveryProductInput[];
   provider?: DiscoveryProvider;
+  resolver?: ManufacturerDocumentLinkResolver | null;
   productReportDirectory?: string;
   aggregateReportPath?: string;
 }) {
   const provider = input.provider ?? new ManualSeedDiscoveryProvider();
+  const resolver =
+    input.resolver === undefined
+      ? new DefaultManufacturerDocumentLinkResolver()
+      : input.resolver;
   const productReportDirectory =
     input.productReportDirectory ?? PRODUCT_DISCOVERY_DIRECTORY;
   const aggregateReportPath = input.aggregateReportPath ?? DISCOVERY_REPORT_PATH;
   const reports = await Promise.all(
-    input.products.map((product) => discoverProduct(product, provider)),
+    input.products.map((product) => discoverProduct(product, provider, resolver)),
   );
   const aggregate: DiscoveryAggregateReport = {
     productsProcessed: reports.length,
@@ -714,10 +799,21 @@ export async function runDiscoveryForProducts(input: {
     productsBlocked: reports.filter(
       (report) => !report.readiness.canProceedToExtraction,
     ).length,
+    resolvedDocumentLinksFound: reports.reduce(
+      (sum, report) => sum + report.resolvedDocumentLinks.length,
+      0,
+    ),
+    productsWithResolvedDocuments: reports.filter(
+      (report) => report.resolvedDocumentLinks.length > 0,
+    ).length,
+    productsStillMissingDocuments: reports.filter(
+      (report) => report.missingDocumentTasks.length > 0,
+    ).length,
     productReports: reports.map((report) => ({
       productSlug: report.product.productSlug,
       sources: report.sourceCandidates.length,
       documents: report.documentCandidates.length,
+      resolvedDocumentLinks: report.resolvedDocumentLinks.length,
       missingDocumentTasks: report.missingDocumentTasks.length,
       canProceedToExtraction: report.readiness.canProceedToExtraction,
     })),
@@ -768,6 +864,7 @@ function productMatchesQuery(product: DiscoveryProductInput, query: string) {
 export async function runCatalogDiscovery(input: {
   seedPath?: string;
   provider?: DiscoveryProvider;
+  resolver?: ManufacturerDocumentLinkResolver | null;
   productReportDirectory?: string;
   aggregateReportPath?: string;
   query?: string;
@@ -807,6 +904,7 @@ export async function runCatalogDiscovery(input: {
       return runDiscoveryForProducts({
         products: manualProducts,
         provider: input.provider,
+        resolver: input.resolver,
         productReportDirectory: input.productReportDirectory,
         aggregateReportPath: input.aggregateReportPath,
       });
@@ -818,6 +916,7 @@ export async function runCatalogDiscovery(input: {
   return runDiscoveryForProducts({
     products: selected,
     provider: input.provider,
+    resolver: input.resolver,
     productReportDirectory: input.productReportDirectory,
     aggregateReportPath: input.aggregateReportPath,
   });
@@ -834,6 +933,11 @@ async function main() {
         productsProcessed: result.aggregate.productsProcessed,
         officialSourcesFound: result.aggregate.officialSourcesFound,
         documentsFound: result.aggregate.documentsFound,
+        resolvedDocumentLinksFound: result.aggregate.resolvedDocumentLinksFound,
+        productsWithResolvedDocuments:
+          result.aggregate.productsWithResolvedDocuments,
+        productsStillMissingDocuments:
+          result.aggregate.productsStillMissingDocuments,
         requiredDocumentsMissing: result.aggregate.requiredDocumentsMissing,
         productsReadyForExtraction: result.aggregate.productsReadyForExtraction,
         productsBlocked: result.aggregate.productsBlocked,

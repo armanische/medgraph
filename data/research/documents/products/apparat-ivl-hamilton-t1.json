@@ -33,39 +33,165 @@
       "url": "https://www.hamilton-medical.com/de_CH/Prehospital-transport/Products/HAMILTON-T1.html",
       "documentType": "brochure",
       "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_b13228a32cce24926e849e40",
+      "sourceId": "source_113292dd31b3774e80cf6ad5",
+      "productSlug": "apparat-ivl-hamilton-t1",
+      "title": "Dokument HAMILTON-T1 Technische Spezifikation für SW-Version 3.1.x Deutsch | 0.37 MB | 10101904.01 Herunterladen",
+      "url": "https://www.hamilton-medical.com/dam/jcr:4413ad79-b93d-4276-b8da-133558d41579/HAMILTON-T1_tech-specs_v3.1.x_de_10101904.01.pdf",
+      "documentType": "datasheet",
+      "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_5c1fa2ff6ee013edb7f875a5",
+      "sourceId": "source_113292dd31b3774e80cf6ad5",
+      "productSlug": "apparat-ivl-hamilton-t1",
+      "title": "Dokument HAMILTON-T1 Bedienungshandbuch Softwareversion 3.1.x Deutsch | 8.51 MB | 10101880.02 Herunterladen",
+      "url": "https://www.hamilton-medical.com/dam/jcr:4956ceac-95ce-43c2-9bdd-31f15351a410/HAMILTON-T1_ops-manual_v3.1.x_de_10101880.02.pdf",
+      "documentType": "user_manual",
+      "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_3842292fdb5acf261fff85f6",
+      "sourceId": "source_113292dd31b3774e80cf6ad5",
+      "productSlug": "apparat-ivl-hamilton-t1",
+      "title": "Dokument HAMILTON-T1 Intelligente Beatmung auf Intensivtransporten Broschüre Deutsch | 5.51 MB | ELO20260316N.00 Herunterladen",
+      "url": "https://www.hamilton-medical.com/dam/jcr:712e340a-2a71-4dc6-a100-b1e2cae1935e/HAMILTON-T1_EMS_brochure_de_ELO20260316N.00.pdf",
+      "documentType": "brochure",
+      "trustTier": 1
     }
   ],
-  "downloadedArtifacts": [],
+  "downloadedArtifacts": [
+    {
+      "documentCandidateId": "document_b13228a32cce24926e849e40",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:4413ad79-b93d-4276-b8da-133558d41579/HAMILTON-T1_tech-specs_v3.1.x_de_10101904.01.pdf",
+      "title": "Dokument HAMILTON-T1 Technische Spezifikation für SW-Version 3.1.x Deutsch | 0.37 MB | 10101904.01 Herunterladen",
+      "documentType": "datasheet",
+      "sha256": "e011ee8cde96bf70460e3ba62b57dfc28ad3251446c988f230acbde9bad4a18c",
+      "contentType": "application/pdf",
+      "byteSize": 391368,
+      "filePath": "data/research/artifacts/artifacts/sha256/e0/11/e011ee8cde96bf70460e3ba62b57dfc28ad3251446c988f230acbde9bad4a18c.pdf"
+    },
+    {
+      "documentCandidateId": "document_5c1fa2ff6ee013edb7f875a5",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:4956ceac-95ce-43c2-9bdd-31f15351a410/HAMILTON-T1_ops-manual_v3.1.x_de_10101880.02.pdf",
+      "title": "Dokument HAMILTON-T1 Bedienungshandbuch Softwareversion 3.1.x Deutsch | 8.51 MB | 10101880.02 Herunterladen",
+      "documentType": "user_manual",
+      "sha256": "aac809acf1851603195b1b141509c733cd5b2b65dac000281684763f949e86fb",
+      "contentType": "application/pdf",
+      "byteSize": 8926269,
+      "filePath": "data/research/artifacts/artifacts/sha256/aa/c8/aac809acf1851603195b1b141509c733cd5b2b65dac000281684763f949e86fb.pdf"
+    },
+    {
+      "documentCandidateId": "document_3842292fdb5acf261fff85f6",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:712e340a-2a71-4dc6-a100-b1e2cae1935e/HAMILTON-T1_EMS_brochure_de_ELO20260316N.00.pdf",
+      "title": "Dokument HAMILTON-T1 Intelligente Beatmung auf Intensivtransporten Broschüre Deutsch | 5.51 MB | ELO20260316N.00 Herunterladen",
+      "documentType": "brochure",
+      "sha256": "a6c5bdfc52189ebf302049bb49114ee00cc50143b6287ba1f7a450675dea99a3",
+      "contentType": "application/pdf",
+      "byteSize": 5780245,
+      "filePath": "data/research/artifacts/artifacts/sha256/a6/c5/a6c5bdfc52189ebf302049bb49114ee00cc50143b6287ba1f7a450675dea99a3.pdf"
+    }
+  ],
   "failedDownloads": [
     {
       "documentCandidateId": "document_a0a294b8748ef28b01a28146",
       "url": "https://www.hamilton-medical.com/de_CH/Prehospital-transport/Products/HAMILTON-T1.html",
       "title": "HAMILTON-T1 Bedienungshandbuch download listed on product page",
-      "reason": "fetch failed",
-      "retryable": true
+      "reason": "Rejected document content type: text/html",
+      "retryable": false
     },
     {
       "documentCandidateId": "document_b4c763a8922b584279c8c49d",
       "url": "https://www.hamilton-medical.com/de_CH/Prehospital-transport/Products/HAMILTON-T1.html",
       "title": "HAMILTON-T1 technical specification download listed on product page",
-      "reason": "fetch failed",
-      "retryable": true
+      "reason": "Rejected document content type: text/html",
+      "retryable": false
     },
     {
       "documentCandidateId": "document_5260b51b05d6cf9497ea190a",
       "url": "https://www.hamilton-medical.com/de_CH/Prehospital-transport/Products/HAMILTON-T1.html",
       "title": "HAMILTON-T1 brochure download listed on product page",
-      "reason": "fetch failed",
-      "retryable": true
+      "reason": "Rejected document content type: text/html",
+      "retryable": false
     }
   ],
   "skippedDocuments": [],
-  "documentVersions": [],
+  "documentVersions": [
+    {
+      "versionId": "document_version_51a8c9f1f4ffad3e93b6e47a",
+      "documentCandidateId": "document_b13228a32cce24926e849e40",
+      "sourceId": "source_113292dd31b3774e80cf6ad5",
+      "productSlug": "apparat-ivl-hamilton-t1",
+      "documentKey": "trusted-document:document_b13228a32cce24926e849e40",
+      "documentType": "datasheet",
+      "title": "Dokument HAMILTON-T1 Technische Spezifikation für SW-Version 3.1.x Deutsch | 0.37 MB | 10101904.01 Herunterladen",
+      "language": null,
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:4413ad79-b93d-4276-b8da-133558d41579/HAMILTON-T1_tech-specs_v3.1.x_de_10101904.01.pdf",
+      "sha256": "e011ee8cde96bf70460e3ba62b57dfc28ad3251446c988f230acbde9bad4a18c",
+      "contentType": "application/pdf",
+      "byteSize": 391368,
+      "filePath": "data/research/artifacts/artifacts/sha256/e0/11/e011ee8cde96bf70460e3ba62b57dfc28ad3251446c988f230acbde9bad4a18c.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_303fd5a7d2a42c36f1b821ce",
+      "documentCandidateId": "document_5c1fa2ff6ee013edb7f875a5",
+      "sourceId": "source_113292dd31b3774e80cf6ad5",
+      "productSlug": "apparat-ivl-hamilton-t1",
+      "documentKey": "trusted-document:document_5c1fa2ff6ee013edb7f875a5",
+      "documentType": "user_manual",
+      "title": "Dokument HAMILTON-T1 Bedienungshandbuch Softwareversion 3.1.x Deutsch | 8.51 MB | 10101880.02 Herunterladen",
+      "language": null,
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:4956ceac-95ce-43c2-9bdd-31f15351a410/HAMILTON-T1_ops-manual_v3.1.x_de_10101880.02.pdf",
+      "sha256": "aac809acf1851603195b1b141509c733cd5b2b65dac000281684763f949e86fb",
+      "contentType": "application/pdf",
+      "byteSize": 8926269,
+      "filePath": "data/research/artifacts/artifacts/sha256/aa/c8/aac809acf1851603195b1b141509c733cd5b2b65dac000281684763f949e86fb.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_db927a8fd1c5113d7e6d23e0",
+      "documentCandidateId": "document_3842292fdb5acf261fff85f6",
+      "sourceId": "source_113292dd31b3774e80cf6ad5",
+      "productSlug": "apparat-ivl-hamilton-t1",
+      "documentKey": "trusted-document:document_3842292fdb5acf261fff85f6",
+      "documentType": "brochure",
+      "title": "Dokument HAMILTON-T1 Intelligente Beatmung auf Intensivtransporten Broschüre Deutsch | 5.51 MB | ELO20260316N.00 Herunterladen",
+      "language": null,
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:712e340a-2a71-4dc6-a100-b1e2cae1935e/HAMILTON-T1_EMS_brochure_de_ELO20260316N.00.pdf",
+      "sha256": "a6c5bdfc52189ebf302049bb49114ee00cc50143b6287ba1f7a450675dea99a3",
+      "contentType": "application/pdf",
+      "byteSize": 5780245,
+      "filePath": "data/research/artifacts/artifacts/sha256/a6/c5/a6c5bdfc52189ebf302049bb49114ee00cc50143b6287ba1f7a450675dea99a3.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
   "warnings": [
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/15165301",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/41117573",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/39318593",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/37311626",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/35422002",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/28679200",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/26957117",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/16682932",
+    "Resolver rejected offsite document URL: https://www.facebook.com/profile.php?id=61575425896673",
+    "Resolver rejected offsite document URL: https://x.com/hammedicalems",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/hamiltonmedicalag",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/hamilton-medical-ems/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/hamiltonmedicalems/",
     "Discovery creates candidates only; no verified claims or publication."
   ],
   "readiness": {
-    "hasDownloadedDocuments": false,
+    "hasDownloadedDocuments": true,
     "hasExtractedText": false,
     "hasCandidateClaims": false,
     "canProceedToReview": false
