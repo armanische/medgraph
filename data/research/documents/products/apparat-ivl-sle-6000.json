@@ -1,0 +1,25 @@
+{
+  "product": {
+    "productSlug": "apparat-ivl-sle-6000",
+    "manufacturer": "SLE",
+    "productName": "Аппарат ИВЛ SLE 6000",
+    "model": "SLE 6000",
+    "category": "Акушерство и гинекология"
+  },
+  "attemptedDownloads": [],
+  "downloadedArtifacts": [],
+  "failedDownloads": [],
+  "skippedDocuments": [],
+  "documentVersions": [],
+  "warnings": [
+    "No source candidates found; product remains needs_source.",
+    "Discovery creates candidates only; no verified claims or publication.",
+    "No DocumentCandidate records were available for download."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": false,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}

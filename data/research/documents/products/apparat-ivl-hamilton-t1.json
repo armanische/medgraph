@@ -1,0 +1,73 @@
+{
+  "product": {
+    "productSlug": "apparat-ivl-hamilton-t1",
+    "manufacturer": "Hamilton Medical",
+    "productName": "Аппарат ИВЛ Hamilton T1",
+    "model": "Hamilton T1",
+    "category": "Реанимационное оборудование"
+  },
+  "attemptedDownloads": [
+    {
+      "documentCandidateId": "document_a0a294b8748ef28b01a28146",
+      "sourceId": "source_113292dd31b3774e80cf6ad5",
+      "productSlug": "apparat-ivl-hamilton-t1",
+      "title": "HAMILTON-T1 Bedienungshandbuch download listed on product page",
+      "url": "https://www.hamilton-medical.com/de_CH/Prehospital-transport/Products/HAMILTON-T1.html",
+      "documentType": "user_manual",
+      "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_b4c763a8922b584279c8c49d",
+      "sourceId": "source_113292dd31b3774e80cf6ad5",
+      "productSlug": "apparat-ivl-hamilton-t1",
+      "title": "HAMILTON-T1 technical specification download listed on product page",
+      "url": "https://www.hamilton-medical.com/de_CH/Prehospital-transport/Products/HAMILTON-T1.html",
+      "documentType": "datasheet",
+      "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_5260b51b05d6cf9497ea190a",
+      "sourceId": "source_113292dd31b3774e80cf6ad5",
+      "productSlug": "apparat-ivl-hamilton-t1",
+      "title": "HAMILTON-T1 brochure download listed on product page",
+      "url": "https://www.hamilton-medical.com/de_CH/Prehospital-transport/Products/HAMILTON-T1.html",
+      "documentType": "brochure",
+      "trustTier": 1
+    }
+  ],
+  "downloadedArtifacts": [],
+  "failedDownloads": [
+    {
+      "documentCandidateId": "document_a0a294b8748ef28b01a28146",
+      "url": "https://www.hamilton-medical.com/de_CH/Prehospital-transport/Products/HAMILTON-T1.html",
+      "title": "HAMILTON-T1 Bedienungshandbuch download listed on product page",
+      "reason": "fetch failed",
+      "retryable": true
+    },
+    {
+      "documentCandidateId": "document_b4c763a8922b584279c8c49d",
+      "url": "https://www.hamilton-medical.com/de_CH/Prehospital-transport/Products/HAMILTON-T1.html",
+      "title": "HAMILTON-T1 technical specification download listed on product page",
+      "reason": "fetch failed",
+      "retryable": true
+    },
+    {
+      "documentCandidateId": "document_5260b51b05d6cf9497ea190a",
+      "url": "https://www.hamilton-medical.com/de_CH/Prehospital-transport/Products/HAMILTON-T1.html",
+      "title": "HAMILTON-T1 brochure download listed on product page",
+      "reason": "fetch failed",
+      "retryable": true
+    }
+  ],
+  "skippedDocuments": [],
+  "documentVersions": [],
+  "warnings": [
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": false,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}

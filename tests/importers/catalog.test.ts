@@ -28,6 +28,7 @@ import {
   runDiscoveryForProducts,
   trustTierForSourceType,
   type DiscoveryProductInput,
+  type DiscoveryProductReport,
   type SourceCandidate as DiscoverySourceCandidate,
 } from "../../scripts/importers/catalog/discovery.ts";
 import {
@@ -48,6 +49,14 @@ import {
   parseCatalogSeedText,
   stableCatalogSlug,
 } from "../../scripts/importers/catalog/seed.ts";
+import {
+  candidateClaimFromExtractedFact,
+  runTrustedDocumentDownloadForReports,
+  runTrustedDocumentExtractionForReports,
+  type DocumentVersion,
+  type ExtractedFactCandidate,
+  type TrustedDocumentProductDownloadReport,
+} from "../../scripts/importers/catalog/trusted-documents.ts";
 import {
   CATALOG_SEED_WARNING,
   DRAFT_PRODUCT_WARNING,
@@ -590,6 +599,7 @@ test("knowledge engine has no forbidden writes or publication", async () => {
       "knowledge-engine.ts",
       "research-manifest.ts",
       "discovery.ts",
+      "trusted-documents.ts",
     ].map((file) =>
       readFile(
         resolve(process.cwd(), "scripts/importers/catalog", file),
@@ -798,4 +808,289 @@ test("discovery commands are idempotent", async () => {
   });
   const second = await readFile(aggregateReportPath, "utf8");
   assert.equal(first, second);
+});
+
+function trustedDiscoveryReport(
+  documents: DiscoveryProductReport["documentCandidates"],
+): DiscoveryProductReport {
+  return {
+    product: discoveryProduct,
+    sourceCandidates: [discoverySource()],
+    documentCandidates: documents,
+    missingDocumentTasks: [],
+    trustSummary: {
+      tier1: documents.filter((document) => document.trustTier === 1).length,
+      tier2: documents.filter((document) => document.trustTier === 2).length,
+      tier3: documents.filter((document) => document.trustTier === 3).length,
+      tier4: documents.filter((document) => document.trustTier === 4).length,
+      canUseForPublication: documents.filter((document) => document.trustTier <= 2)
+        .length,
+      cannotUseForPublication: documents.filter(
+        (document) => document.trustTier >= 3,
+      ).length,
+    },
+    readiness: {
+      hasOfficialManufacturerPage: true,
+      hasRegulatorRecord: false,
+      hasRequiredDocuments: true,
+      canProceedToExtraction: documents.length > 0,
+    },
+    warnings: [],
+  };
+}
+
+function trustedDocument(
+  overrides: Partial<DiscoveryProductReport["documentCandidates"][number]> = {},
+): DiscoveryProductReport["documentCandidates"][number] {
+  return {
+    documentId: overrides.documentId ?? "doc_hamilton_t1_datasheet",
+    sourceId: overrides.sourceId ?? "source_hamilton_t1",
+    productSlug: discoveryProduct.productSlug,
+    documentType: overrides.documentType ?? "datasheet",
+    url: overrides.url ?? "https://www.hamilton-medical.com/t1-datasheet.pdf",
+    title: overrides.title ?? "HAMILTON-T1 Datasheet",
+    language: overrides.language ?? "en",
+    confidence: overrides.confidence ?? 0.92,
+    trustTier: overrides.trustTier ?? 1,
+    requiresHumanReview: true,
+    reasons: overrides.reasons ?? ["test"],
+  };
+}
+
+async function trustedDownloadRun(
+  documents: DiscoveryProductReport["documentCandidates"],
+  fetchImplementation: typeof fetch,
+) {
+  const root = await mkdtemp(join(tmpdir(), "cybermedica-trusted-docs-"));
+  return runTrustedDocumentDownloadForReports({
+    discoveryReports: [trustedDiscoveryReport(documents)],
+    productReportDirectory: join(root, "documents/products"),
+    aggregateReportPath: join(root, "documents/download-report.generated.json"),
+    artifactStoreRoot: join(root, "artifacts"),
+    fetchImplementation,
+  });
+}
+
+test("trusted document download only processes allowed trust tiers", async () => {
+  let fetches = 0;
+  const result = await trustedDownloadRun(
+    [
+      trustedDocument(),
+      trustedDocument({
+        documentId: "doc_dealer",
+        url: "https://dealer.example.org/t1.pdf",
+        trustTier: 3,
+      }),
+    ],
+    (async () => {
+      fetches += 1;
+      return new Response(Buffer.from("%PDF-1.7\ntrusted"), {
+        status: 200,
+        headers: { "content-type": "application/pdf" },
+      });
+    }) as typeof fetch,
+  );
+
+  assert.equal(fetches, 1);
+  assert.equal(result.aggregate.attemptedDownloads, 1);
+  assert.equal(result.aggregate.downloadedArtifacts, 1);
+  assert.equal(result.aggregate.skippedDocuments, 1);
+});
+
+test("trusted document download rejects invalid PDF bytes", async () => {
+  const result = await trustedDownloadRun(
+    [trustedDocument()],
+    (async () =>
+      new Response("not a pdf", {
+        status: 200,
+        headers: { "content-type": "application/pdf" },
+      })) as typeof fetch,
+  );
+
+  assert.equal(result.aggregate.attemptedDownloads, 1);
+  assert.equal(result.aggregate.downloadedArtifacts, 0);
+  assert.equal(result.aggregate.failedDownloads, 1);
+  assert.match(
+    result.productReports[0].failedDownloads[0].reason,
+    /PDF signature/i,
+  );
+});
+
+test("trusted document download deduplicates duplicate document URLs", async () => {
+  let fetches = 0;
+  const duplicate = trustedDocument({ documentId: "doc_duplicate" });
+  const result = await trustedDownloadRun(
+    [trustedDocument(), duplicate],
+    (async () => {
+      fetches += 1;
+      return new Response(Buffer.from("%PDF-1.7\ntrusted"), {
+        status: 200,
+        headers: { "content-type": "application/pdf" },
+      });
+    }) as typeof fetch,
+  );
+
+  assert.equal(fetches, 1);
+  assert.equal(result.aggregate.attemptedDownloads, 1);
+  assert.equal(result.aggregate.documentVersions, 1);
+});
+
+test("trusted document download is idempotent for reused hashes", async () => {
+  const root = await mkdtemp(join(tmpdir(), "cybermedica-trusted-idempotent-"));
+  const options = {
+    discoveryReports: [trustedDiscoveryReport([trustedDocument()])],
+    productReportDirectory: join(root, "documents/products"),
+    aggregateReportPath: join(root, "documents/download-report.generated.json"),
+    artifactStoreRoot: join(root, "artifacts"),
+    fetchImplementation: (async () =>
+      new Response(Buffer.from("%PDF-1.7\nsame bytes"), {
+        status: 200,
+        headers: { "content-type": "application/pdf" },
+      })) as typeof fetch,
+  };
+  await runTrustedDocumentDownloadForReports(options);
+  const first = await readFile(options.aggregateReportPath, "utf8");
+  await runTrustedDocumentDownloadForReports(options);
+  const second = await readFile(options.aggregateReportPath, "utf8");
+  assert.equal(first, second);
+});
+
+test("trusted document failed download does not fail whole run", async () => {
+  const result = await trustedDownloadRun(
+    [
+      trustedDocument({
+        documentId: "doc_ok",
+        url: "https://www.hamilton-medical.com/ok.pdf",
+      }),
+      trustedDocument({
+        documentId: "doc_missing",
+        url: "https://www.hamilton-medical.com/missing.pdf",
+      }),
+    ],
+    (async (url: string | URL | Request) => {
+      if (String(url).includes("missing")) {
+        return new Response("missing", { status: 404 });
+      }
+      return new Response(Buffer.from("%PDF-1.7\nok"), {
+        status: 200,
+        headers: { "content-type": "application/pdf" },
+      });
+    }) as typeof fetch,
+  );
+
+  assert.equal(result.aggregate.attemptedDownloads, 2);
+  assert.equal(result.aggregate.downloadedArtifacts, 1);
+  assert.equal(result.aggregate.failedDownloads, 1);
+});
+
+function trustedDocumentVersion(overrides: Partial<DocumentVersion> = {}) {
+  return {
+    versionId: "document_version_test",
+    documentCandidateId: "doc_hamilton_t1_datasheet",
+    sourceId: "source_hamilton_t1",
+    productSlug: discoveryProduct.productSlug,
+    documentKey: "trusted-document:doc_hamilton_t1_datasheet",
+    documentType: "datasheet" as const,
+    title: "HAMILTON-T1 Datasheet",
+    language: "en",
+    sourceUrl: "https://www.hamilton-medical.com/t1-datasheet.pdf",
+    sha256: "a".repeat(64),
+    contentType: "application/pdf",
+    byteSize: 128,
+    filePath: "data/research/artifacts/test.pdf",
+    trustTier: 1 as const,
+    requiresHumanReview: true as const,
+    status: "candidate" as const,
+    ...overrides,
+  } satisfies DocumentVersion;
+}
+
+function trustedDownloadReport(
+  versions: DocumentVersion[],
+): TrustedDocumentProductDownloadReport {
+  return {
+    product: discoveryProduct,
+    attemptedDownloads: [],
+    downloadedArtifacts: [],
+    failedDownloads: [],
+    skippedDocuments: [],
+    documentVersions: versions,
+    warnings: [],
+    readiness: {
+      hasDownloadedDocuments: versions.length > 0,
+      hasExtractedText: false,
+      hasCandidateClaims: false,
+      canProceedToReview: false,
+    },
+  };
+}
+
+test("trusted extraction creates fact candidates and unverified candidate claims", async () => {
+  const root = await mkdtemp(join(tmpdir(), "cybermedica-trusted-extract-"));
+  const result = await runTrustedDocumentExtractionForReports({
+    downloadReports: [trustedDownloadReport([trustedDocumentVersion()])],
+    productReportDirectory: join(root, "extraction/products"),
+    aggregateReportPath: join(root, "extraction/extraction-report.generated.json"),
+    textExtractor: async () =>
+      [
+        "Manufacturer: Hamilton Medical",
+        "Model: HAMILTON-T1",
+        "Registration number: RU-TEST-001",
+        "Weight: 6.5 kg",
+      ].join("\n"),
+  });
+  const productReport = result.productReports[0];
+
+  assert.ok(
+    productReport.extractedFactCandidates.some(
+      (fact) => fact.factType === "product.manufacturer",
+    ),
+  );
+  assert.ok(
+    productReport.extractedFactCandidates.some(
+      (fact) => fact.factType === "product.registrationNumber",
+    ),
+  );
+  assert.ok(productReport.candidateClaims.length > 0);
+  assert.ok(
+    productReport.candidateClaims.every(
+      (claim) =>
+        claim.autoPublish === false &&
+        claim.verificationStatus === "unverified" &&
+        claim.evidenceCandidateIds.length > 0,
+    ),
+  );
+});
+
+test("trusted extraction fact without evidence does not create CandidateClaim", () => {
+  const fact: ExtractedFactCandidate = {
+    factCandidateId: "fact_without_evidence",
+    productSlug: discoveryProduct.productSlug,
+    factType: "product.model",
+    label: "Модель",
+    value: "HAMILTON-T1",
+    unit: null,
+    rawText: "Model: HAMILTON-T1",
+    documentVersionId: "document_version_test",
+    documentCandidateId: "doc_test",
+    documentSha256: "",
+    sourceUrl: "https://www.hamilton-medical.com/t1.pdf",
+    locator: {
+      page: 1,
+      section: null,
+      heading: null,
+      table: null,
+      paragraph: 1,
+    },
+    evidenceCandidateId: null,
+    confidence: 0.8,
+    extractionMethod: "rule_based",
+    status: "candidate",
+    verificationStatus: "unverified",
+    autoPublish: false,
+    requiresHumanReview: true,
+    warnings: [],
+  };
+
+  assert.equal(candidateClaimFromExtractedFact(fact), null);
 });
