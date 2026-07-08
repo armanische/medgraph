@@ -86,7 +86,6 @@ export class CatalogResearchManifest {
     const plan: IngestionPlan = {
       provider: "catalog-research",
       query: input.product.normalizedTitle,
-      registrationNumber: null,
       subjectKey: input.product.slug,
       productSlug: input.product.slug,
       sourceProductKey: input.product.slug,

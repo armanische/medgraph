@@ -14,7 +14,10 @@ import type {
 export interface ImportManifestRecord {
   provider: string;
   query: string;
-  registrationNumber: string;
+  registrationNumber?: string;
+  subjectKey?: string;
+  productSlug?: string;
+  sourceProductKey?: string;
   registryRecordId: string | null;
   importedAt: string;
   sourceUrl: string;
@@ -44,8 +47,8 @@ export interface ImportManifestLock {
 
 const DEFAULT_STALE_LOCK_TIMEOUT_MS = 15 * 60 * 1000;
 
-function manifestKey(provider: string, registrationNumber: string) {
-  return `${provider}:${registrationNumber
+function manifestKey(provider: string, subjectKey: string) {
+  return `${provider}:${subjectKey
     .replace(/[№#]/g, "")
     .replace(/\s+/g, "")
     .toLocaleUpperCase("ru-RU")}`;
@@ -142,6 +145,9 @@ export function reconcileIngestionPlan(
     provider: plan.provider,
     query: plan.query,
     registrationNumber: plan.registrationNumber,
+    subjectKey: plan.subjectKey,
+    productSlug: plan.productSlug,
+    sourceProductKey: plan.sourceProductKey,
     registryRecordId: plan.registryRecordId,
     importedAt: new Date().toISOString(),
     sourceUrl: plan.sourceUrl,
@@ -286,7 +292,11 @@ export class ImportManifestStore {
 
     try {
       const manifest = await this.readManifest();
-      const key = manifestKey(plan.provider, plan.registrationNumber);
+      const subjectKey = plan.subjectKey ?? plan.registrationNumber;
+      if (!subjectKey) {
+        throw new Error("Import manifest requires registrationNumber or subjectKey.");
+      }
+      const key = manifestKey(plan.provider, subjectKey);
       const existing = manifest.imports[key] ?? null;
       const reconciled = reconcileIngestionPlan(
         plan,

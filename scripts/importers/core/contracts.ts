@@ -107,7 +107,10 @@ export interface DocumentPlan {
 export interface IngestionPlan {
   provider: string;
   query: string;
-  registrationNumber: string;
+  registrationNumber?: string;
+  subjectKey?: string;
+  productSlug?: string;
+  sourceProductKey?: string;
   registryRecordId: string | null;
   sourceUrl: string;
   rawArtifacts: RawArtifact[];
