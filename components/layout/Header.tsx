@@ -32,7 +32,7 @@ export default function Header() {
       <div className="cm-container flex min-h-14 items-center gap-4">
         <Link
           href="/"
-          className="flex shrink-0 items-center gap-2"
+          className="flex shrink-0 items-center gap-2 transition duration-150 hover:opacity-80"
           aria-label="CyberMedica — главная"
         >
           <BrandMark />
@@ -48,7 +48,7 @@ export default function Header() {
           {navItems.map(([href, label]) => (
             <Link
               key={href}
-              className="rounded-md px-3 py-2 text-xs text-cm-slate hover:bg-cm-surface-low hover:text-cm-ink"
+              className="rounded-md px-3 py-2 text-xs text-cm-slate transition duration-150 hover:bg-cm-surface-low hover:text-cm-ink"
               href={href}
             >
               {label}
@@ -58,7 +58,7 @@ export default function Header() {
 
         <Link
           href="/catalog"
-          className="ml-auto hidden min-h-9 items-center gap-2 rounded-md border border-[var(--cm-rule)] bg-white px-3 text-xs font-medium text-cm-slate transition hover:border-[var(--cm-rule-strong)] hover:text-cm-ink sm:inline-flex lg:ml-3"
+          className="ml-auto hidden min-h-9 items-center gap-2 rounded-md border border-[var(--cm-rule)] bg-white px-3 text-xs font-medium text-cm-slate transition duration-150 hover:border-[var(--cm-rule-strong)] hover:text-cm-ink sm:inline-flex lg:ml-3"
         >
           <svg viewBox="0 0 24 24" className="size-3.5" fill="none" aria-hidden="true">
             <circle cx="11" cy="11" r="6" stroke="currentColor" strokeWidth="1.8" />
@@ -80,7 +80,7 @@ export default function Header() {
           <Link
             key={href}
             href={href}
-            className="shrink-0 rounded px-2.5 py-2 text-xs text-cm-slate hover:text-cm-teal"
+            className="shrink-0 rounded px-2.5 py-2 text-xs text-cm-slate transition duration-150 hover:text-cm-teal"
           >
             {label}
           </Link>

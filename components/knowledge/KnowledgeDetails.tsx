@@ -89,11 +89,11 @@ export default function KnowledgeDetails({
       <section className="cm-card p-6">
         <h2 className="text-base font-bold">Частые вопросы</h2>
         <div className="mt-4 divide-y divide-[var(--cm-rule)]">
-          {product.faq.map((item) => (
-            <details key={item.question} className="group py-4">
+          {product.faq.map((item, index) => (
+            <details key={item.question} className="group py-4" open={index === 0}>
               <summary className="cursor-pointer list-none pr-8 text-xs font-semibold">
                 {item.question}
-                <span className="float-right text-cm-teal group-open:rotate-45">
+                <span className="float-right text-cm-teal transition duration-150 group-open:rotate-45">
                   +
                 </span>
               </summary>

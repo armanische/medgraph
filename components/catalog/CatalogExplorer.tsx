@@ -25,6 +25,25 @@ function statusClass(status: DraftResearchStatus) {
   return "border-amber-200 bg-amber-50 text-amber-700";
 }
 
+function displayCount(value: number) {
+  return value > 0 ? String(value) : "—";
+}
+
+function researchSteps(product: DraftCatalogCard) {
+  return [
+    product.sourcesSummary.official > 0
+      ? "официальные источники найдены"
+      : "поиск официальных источников",
+    product.documentsSummary.total > 0
+      ? "документы найдены"
+      : "регистрационные документы не найдены",
+    product.candidateClaimsCount > 0
+      ? "характеристики подготовлены"
+      : "подготовка характеристик",
+    "ожидает экспертной проверки",
+  ];
+}
+
 export default function CatalogExplorer({
   initialQuery = "",
   products,
@@ -56,7 +75,7 @@ export default function CatalogExplorer({
               <select
                 value={category}
                 onChange={(event) => setCategory(event.target.value)}
-                className="cm-field min-h-10 py-2 text-xs"
+                className="cm-field min-h-10 py-2 text-xs transition duration-150"
               >
                 <option>Все категории</option>
                 {categories.map((item) => (
@@ -72,7 +91,7 @@ export default function CatalogExplorer({
               <select
                 value={status}
                 onChange={(event) => setStatus(event.target.value)}
-                className="cm-field min-h-10 py-2 text-xs"
+                className="cm-field min-h-10 py-2 text-xs transition duration-150"
               >
                 <option>Все статусы</option>
                 <option value="needs_source">Needs source</option>
@@ -90,7 +109,7 @@ export default function CatalogExplorer({
       </aside>
 
       <div className="min-w-0">
-        <div className="flex overflow-hidden rounded-lg border border-[var(--cm-rule-strong)] bg-white focus-within:border-cm-teal focus-within:ring-3 focus-within:ring-cm-teal/10">
+        <div className="flex overflow-hidden rounded-lg border border-[var(--cm-rule-strong)] bg-white transition duration-150 focus-within:border-cm-teal focus-within:ring-3 focus-within:ring-cm-teal/10">
           <label className="flex min-w-0 flex-1 items-center">
             <span className="sr-only">Поиск по draft-каталогу</span>
             <span aria-hidden="true" className="pl-4 text-cm-dim">⌕</span>
@@ -105,7 +124,7 @@ export default function CatalogExplorer({
             <button
               onClick={() => setQuery("")}
               aria-label="Очистить поиск"
-              className="px-4 text-cm-dim hover:text-cm-ink"
+              className="px-4 text-cm-dim transition duration-150 hover:text-cm-ink"
             >
               ×
             </button>
@@ -127,7 +146,7 @@ export default function CatalogExplorer({
               <Link
                 key={product.slug}
                 href={`/catalog/${product.slug}`}
-                className="group cm-card flex min-h-72 flex-col p-5 transition hover:border-cm-teal/30 hover:shadow-[0_2px_8px_rgba(11,19,32,0.06)]"
+                className="group cm-card flex min-h-72 flex-col p-5 transition duration-200 hover:-translate-y-0.5 hover:border-cm-teal/30 hover:shadow-[0_10px_28px_rgba(11,19,32,0.08)]"
               >
                 <div className="flex items-start justify-between gap-3">
                   <span className="rounded border border-[var(--cm-rule)] bg-cm-surface-low px-2 py-1 font-mono text-[9px] text-cm-dim">
@@ -143,31 +162,49 @@ export default function CatalogExplorer({
                   {product.model ?? "Модель требует проверки"}
                 </div>
                 <div className="mt-4 grid grid-cols-2 gap-2 text-[11px]">
-                  <Metric label="Readiness" value={`${product.readinessScore}`} />
-                  <Metric label="Sources" value={`${product.sourcesSummary.total}`} />
-                  <Metric label="Documents" value={`${product.documentsSummary.total}`} />
-                  <Metric label="Claims" value={`${product.candidateClaimsCount}`} />
+                  <Metric label="Readiness" value={displayCount(product.readinessScore)} />
+                  <Metric label="Sources" value={displayCount(product.sourcesSummary.total)} />
+                  <Metric label="Documents" value={displayCount(product.documentsSummary.total)} />
+                  <Metric label="Claims" value={displayCount(product.candidateClaimsCount)} />
                 </div>
-                {product.missingCriticalFields.length > 0 && (
-                  <p className="mt-4 line-clamp-2 text-[11px] leading-5 text-cm-slate">
-                    Missing: {product.missingCriticalFields.slice(0, 4).join(", ")}
-                  </p>
-                )}
+                <div className="mt-4 rounded-lg border border-[var(--cm-rule)] bg-cm-surface-low p-3">
+                  <div className="text-[11px] font-semibold text-cm-ink">
+                    Исследование продолжается
+                  </div>
+                  <ul className="mt-2 space-y-1.5 text-[11px] leading-5 text-cm-slate">
+                    {researchSteps(product).map((step) => (
+                      <li key={step} className="flex gap-2">
+                        <span aria-hidden="true" className="mt-2 size-1 rounded-full bg-cm-teal/60" />
+                        <span>{step}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
                 <div className="mt-auto flex items-center justify-between border-t border-[var(--cm-rule)] pt-4">
                   <span className="font-mono text-[9px] text-cm-dim">{product.category}</span>
-                  <span className="text-xs font-semibold text-cm-dim group-hover:text-cm-teal">Открыть →</span>
+                  <span className="text-xs font-semibold text-cm-dim transition duration-150 group-hover:text-cm-teal">Открыть →</span>
                 </div>
               </Link>
             ))}
           </div>
         ) : (
           <div className="mt-4 cm-card border-dashed px-6 py-16 text-center">
-            <div className="mx-auto flex size-10 items-center justify-center rounded-full bg-cm-surface-low text-cm-dim">⌕</div>
-            <h2 className="mt-4 text-sm font-bold">Draft-позиция не найдена</h2>
+            <div className="mx-auto flex size-12 items-center justify-center rounded-2xl bg-cm-teal-soft text-cm-teal">⌕</div>
+            <h2 className="mt-4 text-sm font-bold">Ничего не найдено</h2>
             <p className="mx-auto mt-2 max-w-md text-xs leading-6 text-cm-slate">
-              Измените запрос или фильтр. Новые позиции появляются только как
-              draft/candidate до ручной проверки.
+              Попробуйте другой запрос или одну из популярных подсказок.
             </p>
+            <div className="mt-5 flex flex-wrap justify-center gap-2">
+              {["Hamilton", "FS510", "Ambu", "ИВЛ"].map((item) => (
+                <button
+                  key={item}
+                  onClick={() => setQuery(item)}
+                  className="rounded-full border border-cm-teal/20 bg-cm-teal-soft px-3 py-1.5 font-mono text-[10px] text-cm-teal transition duration-150 hover:border-cm-teal/50 hover:bg-white"
+                >
+                  {item}
+                </button>
+              ))}
+            </div>
           </div>
         )}
       </div>

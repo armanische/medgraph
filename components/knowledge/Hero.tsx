@@ -64,7 +64,7 @@ export default function Hero({ product }: HeroProps) {
         </div>
       </div>
 
-      <div className="flex min-h-80 items-center border-t border-[var(--cm-rule)] bg-[radial-gradient(ellipse_at_center,#c8e8f0_0%,#dcf0f5_38%,#f4f7fa_72%)] p-8 lg:border-l lg:border-t-0">
+      <div className="relative flex min-h-80 items-center border-t border-[var(--cm-rule)] bg-[radial-gradient(ellipse_at_center,#c8e8f0_0%,#dcf0f5_38%,#f4f7fa_72%)] p-8 lg:border-l lg:border-t-0">
         <Image
           src={product.images[0]}
           alt={product.name}
@@ -73,6 +73,36 @@ export default function Hero({ product }: HeroProps) {
           className="max-h-72 w-full object-contain mix-blend-multiply drop-shadow-[0_16px_28px_rgba(11,19,32,0.14)]"
           priority
         />
+        <div className="absolute bottom-4 left-4 right-4 rounded-xl border border-white/70 bg-white/85 p-4 shadow-[0_16px_40px_rgba(11,19,32,0.12)] backdrop-blur">
+          <div className="flex items-center justify-between gap-3">
+            <div className="font-mono text-[10px] font-semibold uppercase tracking-[0.08em] text-cm-teal">
+              Verified Record
+            </div>
+            <span className="rounded border border-cm-teal/20 bg-cm-teal-soft px-2 py-1 font-mono text-[9px] text-cm-teal">
+              Активно
+            </span>
+          </div>
+          <dl className="mt-3 grid gap-2 text-[10px] sm:grid-cols-2">
+            <div>
+              <dt className="cm-label text-[8px]">Источник</dt>
+              <dd className="mt-1 font-semibold text-cm-ink">CyberMedica</dd>
+            </div>
+            <div>
+              <dt className="cm-label text-[8px]">Документ</dt>
+              <dd className="mt-1 font-semibold text-cm-ink">
+                {product.documents[0]?.title ?? "Нет данных"}
+              </dd>
+            </div>
+            <div>
+              <dt className="cm-label text-[8px]">Дата проверки</dt>
+              <dd className="mt-1 font-semibold text-cm-ink">2026</dd>
+            </div>
+            <div>
+              <dt className="cm-label text-[8px]">Статус</dt>
+              <dd className="mt-1 font-semibold text-cm-verified">Опубликовано</dd>
+            </div>
+          </dl>
+        </div>
       </div>
     </section>
   );

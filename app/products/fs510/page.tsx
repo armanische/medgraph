@@ -80,9 +80,9 @@ export default async function Fs510ProductPage() {
   if (result.status === "not-found") {
     return (
       <PageState
-        eyebrow="Карточка не опубликована"
-        title="FS510 пока недоступен"
-        message="В публичной проекции Supabase нет активной карточки FS510. Проверьте fixture и статус Publication."
+        eyebrow="Данные обновляются"
+        title="Опубликованная карточка временно недоступна"
+        message="Идет обновление опубликованных данных. Пожалуйста, попробуйте позже или отправьте запрос — мы проверим информацию вручную."
       />
     );
   }
@@ -90,9 +90,9 @@ export default async function Fs510ProductPage() {
   if (result.status === "error") {
     return (
       <PageState
-        eyebrow="Ошибка загрузки"
-        title="Не удалось получить данные FS510"
-        message={result.message}
+        eyebrow="Данные обновляются"
+        title="Опубликованная карточка временно недоступна"
+        message="Пожалуйста, попробуйте позже. Если карточка нужна срочно, отправьте запрос — мы подготовим данные и документы вручную."
       />
     );
   }

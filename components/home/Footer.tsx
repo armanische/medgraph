@@ -1,6 +1,15 @@
 import Link from "next/link";
+import packageJson from "@/package.json";
+import { getPlatformStats } from "@/lib/platform-stats";
 
 export default function Footer() {
+  const stats = getPlatformStats();
+  const updatedAt = new Intl.DateTimeFormat("ru-RU", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+  }).format(new Date(stats.lastDataUpdate));
+
   return (
     <footer className="bg-cm-ink text-white">
       <div className="cm-container grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-[1.35fr_1fr_1fr_1fr]">
@@ -20,18 +29,18 @@ export default function Footer() {
         <div>
           <div className="cm-label !text-white/25">Платформа</div>
           <div className="mt-4 flex flex-col gap-2.5 text-xs text-white/45">
-            <Link href="/catalog" className="hover:text-white">Каталог</Link>
-            <Link href="/products/fs510" className="hover:text-white">База знаний</Link>
-            <Link href="/manufacturers" className="hover:text-white">Производители</Link>
+            <Link href="/catalog" className="transition duration-150 hover:text-white">Каталог</Link>
+            <Link href="/products/fs510" className="transition duration-150 hover:text-white">База знаний</Link>
+            <Link href="/manufacturers" className="transition duration-150 hover:text-white">Производители</Link>
           </div>
         </div>
 
         <div>
           <div className="cm-label !text-white/25">Специалистам</div>
           <div className="mt-4 flex flex-col gap-2.5 text-xs text-white/45">
-            <Link href="/request" className="hover:text-white">Закупщикам</Link>
-            <Link href="/request" className="hover:text-white">Поставщикам</Link>
-            <Link href="/request" className="hover:text-white">Запросить КП</Link>
+            <Link href="/request" className="transition duration-150 hover:text-white">Закупщикам</Link>
+            <Link href="/request" className="transition duration-150 hover:text-white">Поставщикам</Link>
+            <Link href="/request" className="transition duration-150 hover:text-white">Запросить КП</Link>
           </div>
         </div>
 
@@ -45,7 +54,9 @@ export default function Footer() {
       <div className="border-t border-white/6">
         <div className="cm-container flex flex-col gap-2 py-4 font-mono text-[9px] text-white/25 sm:flex-row sm:justify-between">
           <span>© 2026 CyberMedica. Все права защищены.</span>
-          <span>Актуальность сведений проверяйте по первичным источникам.</span>
+          <span>
+            Version {packageJson.version} · Build preview · Данные обновлены {updatedAt}
+          </span>
         </div>
       </div>
     </footer>

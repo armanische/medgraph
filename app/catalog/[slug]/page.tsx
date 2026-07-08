@@ -37,6 +37,18 @@ export default async function DraftCatalogProductPage({
   const { slug } = await params;
   const product = getDraftCatalogProduct(slug);
   if (!product) notFound();
+  const researchSteps = [
+    product.sourcesSummary.official > 0
+      ? "Официальные источники найдены"
+      : "Поиск официальных источников",
+    product.documentsSummary.total > 0
+      ? "Документы найдены"
+      : "Регистрационные документы не найдены",
+    product.candidateClaimsCount > 0
+      ? "Характеристики подготовлены"
+      : "Подготовка характеристик",
+    "Ожидает экспертной проверки",
+  ];
 
   return (
     <main className="min-h-screen bg-cm-canvas">
@@ -76,13 +88,13 @@ export default async function DraftCatalogProductPage({
             <div className="cm-card p-4">
               <div className="cm-label">Review readiness</div>
               <div className="mt-3 font-mono text-4xl font-bold text-cm-ink">
-                {product.readinessScore}
+                {displayMetric(product.readinessScore)}
               </div>
               <div className="mt-4 grid grid-cols-2 gap-2 text-[11px]">
-                <Metric label="Sources" value={`${product.sourcesSummary.total}`} />
-                <Metric label="Official" value={`${product.sourcesSummary.official}`} />
-                <Metric label="Documents" value={`${product.documentsSummary.total}`} />
-                <Metric label="Claims" value={`${product.candidateClaimsCount}`} />
+                <Metric label="Sources" value={displayMetric(product.sourcesSummary.total)} />
+                <Metric label="Official" value={displayMetric(product.sourcesSummary.official)} />
+                <Metric label="Documents" value={displayMetric(product.documentsSummary.total)} />
+                <Metric label="Claims" value={displayMetric(product.candidateClaimsCount)} />
               </div>
             </div>
           </div>
@@ -93,9 +105,20 @@ export default async function DraftCatalogProductPage({
         <div className="space-y-6">
           <Section title="Research summary">
             <div className="grid gap-3 md:grid-cols-3">
-              <Metric label="Source quality" value={`${product.sourceQualityScore}`} />
-              <Metric label="Conflicts" value={`${product.conflicts.length}`} />
-              <Metric label="Missing critical" value={`${product.missingCriticalFields.length}`} />
+              <Metric label="Source quality" value={displayMetric(product.sourceQualityScore)} />
+              <Metric label="Conflicts" value={displayMetric(product.conflicts.length)} />
+              <Metric label="Review" value="Ожидает" />
+            </div>
+            <div className="mt-4 rounded-lg border border-[var(--cm-rule)] bg-cm-surface-low p-4">
+              <div className="text-xs font-semibold">Исследование продолжается</div>
+              <ul className="mt-3 grid gap-2 text-xs text-cm-slate sm:grid-cols-2">
+                {researchSteps.map((step) => (
+                  <li key={step} className="flex gap-2">
+                    <span aria-hidden="true" className="mt-2 size-1 rounded-full bg-cm-teal/60" />
+                    <span>{step}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
             {product.researchWarnings.length > 0 && (
               <div className="mt-4 rounded-lg border border-amber-200 bg-amber-50 p-4 text-xs leading-6 text-amber-900">
@@ -137,7 +160,8 @@ export default async function DraftCatalogProductPage({
           <Section title="Documents">
             <ListEmptyWhen
               empty={product.documents.length === 0}
-              message="Документы пока не найдены или не скачаны."
+              title="Нет документов"
+              message="Документы еще не добавлены. Исследование продолжается."
             >
               <div className="grid gap-3 md:grid-cols-2">
                 {product.documents.map((document) => (
@@ -151,7 +175,7 @@ export default async function DraftCatalogProductPage({
                     <Badge tone="neutral">{document.documentType}</Badge>
                     <div className="mt-3 text-sm font-semibold">{document.title}</div>
                     <div className="mt-2 font-mono text-[10px] leading-5 text-cm-dim">
-                      {document.sha256 ? `sha256:${document.sha256.slice(0, 12)}…` : "not downloaded"}
+                      {document.sha256 ? `sha256:${document.sha256.slice(0, 12)}…` : "Нет данных"}
                     </div>
                   </a>
                 ))}
@@ -162,7 +186,8 @@ export default async function DraftCatalogProductPage({
           <Section title="Facts / Characteristics">
             <ListEmptyWhen
               empty={product.characteristics.length === 0}
-              message="Кандидатные характеристики пока не извлечены."
+              title="Нет характеристик"
+              message="Характеристики появятся после проверки документов."
             >
               <div className="overflow-hidden rounded-lg border border-[var(--cm-rule)] bg-white">
                 {product.characteristics.map((fact) => (
@@ -194,7 +219,8 @@ export default async function DraftCatalogProductPage({
           <Section title="Candidate Claims">
             <ListEmptyWhen
               empty={product.candidateClaims.length === 0}
-              message="Candidate Claims пока не созданы."
+              title="Нет кандидатных утверждений"
+              message="Утверждения будут подготовлены после появления подтверждающих источников."
             >
               <div className="space-y-3">
                 {product.candidateClaims.map((claim) => (
@@ -220,7 +246,8 @@ export default async function DraftCatalogProductPage({
           <Section title="Evidence Candidates">
             <ListEmptyWhen
               empty={product.evidenceCandidates.length === 0}
-              message="Evidence Candidates пока не созданы."
+              title="Нет доказательств"
+              message="Доказательства появятся после загрузки официальных документов."
             >
               <div className="space-y-3">
                 {product.evidenceCandidates.map((evidence) => (
@@ -239,17 +266,15 @@ export default async function DraftCatalogProductPage({
         </div>
 
         <aside className="space-y-6">
-          <Section title="Missing data">
-            <ListEmptyWhen
-              empty={product.missingCriticalFields.length === 0}
-              message="Критические пропуски не выявлены."
-            >
-              <div className="flex flex-wrap gap-2">
-                {product.missingCriticalFields.map((field) => (
-                  <Badge key={field} tone="warning">{field}</Badge>
-                ))}
-              </div>
-            </ListEmptyWhen>
+          <Section title="Статус">
+            <div className="space-y-2 text-xs leading-6 text-cm-slate">
+              {researchSteps.map((step) => (
+                <div key={step} className="flex gap-2">
+                  <span className="text-cm-teal">•</span>
+                  <span>{step}</span>
+                </div>
+              ))}
+            </div>
           </Section>
 
           <Section title="Conflicts">
@@ -332,19 +357,26 @@ function Metric({ label, value }: { label: string; value: string }) {
   );
 }
 
+function displayMetric(value: number) {
+  return value > 0 ? String(value) : "—";
+}
+
 function ListEmptyWhen({
   empty,
+  title,
   message,
   children,
 }: {
   empty: boolean;
+  title?: string;
   message: string;
   children: ReactNode;
 }) {
   if (empty) {
     return (
-      <div className="rounded-lg border border-dashed border-[var(--cm-rule)] bg-cm-surface-low p-4 text-xs leading-6 text-cm-slate">
-        {message}
+      <div className="rounded-lg border border-dashed border-[var(--cm-rule)] bg-cm-surface-low p-5 text-xs leading-6 text-cm-slate">
+        {title && <div className="mb-1 font-semibold text-cm-ink">{title}</div>}
+        <div>{message}</div>
       </div>
     );
   }

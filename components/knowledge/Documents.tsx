@@ -12,31 +12,42 @@ export default function Documents({ product }: DocumentsProps) {
         Документы
       </h2>
 
-      <div className="space-y-2">
-        {product.documents.map((document) => (
-          <a
-            key={document.title}
-            href={document.url}
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center justify-between rounded-lg border border-[var(--cm-rule)] bg-cm-surface-low p-4 transition hover:border-cm-teal/30"
-          >
-            <div>
-              <div className="text-xs font-semibold">
-                {document.title}
+      {product.documents.length === 0 ? (
+        <div className="rounded-lg border border-dashed border-[var(--cm-rule)] bg-cm-surface-low p-5">
+          <div className="text-xs font-semibold">Нет документов</div>
+          <p className="mt-2 text-xs leading-6 text-cm-slate">
+            Документы еще не добавлены. Исследование продолжается.
+          </p>
+        </div>
+      ) : (
+        <div className="space-y-2">
+          {product.documents.map((document) => (
+            <a
+              key={document.title}
+              href={document.url}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center justify-between rounded-lg border border-[var(--cm-rule)] bg-cm-surface-low p-4 transition duration-200 hover:-translate-y-0.5 hover:border-cm-teal/30 hover:bg-white"
+            >
+              <div>
+                <div className="text-xs font-semibold">
+                  {document.title}
+                </div>
+
+                <div className="mt-1 flex flex-wrap gap-2 font-mono text-[9px] text-cm-dim">
+                  <span>PDF</span>
+                  <span>Размер: нет данных</span>
+                  <span>Страниц: нет данных</span>
+                </div>
               </div>
 
-              <div className="mt-1 font-mono text-[9px] text-cm-dim">
-                PDF-документ
+              <div className="text-xs font-semibold text-cm-teal">
+                Скачать →
               </div>
-            </div>
-
-            <div className="text-xs font-semibold text-cm-teal">
-              Скачать →
-            </div>
-          </a>
-        ))}
-      </div>
+            </a>
+          ))}
+        </div>
+      )}
     </section>
   );
 }

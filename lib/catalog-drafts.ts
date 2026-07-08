@@ -11,6 +11,10 @@ export function getDraftCatalogProducts() {
   return data.products;
 }
 
+export function getDraftCatalogGeneratedAt() {
+  return data.generatedAt;
+}
+
 export function getDraftCatalogCards(): DraftCatalogCard[] {
   return data.products.map((product) => ({
     slug: product.slug,

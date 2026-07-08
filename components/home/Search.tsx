@@ -98,7 +98,18 @@ export default function Search() {
               <div className="absolute inset-x-0 top-[calc(100%+0.5rem)] z-30 rounded-lg border border-[var(--cm-rule)] bg-white p-4 shadow-[0_12px_40px_rgba(11,19,32,0.12)]">
                 <div className="text-[13px] font-semibold">Ничего не найдено</div>
                 <div className="mt-1 text-xs text-cm-slate">
-                  Поиск продолжится в каталоге; при необходимости можно оставить запрос.
+                  Попробуйте один из запросов или продолжите поиск в каталоге.
+                </div>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {["Hamilton", "FS510", "Ambu", "ИВЛ"].map((item) => (
+                    <button
+                      key={item}
+                      onClick={() => setQuery(item)}
+                      className="rounded-full border border-cm-teal/20 bg-cm-teal-soft px-3 py-1 font-mono text-[10px] text-cm-teal transition duration-150 hover:border-cm-teal/50 hover:bg-white"
+                    >
+                      {item}
+                    </button>
+                  ))}
                 </div>
               </div>
             )}
@@ -109,7 +120,7 @@ export default function Search() {
               <button
                 key={item}
                 onClick={() => setQuery(item)}
-                className="rounded-full border border-cm-teal/20 bg-cm-teal-soft px-3 py-1 font-mono text-[10px] text-cm-teal hover:border-cm-teal/40"
+                className="rounded-full border border-cm-teal/20 bg-cm-teal-soft px-3 py-1 font-mono text-[10px] text-cm-teal transition duration-150 hover:border-cm-teal/40 hover:bg-white"
               >
                 {item}
               </button>

@@ -95,6 +95,12 @@ textarea {
   border: 1px solid var(--cm-rule);
   border-radius: 0.5625rem;
   background: var(--cm-surface);
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease,
+    background-color 180ms ease,
+    opacity 180ms ease;
 }
 
 .cm-label {
@@ -118,10 +124,11 @@ textarea {
   font-size: 0.8125rem;
   font-weight: 600;
   transition:
-    color 120ms ease,
-    background-color 120ms ease,
-    border-color 120ms ease,
-    transform 120ms ease;
+    color 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease,
+    transform 160ms ease,
+    opacity 160ms ease;
 }
 
 .cm-button-primary {
@@ -155,8 +162,8 @@ textarea {
   padding: 0.75rem 0.875rem;
   color: var(--cm-ink);
   transition:
-    border-color 120ms ease,
-    box-shadow 120ms ease;
+    border-color 160ms ease,
+    box-shadow 160ms ease;
 }
 
 .cm-field::placeholder {
