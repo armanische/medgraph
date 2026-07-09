@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 
-import { searchProducts } from "@/lib/products";
+import { searchMedicalDevices } from "@/lib/search";
 
 const popularQueries = ["FS510", "Hamilton C3", "Mindray SV300", "Airtraq", "Ambu"];
 const chipClassName =
@@ -25,16 +25,12 @@ export default function Search() {
   const [query, setQuery] = useState("");
 
   const results = useMemo(() => {
-    const value = query.trim().toLowerCase();
-    return value ? searchProducts(value) : [];
+    const value = query.trim();
+    return value ? searchMedicalDevices(value).results : [];
   }, [query]);
 
   function handleSearch() {
-    if (results.length > 0) {
-      router.push(`/knowledge/${results[0].slug}`);
-      return;
-    }
-    router.push(`/catalog?q=${encodeURIComponent(query.trim())}`);
+    router.push(`/search?q=${encodeURIComponent(query.trim())}`);
   }
 
   return (
@@ -92,13 +88,13 @@ export default function Search() {
               <div className="absolute inset-x-0 top-[calc(100%+0.5rem)] z-30 rounded-lg border border-[var(--cm-rule)] bg-white p-2 shadow-[0_12px_40px_rgba(11,19,32,0.12)]">
                 {results.map((product) => (
                   <button
-                    key={product.slug}
-                    onClick={() => router.push(`/knowledge/${product.slug}`)}
+                    key={product.id}
+                    onClick={() => router.push(product.href)}
                     className="block w-full rounded-md p-3 text-left transition duration-200 hover:bg-cm-surface-low"
                   >
-                    <span className="block text-[13px] font-semibold">{product.name}</span>
+                    <span className="block text-[13px] font-semibold">{product.title}</span>
                     <span className="mt-1 block font-mono text-[10px] text-cm-dim">
-                      {product.manufacturer} · {product.specifications.ru}
+                      {product.manufacturer} · {product.category}
                     </span>
                   </button>
                 ))}

@@ -68,7 +68,7 @@ export default function Header() {
         </nav>
 
         <Link
-          href="/catalog"
+          href="/search"
           className="ml-auto hidden min-h-9 items-center gap-2 rounded-lg border border-[var(--cm-rule)] bg-white px-3 text-xs font-medium text-cm-slate transition duration-200 hover:-translate-y-px hover:border-cm-teal/30 hover:text-cm-ink hover:shadow-[0_10px_24px_rgba(11,19,32,0.06)] sm:inline-flex lg:ml-3"
         >
           <svg viewBox="0 0 24 24" className="size-3.5" fill="none" aria-hidden="true">
