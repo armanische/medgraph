@@ -64,6 +64,7 @@ import {
 import {
   buildReviewQueueForProduct,
   buildReviewQueueReports,
+  processReviewDecisions,
   reviewDecisionIsNotVerification,
   type ReviewDecision,
 } from "../../scripts/importers/catalog/review-queue.ts";
@@ -1432,10 +1433,123 @@ test("ReviewDecision approve does not create Verified Claim", () => {
     reviewer: "reviewer@example.org",
     notes: "Looks ready for Verification handoff.",
     decidedAt: "2026-07-09T00:00:00.000Z",
+    source: "test_fixture",
   };
 
   assert.deepEqual(reviewDecisionIsNotVerification(decision), decision);
   assert.doesNotMatch(JSON.stringify(decision), /verified|publish/i);
+});
+
+test("review decision links valid decision to queue item", () => {
+  const item = buildReviewQueueForProduct(reviewExtractionReport()).reviewItems[0];
+  const report = processReviewDecisions({
+    queueItems: [item],
+    decisions: [
+      {
+        decisionId: "decision_valid",
+        reviewItemId: item.reviewItemId,
+        decision: "approve",
+        reviewer: "reviewer@example.org",
+        notes: "",
+        decidedAt: "2026-07-09T00:00:00.000Z",
+        source: "test_fixture",
+      },
+    ],
+  });
+
+  assert.equal(report.summary.totalDecisions, 1);
+  assert.equal(report.summary.approved, 1);
+  assert.equal(report.invalidDecisions.length, 0);
+  assert.equal(report.queueItemsWithDecision[0].reviewItemId, item.reviewItemId);
+});
+
+test("review decision with unknown reviewItemId is invalid", () => {
+  const item = buildReviewQueueForProduct(reviewExtractionReport()).reviewItems[0];
+  const report = processReviewDecisions({
+    queueItems: [item],
+    decisions: [
+      {
+        decisionId: "decision_unknown",
+        reviewItemId: "review_item_missing",
+        decision: "approve",
+        reviewer: "reviewer@example.org",
+        notes: "",
+        decidedAt: "2026-07-09T00:00:00.000Z",
+        source: "test_fixture",
+      },
+    ],
+  });
+
+  assert.equal(report.summary.totalDecisions, 0);
+  assert.equal(report.invalidDecisions.length, 1);
+  assert.equal(report.summary.decisionsWithoutQueueItem, 1);
+});
+
+test("duplicate review decision is not silently accepted", () => {
+  const item = buildReviewQueueForProduct(reviewExtractionReport()).reviewItems[0];
+  const baseDecision = {
+    reviewItemId: item.reviewItemId,
+    decision: "approve",
+    reviewer: "reviewer@example.org",
+    notes: "",
+    decidedAt: "2026-07-09T00:00:00.000Z",
+    source: "test_fixture",
+  };
+  const report = processReviewDecisions({
+    queueItems: [item],
+    decisions: [
+      { ...baseDecision, decisionId: "decision_one" },
+      { ...baseDecision, decisionId: "decision_two" },
+    ],
+  });
+
+  assert.equal(report.summary.totalDecisions, 0);
+  assert.equal(report.invalidDecisions.length, 2);
+  assert.ok(report.warnings.some((warning) => warning.includes("Duplicate")));
+});
+
+test("reject and request more evidence decisions require notes", () => {
+  const item = buildReviewQueueForProduct(reviewExtractionReport()).reviewItems[0];
+  const report = processReviewDecisions({
+    queueItems: [item],
+    decisions: [
+      {
+        decisionId: "decision_reject_without_notes",
+        reviewItemId: item.reviewItemId,
+        decision: "reject",
+        reviewer: "reviewer@example.org",
+        notes: "",
+        decidedAt: "2026-07-09T00:00:00.000Z",
+        source: "test_fixture",
+      },
+    ],
+  });
+
+  assert.equal(report.summary.totalDecisions, 0);
+  assert.equal(report.invalidDecisions.length, 1);
+  assert.ok(report.invalidDecisions[0].reasons.some((reason) => reason.includes("Notes")));
+});
+
+test("review decision report is idempotent and creates no publication artifacts", () => {
+  const item = buildReviewQueueForProduct(reviewExtractionReport()).reviewItems[0];
+  const decisions = [
+    {
+      decisionId: "decision_idempotent",
+      reviewItemId: item.reviewItemId,
+      decision: "approve",
+      reviewer: "reviewer@example.org",
+      notes: "",
+      decidedAt: "2026-07-09T00:00:00.000Z",
+      source: "test_fixture",
+    },
+  ];
+  const first = processReviewDecisions({ queueItems: [item], decisions });
+  const second = processReviewDecisions({ queueItems: [item], decisions });
+
+  assert.deepEqual(first, second);
+  assert.equal(Object.hasOwn(first, "verifiedClaims"), false);
+  assert.equal(Object.hasOwn(first, "publications"), false);
+  assert.equal(Object.hasOwn(first, "public_api"), false);
 });
 
 test("internal review queue route is protected and read-only", async () => {
@@ -1453,6 +1567,7 @@ test("internal review queue route is protected and read-only", async () => {
   assert.match(pageSource, /connection\(\)/);
   assert.match(loaderSource, /data\/research\/review/);
   assert.match(loaderSource, /review-queue\.generated\.json/);
+  assert.match(loaderSource, /review-decisions\.generated\.json/);
   assert.doesNotMatch(source, /supabase|service_role|public_api/i);
   assert.doesNotMatch(source, /createPublication|publishClaim|Publication/i);
   assert.doesNotMatch(source, /VerifiedClaim|verificationStatus:\s*["']verified/i);

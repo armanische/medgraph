@@ -1,0 +1,29 @@
+{
+  "generatedAt": "review-decision-report",
+  "decisions": [],
+  "summary": {
+    "totalDecisions": 0,
+    "approved": 0,
+    "rejected": 0,
+    "moreEvidenceRequested": 0,
+    "conflictsMarked": 0,
+    "decisionsWithoutQueueItem": 0,
+    "queueItemsWithoutDecision": 8
+  },
+  "invalidDecisions": [],
+  "queueItemsWithDecision": [],
+  "queueItemsWithoutDecision": [
+    "review_item_042688607118b9172e36a8e8",
+    "review_item_14c71899d2f3aed17903f4b2",
+    "review_item_2c86fe3b37a6043c093bd6ed",
+    "review_item_4b55e509ff785c36af2fbb4a",
+    "review_item_bde2bea99705c0f08daff684",
+    "review_item_c58d5854c188b35b65a98ec9",
+    "review_item_d04c7e4614e54a2971747dcd",
+    "review_item_ed04fabca75fe375f3c6d94c"
+  ],
+  "warnings": [
+    "ReviewDecision approve is not Verification and does not create Verified Claims.",
+    "ReviewDecision processing does not publish data and does not write to Supabase."
+  ]
+}

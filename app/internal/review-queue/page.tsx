@@ -101,8 +101,8 @@ export default async function InternalReviewQueuePage() {
           <h2 className="text-base font-semibold">Граница безопасности</h2>
           <p className="mt-2 text-sm leading-6">
             Эта страница показывает только кандидатные факты. Решение reviewer-а
-            не публикует данные автоматически. Публикация выполняется отдельным
-            процессом.
+            не публикует данные. Оно только подготавливает факт к следующему
+            этапу проверки. Публикация выполняется отдельным процессом.
           </p>
         </section>
 
@@ -123,6 +123,8 @@ export default async function InternalReviewQueuePage() {
         <ReviewQueueView
           products={queue.products}
           warnings={queue.aggregate.warnings}
+          decisionReport={queue.decisionReport}
+          decisionReportStatus={queue.decisionReportStatus}
         />
       </section>
     </main>

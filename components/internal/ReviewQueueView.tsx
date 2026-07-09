@@ -1,4 +1,7 @@
 import type {
+  ReviewDecision,
+  ReviewDecisionReport,
+  ReviewDecisionValue,
   ReviewPriority,
   ReviewQueueItem,
   ReviewQueueProductReport,
@@ -33,6 +36,16 @@ function riskLabel(risk: ReviewRiskLevel) {
     low: "Низкий",
   };
   return labels[risk];
+}
+
+function decisionLabel(decision: ReviewDecisionValue) {
+  const labels: Record<ReviewDecisionValue, string> = {
+    approve: "Можно передать дальше",
+    reject: "Отклонено reviewer-ом",
+    request_more_evidence: "Нужно больше подтверждений",
+    mark_conflict: "Отмечен конфликт",
+  };
+  return labels[decision];
 }
 
 function toneForPriority(priority: ReviewPriority) {
@@ -136,7 +149,72 @@ function DetailList({ label, values }: { label: string; values: string[] }) {
   );
 }
 
-function ReviewItemCard({ item }: { item: ReviewQueueItem }) {
+function DecisionStatus({ decision }: { decision: ReviewDecision | null }) {
+  if (!decision) {
+    return (
+      <p className="mt-2 rounded-md bg-slate-50 px-3 py-2 text-sm text-slate-700">
+        Решения ещё не загружены.
+      </p>
+    );
+  }
+  return (
+    <div className="mt-2 rounded-md border border-teal-100 bg-teal-50 px-3 py-2 text-sm text-teal-950">
+      <div className="font-medium">{decisionLabel(decision.decision)}</div>
+      <div className="mt-1 text-teal-900">
+        {decision.reviewer} · {decision.decidedAt}
+      </div>
+      {decision.notes ? <p className="mt-2">{decision.notes}</p> : null}
+    </div>
+  );
+}
+
+function DecisionSummary({
+  report,
+  status,
+}: {
+  report: ReviewDecisionReport | null;
+  status: "ready" | "missing" | "invalid";
+}) {
+  if (status === "invalid") {
+    return (
+      <section className="rounded-lg border border-amber-200 bg-amber-50 p-5 text-sm text-amber-900">
+        Отчёт решений нельзя прочитать. Решения не применяются к очереди.
+      </section>
+    );
+  }
+  if (!report) {
+    return (
+      <section className="rounded-lg border border-slate-200 bg-white p-5 text-sm text-slate-700">
+        Решения ещё не загружены. Для обработки ручного файла используется{" "}
+        <span className="font-mono">npm run process:review-decisions</span>.
+      </section>
+    );
+  }
+  return (
+    <section className="grid gap-3 rounded-lg border border-slate-200 bg-white p-5 sm:grid-cols-3 lg:grid-cols-6">
+      <Metric label="Решений" value={report.summary.totalDecisions} />
+      <Metric label="Можно дальше" value={report.summary.approved} />
+      <Metric label="Отклонено" value={report.summary.rejected} />
+      <Metric
+        label="Нужно больше данных"
+        value={report.summary.moreEvidenceRequested}
+      />
+      <Metric label="Конфликт" value={report.summary.conflictsMarked} />
+      <Metric
+        label="Без решения"
+        value={report.summary.queueItemsWithoutDecision}
+      />
+    </section>
+  );
+}
+
+function ReviewItemCard({
+  item,
+  decision,
+}: {
+  item: ReviewQueueItem;
+  decision: ReviewDecision | null;
+}) {
   return (
     <article className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm transition-colors hover:border-slate-300">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
@@ -180,6 +258,15 @@ function ReviewItemCard({ item }: { item: ReviewQueueItem }) {
         </div>
         <div>
           <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
+            Решение reviewer-а
+          </div>
+          <DecisionStatus decision={decision} />
+        </div>
+      </div>
+
+      <div className="mt-5">
+        <div>
+          <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
             Причины
           </div>
           <ul className="mt-2 space-y-1.5">
@@ -198,11 +285,21 @@ function ReviewItemCard({ item }: { item: ReviewQueueItem }) {
 export default function ReviewQueueView({
   products,
   warnings,
+  decisionReport,
+  decisionReportStatus,
 }: {
   products: ReviewQueueProductReport[];
   warnings: string[];
+  decisionReport: ReviewDecisionReport | null;
+  decisionReportStatus: "ready" | "missing" | "invalid";
 }) {
   const items = products.flatMap((product) => product.reviewItems);
+  const decisionsByItem = new Map(
+    (decisionReport?.decisions ?? []).map((decision) => [
+      decision.reviewItemId,
+      decision,
+    ]),
+  );
 
   if (!items.length) {
     return (
@@ -214,6 +311,8 @@ export default function ReviewQueueView({
 
   return (
     <div className="space-y-8">
+      <DecisionSummary report={decisionReport} status={decisionReportStatus} />
+
       {warnings.length > 0 ? (
         <section className="rounded-lg border border-amber-200 bg-amber-50 p-5">
           <h2 className="text-base font-semibold text-amber-950">
@@ -241,7 +340,11 @@ export default function ReviewQueueView({
           </div>
           <div className="space-y-4">
             {product.reviewItems.map((item) => (
-              <ReviewItemCard key={item.reviewItemId} item={item} />
+              <ReviewItemCard
+                key={item.reviewItemId}
+                item={item}
+                decision={decisionsByItem.get(item.reviewItemId) ?? null}
+              />
             ))}
           </div>
         </section>

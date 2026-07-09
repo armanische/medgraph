@@ -143,3 +143,66 @@ The Portal must not read it directly.
 Reviewer decisions must not publish data.
 
 Only a future Verification handoff can convert approved review output into verified state, and Publication must remain a separate explicit boundary.
+
+## MVP-026 Decision Model Prototype
+
+MVP-026 added a file-level decision processor for Review Queue items.
+
+Input:
+
+- `data/research/review/decisions.manual.json`
+
+Output:
+
+- `data/research/review/review-decisions.generated.json`
+
+Command:
+
+```text
+npm run process:review-decisions
+```
+
+The current manual decision file is intentionally empty:
+
+- processed decisions: 0;
+- invalid decisions: 0;
+- queue items without decision: 8.
+
+This avoids creating real approvals before a reviewer has checked evidence.
+
+### Decision Semantics
+
+The model supports:
+
+- approve;
+- reject;
+- request more evidence;
+- mark conflict.
+
+`approve` does not create a Verified Claim.
+
+`approve` does not publish data.
+
+It only means the candidate fact may be handed to a future Verification step.
+
+### Validation Findings
+
+The processor rejects unsafe or ambiguous input:
+
+- unknown Review Queue item ids;
+- duplicate decisions for the same item;
+- approval without linked evidence and document versions;
+- rejection, evidence request or conflict marking without notes;
+- missing reviewer;
+- missing decision timestamp.
+
+### Remaining Blockers
+
+Before a real reviewer workflow, CyberMedica still needs:
+
+- reviewer authentication and authorization;
+- persistent append-only decision storage;
+- side-by-side document and evidence viewing;
+- conflict grouping;
+- reviewer assignment and audit export;
+- explicit Verification handoff separate from decision capture.
