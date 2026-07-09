@@ -1,0 +1,1310 @@
+{
+  "product": {
+    "productSlug": "wave2-hamilton-hf90",
+    "manufacturer": "Hamilton Medical",
+    "productName": "HAMILTON-HF90",
+    "model": "HAMILTON-HF90",
+    "category": "High flow oxygen therapy"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_a175796f714ce1411f5a9cab",
+      "documentCandidateId": "document_7cf01c06fa9428cd1acf510f",
+      "sourceId": "source_80b1701199934cc80a472d4c",
+      "productSlug": "wave2-hamilton-hf90",
+      "documentKey": "trusted-document:document_7cf01c06fa9428cd1acf510f",
+      "documentType": "brochure",
+      "title": "Document HAMILTON-HF90 - Advanced high flow oxygen therapy product brochure English | 14.11 MB | ELO20211006N.00 Download",
+      "language": null,
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:2dd5a34c-a92a-4107-99ca-a3e5030a36f6/HAMILTON-HF90-product-brochure_en_ELO20211006N.00.pdf",
+      "sha256": "d02a13194a684ea3feb07b622eaa79e6c405580d64d58aad95208dfffb1c0ffd",
+      "contentType": "application/pdf",
+      "byteSize": 14797644,
+      "filePath": "data/research/artifacts/artifacts/sha256/d0/2a/d02a13194a684ea3feb07b622eaa79e6c405580d64d58aad95208dfffb1c0ffd.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_80bf3a8674d570fb3671cd81",
+      "documentCandidateId": "document_a8798e6170a75df2d7401f1f",
+      "sourceId": "source_80b1701199934cc80a472d4c",
+      "productSlug": "wave2-hamilton-hf90",
+      "documentKey": "trusted-document:document_a8798e6170a75df2d7401f1f",
+      "documentType": "unknown",
+      "title": "Document HAMILTON-HF90 - ROX index English | 0.58 MB | ELO20240909N.00 Download",
+      "language": null,
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:84520ce9-f8ae-4a8b-88c9-419d74f5bef9/HAMILTON-HF90_Rox-index_Flyer_en_ELO20240909N.00.pdf",
+      "sha256": "399b8271e4d36072f511dba5aa55d60e864d3acf9c7eedec25ef6a2bf0a68201",
+      "contentType": "application/pdf",
+      "byteSize": 613124,
+      "filePath": "data/research/artifacts/artifacts/sha256/39/9b/399b8271e4d36072f511dba5aa55d60e864d3acf9c7eedec25ef6a2bf0a68201.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_891baed5551c393892ffa90b",
+      "documentCandidateId": "document_8f6c86d5b5fb444a8ae88b1e",
+      "sourceId": "source_80b1701199934cc80a472d4c",
+      "productSlug": "wave2-hamilton-hf90",
+      "documentKey": "trusted-document:document_8f6c86d5b5fb444a8ae88b1e",
+      "documentType": "unknown",
+      "title": "Download Connectivity: Patient monitoring, EHR/EMR/PDMS (PDF)",
+      "language": null,
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d3acea5c-9f1d-48d2-aa32-40ed9dd16e2a/EHR-EMS-PDMS-connectivity-technical-notes-en-ELO20150228N.09.pdf",
+      "sha256": "7e414f93581ebb0f1e6067b956efe0b41ad0a0ab16a7a09d39ebc1b36143abab",
+      "contentType": "application/pdf",
+      "byteSize": 841923,
+      "filePath": "data/research/artifacts/artifacts/sha256/7e/41/7e414f93581ebb0f1e6067b956efe0b41ad0a0ab16a7a09d39ebc1b36143abab.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_676b75f5b1fa35280d81f64c",
+      "documentCandidateId": "document_d30ec391967436c8667411e6",
+      "sourceId": "source_80b1701199934cc80a472d4c",
+      "productSlug": "wave2-hamilton-hf90",
+      "documentKey": "trusted-document:document_d30ec391967436c8667411e6",
+      "documentType": "unknown",
+      "title": "Document HAMILTON-HF90 Operator&#039;s Manual Software version 1.0.x English | 6.17 MB | 10108396.00 Download",
+      "language": null,
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e4a9bf4d-8948-4eea-ac3a-40dc4a51f9d6/HAMILTON-HF90_ops-manual_v1.0.x_en_10108396.00.pdf",
+      "sha256": "b332c64e165918acc1dfc2512461f2b980294e0b8ad90d3b0a4209ecb3f30464",
+      "contentType": "application/pdf",
+      "byteSize": 6469962,
+      "filePath": "data/research/artifacts/artifacts/sha256/b3/32/b332c64e165918acc1dfc2512461f2b980294e0b8ad90d3b0a4209ecb3f30464.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_3f7f20253f5fc518d847126f",
+      "productSlug": "wave2-hamilton-hf90",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Document HAMILTON-HF90 - Advanced high flow oxygen therapy product brochure English | 14.11 MB | ELO20211006N.00 Download",
+      "unit": null,
+      "rawText": "Document title: Document HAMILTON-HF90 - Advanced high flow oxygen therapy product brochure English | 14.11 MB | ELO20211006N.00 Download",
+      "documentVersionId": "document_version_a175796f714ce1411f5a9cab",
+      "documentCandidateId": "document_7cf01c06fa9428cd1acf510f",
+      "documentSha256": "d02a13194a684ea3feb07b622eaa79e6c405580d64d58aad95208dfffb1c0ffd",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:2dd5a34c-a92a-4107-99ca-a3e5030a36f6/HAMILTON-HF90-product-brochure_en_ELO20211006N.00.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_faeb62c1bed80b4a334569c2",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_501cfa80c725e068a81513c0",
+      "productSlug": "wave2-hamilton-hf90",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_a175796f714ce1411f5a9cab",
+      "documentCandidateId": "document_7cf01c06fa9428cd1acf510f",
+      "documentSha256": "d02a13194a684ea3feb07b622eaa79e6c405580d64d58aad95208dfffb1c0ffd",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:2dd5a34c-a92a-4107-99ca-a3e5030a36f6/HAMILTON-HF90-product-brochure_en_ELO20211006N.00.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_43aaeb76dc44c1609e4fa94a",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_f6e66eea7fd739b268ff6c7d",
+      "productSlug": "wave2-hamilton-hf90",
+      "factType": "product.manufacturer",
+      "label": "Производитель",
+      "value": "Hamilton Medical AG",
+      "unit": null,
+      "rawText": "Manufacturer: Hamilton Medical AG",
+      "documentVersionId": "document_version_a175796f714ce1411f5a9cab",
+      "documentCandidateId": "document_7cf01c06fa9428cd1acf510f",
+      "documentSha256": "d02a13194a684ea3feb07b622eaa79e6c405580d64d58aad95208dfffb1c0ffd",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:2dd5a34c-a92a-4107-99ca-a3e5030a36f6/HAMILTON-HF90-product-brochure_en_ELO20211006N.00.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 149
+      },
+      "evidenceCandidateId": "evidence_3484cd726d19b601615ec395",
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_deb2b7c2a0cff954d8fed49a",
+      "productSlug": "wave2-hamilton-hf90",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Flow rate",
+      "unit": null,
+      "rawText": "Flow rate: 2–80 l/min",
+      "documentVersionId": "document_version_a175796f714ce1411f5a9cab",
+      "documentCandidateId": "document_7cf01c06fa9428cd1acf510f",
+      "documentSha256": "d02a13194a684ea3feb07b622eaa79e6c405580d64d58aad95208dfffb1c0ffd",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:2dd5a34c-a92a-4107-99ca-a3e5030a36f6/HAMILTON-HF90-product-brochure_en_ELO20211006N.00.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 71
+      },
+      "evidenceCandidateId": "evidence_f79d6d28aa5ab07a02f6413d",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_d71314c7323b77f6eefe17b1",
+      "productSlug": "wave2-hamilton-hf90",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Battery",
+      "unit": null,
+      "rawText": "Battery power on",
+      "documentVersionId": "document_version_a175796f714ce1411f5a9cab",
+      "documentCandidateId": "document_7cf01c06fa9428cd1acf510f",
+      "documentSha256": "d02a13194a684ea3feb07b622eaa79e6c405580d64d58aad95208dfffb1c0ffd",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:2dd5a34c-a92a-4107-99ca-a3e5030a36f6/HAMILTON-HF90-product-brochure_en_ELO20211006N.00.pdf",
+      "locator": {
+        "page": 5,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 101
+      },
+      "evidenceCandidateId": "evidence_5c8dd613258f8be0b76f098e",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_4dbe95a96591ddf024631f28",
+      "productSlug": "wave2-hamilton-hf90",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Document HAMILTON-HF90 - ROX index English | 0.58 MB | ELO20240909N.00 Download",
+      "unit": null,
+      "rawText": "Document title: Document HAMILTON-HF90 - ROX index English | 0.58 MB | ELO20240909N.00 Download",
+      "documentVersionId": "document_version_80bf3a8674d570fb3671cd81",
+      "documentCandidateId": "document_a8798e6170a75df2d7401f1f",
+      "documentSha256": "399b8271e4d36072f511dba5aa55d60e864d3acf9c7eedec25ef6a2bf0a68201",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:84520ce9-f8ae-4a8b-88c9-419d74f5bef9/HAMILTON-HF90_Rox-index_Flyer_en_ELO20240909N.00.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_99df56fae5415dd244fa70a9",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_fdea8e2f4c304fff261b4edc",
+      "productSlug": "wave2-hamilton-hf90",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_80bf3a8674d570fb3671cd81",
+      "documentCandidateId": "document_a8798e6170a75df2d7401f1f",
+      "documentSha256": "399b8271e4d36072f511dba5aa55d60e864d3acf9c7eedec25ef6a2bf0a68201",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:84520ce9-f8ae-4a8b-88c9-419d74f5bef9/HAMILTON-HF90_Rox-index_Flyer_en_ELO20240909N.00.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_4ad5470b4a7e0ca6b0ae5144",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_5b6d81a02753b732c534c636",
+      "productSlug": "wave2-hamilton-hf90",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Download Connectivity: Patient monitoring, EHR/EMR/PDMS (PDF)",
+      "unit": null,
+      "rawText": "Document title: Download Connectivity: Patient monitoring, EHR/EMR/PDMS (PDF)",
+      "documentVersionId": "document_version_891baed5551c393892ffa90b",
+      "documentCandidateId": "document_8f6c86d5b5fb444a8ae88b1e",
+      "documentSha256": "7e414f93581ebb0f1e6067b956efe0b41ad0a0ab16a7a09d39ebc1b36143abab",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d3acea5c-9f1d-48d2-aa32-40ed9dd16e2a/EHR-EMS-PDMS-connectivity-technical-notes-en-ELO20150228N.09.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_20bc815e28fa17ca50771bfd",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_a89149433b0335dad2fc73c7",
+      "productSlug": "wave2-hamilton-hf90",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_891baed5551c393892ffa90b",
+      "documentCandidateId": "document_8f6c86d5b5fb444a8ae88b1e",
+      "documentSha256": "7e414f93581ebb0f1e6067b956efe0b41ad0a0ab16a7a09d39ebc1b36143abab",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d3acea5c-9f1d-48d2-aa32-40ed9dd16e2a/EHR-EMS-PDMS-connectivity-technical-notes-en-ELO20150228N.09.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_ebb1e9b19057400007ecc160",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_a2789d9e7c324dc0422b912c",
+      "productSlug": "wave2-hamilton-hf90",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Document HAMILTON-HF90 Operator&#039;s Manual Software version 1.0.x English | 6.17 MB | 10108396.00 Download",
+      "unit": null,
+      "rawText": "Document title: Document HAMILTON-HF90 Operator&#039;s Manual Software version 1.0.x English | 6.17 MB | 10108396.00 Download",
+      "documentVersionId": "document_version_676b75f5b1fa35280d81f64c",
+      "documentCandidateId": "document_d30ec391967436c8667411e6",
+      "documentSha256": "b332c64e165918acc1dfc2512461f2b980294e0b8ad90d3b0a4209ecb3f30464",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e4a9bf4d-8948-4eea-ac3a-40dc4a51f9d6/HAMILTON-HF90_ops-manual_v1.0.x_en_10108396.00.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_248ff5ad9fead4ac5d00e40e",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_6a41b83360f6e40604e2a4ed",
+      "productSlug": "wave2-hamilton-hf90",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_676b75f5b1fa35280d81f64c",
+      "documentCandidateId": "document_d30ec391967436c8667411e6",
+      "documentSha256": "b332c64e165918acc1dfc2512461f2b980294e0b8ad90d3b0a4209ecb3f30464",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e4a9bf4d-8948-4eea-ac3a-40dc4a51f9d6/HAMILTON-HF90_ops-manual_v1.0.x_en_10108396.00.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_bb18d59daa0b589cf135085a",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_a26acc10ab7a489fe14d7c0e",
+      "productSlug": "wave2-hamilton-hf90",
+      "factType": "product.battery",
+      "label": "Аккумулятор",
+      "value": "powered",
+      "unit": null,
+      "rawText": "battery-powered",
+      "documentVersionId": "document_version_676b75f5b1fa35280d81f64c",
+      "documentCandidateId": "document_d30ec391967436c8667411e6",
+      "documentSha256": "b332c64e165918acc1dfc2512461f2b980294e0b8ad90d3b0a4209ecb3f30464",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e4a9bf4d-8948-4eea-ac3a-40dc4a51f9d6/HAMILTON-HF90_ops-manual_v1.0.x_en_10108396.00.pdf",
+      "locator": {
+        "page": 20,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 588
+      },
+      "evidenceCandidateId": "evidence_61ae8bced98490bd57e5fc7f",
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_f504291dc8ca1a3976ec087e",
+      "productSlug": "wave2-hamilton-hf90",
+      "factType": "product.softwareVersion",
+      "label": "Версия программного обеспечения",
+      "value": "The software",
+      "unit": null,
+      "rawText": "Software version: The software",
+      "documentVersionId": "document_version_676b75f5b1fa35280d81f64c",
+      "documentCandidateId": "document_d30ec391967436c8667411e6",
+      "documentSha256": "b332c64e165918acc1dfc2512461f2b980294e0b8ad90d3b0a4209ecb3f30464",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e4a9bf4d-8948-4eea-ac3a-40dc4a51f9d6/HAMILTON-HF90_ops-manual_v1.0.x_en_10108396.00.pdf",
+      "locator": {
+        "page": 12,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 318
+      },
+      "evidenceCandidateId": "evidence_d9b6d1616a5bab498919cae4",
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_ab3ee3c3ad5390c82e921e50",
+      "productSlug": "wave2-hamilton-hf90",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "display",
+      "unit": null,
+      "rawText": "display ................................................................. 39",
+      "documentVersionId": "document_version_676b75f5b1fa35280d81f64c",
+      "documentCandidateId": "document_d30ec391967436c8667411e6",
+      "documentSha256": "b332c64e165918acc1dfc2512461f2b980294e0b8ad90d3b0a4209ecb3f30464",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e4a9bf4d-8948-4eea-ac3a-40dc4a51f9d6/HAMILTON-HF90_ops-manual_v1.0.x_en_10108396.00.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 112
+      },
+      "evidenceCandidateId": "evidence_b2534d4d32662c3000a06e4e",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_0abde6f1968b6821f171f68f",
+      "productSlug": "wave2-hamilton-hf90",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "battery",
+      "unit": null,
+      "rawText": "battery power ..................................................................... 45",
+      "documentVersionId": "document_version_676b75f5b1fa35280d81f64c",
+      "documentCandidateId": "document_d30ec391967436c8667411e6",
+      "documentSha256": "b332c64e165918acc1dfc2512461f2b980294e0b8ad90d3b0a4209ecb3f30464",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e4a9bf4d-8948-4eea-ac3a-40dc4a51f9d6/HAMILTON-HF90_ops-manual_v1.0.x_en_10108396.00.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 121
+      },
+      "evidenceCandidateId": "evidence_9f07437e006bb8c65606f460",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_ec935678d4cb30b97ff360b1",
+      "productSlug": "wave2-hamilton-hf90",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Compatibility",
+      "unit": null,
+      "rawText": "Compatibility), and",
+      "documentVersionId": "document_version_676b75f5b1fa35280d81f64c",
+      "documentCandidateId": "document_d30ec391967436c8667411e6",
+      "documentSha256": "b332c64e165918acc1dfc2512461f2b980294e0b8ad90d3b0a4209ecb3f30464",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e4a9bf4d-8948-4eea-ac3a-40dc4a51f9d6/HAMILTON-HF90_ops-manual_v1.0.x_en_10108396.00.pdf",
+      "locator": {
+        "page": 19,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 528
+      },
+      "evidenceCandidateId": "evidence_e2c70bc242ff0a08e3112e06",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_be3c1f0a63785570bba43393",
+      "productSlug": "wave2-hamilton-hf90",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "flow rate",
+      "unit": null,
+      "rawText": "flow rate is outside the",
+      "documentVersionId": "document_version_676b75f5b1fa35280d81f64c",
+      "documentCandidateId": "document_d30ec391967436c8667411e6",
+      "documentSha256": "b332c64e165918acc1dfc2512461f2b980294e0b8ad90d3b0a4209ecb3f30464",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e4a9bf4d-8948-4eea-ac3a-40dc4a51f9d6/HAMILTON-HF90_ops-manual_v1.0.x_en_10108396.00.pdf",
+      "locator": {
+        "page": 23,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 809
+      },
+      "evidenceCandidateId": "evidence_322e13e260c76b3d9be2f399",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_1f9615f7f75889f5af93eedd",
+      "productSlug": "wave2-hamilton-hf90",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Weight",
+      "unit": null,
+      "rawText": "Weight Device (without options",
+      "documentVersionId": "document_version_676b75f5b1fa35280d81f64c",
+      "documentCandidateId": "document_d30ec391967436c8667411e6",
+      "documentSha256": "b332c64e165918acc1dfc2512461f2b980294e0b8ad90d3b0a4209ecb3f30464",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e4a9bf4d-8948-4eea-ac3a-40dc4a51f9d6/HAMILTON-HF90_ops-manual_v1.0.x_en_10108396.00.pdf",
+      "locator": {
+        "page": 127,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 5956
+      },
+      "evidenceCandidateId": "evidence_0d08b9d59baedbe7c318f0b9",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_26f9ed6a5a80875832de47bb",
+      "productSlug": "wave2-hamilton-hf90",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Dimensions",
+      "unit": null,
+      "rawText": "Dimensions See the following figures.",
+      "documentVersionId": "document_version_676b75f5b1fa35280d81f64c",
+      "documentCandidateId": "document_d30ec391967436c8667411e6",
+      "documentSha256": "b332c64e165918acc1dfc2512461f2b980294e0b8ad90d3b0a4209ecb3f30464",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e4a9bf4d-8948-4eea-ac3a-40dc4a51f9d6/HAMILTON-HF90_ops-manual_v1.0.x_en_10108396.00.pdf",
+      "locator": {
+        "page": 127,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 5965
+      },
+      "evidenceCandidateId": "evidence_f41c5eac51f269620b96de9b",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_faeb62c1bed80b4a334569c2",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_a175796f714ce1411f5a9cab",
+      "documentCandidateId": "document_7cf01c06fa9428cd1acf510f",
+      "sha256": "d02a13194a684ea3feb07b622eaa79e6c405580d64d58aad95208dfffb1c0ffd",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:2dd5a34c-a92a-4107-99ca-a3e5030a36f6/HAMILTON-HF90-product-brochure_en_ELO20211006N.00.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Document HAMILTON-HF90 - Advanced high flow oxygen therapy product brochure English | 14.11 MB | ELO20211006N.00 Download",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_43aaeb76dc44c1609e4fa94a",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_a175796f714ce1411f5a9cab",
+      "documentCandidateId": "document_7cf01c06fa9428cd1acf510f",
+      "sha256": "d02a13194a684ea3feb07b622eaa79e6c405580d64d58aad95208dfffb1c0ffd",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:2dd5a34c-a92a-4107-99ca-a3e5030a36f6/HAMILTON-HF90-product-brochure_en_ELO20211006N.00.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_3484cd726d19b601615ec395",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_a175796f714ce1411f5a9cab",
+      "documentCandidateId": "document_7cf01c06fa9428cd1acf510f",
+      "sha256": "d02a13194a684ea3feb07b622eaa79e6c405580d64d58aad95208dfffb1c0ffd",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:2dd5a34c-a92a-4107-99ca-a3e5030a36f6/HAMILTON-HF90-product-brochure_en_ELO20211006N.00.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 149
+      },
+      "quotedText": "Manufacturer: Hamilton Medical AG",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_99df56fae5415dd244fa70a9",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_80bf3a8674d570fb3671cd81",
+      "documentCandidateId": "document_a8798e6170a75df2d7401f1f",
+      "sha256": "399b8271e4d36072f511dba5aa55d60e864d3acf9c7eedec25ef6a2bf0a68201",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:84520ce9-f8ae-4a8b-88c9-419d74f5bef9/HAMILTON-HF90_Rox-index_Flyer_en_ELO20240909N.00.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Document HAMILTON-HF90 - ROX index English | 0.58 MB | ELO20240909N.00 Download",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_4ad5470b4a7e0ca6b0ae5144",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_80bf3a8674d570fb3671cd81",
+      "documentCandidateId": "document_a8798e6170a75df2d7401f1f",
+      "sha256": "399b8271e4d36072f511dba5aa55d60e864d3acf9c7eedec25ef6a2bf0a68201",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:84520ce9-f8ae-4a8b-88c9-419d74f5bef9/HAMILTON-HF90_Rox-index_Flyer_en_ELO20240909N.00.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_20bc815e28fa17ca50771bfd",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_891baed5551c393892ffa90b",
+      "documentCandidateId": "document_8f6c86d5b5fb444a8ae88b1e",
+      "sha256": "7e414f93581ebb0f1e6067b956efe0b41ad0a0ab16a7a09d39ebc1b36143abab",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d3acea5c-9f1d-48d2-aa32-40ed9dd16e2a/EHR-EMS-PDMS-connectivity-technical-notes-en-ELO20150228N.09.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Download Connectivity: Patient monitoring, EHR/EMR/PDMS (PDF)",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ebb1e9b19057400007ecc160",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_891baed5551c393892ffa90b",
+      "documentCandidateId": "document_8f6c86d5b5fb444a8ae88b1e",
+      "sha256": "7e414f93581ebb0f1e6067b956efe0b41ad0a0ab16a7a09d39ebc1b36143abab",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d3acea5c-9f1d-48d2-aa32-40ed9dd16e2a/EHR-EMS-PDMS-connectivity-technical-notes-en-ELO20150228N.09.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_248ff5ad9fead4ac5d00e40e",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_676b75f5b1fa35280d81f64c",
+      "documentCandidateId": "document_d30ec391967436c8667411e6",
+      "sha256": "b332c64e165918acc1dfc2512461f2b980294e0b8ad90d3b0a4209ecb3f30464",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e4a9bf4d-8948-4eea-ac3a-40dc4a51f9d6/HAMILTON-HF90_ops-manual_v1.0.x_en_10108396.00.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Document HAMILTON-HF90 Operator&#039;s Manual Software version 1.0.x English | 6.17 MB | 10108396.00 Download",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_bb18d59daa0b589cf135085a",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_676b75f5b1fa35280d81f64c",
+      "documentCandidateId": "document_d30ec391967436c8667411e6",
+      "sha256": "b332c64e165918acc1dfc2512461f2b980294e0b8ad90d3b0a4209ecb3f30464",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e4a9bf4d-8948-4eea-ac3a-40dc4a51f9d6/HAMILTON-HF90_ops-manual_v1.0.x_en_10108396.00.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_61ae8bced98490bd57e5fc7f",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_676b75f5b1fa35280d81f64c",
+      "documentCandidateId": "document_d30ec391967436c8667411e6",
+      "sha256": "b332c64e165918acc1dfc2512461f2b980294e0b8ad90d3b0a4209ecb3f30464",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e4a9bf4d-8948-4eea-ac3a-40dc4a51f9d6/HAMILTON-HF90_ops-manual_v1.0.x_en_10108396.00.pdf",
+      "locator": {
+        "page": 20,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 588
+      },
+      "quotedText": "battery-powered",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_d9b6d1616a5bab498919cae4",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_676b75f5b1fa35280d81f64c",
+      "documentCandidateId": "document_d30ec391967436c8667411e6",
+      "sha256": "b332c64e165918acc1dfc2512461f2b980294e0b8ad90d3b0a4209ecb3f30464",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e4a9bf4d-8948-4eea-ac3a-40dc4a51f9d6/HAMILTON-HF90_ops-manual_v1.0.x_en_10108396.00.pdf",
+      "locator": {
+        "page": 12,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 318
+      },
+      "quotedText": "Software version: The software",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_ea6a9249e08662ed1c25599c",
+      "productSlug": "wave2-hamilton-hf90",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Document HAMILTON-HF90 - Advanced high flow oxygen therapy product brochure English | 14.11 MB | ELO20211006N.00 Download",
+        "unit": null
+      },
+      "rawText": "Document title: Document HAMILTON-HF90 - Advanced high flow oxygen therapy product brochure English | 14.11 MB | ELO20211006N.00 Download",
+      "evidenceCandidateIds": [
+        "evidence_faeb62c1bed80b4a334569c2"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_0553a66a1270a691408637f0",
+      "productSlug": "wave2-hamilton-hf90",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_43aaeb76dc44c1609e4fa94a"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_754a7ec380e75804ad3455ca",
+      "productSlug": "wave2-hamilton-hf90",
+      "subjectType": "product",
+      "suggestedClaimType": "product.manufacturer",
+      "valuePayload": {
+        "value": "Hamilton Medical AG",
+        "unit": null
+      },
+      "rawText": "Manufacturer: Hamilton Medical AG",
+      "evidenceCandidateIds": [
+        "evidence_3484cd726d19b601615ec395"
+      ],
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_b15acb2a29805ccc34a67646",
+      "productSlug": "wave2-hamilton-hf90",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Flow rate",
+        "unit": null
+      },
+      "rawText": "Flow rate: 2–80 l/min",
+      "evidenceCandidateIds": [
+        "evidence_f79d6d28aa5ab07a02f6413d"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_0723dda92696f986670cae1c",
+      "productSlug": "wave2-hamilton-hf90",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Battery",
+        "unit": null
+      },
+      "rawText": "Battery power on",
+      "evidenceCandidateIds": [
+        "evidence_5c8dd613258f8be0b76f098e"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_cf6fdfbc213284b8411b6424",
+      "productSlug": "wave2-hamilton-hf90",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Document HAMILTON-HF90 - ROX index English | 0.58 MB | ELO20240909N.00 Download",
+        "unit": null
+      },
+      "rawText": "Document title: Document HAMILTON-HF90 - ROX index English | 0.58 MB | ELO20240909N.00 Download",
+      "evidenceCandidateIds": [
+        "evidence_99df56fae5415dd244fa70a9"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_67db831f91b18d59100262fc",
+      "productSlug": "wave2-hamilton-hf90",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_4ad5470b4a7e0ca6b0ae5144"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_3eb4d694cac659f034e25e08",
+      "productSlug": "wave2-hamilton-hf90",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Download Connectivity: Patient monitoring, EHR/EMR/PDMS (PDF)",
+        "unit": null
+      },
+      "rawText": "Document title: Download Connectivity: Patient monitoring, EHR/EMR/PDMS (PDF)",
+      "evidenceCandidateIds": [
+        "evidence_20bc815e28fa17ca50771bfd"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_a10fa0727fb0f7fb1b1836db",
+      "productSlug": "wave2-hamilton-hf90",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_ebb1e9b19057400007ecc160"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_4ccdd3bcfd06b0ace815b330",
+      "productSlug": "wave2-hamilton-hf90",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Document HAMILTON-HF90 Operator&#039;s Manual Software version 1.0.x English | 6.17 MB | 10108396.00 Download",
+        "unit": null
+      },
+      "rawText": "Document title: Document HAMILTON-HF90 Operator&#039;s Manual Software version 1.0.x English | 6.17 MB | 10108396.00 Download",
+      "evidenceCandidateIds": [
+        "evidence_248ff5ad9fead4ac5d00e40e"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_91f3f318f66760bf6c79a0d7",
+      "productSlug": "wave2-hamilton-hf90",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_bb18d59daa0b589cf135085a"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_40f101e86f7c5742a50e5a86",
+      "productSlug": "wave2-hamilton-hf90",
+      "subjectType": "product",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "powered",
+        "unit": null
+      },
+      "rawText": "battery-powered",
+      "evidenceCandidateIds": [
+        "evidence_61ae8bced98490bd57e5fc7f"
+      ],
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_5da7e6eb4d4dabda30dd5f55",
+      "productSlug": "wave2-hamilton-hf90",
+      "subjectType": "product",
+      "suggestedClaimType": "product.softwareVersion",
+      "valuePayload": {
+        "value": "The software",
+        "unit": null
+      },
+      "rawText": "Software version: The software",
+      "evidenceCandidateIds": [
+        "evidence_d9b6d1616a5bab498919cae4"
+      ],
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_6a602ee07dc7f8b414afa3a7",
+      "productSlug": "wave2-hamilton-hf90",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "rawText": "display ................................................................. 39",
+      "evidenceCandidateIds": [
+        "evidence_b2534d4d32662c3000a06e4e"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_1f7dc503237a6fe3bc5d28e7",
+      "productSlug": "wave2-hamilton-hf90",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "rawText": "battery power ..................................................................... 45",
+      "evidenceCandidateIds": [
+        "evidence_9f07437e006bb8c65606f460"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_d77178efe34af8b75daa9ddd",
+      "productSlug": "wave2-hamilton-hf90",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Compatibility",
+        "unit": null
+      },
+      "rawText": "Compatibility), and",
+      "evidenceCandidateIds": [
+        "evidence_e2c70bc242ff0a08e3112e06"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_85ef7c701929d981d9cd701a",
+      "productSlug": "wave2-hamilton-hf90",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "flow rate",
+        "unit": null
+      },
+      "rawText": "flow rate is outside the",
+      "evidenceCandidateIds": [
+        "evidence_322e13e260c76b3d9be2f399"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_2c9a8576745a562fda0b2ce4",
+      "productSlug": "wave2-hamilton-hf90",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "rawText": "Weight Device (without options",
+      "evidenceCandidateIds": [
+        "evidence_0d08b9d59baedbe7c318f0b9"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_51692eea31a9ff7d75e5ea42",
+      "productSlug": "wave2-hamilton-hf90",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "rawText": "Dimensions See the following figures.",
+      "evidenceCandidateIds": [
+        "evidence_f41c5eac51f269620b96de9b"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "warnings": [
+    "Resolver rejected offsite document URL: https://youtu.be/6EPiYLTrHBE",
+    "Resolver rejected offsite document URL: https://youtu.be/5n22mT7L_nw",
+    "Resolver rejected offsite document URL: https://www.facebook.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://twitter.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/hamiltonmedicalag",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/hamilton-medical-ag/mycompany/verification/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/accounts/login/?next=/hamiltonmedical/",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

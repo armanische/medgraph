@@ -1,0 +1,89 @@
+{
+  "product": {
+    "productSlug": "wave2-hamilton-em7",
+    "manufacturer": "Hamilton Medical",
+    "productName": "HAMILTON-EM7",
+    "model": "HAMILTON-EM7",
+    "category": "Аппарат ИВЛ"
+  },
+  "sourceCandidates": [
+    {
+      "sourceId": "source_53b068aa5397665d30eee864",
+      "productSlug": "wave2-hamilton-em7",
+      "manufacturer": "Hamilton Medical",
+      "productName": "HAMILTON-EM7",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.hamilton-medical.com/en/Prehospital-transport/Products/HAMILTON-EM7.html",
+      "title": "HAMILTON-EM7 official product page",
+      "snippet": "Official Hamilton product page discovered from the official products index during Wave 2 Sprint 1; candidate-only source.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official Hamilton product page discovered from the official products index during Wave 2 Sprint 1; candidate-only source."
+      ]
+    }
+  ],
+  "documentCandidates": [],
+  "resolvedDocumentLinks": [],
+  "resolverWarnings": [
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/15165301",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/41117573",
+    "Resolver rejected offsite document URL: https://www.facebook.com/profile.php?id=61575425896673",
+    "Resolver rejected offsite document URL: https://x.com/hammedicalems",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/hamiltonmedicalag",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/hamilton-medical-ems/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/hamiltonmedicalems/",
+    "Resolver found no document links on https://www.hamilton-medical.com/en/Prehospital-transport/Products/HAMILTON-EM7.html."
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-hamilton-em7",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-hamilton-em7",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-hamilton-em7",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/15165301",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/41117573",
+    "Resolver rejected offsite document URL: https://www.facebook.com/profile.php?id=61575425896673",
+    "Resolver rejected offsite document URL: https://x.com/hammedicalems",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/hamiltonmedicalag",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/hamilton-medical-ems/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/hamiltonmedicalems/",
+    "Resolver found no document links on https://www.hamilton-medical.com/en/Prehospital-transport/Products/HAMILTON-EM7.html.",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

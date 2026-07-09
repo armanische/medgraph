@@ -1,0 +1,1283 @@
+{
+  "product": {
+    "productSlug": "wave2-hamilton-h900",
+    "manufacturer": "Hamilton Medical",
+    "productName": "HAMILTON-H900",
+    "model": "HAMILTON-H900",
+    "category": "Увлажнитель дыхательных смесей"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_16ba5f16f0741137880299ce",
+      "productSlug": "wave2-hamilton-h900",
+      "productTitle": "HAMILTON-H900",
+      "claimCandidateId": "claim_cc49a65a461fc1e62abec471",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Document HAMILTON-H900 - Intelligent humidification for all patient groups English | 1.91 MB | 689504.05 Download",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_edc383cbc32db7abc0f9b699"
+      ],
+      "documentVersionIds": [
+        "document_version_d909f3a59f505a8f234d49f9"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:42ef56ba-06fd-4937-a6b1-dc4667fb9eb9/HAMILTON-H900_brochure_en_689504.05.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5101e8a58717019acec8c70e",
+      "productSlug": "wave2-hamilton-h900",
+      "productTitle": "HAMILTON-H900",
+      "claimCandidateId": "claim_32b1de2f5f9e16edd051c956",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_96586821e0354fd423fb0f25"
+      ],
+      "documentVersionIds": [
+        "document_version_d909f3a59f505a8f234d49f9"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:42ef56ba-06fd-4937-a6b1-dc4667fb9eb9/HAMILTON-H900_brochure_en_689504.05.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_ed772ff40dfa083786e83afd",
+      "productSlug": "wave2-hamilton-h900",
+      "productTitle": "HAMILTON-H900",
+      "claimCandidateId": "claim_2c5d19f3b10e2bb26ca68c67",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "ventilation mode",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_d8978004c19866354e590e8b"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_dfed32a200ab5b3601ce8686",
+      "productSlug": "wave2-hamilton-h900",
+      "productTitle": "HAMILTON-H900",
+      "claimCandidateId": "claim_ebbb9254c088a3b526f0d716",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Document HAMILTON-H900 Instructions for use Software version 1.10x English, German, French, Spanish, Italian, Portuguese, Chinese, Russian, Turkish | 4.97 MB | 624431.10 Download",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_fc7a24ede9b48fe112ecccd8"
+      ],
+      "documentVersionIds": [
+        "document_version_2485f616fbab418f085469b4"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_daf0df8515ec09623374c15d",
+      "productSlug": "wave2-hamilton-h900",
+      "productTitle": "HAMILTON-H900",
+      "claimCandidateId": "claim_71e4d5a1947e603ab1d92e64",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "ifu",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_75cf3a4fce3ecf0865b5e46d"
+      ],
+      "documentVersionIds": [
+        "document_version_2485f616fbab418f085469b4"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_4b86037abe784f8c4e5c1c04",
+      "productSlug": "wave2-hamilton-h900",
+      "productTitle": "HAMILTON-H900",
+      "claimCandidateId": "claim_63d0299dce7a891d571bf90d",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "INV , NIV , HiFlow",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_522e85070502a2c5c0bc2a78"
+      ],
+      "documentVersionIds": [
+        "document_version_2485f616fbab418f085469b4"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_3d4c48447f040e9e735e267b",
+      "productSlug": "wave2-hamilton-h900",
+      "productTitle": "HAMILTON-H900",
+      "claimCandidateId": "claim_29811fe243e3e7bf8bb505ce",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Invasive (INV",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_7e8a1924e3e81823c42dd6ad"
+      ],
+      "documentVersionIds": [
+        "document_version_2485f616fbab418f085469b4"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_9dc80c14862790956dd81d89",
+      "productSlug": "wave2-hamilton-h900",
+      "productTitle": "HAMILTON-H900",
+      "claimCandidateId": "claim_94da844049bd41261fa65253",
+      "suggestedClaimType": "product.warnings",
+      "valuePayload": {
+        "value": "Hot surface",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_3eb2a5354f747eceb1029fe2"
+      ],
+      "documentVersionIds": [
+        "document_version_2485f616fbab418f085469b4"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "critical",
+      "riskLevel": "high",
+      "reasons": [
+        "High-risk clinical, safety, compatibility or procurement claim.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_cc97d6f6a85ba4e560a42e2b",
+      "productSlug": "wave2-hamilton-h900",
+      "productTitle": "HAMILTON-H900",
+      "claimCandidateId": "claim_7d348bb560414d9d3c4e5d4b",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_f1a7009ac185fc9a153ecb7d"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_37e1df0e44356d0957b08fcf",
+      "productSlug": "wave2-hamilton-h900",
+      "productTitle": "HAMILTON-H900",
+      "claimCandidateId": "claim_aa25b964daeb5f00f644bc3e",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Compatibility",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_5db1cd939960d5003a3ebf99"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_32ccb5e4783c6e57efe843d3",
+      "productSlug": "wave2-hamilton-h900",
+      "productTitle": "HAMILTON-H900",
+      "claimCandidateId": "claim_a64fa08b6e400b1ac6bec7b3",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "flow rate",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_0f1a695f13a3d75c2c8cb6db"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_d11c33bc6e252bb5e910db1c",
+      "productSlug": "wave2-hamilton-h900",
+      "productTitle": "HAMILTON-H900",
+      "claimCandidateId": "claim_11bb623bc23bd795be90f9af",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_2ec890f5cbc26fa5a38a997c"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_48ac5769f763d011abbe4de0",
+      "productSlug": "wave2-hamilton-h900",
+      "productTitle": "HAMILTON-H900",
+      "claimCandidateId": "claim_acc35da3cf93b2150a9ee3c4",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_b5942e5150ef934d7b0dc6b7"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_05b3c4d39ef266ea0d89896c",
+      "productSlug": "wave2-hamilton-h900",
+      "productTitle": "HAMILTON-H900",
+      "claimCandidateId": "claim_121069ab563eddf4ecc6388f",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Document HAMILTON-H900 Technical specifications for software v1.10x English | 0.21 MB | 689509.05 Download",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_e9f1ab0437cf4493a68c7196"
+      ],
+      "documentVersionIds": [
+        "document_version_7d3e33e1392da2d7d0e44dd2"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_711024ff02724198c4abb4a7",
+      "productSlug": "wave2-hamilton-h900",
+      "productTitle": "HAMILTON-H900",
+      "claimCandidateId": "claim_54f15f4972713b736abcb02a",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "datasheet",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_8338717ff0c21f4d8fcfa60e"
+      ],
+      "documentVersionIds": [
+        "document_version_7d3e33e1392da2d7d0e44dd2"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_4b0605f446a9e6034304741e",
+      "productSlug": "wave2-hamilton-h900",
+      "productTitle": "HAMILTON-H900",
+      "claimCandidateId": "claim_adc87a0a5e98451f757dde00",
+      "suggestedClaimType": "product.manufacturer",
+      "valuePayload": {
+        "value": "Hamilton Medical AG",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_b604ba4812461118f312fad3"
+      ],
+      "documentVersionIds": [
+        "document_version_7d3e33e1392da2d7d0e44dd2"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Identity data affects product matching and review routing.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_c5e68f3e0b91a6bcbf5c1d30",
+      "productSlug": "wave2-hamilton-h900",
+      "productTitle": "HAMILTON-H900",
+      "claimCandidateId": "claim_8f2e510f4f014be35ad7d189",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Flow rate",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c23dedd04fe6a4d2bef638db"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_f602ac6e93932ee81e992d7e",
+      "productSlug": "wave2-hamilton-h900",
+      "productTitle": "HAMILTON-H900",
+      "claimCandidateId": "claim_c1bbdc61a70c1ab304def69b",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_6c7c35b05c1e4cb7ac7f88f5"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_af464caae1968b98675805ae",
+      "productSlug": "wave2-hamilton-h900",
+      "productTitle": "HAMILTON-H900",
+      "claimCandidateId": "claim_ba5b9638c8ddc6ffe207f770",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_a07000f16b64fb03d82e2269"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_05a927ff6771e1b365540ba4",
+      "productSlug": "wave2-hamilton-h900",
+      "productTitle": "HAMILTON-H900",
+      "claimCandidateId": "claim_2fca06ed8bf057f3cadf0009",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_e002b046a550aa3b1fb3d457"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_16ba5f16f0741137880299ce",
+        "productSlug": "wave2-hamilton-h900",
+        "productTitle": "HAMILTON-H900",
+        "claimCandidateId": "claim_cc49a65a461fc1e62abec471",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Document HAMILTON-H900 - Intelligent humidification for all patient groups English | 1.91 MB | 689504.05 Download",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_edc383cbc32db7abc0f9b699"
+        ],
+        "documentVersionIds": [
+          "document_version_d909f3a59f505a8f234d49f9"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:42ef56ba-06fd-4937-a6b1-dc4667fb9eb9/HAMILTON-H900_brochure_en_689504.05.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_dfed32a200ab5b3601ce8686",
+        "productSlug": "wave2-hamilton-h900",
+        "productTitle": "HAMILTON-H900",
+        "claimCandidateId": "claim_ebbb9254c088a3b526f0d716",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Document HAMILTON-H900 Instructions for use Software version 1.10x English, German, French, Spanish, Italian, Portuguese, Chinese, Russian, Turkish | 4.97 MB | 624431.10 Download",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_fc7a24ede9b48fe112ecccd8"
+        ],
+        "documentVersionIds": [
+          "document_version_2485f616fbab418f085469b4"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_05b3c4d39ef266ea0d89896c",
+        "productSlug": "wave2-hamilton-h900",
+        "productTitle": "HAMILTON-H900",
+        "claimCandidateId": "claim_121069ab563eddf4ecc6388f",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Document HAMILTON-H900 Technical specifications for software v1.10x English | 0.21 MB | 689509.05 Download",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_e9f1ab0437cf4493a68c7196"
+        ],
+        "documentVersionIds": [
+          "document_version_7d3e33e1392da2d7d0e44dd2"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_5101e8a58717019acec8c70e",
+        "productSlug": "wave2-hamilton-h900",
+        "productTitle": "HAMILTON-H900",
+        "claimCandidateId": "claim_32b1de2f5f9e16edd051c956",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_96586821e0354fd423fb0f25"
+        ],
+        "documentVersionIds": [
+          "document_version_d909f3a59f505a8f234d49f9"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:42ef56ba-06fd-4937-a6b1-dc4667fb9eb9/HAMILTON-H900_brochure_en_689504.05.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_daf0df8515ec09623374c15d",
+        "productSlug": "wave2-hamilton-h900",
+        "productTitle": "HAMILTON-H900",
+        "claimCandidateId": "claim_71e4d5a1947e603ab1d92e64",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "ifu",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_75cf3a4fce3ecf0865b5e46d"
+        ],
+        "documentVersionIds": [
+          "document_version_2485f616fbab418f085469b4"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_711024ff02724198c4abb4a7",
+        "productSlug": "wave2-hamilton-h900",
+        "productTitle": "HAMILTON-H900",
+        "claimCandidateId": "claim_54f15f4972713b736abcb02a",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "datasheet",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_8338717ff0c21f4d8fcfa60e"
+        ],
+        "documentVersionIds": [
+          "document_version_7d3e33e1392da2d7d0e44dd2"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "technical.term": [
+      {
+        "reviewItemId": "review_item_ed772ff40dfa083786e83afd",
+        "productSlug": "wave2-hamilton-h900",
+        "productTitle": "HAMILTON-H900",
+        "claimCandidateId": "claim_2c5d19f3b10e2bb26ca68c67",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "ventilation mode",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_d8978004c19866354e590e8b"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_cc97d6f6a85ba4e560a42e2b",
+        "productSlug": "wave2-hamilton-h900",
+        "productTitle": "HAMILTON-H900",
+        "claimCandidateId": "claim_7d348bb560414d9d3c4e5d4b",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_f1a7009ac185fc9a153ecb7d"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_37e1df0e44356d0957b08fcf",
+        "productSlug": "wave2-hamilton-h900",
+        "productTitle": "HAMILTON-H900",
+        "claimCandidateId": "claim_aa25b964daeb5f00f644bc3e",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Compatibility",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_5db1cd939960d5003a3ebf99"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_32ccb5e4783c6e57efe843d3",
+        "productSlug": "wave2-hamilton-h900",
+        "productTitle": "HAMILTON-H900",
+        "claimCandidateId": "claim_a64fa08b6e400b1ac6bec7b3",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "flow rate",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_0f1a695f13a3d75c2c8cb6db"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_d11c33bc6e252bb5e910db1c",
+        "productSlug": "wave2-hamilton-h900",
+        "productTitle": "HAMILTON-H900",
+        "claimCandidateId": "claim_11bb623bc23bd795be90f9af",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_2ec890f5cbc26fa5a38a997c"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_48ac5769f763d011abbe4de0",
+        "productSlug": "wave2-hamilton-h900",
+        "productTitle": "HAMILTON-H900",
+        "claimCandidateId": "claim_acc35da3cf93b2150a9ee3c4",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_b5942e5150ef934d7b0dc6b7"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_c5e68f3e0b91a6bcbf5c1d30",
+        "productSlug": "wave2-hamilton-h900",
+        "productTitle": "HAMILTON-H900",
+        "claimCandidateId": "claim_8f2e510f4f014be35ad7d189",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Flow rate",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c23dedd04fe6a4d2bef638db"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_f602ac6e93932ee81e992d7e",
+        "productSlug": "wave2-hamilton-h900",
+        "productTitle": "HAMILTON-H900",
+        "claimCandidateId": "claim_c1bbdc61a70c1ab304def69b",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_6c7c35b05c1e4cb7ac7f88f5"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_af464caae1968b98675805ae",
+        "productSlug": "wave2-hamilton-h900",
+        "productTitle": "HAMILTON-H900",
+        "claimCandidateId": "claim_ba5b9638c8ddc6ffe207f770",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_a07000f16b64fb03d82e2269"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_05a927ff6771e1b365540ba4",
+        "productSlug": "wave2-hamilton-h900",
+        "productTitle": "HAMILTON-H900",
+        "claimCandidateId": "claim_2fca06ed8bf057f3cadf0009",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_e002b046a550aa3b1fb3d457"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.operatingModes": [
+      {
+        "reviewItemId": "review_item_4b86037abe784f8c4e5c1c04",
+        "productSlug": "wave2-hamilton-h900",
+        "productTitle": "HAMILTON-H900",
+        "claimCandidateId": "claim_63d0299dce7a891d571bf90d",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "INV , NIV , HiFlow",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_522e85070502a2c5c0bc2a78"
+        ],
+        "documentVersionIds": [
+          "document_version_2485f616fbab418f085469b4"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_3d4c48447f040e9e735e267b",
+        "productSlug": "wave2-hamilton-h900",
+        "productTitle": "HAMILTON-H900",
+        "claimCandidateId": "claim_29811fe243e3e7bf8bb505ce",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "Invasive (INV",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_7e8a1924e3e81823c42dd6ad"
+        ],
+        "documentVersionIds": [
+          "document_version_2485f616fbab418f085469b4"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.warnings": [
+      {
+        "reviewItemId": "review_item_9dc80c14862790956dd81d89",
+        "productSlug": "wave2-hamilton-h900",
+        "productTitle": "HAMILTON-H900",
+        "claimCandidateId": "claim_94da844049bd41261fa65253",
+        "suggestedClaimType": "product.warnings",
+        "valuePayload": {
+          "value": "Hot surface",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_3eb2a5354f747eceb1029fe2"
+        ],
+        "documentVersionIds": [
+          "document_version_2485f616fbab418f085469b4"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "critical",
+        "riskLevel": "high",
+        "reasons": [
+          "High-risk clinical, safety, compatibility or procurement claim.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.manufacturer": [
+      {
+        "reviewItemId": "review_item_4b0605f446a9e6034304741e",
+        "productSlug": "wave2-hamilton-h900",
+        "productTitle": "HAMILTON-H900",
+        "claimCandidateId": "claim_adc87a0a5e98451f757dde00",
+        "suggestedClaimType": "product.manufacturer",
+        "valuePayload": {
+          "value": "Hamilton Medical AG",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_b604ba4812461118f312fad3"
+        ],
+        "documentVersionIds": [
+          "document_version_7d3e33e1392da2d7d0e44dd2"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Identity data affects product matching and review routing.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_d909f3a59f505a8f234d49f9",
+      "documentType": "brochure",
+      "title": "Document HAMILTON-H900 - Intelligent humidification for all patient groups English | 1.91 MB | 689504.05 Download",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:42ef56ba-06fd-4937-a6b1-dc4667fb9eb9/HAMILTON-H900_brochure_en_689504.05.pdf",
+      "sha256": "fceb89ca14e08a4c06710e7c83f0e12a781e8c345ec7ee7b7295877bf1bbc41d"
+    },
+    {
+      "documentVersionId": "document_version_2485f616fbab418f085469b4",
+      "documentType": "ifu",
+      "title": "Document HAMILTON-H900 Instructions for use Software version 1.10x English, German, French, Spanish, Italian, Portuguese, Chinese, Russian, Turkish | 4.97 MB | 624431.10 Download",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf",
+      "sha256": "1e2b67795b30c6ee19ed4c46ed45f893b979f934d33f83b1546ad08c8d13f2de"
+    },
+    {
+      "documentVersionId": "document_version_7d3e33e1392da2d7d0e44dd2",
+      "documentType": "datasheet",
+      "title": "Document HAMILTON-H900 Technical specifications for software v1.10x English | 0.21 MB | 689509.05 Download",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf",
+      "sha256": "ecf291a32fcbee03503cc5aad6ab8e79e1f446295ed50e289061763253bf286b"
+    }
+  ],
+  "missingEvidence": [
+    {
+      "claimCandidateId": "claim_2c5d19f3b10e2bb26ca68c67",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_7d348bb560414d9d3c4e5d4b",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_aa25b964daeb5f00f644bc3e",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_a64fa08b6e400b1ac6bec7b3",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_11bb623bc23bd795be90f9af",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_acc35da3cf93b2150a9ee3c4",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_8f2e510f4f014be35ad7d189",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_c1bbdc61a70c1ab304def69b",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_ba5b9638c8ddc6ffe207f770",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_2fca06ed8bf057f3cadf0009",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    }
+  ],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver rejected offsite document URL: https://youtu.be/PfRKuDdpba4?t=152",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=0PTP2wKJbYk",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=W-_dCvlUFs8",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=0PTP2wKJbYk",
+    "Resolver rejected offsite document URL: https://www.facebook.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://twitter.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/hamiltonmedicalag",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/hamilton-medical-ag/mycompany/verification/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/accounts/login/?next=/hamiltonmedical/",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

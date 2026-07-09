@@ -51,11 +51,11 @@
       "category": "Акушерство и гинекология",
       "officialSources": [
         {
-          "url": "https://www.hamilton-medical.com/en/Products.html",
+          "url": "https://www.hamilton-medical.com/en/Products/HAMILTON-C1.html",
           "sourceType": "official_manufacturer_page",
           "publisher": "Hamilton Medical",
-          "title": "Hamilton Medical products index",
-          "notes": "Official manufacturer products index; exact HAMILTON-C1 page still requires follow-up discovery.",
+          "title": "HAMILTON-C1 official product page",
+          "notes": "Official Hamilton product page confirmed during Wave 2 Sprint 1; candidate-only source.",
           "trustTier": 1
         }
       ]
@@ -98,6 +98,329 @@
           "publisher": "Ambu",
           "title": "Ambu aScope 5 Broncho official product page",
           "notes": "Official product page observed during MVP-020 pilot; IFU and datasheet still require artifact capture.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-hamilton-medical-products-index",
+      "productName": "Wave 2 Hamilton Medical products index",
+      "manufacturer": "Hamilton Medical",
+      "model": "Wave 2 discovery index",
+      "category": "Wave 2 source discovery",
+      "officialSources": [
+        {
+          "url": "https://www.hamilton-medical.com/en/Products.html",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Hamilton Medical",
+          "title": "Hamilton Medical official products index",
+          "notes": "Wave 2 official discovery entry point only; does not create verified facts.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-hamilton-c3",
+      "productName": "HAMILTON-C3",
+      "manufacturer": "Hamilton Medical",
+      "model": "HAMILTON-C3",
+      "category": "Аппарат ИВЛ",
+      "officialSources": [
+        {
+          "url": "https://www.hamilton-medical.com/en/Products/HAMILTON-C3.html",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Hamilton Medical",
+          "title": "HAMILTON-C3 official product page",
+          "notes": "Official Hamilton product page confirmed during Wave 2 Sprint 1; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-hamilton-c6",
+      "productName": "HAMILTON-C6",
+      "manufacturer": "Hamilton Medical",
+      "model": "HAMILTON-C6",
+      "category": "Аппарат ИВЛ",
+      "officialSources": [
+        {
+          "url": "https://www.hamilton-medical.com/en/Products/HAMILTON-C6.html",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Hamilton Medical",
+          "title": "HAMILTON-C6 official product page",
+          "notes": "Official Hamilton product page confirmed during Wave 2 Sprint 1; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-hamilton-g5",
+      "productName": "HAMILTON-G5",
+      "manufacturer": "Hamilton Medical",
+      "model": "HAMILTON-G5",
+      "category": "Аппарат ИВЛ",
+      "officialSources": [
+        {
+          "url": "https://www.hamilton-medical.com/en/Products/HAMILTON-G5-S1.html",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Hamilton Medical",
+          "title": "HAMILTON-G5/S1 official product page",
+          "notes": "Official Hamilton combined G5/S1 product page confirmed during Wave 2 Sprint 1; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-hamilton-s1",
+      "productName": "HAMILTON-S1",
+      "manufacturer": "Hamilton Medical",
+      "model": "HAMILTON-S1",
+      "category": "Аппарат ИВЛ",
+      "officialSources": [
+        {
+          "url": "https://www.hamilton-medical.com/en/Products/HAMILTON-G5-S1.html",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Hamilton Medical",
+          "title": "HAMILTON-G5/S1 official product page",
+          "notes": "Official Hamilton combined G5/S1 product page confirmed during Wave 2 Sprint 1; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-hamilton-mr1",
+      "productName": "HAMILTON-MR1",
+      "manufacturer": "Hamilton Medical",
+      "model": "HAMILTON-MR1",
+      "category": "Аппарат ИВЛ",
+      "officialSources": [
+        {
+          "url": "https://www.hamilton-medical.com/en/Products/HAMILTON-MR1.html",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Hamilton Medical",
+          "title": "HAMILTON-MR1 official product page",
+          "notes": "Official Hamilton product page confirmed during Wave 2 Sprint 1; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-hamilton-h900",
+      "productName": "HAMILTON-H900",
+      "manufacturer": "Hamilton Medical",
+      "model": "HAMILTON-H900",
+      "category": "Увлажнитель дыхательных смесей",
+      "officialSources": [
+        {
+          "url": "https://www.hamilton-medical.com/en/Products/HAMILTON-H900.html",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Hamilton Medical",
+          "title": "HAMILTON-H900 official product page",
+          "notes": "Official Hamilton product page confirmed during Wave 2 Sprint 1; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-hamilton-hf90",
+      "productName": "HAMILTON-HF90",
+      "manufacturer": "Hamilton Medical",
+      "model": "HAMILTON-HF90",
+      "category": "High flow oxygen therapy",
+      "officialSources": [
+        {
+          "url": "https://www.hamilton-medical.com/en/Products/HAMILTON-HF90.html",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Hamilton Medical",
+          "title": "HAMILTON-HF90 official product page",
+          "notes": "Official Hamilton product page confirmed during Wave 2 Sprint 1; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-hamilton-em7",
+      "productName": "HAMILTON-EM7",
+      "manufacturer": "Hamilton Medical",
+      "model": "HAMILTON-EM7",
+      "category": "Аппарат ИВЛ",
+      "officialSources": [
+        {
+          "url": "https://www.hamilton-medical.com/en/Prehospital-transport/Products/HAMILTON-EM7.html",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Hamilton Medical",
+          "title": "HAMILTON-EM7 official product page",
+          "notes": "Official Hamilton product page discovered from the official products index during Wave 2 Sprint 1; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-hamilton-raphael",
+      "productName": "HAMILTON-Raphael",
+      "manufacturer": "Hamilton Medical",
+      "model": "HAMILTON-Raphael",
+      "category": "Legacy ventilator",
+      "officialSources": [
+        {
+          "url": "https://www.hamilton-medical.com/en/Products.html",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Hamilton Medical",
+          "title": "Hamilton Medical products index",
+          "notes": "Legacy model: checked direct official URL variants returned 404 during Wave 2 Sprint 1. Keep blocked until official archive/regulatory source is found.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-mindray-products-index",
+      "productName": "Wave 2 Mindray products index",
+      "manufacturer": "Mindray",
+      "model": "Wave 2 discovery index",
+      "category": "Wave 2 source discovery",
+      "officialSources": [
+        {
+          "url": "https://www.mindray.com/en/products",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Mindray",
+          "title": "Mindray official products index",
+          "notes": "Wave 2 official discovery entry point only; exact product pages require follow-up discovery.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-drager-products-index",
+      "productName": "Wave 2 Drager products index",
+      "manufacturer": "Drager",
+      "model": "Wave 2 discovery index",
+      "category": "Wave 2 source discovery",
+      "officialSources": [
+        {
+          "url": "https://www.draeger.com/en-us_us/Products",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Drager",
+          "title": "Drager official products index",
+          "notes": "Wave 2 official discovery entry point only; preserve Drager/Draeger/Dräger aliases during matching.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-ge-healthcare-products-index",
+      "productName": "Wave 2 GE HealthCare products index",
+      "manufacturer": "GE HealthCare",
+      "model": "Wave 2 discovery index",
+      "category": "Wave 2 source discovery",
+      "officialSources": [
+        {
+          "url": "https://www.gehealthcare.com/products",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "GE HealthCare",
+          "title": "GE HealthCare official products index",
+          "notes": "Wave 2 official discovery entry point only; legacy GE Healthcare spelling must be treated as alias.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-philips-healthcare-products-index",
+      "productName": "Wave 2 Philips healthcare products index",
+      "manufacturer": "Philips",
+      "model": "Wave 2 discovery index",
+      "category": "Wave 2 source discovery",
+      "officialSources": [
+        {
+          "url": "https://www.philips.com/healthcare/products",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Philips",
+          "title": "Philips healthcare products index",
+          "notes": "Wave 2 official discovery entry point only; product documents still require capture and review.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-ambu-products-index",
+      "productName": "Wave 2 Ambu products index",
+      "manufacturer": "Ambu",
+      "model": "Wave 2 discovery index",
+      "category": "Wave 2 source discovery",
+      "officialSources": [
+        {
+          "url": "https://www.ambu.com/products",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Ambu",
+          "title": "Ambu official products index",
+          "notes": "Wave 2 official discovery entry point only; compatibility claims remain review-only.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-sonoscape-products-index",
+      "productName": "Wave 2 SonoScape products index",
+      "manufacturer": "SonoScape",
+      "model": "Wave 2 discovery index",
+      "category": "Wave 2 source discovery",
+      "officialSources": [
+        {
+          "url": "https://www.sonoscape.com/en/products",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "SonoScape",
+          "title": "SonoScape official products index",
+          "notes": "Wave 2 official discovery entry point only; probe compatibility requires document evidence.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-comen-products-index",
+      "productName": "Wave 2 Comen products index",
+      "manufacturer": "Comen",
+      "model": "Wave 2 discovery index",
+      "category": "Wave 2 source discovery",
+      "officialSources": [
+        {
+          "url": "https://www.comen.com/en/products",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Comen",
+          "title": "Comen official products index",
+          "notes": "Wave 2 official discovery entry point only; module-dependent monitor claims require review.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-sle-products-index",
+      "productName": "Wave 2 SLE products index",
+      "manufacturer": "SLE",
+      "model": "Wave 2 discovery index",
+      "category": "Wave 2 source discovery",
+      "officialSources": [
+        {
+          "url": "https://www.inspiration-healthcare.com/products",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Inspiration Healthcare",
+          "title": "Inspiration Healthcare official products index",
+          "notes": "Wave 2 official discovery entry point only; SLE legacy naming must be preserved.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-dixion-products-index",
+      "productName": "Wave 2 Dixion products index",
+      "manufacturer": "Dixion",
+      "model": "Wave 2 discovery index",
+      "category": "Wave 2 source discovery",
+      "officialSources": [
+        {
+          "url": "https://www.dixion.de/products",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Dixion",
+          "title": "Dixion official products index",
+          "notes": "Wave 2 official discovery entry point only; regional model naming requires RU review.",
           "trustTier": 1
         }
       ]

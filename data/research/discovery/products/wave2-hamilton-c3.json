@@ -1,0 +1,218 @@
+{
+  "product": {
+    "productSlug": "wave2-hamilton-c3",
+    "manufacturer": "Hamilton Medical",
+    "productName": "HAMILTON-C3",
+    "model": "HAMILTON-C3",
+    "category": "Аппарат ИВЛ"
+  },
+  "sourceCandidates": [
+    {
+      "sourceId": "source_be66dfbc1a0577b5bb1e995c",
+      "productSlug": "wave2-hamilton-c3",
+      "manufacturer": "Hamilton Medical",
+      "productName": "HAMILTON-C3",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.hamilton-medical.com/en/Products/HAMILTON-C3.html",
+      "title": "HAMILTON-C3 official product page",
+      "snippet": "Official Hamilton product page confirmed during Wave 2 Sprint 1; candidate-only source.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official Hamilton product page confirmed during Wave 2 Sprint 1; candidate-only source."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_b85d25104e0c77b1ba3d8043",
+      "sourceId": "source_be66dfbc1a0577b5bb1e995c",
+      "productSlug": "wave2-hamilton-c3",
+      "documentType": "datasheet",
+      "url": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "title": "Document HAMILTON-C3 Technical specifications for SW version 2.0.x English | 0.22 MB | 689469.09 Download",
+      "language": null,
+      "confidence": 0.86,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_8034ffd100572fe36ec6d19a",
+      "sourceId": "source_be66dfbc1a0577b5bb1e995c",
+      "productSlug": "wave2-hamilton-c3",
+      "documentType": "brochure",
+      "url": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "title": "Document HAMILTON-C3 the compact high-end ventilator - brochure English | 0.69 MB | ELO20250303S.00 Download",
+      "language": null,
+      "confidence": 0.86,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_355757232ef2f32fcd5c16cb",
+      "sourceId": "source_be66dfbc1a0577b5bb1e995c",
+      "productSlug": "wave2-hamilton-c3",
+      "documentType": "brochure",
+      "url": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "title": "Document Company brochure Hamilton Medical - One solution, every situation English | 3.23 MB | ELO20240301N.02 Download",
+      "language": null,
+      "confidence": 0.86,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_0af818d21b9c9800afab9b79",
+      "sourceId": "source_be66dfbc1a0577b5bb1e995c",
+      "productSlug": "wave2-hamilton-c3",
+      "documentType": "unknown",
+      "url": "https://www.hamilton-medical.com/dam/jcr:67545a5c-4bbc-4255-b9ab-8acc54587f74/HAMILTON-C2-C3_Transport-and-storage-solutions_flyer_en_ELO20210322N.01.pdf",
+      "title": "Document Transport and storage solutions for the HAMILTON-C2/C3 English | 0.44 MB | ELO20210322N.01 Download",
+      "language": null,
+      "confidence": 0.58,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_b85d25104e0c77b1ba3d8043",
+      "url": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "title": "Document HAMILTON-C3 Technical specifications for SW version 2.0.x English | 0.22 MB | 689469.09 Download",
+      "documentTypeGuess": "datasheet",
+      "parentSourceId": "source_be66dfbc1a0577b5bb1e995c",
+      "linkText": "Document HAMILTON-C3 Technical specifications for SW version 2.0.x English | 0.22 MB | 689469.09 Download",
+      "resolvedFromUrl": "https://www.hamilton-medical.com/en/Products/HAMILTON-C3.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_0af818d21b9c9800afab9b79",
+      "url": "https://www.hamilton-medical.com/dam/jcr:67545a5c-4bbc-4255-b9ab-8acc54587f74/HAMILTON-C2-C3_Transport-and-storage-solutions_flyer_en_ELO20210322N.01.pdf",
+      "title": "Document Transport and storage solutions for the HAMILTON-C2/C3 English | 0.44 MB | ELO20210322N.01 Download",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_be66dfbc1a0577b5bb1e995c",
+      "linkText": "Document Transport and storage solutions for the HAMILTON-C2/C3 English | 0.44 MB | ELO20210322N.01 Download",
+      "resolvedFromUrl": "https://www.hamilton-medical.com/en/Products/HAMILTON-C3.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_8034ffd100572fe36ec6d19a",
+      "url": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "title": "Document HAMILTON-C3 the compact high-end ventilator - brochure English | 0.69 MB | ELO20250303S.00 Download",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_be66dfbc1a0577b5bb1e995c",
+      "linkText": "Document HAMILTON-C3 the compact high-end ventilator - brochure English | 0.69 MB | ELO20250303S.00 Download",
+      "resolvedFromUrl": "https://www.hamilton-medical.com/en/Products/HAMILTON-C3.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_355757232ef2f32fcd5c16cb",
+      "url": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "title": "Document Company brochure Hamilton Medical - One solution, every situation English | 3.23 MB | ELO20240301N.02 Download",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_be66dfbc1a0577b5bb1e995c",
+      "linkText": "Document Company brochure Hamilton Medical - One solution, every situation English | 3.23 MB | ELO20240301N.02 Download",
+      "resolvedFromUrl": "https://www.hamilton-medical.com/en/Products/HAMILTON-C3.html",
+      "warnings": []
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver rejected offsite document URL: https://youtu.be/1plecudVVjY?si=dIrympV9P4XhW59U",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=nCD0zUrc7B0",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25742308",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/27006266",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25569810",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/24577110",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/26957117",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/28377920",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/31733881",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25425705",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/15165301",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/18393813",
+    "Resolver rejected offsite document URL: https://www.facebook.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://twitter.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/hamiltonmedicalag",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/hamilton-medical-ag/mycompany/verification/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/accounts/login/?next=/hamiltonmedical/"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-hamilton-c3",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-hamilton-c3",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver rejected offsite document URL: https://youtu.be/1plecudVVjY?si=dIrympV9P4XhW59U",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=nCD0zUrc7B0",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25742308",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/27006266",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25569810",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/24577110",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/26957117",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/28377920",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/31733881",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25425705",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/15165301",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/18393813",
+    "Resolver rejected offsite document URL: https://www.facebook.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://twitter.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/hamiltonmedicalag",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/hamilton-medical-ag/mycompany/verification/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/accounts/login/?next=/hamiltonmedical/",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "product": {
+    "productSlug": "wave2-hamilton-s1",
+    "manufacturer": "Hamilton Medical",
+    "productName": "HAMILTON-S1",
+    "model": "HAMILTON-S1",
+    "category": "Аппарат ИВЛ"
+  },
+  "sourceCandidates": [
+    {
+      "sourceId": "source_adca7d8a7f5aa74d4b83c538",
+      "productSlug": "wave2-hamilton-s1",
+      "manufacturer": "Hamilton Medical",
+      "productName": "HAMILTON-S1",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.hamilton-medical.com/en/Products/HAMILTON-G5-S1.html",
+      "title": "HAMILTON-G5/S1 official product page",
+      "snippet": "Official Hamilton combined G5/S1 product page confirmed during Wave 2 Sprint 1; candidate-only source.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official Hamilton combined G5/S1 product page confirmed during Wave 2 Sprint 1; candidate-only source."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_7ab366b10801ce14a35bebfd",
+      "sourceId": "source_adca7d8a7f5aa74d4b83c538",
+      "productSlug": "wave2-hamilton-s1",
+      "documentType": "unknown",
+      "url": "https://www.hamilton-medical.com/dam/jcr:c8fcfe9b-e26d-47f5-8f84-8cffb6a3073b/HAMILTON-G5-S1_company-statement_Announcement-discontinuation-HAMILTON-G5-S1_en_CS150.pdf",
+      "title": "Company statement about the HAMILTON-G5/S1 discontinuation",
+      "language": null,
+      "confidence": 0.58,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_7ab366b10801ce14a35bebfd",
+      "url": "https://www.hamilton-medical.com/dam/jcr:c8fcfe9b-e26d-47f5-8f84-8cffb6a3073b/HAMILTON-G5-S1_company-statement_Announcement-discontinuation-HAMILTON-G5-S1_en_CS150.pdf",
+      "title": "Company statement about the HAMILTON-G5/S1 discontinuation",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_adca7d8a7f5aa74d4b83c538",
+      "linkText": "Company statement about the HAMILTON-G5/S1 discontinuation",
+      "resolvedFromUrl": "https://www.hamilton-medical.com/en/Products/HAMILTON-G5-S1.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver rejected unsafe document URL: mailto:info@hamilton-medical.com",
+    "Resolver rejected offsite document URL: https://www.facebook.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://twitter.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/hamiltonmedicalag",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/hamilton-medical-ag/mycompany/verification/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/accounts/login/?next=/hamiltonmedical/"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-hamilton-s1",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-hamilton-s1",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-hamilton-s1",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver rejected unsafe document URL: mailto:info@hamilton-medical.com",
+    "Resolver rejected offsite document URL: https://www.facebook.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://twitter.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/hamiltonmedicalag",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/hamilton-medical-ag/mycompany/verification/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/accounts/login/?next=/hamiltonmedical/",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

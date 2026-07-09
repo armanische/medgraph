@@ -1,0 +1,87 @@
+{
+  "product": {
+    "productSlug": "wave2-hamilton-raphael",
+    "manufacturer": "Hamilton Medical",
+    "productName": "HAMILTON-Raphael",
+    "model": "HAMILTON-Raphael",
+    "category": "Legacy ventilator"
+  },
+  "sourceCandidates": [
+    {
+      "sourceId": "source_abf8092b6c50de5eca8b3601",
+      "productSlug": "wave2-hamilton-raphael",
+      "manufacturer": "Hamilton Medical",
+      "productName": "HAMILTON-Raphael",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.hamilton-medical.com/en/Products.html",
+      "title": "Hamilton Medical products index",
+      "snippet": "Legacy model: checked direct official URL variants returned 404 during Wave 2 Sprint 1. Keep blocked until official archive/regulatory source is found.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Legacy model: checked direct official URL variants returned 404 during Wave 2 Sprint 1. Keep blocked until official archive/regulatory source is found."
+      ]
+    }
+  ],
+  "documentCandidates": [],
+  "resolvedDocumentLinks": [],
+  "resolverWarnings": [
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=BkhOZm3tGN4",
+    "Resolver rejected offsite document URL: https://www.facebook.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://twitter.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/hamiltonmedicalag",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/hamilton-medical-ag/mycompany/verification/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/accounts/login/?next=/hamiltonmedical/",
+    "Resolver found no document links on https://www.hamilton-medical.com/en/Products.html."
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-hamilton-raphael",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-hamilton-raphael",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-hamilton-raphael",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=BkhOZm3tGN4",
+    "Resolver rejected offsite document URL: https://www.facebook.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://twitter.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/hamiltonmedicalag",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/hamilton-medical-ag/mycompany/verification/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/accounts/login/?next=/hamiltonmedical/",
+    "Resolver found no document links on https://www.hamilton-medical.com/en/Products.html.",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

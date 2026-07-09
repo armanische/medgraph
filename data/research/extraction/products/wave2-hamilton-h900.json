@@ -1,0 +1,1329 @@
+{
+  "product": {
+    "productSlug": "wave2-hamilton-h900",
+    "manufacturer": "Hamilton Medical",
+    "productName": "HAMILTON-H900",
+    "model": "HAMILTON-H900",
+    "category": "Увлажнитель дыхательных смесей"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_d909f3a59f505a8f234d49f9",
+      "documentCandidateId": "document_820572d5ad2ff6f8b9c0bd85",
+      "sourceId": "source_6b637da927bdbea0e4943ee2",
+      "productSlug": "wave2-hamilton-h900",
+      "documentKey": "trusted-document:document_820572d5ad2ff6f8b9c0bd85",
+      "documentType": "brochure",
+      "title": "Document HAMILTON-H900 - Intelligent humidification for all patient groups English | 1.91 MB | 689504.05 Download",
+      "language": null,
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:42ef56ba-06fd-4937-a6b1-dc4667fb9eb9/HAMILTON-H900_brochure_en_689504.05.pdf",
+      "sha256": "fceb89ca14e08a4c06710e7c83f0e12a781e8c345ec7ee7b7295877bf1bbc41d",
+      "contentType": "application/pdf",
+      "byteSize": 1998462,
+      "filePath": "data/research/artifacts/artifacts/sha256/fc/eb/fceb89ca14e08a4c06710e7c83f0e12a781e8c345ec7ee7b7295877bf1bbc41d.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_2485f616fbab418f085469b4",
+      "documentCandidateId": "document_604776b3f751706eae6a120b",
+      "sourceId": "source_6b637da927bdbea0e4943ee2",
+      "productSlug": "wave2-hamilton-h900",
+      "documentKey": "trusted-document:document_604776b3f751706eae6a120b",
+      "documentType": "ifu",
+      "title": "Document HAMILTON-H900 Instructions for use Software version 1.10x English, German, French, Spanish, Italian, Portuguese, Chinese, Russian, Turkish | 4.97 MB | 624431.10 Download",
+      "language": null,
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf",
+      "sha256": "1e2b67795b30c6ee19ed4c46ed45f893b979f934d33f83b1546ad08c8d13f2de",
+      "contentType": "application/pdf",
+      "byteSize": 5216553,
+      "filePath": "data/research/artifacts/artifacts/sha256/1e/2b/1e2b67795b30c6ee19ed4c46ed45f893b979f934d33f83b1546ad08c8d13f2de.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_7d3e33e1392da2d7d0e44dd2",
+      "documentCandidateId": "document_cd5293889b039bb4fa56d5da",
+      "sourceId": "source_6b637da927bdbea0e4943ee2",
+      "productSlug": "wave2-hamilton-h900",
+      "documentKey": "trusted-document:document_cd5293889b039bb4fa56d5da",
+      "documentType": "datasheet",
+      "title": "Document HAMILTON-H900 Technical specifications for software v1.10x English | 0.21 MB | 689509.05 Download",
+      "language": null,
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf",
+      "sha256": "ecf291a32fcbee03503cc5aad6ab8e79e1f446295ed50e289061763253bf286b",
+      "contentType": "application/pdf",
+      "byteSize": 221260,
+      "filePath": "data/research/artifacts/artifacts/sha256/ec/f2/ecf291a32fcbee03503cc5aad6ab8e79e1f446295ed50e289061763253bf286b.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_3b09c796bb02e14db89ace49",
+      "productSlug": "wave2-hamilton-h900",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Document HAMILTON-H900 - Intelligent humidification for all patient groups English | 1.91 MB | 689504.05 Download",
+      "unit": null,
+      "rawText": "Document title: Document HAMILTON-H900 - Intelligent humidification for all patient groups English | 1.91 MB | 689504.05 Download",
+      "documentVersionId": "document_version_d909f3a59f505a8f234d49f9",
+      "documentCandidateId": "document_820572d5ad2ff6f8b9c0bd85",
+      "documentSha256": "fceb89ca14e08a4c06710e7c83f0e12a781e8c345ec7ee7b7295877bf1bbc41d",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:42ef56ba-06fd-4937-a6b1-dc4667fb9eb9/HAMILTON-H900_brochure_en_689504.05.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_edc383cbc32db7abc0f9b699",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_11847385d8ad0734b43035d2",
+      "productSlug": "wave2-hamilton-h900",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_d909f3a59f505a8f234d49f9",
+      "documentCandidateId": "document_820572d5ad2ff6f8b9c0bd85",
+      "documentSha256": "fceb89ca14e08a4c06710e7c83f0e12a781e8c345ec7ee7b7295877bf1bbc41d",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:42ef56ba-06fd-4937-a6b1-dc4667fb9eb9/HAMILTON-H900_brochure_en_689504.05.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_96586821e0354fd423fb0f25",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_0f093e1daf9a288237c5382d",
+      "productSlug": "wave2-hamilton-h900",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "ventilation mode",
+      "unit": null,
+      "rawText": "ventilation mode.",
+      "documentVersionId": "document_version_d909f3a59f505a8f234d49f9",
+      "documentCandidateId": "document_820572d5ad2ff6f8b9c0bd85",
+      "documentSha256": "fceb89ca14e08a4c06710e7c83f0e12a781e8c345ec7ee7b7295877bf1bbc41d",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:42ef56ba-06fd-4937-a6b1-dc4667fb9eb9/HAMILTON-H900_brochure_en_689504.05.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 56
+      },
+      "evidenceCandidateId": "evidence_d8978004c19866354e590e8b",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_988a77b01223de2f0aaad158",
+      "productSlug": "wave2-hamilton-h900",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Document HAMILTON-H900 Instructions for use Software version 1.10x English, German, French, Spanish, Italian, Portuguese, Chinese, Russian, Turkish | 4.97 MB | 624431.10 Download",
+      "unit": null,
+      "rawText": "Document title: Document HAMILTON-H900 Instructions for use Software version 1.10x English, German, French, Spanish, Italian, Portuguese, Chinese, Russian, Turkish | 4.97 MB | 624431.10 Download",
+      "documentVersionId": "document_version_2485f616fbab418f085469b4",
+      "documentCandidateId": "document_604776b3f751706eae6a120b",
+      "documentSha256": "1e2b67795b30c6ee19ed4c46ed45f893b979f934d33f83b1546ad08c8d13f2de",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_fc7a24ede9b48fe112ecccd8",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_d39a36709ff9968884617316",
+      "productSlug": "wave2-hamilton-h900",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "ifu",
+      "unit": null,
+      "rawText": "Document type: ifu",
+      "documentVersionId": "document_version_2485f616fbab418f085469b4",
+      "documentCandidateId": "document_604776b3f751706eae6a120b",
+      "documentSha256": "1e2b67795b30c6ee19ed4c46ed45f893b979f934d33f83b1546ad08c8d13f2de",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_75cf3a4fce3ecf0865b5e46d",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_c08f117a745785a74fedfb35",
+      "productSlug": "wave2-hamilton-h900",
+      "factType": "product.operatingModes",
+      "label": "Режимы работы",
+      "value": "INV , NIV , HiFlow",
+      "unit": null,
+      "rawText": "operating modes: INV , NIV , HiFlow",
+      "documentVersionId": "document_version_2485f616fbab418f085469b4",
+      "documentCandidateId": "document_604776b3f751706eae6a120b",
+      "documentSha256": "1e2b67795b30c6ee19ed4c46ed45f893b979f934d33f83b1546ad08c8d13f2de",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf",
+      "locator": {
+        "page": 21,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 873
+      },
+      "evidenceCandidateId": "evidence_522e85070502a2c5c0bc2a78",
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_b818bd3cd159ebee4b0c0dba",
+      "productSlug": "wave2-hamilton-h900",
+      "factType": "product.operatingModes",
+      "label": "Режимы работы",
+      "value": "Invasive (INV",
+      "unit": null,
+      "rawText": "operating modes: Invasive (INV",
+      "documentVersionId": "document_version_2485f616fbab418f085469b4",
+      "documentCandidateId": "document_604776b3f751706eae6a120b",
+      "documentSha256": "1e2b67795b30c6ee19ed4c46ed45f893b979f934d33f83b1546ad08c8d13f2de",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf",
+      "locator": {
+        "page": 22,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 920
+      },
+      "evidenceCandidateId": "evidence_7e8a1924e3e81823c42dd6ad",
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_c694a2a73991fb4d0d202053",
+      "productSlug": "wave2-hamilton-h900",
+      "factType": "product.warnings",
+      "label": "Предупреждения",
+      "value": "Hot surface",
+      "unit": null,
+      "rawText": "Warning: Hot surface",
+      "documentVersionId": "document_version_2485f616fbab418f085469b4",
+      "documentCandidateId": "document_604776b3f751706eae6a120b",
+      "documentSha256": "1e2b67795b30c6ee19ed4c46ed45f893b979f934d33f83b1546ad08c8d13f2de",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf",
+      "locator": {
+        "page": 41,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1801
+      },
+      "evidenceCandidateId": "evidence_3eb2a5354f747eceb1029fe2",
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_9095881f3ac56d2a51aecff6",
+      "productSlug": "wave2-hamilton-h900",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "display",
+      "unit": null,
+      "rawText": "display ........................................................ 16",
+      "documentVersionId": "document_version_2485f616fbab418f085469b4",
+      "documentCandidateId": "document_604776b3f751706eae6a120b",
+      "documentSha256": "1e2b67795b30c6ee19ed4c46ed45f893b979f934d33f83b1546ad08c8d13f2de",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 113
+      },
+      "evidenceCandidateId": "evidence_f1a7009ac185fc9a153ecb7d",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_a33480608ed1d9ce79845a17",
+      "productSlug": "wave2-hamilton-h900",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Compatibility",
+      "unit": null,
+      "rawText": "Compatibility),",
+      "documentVersionId": "document_version_2485f616fbab418f085469b4",
+      "documentCandidateId": "document_604776b3f751706eae6a120b",
+      "documentSha256": "1e2b67795b30c6ee19ed4c46ed45f893b979f934d33f83b1546ad08c8d13f2de",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf",
+      "locator": {
+        "page": 11,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 295
+      },
+      "evidenceCandidateId": "evidence_5db1cd939960d5003a3ebf99",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_9536f829a866cd0d72af49bc",
+      "productSlug": "wave2-hamilton-h900",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "flow rate",
+      "unit": null,
+      "rawText": "flow rate is outside the",
+      "documentVersionId": "document_version_2485f616fbab418f085469b4",
+      "documentCandidateId": "document_604776b3f751706eae6a120b",
+      "documentSha256": "1e2b67795b30c6ee19ed4c46ed45f893b979f934d33f83b1546ad08c8d13f2de",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf",
+      "locator": {
+        "page": 13,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 405
+      },
+      "evidenceCandidateId": "evidence_0f1a695f13a3d75c2c8cb6db",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_a21bc3e3e1316c736ac1c899",
+      "productSlug": "wave2-hamilton-h900",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Weight",
+      "unit": null,
+      "rawText": "Weight Humidifier (with empty",
+      "documentVersionId": "document_version_2485f616fbab418f085469b4",
+      "documentCandidateId": "document_604776b3f751706eae6a120b",
+      "documentSha256": "1e2b67795b30c6ee19ed4c46ed45f893b979f934d33f83b1546ad08c8d13f2de",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf",
+      "locator": {
+        "page": 35,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1589
+      },
+      "evidenceCandidateId": "evidence_2ec890f5cbc26fa5a38a997c",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_4e1d88718064973b2f5c183e",
+      "productSlug": "wave2-hamilton-h900",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Dimensions",
+      "unit": null,
+      "rawText": "Dimensions See Figure 14",
+      "documentVersionId": "document_version_2485f616fbab418f085469b4",
+      "documentCandidateId": "document_604776b3f751706eae6a120b",
+      "documentSha256": "1e2b67795b30c6ee19ed4c46ed45f893b979f934d33f83b1546ad08c8d13f2de",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf",
+      "locator": {
+        "page": 35,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1592
+      },
+      "evidenceCandidateId": "evidence_b5942e5150ef934d7b0dc6b7",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_7a2be132e479a8938cc6fd14",
+      "productSlug": "wave2-hamilton-h900",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Document HAMILTON-H900 Technical specifications for software v1.10x English | 0.21 MB | 689509.05 Download",
+      "unit": null,
+      "rawText": "Document title: Document HAMILTON-H900 Technical specifications for software v1.10x English | 0.21 MB | 689509.05 Download",
+      "documentVersionId": "document_version_7d3e33e1392da2d7d0e44dd2",
+      "documentCandidateId": "document_cd5293889b039bb4fa56d5da",
+      "documentSha256": "ecf291a32fcbee03503cc5aad6ab8e79e1f446295ed50e289061763253bf286b",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_e9f1ab0437cf4493a68c7196",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_b42018ba3f4d45bf4a099d7d",
+      "productSlug": "wave2-hamilton-h900",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "datasheet",
+      "unit": null,
+      "rawText": "Document type: datasheet",
+      "documentVersionId": "document_version_7d3e33e1392da2d7d0e44dd2",
+      "documentCandidateId": "document_cd5293889b039bb4fa56d5da",
+      "documentSha256": "ecf291a32fcbee03503cc5aad6ab8e79e1f446295ed50e289061763253bf286b",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_8338717ff0c21f4d8fcfa60e",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_7f66e5ae87658caa6d51dbb3",
+      "productSlug": "wave2-hamilton-h900",
+      "factType": "product.manufacturer",
+      "label": "Производитель",
+      "value": "Hamilton Medical AG",
+      "unit": null,
+      "rawText": "Manufacturer: Hamilton Medical AG",
+      "documentVersionId": "document_version_7d3e33e1392da2d7d0e44dd2",
+      "documentCandidateId": "document_cd5293889b039bb4fa56d5da",
+      "documentSha256": "ecf291a32fcbee03503cc5aad6ab8e79e1f446295ed50e289061763253bf286b",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 82
+      },
+      "evidenceCandidateId": "evidence_b604ba4812461118f312fad3",
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_925ff90eabfa6ea7a14bc56a",
+      "productSlug": "wave2-hamilton-h900",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Flow rate",
+      "unit": null,
+      "rawText": "Flow rate ≤ 60 l/min Minimum humidity 33 mg H2O/l",
+      "documentVersionId": "document_version_7d3e33e1392da2d7d0e44dd2",
+      "documentCandidateId": "document_cd5293889b039bb4fa56d5da",
+      "documentSha256": "ecf291a32fcbee03503cc5aad6ab8e79e1f446295ed50e289061763253bf286b",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 56
+      },
+      "evidenceCandidateId": "evidence_c23dedd04fe6a4d2bef638db",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_714b05d85bc7c1426a24f047",
+      "productSlug": "wave2-hamilton-h900",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "dimensions",
+      "unit": null,
+      "rawText": "dimensions",
+      "documentVersionId": "document_version_7d3e33e1392da2d7d0e44dd2",
+      "documentCandidateId": "document_cd5293889b039bb4fa56d5da",
+      "documentSha256": "ecf291a32fcbee03503cc5aad6ab8e79e1f446295ed50e289061763253bf286b",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 59
+      },
+      "evidenceCandidateId": "evidence_6c7c35b05c1e4cb7ac7f88f5",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_f7655514beacdbb750ad7b17",
+      "productSlug": "wave2-hamilton-h900",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Weight",
+      "unit": null,
+      "rawText": "Weight 2.5 kg (5.5 lb)",
+      "documentVersionId": "document_version_7d3e33e1392da2d7d0e44dd2",
+      "documentCandidateId": "document_cd5293889b039bb4fa56d5da",
+      "documentSha256": "ecf291a32fcbee03503cc5aad6ab8e79e1f446295ed50e289061763253bf286b",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 61
+      },
+      "evidenceCandidateId": "evidence_a07000f16b64fb03d82e2269",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_ad107acbd732dd150a9f2e95",
+      "productSlug": "wave2-hamilton-h900",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Display",
+      "unit": null,
+      "rawText": "Display 3 in / 64 × 128 pixels, inverted dot matrix display (backlit)",
+      "documentVersionId": "document_version_7d3e33e1392da2d7d0e44dd2",
+      "documentCandidateId": "document_cd5293889b039bb4fa56d5da",
+      "documentSha256": "ecf291a32fcbee03503cc5aad6ab8e79e1f446295ed50e289061763253bf286b",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 62
+      },
+      "evidenceCandidateId": "evidence_e002b046a550aa3b1fb3d457",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_edc383cbc32db7abc0f9b699",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_d909f3a59f505a8f234d49f9",
+      "documentCandidateId": "document_820572d5ad2ff6f8b9c0bd85",
+      "sha256": "fceb89ca14e08a4c06710e7c83f0e12a781e8c345ec7ee7b7295877bf1bbc41d",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:42ef56ba-06fd-4937-a6b1-dc4667fb9eb9/HAMILTON-H900_brochure_en_689504.05.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Document HAMILTON-H900 - Intelligent humidification for all patient groups English | 1.91 MB | 689504.05 Download",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_96586821e0354fd423fb0f25",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_d909f3a59f505a8f234d49f9",
+      "documentCandidateId": "document_820572d5ad2ff6f8b9c0bd85",
+      "sha256": "fceb89ca14e08a4c06710e7c83f0e12a781e8c345ec7ee7b7295877bf1bbc41d",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:42ef56ba-06fd-4937-a6b1-dc4667fb9eb9/HAMILTON-H900_brochure_en_689504.05.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_fc7a24ede9b48fe112ecccd8",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_2485f616fbab418f085469b4",
+      "documentCandidateId": "document_604776b3f751706eae6a120b",
+      "sha256": "1e2b67795b30c6ee19ed4c46ed45f893b979f934d33f83b1546ad08c8d13f2de",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Document HAMILTON-H900 Instructions for use Software version 1.10x English, German, French, Spanish, Italian, Portuguese, Chinese, Russian, Turkish | 4.97 MB | 624431.10 Download",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_75cf3a4fce3ecf0865b5e46d",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_2485f616fbab418f085469b4",
+      "documentCandidateId": "document_604776b3f751706eae6a120b",
+      "sha256": "1e2b67795b30c6ee19ed4c46ed45f893b979f934d33f83b1546ad08c8d13f2de",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: ifu",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_522e85070502a2c5c0bc2a78",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_2485f616fbab418f085469b4",
+      "documentCandidateId": "document_604776b3f751706eae6a120b",
+      "sha256": "1e2b67795b30c6ee19ed4c46ed45f893b979f934d33f83b1546ad08c8d13f2de",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf",
+      "locator": {
+        "page": 21,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 873
+      },
+      "quotedText": "operating modes: INV , NIV , HiFlow",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_7e8a1924e3e81823c42dd6ad",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_2485f616fbab418f085469b4",
+      "documentCandidateId": "document_604776b3f751706eae6a120b",
+      "sha256": "1e2b67795b30c6ee19ed4c46ed45f893b979f934d33f83b1546ad08c8d13f2de",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf",
+      "locator": {
+        "page": 22,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 920
+      },
+      "quotedText": "operating modes: Invasive (INV",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_3eb2a5354f747eceb1029fe2",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_2485f616fbab418f085469b4",
+      "documentCandidateId": "document_604776b3f751706eae6a120b",
+      "sha256": "1e2b67795b30c6ee19ed4c46ed45f893b979f934d33f83b1546ad08c8d13f2de",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf",
+      "locator": {
+        "page": 41,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1801
+      },
+      "quotedText": "Warning: Hot surface",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_e9f1ab0437cf4493a68c7196",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_7d3e33e1392da2d7d0e44dd2",
+      "documentCandidateId": "document_cd5293889b039bb4fa56d5da",
+      "sha256": "ecf291a32fcbee03503cc5aad6ab8e79e1f446295ed50e289061763253bf286b",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Document HAMILTON-H900 Technical specifications for software v1.10x English | 0.21 MB | 689509.05 Download",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_8338717ff0c21f4d8fcfa60e",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_7d3e33e1392da2d7d0e44dd2",
+      "documentCandidateId": "document_cd5293889b039bb4fa56d5da",
+      "sha256": "ecf291a32fcbee03503cc5aad6ab8e79e1f446295ed50e289061763253bf286b",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: datasheet",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_b604ba4812461118f312fad3",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_7d3e33e1392da2d7d0e44dd2",
+      "documentCandidateId": "document_cd5293889b039bb4fa56d5da",
+      "sha256": "ecf291a32fcbee03503cc5aad6ab8e79e1f446295ed50e289061763253bf286b",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 82
+      },
+      "quotedText": "Manufacturer: Hamilton Medical AG",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_cc49a65a461fc1e62abec471",
+      "productSlug": "wave2-hamilton-h900",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Document HAMILTON-H900 - Intelligent humidification for all patient groups English | 1.91 MB | 689504.05 Download",
+        "unit": null
+      },
+      "rawText": "Document title: Document HAMILTON-H900 - Intelligent humidification for all patient groups English | 1.91 MB | 689504.05 Download",
+      "evidenceCandidateIds": [
+        "evidence_edc383cbc32db7abc0f9b699"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_32b1de2f5f9e16edd051c956",
+      "productSlug": "wave2-hamilton-h900",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_96586821e0354fd423fb0f25"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_2c5d19f3b10e2bb26ca68c67",
+      "productSlug": "wave2-hamilton-h900",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "ventilation mode",
+        "unit": null
+      },
+      "rawText": "ventilation mode.",
+      "evidenceCandidateIds": [
+        "evidence_d8978004c19866354e590e8b"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_ebbb9254c088a3b526f0d716",
+      "productSlug": "wave2-hamilton-h900",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Document HAMILTON-H900 Instructions for use Software version 1.10x English, German, French, Spanish, Italian, Portuguese, Chinese, Russian, Turkish | 4.97 MB | 624431.10 Download",
+        "unit": null
+      },
+      "rawText": "Document title: Document HAMILTON-H900 Instructions for use Software version 1.10x English, German, French, Spanish, Italian, Portuguese, Chinese, Russian, Turkish | 4.97 MB | 624431.10 Download",
+      "evidenceCandidateIds": [
+        "evidence_fc7a24ede9b48fe112ecccd8"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_71e4d5a1947e603ab1d92e64",
+      "productSlug": "wave2-hamilton-h900",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "ifu",
+        "unit": null
+      },
+      "rawText": "Document type: ifu",
+      "evidenceCandidateIds": [
+        "evidence_75cf3a4fce3ecf0865b5e46d"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_63d0299dce7a891d571bf90d",
+      "productSlug": "wave2-hamilton-h900",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "INV , NIV , HiFlow",
+        "unit": null
+      },
+      "rawText": "operating modes: INV , NIV , HiFlow",
+      "evidenceCandidateIds": [
+        "evidence_522e85070502a2c5c0bc2a78"
+      ],
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_29811fe243e3e7bf8bb505ce",
+      "productSlug": "wave2-hamilton-h900",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Invasive (INV",
+        "unit": null
+      },
+      "rawText": "operating modes: Invasive (INV",
+      "evidenceCandidateIds": [
+        "evidence_7e8a1924e3e81823c42dd6ad"
+      ],
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_94da844049bd41261fa65253",
+      "productSlug": "wave2-hamilton-h900",
+      "subjectType": "product",
+      "suggestedClaimType": "product.warnings",
+      "valuePayload": {
+        "value": "Hot surface",
+        "unit": null
+      },
+      "rawText": "Warning: Hot surface",
+      "evidenceCandidateIds": [
+        "evidence_3eb2a5354f747eceb1029fe2"
+      ],
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_7d348bb560414d9d3c4e5d4b",
+      "productSlug": "wave2-hamilton-h900",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "rawText": "display ........................................................ 16",
+      "evidenceCandidateIds": [
+        "evidence_f1a7009ac185fc9a153ecb7d"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_aa25b964daeb5f00f644bc3e",
+      "productSlug": "wave2-hamilton-h900",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Compatibility",
+        "unit": null
+      },
+      "rawText": "Compatibility),",
+      "evidenceCandidateIds": [
+        "evidence_5db1cd939960d5003a3ebf99"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_a64fa08b6e400b1ac6bec7b3",
+      "productSlug": "wave2-hamilton-h900",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "flow rate",
+        "unit": null
+      },
+      "rawText": "flow rate is outside the",
+      "evidenceCandidateIds": [
+        "evidence_0f1a695f13a3d75c2c8cb6db"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_11bb623bc23bd795be90f9af",
+      "productSlug": "wave2-hamilton-h900",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "rawText": "Weight Humidifier (with empty",
+      "evidenceCandidateIds": [
+        "evidence_2ec890f5cbc26fa5a38a997c"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_acc35da3cf93b2150a9ee3c4",
+      "productSlug": "wave2-hamilton-h900",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "rawText": "Dimensions See Figure 14",
+      "evidenceCandidateIds": [
+        "evidence_b5942e5150ef934d7b0dc6b7"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_121069ab563eddf4ecc6388f",
+      "productSlug": "wave2-hamilton-h900",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Document HAMILTON-H900 Technical specifications for software v1.10x English | 0.21 MB | 689509.05 Download",
+        "unit": null
+      },
+      "rawText": "Document title: Document HAMILTON-H900 Technical specifications for software v1.10x English | 0.21 MB | 689509.05 Download",
+      "evidenceCandidateIds": [
+        "evidence_e9f1ab0437cf4493a68c7196"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_54f15f4972713b736abcb02a",
+      "productSlug": "wave2-hamilton-h900",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "datasheet",
+        "unit": null
+      },
+      "rawText": "Document type: datasheet",
+      "evidenceCandidateIds": [
+        "evidence_8338717ff0c21f4d8fcfa60e"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_adc87a0a5e98451f757dde00",
+      "productSlug": "wave2-hamilton-h900",
+      "subjectType": "product",
+      "suggestedClaimType": "product.manufacturer",
+      "valuePayload": {
+        "value": "Hamilton Medical AG",
+        "unit": null
+      },
+      "rawText": "Manufacturer: Hamilton Medical AG",
+      "evidenceCandidateIds": [
+        "evidence_b604ba4812461118f312fad3"
+      ],
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_8f2e510f4f014be35ad7d189",
+      "productSlug": "wave2-hamilton-h900",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Flow rate",
+        "unit": null
+      },
+      "rawText": "Flow rate ≤ 60 l/min Minimum humidity 33 mg H2O/l",
+      "evidenceCandidateIds": [
+        "evidence_c23dedd04fe6a4d2bef638db"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_c1bbdc61a70c1ab304def69b",
+      "productSlug": "wave2-hamilton-h900",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "dimensions",
+        "unit": null
+      },
+      "rawText": "dimensions",
+      "evidenceCandidateIds": [
+        "evidence_6c7c35b05c1e4cb7ac7f88f5"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_ba5b9638c8ddc6ffe207f770",
+      "productSlug": "wave2-hamilton-h900",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "rawText": "Weight 2.5 kg (5.5 lb)",
+      "evidenceCandidateIds": [
+        "evidence_a07000f16b64fb03d82e2269"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_2fca06ed8bf057f3cadf0009",
+      "productSlug": "wave2-hamilton-h900",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Display",
+        "unit": null
+      },
+      "rawText": "Display 3 in / 64 × 128 pixels, inverted dot matrix display (backlit)",
+      "evidenceCandidateIds": [
+        "evidence_e002b046a550aa3b1fb3d457"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "warnings": [
+    "Resolver rejected offsite document URL: https://youtu.be/PfRKuDdpba4?t=152",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=0PTP2wKJbYk",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=W-_dCvlUFs8",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=0PTP2wKJbYk",
+    "Resolver rejected offsite document URL: https://www.facebook.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://twitter.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/hamiltonmedicalag",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/hamilton-medical-ag/mycompany/verification/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/accounts/login/?next=/hamiltonmedical/",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

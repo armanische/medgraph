@@ -1,0 +1,165 @@
+{
+  "product": {
+    "productSlug": "wave2-hamilton-h900",
+    "manufacturer": "Hamilton Medical",
+    "productName": "HAMILTON-H900",
+    "model": "HAMILTON-H900",
+    "category": "Увлажнитель дыхательных смесей"
+  },
+  "sourceCandidates": [
+    {
+      "sourceId": "source_6b637da927bdbea0e4943ee2",
+      "productSlug": "wave2-hamilton-h900",
+      "manufacturer": "Hamilton Medical",
+      "productName": "HAMILTON-H900",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.hamilton-medical.com/en/Products/HAMILTON-H900.html",
+      "title": "HAMILTON-H900 official product page",
+      "snippet": "Official Hamilton product page confirmed during Wave 2 Sprint 1; candidate-only source.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official Hamilton product page confirmed during Wave 2 Sprint 1; candidate-only source."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_820572d5ad2ff6f8b9c0bd85",
+      "sourceId": "source_6b637da927bdbea0e4943ee2",
+      "productSlug": "wave2-hamilton-h900",
+      "documentType": "brochure",
+      "url": "https://www.hamilton-medical.com/dam/jcr:42ef56ba-06fd-4937-a6b1-dc4667fb9eb9/HAMILTON-H900_brochure_en_689504.05.pdf",
+      "title": "Document HAMILTON-H900 - Intelligent humidification for all patient groups English | 1.91 MB | 689504.05 Download",
+      "language": null,
+      "confidence": 0.86,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_604776b3f751706eae6a120b",
+      "sourceId": "source_6b637da927bdbea0e4943ee2",
+      "productSlug": "wave2-hamilton-h900",
+      "documentType": "ifu",
+      "url": "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf",
+      "title": "Document HAMILTON-H900 Instructions for use Software version 1.10x English, German, French, Spanish, Italian, Portuguese, Chinese, Russian, Turkish | 4.97 MB | 624431.10 Download",
+      "language": null,
+      "confidence": 0.86,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_cd5293889b039bb4fa56d5da",
+      "sourceId": "source_6b637da927bdbea0e4943ee2",
+      "productSlug": "wave2-hamilton-h900",
+      "documentType": "datasheet",
+      "url": "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf",
+      "title": "Document HAMILTON-H900 Technical specifications for software v1.10x English | 0.21 MB | 689509.05 Download",
+      "language": null,
+      "confidence": 0.86,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_820572d5ad2ff6f8b9c0bd85",
+      "url": "https://www.hamilton-medical.com/dam/jcr:42ef56ba-06fd-4937-a6b1-dc4667fb9eb9/HAMILTON-H900_brochure_en_689504.05.pdf",
+      "title": "Document HAMILTON-H900 - Intelligent humidification for all patient groups English | 1.91 MB | 689504.05 Download",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_6b637da927bdbea0e4943ee2",
+      "linkText": "Document HAMILTON-H900 - Intelligent humidification for all patient groups English | 1.91 MB | 689504.05 Download",
+      "resolvedFromUrl": "https://www.hamilton-medical.com/en/Products/HAMILTON-H900.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_604776b3f751706eae6a120b",
+      "url": "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf",
+      "title": "Document HAMILTON-H900 Instructions for use Software version 1.10x English, German, French, Spanish, Italian, Portuguese, Chinese, Russian, Turkish | 4.97 MB | 624431.10 Download",
+      "documentTypeGuess": "ifu",
+      "parentSourceId": "source_6b637da927bdbea0e4943ee2",
+      "linkText": "Document HAMILTON-H900 Instructions for use Software version 1.10x English, German, French, Spanish, Italian, Portuguese, Chinese, Russian, Turkish | 4.97 MB | 624431.10 Download",
+      "resolvedFromUrl": "https://www.hamilton-medical.com/en/Products/HAMILTON-H900.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_cd5293889b039bb4fa56d5da",
+      "url": "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf",
+      "title": "Document HAMILTON-H900 Technical specifications for software v1.10x English | 0.21 MB | 689509.05 Download",
+      "documentTypeGuess": "datasheet",
+      "parentSourceId": "source_6b637da927bdbea0e4943ee2",
+      "linkText": "Document HAMILTON-H900 Technical specifications for software v1.10x English | 0.21 MB | 689509.05 Download",
+      "resolvedFromUrl": "https://www.hamilton-medical.com/en/Products/HAMILTON-H900.html",
+      "warnings": []
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver rejected offsite document URL: https://youtu.be/PfRKuDdpba4?t=152",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=0PTP2wKJbYk",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=W-_dCvlUFs8",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=0PTP2wKJbYk",
+    "Resolver rejected offsite document URL: https://www.facebook.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://twitter.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/hamiltonmedicalag",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/hamilton-medical-ag/mycompany/verification/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/accounts/login/?next=/hamiltonmedical/"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-hamilton-h900",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver rejected offsite document URL: https://youtu.be/PfRKuDdpba4?t=152",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=0PTP2wKJbYk",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=W-_dCvlUFs8",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=0PTP2wKJbYk",
+    "Resolver rejected offsite document URL: https://www.facebook.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://twitter.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/hamiltonmedicalag",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/hamilton-medical-ag/mycompany/verification/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/accounts/login/?next=/hamiltonmedical/",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

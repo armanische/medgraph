@@ -1,0 +1,1958 @@
+{
+  "product": {
+    "productSlug": "wave2-hamilton-c3",
+    "manufacturer": "Hamilton Medical",
+    "productName": "HAMILTON-C3",
+    "model": "HAMILTON-C3",
+    "category": "Аппарат ИВЛ"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_3aad0ecb459e39ba7a4d2122",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_a73b60778484fd2fb7c6b0e9",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Document HAMILTON-C3 Technical specifications for SW version 2.0.x English | 0.22 MB | 689469.09 Download",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_cfc5234d98c076e563cce26b"
+      ],
+      "documentVersionIds": [
+        "document_version_4c88842368b3422976cf628c"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_57cb06df7768b1e2e5fc67b6",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_9528e4e18f54cfc3bffc7152",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "datasheet",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_a0241aa13423cef9fb87c525"
+      ],
+      "documentVersionIds": [
+        "document_version_4c88842368b3422976cf628c"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_057dc1cee008ffef231d3f8d",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_2b23475f288fe9b020a9754b",
+      "suggestedClaimType": "product.manufacturer",
+      "valuePayload": {
+        "value": "Hamilton Medical AG",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_ffe37be693fde62bc79495f1"
+      ],
+      "documentVersionIds": [
+        "document_version_4c88842368b3422976cf628c"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Identity data affects product matching and review routing.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_525a36c1787b44b3a053a48d",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_96a80d6518508b2920a79e0b",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "tidal volume",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_cad5f3ff9977e0e882fbfafd"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_2ec8f4e7d517577a50241c3f",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_47d8913de1add99b46a8d532",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Ventilation modes",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_a0c39b7d5bd0fb7faca7d081"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_7e4b5fa116d3ab5eeeae1cf0",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_48fe893e69aa995043cd2101",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_1b2790bf03b212085d3434dd"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_0afafe8689d350049b7d66a0",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_4752ed379f113e8a73e3aad4",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "compatibility",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_d721d45ce096bcb30920d097"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_62abfb92ccbe9e1b7d528a16",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_6e3d45df195a94e9f7ecf36e",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_2cbb7117231c7ff3eddc351d"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_2fd8bb8aa7974d6d79985252",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_b28ebca3947d172635013990",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "minute volume",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_ace20ca62fed9a48befd8ff6"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_bb8962e7b63403c70e38cafc",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_a75bf0a3b496a61c3c606775",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_2628469840d5b075aeafd036"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_d8ca65ca97f15fb8e1ab1672",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_8a77434125da69215578b4c2",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Document HAMILTON-C3 the compact high-end ventilator - brochure English | 0.69 MB | ELO20250303S.00 Download",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_5b056e4641e7026c9c2e192a"
+      ],
+      "documentVersionIds": [
+        "document_version_09df686e64d416cfb8b05001"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_1e8fa6074737baa200d22829",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_e709463de4da01c0064407fe",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c98fc43f5ee8f3020bfb7c88"
+      ],
+      "documentVersionIds": [
+        "document_version_09df686e64d416cfb8b05001"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_cea91c7719e89baaca4b7938",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_301fef2ca62d8f74e4ee7ee8",
+      "suggestedClaimType": "product.manufacturer",
+      "valuePayload": {
+        "value": "Hamilton Medical AG",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_38ed51728bfc432c0f953784"
+      ],
+      "documentVersionIds": [
+        "document_version_09df686e64d416cfb8b05001"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Identity data affects product matching and review routing.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_ae99b9399de4e393063497a0",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_a9942b36a91e43fe59af1475",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_7bb5e8164c70420343fe40d4"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_a699835425f355ebc5a4476c",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_a2c80776454e7a16b4967cf2",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "tidal volume",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_3767aab0abfd250ca3e22cae"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_73904f4292b98085333ed14b",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_4dde0cc7dfe72419e1bdacaf",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_4e97c5e98db21e2b186a11e4"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5abd44819df8d0d10c1cbb81",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_37f014791476fd54deeb2c29",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "ventilation mode",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_3f5a236cb464b77918434565"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_6dd1ebc713c8ed5a4fdf6ad5",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_eef370cf8361e8a023f3d1bb",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "ventilation modes",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_bfbead7423476507f7d0646b"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_4fe3bb3335829af16471a18a",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_a2cbcc1d16426c33913798ee",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Document Company brochure Hamilton Medical - One solution, every situation English | 3.23 MB | ELO20240301N.02 Download",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_42fcda3910866b571f981870"
+      ],
+      "documentVersionIds": [
+        "document_version_0caff67e1c9b49003504bee3"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_364ec914af77ce07f4d73dd5",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_d3dcbefb3ac09f399f745cb2",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_f0dce96785feae7b23a15132"
+      ],
+      "documentVersionIds": [
+        "document_version_0caff67e1c9b49003504bee3"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_fd34157236869860bc2ccc2f",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_474896a69802af69bdf0dc4f",
+      "suggestedClaimType": "product.manufacturer",
+      "valuePayload": {
+        "value": "Hamilton Medical AG",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_bed7d3d670fa566f5ad21d6f"
+      ],
+      "documentVersionIds": [
+        "document_version_0caff67e1c9b49003504bee3"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Identity data affects product matching and review routing.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_a1c81c008ed8852a941cc4a4",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_bcfe973628f5c5dd892811de",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "ventilation modes",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_d499ecdf9bdd60d8d30366f6"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_9ad45e52fa74acf2548cbaba",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_6d6a43827429dca4ec8ba4e6",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "tidal volume",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_3d403db8d17ffc8b554aaff3"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_d2f390cac7bcb535eedfb8ba",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_cdc2f8ca1952d4f19b81f397",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_09c4264c884f3ad8240635d4"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_ee91fda3b0c5e12db63f969b",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_891b0b52556305c8a1b9f420",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "ventilation mode",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_54160c5ea3bebf154cb16c6a"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_938f62223699375228e13453",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_760ac7556620386e43210aa8",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_b39ee6899c593a24c0d87c33"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_a6943cab87ff145be253257a",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_6e8b90fca78c3b5725c5527d",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Compatibility",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_485bd5f81156d902d93fdf6d"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_9754f6d63baf6b1c357e70b2",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_f9282f03231ef68c2cc1edcc",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Document Transport and storage solutions for the HAMILTON-C2/C3 English | 0.44 MB | ELO20210322N.01 Download",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_8aa244b54777fd556ec05bbc"
+      ],
+      "documentVersionIds": [
+        "document_version_6ccfa7f1dfc269cd33e3b3ac"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:67545a5c-4bbc-4255-b9ab-8acc54587f74/HAMILTON-C2-C3_Transport-and-storage-solutions_flyer_en_ELO20210322N.01.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b292b88dfa0c2104b2961bae",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_886cc9b5804536b04f2a047b",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_9c3c79ad2b0c3b60384d7a2f"
+      ],
+      "documentVersionIds": [
+        "document_version_6ccfa7f1dfc269cd33e3b3ac"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:67545a5c-4bbc-4255-b9ab-8acc54587f74/HAMILTON-C2-C3_Transport-and-storage-solutions_flyer_en_ELO20210322N.01.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_62cb21c6f34d86b4e63129e2",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_44168fcb618c45fbb96b3169",
+      "suggestedClaimType": "product.manufacturer",
+      "valuePayload": {
+        "value": "Hamilton Medical AG",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_632a8d330bc403243c365133"
+      ],
+      "documentVersionIds": [
+        "document_version_6ccfa7f1dfc269cd33e3b3ac"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:67545a5c-4bbc-4255-b9ab-8acc54587f74/HAMILTON-C2-C3_Transport-and-storage-solutions_flyer_en_ELO20210322N.01.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Identity data affects product matching and review routing.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_d4b811cd3249810956f5d8bc",
+      "productSlug": "wave2-hamilton-c3",
+      "productTitle": "HAMILTON-C3",
+      "claimCandidateId": "claim_b42ae3ecf4c6173c22a45225",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_1c602d13198da43629f4e375"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_3aad0ecb459e39ba7a4d2122",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_a73b60778484fd2fb7c6b0e9",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Document HAMILTON-C3 Technical specifications for SW version 2.0.x English | 0.22 MB | 689469.09 Download",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_cfc5234d98c076e563cce26b"
+        ],
+        "documentVersionIds": [
+          "document_version_4c88842368b3422976cf628c"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_d8ca65ca97f15fb8e1ab1672",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_8a77434125da69215578b4c2",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Document HAMILTON-C3 the compact high-end ventilator - brochure English | 0.69 MB | ELO20250303S.00 Download",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_5b056e4641e7026c9c2e192a"
+        ],
+        "documentVersionIds": [
+          "document_version_09df686e64d416cfb8b05001"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_4fe3bb3335829af16471a18a",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_a2cbcc1d16426c33913798ee",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Document Company brochure Hamilton Medical - One solution, every situation English | 3.23 MB | ELO20240301N.02 Download",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_42fcda3910866b571f981870"
+        ],
+        "documentVersionIds": [
+          "document_version_0caff67e1c9b49003504bee3"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_9754f6d63baf6b1c357e70b2",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_f9282f03231ef68c2cc1edcc",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Document Transport and storage solutions for the HAMILTON-C2/C3 English | 0.44 MB | ELO20210322N.01 Download",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_8aa244b54777fd556ec05bbc"
+        ],
+        "documentVersionIds": [
+          "document_version_6ccfa7f1dfc269cd33e3b3ac"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:67545a5c-4bbc-4255-b9ab-8acc54587f74/HAMILTON-C2-C3_Transport-and-storage-solutions_flyer_en_ELO20210322N.01.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_57cb06df7768b1e2e5fc67b6",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_9528e4e18f54cfc3bffc7152",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "datasheet",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_a0241aa13423cef9fb87c525"
+        ],
+        "documentVersionIds": [
+          "document_version_4c88842368b3422976cf628c"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_1e8fa6074737baa200d22829",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_e709463de4da01c0064407fe",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c98fc43f5ee8f3020bfb7c88"
+        ],
+        "documentVersionIds": [
+          "document_version_09df686e64d416cfb8b05001"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_364ec914af77ce07f4d73dd5",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_d3dcbefb3ac09f399f745cb2",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_f0dce96785feae7b23a15132"
+        ],
+        "documentVersionIds": [
+          "document_version_0caff67e1c9b49003504bee3"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_b292b88dfa0c2104b2961bae",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_886cc9b5804536b04f2a047b",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_9c3c79ad2b0c3b60384d7a2f"
+        ],
+        "documentVersionIds": [
+          "document_version_6ccfa7f1dfc269cd33e3b3ac"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:67545a5c-4bbc-4255-b9ab-8acc54587f74/HAMILTON-C2-C3_Transport-and-storage-solutions_flyer_en_ELO20210322N.01.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.manufacturer": [
+      {
+        "reviewItemId": "review_item_057dc1cee008ffef231d3f8d",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_2b23475f288fe9b020a9754b",
+        "suggestedClaimType": "product.manufacturer",
+        "valuePayload": {
+          "value": "Hamilton Medical AG",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_ffe37be693fde62bc79495f1"
+        ],
+        "documentVersionIds": [
+          "document_version_4c88842368b3422976cf628c"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Identity data affects product matching and review routing.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_cea91c7719e89baaca4b7938",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_301fef2ca62d8f74e4ee7ee8",
+        "suggestedClaimType": "product.manufacturer",
+        "valuePayload": {
+          "value": "Hamilton Medical AG",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_38ed51728bfc432c0f953784"
+        ],
+        "documentVersionIds": [
+          "document_version_09df686e64d416cfb8b05001"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Identity data affects product matching and review routing.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_fd34157236869860bc2ccc2f",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_474896a69802af69bdf0dc4f",
+        "suggestedClaimType": "product.manufacturer",
+        "valuePayload": {
+          "value": "Hamilton Medical AG",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_bed7d3d670fa566f5ad21d6f"
+        ],
+        "documentVersionIds": [
+          "document_version_0caff67e1c9b49003504bee3"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Identity data affects product matching and review routing.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_62cb21c6f34d86b4e63129e2",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_44168fcb618c45fbb96b3169",
+        "suggestedClaimType": "product.manufacturer",
+        "valuePayload": {
+          "value": "Hamilton Medical AG",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_632a8d330bc403243c365133"
+        ],
+        "documentVersionIds": [
+          "document_version_6ccfa7f1dfc269cd33e3b3ac"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:67545a5c-4bbc-4255-b9ab-8acc54587f74/HAMILTON-C2-C3_Transport-and-storage-solutions_flyer_en_ELO20210322N.01.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Identity data affects product matching and review routing.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "technical.term": [
+      {
+        "reviewItemId": "review_item_525a36c1787b44b3a053a48d",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_96a80d6518508b2920a79e0b",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "tidal volume",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_cad5f3ff9977e0e882fbfafd"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_2ec8f4e7d517577a50241c3f",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_47d8913de1add99b46a8d532",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Ventilation modes",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_a0c39b7d5bd0fb7faca7d081"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_7e4b5fa116d3ab5eeeae1cf0",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_48fe893e69aa995043cd2101",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_1b2790bf03b212085d3434dd"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_0afafe8689d350049b7d66a0",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_4752ed379f113e8a73e3aad4",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "compatibility",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_d721d45ce096bcb30920d097"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_62abfb92ccbe9e1b7d528a16",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_6e3d45df195a94e9f7ecf36e",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_2cbb7117231c7ff3eddc351d"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_2fd8bb8aa7974d6d79985252",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_b28ebca3947d172635013990",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "minute volume",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_ace20ca62fed9a48befd8ff6"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_bb8962e7b63403c70e38cafc",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_a75bf0a3b496a61c3c606775",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_2628469840d5b075aeafd036"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_ae99b9399de4e393063497a0",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_a9942b36a91e43fe59af1475",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_7bb5e8164c70420343fe40d4"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_a699835425f355ebc5a4476c",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_a2c80776454e7a16b4967cf2",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "tidal volume",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_3767aab0abfd250ca3e22cae"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_73904f4292b98085333ed14b",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_4dde0cc7dfe72419e1bdacaf",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_4e97c5e98db21e2b186a11e4"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_5abd44819df8d0d10c1cbb81",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_37f014791476fd54deeb2c29",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "ventilation mode",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_3f5a236cb464b77918434565"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_6dd1ebc713c8ed5a4fdf6ad5",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_eef370cf8361e8a023f3d1bb",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "ventilation modes",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_bfbead7423476507f7d0646b"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_a1c81c008ed8852a941cc4a4",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_bcfe973628f5c5dd892811de",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "ventilation modes",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_d499ecdf9bdd60d8d30366f6"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_9ad45e52fa74acf2548cbaba",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_6d6a43827429dca4ec8ba4e6",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "tidal volume",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_3d403db8d17ffc8b554aaff3"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_d2f390cac7bcb535eedfb8ba",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_cdc2f8ca1952d4f19b81f397",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_09c4264c884f3ad8240635d4"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_ee91fda3b0c5e12db63f969b",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_891b0b52556305c8a1b9f420",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "ventilation mode",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_54160c5ea3bebf154cb16c6a"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_938f62223699375228e13453",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_760ac7556620386e43210aa8",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_b39ee6899c593a24c0d87c33"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_a6943cab87ff145be253257a",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_6e8b90fca78c3b5725c5527d",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Compatibility",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_485bd5f81156d902d93fdf6d"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_d4b811cd3249810956f5d8bc",
+        "productSlug": "wave2-hamilton-c3",
+        "productTitle": "HAMILTON-C3",
+        "claimCandidateId": "claim_b42ae3ecf4c6173c22a45225",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_1c602d13198da43629f4e375"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentType": "datasheet",
+      "title": "Document HAMILTON-C3 Technical specifications for SW version 2.0.x English | 0.22 MB | 689469.09 Download",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "sha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2"
+    },
+    {
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentType": "brochure",
+      "title": "Document HAMILTON-C3 the compact high-end ventilator - brochure English | 0.69 MB | ELO20250303S.00 Download",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "sha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27"
+    },
+    {
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentType": "brochure",
+      "title": "Document Company brochure Hamilton Medical - One solution, every situation English | 3.23 MB | ELO20240301N.02 Download",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "sha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913"
+    },
+    {
+      "documentVersionId": "document_version_6ccfa7f1dfc269cd33e3b3ac",
+      "documentType": "unknown",
+      "title": "Document Transport and storage solutions for the HAMILTON-C2/C3 English | 0.44 MB | ELO20210322N.01 Download",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:67545a5c-4bbc-4255-b9ab-8acc54587f74/HAMILTON-C2-C3_Transport-and-storage-solutions_flyer_en_ELO20210322N.01.pdf",
+      "sha256": "bb108ad4d4eb8e0e69b8265c91801b8e6d2db8537820132588f5319c8a357616"
+    }
+  ],
+  "missingEvidence": [
+    {
+      "claimCandidateId": "claim_96a80d6518508b2920a79e0b",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_47d8913de1add99b46a8d532",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_48fe893e69aa995043cd2101",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_4752ed379f113e8a73e3aad4",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_6e3d45df195a94e9f7ecf36e",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_b28ebca3947d172635013990",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_a75bf0a3b496a61c3c606775",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_a9942b36a91e43fe59af1475",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_a2c80776454e7a16b4967cf2",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_4dde0cc7dfe72419e1bdacaf",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_37f014791476fd54deeb2c29",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_eef370cf8361e8a023f3d1bb",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_bcfe973628f5c5dd892811de",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_6d6a43827429dca4ec8ba4e6",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_cdc2f8ca1952d4f19b81f397",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_891b0b52556305c8a1b9f420",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_760ac7556620386e43210aa8",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_6e8b90fca78c3b5725c5527d",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_b42ae3ecf4c6173c22a45225",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    }
+  ],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver rejected offsite document URL: https://youtu.be/1plecudVVjY?si=dIrympV9P4XhW59U",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=nCD0zUrc7B0",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25742308",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/27006266",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25569810",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/24577110",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/26957117",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/28377920",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/31733881",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25425705",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/15165301",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/18393813",
+    "Resolver rejected offsite document URL: https://www.facebook.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://twitter.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/hamiltonmedicalag",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/hamilton-medical-ag/mycompany/verification/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/accounts/login/?next=/hamiltonmedical/",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

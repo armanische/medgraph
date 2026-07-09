@@ -1,0 +1,1974 @@
+{
+  "product": {
+    "productSlug": "wave2-hamilton-c3",
+    "manufacturer": "Hamilton Medical",
+    "productName": "HAMILTON-C3",
+    "model": "HAMILTON-C3",
+    "category": "Аппарат ИВЛ"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "sourceId": "source_be66dfbc1a0577b5bb1e995c",
+      "productSlug": "wave2-hamilton-c3",
+      "documentKey": "trusted-document:document_b85d25104e0c77b1ba3d8043",
+      "documentType": "datasheet",
+      "title": "Document HAMILTON-C3 Technical specifications for SW version 2.0.x English | 0.22 MB | 689469.09 Download",
+      "language": null,
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "sha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "contentType": "application/pdf",
+      "byteSize": 233489,
+      "filePath": "data/research/artifacts/artifacts/sha256/ae/c5/aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "sourceId": "source_be66dfbc1a0577b5bb1e995c",
+      "productSlug": "wave2-hamilton-c3",
+      "documentKey": "trusted-document:document_8034ffd100572fe36ec6d19a",
+      "documentType": "brochure",
+      "title": "Document HAMILTON-C3 the compact high-end ventilator - brochure English | 0.69 MB | ELO20250303S.00 Download",
+      "language": null,
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "sha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "contentType": "application/pdf",
+      "byteSize": 725897,
+      "filePath": "data/research/artifacts/artifacts/sha256/48/75/487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "sourceId": "source_be66dfbc1a0577b5bb1e995c",
+      "productSlug": "wave2-hamilton-c3",
+      "documentKey": "trusted-document:document_355757232ef2f32fcd5c16cb",
+      "documentType": "brochure",
+      "title": "Document Company brochure Hamilton Medical - One solution, every situation English | 3.23 MB | ELO20240301N.02 Download",
+      "language": null,
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "sha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "contentType": "application/pdf",
+      "byteSize": 3383999,
+      "filePath": "data/research/artifacts/artifacts/sha256/c0/00/c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_6ccfa7f1dfc269cd33e3b3ac",
+      "documentCandidateId": "document_0af818d21b9c9800afab9b79",
+      "sourceId": "source_be66dfbc1a0577b5bb1e995c",
+      "productSlug": "wave2-hamilton-c3",
+      "documentKey": "trusted-document:document_0af818d21b9c9800afab9b79",
+      "documentType": "unknown",
+      "title": "Document Transport and storage solutions for the HAMILTON-C2/C3 English | 0.44 MB | ELO20210322N.01 Download",
+      "language": null,
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:67545a5c-4bbc-4255-b9ab-8acc54587f74/HAMILTON-C2-C3_Transport-and-storage-solutions_flyer_en_ELO20210322N.01.pdf",
+      "sha256": "bb108ad4d4eb8e0e69b8265c91801b8e6d2db8537820132588f5319c8a357616",
+      "contentType": "application/pdf",
+      "byteSize": 457721,
+      "filePath": "data/research/artifacts/artifacts/sha256/bb/10/bb108ad4d4eb8e0e69b8265c91801b8e6d2db8537820132588f5319c8a357616.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_b74d1e8d80c1e79a44e3bd06",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Document HAMILTON-C3 Technical specifications for SW version 2.0.x English | 0.22 MB | 689469.09 Download",
+      "unit": null,
+      "rawText": "Document title: Document HAMILTON-C3 Technical specifications for SW version 2.0.x English | 0.22 MB | 689469.09 Download",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "documentSha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_cfc5234d98c076e563cce26b",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_c783bda91eb0c83e49e3c34c",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "datasheet",
+      "unit": null,
+      "rawText": "Document type: datasheet",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "documentSha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_a0241aa13423cef9fb87c525",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_3110dd2dba0ad51b4b5439c3",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "product.manufacturer",
+      "label": "Производитель",
+      "value": "Hamilton Medical AG",
+      "unit": null,
+      "rawText": "Manufacturer: Hamilton Medical AG",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "documentSha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 256
+      },
+      "evidenceCandidateId": "evidence_ffe37be693fde62bc79495f1",
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_e8e2daef498b84d02b48f769",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "tidal volume",
+      "unit": null,
+      "rawText": "tidal volume,",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "documentSha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 30
+      },
+      "evidenceCandidateId": "evidence_cad5f3ff9977e0e882fbfafd",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_3073973208c8162cc24cc4e8",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Ventilation modes",
+      "unit": null,
+      "rawText": "Ventilation modes",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "documentSha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 52
+      },
+      "evidenceCandidateId": "evidence_a0c39b7d5bd0fb7faca7d081",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_d175de85dcd6e0470dc116a2",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "battery",
+      "unit": null,
+      "rawText": "battery O O",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "documentSha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 76
+      },
+      "evidenceCandidateId": "evidence_1b2790bf03b212085d3434dd",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_30e4d784bd43779d64f54d99",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "compatibility",
+      "unit": null,
+      "rawText": "compatibility According to IEC 60601-1-2:2014",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "documentSha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 108
+      },
+      "evidenceCandidateId": "evidence_d721d45ce096bcb30920d097",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_3ba76fb51b41f3e6b8906e59",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Weight",
+      "unit": null,
+      "rawText": "Weight (kg) -- 0.2 to 30.0",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "documentSha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": 5,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 178
+      },
+      "evidenceCandidateId": "evidence_2cbb7117231c7ff3eddc351d",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_ab3b96d068e73c6714a1165f",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "minute volume",
+      "unit": null,
+      "rawText": "minute volume",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "documentSha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 194
+      },
+      "evidenceCandidateId": "evidence_ace20ca62fed9a48befd8ff6",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_4d34991a348ed2387752b404",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Dimensions",
+      "unit": null,
+      "rawText": "Dimensions See graphic above",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "documentSha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 253
+      },
+      "evidenceCandidateId": "evidence_2628469840d5b075aeafd036",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_71814b9daf904fe8b078309b",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Document HAMILTON-C3 the compact high-end ventilator - brochure English | 0.69 MB | ELO20250303S.00 Download",
+      "unit": null,
+      "rawText": "Document title: Document HAMILTON-C3 the compact high-end ventilator - brochure English | 0.69 MB | ELO20250303S.00 Download",
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "documentSha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_5b056e4641e7026c9c2e192a",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_d2f6b851aeffac4722d49498",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "documentSha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_c98fc43f5ee8f3020bfb7c88",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_8cd454b97b71b20ef43fb294",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "product.manufacturer",
+      "label": "Производитель",
+      "value": "Hamilton Medical AG",
+      "unit": null,
+      "rawText": "Manufacturer: Hamilton Medical AG",
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "documentSha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "locator": {
+        "page": 12,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 161
+      },
+      "evidenceCandidateId": "evidence_38ed51728bfc432c0f953784",
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_62796e102524248500eb9609",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "battery",
+      "unit": null,
+      "rawText": "battery allows you to ventilate your",
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "documentSha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 34
+      },
+      "evidenceCandidateId": "evidence_7bb5e8164c70420343fe40d4",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_50611f295ea415f594cf4e12",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "tidal volume",
+      "unit": null,
+      "rawText": "tidal volume, lung",
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "documentSha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 68
+      },
+      "evidenceCandidateId": "evidence_3767aab0abfd250ca3e22cae",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_c409f148efa27ddbf14a92aa",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "display",
+      "unit": null,
+      "rawText": "display.",
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "documentSha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 83
+      },
+      "evidenceCandidateId": "evidence_4e97c5e98db21e2b186a11e4",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_771db6afb92b72dbabdd54b9",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "ventilation mode",
+      "unit": null,
+      "rawText": "ventilation mode based on ASV. The clinician defines the",
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "documentSha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "locator": {
+        "page": 9,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 115
+      },
+      "evidenceCandidateId": "evidence_3f5a236cb464b77918434565",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_ca8f5afae9f267df996dd5a3",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "ventilation modes",
+      "unit": null,
+      "rawText": "ventilation modes",
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "documentSha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "locator": {
+        "page": 10,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 124
+      },
+      "evidenceCandidateId": "evidence_bfbead7423476507f7d0646b",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_df5ce069742faa36d7b6a746",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Document Company brochure Hamilton Medical - One solution, every situation English | 3.23 MB | ELO20240301N.02 Download",
+      "unit": null,
+      "rawText": "Document title: Document Company brochure Hamilton Medical - One solution, every situation English | 3.23 MB | ELO20240301N.02 Download",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "documentSha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_42fcda3910866b571f981870",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_d82382a6536ae1743b065866",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "documentSha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_f0dce96785feae7b23a15132",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_6e0202b3abdca12ca87f2fd1",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "product.manufacturer",
+      "label": "Производитель",
+      "value": "Hamilton Medical AG",
+      "unit": null,
+      "rawText": "Manufacturer: Hamilton Medical AG",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "documentSha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 16,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 342
+      },
+      "evidenceCandidateId": "evidence_bed7d3d670fa566f5ad21d6f",
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_4ae8de29a87b519b183653e4",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "ventilation modes",
+      "unit": null,
+      "rawText": "ventilation modes",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "documentSha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 20
+      },
+      "evidenceCandidateId": "evidence_d499ecdf9bdd60d8d30366f6",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_65e2b29e7cf4e37d88f93e62",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "tidal volume",
+      "unit": null,
+      "rawText": "tidal volume, lung",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "documentSha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 5,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 53
+      },
+      "evidenceCandidateId": "evidence_3d403db8d17ffc8b554aaff3",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_98862f4b736e31b15cb1bf9b",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "display",
+      "unit": null,
+      "rawText": "display.",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "documentSha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 5,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 67
+      },
+      "evidenceCandidateId": "evidence_09c4264c884f3ad8240635d4",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_f0581147a7a2d6a2222cc07d",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "ventilation mode",
+      "unit": null,
+      "rawText": "ventilation mode ASV continuously adjusts breath-by-breath, the respiratory",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "documentSha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 71
+      },
+      "evidenceCandidateId": "evidence_54160c5ea3bebf154cb16c6a",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_a208e14f948806354bc814a7",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "battery",
+      "unit": null,
+      "rawText": "battery backup",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "documentSha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 186
+      },
+      "evidenceCandidateId": "evidence_b39ee6899c593a24c0d87c33",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_6ad125cfea9958a2a932b88a",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Compatibility",
+      "unit": null,
+      "rawText": "Compatibility with Night vision goggles (NVG) X X X O X",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "documentSha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 9,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 220
+      },
+      "evidenceCandidateId": "evidence_485bd5f81156d902d93fdf6d",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_9a16c9df193546ade3f4d00c",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Document Transport and storage solutions for the HAMILTON-C2/C3 English | 0.44 MB | ELO20210322N.01 Download",
+      "unit": null,
+      "rawText": "Document title: Document Transport and storage solutions for the HAMILTON-C2/C3 English | 0.44 MB | ELO20210322N.01 Download",
+      "documentVersionId": "document_version_6ccfa7f1dfc269cd33e3b3ac",
+      "documentCandidateId": "document_0af818d21b9c9800afab9b79",
+      "documentSha256": "bb108ad4d4eb8e0e69b8265c91801b8e6d2db8537820132588f5319c8a357616",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:67545a5c-4bbc-4255-b9ab-8acc54587f74/HAMILTON-C2-C3_Transport-and-storage-solutions_flyer_en_ELO20210322N.01.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_8aa244b54777fd556ec05bbc",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_af3e1636c7644fa65a93d85d",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_6ccfa7f1dfc269cd33e3b3ac",
+      "documentCandidateId": "document_0af818d21b9c9800afab9b79",
+      "documentSha256": "bb108ad4d4eb8e0e69b8265c91801b8e6d2db8537820132588f5319c8a357616",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:67545a5c-4bbc-4255-b9ab-8acc54587f74/HAMILTON-C2-C3_Transport-and-storage-solutions_flyer_en_ELO20210322N.01.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_9c3c79ad2b0c3b60384d7a2f",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_2b345e7cda558c3d9a7b48fe",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "product.manufacturer",
+      "label": "Производитель",
+      "value": "Hamilton Medical AG",
+      "unit": null,
+      "rawText": "Manufacturer: Hamilton Medical AG",
+      "documentVersionId": "document_version_6ccfa7f1dfc269cd33e3b3ac",
+      "documentCandidateId": "document_0af818d21b9c9800afab9b79",
+      "documentSha256": "bb108ad4d4eb8e0e69b8265c91801b8e6d2db8537820132588f5319c8a357616",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:67545a5c-4bbc-4255-b9ab-8acc54587f74/HAMILTON-C2-C3_Transport-and-storage-solutions_flyer_en_ELO20210322N.01.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 46
+      },
+      "evidenceCandidateId": "evidence_632a8d330bc403243c365133",
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_618c5c909d9714f497dd858c",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "dimensions",
+      "unit": null,
+      "rawText": "dimensions",
+      "documentVersionId": "document_version_6ccfa7f1dfc269cd33e3b3ac",
+      "documentCandidateId": "document_0af818d21b9c9800afab9b79",
+      "documentSha256": "bb108ad4d4eb8e0e69b8265c91801b8e6d2db8537820132588f5319c8a357616",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:67545a5c-4bbc-4255-b9ab-8acc54587f74/HAMILTON-C2-C3_Transport-and-storage-solutions_flyer_en_ELO20210322N.01.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 45
+      },
+      "evidenceCandidateId": "evidence_1c602d13198da43629f4e375",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_cfc5234d98c076e563cce26b",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "sha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Document HAMILTON-C3 Technical specifications for SW version 2.0.x English | 0.22 MB | 689469.09 Download",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_a0241aa13423cef9fb87c525",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "sha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: datasheet",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ffe37be693fde62bc79495f1",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "sha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 256
+      },
+      "quotedText": "Manufacturer: Hamilton Medical AG",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_5b056e4641e7026c9c2e192a",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "sha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Document HAMILTON-C3 the compact high-end ventilator - brochure English | 0.69 MB | ELO20250303S.00 Download",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_c98fc43f5ee8f3020bfb7c88",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "sha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_38ed51728bfc432c0f953784",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "sha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "locator": {
+        "page": 12,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 161
+      },
+      "quotedText": "Manufacturer: Hamilton Medical AG",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_42fcda3910866b571f981870",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "sha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Document Company brochure Hamilton Medical - One solution, every situation English | 3.23 MB | ELO20240301N.02 Download",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_f0dce96785feae7b23a15132",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "sha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_bed7d3d670fa566f5ad21d6f",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "sha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 16,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 342
+      },
+      "quotedText": "Manufacturer: Hamilton Medical AG",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_8aa244b54777fd556ec05bbc",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_6ccfa7f1dfc269cd33e3b3ac",
+      "documentCandidateId": "document_0af818d21b9c9800afab9b79",
+      "sha256": "bb108ad4d4eb8e0e69b8265c91801b8e6d2db8537820132588f5319c8a357616",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:67545a5c-4bbc-4255-b9ab-8acc54587f74/HAMILTON-C2-C3_Transport-and-storage-solutions_flyer_en_ELO20210322N.01.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Document Transport and storage solutions for the HAMILTON-C2/C3 English | 0.44 MB | ELO20210322N.01 Download",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_9c3c79ad2b0c3b60384d7a2f",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_6ccfa7f1dfc269cd33e3b3ac",
+      "documentCandidateId": "document_0af818d21b9c9800afab9b79",
+      "sha256": "bb108ad4d4eb8e0e69b8265c91801b8e6d2db8537820132588f5319c8a357616",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:67545a5c-4bbc-4255-b9ab-8acc54587f74/HAMILTON-C2-C3_Transport-and-storage-solutions_flyer_en_ELO20210322N.01.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_632a8d330bc403243c365133",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_6ccfa7f1dfc269cd33e3b3ac",
+      "documentCandidateId": "document_0af818d21b9c9800afab9b79",
+      "sha256": "bb108ad4d4eb8e0e69b8265c91801b8e6d2db8537820132588f5319c8a357616",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:67545a5c-4bbc-4255-b9ab-8acc54587f74/HAMILTON-C2-C3_Transport-and-storage-solutions_flyer_en_ELO20210322N.01.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 46
+      },
+      "quotedText": "Manufacturer: Hamilton Medical AG",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_a73b60778484fd2fb7c6b0e9",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Document HAMILTON-C3 Technical specifications for SW version 2.0.x English | 0.22 MB | 689469.09 Download",
+        "unit": null
+      },
+      "rawText": "Document title: Document HAMILTON-C3 Technical specifications for SW version 2.0.x English | 0.22 MB | 689469.09 Download",
+      "evidenceCandidateIds": [
+        "evidence_cfc5234d98c076e563cce26b"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_9528e4e18f54cfc3bffc7152",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "datasheet",
+        "unit": null
+      },
+      "rawText": "Document type: datasheet",
+      "evidenceCandidateIds": [
+        "evidence_a0241aa13423cef9fb87c525"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_2b23475f288fe9b020a9754b",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "product.manufacturer",
+      "valuePayload": {
+        "value": "Hamilton Medical AG",
+        "unit": null
+      },
+      "rawText": "Manufacturer: Hamilton Medical AG",
+      "evidenceCandidateIds": [
+        "evidence_ffe37be693fde62bc79495f1"
+      ],
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_96a80d6518508b2920a79e0b",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "tidal volume",
+        "unit": null
+      },
+      "rawText": "tidal volume,",
+      "evidenceCandidateIds": [
+        "evidence_cad5f3ff9977e0e882fbfafd"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_47d8913de1add99b46a8d532",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Ventilation modes",
+        "unit": null
+      },
+      "rawText": "Ventilation modes",
+      "evidenceCandidateIds": [
+        "evidence_a0c39b7d5bd0fb7faca7d081"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_48fe893e69aa995043cd2101",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "rawText": "battery O O",
+      "evidenceCandidateIds": [
+        "evidence_1b2790bf03b212085d3434dd"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_4752ed379f113e8a73e3aad4",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "compatibility",
+        "unit": null
+      },
+      "rawText": "compatibility According to IEC 60601-1-2:2014",
+      "evidenceCandidateIds": [
+        "evidence_d721d45ce096bcb30920d097"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_6e3d45df195a94e9f7ecf36e",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "rawText": "Weight (kg) -- 0.2 to 30.0",
+      "evidenceCandidateIds": [
+        "evidence_2cbb7117231c7ff3eddc351d"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_b28ebca3947d172635013990",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "minute volume",
+        "unit": null
+      },
+      "rawText": "minute volume",
+      "evidenceCandidateIds": [
+        "evidence_ace20ca62fed9a48befd8ff6"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_a75bf0a3b496a61c3c606775",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "rawText": "Dimensions See graphic above",
+      "evidenceCandidateIds": [
+        "evidence_2628469840d5b075aeafd036"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_8a77434125da69215578b4c2",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Document HAMILTON-C3 the compact high-end ventilator - brochure English | 0.69 MB | ELO20250303S.00 Download",
+        "unit": null
+      },
+      "rawText": "Document title: Document HAMILTON-C3 the compact high-end ventilator - brochure English | 0.69 MB | ELO20250303S.00 Download",
+      "evidenceCandidateIds": [
+        "evidence_5b056e4641e7026c9c2e192a"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_e709463de4da01c0064407fe",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_c98fc43f5ee8f3020bfb7c88"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_301fef2ca62d8f74e4ee7ee8",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "product.manufacturer",
+      "valuePayload": {
+        "value": "Hamilton Medical AG",
+        "unit": null
+      },
+      "rawText": "Manufacturer: Hamilton Medical AG",
+      "evidenceCandidateIds": [
+        "evidence_38ed51728bfc432c0f953784"
+      ],
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_a9942b36a91e43fe59af1475",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "rawText": "battery allows you to ventilate your",
+      "evidenceCandidateIds": [
+        "evidence_7bb5e8164c70420343fe40d4"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_a2c80776454e7a16b4967cf2",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "tidal volume",
+        "unit": null
+      },
+      "rawText": "tidal volume, lung",
+      "evidenceCandidateIds": [
+        "evidence_3767aab0abfd250ca3e22cae"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_4dde0cc7dfe72419e1bdacaf",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "rawText": "display.",
+      "evidenceCandidateIds": [
+        "evidence_4e97c5e98db21e2b186a11e4"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_37f014791476fd54deeb2c29",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "ventilation mode",
+        "unit": null
+      },
+      "rawText": "ventilation mode based on ASV. The clinician defines the",
+      "evidenceCandidateIds": [
+        "evidence_3f5a236cb464b77918434565"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_eef370cf8361e8a023f3d1bb",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "ventilation modes",
+        "unit": null
+      },
+      "rawText": "ventilation modes",
+      "evidenceCandidateIds": [
+        "evidence_bfbead7423476507f7d0646b"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_a2cbcc1d16426c33913798ee",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Document Company brochure Hamilton Medical - One solution, every situation English | 3.23 MB | ELO20240301N.02 Download",
+        "unit": null
+      },
+      "rawText": "Document title: Document Company brochure Hamilton Medical - One solution, every situation English | 3.23 MB | ELO20240301N.02 Download",
+      "evidenceCandidateIds": [
+        "evidence_42fcda3910866b571f981870"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_d3dcbefb3ac09f399f745cb2",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_f0dce96785feae7b23a15132"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_474896a69802af69bdf0dc4f",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "product.manufacturer",
+      "valuePayload": {
+        "value": "Hamilton Medical AG",
+        "unit": null
+      },
+      "rawText": "Manufacturer: Hamilton Medical AG",
+      "evidenceCandidateIds": [
+        "evidence_bed7d3d670fa566f5ad21d6f"
+      ],
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_bcfe973628f5c5dd892811de",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "ventilation modes",
+        "unit": null
+      },
+      "rawText": "ventilation modes",
+      "evidenceCandidateIds": [
+        "evidence_d499ecdf9bdd60d8d30366f6"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_6d6a43827429dca4ec8ba4e6",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "tidal volume",
+        "unit": null
+      },
+      "rawText": "tidal volume, lung",
+      "evidenceCandidateIds": [
+        "evidence_3d403db8d17ffc8b554aaff3"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_cdc2f8ca1952d4f19b81f397",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "rawText": "display.",
+      "evidenceCandidateIds": [
+        "evidence_09c4264c884f3ad8240635d4"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_891b0b52556305c8a1b9f420",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "ventilation mode",
+        "unit": null
+      },
+      "rawText": "ventilation mode ASV continuously adjusts breath-by-breath, the respiratory",
+      "evidenceCandidateIds": [
+        "evidence_54160c5ea3bebf154cb16c6a"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_760ac7556620386e43210aa8",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "rawText": "battery backup",
+      "evidenceCandidateIds": [
+        "evidence_b39ee6899c593a24c0d87c33"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_6e8b90fca78c3b5725c5527d",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Compatibility",
+        "unit": null
+      },
+      "rawText": "Compatibility with Night vision goggles (NVG) X X X O X",
+      "evidenceCandidateIds": [
+        "evidence_485bd5f81156d902d93fdf6d"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_f9282f03231ef68c2cc1edcc",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Document Transport and storage solutions for the HAMILTON-C2/C3 English | 0.44 MB | ELO20210322N.01 Download",
+        "unit": null
+      },
+      "rawText": "Document title: Document Transport and storage solutions for the HAMILTON-C2/C3 English | 0.44 MB | ELO20210322N.01 Download",
+      "evidenceCandidateIds": [
+        "evidence_8aa244b54777fd556ec05bbc"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_886cc9b5804536b04f2a047b",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_9c3c79ad2b0c3b60384d7a2f"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_44168fcb618c45fbb96b3169",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "product.manufacturer",
+      "valuePayload": {
+        "value": "Hamilton Medical AG",
+        "unit": null
+      },
+      "rawText": "Manufacturer: Hamilton Medical AG",
+      "evidenceCandidateIds": [
+        "evidence_632a8d330bc403243c365133"
+      ],
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_b42ae3ecf4c6173c22a45225",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "dimensions",
+        "unit": null
+      },
+      "rawText": "dimensions",
+      "evidenceCandidateIds": [
+        "evidence_1c602d13198da43629f4e375"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "warnings": [
+    "Resolver rejected offsite document URL: https://youtu.be/1plecudVVjY?si=dIrympV9P4XhW59U",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=nCD0zUrc7B0",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25742308",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/27006266",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25569810",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/24577110",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/26957117",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/28377920",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/31733881",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25425705",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/15165301",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/18393813",
+    "Resolver rejected offsite document URL: https://www.facebook.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://twitter.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/hamiltonmedicalag",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/hamilton-medical-ag/mycompany/verification/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/accounts/login/?next=/hamiltonmedical/",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "product": {
+    "productSlug": "wave2-hamilton-s1",
+    "manufacturer": "Hamilton Medical",
+    "productName": "HAMILTON-S1",
+    "model": "HAMILTON-S1",
+    "category": "Аппарат ИВЛ"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_6804490b4227249beabb95a7",
+      "documentCandidateId": "document_7ab366b10801ce14a35bebfd",
+      "sourceId": "source_adca7d8a7f5aa74d4b83c538",
+      "productSlug": "wave2-hamilton-s1",
+      "documentKey": "trusted-document:document_7ab366b10801ce14a35bebfd",
+      "documentType": "unknown",
+      "title": "Company statement about the HAMILTON-G5/S1 discontinuation",
+      "language": null,
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:c8fcfe9b-e26d-47f5-8f84-8cffb6a3073b/HAMILTON-G5-S1_company-statement_Announcement-discontinuation-HAMILTON-G5-S1_en_CS150.pdf",
+      "sha256": "0a3cd0bdcdab3e1e03f93b45bd2cf5d20daab58a39e1a2ccdbdb5e6195f38722",
+      "contentType": "application/pdf",
+      "byteSize": 221689,
+      "filePath": "data/research/artifacts/artifacts/sha256/0a/3c/0a3cd0bdcdab3e1e03f93b45bd2cf5d20daab58a39e1a2ccdbdb5e6195f38722.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_f094343fbbea4016f97cf05a",
+      "productSlug": "wave2-hamilton-s1",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Company statement about the HAMILTON-G5/S1 discontinuation",
+      "unit": null,
+      "rawText": "Document title: Company statement about the HAMILTON-G5/S1 discontinuation",
+      "documentVersionId": "document_version_6804490b4227249beabb95a7",
+      "documentCandidateId": "document_7ab366b10801ce14a35bebfd",
+      "documentSha256": "0a3cd0bdcdab3e1e03f93b45bd2cf5d20daab58a39e1a2ccdbdb5e6195f38722",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:c8fcfe9b-e26d-47f5-8f84-8cffb6a3073b/HAMILTON-G5-S1_company-statement_Announcement-discontinuation-HAMILTON-G5-S1_en_CS150.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_93cdcbb8566471ef316d7c98",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_b5eeb9409b57b02bc5dfbeba",
+      "productSlug": "wave2-hamilton-s1",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_6804490b4227249beabb95a7",
+      "documentCandidateId": "document_7ab366b10801ce14a35bebfd",
+      "documentSha256": "0a3cd0bdcdab3e1e03f93b45bd2cf5d20daab58a39e1a2ccdbdb5e6195f38722",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:c8fcfe9b-e26d-47f5-8f84-8cffb6a3073b/HAMILTON-G5-S1_company-statement_Announcement-discontinuation-HAMILTON-G5-S1_en_CS150.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_4bdadefa0487362401fdd054",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_93cdcbb8566471ef316d7c98",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_6804490b4227249beabb95a7",
+      "documentCandidateId": "document_7ab366b10801ce14a35bebfd",
+      "sha256": "0a3cd0bdcdab3e1e03f93b45bd2cf5d20daab58a39e1a2ccdbdb5e6195f38722",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:c8fcfe9b-e26d-47f5-8f84-8cffb6a3073b/HAMILTON-G5-S1_company-statement_Announcement-discontinuation-HAMILTON-G5-S1_en_CS150.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Company statement about the HAMILTON-G5/S1 discontinuation",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_4bdadefa0487362401fdd054",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_6804490b4227249beabb95a7",
+      "documentCandidateId": "document_7ab366b10801ce14a35bebfd",
+      "sha256": "0a3cd0bdcdab3e1e03f93b45bd2cf5d20daab58a39e1a2ccdbdb5e6195f38722",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:c8fcfe9b-e26d-47f5-8f84-8cffb6a3073b/HAMILTON-G5-S1_company-statement_Announcement-discontinuation-HAMILTON-G5-S1_en_CS150.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_b2632ffe7d4d65f1f2179b55",
+      "productSlug": "wave2-hamilton-s1",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Company statement about the HAMILTON-G5/S1 discontinuation",
+        "unit": null
+      },
+      "rawText": "Document title: Company statement about the HAMILTON-G5/S1 discontinuation",
+      "evidenceCandidateIds": [
+        "evidence_93cdcbb8566471ef316d7c98"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_a2953cd415dc462654c0ab2c",
+      "productSlug": "wave2-hamilton-s1",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_4bdadefa0487362401fdd054"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "warnings": [
+    "Resolver rejected unsafe document URL: mailto:info@hamilton-medical.com",
+    "Resolver rejected offsite document URL: https://www.facebook.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://twitter.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/hamiltonmedicalag",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/hamilton-medical-ag/mycompany/verification/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/accounts/login/?next=/hamiltonmedical/",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

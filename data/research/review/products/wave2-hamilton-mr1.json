@@ -1,0 +1,2218 @@
+{
+  "product": {
+    "productSlug": "wave2-hamilton-mr1",
+    "manufacturer": "Hamilton Medical",
+    "productName": "HAMILTON-MR1",
+    "model": "HAMILTON-MR1",
+    "category": "Аппарат ИВЛ"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_6eb3c49533c378d45fe782b5",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_f34967f63330fff1d1c601c9",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Document HAMILTON-MR1 Technical specification for SW version 3.1.x English | 0.49 MB | 10101911.03 Download",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_9ea20fc9cae6290436b41d22"
+      ],
+      "documentVersionIds": [
+        "document_version_a8d422aaac2a66e3f474fc7c"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_76a38d84064826c6958b42ea",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_1b812b89b4722df377c4daa8",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "datasheet",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_6732f392fef29e0250673c27"
+      ],
+      "documentVersionIds": [
+        "document_version_a8d422aaac2a66e3f474fc7c"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_614b3fffb82066f71850d314",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_74d003401fb6d3a13fceb69a",
+      "suggestedClaimType": "product.accuracy",
+      "valuePayload": {
+        "value": "±10% or ±300 ml/min (whichever is greater)",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_e2101d662c381688ce5d2997"
+      ],
+      "documentVersionIds": [
+        "document_version_a8d422aaac2a66e3f474fc7c"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_4d9fdf5b808fac088cafe0a1",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_e060ed2d4b02fb205382fcd1",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Ventilation modes",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_ab5a369a04c3a277088c9163"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_e45570ff54a63b54942a4ed2",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_364043fac1f23ce0385485dd",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "tidal volume",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_4558f1991c81888d60525271"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_642f435593a6a3c798c71861",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_4519ae9a58c5d4a76f422d7f",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "compatibility",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_3a748ca9c059da35bd8c8186"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_3f71a5d055ef041745299759",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_c87841641abf7fb9b87bdf70",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Minute volume",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_42e4076994884ee1c91653a4"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_f97dbc576f86bb6843d9dc0d",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_a7f8902d1b51b7a78dee99d8",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_344fe2501428ab6b7c273476"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_2d7bae9add605083316ca100",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_9316a721de4b4679d6905fd3",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_da53d398afe964d603608155"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_8e3b9a92eb11246efc2dd099",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_98bbb4e4100f8b9765db725e",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_939049fbec63829ccd362f23"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b6c127506adbeaa0555ab1a8",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_f405d3fb04d54bfb12ee40f6",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_991c334e4ae15f1347a7818a"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_1f0a7246f9e6acad141b1240",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_a9be9bfdb4953d28776b847e",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Document HAMILTON-MR1 brochure Software version 3.1.x English | 0.9 MB | ELO20250413S.00 Download",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_b2aab67c1d1ac06c409865ea"
+      ],
+      "documentVersionIds": [
+        "document_version_c6104d28acd120fefee06556"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_a012c9757e00329ae001015b",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_3fd3883d129036a9ad5f3d7d",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_efdfd6e9844d6f34fd3e3af3"
+      ],
+      "documentVersionIds": [
+        "document_version_c6104d28acd120fefee06556"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_f69f9fa7a5f803bfa54f0fbf",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_86a0489637a2e63d0ad37e9f",
+      "suggestedClaimType": "product.manufacturer",
+      "valuePayload": {
+        "value": "Hamilton Medical AG",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_bc8365a7dbcee5bf83f59e9b"
+      ],
+      "documentVersionIds": [
+        "document_version_c6104d28acd120fefee06556"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Identity data affects product matching and review routing.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_d57625b827b609921983a2d3",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_989c85f6dac1a3cde40cb171",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_91f2cb7b1c308d333d679f1b"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_4d643de22a1c0b207a12ec28",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_1b77b9736d95a3856b098daa",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "ventilation modes",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_321fb263b48c97be77b251b1"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_c73346adf29623da15d93df4",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_f97c81bddebf3439fb15205f",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "tidal volume",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_fd2a6cb9a738ae6f9ea83c6a"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_eb900bcd866d16f787033c49",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_b34a649a8cf30d029a6dbb6f",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_85e5eae8808a9bac8cc64a4e"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_d7033e317db1251731855f0f",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_e3a06ddff3613b303ab85340",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Document Company brochure Hamilton Medical - One solution, every situation English | 3.23 MB | ELO20240301N.02 Download",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_ccafeb9ae462036f105d3b87"
+      ],
+      "documentVersionIds": [
+        "document_version_9820ebff49cdf5577039748d"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_6c4266a290babc1e87cf09f2",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_184f9d8461a9a9334be5b86d",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_21f25216c2bd9bf8e22081a3"
+      ],
+      "documentVersionIds": [
+        "document_version_9820ebff49cdf5577039748d"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_52c3490e5ad2568501697eec",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_f0bb0c2b8bb8f24cf98ef4a8",
+      "suggestedClaimType": "product.manufacturer",
+      "valuePayload": {
+        "value": "Hamilton Medical AG",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_7b4a1a8a96af235f626e3090"
+      ],
+      "documentVersionIds": [
+        "document_version_9820ebff49cdf5577039748d"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Identity data affects product matching and review routing.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_4d47424b137e1dafef303ce8",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_537e4af956c45831c6ec792c",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "ventilation modes",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_eee3531ae50b149c34917b27"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_8b62da52f68e060e6ba2db12",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_4343c2e93e1e02901f188d4c",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "tidal volume",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_f77c00df2d28f7f082fcbe9f"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_1bf395144e7163ca1012b9bf",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_493e54a3206ac668ed102501",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_70a24e8fe9217a7375c540ac"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_cd77e8d4cae493d1e2ddd77b",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_e218f48512c4bd61792a7f40",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "ventilation mode",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_1b0a05778bc7c36b60621dee"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_ad4814fc062a9c284cb1bd6e",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_410d830482345b7cdc1894cf",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_919619896c38d3330ab2ec37"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_ea12d7f027bef8d2ef43529f",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_e3407d23e2d55cd2e5b08fa1",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Compatibility",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_3b6b06e4bf9b1ddd5ac19c71"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_c2ff7e3e324d5434d6e7caa0",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_a0bd547e08482b93247eb96c",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Document IntelliSync®+ brochure English | 0.55 MB | ELO20240217N.01 Download",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_7c53265dd1a06924b2174547"
+      ],
+      "documentVersionIds": [
+        "document_version_31a3302b06e608cb857d68cf"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:f8d9a6b7-a163-4ed1-8995-b774ca1de285/IntelliSync_brochure_en_ELO20240217N.01.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_ba604bc941026895e107da59",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_25a8b750f6ac094af9475640",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_918bee66439cee54f3e04acb"
+      ],
+      "documentVersionIds": [
+        "document_version_31a3302b06e608cb857d68cf"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:f8d9a6b7-a163-4ed1-8995-b774ca1de285/IntelliSync_brochure_en_ELO20240217N.01.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_38458b4d03cc8e49ef531542",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_f8742499353271fbff11f570",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "ventilation modes",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_9ff43bc5def2935611789dc2"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_3956ab7edb48a79701d710a4",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_4d5036ed8156014de9c92000",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Document Transport and storage solutions for HAMILTON-C1/T1/MR1 English | 0.66 MB | ELO20210213N.00 Download",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_675b0bbd042e90850e25e940"
+      ],
+      "documentVersionIds": [
+        "document_version_17e8c4d76e93bb14ebfdbcc0"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:1f5140a0-db61-4c7f-8840-f346cff615ee/HAMILTON-C1-T1-MR1_Transport-and-storage-solutions_flyer_en_ELO20210213N.00.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_bf13fec9d3f07aaa7ad57480",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_f98b8dbc42485f9ba1d730a2",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_3b8481891c59653ccb008212"
+      ],
+      "documentVersionIds": [
+        "document_version_17e8c4d76e93bb14ebfdbcc0"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:1f5140a0-db61-4c7f-8840-f346cff615ee/HAMILTON-C1-T1-MR1_Transport-and-storage-solutions_flyer_en_ELO20210213N.00.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_2e73bed73f724b466e92b3c0",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_f0e23fb234448a760962f36b",
+      "suggestedClaimType": "product.manufacturer",
+      "valuePayload": {
+        "value": "Hamilton Medical AG",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_a78cf4492ff450bde18b9820"
+      ],
+      "documentVersionIds": [
+        "document_version_17e8c4d76e93bb14ebfdbcc0"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:1f5140a0-db61-4c7f-8840-f346cff615ee/HAMILTON-C1-T1-MR1_Transport-and-storage-solutions_flyer_en_ELO20210213N.00.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Identity data affects product matching and review routing.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_e1409e3a92bb442783e2c2b5",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_85455731a7be2e90e98a53e5",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Document New SW 3.1.1 for HAMILTON-C1/T1/MR1 English | 4.04 MB | ELO20240910N.00 Download",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_87d62cd89c2e69e038aabede"
+      ],
+      "documentVersionIds": [
+        "document_version_7bf26dfbde320a66837ef1c8"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:f0315631-25e6-47a2-8a50-7f22776c93c4/HAMILTON-C1-T1-MR1_flyer_v3.1.1_en_ELO20240910N.00.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_22255e3b5aee1bd689cbfbc7",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_15fcba073fa1d7ae37ae2523",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_2bd89e9cf084b6859edc5037"
+      ],
+      "documentVersionIds": [
+        "document_version_7bf26dfbde320a66837ef1c8"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:f0315631-25e6-47a2-8a50-7f22776c93c4/HAMILTON-C1-T1-MR1_flyer_v3.1.1_en_ELO20240910N.00.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_6eb3c49533c378d45fe782b5",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_f34967f63330fff1d1c601c9",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Document HAMILTON-MR1 Technical specification for SW version 3.1.x English | 0.49 MB | 10101911.03 Download",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_9ea20fc9cae6290436b41d22"
+        ],
+        "documentVersionIds": [
+          "document_version_a8d422aaac2a66e3f474fc7c"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_1f0a7246f9e6acad141b1240",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_a9be9bfdb4953d28776b847e",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Document HAMILTON-MR1 brochure Software version 3.1.x English | 0.9 MB | ELO20250413S.00 Download",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_b2aab67c1d1ac06c409865ea"
+        ],
+        "documentVersionIds": [
+          "document_version_c6104d28acd120fefee06556"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_d7033e317db1251731855f0f",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_e3a06ddff3613b303ab85340",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Document Company brochure Hamilton Medical - One solution, every situation English | 3.23 MB | ELO20240301N.02 Download",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_ccafeb9ae462036f105d3b87"
+        ],
+        "documentVersionIds": [
+          "document_version_9820ebff49cdf5577039748d"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_c2ff7e3e324d5434d6e7caa0",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_a0bd547e08482b93247eb96c",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Document IntelliSync®+ brochure English | 0.55 MB | ELO20240217N.01 Download",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_7c53265dd1a06924b2174547"
+        ],
+        "documentVersionIds": [
+          "document_version_31a3302b06e608cb857d68cf"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:f8d9a6b7-a163-4ed1-8995-b774ca1de285/IntelliSync_brochure_en_ELO20240217N.01.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_3956ab7edb48a79701d710a4",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_4d5036ed8156014de9c92000",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Document Transport and storage solutions for HAMILTON-C1/T1/MR1 English | 0.66 MB | ELO20210213N.00 Download",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_675b0bbd042e90850e25e940"
+        ],
+        "documentVersionIds": [
+          "document_version_17e8c4d76e93bb14ebfdbcc0"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:1f5140a0-db61-4c7f-8840-f346cff615ee/HAMILTON-C1-T1-MR1_Transport-and-storage-solutions_flyer_en_ELO20210213N.00.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_e1409e3a92bb442783e2c2b5",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_85455731a7be2e90e98a53e5",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Document New SW 3.1.1 for HAMILTON-C1/T1/MR1 English | 4.04 MB | ELO20240910N.00 Download",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_87d62cd89c2e69e038aabede"
+        ],
+        "documentVersionIds": [
+          "document_version_7bf26dfbde320a66837ef1c8"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:f0315631-25e6-47a2-8a50-7f22776c93c4/HAMILTON-C1-T1-MR1_flyer_v3.1.1_en_ELO20240910N.00.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_76a38d84064826c6958b42ea",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_1b812b89b4722df377c4daa8",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "datasheet",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_6732f392fef29e0250673c27"
+        ],
+        "documentVersionIds": [
+          "document_version_a8d422aaac2a66e3f474fc7c"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_a012c9757e00329ae001015b",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_3fd3883d129036a9ad5f3d7d",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_efdfd6e9844d6f34fd3e3af3"
+        ],
+        "documentVersionIds": [
+          "document_version_c6104d28acd120fefee06556"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_6c4266a290babc1e87cf09f2",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_184f9d8461a9a9334be5b86d",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_21f25216c2bd9bf8e22081a3"
+        ],
+        "documentVersionIds": [
+          "document_version_9820ebff49cdf5577039748d"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_ba604bc941026895e107da59",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_25a8b750f6ac094af9475640",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_918bee66439cee54f3e04acb"
+        ],
+        "documentVersionIds": [
+          "document_version_31a3302b06e608cb857d68cf"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:f8d9a6b7-a163-4ed1-8995-b774ca1de285/IntelliSync_brochure_en_ELO20240217N.01.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_bf13fec9d3f07aaa7ad57480",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_f98b8dbc42485f9ba1d730a2",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_3b8481891c59653ccb008212"
+        ],
+        "documentVersionIds": [
+          "document_version_17e8c4d76e93bb14ebfdbcc0"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:1f5140a0-db61-4c7f-8840-f346cff615ee/HAMILTON-C1-T1-MR1_Transport-and-storage-solutions_flyer_en_ELO20210213N.00.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_22255e3b5aee1bd689cbfbc7",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_15fcba073fa1d7ae37ae2523",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_2bd89e9cf084b6859edc5037"
+        ],
+        "documentVersionIds": [
+          "document_version_7bf26dfbde320a66837ef1c8"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:f0315631-25e6-47a2-8a50-7f22776c93c4/HAMILTON-C1-T1-MR1_flyer_v3.1.1_en_ELO20240910N.00.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.accuracy": [
+      {
+        "reviewItemId": "review_item_614b3fffb82066f71850d314",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_74d003401fb6d3a13fceb69a",
+        "suggestedClaimType": "product.accuracy",
+        "valuePayload": {
+          "value": "±10% or ±300 ml/min (whichever is greater)",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_e2101d662c381688ce5d2997"
+        ],
+        "documentVersionIds": [
+          "document_version_a8d422aaac2a66e3f474fc7c"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "technical.term": [
+      {
+        "reviewItemId": "review_item_4d9fdf5b808fac088cafe0a1",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_e060ed2d4b02fb205382fcd1",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Ventilation modes",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_ab5a369a04c3a277088c9163"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_e45570ff54a63b54942a4ed2",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_364043fac1f23ce0385485dd",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "tidal volume",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_4558f1991c81888d60525271"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_642f435593a6a3c798c71861",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_4519ae9a58c5d4a76f422d7f",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "compatibility",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_3a748ca9c059da35bd8c8186"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_3f71a5d055ef041745299759",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_c87841641abf7fb9b87bdf70",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Minute volume",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_42e4076994884ee1c91653a4"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_f97dbc576f86bb6843d9dc0d",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_a7f8902d1b51b7a78dee99d8",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_344fe2501428ab6b7c273476"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_2d7bae9add605083316ca100",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_9316a721de4b4679d6905fd3",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_da53d398afe964d603608155"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_8e3b9a92eb11246efc2dd099",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_98bbb4e4100f8b9765db725e",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_939049fbec63829ccd362f23"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_b6c127506adbeaa0555ab1a8",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_f405d3fb04d54bfb12ee40f6",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_991c334e4ae15f1347a7818a"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_d57625b827b609921983a2d3",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_989c85f6dac1a3cde40cb171",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_91f2cb7b1c308d333d679f1b"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_4d643de22a1c0b207a12ec28",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_1b77b9736d95a3856b098daa",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "ventilation modes",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_321fb263b48c97be77b251b1"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_c73346adf29623da15d93df4",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_f97c81bddebf3439fb15205f",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "tidal volume",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_fd2a6cb9a738ae6f9ea83c6a"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_eb900bcd866d16f787033c49",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_b34a649a8cf30d029a6dbb6f",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_85e5eae8808a9bac8cc64a4e"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_4d47424b137e1dafef303ce8",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_537e4af956c45831c6ec792c",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "ventilation modes",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_eee3531ae50b149c34917b27"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_8b62da52f68e060e6ba2db12",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_4343c2e93e1e02901f188d4c",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "tidal volume",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_f77c00df2d28f7f082fcbe9f"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_1bf395144e7163ca1012b9bf",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_493e54a3206ac668ed102501",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_70a24e8fe9217a7375c540ac"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_cd77e8d4cae493d1e2ddd77b",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_e218f48512c4bd61792a7f40",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "ventilation mode",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_1b0a05778bc7c36b60621dee"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_ad4814fc062a9c284cb1bd6e",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_410d830482345b7cdc1894cf",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_919619896c38d3330ab2ec37"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_ea12d7f027bef8d2ef43529f",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_e3407d23e2d55cd2e5b08fa1",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Compatibility",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_3b6b06e4bf9b1ddd5ac19c71"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_38458b4d03cc8e49ef531542",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_f8742499353271fbff11f570",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "ventilation modes",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_9ff43bc5def2935611789dc2"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.manufacturer": [
+      {
+        "reviewItemId": "review_item_f69f9fa7a5f803bfa54f0fbf",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_86a0489637a2e63d0ad37e9f",
+        "suggestedClaimType": "product.manufacturer",
+        "valuePayload": {
+          "value": "Hamilton Medical AG",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_bc8365a7dbcee5bf83f59e9b"
+        ],
+        "documentVersionIds": [
+          "document_version_c6104d28acd120fefee06556"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Identity data affects product matching and review routing.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_52c3490e5ad2568501697eec",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_f0bb0c2b8bb8f24cf98ef4a8",
+        "suggestedClaimType": "product.manufacturer",
+        "valuePayload": {
+          "value": "Hamilton Medical AG",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_7b4a1a8a96af235f626e3090"
+        ],
+        "documentVersionIds": [
+          "document_version_9820ebff49cdf5577039748d"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Identity data affects product matching and review routing.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_2e73bed73f724b466e92b3c0",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_f0e23fb234448a760962f36b",
+        "suggestedClaimType": "product.manufacturer",
+        "valuePayload": {
+          "value": "Hamilton Medical AG",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_a78cf4492ff450bde18b9820"
+        ],
+        "documentVersionIds": [
+          "document_version_17e8c4d76e93bb14ebfdbcc0"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:1f5140a0-db61-4c7f-8840-f346cff615ee/HAMILTON-C1-T1-MR1_Transport-and-storage-solutions_flyer_en_ELO20210213N.00.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Identity data affects product matching and review routing.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_a8d422aaac2a66e3f474fc7c",
+      "documentType": "datasheet",
+      "title": "Document HAMILTON-MR1 Technical specification for SW version 3.1.x English | 0.49 MB | 10101911.03 Download",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf",
+      "sha256": "366b33246bf59ed0522092e81ef8421e96d4bea09da0fcea87dce093b930a42d"
+    },
+    {
+      "documentVersionId": "document_version_c6104d28acd120fefee06556",
+      "documentType": "brochure",
+      "title": "Document HAMILTON-MR1 brochure Software version 3.1.x English | 0.9 MB | ELO20250413S.00 Download",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf",
+      "sha256": "5fbd31b279aa9869b9f745be6b2bbbaf7509f389956f2b6aef3f2464c3f3756a"
+    },
+    {
+      "documentVersionId": "document_version_9820ebff49cdf5577039748d",
+      "documentType": "brochure",
+      "title": "Document Company brochure Hamilton Medical - One solution, every situation English | 3.23 MB | ELO20240301N.02 Download",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "sha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913"
+    },
+    {
+      "documentVersionId": "document_version_31a3302b06e608cb857d68cf",
+      "documentType": "brochure",
+      "title": "Document IntelliSync®+ brochure English | 0.55 MB | ELO20240217N.01 Download",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:f8d9a6b7-a163-4ed1-8995-b774ca1de285/IntelliSync_brochure_en_ELO20240217N.01.pdf",
+      "sha256": "d3623de12f91f7cc206f08aae9d0bacad72ed29b584e028248aab83c8de5971e"
+    },
+    {
+      "documentVersionId": "document_version_17e8c4d76e93bb14ebfdbcc0",
+      "documentType": "unknown",
+      "title": "Document Transport and storage solutions for HAMILTON-C1/T1/MR1 English | 0.66 MB | ELO20210213N.00 Download",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:1f5140a0-db61-4c7f-8840-f346cff615ee/HAMILTON-C1-T1-MR1_Transport-and-storage-solutions_flyer_en_ELO20210213N.00.pdf",
+      "sha256": "068312fe70fbfe9e47ea98569abbb9501ceec8dcb496078135ea36bb4e3761b1"
+    },
+    {
+      "documentVersionId": "document_version_7bf26dfbde320a66837ef1c8",
+      "documentType": "unknown",
+      "title": "Document New SW 3.1.1 for HAMILTON-C1/T1/MR1 English | 4.04 MB | ELO20240910N.00 Download",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:f0315631-25e6-47a2-8a50-7f22776c93c4/HAMILTON-C1-T1-MR1_flyer_v3.1.1_en_ELO20240910N.00.pdf",
+      "sha256": "df5cf43a50ab20af042c19ea5967b2f136a18d898f3ed543fa0987784c73f1fa"
+    }
+  ],
+  "missingEvidence": [
+    {
+      "claimCandidateId": "claim_e060ed2d4b02fb205382fcd1",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_364043fac1f23ce0385485dd",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_4519ae9a58c5d4a76f422d7f",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_c87841641abf7fb9b87bdf70",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_a7f8902d1b51b7a78dee99d8",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_9316a721de4b4679d6905fd3",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_98bbb4e4100f8b9765db725e",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_f405d3fb04d54bfb12ee40f6",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_989c85f6dac1a3cde40cb171",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_1b77b9736d95a3856b098daa",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_f97c81bddebf3439fb15205f",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_b34a649a8cf30d029a6dbb6f",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_537e4af956c45831c6ec792c",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_4343c2e93e1e02901f188d4c",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_493e54a3206ac668ed102501",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_e218f48512c4bd61792a7f40",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_410d830482345b7cdc1894cf",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_e3407d23e2d55cd2e5b08fa1",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_f8742499353271fbff11f570",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    }
+  ],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver rejected offsite document URL: https://youtu.be/Nm_4WOQ9pao",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=nCD0zUrc7B0",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25742308",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/27006266",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25569810",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25425705",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/15165301",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/18393813",
+    "Resolver rejected offsite document URL: https://www.facebook.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://twitter.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/hamiltonmedicalag",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/hamilton-medical-ag/mycompany/verification/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/accounts/login/?next=/hamiltonmedical/",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

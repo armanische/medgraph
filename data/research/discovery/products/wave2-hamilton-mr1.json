@@ -1,0 +1,269 @@
+{
+  "product": {
+    "productSlug": "wave2-hamilton-mr1",
+    "manufacturer": "Hamilton Medical",
+    "productName": "HAMILTON-MR1",
+    "model": "HAMILTON-MR1",
+    "category": "Аппарат ИВЛ"
+  },
+  "sourceCandidates": [
+    {
+      "sourceId": "source_702ef5498684a152eb55ec88",
+      "productSlug": "wave2-hamilton-mr1",
+      "manufacturer": "Hamilton Medical",
+      "productName": "HAMILTON-MR1",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.hamilton-medical.com/en/Products/HAMILTON-MR1.html",
+      "title": "HAMILTON-MR1 official product page",
+      "snippet": "Official Hamilton product page confirmed during Wave 2 Sprint 1; candidate-only source.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official Hamilton product page confirmed during Wave 2 Sprint 1; candidate-only source."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_dc3a7262f5136f5b54e78e89",
+      "sourceId": "source_702ef5498684a152eb55ec88",
+      "productSlug": "wave2-hamilton-mr1",
+      "documentType": "datasheet",
+      "url": "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf",
+      "title": "Document HAMILTON-MR1 Technical specification for SW version 3.1.x English | 0.49 MB | 10101911.03 Download",
+      "language": null,
+      "confidence": 0.86,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_32ba9491d22787346ad61c02",
+      "sourceId": "source_702ef5498684a152eb55ec88",
+      "productSlug": "wave2-hamilton-mr1",
+      "documentType": "brochure",
+      "url": "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf",
+      "title": "Document HAMILTON-MR1 brochure Software version 3.1.x English | 0.9 MB | ELO20250413S.00 Download",
+      "language": null,
+      "confidence": 0.86,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_2a1e0e362483477fd2281373",
+      "sourceId": "source_702ef5498684a152eb55ec88",
+      "productSlug": "wave2-hamilton-mr1",
+      "documentType": "brochure",
+      "url": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "title": "Document Company brochure Hamilton Medical - One solution, every situation English | 3.23 MB | ELO20240301N.02 Download",
+      "language": null,
+      "confidence": 0.86,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_6c3dc9741dc6d12b6f7fb619",
+      "sourceId": "source_702ef5498684a152eb55ec88",
+      "productSlug": "wave2-hamilton-mr1",
+      "documentType": "brochure",
+      "url": "https://www.hamilton-medical.com/dam/jcr:f8d9a6b7-a163-4ed1-8995-b774ca1de285/IntelliSync_brochure_en_ELO20240217N.01.pdf",
+      "title": "Document IntelliSync®+ brochure English | 0.55 MB | ELO20240217N.01 Download",
+      "language": null,
+      "confidence": 0.86,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_5a9ec3226371de6fab445ec0",
+      "sourceId": "source_702ef5498684a152eb55ec88",
+      "productSlug": "wave2-hamilton-mr1",
+      "documentType": "unknown",
+      "url": "https://www.hamilton-medical.com/dam/jcr:1f5140a0-db61-4c7f-8840-f346cff615ee/HAMILTON-C1-T1-MR1_Transport-and-storage-solutions_flyer_en_ELO20210213N.00.pdf",
+      "title": "Document Transport and storage solutions for HAMILTON-C1/T1/MR1 English | 0.66 MB | ELO20210213N.00 Download",
+      "language": null,
+      "confidence": 0.58,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_6d3df3cd9c920422745aab2b",
+      "sourceId": "source_702ef5498684a152eb55ec88",
+      "productSlug": "wave2-hamilton-mr1",
+      "documentType": "unknown",
+      "url": "https://www.hamilton-medical.com/dam/jcr:f0315631-25e6-47a2-8a50-7f22776c93c4/HAMILTON-C1-T1-MR1_flyer_v3.1.1_en_ELO20240910N.00.pdf",
+      "title": "Document New SW 3.1.1 for HAMILTON-C1/T1/MR1 English | 4.04 MB | ELO20240910N.00 Download",
+      "language": null,
+      "confidence": 0.58,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_dc3a7262f5136f5b54e78e89",
+      "url": "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf",
+      "title": "Document HAMILTON-MR1 Technical specification for SW version 3.1.x English | 0.49 MB | 10101911.03 Download",
+      "documentTypeGuess": "datasheet",
+      "parentSourceId": "source_702ef5498684a152eb55ec88",
+      "linkText": "Document HAMILTON-MR1 Technical specification for SW version 3.1.x English | 0.49 MB | 10101911.03 Download",
+      "resolvedFromUrl": "https://www.hamilton-medical.com/en/Products/HAMILTON-MR1.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_5a9ec3226371de6fab445ec0",
+      "url": "https://www.hamilton-medical.com/dam/jcr:1f5140a0-db61-4c7f-8840-f346cff615ee/HAMILTON-C1-T1-MR1_Transport-and-storage-solutions_flyer_en_ELO20210213N.00.pdf",
+      "title": "Document Transport and storage solutions for HAMILTON-C1/T1/MR1 English | 0.66 MB | ELO20210213N.00 Download",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_702ef5498684a152eb55ec88",
+      "linkText": "Document Transport and storage solutions for HAMILTON-C1/T1/MR1 English | 0.66 MB | ELO20210213N.00 Download",
+      "resolvedFromUrl": "https://www.hamilton-medical.com/en/Products/HAMILTON-MR1.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_32ba9491d22787346ad61c02",
+      "url": "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf",
+      "title": "Document HAMILTON-MR1 brochure Software version 3.1.x English | 0.9 MB | ELO20250413S.00 Download",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_702ef5498684a152eb55ec88",
+      "linkText": "Document HAMILTON-MR1 brochure Software version 3.1.x English | 0.9 MB | ELO20250413S.00 Download",
+      "resolvedFromUrl": "https://www.hamilton-medical.com/en/Products/HAMILTON-MR1.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_2a1e0e362483477fd2281373",
+      "url": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "title": "Document Company brochure Hamilton Medical - One solution, every situation English | 3.23 MB | ELO20240301N.02 Download",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_702ef5498684a152eb55ec88",
+      "linkText": "Document Company brochure Hamilton Medical - One solution, every situation English | 3.23 MB | ELO20240301N.02 Download",
+      "resolvedFromUrl": "https://www.hamilton-medical.com/en/Products/HAMILTON-MR1.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_6d3df3cd9c920422745aab2b",
+      "url": "https://www.hamilton-medical.com/dam/jcr:f0315631-25e6-47a2-8a50-7f22776c93c4/HAMILTON-C1-T1-MR1_flyer_v3.1.1_en_ELO20240910N.00.pdf",
+      "title": "Document New SW 3.1.1 for HAMILTON-C1/T1/MR1 English | 4.04 MB | ELO20240910N.00 Download",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_702ef5498684a152eb55ec88",
+      "linkText": "Document New SW 3.1.1 for HAMILTON-C1/T1/MR1 English | 4.04 MB | ELO20240910N.00 Download",
+      "resolvedFromUrl": "https://www.hamilton-medical.com/en/Products/HAMILTON-MR1.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_6c3dc9741dc6d12b6f7fb619",
+      "url": "https://www.hamilton-medical.com/dam/jcr:f8d9a6b7-a163-4ed1-8995-b774ca1de285/IntelliSync_brochure_en_ELO20240217N.01.pdf",
+      "title": "Document IntelliSync®+ brochure English | 0.55 MB | ELO20240217N.01 Download",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_702ef5498684a152eb55ec88",
+      "linkText": "Document IntelliSync®+ brochure English | 0.55 MB | ELO20240217N.01 Download",
+      "resolvedFromUrl": "https://www.hamilton-medical.com/en/Products/HAMILTON-MR1.html",
+      "warnings": []
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver rejected offsite document URL: https://youtu.be/Nm_4WOQ9pao",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=nCD0zUrc7B0",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25742308",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/27006266",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25569810",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25425705",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/15165301",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/18393813",
+    "Resolver rejected offsite document URL: https://www.facebook.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://twitter.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/hamiltonmedicalag",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/hamilton-medical-ag/mycompany/verification/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/accounts/login/?next=/hamiltonmedical/"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-hamilton-mr1",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-hamilton-mr1",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver rejected offsite document URL: https://youtu.be/Nm_4WOQ9pao",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=nCD0zUrc7B0",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25742308",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/27006266",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25569810",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25425705",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/15165301",
+    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/18393813",
+    "Resolver rejected offsite document URL: https://www.facebook.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://twitter.com/HamiltonMedical",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/hamiltonmedicalag",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/hamilton-medical-ag/mycompany/verification/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/accounts/login/?next=/hamiltonmedical/",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}
