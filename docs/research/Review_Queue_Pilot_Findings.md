@@ -96,6 +96,44 @@ No clinical, compatibility, procurement, warning, contraindication, or safety cl
 - Add conflict grouping when multiple candidate claims disagree.
 - Improve extraction so all candidate claims have a complete evidence chain.
 
+## MVP-025 Read-Only Prototype
+
+MVP-025 added a protected internal screen:
+
+```text
+/internal/review-queue
+```
+
+It is enabled in production only with:
+
+```text
+CYBERMEDICA_ENABLE_INTERNAL_REVIEW=1
+```
+
+The screen reads only generated Review Queue reports and shows:
+
+- aggregate queue metrics;
+- product grouping;
+- pending candidate facts;
+- priority and risk;
+- evidence ids;
+- document version ids;
+- source URLs;
+- reviewer guidance;
+- warnings.
+
+It does not create reviewer decisions, does not approve or reject facts, and does not publish data.
+
+### Next Blockers Before Real Reviewer Workflow
+
+- Internal authentication and authorization.
+- Persistent reviewer decisions.
+- Dedicated storage for decisions that is still separate from Verification.
+- Side-by-side evidence excerpt and document preview.
+- Better missing-evidence diagnostics.
+- Conflict grouping and reviewer assignment.
+- Explicit Verification handoff after human review.
+
 ## Safety Notes
 
 The Review Queue is not a public data source.

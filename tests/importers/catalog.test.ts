@@ -1437,3 +1437,24 @@ test("ReviewDecision approve does not create Verified Claim", () => {
   assert.deepEqual(reviewDecisionIsNotVerification(decision), decision);
   assert.doesNotMatch(JSON.stringify(decision), /verified|publish/i);
 });
+
+test("internal review queue route is protected and read-only", async () => {
+  const [pageSource, loaderSource, viewSource] = await Promise.all(
+    [
+      "app/internal/review-queue/page.tsx",
+      "lib/internal-review-queue.ts",
+      "components/internal/ReviewQueueView.tsx",
+    ].map((file) => readFile(resolve(process.cwd(), file), "utf8")),
+  );
+  const source = [pageSource, loaderSource, viewSource].join("\n");
+
+  assert.match(pageSource, /CYBERMEDICA_ENABLE_INTERNAL_REVIEW/);
+  assert.match(pageSource, /notFound\(\)/);
+  assert.match(pageSource, /connection\(\)/);
+  assert.match(loaderSource, /data\/research\/review/);
+  assert.match(loaderSource, /review-queue\.generated\.json/);
+  assert.doesNotMatch(source, /supabase|service_role|public_api/i);
+  assert.doesNotMatch(source, /createPublication|publishClaim|Publication/i);
+  assert.doesNotMatch(source, /VerifiedClaim|verificationStatus:\s*["']verified/i);
+  assert.doesNotMatch(viewSource, /<form|<button|formAction|onSubmit|onClick/i);
+});
