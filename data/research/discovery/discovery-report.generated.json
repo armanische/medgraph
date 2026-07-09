@@ -1,16 +1,144 @@
 {
-  "productsProcessed": 1,
-  "officialSourcesFound": 1,
-  "documentsFound": 0,
-  "requiredDocumentsMissing": 3,
+  "productsProcessed": 17,
+  "officialSourcesFound": 17,
+  "documentsFound": 7,
+  "requiredDocumentsMissing": 51,
   "productsReadyForExtraction": 0,
-  "productsBlocked": 1,
-  "resolvedDocumentLinksFound": 0,
-  "productsWithResolvedDocuments": 0,
-  "productsStillMissingDocuments": 1,
+  "productsBlocked": 17,
+  "resolvedDocumentLinksFound": 7,
+  "productsWithResolvedDocuments": 5,
+  "productsStillMissingDocuments": 17,
   "productReports": [
     {
-      "productSlug": "wave2-hamilton-em7",
+      "productSlug": "wave2-mindray-products-index",
+      "sources": 1,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-mindray-sv300",
+      "sources": 1,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-mindray-sv300-pro",
+      "sources": 1,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-mindray-sv800-sv600",
+      "sources": 1,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-mindray-a5",
+      "sources": 1,
+      "documents": 1,
+      "resolvedDocumentLinks": 1,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-mindray-a7",
+      "sources": 1,
+      "documents": 1,
+      "resolvedDocumentLinks": 1,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-mindray-a8",
+      "sources": 1,
+      "documents": 3,
+      "resolvedDocumentLinks": 3,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-mindray-benevision-n1",
+      "sources": 1,
+      "documents": 1,
+      "resolvedDocumentLinks": 1,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-mindray-benevision-n17-n15-n12",
+      "sources": 1,
+      "documents": 1,
+      "resolvedDocumentLinks": 1,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-mindray-m9-poc",
+      "sources": 1,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-mindray-m9-cardiology",
+      "sources": 1,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-mindray-resona-i9",
+      "sources": 1,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-mindray-resona-i9-elite",
+      "sources": 1,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-mindray-hyled-x-series",
+      "sources": 1,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-mindray-hyled-c-series",
+      "sources": 1,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-mindray-hyled-q-series",
+      "sources": 1,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-mindray-hyled-8-series",
       "sources": 1,
       "documents": 0,
       "resolvedDocumentLinks": 0,

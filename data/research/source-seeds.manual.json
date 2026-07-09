@@ -290,6 +290,363 @@
       ]
     },
     {
+      "slug": "apparat-ivl-mindray-sv800-sv600",
+      "productName": "Аппарат ИВЛ Mindray SV800/SV600",
+      "manufacturer": "Mindray",
+      "model": "SV800/SV600",
+      "category": "Аппарат ИВЛ",
+      "officialSources": [
+        {
+          "url": "https://www.mindray.com/en/products/ventilators/sv800-sv600",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Mindray",
+          "title": "SV800/SV600 official product page",
+          "notes": "Official Mindray product page linked to existing catalog slug during Wave 2 Sprint 2; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "narkozno-dyhatelnyi-apparat-mindray-a8",
+      "productName": "Наркозно-дыхательный аппарат Mindray A8",
+      "manufacturer": "Mindray",
+      "model": "Mindray A8",
+      "category": "Наркозно-дыхательный аппарат",
+      "officialSources": [
+        {
+          "url": "https://www.mindray.com/en/products/anesthesia/a8",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Mindray",
+          "title": "A8 official product page",
+          "notes": "Official Mindray product page linked to existing catalog slug during Wave 2 Sprint 2; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "monitor-patsienta-benevision-n17-n15-n12",
+      "productName": "Монитор пациента BeneVision N17/N15/N12",
+      "manufacturer": "Mindray",
+      "model": "BeneVision N17/N15/N12",
+      "category": "Монитор пациента",
+      "officialSources": [
+        {
+          "url": "https://www.mindray.com/en/products/patient-monitoring/continuous-patient-monitoring/benevision-n17-n15-n12",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Mindray",
+          "title": "BeneVision N17/N15/N12 official product page",
+          "notes": "Official Mindray product page linked to existing catalog slug during Wave 2 Sprint 2; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "portativnyi-uzi-apparat-mindray-m9",
+      "productName": "Портативный УЗИ аппарат Mindray M9",
+      "manufacturer": "Mindray",
+      "model": "Mindray M9",
+      "category": "УЗИ",
+      "officialSources": [
+        {
+          "url": "https://www.mindray.com/en/products/ultrasound/point-of-care/m9",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Mindray",
+          "title": "M9 point-of-care official product page",
+          "notes": "Official Mindray product page linked to existing catalog slug during Wave 2 Sprint 2; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "narkozno-dyhatelnyi-apparat-wato-ex-35",
+      "productName": "Наркозно-дыхательный аппарат WATO EX-35",
+      "manufacturer": "Mindray",
+      "model": "WATO EX-35",
+      "category": "Наркозно-дыхательный аппарат",
+      "officialSources": [
+        {
+          "url": "https://www.mindray.com/en/products/anesthesia/wato-ex-35",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Mindray",
+          "title": "WATO EX-35 official product page",
+          "notes": "Official Mindray product page linked to existing catalog slug during Wave 2 Sprint 2; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-mindray-sv300",
+      "productName": "Mindray SV300",
+      "manufacturer": "Mindray",
+      "model": "SV300",
+      "category": "Аппарат ИВЛ",
+      "officialSources": [
+        {
+          "url": "https://www.mindray.com/en/products/ventilators/sv300",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Mindray",
+          "title": "SV300 official product page",
+          "notes": "Official Mindray product page confirmed during Wave 2 Sprint 2; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-mindray-sv300-pro",
+      "productName": "Mindray SV300 Pro",
+      "manufacturer": "Mindray",
+      "model": "SV300 Pro",
+      "category": "Аппарат ИВЛ",
+      "officialSources": [
+        {
+          "url": "https://www.mindray.com/en/products/ventilators/sv300-pro",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Mindray",
+          "title": "SV300 Pro official product page",
+          "notes": "Official Mindray product page confirmed during Wave 2 Sprint 2; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-mindray-sv800-sv600",
+      "productName": "Mindray SV800/SV600",
+      "manufacturer": "Mindray",
+      "model": "SV800/SV600",
+      "category": "Аппарат ИВЛ",
+      "officialSources": [
+        {
+          "url": "https://www.mindray.com/en/products/ventilators/sv800-sv600",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Mindray",
+          "title": "SV800/SV600 official product page",
+          "notes": "Official Mindray product page confirmed during Wave 2 Sprint 2; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-mindray-a5",
+      "productName": "Mindray A5",
+      "manufacturer": "Mindray",
+      "model": "A5",
+      "category": "Наркозно-дыхательный аппарат",
+      "officialSources": [
+        {
+          "url": "https://www.mindray.com/en/products/anesthesia/a5",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Mindray",
+          "title": "A5 official product page",
+          "notes": "Official Mindray product page confirmed during Wave 2 Sprint 2; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-mindray-a7",
+      "productName": "Mindray A7",
+      "manufacturer": "Mindray",
+      "model": "A7",
+      "category": "Наркозно-дыхательный аппарат",
+      "officialSources": [
+        {
+          "url": "https://www.mindray.com/en/products/anesthesia/a7",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Mindray",
+          "title": "A7 official product page",
+          "notes": "Official Mindray product page confirmed during Wave 2 Sprint 2; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-mindray-a8",
+      "productName": "Mindray A8",
+      "manufacturer": "Mindray",
+      "model": "A8",
+      "category": "Наркозно-дыхательный аппарат",
+      "officialSources": [
+        {
+          "url": "https://www.mindray.com/en/products/anesthesia/a8",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Mindray",
+          "title": "A8 official product page",
+          "notes": "Official Mindray product page confirmed during Wave 2 Sprint 2; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-mindray-benevision-n1",
+      "productName": "Mindray BeneVision N1",
+      "manufacturer": "Mindray",
+      "model": "BeneVision N1",
+      "category": "Монитор пациента",
+      "officialSources": [
+        {
+          "url": "https://www.mindray.com/en/products/patient-monitoring/continuous-patient-monitoring/benevision-n1",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Mindray",
+          "title": "BeneVision N1 official product page",
+          "notes": "Official Mindray product page confirmed during Wave 2 Sprint 2; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-mindray-benevision-n17-n15-n12",
+      "productName": "Mindray BeneVision N17/N15/N12",
+      "manufacturer": "Mindray",
+      "model": "BeneVision N17/N15/N12",
+      "category": "Монитор пациента",
+      "officialSources": [
+        {
+          "url": "https://www.mindray.com/en/products/patient-monitoring/continuous-patient-monitoring/benevision-n17-n15-n12",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Mindray",
+          "title": "BeneVision N17/N15/N12 official product page",
+          "notes": "Official Mindray product page confirmed during Wave 2 Sprint 2; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-mindray-m9-poc",
+      "productName": "Mindray M9 Point of Care",
+      "manufacturer": "Mindray",
+      "model": "M9",
+      "category": "УЗИ",
+      "officialSources": [
+        {
+          "url": "https://www.mindray.com/en/products/ultrasound/point-of-care/m9",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Mindray",
+          "title": "M9 point-of-care official product page",
+          "notes": "Official Mindray product page confirmed during Wave 2 Sprint 2; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-mindray-m9-cardiology",
+      "productName": "Mindray M9 Cardiology",
+      "manufacturer": "Mindray",
+      "model": "M9",
+      "category": "УЗИ",
+      "officialSources": [
+        {
+          "url": "https://www.mindray.com/en/products/ultrasound/cardiology/m9",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Mindray",
+          "title": "M9 cardiology official product page",
+          "notes": "Official Mindray product page confirmed during Wave 2 Sprint 2; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-mindray-resona-i9",
+      "productName": "Mindray Resona I9",
+      "manufacturer": "Mindray",
+      "model": "Resona I9",
+      "category": "УЗИ",
+      "officialSources": [
+        {
+          "url": "https://www.mindray.com/en/products/ultrasound/general-imaging/resona-i9",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Mindray",
+          "title": "Resona I9 official product page",
+          "notes": "Official Mindray product page confirmed during Wave 2 Sprint 2; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-mindray-resona-i9-elite",
+      "productName": "Mindray Resona I9 Elite Edition",
+      "manufacturer": "Mindray",
+      "model": "Resona I9 Elite",
+      "category": "УЗИ",
+      "officialSources": [
+        {
+          "url": "https://www.mindray.com/en/products/ultrasound/general-imaging/resona-i9-elite",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Mindray",
+          "title": "Resona I9 Elite official product page",
+          "notes": "Official Mindray product page confirmed during Wave 2 Sprint 2; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-mindray-hyled-x-series",
+      "productName": "Mindray HyLED X Series",
+      "manufacturer": "Mindray",
+      "model": "HyLED X Series",
+      "category": "Хирургическое освещение",
+      "officialSources": [
+        {
+          "url": "https://www.mindray.com/en/products/surgical-lights/hyled-x-series",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Mindray",
+          "title": "HyLED X Series official product page",
+          "notes": "Official Mindray product page confirmed during Wave 2 Sprint 2; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-mindray-hyled-c-series",
+      "productName": "Mindray HyLED C Series",
+      "manufacturer": "Mindray",
+      "model": "HyLED C Series",
+      "category": "Хирургическое освещение",
+      "officialSources": [
+        {
+          "url": "https://www.mindray.com/en/products/surgical-lights/hyled-c-series",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Mindray",
+          "title": "HyLED C Series official product page",
+          "notes": "Official Mindray product page confirmed during Wave 2 Sprint 2; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-mindray-hyled-q-series",
+      "productName": "Mindray HyLED Q Series",
+      "manufacturer": "Mindray",
+      "model": "HyLED Q Series",
+      "category": "Хирургическое освещение",
+      "officialSources": [
+        {
+          "url": "https://www.mindray.com/en/products/surgical-lights/hyled-q-series",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Mindray",
+          "title": "HyLED Q Series official product page",
+          "notes": "Official Mindray product page confirmed during Wave 2 Sprint 2; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
+      "slug": "wave2-mindray-hyled-8-series",
+      "productName": "Mindray HyLED 8 Series",
+      "manufacturer": "Mindray",
+      "model": "HyLED 8 Series",
+      "category": "Хирургическое освещение",
+      "officialSources": [
+        {
+          "url": "https://www.mindray.com/en/products/surgical-lights/hyled-8-series",
+          "sourceType": "official_manufacturer_page",
+          "publisher": "Mindray",
+          "title": "HyLED 8 Series official product page",
+          "notes": "Official Mindray product page confirmed during Wave 2 Sprint 2; candidate-only source.",
+          "trustTier": 1
+        }
+      ]
+    },
+    {
       "slug": "wave2-drager-products-index",
       "productName": "Wave 2 Drager products index",
       "manufacturer": "Drager",

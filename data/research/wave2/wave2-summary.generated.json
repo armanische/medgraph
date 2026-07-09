@@ -1,25 +1,25 @@
 {
   "generatedAt": "wave2-execution-v1",
   "manufacturers": [
-    "Hamilton"
+    "Mindray"
   ],
   "totals": {
-    "productsDiscovered": 12,
-    "officialSources": 12,
-    "documentsFound": 26,
-    "downloads": 17,
-    "artifacts": 17,
-    "candidateFacts": 42,
-    "reviewItems": 42,
-    "blockedProducts": 1,
+    "productsDiscovered": 22,
+    "officialSources": 22,
+    "documentsFound": 48,
+    "downloads": 32,
+    "artifacts": 32,
+    "candidateFacts": 77,
+    "reviewItems": 77,
+    "blockedProducts": 3,
     "errors": 0,
     "warnings": 1,
-    "durationMs": 1532
+    "durationMs": 1891
   },
   "reports": [
     {
-      "manufacturer": "Hamilton",
-      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/Hamilton/summary.generated.json"
+      "manufacturer": "Mindray",
+      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/Mindray/summary.generated.json"
     }
   ],
   "safety": {
