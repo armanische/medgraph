@@ -960,6 +960,103 @@ test("manufacturer resolver creates no fake documents when no links are found", 
   assert.ok(result.warnings.some((warning) => warning.includes("no document links")));
 });
 
+test("manufacturer adapters classify Mindray resources with resolver confidence", async () => {
+  const resolver = await resolverForFixture("mindray-resources.html");
+  const result = await resolver.resolve(
+    discoverySource({
+      manufacturer: "Mindray",
+      url: "https://www.mindray.com/en/products/anesthesia/a7",
+      title: "A7 official product page",
+    }),
+  );
+
+  assert.equal(result.links.length, 2);
+  assert.ok(result.warnings.some((warning) => warning.includes("adapter used: mindray")));
+  assert.ok(
+    result.links.some((link) =>
+      link.documentCandidate.reasons.some((reason) =>
+        reason.includes("resolver_document_label:Safety Information"),
+      ),
+    ),
+  );
+  assert.ok(
+    result.links.every((link) =>
+      link.documentCandidate.reasons.some((reason) =>
+        /^resolver_confidence:\d+/u.test(reason),
+      ),
+    ),
+  );
+});
+
+test("manufacturer resolver follows retry chain to resources pages and dedupes", async () => {
+  const productHtml = await readFile(
+    join(DOCUMENT_RESOLVER_FIXTURE_DIRECTORY, "retry-product.html"),
+    "utf8",
+  );
+  const resourcesHtml = await readFile(
+    join(DOCUMENT_RESOLVER_FIXTURE_DIRECTORY, "retry-resources.html"),
+    "utf8",
+  );
+  const resolver = new DefaultManufacturerDocumentLinkResolver({
+    fetchImplementation: (async (input) => {
+      const url = String(input);
+      return new Response(
+        url.includes("/resources") ? resourcesHtml : productHtml,
+        {
+          status: 200,
+          headers: { "content-type": "text/html; charset=utf-8" },
+        },
+      );
+    }) as typeof fetch,
+  });
+  const result = await resolver.resolve(
+    discoverySource({
+      manufacturer: "Mindray",
+      url: "https://www.mindray.com/en/products/anesthesia/a7",
+      title: "A7 official product page",
+    }),
+  );
+
+  assert.equal(result.links.length, 2);
+  assert.ok(
+    result.links.some(
+      (link) =>
+        link.documentCandidate.url ===
+        "https://www.mindray.com/en/downloads/a7-safety-performance.pdf",
+    ),
+  );
+  assert.ok(
+    result.warnings.some((warning) => warning.includes("duplicatesRemoved=1")),
+  );
+  assert.ok(result.warnings.some((warning) => warning.includes("attempts=2")));
+});
+
+test("Ambu adapter resolves IFU and quick guide candidates", async () => {
+  const resolver = await resolverForFixture("ambu-ifu.html");
+  const result = await resolver.resolve(
+    discoverySource({
+      manufacturer: "Ambu",
+      url: "https://www.ambu.com/endoscopy/pulmonology/bronchoscopes/product/ascope-5-broncho",
+      title: "Ambu aScope 5 Broncho official product page",
+    }),
+  );
+
+  assert.equal(result.links.length, 2);
+  assert.ok(result.warnings.some((warning) => warning.includes("adapter used: ambu")));
+  assert.ok(
+    result.links.some((link) => link.documentCandidate.documentType === "ifu"),
+  );
+  assert.ok(
+    result.links.some(
+      (link) =>
+        link.documentCandidate.documentType === "user_manual" &&
+        link.documentCandidate.reasons.some((reason) =>
+          reason.includes("resolver_document_label:Quick Guide"),
+        ),
+    ),
+  );
+});
+
 test("discovery integrates resolved document links and dedupes URLs", async () => {
   const resolver = await resolverForFixture("same-host-mixed.html");
   const source = discoverySource({
