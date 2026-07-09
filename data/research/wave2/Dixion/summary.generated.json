@@ -1,0 +1,45 @@
+{
+  "manufacturer": "Dixion",
+  "generatedAt": "wave2-execution-v1",
+  "productsDiscovered": 10,
+  "officialSources": 1,
+  "documentsFound": 14,
+  "downloads": 9,
+  "artifacts": 9,
+  "candidateFacts": 23,
+  "reviewItems": 23,
+  "blockedProducts": 1,
+  "errors": [],
+  "warnings": [
+    "Required document coverage is below Wave 2 target.",
+    "Wave 2 execution creates reports only; no publication is performed."
+  ],
+  "durationMs": 1436,
+  "retries": [],
+  "stages": [
+    {
+      "stage": "Discovery",
+      "status": "completed"
+    },
+    {
+      "stage": "Documents",
+      "status": "completed"
+    },
+    {
+      "stage": "Downloads",
+      "status": "completed"
+    },
+    {
+      "stage": "Artifact Store",
+      "status": "completed"
+    },
+    {
+      "stage": "Extraction",
+      "status": "completed"
+    },
+    {
+      "stage": "Review Queue",
+      "status": "completed"
+    }
+  ]
+}

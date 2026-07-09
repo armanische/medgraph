@@ -20,6 +20,7 @@
     "build:review-queue": "node scripts/importers/catalog/review-queue.ts build",
     "review:queue-summary": "node scripts/importers/catalog/review-queue.ts summary",
     "process:review-decisions": "node scripts/importers/catalog/review-queue.ts decisions",
+    "wave2:execute": "node scripts/importers/catalog/wave2-execution.ts",
     "research:catalog-products": "node scripts/importers/catalog/research.ts",
     "research:product": "node scripts/importers/catalog/research-product.ts",
     "test": "node --test tests/importers/*.test.ts"

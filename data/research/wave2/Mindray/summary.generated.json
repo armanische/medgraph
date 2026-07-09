@@ -1,0 +1,44 @@
+{
+  "manufacturer": "Mindray",
+  "generatedAt": "wave2-execution-v1",
+  "productsDiscovered": 15,
+  "officialSources": 1,
+  "documentsFound": 32,
+  "downloads": 21,
+  "artifacts": 21,
+  "candidateFacts": 52,
+  "reviewItems": 52,
+  "blockedProducts": 2,
+  "errors": [],
+  "warnings": [
+    "Wave 2 execution creates reports only; no publication is performed."
+  ],
+  "durationMs": 1632,
+  "retries": [],
+  "stages": [
+    {
+      "stage": "Discovery",
+      "status": "completed"
+    },
+    {
+      "stage": "Documents",
+      "status": "completed"
+    },
+    {
+      "stage": "Downloads",
+      "status": "completed"
+    },
+    {
+      "stage": "Artifact Store",
+      "status": "completed"
+    },
+    {
+      "stage": "Extraction",
+      "status": "completed"
+    },
+    {
+      "stage": "Review Queue",
+      "status": "completed"
+    }
+  ]
+}

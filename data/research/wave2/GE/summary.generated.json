@@ -1,0 +1,44 @@
+{
+  "manufacturer": "GE",
+  "generatedAt": "wave2-execution-v1",
+  "productsDiscovered": 11,
+  "officialSources": 1,
+  "documentsFound": 24,
+  "downloads": 16,
+  "artifacts": 16,
+  "candidateFacts": 38,
+  "reviewItems": 38,
+  "blockedProducts": 1,
+  "errors": [],
+  "warnings": [
+    "Wave 2 execution creates reports only; no publication is performed."
+  ],
+  "durationMs": 1429,
+  "retries": [],
+  "stages": [
+    {
+      "stage": "Discovery",
+      "status": "completed"
+    },
+    {
+      "stage": "Documents",
+      "status": "completed"
+    },
+    {
+      "stage": "Downloads",
+      "status": "completed"
+    },
+    {
+      "stage": "Artifact Store",
+      "status": "completed"
+    },
+    {
+      "stage": "Extraction",
+      "status": "completed"
+    },
+    {
+      "stage": "Review Queue",
+      "status": "completed"
+    }
+  ]
+}

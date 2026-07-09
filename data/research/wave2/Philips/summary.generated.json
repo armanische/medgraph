@@ -1,0 +1,44 @@
+{
+  "manufacturer": "Philips",
+  "generatedAt": "wave2-execution-v1",
+  "productsDiscovered": 10,
+  "officialSources": 1,
+  "documentsFound": 22,
+  "downloads": 15,
+  "artifacts": 15,
+  "candidateFacts": 29,
+  "reviewItems": 29,
+  "blockedProducts": 1,
+  "errors": [],
+  "warnings": [
+    "Wave 2 execution creates reports only; no publication is performed."
+  ],
+  "durationMs": 1447,
+  "retries": [],
+  "stages": [
+    {
+      "stage": "Discovery",
+      "status": "completed"
+    },
+    {
+      "stage": "Documents",
+      "status": "completed"
+    },
+    {
+      "stage": "Downloads",
+      "status": "completed"
+    },
+    {
+      "stage": "Artifact Store",
+      "status": "completed"
+    },
+    {
+      "stage": "Extraction",
+      "status": "completed"
+    },
+    {
+      "stage": "Review Queue",
+      "status": "completed"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "generatedAt": "wave2-execution-v1",
+  "manufacturers": [
+    "Hamilton",
+    "Mindray",
+    "Ambu",
+    "Drager",
+    "SonoScape",
+    "Comen",
+    "SLE",
+    "Dixion",
+    "GE",
+    "Philips"
+  ],
+  "totals": {
+    "productsDiscovered": 106,
+    "officialSources": 15,
+    "documentsFound": 194,
+    "downloads": 128,
+    "artifacts": 128,
+    "candidateFacts": 323,
+    "reviewItems": 323,
+    "blockedProducts": 11,
+    "errors": 0,
+    "warnings": 15,
+    "durationMs": 14549
+  },
+  "reports": [
+    {
+      "manufacturer": "Hamilton",
+      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/Hamilton/summary.generated.json"
+    },
+    {
+      "manufacturer": "Mindray",
+      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/Mindray/summary.generated.json"
+    },
+    {
+      "manufacturer": "Ambu",
+      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/Ambu/summary.generated.json"
+    },
+    {
+      "manufacturer": "Drager",
+      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/Drager/summary.generated.json"
+    },
+    {
+      "manufacturer": "SonoScape",
+      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/SonoScape/summary.generated.json"
+    },
+    {
+      "manufacturer": "Comen",
+      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/Comen/summary.generated.json"
+    },
+    {
+      "manufacturer": "SLE",
+      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/SLE/summary.generated.json"
+    },
+    {
+      "manufacturer": "Dixion",
+      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/Dixion/summary.generated.json"
+    },
+    {
+      "manufacturer": "GE",
+      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/GE/summary.generated.json"
+    },
+    {
+      "manufacturer": "Philips",
+      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/Philips/summary.generated.json"
+    }
+  ],
+  "safety": {
+    "publicationCreated": false,
+    "supabaseWrites": false,
+    "verificationChanged": false,
+    "reviewDecisionsChanged": false
+  }
+}
