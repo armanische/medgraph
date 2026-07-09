@@ -62,6 +62,12 @@ import {
   type TrustedDocumentProductDownloadReport,
 } from "../../scripts/importers/catalog/trusted-documents.ts";
 import {
+  buildReviewQueueForProduct,
+  buildReviewQueueReports,
+  reviewDecisionIsNotVerification,
+  type ReviewDecision,
+} from "../../scripts/importers/catalog/review-queue.ts";
+import {
   CATALOG_SEED_WARNING,
   DRAFT_PRODUCT_WARNING,
   type CatalogSeedItem,
@@ -609,6 +615,7 @@ test("knowledge engine has no forbidden writes or publication", async () => {
       "discovery.ts",
       "document-link-resolver.ts",
       "trusted-documents.ts",
+      "review-queue.ts",
     ].map((file) =>
       readFile(
         resolve(process.cwd(), "scripts/importers/catalog", file),
@@ -1275,4 +1282,158 @@ test("trusted extraction fact without evidence does not create CandidateClaim", 
   };
 
   assert.equal(candidateClaimFromExtractedFact(fact), null);
+});
+
+function reviewExtractionReport(overrides: {
+  claimType?: string;
+  evidenceIds?: string[];
+  documentVersions?: DocumentVersion[];
+} = {}) {
+  const version = trustedDocumentVersion();
+  const evidenceId = "evidence_review_test";
+  return {
+    product: discoveryProduct,
+    documentVersions: overrides.documentVersions ?? [version],
+    extractedFactCandidates: [],
+    evidenceCandidates: [
+      {
+        evidenceCandidateId: evidenceId,
+        kind: "document_excerpt" as const,
+        documentVersionId: version.versionId,
+        documentCandidateId: version.documentCandidateId,
+        sha256: version.sha256,
+        sourceUrl: version.sourceUrl,
+        locator: {
+          page: 1,
+          section: null,
+          heading: null,
+          table: null,
+          paragraph: 1,
+        },
+        quotedText: "Compatibility: test circuit",
+        status: "candidate" as const,
+        requiresHumanReview: true as const,
+      },
+    ],
+    candidateClaims: [
+      {
+        claimId: "claim_review_test",
+        productSlug: discoveryProduct.productSlug,
+        subjectType: "product" as const,
+        suggestedClaimType: overrides.claimType ?? "product.compatibility",
+        valuePayload: { value: "test circuit", unit: null },
+        rawText: "Compatibility: test circuit",
+        evidenceCandidateIds: overrides.evidenceIds ?? [evidenceId],
+        confidence: 0.8,
+        extractionMethod: "rule_based" as const,
+        status: "candidate" as const,
+        verificationStatus: "unverified" as const,
+        autoPublish: false as const,
+        requiresHumanReview: true as const,
+        warnings: ["Candidate claim handoff only."],
+      },
+    ],
+    warnings: [],
+    readiness: {
+      hasDownloadedDocuments: true,
+      hasExtractedText: true,
+      hasCandidateClaims: true,
+      canProceedToReview: true,
+    },
+  };
+}
+
+test("review queue creates item for CandidateClaim with evidence", () => {
+  const report = buildReviewQueueForProduct(reviewExtractionReport());
+
+  assert.equal(report.reviewItems.length, 1);
+  assert.equal(report.reviewItems[0].status, "pending_review");
+  assert.equal(report.reviewItems[0].evidenceCandidateIds.length, 1);
+  assert.equal(report.reviewItems[0].documentVersionIds.length, 1);
+  assert.equal(report.reviewItems[0].reviewerNotes, null);
+});
+
+test("review queue skips CandidateClaim without evidence with warning", () => {
+  const report = buildReviewQueueForProduct(
+    reviewExtractionReport({ evidenceIds: [] }),
+  );
+
+  assert.equal(report.reviewItems.length, 0);
+  assert.equal(report.missingEvidence.length, 1);
+  assert.ok(report.warnings.some((warning) => warning.includes("skipped")));
+});
+
+test("review queue assigns high priority to high-risk claim types", () => {
+  const report = buildReviewQueueForProduct(
+    reviewExtractionReport({ claimType: "product.safety.warning" }),
+  );
+
+  assert.equal(report.reviewItems[0].priority, "critical");
+  assert.equal(report.reviewItems[0].riskLevel, "high");
+});
+
+test("review queue keeps missing document version pending with reason", () => {
+  const report = buildReviewQueueForProduct(
+    reviewExtractionReport({ documentVersions: [] }),
+  );
+
+  assert.equal(report.reviewItems.length, 1);
+  assert.equal(report.reviewItems[0].status, "pending_review");
+  assert.equal(report.reviewItems[0].documentVersionIds.length, 0);
+  assert.ok(
+    report.reviewItems[0].reasons.some((reason) =>
+      reason.includes("No DocumentVersion"),
+    ),
+  );
+});
+
+test("review queue builder is idempotent and writes product reports", async () => {
+  const root = await mkdtemp(join(tmpdir(), "cybermedica-review-queue-"));
+  const options = {
+    extractionReports: [reviewExtractionReport()],
+    productReportDirectory: join(root, "review/products"),
+    aggregateReportPath: join(root, "review/review-queue.generated.json"),
+  };
+  await buildReviewQueueReports(options);
+  const first = await readFile(options.aggregateReportPath, "utf8");
+  await access(
+    join(options.productReportDirectory, `${discoveryProduct.productSlug}.json`),
+  );
+  await buildReviewQueueReports(options);
+  const second = await readFile(options.aggregateReportPath, "utf8");
+
+  assert.equal(first, second);
+});
+
+test("review queue aggregate metrics are correct", async () => {
+  const root = await mkdtemp(join(tmpdir(), "cybermedica-review-metrics-"));
+  const result = await buildReviewQueueReports({
+    extractionReports: [
+      reviewExtractionReport(),
+      reviewExtractionReport({ evidenceIds: [] }),
+    ],
+    productReportDirectory: join(root, "review/products"),
+    aggregateReportPath: join(root, "review/review-queue.generated.json"),
+  });
+
+  assert.equal(result.aggregate.totalItems, 1);
+  assert.equal(result.aggregate.pendingReview, 1);
+  assert.equal(result.aggregate.highPriority, 1);
+  assert.equal(result.aggregate.missingEvidence, 1);
+  assert.equal(result.aggregate.conflicts, 0);
+  assert.equal(result.aggregate.readyForHumanReview, 1);
+});
+
+test("ReviewDecision approve does not create Verified Claim", () => {
+  const decision: ReviewDecision = {
+    decisionId: "decision_test",
+    reviewItemId: "review_item_test",
+    decision: "approve",
+    reviewer: "reviewer@example.org",
+    notes: "Looks ready for Verification handoff.",
+    decidedAt: "2026-07-09T00:00:00.000Z",
+  };
+
+  assert.deepEqual(reviewDecisionIsNotVerification(decision), decision);
+  assert.doesNotMatch(JSON.stringify(decision), /verified|publish/i);
 });
