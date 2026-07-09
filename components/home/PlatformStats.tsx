@@ -6,7 +6,7 @@ export default function PlatformStats() {
     ["Устройства", stats.devices],
     ["Производители", stats.manufacturers],
     ["Опубликованные записи", stats.publishedRecords],
-    ["Исследования", stats.researchItems],
+    ["Проверяются", stats.researchItems],
   ] as const;
 
   return (

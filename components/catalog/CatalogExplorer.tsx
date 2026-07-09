@@ -27,10 +27,10 @@ function statusClass(status: DraftResearchStatus) {
 
 function statusLabel(status: DraftResearchStatus) {
   const labels: Record<DraftResearchStatus, string> = {
-    needs_source: "Требуются документы",
-    partially_researched: "В работе",
-    research_ready: "Готово к проверке",
-    blocked: "Нужна проверка",
+    needs_source: "Нет подтверждённых данных",
+    partially_researched: "Проверяется",
+    research_ready: "Проверяется",
+    blocked: "Проверяется",
   };
   return labels[status];
 }
@@ -50,7 +50,7 @@ function researchSteps(product: DraftCatalogCard) {
     product.candidateClaimsCount > 0
       ? "характеристики собраны"
       : "подготовка характеристик",
-    "ожидает проверки специалистом",
+    "проверяется специалистом",
   ];
 }
 
@@ -107,10 +107,10 @@ export default function CatalogExplorer({
                 className="cm-field min-h-10 py-2 text-xs transition duration-200"
               >
                 <option>Все статусы</option>
-                <option value="needs_source">Требуются документы</option>
-                <option value="partially_researched">В работе</option>
-                <option value="research_ready">Готово к проверке</option>
-                <option value="blocked">Нужна проверка</option>
+                <option value="needs_source">Нет подтверждённых данных</option>
+                <option value="partially_researched">Проверяется</option>
+                <option value="research_ready">Проверяется</option>
+                <option value="blocked">Проверяется</option>
               </select>
             </label>
           </div>
@@ -149,7 +149,7 @@ export default function CatalogExplorer({
             Найдено: <strong className="text-cm-ink">{results.length}</strong> из {products.length}
           </div>
           <div className="hidden text-[11px] text-cm-dim sm:block">
-            Записи обновляются по мере проверки документов
+            Записи обновляются после проверки документов
           </div>
         </div>
 

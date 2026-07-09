@@ -1,7 +1,16 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import AdminForm from "./AdminForm";
 import SavedProducts from "./SavedProducts";
+
+export const metadata: Metadata = {
+  title: "Внутренний редактор",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default function AdminPage() {
   if (

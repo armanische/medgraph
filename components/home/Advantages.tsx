@@ -16,8 +16,8 @@ const items = [
     text: "История закупок, заказчики и цены.",
   },
   {
-    title: "ИИ-помощник",
-    text: "Ответы на технические вопросы по изделиям.",
+    title: "Экспертные ответы",
+    text: "Ответы на технические вопросы по изделиям на основе подтверждённых материалов.",
   },
   {
     title: "Коммерческие предложения",
@@ -27,34 +27,32 @@ const items = [
 
 export default function Advantages() {
   return (
-    <section className="bg-gray-50 py-24">
-      <div className="max-w-7xl mx-auto px-8">
-
-        <h2 className="text-5xl font-bold text-center">
+    <section className="bg-cm-surface-low py-16">
+      <div className="cm-container">
+        <h2 className="text-center text-[1.55rem] font-extrabold tracking-[-0.02em]">
           Почему CyberMedica
         </h2>
 
-        <p className="text-center text-gray-500 mt-4 text-xl">
-          Мы создаем инфраструктуру знаний для медицинского рынка.
+        <p className="mx-auto mt-3 max-w-2xl text-center text-sm leading-7 text-cm-slate">
+          Мы создаём инфраструктуру знаний для медицинского рынка.
         </p>
 
-        <div className="grid lg:grid-cols-3 gap-8 mt-16">
+        <div className="mt-8 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
           {items.map((item) => (
             <div
               key={item.title}
-              className="rounded-3xl bg-white p-8 shadow-sm border border-gray-100"
+              className="cm-card p-5"
             >
-              <h3 className="text-2xl font-bold">
+              <h3 className="text-sm font-bold tracking-[-0.01em]">
                 {item.title}
               </h3>
 
-              <p className="mt-4 text-gray-600 leading-8">
+              <p className="mt-3 text-xs leading-6 text-cm-slate">
                 {item.text}
               </p>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

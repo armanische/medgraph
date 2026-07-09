@@ -3,7 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { connection } from "next/server";
 
+import CompatibilityEvidencePanel from "@/components/knowledge/CompatibilityEvidencePanel";
 import { ProvenanceChain } from "@/components/product-page/ProvenanceChain";
+import { getCompatibilityResult } from "@/lib/compatibility/mock-data";
 import { formatDate } from "@/lib/date";
 import { getPublicProductPage } from "@/lib/public-product-page";
 
@@ -131,6 +133,7 @@ export default async function Fs510ProductPage() {
   const { product } = result;
   const verifiedDate = formatDate(product.publication.verifiedAt);
   const publishedDate = formatDate(product.publication.publishedAt);
+  const compatibility = getCompatibilityResult("fs510");
 
   return (
     <main className="min-h-screen bg-cm-canvas text-cm-ink">
@@ -140,11 +143,11 @@ export default async function Fs510ProductPage() {
             <span className="flex size-5 items-center justify-center rounded-full bg-cm-verified">
               <Checkmark className="size-3.5 text-white" />
             </span>
-            Проверено CyberMedica
+            Опубликовано CyberMedica
           </div>
           <div className="flex flex-wrap gap-x-5 gap-y-1 font-mono text-cm-dim">
             <span>
-              Проверено:{" "}
+              Проверка:{" "}
               <time dateTime={product.publication.verifiedAt}>
                 {verifiedDate}
               </time>
@@ -179,7 +182,7 @@ export default async function Fs510ProductPage() {
           <div className="flex items-center justify-between gap-4 border-b border-[var(--cm-rule)] bg-cm-surface-low px-5 py-3">
             <span className="cm-label">Карточка медицинского изделия · CMR-FS510</span>
             <span className="rounded-md border border-[var(--cm-verified-border)] bg-cm-verified-soft px-2 py-1 font-mono text-[9px] font-semibold text-cm-verified">
-              Проверено
+              Опубликовано
             </span>
           </div>
           <div className="grid lg:grid-cols-[22.5rem_1fr]">
@@ -271,6 +274,7 @@ export default async function Fs510ProductPage() {
         >
           {[
             ["#overview", "Ключевое"],
+            ["#compatibility", "Совместимость"],
             ["#claims", "Проверенные факты"],
             ["#evidence", "Документы"],
             ["#history", "История"],
@@ -338,6 +342,8 @@ export default async function Fs510ProductPage() {
             </div>
           </div>
         </section>
+
+        <CompatibilityEvidencePanel result={compatibility} />
 
         <section id="claims" className="scroll-mt-28 pt-10">
           <div className="max-w-3xl">
@@ -584,9 +590,9 @@ export default async function Fs510ProductPage() {
 
 function displayStatus(status: string) {
   const normalized = status.toLowerCase();
-  if (normalized.includes("verified")) return "Проверено";
+  if (normalized.includes("verified")) return "Опубликовано";
   if (normalized.includes("published")) return "Опубликовано";
-  if (normalized.includes("active")) return "Активно";
+  if (normalized.includes("active")) return "Опубликовано";
   return status;
 }
 

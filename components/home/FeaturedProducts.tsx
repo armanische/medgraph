@@ -28,7 +28,7 @@ export default function FeaturedProducts() {
                 {product.category}
               </span>
               <span className="rounded-md border border-cm-verified/25 bg-cm-verified-soft px-2.5 py-1 font-mono text-[9px] font-semibold text-cm-verified">
-                Проверено
+                Опубликовано
               </span>
             </div>
             <h3 className="mt-5 text-[15px] font-bold leading-6 tracking-[-0.01em]">{product.name}</h3>

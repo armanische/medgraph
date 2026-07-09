@@ -52,9 +52,9 @@ export default async function ManufacturerPage({
         </Link>
         <div className="mt-6 cm-card overflow-hidden">
           <div className="flex items-center justify-between gap-4 border-b border-[var(--cm-rule)] bg-cm-surface-low px-5 py-3">
-            <span className="cm-label">Manufacturer Record</span>
+            <span className="cm-label">Карточка производителя</span>
             <span className="rounded-md border border-[var(--cm-verified-border)] bg-cm-verified-soft px-2 py-1 font-mono text-[9px] font-semibold text-cm-verified">
-              CyberMedica Verified
+              Опубликовано
             </span>
           </div>
           <div className="grid gap-8 p-6 sm:p-8 lg:grid-cols-[1fr_18rem]">
@@ -73,7 +73,7 @@ export default async function ManufacturerPage({
             <dl className="divide-y divide-[var(--cm-rule)] border-t border-[var(--cm-rule)] lg:border-t-0">
               <div className="flex justify-between gap-4 py-3"><dt className="cm-label">Страна</dt><dd className="text-xs font-semibold">{manufacturer.country}</dd></div>
               <div className="flex justify-between gap-4 py-3"><dt className="cm-label">Изделий</dt><dd className="font-mono text-xs font-semibold">{products.length}</dd></div>
-              <div className="flex justify-between gap-4 py-3"><dt className="cm-label">Статус</dt><dd className="text-xs font-semibold text-cm-verified">Проверено</dd></div>
+              <div className="flex justify-between gap-4 py-3"><dt className="cm-label">Статус</dt><dd className="text-xs font-semibold text-cm-verified">Опубликовано</dd></div>
             </dl>
           </div>
         </div>
@@ -102,7 +102,7 @@ export default async function ManufacturerPage({
                 <h3 className="mt-4 text-sm font-bold leading-5">{product.name}</h3>
                 <p className="mt-3 text-xs leading-6 text-cm-slate">{product.description}</p>
                 <div className="mt-auto border-t border-[var(--cm-rule)] pt-4 text-xs font-semibold text-cm-dim group-hover:text-cm-teal">
-                  Открыть Knowledge Page →
+                  Открыть карточку →
                 </div>
               </Link>
             ))}

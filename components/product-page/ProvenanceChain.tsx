@@ -87,8 +87,8 @@ export function ProvenanceChain({ source }: { source: PublicProductSource }) {
 
 function displayStatus(status: string) {
   const normalized = status.toLowerCase();
-  if (normalized.includes("verified")) return "Проверено";
+  if (normalized.includes("verified")) return "Опубликовано";
   if (normalized.includes("published")) return "Опубликовано";
-  if (normalized.includes("active")) return "Активно";
+  if (normalized.includes("active")) return "Опубликовано";
   return status;
 }

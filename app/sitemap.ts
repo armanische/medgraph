@@ -26,6 +26,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95,
     },
     {
+      url: url("/search"),
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: url("/compare"),
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.76,
+    },
+    {
       url: url("/products/fs510"),
       lastModified,
       changeFrequency: "monthly",

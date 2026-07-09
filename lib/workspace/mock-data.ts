@@ -172,9 +172,9 @@ export function createWorkspaceSession(): WorkspaceSession {
     insights,
     recommendations,
     warnings: [
-      "Workspace uses deterministic engines and mock/report data only.",
-      "LLM is not connected.",
-      "Candidate Claims and Review Queue are not read by Workspace.",
+      "Страница работает только с подготовленными отчётами и опубликованными знаниями.",
+      "Недостаточные данные показываются как отсутствие подтверждения.",
+      "Публикация новых фактов выполняется только отдельным процессом проверки.",
     ],
   };
 }

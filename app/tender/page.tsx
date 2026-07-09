@@ -45,8 +45,8 @@ export default function TenderPage() {
             <div className="rounded-lg border border-[var(--cm-rule)] bg-cm-surface-low p-4">
               <div className="cm-label">Граница данных</div>
               <p className="mt-2 text-sm leading-6 text-cm-slate">
-                Движок не использует ИИ, кандидатные факты или выводы по
-                аналогии. Без доказательства результат считается неподтверждённым.
+                Проверка не делает автоматических предположений. Без документа
+                и источника результат считается неподтверждённым.
               </p>
             </div>
           </div>

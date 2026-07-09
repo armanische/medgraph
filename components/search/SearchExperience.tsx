@@ -9,8 +9,8 @@ import type { SearchResponse, SearchResult } from "@/lib/search";
 function statusLabel(status: SearchResult["status"]) {
   const labels: Record<SearchResult["status"], string> = {
     published: "Опубликовано",
-    publication_ready: "Готово к публикации",
-    verified: "Проверено",
+    publication_ready: "Проверяется",
+    verified: "Опубликовано",
   };
   return labels[status];
 }
@@ -140,7 +140,7 @@ export default function SearchExperience({
               {response.total}
             </span>
           </div>
-          <div className="cm-label">Deterministic ranking</div>
+          <div className="cm-label">Точное ранжирование</div>
         </div>
       ) : null}
 

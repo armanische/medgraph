@@ -26,16 +26,16 @@ export default function WorkspacePage() {
                 Рабочее пространство закупки
               </h1>
               <p className="mt-3 max-w-2xl text-sm leading-7 text-cm-slate">
-                Без чат-бота и без генерации: страница объединяет поиск,
-                сравнение, совместимость и проверку ТЗ на основе существующих
-                deterministic-движков.
+                Рабочая страница объединяет поиск, сравнение, совместимость и
+                проверку ТЗ. Все выводы основаны на уже подготовленных данных и
+                подтверждающих материалах.
               </p>
             </div>
             <div className="rounded-lg border border-[var(--cm-rule)] bg-cm-surface-low p-4">
               <div className="cm-label">Безопасный режим</div>
               <p className="mt-2 text-sm leading-6 text-cm-slate">
-                LLM не подключён. Выводы и рекомендации формируются только по
-                готовым результатам Search, Compare, Compatibility и Tender.
+                Выводы и рекомендации формируются только по готовым результатам
+                поиска, сравнения, совместимости и проверки требований.
               </p>
             </div>
           </div>

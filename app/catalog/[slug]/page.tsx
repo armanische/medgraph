@@ -52,7 +52,7 @@ export default async function DraftCatalogProductPage({
     product.candidateClaimsCount > 0
       ? "Характеристики собраны"
       : "Подготовка характеристик",
-    "Ожидает проверки специалистом",
+    "Проверяется специалистом",
   ];
 
   return (
@@ -69,15 +69,15 @@ export default async function DraftCatalogProductPage({
                 <Badge tone={product.researchStatus === "research_ready" ? "good" : "neutral"}>
                   {researchStatusLabel(product.researchStatus)}
                 </Badge>
-                <Badge tone="neutral">Экспертная проверка ожидается</Badge>
+                <Badge tone="neutral">Проверяется</Badge>
               </div>
               <h1 className="mt-4 max-w-4xl text-3xl font-extrabold tracking-[-0.03em]">
                 {product.title}
               </h1>
               <p className="mt-4 max-w-3xl text-sm leading-7 text-cm-slate">
                 Запись проходит независимую проверку CyberMedica: источники,
-                документы и характеристики будут опубликованы как проверенные
-                только после экспертного подтверждения.
+                документы и характеристики будут опубликованы только после
+                экспертного подтверждения.
               </p>
               <div className="mt-5 flex flex-wrap gap-2">
                 <Link
@@ -119,7 +119,7 @@ export default async function DraftCatalogProductPage({
               <Metric label="Статус" value="Ожидает" />
             </div>
             <div className="mt-4 rounded-lg border border-[var(--cm-rule)] bg-white p-4 shadow-[0_8px_24px_rgba(11,19,32,0.035)]">
-              <div className="text-xs font-semibold">Исследование продолжается</div>
+              <div className="text-xs font-semibold">Проверка продолжается</div>
               <ul className="mt-4 grid gap-3 text-xs text-cm-slate sm:grid-cols-2">
                 {researchSteps.map((step, index) => (
                   <li key={step} className="flex gap-2">
@@ -162,7 +162,7 @@ export default async function DraftCatalogProductPage({
                       <Badge tone="neutral">Источник</Badge>
                     </div>
                     <div className="mt-2 font-mono text-[10px] text-cm-dim">
-                      {source.publisher} · надежность {source.confidence}
+                      {source.publisher}
                     </div>
                     <p className="mt-2 text-xs leading-5 text-cm-slate">{source.reason}</p>
                   </a>
@@ -221,7 +221,7 @@ export default async function DraftCatalogProductPage({
                         {fact.rawText}
                       </div>
                       <div className="mt-2 font-mono text-[10px] text-cm-dim">
-                        {fact.sourceTitle} · надежность {fact.confidence}
+                        {fact.sourceTitle}
                       </div>
                     </div>
                   </div>
@@ -313,7 +313,7 @@ export default async function DraftCatalogProductPage({
 
           <Section title="Проверка специалистом">
             <div className="space-y-2 text-xs leading-6 text-cm-slate">
-              <div>Состояние: ожидает проверки</div>
+              <div>Состояние: проверяется</div>
               <div>Приоритет: {priorityLabel(product.reviewPriority)}</div>
               <div>Роль: медицинский эксперт данных</div>
               <div>Блокирующие вопросы: {product.blockingIssues.length || "нет"}</div>
@@ -377,10 +377,10 @@ function displayMetric(value: number) {
 
 function researchStatusLabel(status: DraftResearchStatus) {
   const labels: Record<DraftResearchStatus, string> = {
-    needs_source: "Требуются документы",
-    partially_researched: "В работе",
-    research_ready: "Готово к проверке",
-    blocked: "Нужна проверка",
+    needs_source: "Нет подтверждённых данных",
+    partially_researched: "Проверяется",
+    research_ready: "Проверяется",
+    blocked: "Проверяется",
   };
   return labels[status];
 }
