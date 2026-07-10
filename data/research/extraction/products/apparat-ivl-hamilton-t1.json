@@ -300,7 +300,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:manufacturer",
+        "matchedSynonym:Manufacturer",
+        "unitParsed:none"
       ]
     }
   ],
@@ -618,6 +622,22 @@
       ]
     }
   ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry"
+    ],
+    "patternsMatched": {
+      "registry.manufacturer": 1
+    },
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "model",
+        "registration_number"
+      ]
+    },
+    "coveragePercent": 33
+  },
   "warnings": [
     "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/15165301",
     "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/41117573",

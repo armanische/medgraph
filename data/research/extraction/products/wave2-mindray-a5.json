@@ -114,7 +114,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:manufacturer",
+        "matchedSynonym:Manufacturer",
+        "unitParsed:none"
       ]
     },
     {
@@ -137,14 +141,18 @@
         "paragraph": 1169
       },
       "evidenceCandidateId": "evidence_0b81c9bf8c5bead30796ebe2",
-      "confidence": 0.88,
+      "confidence": 0.9,
       "extractionMethod": "pdf_text",
       "status": "candidate",
       "verificationStatus": "unverified",
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:anesthesia",
+        "matchedPattern:weight",
+        "matchedSynonym:Weight",
+        "unitParsed:kg"
       ]
     },
     {
@@ -167,6 +175,40 @@
         "paragraph": 2009
       },
       "evidenceCandidateId": "evidence_8bab24a7fcd36caa06dbe907",
+      "confidence": 0.9,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:anesthesia",
+        "matchedPattern:weight",
+        "matchedSynonym:Weight",
+        "unitParsed:kg"
+      ]
+    },
+    {
+      "factCandidateId": "fact_359da2066e96d57125f42394",
+      "productSlug": "wave2-mindray-a5",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "15.6",
+      "unit": "inch",
+      "rawText": "Display: 15.6 inch",
+      "documentVersionId": "document_version_e32177572f6ced467c5b926a",
+      "documentCandidateId": "document_ad6ce88abdf44051fe03af2b",
+      "documentSha256": "03d3e0136b1e2d09dbd2417568430b545fb63516acf6639e9914285d44f1a192",
+      "sourceUrl": "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026046-00-a1-a3-a5-satety-and-performance-information.pdf",
+      "locator": {
+        "page": 62,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 2246
+      },
+      "evidenceCandidateId": "evidence_d4ec3274506853d4555e56a5",
       "confidence": 0.88,
       "extractionMethod": "pdf_text",
       "status": "candidate",
@@ -174,7 +216,283 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:anesthesia",
+        "matchedPattern:screen",
+        "matchedSynonym:Display",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_708b721b1915c2a2fd80d21d",
+      "productSlug": "wave2-mindray-a5",
+      "factType": "product.operatingModes",
+      "label": "Режимы вентиляции",
+      "value": "Inspiratory resistance in mechanical ventilation mode",
+      "unit": null,
+      "rawText": "ventilation mode: Inspiratory resistance in mechanical ventilation mode",
+      "documentVersionId": "document_version_e32177572f6ced467c5b926a",
+      "documentCandidateId": "document_ad6ce88abdf44051fe03af2b",
+      "documentSha256": "03d3e0136b1e2d09dbd2417568430b545fb63516acf6639e9914285d44f1a192",
+      "sourceUrl": "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026046-00-a1-a3-a5-satety-and-performance-information.pdf",
+      "locator": {
+        "page": 44,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1407
+      },
+      "evidenceCandidateId": "evidence_2002a2b6dd89c937cfd91e96",
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:anesthesia",
+        "matchedPattern:modes",
+        "matchedSynonym:Modes",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_885ae519d3893ed1e4a274e8",
+      "productSlug": "wave2-mindray-a5",
+      "factType": "product.patientGroup",
+      "label": "Неонатальные пациенты",
+      "value": "neonate",
+      "unit": null,
+      "rawText": "neonate",
+      "documentVersionId": "document_version_e32177572f6ced467c5b926a",
+      "documentCandidateId": "document_ad6ce88abdf44051fe03af2b",
+      "documentSha256": "03d3e0136b1e2d09dbd2417568430b545fb63516acf6639e9914285d44f1a192",
+      "sourceUrl": "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026046-00-a1-a3-a5-satety-and-performance-information.pdf",
+      "locator": {
+        "page": 20,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 699
+      },
+      "evidenceCandidateId": "evidence_d6df1ce43d1aad2e4d40eab0",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:anesthesia",
+        "matchedPattern:neonatal",
+        "matchedSynonym:Neonate",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_a097f493736ef1858f392ba6",
+      "productSlug": "wave2-mindray-a5",
+      "factType": "product.patientGroup",
+      "label": "Неонатальные пациенты",
+      "value": "neonatal",
+      "unit": null,
+      "rawText": "neonatal",
+      "documentVersionId": "document_version_e32177572f6ced467c5b926a",
+      "documentCandidateId": "document_ad6ce88abdf44051fe03af2b",
+      "documentSha256": "03d3e0136b1e2d09dbd2417568430b545fb63516acf6639e9914285d44f1a192",
+      "sourceUrl": "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026046-00-a1-a3-a5-satety-and-performance-information.pdf",
+      "locator": {
+        "page": 50,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1598
+      },
+      "evidenceCandidateId": "evidence_a02435528d5fa2bba575b919",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:anesthesia",
+        "matchedPattern:neonatal",
+        "matchedSynonym:Neonatal",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_5f00c79cbea0f90d81cfda65",
+      "productSlug": "wave2-mindray-a5",
+      "factType": "product.patientGroup",
+      "label": "Педиатрические пациенты",
+      "value": "children",
+      "unit": null,
+      "rawText": "children",
+      "documentVersionId": "document_version_e32177572f6ced467c5b926a",
+      "documentCandidateId": "document_ad6ce88abdf44051fe03af2b",
+      "documentSha256": "03d3e0136b1e2d09dbd2417568430b545fb63516acf6639e9914285d44f1a192",
+      "sourceUrl": "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026046-00-a1-a3-a5-satety-and-performance-information.pdf",
+      "locator": {
+        "page": 9,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 244
+      },
+      "evidenceCandidateId": "evidence_19ce19ac5add8420f5b140ab",
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:anesthesia",
+        "matchedPattern:pediatric",
+        "matchedSynonym:Pediatric",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_9df4ceba617030eadce9fe93",
+      "productSlug": "wave2-mindray-a5",
+      "factType": "product.patientGroup",
+      "label": "Педиатрические пациенты",
+      "value": "pediatric",
+      "unit": null,
+      "rawText": "pediatric",
+      "documentVersionId": "document_version_e32177572f6ced467c5b926a",
+      "documentCandidateId": "document_ad6ce88abdf44051fe03af2b",
+      "documentSha256": "03d3e0136b1e2d09dbd2417568430b545fb63516acf6639e9914285d44f1a192",
+      "sourceUrl": "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026046-00-a1-a3-a5-satety-and-performance-information.pdf",
+      "locator": {
+        "page": 20,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 699
+      },
+      "evidenceCandidateId": "evidence_c411f62cfd36ad85d601db0a",
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:anesthesia",
+        "matchedPattern:pediatric",
+        "matchedSynonym:Pediatric",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_9ac5806bc4001f2b5b075b90",
+      "productSlug": "wave2-mindray-a5",
+      "factType": "product.measurementRanges",
+      "label": "Кислород",
+      "value": "1",
+      "unit": "%",
+      "rawText": "O2 : 1%",
+      "documentVersionId": "document_version_e32177572f6ced467c5b926a",
+      "documentCandidateId": "document_ad6ce88abdf44051fe03af2b",
+      "documentSha256": "03d3e0136b1e2d09dbd2417568430b545fb63516acf6639e9914285d44f1a192",
+      "sourceUrl": "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026046-00-a1-a3-a5-satety-and-performance-information.pdf",
+      "locator": {
+        "page": 48,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1538
+      },
+      "evidenceCandidateId": "evidence_35a82ad122ba4eb39418acfb",
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:anesthesia",
+        "matchedPattern:oxygen",
+        "matchedSynonym:O2",
+        "unitParsed:%"
+      ]
+    },
+    {
+      "factCandidateId": "fact_dbb24d07518f4ae02370d46b",
+      "productSlug": "wave2-mindray-a5",
+      "factType": "product.measurementRanges",
+      "label": "Кислород",
+      "value": "0.1",
+      "unit": "%",
+      "rawText": "O2: 0.1%",
+      "documentVersionId": "document_version_e32177572f6ced467c5b926a",
+      "documentCandidateId": "document_ad6ce88abdf44051fe03af2b",
+      "documentSha256": "03d3e0136b1e2d09dbd2417568430b545fb63516acf6639e9914285d44f1a192",
+      "sourceUrl": "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026046-00-a1-a3-a5-satety-and-performance-information.pdf",
+      "locator": {
+        "page": 53,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1828
+      },
+      "evidenceCandidateId": "evidence_79bf9aa97fcffa78b951dcf7",
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:anesthesia",
+        "matchedPattern:oxygen",
+        "matchedSynonym:O2",
+        "unitParsed:%"
+      ]
+    },
+    {
+      "factCandidateId": "fact_398ed3e298b215934b689f00",
+      "productSlug": "wave2-mindray-a5",
+      "factType": "product.measurementRanges",
+      "label": "Кислород",
+      "value": "0",
+      "unit": "%",
+      "rawText": "O2: 0%",
+      "documentVersionId": "document_version_e32177572f6ced467c5b926a",
+      "documentCandidateId": "document_ad6ce88abdf44051fe03af2b",
+      "documentSha256": "03d3e0136b1e2d09dbd2417568430b545fb63516acf6639e9914285d44f1a192",
+      "sourceUrl": "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026046-00-a1-a3-a5-satety-and-performance-information.pdf",
+      "locator": {
+        "page": 53,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1829
+      },
+      "evidenceCandidateId": "evidence_a3d3a04edd0aa3c09aa270f7",
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:anesthesia",
+        "matchedPattern:oxygen",
+        "matchedSynonym:O2",
+        "unitParsed:%"
       ]
     },
     {
@@ -204,7 +522,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.display",
+        "matchedSynonym:Дисплей",
+        "unitParsed:none"
       ]
     },
     {
@@ -234,7 +556,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.display",
+        "matchedSynonym:Дисплей",
+        "unitParsed:none"
       ]
     },
     {
@@ -264,7 +590,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.power",
+        "matchedSynonym:Питание",
+        "unitParsed:none"
       ]
     },
     {
@@ -294,7 +624,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.battery",
+        "matchedSynonym:Аккумулятор",
+        "unitParsed:none"
       ]
     },
     {
@@ -324,7 +658,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.battery",
+        "matchedSynonym:Аккумулятор",
+        "unitParsed:none"
       ]
     },
     {
@@ -354,7 +692,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.measurementRanges",
+        "matchedSynonym:Диапазон измерений",
+        "unitParsed:none"
       ]
     },
     {
@@ -384,7 +726,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.measurementRanges",
+        "matchedSynonym:Диапазон измерений",
+        "unitParsed:none"
       ]
     },
     {
@@ -414,7 +760,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
       ]
     },
     {
@@ -444,7 +794,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
       ]
     },
     {
@@ -474,7 +828,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
       ]
     },
     {
@@ -504,7 +862,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
       ]
     },
     {
@@ -534,7 +896,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
       ]
     },
     {
@@ -564,7 +930,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
       ]
     },
     {
@@ -594,7 +964,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
       ]
     },
     {
@@ -624,7 +998,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
       ]
     },
     {
@@ -654,7 +1032,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
       ]
     },
     {
@@ -684,7 +1066,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
       ]
     },
     {
@@ -714,7 +1100,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
       ]
     },
     {
@@ -744,7 +1134,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
       ]
     },
     {
@@ -774,7 +1168,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
       ]
     },
     {
@@ -804,7 +1202,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
       ]
     },
     {
@@ -834,7 +1236,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
       ]
     },
     {
@@ -864,7 +1270,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
       ]
     },
     {
@@ -894,7 +1304,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
       ]
     },
     {
@@ -924,7 +1338,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
       ]
     },
     {
@@ -954,7 +1372,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
       ]
     },
     {
@@ -984,7 +1406,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
       ]
     },
     {
@@ -1014,7 +1440,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
       ]
     },
     {
@@ -1044,7 +1474,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
       ]
     },
     {
@@ -1074,7 +1508,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1104,7 +1542,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1134,7 +1576,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1164,7 +1610,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1194,7 +1644,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1224,7 +1678,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1254,7 +1712,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1284,7 +1746,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1314,7 +1780,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1344,7 +1814,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1374,7 +1848,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1404,7 +1882,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1434,7 +1916,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1464,7 +1950,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1494,7 +1984,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1524,7 +2018,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1554,7 +2052,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1584,7 +2086,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1614,7 +2120,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1644,7 +2154,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1674,7 +2188,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1704,7 +2222,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1734,7 +2256,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1764,7 +2290,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1794,7 +2324,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1824,7 +2358,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1854,7 +2392,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1884,7 +2426,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1914,7 +2460,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1944,7 +2494,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1974,7 +2528,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2004,7 +2562,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2034,7 +2596,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2064,7 +2630,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2094,7 +2664,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2124,7 +2698,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2154,7 +2732,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2184,7 +2766,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2214,7 +2800,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2244,7 +2834,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2274,7 +2868,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2304,7 +2902,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2334,7 +2936,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2364,7 +2970,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2394,7 +3004,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2424,7 +3038,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2454,7 +3072,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2484,7 +3106,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2514,7 +3140,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2544,7 +3174,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2574,7 +3208,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2604,7 +3242,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2634,7 +3276,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2664,7 +3310,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2694,7 +3344,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2724,7 +3378,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2754,7 +3412,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2784,7 +3446,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2814,7 +3480,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2844,7 +3514,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2874,7 +3548,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2904,7 +3582,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2934,7 +3616,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2964,7 +3650,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -2994,7 +3684,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3024,7 +3718,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3054,7 +3752,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3084,7 +3786,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3114,7 +3820,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3144,7 +3854,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3174,7 +3888,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3204,7 +3922,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3234,7 +3956,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3264,7 +3990,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3294,7 +4024,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3324,7 +4058,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3354,7 +4092,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3384,7 +4126,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3414,7 +4160,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3444,7 +4194,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3474,7 +4228,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3504,7 +4262,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3534,7 +4296,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3564,7 +4330,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3594,7 +4364,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3624,7 +4398,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3654,7 +4432,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3684,7 +4466,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3714,7 +4500,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3744,7 +4534,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3774,7 +4568,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3804,7 +4602,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3834,7 +4636,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3864,7 +4670,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3894,7 +4704,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3924,7 +4738,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3954,7 +4772,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -3984,7 +4806,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4014,7 +4840,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4044,7 +4874,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4074,7 +4908,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4104,7 +4942,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4134,7 +4976,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4164,7 +5010,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4194,7 +5044,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4224,7 +5078,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4254,7 +5112,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4284,7 +5146,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4314,7 +5180,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4344,7 +5214,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4374,7 +5248,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4404,7 +5282,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4434,7 +5316,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4464,7 +5350,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4494,7 +5384,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4524,7 +5418,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4554,7 +5452,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4584,7 +5486,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4614,7 +5520,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4644,7 +5554,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4674,7 +5588,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4704,7 +5622,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4734,7 +5656,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4764,7 +5690,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4794,7 +5724,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4824,7 +5758,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4854,7 +5792,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -4884,7 +5826,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
       ]
     },
     {
@@ -5216,6 +6162,168 @@
         "paragraph": 2009
       },
       "quotedText": "Weight: 40 kg",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_d4ec3274506853d4555e56a5",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e32177572f6ced467c5b926a",
+      "documentCandidateId": "document_ad6ce88abdf44051fe03af2b",
+      "sha256": "03d3e0136b1e2d09dbd2417568430b545fb63516acf6639e9914285d44f1a192",
+      "sourceUrl": "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026046-00-a1-a3-a5-satety-and-performance-information.pdf",
+      "locator": {
+        "page": 62,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 2246
+      },
+      "quotedText": "Display: 15.6 inch",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_2002a2b6dd89c937cfd91e96",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e32177572f6ced467c5b926a",
+      "documentCandidateId": "document_ad6ce88abdf44051fe03af2b",
+      "sha256": "03d3e0136b1e2d09dbd2417568430b545fb63516acf6639e9914285d44f1a192",
+      "sourceUrl": "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026046-00-a1-a3-a5-satety-and-performance-information.pdf",
+      "locator": {
+        "page": 44,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1407
+      },
+      "quotedText": "ventilation mode: Inspiratory resistance in mechanical ventilation mode",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_d6df1ce43d1aad2e4d40eab0",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e32177572f6ced467c5b926a",
+      "documentCandidateId": "document_ad6ce88abdf44051fe03af2b",
+      "sha256": "03d3e0136b1e2d09dbd2417568430b545fb63516acf6639e9914285d44f1a192",
+      "sourceUrl": "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026046-00-a1-a3-a5-satety-and-performance-information.pdf",
+      "locator": {
+        "page": 20,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 699
+      },
+      "quotedText": "neonate",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_a02435528d5fa2bba575b919",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e32177572f6ced467c5b926a",
+      "documentCandidateId": "document_ad6ce88abdf44051fe03af2b",
+      "sha256": "03d3e0136b1e2d09dbd2417568430b545fb63516acf6639e9914285d44f1a192",
+      "sourceUrl": "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026046-00-a1-a3-a5-satety-and-performance-information.pdf",
+      "locator": {
+        "page": 50,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1598
+      },
+      "quotedText": "neonatal",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_19ce19ac5add8420f5b140ab",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e32177572f6ced467c5b926a",
+      "documentCandidateId": "document_ad6ce88abdf44051fe03af2b",
+      "sha256": "03d3e0136b1e2d09dbd2417568430b545fb63516acf6639e9914285d44f1a192",
+      "sourceUrl": "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026046-00-a1-a3-a5-satety-and-performance-information.pdf",
+      "locator": {
+        "page": 9,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 244
+      },
+      "quotedText": "children",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_c411f62cfd36ad85d601db0a",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e32177572f6ced467c5b926a",
+      "documentCandidateId": "document_ad6ce88abdf44051fe03af2b",
+      "sha256": "03d3e0136b1e2d09dbd2417568430b545fb63516acf6639e9914285d44f1a192",
+      "sourceUrl": "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026046-00-a1-a3-a5-satety-and-performance-information.pdf",
+      "locator": {
+        "page": 20,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 699
+      },
+      "quotedText": "pediatric",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_35a82ad122ba4eb39418acfb",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e32177572f6ced467c5b926a",
+      "documentCandidateId": "document_ad6ce88abdf44051fe03af2b",
+      "sha256": "03d3e0136b1e2d09dbd2417568430b545fb63516acf6639e9914285d44f1a192",
+      "sourceUrl": "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026046-00-a1-a3-a5-satety-and-performance-information.pdf",
+      "locator": {
+        "page": 48,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1538
+      },
+      "quotedText": "O2 : 1%",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_79bf9aa97fcffa78b951dcf7",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e32177572f6ced467c5b926a",
+      "documentCandidateId": "document_ad6ce88abdf44051fe03af2b",
+      "sha256": "03d3e0136b1e2d09dbd2417568430b545fb63516acf6639e9914285d44f1a192",
+      "sourceUrl": "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026046-00-a1-a3-a5-satety-and-performance-information.pdf",
+      "locator": {
+        "page": 53,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1828
+      },
+      "quotedText": "O2: 0.1%",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_a3d3a04edd0aa3c09aa270f7",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e32177572f6ced467c5b926a",
+      "documentCandidateId": "document_ad6ce88abdf44051fe03af2b",
+      "sha256": "03d3e0136b1e2d09dbd2417568430b545fb63516acf6639e9914285d44f1a192",
+      "sourceUrl": "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026046-00-a1-a3-a5-satety-and-performance-information.pdf",
+      "locator": {
+        "page": 53,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1829
+      },
+      "quotedText": "O2: 0%",
       "status": "candidate",
       "requiresHumanReview": true
     },
@@ -8129,7 +9237,7 @@
       "evidenceCandidateIds": [
         "evidence_0b81c9bf8c5bead30796ebe2"
       ],
-      "confidence": 0.88,
+      "confidence": 0.9,
       "extractionMethod": "pdf_text",
       "status": "candidate",
       "verificationStatus": "unverified",
@@ -8152,7 +9260,214 @@
       "evidenceCandidateIds": [
         "evidence_8bab24a7fcd36caa06dbe907"
       ],
+      "confidence": 0.9,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_7e395aa7a31f47a50a73d85b",
+      "productSlug": "wave2-mindray-a5",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "15.6",
+        "unit": "inch"
+      },
+      "rawText": "Display: 15.6 inch",
+      "evidenceCandidateIds": [
+        "evidence_d4ec3274506853d4555e56a5"
+      ],
       "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_7426e9e80f9eb47e9210ffc8",
+      "productSlug": "wave2-mindray-a5",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Inspiratory resistance in mechanical ventilation mode",
+        "unit": null
+      },
+      "rawText": "ventilation mode: Inspiratory resistance in mechanical ventilation mode",
+      "evidenceCandidateIds": [
+        "evidence_2002a2b6dd89c937cfd91e96"
+      ],
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_fb7c73423c7feeca5a5e1707",
+      "productSlug": "wave2-mindray-a5",
+      "subjectType": "product",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "neonate",
+        "unit": null
+      },
+      "rawText": "neonate",
+      "evidenceCandidateIds": [
+        "evidence_d6df1ce43d1aad2e4d40eab0"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_d380bdc2723fd869b6e024a8",
+      "productSlug": "wave2-mindray-a5",
+      "subjectType": "product",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "neonatal",
+        "unit": null
+      },
+      "rawText": "neonatal",
+      "evidenceCandidateIds": [
+        "evidence_a02435528d5fa2bba575b919"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_d520db07e1065023dddeed70",
+      "productSlug": "wave2-mindray-a5",
+      "subjectType": "product",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "children",
+        "unit": null
+      },
+      "rawText": "children",
+      "evidenceCandidateIds": [
+        "evidence_19ce19ac5add8420f5b140ab"
+      ],
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_63cb7a9dfec31ee5135f9e8f",
+      "productSlug": "wave2-mindray-a5",
+      "subjectType": "product",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "pediatric",
+        "unit": null
+      },
+      "rawText": "pediatric",
+      "evidenceCandidateIds": [
+        "evidence_c411f62cfd36ad85d601db0a"
+      ],
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_1434803171014ce6eea6f910",
+      "productSlug": "wave2-mindray-a5",
+      "subjectType": "product",
+      "suggestedClaimType": "product.measurementRanges",
+      "valuePayload": {
+        "value": "1",
+        "unit": "%"
+      },
+      "rawText": "O2 : 1%",
+      "evidenceCandidateIds": [
+        "evidence_35a82ad122ba4eb39418acfb"
+      ],
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_87648ea6513af97bf0f114d6",
+      "productSlug": "wave2-mindray-a5",
+      "subjectType": "product",
+      "suggestedClaimType": "product.measurementRanges",
+      "valuePayload": {
+        "value": "0.1",
+        "unit": "%"
+      },
+      "rawText": "O2: 0.1%",
+      "evidenceCandidateIds": [
+        "evidence_79bf9aa97fcffa78b951dcf7"
+      ],
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_139e52fbcb5c7fb76ea1bb4f",
+      "productSlug": "wave2-mindray-a5",
+      "subjectType": "product",
+      "suggestedClaimType": "product.measurementRanges",
+      "valuePayload": {
+        "value": "0",
+        "unit": "%"
+      },
+      "rawText": "O2: 0%",
+      "evidenceCandidateIds": [
+        "evidence_a3d3a04edd0aa3c09aa270f7"
+      ],
+      "confidence": 0.82,
       "extractionMethod": "pdf_text",
       "status": "candidate",
       "verificationStatus": "unverified",
@@ -11958,6 +13273,45 @@
       ]
     }
   ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "anesthesia"
+    ],
+    "patternsMatched": {
+      "registry.manufacturer": 1,
+      "registry.generic.display": 2,
+      "registry.generic.power": 1,
+      "registry.generic.battery": 2,
+      "registry.generic.measurementRanges": 2,
+      "registry.generic.accuracy": 22,
+      "registry.generic.warnings": 128,
+      "anesthesia.weight": 2,
+      "anesthesia.screen": 1,
+      "anesthesia.modes": 1,
+      "anesthesia.neonatal": 2,
+      "anesthesia.pediatric": 2,
+      "anesthesia.oxygen": 3
+    },
+    "normalizedUnits": {
+      "kg": 2,
+      "inch": 1,
+      "%": 3
+    },
+    "failedFields": {
+      "registry": [
+        "model",
+        "registration_number"
+      ],
+      "anesthesia": [
+        "adult",
+        "battery_runtime",
+        "niv",
+        "turbine"
+      ]
+    },
+    "coveragePercent": 147
+  },
   "warnings": [
     "Resolver rejected unsafe document URL: javascript:void(0);",
     "Resolver rejected unsafe document URL: javascript:void(0);",

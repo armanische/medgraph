@@ -10,6 +10,28 @@
   "extractedFactCandidates": [],
   "evidenceCandidates": [],
   "candidateClaims": [],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "patient-monitor"
+    ],
+    "patternsMatched": {},
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "patient-monitor": [
+        "battery_runtime",
+        "modules",
+        "parameters",
+        "screen"
+      ]
+    },
+    "coveragePercent": 0
+  },
   "warnings": [
     "Resolver rejected unsafe document URL: javascript:void(0);",
     "Resolver rejected unsafe document URL: javascript:void(0);",

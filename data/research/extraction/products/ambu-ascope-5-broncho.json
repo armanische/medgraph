@@ -10,6 +10,29 @@
   "extractedFactCandidates": [],
   "evidenceCandidates": [],
   "candidateClaims": [],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "endoscopy"
+    ],
+    "patternsMatched": {},
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "endoscopy": [
+        "diameter",
+        "length",
+        "single_use",
+        "sterile",
+        "working_channel"
+      ]
+    },
+    "coveragePercent": 0
+  },
   "warnings": [
     "Resolver fetch failed for https://www.ambu.com/endoscopy/pulmonology/bronchoscopes/product/ascope-5-broncho: The operation was aborted due to timeout",
     "Discovery creates candidates only; no verified claims or publication.",

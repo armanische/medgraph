@@ -10,6 +10,21 @@
   "extractedFactCandidates": [],
   "evidenceCandidates": [],
   "candidateClaims": [],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry"
+    ],
+    "patternsMatched": {},
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ]
+    },
+    "coveragePercent": 0
+  },
   "warnings": [
     "No source candidates found; product remains needs_source.",
     "Discovery creates candidates only; no verified claims or publication.",

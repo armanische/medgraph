@@ -10,6 +10,21 @@
   "extractedFactCandidates": [],
   "evidenceCandidates": [],
   "candidateClaims": [],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry"
+    ],
+    "patternsMatched": {},
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ]
+    },
+    "coveragePercent": 0
+  },
   "warnings": [
     "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=BkhOZm3tGN4",
     "Resolver rejected offsite document URL: https://www.facebook.com/HamiltonMedical",

@@ -10,6 +10,34 @@
   "extractedFactCandidates": [],
   "evidenceCandidates": [],
   "candidateClaims": [],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "ventilator"
+    ],
+    "patternsMatched": {},
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "ventilator": [
+        "adult",
+        "battery_runtime",
+        "modes",
+        "neonatal",
+        "niv",
+        "oxygen",
+        "pediatric",
+        "screen",
+        "turbine",
+        "weight"
+      ]
+    },
+    "coveragePercent": 0
+  },
   "warnings": [
     "Resolver rejected unsafe document URL: javascript:void(0);",
     "Resolver rejected unsafe document URL: javascript:void(0);",

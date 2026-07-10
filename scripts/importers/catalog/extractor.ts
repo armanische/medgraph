@@ -6,6 +6,7 @@ import type {
   CharacteristicExtractionInput,
   CharacteristicExtractor,
 } from "./types.ts";
+import { extractWithCategoryProfiles } from "./extraction-profiles/index.ts";
 
 function catalogResearchDocumentKey(url: string) {
   return `catalog-research:${createHash("sha256")
@@ -241,8 +242,16 @@ export class RuleBasedCharacteristicExtractor
   implements CharacteristicExtractor
 {
   extract(input: CharacteristicExtractionInput) {
-    const output: CandidateCharacteristic[] = [];
+    const profileResult = extractWithCategoryProfiles(input);
+    const output: CandidateCharacteristic[] = [...profileResult.characteristics];
     const seen = new Set<string>();
+    for (const item of output) {
+      seen.add(
+        `${item.category}:${item.value}:${item.unit ?? ""}`.toLocaleLowerCase(
+          "ru-RU",
+        ),
+      );
+    }
     for (const rule of RULES) {
       rule.pattern.lastIndex = 0;
       for (const match of input.text.matchAll(rule.pattern)) {
@@ -277,6 +286,10 @@ export class RuleBasedCharacteristicExtractor
             locator: locatorFor(input.text, match.index ?? 0),
             extractionMethod: input.extractionMethod,
             confidence: rule.confidence,
+            extractionProfile: "registry",
+            matchedPattern: `generic.${rule.category}`,
+            matchedSynonym: rule.label,
+            normalizedUnit: unit,
             status: "unverified",
             needsReview: true,
           }),

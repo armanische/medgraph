@@ -168,7 +168,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:manufacturer",
+        "matchedSynonym:Manufacturer",
+        "unitParsed:none"
       ]
     },
     {
@@ -438,7 +442,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.battery",
+        "matchedSynonym:Аккумулятор",
+        "unitParsed:none"
       ]
     },
     {
@@ -468,7 +476,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.softwareVersion",
+        "matchedSynonym:Версия программного обеспечения",
+        "unitParsed:none"
       ]
     },
     {
@@ -1291,6 +1303,24 @@
       ]
     }
   ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry"
+    ],
+    "patternsMatched": {
+      "registry.manufacturer": 1,
+      "registry.generic.battery": 1,
+      "registry.generic.softwareVersion": 1
+    },
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "model",
+        "registration_number"
+      ]
+    },
+    "coveragePercent": 100
+  },
   "warnings": [
     "Resolver rejected offsite document URL: https://youtu.be/6EPiYLTrHBE",
     "Resolver rejected offsite document URL: https://youtu.be/5n22mT7L_nw",

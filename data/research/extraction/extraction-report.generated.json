@@ -1,16 +1,61 @@
 {
   "productsProcessed": 77,
   "documentVersionsProcessed": 39,
-  "extractedFactCandidates": 544,
-  "evidenceCandidates": 424,
-  "candidateClaims": 544,
+  "extractedFactCandidates": 606,
+  "evidenceCandidates": 486,
+  "candidateClaims": 606,
   "productsReadyForReview": 11,
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "anesthesia",
+      "endoscopy",
+      "lighting",
+      "patient-monitor",
+      "registry",
+      "ultrasound",
+      "ventilator"
+    ],
+    "patternsMatched": {
+      "registry.generic.accuracy": 49,
+      "registry.manufacturer": 18,
+      "ventilator.niv": 9,
+      "ventilator.neonatal": 9,
+      "ventilator.pediatric": 9,
+      "ventilator.turbine": 6,
+      "ventilator.adult": 7,
+      "registry.registration_number": 3,
+      "registry.generic.operatingModes": 2,
+      "registry.generic.warnings": 257,
+      "registry.generic.battery": 5,
+      "registry.generic.softwareVersion": 1,
+      "ventilator.weight": 1,
+      "registry.generic.display": 4,
+      "registry.generic.power": 2,
+      "registry.generic.measurementRanges": 4,
+      "anesthesia.weight": 4,
+      "anesthesia.screen": 2,
+      "anesthesia.modes": 2,
+      "anesthesia.neonatal": 4,
+      "anesthesia.pediatric": 4,
+      "anesthesia.oxygen": 6
+    },
+    "normalizedUnits": {
+      "kg": 5,
+      "inch": 2,
+      "%": 6
+    },
+    "averageCoveragePercent": 10
+  },
   "productReports": [
     {
       "productSlug": "aerozolnyi-raspylitel-ultraspreier-r",
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -18,6 +63,11 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry",
+        "endoscopy"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -25,6 +75,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -32,6 +86,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -39,6 +97,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -46,6 +108,10 @@
       "documentVersions": 9,
       "extractedFactCandidates": 52,
       "candidateClaims": 52,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 67,
       "canProceedToReview": true
     },
     {
@@ -53,6 +119,10 @@
       "documentVersions": 3,
       "extractedFactCandidates": 8,
       "candidateClaims": 8,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 33,
       "canProceedToReview": true
     },
     {
@@ -60,6 +130,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -67,6 +141,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -74,6 +152,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -81,6 +163,11 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry",
+        "endoscopy"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -88,6 +175,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -95,6 +186,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -102,6 +197,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -109,6 +208,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -116,6 +219,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -123,6 +230,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -130,6 +241,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -137,6 +252,11 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry",
+        "endoscopy"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -144,6 +264,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -151,6 +275,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -158,6 +286,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -165,6 +297,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -172,6 +308,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -179,6 +319,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -186,6 +330,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -193,6 +341,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -200,6 +352,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -207,6 +363,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -214,6 +374,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -221,6 +385,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -228,6 +396,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -235,6 +407,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -242,6 +418,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -249,6 +429,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -256,6 +440,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -263,6 +451,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -270,6 +462,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -277,6 +473,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -284,6 +484,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -291,6 +495,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -298,6 +506,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -305,6 +517,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -312,6 +528,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -319,6 +539,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -326,6 +550,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -333,6 +561,11 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry",
+        "endoscopy"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -340,6 +573,11 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry",
+        "endoscopy"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -347,6 +585,11 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry",
+        "endoscopy"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -354,20 +597,34 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
       "productSlug": "wave2-hamilton-c3",
       "documentVersions": 4,
-      "extractedFactCandidates": 31,
-      "candidateClaims": 31,
+      "extractedFactCandidates": 44,
+      "candidateClaims": 44,
+      "profilesUsed": [
+        "registry",
+        "ventilator"
+      ],
+      "coveragePercent": 42,
       "canProceedToReview": true
     },
     {
       "productSlug": "wave2-hamilton-c6",
       "documentVersions": 6,
-      "extractedFactCandidates": 33,
-      "candidateClaims": 33,
+      "extractedFactCandidates": 45,
+      "candidateClaims": 45,
+      "profilesUsed": [
+        "registry",
+        "ventilator"
+      ],
+      "coveragePercent": 59,
       "canProceedToReview": true
     },
     {
@@ -375,6 +632,11 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry",
+        "ventilator"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -382,13 +644,22 @@
       "documentVersions": 1,
       "extractedFactCandidates": 2,
       "candidateClaims": 2,
+      "profilesUsed": [
+        "registry",
+        "ventilator"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": true
     },
     {
       "productSlug": "wave2-hamilton-h900",
       "documentVersions": 3,
-      "extractedFactCandidates": 20,
-      "candidateClaims": 20,
+      "extractedFactCandidates": 23,
+      "candidateClaims": 23,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 133,
       "canProceedToReview": true
     },
     {
@@ -396,6 +667,10 @@
       "documentVersions": 4,
       "extractedFactCandidates": 19,
       "candidateClaims": 19,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 100,
       "canProceedToReview": true
     },
     {
@@ -403,13 +678,22 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
       "productSlug": "wave2-hamilton-mr1",
       "documentVersions": 6,
-      "extractedFactCandidates": 35,
-      "candidateClaims": 35,
+      "extractedFactCandidates": 51,
+      "candidateClaims": 51,
+      "profilesUsed": [
+        "registry",
+        "ventilator"
+      ],
+      "coveragePercent": 64,
       "canProceedToReview": true
     },
     {
@@ -417,6 +701,11 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry",
+        "ventilator"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -424,20 +713,35 @@
       "documentVersions": 1,
       "extractedFactCandidates": 2,
       "candidateClaims": 2,
+      "profilesUsed": [
+        "registry",
+        "ventilator"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": true
     },
     {
       "productSlug": "wave2-mindray-a5",
       "documentVersions": 1,
-      "extractedFactCandidates": 170,
-      "candidateClaims": 170,
+      "extractedFactCandidates": 179,
+      "candidateClaims": 179,
+      "profilesUsed": [
+        "registry",
+        "anesthesia"
+      ],
+      "coveragePercent": 147,
       "canProceedToReview": true
     },
     {
       "productSlug": "wave2-mindray-a7",
       "documentVersions": 1,
-      "extractedFactCandidates": 172,
-      "candidateClaims": 172,
+      "extractedFactCandidates": 181,
+      "candidateClaims": 181,
+      "profilesUsed": [
+        "registry",
+        "anesthesia"
+      ],
+      "coveragePercent": 147,
       "canProceedToReview": true
     },
     {
@@ -445,6 +749,11 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry",
+        "anesthesia"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -452,6 +761,11 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry",
+        "patient-monitor"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -459,6 +773,11 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry",
+        "patient-monitor"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -466,6 +785,11 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry",
+        "lighting"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -473,6 +797,11 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry",
+        "lighting"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -480,6 +809,11 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry",
+        "lighting"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -487,6 +821,11 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry",
+        "lighting"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -494,6 +833,11 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry",
+        "ultrasound"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -501,6 +845,11 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry",
+        "ultrasound"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -508,6 +857,10 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -515,6 +868,11 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry",
+        "ultrasound"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -522,6 +880,11 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry",
+        "ultrasound"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -529,6 +892,11 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry",
+        "ventilator"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -536,6 +904,11 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry",
+        "ventilator"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     },
     {
@@ -543,6 +916,11 @@
       "documentVersions": 0,
       "extractedFactCandidates": 0,
       "candidateClaims": 0,
+      "profilesUsed": [
+        "registry",
+        "ventilator"
+      ],
+      "coveragePercent": 0,
       "canProceedToReview": false
     }
   ],

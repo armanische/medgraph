@@ -348,7 +348,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
       ]
     },
     {
@@ -678,7 +682,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:manufacturer",
+        "matchedSynonym:Manufacturer",
+        "unitParsed:none"
       ]
     },
     {
@@ -828,7 +836,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:manufacturer",
+        "matchedSynonym:Manufacturer",
+        "unitParsed:none"
       ]
     },
     {
@@ -1098,7 +1110,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:manufacturer",
+        "matchedSynonym:Manufacturer",
+        "unitParsed:none"
       ]
     },
     {
@@ -3328,6 +3344,23 @@
       ]
     }
   ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry"
+    ],
+    "patternsMatched": {
+      "registry.generic.accuracy": 1,
+      "registry.manufacturer": 3
+    },
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "model",
+        "registration_number"
+      ]
+    },
+    "coveragePercent": 67
+  },
   "warnings": [
     "Resolver rejected offsite document URL: https://youtu.be/GQQWWkQeLF8",
     "Resolver rejected offsite document URL: https://youtu.be/GQQWWkQeLF8",

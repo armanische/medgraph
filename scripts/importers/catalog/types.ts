@@ -174,6 +174,10 @@ export interface CandidateCharacteristic {
   locator: EvidenceLocator;
   extractionMethod: "rule_based" | "html_metadata" | "pdf_text";
   confidence: number;
+  extractionProfile?: string;
+  matchedPattern?: string;
+  matchedSynonym?: string;
+  normalizedUnit?: string | null;
   status: "unverified";
   needsReview: true;
 }

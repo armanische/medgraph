@@ -19,8 +19,13 @@ import type {
   DiscoveryProductReport,
   TrustTier,
 } from "./discovery.ts";
+import {
+  coverageSummary,
+  profileCoverageForCharacteristics,
+} from "./extraction-profiles/index.ts";
 import { RuleBasedCharacteristicExtractor } from "./extractor.ts";
 import type {
+  CandidateCharacteristic,
   CatalogSeedItem,
   DocumentCandidate as ResearchDocumentCandidate,
   DocumentCandidateType,
@@ -204,6 +209,13 @@ export interface TrustedDocumentExtractionProductReport {
   extractedFactCandidates: ExtractedFactCandidate[];
   evidenceCandidates: EvidenceCandidateReference[];
   candidateClaims: CandidateClaimHandoff[];
+  extractionProfileSummary?: {
+    profilesUsed: string[];
+    patternsMatched: Record<string, number>;
+    normalizedUnits: Record<string, number>;
+    failedFields: Record<string, string[]>;
+    coveragePercent: number;
+  };
   warnings: string[];
   readiness: {
     hasDownloadedDocuments: boolean;
@@ -220,11 +232,19 @@ export interface TrustedDocumentExtractionReport {
   evidenceCandidates: number;
   candidateClaims: number;
   productsReadyForReview: number;
+  extractionProfileSummary: {
+    profilesUsed: string[];
+    patternsMatched: Record<string, number>;
+    normalizedUnits: Record<string, number>;
+    averageCoveragePercent: number;
+  };
   productReports: Array<{
     productSlug: string;
     documentVersions: number;
     extractedFactCandidates: number;
     candidateClaims: number;
+    profilesUsed: string[];
+    coveragePercent: number;
     canProceedToReview: boolean;
   }>;
   warnings: string[];
@@ -785,6 +805,31 @@ function dedupeFacts(facts: ExtractedFactCandidate[]) {
   ];
 }
 
+function emptyExtractionProfileSummary() {
+  return {
+    profilesUsed: [],
+    patternsMatched: {},
+    normalizedUnits: {},
+    failedFields: {},
+    coveragePercent: 0,
+  };
+}
+
+function mergeCountMaps(
+  reports: TrustedDocumentExtractionProductReport[],
+  key: "patternsMatched" | "normalizedUnits",
+) {
+  const output: Record<string, number> = {};
+  for (const report of reports) {
+    for (const [itemKey, count] of Object.entries(
+      (report.extractionProfileSummary ?? emptyExtractionProfileSummary())[key],
+    )) {
+      output[itemKey] = (output[itemKey] ?? 0) + count;
+    }
+  }
+  return output;
+}
+
 export async function runTrustedDocumentExtractionForReports(input: {
   downloadReports: TrustedDocumentProductDownloadReport[];
   productReportDirectory?: string;
@@ -805,6 +850,7 @@ export async function runTrustedDocumentExtractionForReports(input: {
     const warnings = [...downloadReport.warnings];
     const facts: ExtractedFactCandidate[] = [];
     const evidenceCandidates: EvidenceCandidateReference[] = [];
+    const extractedCharacteristicsForCoverage: CandidateCharacteristic[] = [];
     let extractedTextDocuments = 0;
 
     for (const version of downloadReport.documentVersions) {
@@ -878,6 +924,7 @@ export async function runTrustedDocumentExtractionForReports(input: {
         extractionMethod:
           version.contentType === "application/pdf" ? "pdf_text" : "rule_based",
       });
+      extractedCharacteristicsForCoverage.push(...extractedCharacteristics);
       for (const characteristic of extractedCharacteristics) {
         const locator = characteristic.locator;
         const evidence = evidenceForFact({
@@ -914,7 +961,13 @@ export async function runTrustedDocumentExtractionForReports(input: {
           verificationStatus: "unverified",
           autoPublish: false,
           requiresHumanReview: true,
-          warnings: ["Rule-based extraction; human review is required."],
+          warnings: [
+            "Rule-based extraction; human review is required.",
+            `profile:${characteristic.extractionProfile ?? "unknown"}`,
+            `matchedPattern:${characteristic.matchedPattern ?? "unknown"}`,
+            `matchedSynonym:${characteristic.matchedSynonym ?? "unknown"}`,
+            `unitParsed:${characteristic.normalizedUnit ?? "none"}`,
+          ],
         });
       }
       facts.push(
@@ -930,6 +983,12 @@ export async function runTrustedDocumentExtractionForReports(input: {
     const claims = dedupedFacts
       .map((fact) => candidateClaimFromExtractedFact(fact))
       .filter((claim): claim is CandidateClaimHandoff => Boolean(claim));
+    const extractionProfileSummary = coverageSummary(
+      profileCoverageForCharacteristics({
+        category: downloadReport.product.category,
+        characteristics: extractedCharacteristicsForCoverage,
+      }),
+    );
     const report: TrustedDocumentExtractionProductReport = {
       product: downloadReport.product,
       documentVersions: downloadReport.documentVersions,
@@ -943,6 +1002,7 @@ export async function runTrustedDocumentExtractionForReports(input: {
         ).values(),
       ],
       candidateClaims: claims,
+      extractionProfileSummary,
       warnings,
       readiness: {
         hasDownloadedDocuments: downloadReport.documentVersions.length > 0,
@@ -979,11 +1039,40 @@ export async function runTrustedDocumentExtractionForReports(input: {
     productsReadyForReview: productReports.filter(
       (report) => report.readiness.canProceedToReview,
     ).length,
+    extractionProfileSummary: {
+      profilesUsed: [
+        ...new Set(
+          productReports.flatMap(
+            (report) =>
+              (report.extractionProfileSummary ?? emptyExtractionProfileSummary())
+                .profilesUsed,
+          ),
+        ),
+      ].sort(),
+      patternsMatched: mergeCountMaps(productReports, "patternsMatched"),
+      normalizedUnits: mergeCountMaps(productReports, "normalizedUnits"),
+      averageCoveragePercent: productReports.length
+        ? Math.round(
+            productReports.reduce(
+              (sum, report) =>
+                sum +
+                (report.extractionProfileSummary ?? emptyExtractionProfileSummary())
+                  .coveragePercent,
+              0,
+            ) / productReports.length,
+          )
+        : 0,
+    },
     productReports: productReports.map((report) => ({
       productSlug: report.product.productSlug,
       documentVersions: report.documentVersions.length,
       extractedFactCandidates: report.extractedFactCandidates.length,
       candidateClaims: report.candidateClaims.length,
+      profilesUsed: (report.extractionProfileSummary ?? emptyExtractionProfileSummary())
+        .profilesUsed,
+      coveragePercent: (
+        report.extractionProfileSummary ?? emptyExtractionProfileSummary()
+      ).coveragePercent,
       canProceedToReview: report.readiness.canProceedToReview,
     })),
     warnings: productReports.flatMap((report) =>
@@ -1029,6 +1118,12 @@ export async function extractDiscoveredDocuments() {
       evidenceCandidates: 0,
       candidateClaims: 0,
       productsReadyForReview: 0,
+      extractionProfileSummary: {
+        profilesUsed: [],
+        patternsMatched: {},
+        normalizedUnits: {},
+        averageCoveragePercent: 0,
+      },
       productReports: [],
       warnings: [
         "Downloaded document reports were not found; run npm run download:discovered-documents first.",
