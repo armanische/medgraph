@@ -1,22 +1,22 @@
 {
   "product": {
-    "productSlug": "narkozno-dyhatelnyi-apparat-mindray-a8",
-    "manufacturer": "Mindray",
-    "productName": "Наркозно-дыхательный аппарат Mindray A8",
-    "model": "Mindray A8",
-    "category": "Реанимационное оборудование"
+    "productSlug": "wave2-drager-atlan-a300",
+    "manufacturer": "Drager",
+    "productName": "Dräger Atlan A300",
+    "model": "Atlan A300",
+    "category": "Наркозно-дыхательные аппараты"
   },
   "providerDiagnostics": {
-    "providerName": "mindray",
-    "strategyUsed": "Mindray products, resources, support and downloads",
+    "providerName": "drager",
+    "strategyUsed": "Dräger products, media and technical documentation services",
     "pagesVisited": [
-      "https://www.mindray.com/en/products/anesthesia/a8"
+      "https://www.draeger.com/en_uk/Products/Atlan-A300-A300-XL"
     ],
     "candidateUrls": [
-      "https://www.mindray.com/en/products/anesthesia/a8"
+      "https://www.draeger.com/en_uk/Products/Atlan-A300-A300-XL"
     ],
     "normalizedUrls": [
-      "https://www.mindray.com/en/products/anesthesia/a8"
+      "https://www.draeger.com/en_uk/Products/Atlan-A300-A300-XL"
     ],
     "duplicatesRemoved": 0,
     "blockedUrls": [],
@@ -27,14 +27,14 @@
   "fallbackProviderUsed": false,
   "sourceCandidates": [
     {
-      "sourceId": "source_9da56fa221d7188d25023527",
-      "productSlug": "narkozno-dyhatelnyi-apparat-mindray-a8",
-      "manufacturer": "Mindray",
-      "productName": "Наркозно-дыхательный аппарат Mindray A8",
+      "sourceId": "source_998ff80dd66179691bbc39bb",
+      "productSlug": "wave2-drager-atlan-a300",
+      "manufacturer": "Drager",
+      "productName": "Dräger Atlan A300",
       "sourceType": "official_manufacturer_page",
-      "url": "https://www.mindray.com/en/products/anesthesia/a8",
-      "title": "A8 official product page",
-      "snippet": "Official Mindray product page linked to existing catalog slug during Wave 2 Sprint 2; candidate-only source.",
+      "url": "https://www.draeger.com/en_uk/Products/Atlan-A300-A300-XL",
+      "title": "Dräger Atlan A300/A300 XL official product page",
+      "snippet": "Official product-family page; candidate-only source.",
       "discoveredBy": "manual-seed-discovery",
       "confidence": 0.92,
       "trustTier": 1,
@@ -44,30 +44,28 @@
         "official manufacturer page candidate",
         "snippet is not evidence",
         "LLM output is not a source",
-        "Official Mindray product page linked to existing catalog slug during Wave 2 Sprint 2; candidate-only source."
+        "Official product-family page; candidate-only source."
       ]
     }
   ],
   "documentCandidates": [],
   "resolvedDocumentLinks": [],
-  "resolverWarnings": [
-    "Resolver fetch failed for https://www.mindray.com/en/products/anesthesia/a8: fetch failed"
-  ],
+  "resolverWarnings": [],
   "missingDocumentTasks": [
     {
-      "productSlug": "narkozno-dyhatelnyi-apparat-mindray-a8",
+      "productSlug": "wave2-drager-atlan-a300",
       "requiredDocumentType": "registration_certificate",
       "priority": "critical",
       "reason": "registration_certificate is required before product can be considered extraction-ready."
     },
     {
-      "productSlug": "narkozno-dyhatelnyi-apparat-mindray-a8",
+      "productSlug": "wave2-drager-atlan-a300",
       "requiredDocumentType": "ifu",
       "priority": "high",
       "reason": "ifu is required before product can be considered extraction-ready."
     },
     {
-      "productSlug": "narkozno-dyhatelnyi-apparat-mindray-a8",
+      "productSlug": "wave2-drager-atlan-a300",
       "requiredDocumentType": "datasheet",
       "priority": "medium",
       "reason": "datasheet is required before product can be considered extraction-ready."
@@ -88,7 +86,6 @@
     "canProceedToExtraction": false
   },
   "warnings": [
-    "Resolver fetch failed for https://www.mindray.com/en/products/anesthesia/a8: fetch failed",
     "Discovery creates candidates only; no verified claims or publication."
   ]
 }

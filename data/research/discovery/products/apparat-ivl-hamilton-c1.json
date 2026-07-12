@@ -6,6 +6,25 @@
     "model": "Hamilton C1",
     "category": "Акушерство и гинекология"
   },
+  "providerDiagnostics": {
+    "providerName": "hamilton",
+    "strategyUsed": "Hamilton product pages and documentation/download sections",
+    "pagesVisited": [
+      "https://www.hamilton-medical.com/en/Products/HAMILTON-C1.html"
+    ],
+    "candidateUrls": [
+      "https://www.hamilton-medical.com/en/Products/HAMILTON-C1.html"
+    ],
+    "normalizedUrls": [
+      "https://www.hamilton-medical.com/en/Products/HAMILTON-C1.html"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": []
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": false,
   "sourceCandidates": [
     {
       "sourceId": "source_db7c0cdc19ff36aac6f62028",
@@ -29,291 +48,10 @@
       ]
     }
   ],
-  "documentCandidates": [
-    {
-      "documentId": "document_3f21be7fc962e3cbcbfcef7a",
-      "sourceId": "source_db7c0cdc19ff36aac6f62028",
-      "productSlug": "apparat-ivl-hamilton-c1",
-      "documentType": "brochure",
-      "url": "https://www.hamilton-medical.com/dam/jcr:42bf3766-8de5-4d4a-890f-7f1f2a335e18/O2-assist-brochure-en-ELO20240702N.02_WEB.pdf",
-      "title": "Document O2 assist brochure English | 0.35 MB | ELO20240702N.02 Download",
-      "language": null,
-      "confidence": 0.86,
-      "trustTier": 1,
-      "requiresHumanReview": true,
-      "reasons": [
-        "trust_tier:1",
-        "resolved from official manufacturer page",
-        "document candidate only; download, hash and locator are still required",
-        "requires human review before verification"
-      ]
-    },
-    {
-      "documentId": "document_d7fffb88ebe6b7880971f9a2",
-      "sourceId": "source_db7c0cdc19ff36aac6f62028",
-      "productSlug": "apparat-ivl-hamilton-c1",
-      "documentType": "datasheet",
-      "url": "https://www.hamilton-medical.com/dam/jcr:831a36dd-0af9-4aaa-b52f-3d08157d7423/HAMILTON-C1_tech-specs_v3.1.x_en_10101895.03.pdf",
-      "title": "Document HAMILTON-C1 Technical specification Software version 3.1.x English | 0.34 MB | 10101895.03 Download",
-      "language": null,
-      "confidence": 0.86,
-      "trustTier": 1,
-      "requiresHumanReview": true,
-      "reasons": [
-        "trust_tier:1",
-        "resolved from official manufacturer page",
-        "document candidate only; download, hash and locator are still required",
-        "requires human review before verification"
-      ]
-    },
-    {
-      "documentId": "document_2c33bc94f442d685f3f16f5e",
-      "sourceId": "source_db7c0cdc19ff36aac6f62028",
-      "productSlug": "apparat-ivl-hamilton-c1",
-      "documentType": "brochure",
-      "url": "https://www.hamilton-medical.com/dam/jcr:9cc3084a-de25-47ff-974a-47d050b3dd33/HAMILTON-C1-neo_brochure_v3.0.x_en_689574.01.pdf",
-      "title": "Document HAMILTON-C1 neo Brochure Software version 3.0.x English | 1.58 MB | 689574.01 Download",
-      "language": null,
-      "confidence": 0.86,
-      "trustTier": 1,
-      "requiresHumanReview": true,
-      "reasons": [
-        "trust_tier:1",
-        "resolved from official manufacturer page",
-        "document candidate only; download, hash and locator are still required",
-        "requires human review before verification"
-      ]
-    },
-    {
-      "documentId": "document_6096d7952852ef264046d5f4",
-      "sourceId": "source_db7c0cdc19ff36aac6f62028",
-      "productSlug": "apparat-ivl-hamilton-c1",
-      "documentType": "brochure",
-      "url": "https://www.hamilton-medical.com/dam/jcr:d06509e6-5b87-455c-b719-8d7c23033792/HAMILTON-C1_brochure-v3.1.x_brochure_en_ELO20250405S.00.pdf",
-      "title": "Document HAMILTON-C1 brochure Software version 3.1.x English | 0.92 MB | ELO20250405S.00 Download",
-      "language": null,
-      "confidence": 0.86,
-      "trustTier": 1,
-      "requiresHumanReview": true,
-      "reasons": [
-        "trust_tier:1",
-        "resolved from official manufacturer page",
-        "document candidate only; download, hash and locator are still required",
-        "requires human review before verification"
-      ]
-    },
-    {
-      "documentId": "document_c2fae1fde64a9c5ba0af8438",
-      "sourceId": "source_db7c0cdc19ff36aac6f62028",
-      "productSlug": "apparat-ivl-hamilton-c1",
-      "documentType": "brochure",
-      "url": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
-      "title": "Document Company brochure Hamilton Medical - One solution, every situation English | 3.23 MB | ELO20240301N.02 Download",
-      "language": null,
-      "confidence": 0.86,
-      "trustTier": 1,
-      "requiresHumanReview": true,
-      "reasons": [
-        "trust_tier:1",
-        "resolved from official manufacturer page",
-        "document candidate only; download, hash and locator are still required",
-        "requires human review before verification"
-      ]
-    },
-    {
-      "documentId": "document_8582dcc7edd2acac5a531a6c",
-      "sourceId": "source_db7c0cdc19ff36aac6f62028",
-      "productSlug": "apparat-ivl-hamilton-c1",
-      "documentType": "brochure",
-      "url": "https://www.hamilton-medical.com/dam/jcr:f25fae9d-a96f-402d-b46a-a77912c4b709/HAMILTON-C1-LTACH-brochure-v3.0.X_brochure_en_us_ELO20160311N.01.pdf",
-      "title": "Document HAMILTON-C1 LTACH brochure Software version 3.0.x USA Version English | 1.16 MB | ELO20160311N.01 Download",
-      "language": null,
-      "confidence": 0.86,
-      "trustTier": 1,
-      "requiresHumanReview": true,
-      "reasons": [
-        "trust_tier:1",
-        "resolved from official manufacturer page",
-        "document candidate only; download, hash and locator are still required",
-        "requires human review before verification"
-      ]
-    },
-    {
-      "documentId": "document_7ff214ce31dffa311aa177ab",
-      "sourceId": "source_db7c0cdc19ff36aac6f62028",
-      "productSlug": "apparat-ivl-hamilton-c1",
-      "documentType": "brochure",
-      "url": "https://www.hamilton-medical.com/dam/jcr:f8d9a6b7-a163-4ed1-8995-b774ca1de285/IntelliSync_brochure_en_ELO20240217N.01.pdf",
-      "title": "Document IntelliSync®+ brochure English | 0.55 MB | ELO20240217N.01 Download",
-      "language": null,
-      "confidence": 0.86,
-      "trustTier": 1,
-      "requiresHumanReview": true,
-      "reasons": [
-        "trust_tier:1",
-        "resolved from official manufacturer page",
-        "document candidate only; download, hash and locator are still required",
-        "requires human review before verification"
-      ]
-    },
-    {
-      "documentId": "document_b82f8e398caf965c1974943e",
-      "sourceId": "source_db7c0cdc19ff36aac6f62028",
-      "productSlug": "apparat-ivl-hamilton-c1",
-      "documentType": "unknown",
-      "url": "https://www.hamilton-medical.com/dam/jcr:f0315631-25e6-47a2-8a50-7f22776c93c4/HAMILTON-C1-T1-MR1_flyer_v3.1.1_en_ELO20240910N.00.pdf",
-      "title": "Document New SW 3.1.1 for HAMILTON-C1/T1/MR1 English | 4.04 MB | ELO20240910N.00 Download",
-      "language": null,
-      "confidence": 0.58,
-      "trustTier": 1,
-      "requiresHumanReview": true,
-      "reasons": [
-        "trust_tier:1",
-        "resolved from official manufacturer page",
-        "document candidate only; download, hash and locator are still required",
-        "requires human review before verification",
-        "Document type could not be classified confidently."
-      ]
-    },
-    {
-      "documentId": "document_405ac1791a4bd213cea63f1e",
-      "sourceId": "source_db7c0cdc19ff36aac6f62028",
-      "productSlug": "apparat-ivl-hamilton-c1",
-      "documentType": "unknown",
-      "url": "https://www.hamilton-medical.com/dam/jcr:f0c9a2d1-8826-4052-b0fe-ee8b69bc5623/HAMILTON-C1-T1_NIV-only-option_flyer_en_ELO20241001N.00.pdf",
-      "title": "Document HAMILTON-C1/T1 with NIV-only option flyer English | 2.34 MB | ELO20241001N.00 Download",
-      "language": null,
-      "confidence": 0.58,
-      "trustTier": 1,
-      "requiresHumanReview": true,
-      "reasons": [
-        "trust_tier:1",
-        "resolved from official manufacturer page",
-        "document candidate only; download, hash and locator are still required",
-        "requires human review before verification",
-        "Document type could not be classified confidently."
-      ]
-    }
-  ],
-  "resolvedDocumentLinks": [
-    {
-      "documentId": "document_3f21be7fc962e3cbcbfcef7a",
-      "url": "https://www.hamilton-medical.com/dam/jcr:42bf3766-8de5-4d4a-890f-7f1f2a335e18/O2-assist-brochure-en-ELO20240702N.02_WEB.pdf",
-      "title": "Document O2 assist brochure English | 0.35 MB | ELO20240702N.02 Download",
-      "documentTypeGuess": "brochure",
-      "parentSourceId": "source_db7c0cdc19ff36aac6f62028",
-      "linkText": "Document O2 assist brochure English | 0.35 MB | ELO20240702N.02 Download",
-      "resolvedFromUrl": "https://www.hamilton-medical.com/en/Products/HAMILTON-C1.html",
-      "warnings": []
-    },
-    {
-      "documentId": "document_d7fffb88ebe6b7880971f9a2",
-      "url": "https://www.hamilton-medical.com/dam/jcr:831a36dd-0af9-4aaa-b52f-3d08157d7423/HAMILTON-C1_tech-specs_v3.1.x_en_10101895.03.pdf",
-      "title": "Document HAMILTON-C1 Technical specification Software version 3.1.x English | 0.34 MB | 10101895.03 Download",
-      "documentTypeGuess": "datasheet",
-      "parentSourceId": "source_db7c0cdc19ff36aac6f62028",
-      "linkText": "Document HAMILTON-C1 Technical specification Software version 3.1.x English | 0.34 MB | 10101895.03 Download",
-      "resolvedFromUrl": "https://www.hamilton-medical.com/en/Products/HAMILTON-C1.html",
-      "warnings": []
-    },
-    {
-      "documentId": "document_2c33bc94f442d685f3f16f5e",
-      "url": "https://www.hamilton-medical.com/dam/jcr:9cc3084a-de25-47ff-974a-47d050b3dd33/HAMILTON-C1-neo_brochure_v3.0.x_en_689574.01.pdf",
-      "title": "Document HAMILTON-C1 neo Brochure Software version 3.0.x English | 1.58 MB | 689574.01 Download",
-      "documentTypeGuess": "brochure",
-      "parentSourceId": "source_db7c0cdc19ff36aac6f62028",
-      "linkText": "Document HAMILTON-C1 neo Brochure Software version 3.0.x English | 1.58 MB | 689574.01 Download",
-      "resolvedFromUrl": "https://www.hamilton-medical.com/en/Products/HAMILTON-C1.html",
-      "warnings": []
-    },
-    {
-      "documentId": "document_6096d7952852ef264046d5f4",
-      "url": "https://www.hamilton-medical.com/dam/jcr:d06509e6-5b87-455c-b719-8d7c23033792/HAMILTON-C1_brochure-v3.1.x_brochure_en_ELO20250405S.00.pdf",
-      "title": "Document HAMILTON-C1 brochure Software version 3.1.x English | 0.92 MB | ELO20250405S.00 Download",
-      "documentTypeGuess": "brochure",
-      "parentSourceId": "source_db7c0cdc19ff36aac6f62028",
-      "linkText": "Document HAMILTON-C1 brochure Software version 3.1.x English | 0.92 MB | ELO20250405S.00 Download",
-      "resolvedFromUrl": "https://www.hamilton-medical.com/en/Products/HAMILTON-C1.html",
-      "warnings": []
-    },
-    {
-      "documentId": "document_c2fae1fde64a9c5ba0af8438",
-      "url": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
-      "title": "Document Company brochure Hamilton Medical - One solution, every situation English | 3.23 MB | ELO20240301N.02 Download",
-      "documentTypeGuess": "brochure",
-      "parentSourceId": "source_db7c0cdc19ff36aac6f62028",
-      "linkText": "Document Company brochure Hamilton Medical - One solution, every situation English | 3.23 MB | ELO20240301N.02 Download",
-      "resolvedFromUrl": "https://www.hamilton-medical.com/en/Products/HAMILTON-C1.html",
-      "warnings": []
-    },
-    {
-      "documentId": "document_b82f8e398caf965c1974943e",
-      "url": "https://www.hamilton-medical.com/dam/jcr:f0315631-25e6-47a2-8a50-7f22776c93c4/HAMILTON-C1-T1-MR1_flyer_v3.1.1_en_ELO20240910N.00.pdf",
-      "title": "Document New SW 3.1.1 for HAMILTON-C1/T1/MR1 English | 4.04 MB | ELO20240910N.00 Download",
-      "documentTypeGuess": "unknown",
-      "parentSourceId": "source_db7c0cdc19ff36aac6f62028",
-      "linkText": "Document New SW 3.1.1 for HAMILTON-C1/T1/MR1 English | 4.04 MB | ELO20240910N.00 Download",
-      "resolvedFromUrl": "https://www.hamilton-medical.com/en/Products/HAMILTON-C1.html",
-      "warnings": [
-        "Document type could not be classified confidently."
-      ]
-    },
-    {
-      "documentId": "document_405ac1791a4bd213cea63f1e",
-      "url": "https://www.hamilton-medical.com/dam/jcr:f0c9a2d1-8826-4052-b0fe-ee8b69bc5623/HAMILTON-C1-T1_NIV-only-option_flyer_en_ELO20241001N.00.pdf",
-      "title": "Document HAMILTON-C1/T1 with NIV-only option flyer English | 2.34 MB | ELO20241001N.00 Download",
-      "documentTypeGuess": "unknown",
-      "parentSourceId": "source_db7c0cdc19ff36aac6f62028",
-      "linkText": "Document HAMILTON-C1/T1 with NIV-only option flyer English | 2.34 MB | ELO20241001N.00 Download",
-      "resolvedFromUrl": "https://www.hamilton-medical.com/en/Products/HAMILTON-C1.html",
-      "warnings": [
-        "Document type could not be classified confidently."
-      ]
-    },
-    {
-      "documentId": "document_8582dcc7edd2acac5a531a6c",
-      "url": "https://www.hamilton-medical.com/dam/jcr:f25fae9d-a96f-402d-b46a-a77912c4b709/HAMILTON-C1-LTACH-brochure-v3.0.X_brochure_en_us_ELO20160311N.01.pdf",
-      "title": "Document HAMILTON-C1 LTACH brochure Software version 3.0.x USA Version English | 1.16 MB | ELO20160311N.01 Download",
-      "documentTypeGuess": "brochure",
-      "parentSourceId": "source_db7c0cdc19ff36aac6f62028",
-      "linkText": "Document HAMILTON-C1 LTACH brochure Software version 3.0.x USA Version English | 1.16 MB | ELO20160311N.01 Download",
-      "resolvedFromUrl": "https://www.hamilton-medical.com/en/Products/HAMILTON-C1.html",
-      "warnings": []
-    },
-    {
-      "documentId": "document_7ff214ce31dffa311aa177ab",
-      "url": "https://www.hamilton-medical.com/dam/jcr:f8d9a6b7-a163-4ed1-8995-b774ca1de285/IntelliSync_brochure_en_ELO20240217N.01.pdf",
-      "title": "Document IntelliSync®+ brochure English | 0.55 MB | ELO20240217N.01 Download",
-      "documentTypeGuess": "brochure",
-      "parentSourceId": "source_db7c0cdc19ff36aac6f62028",
-      "linkText": "Document IntelliSync®+ brochure English | 0.55 MB | ELO20240217N.01 Download",
-      "resolvedFromUrl": "https://www.hamilton-medical.com/en/Products/HAMILTON-C1.html",
-      "warnings": []
-    }
-  ],
+  "documentCandidates": [],
+  "resolvedDocumentLinks": [],
   "resolverWarnings": [
-    "Resolver rejected offsite document URL: https://youtu.be/GQQWWkQeLF8",
-    "Resolver rejected offsite document URL: https://youtu.be/GQQWWkQeLF8",
-    "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=nCD0zUrc7B0",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25742308",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/27006266",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25569810",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/24577110",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/26957117",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/28377920",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/31733881",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25425705",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/15165301",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/18393813",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/35422002",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/39318593",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/36465920",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/37311626",
-    "Resolver rejected offsite document URL: https://www.facebook.com/HamiltonMedical",
-    "Resolver rejected offsite document URL: https://twitter.com/HamiltonMedical",
-    "Resolver rejected offsite document URL: https://www.youtube.com/user/hamiltonmedicalag",
-    "Resolver rejected offsite document URL: https://www.linkedin.com/company/hamilton-medical-ag/mycompany/verification/",
-    "Resolver rejected offsite document URL: https://www.instagram.com/accounts/login/?next=/hamiltonmedical/"
+    "Resolver fetch failed for https://www.hamilton-medical.com/en/Products/HAMILTON-C1.html: fetch failed"
   ],
   "missingDocumentTasks": [
     {
@@ -327,6 +65,12 @@
       "requiredDocumentType": "ifu",
       "priority": "high",
       "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "apparat-ivl-hamilton-c1",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
     }
   ],
   "trustSummary": {
@@ -344,28 +88,7 @@
     "canProceedToExtraction": false
   },
   "warnings": [
-    "Resolver rejected offsite document URL: https://youtu.be/GQQWWkQeLF8",
-    "Resolver rejected offsite document URL: https://youtu.be/GQQWWkQeLF8",
-    "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=nCD0zUrc7B0",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25742308",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/27006266",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25569810",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/24577110",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/26957117",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/28377920",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/31733881",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/25425705",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/15165301",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/18393813",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/35422002",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/39318593",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/36465920",
-    "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/37311626",
-    "Resolver rejected offsite document URL: https://www.facebook.com/HamiltonMedical",
-    "Resolver rejected offsite document URL: https://twitter.com/HamiltonMedical",
-    "Resolver rejected offsite document URL: https://www.youtube.com/user/hamiltonmedicalag",
-    "Resolver rejected offsite document URL: https://www.linkedin.com/company/hamilton-medical-ag/mycompany/verification/",
-    "Resolver rejected offsite document URL: https://www.instagram.com/accounts/login/?next=/hamiltonmedical/",
+    "Resolver fetch failed for https://www.hamilton-medical.com/en/Products/HAMILTON-C1.html: fetch failed",
     "Discovery creates candidates only; no verified claims or publication."
   ]
 }

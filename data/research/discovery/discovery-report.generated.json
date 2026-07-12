@@ -1,16 +1,85 @@
 {
-  "productsProcessed": 17,
-  "officialSourcesFound": 17,
-  "documentsFound": 7,
-  "requiredDocumentsMissing": 51,
+  "productsProcessed": 49,
+  "officialSourcesFound": 9,
+  "documentsFound": 3,
+  "requiredDocumentsMissing": 145,
   "productsReadyForExtraction": 0,
-  "productsBlocked": 17,
-  "resolvedDocumentLinksFound": 7,
-  "productsWithResolvedDocuments": 5,
-  "productsStillMissingDocuments": 17,
+  "productsBlocked": 49,
+  "resolvedDocumentLinksFound": 0,
+  "productsWithResolvedDocuments": 0,
+  "productsStillMissingDocuments": 49,
+  "providersUsed": [
+    "ambu",
+    "default",
+    "ge-healthcare",
+    "hamilton",
+    "mindray"
+  ],
+  "productsPerProvider": {
+    "default": 38,
+    "hamilton": 2,
+    "ge-healthcare": 2,
+    "mindray": 6,
+    "ambu": 1
+  },
+  "fallbackProviderProducts": 38,
+  "totalCandidateUrls": 9,
+  "totalNormalizedUrls": 9,
+  "totalDuplicatesRemoved": 0,
+  "totalBlockedUrls": 0,
+  "unsupportedPortalsDetected": 0,
+  "providerWarnings": [
+    "Manufacturer is missing; DefaultProvider was used without changing trust tier.",
+    "No configured provider matched manufacturer “Airtraq”; DefaultProvider was used without changing trust tier.",
+    "No configured provider matched manufacturer “B. Braun”; DefaultProvider was used without changing trust tier.",
+    "No configured provider matched manufacturer “Comen”; DefaultProvider was used without changing trust tier.",
+    "No configured provider matched manufacturer “DIXION”; DefaultProvider was used without changing trust tier.",
+    "No configured provider matched manufacturer “Fresenius Kabi”; DefaultProvider was used without changing trust tier.",
+    "No configured provider matched manufacturer “General Meditech”; DefaultProvider was used without changing trust tier.",
+    "No configured provider matched manufacturer “Longfian”; DefaultProvider was used without changing trust tier.",
+    "No configured provider matched manufacturer “MIR”; DefaultProvider was used without changing trust tier.",
+    "No configured provider matched manufacturer “Pentax Medical”; DefaultProvider was used without changing trust tier.",
+    "No configured provider matched manufacturer “SLE”; DefaultProvider was used without changing trust tier.",
+    "No configured provider matched manufacturer “SonoScape”; DefaultProvider was used without changing trust tier.",
+    "No configured provider matched manufacturer “Медиком”; DefaultProvider was used without changing trust tier.",
+    "No configured provider matched manufacturer “НИПК «Электрон»”; DefaultProvider was used without changing trust tier.",
+    "No configured provider matched manufacturer “УОМЗ”; DefaultProvider was used without changing trust tier."
+  ],
   "productReports": [
     {
-      "productSlug": "wave2-mindray-products-index",
+      "productSlug": "inkubator-idn-02-danio-uomz",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "inkubator-intensivnoi-terapii-idn-03-danio",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "apparat-ivl-sle-6000",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "otkrytaya-reanimatsionnaya-sistema-phoenix-cic-101",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "apparat-ivl-hamilton-c1",
       "sources": 1,
       "documents": 0,
       "resolvedDocumentLinks": 0,
@@ -18,7 +87,127 @@
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-mindray-sv300",
+      "productSlug": "fetalnyi-monitor-unikos-03",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "fetalnyi-monitor-ge-corometrics-259-cx",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "monitor-materi-ploda-g6b-general-meditech",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "elektricheskii-aspirator-vacus-7308",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "apparat-podderzhki-dyhaniya-apdn-01",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "analizator-giperbilirubinemii-bilitest",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "sistema-otoakusticheskoi-emissii-otoread",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "portativnyi-aspirator-vacus-7018-dixion",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "ustroistva-obogreva-rt300si-dlya-novorozhdennyh",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "kolposkop-ks-02-302-zoom-komfort",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "videoendoskopicheskaya-sistema-sonoscape-hd-350",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "videoendoskopicheskaya-sistema-sonoscape-hd-500",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "videoendoskopicheskaya-sistema-sonoscape-hd-550",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "gastrofibroskop-pentax-fg-29v",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "bronhofibroskop-pentax-fb-15v",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "narkozno-dyhatelnyi-apparat-wato-ex-35",
       "sources": 1,
       "documents": 0,
       "resolvedDocumentLinks": 0,
@@ -26,7 +215,7 @@
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-mindray-sv300-pro",
+      "productSlug": "apparat-ivl-mindray-sv800-sv600",
       "sources": 1,
       "documents": 0,
       "resolvedDocumentLinks": 0,
@@ -34,55 +223,31 @@
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-mindray-sv800-sv600",
-      "sources": 1,
-      "documents": 0,
-      "resolvedDocumentLinks": 0,
-      "missingDocumentTasks": 3,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-mindray-a5",
-      "sources": 1,
-      "documents": 1,
-      "resolvedDocumentLinks": 1,
-      "missingDocumentTasks": 3,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-mindray-a7",
-      "sources": 1,
-      "documents": 1,
-      "resolvedDocumentLinks": 1,
-      "missingDocumentTasks": 3,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-mindray-a8",
+      "productSlug": "apparat-ivl-hamilton-t1",
       "sources": 1,
       "documents": 3,
-      "resolvedDocumentLinks": 3,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 1,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "apparat-ivl-aventa-u",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-mindray-benevision-n1",
-      "sources": 1,
-      "documents": 1,
-      "resolvedDocumentLinks": 1,
+      "productSlug": "apparat-ivl-faza-21",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-mindray-benevision-n17-n15-n12",
-      "sources": 1,
-      "documents": 1,
-      "resolvedDocumentLinks": 1,
-      "missingDocumentTasks": 3,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-mindray-m9-poc",
+      "productSlug": "monitor-patsienta-benevision-n17-n15-n12",
       "sources": 1,
       "documents": 0,
       "resolvedDocumentLinks": 0,
@@ -90,7 +255,15 @@
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-mindray-m9-cardiology",
+      "productSlug": "svetilnik-smotrovoi-mindray-hyled-9300",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "narkozno-dyhatelnyi-apparat-mindray-a8",
       "sources": 1,
       "documents": 0,
       "resolvedDocumentLinks": 0,
@@ -98,7 +271,23 @@
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-mindray-resona-i9",
+      "productSlug": "monitor-mitar-01-r-d",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "monitor-patsienta-comen-n10",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "portativnyi-uzi-apparat-mindray-m9",
       "sources": 1,
       "documents": 0,
       "resolvedDocumentLinks": 0,
@@ -106,40 +295,144 @@
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-mindray-resona-i9-elite",
-      "sources": 1,
+      "productSlug": "ekspertnyi-uzi-apparat-ge-logiq-e9",
+      "sources": 0,
       "documents": 0,
       "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-mindray-hyled-x-series",
-      "sources": 1,
+      "productSlug": "gemodializnyi-apparat-b-braun-dialog",
+      "sources": 0,
       "documents": 0,
       "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-mindray-hyled-c-series",
-      "sources": 1,
+      "productSlug": "rentgenodiagnosticheskii-kompleks-krt-elektron",
+      "sources": 0,
       "documents": 0,
       "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-mindray-hyled-q-series",
-      "sources": 1,
+      "productSlug": "ekspress-analizator-iha-nano-checker-710",
+      "sources": 0,
       "documents": 0,
       "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-mindray-hyled-8-series",
-      "sources": 1,
+      "productSlug": "elektrokardiograf-ek12t-01-r-d-260",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "holter-in-33-medikom",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "spirometr-mir-spirolab",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "entsefalograf-neiron-spektr-1",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "uf-ustanovka-peredvizhnaya-alfa-06",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+      "sources": 2,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "aerozolnyi-raspylitel-ultraspreier-r",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "videolaringoskop-dlya-intubatsii-trahei-airtraq",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "krovat-funktsionalnaya-elektricheskaya-mb-95",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "videobronhoskop-vme-5b-portativnyi",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "shpritsevoi-nasos-fresenius-kabi-agilia-sp-mc",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "kontsentrator-kisloroda-longfian-jay-10",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "stol-obschehirurgicheskii-om-delta-plyus-02",
+      "sources": 0,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "tsentralnaya-stantsiya-monitoringa-comen-cms",
+      "sources": 0,
       "documents": 0,
       "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 3,

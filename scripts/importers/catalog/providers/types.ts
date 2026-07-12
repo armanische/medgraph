@@ -39,9 +39,10 @@ export interface RegionalSiteResolution {
 
 export interface DocumentPortalDetection {
   url: string;
-  section: ManufacturerSection;
+  portalType: ManufacturerSection;
   supported: boolean;
   requiresAuthentication: boolean;
+  reason: string;
 }
 
 export interface ProviderDiagnostics {
@@ -52,7 +53,8 @@ export interface ProviderDiagnostics {
   normalizedUrls: string[];
   duplicatesRemoved: number;
   blockedUrls: string[];
-  unsupportedPortals: string[];
+  unsupportedPortals: DocumentPortalDetection[];
+  warnings: string[];
 }
 
 export interface ManufacturerProvider {

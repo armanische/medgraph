@@ -1,40 +1,21 @@
 {
   "product": {
-    "productSlug": "wave2-mindray-a5",
-    "manufacturer": "Mindray",
-    "productName": "Mindray A5",
-    "model": "A5",
-    "category": "Наркозно-дыхательный аппарат"
+    "productSlug": "wave2-drager-fabius-plus",
+    "manufacturer": "Drager",
+    "productName": "Dräger Fabius Plus",
+    "model": "Fabius Plus",
+    "category": "Наркозно-дыхательные аппараты"
   },
-  "providerDiagnostics": {
-    "providerName": "mindray",
-    "strategyUsed": "Mindray products, resources, support and downloads",
-    "pagesVisited": [
-      "https://www.mindray.com/en/products/anesthesia/a5"
-    ],
-    "candidateUrls": [
-      "https://www.mindray.com/en/products/anesthesia/a5"
-    ],
-    "normalizedUrls": [
-      "https://www.mindray.com/en/products/anesthesia/a5"
-    ],
-    "duplicatesRemoved": 0,
-    "blockedUrls": [],
-    "unsupportedPortals": [],
-    "warnings": []
-  },
-  "providerSelectedAutomatically": true,
-  "fallbackProviderUsed": false,
   "sourceCandidates": [
     {
-      "sourceId": "source_848036f8e36258d3820dd2bb",
-      "productSlug": "wave2-mindray-a5",
-      "manufacturer": "Mindray",
-      "productName": "Mindray A5",
+      "sourceId": "source_adfc50e1b087c5f667d2fc7e",
+      "productSlug": "wave2-drager-fabius-plus",
+      "manufacturer": "Drager",
+      "productName": "Dräger Fabius Plus",
       "sourceType": "official_manufacturer_page",
-      "url": "https://www.mindray.com/en/products/anesthesia/a5",
-      "title": "A5 official product page",
-      "snippet": "Official Mindray product page confirmed during Wave 2 Sprint 2; candidate-only source.",
+      "url": "https://www.draeger.com/en_uk/Products/Fabius-Plus",
+      "title": "Dräger Fabius Plus official product page",
+      "snippet": "Official legacy product page; candidate-only source.",
       "discoveredBy": "manual-seed-discovery",
       "confidence": 0.92,
       "trustTier": 1,
@@ -44,28 +25,30 @@
         "official manufacturer page candidate",
         "snippet is not evidence",
         "LLM output is not a source",
-        "Official Mindray product page confirmed during Wave 2 Sprint 2; candidate-only source."
+        "Official legacy product page; candidate-only source."
       ]
     }
   ],
   "documentCandidates": [],
   "resolvedDocumentLinks": [],
-  "resolverWarnings": [],
+  "resolverWarnings": [
+    "Resolver fetch failed for https://www.draeger.com/en_uk/Products/Fabius-Plus: HTTP 404"
+  ],
   "missingDocumentTasks": [
     {
-      "productSlug": "wave2-mindray-a5",
+      "productSlug": "wave2-drager-fabius-plus",
       "requiredDocumentType": "registration_certificate",
       "priority": "critical",
       "reason": "registration_certificate is required before product can be considered extraction-ready."
     },
     {
-      "productSlug": "wave2-mindray-a5",
+      "productSlug": "wave2-drager-fabius-plus",
       "requiredDocumentType": "ifu",
       "priority": "high",
       "reason": "ifu is required before product can be considered extraction-ready."
     },
     {
-      "productSlug": "wave2-mindray-a5",
+      "productSlug": "wave2-drager-fabius-plus",
       "requiredDocumentType": "datasheet",
       "priority": "medium",
       "reason": "datasheet is required before product can be considered extraction-ready."
@@ -86,6 +69,7 @@
     "canProceedToExtraction": false
   },
   "warnings": [
+    "Resolver fetch failed for https://www.draeger.com/en_uk/Products/Fabius-Plus: HTTP 404",
     "Discovery creates candidates only; no verified claims or publication."
   ]
 }

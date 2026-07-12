@@ -6,6 +6,25 @@
     "model": "aScope 5 Broncho",
     "category": "Эндоскопия"
   },
+  "providerDiagnostics": {
+    "providerName": "ambu",
+    "strategyUsed": "Ambu products, IFU documentation and downloads",
+    "pagesVisited": [
+      "https://www.ambu.com/endoscopy/pulmonology/bronchoscopes/product/ascope-5-broncho"
+    ],
+    "candidateUrls": [
+      "https://www.ambu.com/endoscopy/pulmonology/bronchoscopes/product/ascope-5-broncho"
+    ],
+    "normalizedUrls": [
+      "https://www.ambu.com/endoscopy/pulmonology/bronchoscopes/product/ascope-5-broncho"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": []
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": false,
   "sourceCandidates": [
     {
       "sourceId": "source_135a7c318a84fe4d599d81dc",
@@ -31,9 +50,7 @@
   ],
   "documentCandidates": [],
   "resolvedDocumentLinks": [],
-  "resolverWarnings": [
-    "Resolver fetch failed for https://www.ambu.com/endoscopy/pulmonology/bronchoscopes/product/ascope-5-broncho: The operation was aborted due to timeout"
-  ],
+  "resolverWarnings": [],
   "missingDocumentTasks": [
     {
       "productSlug": "ambu-ascope-5-broncho",
@@ -69,7 +86,6 @@
     "canProceedToExtraction": false
   },
   "warnings": [
-    "Resolver fetch failed for https://www.ambu.com/endoscopy/pulmonology/bronchoscopes/product/ascope-5-broncho: The operation was aborted due to timeout",
     "Discovery creates candidates only; no verified claims or publication."
   ]
 }

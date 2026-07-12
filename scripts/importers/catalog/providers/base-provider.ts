@@ -174,9 +174,12 @@ export abstract class BaseManufacturerProvider implements ManufacturerProvider {
       const requiresAuthentication = section === "customer_portal";
       return [{
         url,
-        section,
+        portalType: section,
         supported: this.isOfficial(url) && !requiresAuthentication,
         requiresAuthentication,
+        reason: requiresAuthentication
+          ? "Authentication-gated portal detected; discovery does not attempt authorization."
+          : "Public official documentation portal detected.",
       }];
     });
   }
@@ -192,7 +195,15 @@ export abstract class BaseManufacturerProvider implements ManufacturerProvider {
       normalizedUrls: normalization.urls,
       duplicatesRemoved: normalization.duplicatesRemoved,
       blockedUrls: normalization.blockedUrls,
-      unsupportedPortals: portals.filter((portal) => !portal.supported).map((portal) => portal.url),
+      unsupportedPortals: portals.filter((portal) => !portal.supported),
+      warnings: [
+        ...(normalization.blockedUrls.length
+          ? [`Provider blocked ${normalization.blockedUrls.length} unsafe or unsupported URL(s).`]
+          : []),
+        ...(portals.some((portal) => !portal.supported)
+          ? ["Authentication-gated portal detected; no authorization was attempted."]
+          : []),
+      ],
     };
   }
 }

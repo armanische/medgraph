@@ -6,6 +6,21 @@
     "model": "Comen CMS",
     "category": "Прочее оборудование"
   },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [],
+    "normalizedUrls": [],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “Comen”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
   "sourceCandidates": [],
   "documentCandidates": [],
   "resolvedDocumentLinks": [],

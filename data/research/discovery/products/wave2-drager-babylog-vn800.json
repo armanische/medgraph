@@ -1,0 +1,854 @@
+{
+  "product": {
+    "productSlug": "wave2-drager-babylog-vn800",
+    "manufacturer": "Drager",
+    "productName": "Dräger Babylog VN800",
+    "model": "Babylog VN800",
+    "category": "Неонатальные аппараты ИВЛ"
+  },
+  "sourceCandidates": [
+    {
+      "sourceId": "source_1a02ae3b06157dd2813da03f",
+      "productSlug": "wave2-drager-babylog-vn800",
+      "manufacturer": "Drager",
+      "productName": "Dräger Babylog VN800",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.draeger.com/en_neeur/Products/Babylog-VN800",
+      "title": "Dräger Babylog VN800 official product page",
+      "snippet": "Official product page with downloads and documented accessories; candidate-only source.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official product page with downloads and documented accessories; candidate-only source."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_f543d780144f71c8a1e8c735",
+      "sourceId": "source_1a02ae3b06157dd2813da03f",
+      "productSlug": "wave2-drager-babylog-vn800",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/20191807_did_you_know_5.pdf",
+      "title": "Did you know? (Trigger), en",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_da5c395c07eed7fa6d5d4714",
+      "sourceId": "source_1a02ae3b06157dd2813da03f",
+      "productSlug": "wave2-drager-babylog-vn800",
+      "documentType": "brochure",
+      "url": "https://www.draeger.com/Content/Documents/Products/babylog-more-ca-9109501-en-master.pdf",
+      "title": "Babylog and more catalogue, en",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_63a5f9490244e20c60da5d78",
+      "sourceId": "source_1a02ae3b06157dd2813da03f",
+      "productSlug": "wave2-drager-babylog-vn800",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/babylog-vn600-pi-9107067-en-master.pdf",
+      "title": "Babylog VN600 Product Information, en",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_f520b678d73b9d0aa9d59fa1",
+      "sourceId": "source_1a02ae3b06157dd2813da03f",
+      "productSlug": "wave2-drager-babylog-vn800",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/babylog-vn800-pi-9107068-en-master.pdf",
+      "title": "Babylog VN800 Product Information, en",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_neeur/Products/Babylog-VN800",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_21f3478dd4c89311c6de2ddc",
+      "sourceId": "source_1a02ae3b06157dd2813da03f",
+      "productSlug": "wave2-drager-babylog-vn800",
+      "documentType": "brochure",
+      "url": "https://www.draeger.com/Content/Documents/Products/BabylogVN800-VN600-br-91%2007%20974-en-master-1910-1-pod.pdf",
+      "title": "Babylog VN600/VN800 Brochure, en",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_3487e0690a56e22171066459",
+      "sourceId": "source_1a02ae3b06157dd2813da03f",
+      "productSlug": "wave2-drager-babylog-vn800",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/Did_you_know_9_Pressure%20Link.pdf",
+      "title": "Did you know? (Pressure Link), en",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_d221a798394673a02d78c88e",
+      "sourceId": "source_1a02ae3b06157dd2813da03f",
+      "productSlug": "wave2-drager-babylog-vn800",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/DID-YOU-KNOW_DYK_Dead_space_volume.pdf",
+      "title": "Did you know? (dead space volume), en",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_e68ac7b8be7cf014d788c2db",
+      "sourceId": "source_1a02ae3b06157dd2813da03f",
+      "productSlug": "wave2-drager-babylog-vn800",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/DID-YOU-KNOW_DYK-DYK-etCO2_monitoring_in_ventilators.pdf",
+      "title": "Did you know? (etCO2), en",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_6996fdc62a4001c4f2528e16",
+      "sourceId": "source_1a02ae3b06157dd2813da03f",
+      "productSlug": "wave2-drager-babylog-vn800",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/Did-you-know-20-Smart-Pulmonary-View.pdf",
+      "title": "Did you know? (Smart Pulmonary View), en",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_f0b98e0b5ea799c2f8e9a301",
+      "sourceId": "source_1a02ae3b06157dd2813da03f",
+      "productSlug": "wave2-drager-babylog-vn800",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/DidYouKnow-2-C20C-en.pdf",
+      "title": "Did you know? (C20/C), en",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_44e879683661cee84aacc9d7",
+      "sourceId": "source_1a02ae3b06157dd2813da03f",
+      "productSlug": "wave2-drager-babylog-vn800",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/DidYouKnow-4-PPS-en.pdf",
+      "title": "Did you know? (PPS), en",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_c4ed04b16c57233e94380612",
+      "sourceId": "source_1a02ae3b06157dd2813da03f",
+      "productSlug": "wave2-drager-babylog-vn800",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/DidYouKnow-5-Trigger-en.pdf",
+      "title": "Did you know? (Trigger), en",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_b3a53bef74d69d0105b2bbbf",
+      "sourceId": "source_1a02ae3b06157dd2813da03f",
+      "productSlug": "wave2-drager-babylog-vn800",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/DidYouKnow-8-MMV-en.pdf",
+      "title": "Did you know? (MMV), en",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_e2b014227c69f69fc3301930",
+      "sourceId": "source_1a02ae3b06157dd2813da03f",
+      "productSlug": "wave2-drager-babylog-vn800",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/high-frequency-ventilation-fs-9107936-e-1912-1.pdf",
+      "title": "High-Frequency Ventilation Function Sheet, en",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_67fe92171f9d902eed4ce57e",
+      "sourceId": "source_1a02ae3b06157dd2813da03f",
+      "productSlug": "wave2-drager-babylog-vn800",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/MMV-fs-9107937-e-1912-1.pdf",
+      "title": "Mandatory Minute Ventilation Function Sheet, en",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_6f3a1f8f66b36fb7a6b545e5",
+      "sourceId": "source_1a02ae3b06157dd2813da03f",
+      "productSlug": "wave2-drager-babylog-vn800",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/NIV-in-neonates-fs-9107935-e-1912-1.pdf",
+      "title": "Neonatal NIV Function Sheet, en",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a04cadf8532014fc5964f530",
+      "sourceId": "source_1a02ae3b06157dd2813da03f",
+      "productSlug": "wave2-drager-babylog-vn800",
+      "documentType": "user_manual",
+      "url": "https://www.draeger.com/Content/Documents/Products/quick-guide-babylog-vn800-vn600-br-9109439-en-master.pdf",
+      "title": "Quick Guide Babylog VN800 / VN600, en",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Quick Guide",
+        "resolved_from:https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_067ca19ad64623acbecfcdf6",
+      "sourceId": "source_1a02ae3b06157dd2813da03f",
+      "productSlug": "wave2-drager-babylog-vn800",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/volume-guarantee-fs-9107934-e-1912-1.pdf",
+      "title": "Volume Guarantee Function Sheet, en",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_243ddcac6010c2f8f2c339a5",
+      "sourceId": "source_1a02ae3b06157dd2813da03f",
+      "productSlug": "wave2-drager-babylog-vn800",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/Did%20you%20know%206%20APRV.png",
+      "title": "Did you know? (APRV), en",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_d233e39c4a6ec80627c0c0a4",
+      "sourceId": "source_1a02ae3b06157dd2813da03f",
+      "productSlug": "wave2-drager-babylog-vn800",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/pl_pl/Hospital/Downloads",
+      "title": "Szkolenia produktowe i broszury",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/ifu",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a952a5196abc96da03edcc5f",
+      "sourceId": "source_1a02ae3b06157dd2813da03f",
+      "productSlug": "wave2-drager-babylog-vn800",
+      "documentType": "ifu",
+      "url": "https://www.draeger.com/ifu",
+      "title": "Technical Documentation Service",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:80",
+        "resolver_document_label:IFU",
+        "resolved_from:https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_f543d780144f71c8a1e8c735",
+      "url": "https://www.draeger.com/Content/Documents/Products/20191807_did_you_know_5.pdf",
+      "title": "Did you know? (Trigger), en",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_1a02ae3b06157dd2813da03f",
+      "linkText": "Did you know? (Trigger), en",
+      "resolvedFromUrl": "https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_da5c395c07eed7fa6d5d4714",
+      "url": "https://www.draeger.com/Content/Documents/Products/babylog-more-ca-9109501-en-master.pdf",
+      "title": "Babylog and more catalogue, en",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_1a02ae3b06157dd2813da03f",
+      "linkText": "Babylog and more catalogue, en",
+      "resolvedFromUrl": "https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+      "warnings": []
+    },
+    {
+      "documentId": "document_63a5f9490244e20c60da5d78",
+      "url": "https://www.draeger.com/Content/Documents/Products/babylog-vn600-pi-9107067-en-master.pdf",
+      "title": "Babylog VN600 Product Information, en",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_1a02ae3b06157dd2813da03f",
+      "linkText": "Babylog VN600 Product Information, en",
+      "resolvedFromUrl": "https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_f520b678d73b9d0aa9d59fa1",
+      "url": "https://www.draeger.com/Content/Documents/Products/babylog-vn800-pi-9107068-en-master.pdf",
+      "title": "Babylog VN800 Product Information, en",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_1a02ae3b06157dd2813da03f",
+      "linkText": "Babylog VN800 Product Information, en",
+      "resolvedFromUrl": "https://www.draeger.com/en_neeur/Products/Babylog-VN800",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_21f3478dd4c89311c6de2ddc",
+      "url": "https://www.draeger.com/Content/Documents/Products/BabylogVN800-VN600-br-91%2007%20974-en-master-1910-1-pod.pdf",
+      "title": "Babylog VN600/VN800 Brochure, en",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_1a02ae3b06157dd2813da03f",
+      "linkText": "Babylog VN600/VN800 Brochure, en",
+      "resolvedFromUrl": "https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+      "warnings": []
+    },
+    {
+      "documentId": "document_3487e0690a56e22171066459",
+      "url": "https://www.draeger.com/Content/Documents/Products/Did_you_know_9_Pressure%20Link.pdf",
+      "title": "Did you know? (Pressure Link), en",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_1a02ae3b06157dd2813da03f",
+      "linkText": "Did you know? (Pressure Link), en",
+      "resolvedFromUrl": "https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_d221a798394673a02d78c88e",
+      "url": "https://www.draeger.com/Content/Documents/Products/DID-YOU-KNOW_DYK_Dead_space_volume.pdf",
+      "title": "Did you know? (dead space volume), en",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_1a02ae3b06157dd2813da03f",
+      "linkText": "Did you know? (dead space volume), en",
+      "resolvedFromUrl": "https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_e68ac7b8be7cf014d788c2db",
+      "url": "https://www.draeger.com/Content/Documents/Products/DID-YOU-KNOW_DYK-DYK-etCO2_monitoring_in_ventilators.pdf",
+      "title": "Did you know? (etCO2), en",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_1a02ae3b06157dd2813da03f",
+      "linkText": "Did you know? (etCO2), en",
+      "resolvedFromUrl": "https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_6996fdc62a4001c4f2528e16",
+      "url": "https://www.draeger.com/Content/Documents/Products/Did-you-know-20-Smart-Pulmonary-View.pdf",
+      "title": "Did you know? (Smart Pulmonary View), en",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_1a02ae3b06157dd2813da03f",
+      "linkText": "Did you know? (Smart Pulmonary View), en",
+      "resolvedFromUrl": "https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_243ddcac6010c2f8f2c339a5",
+      "url": "https://www.draeger.com/Content/Documents/Products/Did%20you%20know%206%20APRV.png",
+      "title": "Did you know? (APRV), en",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_1a02ae3b06157dd2813da03f",
+      "linkText": "Did you know? (APRV), en",
+      "resolvedFromUrl": "https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_f0b98e0b5ea799c2f8e9a301",
+      "url": "https://www.draeger.com/Content/Documents/Products/DidYouKnow-2-C20C-en.pdf",
+      "title": "Did you know? (C20/C), en",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_1a02ae3b06157dd2813da03f",
+      "linkText": "Did you know? (C20/C), en",
+      "resolvedFromUrl": "https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_44e879683661cee84aacc9d7",
+      "url": "https://www.draeger.com/Content/Documents/Products/DidYouKnow-4-PPS-en.pdf",
+      "title": "Did you know? (PPS), en",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_1a02ae3b06157dd2813da03f",
+      "linkText": "Did you know? (PPS), en",
+      "resolvedFromUrl": "https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_c4ed04b16c57233e94380612",
+      "url": "https://www.draeger.com/Content/Documents/Products/DidYouKnow-5-Trigger-en.pdf",
+      "title": "Did you know? (Trigger), en",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_1a02ae3b06157dd2813da03f",
+      "linkText": "Did you know? (Trigger), en",
+      "resolvedFromUrl": "https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_b3a53bef74d69d0105b2bbbf",
+      "url": "https://www.draeger.com/Content/Documents/Products/DidYouKnow-8-MMV-en.pdf",
+      "title": "Did you know? (MMV), en",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_1a02ae3b06157dd2813da03f",
+      "linkText": "Did you know? (MMV), en",
+      "resolvedFromUrl": "https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_e2b014227c69f69fc3301930",
+      "url": "https://www.draeger.com/Content/Documents/Products/high-frequency-ventilation-fs-9107936-e-1912-1.pdf",
+      "title": "High-Frequency Ventilation Function Sheet, en",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_1a02ae3b06157dd2813da03f",
+      "linkText": "High-Frequency Ventilation Function Sheet, en",
+      "resolvedFromUrl": "https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_67fe92171f9d902eed4ce57e",
+      "url": "https://www.draeger.com/Content/Documents/Products/MMV-fs-9107937-e-1912-1.pdf",
+      "title": "Mandatory Minute Ventilation Function Sheet, en",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_1a02ae3b06157dd2813da03f",
+      "linkText": "Mandatory Minute Ventilation Function Sheet, en",
+      "resolvedFromUrl": "https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_6f3a1f8f66b36fb7a6b545e5",
+      "url": "https://www.draeger.com/Content/Documents/Products/NIV-in-neonates-fs-9107935-e-1912-1.pdf",
+      "title": "Neonatal NIV Function Sheet, en",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_1a02ae3b06157dd2813da03f",
+      "linkText": "Neonatal NIV Function Sheet, en",
+      "resolvedFromUrl": "https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a04cadf8532014fc5964f530",
+      "url": "https://www.draeger.com/Content/Documents/Products/quick-guide-babylog-vn800-vn600-br-9109439-en-master.pdf",
+      "title": "Quick Guide Babylog VN800 / VN600, en",
+      "documentTypeGuess": "user_manual",
+      "parentSourceId": "source_1a02ae3b06157dd2813da03f",
+      "linkText": "Quick Guide Babylog VN800 / VN600, en",
+      "resolvedFromUrl": "https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+      "warnings": []
+    },
+    {
+      "documentId": "document_067ca19ad64623acbecfcdf6",
+      "url": "https://www.draeger.com/Content/Documents/Products/volume-guarantee-fs-9107934-e-1912-1.pdf",
+      "title": "Volume Guarantee Function Sheet, en",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_1a02ae3b06157dd2813da03f",
+      "linkText": "Volume Guarantee Function Sheet, en",
+      "resolvedFromUrl": "https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a952a5196abc96da03edcc5f",
+      "url": "https://www.draeger.com/ifu",
+      "title": "Technical Documentation Service",
+      "documentTypeGuess": "ifu",
+      "parentSourceId": "source_1a02ae3b06157dd2813da03f",
+      "linkText": "Technical Documentation Service",
+      "resolvedFromUrl": "https://www.draeger.com/en_neeur/Products/Babylog-VN600",
+      "warnings": []
+    },
+    {
+      "documentId": "document_d233e39c4a6ec80627c0c0a4",
+      "url": "https://www.draeger.com/pl_pl/Hospital/Downloads",
+      "title": "Szkolenia produktowe i broszury",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_1a02ae3b06157dd2813da03f",
+      "linkText": "Szkolenia produktowe i broszury",
+      "resolvedFromUrl": "https://www.draeger.com/ifu",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver adapter used: drager",
+    "Resolver retry skipped https://www.draeger.com/Content/Documents/Products/Did%20you%20know%206%20APRV.png: expected HTML but received image/jpeg",
+    "Resolver rejected unsafe document URL: tel:+49 800 882 882 0",
+    "Resolver rejected offsite document URL: https://www.facebook.com/DraegerGlobal",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draeger.global/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draegerfire",
+    "Resolver rejected offsite document URL: https://opensource.draeger.com/",
+    "Resolver rejected unsafe document URL: tel:+49 800 882 882 0",
+    "Resolver rejected offsite document URL: https://www.facebook.com/DraegerGlobal",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draeger.global/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draegerfire",
+    "Resolver rejected offsite document URL: https://opensource.draeger.com/",
+    "Resolver rejected offsite document URL: https://erecruitment.draeger.com/",
+    "Resolver rejected offsite document URL: https://erecruitment.draeger.com/index.php",
+    "Resolver rejected offsite document URL: https://www.facebook.com/DraegerGlobal",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draeger.global/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/draeger",
+    "Resolver rejected offsite document URL: https://opensource.draeger.com/",
+    "Resolver rejected unsafe document URL: tel:+49 800 882 882 0",
+    "Resolver rejected offsite document URL: https://www.facebook.com/DraegerGlobal",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draeger.global/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draegerfire",
+    "Resolver rejected offsite document URL: https://opensource.draeger.com/",
+    "resolver=drager; attempts=5; matchedLinks=21; classifiedDocuments={\"Unknown\":49,\"IFU\":3,\"Brochure\":6,\"Quick Guide\":3}; confidenceDistribution={\"80\":3,\"90\":4,\"100\":54}; duplicatesRemoved=40"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-drager-babylog-vn800",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-drager-babylog-vn800",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver adapter used: drager",
+    "Resolver retry skipped https://www.draeger.com/Content/Documents/Products/Did%20you%20know%206%20APRV.png: expected HTML but received image/jpeg",
+    "Resolver rejected unsafe document URL: tel:+49 800 882 882 0",
+    "Resolver rejected offsite document URL: https://www.facebook.com/DraegerGlobal",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draeger.global/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draegerfire",
+    "Resolver rejected offsite document URL: https://opensource.draeger.com/",
+    "Resolver rejected unsafe document URL: tel:+49 800 882 882 0",
+    "Resolver rejected offsite document URL: https://www.facebook.com/DraegerGlobal",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draeger.global/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draegerfire",
+    "Resolver rejected offsite document URL: https://opensource.draeger.com/",
+    "Resolver rejected offsite document URL: https://erecruitment.draeger.com/",
+    "Resolver rejected offsite document URL: https://erecruitment.draeger.com/index.php",
+    "Resolver rejected offsite document URL: https://www.facebook.com/DraegerGlobal",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draeger.global/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/draeger",
+    "Resolver rejected offsite document URL: https://opensource.draeger.com/",
+    "Resolver rejected unsafe document URL: tel:+49 800 882 882 0",
+    "Resolver rejected offsite document URL: https://www.facebook.com/DraegerGlobal",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draeger.global/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draegerfire",
+    "Resolver rejected offsite document URL: https://opensource.draeger.com/",
+    "resolver=drager; attempts=5; matchedLinks=21; classifiedDocuments={\"Unknown\":49,\"IFU\":3,\"Brochure\":6,\"Quick Guide\":3}; confidenceDistribution={\"80\":3,\"90\":4,\"100\":54}; duplicatesRemoved=40",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

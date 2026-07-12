@@ -6,6 +6,28 @@
     "model": "aScope 4 Broncho",
     "category": "Прочее оборудование"
   },
+  "providerDiagnostics": {
+    "providerName": "ambu",
+    "strategyUsed": "Ambu products, IFU documentation and downloads",
+    "pagesVisited": [
+      "https://www.ambu.com/",
+      "https://www.ambu.com/endoscopy/pulmonology/products"
+    ],
+    "candidateUrls": [
+      "https://www.ambu.com/",
+      "https://www.ambu.com/endoscopy/pulmonology/products"
+    ],
+    "normalizedUrls": [
+      "https://www.ambu.com/",
+      "https://www.ambu.com/endoscopy/pulmonology/products"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": []
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": false,
   "sourceCandidates": [
     {
       "sourceId": "source_f0b2dbdbe5c1064f6e2d66e8",
@@ -53,8 +75,8 @@
   "documentCandidates": [],
   "resolvedDocumentLinks": [],
   "resolverWarnings": [
-    "Resolver fetch failed for https://www.ambu.com/: The operation was aborted due to timeout",
-    "Resolver fetch failed for https://www.ambu.com/endoscopy/pulmonology/products: The operation was aborted due to timeout"
+    "Resolver fetch failed for https://www.ambu.com/: fetch failed",
+    "Resolver fetch failed for https://www.ambu.com/endoscopy/pulmonology/products: fetch failed"
   ],
   "missingDocumentTasks": [
     {
@@ -91,8 +113,8 @@
     "canProceedToExtraction": false
   },
   "warnings": [
-    "Resolver fetch failed for https://www.ambu.com/: The operation was aborted due to timeout",
-    "Resolver fetch failed for https://www.ambu.com/endoscopy/pulmonology/products: The operation was aborted due to timeout",
+    "Resolver fetch failed for https://www.ambu.com/: fetch failed",
+    "Resolver fetch failed for https://www.ambu.com/endoscopy/pulmonology/products: fetch failed",
     "Discovery creates candidates only; no verified claims or publication."
   ]
 }

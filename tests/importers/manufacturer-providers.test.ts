@@ -1,11 +1,20 @@
 import assert from "node:assert/strict";
+import { readFile, mkdtemp } from "node:fs/promises";
 import test from "node:test";
+import { join } from "node:path";
+import { tmpdir } from "node:os";
 
 import {
   DefaultProvider,
   DragerProvider,
   providerForManufacturer,
 } from "../../scripts/importers/catalog/providers/index.ts";
+import {
+  discoverProduct,
+  MockDiscoveryProvider,
+  runDiscoveryForProducts,
+  type DiscoveryProductInput,
+} from "../../scripts/importers/catalog/discovery.ts";
 
 test("provider selection supports configured manufacturer aliases", () => {
   assert.equal(providerForManufacturer("Hamilton Medical").name, "hamilton");
@@ -63,7 +72,7 @@ test("portal detection reports customer portals without authorizing access", () 
   assert.equal(portals.length, 2);
   assert.ok(portals.some((portal) => portal.supported));
   assert.ok(portals.some((portal) =>
-    portal.section === "customer_portal" &&
+    portal.portalType === "customer_portal" &&
     portal.requiresAuthentication &&
     !portal.supported,
   ));
@@ -90,9 +99,11 @@ test("diagnostics report normalization, blocks and unsupported portals", () => {
   assert.match(diagnostics.strategyUsed, /technical documentation/iu);
   assert.equal(diagnostics.duplicatesRemoved, 1);
   assert.deepEqual(diagnostics.blockedUrls, ["file:///private/manual.pdf"]);
-  assert.deepEqual(diagnostics.unsupportedPortals, [
+  assert.equal(diagnostics.unsupportedPortals.length, 1);
+  assert.equal(
+    diagnostics.unsupportedPortals[0]?.url,
     "https://www.draeger.com/customer-portal/login",
-  ]);
+  );
   assert.equal(diagnostics.pagesVisited.length, 2);
 });
 
@@ -110,4 +121,102 @@ test("provider discovery methods classify official sections independently", () =
   assert.equal(provider.discoverOfficialPages(input).length, 1);
   assert.equal(provider.discoverDocumentation(input).length, 1);
   assert.equal(provider.discoverDownloads(input).length, 1);
+});
+
+const integrationProduct: DiscoveryProductInput = {
+  productSlug: "provider-diagnostics-fixture",
+  manufacturer: "Unknown Medical",
+  productName: "Unknown Monitor",
+  model: "U-1",
+  category: "Мониторы пациента",
+};
+
+test("fallback diagnostics do not change source trust tier or discovery result", async () => {
+  const report = await discoverProduct(
+    integrationProduct,
+    new MockDiscoveryProvider({
+      sources: async (product) => [{
+        sourceId: "fallback-source",
+        productSlug: product.productSlug,
+        manufacturer: product.manufacturer,
+        productName: product.productName,
+        sourceType: "official_manufacturer_page",
+        url: "https://unknown.example/products/u-1?utm_source=test",
+        title: "Unknown U-1",
+        snippet: "Candidate only",
+        discoveredBy: "fixture",
+        confidence: 0.45,
+        trustTier: 3,
+        requiresHumanReview: true,
+        reasons: ["fixture"],
+      }],
+    }),
+    null,
+  );
+
+  assert.equal(report.providerDiagnostics.providerName, "default");
+  assert.equal(report.providerSelectedAutomatically, true);
+  assert.equal(report.fallbackProviderUsed, true);
+  assert.equal(report.sourceCandidates[0]?.trustTier, 3);
+  assert.equal(report.sourceCandidates[0]?.url, "https://unknown.example/products/u-1?utm_source=test");
+  assert.deepEqual(report.providerDiagnostics.normalizedUrls, [
+    "https://unknown.example/products/u-1",
+  ]);
+  assert.ok(report.providerDiagnostics.warnings.some((warning) =>
+    warning.includes("without changing trust tier"),
+  ));
+});
+
+test("aggregate provider diagnostics count providers, fallback and URL outcomes", async () => {
+  const root = await mkdtemp(join(tmpdir(), "provider-diagnostics-"));
+  const products: DiscoveryProductInput[] = [
+    { ...integrationProduct, manufacturer: "Dräger", productSlug: "drager-fixture" },
+    integrationProduct,
+  ];
+  const provider = new MockDiscoveryProvider({
+    sources: async (product) => [{
+      sourceId: `${product.productSlug}-source`,
+      productSlug: product.productSlug,
+      manufacturer: product.manufacturer,
+      productName: product.productName,
+      sourceType: "official_manufacturer_page",
+      url: product.manufacturer === "Dräger"
+        ? "http://www.draeger.com/customer-portal/login?utm_source=test"
+        : "file:///blocked.pdf",
+      title: "Fixture source",
+      snippet: "Candidate only",
+      discoveredBy: "fixture",
+      confidence: 0.45,
+      trustTier: 3,
+      requiresHumanReview: true,
+      reasons: ["fixture"],
+    }],
+  });
+  const result = await runDiscoveryForProducts({
+    products,
+    provider,
+    resolver: null,
+    productReportDirectory: join(root, "products"),
+    aggregateReportPath: join(root, "aggregate.json"),
+  });
+
+  assert.deepEqual(result.aggregate.providersUsed, ["default", "drager"]);
+  assert.deepEqual(result.aggregate.productsPerProvider, { drager: 1, default: 1 });
+  assert.equal(result.aggregate.fallbackProviderProducts, 1);
+  assert.equal(result.aggregate.totalCandidateUrls, 2);
+  assert.equal(result.aggregate.totalNormalizedUrls, 1);
+  assert.equal(result.aggregate.totalBlockedUrls, 1);
+  assert.equal(result.aggregate.unsupportedPortalsDetected, 1);
+  assert.ok(result.aggregate.providerWarnings.length >= 2);
+});
+
+test("provider diagnostics integration contains no forbidden writers", async () => {
+  const sources = await Promise.all([
+    readFile("scripts/importers/catalog/discovery.ts", "utf8"),
+    readFile("scripts/importers/catalog/providers/base-provider.ts", "utf8"),
+    readFile("scripts/importers/catalog/providers/index.ts", "utf8"),
+  ]);
+  const implementation = sources.join("\n");
+  assert.doesNotMatch(implementation, /from ["'][^"']*supabase/iu);
+  assert.doesNotMatch(implementation, /createVerifiedClaim|createPublication|ReviewDecision/iu);
 });
