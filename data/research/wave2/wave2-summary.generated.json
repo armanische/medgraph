@@ -1,25 +1,25 @@
 {
   "generatedAt": "wave2-execution-v1",
   "manufacturers": [
-    "Mindray"
+    "Philips"
   ],
   "totals": {
-    "productsDiscovered": 22,
-    "officialSources": 22,
-    "documentsFound": 48,
-    "downloads": 32,
-    "artifacts": 32,
-    "candidateFacts": 77,
-    "reviewItems": 77,
-    "blockedProducts": 3,
+    "productsDiscovered": 16,
+    "officialSources": 16,
+    "documentsFound": 35,
+    "downloads": 23,
+    "artifacts": 23,
+    "candidateFacts": 46,
+    "reviewItems": 46,
+    "blockedProducts": 2,
     "errors": 0,
     "warnings": 1,
-    "durationMs": 1891
+    "durationMs": 1669
   },
   "reports": [
     {
-      "manufacturer": "Mindray",
-      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/Mindray/summary.generated.json"
+      "manufacturer": "Philips",
+      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/Philips/summary.generated.json"
     }
   ],
   "safety": {
