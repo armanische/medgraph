@@ -1,0 +1,19 @@
+{
+  "product": {
+    "productSlug": "wave2-drager-infinity-c500",
+    "manufacturer": "Drager",
+    "productName": "Dräger Infinity C500",
+    "model": "Infinity C500",
+    "category": "Мониторы пациента"
+  },
+  "reviewItems": [],
+  "groupedByClaimType": {},
+  "sourceDocumentSummary": [],
+  "missingEvidence": [],
+  "recommendedReviewerAction": "No reviewable candidate claims yet. Collect more evidence before review.",
+  "warnings": [
+    "Resolver fetch failed for https://www.draeger.com/en_uk/Products/Infinity-C500: HTTP 404",
+    "Discovery creates candidates only; no verified claims or publication.",
+    "No DocumentCandidate records were available for download."
+  ]
+}

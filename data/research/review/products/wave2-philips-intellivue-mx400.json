@@ -1,0 +1,3079 @@
+{
+  "product": {
+    "productSlug": "wave2-philips-intellivue-mx400",
+    "manufacturer": "Philips",
+    "productName": "Philips IntelliVue MX400",
+    "model": "IntelliVue MX400",
+    "category": "Монитор пациента"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_b900d9c54efeb628c46b4bb8",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_2d92a4c6aa0af8d20c4b2b5a",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Product Brochure Philips IntelliVue Portable/bedside patient monitor MX400 PDF | 3.18 MB",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c7ac4531580ef861ece8b895"
+      ],
+      "documentVersionIds": [
+        "document_version_a58602a9782750d4e2f18b44"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20170523/249925ed18bc493a8905a77c014ee52e.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_670e04ea1866b911ee24ec89",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_2a5e431e29c3d5133cf02429",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_20dac0351568c0e0f952670d"
+      ],
+      "documentVersionIds": [
+        "document_version_a58602a9782750d4e2f18b44"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20170523/249925ed18bc493a8905a77c014ee52e.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_8f5dcc8d3ddd09496cff8c53",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_cab2855d67a3aadc5a3ea389",
+      "suggestedClaimType": "product.model",
+      "valuePayload": {
+        "value": "Seven Neuroprotective Core Measures for Family Centered",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c2d8e4903d22030403e855be"
+      ],
+      "documentVersionIds": [
+        "document_version_a58602a9782750d4e2f18b44"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20170523/249925ed18bc493a8905a77c014ee52e.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Identity data affects product matching and review routing.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_1e1cf23f3c887d00b8d57fdb",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_f89ad097c1ff939a57b83603",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_e5f865bdb3cec48982cd7779"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_f89f2aaa0a45ebebc5ef95f9",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_ffb2ccf79f7f005326a97fad",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_997bbcd771818879d6f64a0e"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_66bf07c8e8ae8fcc0395667d",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_e69fe390ee43fd47db9967cb",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "compatibility",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_e60bc857e746ef27550278d0"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_c4593721648b5e152f6e6db8",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_db3f57d64a0424535340314c",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Product Brochure PDF | 902.82 KB",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_3cb68a0df85c97087c2feeb7"
+      ],
+      "documentVersionIds": [
+        "document_version_ea6021b4df8daf939833752f"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20230421/0ff75f971fe043c0aba9afeb010d8905.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_ffe1e264a8d39a118a226253",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_482b8f9e32a2f7e1710870f5",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_f7fe09ff5b26b3ce3cffe7af"
+      ],
+      "documentVersionIds": [
+        "document_version_ea6021b4df8daf939833752f"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20230421/0ff75f971fe043c0aba9afeb010d8905.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_1ebe94c979fddc46a0d67aba",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_3679d336c13fe6025a406585",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_8a2cae5a9f9485a2f23f3e17"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_9d6954a32d7a732702c10dbd",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_19f4cdf01f8f9e1602939788",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_94c1c2c15d910791cece6a52"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_6972b04996592c488b3594a6",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_17b3ce60ee37399cf22e568c",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "IntelliVue MX400/MX450/MX500/MX550 Instructions for Use",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_31ea343c5a14be12661342cf"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_2fb23dae6dc428053682623c",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_b9aaccb9005285a209794606",
+      "suggestedClaimType": "document.language",
+      "valuePayload": {
+        "value": "en",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_1d56fe7f9fd2828fd8690aaa"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_6d4d408eb3e2ea3d3b594a4d",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_6724e96bf539408adf982e91",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "ifu",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_611431e9eec756ae0366b5d3"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5f1bc054d192fb384d94d83d",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_0a03507bf22df5286f7dff39",
+      "suggestedClaimType": "product.measurementRanges",
+      "valuePayload": {
+        "value": "etCO2, awRR",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c03e373fada6852ffd346a12"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_56eee5fcb3e7c1819b0b40ca",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_4cafd0561d7cbae770d469ff",
+      "suggestedClaimType": "product.measurementRanges",
+      "valuePayload": {
+        "value": "• Heart rate",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_4cddeefaed4f2aedeb26d835"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_79b5ad7cf721c8cc39a4e6fc",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_8ad21cb93af6c0ec62785624",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "328",
+        "unit": "inch"
+      },
+      "evidenceCandidateIds": [
+        "evidence_9810b94cffffdf0b75ae93ce"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_ea350304ac9f571c590ee92f",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_41a24a78bf3feede124c53b6",
+      "suggestedClaimType": "product.accessories",
+      "valuePayload": {
+        "value": "specific key, as in this case",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_f2e7692ab02406c05c479833"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_3c90dda08719b9adec28dea8",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_8e89c8d0cd2035a4f1b3454c",
+      "suggestedClaimType": "product.accessories",
+      "valuePayload": {
+        "value": "labeled as TEMP in all languages",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_33e76f4c6246f616796b5fdc"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_bf6a2011889ea392881e8860",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_10a34bf9bd534c4208cb78f7",
+      "suggestedClaimType": "product.accessories",
+      "valuePayload": {
+        "value": "1 Place the water trap in the vertical position",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_fc61caed4cb5f856005e2e5f"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_801a4ae52eee32dd6cdc39d0",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_f8965cd6a8a15682c67d46c5",
+      "suggestedClaimType": "product.accessories",
+      "valuePayload": {
+        "value": "Insert the module into the Module Rack or integrated module slot",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_d566ecd1eb7ffaa1efc40d2b"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_41a2b1683d85c16c5ef34a67",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_524230152733b02bfca871c2",
+      "suggestedClaimType": "product.power",
+      "valuePayload": {
+        "value": "infinite",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_f2be4b788c60975847e88dc2"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b9399064e6e8bcb5355921f8",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_54886bb22f8f0ba4cee0d338",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "X2/X3 (yellow)",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_a2e957fda403f2c7c5523409"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_21805118c5dddff7a6096a73",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_27bafa4c34ffc89ee0afe492",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "(configurable to light blue, yellow or red)",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_0fdd439a8dd694198ea1971b"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5d5b9352724a051f3a335e9f",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_bf18759e84d5faea77b6d275",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "powered operating time is less than 10 minutes. Replace the battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_a151d19202387eaca11e7d62"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_f34dfbc0289d94a274492c01",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_16e36a17712b4b2394c8fa2d",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "powered operating time remaining is less than 20 minutes",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_048fe4f9573cd8aa4e2db918"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_816a66138be7b239f4ee00ee",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_c4f4501a2665bc9178c91ad2",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "powered operating remaining time is less than 10 minutes. Replace the battery in",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_617bc76f21ef82fab7dcac9e"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_3e70e1e88a96f5d5af9af6fa",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_77793de3bb2ebb79d91d4f47",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "powered, you cannot monitor during transport",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_0f2df0c53e44b2075bd2726d"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5643dc685323f41de80da611",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_4c4cc5a89278efe1913a11b5",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "operated monitoring but also requires care in use and handling of the batteries",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_b1f66cfab0115d9a00d82e95"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_c3fbbea1886f28f1fd0b83fd",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_07869d2b037e7862e1504185",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "powered and mains-powered (AC) operation without interrupting",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_14973dfe3b103e38bfec22a5"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_da0f5d6817e0c2ff98d9db4b",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_0de68051cd16f9498afac2c9",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "time is stored but a hold time is not specified, as",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_56f5394e59e727931509f75f"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_1c595575467c9eaf465011e2",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_7f90c00ea675d1c70c01ff9f",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "at least 48 hours",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_e8d71b5bda15c84c661de5b9"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_6f7a15b4115d54d656f7acba",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_d4f6a2fa38f3724f4f823d66",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "memory is buffered but a hold time is not",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_a0fd24199780852accf05a10"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_73454c036797f162624c76ef",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_55378b6e12243e07dd0f3cb3",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "at least 4 hours",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_9d2817908cb881296289aeec"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5c5edceae02a83845906e3ea",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_c5e358d2453f650c1258ff3e",
+      "suggestedClaimType": "product.measurementRanges",
+      "valuePayload": {
+        "value": "4 0 t o 3 6 0m m H g ( - 5t o4 8k P a )",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_47fd3d7592bd09173fe9876b"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_af4e30cf49e0310d6ea5518b",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_6d40dc46a157b96dca5fa14d",
+      "suggestedClaimType": "product.accuracy",
+      "valuePayload": {
+        "value": "Accuracy of the CCO measurement and all the derived values may be influenced by",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_2077c41b3c0090d5b8f4d090"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_e4780fe853a1d35de6a61853",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_e3de4f14595d6ecc98133b0b",
+      "suggestedClaimType": "product.accuracy",
+      "valuePayload": {
+        "value": "When sensors are used on neonatal subjects as recommended, the specified accuracy range is",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_150e1e6c9c21c2328a18a1a4"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_fd2376e8935e3abfcc7cb0b6",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_b89a73d0d45e997c14890984",
+      "suggestedClaimType": "product.interfaces",
+      "valuePayload": {
+        "value": "• Standard wired LAN",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_f6f14966602a080118114639"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b73951a52a1fdfc749b360b2",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_af6fced6d02795209399786a",
+      "suggestedClaimType": "product.interfaces",
+      "valuePayload": {
+        "value": "• Additional USB slots",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_7ff61cd8f271a8874e17aa08"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_715cbf37f7d7f0853ec27e06",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_02b5f182c23b492914e86bd8",
+      "suggestedClaimType": "product.compatibility",
+      "valuePayload": {
+        "value": "Using accessories other than those specified may result in increased",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_2d96c576beae2b8c75f62053"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "critical",
+      "riskLevel": "high",
+      "reasons": [
+        "High-risk clinical, safety, compatibility or procurement claim.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_72abf1852782befb9d797b19",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_4c0d5a921960982677603ae2",
+      "suggestedClaimType": "product.accessories",
+      "valuePayload": {
+        "value": "Dräger Accessories",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_dbb86381db6888daa33d47fb"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_028e9c3072edbf1e07a595a4",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_daec1044ce1b73d104215e1b",
+      "suggestedClaimType": "product.contraindications",
+      "valuePayload": {
+        "value": "The NMT measurement is contraindicated for use on patients with nerve damage or other neuromuscular",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_0e5e402b886e1de5c6ded995"
+      ],
+      "documentVersionIds": [
+        "document_version_3f127722f47859036cd4cf1a"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "critical",
+      "riskLevel": "high",
+      "reasons": [
+        "High-risk clinical, safety, compatibility or procurement claim.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_2857fdc05fa09e99fcd21f55",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_e8fb7f13dad374b5a3ca2890",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_a7a23bd80d74661c5d7167df"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_193e834ffdcee0dd70518449",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_f3180f5b1f6e73ce57b79e79",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_f82cfeb59a3b815c29174205"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_86af70f08420789b3d67e652",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_172dcd635d713c6e5b3aa17b",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Compatibility",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_370ada8015dbeb49a36af494"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_f2260f396dad773095bd2585",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_7ff1cd3b5369bd6d4af8f69b",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_aea5c35e75b9d3b2def5c183"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b4c7567a00c495653c90fef5",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_f9ac97f1e8e0617691c26986",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "flow rate",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_6c695945d8a4d12a5872fddc"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_32a9dad4e2249d1d4f19db62",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_5b1cb5066968ef62e8e2e69f",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "tidal volume",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_a5a5e68f581f81502f35fccb"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_c7aa72febe3d8a06c9ef4d49",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "productTitle": "Philips IntelliVue MX400",
+      "claimCandidateId": "claim_a2fb39f9e9ae370be8f51502",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "minute volume",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_72b27b17aae163025d2dfa18"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_b900d9c54efeb628c46b4bb8",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_2d92a4c6aa0af8d20c4b2b5a",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Product Brochure Philips IntelliVue Portable/bedside patient monitor MX400 PDF | 3.18 MB",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c7ac4531580ef861ece8b895"
+        ],
+        "documentVersionIds": [
+          "document_version_a58602a9782750d4e2f18b44"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20170523/249925ed18bc493a8905a77c014ee52e.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_c4593721648b5e152f6e6db8",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_db3f57d64a0424535340314c",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Product Brochure PDF | 902.82 KB",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_3cb68a0df85c97087c2feeb7"
+        ],
+        "documentVersionIds": [
+          "document_version_ea6021b4df8daf939833752f"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20230421/0ff75f971fe043c0aba9afeb010d8905.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_6972b04996592c488b3594a6",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_17b3ce60ee37399cf22e568c",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "IntelliVue MX400/MX450/MX500/MX550 Instructions for Use",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_31ea343c5a14be12661342cf"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_670e04ea1866b911ee24ec89",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_2a5e431e29c3d5133cf02429",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_20dac0351568c0e0f952670d"
+        ],
+        "documentVersionIds": [
+          "document_version_a58602a9782750d4e2f18b44"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20170523/249925ed18bc493a8905a77c014ee52e.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_ffe1e264a8d39a118a226253",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_482b8f9e32a2f7e1710870f5",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_f7fe09ff5b26b3ce3cffe7af"
+        ],
+        "documentVersionIds": [
+          "document_version_ea6021b4df8daf939833752f"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20230421/0ff75f971fe043c0aba9afeb010d8905.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_6d4d408eb3e2ea3d3b594a4d",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_6724e96bf539408adf982e91",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "ifu",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_611431e9eec756ae0366b5d3"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.model": [
+      {
+        "reviewItemId": "review_item_8f5dcc8d3ddd09496cff8c53",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_cab2855d67a3aadc5a3ea389",
+        "suggestedClaimType": "product.model",
+        "valuePayload": {
+          "value": "Seven Neuroprotective Core Measures for Family Centered",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c2d8e4903d22030403e855be"
+        ],
+        "documentVersionIds": [
+          "document_version_a58602a9782750d4e2f18b44"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20170523/249925ed18bc493a8905a77c014ee52e.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Identity data affects product matching and review routing.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "technical.term": [
+      {
+        "reviewItemId": "review_item_1e1cf23f3c887d00b8d57fdb",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_f89ad097c1ff939a57b83603",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_e5f865bdb3cec48982cd7779"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_f89f2aaa0a45ebebc5ef95f9",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_ffb2ccf79f7f005326a97fad",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_997bbcd771818879d6f64a0e"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_66bf07c8e8ae8fcc0395667d",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_e69fe390ee43fd47db9967cb",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "compatibility",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_e60bc857e746ef27550278d0"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_1ebe94c979fddc46a0d67aba",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_3679d336c13fe6025a406585",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_8a2cae5a9f9485a2f23f3e17"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_9d6954a32d7a732702c10dbd",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_19f4cdf01f8f9e1602939788",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_94c1c2c15d910791cece6a52"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_2857fdc05fa09e99fcd21f55",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_e8fb7f13dad374b5a3ca2890",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_a7a23bd80d74661c5d7167df"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_193e834ffdcee0dd70518449",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_f3180f5b1f6e73ce57b79e79",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_f82cfeb59a3b815c29174205"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_86af70f08420789b3d67e652",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_172dcd635d713c6e5b3aa17b",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Compatibility",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_370ada8015dbeb49a36af494"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_f2260f396dad773095bd2585",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_7ff1cd3b5369bd6d4af8f69b",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_aea5c35e75b9d3b2def5c183"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_b4c7567a00c495653c90fef5",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_f9ac97f1e8e0617691c26986",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "flow rate",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_6c695945d8a4d12a5872fddc"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_32a9dad4e2249d1d4f19db62",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_5b1cb5066968ef62e8e2e69f",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "tidal volume",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_a5a5e68f581f81502f35fccb"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_c7aa72febe3d8a06c9ef4d49",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_a2fb39f9e9ae370be8f51502",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "minute volume",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_72b27b17aae163025d2dfa18"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.language": [
+      {
+        "reviewItemId": "review_item_2fb23dae6dc428053682623c",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_b9aaccb9005285a209794606",
+        "suggestedClaimType": "document.language",
+        "valuePayload": {
+          "value": "en",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_1d56fe7f9fd2828fd8690aaa"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.measurementRanges": [
+      {
+        "reviewItemId": "review_item_5f1bc054d192fb384d94d83d",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_0a03507bf22df5286f7dff39",
+        "suggestedClaimType": "product.measurementRanges",
+        "valuePayload": {
+          "value": "etCO2, awRR",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c03e373fada6852ffd346a12"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_56eee5fcb3e7c1819b0b40ca",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_4cafd0561d7cbae770d469ff",
+        "suggestedClaimType": "product.measurementRanges",
+        "valuePayload": {
+          "value": "• Heart rate",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_4cddeefaed4f2aedeb26d835"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_5c5edceae02a83845906e3ea",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_c5e358d2453f650c1258ff3e",
+        "suggestedClaimType": "product.measurementRanges",
+        "valuePayload": {
+          "value": "4 0 t o 3 6 0m m H g ( - 5t o4 8k P a )",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_47fd3d7592bd09173fe9876b"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.display": [
+      {
+        "reviewItemId": "review_item_79b5ad7cf721c8cc39a4e6fc",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_8ad21cb93af6c0ec62785624",
+        "suggestedClaimType": "product.display",
+        "valuePayload": {
+          "value": "328",
+          "unit": "inch"
+        },
+        "evidenceCandidateIds": [
+          "evidence_9810b94cffffdf0b75ae93ce"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.accessories": [
+      {
+        "reviewItemId": "review_item_ea350304ac9f571c590ee92f",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_41a24a78bf3feede124c53b6",
+        "suggestedClaimType": "product.accessories",
+        "valuePayload": {
+          "value": "specific key, as in this case",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_f2e7692ab02406c05c479833"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_3c90dda08719b9adec28dea8",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_8e89c8d0cd2035a4f1b3454c",
+        "suggestedClaimType": "product.accessories",
+        "valuePayload": {
+          "value": "labeled as TEMP in all languages",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_33e76f4c6246f616796b5fdc"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_bf6a2011889ea392881e8860",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_10a34bf9bd534c4208cb78f7",
+        "suggestedClaimType": "product.accessories",
+        "valuePayload": {
+          "value": "1 Place the water trap in the vertical position",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_fc61caed4cb5f856005e2e5f"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_801a4ae52eee32dd6cdc39d0",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_f8965cd6a8a15682c67d46c5",
+        "suggestedClaimType": "product.accessories",
+        "valuePayload": {
+          "value": "Insert the module into the Module Rack or integrated module slot",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_d566ecd1eb7ffaa1efc40d2b"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_72abf1852782befb9d797b19",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_4c0d5a921960982677603ae2",
+        "suggestedClaimType": "product.accessories",
+        "valuePayload": {
+          "value": "Dräger Accessories",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_dbb86381db6888daa33d47fb"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.power": [
+      {
+        "reviewItemId": "review_item_41a2b1683d85c16c5ef34a67",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_524230152733b02bfca871c2",
+        "suggestedClaimType": "product.power",
+        "valuePayload": {
+          "value": "infinite",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_f2be4b788c60975847e88dc2"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.battery": [
+      {
+        "reviewItemId": "review_item_b9399064e6e8bcb5355921f8",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_54886bb22f8f0ba4cee0d338",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "X2/X3 (yellow)",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_a2e957fda403f2c7c5523409"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_21805118c5dddff7a6096a73",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_27bafa4c34ffc89ee0afe492",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "(configurable to light blue, yellow or red)",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_0fdd439a8dd694198ea1971b"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_5d5b9352724a051f3a335e9f",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_bf18759e84d5faea77b6d275",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "powered operating time is less than 10 minutes. Replace the battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_a151d19202387eaca11e7d62"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_f34dfbc0289d94a274492c01",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_16e36a17712b4b2394c8fa2d",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "powered operating time remaining is less than 20 minutes",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_048fe4f9573cd8aa4e2db918"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_816a66138be7b239f4ee00ee",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_c4f4501a2665bc9178c91ad2",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "powered operating remaining time is less than 10 minutes. Replace the battery in",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_617bc76f21ef82fab7dcac9e"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_3e70e1e88a96f5d5af9af6fa",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_77793de3bb2ebb79d91d4f47",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "powered, you cannot monitor during transport",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_0f2df0c53e44b2075bd2726d"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_5643dc685323f41de80da611",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_4c4cc5a89278efe1913a11b5",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "operated monitoring but also requires care in use and handling of the batteries",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_b1f66cfab0115d9a00d82e95"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_c3fbbea1886f28f1fd0b83fd",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_07869d2b037e7862e1504185",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "powered and mains-powered (AC) operation without interrupting",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_14973dfe3b103e38bfec22a5"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_da0f5d6817e0c2ff98d9db4b",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_0de68051cd16f9498afac2c9",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "time is stored but a hold time is not specified, as",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_56f5394e59e727931509f75f"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_1c595575467c9eaf465011e2",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_7f90c00ea675d1c70c01ff9f",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "at least 48 hours",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_e8d71b5bda15c84c661de5b9"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_6f7a15b4115d54d656f7acba",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_d4f6a2fa38f3724f4f823d66",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "memory is buffered but a hold time is not",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_a0fd24199780852accf05a10"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_73454c036797f162624c76ef",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_55378b6e12243e07dd0f3cb3",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "at least 4 hours",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_9d2817908cb881296289aeec"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.accuracy": [
+      {
+        "reviewItemId": "review_item_af4e30cf49e0310d6ea5518b",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_6d40dc46a157b96dca5fa14d",
+        "suggestedClaimType": "product.accuracy",
+        "valuePayload": {
+          "value": "Accuracy of the CCO measurement and all the derived values may be influenced by",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_2077c41b3c0090d5b8f4d090"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_e4780fe853a1d35de6a61853",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_e3de4f14595d6ecc98133b0b",
+        "suggestedClaimType": "product.accuracy",
+        "valuePayload": {
+          "value": "When sensors are used on neonatal subjects as recommended, the specified accuracy range is",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_150e1e6c9c21c2328a18a1a4"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.interfaces": [
+      {
+        "reviewItemId": "review_item_fd2376e8935e3abfcc7cb0b6",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_b89a73d0d45e997c14890984",
+        "suggestedClaimType": "product.interfaces",
+        "valuePayload": {
+          "value": "• Standard wired LAN",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_f6f14966602a080118114639"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_b73951a52a1fdfc749b360b2",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_af6fced6d02795209399786a",
+        "suggestedClaimType": "product.interfaces",
+        "valuePayload": {
+          "value": "• Additional USB slots",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_7ff61cd8f271a8874e17aa08"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.compatibility": [
+      {
+        "reviewItemId": "review_item_715cbf37f7d7f0853ec27e06",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_02b5f182c23b492914e86bd8",
+        "suggestedClaimType": "product.compatibility",
+        "valuePayload": {
+          "value": "Using accessories other than those specified may result in increased",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_2d96c576beae2b8c75f62053"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "critical",
+        "riskLevel": "high",
+        "reasons": [
+          "High-risk clinical, safety, compatibility or procurement claim.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.contraindications": [
+      {
+        "reviewItemId": "review_item_028e9c3072edbf1e07a595a4",
+        "productSlug": "wave2-philips-intellivue-mx400",
+        "productTitle": "Philips IntelliVue MX400",
+        "claimCandidateId": "claim_daec1044ce1b73d104215e1b",
+        "suggestedClaimType": "product.contraindications",
+        "valuePayload": {
+          "value": "The NMT measurement is contraindicated for use on patients with nerve damage or other neuromuscular",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_0e5e402b886e1de5c6ded995"
+        ],
+        "documentVersionIds": [
+          "document_version_3f127722f47859036cd4cf1a"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "critical",
+        "riskLevel": "high",
+        "reasons": [
+          "High-risk clinical, safety, compatibility or procurement claim.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_a58602a9782750d4e2f18b44",
+      "documentType": "brochure",
+      "title": "Product Brochure Philips IntelliVue Portable/bedside patient monitor MX400 PDF | 3.18 MB",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/249925ed18bc493a8905a77c014ee52e.pdf",
+      "sha256": "68e844018d4f5bae48e1ea8afee832abf89f5d621c9d45995dd550052b94711f"
+    },
+    {
+      "documentVersionId": "document_version_ea6021b4df8daf939833752f",
+      "documentType": "brochure",
+      "title": "Product Brochure PDF | 902.82 KB",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230421/0ff75f971fe043c0aba9afeb010d8905.pdf",
+      "sha256": "b8849bfdd13d3a6026e8e9f750e6832242f59c7f06e0253f2b2a4d430af4bb8c"
+    },
+    {
+      "documentVersionId": "document_version_3f127722f47859036cd4cf1a",
+      "documentType": "ifu",
+      "title": "IntelliVue MX400/MX450/MX500/MX550 Instructions for Use",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23"
+    }
+  ],
+  "missingEvidence": [
+    {
+      "claimCandidateId": "claim_f89ad097c1ff939a57b83603",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_ffb2ccf79f7f005326a97fad",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_e69fe390ee43fd47db9967cb",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_3679d336c13fe6025a406585",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_19f4cdf01f8f9e1602939788",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_e8fb7f13dad374b5a3ca2890",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_f3180f5b1f6e73ce57b79e79",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_172dcd635d713c6e5b3aa17b",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_7ff1cd3b5369bd6d4af8f69b",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_f9ac97f1e8e0617691c26986",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_5b1cb5066968ef62e8e2e69f",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_a2fb39f9e9ae370be8f51502",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    }
+  ],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver adapter used: philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/all-coffee-espresso-machines",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/accessories-collection",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-baristina-espresso-machine-milky-white-bar300-00",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/airfyers",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-artisan-pasta-noodle-maker",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Kitchen-Appliances",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Airfryer",
+    "Resolver rejected offsite document URL: https://www.philips-hue.com/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected unsafe document URL: tel:1-800-722-9377",
+    "Resolver rejected unsafe document URL: tel:1-800-229-6417",
+    "Resolver rejected unsafe document URL: tel:1-800-225-0230",
+    "Resolver rejected unsafe document URL: tel:1-800-345-6443",
+    "Resolver rejected unsafe document URL: tel:1-800-422-9448",
+    "Resolver rejected unsafe document URL: tel:1-800-542-8368",
+    "Resolver rejected unsafe document URL: tel:1-800-228-4728",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://www.adobe.com/es/acrobat/pricing.html?mv=search&amp;mv2=paidsearch&amp;sdid=BDDS3F8G&amp;ef_id=6f0d31b717991d11c4b85672a14576da:G:s&amp;s_kwcid=AL!3085!10!79577362531267!79577498729085&amp;msclkid=6f0d31b717991d11c4b85672a14576da",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "resolver=philips; attempts=6; matchedLinks=26; classifiedDocuments={\"Unknown\":97,\"Brochure\":4,\"IFU\":1}; confidenceDistribution={\"80\":1,\"90\":97,\"100\":4}; duplicatesRemoved=76",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

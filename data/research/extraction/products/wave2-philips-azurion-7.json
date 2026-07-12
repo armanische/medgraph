@@ -1,0 +1,1140 @@
+{
+  "product": {
+    "productSlug": "wave2-philips-azurion-7",
+    "manufacturer": "Philips",
+    "productName": "Philips Azurion 7",
+    "model": "Azurion 7 M20",
+    "category": "Ангиографические системы"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_d695c2786254bacd2c1fdbec",
+      "documentCandidateId": "document_49113ce2df6240dd50730a72",
+      "sourceId": "source_17d8d77f86355ce54dc9ddeb",
+      "productSlug": "wave2-philips-azurion-7",
+      "documentKey": "trusted-document:document_49113ce2df6240dd50730a72",
+      "documentType": "brochure",
+      "title": "Azurion flexible workspots brochure PDF | 3.53 MB",
+      "language": null,
+      "sourceUrl": "https://www.documents.philips.com/assets/20171020/bd2728d04ed8468f984fa81200c5fcae.pdf",
+      "sha256": "cd0829bab7403c2362b20b66088806575a1ff8b89504bd5e2683497a461624e7",
+      "contentType": "application/pdf",
+      "byteSize": 3706482,
+      "filePath": "data/research/artifacts/artifacts/sha256/cd/08/cd0829bab7403c2362b20b66088806575a1ff8b89504bd5e2683497a461624e7.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_fb21db16d4bd9c3f485df54a",
+      "documentCandidateId": "document_7d73a9c6bf46bb2aa686f4a4",
+      "sourceId": "source_17d8d77f86355ce54dc9ddeb",
+      "productSlug": "wave2-philips-azurion-7",
+      "documentKey": "trusted-document:document_7d73a9c6bf46bb2aa686f4a4",
+      "documentType": "brochure",
+      "title": "Azurion accessories brochure PDF | 4.95 MB",
+      "language": null,
+      "sourceUrl": "https://www.documents.philips.com/assets/20191112/367a282211e94b08a7b0ab0300ac9c1b.pdf",
+      "sha256": "6507913def2839984644787290d7e203b96e2c4fdb6f223bd98d7eda00cab2f1",
+      "contentType": "application/pdf",
+      "byteSize": 5192093,
+      "filePath": "data/research/artifacts/artifacts/sha256/65/07/6507913def2839984644787290d7e203b96e2c4fdb6f223bd98d7eda00cab2f1.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_c0dca7f2f921c41ea9395d31",
+      "documentCandidateId": "document_2dc819e202cb6b0b767769ad",
+      "sourceId": "source_17d8d77f86355ce54dc9ddeb",
+      "productSlug": "wave2-philips-azurion-7",
+      "documentKey": "trusted-document:document_2dc819e202cb6b0b767769ad",
+      "documentType": "brochure",
+      "title": "Azurion 7 product brochure PDF | 15.28 MB",
+      "language": null,
+      "sourceUrl": "https://www.documents.philips.com/assets/20200403/23fe7d73f44243eb8e33ab9200bd9d82.pdf",
+      "sha256": "387aa4718a31e552f9bb056d4cef21c4b312931a9a9c74c894fe238d16754c15",
+      "contentType": "application/pdf",
+      "byteSize": 16020889,
+      "filePath": "data/research/artifacts/artifacts/sha256/38/7a/387aa4718a31e552f9bb056d4cef21c4b312931a9a9c74c894fe238d16754c15.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_e1cf4746175e63526950003e",
+      "documentCandidateId": "document_118965a041ec46c87ff46f0b",
+      "sourceId": "source_17d8d77f86355ce54dc9ddeb",
+      "productSlug": "wave2-philips-azurion-7",
+      "documentKey": "trusted-document:document_118965a041ec46c87ff46f0b",
+      "documentType": "unknown",
+      "title": "Azurion environmental performance overview PDF | 319.18 KB",
+      "language": null,
+      "sourceUrl": "https://www.documents.philips.com/assets/20211001/e7c7d1603303487b8d4eadb400a87992.pdf",
+      "sha256": "9cdda9de68fb8b80a815959bf9bc2dba13eda5c63f2e4aca5c87726868c5889e",
+      "contentType": "application/pdf",
+      "byteSize": 326841,
+      "filePath": "data/research/artifacts/artifacts/sha256/9c/dd/9cdda9de68fb8b80a815959bf9bc2dba13eda5c63f2e4aca5c87726868c5889e.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_291e2ea2ed3df9b4c2471382",
+      "productSlug": "wave2-philips-azurion-7",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Azurion flexible workspots brochure PDF | 3.53 MB",
+      "unit": null,
+      "rawText": "Document title: Azurion flexible workspots brochure PDF | 3.53 MB",
+      "documentVersionId": "document_version_d695c2786254bacd2c1fdbec",
+      "documentCandidateId": "document_49113ce2df6240dd50730a72",
+      "documentSha256": "cd0829bab7403c2362b20b66088806575a1ff8b89504bd5e2683497a461624e7",
+      "sourceUrl": "https://www.documents.philips.com/assets/20171020/bd2728d04ed8468f984fa81200c5fcae.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_f22e27f671220629ba8e8f3a",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_0fe8be0f2b5074beb410a005",
+      "productSlug": "wave2-philips-azurion-7",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_d695c2786254bacd2c1fdbec",
+      "documentCandidateId": "document_49113ce2df6240dd50730a72",
+      "documentSha256": "cd0829bab7403c2362b20b66088806575a1ff8b89504bd5e2683497a461624e7",
+      "sourceUrl": "https://www.documents.philips.com/assets/20171020/bd2728d04ed8468f984fa81200c5fcae.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_90016fb77ff648b828972817",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_27103098108cf6324a4d988f",
+      "productSlug": "wave2-philips-azurion-7",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "display",
+      "unit": null,
+      "rawText": "display can be re-arranged and re-sized on",
+      "documentVersionId": "document_version_d695c2786254bacd2c1fdbec",
+      "documentCandidateId": "document_49113ce2df6240dd50730a72",
+      "documentSha256": "cd0829bab7403c2362b20b66088806575a1ff8b89504bd5e2683497a461624e7",
+      "sourceUrl": "https://www.documents.philips.com/assets/20171020/bd2728d04ed8468f984fa81200c5fcae.pdf",
+      "locator": {
+        "page": 5,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 73
+      },
+      "evidenceCandidateId": "evidence_0b23e6735c66c2b4493fe66d",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_7a2c4e212b1795d88c6be79e",
+      "productSlug": "wave2-philips-azurion-7",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Azurion accessories brochure PDF | 4.95 MB",
+      "unit": null,
+      "rawText": "Document title: Azurion accessories brochure PDF | 4.95 MB",
+      "documentVersionId": "document_version_fb21db16d4bd9c3f485df54a",
+      "documentCandidateId": "document_7d73a9c6bf46bb2aa686f4a4",
+      "documentSha256": "6507913def2839984644787290d7e203b96e2c4fdb6f223bd98d7eda00cab2f1",
+      "sourceUrl": "https://www.documents.philips.com/assets/20191112/367a282211e94b08a7b0ab0300ac9c1b.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_63e29fe334cce173a412fb5b",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_7c5ba4525d9ac99088c19d2d",
+      "productSlug": "wave2-philips-azurion-7",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_fb21db16d4bd9c3f485df54a",
+      "documentCandidateId": "document_7d73a9c6bf46bb2aa686f4a4",
+      "documentSha256": "6507913def2839984644787290d7e203b96e2c4fdb6f223bd98d7eda00cab2f1",
+      "sourceUrl": "https://www.documents.philips.com/assets/20191112/367a282211e94b08a7b0ab0300ac9c1b.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_6d499f022de86fa516ab2231",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_170e6ed6ce9404c15e62a311",
+      "productSlug": "wave2-philips-azurion-7",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Dimensions",
+      "unit": null,
+      "rawText": "Dimensions of the mattress:",
+      "documentVersionId": "document_version_fb21db16d4bd9c3f485df54a",
+      "documentCandidateId": "document_7d73a9c6bf46bb2aa686f4a4",
+      "documentSha256": "6507913def2839984644787290d7e203b96e2c4fdb6f223bd98d7eda00cab2f1",
+      "sourceUrl": "https://www.documents.philips.com/assets/20191112/367a282211e94b08a7b0ab0300ac9c1b.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 59
+      },
+      "evidenceCandidateId": "evidence_4caf87bda2926e0a82fd0f3c",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_8820622fa6b4822dffef99e6",
+      "productSlug": "wave2-philips-azurion-7",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "weight",
+      "unit": null,
+      "rawText": "weight.",
+      "documentVersionId": "document_version_fb21db16d4bd9c3f485df54a",
+      "documentCandidateId": "document_7d73a9c6bf46bb2aa686f4a4",
+      "documentSha256": "6507913def2839984644787290d7e203b96e2c4fdb6f223bd98d7eda00cab2f1",
+      "sourceUrl": "https://www.documents.philips.com/assets/20191112/367a282211e94b08a7b0ab0300ac9c1b.pdf",
+      "locator": {
+        "page": 5,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 111
+      },
+      "evidenceCandidateId": "evidence_0ac26c2a4dd97c932edcf8ef",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_2496f1d75aa37c7466c61237",
+      "productSlug": "wave2-philips-azurion-7",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Azurion 7 product brochure PDF | 15.28 MB",
+      "unit": null,
+      "rawText": "Document title: Azurion 7 product brochure PDF | 15.28 MB",
+      "documentVersionId": "document_version_c0dca7f2f921c41ea9395d31",
+      "documentCandidateId": "document_2dc819e202cb6b0b767769ad",
+      "documentSha256": "387aa4718a31e552f9bb056d4cef21c4b312931a9a9c74c894fe238d16754c15",
+      "sourceUrl": "https://www.documents.philips.com/assets/20200403/23fe7d73f44243eb8e33ab9200bd9d82.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_0ddc97842bf3a0e86a2c9c94",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_23528d83eb3354bc9b72b018",
+      "productSlug": "wave2-philips-azurion-7",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_c0dca7f2f921c41ea9395d31",
+      "documentCandidateId": "document_2dc819e202cb6b0b767769ad",
+      "documentSha256": "387aa4718a31e552f9bb056d4cef21c4b312931a9a9c74c894fe238d16754c15",
+      "sourceUrl": "https://www.documents.philips.com/assets/20200403/23fe7d73f44243eb8e33ab9200bd9d82.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_3fa16aca5b3b3fc2f0f047c6",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_5ed3ff9c5126a60ab8ed4fbf",
+      "productSlug": "wave2-philips-azurion-7",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "display",
+      "unit": null,
+      "rawText": "display to re-arrange and",
+      "documentVersionId": "document_version_c0dca7f2f921c41ea9395d31",
+      "documentCandidateId": "document_2dc819e202cb6b0b767769ad",
+      "documentSha256": "387aa4718a31e552f9bb056d4cef21c4b312931a9a9c74c894fe238d16754c15",
+      "sourceUrl": "https://www.documents.philips.com/assets/20200403/23fe7d73f44243eb8e33ab9200bd9d82.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 87
+      },
+      "evidenceCandidateId": "evidence_ea2615f98dd5016c1e8f3b8c",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_6f304157f6801b8fd4e60b9e",
+      "productSlug": "wave2-philips-azurion-7",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "weight",
+      "unit": null,
+      "rawText": "weight is reused during",
+      "documentVersionId": "document_version_c0dca7f2f921c41ea9395d31",
+      "documentCandidateId": "document_2dc819e202cb6b0b767769ad",
+      "documentSha256": "387aa4718a31e552f9bb056d4cef21c4b312931a9a9c74c894fe238d16754c15",
+      "sourceUrl": "https://www.documents.philips.com/assets/20200403/23fe7d73f44243eb8e33ab9200bd9d82.pdf",
+      "locator": {
+        "page": 14,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 402
+      },
+      "evidenceCandidateId": "evidence_ba30087b4cecb087eea450c9",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_11c48fa2d4f0cbe33c92d577",
+      "productSlug": "wave2-philips-azurion-7",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Azurion environmental performance overview PDF | 319.18 KB",
+      "unit": null,
+      "rawText": "Document title: Azurion environmental performance overview PDF | 319.18 KB",
+      "documentVersionId": "document_version_e1cf4746175e63526950003e",
+      "documentCandidateId": "document_118965a041ec46c87ff46f0b",
+      "documentSha256": "9cdda9de68fb8b80a815959bf9bc2dba13eda5c63f2e4aca5c87726868c5889e",
+      "sourceUrl": "https://www.documents.philips.com/assets/20211001/e7c7d1603303487b8d4eadb400a87992.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_0c18129e64fc0aa0070ff898",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_7bc6a8322874dce021e63b4f",
+      "productSlug": "wave2-philips-azurion-7",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_e1cf4746175e63526950003e",
+      "documentCandidateId": "document_118965a041ec46c87ff46f0b",
+      "documentSha256": "9cdda9de68fb8b80a815959bf9bc2dba13eda5c63f2e4aca5c87726868c5889e",
+      "sourceUrl": "https://www.documents.philips.com/assets/20211001/e7c7d1603303487b8d4eadb400a87992.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_622d816c04e06dae961359d5",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_2b87587bb7d590589fc50f8c",
+      "productSlug": "wave2-philips-azurion-7",
+      "factType": "product.weight",
+      "label": "Вес",
+      "value": "1352",
+      "unit": "kg",
+      "rawText": "weight: 1352 kg",
+      "documentVersionId": "document_version_e1cf4746175e63526950003e",
+      "documentCandidateId": "document_118965a041ec46c87ff46f0b",
+      "documentSha256": "9cdda9de68fb8b80a815959bf9bc2dba13eda5c63f2e4aca5c87726868c5889e",
+      "sourceUrl": "https://www.documents.philips.com/assets/20211001/e7c7d1603303487b8d4eadb400a87992.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 118
+      },
+      "evidenceCandidateId": "evidence_da2defcf1271ce03f3eb3a36",
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.weight",
+        "matchedSynonym:Вес",
+        "unitParsed:kg"
+      ]
+    },
+    {
+      "factCandidateId": "fact_e5f0bce2a704d807a22efac9",
+      "productSlug": "wave2-philips-azurion-7",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "weight",
+      "unit": null,
+      "rawText": "weight being reused,",
+      "documentVersionId": "document_version_e1cf4746175e63526950003e",
+      "documentCandidateId": "document_118965a041ec46c87ff46f0b",
+      "documentSha256": "9cdda9de68fb8b80a815959bf9bc2dba13eda5c63f2e4aca5c87726868c5889e",
+      "sourceUrl": "https://www.documents.philips.com/assets/20211001/e7c7d1603303487b8d4eadb400a87992.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 60
+      },
+      "evidenceCandidateId": "evidence_ef6b828bdec6536ada2b53d8",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_f22e27f671220629ba8e8f3a",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_d695c2786254bacd2c1fdbec",
+      "documentCandidateId": "document_49113ce2df6240dd50730a72",
+      "sha256": "cd0829bab7403c2362b20b66088806575a1ff8b89504bd5e2683497a461624e7",
+      "sourceUrl": "https://www.documents.philips.com/assets/20171020/bd2728d04ed8468f984fa81200c5fcae.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Azurion flexible workspots brochure PDF | 3.53 MB",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_90016fb77ff648b828972817",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_d695c2786254bacd2c1fdbec",
+      "documentCandidateId": "document_49113ce2df6240dd50730a72",
+      "sha256": "cd0829bab7403c2362b20b66088806575a1ff8b89504bd5e2683497a461624e7",
+      "sourceUrl": "https://www.documents.philips.com/assets/20171020/bd2728d04ed8468f984fa81200c5fcae.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_63e29fe334cce173a412fb5b",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_fb21db16d4bd9c3f485df54a",
+      "documentCandidateId": "document_7d73a9c6bf46bb2aa686f4a4",
+      "sha256": "6507913def2839984644787290d7e203b96e2c4fdb6f223bd98d7eda00cab2f1",
+      "sourceUrl": "https://www.documents.philips.com/assets/20191112/367a282211e94b08a7b0ab0300ac9c1b.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Azurion accessories brochure PDF | 4.95 MB",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_6d499f022de86fa516ab2231",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_fb21db16d4bd9c3f485df54a",
+      "documentCandidateId": "document_7d73a9c6bf46bb2aa686f4a4",
+      "sha256": "6507913def2839984644787290d7e203b96e2c4fdb6f223bd98d7eda00cab2f1",
+      "sourceUrl": "https://www.documents.philips.com/assets/20191112/367a282211e94b08a7b0ab0300ac9c1b.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_0ddc97842bf3a0e86a2c9c94",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_c0dca7f2f921c41ea9395d31",
+      "documentCandidateId": "document_2dc819e202cb6b0b767769ad",
+      "sha256": "387aa4718a31e552f9bb056d4cef21c4b312931a9a9c74c894fe238d16754c15",
+      "sourceUrl": "https://www.documents.philips.com/assets/20200403/23fe7d73f44243eb8e33ab9200bd9d82.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Azurion 7 product brochure PDF | 15.28 MB",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_3fa16aca5b3b3fc2f0f047c6",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_c0dca7f2f921c41ea9395d31",
+      "documentCandidateId": "document_2dc819e202cb6b0b767769ad",
+      "sha256": "387aa4718a31e552f9bb056d4cef21c4b312931a9a9c74c894fe238d16754c15",
+      "sourceUrl": "https://www.documents.philips.com/assets/20200403/23fe7d73f44243eb8e33ab9200bd9d82.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_0c18129e64fc0aa0070ff898",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_e1cf4746175e63526950003e",
+      "documentCandidateId": "document_118965a041ec46c87ff46f0b",
+      "sha256": "9cdda9de68fb8b80a815959bf9bc2dba13eda5c63f2e4aca5c87726868c5889e",
+      "sourceUrl": "https://www.documents.philips.com/assets/20211001/e7c7d1603303487b8d4eadb400a87992.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Azurion environmental performance overview PDF | 319.18 KB",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_622d816c04e06dae961359d5",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_e1cf4746175e63526950003e",
+      "documentCandidateId": "document_118965a041ec46c87ff46f0b",
+      "sha256": "9cdda9de68fb8b80a815959bf9bc2dba13eda5c63f2e4aca5c87726868c5889e",
+      "sourceUrl": "https://www.documents.philips.com/assets/20211001/e7c7d1603303487b8d4eadb400a87992.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_da2defcf1271ce03f3eb3a36",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e1cf4746175e63526950003e",
+      "documentCandidateId": "document_118965a041ec46c87ff46f0b",
+      "sha256": "9cdda9de68fb8b80a815959bf9bc2dba13eda5c63f2e4aca5c87726868c5889e",
+      "sourceUrl": "https://www.documents.philips.com/assets/20211001/e7c7d1603303487b8d4eadb400a87992.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 118
+      },
+      "quotedText": "weight: 1352 kg",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_0e49c190f0d12247a1fa069b",
+      "productSlug": "wave2-philips-azurion-7",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Azurion flexible workspots brochure PDF | 3.53 MB",
+        "unit": null
+      },
+      "rawText": "Document title: Azurion flexible workspots brochure PDF | 3.53 MB",
+      "evidenceCandidateIds": [
+        "evidence_f22e27f671220629ba8e8f3a"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_ec3debf32ac2d654c10aa089",
+      "productSlug": "wave2-philips-azurion-7",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_90016fb77ff648b828972817"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_0847de8e469dc5c6e6dc6db3",
+      "productSlug": "wave2-philips-azurion-7",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "rawText": "display can be re-arranged and re-sized on",
+      "evidenceCandidateIds": [
+        "evidence_0b23e6735c66c2b4493fe66d"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_e70dfb1c9e51d669e211e7de",
+      "productSlug": "wave2-philips-azurion-7",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Azurion accessories brochure PDF | 4.95 MB",
+        "unit": null
+      },
+      "rawText": "Document title: Azurion accessories brochure PDF | 4.95 MB",
+      "evidenceCandidateIds": [
+        "evidence_63e29fe334cce173a412fb5b"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_1cdbc3e5a27def65611c63ec",
+      "productSlug": "wave2-philips-azurion-7",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_6d499f022de86fa516ab2231"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_713f3acd18fe63ffbc0dfaf6",
+      "productSlug": "wave2-philips-azurion-7",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "rawText": "Dimensions of the mattress:",
+      "evidenceCandidateIds": [
+        "evidence_4caf87bda2926e0a82fd0f3c"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_f5483361e492083fdcc93820",
+      "productSlug": "wave2-philips-azurion-7",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "weight",
+        "unit": null
+      },
+      "rawText": "weight.",
+      "evidenceCandidateIds": [
+        "evidence_0ac26c2a4dd97c932edcf8ef"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_9d626b635a467dbe8a35b2e4",
+      "productSlug": "wave2-philips-azurion-7",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Azurion 7 product brochure PDF | 15.28 MB",
+        "unit": null
+      },
+      "rawText": "Document title: Azurion 7 product brochure PDF | 15.28 MB",
+      "evidenceCandidateIds": [
+        "evidence_0ddc97842bf3a0e86a2c9c94"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_dd5dede3416dbe701f8b950b",
+      "productSlug": "wave2-philips-azurion-7",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_3fa16aca5b3b3fc2f0f047c6"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_9c057171ec6c88efd15e4f03",
+      "productSlug": "wave2-philips-azurion-7",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "rawText": "display to re-arrange and",
+      "evidenceCandidateIds": [
+        "evidence_ea2615f98dd5016c1e8f3b8c"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_04c1b6b530405b0d7bc36437",
+      "productSlug": "wave2-philips-azurion-7",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "weight",
+        "unit": null
+      },
+      "rawText": "weight is reused during",
+      "evidenceCandidateIds": [
+        "evidence_ba30087b4cecb087eea450c9"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_426ec6c6cf88c83e22aa9e88",
+      "productSlug": "wave2-philips-azurion-7",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Azurion environmental performance overview PDF | 319.18 KB",
+        "unit": null
+      },
+      "rawText": "Document title: Azurion environmental performance overview PDF | 319.18 KB",
+      "evidenceCandidateIds": [
+        "evidence_0c18129e64fc0aa0070ff898"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_36d4b84967ef99f105339b38",
+      "productSlug": "wave2-philips-azurion-7",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_622d816c04e06dae961359d5"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_440ed3b5dfb478b1a6f1ba18",
+      "productSlug": "wave2-philips-azurion-7",
+      "subjectType": "product",
+      "suggestedClaimType": "product.weight",
+      "valuePayload": {
+        "value": "1352",
+        "unit": "kg"
+      },
+      "rawText": "weight: 1352 kg",
+      "evidenceCandidateIds": [
+        "evidence_da2defcf1271ce03f3eb3a36"
+      ],
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_a30b60326181ac7dcbdef111",
+      "productSlug": "wave2-philips-azurion-7",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "weight",
+        "unit": null
+      },
+      "rawText": "weight being reused,",
+      "evidenceCandidateIds": [
+        "evidence_ef6b828bdec6536ada2b53d8"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry"
+    ],
+    "patternsMatched": {
+      "registry.generic.weight": 1
+    },
+    "normalizedUnits": {
+      "kg": 1
+    },
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ]
+    },
+    "coveragePercent": 33
+  },
+  "warnings": [
+    "Resolver adapter used: philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/all-coffee-espresso-machines",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/accessories-collection",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-baristina-espresso-machine-milky-white-bar300-00",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/airfyers",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-artisan-pasta-noodle-maker",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Kitchen-Appliances",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Airfryer",
+    "Resolver rejected offsite document URL: https://www.philips-hue.com/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected unsafe document URL: tel:1-800-722-9377",
+    "Resolver rejected unsafe document URL: tel:1-800-229-6417",
+    "Resolver rejected unsafe document URL: tel:1-800-225-0230",
+    "Resolver rejected unsafe document URL: tel:1-800-345-6443",
+    "Resolver rejected unsafe document URL: tel:1-800-422-9448",
+    "Resolver rejected unsafe document URL: tel:1-800-542-8368",
+    "Resolver rejected unsafe document URL: tel:1-800-228-4728",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://www.adobe.com/es/acrobat/pricing.html?mv=search&amp;mv2=paidsearch&amp;sdid=BDDS3F8G&amp;ef_id=6f0d31b717991d11c4b85672a14576da:G:s&amp;s_kwcid=AL!3085!10!79577362531267!79577498729085&amp;msclkid=6f0d31b717991d11c4b85672a14576da",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "resolver=philips; attempts=7; matchedLinks=28; classifiedDocuments={\"Unknown\":105,\"Brochure\":8,\"IFU\":1}; confidenceDistribution={\"80\":1,\"90\":104,\"100\":9}; duplicatesRemoved=86",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

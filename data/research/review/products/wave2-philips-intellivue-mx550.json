@@ -1,0 +1,2764 @@
+{
+  "product": {
+    "productSlug": "wave2-philips-intellivue-mx550",
+    "manufacturer": "Philips",
+    "productName": "Philips IntelliVue MX550",
+    "model": "IntelliVue MX550",
+    "category": "Монитор пациента"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_2cc90dd8f41f377562008910",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_b54fd2b75dd6f86c6a3d1e11",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Product Brochure Philips IntelliVue Portable/bedside patient monitor MX550 PDF | 7.53 MB",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_bcf62d29ee06f1bdf317f71c"
+      ],
+      "documentVersionIds": [
+        "document_version_92782b629509a60547721502"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20170523/27d8f20bc5114ece8961a77c016a1c14.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_35570ef7ecefa0102f119cf3",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_684b560539d11fc0dbd8f14f",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_ede241bb59e0e9f6e08c1a9a"
+      ],
+      "documentVersionIds": [
+        "document_version_92782b629509a60547721502"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20170523/27d8f20bc5114ece8961a77c016a1c14.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_a01902cdab781c0163eea2c9",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_fe4d35b99fb6e181cbe10c95",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_92dae9b2a4733535575287ad"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_af13612075b21f6f27895737",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_2232ab572d1d8fda2f74452c",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_464886161075e70fee1091aa"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_561d3c910c82abc0e10bb148",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_2becc0a761a5df38da27397d",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "compatibility",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_b719e3c2929430811b1da187"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b26fe1831f480c1b9a870f3a",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_50fc44cd19b8cffc18ec74cf",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "IntelliVue MX400/MX450/MX500/MX550 Instructions for Use",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_3c75080befe767880fcba95d"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_28fefdca2bd566f6c451389b",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_e3a54cc710710f5638d21ca2",
+      "suggestedClaimType": "document.language",
+      "valuePayload": {
+        "value": "en",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_292ab6d665faa9813ea2162c"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_185e329ea8c02fb36db5f244",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_a1bf5da15bca5bc100dff38f",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "ifu",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_9ce19363c6aabe82c7b32291"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_d843be972d2903ace7c03ad2",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_83fc1631e63506567f9a2d4d",
+      "suggestedClaimType": "product.measurementRanges",
+      "valuePayload": {
+        "value": "etCO2, awRR",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c599a04d8d19283dd8bd7b35"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_254a1f5af5c59b1d7be9969f",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_988c70494bfaad1cd5b8dcd5",
+      "suggestedClaimType": "product.measurementRanges",
+      "valuePayload": {
+        "value": "• Heart rate",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_9bc8dd2ba9cb4385405c3e6b"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_9f14a417c35db820b24cd2e7",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_232e2dcc98cae113ff50420c",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "328",
+        "unit": "inch"
+      },
+      "evidenceCandidateIds": [
+        "evidence_ad372a9a27dddad4058adf3a"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_9d8d5ebd43d7f579acdbbc9c",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_71ec43f19d5091e8f7f1517b",
+      "suggestedClaimType": "product.accessories",
+      "valuePayload": {
+        "value": "specific key, as in this case",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_872435362af768a65aeab172"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_64cdc18565747cc7de4e8007",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_6c0912664494b94fa6d068c7",
+      "suggestedClaimType": "product.accessories",
+      "valuePayload": {
+        "value": "labeled as TEMP in all languages",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_91d0951e49501538e33bdaed"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_e32e20a9227d9815d0f2f8ab",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_e5e5c090be8ffd2f24855dac",
+      "suggestedClaimType": "product.accessories",
+      "valuePayload": {
+        "value": "1 Place the water trap in the vertical position",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_9ce939c064330eaa9da67eba"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_19c534cef68d063fff675fa0",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_25b4859bf760b42a2e6369e3",
+      "suggestedClaimType": "product.accessories",
+      "valuePayload": {
+        "value": "Insert the module into the Module Rack or integrated module slot",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_dd8e967f2aaedd7eeaa59d6a"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5d3fe3e1a23d5f667946ae83",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_515168156bdccd4fdc0794ff",
+      "suggestedClaimType": "product.power",
+      "valuePayload": {
+        "value": "infinite",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_638dd76980b0218d1dba806f"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_640afde3b73daa320133a6d5",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_4179251e58699ab8e7d04fb4",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "X2/X3 (yellow)",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_b8a3e2e353068023e6a31539"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_411109f95c895958b380e7e5",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_fc0cb1fa756e08706ce88027",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "(configurable to light blue, yellow or red)",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_7f1c2eee57bdb827361908e6"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_90826d0edc270bb8bb040735",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_3a4b88bb1fa0d91682cbd494",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "powered operating time is less than 10 minutes. Replace the battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_52dc594de2f92c2743d310e2"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_740a3ee0bb24742c77f1fd82",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_eaa2ee9d2c8369e7e12623e8",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "powered operating time remaining is less than 20 minutes",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_b5663d12b5d9a01ad9f379e6"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5629e0833ef4f32403158ca0",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_2fc7a23d8d0209620df66f2a",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "powered operating remaining time is less than 10 minutes. Replace the battery in",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_812ba698afad732f69318a60"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_d3bcdf12c5b4b3cced064a40",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_bf5f34f32c52fcb4e9b124f7",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "powered, you cannot monitor during transport",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_11d5da7eda486ef46bbcc585"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_09f07382f31c3fe3721e0ecb",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_e1e5a010dccf4d9679f2665e",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "operated monitoring but also requires care in use and handling of the batteries",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_d7ace85b4ee34d1d7e668289"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_d6f58b86b07514f77e5789e3",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_47f4a2eecbd47b1481cd5151",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "powered and mains-powered (AC) operation without interrupting",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_bb87e2c82129e40527784a2d"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_c66f0dc1175af801c3b1cacc",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_0dedce74e91945fd0be84dd0",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "time is stored but a hold time is not specified, as",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_eb039ffaf5fdadafbae89688"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_08a50effdc311a58eb40e08d",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_6324b0f94c87e1a170e07847",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "at least 48 hours",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_6e9202f7586466c95591478b"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_1abb94dde15d3e4da129be8d",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_c22f7732f9fbafa04144e761",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "memory is buffered but a hold time is not",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_fd58eba6834120773f977c20"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_3fc8762abce60b04fa47d361",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_3793e0ad7ca264d40e5dea41",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "at least 4 hours",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_72630434234c05b947cdcf6a"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_86be4f544a52b2336ba2be3f",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_4c3a45087f23d580030d7969",
+      "suggestedClaimType": "product.measurementRanges",
+      "valuePayload": {
+        "value": "4 0 t o 3 6 0m m H g ( - 5t o4 8k P a )",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_2569b621e9f6d36489b969b2"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_686be2e3794249a3c07a86da",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_b6563c6887dfa458c48b59bf",
+      "suggestedClaimType": "product.accuracy",
+      "valuePayload": {
+        "value": "Accuracy of the CCO measurement and all the derived values may be influenced by",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_b886a5324df6a90f60b4e05d"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_a8cd64d099fa6b8500e50953",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_01658a143c15bdb25f93702e",
+      "suggestedClaimType": "product.accuracy",
+      "valuePayload": {
+        "value": "When sensors are used on neonatal subjects as recommended, the specified accuracy range is",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_66359bc1cedec341470fe510"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_a49061257450bf22d69827ef",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_4a74563c757d12f8c715d44b",
+      "suggestedClaimType": "product.interfaces",
+      "valuePayload": {
+        "value": "• Standard wired LAN",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_1692c8a7ffccd94d43035ca6"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_70f4b6a4ae269497a0ab538f",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_3237a0e807f8b9bc3a159477",
+      "suggestedClaimType": "product.interfaces",
+      "valuePayload": {
+        "value": "• Additional USB slots",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_92c2af203673eefaf8ab75a3"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_a9bd3893c4f3ae880b8ae4af",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_03d7ff76387a627d112e5552",
+      "suggestedClaimType": "product.compatibility",
+      "valuePayload": {
+        "value": "Using accessories other than those specified may result in increased",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_a3bfb06c7cee267d80117c50"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "critical",
+      "riskLevel": "high",
+      "reasons": [
+        "High-risk clinical, safety, compatibility or procurement claim.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_35bd4d397247bc0b28c9437f",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_623340d1e22534f47622a852",
+      "suggestedClaimType": "product.accessories",
+      "valuePayload": {
+        "value": "Dräger Accessories",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_35775184b7e8e8f97be6f938"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_e9cf1980793513f0cfd32285",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_0c9f821476b67a77c39601dd",
+      "suggestedClaimType": "product.contraindications",
+      "valuePayload": {
+        "value": "The NMT measurement is contraindicated for use on patients with nerve damage or other neuromuscular",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_859eb1a66fcb1fc65ca2a798"
+      ],
+      "documentVersionIds": [
+        "document_version_99351556830b4ffc26200998"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+      ],
+      "status": "pending_review",
+      "priority": "critical",
+      "riskLevel": "high",
+      "reasons": [
+        "High-risk clinical, safety, compatibility or procurement claim.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_778fe5dcb50f1f902153eb4e",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_2a1b53bb7cdc8d30cd997816",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_4616dea58e5fd3e12bec65b4"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_423077aa64a6b77c52b01f40",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_69cc33a8a97eac9134e1b3c3",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_23e01127860bb0de2a51b86d"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_4ac3af20ce11f05f9b45251f",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_8c1f753d64a0d3333547cd06",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Compatibility",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_1207718619b8908036e5ad49"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_616b32510fc4010530924847",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_6b9776eb28cb15cc652eaee0",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c3cfb32ebd391a67131eafc1"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5ea24680d30e076efca25254",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_ddba8989f2409ae252c05dbb",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "flow rate",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_2a840e2bb2ca2a5fb823e596"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_e2149e0dbbf6b64b70269034",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_26e043b911d0820f76464557",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "tidal volume",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_018672520af6ae59ad7e7220"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_c3e52ddc00ac205215b03f4d",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "productTitle": "Philips IntelliVue MX550",
+      "claimCandidateId": "claim_0694e4a2bbf641f183a85be3",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "minute volume",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_64fedc6af08a595c4ae20843"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_2cc90dd8f41f377562008910",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_b54fd2b75dd6f86c6a3d1e11",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Product Brochure Philips IntelliVue Portable/bedside patient monitor MX550 PDF | 7.53 MB",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_bcf62d29ee06f1bdf317f71c"
+        ],
+        "documentVersionIds": [
+          "document_version_92782b629509a60547721502"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20170523/27d8f20bc5114ece8961a77c016a1c14.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_b26fe1831f480c1b9a870f3a",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_50fc44cd19b8cffc18ec74cf",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "IntelliVue MX400/MX450/MX500/MX550 Instructions for Use",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_3c75080befe767880fcba95d"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_35570ef7ecefa0102f119cf3",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_684b560539d11fc0dbd8f14f",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_ede241bb59e0e9f6e08c1a9a"
+        ],
+        "documentVersionIds": [
+          "document_version_92782b629509a60547721502"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20170523/27d8f20bc5114ece8961a77c016a1c14.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_185e329ea8c02fb36db5f244",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_a1bf5da15bca5bc100dff38f",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "ifu",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_9ce19363c6aabe82c7b32291"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "technical.term": [
+      {
+        "reviewItemId": "review_item_a01902cdab781c0163eea2c9",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_fe4d35b99fb6e181cbe10c95",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_92dae9b2a4733535575287ad"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_af13612075b21f6f27895737",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_2232ab572d1d8fda2f74452c",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_464886161075e70fee1091aa"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_561d3c910c82abc0e10bb148",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_2becc0a761a5df38da27397d",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "compatibility",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_b719e3c2929430811b1da187"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_778fe5dcb50f1f902153eb4e",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_2a1b53bb7cdc8d30cd997816",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_4616dea58e5fd3e12bec65b4"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_423077aa64a6b77c52b01f40",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_69cc33a8a97eac9134e1b3c3",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_23e01127860bb0de2a51b86d"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_4ac3af20ce11f05f9b45251f",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_8c1f753d64a0d3333547cd06",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Compatibility",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_1207718619b8908036e5ad49"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_616b32510fc4010530924847",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_6b9776eb28cb15cc652eaee0",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c3cfb32ebd391a67131eafc1"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_5ea24680d30e076efca25254",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_ddba8989f2409ae252c05dbb",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "flow rate",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_2a840e2bb2ca2a5fb823e596"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_e2149e0dbbf6b64b70269034",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_26e043b911d0820f76464557",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "tidal volume",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_018672520af6ae59ad7e7220"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_c3e52ddc00ac205215b03f4d",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_0694e4a2bbf641f183a85be3",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "minute volume",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_64fedc6af08a595c4ae20843"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.language": [
+      {
+        "reviewItemId": "review_item_28fefdca2bd566f6c451389b",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_e3a54cc710710f5638d21ca2",
+        "suggestedClaimType": "document.language",
+        "valuePayload": {
+          "value": "en",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_292ab6d665faa9813ea2162c"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.measurementRanges": [
+      {
+        "reviewItemId": "review_item_d843be972d2903ace7c03ad2",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_83fc1631e63506567f9a2d4d",
+        "suggestedClaimType": "product.measurementRanges",
+        "valuePayload": {
+          "value": "etCO2, awRR",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c599a04d8d19283dd8bd7b35"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_254a1f5af5c59b1d7be9969f",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_988c70494bfaad1cd5b8dcd5",
+        "suggestedClaimType": "product.measurementRanges",
+        "valuePayload": {
+          "value": "• Heart rate",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_9bc8dd2ba9cb4385405c3e6b"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_86be4f544a52b2336ba2be3f",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_4c3a45087f23d580030d7969",
+        "suggestedClaimType": "product.measurementRanges",
+        "valuePayload": {
+          "value": "4 0 t o 3 6 0m m H g ( - 5t o4 8k P a )",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_2569b621e9f6d36489b969b2"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.display": [
+      {
+        "reviewItemId": "review_item_9f14a417c35db820b24cd2e7",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_232e2dcc98cae113ff50420c",
+        "suggestedClaimType": "product.display",
+        "valuePayload": {
+          "value": "328",
+          "unit": "inch"
+        },
+        "evidenceCandidateIds": [
+          "evidence_ad372a9a27dddad4058adf3a"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.accessories": [
+      {
+        "reviewItemId": "review_item_9d8d5ebd43d7f579acdbbc9c",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_71ec43f19d5091e8f7f1517b",
+        "suggestedClaimType": "product.accessories",
+        "valuePayload": {
+          "value": "specific key, as in this case",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_872435362af768a65aeab172"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_64cdc18565747cc7de4e8007",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_6c0912664494b94fa6d068c7",
+        "suggestedClaimType": "product.accessories",
+        "valuePayload": {
+          "value": "labeled as TEMP in all languages",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_91d0951e49501538e33bdaed"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_e32e20a9227d9815d0f2f8ab",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_e5e5c090be8ffd2f24855dac",
+        "suggestedClaimType": "product.accessories",
+        "valuePayload": {
+          "value": "1 Place the water trap in the vertical position",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_9ce939c064330eaa9da67eba"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_19c534cef68d063fff675fa0",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_25b4859bf760b42a2e6369e3",
+        "suggestedClaimType": "product.accessories",
+        "valuePayload": {
+          "value": "Insert the module into the Module Rack or integrated module slot",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_dd8e967f2aaedd7eeaa59d6a"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_35bd4d397247bc0b28c9437f",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_623340d1e22534f47622a852",
+        "suggestedClaimType": "product.accessories",
+        "valuePayload": {
+          "value": "Dräger Accessories",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_35775184b7e8e8f97be6f938"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.power": [
+      {
+        "reviewItemId": "review_item_5d3fe3e1a23d5f667946ae83",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_515168156bdccd4fdc0794ff",
+        "suggestedClaimType": "product.power",
+        "valuePayload": {
+          "value": "infinite",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_638dd76980b0218d1dba806f"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.battery": [
+      {
+        "reviewItemId": "review_item_640afde3b73daa320133a6d5",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_4179251e58699ab8e7d04fb4",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "X2/X3 (yellow)",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_b8a3e2e353068023e6a31539"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_411109f95c895958b380e7e5",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_fc0cb1fa756e08706ce88027",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "(configurable to light blue, yellow or red)",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_7f1c2eee57bdb827361908e6"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_90826d0edc270bb8bb040735",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_3a4b88bb1fa0d91682cbd494",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "powered operating time is less than 10 minutes. Replace the battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_52dc594de2f92c2743d310e2"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_740a3ee0bb24742c77f1fd82",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_eaa2ee9d2c8369e7e12623e8",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "powered operating time remaining is less than 20 minutes",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_b5663d12b5d9a01ad9f379e6"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_5629e0833ef4f32403158ca0",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_2fc7a23d8d0209620df66f2a",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "powered operating remaining time is less than 10 minutes. Replace the battery in",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_812ba698afad732f69318a60"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_d3bcdf12c5b4b3cced064a40",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_bf5f34f32c52fcb4e9b124f7",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "powered, you cannot monitor during transport",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_11d5da7eda486ef46bbcc585"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_09f07382f31c3fe3721e0ecb",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_e1e5a010dccf4d9679f2665e",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "operated monitoring but also requires care in use and handling of the batteries",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_d7ace85b4ee34d1d7e668289"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_d6f58b86b07514f77e5789e3",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_47f4a2eecbd47b1481cd5151",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "powered and mains-powered (AC) operation without interrupting",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_bb87e2c82129e40527784a2d"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_c66f0dc1175af801c3b1cacc",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_0dedce74e91945fd0be84dd0",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "time is stored but a hold time is not specified, as",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_eb039ffaf5fdadafbae89688"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_08a50effdc311a58eb40e08d",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_6324b0f94c87e1a170e07847",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "at least 48 hours",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_6e9202f7586466c95591478b"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_1abb94dde15d3e4da129be8d",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_c22f7732f9fbafa04144e761",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "memory is buffered but a hold time is not",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_fd58eba6834120773f977c20"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_3fc8762abce60b04fa47d361",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_3793e0ad7ca264d40e5dea41",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "at least 4 hours",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_72630434234c05b947cdcf6a"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.accuracy": [
+      {
+        "reviewItemId": "review_item_686be2e3794249a3c07a86da",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_b6563c6887dfa458c48b59bf",
+        "suggestedClaimType": "product.accuracy",
+        "valuePayload": {
+          "value": "Accuracy of the CCO measurement and all the derived values may be influenced by",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_b886a5324df6a90f60b4e05d"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_a8cd64d099fa6b8500e50953",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_01658a143c15bdb25f93702e",
+        "suggestedClaimType": "product.accuracy",
+        "valuePayload": {
+          "value": "When sensors are used on neonatal subjects as recommended, the specified accuracy range is",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_66359bc1cedec341470fe510"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.interfaces": [
+      {
+        "reviewItemId": "review_item_a49061257450bf22d69827ef",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_4a74563c757d12f8c715d44b",
+        "suggestedClaimType": "product.interfaces",
+        "valuePayload": {
+          "value": "• Standard wired LAN",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_1692c8a7ffccd94d43035ca6"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_70f4b6a4ae269497a0ab538f",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_3237a0e807f8b9bc3a159477",
+        "suggestedClaimType": "product.interfaces",
+        "valuePayload": {
+          "value": "• Additional USB slots",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_92c2af203673eefaf8ab75a3"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.compatibility": [
+      {
+        "reviewItemId": "review_item_a9bd3893c4f3ae880b8ae4af",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_03d7ff76387a627d112e5552",
+        "suggestedClaimType": "product.compatibility",
+        "valuePayload": {
+          "value": "Using accessories other than those specified may result in increased",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_a3bfb06c7cee267d80117c50"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "critical",
+        "riskLevel": "high",
+        "reasons": [
+          "High-risk clinical, safety, compatibility or procurement claim.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.contraindications": [
+      {
+        "reviewItemId": "review_item_e9cf1980793513f0cfd32285",
+        "productSlug": "wave2-philips-intellivue-mx550",
+        "productTitle": "Philips IntelliVue MX550",
+        "claimCandidateId": "claim_0c9f821476b67a77c39601dd",
+        "suggestedClaimType": "product.contraindications",
+        "valuePayload": {
+          "value": "The NMT measurement is contraindicated for use on patients with nerve damage or other neuromuscular",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_859eb1a66fcb1fc65ca2a798"
+        ],
+        "documentVersionIds": [
+          "document_version_99351556830b4ffc26200998"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed"
+        ],
+        "status": "pending_review",
+        "priority": "critical",
+        "riskLevel": "high",
+        "reasons": [
+          "High-risk clinical, safety, compatibility or procurement claim.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_92782b629509a60547721502",
+      "documentType": "brochure",
+      "title": "Product Brochure Philips IntelliVue Portable/bedside patient monitor MX550 PDF | 7.53 MB",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/27d8f20bc5114ece8961a77c016a1c14.pdf",
+      "sha256": "8d6d7279a871da4b5abde975f03fe74e3fb55a37a9b1dcaf33f5a38b2a9f126e"
+    },
+    {
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentType": "ifu",
+      "title": "IntelliVue MX400/MX450/MX500/MX550 Instructions for Use",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23"
+    }
+  ],
+  "missingEvidence": [
+    {
+      "claimCandidateId": "claim_fe4d35b99fb6e181cbe10c95",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_2232ab572d1d8fda2f74452c",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_2becc0a761a5df38da27397d",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_2a1b53bb7cdc8d30cd997816",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_69cc33a8a97eac9134e1b3c3",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_8c1f753d64a0d3333547cd06",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_6b9776eb28cb15cc652eaee0",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_ddba8989f2409ae252c05dbb",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_26e043b911d0820f76464557",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_0694e4a2bbf641f183a85be3",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    }
+  ],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver adapter used: philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/all-coffee-espresso-machines",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/accessories-collection",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-baristina-espresso-machine-milky-white-bar300-00",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/airfyers",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-artisan-pasta-noodle-maker",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Kitchen-Appliances",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Airfryer",
+    "Resolver rejected offsite document URL: https://www.philips-hue.com/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected unsafe document URL: tel:1-800-722-9377",
+    "Resolver rejected unsafe document URL: tel:1-800-229-6417",
+    "Resolver rejected unsafe document URL: tel:1-800-225-0230",
+    "Resolver rejected unsafe document URL: tel:1-800-345-6443",
+    "Resolver rejected unsafe document URL: tel:1-800-422-9448",
+    "Resolver rejected unsafe document URL: tel:1-800-542-8368",
+    "Resolver rejected unsafe document URL: tel:1-800-228-4728",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://www.adobe.com/es/acrobat/pricing.html?mv=search&amp;mv2=paidsearch&amp;sdid=BDDS3F8G&amp;ef_id=6f0d31b717991d11c4b85672a14576da:G:s&amp;s_kwcid=AL!3085!10!79577362531267!79577498729085&amp;msclkid=6f0d31b717991d11c4b85672a14576da",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "resolver=philips; attempts=6; matchedLinks=25; classifiedDocuments={\"Unknown\":97,\"Brochure\":2,\"IFU\":1}; confidenceDistribution={\"80\":1,\"90\":97,\"100\":2}; duplicatesRemoved=75",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

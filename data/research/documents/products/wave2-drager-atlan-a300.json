@@ -1,0 +1,24 @@
+{
+  "product": {
+    "productSlug": "wave2-drager-atlan-a300",
+    "manufacturer": "Drager",
+    "productName": "Dräger Atlan A300",
+    "model": "Atlan A300",
+    "category": "Наркозно-дыхательные аппараты"
+  },
+  "attemptedDownloads": [],
+  "downloadedArtifacts": [],
+  "failedDownloads": [],
+  "skippedDocuments": [],
+  "documentVersions": [],
+  "warnings": [
+    "Discovery creates candidates only; no verified claims or publication.",
+    "No DocumentCandidate records were available for download."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": false,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}

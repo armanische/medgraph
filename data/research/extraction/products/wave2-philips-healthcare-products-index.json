@@ -1,0 +1,39 @@
+{
+  "product": {
+    "productSlug": "wave2-philips-healthcare-products-index",
+    "manufacturer": "Philips",
+    "productName": "Wave 2 Philips healthcare products index",
+    "model": "Wave 2 discovery index",
+    "category": "Wave 2 source discovery"
+  },
+  "documentVersions": [],
+  "extractedFactCandidates": [],
+  "evidenceCandidates": [],
+  "candidateClaims": [],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry"
+    ],
+    "patternsMatched": {},
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ]
+    },
+    "coveragePercent": 0
+  },
+  "warnings": [
+    "Resolver fetch failed for https://www.philips.com/healthcare/products: HTTP 404",
+    "Discovery creates candidates only; no verified claims or publication.",
+    "No DocumentCandidate records were available for download."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": false,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}

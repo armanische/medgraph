@@ -1,0 +1,265 @@
+{
+  "product": {
+    "productSlug": "wave2-philips-intellivue-mx700",
+    "manufacturer": "Philips",
+    "productName": "Philips IntelliVue MX700",
+    "model": "IntelliVue MX700",
+    "category": "Монитор пациента"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_4ca9eb98f4faae1f236f001f",
+      "documentCandidateId": "document_80f57e01eac5d53bf776a68f",
+      "sourceId": "source_f8ca32439ba082e974f614f3",
+      "productSlug": "wave2-philips-intellivue-mx700",
+      "documentKey": "trusted-document:document_80f57e01eac5d53bf776a68f",
+      "documentType": "brochure",
+      "title": "IntelliVue MX700 & MX800 patient monitors brochure PDF | 8.02 MB",
+      "language": null,
+      "sourceUrl": "https://www.documents.philips.com/assets/20191008/d5ee9ea660d843f79addaae0011c0492.pdf",
+      "sha256": "2e7ce71ff662553bbdb69ea5b1f6fac862566fd715a3dd718af0eee5b8987ee8",
+      "contentType": "application/pdf",
+      "byteSize": 8409928,
+      "filePath": "data/research/artifacts/artifacts/sha256/2e/7c/2e7ce71ff662553bbdb69ea5b1f6fac862566fd715a3dd718af0eee5b8987ee8.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_f4432286c65885c01d796c9e",
+      "productSlug": "wave2-philips-intellivue-mx700",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "IntelliVue MX700 & MX800 patient monitors brochure PDF | 8.02 MB",
+      "unit": null,
+      "rawText": "Document title: IntelliVue MX700 & MX800 patient monitors brochure PDF | 8.02 MB",
+      "documentVersionId": "document_version_4ca9eb98f4faae1f236f001f",
+      "documentCandidateId": "document_80f57e01eac5d53bf776a68f",
+      "documentSha256": "2e7ce71ff662553bbdb69ea5b1f6fac862566fd715a3dd718af0eee5b8987ee8",
+      "sourceUrl": "https://www.documents.philips.com/assets/20191008/d5ee9ea660d843f79addaae0011c0492.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_31bab94513b29d3ed6a069f3",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_7ebcbd146f43f8676d953c23",
+      "productSlug": "wave2-philips-intellivue-mx700",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_4ca9eb98f4faae1f236f001f",
+      "documentCandidateId": "document_80f57e01eac5d53bf776a68f",
+      "documentSha256": "2e7ce71ff662553bbdb69ea5b1f6fac862566fd715a3dd718af0eee5b8987ee8",
+      "sourceUrl": "https://www.documents.philips.com/assets/20191008/d5ee9ea660d843f79addaae0011c0492.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_3d8f25cd80216d9c6f4568f7",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_31bab94513b29d3ed6a069f3",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_4ca9eb98f4faae1f236f001f",
+      "documentCandidateId": "document_80f57e01eac5d53bf776a68f",
+      "sha256": "2e7ce71ff662553bbdb69ea5b1f6fac862566fd715a3dd718af0eee5b8987ee8",
+      "sourceUrl": "https://www.documents.philips.com/assets/20191008/d5ee9ea660d843f79addaae0011c0492.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: IntelliVue MX700 & MX800 patient monitors brochure PDF | 8.02 MB",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_3d8f25cd80216d9c6f4568f7",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_4ca9eb98f4faae1f236f001f",
+      "documentCandidateId": "document_80f57e01eac5d53bf776a68f",
+      "sha256": "2e7ce71ff662553bbdb69ea5b1f6fac862566fd715a3dd718af0eee5b8987ee8",
+      "sourceUrl": "https://www.documents.philips.com/assets/20191008/d5ee9ea660d843f79addaae0011c0492.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_656b693abc6493f0dd71038b",
+      "productSlug": "wave2-philips-intellivue-mx700",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "IntelliVue MX700 & MX800 patient monitors brochure PDF | 8.02 MB",
+        "unit": null
+      },
+      "rawText": "Document title: IntelliVue MX700 & MX800 patient monitors brochure PDF | 8.02 MB",
+      "evidenceCandidateIds": [
+        "evidence_31bab94513b29d3ed6a069f3"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_55912cc8fc651654e04b73fd",
+      "productSlug": "wave2-philips-intellivue-mx700",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_3d8f25cd80216d9c6f4568f7"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "patient-monitor"
+    ],
+    "patternsMatched": {},
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "patient-monitor": [
+        "battery_runtime",
+        "modules",
+        "parameters",
+        "screen"
+      ]
+    },
+    "coveragePercent": 0
+  },
+  "warnings": [
+    "Resolver adapter used: philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/all-coffee-espresso-machines",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/accessories-collection",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-baristina-espresso-machine-milky-white-bar300-00",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/airfyers",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-artisan-pasta-noodle-maker",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Kitchen-Appliances",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Airfryer",
+    "Resolver rejected offsite document URL: https://www.philips-hue.com/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected unsafe document URL: tel:1-800-722-9377",
+    "Resolver rejected unsafe document URL: tel:1-800-229-6417",
+    "Resolver rejected unsafe document URL: tel:1-800-225-0230",
+    "Resolver rejected unsafe document URL: tel:1-800-345-6443",
+    "Resolver rejected unsafe document URL: tel:1-800-422-9448",
+    "Resolver rejected unsafe document URL: tel:1-800-542-8368",
+    "Resolver rejected unsafe document URL: tel:1-800-228-4728",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://www.adobe.com/es/acrobat/pricing.html?mv=search&amp;mv2=paidsearch&amp;sdid=BDDS3F8G&amp;ef_id=6f0d31b717991d11c4b85672a14576da:G:s&amp;s_kwcid=AL!3085!10!79577362531267!79577498729085&amp;msclkid=6f0d31b717991d11c4b85672a14576da",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "resolver=philips; attempts=6; matchedLinks=25; classifiedDocuments={\"Unknown\":97,\"Brochure\":2,\"IFU\":1}; confidenceDistribution={\"80\":1,\"90\":97,\"100\":2}; duplicatesRemoved=75",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

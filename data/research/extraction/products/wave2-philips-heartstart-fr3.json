@@ -1,0 +1,791 @@
+{
+  "product": {
+    "productSlug": "wave2-philips-heartstart-fr3",
+    "manufacturer": "Philips",
+    "productName": "Philips HeartStart FR3",
+    "model": "HeartStart FR3",
+    "category": "Дефибрилляторы"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_b69a2395713b739bec137983",
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "sourceId": "source_534adcd9c71ca4c64ca324e5",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "documentKey": "trusted-document:document_8c5367cb0efec8952c5dfcf7",
+      "documentType": "user_manual",
+      "title": "Philips HeartStart FR3 Technical Reference Manual",
+      "language": null,
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "sha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "contentType": "application/pdf",
+      "byteSize": 3237662,
+      "filePath": "data/research/artifacts/artifacts/sha256/3f/4b/3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_4f5ec25eec1579f6a5c6bd2f",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Philips HeartStart FR3 Technical Reference Manual",
+      "unit": null,
+      "rawText": "Document title: Philips HeartStart FR3 Technical Reference Manual",
+      "documentVersionId": "document_version_b69a2395713b739bec137983",
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "documentSha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_fffc2d954da0941010b5b14e",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_8a401a03d2ca9facffcd746e",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "user_manual",
+      "unit": null,
+      "rawText": "Document type: user_manual",
+      "documentVersionId": "document_version_b69a2395713b739bec137983",
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "documentSha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_08f55f43f47a3a02ba282357",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_be456c591281d513addea481",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "factType": "product.battery",
+      "label": "Аккумулятор",
+      "value": "powered direct",
+      "unit": null,
+      "rawText": "battery-powered direct",
+      "documentVersionId": "document_version_b69a2395713b739bec137983",
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "documentSha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "locator": {
+        "page": 18,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 634
+      },
+      "evidenceCandidateId": "evidence_c6d2371bc504f313adc4a09b",
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.battery",
+        "matchedSynonym:Аккумулятор",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_4104515230ef8bda7947e4cd",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "factType": "product.warnings",
+      "label": "Предупреждения",
+      "value": "Although SMART CPR can be used for adults and children",
+      "unit": null,
+      "rawText": "WARNING: Although SMART CPR can be used for adults and children",
+      "documentVersionId": "document_version_b69a2395713b739bec137983",
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "documentSha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "locator": {
+        "page": 71,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 2946
+      },
+      "evidenceCandidateId": "evidence_3d9a878f37e29f73f9a9c7de",
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_c1cc9ed4ba44969d45dc7a85",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "factType": "product.warnings",
+      "label": "Предупреждения",
+      "value": "Most cardiac arrests in children are not caused by heart",
+      "unit": null,
+      "rawText": "WARNING: Most cardiac arrests in children are not caused by heart",
+      "documentVersionId": "document_version_b69a2395713b739bec137983",
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "documentSha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "locator": {
+        "page": 72,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 2985
+      },
+      "evidenceCandidateId": "evidence_603deee1a9fec6438811ddce",
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_5ba3b9e37afd2c285805add6",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "factType": "product.warnings",
+      "label": "Предупреждения",
+      "value": "9 shocks, 15 minutes of operating time",
+      "unit": null,
+      "rawText": "warning: 9 shocks, 15 minutes of operating time",
+      "documentVersionId": "document_version_b69a2395713b739bec137983",
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "documentSha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "locator": {
+        "page": 98,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 4156
+      },
+      "evidenceCandidateId": "evidence_c9f27f5772b841b17cb08994",
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_b92966adaabe8d4b2069061f",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "factType": "product.warnings",
+      "label": "Предупреждения",
+      "value": "DANGER: IF THE FR3 IS USED TO GIVE A SHOCK IN THE PRESENCE OF",
+      "unit": null,
+      "rawText": "warning: DANGER: IF THE FR3 IS USED TO GIVE A SHOCK IN THE PRESENCE OF",
+      "documentVersionId": "document_version_b69a2395713b739bec137983",
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "documentSha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "locator": {
+        "page": 123,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 5412
+      },
+      "evidenceCandidateId": "evidence_68bbca7238834e251e2bb354",
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.warnings",
+        "matchedSynonym:Предупреждения",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_1cf37677da904f33ef3da405",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Battery",
+      "unit": null,
+      "rawText": "Battery. Long-life battery used",
+      "documentVersionId": "document_version_b69a2395713b739bec137983",
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "documentSha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 59
+      },
+      "evidenceCandidateId": "evidence_6b6c2023e3b2603cf6f2b628",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_091cf96913b521f9f3f4d49a",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Display",
+      "unit": null,
+      "rawText": "Display",
+      "documentVersionId": "document_version_b69a2395713b739bec137983",
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "documentSha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 225
+      },
+      "evidenceCandidateId": "evidence_3d1627c33ef46a8e2e730374",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_b0b5f8a78740639fc329407b",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "weight",
+      "unit": null,
+      "rawText": "weight affected the defibrillation",
+      "documentVersionId": "document_version_b69a2395713b739bec137983",
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "documentSha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "locator": {
+        "page": 28,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1090
+      },
+      "evidenceCandidateId": "evidence_fdd9276b77cb676ee47eb170",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_17525c77b789dd87b087e105",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Dimensions",
+      "unit": null,
+      "rawText": "Dimensions 2.8 in wide x 2.1in high (72 mm x 54 mm).",
+      "documentVersionId": "document_version_b69a2395713b739bec137983",
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "documentSha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "locator": {
+        "page": 94,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 3949
+      },
+      "evidenceCandidateId": "evidence_0be1ee0d51c1c88e5c755392",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_fffc2d954da0941010b5b14e",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_b69a2395713b739bec137983",
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "sha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Philips HeartStart FR3 Technical Reference Manual",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_08f55f43f47a3a02ba282357",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_b69a2395713b739bec137983",
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "sha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: user_manual",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_c6d2371bc504f313adc4a09b",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_b69a2395713b739bec137983",
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "sha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "locator": {
+        "page": 18,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 634
+      },
+      "quotedText": "battery-powered direct",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_3d9a878f37e29f73f9a9c7de",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_b69a2395713b739bec137983",
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "sha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "locator": {
+        "page": 71,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 2946
+      },
+      "quotedText": "WARNING: Although SMART CPR can be used for adults and children",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_603deee1a9fec6438811ddce",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_b69a2395713b739bec137983",
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "sha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "locator": {
+        "page": 72,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 2985
+      },
+      "quotedText": "WARNING: Most cardiac arrests in children are not caused by heart",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_c9f27f5772b841b17cb08994",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_b69a2395713b739bec137983",
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "sha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "locator": {
+        "page": 98,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 4156
+      },
+      "quotedText": "warning: 9 shocks, 15 minutes of operating time",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_68bbca7238834e251e2bb354",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_b69a2395713b739bec137983",
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "sha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "locator": {
+        "page": 123,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 5412
+      },
+      "quotedText": "warning: DANGER: IF THE FR3 IS USED TO GIVE A SHOCK IN THE PRESENCE OF",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_9d1a00c104a2de3192008a27",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Philips HeartStart FR3 Technical Reference Manual",
+        "unit": null
+      },
+      "rawText": "Document title: Philips HeartStart FR3 Technical Reference Manual",
+      "evidenceCandidateIds": [
+        "evidence_fffc2d954da0941010b5b14e"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_97216faa324c741dcf79a6cd",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "user_manual",
+        "unit": null
+      },
+      "rawText": "Document type: user_manual",
+      "evidenceCandidateIds": [
+        "evidence_08f55f43f47a3a02ba282357"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_06499c3a1f8553ce0a2ebe94",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "subjectType": "product",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "powered direct",
+        "unit": null
+      },
+      "rawText": "battery-powered direct",
+      "evidenceCandidateIds": [
+        "evidence_c6d2371bc504f313adc4a09b"
+      ],
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_9f1baf507bc958a54424fa77",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "subjectType": "product",
+      "suggestedClaimType": "product.warnings",
+      "valuePayload": {
+        "value": "Although SMART CPR can be used for adults and children",
+        "unit": null
+      },
+      "rawText": "WARNING: Although SMART CPR can be used for adults and children",
+      "evidenceCandidateIds": [
+        "evidence_3d9a878f37e29f73f9a9c7de"
+      ],
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_c49e62caf1f7bc25ed39cf2b",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "subjectType": "product",
+      "suggestedClaimType": "product.warnings",
+      "valuePayload": {
+        "value": "Most cardiac arrests in children are not caused by heart",
+        "unit": null
+      },
+      "rawText": "WARNING: Most cardiac arrests in children are not caused by heart",
+      "evidenceCandidateIds": [
+        "evidence_603deee1a9fec6438811ddce"
+      ],
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_ba582a65e77219dbdca3e860",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "subjectType": "product",
+      "suggestedClaimType": "product.warnings",
+      "valuePayload": {
+        "value": "9 shocks, 15 minutes of operating time",
+        "unit": null
+      },
+      "rawText": "warning: 9 shocks, 15 minutes of operating time",
+      "evidenceCandidateIds": [
+        "evidence_c9f27f5772b841b17cb08994"
+      ],
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_8d47945640b0bc1087c2a629",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "subjectType": "product",
+      "suggestedClaimType": "product.warnings",
+      "valuePayload": {
+        "value": "DANGER: IF THE FR3 IS USED TO GIVE A SHOCK IN THE PRESENCE OF",
+        "unit": null
+      },
+      "rawText": "warning: DANGER: IF THE FR3 IS USED TO GIVE A SHOCK IN THE PRESENCE OF",
+      "evidenceCandidateIds": [
+        "evidence_68bbca7238834e251e2bb354"
+      ],
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_7df915df39b85e81813c2b9d",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Battery",
+        "unit": null
+      },
+      "rawText": "Battery. Long-life battery used",
+      "evidenceCandidateIds": [
+        "evidence_6b6c2023e3b2603cf6f2b628"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_fce7597a41dd841faed0a447",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Display",
+        "unit": null
+      },
+      "rawText": "Display",
+      "evidenceCandidateIds": [
+        "evidence_3d1627c33ef46a8e2e730374"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_569a369124564daed5094ea5",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "weight",
+        "unit": null
+      },
+      "rawText": "weight affected the defibrillation",
+      "evidenceCandidateIds": [
+        "evidence_fdd9276b77cb676ee47eb170"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_e55094c941a8685145555be1",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "rawText": "Dimensions 2.8 in wide x 2.1in high (72 mm x 54 mm).",
+      "evidenceCandidateIds": [
+        "evidence_0be1ee0d51c1c88e5c755392"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry"
+    ],
+    "patternsMatched": {
+      "registry.generic.battery": 1,
+      "registry.generic.warnings": 4
+    },
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ]
+    },
+    "coveragePercent": 67
+  },
+  "warnings": [
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

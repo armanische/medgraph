@@ -1,0 +1,104 @@
+{
+  "product": {
+    "productSlug": "wave2-philips-heartstart-fr3",
+    "manufacturer": "Philips",
+    "productName": "Philips HeartStart FR3",
+    "model": "HeartStart FR3",
+    "category": "Дефибрилляторы"
+  },
+  "providerDiagnostics": {
+    "providerName": "philips",
+    "strategyUsed": "Philips professional products, support and documentation",
+    "pagesVisited": [
+      "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+    ],
+    "candidateUrls": [
+      "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+    ],
+    "normalizedUrls": [
+      "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": []
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": false,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_534adcd9c71ca4c64ca324e5",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "manufacturer": "Philips",
+      "productName": "Philips HeartStart FR3",
+      "sourceType": "manufacturer_document",
+      "url": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "title": "Philips HeartStart FR3 Technical Reference Manual",
+      "snippet": "Official Philips technical reference manual; current standalone product page was not confirmed.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "manufacturer-hosted document candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official Philips technical reference manual; current standalone product page was not confirmed."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_8c5367cb0efec8952c5dfcf7",
+      "sourceId": "source_534adcd9c71ca4c64ca324e5",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "documentType": "user_manual",
+      "url": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "title": "Philips HeartStart FR3 Technical Reference Manual",
+      "language": null,
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "source URL is itself a document candidate"
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [],
+  "resolverWarnings": [],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": false,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

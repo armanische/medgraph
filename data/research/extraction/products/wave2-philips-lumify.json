@@ -1,0 +1,1782 @@
+{
+  "product": {
+    "productSlug": "wave2-philips-lumify",
+    "manufacturer": "Philips",
+    "productName": "Philips Lumify",
+    "model": "Lumify",
+    "category": "УЗИ аппараты"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_d42acd85906e20a146607579",
+      "documentCandidateId": "document_7e29aa6d5b9169fa45da619e",
+      "sourceId": "source_38281fc7fe5656cefdc30118",
+      "productSlug": "wave2-philips-lumify",
+      "documentKey": "trusted-document:document_7e29aa6d5b9169fa45da619e",
+      "documentType": "brochure",
+      "title": "Lumify 5.1 iOS Brochure PDF | 6.06 MB",
+      "language": null,
+      "sourceUrl": "https://www.documents.philips.com/assets/20250701/a0a69c9f60f041569522b30d003780d2.pdf",
+      "sha256": "6d2eba4665c2a75afaa50088b80cbd886b7c9044f52821084a17ae4db832cb74",
+      "contentType": "application/pdf",
+      "byteSize": 6359061,
+      "filePath": "data/research/artifacts/artifacts/sha256/6d/2e/6d2eba4665c2a75afaa50088b80cbd886b7c9044f52821084a17ae4db832cb74.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_750f0c2b716f5ba4bbd61b9e",
+      "documentCandidateId": "document_70d6384b1525ba0c3f929a2b",
+      "sourceId": "source_38281fc7fe5656cefdc30118",
+      "productSlug": "wave2-philips-lumify",
+      "documentKey": "trusted-document:document_70d6384b1525ba0c3f929a2b",
+      "documentType": "unknown",
+      "title": "Lumify Handheld Ultrasound for Android PDF | 6.60 MB",
+      "language": null,
+      "sourceUrl": "https://www.documents.philips.com/assets/20250709/edeb29c4bcb54049a971b3150044f565.pdf",
+      "sha256": "9d453dd1a74c9043a30a184e7c98970b7b44b052ad6b331e11a1b122849f6029",
+      "contentType": "application/pdf",
+      "byteSize": 6921600,
+      "filePath": "data/research/artifacts/artifacts/sha256/9d/45/9d453dd1a74c9043a30a184e7c98970b7b44b052ad6b331e11a1b122849f6029.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_a6422610aabd0998e856755f",
+      "documentCandidateId": "document_c083a3b99bfbc2493c60b5b0",
+      "sourceId": "source_38281fc7fe5656cefdc30118",
+      "productSlug": "wave2-philips-lumify",
+      "documentKey": "trusted-document:document_c083a3b99bfbc2493c60b5b0",
+      "documentType": "unknown",
+      "title": "Lumify Device Compatibility List PDF | 313.59 KB",
+      "language": null,
+      "sourceUrl": "https://www.documents.philips.com/assets/20250811/40c397e620e74ac7b1ceb33601451281.pdf",
+      "sha256": "0d066ff6167bf69159c2574a21a50e4d9db57ace5f31ec7480a4f85421a88a8a",
+      "contentType": "application/pdf",
+      "byteSize": 321112,
+      "filePath": "data/research/artifacts/artifacts/sha256/0d/06/0d066ff6167bf69159c2574a21a50e4d9db57ace5f31ec7480a4f85421a88a8a.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_7eeb1ee171a924e1f1fd6618",
+      "documentCandidateId": "document_1cb1ef44c62dc8b5ae3680da",
+      "sourceId": "source_38281fc7fe5656cefdc30118",
+      "productSlug": "wave2-philips-lumify",
+      "documentKey": "trusted-document:document_1cb1ef44c62dc8b5ae3680da",
+      "documentType": "user_manual",
+      "title": "Philips Lumify User Manual",
+      "language": "en",
+      "sourceUrl": "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf",
+      "sha256": "1f1869dfd87584600fd958538ef8c3efc364500bf0015c010a5fd6c132b3b24f",
+      "contentType": "application/pdf",
+      "byteSize": 3079001,
+      "filePath": "data/research/artifacts/artifacts/sha256/1f/18/1f1869dfd87584600fd958538ef8c3efc364500bf0015c010a5fd6c132b3b24f.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_04f680bc8c7d48b118dce8e6",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Lumify 5.1 iOS Brochure PDF | 6.06 MB",
+      "unit": null,
+      "rawText": "Document title: Lumify 5.1 iOS Brochure PDF | 6.06 MB",
+      "documentVersionId": "document_version_d42acd85906e20a146607579",
+      "documentCandidateId": "document_7e29aa6d5b9169fa45da619e",
+      "documentSha256": "6d2eba4665c2a75afaa50088b80cbd886b7c9044f52821084a17ae4db832cb74",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250701/a0a69c9f60f041569522b30d003780d2.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_c802f25b31a1b53fdf7321e1",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_409af07c4a65b85027e85071",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_d42acd85906e20a146607579",
+      "documentCandidateId": "document_7e29aa6d5b9169fa45da619e",
+      "documentSha256": "6d2eba4665c2a75afaa50088b80cbd886b7c9044f52821084a17ae4db832cb74",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250701/a0a69c9f60f041569522b30d003780d2.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_8bac1e7aeba773a630d51c51",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_b5ecddf5905b527b52b26598",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "product.operatingModes",
+      "label": "Doppler",
+      "value": "Doppler",
+      "unit": null,
+      "rawText": "Doppler",
+      "documentVersionId": "document_version_d42acd85906e20a146607579",
+      "documentCandidateId": "document_7e29aa6d5b9169fa45da619e",
+      "documentSha256": "6d2eba4665c2a75afaa50088b80cbd886b7c9044f52821084a17ae4db832cb74",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250701/a0a69c9f60f041569522b30d003780d2.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 24
+      },
+      "evidenceCandidateId": "evidence_37d3764022008d3a28086044",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ultrasound",
+        "matchedPattern:doppler",
+        "matchedSynonym:Doppler",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_9ab0c206b3ed3cb6965a2070",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "product.operatingModes",
+      "label": "Doppler",
+      "value": "color Doppler",
+      "unit": null,
+      "rawText": "color Doppler",
+      "documentVersionId": "document_version_d42acd85906e20a146607579",
+      "documentCandidateId": "document_7e29aa6d5b9169fa45da619e",
+      "documentSha256": "6d2eba4665c2a75afaa50088b80cbd886b7c9044f52821084a17ae4db832cb74",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250701/a0a69c9f60f041569522b30d003780d2.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 73
+      },
+      "evidenceCandidateId": "evidence_6379f343f7fbd701f624e83c",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ultrasound",
+        "matchedPattern:doppler",
+        "matchedSynonym:Color Doppler",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_e91fd8031609fa4a58f0bc7b",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "weight",
+      "unit": null,
+      "rawText": "weight in handheld ultrasound**",
+      "documentVersionId": "document_version_d42acd85906e20a146607579",
+      "documentCandidateId": "document_7e29aa6d5b9169fa45da619e",
+      "documentSha256": "6d2eba4665c2a75afaa50088b80cbd886b7c9044f52821084a17ae4db832cb74",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250701/a0a69c9f60f041569522b30d003780d2.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 135
+      },
+      "evidenceCandidateId": "evidence_1e7b57f4c9ca23b54a579f6b",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_dac57d8f29c884ebe3377f55",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "battery",
+      "unit": null,
+      "rawText": "battery life when the",
+      "documentVersionId": "document_version_d42acd85906e20a146607579",
+      "documentCandidateId": "document_7e29aa6d5b9169fa45da619e",
+      "documentSha256": "6d2eba4665c2a75afaa50088b80cbd886b7c9044f52821084a17ae4db832cb74",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250701/a0a69c9f60f041569522b30d003780d2.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 140
+      },
+      "evidenceCandidateId": "evidence_c70c12c34366be1870e417a5",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_2ae883417c62d13f38f6ebf9",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "dimensions",
+      "unit": null,
+      "rawText": "dimensions and weight of the transducers, not including the",
+      "documentVersionId": "document_version_d42acd85906e20a146607579",
+      "documentCandidateId": "document_7e29aa6d5b9169fa45da619e",
+      "documentSha256": "6d2eba4665c2a75afaa50088b80cbd886b7c9044f52821084a17ae4db832cb74",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250701/a0a69c9f60f041569522b30d003780d2.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 145
+      },
+      "evidenceCandidateId": "evidence_6fd2c52b5bf5019b595a3027",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_6f2f50c4c3c8fcba4c253eb8",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Lumify Handheld Ultrasound for Android PDF | 6.60 MB",
+      "unit": null,
+      "rawText": "Document title: Lumify Handheld Ultrasound for Android PDF | 6.60 MB",
+      "documentVersionId": "document_version_750f0c2b716f5ba4bbd61b9e",
+      "documentCandidateId": "document_70d6384b1525ba0c3f929a2b",
+      "documentSha256": "9d453dd1a74c9043a30a184e7c98970b7b44b052ad6b331e11a1b122849f6029",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250709/edeb29c4bcb54049a971b3150044f565.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_d3ae548732ca57fb506b955a",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_f22771f084447511aeac6063",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_750f0c2b716f5ba4bbd61b9e",
+      "documentCandidateId": "document_70d6384b1525ba0c3f929a2b",
+      "documentSha256": "9d453dd1a74c9043a30a184e7c98970b7b44b052ad6b331e11a1b122849f6029",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250709/edeb29c4bcb54049a971b3150044f565.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_cf7a77ff69d76f87cb8ae40f",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_a470fb9b77b0d4bd939ccedc",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "weight",
+      "unit": null,
+      "rawText": "weight in handheld ultrasound†",
+      "documentVersionId": "document_version_750f0c2b716f5ba4bbd61b9e",
+      "documentCandidateId": "document_70d6384b1525ba0c3f929a2b",
+      "documentSha256": "9d453dd1a74c9043a30a184e7c98970b7b44b052ad6b331e11a1b122849f6029",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250709/edeb29c4bcb54049a971b3150044f565.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 157
+      },
+      "evidenceCandidateId": "evidence_2789bdd059f596539c335911",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_f36458ee282ad10762bdb523",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "dimensions",
+      "unit": null,
+      "rawText": "dimensions and weight of the transducers, not including the",
+      "documentVersionId": "document_version_750f0c2b716f5ba4bbd61b9e",
+      "documentCandidateId": "document_70d6384b1525ba0c3f929a2b",
+      "documentSha256": "9d453dd1a74c9043a30a184e7c98970b7b44b052ad6b331e11a1b122849f6029",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250709/edeb29c4bcb54049a971b3150044f565.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 167
+      },
+      "evidenceCandidateId": "evidence_6d675edaed95270b83478c30",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_bc1393a422e6750a51687e43",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Lumify Device Compatibility List PDF | 313.59 KB",
+      "unit": null,
+      "rawText": "Document title: Lumify Device Compatibility List PDF | 313.59 KB",
+      "documentVersionId": "document_version_a6422610aabd0998e856755f",
+      "documentCandidateId": "document_c083a3b99bfbc2493c60b5b0",
+      "documentSha256": "0d066ff6167bf69159c2574a21a50e4d9db57ace5f31ec7480a4f85421a88a8a",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250811/40c397e620e74ac7b1ceb33601451281.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_cd2ec29c7a2d140403701867",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_ff370041d50fc8abdc746e29",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_a6422610aabd0998e856755f",
+      "documentCandidateId": "document_c083a3b99bfbc2493c60b5b0",
+      "documentSha256": "0d066ff6167bf69159c2574a21a50e4d9db57ace5f31ec7480a4f85421a88a8a",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250811/40c397e620e74ac7b1ceb33601451281.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_26855ad6953b85e54b785814",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_8bee528ed141f9d1d50a1beb",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "compatibility",
+      "unit": null,
+      "rawText": "compatibility testing with Lumify. Philips cannot guarantee Lumify system performance with non-compatible devices as",
+      "documentVersionId": "document_version_a6422610aabd0998e856755f",
+      "documentCandidateId": "document_c083a3b99bfbc2493c60b5b0",
+      "documentSha256": "0d066ff6167bf69159c2574a21a50e4d9db57ace5f31ec7480a4f85421a88a8a",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250811/40c397e620e74ac7b1ceb33601451281.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 59
+      },
+      "evidenceCandidateId": "evidence_264c78fa36843616b7be7fbc",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_8045fd7c1eb970b4f8ed0b21",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "battery",
+      "unit": null,
+      "rawText": "battery life and connectivity options.",
+      "documentVersionId": "document_version_a6422610aabd0998e856755f",
+      "documentCandidateId": "document_c083a3b99bfbc2493c60b5b0",
+      "documentSha256": "0d066ff6167bf69159c2574a21a50e4d9db57ace5f31ec7480a4f85421a88a8a",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250811/40c397e620e74ac7b1ceb33601451281.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 127
+      },
+      "evidenceCandidateId": "evidence_364e6c25ca61b8aea09740d1",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_6685b1877803035fe9716afe",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Philips Lumify User Manual",
+      "unit": null,
+      "rawText": "Document title: Philips Lumify User Manual",
+      "documentVersionId": "document_version_7eeb1ee171a924e1f1fd6618",
+      "documentCandidateId": "document_1cb1ef44c62dc8b5ae3680da",
+      "documentSha256": "1f1869dfd87584600fd958538ef8c3efc364500bf0015c010a5fd6c132b3b24f",
+      "sourceUrl": "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_c5d93ca32fbc623271a0cee3",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_ac8e4ba215a44d67d8be8d65",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "document.language",
+      "label": "Язык документа",
+      "value": "en",
+      "unit": null,
+      "rawText": "Document language: en",
+      "documentVersionId": "document_version_7eeb1ee171a924e1f1fd6618",
+      "documentCandidateId": "document_1cb1ef44c62dc8b5ae3680da",
+      "documentSha256": "1f1869dfd87584600fd958538ef8c3efc364500bf0015c010a5fd6c132b3b24f",
+      "sourceUrl": "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_25871322a078df71fa61b985",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_21bb785ce2cf237e4838b453",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "user_manual",
+      "unit": null,
+      "rawText": "Document type: user_manual",
+      "documentVersionId": "document_version_7eeb1ee171a924e1f1fd6618",
+      "documentCandidateId": "document_1cb1ef44c62dc8b5ae3680da",
+      "documentSha256": "1f1869dfd87584600fd958538ef8c3efc364500bf0015c010a5fd6c132b3b24f",
+      "sourceUrl": "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_daae1fd83387858ff6c38202",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_56d693926231b84b392d06e8",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "product.operatingModes",
+      "label": "Doppler",
+      "value": "Doppler",
+      "unit": null,
+      "rawText": "Doppler",
+      "documentVersionId": "document_version_7eeb1ee171a924e1f1fd6618",
+      "documentCandidateId": "document_1cb1ef44c62dc8b5ae3680da",
+      "documentSha256": "1f1869dfd87584600fd958538ef8c3efc364500bf0015c010a5fd6c132b3b24f",
+      "sourceUrl": "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf",
+      "locator": {
+        "page": 10,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 221
+      },
+      "evidenceCandidateId": "evidence_2c8aa534d0acbed2491a0155",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ultrasound",
+        "matchedPattern:doppler",
+        "matchedSynonym:Doppler",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_638ec90358860606435a9e4b",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "product.display",
+      "label": "Дисплей",
+      "value": "TI and MI. They change as the system responds to power-control adjustments",
+      "unit": null,
+      "rawText": "display: TI and MI. They change as the system responds to power-control adjustments",
+      "documentVersionId": "document_version_7eeb1ee171a924e1f1fd6618",
+      "documentCandidateId": "document_1cb1ef44c62dc8b5ae3680da",
+      "documentSha256": "1f1869dfd87584600fd958538ef8c3efc364500bf0015c010a5fd6c132b3b24f",
+      "sourceUrl": "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf",
+      "locator": {
+        "page": 45,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1055
+      },
+      "evidenceCandidateId": "evidence_29c35fb3d2fd283e3bae8d0f",
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.display",
+        "matchedSynonym:Дисплей",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_c50f4dbd53d2d1b9cfef881e",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "product.display",
+      "label": "Дисплей",
+      "value": "1. Touch",
+      "unit": null,
+      "rawText": "display: 1. Touch",
+      "documentVersionId": "document_version_7eeb1ee171a924e1f1fd6618",
+      "documentCandidateId": "document_1cb1ef44c62dc8b5ae3680da",
+      "documentSha256": "1f1869dfd87584600fd958538ef8c3efc364500bf0015c010a5fd6c132b3b24f",
+      "sourceUrl": "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf",
+      "locator": {
+        "page": 107,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 2651
+      },
+      "evidenceCandidateId": "evidence_0610bbafd86f007350641b50",
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.display",
+        "matchedSynonym:Дисплей",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_0915c0b83d0e8c623badd945",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Compatibility",
+      "unit": null,
+      "rawText": "Compatibility........................................................................................................................",
+      "documentVersionId": "document_version_7eeb1ee171a924e1f1fd6618",
+      "documentCandidateId": "document_1cb1ef44c62dc8b5ae3680da",
+      "documentSha256": "1f1869dfd87584600fd958538ef8c3efc364500bf0015c010a5fd6c132b3b24f",
+      "sourceUrl": "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 25
+      },
+      "evidenceCandidateId": "evidence_c96ea9ec0822a44f2887b5cc",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_f05ed1cfd3a763f3417ecd56",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Display",
+      "unit": null,
+      "rawText": "Display........................................................................................................................",
+      "documentVersionId": "document_version_7eeb1ee171a924e1f1fd6618",
+      "documentCandidateId": "document_1cb1ef44c62dc8b5ae3680da",
+      "documentSha256": "1f1869dfd87584600fd958538ef8c3efc364500bf0015c010a5fd6c132b3b24f",
+      "sourceUrl": "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 30
+      },
+      "evidenceCandidateId": "evidence_66edabe59d2a3a410df80f2b",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_508b60d89a38d4a81ce51349",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "battery",
+      "unit": null,
+      "rawText": "battery",
+      "documentVersionId": "document_version_7eeb1ee171a924e1f1fd6618",
+      "documentCandidateId": "document_1cb1ef44c62dc8b5ae3680da",
+      "documentSha256": "1f1869dfd87584600fd958538ef8c3efc364500bf0015c010a5fd6c132b3b24f",
+      "sourceUrl": "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf",
+      "locator": {
+        "page": 20,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 431
+      },
+      "evidenceCandidateId": "evidence_eafb722daac2170fa88701fe",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_ea678a79940316903a1350bc",
+      "productSlug": "wave2-philips-lumify",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Weight",
+      "unit": null,
+      "rawText": "Weight (EFW(BPD, HC, AC, FL))",
+      "documentVersionId": "document_version_7eeb1ee171a924e1f1fd6618",
+      "documentCandidateId": "document_1cb1ef44c62dc8b5ae3680da",
+      "documentSha256": "1f1869dfd87584600fd958538ef8c3efc364500bf0015c010a5fd6c132b3b24f",
+      "sourceUrl": "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf",
+      "locator": {
+        "page": 136,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 3418
+      },
+      "evidenceCandidateId": "evidence_156f257b0ff58231ce4849b6",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_c802f25b31a1b53fdf7321e1",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_d42acd85906e20a146607579",
+      "documentCandidateId": "document_7e29aa6d5b9169fa45da619e",
+      "sha256": "6d2eba4665c2a75afaa50088b80cbd886b7c9044f52821084a17ae4db832cb74",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250701/a0a69c9f60f041569522b30d003780d2.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Lumify 5.1 iOS Brochure PDF | 6.06 MB",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_8bac1e7aeba773a630d51c51",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_d42acd85906e20a146607579",
+      "documentCandidateId": "document_7e29aa6d5b9169fa45da619e",
+      "sha256": "6d2eba4665c2a75afaa50088b80cbd886b7c9044f52821084a17ae4db832cb74",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250701/a0a69c9f60f041569522b30d003780d2.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_37d3764022008d3a28086044",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_d42acd85906e20a146607579",
+      "documentCandidateId": "document_7e29aa6d5b9169fa45da619e",
+      "sha256": "6d2eba4665c2a75afaa50088b80cbd886b7c9044f52821084a17ae4db832cb74",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250701/a0a69c9f60f041569522b30d003780d2.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 24
+      },
+      "quotedText": "Doppler",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_6379f343f7fbd701f624e83c",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_d42acd85906e20a146607579",
+      "documentCandidateId": "document_7e29aa6d5b9169fa45da619e",
+      "sha256": "6d2eba4665c2a75afaa50088b80cbd886b7c9044f52821084a17ae4db832cb74",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250701/a0a69c9f60f041569522b30d003780d2.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 73
+      },
+      "quotedText": "color Doppler",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_d3ae548732ca57fb506b955a",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_750f0c2b716f5ba4bbd61b9e",
+      "documentCandidateId": "document_70d6384b1525ba0c3f929a2b",
+      "sha256": "9d453dd1a74c9043a30a184e7c98970b7b44b052ad6b331e11a1b122849f6029",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250709/edeb29c4bcb54049a971b3150044f565.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Lumify Handheld Ultrasound for Android PDF | 6.60 MB",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_cf7a77ff69d76f87cb8ae40f",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_750f0c2b716f5ba4bbd61b9e",
+      "documentCandidateId": "document_70d6384b1525ba0c3f929a2b",
+      "sha256": "9d453dd1a74c9043a30a184e7c98970b7b44b052ad6b331e11a1b122849f6029",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250709/edeb29c4bcb54049a971b3150044f565.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_cd2ec29c7a2d140403701867",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_a6422610aabd0998e856755f",
+      "documentCandidateId": "document_c083a3b99bfbc2493c60b5b0",
+      "sha256": "0d066ff6167bf69159c2574a21a50e4d9db57ace5f31ec7480a4f85421a88a8a",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250811/40c397e620e74ac7b1ceb33601451281.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Lumify Device Compatibility List PDF | 313.59 KB",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_26855ad6953b85e54b785814",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_a6422610aabd0998e856755f",
+      "documentCandidateId": "document_c083a3b99bfbc2493c60b5b0",
+      "sha256": "0d066ff6167bf69159c2574a21a50e4d9db57ace5f31ec7480a4f85421a88a8a",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250811/40c397e620e74ac7b1ceb33601451281.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_c5d93ca32fbc623271a0cee3",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_7eeb1ee171a924e1f1fd6618",
+      "documentCandidateId": "document_1cb1ef44c62dc8b5ae3680da",
+      "sha256": "1f1869dfd87584600fd958538ef8c3efc364500bf0015c010a5fd6c132b3b24f",
+      "sourceUrl": "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Philips Lumify User Manual",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_25871322a078df71fa61b985",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_7eeb1ee171a924e1f1fd6618",
+      "documentCandidateId": "document_1cb1ef44c62dc8b5ae3680da",
+      "sha256": "1f1869dfd87584600fd958538ef8c3efc364500bf0015c010a5fd6c132b3b24f",
+      "sourceUrl": "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document language: en",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_daae1fd83387858ff6c38202",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_7eeb1ee171a924e1f1fd6618",
+      "documentCandidateId": "document_1cb1ef44c62dc8b5ae3680da",
+      "sha256": "1f1869dfd87584600fd958538ef8c3efc364500bf0015c010a5fd6c132b3b24f",
+      "sourceUrl": "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: user_manual",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_2c8aa534d0acbed2491a0155",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_7eeb1ee171a924e1f1fd6618",
+      "documentCandidateId": "document_1cb1ef44c62dc8b5ae3680da",
+      "sha256": "1f1869dfd87584600fd958538ef8c3efc364500bf0015c010a5fd6c132b3b24f",
+      "sourceUrl": "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf",
+      "locator": {
+        "page": 10,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 221
+      },
+      "quotedText": "Doppler",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_29c35fb3d2fd283e3bae8d0f",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_7eeb1ee171a924e1f1fd6618",
+      "documentCandidateId": "document_1cb1ef44c62dc8b5ae3680da",
+      "sha256": "1f1869dfd87584600fd958538ef8c3efc364500bf0015c010a5fd6c132b3b24f",
+      "sourceUrl": "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf",
+      "locator": {
+        "page": 45,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1055
+      },
+      "quotedText": "display: TI and MI. They change as the system responds to power-control adjustments",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_0610bbafd86f007350641b50",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_7eeb1ee171a924e1f1fd6618",
+      "documentCandidateId": "document_1cb1ef44c62dc8b5ae3680da",
+      "sha256": "1f1869dfd87584600fd958538ef8c3efc364500bf0015c010a5fd6c132b3b24f",
+      "sourceUrl": "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf",
+      "locator": {
+        "page": 107,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 2651
+      },
+      "quotedText": "display: 1. Touch",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_27ef591797dad73ba5588d4d",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Lumify 5.1 iOS Brochure PDF | 6.06 MB",
+        "unit": null
+      },
+      "rawText": "Document title: Lumify 5.1 iOS Brochure PDF | 6.06 MB",
+      "evidenceCandidateIds": [
+        "evidence_c802f25b31a1b53fdf7321e1"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_f9ba55565bcfb35b5ed21a1c",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_8bac1e7aeba773a630d51c51"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_25471ef0a45420bf104a18c5",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Doppler",
+        "unit": null
+      },
+      "rawText": "Doppler",
+      "evidenceCandidateIds": [
+        "evidence_37d3764022008d3a28086044"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_7099812bf86bf95a9ce7f88f",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "color Doppler",
+        "unit": null
+      },
+      "rawText": "color Doppler",
+      "evidenceCandidateIds": [
+        "evidence_6379f343f7fbd701f624e83c"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_d60624df2f2371e46fff3fba",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "weight",
+        "unit": null
+      },
+      "rawText": "weight in handheld ultrasound**",
+      "evidenceCandidateIds": [
+        "evidence_1e7b57f4c9ca23b54a579f6b"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_d5c10d3e7bcc17f8b7ffe94e",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "rawText": "battery life when the",
+      "evidenceCandidateIds": [
+        "evidence_c70c12c34366be1870e417a5"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_d1ddcbe8fb49686046678fce",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "dimensions",
+        "unit": null
+      },
+      "rawText": "dimensions and weight of the transducers, not including the",
+      "evidenceCandidateIds": [
+        "evidence_6fd2c52b5bf5019b595a3027"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_c823719409591f76ed9f7c6a",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Lumify Handheld Ultrasound for Android PDF | 6.60 MB",
+        "unit": null
+      },
+      "rawText": "Document title: Lumify Handheld Ultrasound for Android PDF | 6.60 MB",
+      "evidenceCandidateIds": [
+        "evidence_d3ae548732ca57fb506b955a"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_b1ba70e994afc53e1d358622",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_cf7a77ff69d76f87cb8ae40f"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_5ecacd5f0c68db3ee360df64",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "weight",
+        "unit": null
+      },
+      "rawText": "weight in handheld ultrasound†",
+      "evidenceCandidateIds": [
+        "evidence_2789bdd059f596539c335911"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_0cd35e66e21eb941a62c0b21",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "dimensions",
+        "unit": null
+      },
+      "rawText": "dimensions and weight of the transducers, not including the",
+      "evidenceCandidateIds": [
+        "evidence_6d675edaed95270b83478c30"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_2d29699d3eff98d4992213d6",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Lumify Device Compatibility List PDF | 313.59 KB",
+        "unit": null
+      },
+      "rawText": "Document title: Lumify Device Compatibility List PDF | 313.59 KB",
+      "evidenceCandidateIds": [
+        "evidence_cd2ec29c7a2d140403701867"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_549954b1f67f7d53548417c1",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_26855ad6953b85e54b785814"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_f308b13401faf0010625f41f",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "compatibility",
+        "unit": null
+      },
+      "rawText": "compatibility testing with Lumify. Philips cannot guarantee Lumify system performance with non-compatible devices as",
+      "evidenceCandidateIds": [
+        "evidence_264c78fa36843616b7be7fbc"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_d92d5a01f35ae527fb423d0b",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "rawText": "battery life and connectivity options.",
+      "evidenceCandidateIds": [
+        "evidence_364e6c25ca61b8aea09740d1"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_9823c886242c78f873ea70c7",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Philips Lumify User Manual",
+        "unit": null
+      },
+      "rawText": "Document title: Philips Lumify User Manual",
+      "evidenceCandidateIds": [
+        "evidence_c5d93ca32fbc623271a0cee3"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_04199b9a8e4ecf0d3fe8b420",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "document.language",
+      "valuePayload": {
+        "value": "en",
+        "unit": null
+      },
+      "rawText": "Document language: en",
+      "evidenceCandidateIds": [
+        "evidence_25871322a078df71fa61b985"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_3b69068fa652881589cd5807",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "user_manual",
+        "unit": null
+      },
+      "rawText": "Document type: user_manual",
+      "evidenceCandidateIds": [
+        "evidence_daae1fd83387858ff6c38202"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_619e76022f0e716ebe03aa3a",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Doppler",
+        "unit": null
+      },
+      "rawText": "Doppler",
+      "evidenceCandidateIds": [
+        "evidence_2c8aa534d0acbed2491a0155"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_07478aba1b2dbd2205b1388e",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "TI and MI. They change as the system responds to power-control adjustments",
+        "unit": null
+      },
+      "rawText": "display: TI and MI. They change as the system responds to power-control adjustments",
+      "evidenceCandidateIds": [
+        "evidence_29c35fb3d2fd283e3bae8d0f"
+      ],
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_0b95901b0e5e7ee073251a6f",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "1. Touch",
+        "unit": null
+      },
+      "rawText": "display: 1. Touch",
+      "evidenceCandidateIds": [
+        "evidence_0610bbafd86f007350641b50"
+      ],
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_b111f0654250c2a5437c4bb1",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Compatibility",
+        "unit": null
+      },
+      "rawText": "Compatibility........................................................................................................................",
+      "evidenceCandidateIds": [
+        "evidence_c96ea9ec0822a44f2887b5cc"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_cbf4d5e29b495667bc547811",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Display",
+        "unit": null
+      },
+      "rawText": "Display........................................................................................................................",
+      "evidenceCandidateIds": [
+        "evidence_66edabe59d2a3a410df80f2b"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_7bcd26291d68f983148c73b3",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "rawText": "battery",
+      "evidenceCandidateIds": [
+        "evidence_eafb722daac2170fa88701fe"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_3d900d2a567f1b54a9d84eb5",
+      "productSlug": "wave2-philips-lumify",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "rawText": "Weight (EFW(BPD, HC, AC, FL))",
+      "evidenceCandidateIds": [
+        "evidence_156f257b0ff58231ce4849b6"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "ultrasound"
+    ],
+    "patternsMatched": {
+      "registry.generic.display": 2,
+      "ultrasound.doppler": 3
+    },
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "ultrasound": [
+        "3d_4d",
+        "channels",
+        "elastography",
+        "probe_ports"
+      ]
+    },
+    "coveragePercent": 27
+  },
+  "warnings": [
+    "Resolver adapter used: philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/all-coffee-espresso-machines",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/accessories-collection",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-baristina-espresso-machine-milky-white-bar300-00",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/airfyers",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-artisan-pasta-noodle-maker",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Kitchen-Appliances",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Airfryer",
+    "Resolver rejected offsite document URL: https://www.philips-hue.com/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected unsafe document URL: tel:1-800-722-9377",
+    "Resolver rejected unsafe document URL: tel:1-800-229-6417",
+    "Resolver rejected unsafe document URL: tel:1-800-225-0230",
+    "Resolver rejected unsafe document URL: tel:1-800-345-6443",
+    "Resolver rejected unsafe document URL: tel:1-800-422-9448",
+    "Resolver rejected unsafe document URL: tel:1-800-542-8368",
+    "Resolver rejected unsafe document URL: tel:1-800-228-4728",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://www.adobe.com/es/acrobat/pricing.html?mv=search&amp;mv2=paidsearch&amp;sdid=BDDS3F8G&amp;ef_id=6f0d31b717991d11c4b85672a14576da:G:s&amp;s_kwcid=AL!3085!10!79577362531267!79577498729085&amp;msclkid=6f0d31b717991d11c4b85672a14576da",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "resolver=philips; attempts=7; matchedLinks=27; classifiedDocuments={\"Unknown\":114,\"IFU\":1,\"Brochure\":2}; confidenceDistribution={\"80\":1,\"90\":104,\"100\":12}; duplicatesRemoved=90",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

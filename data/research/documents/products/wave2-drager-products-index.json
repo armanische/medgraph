@@ -1,0 +1,25 @@
+{
+  "product": {
+    "productSlug": "wave2-drager-products-index",
+    "manufacturer": "Drager",
+    "productName": "Wave 2 Drager products index",
+    "model": "Wave 2 discovery index",
+    "category": "Wave 2 source discovery"
+  },
+  "attemptedDownloads": [],
+  "downloadedArtifacts": [],
+  "failedDownloads": [],
+  "skippedDocuments": [],
+  "documentVersions": [],
+  "warnings": [
+    "Resolver fetch failed for https://www.draeger.com/en-us_us/Products: HTTP 404",
+    "Discovery creates candidates only; no verified claims or publication.",
+    "No DocumentCandidate records were available for download."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": false,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}

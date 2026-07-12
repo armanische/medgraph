@@ -1,0 +1,3137 @@
+{
+  "product": {
+    "productSlug": "wave2-philips-intellivue-mx550",
+    "manufacturer": "Philips",
+    "productName": "Philips IntelliVue MX550",
+    "model": "IntelliVue MX550",
+    "category": "Монитор пациента"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_92782b629509a60547721502",
+      "documentCandidateId": "document_e3980f119dc450fade1d42b7",
+      "sourceId": "source_c9e804a1818f4e9d837a6322",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "documentKey": "trusted-document:document_e3980f119dc450fade1d42b7",
+      "documentType": "brochure",
+      "title": "Product Brochure Philips IntelliVue Portable/bedside patient monitor MX550 PDF | 7.53 MB",
+      "language": null,
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/27d8f20bc5114ece8961a77c016a1c14.pdf",
+      "sha256": "8d6d7279a871da4b5abde975f03fe74e3fb55a37a9b1dcaf33f5a38b2a9f126e",
+      "contentType": "application/pdf",
+      "byteSize": 7898702,
+      "filePath": "data/research/artifacts/artifacts/sha256/8d/6d/8d6d7279a871da4b5abde975f03fe74e3fb55a37a9b1dcaf33f5a38b2a9f126e.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sourceId": "source_c9e804a1818f4e9d837a6322",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "documentKey": "trusted-document:document_c66a1d2417d2a27a329157d9",
+      "documentType": "ifu",
+      "title": "IntelliVue MX400/MX450/MX500/MX550 Instructions for Use",
+      "language": "en",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "contentType": "application/pdf",
+      "byteSize": 21094516,
+      "filePath": "data/research/artifacts/artifacts/sha256/9e/da/9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_b9e2d8aa529eadf0b83e057f",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Product Brochure Philips IntelliVue Portable/bedside patient monitor MX550 PDF | 7.53 MB",
+      "unit": null,
+      "rawText": "Document title: Product Brochure Philips IntelliVue Portable/bedside patient monitor MX550 PDF | 7.53 MB",
+      "documentVersionId": "document_version_92782b629509a60547721502",
+      "documentCandidateId": "document_e3980f119dc450fade1d42b7",
+      "documentSha256": "8d6d7279a871da4b5abde975f03fe74e3fb55a37a9b1dcaf33f5a38b2a9f126e",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/27d8f20bc5114ece8961a77c016a1c14.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_bcf62d29ee06f1bdf317f71c",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_51699ea014b077820c66ab85",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_92782b629509a60547721502",
+      "documentCandidateId": "document_e3980f119dc450fade1d42b7",
+      "documentSha256": "8d6d7279a871da4b5abde975f03fe74e3fb55a37a9b1dcaf33f5a38b2a9f126e",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/27d8f20bc5114ece8961a77c016a1c14.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_ede241bb59e0e9f6e08c1a9a",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_054f81305da224b76d4e8d62",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "battery",
+      "unit": null,
+      "rawText": "battery back up to give",
+      "documentVersionId": "document_version_92782b629509a60547721502",
+      "documentCandidateId": "document_e3980f119dc450fade1d42b7",
+      "documentSha256": "8d6d7279a871da4b5abde975f03fe74e3fb55a37a9b1dcaf33f5a38b2a9f126e",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/27d8f20bc5114ece8961a77c016a1c14.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 29
+      },
+      "evidenceCandidateId": "evidence_92dae9b2a4733535575287ad",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_5ad16255accf0166b232b31e",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "display",
+      "unit": null,
+      "rawText": "display brightness. The display, with its ambient light",
+      "documentVersionId": "document_version_92782b629509a60547721502",
+      "documentCandidateId": "document_e3980f119dc450fade1d42b7",
+      "documentSha256": "8d6d7279a871da4b5abde975f03fe74e3fb55a37a9b1dcaf33f5a38b2a9f126e",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/27d8f20bc5114ece8961a77c016a1c14.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 38
+      },
+      "evidenceCandidateId": "evidence_464886161075e70fee1091aa",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_b88a50b9582ccc487472ff35",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "compatibility",
+      "unit": null,
+      "rawText": "compatibility, refer to latest IntelliBridge EC10 external device",
+      "documentVersionId": "document_version_92782b629509a60547721502",
+      "documentCandidateId": "document_e3980f119dc450fade1d42b7",
+      "documentSha256": "8d6d7279a871da4b5abde975f03fe74e3fb55a37a9b1dcaf33f5a38b2a9f126e",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/27d8f20bc5114ece8961a77c016a1c14.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 183
+      },
+      "evidenceCandidateId": "evidence_b719e3c2929430811b1da187",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_0c205cb8354b345f4f15bd56",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "IntelliVue MX400/MX450/MX500/MX550 Instructions for Use",
+      "unit": null,
+      "rawText": "Document title: IntelliVue MX400/MX450/MX500/MX550 Instructions for Use",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_3c75080befe767880fcba95d",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_8d878672024c69c76d1cf86a",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "document.language",
+      "label": "Язык документа",
+      "value": "en",
+      "unit": null,
+      "rawText": "Document language: en",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_292ab6d665faa9813ea2162c",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_c73bf75aae5715f9fc30ed50",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "ifu",
+      "unit": null,
+      "rawText": "Document type: ifu",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_9ce19363c6aabe82c7b32291",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_7a89eaad162629207377105c",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.measurementRanges",
+      "label": "Параметры мониторинга",
+      "value": "etCO2, awRR",
+      "unit": null,
+      "rawText": "parameters: etCO2, awRR",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 312,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 12831
+      },
+      "evidenceCandidateId": "evidence_c599a04d8d19283dd8bd7b35",
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:patient-monitor",
+        "matchedPattern:parameters",
+        "matchedSynonym:Parameters",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_2c23a2d4fff176dd906a3533",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.measurementRanges",
+      "label": "Параметры мониторинга",
+      "value": "• Heart rate",
+      "unit": null,
+      "rawText": "parameters: • Heart rate",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 462,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 17381
+      },
+      "evidenceCandidateId": "evidence_9bc8dd2ba9cb4385405c3e6b",
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:patient-monitor",
+        "matchedPattern:parameters",
+        "matchedSynonym:Parameters",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_e73462164279a98cad4722e1",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "328",
+      "unit": "inch",
+      "rawText": "Display 328 In",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 230
+      },
+      "evidenceCandidateId": "evidence_ad372a9a27dddad4058adf3a",
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:patient-monitor",
+        "matchedPattern:screen",
+        "matchedSynonym:Display",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_ea00a409f51b377a2dc01511",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.accessories",
+      "label": "Модули",
+      "value": "specific key, as in this case",
+      "unit": null,
+      "rawText": "module-specific key, as in this case",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 23,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 805
+      },
+      "evidenceCandidateId": "evidence_872435362af768a65aeab172",
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:patient-monitor",
+        "matchedPattern:modules",
+        "matchedSynonym:Modules",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_f9201f719e55a85ec67cc7d0",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.accessories",
+      "label": "Модули",
+      "value": "labeled as TEMP in all languages",
+      "unit": null,
+      "rawText": "module - labeled as TEMP in all languages",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 263,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 11153
+      },
+      "evidenceCandidateId": "evidence_91d0951e49501538e33bdaed",
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:patient-monitor",
+        "matchedPattern:modules",
+        "matchedSynonym:Modules",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_3a1c8607624701bad4badfed",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.accessories",
+      "label": "Модули",
+      "value": "1 Place the water trap in the vertical position",
+      "unit": null,
+      "rawText": "module: 1 Place the water trap in the vertical position",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 329,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 13336
+      },
+      "evidenceCandidateId": "evidence_9ce939c064330eaa9da67eba",
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:patient-monitor",
+        "matchedPattern:modules",
+        "matchedSynonym:Modules",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_c8cc337a5541ea18f9f64136",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.accessories",
+      "label": "Модули",
+      "value": "Insert the module into the Module Rack or integrated module slot",
+      "unit": null,
+      "rawText": "module: Insert the module into the Module Rack or integrated module slot",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 447,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 17070
+      },
+      "evidenceCandidateId": "evidence_dd8e967f2aaedd7eeaa59d6a",
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:patient-monitor",
+        "matchedPattern:modules",
+        "matchedSynonym:Modules",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_e6fc835300209b008f4713f7",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.power",
+      "label": "Питание",
+      "value": "infinite",
+      "unit": null,
+      "rawText": "power supply: infinite",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 546,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 21097
+      },
+      "evidenceCandidateId": "evidence_638dd76980b0218d1dba806f",
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.power",
+        "matchedSynonym:Питание",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_0d020e1d01680756ad56cbc7",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.battery",
+      "label": "Аккумулятор",
+      "value": "X2/X3 (yellow)",
+      "unit": null,
+      "rawText": "Battery - X2/X3 (yellow)",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 75,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 2524
+      },
+      "evidenceCandidateId": "evidence_b8a3e2e353068023e6a31539",
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.battery",
+        "matchedSynonym:Аккумулятор",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_792915b93635ab24225f24e2",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.battery",
+      "label": "Аккумулятор",
+      "value": "(configurable to light blue, yellow or red)",
+      "unit": null,
+      "rawText": "Battery - (configurable to light blue, yellow or red)",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 75,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 2525
+      },
+      "evidenceCandidateId": "evidence_7f1c2eee57bdb827361908e6",
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.battery",
+        "matchedSynonym:Аккумулятор",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_c218b541dbf841e9768d3cf1",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.battery",
+      "label": "Аккумулятор",
+      "value": "powered operating time is less than 10 minutes. Replace the battery",
+      "unit": null,
+      "rawText": "battery-powered operating time is less than 10 minutes. Replace the battery",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 100,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 4044
+      },
+      "evidenceCandidateId": "evidence_52dc594de2f92c2743d310e2",
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.battery",
+        "matchedSynonym:Аккумулятор",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_015fdc0eaa77739ea6e69e7a",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.battery",
+      "label": "Аккумулятор",
+      "value": "powered operating time remaining is less than 20 minutes",
+      "unit": null,
+      "rawText": "battery-powered operating time remaining is less than 20 minutes",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 100,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 4054
+      },
+      "evidenceCandidateId": "evidence_b5663d12b5d9a01ad9f379e6",
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.battery",
+        "matchedSynonym:Аккумулятор",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_fa82255917709dd84a46eea0",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.battery",
+      "label": "Аккумулятор",
+      "value": "powered operating remaining time is less than 10 minutes. Replace the battery in",
+      "unit": null,
+      "rawText": "battery-powered operating remaining time is less than 10 minutes. Replace the battery in",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 100,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 4085
+      },
+      "evidenceCandidateId": "evidence_812ba698afad732f69318a60",
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.battery",
+        "matchedSynonym:Аккумулятор",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_daf86b26969ba142077100c2",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.battery",
+      "label": "Аккумулятор",
+      "value": "powered, you cannot monitor during transport",
+      "unit": null,
+      "rawText": "battery-powered, you cannot monitor during transport",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 137,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 6660
+      },
+      "evidenceCandidateId": "evidence_11d5da7eda486ef46bbcc585",
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.battery",
+        "matchedSynonym:Аккумулятор",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_5cbe217babfbcda9370017c8",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.battery",
+      "label": "Аккумулятор",
+      "value": "operated monitoring but also requires care in use and handling of the batteries",
+      "unit": null,
+      "rawText": "battery-operated monitoring but also requires care in use and handling of the batteries",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 467,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 17608
+      },
+      "evidenceCandidateId": "evidence_d7ace85b4ee34d1d7e668289",
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.battery",
+        "matchedSynonym:Аккумулятор",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_186d2f41538755c21dcad940",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.battery",
+      "label": "Аккумулятор",
+      "value": "powered and mains-powered (AC) operation without interrupting",
+      "unit": null,
+      "rawText": "battery-powered and mains-powered (AC) operation without interrupting",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 467,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 17612
+      },
+      "evidenceCandidateId": "evidence_bb87e2c82129e40527784a2d",
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.battery",
+        "matchedSynonym:Аккумулятор",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_669b3796c0ba7a0316351e9c",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.battery",
+      "label": "Аккумулятор",
+      "value": "time is stored but a hold time is not specified, as",
+      "unit": null,
+      "rawText": "battery: time is stored but a hold time is not specified, as",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 547,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 21161
+      },
+      "evidenceCandidateId": "evidence_eb039ffaf5fdadafbae89688",
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.battery",
+        "matchedSynonym:Аккумулятор",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_30439ebc91fb8d43aeffe3a8",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.battery",
+      "label": "Аккумулятор",
+      "value": "at least 48 hours",
+      "unit": null,
+      "rawText": "battery: at least 48 hours",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 547,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 21164
+      },
+      "evidenceCandidateId": "evidence_6e9202f7586466c95591478b",
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.battery",
+        "matchedSynonym:Аккумулятор",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_a4cdd21ed7fe653fdc1810d3",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.battery",
+      "label": "Аккумулятор",
+      "value": "memory is buffered but a hold time is not",
+      "unit": null,
+      "rawText": "battery: memory is buffered but a hold time is not",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 547,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 21166
+      },
+      "evidenceCandidateId": "evidence_fd58eba6834120773f977c20",
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.battery",
+        "matchedSynonym:Аккумулятор",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_1778f3da7f15ed8d6eef1679",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.battery",
+      "label": "Аккумулятор",
+      "value": "at least 4 hours",
+      "unit": null,
+      "rawText": "battery: at least 4 hours",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 547,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 21169
+      },
+      "evidenceCandidateId": "evidence_72630434234c05b947cdcf6a",
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.battery",
+        "matchedSynonym:Аккумулятор",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_773b779f2e917e9fa045c098",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.measurementRanges",
+      "label": "Диапазон измерений",
+      "value": "4 0 t o 3 6 0m m H g ( - 5t o4 8k P a )",
+      "unit": null,
+      "rawText": "Measurement Range - 4 0 t o 3 6 0m m H g ( - 5t o4 8k P a )",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 571,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 22358
+      },
+      "evidenceCandidateId": "evidence_2569b621e9f6d36489b969b2",
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.measurementRanges",
+        "matchedSynonym:Диапазон измерений",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_822f5c877da38493dee99486",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.accuracy",
+      "label": "Точность",
+      "value": "Accuracy of the CCO measurement and all the derived values may be influenced by",
+      "unit": null,
+      "rawText": "accuracy - Accuracy of the CCO measurement and all the derived values may be influenced by",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 302,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 12508
+      },
+      "evidenceCandidateId": "evidence_b886a5324df6a90f60b4e05d",
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_1824d8689338a4231140d3bc",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.accuracy",
+      "label": "Точность",
+      "value": "When sensors are used on neonatal subjects as recommended, the specified accuracy range is",
+      "unit": null,
+      "rawText": "accuracy: When sensors are used on neonatal subjects as recommended, the specified accuracy range is",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 562,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 21907
+      },
+      "evidenceCandidateId": "evidence_66359bc1cedec341470fe510",
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accuracy",
+        "matchedSynonym:Точность",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_5ac8a125a2ddf627865db3e2",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.interfaces",
+      "label": "Интерфейсы",
+      "value": "• Standard wired LAN",
+      "unit": null,
+      "rawText": "interfaces: • Standard wired LAN",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 63,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 2139
+      },
+      "evidenceCandidateId": "evidence_1692c8a7ffccd94d43035ca6",
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.interfaces",
+        "matchedSynonym:Интерфейсы",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_dc664e5d308052c722f398f2",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.interfaces",
+      "label": "Интерфейсы",
+      "value": "• Additional USB slots",
+      "unit": null,
+      "rawText": "interface: • Additional USB slots",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 528,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 20233
+      },
+      "evidenceCandidateId": "evidence_92c2af203673eefaf8ab75a3",
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.interfaces",
+        "matchedSynonym:Интерфейсы",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_672dbd44a0fc34119d92c081",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.compatibility",
+      "label": "Совместимость",
+      "value": "Using accessories other than those specified may result in increased",
+      "unit": null,
+      "rawText": "compatibility: Using accessories other than those specified may result in increased",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 17,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 570
+      },
+      "evidenceCandidateId": "evidence_a3bfb06c7cee267d80117c50",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.compatibility",
+        "matchedSynonym:Совместимость",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_ba6af790599f70648c65ec51",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.accessories",
+      "label": "Принадлежности",
+      "value": "Dräger Accessories",
+      "unit": null,
+      "rawText": "Accessories: Dräger Accessories",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 513,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 19491
+      },
+      "evidenceCandidateId": "evidence_35775184b7e8e8f97be6f938",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.accessories",
+        "matchedSynonym:Принадлежности",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_f53c787347d65c82e8201e87",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "product.contraindications",
+      "label": "Противопоказания",
+      "value": "The NMT measurement is contraindicated for use on patients with nerve damage or other neuromuscular",
+      "unit": null,
+      "rawText": "Contraindication: The NMT measurement is contraindicated for use on patients with nerve damage or other neuromuscular",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 360,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 14320
+      },
+      "evidenceCandidateId": "evidence_859eb1a66fcb1fc65ca2a798",
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.contraindications",
+        "matchedSynonym:Противопоказания",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_68bee6016ccf85b1e734459e",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Display",
+      "unit": null,
+      "rawText": "Display 53",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 20
+      },
+      "evidenceCandidateId": "evidence_4616dea58e5fd3e12bec65b4",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_e5fa08a3d9c1685f4ec9b372",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Battery",
+      "unit": null,
+      "rawText": "Battery Power Indicators 468",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 11,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 361
+      },
+      "evidenceCandidateId": "evidence_23e01127860bb0de2a51b86d",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_515ef8a0e4721972f4d47142",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Compatibility",
+      "unit": null,
+      "rawText": "Compatibility with Disinfectants 475",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 11,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 371
+      },
+      "evidenceCandidateId": "evidence_1207718619b8908036e5ad49",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_9ce93ea62b2f068e34f968f6",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "weight",
+      "unit": null,
+      "rawText": "weight",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 111,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 4969
+      },
+      "evidenceCandidateId": "evidence_c3cfb32ebd391a67131eafc1",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_354a9c40ac0b8753a0388cc1",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "flow rate",
+      "unit": null,
+      "rawText": "flow rate of a system",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 289,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 11982
+      },
+      "evidenceCandidateId": "evidence_2a840e2bb2ca2a5fb823e596",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_173c14e8d617002155a83aa2",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "tidal volume",
+      "unit": null,
+      "rawText": "tidal volume, and no spontaneous breaths. SVV is always",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 305,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 12615
+      },
+      "evidenceCandidateId": "evidence_018672520af6ae59ad7e7220",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_5ca32c965b2036909df36631",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "minute volume",
+      "unit": null,
+      "rawText": "minute volume values: Using a sidestream measurement on patients receiving closed-",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "documentSha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 312,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 12801
+      },
+      "evidenceCandidateId": "evidence_64fedc6af08a595c4ae20843",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_bcf62d29ee06f1bdf317f71c",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_92782b629509a60547721502",
+      "documentCandidateId": "document_e3980f119dc450fade1d42b7",
+      "sha256": "8d6d7279a871da4b5abde975f03fe74e3fb55a37a9b1dcaf33f5a38b2a9f126e",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/27d8f20bc5114ece8961a77c016a1c14.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Product Brochure Philips IntelliVue Portable/bedside patient monitor MX550 PDF | 7.53 MB",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ede241bb59e0e9f6e08c1a9a",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_92782b629509a60547721502",
+      "documentCandidateId": "document_e3980f119dc450fade1d42b7",
+      "sha256": "8d6d7279a871da4b5abde975f03fe74e3fb55a37a9b1dcaf33f5a38b2a9f126e",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/27d8f20bc5114ece8961a77c016a1c14.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_3c75080befe767880fcba95d",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: IntelliVue MX400/MX450/MX500/MX550 Instructions for Use",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_292ab6d665faa9813ea2162c",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document language: en",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_9ce19363c6aabe82c7b32291",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: ifu",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_c599a04d8d19283dd8bd7b35",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 312,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 12831
+      },
+      "quotedText": "parameters: etCO2, awRR",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_9bc8dd2ba9cb4385405c3e6b",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 462,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 17381
+      },
+      "quotedText": "parameters: • Heart rate",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ad372a9a27dddad4058adf3a",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 230
+      },
+      "quotedText": "Display 328 In",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_872435362af768a65aeab172",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 23,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 805
+      },
+      "quotedText": "module-specific key, as in this case",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_91d0951e49501538e33bdaed",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 263,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 11153
+      },
+      "quotedText": "module - labeled as TEMP in all languages",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_9ce939c064330eaa9da67eba",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 329,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 13336
+      },
+      "quotedText": "module: 1 Place the water trap in the vertical position",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_dd8e967f2aaedd7eeaa59d6a",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 447,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 17070
+      },
+      "quotedText": "module: Insert the module into the Module Rack or integrated module slot",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_638dd76980b0218d1dba806f",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 546,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 21097
+      },
+      "quotedText": "power supply: infinite",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_b8a3e2e353068023e6a31539",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 75,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 2524
+      },
+      "quotedText": "Battery - X2/X3 (yellow)",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_7f1c2eee57bdb827361908e6",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 75,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 2525
+      },
+      "quotedText": "Battery - (configurable to light blue, yellow or red)",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_52dc594de2f92c2743d310e2",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 100,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 4044
+      },
+      "quotedText": "battery-powered operating time is less than 10 minutes. Replace the battery",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_b5663d12b5d9a01ad9f379e6",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 100,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 4054
+      },
+      "quotedText": "battery-powered operating time remaining is less than 20 minutes",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_812ba698afad732f69318a60",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 100,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 4085
+      },
+      "quotedText": "battery-powered operating remaining time is less than 10 minutes. Replace the battery in",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_11d5da7eda486ef46bbcc585",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 137,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 6660
+      },
+      "quotedText": "battery-powered, you cannot monitor during transport",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_d7ace85b4ee34d1d7e668289",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 467,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 17608
+      },
+      "quotedText": "battery-operated monitoring but also requires care in use and handling of the batteries",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_bb87e2c82129e40527784a2d",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 467,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 17612
+      },
+      "quotedText": "battery-powered and mains-powered (AC) operation without interrupting",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_eb039ffaf5fdadafbae89688",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 547,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 21161
+      },
+      "quotedText": "battery: time is stored but a hold time is not specified, as",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_6e9202f7586466c95591478b",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 547,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 21164
+      },
+      "quotedText": "battery: at least 48 hours",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_fd58eba6834120773f977c20",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 547,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 21166
+      },
+      "quotedText": "battery: memory is buffered but a hold time is not",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_72630434234c05b947cdcf6a",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 547,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 21169
+      },
+      "quotedText": "battery: at least 4 hours",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_2569b621e9f6d36489b969b2",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 571,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 22358
+      },
+      "quotedText": "Measurement Range - 4 0 t o 3 6 0m m H g ( - 5t o4 8k P a )",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_b886a5324df6a90f60b4e05d",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 302,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 12508
+      },
+      "quotedText": "accuracy - Accuracy of the CCO measurement and all the derived values may be influenced by",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_66359bc1cedec341470fe510",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 562,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 21907
+      },
+      "quotedText": "accuracy: When sensors are used on neonatal subjects as recommended, the specified accuracy range is",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_1692c8a7ffccd94d43035ca6",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 63,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 2139
+      },
+      "quotedText": "interfaces: • Standard wired LAN",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_92c2af203673eefaf8ab75a3",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 528,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 20233
+      },
+      "quotedText": "interface: • Additional USB slots",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_a3bfb06c7cee267d80117c50",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 17,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 570
+      },
+      "quotedText": "compatibility: Using accessories other than those specified may result in increased",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_35775184b7e8e8f97be6f938",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 513,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 19491
+      },
+      "quotedText": "Accessories: Dräger Accessories",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_859eb1a66fcb1fc65ca2a798",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_99351556830b4ffc26200998",
+      "documentCandidateId": "document_c66a1d2417d2a27a329157d9",
+      "sha256": "9eda16f31546be3edbd5a1f71cf14455ffad309ff09d535ff16150c96d1e0e23",
+      "sourceUrl": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "locator": {
+        "page": 360,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 14320
+      },
+      "quotedText": "Contraindication: The NMT measurement is contraindicated for use on patients with nerve damage or other neuromuscular",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_b54fd2b75dd6f86c6a3d1e11",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Product Brochure Philips IntelliVue Portable/bedside patient monitor MX550 PDF | 7.53 MB",
+        "unit": null
+      },
+      "rawText": "Document title: Product Brochure Philips IntelliVue Portable/bedside patient monitor MX550 PDF | 7.53 MB",
+      "evidenceCandidateIds": [
+        "evidence_bcf62d29ee06f1bdf317f71c"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_684b560539d11fc0dbd8f14f",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_ede241bb59e0e9f6e08c1a9a"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_fe4d35b99fb6e181cbe10c95",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "rawText": "battery back up to give",
+      "evidenceCandidateIds": [
+        "evidence_92dae9b2a4733535575287ad"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_2232ab572d1d8fda2f74452c",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "rawText": "display brightness. The display, with its ambient light",
+      "evidenceCandidateIds": [
+        "evidence_464886161075e70fee1091aa"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_2becc0a761a5df38da27397d",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "compatibility",
+        "unit": null
+      },
+      "rawText": "compatibility, refer to latest IntelliBridge EC10 external device",
+      "evidenceCandidateIds": [
+        "evidence_b719e3c2929430811b1da187"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_50fc44cd19b8cffc18ec74cf",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "IntelliVue MX400/MX450/MX500/MX550 Instructions for Use",
+        "unit": null
+      },
+      "rawText": "Document title: IntelliVue MX400/MX450/MX500/MX550 Instructions for Use",
+      "evidenceCandidateIds": [
+        "evidence_3c75080befe767880fcba95d"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_e3a54cc710710f5638d21ca2",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "document.language",
+      "valuePayload": {
+        "value": "en",
+        "unit": null
+      },
+      "rawText": "Document language: en",
+      "evidenceCandidateIds": [
+        "evidence_292ab6d665faa9813ea2162c"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_a1bf5da15bca5bc100dff38f",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "ifu",
+        "unit": null
+      },
+      "rawText": "Document type: ifu",
+      "evidenceCandidateIds": [
+        "evidence_9ce19363c6aabe82c7b32291"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_83fc1631e63506567f9a2d4d",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.measurementRanges",
+      "valuePayload": {
+        "value": "etCO2, awRR",
+        "unit": null
+      },
+      "rawText": "parameters: etCO2, awRR",
+      "evidenceCandidateIds": [
+        "evidence_c599a04d8d19283dd8bd7b35"
+      ],
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_988c70494bfaad1cd5b8dcd5",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.measurementRanges",
+      "valuePayload": {
+        "value": "• Heart rate",
+        "unit": null
+      },
+      "rawText": "parameters: • Heart rate",
+      "evidenceCandidateIds": [
+        "evidence_9bc8dd2ba9cb4385405c3e6b"
+      ],
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_232e2dcc98cae113ff50420c",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "328",
+        "unit": "inch"
+      },
+      "rawText": "Display 328 In",
+      "evidenceCandidateIds": [
+        "evidence_ad372a9a27dddad4058adf3a"
+      ],
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_71ec43f19d5091e8f7f1517b",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.accessories",
+      "valuePayload": {
+        "value": "specific key, as in this case",
+        "unit": null
+      },
+      "rawText": "module-specific key, as in this case",
+      "evidenceCandidateIds": [
+        "evidence_872435362af768a65aeab172"
+      ],
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_6c0912664494b94fa6d068c7",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.accessories",
+      "valuePayload": {
+        "value": "labeled as TEMP in all languages",
+        "unit": null
+      },
+      "rawText": "module - labeled as TEMP in all languages",
+      "evidenceCandidateIds": [
+        "evidence_91d0951e49501538e33bdaed"
+      ],
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_e5e5c090be8ffd2f24855dac",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.accessories",
+      "valuePayload": {
+        "value": "1 Place the water trap in the vertical position",
+        "unit": null
+      },
+      "rawText": "module: 1 Place the water trap in the vertical position",
+      "evidenceCandidateIds": [
+        "evidence_9ce939c064330eaa9da67eba"
+      ],
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_25b4859bf760b42a2e6369e3",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.accessories",
+      "valuePayload": {
+        "value": "Insert the module into the Module Rack or integrated module slot",
+        "unit": null
+      },
+      "rawText": "module: Insert the module into the Module Rack or integrated module slot",
+      "evidenceCandidateIds": [
+        "evidence_dd8e967f2aaedd7eeaa59d6a"
+      ],
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_515168156bdccd4fdc0794ff",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.power",
+      "valuePayload": {
+        "value": "infinite",
+        "unit": null
+      },
+      "rawText": "power supply: infinite",
+      "evidenceCandidateIds": [
+        "evidence_638dd76980b0218d1dba806f"
+      ],
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_4179251e58699ab8e7d04fb4",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "X2/X3 (yellow)",
+        "unit": null
+      },
+      "rawText": "Battery - X2/X3 (yellow)",
+      "evidenceCandidateIds": [
+        "evidence_b8a3e2e353068023e6a31539"
+      ],
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_fc0cb1fa756e08706ce88027",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "(configurable to light blue, yellow or red)",
+        "unit": null
+      },
+      "rawText": "Battery - (configurable to light blue, yellow or red)",
+      "evidenceCandidateIds": [
+        "evidence_7f1c2eee57bdb827361908e6"
+      ],
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_3a4b88bb1fa0d91682cbd494",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "powered operating time is less than 10 minutes. Replace the battery",
+        "unit": null
+      },
+      "rawText": "battery-powered operating time is less than 10 minutes. Replace the battery",
+      "evidenceCandidateIds": [
+        "evidence_52dc594de2f92c2743d310e2"
+      ],
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_eaa2ee9d2c8369e7e12623e8",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "powered operating time remaining is less than 20 minutes",
+        "unit": null
+      },
+      "rawText": "battery-powered operating time remaining is less than 20 minutes",
+      "evidenceCandidateIds": [
+        "evidence_b5663d12b5d9a01ad9f379e6"
+      ],
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_2fc7a23d8d0209620df66f2a",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "powered operating remaining time is less than 10 minutes. Replace the battery in",
+        "unit": null
+      },
+      "rawText": "battery-powered operating remaining time is less than 10 minutes. Replace the battery in",
+      "evidenceCandidateIds": [
+        "evidence_812ba698afad732f69318a60"
+      ],
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_bf5f34f32c52fcb4e9b124f7",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "powered, you cannot monitor during transport",
+        "unit": null
+      },
+      "rawText": "battery-powered, you cannot monitor during transport",
+      "evidenceCandidateIds": [
+        "evidence_11d5da7eda486ef46bbcc585"
+      ],
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_e1e5a010dccf4d9679f2665e",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "operated monitoring but also requires care in use and handling of the batteries",
+        "unit": null
+      },
+      "rawText": "battery-operated monitoring but also requires care in use and handling of the batteries",
+      "evidenceCandidateIds": [
+        "evidence_d7ace85b4ee34d1d7e668289"
+      ],
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_47f4a2eecbd47b1481cd5151",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "powered and mains-powered (AC) operation without interrupting",
+        "unit": null
+      },
+      "rawText": "battery-powered and mains-powered (AC) operation without interrupting",
+      "evidenceCandidateIds": [
+        "evidence_bb87e2c82129e40527784a2d"
+      ],
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_0dedce74e91945fd0be84dd0",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "time is stored but a hold time is not specified, as",
+        "unit": null
+      },
+      "rawText": "battery: time is stored but a hold time is not specified, as",
+      "evidenceCandidateIds": [
+        "evidence_eb039ffaf5fdadafbae89688"
+      ],
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_6324b0f94c87e1a170e07847",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "at least 48 hours",
+        "unit": null
+      },
+      "rawText": "battery: at least 48 hours",
+      "evidenceCandidateIds": [
+        "evidence_6e9202f7586466c95591478b"
+      ],
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_c22f7732f9fbafa04144e761",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "memory is buffered but a hold time is not",
+        "unit": null
+      },
+      "rawText": "battery: memory is buffered but a hold time is not",
+      "evidenceCandidateIds": [
+        "evidence_fd58eba6834120773f977c20"
+      ],
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_3793e0ad7ca264d40e5dea41",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "at least 4 hours",
+        "unit": null
+      },
+      "rawText": "battery: at least 4 hours",
+      "evidenceCandidateIds": [
+        "evidence_72630434234c05b947cdcf6a"
+      ],
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_4c3a45087f23d580030d7969",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.measurementRanges",
+      "valuePayload": {
+        "value": "4 0 t o 3 6 0m m H g ( - 5t o4 8k P a )",
+        "unit": null
+      },
+      "rawText": "Measurement Range - 4 0 t o 3 6 0m m H g ( - 5t o4 8k P a )",
+      "evidenceCandidateIds": [
+        "evidence_2569b621e9f6d36489b969b2"
+      ],
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_b6563c6887dfa458c48b59bf",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.accuracy",
+      "valuePayload": {
+        "value": "Accuracy of the CCO measurement and all the derived values may be influenced by",
+        "unit": null
+      },
+      "rawText": "accuracy - Accuracy of the CCO measurement and all the derived values may be influenced by",
+      "evidenceCandidateIds": [
+        "evidence_b886a5324df6a90f60b4e05d"
+      ],
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_01658a143c15bdb25f93702e",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.accuracy",
+      "valuePayload": {
+        "value": "When sensors are used on neonatal subjects as recommended, the specified accuracy range is",
+        "unit": null
+      },
+      "rawText": "accuracy: When sensors are used on neonatal subjects as recommended, the specified accuracy range is",
+      "evidenceCandidateIds": [
+        "evidence_66359bc1cedec341470fe510"
+      ],
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_4a74563c757d12f8c715d44b",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.interfaces",
+      "valuePayload": {
+        "value": "• Standard wired LAN",
+        "unit": null
+      },
+      "rawText": "interfaces: • Standard wired LAN",
+      "evidenceCandidateIds": [
+        "evidence_1692c8a7ffccd94d43035ca6"
+      ],
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_3237a0e807f8b9bc3a159477",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.interfaces",
+      "valuePayload": {
+        "value": "• Additional USB slots",
+        "unit": null
+      },
+      "rawText": "interface: • Additional USB slots",
+      "evidenceCandidateIds": [
+        "evidence_92c2af203673eefaf8ab75a3"
+      ],
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_03d7ff76387a627d112e5552",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.compatibility",
+      "valuePayload": {
+        "value": "Using accessories other than those specified may result in increased",
+        "unit": null
+      },
+      "rawText": "compatibility: Using accessories other than those specified may result in increased",
+      "evidenceCandidateIds": [
+        "evidence_a3bfb06c7cee267d80117c50"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_623340d1e22534f47622a852",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.accessories",
+      "valuePayload": {
+        "value": "Dräger Accessories",
+        "unit": null
+      },
+      "rawText": "Accessories: Dräger Accessories",
+      "evidenceCandidateIds": [
+        "evidence_35775184b7e8e8f97be6f938"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_0c9f821476b67a77c39601dd",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "product.contraindications",
+      "valuePayload": {
+        "value": "The NMT measurement is contraindicated for use on patients with nerve damage or other neuromuscular",
+        "unit": null
+      },
+      "rawText": "Contraindication: The NMT measurement is contraindicated for use on patients with nerve damage or other neuromuscular",
+      "evidenceCandidateIds": [
+        "evidence_859eb1a66fcb1fc65ca2a798"
+      ],
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_2a1b53bb7cdc8d30cd997816",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Display",
+        "unit": null
+      },
+      "rawText": "Display 53",
+      "evidenceCandidateIds": [
+        "evidence_4616dea58e5fd3e12bec65b4"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_69cc33a8a97eac9134e1b3c3",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Battery",
+        "unit": null
+      },
+      "rawText": "Battery Power Indicators 468",
+      "evidenceCandidateIds": [
+        "evidence_23e01127860bb0de2a51b86d"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_8c1f753d64a0d3333547cd06",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Compatibility",
+        "unit": null
+      },
+      "rawText": "Compatibility with Disinfectants 475",
+      "evidenceCandidateIds": [
+        "evidence_1207718619b8908036e5ad49"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_6b9776eb28cb15cc652eaee0",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "weight",
+        "unit": null
+      },
+      "rawText": "weight",
+      "evidenceCandidateIds": [
+        "evidence_c3cfb32ebd391a67131eafc1"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_ddba8989f2409ae252c05dbb",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "flow rate",
+        "unit": null
+      },
+      "rawText": "flow rate of a system",
+      "evidenceCandidateIds": [
+        "evidence_2a840e2bb2ca2a5fb823e596"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_26e043b911d0820f76464557",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "tidal volume",
+        "unit": null
+      },
+      "rawText": "tidal volume, and no spontaneous breaths. SVV is always",
+      "evidenceCandidateIds": [
+        "evidence_018672520af6ae59ad7e7220"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_0694e4a2bbf641f183a85be3",
+      "productSlug": "wave2-philips-intellivue-mx550",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "minute volume",
+        "unit": null
+      },
+      "rawText": "minute volume values: Using a sidestream measurement on patients receiving closed-",
+      "evidenceCandidateIds": [
+        "evidence_64fedc6af08a595c4ae20843"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "patient-monitor"
+    ],
+    "patternsMatched": {
+      "registry.generic.power": 1,
+      "registry.generic.battery": 12,
+      "registry.generic.measurementRanges": 1,
+      "registry.generic.accuracy": 2,
+      "registry.generic.interfaces": 2,
+      "registry.generic.compatibility": 1,
+      "registry.generic.accessories": 1,
+      "registry.generic.contraindications": 1,
+      "patient-monitor.parameters": 2,
+      "patient-monitor.screen": 1,
+      "patient-monitor.modules": 4
+    },
+    "normalizedUnits": {
+      "inch": 1
+    },
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "patient-monitor": [
+        "battery_runtime"
+      ]
+    },
+    "coveragePercent": 171
+  },
+  "warnings": [
+    "Resolver adapter used: philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/all-coffee-espresso-machines",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/accessories-collection",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-baristina-espresso-machine-milky-white-bar300-00",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/airfyers",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-artisan-pasta-noodle-maker",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Kitchen-Appliances",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Airfryer",
+    "Resolver rejected offsite document URL: https://www.philips-hue.com/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected unsafe document URL: tel:1-800-722-9377",
+    "Resolver rejected unsafe document URL: tel:1-800-229-6417",
+    "Resolver rejected unsafe document URL: tel:1-800-225-0230",
+    "Resolver rejected unsafe document URL: tel:1-800-345-6443",
+    "Resolver rejected unsafe document URL: tel:1-800-422-9448",
+    "Resolver rejected unsafe document URL: tel:1-800-542-8368",
+    "Resolver rejected unsafe document URL: tel:1-800-228-4728",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://www.adobe.com/es/acrobat/pricing.html?mv=search&amp;mv2=paidsearch&amp;sdid=BDDS3F8G&amp;ef_id=6f0d31b717991d11c4b85672a14576da:G:s&amp;s_kwcid=AL!3085!10!79577362531267!79577498729085&amp;msclkid=6f0d31b717991d11c4b85672a14576da",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "resolver=philips; attempts=6; matchedLinks=25; classifiedDocuments={\"Unknown\":97,\"Brochure\":2,\"IFU\":1}; confidenceDistribution={\"80\":1,\"90\":97,\"100\":2}; duplicatesRemoved=75",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

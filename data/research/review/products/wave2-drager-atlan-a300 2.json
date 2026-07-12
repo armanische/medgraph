@@ -1,0 +1,302 @@
+{
+  "product": {
+    "productSlug": "wave2-drager-atlan-a300",
+    "manufacturer": "Drager",
+    "productName": "Dräger Atlan A300",
+    "model": "Atlan A300",
+    "category": "Наркозно-дыхательные аппараты"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_9ff7cbbe6220315b0ad81da5",
+      "productSlug": "wave2-drager-atlan-a300",
+      "productTitle": "Dräger Atlan A300",
+      "claimCandidateId": "claim_823dca15e51fe959f7084108",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Download PDF",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_6c74acf48b09ce6babba2e35"
+      ],
+      "documentVersionIds": [
+        "document_version_2eb74f1401b7b4d3f65d464d"
+      ],
+      "sourceUrls": [
+        "https://www.draeger.com/Content/Documents/Content/Did-you-know-15-Time-constant-1.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_82f0cc32c2978a279363fab3",
+      "productSlug": "wave2-drager-atlan-a300",
+      "productTitle": "Dräger Atlan A300",
+      "claimCandidateId": "claim_299b22e1a266274f372f64a8",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_720a08e765635dc21106c84e"
+      ],
+      "documentVersionIds": [
+        "document_version_2eb74f1401b7b4d3f65d464d"
+      ],
+      "sourceUrls": [
+        "https://www.draeger.com/Content/Documents/Content/Did-you-know-15-Time-constant-1.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5f63852b32a01a9936660518",
+      "productSlug": "wave2-drager-atlan-a300",
+      "productTitle": "Dräger Atlan A300",
+      "claimCandidateId": "claim_447188b327ea1a22da1651e2",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Tidal Volume",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_da9fbe5522d0372bb5e92b6a"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_9ff7cbbe6220315b0ad81da5",
+        "productSlug": "wave2-drager-atlan-a300",
+        "productTitle": "Dräger Atlan A300",
+        "claimCandidateId": "claim_823dca15e51fe959f7084108",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Download PDF",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_6c74acf48b09ce6babba2e35"
+        ],
+        "documentVersionIds": [
+          "document_version_2eb74f1401b7b4d3f65d464d"
+        ],
+        "sourceUrls": [
+          "https://www.draeger.com/Content/Documents/Content/Did-you-know-15-Time-constant-1.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_82f0cc32c2978a279363fab3",
+        "productSlug": "wave2-drager-atlan-a300",
+        "productTitle": "Dräger Atlan A300",
+        "claimCandidateId": "claim_299b22e1a266274f372f64a8",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_720a08e765635dc21106c84e"
+        ],
+        "documentVersionIds": [
+          "document_version_2eb74f1401b7b4d3f65d464d"
+        ],
+        "sourceUrls": [
+          "https://www.draeger.com/Content/Documents/Content/Did-you-know-15-Time-constant-1.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "technical.term": [
+      {
+        "reviewItemId": "review_item_5f63852b32a01a9936660518",
+        "productSlug": "wave2-drager-atlan-a300",
+        "productTitle": "Dräger Atlan A300",
+        "claimCandidateId": "claim_447188b327ea1a22da1651e2",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Tidal Volume",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_da9fbe5522d0372bb5e92b6a"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_2eb74f1401b7b4d3f65d464d",
+      "documentType": "unknown",
+      "title": "Download PDF",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/Did-you-know-15-Time-constant-1.pdf",
+      "sha256": "33bfa048af6767d1a534c9bcffff7272b13e6ed1791134ec8095c1a81a0d8bec"
+    }
+  ],
+  "missingEvidence": [
+    {
+      "claimCandidateId": "claim_447188b327ea1a22da1651e2",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    }
+  ],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver adapter used: drager",
+    "Resolver rejected offsite document URL: https://safetyshop.draeger.com/en_uk",
+    "Resolver rejected offsite document URL: https://ukjobs.draeger.com/jobs",
+    "Resolver rejected offsite document URL: https://ukjobs.draeger.com/connect/login",
+    "Resolver rejected unsafe document URL: tel:+44 (0) 1442 213 542",
+    "Resolver rejected unsafe document URL: tel:+353 (1) 428 6400",
+    "Resolver rejected offsite document URL: https://www.facebook.com/DraegerGlobal",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/draeger",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draeger.global/",
+    "Resolver rejected offsite document URL: https://opensource.draeger.com/",
+    "Resolver rejected offsite document URL: https://safetyshop.draeger.com/en_uk",
+    "Resolver rejected offsite document URL: https://ukjobs.draeger.com/jobs",
+    "Resolver rejected offsite document URL: https://ukjobs.draeger.com/connect/login",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch",
+    "Resolver rejected offsite document URL: https://static.draeger.com/ventilation/Simulators/Savina300/",
+    "Resolver rejected offsite document URL: https://static.draeger.com/ventilation/Simulators/Savina300SW/start.html",
+    "Resolver rejected offsite document URL: https://static.draeger.com/anaesthesia/Simulators/PerseusA500/start.html",
+    "Resolver rejected offsite document URL: https://static.draeger.com/anaesthesia/Simulators/PerseusA500v2n/start.html",
+    "Resolver rejected offsite document URL: https://static.draeger.com/ventilation/Simulators/EvitaV500/index.html",
+    "Resolver rejected offsite document URL: https://static.draeger.com/ventilation/Simulators/BabylogVN500/index.html",
+    "Resolver rejected offsite document URL: https://static.draeger.com/ventilation/Simulators/Oxylog3000plus/start.html",
+    "Resolver rejected offsite document URL: https://static.draeger.com/ventilation/Simulators/Primus/index.html",
+    "Resolver rejected offsite document URL: https://static.draeger.com/ventilation/Simulators/PrimusIE/index.html",
+    "Resolver rejected unsafe document URL: tel:+44 (0) 1442 213 542",
+    "Resolver rejected unsafe document URL: tel:+353 (1) 428 6400",
+    "Resolver rejected offsite document URL: https://www.facebook.com/DraegerGlobal",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/draeger",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draeger.global/",
+    "Resolver rejected offsite document URL: https://opensource.draeger.com/",
+    "Resolver rejected offsite document URL: https://safetyshop.draeger.com/en_uk",
+    "Resolver rejected offsite document URL: https://ukjobs.draeger.com/jobs",
+    "Resolver rejected offsite document URL: https://ukjobs.draeger.com/connect/login",
+    "Resolver rejected unsafe document URL: tel:+44 (0) 1442 213 542",
+    "Resolver rejected unsafe document URL: tel:+353 (1) 428 6400",
+    "Resolver rejected offsite document URL: https://www.facebook.com/DraegerGlobal",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/draeger",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draeger.global/",
+    "Resolver rejected offsite document URL: https://opensource.draeger.com/",
+    "Resolver rejected offsite document URL: https://erecruitment.draeger.com/",
+    "Resolver rejected offsite document URL: https://erecruitment.draeger.com/index.php",
+    "Resolver rejected offsite document URL: https://www.facebook.com/DraegerGlobal",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draeger.global/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/draeger",
+    "Resolver rejected offsite document URL: https://opensource.draeger.com/",
+    "Resolver rejected offsite document URL: https://safetyshop.draeger.com/en_uk",
+    "Resolver rejected offsite document URL: https://ukjobs.draeger.com/jobs",
+    "Resolver rejected offsite document URL: https://ukjobs.draeger.com/connect/login",
+    "Resolver rejected unsafe document URL: tel:+44 (0) 1442 213 542",
+    "Resolver rejected unsafe document URL: tel:+353 (1) 428 6400",
+    "Resolver rejected offsite document URL: https://www.facebook.com/DraegerGlobal",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/draeger",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draeger.global/",
+    "Resolver rejected offsite document URL: https://opensource.draeger.com/",
+    "Resolver rejected offsite document URL: https://safetyshop.draeger.com/en_uk",
+    "Resolver rejected offsite document URL: https://ukjobs.draeger.com/jobs",
+    "Resolver rejected offsite document URL: https://ukjobs.draeger.com/connect/login",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch",
+    "Resolver rejected unsafe document URL: tel:+44 (0) 1442 213 542",
+    "Resolver rejected unsafe document URL: tel:+353 (1) 428 6400",
+    "Resolver rejected offsite document URL: https://www.facebook.com/DraegerGlobal",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/draeger",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draeger.global/",
+    "Resolver rejected offsite document URL: https://opensource.draeger.com/",
+    "Resolver rejected offsite document URL: https://safetyshop.draeger.com/en_uk",
+    "Resolver rejected offsite document URL: https://ukjobs.draeger.com/jobs",
+    "Resolver rejected offsite document URL: https://ukjobs.draeger.com/connect/login",
+    "Resolver rejected offsite document URL: https://www.yumpu.com/en/document/view/56845902/fabius-more-ca-9066305-en",
+    "Resolver rejected unsafe document URL: tel:+44 (0) 1442 213 542",
+    "Resolver rejected unsafe document URL: tel:+353 (1) 428 6400",
+    "Resolver rejected offsite document URL: https://www.facebook.com/DraegerGlobal",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/draeger",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draeger.global/",
+    "Resolver rejected offsite document URL: https://opensource.draeger.com/",
+    "resolver=drager; attempts=7; matchedLinks=91; classifiedDocuments={\"Unknown\":114,\"Brochure\":17,\"IFU\":5,\"Software\":3}; confidenceDistribution={\"80\":5,\"90\":11,\"100\":123}; duplicatesRemoved=48",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

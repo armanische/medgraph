@@ -1,0 +1,1651 @@
+{
+  "product": {
+    "productSlug": "wave2-philips-lumify",
+    "manufacturer": "Philips",
+    "productName": "Philips Lumify",
+    "model": "Lumify",
+    "category": "УЗИ аппараты"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_ab1e0e41b861cb08b65d8d3c",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_27ef591797dad73ba5588d4d",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Lumify 5.1 iOS Brochure PDF | 6.06 MB",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c802f25b31a1b53fdf7321e1"
+      ],
+      "documentVersionIds": [
+        "document_version_d42acd85906e20a146607579"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20250701/a0a69c9f60f041569522b30d003780d2.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_c07215eea6bd13a4f2b903b8",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_f9ba55565bcfb35b5ed21a1c",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_8bac1e7aeba773a630d51c51"
+      ],
+      "documentVersionIds": [
+        "document_version_d42acd85906e20a146607579"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20250701/a0a69c9f60f041569522b30d003780d2.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_9022310ada526242719d742e",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_25471ef0a45420bf104a18c5",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Doppler",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_37d3764022008d3a28086044"
+      ],
+      "documentVersionIds": [
+        "document_version_d42acd85906e20a146607579"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20250701/a0a69c9f60f041569522b30d003780d2.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_39846ce579877e0bcbf1f361",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_7099812bf86bf95a9ce7f88f",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "color Doppler",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_6379f343f7fbd701f624e83c"
+      ],
+      "documentVersionIds": [
+        "document_version_d42acd85906e20a146607579"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20250701/a0a69c9f60f041569522b30d003780d2.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_23f6927ea13113eeaebdd5fe",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_d60624df2f2371e46fff3fba",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_1e7b57f4c9ca23b54a579f6b"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_9d586c6833b2325c49132eac",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_d5c10d3e7bcc17f8b7ffe94e",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c70c12c34366be1870e417a5"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b7b594508590e1cb2aeda376",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_d1ddcbe8fb49686046678fce",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_6fd2c52b5bf5019b595a3027"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_15df2f40774b2423df8c793a",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_c823719409591f76ed9f7c6a",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Lumify Handheld Ultrasound for Android PDF | 6.60 MB",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_d3ae548732ca57fb506b955a"
+      ],
+      "documentVersionIds": [
+        "document_version_750f0c2b716f5ba4bbd61b9e"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20250709/edeb29c4bcb54049a971b3150044f565.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_71ea0b22508e49626012b617",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_b1ba70e994afc53e1d358622",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_cf7a77ff69d76f87cb8ae40f"
+      ],
+      "documentVersionIds": [
+        "document_version_750f0c2b716f5ba4bbd61b9e"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20250709/edeb29c4bcb54049a971b3150044f565.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_6e38271df40d81f26dce801b",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_5ecacd5f0c68db3ee360df64",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_2789bdd059f596539c335911"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_12ed751d6197e68866f88214",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_0cd35e66e21eb941a62c0b21",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_6d675edaed95270b83478c30"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_f8e270603f4b679b5c29a632",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_2d29699d3eff98d4992213d6",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Lumify Device Compatibility List PDF | 313.59 KB",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_cd2ec29c7a2d140403701867"
+      ],
+      "documentVersionIds": [
+        "document_version_a6422610aabd0998e856755f"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20250811/40c397e620e74ac7b1ceb33601451281.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_f9a16acc25c090803f796106",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_549954b1f67f7d53548417c1",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_26855ad6953b85e54b785814"
+      ],
+      "documentVersionIds": [
+        "document_version_a6422610aabd0998e856755f"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20250811/40c397e620e74ac7b1ceb33601451281.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_8ccdd1da216456b96b36b903",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_f308b13401faf0010625f41f",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "compatibility",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_264c78fa36843616b7be7fbc"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_36e188c6ff04f9ab61712ac7",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_d92d5a01f35ae527fb423d0b",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_364e6c25ca61b8aea09740d1"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_cb1554bf73482365ec5d631e",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_9823c886242c78f873ea70c7",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Philips Lumify User Manual",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c5d93ca32fbc623271a0cee3"
+      ],
+      "documentVersionIds": [
+        "document_version_7eeb1ee171a924e1f1fd6618"
+      ],
+      "sourceUrls": [
+        "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_4802999eab63a70cae070d08",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_04199b9a8e4ecf0d3fe8b420",
+      "suggestedClaimType": "document.language",
+      "valuePayload": {
+        "value": "en",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_25871322a078df71fa61b985"
+      ],
+      "documentVersionIds": [
+        "document_version_7eeb1ee171a924e1f1fd6618"
+      ],
+      "sourceUrls": [
+        "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_9e1c926b495886c9499adc78",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_3b69068fa652881589cd5807",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "user_manual",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_daae1fd83387858ff6c38202"
+      ],
+      "documentVersionIds": [
+        "document_version_7eeb1ee171a924e1f1fd6618"
+      ],
+      "sourceUrls": [
+        "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_46fee7660992e2c335ec96d7",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_619e76022f0e716ebe03aa3a",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Doppler",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_2c8aa534d0acbed2491a0155"
+      ],
+      "documentVersionIds": [
+        "document_version_7eeb1ee171a924e1f1fd6618"
+      ],
+      "sourceUrls": [
+        "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b6c4cde6bd3806f726ddd0e7",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_07478aba1b2dbd2205b1388e",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "TI and MI. They change as the system responds to power-control adjustments",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_29c35fb3d2fd283e3bae8d0f"
+      ],
+      "documentVersionIds": [
+        "document_version_7eeb1ee171a924e1f1fd6618"
+      ],
+      "sourceUrls": [
+        "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_648a4688ee72628fdfea1bdc",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_0b95901b0e5e7ee073251a6f",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "1. Touch",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_0610bbafd86f007350641b50"
+      ],
+      "documentVersionIds": [
+        "document_version_7eeb1ee171a924e1f1fd6618"
+      ],
+      "sourceUrls": [
+        "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_31321fd0448c12d62d7f9fcf",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_b111f0654250c2a5437c4bb1",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Compatibility",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c96ea9ec0822a44f2887b5cc"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_cb6469a2e874dbec406b486a",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_cbf4d5e29b495667bc547811",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_66edabe59d2a3a410df80f2b"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_47b83dee00ea8f9a0e657c43",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_7bcd26291d68f983148c73b3",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_eafb722daac2170fa88701fe"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_2473cdfc97519f4cccce08c0",
+      "productSlug": "wave2-philips-lumify",
+      "productTitle": "Philips Lumify",
+      "claimCandidateId": "claim_3d900d2a567f1b54a9d84eb5",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_156f257b0ff58231ce4849b6"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_ab1e0e41b861cb08b65d8d3c",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_27ef591797dad73ba5588d4d",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Lumify 5.1 iOS Brochure PDF | 6.06 MB",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c802f25b31a1b53fdf7321e1"
+        ],
+        "documentVersionIds": [
+          "document_version_d42acd85906e20a146607579"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20250701/a0a69c9f60f041569522b30d003780d2.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_15df2f40774b2423df8c793a",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_c823719409591f76ed9f7c6a",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Lumify Handheld Ultrasound for Android PDF | 6.60 MB",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_d3ae548732ca57fb506b955a"
+        ],
+        "documentVersionIds": [
+          "document_version_750f0c2b716f5ba4bbd61b9e"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20250709/edeb29c4bcb54049a971b3150044f565.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_f8e270603f4b679b5c29a632",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_2d29699d3eff98d4992213d6",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Lumify Device Compatibility List PDF | 313.59 KB",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_cd2ec29c7a2d140403701867"
+        ],
+        "documentVersionIds": [
+          "document_version_a6422610aabd0998e856755f"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20250811/40c397e620e74ac7b1ceb33601451281.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_cb1554bf73482365ec5d631e",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_9823c886242c78f873ea70c7",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Philips Lumify User Manual",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c5d93ca32fbc623271a0cee3"
+        ],
+        "documentVersionIds": [
+          "document_version_7eeb1ee171a924e1f1fd6618"
+        ],
+        "sourceUrls": [
+          "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_c07215eea6bd13a4f2b903b8",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_f9ba55565bcfb35b5ed21a1c",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_8bac1e7aeba773a630d51c51"
+        ],
+        "documentVersionIds": [
+          "document_version_d42acd85906e20a146607579"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20250701/a0a69c9f60f041569522b30d003780d2.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_71ea0b22508e49626012b617",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_b1ba70e994afc53e1d358622",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_cf7a77ff69d76f87cb8ae40f"
+        ],
+        "documentVersionIds": [
+          "document_version_750f0c2b716f5ba4bbd61b9e"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20250709/edeb29c4bcb54049a971b3150044f565.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_f9a16acc25c090803f796106",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_549954b1f67f7d53548417c1",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_26855ad6953b85e54b785814"
+        ],
+        "documentVersionIds": [
+          "document_version_a6422610aabd0998e856755f"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20250811/40c397e620e74ac7b1ceb33601451281.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_9e1c926b495886c9499adc78",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_3b69068fa652881589cd5807",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "user_manual",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_daae1fd83387858ff6c38202"
+        ],
+        "documentVersionIds": [
+          "document_version_7eeb1ee171a924e1f1fd6618"
+        ],
+        "sourceUrls": [
+          "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.operatingModes": [
+      {
+        "reviewItemId": "review_item_9022310ada526242719d742e",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_25471ef0a45420bf104a18c5",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "Doppler",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_37d3764022008d3a28086044"
+        ],
+        "documentVersionIds": [
+          "document_version_d42acd85906e20a146607579"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20250701/a0a69c9f60f041569522b30d003780d2.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_39846ce579877e0bcbf1f361",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_7099812bf86bf95a9ce7f88f",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "color Doppler",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_6379f343f7fbd701f624e83c"
+        ],
+        "documentVersionIds": [
+          "document_version_d42acd85906e20a146607579"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20250701/a0a69c9f60f041569522b30d003780d2.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_46fee7660992e2c335ec96d7",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_619e76022f0e716ebe03aa3a",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "Doppler",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_2c8aa534d0acbed2491a0155"
+        ],
+        "documentVersionIds": [
+          "document_version_7eeb1ee171a924e1f1fd6618"
+        ],
+        "sourceUrls": [
+          "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "technical.term": [
+      {
+        "reviewItemId": "review_item_23f6927ea13113eeaebdd5fe",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_d60624df2f2371e46fff3fba",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_1e7b57f4c9ca23b54a579f6b"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_9d586c6833b2325c49132eac",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_d5c10d3e7bcc17f8b7ffe94e",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c70c12c34366be1870e417a5"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_b7b594508590e1cb2aeda376",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_d1ddcbe8fb49686046678fce",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_6fd2c52b5bf5019b595a3027"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_6e38271df40d81f26dce801b",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_5ecacd5f0c68db3ee360df64",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_2789bdd059f596539c335911"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_12ed751d6197e68866f88214",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_0cd35e66e21eb941a62c0b21",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_6d675edaed95270b83478c30"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_8ccdd1da216456b96b36b903",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_f308b13401faf0010625f41f",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "compatibility",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_264c78fa36843616b7be7fbc"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_36e188c6ff04f9ab61712ac7",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_d92d5a01f35ae527fb423d0b",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_364e6c25ca61b8aea09740d1"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_31321fd0448c12d62d7f9fcf",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_b111f0654250c2a5437c4bb1",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Compatibility",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c96ea9ec0822a44f2887b5cc"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_cb6469a2e874dbec406b486a",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_cbf4d5e29b495667bc547811",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_66edabe59d2a3a410df80f2b"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_47b83dee00ea8f9a0e657c43",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_7bcd26291d68f983148c73b3",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_eafb722daac2170fa88701fe"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_2473cdfc97519f4cccce08c0",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_3d900d2a567f1b54a9d84eb5",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_156f257b0ff58231ce4849b6"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.language": [
+      {
+        "reviewItemId": "review_item_4802999eab63a70cae070d08",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_04199b9a8e4ecf0d3fe8b420",
+        "suggestedClaimType": "document.language",
+        "valuePayload": {
+          "value": "en",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_25871322a078df71fa61b985"
+        ],
+        "documentVersionIds": [
+          "document_version_7eeb1ee171a924e1f1fd6618"
+        ],
+        "sourceUrls": [
+          "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.display": [
+      {
+        "reviewItemId": "review_item_b6c4cde6bd3806f726ddd0e7",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_07478aba1b2dbd2205b1388e",
+        "suggestedClaimType": "product.display",
+        "valuePayload": {
+          "value": "TI and MI. They change as the system responds to power-control adjustments",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_29c35fb3d2fd283e3bae8d0f"
+        ],
+        "documentVersionIds": [
+          "document_version_7eeb1ee171a924e1f1fd6618"
+        ],
+        "sourceUrls": [
+          "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_648a4688ee72628fdfea1bdc",
+        "productSlug": "wave2-philips-lumify",
+        "productTitle": "Philips Lumify",
+        "claimCandidateId": "claim_0b95901b0e5e7ee073251a6f",
+        "suggestedClaimType": "product.display",
+        "valuePayload": {
+          "value": "1. Touch",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_0610bbafd86f007350641b50"
+        ],
+        "documentVersionIds": [
+          "document_version_7eeb1ee171a924e1f1fd6618"
+        ],
+        "sourceUrls": [
+          "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_d42acd85906e20a146607579",
+      "documentType": "brochure",
+      "title": "Lumify 5.1 iOS Brochure PDF | 6.06 MB",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250701/a0a69c9f60f041569522b30d003780d2.pdf",
+      "sha256": "6d2eba4665c2a75afaa50088b80cbd886b7c9044f52821084a17ae4db832cb74"
+    },
+    {
+      "documentVersionId": "document_version_750f0c2b716f5ba4bbd61b9e",
+      "documentType": "unknown",
+      "title": "Lumify Handheld Ultrasound for Android PDF | 6.60 MB",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250709/edeb29c4bcb54049a971b3150044f565.pdf",
+      "sha256": "9d453dd1a74c9043a30a184e7c98970b7b44b052ad6b331e11a1b122849f6029"
+    },
+    {
+      "documentVersionId": "document_version_a6422610aabd0998e856755f",
+      "documentType": "unknown",
+      "title": "Lumify Device Compatibility List PDF | 313.59 KB",
+      "sourceUrl": "https://www.documents.philips.com/assets/20250811/40c397e620e74ac7b1ceb33601451281.pdf",
+      "sha256": "0d066ff6167bf69159c2574a21a50e4d9db57ace5f31ec7480a4f85421a88a8a"
+    },
+    {
+      "documentVersionId": "document_version_7eeb1ee171a924e1f1fd6618",
+      "documentType": "user_manual",
+      "title": "Philips Lumify User Manual",
+      "sourceUrl": "https://www.usa.philips.com/c-dam/b2bhc/master/feature-details/ultrasound-lumify-global-resources/Lumify_User_Manual_453561909131a.pdf",
+      "sha256": "1f1869dfd87584600fd958538ef8c3efc364500bf0015c010a5fd6c132b3b24f"
+    }
+  ],
+  "missingEvidence": [
+    {
+      "claimCandidateId": "claim_d60624df2f2371e46fff3fba",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_d5c10d3e7bcc17f8b7ffe94e",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_d1ddcbe8fb49686046678fce",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_5ecacd5f0c68db3ee360df64",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_0cd35e66e21eb941a62c0b21",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_f308b13401faf0010625f41f",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_d92d5a01f35ae527fb423d0b",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_b111f0654250c2a5437c4bb1",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_cbf4d5e29b495667bc547811",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_7bcd26291d68f983148c73b3",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_3d900d2a567f1b54a9d84eb5",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    }
+  ],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver adapter used: philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/all-coffee-espresso-machines",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/accessories-collection",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-baristina-espresso-machine-milky-white-bar300-00",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/airfyers",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-artisan-pasta-noodle-maker",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Kitchen-Appliances",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Airfryer",
+    "Resolver rejected offsite document URL: https://www.philips-hue.com/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected unsafe document URL: tel:1-800-722-9377",
+    "Resolver rejected unsafe document URL: tel:1-800-229-6417",
+    "Resolver rejected unsafe document URL: tel:1-800-225-0230",
+    "Resolver rejected unsafe document URL: tel:1-800-345-6443",
+    "Resolver rejected unsafe document URL: tel:1-800-422-9448",
+    "Resolver rejected unsafe document URL: tel:1-800-542-8368",
+    "Resolver rejected unsafe document URL: tel:1-800-228-4728",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://www.adobe.com/es/acrobat/pricing.html?mv=search&amp;mv2=paidsearch&amp;sdid=BDDS3F8G&amp;ef_id=6f0d31b717991d11c4b85672a14576da:G:s&amp;s_kwcid=AL!3085!10!79577362531267!79577498729085&amp;msclkid=6f0d31b717991d11c4b85672a14576da",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "resolver=philips; attempts=7; matchedLinks=27; classifiedDocuments={\"Unknown\":114,\"IFU\":1,\"Brochure\":2}; confidenceDistribution={\"80\":1,\"90\":104,\"100\":12}; duplicatesRemoved=90",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

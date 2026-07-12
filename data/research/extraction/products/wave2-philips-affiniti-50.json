@@ -1,0 +1,1590 @@
+{
+  "product": {
+    "productSlug": "wave2-philips-affiniti-50",
+    "manufacturer": "Philips",
+    "productName": "Philips Affiniti 50",
+    "model": "Affiniti 50",
+    "category": "УЗИ аппараты"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_855e5e524b862ce121562e86",
+      "documentCandidateId": "document_1d44ff9c190a4cdfc365ea58",
+      "sourceId": "source_c575461871ffb3c20285f40a",
+      "productSlug": "wave2-philips-affiniti-50",
+      "documentKey": "trusted-document:document_1d44ff9c190a4cdfc365ea58",
+      "documentType": "brochure",
+      "title": "EPIQ and Affiniti Security brochure PDF | 1.21 MB",
+      "language": null,
+      "sourceUrl": "https://www.documents.philips.com/assets/20230417/6d807e2e01774f25883dafe7017faf73.pdf",
+      "sha256": "08dbf0292103a8659bc5b22d4eb6f36ba3f7525884163206ad67304e15680292",
+      "contentType": "application/pdf",
+      "byteSize": 1272020,
+      "filePath": "data/research/artifacts/artifacts/sha256/08/db/08dbf0292103a8659bc5b22d4eb6f36ba3f7525884163206ad67304e15680292.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_f8d9479dd8463b4c8c371b46",
+      "documentCandidateId": "document_0dbc4e61900c108b87e7534b",
+      "sourceId": "source_c575461871ffb3c20285f40a",
+      "productSlug": "wave2-philips-affiniti-50",
+      "documentKey": "trusted-document:document_0dbc4e61900c108b87e7534b",
+      "documentType": "unknown",
+      "title": "EPIQ Elite & Affiniti Pediatric flyer PDF | 5.02 MB",
+      "language": null,
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/752a90cd7bd646758be4b067014fdc63.pdf",
+      "sha256": "c88cfa3ed8d2524aa4b15a2f11d30c0638c496ab6cf40cb3080a3a5fb4be295b",
+      "contentType": "application/pdf",
+      "byteSize": 5264949,
+      "filePath": "data/research/artifacts/artifacts/sha256/c8/8c/c88cfa3ed8d2524aa4b15a2f11d30c0638c496ab6cf40cb3080a3a5fb4be295b.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_2fcf31165254cb61bd6393aa",
+      "documentCandidateId": "document_453e52a66a6f9f47a64c976f",
+      "sourceId": "source_c575461871ffb3c20285f40a",
+      "productSlug": "wave2-philips-affiniti-50",
+      "documentKey": "trusted-document:document_453e52a66a6f9f47a64c976f",
+      "documentType": "unknown",
+      "title": "EPIQ Elite & Affiniti ultrasound Vascular flyer PDF | 4.31 MB",
+      "language": null,
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/c717079f784c4620a184b067014fd67d.pdf",
+      "sha256": "21fe2b720aa0c2a405b285a99507ab1dabf024615339f8a20a89bfe4c466ff5c",
+      "contentType": "application/pdf",
+      "byteSize": 4514891,
+      "filePath": "data/research/artifacts/artifacts/sha256/21/fe/21fe2b720aa0c2a405b285a99507ab1dabf024615339f8a20a89bfe4c466ff5c.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_3c60c930bb3816bb407b3759",
+      "documentCandidateId": "document_1d231cb01d9bc3f04cae5016",
+      "sourceId": "source_c575461871ffb3c20285f40a",
+      "productSlug": "wave2-philips-affiniti-50",
+      "documentKey": "trusted-document:document_1d231cb01d9bc3f04cae5016",
+      "documentType": "unknown",
+      "title": "EPIQ Elite & Affiniti ultrasound Interventional Radiology flyer PDF | 3.64 MB",
+      "language": null,
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/edb4b78f9bd744cb849fb067014fd155.pdf",
+      "sha256": "3961071e3c50107bcf8d08071f12b062ba8efac8f06e78de17594a57c6d9bef6",
+      "contentType": "application/pdf",
+      "byteSize": 3812481,
+      "filePath": "data/research/artifacts/artifacts/sha256/39/61/3961071e3c50107bcf8d08071f12b062ba8efac8f06e78de17594a57c6d9bef6.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_250c2ac9af2c8b3a4a61589c",
+      "productSlug": "wave2-philips-affiniti-50",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "EPIQ and Affiniti Security brochure PDF | 1.21 MB",
+      "unit": null,
+      "rawText": "Document title: EPIQ and Affiniti Security brochure PDF | 1.21 MB",
+      "documentVersionId": "document_version_855e5e524b862ce121562e86",
+      "documentCandidateId": "document_1d44ff9c190a4cdfc365ea58",
+      "documentSha256": "08dbf0292103a8659bc5b22d4eb6f36ba3f7525884163206ad67304e15680292",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230417/6d807e2e01774f25883dafe7017faf73.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_3e712e52147c76314c5fc67e",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_e433c3ee7b3983d614f8b952",
+      "productSlug": "wave2-philips-affiniti-50",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_855e5e524b862ce121562e86",
+      "documentCandidateId": "document_1d44ff9c190a4cdfc365ea58",
+      "documentSha256": "08dbf0292103a8659bc5b22d4eb6f36ba3f7525884163206ad67304e15680292",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230417/6d807e2e01774f25883dafe7017faf73.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_797f7eed7bbe1f9316355a9b",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_4bc34752fa69dd9d459ac773",
+      "productSlug": "wave2-philips-affiniti-50",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "EPIQ Elite & Affiniti Pediatric flyer PDF | 5.02 MB",
+      "unit": null,
+      "rawText": "Document title: EPIQ Elite & Affiniti Pediatric flyer PDF | 5.02 MB",
+      "documentVersionId": "document_version_f8d9479dd8463b4c8c371b46",
+      "documentCandidateId": "document_0dbc4e61900c108b87e7534b",
+      "documentSha256": "c88cfa3ed8d2524aa4b15a2f11d30c0638c496ab6cf40cb3080a3a5fb4be295b",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/752a90cd7bd646758be4b067014fdc63.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_9b985c91a470ccc7125c7c2b",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_d38e0101c3588cbb9b688fd6",
+      "productSlug": "wave2-philips-affiniti-50",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_f8d9479dd8463b4c8c371b46",
+      "documentCandidateId": "document_0dbc4e61900c108b87e7534b",
+      "documentSha256": "c88cfa3ed8d2524aa4b15a2f11d30c0638c496ab6cf40cb3080a3a5fb4be295b",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/752a90cd7bd646758be4b067014fdc63.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_6f423954a9de0db95238e797",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_5cadbab394982d1134a16088",
+      "productSlug": "wave2-philips-affiniti-50",
+      "factType": "product.operatingModes",
+      "label": "Doppler",
+      "value": "Doppler",
+      "unit": null,
+      "rawText": "Doppler",
+      "documentVersionId": "document_version_f8d9479dd8463b4c8c371b46",
+      "documentCandidateId": "document_0dbc4e61900c108b87e7534b",
+      "documentSha256": "c88cfa3ed8d2524aa4b15a2f11d30c0638c496ab6cf40cb3080a3a5fb4be295b",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/752a90cd7bd646758be4b067014fdc63.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 60
+      },
+      "evidenceCandidateId": "evidence_5e21eb25f5c6264b3cb99d82",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ultrasound",
+        "matchedPattern:doppler",
+        "matchedSynonym:Doppler",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_3570994b1985dc5df2e4c699",
+      "productSlug": "wave2-philips-affiniti-50",
+      "factType": "product.operatingModes",
+      "label": "3D/4D",
+      "value": "3D",
+      "unit": null,
+      "rawText": "3D",
+      "documentVersionId": "document_version_f8d9479dd8463b4c8c371b46",
+      "documentCandidateId": "document_0dbc4e61900c108b87e7534b",
+      "documentSha256": "c88cfa3ed8d2524aa4b15a2f11d30c0638c496ab6cf40cb3080a3a5fb4be295b",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/752a90cd7bd646758be4b067014fdc63.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 110
+      },
+      "evidenceCandidateId": "evidence_d5aa7e6b7eba79899168c75f",
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ultrasound",
+        "matchedPattern:3d_4d",
+        "matchedSynonym:3D",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_992cd548b2cf29b17c4a081c",
+      "productSlug": "wave2-philips-affiniti-50",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "display",
+      "unit": null,
+      "rawText": "display*",
+      "documentVersionId": "document_version_f8d9479dd8463b4c8c371b46",
+      "documentCandidateId": "document_0dbc4e61900c108b87e7534b",
+      "documentSha256": "c88cfa3ed8d2524aa4b15a2f11d30c0638c496ab6cf40cb3080a3a5fb4be295b",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/752a90cd7bd646758be4b067014fdc63.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 11
+      },
+      "evidenceCandidateId": "evidence_f343d0f733954f9ae44e7f0d",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_d414edce4ef4dae42043e3e6",
+      "productSlug": "wave2-philips-affiniti-50",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Battery",
+      "unit": null,
+      "rawText": "Battery backup",
+      "documentVersionId": "document_version_f8d9479dd8463b4c8c371b46",
+      "documentCandidateId": "document_0dbc4e61900c108b87e7534b",
+      "documentSha256": "c88cfa3ed8d2524aa4b15a2f11d30c0638c496ab6cf40cb3080a3a5fb4be295b",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/752a90cd7bd646758be4b067014fdc63.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 22
+      },
+      "evidenceCandidateId": "evidence_21f32fa1d74c7af91fdd5798",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_6480951058fab0230e256e49",
+      "productSlug": "wave2-philips-affiniti-50",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "EPIQ Elite & Affiniti ultrasound Vascular flyer PDF | 4.31 MB",
+      "unit": null,
+      "rawText": "Document title: EPIQ Elite & Affiniti ultrasound Vascular flyer PDF | 4.31 MB",
+      "documentVersionId": "document_version_2fcf31165254cb61bd6393aa",
+      "documentCandidateId": "document_453e52a66a6f9f47a64c976f",
+      "documentSha256": "21fe2b720aa0c2a405b285a99507ab1dabf024615339f8a20a89bfe4c466ff5c",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/c717079f784c4620a184b067014fd67d.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_33f7793056416d79c67700f1",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_90185c5048b6fc1299ac5354",
+      "productSlug": "wave2-philips-affiniti-50",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_2fcf31165254cb61bd6393aa",
+      "documentCandidateId": "document_453e52a66a6f9f47a64c976f",
+      "documentSha256": "21fe2b720aa0c2a405b285a99507ab1dabf024615339f8a20a89bfe4c466ff5c",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/c717079f784c4620a184b067014fd67d.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_aaa6dd76adf95f2af942ad19",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_e65a546799a5034e09cb7c54",
+      "productSlug": "wave2-philips-affiniti-50",
+      "factType": "product.operatingModes",
+      "label": "Doppler",
+      "value": "Doppler",
+      "unit": null,
+      "rawText": "Doppler",
+      "documentVersionId": "document_version_2fcf31165254cb61bd6393aa",
+      "documentCandidateId": "document_453e52a66a6f9f47a64c976f",
+      "documentSha256": "21fe2b720aa0c2a405b285a99507ab1dabf024615339f8a20a89bfe4c466ff5c",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/c717079f784c4620a184b067014fd67d.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 60
+      },
+      "evidenceCandidateId": "evidence_6aac9aea3aa5abc4eafc6cf7",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ultrasound",
+        "matchedPattern:doppler",
+        "matchedSynonym:Doppler",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_9477411584c0b705be838cd3",
+      "productSlug": "wave2-philips-affiniti-50",
+      "factType": "product.operatingModes",
+      "label": "3D/4D",
+      "value": "3D",
+      "unit": null,
+      "rawText": "3D",
+      "documentVersionId": "document_version_2fcf31165254cb61bd6393aa",
+      "documentCandidateId": "document_453e52a66a6f9f47a64c976f",
+      "documentSha256": "21fe2b720aa0c2a405b285a99507ab1dabf024615339f8a20a89bfe4c466ff5c",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/c717079f784c4620a184b067014fd67d.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 97
+      },
+      "evidenceCandidateId": "evidence_422d9a3cfcba061c1d344baa",
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ultrasound",
+        "matchedPattern:3d_4d",
+        "matchedSynonym:3D",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_7ca683ac5ccd21ecc450f217",
+      "productSlug": "wave2-philips-affiniti-50",
+      "factType": "product.operatingModes",
+      "label": "3D/4D",
+      "value": "3D/4D",
+      "unit": null,
+      "rawText": "3D/4D",
+      "documentVersionId": "document_version_2fcf31165254cb61bd6393aa",
+      "documentCandidateId": "document_453e52a66a6f9f47a64c976f",
+      "documentSha256": "21fe2b720aa0c2a405b285a99507ab1dabf024615339f8a20a89bfe4c466ff5c",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/c717079f784c4620a184b067014fd67d.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 159
+      },
+      "evidenceCandidateId": "evidence_af0b404b16e1197674fa1b03",
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ultrasound",
+        "matchedPattern:3d_4d",
+        "matchedSynonym:3D",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_0cbe46cfc6401eaa16b8672c",
+      "productSlug": "wave2-philips-affiniti-50",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "display",
+      "unit": null,
+      "rawText": "display*",
+      "documentVersionId": "document_version_2fcf31165254cb61bd6393aa",
+      "documentCandidateId": "document_453e52a66a6f9f47a64c976f",
+      "documentSha256": "21fe2b720aa0c2a405b285a99507ab1dabf024615339f8a20a89bfe4c466ff5c",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/c717079f784c4620a184b067014fd67d.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 11
+      },
+      "evidenceCandidateId": "evidence_cf6f3bbd41e7bbebb6154dce",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_15cde88bc740a53277b9d262",
+      "productSlug": "wave2-philips-affiniti-50",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Battery",
+      "unit": null,
+      "rawText": "Battery backup",
+      "documentVersionId": "document_version_2fcf31165254cb61bd6393aa",
+      "documentCandidateId": "document_453e52a66a6f9f47a64c976f",
+      "documentSha256": "21fe2b720aa0c2a405b285a99507ab1dabf024615339f8a20a89bfe4c466ff5c",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/c717079f784c4620a184b067014fd67d.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 22
+      },
+      "evidenceCandidateId": "evidence_4aabdc55bd98d51c008667da",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_6ca1bd65425bf41446427812",
+      "productSlug": "wave2-philips-affiniti-50",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "EPIQ Elite & Affiniti ultrasound Interventional Radiology flyer PDF | 3.64 MB",
+      "unit": null,
+      "rawText": "Document title: EPIQ Elite & Affiniti ultrasound Interventional Radiology flyer PDF | 3.64 MB",
+      "documentVersionId": "document_version_3c60c930bb3816bb407b3759",
+      "documentCandidateId": "document_1d231cb01d9bc3f04cae5016",
+      "documentSha256": "3961071e3c50107bcf8d08071f12b062ba8efac8f06e78de17594a57c6d9bef6",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/edb4b78f9bd744cb849fb067014fd155.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_804252b7d54cf4468e9d299f",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_d5c92cf6881992f5c9c85345",
+      "productSlug": "wave2-philips-affiniti-50",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_3c60c930bb3816bb407b3759",
+      "documentCandidateId": "document_1d231cb01d9bc3f04cae5016",
+      "documentSha256": "3961071e3c50107bcf8d08071f12b062ba8efac8f06e78de17594a57c6d9bef6",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/edb4b78f9bd744cb849fb067014fd155.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_698297e7ef9c5c067b9caa00",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_1c0859ff40c948eac9b84b2f",
+      "productSlug": "wave2-philips-affiniti-50",
+      "factType": "product.operatingModes",
+      "label": "Doppler",
+      "value": "Doppler",
+      "unit": null,
+      "rawText": "Doppler",
+      "documentVersionId": "document_version_3c60c930bb3816bb407b3759",
+      "documentCandidateId": "document_1d231cb01d9bc3f04cae5016",
+      "documentSha256": "3961071e3c50107bcf8d08071f12b062ba8efac8f06e78de17594a57c6d9bef6",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/edb4b78f9bd744cb849fb067014fd155.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 109
+      },
+      "evidenceCandidateId": "evidence_6a5ab313e84379034cc22d5f",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ultrasound",
+        "matchedPattern:doppler",
+        "matchedSynonym:Doppler",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_0d73b5caca9a726bb57c83d9",
+      "productSlug": "wave2-philips-affiniti-50",
+      "factType": "product.operatingModes",
+      "label": "3D/4D",
+      "value": "3D",
+      "unit": null,
+      "rawText": "3D",
+      "documentVersionId": "document_version_3c60c930bb3816bb407b3759",
+      "documentCandidateId": "document_1d231cb01d9bc3f04cae5016",
+      "documentSha256": "3961071e3c50107bcf8d08071f12b062ba8efac8f06e78de17594a57c6d9bef6",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/edb4b78f9bd744cb849fb067014fd155.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 149
+      },
+      "evidenceCandidateId": "evidence_2d908ecca827481e17478c26",
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ultrasound",
+        "matchedPattern:3d_4d",
+        "matchedSynonym:3D",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_3d3f4b5e45dab20027f9048f",
+      "productSlug": "wave2-philips-affiniti-50",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "display",
+      "unit": null,
+      "rawText": "display*",
+      "documentVersionId": "document_version_3c60c930bb3816bb407b3759",
+      "documentCandidateId": "document_1d231cb01d9bc3f04cae5016",
+      "documentSha256": "3961071e3c50107bcf8d08071f12b062ba8efac8f06e78de17594a57c6d9bef6",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/edb4b78f9bd744cb849fb067014fd155.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 63
+      },
+      "evidenceCandidateId": "evidence_840e4fd474657e705c3a14ed",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_7bb31ec51e1b3aa7ae5eb9ae",
+      "productSlug": "wave2-philips-affiniti-50",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Battery",
+      "unit": null,
+      "rawText": "Battery backup",
+      "documentVersionId": "document_version_3c60c930bb3816bb407b3759",
+      "documentCandidateId": "document_1d231cb01d9bc3f04cae5016",
+      "documentSha256": "3961071e3c50107bcf8d08071f12b062ba8efac8f06e78de17594a57c6d9bef6",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/edb4b78f9bd744cb849fb067014fd155.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 74
+      },
+      "evidenceCandidateId": "evidence_01210955d759439e95a7c54a",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_3e712e52147c76314c5fc67e",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_855e5e524b862ce121562e86",
+      "documentCandidateId": "document_1d44ff9c190a4cdfc365ea58",
+      "sha256": "08dbf0292103a8659bc5b22d4eb6f36ba3f7525884163206ad67304e15680292",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230417/6d807e2e01774f25883dafe7017faf73.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: EPIQ and Affiniti Security brochure PDF | 1.21 MB",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_797f7eed7bbe1f9316355a9b",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_855e5e524b862ce121562e86",
+      "documentCandidateId": "document_1d44ff9c190a4cdfc365ea58",
+      "sha256": "08dbf0292103a8659bc5b22d4eb6f36ba3f7525884163206ad67304e15680292",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230417/6d807e2e01774f25883dafe7017faf73.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_9b985c91a470ccc7125c7c2b",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_f8d9479dd8463b4c8c371b46",
+      "documentCandidateId": "document_0dbc4e61900c108b87e7534b",
+      "sha256": "c88cfa3ed8d2524aa4b15a2f11d30c0638c496ab6cf40cb3080a3a5fb4be295b",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/752a90cd7bd646758be4b067014fdc63.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: EPIQ Elite & Affiniti Pediatric flyer PDF | 5.02 MB",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_6f423954a9de0db95238e797",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_f8d9479dd8463b4c8c371b46",
+      "documentCandidateId": "document_0dbc4e61900c108b87e7534b",
+      "sha256": "c88cfa3ed8d2524aa4b15a2f11d30c0638c496ab6cf40cb3080a3a5fb4be295b",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/752a90cd7bd646758be4b067014fdc63.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_5e21eb25f5c6264b3cb99d82",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_f8d9479dd8463b4c8c371b46",
+      "documentCandidateId": "document_0dbc4e61900c108b87e7534b",
+      "sha256": "c88cfa3ed8d2524aa4b15a2f11d30c0638c496ab6cf40cb3080a3a5fb4be295b",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/752a90cd7bd646758be4b067014fdc63.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 60
+      },
+      "quotedText": "Doppler",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_d5aa7e6b7eba79899168c75f",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_f8d9479dd8463b4c8c371b46",
+      "documentCandidateId": "document_0dbc4e61900c108b87e7534b",
+      "sha256": "c88cfa3ed8d2524aa4b15a2f11d30c0638c496ab6cf40cb3080a3a5fb4be295b",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/752a90cd7bd646758be4b067014fdc63.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 110
+      },
+      "quotedText": "3D",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_33f7793056416d79c67700f1",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_2fcf31165254cb61bd6393aa",
+      "documentCandidateId": "document_453e52a66a6f9f47a64c976f",
+      "sha256": "21fe2b720aa0c2a405b285a99507ab1dabf024615339f8a20a89bfe4c466ff5c",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/c717079f784c4620a184b067014fd67d.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: EPIQ Elite & Affiniti ultrasound Vascular flyer PDF | 4.31 MB",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_aaa6dd76adf95f2af942ad19",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_2fcf31165254cb61bd6393aa",
+      "documentCandidateId": "document_453e52a66a6f9f47a64c976f",
+      "sha256": "21fe2b720aa0c2a405b285a99507ab1dabf024615339f8a20a89bfe4c466ff5c",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/c717079f784c4620a184b067014fd67d.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_6aac9aea3aa5abc4eafc6cf7",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_2fcf31165254cb61bd6393aa",
+      "documentCandidateId": "document_453e52a66a6f9f47a64c976f",
+      "sha256": "21fe2b720aa0c2a405b285a99507ab1dabf024615339f8a20a89bfe4c466ff5c",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/c717079f784c4620a184b067014fd67d.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 60
+      },
+      "quotedText": "Doppler",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_422d9a3cfcba061c1d344baa",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_2fcf31165254cb61bd6393aa",
+      "documentCandidateId": "document_453e52a66a6f9f47a64c976f",
+      "sha256": "21fe2b720aa0c2a405b285a99507ab1dabf024615339f8a20a89bfe4c466ff5c",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/c717079f784c4620a184b067014fd67d.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 97
+      },
+      "quotedText": "3D",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_af0b404b16e1197674fa1b03",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_2fcf31165254cb61bd6393aa",
+      "documentCandidateId": "document_453e52a66a6f9f47a64c976f",
+      "sha256": "21fe2b720aa0c2a405b285a99507ab1dabf024615339f8a20a89bfe4c466ff5c",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/c717079f784c4620a184b067014fd67d.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 159
+      },
+      "quotedText": "3D/4D",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_804252b7d54cf4468e9d299f",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_3c60c930bb3816bb407b3759",
+      "documentCandidateId": "document_1d231cb01d9bc3f04cae5016",
+      "sha256": "3961071e3c50107bcf8d08071f12b062ba8efac8f06e78de17594a57c6d9bef6",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/edb4b78f9bd744cb849fb067014fd155.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: EPIQ Elite & Affiniti ultrasound Interventional Radiology flyer PDF | 3.64 MB",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_698297e7ef9c5c067b9caa00",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_3c60c930bb3816bb407b3759",
+      "documentCandidateId": "document_1d231cb01d9bc3f04cae5016",
+      "sha256": "3961071e3c50107bcf8d08071f12b062ba8efac8f06e78de17594a57c6d9bef6",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/edb4b78f9bd744cb849fb067014fd155.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_6a5ab313e84379034cc22d5f",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_3c60c930bb3816bb407b3759",
+      "documentCandidateId": "document_1d231cb01d9bc3f04cae5016",
+      "sha256": "3961071e3c50107bcf8d08071f12b062ba8efac8f06e78de17594a57c6d9bef6",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/edb4b78f9bd744cb849fb067014fd155.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 109
+      },
+      "quotedText": "Doppler",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_2d908ecca827481e17478c26",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_3c60c930bb3816bb407b3759",
+      "documentCandidateId": "document_1d231cb01d9bc3f04cae5016",
+      "sha256": "3961071e3c50107bcf8d08071f12b062ba8efac8f06e78de17594a57c6d9bef6",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/edb4b78f9bd744cb849fb067014fd155.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 149
+      },
+      "quotedText": "3D",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_5020d279f93dbc8eaa81e30e",
+      "productSlug": "wave2-philips-affiniti-50",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "EPIQ and Affiniti Security brochure PDF | 1.21 MB",
+        "unit": null
+      },
+      "rawText": "Document title: EPIQ and Affiniti Security brochure PDF | 1.21 MB",
+      "evidenceCandidateIds": [
+        "evidence_3e712e52147c76314c5fc67e"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_42f7fb4119bfea3f2d6283c7",
+      "productSlug": "wave2-philips-affiniti-50",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_797f7eed7bbe1f9316355a9b"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_86f0e6b4700a8f4dc89df950",
+      "productSlug": "wave2-philips-affiniti-50",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "EPIQ Elite & Affiniti Pediatric flyer PDF | 5.02 MB",
+        "unit": null
+      },
+      "rawText": "Document title: EPIQ Elite & Affiniti Pediatric flyer PDF | 5.02 MB",
+      "evidenceCandidateIds": [
+        "evidence_9b985c91a470ccc7125c7c2b"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_108c1e819ad1c73bbdbff805",
+      "productSlug": "wave2-philips-affiniti-50",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_6f423954a9de0db95238e797"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_2993b1b5f079ae15ab82b0fe",
+      "productSlug": "wave2-philips-affiniti-50",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Doppler",
+        "unit": null
+      },
+      "rawText": "Doppler",
+      "evidenceCandidateIds": [
+        "evidence_5e21eb25f5c6264b3cb99d82"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_be9ccf5f1e51165d176406b2",
+      "productSlug": "wave2-philips-affiniti-50",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "3D",
+        "unit": null
+      },
+      "rawText": "3D",
+      "evidenceCandidateIds": [
+        "evidence_d5aa7e6b7eba79899168c75f"
+      ],
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_51b083c9b317ace5c4df1904",
+      "productSlug": "wave2-philips-affiniti-50",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "rawText": "display*",
+      "evidenceCandidateIds": [
+        "evidence_f343d0f733954f9ae44e7f0d"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_7ad05cc99712e36598f0f6cf",
+      "productSlug": "wave2-philips-affiniti-50",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Battery",
+        "unit": null
+      },
+      "rawText": "Battery backup",
+      "evidenceCandidateIds": [
+        "evidence_21f32fa1d74c7af91fdd5798"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_b3a538fe61901bc273d19b65",
+      "productSlug": "wave2-philips-affiniti-50",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "EPIQ Elite & Affiniti ultrasound Vascular flyer PDF | 4.31 MB",
+        "unit": null
+      },
+      "rawText": "Document title: EPIQ Elite & Affiniti ultrasound Vascular flyer PDF | 4.31 MB",
+      "evidenceCandidateIds": [
+        "evidence_33f7793056416d79c67700f1"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_59f5b007fcfd426ab5e74109",
+      "productSlug": "wave2-philips-affiniti-50",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_aaa6dd76adf95f2af942ad19"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_99e2bb40ae51f4eb3289f019",
+      "productSlug": "wave2-philips-affiniti-50",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Doppler",
+        "unit": null
+      },
+      "rawText": "Doppler",
+      "evidenceCandidateIds": [
+        "evidence_6aac9aea3aa5abc4eafc6cf7"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_eea51ed424da8a6232d97d5f",
+      "productSlug": "wave2-philips-affiniti-50",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "3D",
+        "unit": null
+      },
+      "rawText": "3D",
+      "evidenceCandidateIds": [
+        "evidence_422d9a3cfcba061c1d344baa"
+      ],
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_ef01f46bed7e6dc1a8242744",
+      "productSlug": "wave2-philips-affiniti-50",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "3D/4D",
+        "unit": null
+      },
+      "rawText": "3D/4D",
+      "evidenceCandidateIds": [
+        "evidence_af0b404b16e1197674fa1b03"
+      ],
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_b2f900ad3d5f7da7d232d965",
+      "productSlug": "wave2-philips-affiniti-50",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "rawText": "display*",
+      "evidenceCandidateIds": [
+        "evidence_cf6f3bbd41e7bbebb6154dce"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_5119343325ffdef4b2907ecf",
+      "productSlug": "wave2-philips-affiniti-50",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Battery",
+        "unit": null
+      },
+      "rawText": "Battery backup",
+      "evidenceCandidateIds": [
+        "evidence_4aabdc55bd98d51c008667da"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_ddb60b3db528cfa6dc3decff",
+      "productSlug": "wave2-philips-affiniti-50",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "EPIQ Elite & Affiniti ultrasound Interventional Radiology flyer PDF | 3.64 MB",
+        "unit": null
+      },
+      "rawText": "Document title: EPIQ Elite & Affiniti ultrasound Interventional Radiology flyer PDF | 3.64 MB",
+      "evidenceCandidateIds": [
+        "evidence_804252b7d54cf4468e9d299f"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_c08151e31a530b6c49694a9b",
+      "productSlug": "wave2-philips-affiniti-50",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_698297e7ef9c5c067b9caa00"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_a4def9dc8f368b4ff396d53c",
+      "productSlug": "wave2-philips-affiniti-50",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Doppler",
+        "unit": null
+      },
+      "rawText": "Doppler",
+      "evidenceCandidateIds": [
+        "evidence_6a5ab313e84379034cc22d5f"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_7eff8f65913b14851b1f0c25",
+      "productSlug": "wave2-philips-affiniti-50",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "3D",
+        "unit": null
+      },
+      "rawText": "3D",
+      "evidenceCandidateIds": [
+        "evidence_2d908ecca827481e17478c26"
+      ],
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_137ba256e56285ad647476c0",
+      "productSlug": "wave2-philips-affiniti-50",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "rawText": "display*",
+      "evidenceCandidateIds": [
+        "evidence_840e4fd474657e705c3a14ed"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_ec8295bc0095f24ee9a73627",
+      "productSlug": "wave2-philips-affiniti-50",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Battery",
+        "unit": null
+      },
+      "rawText": "Battery backup",
+      "evidenceCandidateIds": [
+        "evidence_01210955d759439e95a7c54a"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "ultrasound"
+    ],
+    "patternsMatched": {
+      "ultrasound.doppler": 3,
+      "ultrasound.3d_4d": 4
+    },
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "ultrasound": [
+        "channels",
+        "elastography",
+        "probe_ports"
+      ]
+    },
+    "coveragePercent": 20
+  },
+  "warnings": [
+    "Resolver adapter used: philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/all-coffee-espresso-machines",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/accessories-collection",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-baristina-espresso-machine-milky-white-bar300-00",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/airfyers",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-artisan-pasta-noodle-maker",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Kitchen-Appliances",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Airfryer",
+    "Resolver rejected offsite document URL: https://www.philips-hue.com/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected unsafe document URL: tel:1-800-722-9377",
+    "Resolver rejected unsafe document URL: tel:1-800-229-6417",
+    "Resolver rejected unsafe document URL: tel:1-800-225-0230",
+    "Resolver rejected unsafe document URL: tel:1-800-345-6443",
+    "Resolver rejected unsafe document URL: tel:1-800-422-9448",
+    "Resolver rejected unsafe document URL: tel:1-800-542-8368",
+    "Resolver rejected unsafe document URL: tel:1-800-228-4728",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://www.adobe.com/es/acrobat/pricing.html?mv=search&amp;mv2=paidsearch&amp;sdid=BDDS3F8G&amp;ef_id=6f0d31b717991d11c4b85672a14576da:G:s&amp;s_kwcid=AL!3085!10!79577362531267!79577498729085&amp;msclkid=6f0d31b717991d11c4b85672a14576da",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "resolver=philips; attempts=6; matchedLinks=28; classifiedDocuments={\"Unknown\":102,\"Brochure\":2,\"IFU\":1}; confidenceDistribution={\"80\":1,\"90\":97,\"100\":7}; duplicatesRemoved=77",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

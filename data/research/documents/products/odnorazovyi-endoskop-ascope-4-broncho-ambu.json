@@ -12,8 +12,8 @@
   "skippedDocuments": [],
   "documentVersions": [],
   "warnings": [
-    "Resolver fetch failed for https://www.ambu.com/: The operation was aborted due to timeout",
-    "Resolver fetch failed for https://www.ambu.com/endoscopy/pulmonology/products: The operation was aborted due to timeout",
+    "Resolver fetch failed for https://www.ambu.com/: fetch failed",
+    "Resolver fetch failed for https://www.ambu.com/endoscopy/pulmonology/products: fetch failed",
     "Discovery creates candidates only; no verified claims or publication.",
     "No DocumentCandidate records were available for download."
   ],

@@ -1,0 +1,94 @@
+{
+  "product": {
+    "productSlug": "wave2-philips-healthcare-products-index",
+    "manufacturer": "Philips",
+    "productName": "Wave 2 Philips healthcare products index",
+    "model": "Wave 2 discovery index",
+    "category": "Wave 2 source discovery"
+  },
+  "providerDiagnostics": {
+    "providerName": "philips",
+    "strategyUsed": "Philips professional products, support and documentation",
+    "pagesVisited": [
+      "https://www.philips.com/healthcare/products"
+    ],
+    "candidateUrls": [
+      "https://www.philips.com/healthcare/products"
+    ],
+    "normalizedUrls": [
+      "https://www.philips.com/healthcare/products"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": []
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": false,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_29fb63da4d3c507a0389af99",
+      "productSlug": "wave2-philips-healthcare-products-index",
+      "manufacturer": "Philips",
+      "productName": "Wave 2 Philips healthcare products index",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.philips.com/healthcare/products",
+      "title": "Philips healthcare products index",
+      "snippet": "Wave 2 official discovery entry point only; product documents still require capture and review.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Wave 2 official discovery entry point only; product documents still require capture and review."
+      ]
+    }
+  ],
+  "documentCandidates": [],
+  "resolvedDocumentLinks": [],
+  "resolverWarnings": [
+    "Resolver fetch failed for https://www.philips.com/healthcare/products: HTTP 404"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-philips-healthcare-products-index",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-philips-healthcare-products-index",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-philips-healthcare-products-index",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver fetch failed for https://www.philips.com/healthcare/products: HTTP 404",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

@@ -1,0 +1,1615 @@
+{
+  "product": {
+    "productSlug": "wave2-philips-epiq-5",
+    "manufacturer": "Philips",
+    "productName": "Philips EPIQ 5",
+    "model": "EPIQ 5",
+    "category": "УЗИ аппараты"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_1d375948a857bb60a34def7f",
+      "documentCandidateId": "document_7588a920e9b40c2ecd8b5985",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentKey": "trusted-document:document_7588a920e9b40c2ecd8b5985",
+      "documentType": "brochure",
+      "title": "Product Brochure Philips EPIQ 5 – Ultrasound system for women&#x27;s health care PDF | 4.27 MB",
+      "language": null,
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/1e30d38ef3b249bc9e9ea77c015ea1a4.pdf",
+      "sha256": "55d6877b9758754b0b1f7233e0ca16a75694ef50daeaf60e15842bb815a4c9c9",
+      "contentType": "application/pdf",
+      "byteSize": 4480080,
+      "filePath": "data/research/artifacts/artifacts/sha256/55/d6/55d6877b9758754b0b1f7233e0ca16a75694ef50daeaf60e15842bb815a4c9c9.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_a0681b167031ee9b918a890e",
+      "documentCandidateId": "document_02201dc21f20030e0f825ec8",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentKey": "trusted-document:document_02201dc21f20030e0f825ec8",
+      "documentType": "brochure",
+      "title": "Product Brochure Philips EPIQ 5 – Advance Ultrasound system - General Imaging PDF | 5.36 MB",
+      "language": null,
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/268dfdfc40d247d4964aa77c0168d6b0.pdf",
+      "sha256": "4f44f5853b6cdd677fc7ce7f67cdd667baea144dbd5df1bc632184bb21b164ad",
+      "contentType": "application/pdf",
+      "byteSize": 5615377,
+      "filePath": "data/research/artifacts/artifacts/sha256/4f/44/4f44f5853b6cdd677fc7ce7f67cdd667baea144dbd5df1bc632184bb21b164ad.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_8d59414a5f6c8e8ef601aec5",
+      "documentCandidateId": "document_ba618114290e6892f0b4cc59",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentKey": "trusted-document:document_ba618114290e6892f0b4cc59",
+      "documentType": "brochure",
+      "title": "Product Brochure Philips EPIQ 5 – DS Advance Ultrasound system PDF | 3.63 MB",
+      "language": null,
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/bea659412ad647d69b14a77c01454629.pdf",
+      "sha256": "3066c3881b348d4550f6f41669abeed91287082df503ef88bbef0ffc9fdf6322",
+      "contentType": "application/pdf",
+      "byteSize": 3806507,
+      "filePath": "data/research/artifacts/artifacts/sha256/30/66/3066c3881b348d4550f6f41669abeed91287082df503ef88bbef0ffc9fdf6322.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_3592f414883505b349470caa",
+      "productSlug": "wave2-philips-epiq-5",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Product Brochure Philips EPIQ 5 – Ultrasound system for women&#x27;s health care PDF | 4.27 MB",
+      "unit": null,
+      "rawText": "Document title: Product Brochure Philips EPIQ 5 – Ultrasound system for women&#x27;s health care PDF | 4.27 MB",
+      "documentVersionId": "document_version_1d375948a857bb60a34def7f",
+      "documentCandidateId": "document_7588a920e9b40c2ecd8b5985",
+      "documentSha256": "55d6877b9758754b0b1f7233e0ca16a75694ef50daeaf60e15842bb815a4c9c9",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/1e30d38ef3b249bc9e9ea77c015ea1a4.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_c1c79c6e5aa62ff543b46983",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_3c67d966c7deb32061a173c3",
+      "productSlug": "wave2-philips-epiq-5",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_1d375948a857bb60a34def7f",
+      "documentCandidateId": "document_7588a920e9b40c2ecd8b5985",
+      "documentSha256": "55d6877b9758754b0b1f7233e0ca16a75694ef50daeaf60e15842bb815a4c9c9",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/1e30d38ef3b249bc9e9ea77c015ea1a4.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_32bebf8e1914eb21b0d3b520",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_7cff9019252ba926a99975f3",
+      "productSlug": "wave2-philips-epiq-5",
+      "factType": "product.operatingModes",
+      "label": "Doppler",
+      "value": "Doppler",
+      "unit": null,
+      "rawText": "Doppler",
+      "documentVersionId": "document_version_1d375948a857bb60a34def7f",
+      "documentCandidateId": "document_7588a920e9b40c2ecd8b5985",
+      "documentSha256": "55d6877b9758754b0b1f7233e0ca16a75694ef50daeaf60e15842bb815a4c9c9",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/1e30d38ef3b249bc9e9ea77c015ea1a4.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 191
+      },
+      "evidenceCandidateId": "evidence_02dc5909232c29d5daf3c0f1",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ultrasound",
+        "matchedPattern:doppler",
+        "matchedSynonym:Doppler",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_509defaa99a59ac1d5fbee5f",
+      "productSlug": "wave2-philips-epiq-5",
+      "factType": "product.operatingModes",
+      "label": "Эластография",
+      "value": "elastography",
+      "unit": null,
+      "rawText": "elastography",
+      "documentVersionId": "document_version_1d375948a857bb60a34def7f",
+      "documentCandidateId": "document_7588a920e9b40c2ecd8b5985",
+      "documentSha256": "55d6877b9758754b0b1f7233e0ca16a75694ef50daeaf60e15842bb815a4c9c9",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/1e30d38ef3b249bc9e9ea77c015ea1a4.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 198
+      },
+      "evidenceCandidateId": "evidence_554219317b33505915d8ca1f",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ultrasound",
+        "matchedPattern:elastography",
+        "matchedSynonym:Elastography",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_7868a43a67111acf9508b903",
+      "productSlug": "wave2-philips-epiq-5",
+      "factType": "product.operatingModes",
+      "label": "3D/4D",
+      "value": "3D",
+      "unit": null,
+      "rawText": "3D",
+      "documentVersionId": "document_version_1d375948a857bb60a34def7f",
+      "documentCandidateId": "document_7588a920e9b40c2ecd8b5985",
+      "documentSha256": "55d6877b9758754b0b1f7233e0ca16a75694ef50daeaf60e15842bb815a4c9c9",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/1e30d38ef3b249bc9e9ea77c015ea1a4.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 36
+      },
+      "evidenceCandidateId": "evidence_abc25e4832c7a5b590f8b9dd",
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ultrasound",
+        "matchedPattern:3d_4d",
+        "matchedSynonym:3D",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_b416077623207893e2c6f719",
+      "productSlug": "wave2-philips-epiq-5",
+      "factType": "product.operatingModes",
+      "label": "3D/4D",
+      "value": "3D/4D",
+      "unit": null,
+      "rawText": "3D/4D",
+      "documentVersionId": "document_version_1d375948a857bb60a34def7f",
+      "documentCandidateId": "document_7588a920e9b40c2ecd8b5985",
+      "documentSha256": "55d6877b9758754b0b1f7233e0ca16a75694ef50daeaf60e15842bb815a4c9c9",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/1e30d38ef3b249bc9e9ea77c015ea1a4.pdf",
+      "locator": {
+        "page": 5,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 64
+      },
+      "evidenceCandidateId": "evidence_d5d09c2fbbc2cbaefb46c4f7",
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ultrasound",
+        "matchedPattern:3d_4d",
+        "matchedSynonym:3D",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_633e5eabfca75d8669c307e5",
+      "productSlug": "wave2-philips-epiq-5",
+      "factType": "product.operatingModes",
+      "label": "3D/4D",
+      "value": "4D",
+      "unit": null,
+      "rawText": "4D",
+      "documentVersionId": "document_version_1d375948a857bb60a34def7f",
+      "documentCandidateId": "document_7588a920e9b40c2ecd8b5985",
+      "documentSha256": "55d6877b9758754b0b1f7233e0ca16a75694ef50daeaf60e15842bb815a4c9c9",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/1e30d38ef3b249bc9e9ea77c015ea1a4.pdf",
+      "locator": {
+        "page": 12,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 271
+      },
+      "evidenceCandidateId": "evidence_90a156074815f59f88e530e7",
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ultrasound",
+        "matchedPattern:3d_4d",
+        "matchedSynonym:4D",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_6c6ae02169620f9bff4bc702",
+      "productSlug": "wave2-philips-epiq-5",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Product Brochure Philips EPIQ 5 – Advance Ultrasound system - General Imaging PDF | 5.36 MB",
+      "unit": null,
+      "rawText": "Document title: Product Brochure Philips EPIQ 5 – Advance Ultrasound system - General Imaging PDF | 5.36 MB",
+      "documentVersionId": "document_version_a0681b167031ee9b918a890e",
+      "documentCandidateId": "document_02201dc21f20030e0f825ec8",
+      "documentSha256": "4f44f5853b6cdd677fc7ce7f67cdd667baea144dbd5df1bc632184bb21b164ad",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/268dfdfc40d247d4964aa77c0168d6b0.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_46ad7e548590d86b57186eab",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_a99f9ea13a9b0a5ee63a3334",
+      "productSlug": "wave2-philips-epiq-5",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_a0681b167031ee9b918a890e",
+      "documentCandidateId": "document_02201dc21f20030e0f825ec8",
+      "documentSha256": "4f44f5853b6cdd677fc7ce7f67cdd667baea144dbd5df1bc632184bb21b164ad",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/268dfdfc40d247d4964aa77c0168d6b0.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_f804d211350134f37f5616a3",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_603a211c61d51a3fa28fc5b4",
+      "productSlug": "wave2-philips-epiq-5",
+      "factType": "product.operatingModes",
+      "label": "Doppler",
+      "value": "color Doppler",
+      "unit": null,
+      "rawText": "color Doppler",
+      "documentVersionId": "document_version_a0681b167031ee9b918a890e",
+      "documentCandidateId": "document_02201dc21f20030e0f825ec8",
+      "documentSha256": "4f44f5853b6cdd677fc7ce7f67cdd667baea144dbd5df1bc632184bb21b164ad",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/268dfdfc40d247d4964aa77c0168d6b0.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 197
+      },
+      "evidenceCandidateId": "evidence_419d987e14ac8955b3e2f113",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ultrasound",
+        "matchedPattern:doppler",
+        "matchedSynonym:Color Doppler",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_71801b59cf214329e669c7b8",
+      "productSlug": "wave2-philips-epiq-5",
+      "factType": "product.operatingModes",
+      "label": "Doppler",
+      "value": "Doppler",
+      "unit": null,
+      "rawText": "Doppler",
+      "documentVersionId": "document_version_a0681b167031ee9b918a890e",
+      "documentCandidateId": "document_02201dc21f20030e0f825ec8",
+      "documentSha256": "4f44f5853b6cdd677fc7ce7f67cdd667baea144dbd5df1bc632184bb21b164ad",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/268dfdfc40d247d4964aa77c0168d6b0.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 201
+      },
+      "evidenceCandidateId": "evidence_8e515eb2f82aa6a3379527da",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ultrasound",
+        "matchedPattern:doppler",
+        "matchedSynonym:Doppler",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_582301f89c1c828a30f3924a",
+      "productSlug": "wave2-philips-epiq-5",
+      "factType": "product.operatingModes",
+      "label": "Эластография",
+      "value": "elastography",
+      "unit": null,
+      "rawText": "elastography",
+      "documentVersionId": "document_version_a0681b167031ee9b918a890e",
+      "documentCandidateId": "document_02201dc21f20030e0f825ec8",
+      "documentSha256": "4f44f5853b6cdd677fc7ce7f67cdd667baea144dbd5df1bc632184bb21b164ad",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/268dfdfc40d247d4964aa77c0168d6b0.pdf",
+      "locator": {
+        "page": 12,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 265
+      },
+      "evidenceCandidateId": "evidence_a6c66c2ff1c097f65e83b919",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ultrasound",
+        "matchedPattern:elastography",
+        "matchedSynonym:Elastography",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_2ac1853660ebada0a4d09980",
+      "productSlug": "wave2-philips-epiq-5",
+      "factType": "product.operatingModes",
+      "label": "3D/4D",
+      "value": "3D",
+      "unit": null,
+      "rawText": "3D",
+      "documentVersionId": "document_version_a0681b167031ee9b918a890e",
+      "documentCandidateId": "document_02201dc21f20030e0f825ec8",
+      "documentSha256": "4f44f5853b6cdd677fc7ce7f67cdd667baea144dbd5df1bc632184bb21b164ad",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/268dfdfc40d247d4964aa77c0168d6b0.pdf",
+      "locator": {
+        "page": 18,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 421
+      },
+      "evidenceCandidateId": "evidence_cf00520228c1136010cdca4c",
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ultrasound",
+        "matchedPattern:3d_4d",
+        "matchedSynonym:3D",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_a565f51c261d3e7033515bf6",
+      "productSlug": "wave2-philips-epiq-5",
+      "factType": "product.operatingModes",
+      "label": "3D/4D",
+      "value": "4D",
+      "unit": null,
+      "rawText": "4D",
+      "documentVersionId": "document_version_a0681b167031ee9b918a890e",
+      "documentCandidateId": "document_02201dc21f20030e0f825ec8",
+      "documentSha256": "4f44f5853b6cdd677fc7ce7f67cdd667baea144dbd5df1bc632184bb21b164ad",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/268dfdfc40d247d4964aa77c0168d6b0.pdf",
+      "locator": {
+        "page": 18,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 421
+      },
+      "evidenceCandidateId": "evidence_83859d121b9903971d2d5930",
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ultrasound",
+        "matchedPattern:3d_4d",
+        "matchedSynonym:4D",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_53fe0af3b21f29a61c7561a2",
+      "productSlug": "wave2-philips-epiq-5",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "compatibility",
+      "unit": null,
+      "rawText": "compatibility with",
+      "documentVersionId": "document_version_a0681b167031ee9b918a890e",
+      "documentCandidateId": "document_02201dc21f20030e0f825ec8",
+      "documentSha256": "4f44f5853b6cdd677fc7ce7f67cdd667baea144dbd5df1bc632184bb21b164ad",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/268dfdfc40d247d4964aa77c0168d6b0.pdf",
+      "locator": {
+        "page": 15,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 348
+      },
+      "evidenceCandidateId": "evidence_5aff645eddfa7976606845c0",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_39395a7c185902cbb5d1a7e5",
+      "productSlug": "wave2-philips-epiq-5",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Product Brochure Philips EPIQ 5 – DS Advance Ultrasound system PDF | 3.63 MB",
+      "unit": null,
+      "rawText": "Document title: Product Brochure Philips EPIQ 5 – DS Advance Ultrasound system PDF | 3.63 MB",
+      "documentVersionId": "document_version_8d59414a5f6c8e8ef601aec5",
+      "documentCandidateId": "document_ba618114290e6892f0b4cc59",
+      "documentSha256": "3066c3881b348d4550f6f41669abeed91287082df503ef88bbef0ffc9fdf6322",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/bea659412ad647d69b14a77c01454629.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_1d8398e99caf9651a574c480",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_90b3371ed42d2549ea4a4b32",
+      "productSlug": "wave2-philips-epiq-5",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_8d59414a5f6c8e8ef601aec5",
+      "documentCandidateId": "document_ba618114290e6892f0b4cc59",
+      "documentSha256": "3066c3881b348d4550f6f41669abeed91287082df503ef88bbef0ffc9fdf6322",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/bea659412ad647d69b14a77c01454629.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_e74af75c9e43483689bb51d6",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_ec30e9a2735a87b1b845dc2f",
+      "productSlug": "wave2-philips-epiq-5",
+      "factType": "product.operatingModes",
+      "label": "Doppler",
+      "value": "Doppler",
+      "unit": null,
+      "rawText": "Doppler",
+      "documentVersionId": "document_version_8d59414a5f6c8e8ef601aec5",
+      "documentCandidateId": "document_ba618114290e6892f0b4cc59",
+      "documentSha256": "3066c3881b348d4550f6f41669abeed91287082df503ef88bbef0ffc9fdf6322",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/bea659412ad647d69b14a77c01454629.pdf",
+      "locator": {
+        "page": 9,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 321
+      },
+      "evidenceCandidateId": "evidence_b3501392fe2df571878e7fb9",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ultrasound",
+        "matchedPattern:doppler",
+        "matchedSynonym:Doppler",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_4beda4358e7108bda53c1d74",
+      "productSlug": "wave2-philips-epiq-5",
+      "factType": "product.operatingModes",
+      "label": "3D/4D",
+      "value": "3D",
+      "unit": null,
+      "rawText": "3D",
+      "documentVersionId": "document_version_8d59414a5f6c8e8ef601aec5",
+      "documentCandidateId": "document_ba618114290e6892f0b4cc59",
+      "documentSha256": "3066c3881b348d4550f6f41669abeed91287082df503ef88bbef0ffc9fdf6322",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/bea659412ad647d69b14a77c01454629.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 253
+      },
+      "evidenceCandidateId": "evidence_0046029fbc41ca137a96083c",
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ultrasound",
+        "matchedPattern:3d_4d",
+        "matchedSynonym:3D",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_a90bc138b2713ceee531900c",
+      "productSlug": "wave2-philips-epiq-5",
+      "factType": "product.operatingModes",
+      "label": "3D/4D",
+      "value": "4D",
+      "unit": null,
+      "rawText": "4D",
+      "documentVersionId": "document_version_8d59414a5f6c8e8ef601aec5",
+      "documentCandidateId": "document_ba618114290e6892f0b4cc59",
+      "documentSha256": "3066c3881b348d4550f6f41669abeed91287082df503ef88bbef0ffc9fdf6322",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/bea659412ad647d69b14a77c01454629.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 253
+      },
+      "evidenceCandidateId": "evidence_8026cd547c2956714e7bcae7",
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ultrasound",
+        "matchedPattern:3d_4d",
+        "matchedSynonym:4D",
+        "unitParsed:none"
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_c1c79c6e5aa62ff543b46983",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_1d375948a857bb60a34def7f",
+      "documentCandidateId": "document_7588a920e9b40c2ecd8b5985",
+      "sha256": "55d6877b9758754b0b1f7233e0ca16a75694ef50daeaf60e15842bb815a4c9c9",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/1e30d38ef3b249bc9e9ea77c015ea1a4.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Product Brochure Philips EPIQ 5 – Ultrasound system for women&#x27;s health care PDF | 4.27 MB",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_32bebf8e1914eb21b0d3b520",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_1d375948a857bb60a34def7f",
+      "documentCandidateId": "document_7588a920e9b40c2ecd8b5985",
+      "sha256": "55d6877b9758754b0b1f7233e0ca16a75694ef50daeaf60e15842bb815a4c9c9",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/1e30d38ef3b249bc9e9ea77c015ea1a4.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_02dc5909232c29d5daf3c0f1",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_1d375948a857bb60a34def7f",
+      "documentCandidateId": "document_7588a920e9b40c2ecd8b5985",
+      "sha256": "55d6877b9758754b0b1f7233e0ca16a75694ef50daeaf60e15842bb815a4c9c9",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/1e30d38ef3b249bc9e9ea77c015ea1a4.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 191
+      },
+      "quotedText": "Doppler",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_554219317b33505915d8ca1f",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_1d375948a857bb60a34def7f",
+      "documentCandidateId": "document_7588a920e9b40c2ecd8b5985",
+      "sha256": "55d6877b9758754b0b1f7233e0ca16a75694ef50daeaf60e15842bb815a4c9c9",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/1e30d38ef3b249bc9e9ea77c015ea1a4.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 198
+      },
+      "quotedText": "elastography",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_abc25e4832c7a5b590f8b9dd",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_1d375948a857bb60a34def7f",
+      "documentCandidateId": "document_7588a920e9b40c2ecd8b5985",
+      "sha256": "55d6877b9758754b0b1f7233e0ca16a75694ef50daeaf60e15842bb815a4c9c9",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/1e30d38ef3b249bc9e9ea77c015ea1a4.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 36
+      },
+      "quotedText": "3D",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_d5d09c2fbbc2cbaefb46c4f7",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_1d375948a857bb60a34def7f",
+      "documentCandidateId": "document_7588a920e9b40c2ecd8b5985",
+      "sha256": "55d6877b9758754b0b1f7233e0ca16a75694ef50daeaf60e15842bb815a4c9c9",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/1e30d38ef3b249bc9e9ea77c015ea1a4.pdf",
+      "locator": {
+        "page": 5,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 64
+      },
+      "quotedText": "3D/4D",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_90a156074815f59f88e530e7",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_1d375948a857bb60a34def7f",
+      "documentCandidateId": "document_7588a920e9b40c2ecd8b5985",
+      "sha256": "55d6877b9758754b0b1f7233e0ca16a75694ef50daeaf60e15842bb815a4c9c9",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/1e30d38ef3b249bc9e9ea77c015ea1a4.pdf",
+      "locator": {
+        "page": 12,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 271
+      },
+      "quotedText": "4D",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_46ad7e548590d86b57186eab",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_a0681b167031ee9b918a890e",
+      "documentCandidateId": "document_02201dc21f20030e0f825ec8",
+      "sha256": "4f44f5853b6cdd677fc7ce7f67cdd667baea144dbd5df1bc632184bb21b164ad",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/268dfdfc40d247d4964aa77c0168d6b0.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Product Brochure Philips EPIQ 5 – Advance Ultrasound system - General Imaging PDF | 5.36 MB",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_f804d211350134f37f5616a3",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_a0681b167031ee9b918a890e",
+      "documentCandidateId": "document_02201dc21f20030e0f825ec8",
+      "sha256": "4f44f5853b6cdd677fc7ce7f67cdd667baea144dbd5df1bc632184bb21b164ad",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/268dfdfc40d247d4964aa77c0168d6b0.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_419d987e14ac8955b3e2f113",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_a0681b167031ee9b918a890e",
+      "documentCandidateId": "document_02201dc21f20030e0f825ec8",
+      "sha256": "4f44f5853b6cdd677fc7ce7f67cdd667baea144dbd5df1bc632184bb21b164ad",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/268dfdfc40d247d4964aa77c0168d6b0.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 197
+      },
+      "quotedText": "color Doppler",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_8e515eb2f82aa6a3379527da",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_a0681b167031ee9b918a890e",
+      "documentCandidateId": "document_02201dc21f20030e0f825ec8",
+      "sha256": "4f44f5853b6cdd677fc7ce7f67cdd667baea144dbd5df1bc632184bb21b164ad",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/268dfdfc40d247d4964aa77c0168d6b0.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 201
+      },
+      "quotedText": "Doppler",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_a6c66c2ff1c097f65e83b919",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_a0681b167031ee9b918a890e",
+      "documentCandidateId": "document_02201dc21f20030e0f825ec8",
+      "sha256": "4f44f5853b6cdd677fc7ce7f67cdd667baea144dbd5df1bc632184bb21b164ad",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/268dfdfc40d247d4964aa77c0168d6b0.pdf",
+      "locator": {
+        "page": 12,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 265
+      },
+      "quotedText": "elastography",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_cf00520228c1136010cdca4c",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_a0681b167031ee9b918a890e",
+      "documentCandidateId": "document_02201dc21f20030e0f825ec8",
+      "sha256": "4f44f5853b6cdd677fc7ce7f67cdd667baea144dbd5df1bc632184bb21b164ad",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/268dfdfc40d247d4964aa77c0168d6b0.pdf",
+      "locator": {
+        "page": 18,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 421
+      },
+      "quotedText": "3D",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_83859d121b9903971d2d5930",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_a0681b167031ee9b918a890e",
+      "documentCandidateId": "document_02201dc21f20030e0f825ec8",
+      "sha256": "4f44f5853b6cdd677fc7ce7f67cdd667baea144dbd5df1bc632184bb21b164ad",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/268dfdfc40d247d4964aa77c0168d6b0.pdf",
+      "locator": {
+        "page": 18,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 421
+      },
+      "quotedText": "4D",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_1d8398e99caf9651a574c480",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_8d59414a5f6c8e8ef601aec5",
+      "documentCandidateId": "document_ba618114290e6892f0b4cc59",
+      "sha256": "3066c3881b348d4550f6f41669abeed91287082df503ef88bbef0ffc9fdf6322",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/bea659412ad647d69b14a77c01454629.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Product Brochure Philips EPIQ 5 – DS Advance Ultrasound system PDF | 3.63 MB",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_e74af75c9e43483689bb51d6",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_8d59414a5f6c8e8ef601aec5",
+      "documentCandidateId": "document_ba618114290e6892f0b4cc59",
+      "sha256": "3066c3881b348d4550f6f41669abeed91287082df503ef88bbef0ffc9fdf6322",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/bea659412ad647d69b14a77c01454629.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_b3501392fe2df571878e7fb9",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_8d59414a5f6c8e8ef601aec5",
+      "documentCandidateId": "document_ba618114290e6892f0b4cc59",
+      "sha256": "3066c3881b348d4550f6f41669abeed91287082df503ef88bbef0ffc9fdf6322",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/bea659412ad647d69b14a77c01454629.pdf",
+      "locator": {
+        "page": 9,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 321
+      },
+      "quotedText": "Doppler",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_0046029fbc41ca137a96083c",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_8d59414a5f6c8e8ef601aec5",
+      "documentCandidateId": "document_ba618114290e6892f0b4cc59",
+      "sha256": "3066c3881b348d4550f6f41669abeed91287082df503ef88bbef0ffc9fdf6322",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/bea659412ad647d69b14a77c01454629.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 253
+      },
+      "quotedText": "3D",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_8026cd547c2956714e7bcae7",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_8d59414a5f6c8e8ef601aec5",
+      "documentCandidateId": "document_ba618114290e6892f0b4cc59",
+      "sha256": "3066c3881b348d4550f6f41669abeed91287082df503ef88bbef0ffc9fdf6322",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/bea659412ad647d69b14a77c01454629.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 253
+      },
+      "quotedText": "4D",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_27af305001e9c8129f1d5f39",
+      "productSlug": "wave2-philips-epiq-5",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Product Brochure Philips EPIQ 5 – Ultrasound system for women&#x27;s health care PDF | 4.27 MB",
+        "unit": null
+      },
+      "rawText": "Document title: Product Brochure Philips EPIQ 5 – Ultrasound system for women&#x27;s health care PDF | 4.27 MB",
+      "evidenceCandidateIds": [
+        "evidence_c1c79c6e5aa62ff543b46983"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_e417b3587ec6da03686049d9",
+      "productSlug": "wave2-philips-epiq-5",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_32bebf8e1914eb21b0d3b520"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_90dd24117d1f11486d2524b1",
+      "productSlug": "wave2-philips-epiq-5",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Doppler",
+        "unit": null
+      },
+      "rawText": "Doppler",
+      "evidenceCandidateIds": [
+        "evidence_02dc5909232c29d5daf3c0f1"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_e239c9e9d73be163f9d16ca0",
+      "productSlug": "wave2-philips-epiq-5",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "elastography",
+        "unit": null
+      },
+      "rawText": "elastography",
+      "evidenceCandidateIds": [
+        "evidence_554219317b33505915d8ca1f"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_4a83e4b26a60be3a4837cd0a",
+      "productSlug": "wave2-philips-epiq-5",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "3D",
+        "unit": null
+      },
+      "rawText": "3D",
+      "evidenceCandidateIds": [
+        "evidence_abc25e4832c7a5b590f8b9dd"
+      ],
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_8b77895be8a73984fc9340a5",
+      "productSlug": "wave2-philips-epiq-5",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "3D/4D",
+        "unit": null
+      },
+      "rawText": "3D/4D",
+      "evidenceCandidateIds": [
+        "evidence_d5d09c2fbbc2cbaefb46c4f7"
+      ],
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_4ebc070c35ebfcf69dbe70be",
+      "productSlug": "wave2-philips-epiq-5",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "4D",
+        "unit": null
+      },
+      "rawText": "4D",
+      "evidenceCandidateIds": [
+        "evidence_90a156074815f59f88e530e7"
+      ],
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_ad1b6d839d5e69951ee318eb",
+      "productSlug": "wave2-philips-epiq-5",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Product Brochure Philips EPIQ 5 – Advance Ultrasound system - General Imaging PDF | 5.36 MB",
+        "unit": null
+      },
+      "rawText": "Document title: Product Brochure Philips EPIQ 5 – Advance Ultrasound system - General Imaging PDF | 5.36 MB",
+      "evidenceCandidateIds": [
+        "evidence_46ad7e548590d86b57186eab"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_08bf953a94702f4653a3ff89",
+      "productSlug": "wave2-philips-epiq-5",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_f804d211350134f37f5616a3"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_b515acf9b543d2cdf361c916",
+      "productSlug": "wave2-philips-epiq-5",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "color Doppler",
+        "unit": null
+      },
+      "rawText": "color Doppler",
+      "evidenceCandidateIds": [
+        "evidence_419d987e14ac8955b3e2f113"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_e509e983c3e5cd2f18ccf991",
+      "productSlug": "wave2-philips-epiq-5",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Doppler",
+        "unit": null
+      },
+      "rawText": "Doppler",
+      "evidenceCandidateIds": [
+        "evidence_8e515eb2f82aa6a3379527da"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_582c33e3210e946a86fc39f1",
+      "productSlug": "wave2-philips-epiq-5",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "elastography",
+        "unit": null
+      },
+      "rawText": "elastography",
+      "evidenceCandidateIds": [
+        "evidence_a6c66c2ff1c097f65e83b919"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_52bb0180af9014431195274f",
+      "productSlug": "wave2-philips-epiq-5",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "3D",
+        "unit": null
+      },
+      "rawText": "3D",
+      "evidenceCandidateIds": [
+        "evidence_cf00520228c1136010cdca4c"
+      ],
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_531757aa387ed33faddcc851",
+      "productSlug": "wave2-philips-epiq-5",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "4D",
+        "unit": null
+      },
+      "rawText": "4D",
+      "evidenceCandidateIds": [
+        "evidence_83859d121b9903971d2d5930"
+      ],
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_3e806e469e779c262c3265d6",
+      "productSlug": "wave2-philips-epiq-5",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "compatibility",
+        "unit": null
+      },
+      "rawText": "compatibility with",
+      "evidenceCandidateIds": [
+        "evidence_5aff645eddfa7976606845c0"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_e9250521248a45dafa1ad6d5",
+      "productSlug": "wave2-philips-epiq-5",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Product Brochure Philips EPIQ 5 – DS Advance Ultrasound system PDF | 3.63 MB",
+        "unit": null
+      },
+      "rawText": "Document title: Product Brochure Philips EPIQ 5 – DS Advance Ultrasound system PDF | 3.63 MB",
+      "evidenceCandidateIds": [
+        "evidence_1d8398e99caf9651a574c480"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_bac8494a5ce2c8fa3a07b7cf",
+      "productSlug": "wave2-philips-epiq-5",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_e74af75c9e43483689bb51d6"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_ae11c07a154dc0aff6a39d30",
+      "productSlug": "wave2-philips-epiq-5",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Doppler",
+        "unit": null
+      },
+      "rawText": "Doppler",
+      "evidenceCandidateIds": [
+        "evidence_b3501392fe2df571878e7fb9"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_6203471a4f55ad1f9df1aacc",
+      "productSlug": "wave2-philips-epiq-5",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "3D",
+        "unit": null
+      },
+      "rawText": "3D",
+      "evidenceCandidateIds": [
+        "evidence_0046029fbc41ca137a96083c"
+      ],
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_568c1fa26d921819a32cdd41",
+      "productSlug": "wave2-philips-epiq-5",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "4D",
+        "unit": null
+      },
+      "rawText": "4D",
+      "evidenceCandidateIds": [
+        "evidence_8026cd547c2956714e7bcae7"
+      ],
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "ultrasound"
+    ],
+    "patternsMatched": {
+      "ultrasound.doppler": 4,
+      "ultrasound.elastography": 2,
+      "ultrasound.3d_4d": 7
+    },
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "ultrasound": [
+        "channels",
+        "probe_ports"
+      ]
+    },
+    "coveragePercent": 30
+  },
+  "warnings": [
+    "Resolver adapter used: philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/all-coffee-espresso-machines",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/accessories-collection",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-baristina-espresso-machine-milky-white-bar300-00",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/airfyers",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-artisan-pasta-noodle-maker",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Kitchen-Appliances",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Airfryer",
+    "Resolver rejected offsite document URL: https://www.philips-hue.com/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected unsafe document URL: tel:1-800-722-9377",
+    "Resolver rejected unsafe document URL: tel:1-800-229-6417",
+    "Resolver rejected unsafe document URL: tel:1-800-225-0230",
+    "Resolver rejected unsafe document URL: tel:1-800-345-6443",
+    "Resolver rejected unsafe document URL: tel:1-800-422-9448",
+    "Resolver rejected unsafe document URL: tel:1-800-542-8368",
+    "Resolver rejected unsafe document URL: tel:1-800-228-4728",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://www.adobe.com/es/acrobat/pricing.html?mv=search&amp;mv2=paidsearch&amp;sdid=BDDS3F8G&amp;ef_id=6f0d31b717991d11c4b85672a14576da:G:s&amp;s_kwcid=AL!3085!10!79577362531267!79577498729085&amp;msclkid=6f0d31b717991d11c4b85672a14576da",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "resolver=philips; attempts=6; matchedLinks=27; classifiedDocuments={\"Unknown\":97,\"Brochure\":6,\"IFU\":1}; confidenceDistribution={\"80\":1,\"90\":97,\"100\":6}; duplicatesRemoved=77",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

@@ -1,0 +1,657 @@
+{
+  "product": {
+    "productSlug": "wave2-philips-intellivue-mx750",
+    "manufacturer": "Philips",
+    "productName": "Philips IntelliVue MX750",
+    "model": "IntelliVue MX750",
+    "category": "Монитор пациента"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_1407953d1fd3f417c57167db",
+      "productSlug": "wave2-philips-intellivue-mx750",
+      "productTitle": "Philips IntelliVue MX750",
+      "claimCandidateId": "claim_97d8d6486964de023d5649b0",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Expand your view with IntelliVue MX750 and MX850 bedside patient monitors PDF | 5.27 MB",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_40d3f70715faa54992557f48"
+      ],
+      "documentVersionIds": [
+        "document_version_30e7f6149360727c43fedd72"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20200818/d0cca619e3354e7badeeac1b00f32609.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_846a75210c8d3da4c1f9e8b5",
+      "productSlug": "wave2-philips-intellivue-mx750",
+      "productTitle": "Philips IntelliVue MX750",
+      "claimCandidateId": "claim_f704701bb5f7acba5d8c6dd6",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_ad037ca0c8207570732866e3"
+      ],
+      "documentVersionIds": [
+        "document_version_30e7f6149360727c43fedd72"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20200818/d0cca619e3354e7badeeac1b00f32609.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_8df86b5978296d4f1added28",
+      "productSlug": "wave2-philips-intellivue-mx750",
+      "productTitle": "Philips IntelliVue MX750",
+      "claimCandidateId": "claim_08d3e8e09d12381d0f949d98",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c29b7c7426247f1c30d81bdf"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_bbf811594cb699382000535e",
+      "productSlug": "wave2-philips-intellivue-mx750",
+      "productTitle": "Philips IntelliVue MX750",
+      "claimCandidateId": "claim_29eccd3e13f22889e9be7048",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "MX750 Mid-acute Care Brochure PDF | 3.53 MB",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_0db2360638e9bd65c72e310c"
+      ],
+      "documentVersionIds": [
+        "document_version_1097beb061f2c519a6204a34"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20240226/eaeec99947fc4fcd8dd1b1220170bf6c.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_a791854e6522055bc6cc9028",
+      "productSlug": "wave2-philips-intellivue-mx750",
+      "productTitle": "Philips IntelliVue MX750",
+      "claimCandidateId": "claim_a4fb081da54366bbd24786e1",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_868031f7fdd3f0f32e3f6383"
+      ],
+      "documentVersionIds": [
+        "document_version_1097beb061f2c519a6204a34"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20240226/eaeec99947fc4fcd8dd1b1220170bf6c.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_4d2ddd2b18357be838497bfb",
+      "productSlug": "wave2-philips-intellivue-mx750",
+      "productTitle": "Philips IntelliVue MX750",
+      "claimCandidateId": "claim_253cbe42ef574c964d3d831e",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c57a65c161626ef05624c1e0"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_a2e3a93f396aea95f9217f02",
+      "productSlug": "wave2-philips-intellivue-mx750",
+      "productTitle": "Philips IntelliVue MX750",
+      "claimCandidateId": "claim_59c56b7732db4f858184a287",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "MX750 EcoPassport",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_bcf1db68447d7182b18d83ac"
+      ],
+      "documentVersionIds": [
+        "document_version_769e8ad5c0dda1e5897ce1a7"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20240516/ac0d259914484f86a825b1720145e807.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b8ce8b95a0110c728ff8d07d",
+      "productSlug": "wave2-philips-intellivue-mx750",
+      "productTitle": "Philips IntelliVue MX750",
+      "claimCandidateId": "claim_92d4ae3a747c4d64b15ce7f7",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_e1c2efe00f910a101fcaa9d8"
+      ],
+      "documentVersionIds": [
+        "document_version_769e8ad5c0dda1e5897ce1a7"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20240516/ac0d259914484f86a825b1720145e807.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_55b53683b772a1b2c7c77774",
+      "productSlug": "wave2-philips-intellivue-mx750",
+      "productTitle": "Philips IntelliVue MX750",
+      "claimCandidateId": "claim_ffa0106950f71d7ac5b300f3",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_6184fe1829718cf69aaa6809"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_1407953d1fd3f417c57167db",
+        "productSlug": "wave2-philips-intellivue-mx750",
+        "productTitle": "Philips IntelliVue MX750",
+        "claimCandidateId": "claim_97d8d6486964de023d5649b0",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Expand your view with IntelliVue MX750 and MX850 bedside patient monitors PDF | 5.27 MB",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_40d3f70715faa54992557f48"
+        ],
+        "documentVersionIds": [
+          "document_version_30e7f6149360727c43fedd72"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20200818/d0cca619e3354e7badeeac1b00f32609.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_bbf811594cb699382000535e",
+        "productSlug": "wave2-philips-intellivue-mx750",
+        "productTitle": "Philips IntelliVue MX750",
+        "claimCandidateId": "claim_29eccd3e13f22889e9be7048",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "MX750 Mid-acute Care Brochure PDF | 3.53 MB",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_0db2360638e9bd65c72e310c"
+        ],
+        "documentVersionIds": [
+          "document_version_1097beb061f2c519a6204a34"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20240226/eaeec99947fc4fcd8dd1b1220170bf6c.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_a2e3a93f396aea95f9217f02",
+        "productSlug": "wave2-philips-intellivue-mx750",
+        "productTitle": "Philips IntelliVue MX750",
+        "claimCandidateId": "claim_59c56b7732db4f858184a287",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "MX750 EcoPassport",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_bcf1db68447d7182b18d83ac"
+        ],
+        "documentVersionIds": [
+          "document_version_769e8ad5c0dda1e5897ce1a7"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20240516/ac0d259914484f86a825b1720145e807.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_846a75210c8d3da4c1f9e8b5",
+        "productSlug": "wave2-philips-intellivue-mx750",
+        "productTitle": "Philips IntelliVue MX750",
+        "claimCandidateId": "claim_f704701bb5f7acba5d8c6dd6",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_ad037ca0c8207570732866e3"
+        ],
+        "documentVersionIds": [
+          "document_version_30e7f6149360727c43fedd72"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20200818/d0cca619e3354e7badeeac1b00f32609.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_a791854e6522055bc6cc9028",
+        "productSlug": "wave2-philips-intellivue-mx750",
+        "productTitle": "Philips IntelliVue MX750",
+        "claimCandidateId": "claim_a4fb081da54366bbd24786e1",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_868031f7fdd3f0f32e3f6383"
+        ],
+        "documentVersionIds": [
+          "document_version_1097beb061f2c519a6204a34"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20240226/eaeec99947fc4fcd8dd1b1220170bf6c.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_b8ce8b95a0110c728ff8d07d",
+        "productSlug": "wave2-philips-intellivue-mx750",
+        "productTitle": "Philips IntelliVue MX750",
+        "claimCandidateId": "claim_92d4ae3a747c4d64b15ce7f7",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_e1c2efe00f910a101fcaa9d8"
+        ],
+        "documentVersionIds": [
+          "document_version_769e8ad5c0dda1e5897ce1a7"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20240516/ac0d259914484f86a825b1720145e807.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "technical.term": [
+      {
+        "reviewItemId": "review_item_8df86b5978296d4f1added28",
+        "productSlug": "wave2-philips-intellivue-mx750",
+        "productTitle": "Philips IntelliVue MX750",
+        "claimCandidateId": "claim_08d3e8e09d12381d0f949d98",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c29b7c7426247f1c30d81bdf"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_4d2ddd2b18357be838497bfb",
+        "productSlug": "wave2-philips-intellivue-mx750",
+        "productTitle": "Philips IntelliVue MX750",
+        "claimCandidateId": "claim_253cbe42ef574c964d3d831e",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c57a65c161626ef05624c1e0"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_55b53683b772a1b2c7c77774",
+        "productSlug": "wave2-philips-intellivue-mx750",
+        "productTitle": "Philips IntelliVue MX750",
+        "claimCandidateId": "claim_ffa0106950f71d7ac5b300f3",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_6184fe1829718cf69aaa6809"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_30e7f6149360727c43fedd72",
+      "documentType": "unknown",
+      "title": "Expand your view with IntelliVue MX750 and MX850 bedside patient monitors PDF | 5.27 MB",
+      "sourceUrl": "https://www.documents.philips.com/assets/20200818/d0cca619e3354e7badeeac1b00f32609.pdf",
+      "sha256": "3d0340ca9e796c2d88193968f918d798bed4dfe9e9be39907c4506f93a018cec"
+    },
+    {
+      "documentVersionId": "document_version_1097beb061f2c519a6204a34",
+      "documentType": "brochure",
+      "title": "MX750 Mid-acute Care Brochure PDF | 3.53 MB",
+      "sourceUrl": "https://www.documents.philips.com/assets/20240226/eaeec99947fc4fcd8dd1b1220170bf6c.pdf",
+      "sha256": "8f2b72224efef55a834ad9054ed45690a60496d615a32e6e1387fcf68039cfc5"
+    },
+    {
+      "documentVersionId": "document_version_769e8ad5c0dda1e5897ce1a7",
+      "documentType": "unknown",
+      "title": "MX750 EcoPassport",
+      "sourceUrl": "https://www.documents.philips.com/assets/20240516/ac0d259914484f86a825b1720145e807.pdf",
+      "sha256": "a6b542bdf13217a8aecedf5c4b6efdb9d2bbbfc31fc683daa48fd497379e0752"
+    }
+  ],
+  "missingEvidence": [
+    {
+      "claimCandidateId": "claim_08d3e8e09d12381d0f949d98",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_253cbe42ef574c964d3d831e",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_ffa0106950f71d7ac5b300f3",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    }
+  ],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver adapter used: philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/all-coffee-espresso-machines",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/accessories-collection",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-baristina-espresso-machine-milky-white-bar300-00",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/airfyers",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-artisan-pasta-noodle-maker",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Kitchen-Appliances",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Airfryer",
+    "Resolver rejected offsite document URL: https://www.philips-hue.com/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected unsafe document URL: tel:1-800-722-9377",
+    "Resolver rejected unsafe document URL: tel:1-800-229-6417",
+    "Resolver rejected unsafe document URL: tel:1-800-225-0230",
+    "Resolver rejected unsafe document URL: tel:1-800-345-6443",
+    "Resolver rejected unsafe document URL: tel:1-800-422-9448",
+    "Resolver rejected unsafe document URL: tel:1-800-542-8368",
+    "Resolver rejected unsafe document URL: tel:1-800-228-4728",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://www.adobe.com/es/acrobat/pricing.html?mv=search&amp;mv2=paidsearch&amp;sdid=BDDS3F8G&amp;ef_id=6f0d31b717991d11c4b85672a14576da:G:s&amp;s_kwcid=AL!3085!10!79577362531267!79577498729085&amp;msclkid=6f0d31b717991d11c4b85672a14576da",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "resolver=philips; attempts=6; matchedLinks=27; classifiedDocuments={\"Unknown\":100,\"Brochure\":2,\"IFU\":1}; confidenceDistribution={\"80\":1,\"90\":97,\"100\":5}; duplicatesRemoved=76",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}
