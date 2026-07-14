@@ -1,0 +1,1611 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-4700",
+    "manufacturer": "Dixion",
+    "productName": "DIXION 4700",
+    "model": "4700",
+    "category": "Аппарат ИВЛ"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_e8013c84e51536d606b0ab41",
+      "documentCandidateId": "document_8f65b41e303162f2ad3be099",
+      "sourceId": "source_e35eaadc182c94b46c98ed57",
+      "productSlug": "wave2-dixion-4700",
+      "documentKey": "trusted-document:document_8f65b41e303162f2ad3be099",
+      "documentType": "unknown",
+      "title": "Скачать буклет «‎Аппарат ИВЛ Dixion 4700»",
+      "language": null,
+      "sourceUrl": "https://dixion.ru//upload/documents/Dixion_4700_.pdf",
+      "sha256": "71e72e7d30958af1ccd30afdb57fdd733d071ba884b4769488270edebfe71194",
+      "contentType": "application/pdf",
+      "byteSize": 1802468,
+      "filePath": "data/research/artifacts/artifacts/sha256/71/e7/71e72e7d30958af1ccd30afdb57fdd733d071ba884b4769488270edebfe71194.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_b619f7f7c8483cb22a253f51",
+      "documentCandidateId": "document_1c794c407513f97d132c27bf",
+      "sourceId": "source_e35eaadc182c94b46c98ed57",
+      "productSlug": "wave2-dixion-4700",
+      "documentKey": "trusted-document:document_1c794c407513f97d132c27bf",
+      "documentType": "brochure",
+      "title": "Скачать каталог в формате PDF",
+      "language": null,
+      "sourceUrl": "https://dixion.ru/upload/documents/catalog.pdf",
+      "sha256": "667e77712668a8091cf9de69d355879e62d9e166788b37c77072d1b6a734d642",
+      "contentType": "application/pdf",
+      "byteSize": 14061950,
+      "filePath": "data/research/artifacts/artifacts/sha256/66/7e/667e77712668a8091cf9de69d355879e62d9e166788b37c77072d1b6a734d642.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "sourceId": "source_e35eaadc182c94b46c98ed57",
+      "productSlug": "wave2-dixion-4700",
+      "documentKey": "trusted-document:document_05dcfe5155206d84eb84fbe5",
+      "documentType": "unknown",
+      "title": "Скачать прайс-лист",
+      "language": null,
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "contentType": "application/pdf",
+      "byteSize": 178281,
+      "filePath": "data/research/artifacts/artifacts/sha256/1c/da/1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_f5b4611d9df5ed4e73c18315",
+      "documentCandidateId": "document_e3aad903120767d81bc0ac58",
+      "sourceId": "source_93de8792142a3f6e97a51072",
+      "productSlug": "wave2-dixion-4700",
+      "documentKey": "trusted-document:document_e3aad903120767d81bc0ac58",
+      "documentType": "brochure",
+      "title": "DIXION 4700 official brochure",
+      "language": null,
+      "sourceUrl": "https://dixion.ru/upload/iblock/953/o447tecefs6hsgx35zfiw3duz59dox5d/Dixion-4700.pdf",
+      "sha256": "fa5864779245e25c244d4e7c836807246f5f79cca81e074df3b48454e658432b",
+      "contentType": "application/pdf",
+      "byteSize": 343736,
+      "filePath": "data/research/artifacts/artifacts/sha256/fa/58/fa5864779245e25c244d4e7c836807246f5f79cca81e074df3b48454e658432b.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_e580c9958977c8f228bcbba6",
+      "productSlug": "wave2-dixion-4700",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Скачать буклет «‎Аппарат ИВЛ Dixion 4700»",
+      "unit": null,
+      "rawText": "Document title: Скачать буклет «‎Аппарат ИВЛ Dixion 4700»",
+      "documentVersionId": "document_version_e8013c84e51536d606b0ab41",
+      "documentCandidateId": "document_8f65b41e303162f2ad3be099",
+      "documentSha256": "71e72e7d30958af1ccd30afdb57fdd733d071ba884b4769488270edebfe71194",
+      "sourceUrl": "https://dixion.ru//upload/documents/Dixion_4700_.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_534e17d0dd99863e528ca6f6",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_5be9eb6448201e21c9f0c421",
+      "productSlug": "wave2-dixion-4700",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_e8013c84e51536d606b0ab41",
+      "documentCandidateId": "document_8f65b41e303162f2ad3be099",
+      "documentSha256": "71e72e7d30958af1ccd30afdb57fdd733d071ba884b4769488270edebfe71194",
+      "sourceUrl": "https://dixion.ru//upload/documents/Dixion_4700_.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_8903756e6db1628a38570132",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_cbadb5048de452e26396891e",
+      "productSlug": "wave2-dixion-4700",
+      "factType": "product.operatingModes",
+      "label": "NIV",
+      "value": "NIV",
+      "unit": null,
+      "rawText": "NIV",
+      "documentVersionId": "document_version_e8013c84e51536d606b0ab41",
+      "documentCandidateId": "document_8f65b41e303162f2ad3be099",
+      "documentSha256": "71e72e7d30958af1ccd30afdb57fdd733d071ba884b4769488270edebfe71194",
+      "sourceUrl": "https://dixion.ru//upload/documents/Dixion_4700_.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 48
+      },
+      "evidenceCandidateId": "evidence_3b7f5bf814457f162031e2eb",
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:niv",
+        "matchedSynonym:NIV",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_9b157ad2dd2c3c6625ac9ec8",
+      "productSlug": "wave2-dixion-4700",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Скачать каталог в формате PDF",
+      "unit": null,
+      "rawText": "Document title: Скачать каталог в формате PDF",
+      "documentVersionId": "document_version_b619f7f7c8483cb22a253f51",
+      "documentCandidateId": "document_1c794c407513f97d132c27bf",
+      "documentSha256": "667e77712668a8091cf9de69d355879e62d9e166788b37c77072d1b6a734d642",
+      "sourceUrl": "https://dixion.ru/upload/documents/catalog.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_ed7bbd0652e9789c390d1b5b",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_b3929b5f0df6554b63a377a0",
+      "productSlug": "wave2-dixion-4700",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_b619f7f7c8483cb22a253f51",
+      "documentCandidateId": "document_1c794c407513f97d132c27bf",
+      "documentSha256": "667e77712668a8091cf9de69d355879e62d9e166788b37c77072d1b6a734d642",
+      "sourceUrl": "https://dixion.ru/upload/documents/catalog.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_17aa1dc358a4269588d19339",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_13460a46f81eca8e7c0ae638",
+      "productSlug": "wave2-dixion-4700",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Скачать прайс-лист",
+      "unit": null,
+      "rawText": "Document title: Скачать прайс-лист",
+      "documentVersionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_d4cce6cb7b2bcbcac503ee47",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_31b96e1f85d9629dcf35a382",
+      "productSlug": "wave2-dixion-4700",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_18e1f6199deefddea7df3624",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_1f9f9d4be967dc250b936af6",
+      "productSlug": "wave2-dixion-4700",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "12",
+      "unit": "inch",
+      "rawText": "дисплей 12\"",
+      "documentVersionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 9
+      },
+      "evidenceCandidateId": "evidence_d69a9520e1f57b4eab0cf16b",
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_95895a310797334642013ee2",
+      "productSlug": "wave2-dixion-4700",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "14",
+      "unit": "inch",
+      "rawText": "дисплей 14\"",
+      "documentVersionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 20
+      },
+      "evidenceCandidateId": "evidence_9b92b03c08e97e2fc335cbb1",
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_32833858ef8f48c1f6ab20b9",
+      "productSlug": "wave2-dixion-4700",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "17",
+      "unit": "inch",
+      "rawText": "дисплей 17\"",
+      "documentVersionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 21
+      },
+      "evidenceCandidateId": "evidence_ce59c6c0e3b3d62384709c76",
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_b6ce2d6cb250d38c82a64f7e",
+      "productSlug": "wave2-dixion-4700",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "8,4",
+      "unit": "inch",
+      "rawText": "дисплей 8,4\"",
+      "documentVersionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 22
+      },
+      "evidenceCandidateId": "evidence_0138ae54772c1f2ce3cbda8e",
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_6ac9a4ea970bd144f5923a81",
+      "productSlug": "wave2-dixion-4700",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "15",
+      "unit": "inch",
+      "rawText": "дисплей 15\"",
+      "documentVersionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 26
+      },
+      "evidenceCandidateId": "evidence_9774c046c3427de20a66b00b",
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_d551b3f2c81a43b9aa0b50ea",
+      "productSlug": "wave2-dixion-4700",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "10",
+      "unit": "inch",
+      "rawText": "дисплей 10\"",
+      "documentVersionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 42
+      },
+      "evidenceCandidateId": "evidence_28fbda105a3c8978797bc973",
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_31d67b94d1d9926252128233",
+      "productSlug": "wave2-dixion-4700",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "5,7",
+      "unit": "inch",
+      "rawText": "дисплей 5,7\"",
+      "documentVersionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 49
+      },
+      "evidenceCandidateId": "evidence_287710b21044d68b86f6887c",
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_014a9ac2ab43f40aa96bb238",
+      "productSlug": "wave2-dixion-4700",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "12,1",
+      "unit": "inch",
+      "rawText": "Дисплей 12,1\"",
+      "documentVersionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 54
+      },
+      "evidenceCandidateId": "evidence_c0f931c9ac6cce3fc12141e3",
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_f5f9f95aec8ff96d8046a68a",
+      "productSlug": "wave2-dixion-4700",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "19",
+      "unit": "inch",
+      "rawText": "дисплей 19\"",
+      "documentVersionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 189
+      },
+      "evidenceCandidateId": "evidence_0761a583b7a83f32dfd0b3a7",
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_a27626000d16945ecfea0a0c",
+      "productSlug": "wave2-dixion-4700",
+      "factType": "product.patientGroup",
+      "label": "Неонатальные пациенты",
+      "value": "Neonatal",
+      "unit": null,
+      "rawText": "Neonatal",
+      "documentVersionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 120
+      },
+      "evidenceCandidateId": "evidence_8e68f63199cdc27c78ac5a54",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:neonatal",
+        "matchedSynonym:Neonatal",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_a1f3f71c484b589d1fd61eae",
+      "productSlug": "wave2-dixion-4700",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "DIXION 4700 official brochure",
+      "unit": null,
+      "rawText": "Document title: DIXION 4700 official brochure",
+      "documentVersionId": "document_version_f5b4611d9df5ed4e73c18315",
+      "documentCandidateId": "document_e3aad903120767d81bc0ac58",
+      "documentSha256": "fa5864779245e25c244d4e7c836807246f5f79cca81e074df3b48454e658432b",
+      "sourceUrl": "https://dixion.ru/upload/iblock/953/o447tecefs6hsgx35zfiw3duz59dox5d/Dixion-4700.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_e027b0a66fe8e94c22742135",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_08d49798fe0c0f8e58b2eaab",
+      "productSlug": "wave2-dixion-4700",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_f5b4611d9df5ed4e73c18315",
+      "documentCandidateId": "document_e3aad903120767d81bc0ac58",
+      "documentSha256": "fa5864779245e25c244d4e7c836807246f5f79cca81e074df3b48454e658432b",
+      "sourceUrl": "https://dixion.ru/upload/iblock/953/o447tecefs6hsgx35zfiw3duz59dox5d/Dixion-4700.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_ef2a6ebb1141e65d38b86013",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_dc98b896ebfaf433bec8d7bd",
+      "productSlug": "wave2-dixion-4700",
+      "factType": "product.operatingModes",
+      "label": "NIV",
+      "value": "NIV",
+      "unit": null,
+      "rawText": "NIV",
+      "documentVersionId": "document_version_f5b4611d9df5ed4e73c18315",
+      "documentCandidateId": "document_e3aad903120767d81bc0ac58",
+      "documentSha256": "fa5864779245e25c244d4e7c836807246f5f79cca81e074df3b48454e658432b",
+      "sourceUrl": "https://dixion.ru/upload/iblock/953/o447tecefs6hsgx35zfiw3duz59dox5d/Dixion-4700.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 43
+      },
+      "evidenceCandidateId": "evidence_55313481f9b72cdc915c7f72",
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:niv",
+        "matchedSynonym:NIV",
+        "unitParsed:none"
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_534e17d0dd99863e528ca6f6",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_e8013c84e51536d606b0ab41",
+      "documentCandidateId": "document_8f65b41e303162f2ad3be099",
+      "sha256": "71e72e7d30958af1ccd30afdb57fdd733d071ba884b4769488270edebfe71194",
+      "sourceUrl": "https://dixion.ru//upload/documents/Dixion_4700_.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Скачать буклет «‎Аппарат ИВЛ Dixion 4700»",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_8903756e6db1628a38570132",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_e8013c84e51536d606b0ab41",
+      "documentCandidateId": "document_8f65b41e303162f2ad3be099",
+      "sha256": "71e72e7d30958af1ccd30afdb57fdd733d071ba884b4769488270edebfe71194",
+      "sourceUrl": "https://dixion.ru//upload/documents/Dixion_4700_.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_3b7f5bf814457f162031e2eb",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e8013c84e51536d606b0ab41",
+      "documentCandidateId": "document_8f65b41e303162f2ad3be099",
+      "sha256": "71e72e7d30958af1ccd30afdb57fdd733d071ba884b4769488270edebfe71194",
+      "sourceUrl": "https://dixion.ru//upload/documents/Dixion_4700_.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 48
+      },
+      "quotedText": "NIV",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ed7bbd0652e9789c390d1b5b",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_b619f7f7c8483cb22a253f51",
+      "documentCandidateId": "document_1c794c407513f97d132c27bf",
+      "sha256": "667e77712668a8091cf9de69d355879e62d9e166788b37c77072d1b6a734d642",
+      "sourceUrl": "https://dixion.ru/upload/documents/catalog.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Скачать каталог в формате PDF",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_17aa1dc358a4269588d19339",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_b619f7f7c8483cb22a253f51",
+      "documentCandidateId": "document_1c794c407513f97d132c27bf",
+      "sha256": "667e77712668a8091cf9de69d355879e62d9e166788b37c77072d1b6a734d642",
+      "sourceUrl": "https://dixion.ru/upload/documents/catalog.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_d4cce6cb7b2bcbcac503ee47",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Скачать прайс-лист",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_18e1f6199deefddea7df3624",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_d69a9520e1f57b4eab0cf16b",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 9
+      },
+      "quotedText": "дисплей 12\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_9b92b03c08e97e2fc335cbb1",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 20
+      },
+      "quotedText": "дисплей 14\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ce59c6c0e3b3d62384709c76",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 21
+      },
+      "quotedText": "дисплей 17\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_0138ae54772c1f2ce3cbda8e",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 22
+      },
+      "quotedText": "дисплей 8,4\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_9774c046c3427de20a66b00b",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 26
+      },
+      "quotedText": "дисплей 15\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_28fbda105a3c8978797bc973",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 42
+      },
+      "quotedText": "дисплей 10\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_287710b21044d68b86f6887c",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 49
+      },
+      "quotedText": "дисплей 5,7\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_c0f931c9ac6cce3fc12141e3",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 54
+      },
+      "quotedText": "Дисплей 12,1\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_0761a583b7a83f32dfd0b3a7",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 189
+      },
+      "quotedText": "дисплей 19\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_8e68f63199cdc27c78ac5a54",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_505d73ee546fbacdf5a9d929",
+      "documentCandidateId": "document_05dcfe5155206d84eb84fbe5",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 120
+      },
+      "quotedText": "Neonatal",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_e027b0a66fe8e94c22742135",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_f5b4611d9df5ed4e73c18315",
+      "documentCandidateId": "document_e3aad903120767d81bc0ac58",
+      "sha256": "fa5864779245e25c244d4e7c836807246f5f79cca81e074df3b48454e658432b",
+      "sourceUrl": "https://dixion.ru/upload/iblock/953/o447tecefs6hsgx35zfiw3duz59dox5d/Dixion-4700.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: DIXION 4700 official brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ef2a6ebb1141e65d38b86013",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_f5b4611d9df5ed4e73c18315",
+      "documentCandidateId": "document_e3aad903120767d81bc0ac58",
+      "sha256": "fa5864779245e25c244d4e7c836807246f5f79cca81e074df3b48454e658432b",
+      "sourceUrl": "https://dixion.ru/upload/iblock/953/o447tecefs6hsgx35zfiw3duz59dox5d/Dixion-4700.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_55313481f9b72cdc915c7f72",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_f5b4611d9df5ed4e73c18315",
+      "documentCandidateId": "document_e3aad903120767d81bc0ac58",
+      "sha256": "fa5864779245e25c244d4e7c836807246f5f79cca81e074df3b48454e658432b",
+      "sourceUrl": "https://dixion.ru/upload/iblock/953/o447tecefs6hsgx35zfiw3duz59dox5d/Dixion-4700.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 43
+      },
+      "quotedText": "NIV",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_1fbbdff74bef6293d1386b34",
+      "productSlug": "wave2-dixion-4700",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Скачать буклет «‎Аппарат ИВЛ Dixion 4700»",
+        "unit": null
+      },
+      "rawText": "Document title: Скачать буклет «‎Аппарат ИВЛ Dixion 4700»",
+      "evidenceCandidateIds": [
+        "evidence_534e17d0dd99863e528ca6f6"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_807783dc0652f36174c33c8c",
+      "productSlug": "wave2-dixion-4700",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_8903756e6db1628a38570132"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_9937750d45e4a4dfeeb1c5b6",
+      "productSlug": "wave2-dixion-4700",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "NIV",
+        "unit": null
+      },
+      "rawText": "NIV",
+      "evidenceCandidateIds": [
+        "evidence_3b7f5bf814457f162031e2eb"
+      ],
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_6fda02f9d1bd3da8ca7b5d24",
+      "productSlug": "wave2-dixion-4700",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Скачать каталог в формате PDF",
+        "unit": null
+      },
+      "rawText": "Document title: Скачать каталог в формате PDF",
+      "evidenceCandidateIds": [
+        "evidence_ed7bbd0652e9789c390d1b5b"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_fef5cf337b1761711972590e",
+      "productSlug": "wave2-dixion-4700",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_17aa1dc358a4269588d19339"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_8c6e71a89fcb7f3a52e910e2",
+      "productSlug": "wave2-dixion-4700",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Скачать прайс-лист",
+        "unit": null
+      },
+      "rawText": "Document title: Скачать прайс-лист",
+      "evidenceCandidateIds": [
+        "evidence_d4cce6cb7b2bcbcac503ee47"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_fe90204dc1923536cdd265f0",
+      "productSlug": "wave2-dixion-4700",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_18e1f6199deefddea7df3624"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_7d90839acc80e86aed946a18",
+      "productSlug": "wave2-dixion-4700",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "12",
+        "unit": "inch"
+      },
+      "rawText": "дисплей 12\"",
+      "evidenceCandidateIds": [
+        "evidence_d69a9520e1f57b4eab0cf16b"
+      ],
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_e4c42756e757f754df2fa7ac",
+      "productSlug": "wave2-dixion-4700",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "14",
+        "unit": "inch"
+      },
+      "rawText": "дисплей 14\"",
+      "evidenceCandidateIds": [
+        "evidence_9b92b03c08e97e2fc335cbb1"
+      ],
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_5ee50aff50344c20c8f8e75a",
+      "productSlug": "wave2-dixion-4700",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "17",
+        "unit": "inch"
+      },
+      "rawText": "дисплей 17\"",
+      "evidenceCandidateIds": [
+        "evidence_ce59c6c0e3b3d62384709c76"
+      ],
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_01ff6cd6a1f2d45e2d9c2e93",
+      "productSlug": "wave2-dixion-4700",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "8,4",
+        "unit": "inch"
+      },
+      "rawText": "дисплей 8,4\"",
+      "evidenceCandidateIds": [
+        "evidence_0138ae54772c1f2ce3cbda8e"
+      ],
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_8da8c8b56fa3ead7f9d661b5",
+      "productSlug": "wave2-dixion-4700",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "15",
+        "unit": "inch"
+      },
+      "rawText": "дисплей 15\"",
+      "evidenceCandidateIds": [
+        "evidence_9774c046c3427de20a66b00b"
+      ],
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_d045ba427f5b3106414aa109",
+      "productSlug": "wave2-dixion-4700",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "10",
+        "unit": "inch"
+      },
+      "rawText": "дисплей 10\"",
+      "evidenceCandidateIds": [
+        "evidence_28fbda105a3c8978797bc973"
+      ],
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_c283c026503b76614db335ef",
+      "productSlug": "wave2-dixion-4700",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "5,7",
+        "unit": "inch"
+      },
+      "rawText": "дисплей 5,7\"",
+      "evidenceCandidateIds": [
+        "evidence_287710b21044d68b86f6887c"
+      ],
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_eac350e758daa897e68af109",
+      "productSlug": "wave2-dixion-4700",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "12,1",
+        "unit": "inch"
+      },
+      "rawText": "Дисплей 12,1\"",
+      "evidenceCandidateIds": [
+        "evidence_c0f931c9ac6cce3fc12141e3"
+      ],
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_23194f9106c8afec4dce6bb6",
+      "productSlug": "wave2-dixion-4700",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "19",
+        "unit": "inch"
+      },
+      "rawText": "дисплей 19\"",
+      "evidenceCandidateIds": [
+        "evidence_0761a583b7a83f32dfd0b3a7"
+      ],
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_75506f7b384f157c11e5d90c",
+      "productSlug": "wave2-dixion-4700",
+      "subjectType": "product",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "Neonatal",
+        "unit": null
+      },
+      "rawText": "Neonatal",
+      "evidenceCandidateIds": [
+        "evidence_8e68f63199cdc27c78ac5a54"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_bf1c797ff121f67b7552be4c",
+      "productSlug": "wave2-dixion-4700",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "DIXION 4700 official brochure",
+        "unit": null
+      },
+      "rawText": "Document title: DIXION 4700 official brochure",
+      "evidenceCandidateIds": [
+        "evidence_e027b0a66fe8e94c22742135"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_f733c461de83df3e1562a0b7",
+      "productSlug": "wave2-dixion-4700",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_ef2a6ebb1141e65d38b86013"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_0d9a7379652e0176eafc14a3",
+      "productSlug": "wave2-dixion-4700",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "NIV",
+        "unit": null
+      },
+      "rawText": "NIV",
+      "evidenceCandidateIds": [
+        "evidence_55313481f9b72cdc915c7f72"
+      ],
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "ventilator"
+    ],
+    "patternsMatched": {
+      "ventilator.niv": 2,
+      "ventilator.screen": 9,
+      "ventilator.neonatal": 1
+    },
+    "normalizedUnits": {
+      "inch": 9
+    },
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "ventilator": [
+        "adult",
+        "battery_runtime",
+        "modes",
+        "oxygen",
+        "pediatric",
+        "turbine",
+        "weight"
+      ]
+    },
+    "coveragePercent": 15
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver retry skipped https://dixion.ru/upload/medialibrary/78c/gh377n5do84venwd6iw3d2xywlgulr7j/ivl-min.png: expected HTML but received image/png",
+    "Resolver retry skipped https://dixion.ru/upload/medialibrary/dc2/0qo3seb961p6ceiuk1ia44xnai075u1g/4700-gigapixel-standard-scale-2_00x.jpg: expected HTML but received image/jpeg",
+    "Resolver retry skipped https://dixion.ru/upload/medialibrary/0c7/yr971d61tywvouqy820gce5mjfytiamt/Hospital-Medical-Equipment-ICU-Ventilator-VG70-Respiratory-CE-Aeonmed%20copy.jpg: expected HTML but received image/jpeg",
+    "Resolver retry skipped https://dixion.ru/upload/medialibrary/e33/hmq8rcy6ds0ilpr23brbl3axe7f0nvgx/img725.jpg: expected HTML but received image/jpeg",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=5; matchedLinks=12; classifiedDocuments={\"Brochure\":11,\"Unknown\":8}; confidenceDistribution={\"80\":9,\"90\":4,\"100\":6}; duplicatesRemoved=7",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

@@ -1,0 +1,1743 @@
+{
+  "product": {
+    "productSlug": "wave2-sle-2000",
+    "manufacturer": "SLE",
+    "productName": "SLE2000 Infant Ventilator",
+    "model": "SLE2000",
+    "category": "Neonatal ventilator"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_66b85a02f04ddd8270eb1c1f",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_a4e4f8570384f172d9e139bf",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Unclassified manufacturer document",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_a2adc4a944349fdca5b0d3b6"
+      ],
+      "documentVersionIds": [
+        "document_version_6948223415f368edc623b736"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_d597feded6104f8fd304ff6a",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_e44f1494adc0aadf22fad5bc",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_a846340b08fb13a8bb145e8d"
+      ],
+      "documentVersionIds": [
+        "document_version_6948223415f368edc623b736"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_e6b2d00c71cb691054587574",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_5094353fe7aaf9f3451b6110",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "N4110",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_71e4844a2a230b711df06c88"
+      ],
+      "documentVersionIds": [
+        "document_version_6948223415f368edc623b736"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_8a1356ee9970c2284ba768a0",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_a6ef5ff06cbdbce42c789408",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "Neonatal",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_d3ba4f593cfe2994d5e0cdeb"
+      ],
+      "documentVersionIds": [
+        "document_version_6948223415f368edc623b736"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_a1b4cd8ab78e065e698f1764",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_80c5011397f3864da9b7d81c",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "Paediatric",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_ce593d873f05701a08f22253"
+      ],
+      "documentVersionIds": [
+        "document_version_6948223415f368edc623b736"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_805dc0a0f772aa507eedeee2",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_06526e94a554d0064ee14d5b",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "Breaths per minute",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_4bfacb8c93c3691776999445"
+      ],
+      "documentVersionIds": [
+        "document_version_6948223415f368edc623b736"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_cfa975483c177a68cfb03dea",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_b7b8c3b05c74de62da18823d",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "Inspiratory time",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_cdf343e98cee24de84ccb7cd"
+      ],
+      "documentVersionIds": [
+        "document_version_6948223415f368edc623b736"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_df0f4476e27ef825da0971ae",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_2fb3559cd596864231d21917",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_33d0a206cfb22bc3284d05a2"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_24d6416f6874bdc3041ece9a",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_3269b3f57472947f2d2e7329",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_e393a5175ced75a8f1dc4ca2"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_f8a032a1d869d1b240ebf789",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_fb1895c762c4f053cf3b4cb4",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_3c7909b1645af1711bdb2cdc"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5a2b7168293e7e2a8a433449",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_0782d7f58a0e446acbfd23b4",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_2c90a718bce970d8378dd576"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_038e1750247e5dd8e68ff269",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_43861739d48c79f3a1d70f2e",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Unclassified manufacturer document",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_e6ea861615dbb7c47abcdea1"
+      ],
+      "documentVersionIds": [
+        "document_version_88d69303c7f5171002048030"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle500-smart-and-sle500-easy-compressors.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_994656dc43a3a35eb0b529da",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_3079e95ad01df6007bb3d942",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_1ae5dbccc7b82d17d6d2fd70"
+      ],
+      "documentVersionIds": [
+        "document_version_88d69303c7f5171002048030"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle500-smart-and-sle500-easy-compressors.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_183d410dcc5265ad8c9b6959",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_7fb1280b8132e2ebe778af06",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_2eb857f7279c7a211ac276fa"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_454d126b52783ce51417d612",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_eb7bb88cba9df15fe4c383ba",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c0b76194c0b0fd6074ecba6a"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_618cf85fc13a78521afc8d6b",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_dd3d906f0f5978879efd603b",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_30a6df7a5a2edb97ee0905ce"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b0029adf420c0ff74769c293",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_5c8f87c21ccdc20ca8bed500",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "SLE2000 official partner brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_15fc144fa94a4215565da607"
+      ],
+      "documentVersionIds": [
+        "document_version_8fd034fbf07506af5a8e0963"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_38faba0433822107594eba09",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_df5896e8046513632dd422d5",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_dca4acea77d8e3f1cb1b2901"
+      ],
+      "documentVersionIds": [
+        "document_version_8fd034fbf07506af5a8e0963"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_4866c101f3ab247312ec6f3e",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_d15288b0d79d16206f18d541",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "N4110",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_5543bea428f1c757ca9905f9"
+      ],
+      "documentVersionIds": [
+        "document_version_8fd034fbf07506af5a8e0963"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5ce023bec751cd5a8c0b3022",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_86d40882171fc8c9c88f606f",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "Neonatal",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_f32303c79ca81e36f50836d2"
+      ],
+      "documentVersionIds": [
+        "document_version_8fd034fbf07506af5a8e0963"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_6faf0988cc20cecadf58be11",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_77630ba50ebaf269331c7cba",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "Paediatric",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_66acbc0223508a56c752752a"
+      ],
+      "documentVersionIds": [
+        "document_version_8fd034fbf07506af5a8e0963"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b743b00f1ef34adaf15801e1",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_c1805f7ce2f3726690ebbfb6",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "Breaths per minute",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_5bbaf424e42cc30b0ffaff76"
+      ],
+      "documentVersionIds": [
+        "document_version_8fd034fbf07506af5a8e0963"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_71ee091dede11c6511edc213",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_6d4f51b003572efec9989e44",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "Inspiratory time",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_e9c68bdc1f78673fc5bf1be9"
+      ],
+      "documentVersionIds": [
+        "document_version_8fd034fbf07506af5a8e0963"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_f1e5ac870c3c02a2f996e3bc",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_a85261828d2316a85d3236fd",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_02e1e5996ecb46b1c324d9b0"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5ed8e1c824f034143a994813",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_8d17f9a878b07a78efe27e2c",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_80f4fa1b1459e74b2a27dead"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_15a7d866be605458283c644c",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_86d67472eee509cdf0fe0828",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_3434f9aa7cbccd17c3b75dc6"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_0a905820c1a0d81d4e002341",
+      "productSlug": "wave2-sle-2000",
+      "productTitle": "SLE2000 Infant Ventilator",
+      "claimCandidateId": "claim_17241d7afbf39a3bb84eb96f",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_79d9e31dcecc32cd8797eb9d"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_66b85a02f04ddd8270eb1c1f",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_a4e4f8570384f172d9e139bf",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Unclassified manufacturer document",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_a2adc4a944349fdca5b0d3b6"
+        ],
+        "documentVersionIds": [
+          "document_version_6948223415f368edc623b736"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_038e1750247e5dd8e68ff269",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_43861739d48c79f3a1d70f2e",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Unclassified manufacturer document",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_e6ea861615dbb7c47abcdea1"
+        ],
+        "documentVersionIds": [
+          "document_version_88d69303c7f5171002048030"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle500-smart-and-sle500-easy-compressors.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_b0029adf420c0ff74769c293",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_5c8f87c21ccdc20ca8bed500",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "SLE2000 official partner brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_15fc144fa94a4215565da607"
+        ],
+        "documentVersionIds": [
+          "document_version_8fd034fbf07506af5a8e0963"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_d597feded6104f8fd304ff6a",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_e44f1494adc0aadf22fad5bc",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_a846340b08fb13a8bb145e8d"
+        ],
+        "documentVersionIds": [
+          "document_version_6948223415f368edc623b736"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_994656dc43a3a35eb0b529da",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_3079e95ad01df6007bb3d942",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_1ae5dbccc7b82d17d6d2fd70"
+        ],
+        "documentVersionIds": [
+          "document_version_88d69303c7f5171002048030"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle500-smart-and-sle500-easy-compressors.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_38faba0433822107594eba09",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_df5896e8046513632dd422d5",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_dca4acea77d8e3f1cb1b2901"
+        ],
+        "documentVersionIds": [
+          "document_version_8fd034fbf07506af5a8e0963"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.operatingModes": [
+      {
+        "reviewItemId": "review_item_e6b2d00c71cb691054587574",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_5094353fe7aaf9f3451b6110",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "N4110",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_71e4844a2a230b711df06c88"
+        ],
+        "documentVersionIds": [
+          "document_version_6948223415f368edc623b736"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_4866c101f3ab247312ec6f3e",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_d15288b0d79d16206f18d541",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "N4110",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_5543bea428f1c757ca9905f9"
+        ],
+        "documentVersionIds": [
+          "document_version_8fd034fbf07506af5a8e0963"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.patientGroup": [
+      {
+        "reviewItemId": "review_item_8a1356ee9970c2284ba768a0",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_a6ef5ff06cbdbce42c789408",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "Neonatal",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_d3ba4f593cfe2994d5e0cdeb"
+        ],
+        "documentVersionIds": [
+          "document_version_6948223415f368edc623b736"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_a1b4cd8ab78e065e698f1764",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_80c5011397f3864da9b7d81c",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "Paediatric",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_ce593d873f05701a08f22253"
+        ],
+        "documentVersionIds": [
+          "document_version_6948223415f368edc623b736"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_5ce023bec751cd5a8c0b3022",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_86d40882171fc8c9c88f606f",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "Neonatal",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_f32303c79ca81e36f50836d2"
+        ],
+        "documentVersionIds": [
+          "document_version_8fd034fbf07506af5a8e0963"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_6faf0988cc20cecadf58be11",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_77630ba50ebaf269331c7cba",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "Paediatric",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_66acbc0223508a56c752752a"
+        ],
+        "documentVersionIds": [
+          "document_version_8fd034fbf07506af5a8e0963"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.display": [
+      {
+        "reviewItemId": "review_item_805dc0a0f772aa507eedeee2",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_06526e94a554d0064ee14d5b",
+        "suggestedClaimType": "product.display",
+        "valuePayload": {
+          "value": "Breaths per minute",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_4bfacb8c93c3691776999445"
+        ],
+        "documentVersionIds": [
+          "document_version_6948223415f368edc623b736"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_cfa975483c177a68cfb03dea",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_b7b8c3b05c74de62da18823d",
+        "suggestedClaimType": "product.display",
+        "valuePayload": {
+          "value": "Inspiratory time",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_cdf343e98cee24de84ccb7cd"
+        ],
+        "documentVersionIds": [
+          "document_version_6948223415f368edc623b736"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_b743b00f1ef34adaf15801e1",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_c1805f7ce2f3726690ebbfb6",
+        "suggestedClaimType": "product.display",
+        "valuePayload": {
+          "value": "Breaths per minute",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_5bbaf424e42cc30b0ffaff76"
+        ],
+        "documentVersionIds": [
+          "document_version_8fd034fbf07506af5a8e0963"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_71ee091dede11c6511edc213",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_6d4f51b003572efec9989e44",
+        "suggestedClaimType": "product.display",
+        "valuePayload": {
+          "value": "Inspiratory time",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_e9c68bdc1f78673fc5bf1be9"
+        ],
+        "documentVersionIds": [
+          "document_version_8fd034fbf07506af5a8e0963"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "technical.term": [
+      {
+        "reviewItemId": "review_item_df0f4476e27ef825da0971ae",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_2fb3559cd596864231d21917",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_33d0a206cfb22bc3284d05a2"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_24d6416f6874bdc3041ece9a",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_3269b3f57472947f2d2e7329",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_e393a5175ced75a8f1dc4ca2"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_f8a032a1d869d1b240ebf789",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_fb1895c762c4f053cf3b4cb4",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_3c7909b1645af1711bdb2cdc"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_5a2b7168293e7e2a8a433449",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_0782d7f58a0e446acbfd23b4",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_2c90a718bce970d8378dd576"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_183d410dcc5265ad8c9b6959",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_7fb1280b8132e2ebe778af06",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_2eb857f7279c7a211ac276fa"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_454d126b52783ce51417d612",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_eb7bb88cba9df15fe4c383ba",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c0b76194c0b0fd6074ecba6a"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_618cf85fc13a78521afc8d6b",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_dd3d906f0f5978879efd603b",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_30a6df7a5a2edb97ee0905ce"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_f1e5ac870c3c02a2f996e3bc",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_a85261828d2316a85d3236fd",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_02e1e5996ecb46b1c324d9b0"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_5ed8e1c824f034143a994813",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_8d17f9a878b07a78efe27e2c",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_80f4fa1b1459e74b2a27dead"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_15a7d866be605458283c644c",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_86d67472eee509cdf0fe0828",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_3434f9aa7cbccd17c3b75dc6"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_0a905820c1a0d81d4e002341",
+        "productSlug": "wave2-sle-2000",
+        "productTitle": "SLE2000 Infant Ventilator",
+        "claimCandidateId": "claim_17241d7afbf39a3bb84eb96f",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_79d9e31dcecc32cd8797eb9d"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_6948223415f368edc623b736",
+      "documentType": "unknown",
+      "title": "Unclassified manufacturer document",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf",
+      "sha256": "6ca61a9864628635f6427fd1c403af769253580d4cf6ec8b52e8c76a5a01fb84"
+    },
+    {
+      "documentVersionId": "document_version_88d69303c7f5171002048030",
+      "documentType": "unknown",
+      "title": "Unclassified manufacturer document",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle500-smart-and-sle500-easy-compressors.pdf",
+      "sha256": "e167e8865ee12ef2b27ee94607e701d193043faf723a21969990941095d7045b"
+    },
+    {
+      "documentVersionId": "document_version_8fd034fbf07506af5a8e0963",
+      "documentType": "brochure",
+      "title": "SLE2000 official partner brochure",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf",
+      "sha256": "6ca61a9864628635f6427fd1c403af769253580d4cf6ec8b52e8c76a5a01fb84"
+    }
+  ],
+  "missingEvidence": [
+    {
+      "claimCandidateId": "claim_2fb3559cd596864231d21917",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_3269b3f57472947f2d2e7329",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_fb1895c762c4f053cf3b4cb4",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_0782d7f58a0e446acbfd23b4",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_7fb1280b8132e2ebe778af06",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_eb7bb88cba9df15fe4c383ba",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_dd3d906f0f5978879efd603b",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_a85261828d2316a85d3236fd",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_8d17f9a878b07a78efe27e2c",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_86d67472eee509cdf0fe0828",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_17241d7afbf39a3bb84eb96f",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    }
+  ],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver adapter used: ge",
+    "Resolver rejected offsite document URL: https://www.gehccommandcenter.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.in/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.advamed.org/member-center/resource-library/advamed-code-of-ethics-on-interactions-with-health-care-professionals-in-india/",
+    "Resolver rejected offsite document URL: https://www.gehccommandcenter.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.in/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.advamed.org/member-center/resource-library/advamed-code-of-ethics-on-interactions-with-health-care-professionals-in-india/",
+    "Resolver rejected unsafe document URL: tel:1800-102-2977",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHCIndia/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/@GEHealthCareIndiaYT",
+    "Resolver rejected offsite document URL: https://www.gehccommandcenter.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.in/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.advamed.org/member-center/resource-library/advamed-code-of-ethics-on-interactions-with-health-care-professionals-in-india/",
+    "Resolver rejected offsite document URL: https://www.gehccommandcenter.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.in/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.advamed.org/member-center/resource-library/advamed-code-of-ethics-on-interactions-with-health-care-professionals-in-india/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHCIndia/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/@GEHealthCareIndiaYT",
+    "resolver=ge; attempts=2; matchedLinks=6; classifiedDocuments={\"Unknown\":20}; confidenceDistribution={\"80\":15,\"90\":3,\"100\":2}; duplicatesRemoved=14",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

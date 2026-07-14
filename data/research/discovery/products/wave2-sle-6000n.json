@@ -1,0 +1,297 @@
+{
+  "product": {
+    "productSlug": "wave2-sle-6000n",
+    "manufacturer": "SLE",
+    "productName": "SLE6000N Non-Invasive Ventilator",
+    "model": "SLE6000N",
+    "category": "Neonatal respiratory ventilator"
+  },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [
+      "https://inspirationhealthcaregroup.com/product/sle6000n/",
+      "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/SLE6000NCH-Brochure.pdf",
+      "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/Whats-included.pdf",
+      "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/03/UM165-UK-Issue-22-SLE6000-User-Manual-English.pdf",
+      "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/09/MK-PHL-00007020Issue120-20Quick20Reference20Guide20-20SLE6000N.pdf",
+      "https://inspirationhealthcaregroup.com/wp-content/uploads/2025/06/MK-PHL-00004220Issue20220-20SLE6000N20Datasheet.pdf"
+    ],
+    "normalizedUrls": [
+      "https://inspirationhealthcaregroup.com/product/sle6000n",
+      "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/SLE6000NCH-Brochure.pdf",
+      "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/Whats-included.pdf",
+      "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/03/UM165-UK-Issue-22-SLE6000-User-Manual-English.pdf",
+      "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/09/MK-PHL-00007020Issue120-20Quick20Reference20Guide20-20SLE6000N.pdf",
+      "https://inspirationhealthcaregroup.com/wp-content/uploads/2025/06/MK-PHL-00004220Issue20220-20SLE6000N20Datasheet.pdf"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [
+      {
+        "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/03/UM165-UK-Issue-22-SLE6000-User-Manual-English.pdf",
+        "portalType": "documentation",
+        "supported": false,
+        "requiresAuthentication": false,
+        "reason": "Public official documentation portal detected."
+      }
+    ],
+    "warnings": [
+      "Authentication-gated portal detected; no authorization was attempted.",
+      "No configured provider matched manufacturer “SLE”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_5dac5aed651f45840dba9500",
+      "productSlug": "wave2-sle-6000n",
+      "manufacturer": "SLE",
+      "productName": "SLE6000N Non-Invasive Ventilator",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://inspirationhealthcaregroup.com/product/sle6000n/",
+      "title": "SLE6000N official product page",
+      "snippet": "Official non-invasive SLE6000 variant. NIV, nCPAP and oxygen therapy remain modes within this product.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official non-invasive SLE6000 variant. NIV, nCPAP and oxygen therapy remain modes within this product."
+      ]
+    },
+    {
+      "sourceId": "source_50f021de8d12a7b72d3942c4",
+      "productSlug": "wave2-sle-6000n",
+      "manufacturer": "SLE",
+      "productName": "SLE6000N Non-Invasive Ventilator",
+      "sourceType": "manufacturer_document",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/SLE6000NCH-Brochure.pdf",
+      "title": "SLE6000H C N official range brochure",
+      "snippet": "Official family brochure; only the N configuration evidence applies here.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "manufacturer-hosted document candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official family brochure; only the N configuration evidence applies here."
+      ]
+    },
+    {
+      "sourceId": "source_1ec2faaa20aed77a6bc9af52",
+      "productSlug": "wave2-sle-6000n",
+      "manufacturer": "SLE",
+      "productName": "SLE6000N Non-Invasive Ventilator",
+      "sourceType": "manufacturer_document",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/Whats-included.pdf",
+      "title": "SLE6000H C N configuration and software compatibility matrix",
+      "snippet": "Official standard/option/N-A matrix for the SLE6000 configurations.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "manufacturer-hosted document candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official standard/option/N-A matrix for the SLE6000 configurations."
+      ]
+    },
+    {
+      "sourceId": "source_a9a070bd2a0214a8c8d36196",
+      "productSlug": "wave2-sle-6000n",
+      "manufacturer": "SLE",
+      "productName": "SLE6000N Non-Invasive Ventilator",
+      "sourceType": "manufacturer_document",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/03/UM165-UK-Issue-22-SLE6000-User-Manual-English.pdf",
+      "title": "SLE6000N operator manual / IFU UM165 UK Issue 22",
+      "snippet": "Official manual explicitly covering the SLE6000N variant.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "manufacturer-hosted document candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official manual explicitly covering the SLE6000N variant."
+      ]
+    },
+    {
+      "sourceId": "source_1fffc5586c2579d5fd07660a",
+      "productSlug": "wave2-sle-6000n",
+      "manufacturer": "SLE",
+      "productName": "SLE6000N Non-Invasive Ventilator",
+      "sourceType": "manufacturer_document",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/09/MK-PHL-00007020Issue120-20Quick20Reference20Guide20-20SLE6000N.pdf",
+      "title": "SLE6000N official quick reference guide",
+      "snippet": "Official quick guide; not a replacement for the IFU.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "manufacturer-hosted document candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official quick guide; not a replacement for the IFU."
+      ]
+    },
+    {
+      "sourceId": "source_66ec24b064d57dae6900c4db",
+      "productSlug": "wave2-sle-6000n",
+      "manufacturer": "SLE",
+      "productName": "SLE6000N Non-Invasive Ventilator",
+      "sourceType": "manufacturer_document",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2025/06/MK-PHL-00004220Issue20220-20SLE6000N20Datasheet.pdf",
+      "title": "SLE6000N official technical specification datasheet",
+      "snippet": "Official technical specifications for the non-invasive configuration.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "manufacturer-hosted document candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official technical specifications for the non-invasive configuration."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_db6d8005e12f18c7b5c55942",
+      "sourceId": "source_50f021de8d12a7b72d3942c4",
+      "productSlug": "wave2-sle-6000n",
+      "documentType": "brochure",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/SLE6000NCH-Brochure.pdf",
+      "title": "SLE6000H C N official range brochure",
+      "language": null,
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "source URL is itself a document candidate"
+      ]
+    },
+    {
+      "documentId": "document_a3c62c170e29cfe9c0607da3",
+      "sourceId": "source_1ec2faaa20aed77a6bc9af52",
+      "productSlug": "wave2-sle-6000n",
+      "documentType": "unknown",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/Whats-included.pdf",
+      "title": "SLE6000H C N configuration and software compatibility matrix",
+      "language": null,
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "source URL is itself a document candidate"
+      ]
+    },
+    {
+      "documentId": "document_b089e4d1d4d8267e285ccbdf",
+      "sourceId": "source_a9a070bd2a0214a8c8d36196",
+      "productSlug": "wave2-sle-6000n",
+      "documentType": "ifu",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/03/UM165-UK-Issue-22-SLE6000-User-Manual-English.pdf",
+      "title": "SLE6000N operator manual / IFU UM165 UK Issue 22",
+      "language": null,
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "source URL is itself a document candidate"
+      ]
+    },
+    {
+      "documentId": "document_7d405126285e4169cbf010ac",
+      "sourceId": "source_1fffc5586c2579d5fd07660a",
+      "productSlug": "wave2-sle-6000n",
+      "documentType": "unknown",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/09/MK-PHL-00007020Issue120-20Quick20Reference20Guide20-20SLE6000N.pdf",
+      "title": "SLE6000N official quick reference guide",
+      "language": null,
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "source URL is itself a document candidate"
+      ]
+    },
+    {
+      "documentId": "document_4f0fe2b722ada7d77bae891e",
+      "sourceId": "source_66ec24b064d57dae6900c4db",
+      "productSlug": "wave2-sle-6000n",
+      "documentType": "datasheet",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2025/06/MK-PHL-00004220Issue20220-20SLE6000N20Datasheet.pdf",
+      "title": "SLE6000N official technical specification datasheet",
+      "language": null,
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "source URL is itself a document candidate"
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [],
+  "resolverWarnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/product/sle6000n/: HTTP 403"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-sle-6000n",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 6,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 6,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/product/sle6000n/: HTTP 403",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

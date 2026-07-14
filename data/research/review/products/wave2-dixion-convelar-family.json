@@ -1,0 +1,165 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-convelar-family",
+    "manufacturer": "Dixion",
+    "productName": "DIXION Convelar surgical light family",
+    "model": "Convelar family",
+    "category": "Операционное освещение"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_9b1467288846af137238ba64",
+      "productSlug": "wave2-dixion-convelar-family",
+      "productTitle": "DIXION Convelar surgical light family",
+      "claimCandidateId": "claim_5ee8f121f66402924a8ce37d",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Скачать прайс-лист",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_5ac68642650a8bea551dc55f"
+      ],
+      "documentVersionIds": [
+        "document_version_a8bab0b85c6ec6f5f1a45311"
+      ],
+      "sourceUrls": [
+        "https://dixion.ru/upload/documents/price.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_a6328b64da7cc4cc50d6dc48",
+      "productSlug": "wave2-dixion-convelar-family",
+      "productTitle": "DIXION Convelar surgical light family",
+      "claimCandidateId": "claim_16c38112ae86ee4f4b77a7c6",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_772ba29c2ffb8c00187b38d2"
+      ],
+      "documentVersionIds": [
+        "document_version_a8bab0b85c6ec6f5f1a45311"
+      ],
+      "sourceUrls": [
+        "https://dixion.ru/upload/documents/price.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_9b1467288846af137238ba64",
+        "productSlug": "wave2-dixion-convelar-family",
+        "productTitle": "DIXION Convelar surgical light family",
+        "claimCandidateId": "claim_5ee8f121f66402924a8ce37d",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Скачать прайс-лист",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_5ac68642650a8bea551dc55f"
+        ],
+        "documentVersionIds": [
+          "document_version_a8bab0b85c6ec6f5f1a45311"
+        ],
+        "sourceUrls": [
+          "https://dixion.ru/upload/documents/price.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_a6328b64da7cc4cc50d6dc48",
+        "productSlug": "wave2-dixion-convelar-family",
+        "productTitle": "DIXION Convelar surgical light family",
+        "claimCandidateId": "claim_16c38112ae86ee4f4b77a7c6",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_772ba29c2ffb8c00187b38d2"
+        ],
+        "documentVersionIds": [
+          "document_version_a8bab0b85c6ec6f5f1a45311"
+        ],
+        "sourceUrls": [
+          "https://dixion.ru/upload/documents/price.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_a8bab0b85c6ec6f5f1a45311",
+      "documentType": "unknown",
+      "title": "Скачать прайс-лист",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8"
+    }
+  ],
+  "missingEvidence": [],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=7; classifiedDocuments={\"Brochure\":11,\"Unknown\":1}; confidenceDistribution={\"80\":9,\"100\":3}; duplicatesRemoved=5",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

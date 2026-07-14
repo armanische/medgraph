@@ -1,0 +1,42 @@
+{
+  "product": {
+    "productSlug": "wave2-sle-4000",
+    "manufacturer": "SLE",
+    "productName": "SLE4000 Neonatal Ventilator",
+    "model": "SLE4000",
+    "category": "Neonatal ventilator"
+  },
+  "attemptedDownloads": [
+    {
+      "documentCandidateId": "document_2dbb289154a9489e7572afab",
+      "sourceId": "source_4109e5fb415726771fc4a181",
+      "productSlug": "wave2-sle-4000",
+      "title": "Reusable flow sensor IFU for SLE4000 SLE5000 SLE6000",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/03/IFU7-Issue-1-Flow-Sensor-Reusable-IFU.pdf",
+      "documentType": "ifu",
+      "trustTier": 1
+    }
+  ],
+  "downloadedArtifacts": [],
+  "failedDownloads": [
+    {
+      "documentCandidateId": "document_2dbb289154a9489e7572afab",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/03/IFU7-Issue-1-Flow-Sensor-Reusable-IFU.pdf",
+      "title": "Reusable flow sensor IFU for SLE4000 SLE5000 SLE6000",
+      "reason": "HTTP 403 Forbidden",
+      "retryable": false
+    }
+  ],
+  "skippedDocuments": [],
+  "documentVersions": [],
+  "warnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/product/sle4000/: HTTP 403",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": false,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}

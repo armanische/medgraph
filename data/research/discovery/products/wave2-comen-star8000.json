@@ -1,0 +1,147 @@
+{
+  "product": {
+    "productSlug": "wave2-comen-star8000",
+    "manufacturer": "Comen",
+    "productName": "Comen STAR8000",
+    "model": "STAR8000",
+    "category": "Монитор пациента"
+  },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [
+      "https://www.comen.com/products/STAR8000"
+    ],
+    "normalizedUrls": [
+      "https://www.comen.com/products/STAR8000"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “Comen”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_b23269e18bc5ed018a0792c5",
+      "productSlug": "wave2-comen-star8000",
+      "manufacturer": "Comen",
+      "productName": "Comen STAR8000",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.comen.com/products/STAR8000",
+      "title": "Comen STAR8000 official product page",
+      "snippet": "Official Chinese product page identifies the 8000E/F/H family; no public manual or brochure download was exposed.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official Chinese product page identifies the 8000E/F/H family; no public manual or brochure download was exposed."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_9faaef1ad84013b9381c2c65",
+      "sourceId": "source_b23269e18bc5ed018a0792c5",
+      "productSlug": "wave2-comen-star8000",
+      "documentType": "unknown",
+      "url": "https://www.comen.com/RDC/mediaVideo",
+      "title": "媒体视频",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.comen.com/products/STAR8000",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_9faaef1ad84013b9381c2c65",
+      "url": "https://www.comen.com/RDC/mediaVideo",
+      "title": "媒体视频",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_b23269e18bc5ed018a0792c5",
+      "linkText": "媒体视频",
+      "resolvedFromUrl": "https://www.comen.com/products/STAR8000",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver adapter used: default",
+    "Resolver retry skipped https://www.comen.com/RDC/mediaVideo: HTTP 500",
+    "Resolver rejected unsafe document URL: http://en.comen.com/",
+    "Resolver rejected unsafe document URL: http://fr.comen.com/",
+    "Resolver rejected unsafe document URL: http://es.comen.com/",
+    "Resolver rejected offsite document URL: https://szcomen.zhiye.com/",
+    "Resolver rejected offsite document URL: https://szcomen.zhiye.com/campus",
+    "Resolver rejected offsite document URL: https://szcomen.zhiye.com/social",
+    "resolver=default; attempts=2; matchedLinks=1; classifiedDocuments={\"Unknown\":1}; confidenceDistribution={\"90\":1}; duplicatesRemoved=0"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-comen-star8000",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-comen-star8000",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-comen-star8000",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver retry skipped https://www.comen.com/RDC/mediaVideo: HTTP 500",
+    "Resolver rejected unsafe document URL: http://en.comen.com/",
+    "Resolver rejected unsafe document URL: http://fr.comen.com/",
+    "Resolver rejected unsafe document URL: http://es.comen.com/",
+    "Resolver rejected offsite document URL: https://szcomen.zhiye.com/",
+    "Resolver rejected offsite document URL: https://szcomen.zhiye.com/campus",
+    "Resolver rejected offsite document URL: https://szcomen.zhiye.com/social",
+    "resolver=default; attempts=2; matchedLinks=1; classifiedDocuments={\"Unknown\":1}; confidenceDistribution={\"90\":1}; duplicatesRemoved=0",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

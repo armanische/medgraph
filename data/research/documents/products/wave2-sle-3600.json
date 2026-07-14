@@ -1,0 +1,25 @@
+{
+  "product": {
+    "productSlug": "wave2-sle-3600",
+    "manufacturer": "SLE",
+    "productName": "SLE3600 archive check",
+    "model": "SLE3600",
+    "category": "Neonatal ventilator"
+  },
+  "attemptedDownloads": [],
+  "downloadedArtifacts": [],
+  "failedDownloads": [],
+  "skippedDocuments": [],
+  "documentVersions": [],
+  "warnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/areas-of-care/acute-care/neonatal/: HTTP 403",
+    "Discovery creates candidates only; no verified claims or publication.",
+    "No DocumentCandidate records were available for download."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": false,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}

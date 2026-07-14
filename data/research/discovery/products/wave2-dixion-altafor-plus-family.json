@@ -1,0 +1,382 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-altafor-plus-family",
+    "manufacturer": "Dixion",
+    "productName": "DIXION Altafor Plus electrosurgery family",
+    "model": "Altafor Plus family",
+    "category": "Электрохирургическое оборудование"
+  },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [
+      "https://dixion.ru/subcategory/elektrokoagulyatori.html",
+      "https://dixion.ru/upload/iblock/1a5/5kgzqoiipi8doyrcbf9hla09evummmsf/Dixion_Altafor.pdf"
+    ],
+    "normalizedUrls": [
+      "https://dixion.ru/subcategory/elektrokoagulyatori.html",
+      "https://dixion.ru/upload/iblock/1a5/5kgzqoiipi8doyrcbf9hla09evummmsf/Dixion_Altafor.pdf"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “Dixion”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_a8ce78428bcf7c3d4863baaa",
+      "productSlug": "wave2-dixion-altafor-plus-family",
+      "manufacturer": "Dixion",
+      "productName": "DIXION Altafor Plus electrosurgery family",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://dixion.ru/subcategory/elektrokoagulyatori.html",
+      "title": "DIXION Altafor Plus official category page",
+      "snippet": "Family entry covering 1310/1320/1330/1340/1345 Plus; argon module, tools and electrodes remain options/accessories.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Family entry covering 1310/1320/1330/1340/1345 Plus; argon module, tools and electrodes remain options/accessories."
+      ]
+    },
+    {
+      "sourceId": "source_f16ebbcba1b67b90f52d18b0",
+      "productSlug": "wave2-dixion-altafor-plus-family",
+      "manufacturer": "Dixion",
+      "productName": "DIXION Altafor Plus electrosurgery family",
+      "sourceType": "manufacturer_document",
+      "url": "https://dixion.ru/upload/iblock/1a5/5kgzqoiipi8doyrcbf9hla09evummmsf/Dixion_Altafor.pdf",
+      "title": "DIXION Altafor Plus official brochure",
+      "snippet": "Official current family catalogue.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "manufacturer-hosted document candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official current family catalogue."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_98008acffd96a77c843fabaa",
+      "sourceId": "source_a8ce78428bcf7c3d4863baaa",
+      "productSlug": "wave2-dixion-altafor-plus-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/elektrokoagulyatori.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_b6cc95d1c4b488d1e4024d0b",
+      "sourceId": "source_a8ce78428bcf7c3d4863baaa",
+      "productSlug": "wave2-dixion-altafor-plus-family",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/subcategory/elektrokoagulyatori.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_e9b746e7d61707d0296e244b",
+      "sourceId": "source_f16ebbcba1b67b90f52d18b0",
+      "productSlug": "wave2-dixion-altafor-plus-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/upload/iblock/1a5/5kgzqoiipi8doyrcbf9hla09evummmsf/Dixion_Altafor.pdf",
+      "title": "DIXION Altafor Plus official brochure",
+      "language": null,
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "source URL is itself a document candidate"
+      ]
+    },
+    {
+      "documentId": "document_0a3268225951aef976a51094",
+      "sourceId": "source_a8ce78428bcf7c3d4863baaa",
+      "productSlug": "wave2-dixion-altafor-plus-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/elektrokoagulyatori.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_85a5e5c09cfac6200e52bb30",
+      "sourceId": "source_a8ce78428bcf7c3d4863baaa",
+      "productSlug": "wave2-dixion-altafor-plus-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/elektrokoagulyatori.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_d512a6411b0e5b0eef97c840",
+      "sourceId": "source_a8ce78428bcf7c3d4863baaa",
+      "productSlug": "wave2-dixion-altafor-plus-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/elektrokoagulyatori.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_7fab306927872b33eed8c1a3",
+      "sourceId": "source_a8ce78428bcf7c3d4863baaa",
+      "productSlug": "wave2-dixion-altafor-plus-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/elektrokoagulyatori.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_4bbb100f3b62f604051f128b",
+      "sourceId": "source_a8ce78428bcf7c3d4863baaa",
+      "productSlug": "wave2-dixion-altafor-plus-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Manufacturer Brochure",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/elektrokoagulyatori.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_0a3268225951aef976a51094",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a8ce78428bcf7c3d4863baaa",
+      "linkText": "Медицинское оборудование",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/elektrokoagulyatori.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_85a5e5c09cfac6200e52bb30",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a8ce78428bcf7c3d4863baaa",
+      "linkText": "Каталоги оборудования",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/elektrokoagulyatori.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_d512a6411b0e5b0eef97c840",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a8ce78428bcf7c3d4863baaa",
+      "linkText": "Новинки оборудования",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/elektrokoagulyatori.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_7fab306927872b33eed8c1a3",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a8ce78428bcf7c3d4863baaa",
+      "linkText": "Скоро в продаже",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/elektrokoagulyatori.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_4bbb100f3b62f604051f128b",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Manufacturer Brochure",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a8ce78428bcf7c3d4863baaa",
+      "linkText": "",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/elektrokoagulyatori.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_98008acffd96a77c843fabaa",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a8ce78428bcf7c3d4863baaa",
+      "linkText": "Скачать каталог в формате PDF",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/elektrokoagulyatori.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_b6cc95d1c4b488d1e4024d0b",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a8ce78428bcf7c3d4863baaa",
+      "linkText": "Скачать прайс-лист",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/elektrokoagulyatori.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=7; classifiedDocuments={\"Brochure\":11,\"Unknown\":1}; confidenceDistribution={\"80\":9,\"100\":3}; duplicatesRemoved=5"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-dixion-altafor-plus-family",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-altafor-plus-family",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-altafor-plus-family",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 2,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 2,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=7; classifiedDocuments={\"Brochure\":11,\"Unknown\":1}; confidenceDistribution={\"80\":9,\"100\":3}; duplicatesRemoved=5",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

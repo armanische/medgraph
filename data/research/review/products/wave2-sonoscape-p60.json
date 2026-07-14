@@ -1,0 +1,299 @@
+{
+  "product": {
+    "productSlug": "wave2-sonoscape-p60",
+    "manufacturer": "SonoScape",
+    "productName": "SonoScape P60",
+    "model": "P60",
+    "category": "УЗИ аппараты"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_102c98e60ebec0dde79eaaf3",
+      "productSlug": "wave2-sonoscape-p60",
+      "productTitle": "SonoScape P60",
+      "claimCandidateId": "claim_2ffaf74570e0ffa4038d3cd8",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Privacy Policy",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_588cfd90d1338d7c0b3f9030"
+      ],
+      "documentVersionIds": [
+        "document_version_b9c91207bb535e46a7a9f106"
+      ],
+      "sourceUrls": [
+        "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5b874fe1b19f8f6ccc325576",
+      "productSlug": "wave2-sonoscape-p60",
+      "productTitle": "SonoScape P60",
+      "claimCandidateId": "claim_7264f99aea18d80ebfce4fd6",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_1ab1e13843ce572dd471d6fd"
+      ],
+      "documentVersionIds": [
+        "document_version_b9c91207bb535e46a7a9f106"
+      ],
+      "sourceUrls": [
+        "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_e6b4bc6d826019d3734897d0",
+      "productSlug": "wave2-sonoscape-p60",
+      "productTitle": "SonoScape P60",
+      "claimCandidateId": "claim_3c2e05e7975d138091bd6111",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "SonoScape P60 official brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_98082d645f7da45faa22143b"
+      ],
+      "documentVersionIds": [
+        "document_version_039e2407c0cb4c7f51f97e49"
+      ],
+      "sourceUrls": [
+        "https://www.sonoscape.de/uploadfile/2023/0427/20230427103011986.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_9517d76be433de09cbb8db0c",
+      "productSlug": "wave2-sonoscape-p60",
+      "productTitle": "SonoScape P60",
+      "claimCandidateId": "claim_57755cedf63e237bf696ee19",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_abf9f4c06fb35c3a0288b4df"
+      ],
+      "documentVersionIds": [
+        "document_version_039e2407c0cb4c7f51f97e49"
+      ],
+      "sourceUrls": [
+        "https://www.sonoscape.de/uploadfile/2023/0427/20230427103011986.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_102c98e60ebec0dde79eaaf3",
+        "productSlug": "wave2-sonoscape-p60",
+        "productTitle": "SonoScape P60",
+        "claimCandidateId": "claim_2ffaf74570e0ffa4038d3cd8",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Privacy Policy",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_588cfd90d1338d7c0b3f9030"
+        ],
+        "documentVersionIds": [
+          "document_version_b9c91207bb535e46a7a9f106"
+        ],
+        "sourceUrls": [
+          "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_e6b4bc6d826019d3734897d0",
+        "productSlug": "wave2-sonoscape-p60",
+        "productTitle": "SonoScape P60",
+        "claimCandidateId": "claim_3c2e05e7975d138091bd6111",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "SonoScape P60 official brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_98082d645f7da45faa22143b"
+        ],
+        "documentVersionIds": [
+          "document_version_039e2407c0cb4c7f51f97e49"
+        ],
+        "sourceUrls": [
+          "https://www.sonoscape.de/uploadfile/2023/0427/20230427103011986.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_5b874fe1b19f8f6ccc325576",
+        "productSlug": "wave2-sonoscape-p60",
+        "productTitle": "SonoScape P60",
+        "claimCandidateId": "claim_7264f99aea18d80ebfce4fd6",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_1ab1e13843ce572dd471d6fd"
+        ],
+        "documentVersionIds": [
+          "document_version_b9c91207bb535e46a7a9f106"
+        ],
+        "sourceUrls": [
+          "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_9517d76be433de09cbb8db0c",
+        "productSlug": "wave2-sonoscape-p60",
+        "productTitle": "SonoScape P60",
+        "claimCandidateId": "claim_57755cedf63e237bf696ee19",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_abf9f4c06fb35c3a0288b4df"
+        ],
+        "documentVersionIds": [
+          "document_version_039e2407c0cb4c7f51f97e49"
+        ],
+        "sourceUrls": [
+          "https://www.sonoscape.de/uploadfile/2023/0427/20230427103011986.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_b9c91207bb535e46a7a9f106",
+      "documentType": "unknown",
+      "title": "Privacy Policy",
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "sha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c"
+    },
+    {
+      "documentVersionId": "document_version_039e2407c0cb4c7f51f97e49",
+      "documentType": "brochure",
+      "title": "SonoScape P60 official brochure",
+      "sourceUrl": "https://www.sonoscape.de/uploadfile/2023/0427/20230427103011986.pdf",
+      "sha256": "f7ed13c1b00de7bc0d8d4bff51946c42b48d705268ac463aa2e9268747653822"
+    }
+  ],
+  "missingEvidence": [],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected offsite document URL: https://www.sonoscape.com.cn/",
+    "Resolver rejected offsite document URL: https://www.sonoscape.de/",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected unsafe document URL: mailto:market@sonoscape.net",
+    "Resolver rejected offsite document URL: https://www.facebook.com/sonoscapemedicalcorp",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/sonoscape_co._ltd?trk=company_logo",
+    "Resolver rejected offsite document URL: https://beian.miit.gov.cn/",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "resolver=default; attempts=1; matchedLinks=1; classifiedDocuments={\"Unknown\":1}; confidenceDistribution={\"100\":1}; duplicatesRemoved=0",
+    "Discovery creates candidates only; no verified claims or publication.",
+    "No extractable text was found for SonoScape P60 official brochure."
+  ]
+}

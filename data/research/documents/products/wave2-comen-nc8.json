@@ -1,0 +1,50 @@
+{
+  "product": {
+    "productSlug": "wave2-comen-nc8",
+    "manufacturer": "Comen",
+    "productName": "Comen NC8",
+    "model": "NC8",
+    "category": "Монитор пациента"
+  },
+  "attemptedDownloads": [
+    {
+      "documentCandidateId": "document_00e8ae1069591065dd901c92",
+      "sourceId": "source_0d2fea1aa8b47bc98bd477dc",
+      "productSlug": "wave2-comen-nc8",
+      "title": "媒体视频",
+      "url": "https://www.comen.com/RDC/mediaVideo",
+      "documentType": "unknown",
+      "trustTier": 1
+    }
+  ],
+  "downloadedArtifacts": [],
+  "failedDownloads": [
+    {
+      "documentCandidateId": "document_00e8ae1069591065dd901c92",
+      "url": "https://www.comen.com/RDC/mediaVideo",
+      "title": "媒体视频",
+      "reason": "HTTP 500 RuntimeError",
+      "retryable": true
+    }
+  ],
+  "skippedDocuments": [],
+  "documentVersions": [],
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver retry skipped https://www.comen.com/RDC/mediaVideo: HTTP 500",
+    "Resolver rejected unsafe document URL: http://en.comen.com/",
+    "Resolver rejected unsafe document URL: http://fr.comen.com/",
+    "Resolver rejected unsafe document URL: http://es.comen.com/",
+    "Resolver rejected offsite document URL: https://szcomen.zhiye.com/",
+    "Resolver rejected offsite document URL: https://szcomen.zhiye.com/campus",
+    "Resolver rejected offsite document URL: https://szcomen.zhiye.com/social",
+    "resolver=default; attempts=2; matchedLinks=1; classifiedDocuments={\"Unknown\":1}; confidenceDistribution={\"90\":1}; duplicatesRemoved=0",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": false,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "product": {
+    "productSlug": "wave2-comen-c60",
+    "manufacturer": "Comen",
+    "productName": "Comen C60",
+    "model": "C60",
+    "category": "Монитор пациента"
+  },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [
+      "https://es.comen.com/pages/C60.html"
+    ],
+    "normalizedUrls": [
+      "https://es.comen.com/pages/C60.html"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “Comen”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_c52d83fc0b152d3c926a9067",
+      "productSlug": "wave2-comen-c60",
+      "manufacturer": "Comen",
+      "productName": "Comen C60",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://es.comen.com/pages/C60.html",
+      "title": "Comen C60 official regional product page",
+      "snippet": "Official Spanish legacy page confirms the neonatal monitor; accessories and optional modules are not generalized beyond the page.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official Spanish legacy page confirms the neonatal monitor; accessories and optional modules are not generalized beyond the page."
+      ]
+    }
+  ],
+  "documentCandidates": [],
+  "resolvedDocumentLinks": [],
+  "resolverWarnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: http://es.comen.com/",
+    "Resolver rejected unsafe document URL: http://www.comen.com/",
+    "Resolver rejected unsafe document URL: http://en.comen.com/",
+    "Resolver rejected unsafe document URL: http://rus.comen.com/",
+    "Resolver rejected unsafe document URL: http://fr.comen.com/",
+    "Resolver rejected unsafe document URL: http://en.comen.com/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCqSdrKuGFz_TRqVqyklRRjw",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/3816778/admin/",
+    "Resolver rejected offsite document URL: https://www.facebook.com/shenzhencomen/?eid=ARC6RajEKpPDYD9gfg8GVjdY9GS4brP6LD6s9wgOUmP47A2Fb45V7zHdfn6Tu8TCgcowtBZ57w7RjaGz",
+    "Resolver rejected offsite document URL: https://twitter.com/ComenShenzhen",
+    "resolver=default; attempts=1; matchedLinks=0; classifiedDocuments={}; confidenceDistribution={}; duplicatesRemoved=0",
+    "Resolver found no document links on https://es.comen.com/pages/C60.html."
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-comen-c60",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-comen-c60",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-comen-c60",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: http://es.comen.com/",
+    "Resolver rejected unsafe document URL: http://www.comen.com/",
+    "Resolver rejected unsafe document URL: http://en.comen.com/",
+    "Resolver rejected unsafe document URL: http://rus.comen.com/",
+    "Resolver rejected unsafe document URL: http://fr.comen.com/",
+    "Resolver rejected unsafe document URL: http://en.comen.com/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCqSdrKuGFz_TRqVqyklRRjw",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/3816778/admin/",
+    "Resolver rejected offsite document URL: https://www.facebook.com/shenzhencomen/?eid=ARC6RajEKpPDYD9gfg8GVjdY9GS4brP6LD6s9wgOUmP47A2Fb45V7zHdfn6Tu8TCgcowtBZ57w7RjaGz",
+    "Resolver rejected offsite document URL: https://twitter.com/ComenShenzhen",
+    "resolver=default; attempts=1; matchedLinks=0; classifiedDocuments={}; confidenceDistribution={}; duplicatesRemoved=0",
+    "Resolver found no document links on https://es.comen.com/pages/C60.html.",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

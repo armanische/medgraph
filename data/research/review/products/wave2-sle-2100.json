@@ -1,0 +1,19 @@
+{
+  "product": {
+    "productSlug": "wave2-sle-2100",
+    "manufacturer": "SLE",
+    "productName": "SLE2100 archive check",
+    "model": "SLE2100",
+    "category": "Neonatal ventilator"
+  },
+  "reviewItems": [],
+  "groupedByClaimType": {},
+  "sourceDocumentSummary": [],
+  "missingEvidence": [],
+  "recommendedReviewerAction": "No reviewable candidate claims yet. Collect more evidence before review.",
+  "warnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/areas-of-care/acute-care/neonatal/: HTTP 403",
+    "Discovery creates candidates only; no verified claims or publication.",
+    "No DocumentCandidate records were available for download."
+  ]
+}

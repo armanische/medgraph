@@ -1,0 +1,341 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-endoscopy-portfolio",
+    "manufacturer": "Dixion",
+    "productName": "DIXION endoscopy equipment portfolio",
+    "model": "Endoscopy portfolio family",
+    "category": "Эндоскопическое оборудование"
+  },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [
+      "https://dixion.ru/category/endoskopiya.html"
+    ],
+    "normalizedUrls": [
+      "https://dixion.ru/category/endoskopiya.html"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “Dixion”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_ed964dacf23398f84486511c",
+      "productSlug": "wave2-dixion-endoscopy-portfolio",
+      "manufacturer": "Dixion",
+      "productName": "DIXION endoscopy equipment portfolio",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://dixion.ru/category/endoskopiya.html",
+      "title": "DIXION endoscopy equipment official category",
+      "snippet": "Official category currently exposes no public model cards or model PDF in the catalogue index; retained as a blocked family discovery entry, not a fabricated product model.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official category currently exposes no public model cards or model PDF in the catalogue index; retained as a blocked family discovery entry, not a fabricated product model."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_e73b0a69a4ea2bd23bb67c94",
+      "sourceId": "source_ed964dacf23398f84486511c",
+      "productSlug": "wave2-dixion-endoscopy-portfolio",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/category/endoskopiya.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_463017f0202c549d1a072907",
+      "sourceId": "source_ed964dacf23398f84486511c",
+      "productSlug": "wave2-dixion-endoscopy-portfolio",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/category/endoskopiya.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_12ffffc7bb11b1e8eca129a6",
+      "sourceId": "source_ed964dacf23398f84486511c",
+      "productSlug": "wave2-dixion-endoscopy-portfolio",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/category/endoskopiya.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_1a3420ee333d931c4bab604a",
+      "sourceId": "source_ed964dacf23398f84486511c",
+      "productSlug": "wave2-dixion-endoscopy-portfolio",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/category/endoskopiya.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_9ced2a4f39a553773cc93e23",
+      "sourceId": "source_ed964dacf23398f84486511c",
+      "productSlug": "wave2-dixion-endoscopy-portfolio",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/category/endoskopiya.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_3261d516045e30b3ccab6fec",
+      "sourceId": "source_ed964dacf23398f84486511c",
+      "productSlug": "wave2-dixion-endoscopy-portfolio",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/category/endoskopiya.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_a211be98fc40f986cc87d8a2",
+      "sourceId": "source_ed964dacf23398f84486511c",
+      "productSlug": "wave2-dixion-endoscopy-portfolio",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Склад",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/category/endoskopiya.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_12ffffc7bb11b1e8eca129a6",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_ed964dacf23398f84486511c",
+      "linkText": "Медицинское оборудование",
+      "resolvedFromUrl": "https://dixion.ru/category/endoskopiya.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_1a3420ee333d931c4bab604a",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_ed964dacf23398f84486511c",
+      "linkText": "Каталоги оборудования",
+      "resolvedFromUrl": "https://dixion.ru/category/endoskopiya.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_9ced2a4f39a553773cc93e23",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_ed964dacf23398f84486511c",
+      "linkText": "Новинки оборудования",
+      "resolvedFromUrl": "https://dixion.ru/category/endoskopiya.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_3261d516045e30b3ccab6fec",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_ed964dacf23398f84486511c",
+      "linkText": "Скоро в продаже",
+      "resolvedFromUrl": "https://dixion.ru/category/endoskopiya.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_a211be98fc40f986cc87d8a2",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Склад",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_ed964dacf23398f84486511c",
+      "linkText": "Склад",
+      "resolvedFromUrl": "https://dixion.ru/category/endoskopiya.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_e73b0a69a4ea2bd23bb67c94",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_ed964dacf23398f84486511c",
+      "linkText": "Скачать каталог в формате PDF",
+      "resolvedFromUrl": "https://dixion.ru/category/endoskopiya.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_463017f0202c549d1a072907",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_ed964dacf23398f84486511c",
+      "linkText": "Скачать прайс-лист",
+      "resolvedFromUrl": "https://dixion.ru/category/endoskopiya.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=7; classifiedDocuments={\"Brochure\":10,\"Unknown\":1}; confidenceDistribution={\"80\":8,\"100\":3}; duplicatesRemoved=4"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-dixion-endoscopy-portfolio",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-endoscopy-portfolio",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-endoscopy-portfolio",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=7; classifiedDocuments={\"Brochure\":10,\"Unknown\":1}; confidenceDistribution={\"80\":8,\"100\":3}; duplicatesRemoved=4",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

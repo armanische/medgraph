@@ -1,0 +1,194 @@
+{
+  "product": {
+    "productSlug": "wave2-sonoscape-x3",
+    "manufacturer": "SonoScape",
+    "productName": "SonoScape X3",
+    "model": "X3",
+    "category": "УЗИ аппараты"
+  },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [
+      "https://www.sonoscape.com/en/products/ultrasound/portable_color_doppler/2018/0402/12.html",
+      "https://www.sonoscape.de/uploadfile/2023/0427/20230427101658727.pdf"
+    ],
+    "normalizedUrls": [
+      "https://www.sonoscape.com/en/products/ultrasound/portable_color_doppler/2018/0402/12.html",
+      "https://www.sonoscape.de/uploadfile/2023/0427/20230427101658727.pdf"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “SonoScape”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_4a4ade12e3996ac03d8df4f9",
+      "productSlug": "wave2-sonoscape-x3",
+      "manufacturer": "SonoScape",
+      "productName": "SonoScape X3",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.sonoscape.com/en/products/ultrasound/portable_color_doppler/2018/0402/12.html",
+      "title": "SonoScape X3 official product page",
+      "snippet": "Official portable color Doppler product page; veterinary X3V evidence is excluded.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official portable color Doppler product page; veterinary X3V evidence is excluded."
+      ]
+    },
+    {
+      "sourceId": "source_0a10f8bd21193cd7288ac49d",
+      "productSlug": "wave2-sonoscape-x3",
+      "manufacturer": "SonoScape",
+      "productName": "SonoScape X3",
+      "sourceType": "manufacturer_document",
+      "url": "https://www.sonoscape.de/uploadfile/2023/0427/20230427101658727.pdf",
+      "title": "SonoScape X3 official brochure",
+      "snippet": "Public official regional brochure with named X3 probes and accessories.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "manufacturer-hosted document candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Public official regional brochure with named X3 probes and accessories."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_3d2aef0c795a6e844ddfecdd",
+      "sourceId": "source_4a4ade12e3996ac03d8df4f9",
+      "productSlug": "wave2-sonoscape-x3",
+      "documentType": "unknown",
+      "url": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "title": "Privacy Policy",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.sonoscape.com/en/products/ultrasound/portable_color_doppler/2018/0402/12.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_fa934c5c9e54d780a70b2b15",
+      "sourceId": "source_0a10f8bd21193cd7288ac49d",
+      "productSlug": "wave2-sonoscape-x3",
+      "documentType": "brochure",
+      "url": "https://www.sonoscape.de/uploadfile/2023/0427/20230427101658727.pdf",
+      "title": "SonoScape X3 official brochure",
+      "language": null,
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "source URL is itself a document candidate"
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_3d2aef0c795a6e844ddfecdd",
+      "url": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "title": "Privacy Policy",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_4a4ade12e3996ac03d8df4f9",
+      "linkText": "Privacy Policy",
+      "resolvedFromUrl": "https://www.sonoscape.com/en/products/ultrasound/portable_color_doppler/2018/0402/12.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected offsite document URL: https://www.sonoscape.com.cn/",
+    "Resolver rejected offsite document URL: https://www.sonoscape.de/",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected unsafe document URL: mailto:market@sonoscape.net",
+    "Resolver rejected offsite document URL: https://www.facebook.com/sonoscapemedicalcorp",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/sonoscape_co._ltd?trk=company_logo",
+    "Resolver rejected offsite document URL: https://beian.miit.gov.cn/",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "resolver=default; attempts=1; matchedLinks=1; classifiedDocuments={\"Unknown\":1}; confidenceDistribution={\"100\":1}; duplicatesRemoved=0"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-sonoscape-x3",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-sonoscape-x3",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-sonoscape-x3",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 2,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 2,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected offsite document URL: https://www.sonoscape.com.cn/",
+    "Resolver rejected offsite document URL: https://www.sonoscape.de/",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected unsafe document URL: mailto:market@sonoscape.net",
+    "Resolver rejected offsite document URL: https://www.facebook.com/sonoscapemedicalcorp",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/sonoscape_co._ltd?trk=company_logo",
+    "Resolver rejected offsite document URL: https://beian.miit.gov.cn/",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "resolver=default; attempts=1; matchedLinks=1; classifiedDocuments={\"Unknown\":1}; confidenceDistribution={\"100\":1}; duplicatesRemoved=0",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

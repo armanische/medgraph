@@ -1,0 +1,94 @@
+{
+  "product": {
+    "productSlug": "wave2-sle-products-index",
+    "manufacturer": "SLE",
+    "productName": "Wave 2 SLE products index",
+    "model": "Wave 2 discovery index",
+    "category": "Wave 2 source discovery"
+  },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [
+      "https://inspirationhealthcaregroup.com/areas-of-care/acute-care/neonatal/"
+    ],
+    "normalizedUrls": [
+      "https://inspirationhealthcaregroup.com/areas-of-care/acute-care/neonatal"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “SLE”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_14c5daf1eb66fdc97da8f47e",
+      "productSlug": "wave2-sle-products-index",
+      "manufacturer": "SLE",
+      "productName": "Wave 2 SLE products index",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://inspirationhealthcaregroup.com/areas-of-care/acute-care/neonatal/",
+      "title": "Inspiration Healthcare official products index",
+      "snippet": "Wave 2 official current-owner discovery entry point only; SLE legacy naming and H/C/N configuration boundaries must be preserved.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Wave 2 official current-owner discovery entry point only; SLE legacy naming and H/C/N configuration boundaries must be preserved."
+      ]
+    }
+  ],
+  "documentCandidates": [],
+  "resolvedDocumentLinks": [],
+  "resolverWarnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/areas-of-care/acute-care/neonatal/: HTTP 403"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-sle-products-index",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-sle-products-index",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-sle-products-index",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/areas-of-care/acute-care/neonatal/: HTTP 403",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-storm-family",
+    "manufacturer": "Dixion",
+    "productName": "DIXION Storm patient monitor family",
+    "model": "Storm D8/D6/D5/D3 family",
+    "category": "Монитор пациента"
+  },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [
+      "https://dixion.ru/subcategory/prikrovatnie-monitori.html",
+      "https://dixion.ru/upload/iblock/b2a/Storm%20D6%20%D0%B8%20Storm%20D8_out.pdf"
+    ],
+    "normalizedUrls": [
+      "https://dixion.ru/subcategory/prikrovatnie-monitori.html",
+      "https://dixion.ru/upload/iblock/b2a/Storm%20D6%20%D0%B8%20Storm%20D8_out.pdf"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “Dixion”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_a74882ba49d89982811ee831",
+      "productSlug": "wave2-dixion-storm-family",
+      "manufacturer": "Dixion",
+      "productName": "DIXION Storm patient monitor family",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://dixion.ru/subcategory/prikrovatnie-monitori.html",
+      "title": "DIXION Storm official patient monitor category",
+      "snippet": "Family discovery entry; central station, stands, sensors and modules remain accessories/options.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Family discovery entry; central station, stands, sensors and modules remain accessories/options."
+      ]
+    },
+    {
+      "sourceId": "source_4d4ceaec75f8007d968bc143",
+      "productSlug": "wave2-dixion-storm-family",
+      "manufacturer": "Dixion",
+      "productName": "DIXION Storm patient monitor family",
+      "sourceType": "manufacturer_document",
+      "url": "https://dixion.ru/upload/iblock/b2a/Storm%20D6%20%D0%B8%20Storm%20D8_out.pdf",
+      "title": "DIXION Storm D8/D6/D5/D3 official brochure",
+      "snippet": "Official modular-monitor family brochure; model-specific transfer requires an explicit locator.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "manufacturer-hosted document candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official modular-monitor family brochure; model-specific transfer requires an explicit locator."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_c6c86590520e0d6212704b38",
+      "sourceId": "source_a74882ba49d89982811ee831",
+      "productSlug": "wave2-dixion-storm-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/prikrovatnie-monitori.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_5fad3930a41cfc284efdd61f",
+      "sourceId": "source_a74882ba49d89982811ee831",
+      "productSlug": "wave2-dixion-storm-family",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/subcategory/prikrovatnie-monitori.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_45e6f887312e3081c1aef6c5",
+      "sourceId": "source_4d4ceaec75f8007d968bc143",
+      "productSlug": "wave2-dixion-storm-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/upload/iblock/b2a/Storm%20D6%20%D0%B8%20Storm%20D8_out.pdf",
+      "title": "DIXION Storm D8/D6/D5/D3 official brochure",
+      "language": null,
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "source URL is itself a document candidate"
+      ]
+    },
+    {
+      "documentId": "document_ab3cfc7740f1faaefa6f8cea",
+      "sourceId": "source_a74882ba49d89982811ee831",
+      "productSlug": "wave2-dixion-storm-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/prikrovatnie-monitori.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_f36217ea03d25f235850711f",
+      "sourceId": "source_a74882ba49d89982811ee831",
+      "productSlug": "wave2-dixion-storm-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/prikrovatnie-monitori.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_f709780840235fc8e932b12f",
+      "sourceId": "source_a74882ba49d89982811ee831",
+      "productSlug": "wave2-dixion-storm-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/prikrovatnie-monitori.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_c8bddf6fdbb231472125a73f",
+      "sourceId": "source_a74882ba49d89982811ee831",
+      "productSlug": "wave2-dixion-storm-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/prikrovatnie-monitori.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_71e6ff5da1b229078045a6ec",
+      "sourceId": "source_a74882ba49d89982811ee831",
+      "productSlug": "wave2-dixion-storm-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Manufacturer Brochure",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/prikrovatnie-monitori.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_ab3cfc7740f1faaefa6f8cea",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a74882ba49d89982811ee831",
+      "linkText": "Медицинское оборудование",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/prikrovatnie-monitori.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_f36217ea03d25f235850711f",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a74882ba49d89982811ee831",
+      "linkText": "Каталоги оборудования",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/prikrovatnie-monitori.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_f709780840235fc8e932b12f",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a74882ba49d89982811ee831",
+      "linkText": "Новинки оборудования",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/prikrovatnie-monitori.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_c8bddf6fdbb231472125a73f",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a74882ba49d89982811ee831",
+      "linkText": "Скоро в продаже",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/prikrovatnie-monitori.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_71e6ff5da1b229078045a6ec",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Manufacturer Brochure",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a74882ba49d89982811ee831",
+      "linkText": "",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/prikrovatnie-monitori.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_c6c86590520e0d6212704b38",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a74882ba49d89982811ee831",
+      "linkText": "Скачать каталог в формате PDF",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/prikrovatnie-monitori.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_5fad3930a41cfc284efdd61f",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a74882ba49d89982811ee831",
+      "linkText": "Скачать прайс-лист",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/prikrovatnie-monitori.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=7; classifiedDocuments={\"Brochure\":11,\"Unknown\":1}; confidenceDistribution={\"80\":9,\"100\":3}; duplicatesRemoved=5"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-dixion-storm-family",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-storm-family",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-storm-family",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 2,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 2,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=7; classifiedDocuments={\"Brochure\":11,\"Unknown\":1}; confidenceDistribution={\"80\":9,\"100\":3}; duplicatesRemoved=5",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

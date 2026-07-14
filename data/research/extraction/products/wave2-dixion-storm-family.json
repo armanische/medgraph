@@ -1,0 +1,896 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-storm-family",
+    "manufacturer": "Dixion",
+    "productName": "DIXION Storm patient monitor family",
+    "model": "Storm D8/D6/D5/D3 family",
+    "category": "Монитор пациента"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_6eb7c7cd6f9f0d0afb8683ff",
+      "documentCandidateId": "document_5fad3930a41cfc284efdd61f",
+      "sourceId": "source_a74882ba49d89982811ee831",
+      "productSlug": "wave2-dixion-storm-family",
+      "documentKey": "trusted-document:document_5fad3930a41cfc284efdd61f",
+      "documentType": "unknown",
+      "title": "Скачать прайс-лист",
+      "language": null,
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "contentType": "application/pdf",
+      "byteSize": 178281,
+      "filePath": "data/research/artifacts/artifacts/sha256/1c/da/1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_e4c4c010841628be3e198b95",
+      "productSlug": "wave2-dixion-storm-family",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Скачать прайс-лист",
+      "unit": null,
+      "rawText": "Document title: Скачать прайс-лист",
+      "documentVersionId": "document_version_6eb7c7cd6f9f0d0afb8683ff",
+      "documentCandidateId": "document_5fad3930a41cfc284efdd61f",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_f8c41c378d46b9af8c1e8114",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_e031752fbbdf12f3591631aa",
+      "productSlug": "wave2-dixion-storm-family",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_6eb7c7cd6f9f0d0afb8683ff",
+      "documentCandidateId": "document_5fad3930a41cfc284efdd61f",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_7b73784dcc8c3a4116b96f08",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_01c8590e2d2b54f263def8bd",
+      "productSlug": "wave2-dixion-storm-family",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "12",
+      "unit": "inch",
+      "rawText": "дисплей 12\"",
+      "documentVersionId": "document_version_6eb7c7cd6f9f0d0afb8683ff",
+      "documentCandidateId": "document_5fad3930a41cfc284efdd61f",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 9
+      },
+      "evidenceCandidateId": "evidence_9fdaeede341b2a4cdd37d07f",
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:patient-monitor",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_e57200ccf2e92d01b4250205",
+      "productSlug": "wave2-dixion-storm-family",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "14",
+      "unit": "inch",
+      "rawText": "дисплей 14\"",
+      "documentVersionId": "document_version_6eb7c7cd6f9f0d0afb8683ff",
+      "documentCandidateId": "document_5fad3930a41cfc284efdd61f",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 20
+      },
+      "evidenceCandidateId": "evidence_934ef381855d87e9dfa5b0e6",
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:patient-monitor",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_b92c6e4065cf3acf8bc8fa5a",
+      "productSlug": "wave2-dixion-storm-family",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "17",
+      "unit": "inch",
+      "rawText": "дисплей 17\"",
+      "documentVersionId": "document_version_6eb7c7cd6f9f0d0afb8683ff",
+      "documentCandidateId": "document_5fad3930a41cfc284efdd61f",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 21
+      },
+      "evidenceCandidateId": "evidence_6ebfb2739801af322787c50b",
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:patient-monitor",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_4435d0c649de417fe79ed91c",
+      "productSlug": "wave2-dixion-storm-family",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "8,4",
+      "unit": "inch",
+      "rawText": "дисплей 8,4\"",
+      "documentVersionId": "document_version_6eb7c7cd6f9f0d0afb8683ff",
+      "documentCandidateId": "document_5fad3930a41cfc284efdd61f",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 22
+      },
+      "evidenceCandidateId": "evidence_8bd0eafee86288d1e16c168c",
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:patient-monitor",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_1ab3dd9c67a3b1fe41183e5e",
+      "productSlug": "wave2-dixion-storm-family",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "15",
+      "unit": "inch",
+      "rawText": "дисплей 15\"",
+      "documentVersionId": "document_version_6eb7c7cd6f9f0d0afb8683ff",
+      "documentCandidateId": "document_5fad3930a41cfc284efdd61f",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 26
+      },
+      "evidenceCandidateId": "evidence_d574ad43ad213480c94ccd20",
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:patient-monitor",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_7a464767928839ee22e9aaa2",
+      "productSlug": "wave2-dixion-storm-family",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "10",
+      "unit": "inch",
+      "rawText": "дисплей 10\"",
+      "documentVersionId": "document_version_6eb7c7cd6f9f0d0afb8683ff",
+      "documentCandidateId": "document_5fad3930a41cfc284efdd61f",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 42
+      },
+      "evidenceCandidateId": "evidence_63344b1930b610c949f628d1",
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:patient-monitor",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_8f8b8c880300d5ddc9eb96bf",
+      "productSlug": "wave2-dixion-storm-family",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "5,7",
+      "unit": "inch",
+      "rawText": "дисплей 5,7\"",
+      "documentVersionId": "document_version_6eb7c7cd6f9f0d0afb8683ff",
+      "documentCandidateId": "document_5fad3930a41cfc284efdd61f",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 49
+      },
+      "evidenceCandidateId": "evidence_ffd136b6370b9f8eb4651cf2",
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:patient-monitor",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_245ce13071e6eb1b374f65d2",
+      "productSlug": "wave2-dixion-storm-family",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "12,1",
+      "unit": "inch",
+      "rawText": "Дисплей 12,1\"",
+      "documentVersionId": "document_version_6eb7c7cd6f9f0d0afb8683ff",
+      "documentCandidateId": "document_5fad3930a41cfc284efdd61f",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 54
+      },
+      "evidenceCandidateId": "evidence_62d569828bb2acb3ffa6aca6",
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:patient-monitor",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_8d80159a117d8ffc111dda54",
+      "productSlug": "wave2-dixion-storm-family",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "19",
+      "unit": "inch",
+      "rawText": "дисплей 19\"",
+      "documentVersionId": "document_version_6eb7c7cd6f9f0d0afb8683ff",
+      "documentCandidateId": "document_5fad3930a41cfc284efdd61f",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 189
+      },
+      "evidenceCandidateId": "evidence_1aa4e5ee91988a09b53e067d",
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:patient-monitor",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_f8c41c378d46b9af8c1e8114",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_6eb7c7cd6f9f0d0afb8683ff",
+      "documentCandidateId": "document_5fad3930a41cfc284efdd61f",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Скачать прайс-лист",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_7b73784dcc8c3a4116b96f08",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_6eb7c7cd6f9f0d0afb8683ff",
+      "documentCandidateId": "document_5fad3930a41cfc284efdd61f",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_9fdaeede341b2a4cdd37d07f",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_6eb7c7cd6f9f0d0afb8683ff",
+      "documentCandidateId": "document_5fad3930a41cfc284efdd61f",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 9
+      },
+      "quotedText": "дисплей 12\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_934ef381855d87e9dfa5b0e6",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_6eb7c7cd6f9f0d0afb8683ff",
+      "documentCandidateId": "document_5fad3930a41cfc284efdd61f",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 20
+      },
+      "quotedText": "дисплей 14\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_6ebfb2739801af322787c50b",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_6eb7c7cd6f9f0d0afb8683ff",
+      "documentCandidateId": "document_5fad3930a41cfc284efdd61f",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 21
+      },
+      "quotedText": "дисплей 17\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_8bd0eafee86288d1e16c168c",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_6eb7c7cd6f9f0d0afb8683ff",
+      "documentCandidateId": "document_5fad3930a41cfc284efdd61f",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 22
+      },
+      "quotedText": "дисплей 8,4\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_d574ad43ad213480c94ccd20",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_6eb7c7cd6f9f0d0afb8683ff",
+      "documentCandidateId": "document_5fad3930a41cfc284efdd61f",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 26
+      },
+      "quotedText": "дисплей 15\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_63344b1930b610c949f628d1",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_6eb7c7cd6f9f0d0afb8683ff",
+      "documentCandidateId": "document_5fad3930a41cfc284efdd61f",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 42
+      },
+      "quotedText": "дисплей 10\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ffd136b6370b9f8eb4651cf2",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_6eb7c7cd6f9f0d0afb8683ff",
+      "documentCandidateId": "document_5fad3930a41cfc284efdd61f",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 49
+      },
+      "quotedText": "дисплей 5,7\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_62d569828bb2acb3ffa6aca6",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_6eb7c7cd6f9f0d0afb8683ff",
+      "documentCandidateId": "document_5fad3930a41cfc284efdd61f",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 54
+      },
+      "quotedText": "Дисплей 12,1\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_1aa4e5ee91988a09b53e067d",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_6eb7c7cd6f9f0d0afb8683ff",
+      "documentCandidateId": "document_5fad3930a41cfc284efdd61f",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 189
+      },
+      "quotedText": "дисплей 19\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_44c2c8f60c15de8cd7820f04",
+      "productSlug": "wave2-dixion-storm-family",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Скачать прайс-лист",
+        "unit": null
+      },
+      "rawText": "Document title: Скачать прайс-лист",
+      "evidenceCandidateIds": [
+        "evidence_f8c41c378d46b9af8c1e8114"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_7a36a49cf66735db05d60e3a",
+      "productSlug": "wave2-dixion-storm-family",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_7b73784dcc8c3a4116b96f08"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_6adf1d828878219660caab86",
+      "productSlug": "wave2-dixion-storm-family",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "12",
+        "unit": "inch"
+      },
+      "rawText": "дисплей 12\"",
+      "evidenceCandidateIds": [
+        "evidence_9fdaeede341b2a4cdd37d07f"
+      ],
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_17142e272594292f7c0d4225",
+      "productSlug": "wave2-dixion-storm-family",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "14",
+        "unit": "inch"
+      },
+      "rawText": "дисплей 14\"",
+      "evidenceCandidateIds": [
+        "evidence_934ef381855d87e9dfa5b0e6"
+      ],
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_d97aa7817e5f08a45f355122",
+      "productSlug": "wave2-dixion-storm-family",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "17",
+        "unit": "inch"
+      },
+      "rawText": "дисплей 17\"",
+      "evidenceCandidateIds": [
+        "evidence_6ebfb2739801af322787c50b"
+      ],
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_cf441b8ea72b43c646a590f5",
+      "productSlug": "wave2-dixion-storm-family",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "8,4",
+        "unit": "inch"
+      },
+      "rawText": "дисплей 8,4\"",
+      "evidenceCandidateIds": [
+        "evidence_8bd0eafee86288d1e16c168c"
+      ],
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_79bf1524abcdea53eeadb864",
+      "productSlug": "wave2-dixion-storm-family",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "15",
+        "unit": "inch"
+      },
+      "rawText": "дисплей 15\"",
+      "evidenceCandidateIds": [
+        "evidence_d574ad43ad213480c94ccd20"
+      ],
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_1d6e219cecec4d07fff0b3bf",
+      "productSlug": "wave2-dixion-storm-family",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "10",
+        "unit": "inch"
+      },
+      "rawText": "дисплей 10\"",
+      "evidenceCandidateIds": [
+        "evidence_63344b1930b610c949f628d1"
+      ],
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_ef2dd935b2b3ff1b7f1a3d1d",
+      "productSlug": "wave2-dixion-storm-family",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "5,7",
+        "unit": "inch"
+      },
+      "rawText": "дисплей 5,7\"",
+      "evidenceCandidateIds": [
+        "evidence_ffd136b6370b9f8eb4651cf2"
+      ],
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_c9a4d0dadb2dcddecea92d1b",
+      "productSlug": "wave2-dixion-storm-family",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "12,1",
+        "unit": "inch"
+      },
+      "rawText": "Дисплей 12,1\"",
+      "evidenceCandidateIds": [
+        "evidence_62d569828bb2acb3ffa6aca6"
+      ],
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_f323d92c8a3bd5a007ba85f6",
+      "productSlug": "wave2-dixion-storm-family",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "19",
+        "unit": "inch"
+      },
+      "rawText": "дисплей 19\"",
+      "evidenceCandidateIds": [
+        "evidence_1aa4e5ee91988a09b53e067d"
+      ],
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "patient-monitor"
+    ],
+    "patternsMatched": {
+      "patient-monitor.screen": 9
+    },
+    "normalizedUnits": {
+      "inch": 9
+    },
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "patient-monitor": [
+        "battery_runtime",
+        "modules",
+        "parameters"
+      ]
+    },
+    "coveragePercent": 13
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=7; classifiedDocuments={\"Brochure\":11,\"Unknown\":1}; confidenceDistribution={\"80\":9,\"100\":3}; duplicatesRemoved=5",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

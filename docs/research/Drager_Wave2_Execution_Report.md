@@ -1,7 +1,7 @@
 # Dräger Wave 2 Execution Report
 
-**Task:** MVP-040 — Wave 2 Sprint 4 — Dräger Full Import  
-**Scope:** official Dräger sources only  
+**Task:** MVP-040 — Wave 2 Sprint 4 — Dräger Full Import
+**Scope:** official Dräger sources only
 **Status:** candidate-only research pipeline executed; no verification or publication changes
 
 ## Executive summary

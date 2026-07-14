@@ -1,7 +1,7 @@
 # GE HealthCare Wave 2 Execution Report
 
-**Task:** MVP-044 — GE HealthCare Wave 2 Full Import  
-**Scope:** official GE HealthCare sources only  
+**Task:** MVP-044 — GE HealthCare Wave 2 Full Import
+**Scope:** official GE HealthCare sources only
 **Status:** candidate-only pipeline executed; no verification or publication changes
 
 ## Executive summary

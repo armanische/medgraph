@@ -1,0 +1,1248 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-products-index",
+    "manufacturer": "Dixion",
+    "productName": "Wave 2 Dixion products index",
+    "model": "Wave 2 discovery index",
+    "category": "Wave 2 source discovery"
+  },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [
+      "https://dixion.ru/catalog/catalogs/"
+    ],
+    "normalizedUrls": [
+      "https://dixion.ru/catalog/catalogs"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “Dixion”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "manufacturer": "Dixion",
+      "productName": "Wave 2 Dixion products index",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Dixion official products index",
+      "snippet": "Wave 2 official discovery entry point only; the live 2026 page exposes current category and model catalogues. Regional naming and family/configuration boundaries require human review.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Wave 2 official discovery entry point only; the live 2026 page exposes current category and model catalogues. Regional naming and family/configuration boundaries require human review."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_28f0438eabc617ec3dc2064d",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/catalogs/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_43fdf94fc5a542b3b1a80dc1",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1996ebee612a0df48a47c62f",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/0c7/heart_pad-.pdf",
+      "title": "Дефибриллятор Heart Pad Dixion",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_8cff9b0858b0916c8463dcaa",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/164/pbj6njpez0vg7iltotdwkix37qgm8tib/Dixion_CRK-1P.pdf",
+      "title": "Авторефкератометр CRK-1P",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a9c4323c488db50b6c83b58d",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/198/tsx6q0z2rkdc1y385x7pircdc422fidj/Dixion_Remodix_9507.pdf",
+      "title": "Палатный рентгеновский аппарат DIXION Remodix 9507",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_e23584b6916f9524287f1aff",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/1a5/5kgzqoiipi8doyrcbf9hla09evummmsf/Dixion_Altafor.pdf",
+      "title": "Коагуляторы Altafor Plus",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_e185952d6cbe56c566dd83a8",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/1b7/rqf0z1gc7nntnpzl277nxnpyl1ajv91c/Dixion_X-View_LED.pdf",
+      "title": "Негатоскопы X-View и X-View-LED Dixion",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_08caec844f0d4fabb8f39811",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/upload/iblock/288/7j9cmvsmwsahiuo5oh0phfcs0crjv9oq/Catalog_heart.pdf",
+      "title": "Catalog Dixion",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_85cf32e589fdb62efe614c4b",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/363/qg0hx5cpw824n864pw4tqtfeeboxkitu/Dixion_Revo-i_2025.pdf",
+      "title": "Роботическая система Dixion Revo-i",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_5f948bd0eae0d0aeeba7b6f4",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/418/g93oe4vdj2bevwyh9r5i80mcm81cnlok/Babyguard_1120.pdf",
+      "title": "Dixion Babyguard 1120",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_0198982a22f40b9c04148de2",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/59f/3a4mcqkdays64uqvu9a3rw6zzmdeonl5/Dixion_Phototherapy_XHZ_2025.pdf",
+      "title": "Фототерапия Dixion XHZ",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_c66c0bf8b5a503e12b4e5b69",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/5ba/wbqo3m0auw33ljaysimp7yw6wjxju63a/Dixion_Intensive_Care_Bed_CGD.pdf",
+      "title": "Функциональные кровати серии Intensive Care Bed CGD",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_7c590a2d9e0441f447ca03c8",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/603/inby275dx6d9a77kanbbzv2fcjdpo1w2/Dixion_Practice_2025.pdf",
+      "title": "Наркозные аппараты Practice Dixion",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_ff3f18fe763c977de998c165",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/6e3/5p66s1bojusc20lmcklrfxno4s2s1yxm/Dixion-Fetal_monitors.pdf",
+      "title": "Фетальные мониторы Dixion Овертон",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a77cb05ec6971cf845321495",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/78f/srz2gooz3g0e02vzr4po5pwpjh1b3vxk/Dixion_Defibrillators.pdf",
+      "title": "Дефибриляторы Dixion",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a612143eddfd2b0730e8a6c1",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/7a1/9l2l11t1lksowc65mujo82pgsgzj5izd/Dixion_Birth_Beds.pdf",
+      "title": "Родовые кровати Dixion",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_bbe15898bed9fac7a594b7cf",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/882/ew07fblc1eoklaugkpkp8kmt9bx7iinp/Dixion_Convelar_2024.pdf",
+      "title": "Хирургические светильники Dixion Convelar",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_174eca1737042b8d402f124c",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/953/o447tecefs6hsgx35zfiw3duz59dox5d/Dixion-4700.pdf",
+      "title": "Аппарат ИВЛ Dixion 4700",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_3cfde9c7a9e62ee96e3f80ca",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/9a2/7y1qnr32ib138aq3prk1wqr8w52egtw8/Dixion_ST_E_500-600.pdf",
+      "title": "Оториноларингология",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_faf42b6a0832b21682f8ba8a",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/b2a/Storm%20D6%20%D0%B8%20Storm%20D8_out.pdf",
+      "title": "Модульные мониторы Storm D8/D6/D5/D3",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_30d1b6dae1b7bc25080d3c3d",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/c17/qxatkcctc7n2umbultfmxrcfln93lhi6/Dixion_Storm.pdf",
+      "title": "Мониторы",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_c3a638c57d139158bdfd5411",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/d41/tm9ny43rv9fdb6ik2g71f7b0amgyo7qf/DIXION_Operating_tables.pdf",
+      "title": "Операционные столы Dixion",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_9d6a3ea4b7d80137d66460ba",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/d57/17ihpzi20hdkh2wxg7lq6lv250379mpa/Dixion_2024.pdf",
+      "title": "Каталог оборудования Dixion",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a0f0bfe3ea7edd2b726b3ea0",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/d87/4ri5d78o7s067t9l9ri2v6zq5w5kk19t/Dixion_Instilar.pdf",
+      "title": "Инфузионные насосы Dixion",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_c581fa1bc068823b6ae88771",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/dd4/0lqfjya647qyezp17099dhao9b86v6st/Dixion_Lab.pdf",
+      "title": "Клиническая лабораторная диагностика",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_c713b1bb34b29aa94a1f0916",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/e8f/1k71mhptnmhgqb568z3w2xx7w5qmn2i6/Dixion_Neonate_2024.pdf",
+      "title": "Неонатология",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_124762175e810d9340840dbd",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/f36/09ku27s16t3pugnt9p32qomwjzgwd3jk/Dixion_Vacus_2025.pdf",
+      "title": "Аспираторы",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_2822c2d35d81e4c1d8407698",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/fc0/n2cfu9kgxwg1uqx1vn7f3e7jsm0k5iv0/Dixion_ECG.pdf",
+      "title": "Функциональная диагностика",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_8fb65a02829d55bdad0bbbde",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_7d727a12a3cd0aaf2b92a08f",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "связаться со специалистом",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_50b3596e1f707a022427efe8",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_039f292a552edefe5241077e",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_a0127b14532888f8c3aef841",
+      "sourceId": "source_a04217e661c9c5e391e504ac",
+      "productSlug": "wave2-dixion-products-index",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Склад",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/catalog/catalogs/",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_8fb65a02829d55bdad0bbbde",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Медицинское оборудование",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": []
+    },
+    {
+      "documentId": "document_7d727a12a3cd0aaf2b92a08f",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "связаться со специалистом",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "связаться со специалистом",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": []
+    },
+    {
+      "documentId": "document_28f0438eabc617ec3dc2064d",
+      "url": "https://dixion.ru/catalog/catalogs/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Скачать каталог в формате PDF",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": []
+    },
+    {
+      "documentId": "document_50b3596e1f707a022427efe8",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Новинки оборудования",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": []
+    },
+    {
+      "documentId": "document_039f292a552edefe5241077e",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Скоро в продаже",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": []
+    },
+    {
+      "documentId": "document_a0127b14532888f8c3aef841",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Склад",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Склад",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": []
+    },
+    {
+      "documentId": "document_43fdf94fc5a542b3b1a80dc1",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Скачать прайс-лист",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1996ebee612a0df48a47c62f",
+      "url": "https://dixion.ru/upload/iblock/0c7/heart_pad-.pdf",
+      "title": "Дефибриллятор Heart Pad Dixion",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Дефибриллятор Heart Pad Dixion",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_8cff9b0858b0916c8463dcaa",
+      "url": "https://dixion.ru/upload/iblock/164/pbj6njpez0vg7iltotdwkix37qgm8tib/Dixion_CRK-1P.pdf",
+      "title": "Авторефкератометр CRK-1P",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Авторефкератометр CRK-1P",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a9c4323c488db50b6c83b58d",
+      "url": "https://dixion.ru/upload/iblock/198/tsx6q0z2rkdc1y385x7pircdc422fidj/Dixion_Remodix_9507.pdf",
+      "title": "Палатный рентгеновский аппарат DIXION Remodix 9507",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Палатный рентгеновский аппарат DIXION Remodix 9507",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_e23584b6916f9524287f1aff",
+      "url": "https://dixion.ru/upload/iblock/1a5/5kgzqoiipi8doyrcbf9hla09evummmsf/Dixion_Altafor.pdf",
+      "title": "Коагуляторы Altafor Plus",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Коагуляторы Altafor Plus",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_e185952d6cbe56c566dd83a8",
+      "url": "https://dixion.ru/upload/iblock/1b7/rqf0z1gc7nntnpzl277nxnpyl1ajv91c/Dixion_X-View_LED.pdf",
+      "title": "Негатоскопы X-View и X-View-LED Dixion",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Негатоскопы X-View и X-View-LED Dixion",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_08caec844f0d4fabb8f39811",
+      "url": "https://dixion.ru/upload/iblock/288/7j9cmvsmwsahiuo5oh0phfcs0crjv9oq/Catalog_heart.pdf",
+      "title": "Catalog Dixion",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Catalog Dixion",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": []
+    },
+    {
+      "documentId": "document_85cf32e589fdb62efe614c4b",
+      "url": "https://dixion.ru/upload/iblock/363/qg0hx5cpw824n864pw4tqtfeeboxkitu/Dixion_Revo-i_2025.pdf",
+      "title": "Роботическая система Dixion Revo-i",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Роботическая система Dixion Revo-i",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_5f948bd0eae0d0aeeba7b6f4",
+      "url": "https://dixion.ru/upload/iblock/418/g93oe4vdj2bevwyh9r5i80mcm81cnlok/Babyguard_1120.pdf",
+      "title": "Dixion Babyguard 1120",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Dixion Babyguard 1120",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_0198982a22f40b9c04148de2",
+      "url": "https://dixion.ru/upload/iblock/59f/3a4mcqkdays64uqvu9a3rw6zzmdeonl5/Dixion_Phototherapy_XHZ_2025.pdf",
+      "title": "Фототерапия Dixion XHZ",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Фототерапия Dixion XHZ",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_c66c0bf8b5a503e12b4e5b69",
+      "url": "https://dixion.ru/upload/iblock/5ba/wbqo3m0auw33ljaysimp7yw6wjxju63a/Dixion_Intensive_Care_Bed_CGD.pdf",
+      "title": "Функциональные кровати серии Intensive Care Bed CGD",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Функциональные кровати серии Intensive Care Bed CGD",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_7c590a2d9e0441f447ca03c8",
+      "url": "https://dixion.ru/upload/iblock/603/inby275dx6d9a77kanbbzv2fcjdpo1w2/Dixion_Practice_2025.pdf",
+      "title": "Наркозные аппараты Practice Dixion",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Наркозные аппараты Practice Dixion",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_ff3f18fe763c977de998c165",
+      "url": "https://dixion.ru/upload/iblock/6e3/5p66s1bojusc20lmcklrfxno4s2s1yxm/Dixion-Fetal_monitors.pdf",
+      "title": "Фетальные мониторы Dixion Овертон",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Фетальные мониторы Dixion Овертон",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a77cb05ec6971cf845321495",
+      "url": "https://dixion.ru/upload/iblock/78f/srz2gooz3g0e02vzr4po5pwpjh1b3vxk/Dixion_Defibrillators.pdf",
+      "title": "Дефибриляторы Dixion",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Дефибриляторы Dixion",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a612143eddfd2b0730e8a6c1",
+      "url": "https://dixion.ru/upload/iblock/7a1/9l2l11t1lksowc65mujo82pgsgzj5izd/Dixion_Birth_Beds.pdf",
+      "title": "Родовые кровати Dixion",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Родовые кровати Dixion",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_bbe15898bed9fac7a594b7cf",
+      "url": "https://dixion.ru/upload/iblock/882/ew07fblc1eoklaugkpkp8kmt9bx7iinp/Dixion_Convelar_2024.pdf",
+      "title": "Хирургические светильники Dixion Convelar",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Хирургические светильники Dixion Convelar",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_174eca1737042b8d402f124c",
+      "url": "https://dixion.ru/upload/iblock/953/o447tecefs6hsgx35zfiw3duz59dox5d/Dixion-4700.pdf",
+      "title": "Аппарат ИВЛ Dixion 4700",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Аппарат ИВЛ Dixion 4700",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_3cfde9c7a9e62ee96e3f80ca",
+      "url": "https://dixion.ru/upload/iblock/9a2/7y1qnr32ib138aq3prk1wqr8w52egtw8/Dixion_ST_E_500-600.pdf",
+      "title": "Оториноларингология",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Оториноларингология",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_faf42b6a0832b21682f8ba8a",
+      "url": "https://dixion.ru/upload/iblock/b2a/Storm%20D6%20%D0%B8%20Storm%20D8_out.pdf",
+      "title": "Модульные мониторы Storm D8/D6/D5/D3",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Модульные мониторы Storm D8/D6/D5/D3",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_30d1b6dae1b7bc25080d3c3d",
+      "url": "https://dixion.ru/upload/iblock/c17/qxatkcctc7n2umbultfmxrcfln93lhi6/Dixion_Storm.pdf",
+      "title": "Мониторы",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Мониторы",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_c3a638c57d139158bdfd5411",
+      "url": "https://dixion.ru/upload/iblock/d41/tm9ny43rv9fdb6ik2g71f7b0amgyo7qf/DIXION_Operating_tables.pdf",
+      "title": "Операционные столы Dixion",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Операционные столы Dixion",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_9d6a3ea4b7d80137d66460ba",
+      "url": "https://dixion.ru/upload/iblock/d57/17ihpzi20hdkh2wxg7lq6lv250379mpa/Dixion_2024.pdf",
+      "title": "Каталог оборудования Dixion",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Каталог оборудования Dixion",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a0f0bfe3ea7edd2b726b3ea0",
+      "url": "https://dixion.ru/upload/iblock/d87/4ri5d78o7s067t9l9ri2v6zq5w5kk19t/Dixion_Instilar.pdf",
+      "title": "Инфузионные насосы Dixion",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Инфузионные насосы Dixion",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_c581fa1bc068823b6ae88771",
+      "url": "https://dixion.ru/upload/iblock/dd4/0lqfjya647qyezp17099dhao9b86v6st/Dixion_Lab.pdf",
+      "title": "Клиническая лабораторная диагностика",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Клиническая лабораторная диагностика",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_c713b1bb34b29aa94a1f0916",
+      "url": "https://dixion.ru/upload/iblock/e8f/1k71mhptnmhgqb568z3w2xx7w5qmn2i6/Dixion_Neonate_2024.pdf",
+      "title": "Неонатология",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Неонатология",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_124762175e810d9340840dbd",
+      "url": "https://dixion.ru/upload/iblock/f36/09ku27s16t3pugnt9p32qomwjzgwd3jk/Dixion_Vacus_2025.pdf",
+      "title": "Аспираторы",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Аспираторы",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_2822c2d35d81e4c1d8407698",
+      "url": "https://dixion.ru/upload/iblock/fc0/n2cfu9kgxwg1uqx1vn7f3e7jsm0k5iv0/Dixion_ECG.pdf",
+      "title": "Функциональная диагностика",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a04217e661c9c5e391e504ac",
+      "linkText": "Функциональная диагностика",
+      "resolvedFromUrl": "https://dixion.ru/catalog/catalogs/",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=33; classifiedDocuments={\"Brochure\":13,\"Unknown\":26}; confidenceDistribution={\"80\":10,\"100\":29}; duplicatesRemoved=6"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-dixion-products-index",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-products-index",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-products-index",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=33; classifiedDocuments={\"Brochure\":13,\"Unknown\":26}; confidenceDistribution={\"80\":10,\"100\":29}; duplicatesRemoved=6",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

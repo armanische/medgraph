@@ -1,0 +1,1137 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-practice-family",
+    "manufacturer": "Dixion",
+    "productName": "DIXION Practice anesthesia workstation family",
+    "model": "Practice family",
+    "category": "Наркозно-дыхательное оборудование"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "sourceId": "source_81f7802acaa71f82ef309bee",
+      "productSlug": "wave2-dixion-practice-family",
+      "documentKey": "trusted-document:document_f3db827f14a16f4813bb31e4",
+      "documentType": "unknown",
+      "title": "Скачать прайс-лист",
+      "language": null,
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "contentType": "application/pdf",
+      "byteSize": 178281,
+      "filePath": "data/research/artifacts/artifacts/sha256/1c/da/1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_31cc1699d36a9b11df016e89",
+      "documentCandidateId": "document_b587b0607d33e77862c41212",
+      "sourceId": "source_cf18585808bcea5f37a71466",
+      "productSlug": "wave2-dixion-practice-family",
+      "documentKey": "trusted-document:document_b587b0607d33e77862c41212",
+      "documentType": "brochure",
+      "title": "DIXION Practice 2025 official brochure",
+      "language": null,
+      "sourceUrl": "https://dixion.ru/upload/iblock/603/inby275dx6d9a77kanbbzv2fcjdpo1w2/Dixion_Practice_2025.pdf",
+      "sha256": "54db6c3777c28c216ea359cc1d61eaa73c431e031d247a3c409b62ca9f00c31f",
+      "contentType": "application/pdf",
+      "byteSize": 344202,
+      "filePath": "data/research/artifacts/artifacts/sha256/54/db/54db6c3777c28c216ea359cc1d61eaa73c431e031d247a3c409b62ca9f00c31f.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_20b5ed8cc569856726377896",
+      "productSlug": "wave2-dixion-practice-family",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Скачать прайс-лист",
+      "unit": null,
+      "rawText": "Document title: Скачать прайс-лист",
+      "documentVersionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_142aca7bdc1cd774b7e6667f",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_7761291275a3dd461769aa26",
+      "productSlug": "wave2-dixion-practice-family",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_691b4dbb84b7425da1962946",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_fe2fb1b476a6b3534df43487",
+      "productSlug": "wave2-dixion-practice-family",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "12",
+      "unit": "inch",
+      "rawText": "дисплей 12\"",
+      "documentVersionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 9
+      },
+      "evidenceCandidateId": "evidence_1012df3c7e94bb3d132e2a95",
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:anesthesia",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_885f498c8f2cf70339d18271",
+      "productSlug": "wave2-dixion-practice-family",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "14",
+      "unit": "inch",
+      "rawText": "дисплей 14\"",
+      "documentVersionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 20
+      },
+      "evidenceCandidateId": "evidence_6a3e0433807b9c2f9c5f6922",
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:anesthesia",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_d52d9c59a2664226c257a8e9",
+      "productSlug": "wave2-dixion-practice-family",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "17",
+      "unit": "inch",
+      "rawText": "дисплей 17\"",
+      "documentVersionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 21
+      },
+      "evidenceCandidateId": "evidence_8aad141f8f51f469e6dbc989",
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:anesthesia",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_aa85c2cc594b484beed5a2b0",
+      "productSlug": "wave2-dixion-practice-family",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "8,4",
+      "unit": "inch",
+      "rawText": "дисплей 8,4\"",
+      "documentVersionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 22
+      },
+      "evidenceCandidateId": "evidence_5e24f6d0daea816c93925300",
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:anesthesia",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_759d55e2c27d8a1b3e75bd7c",
+      "productSlug": "wave2-dixion-practice-family",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "15",
+      "unit": "inch",
+      "rawText": "дисплей 15\"",
+      "documentVersionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 26
+      },
+      "evidenceCandidateId": "evidence_d47bc5819a8c9d9a0c37fdf9",
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:anesthesia",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_f819906e4865b0a27345b018",
+      "productSlug": "wave2-dixion-practice-family",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "10",
+      "unit": "inch",
+      "rawText": "дисплей 10\"",
+      "documentVersionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 42
+      },
+      "evidenceCandidateId": "evidence_a8dd99caf3f68356d7344621",
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:anesthesia",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_9dad8736b81d0bc5c0ca1d21",
+      "productSlug": "wave2-dixion-practice-family",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "5,7",
+      "unit": "inch",
+      "rawText": "дисплей 5,7\"",
+      "documentVersionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 49
+      },
+      "evidenceCandidateId": "evidence_84c689f6e73d7a4f91e1a928",
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:anesthesia",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_ffcef5083029ffde84b88476",
+      "productSlug": "wave2-dixion-practice-family",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "12,1",
+      "unit": "inch",
+      "rawText": "Дисплей 12,1\"",
+      "documentVersionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 54
+      },
+      "evidenceCandidateId": "evidence_1be56941b8cb92b8c8e6e08d",
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:anesthesia",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_c8a99faf928ed8207d4a1b88",
+      "productSlug": "wave2-dixion-practice-family",
+      "factType": "product.display",
+      "label": "Экран",
+      "value": "19",
+      "unit": "inch",
+      "rawText": "дисплей 19\"",
+      "documentVersionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 189
+      },
+      "evidenceCandidateId": "evidence_8ae6385075597e11bdc45613",
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:anesthesia",
+        "matchedPattern:screen",
+        "matchedSynonym:Screen",
+        "unitParsed:inch"
+      ]
+    },
+    {
+      "factCandidateId": "fact_c3f6dd98fab1b625b8447ac2",
+      "productSlug": "wave2-dixion-practice-family",
+      "factType": "product.patientGroup",
+      "label": "Неонатальные пациенты",
+      "value": "Neonatal",
+      "unit": null,
+      "rawText": "Neonatal",
+      "documentVersionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 120
+      },
+      "evidenceCandidateId": "evidence_4c5f31f276fd23a8146d3494",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:anesthesia",
+        "matchedPattern:neonatal",
+        "matchedSynonym:Neonatal",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_8dd6594e99225c71ecc2978b",
+      "productSlug": "wave2-dixion-practice-family",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "DIXION Practice 2025 official brochure",
+      "unit": null,
+      "rawText": "Document title: DIXION Practice 2025 official brochure",
+      "documentVersionId": "document_version_31cc1699d36a9b11df016e89",
+      "documentCandidateId": "document_b587b0607d33e77862c41212",
+      "documentSha256": "54db6c3777c28c216ea359cc1d61eaa73c431e031d247a3c409b62ca9f00c31f",
+      "sourceUrl": "https://dixion.ru/upload/iblock/603/inby275dx6d9a77kanbbzv2fcjdpo1w2/Dixion_Practice_2025.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_7c3fa1e21c069ad1b0901449",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_2bb905856db9c3e8f9e6e330",
+      "productSlug": "wave2-dixion-practice-family",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_31cc1699d36a9b11df016e89",
+      "documentCandidateId": "document_b587b0607d33e77862c41212",
+      "documentSha256": "54db6c3777c28c216ea359cc1d61eaa73c431e031d247a3c409b62ca9f00c31f",
+      "sourceUrl": "https://dixion.ru/upload/iblock/603/inby275dx6d9a77kanbbzv2fcjdpo1w2/Dixion_Practice_2025.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_8705f9cda3e6bf7176d417bd",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_142aca7bdc1cd774b7e6667f",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Скачать прайс-лист",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_691b4dbb84b7425da1962946",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_1012df3c7e94bb3d132e2a95",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 9
+      },
+      "quotedText": "дисплей 12\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_6a3e0433807b9c2f9c5f6922",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 20
+      },
+      "quotedText": "дисплей 14\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_8aad141f8f51f469e6dbc989",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 21
+      },
+      "quotedText": "дисплей 17\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_5e24f6d0daea816c93925300",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 22
+      },
+      "quotedText": "дисплей 8,4\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_d47bc5819a8c9d9a0c37fdf9",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 26
+      },
+      "quotedText": "дисплей 15\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_a8dd99caf3f68356d7344621",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 42
+      },
+      "quotedText": "дисплей 10\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_84c689f6e73d7a4f91e1a928",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 49
+      },
+      "quotedText": "дисплей 5,7\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_1be56941b8cb92b8c8e6e08d",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 54
+      },
+      "quotedText": "Дисплей 12,1\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_8ae6385075597e11bdc45613",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 189
+      },
+      "quotedText": "дисплей 19\"",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_4c5f31f276fd23a8146d3494",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 120
+      },
+      "quotedText": "Neonatal",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_7c3fa1e21c069ad1b0901449",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_31cc1699d36a9b11df016e89",
+      "documentCandidateId": "document_b587b0607d33e77862c41212",
+      "sha256": "54db6c3777c28c216ea359cc1d61eaa73c431e031d247a3c409b62ca9f00c31f",
+      "sourceUrl": "https://dixion.ru/upload/iblock/603/inby275dx6d9a77kanbbzv2fcjdpo1w2/Dixion_Practice_2025.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: DIXION Practice 2025 official brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_8705f9cda3e6bf7176d417bd",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_31cc1699d36a9b11df016e89",
+      "documentCandidateId": "document_b587b0607d33e77862c41212",
+      "sha256": "54db6c3777c28c216ea359cc1d61eaa73c431e031d247a3c409b62ca9f00c31f",
+      "sourceUrl": "https://dixion.ru/upload/iblock/603/inby275dx6d9a77kanbbzv2fcjdpo1w2/Dixion_Practice_2025.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_78a5e10fc2f5d585a37759b1",
+      "productSlug": "wave2-dixion-practice-family",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Скачать прайс-лист",
+        "unit": null
+      },
+      "rawText": "Document title: Скачать прайс-лист",
+      "evidenceCandidateIds": [
+        "evidence_142aca7bdc1cd774b7e6667f"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_ee77a4fe2046b22c374b2cae",
+      "productSlug": "wave2-dixion-practice-family",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_691b4dbb84b7425da1962946"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_807019e6b2a3e38591f0b9ba",
+      "productSlug": "wave2-dixion-practice-family",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "12",
+        "unit": "inch"
+      },
+      "rawText": "дисплей 12\"",
+      "evidenceCandidateIds": [
+        "evidence_1012df3c7e94bb3d132e2a95"
+      ],
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_e762126906625ec8b59cd91b",
+      "productSlug": "wave2-dixion-practice-family",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "14",
+        "unit": "inch"
+      },
+      "rawText": "дисплей 14\"",
+      "evidenceCandidateIds": [
+        "evidence_6a3e0433807b9c2f9c5f6922"
+      ],
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_ef360582b338f3629c045cc2",
+      "productSlug": "wave2-dixion-practice-family",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "17",
+        "unit": "inch"
+      },
+      "rawText": "дисплей 17\"",
+      "evidenceCandidateIds": [
+        "evidence_8aad141f8f51f469e6dbc989"
+      ],
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_6c7795511a58b9e8f65646be",
+      "productSlug": "wave2-dixion-practice-family",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "8,4",
+        "unit": "inch"
+      },
+      "rawText": "дисплей 8,4\"",
+      "evidenceCandidateIds": [
+        "evidence_5e24f6d0daea816c93925300"
+      ],
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_4d9c46af6f55cb5e69e595a8",
+      "productSlug": "wave2-dixion-practice-family",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "15",
+        "unit": "inch"
+      },
+      "rawText": "дисплей 15\"",
+      "evidenceCandidateIds": [
+        "evidence_d47bc5819a8c9d9a0c37fdf9"
+      ],
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_0eb1294ffd087f4508a052c4",
+      "productSlug": "wave2-dixion-practice-family",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "10",
+        "unit": "inch"
+      },
+      "rawText": "дисплей 10\"",
+      "evidenceCandidateIds": [
+        "evidence_a8dd99caf3f68356d7344621"
+      ],
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_080fb76687f3d1ea0f0c293c",
+      "productSlug": "wave2-dixion-practice-family",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "5,7",
+        "unit": "inch"
+      },
+      "rawText": "дисплей 5,7\"",
+      "evidenceCandidateIds": [
+        "evidence_84c689f6e73d7a4f91e1a928"
+      ],
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_f1c572ba7655017440875508",
+      "productSlug": "wave2-dixion-practice-family",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "12,1",
+        "unit": "inch"
+      },
+      "rawText": "Дисплей 12,1\"",
+      "evidenceCandidateIds": [
+        "evidence_1be56941b8cb92b8c8e6e08d"
+      ],
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_9eeb7686256818fe19a56de2",
+      "productSlug": "wave2-dixion-practice-family",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "19",
+        "unit": "inch"
+      },
+      "rawText": "дисплей 19\"",
+      "evidenceCandidateIds": [
+        "evidence_8ae6385075597e11bdc45613"
+      ],
+      "confidence": 0.88,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_3e3d110e218f9e6cc5c73c7b",
+      "productSlug": "wave2-dixion-practice-family",
+      "subjectType": "product",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "Neonatal",
+        "unit": null
+      },
+      "rawText": "Neonatal",
+      "evidenceCandidateIds": [
+        "evidence_4c5f31f276fd23a8146d3494"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_add17c6626fcf2669d2ce2d9",
+      "productSlug": "wave2-dixion-practice-family",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "DIXION Practice 2025 official brochure",
+        "unit": null
+      },
+      "rawText": "Document title: DIXION Practice 2025 official brochure",
+      "evidenceCandidateIds": [
+        "evidence_7c3fa1e21c069ad1b0901449"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_6d58f21c8def252fc35454a9",
+      "productSlug": "wave2-dixion-practice-family",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_8705f9cda3e6bf7176d417bd"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "anesthesia"
+    ],
+    "patternsMatched": {
+      "anesthesia.screen": 9,
+      "anesthesia.neonatal": 1
+    },
+    "normalizedUnits": {
+      "inch": 9
+    },
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "anesthesia": [
+        "adult",
+        "battery_runtime",
+        "modes",
+        "niv",
+        "oxygen",
+        "pediatric",
+        "turbine",
+        "weight"
+      ]
+    },
+    "coveragePercent": 10
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=7; classifiedDocuments={\"Brochure\":11,\"Unknown\":1}; confidenceDistribution={\"80\":9,\"100\":3}; duplicatesRemoved=5",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

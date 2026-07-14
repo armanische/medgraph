@@ -1,0 +1,156 @@
+{
+  "product": {
+    "productSlug": "wave2-sle-1500",
+    "manufacturer": "SLE",
+    "productName": "SLE1500 Respiratory Therapy System",
+    "model": "SLE1500",
+    "category": "Neonatal respiratory support"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_60c378ae78242948d60e50a0",
+      "productSlug": "wave2-sle-1500",
+      "productTitle": "SLE1500 Respiratory Therapy System",
+      "claimCandidateId": "claim_4106a2ebd2abbc28ab1176e6",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "SLE Essential High Flow Nasal Cannula official accessories brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_f9afe1ce5ae304fac8dd278a"
+      ],
+      "documentVersionIds": [
+        "document_version_3dfa8b5d97075728a3b78038"
+      ],
+      "sourceUrls": [
+        "https://inspirationhealthcaregroup.com/wp-content/uploads/2026/02/MK-PHL-000116-SLE-Essential-Brochure.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b49ce08408944f76b216e89a",
+      "productSlug": "wave2-sle-1500",
+      "productTitle": "SLE1500 Respiratory Therapy System",
+      "claimCandidateId": "claim_ba39a8451dda8ec25a8ca7ef",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_ee6e88daf145f7b1a880428b"
+      ],
+      "documentVersionIds": [
+        "document_version_3dfa8b5d97075728a3b78038"
+      ],
+      "sourceUrls": [
+        "https://inspirationhealthcaregroup.com/wp-content/uploads/2026/02/MK-PHL-000116-SLE-Essential-Brochure.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_60c378ae78242948d60e50a0",
+        "productSlug": "wave2-sle-1500",
+        "productTitle": "SLE1500 Respiratory Therapy System",
+        "claimCandidateId": "claim_4106a2ebd2abbc28ab1176e6",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "SLE Essential High Flow Nasal Cannula official accessories brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_f9afe1ce5ae304fac8dd278a"
+        ],
+        "documentVersionIds": [
+          "document_version_3dfa8b5d97075728a3b78038"
+        ],
+        "sourceUrls": [
+          "https://inspirationhealthcaregroup.com/wp-content/uploads/2026/02/MK-PHL-000116-SLE-Essential-Brochure.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_b49ce08408944f76b216e89a",
+        "productSlug": "wave2-sle-1500",
+        "productTitle": "SLE1500 Respiratory Therapy System",
+        "claimCandidateId": "claim_ba39a8451dda8ec25a8ca7ef",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_ee6e88daf145f7b1a880428b"
+        ],
+        "documentVersionIds": [
+          "document_version_3dfa8b5d97075728a3b78038"
+        ],
+        "sourceUrls": [
+          "https://inspirationhealthcaregroup.com/wp-content/uploads/2026/02/MK-PHL-000116-SLE-Essential-Brochure.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_3dfa8b5d97075728a3b78038",
+      "documentType": "brochure",
+      "title": "SLE Essential High Flow Nasal Cannula official accessories brochure",
+      "sourceUrl": "https://inspirationhealthcaregroup.com/wp-content/uploads/2026/02/MK-PHL-000116-SLE-Essential-Brochure.pdf",
+      "sha256": "4a17fb604c3d1fbba70f8c68dc68f93d9dd8439d07ed43e3ad1d1c687faa5250"
+    }
+  ],
+  "missingEvidence": [],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/product/sle1500/: HTTP 403",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

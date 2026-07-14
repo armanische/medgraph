@@ -1,0 +1,725 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-storm-family",
+    "manufacturer": "Dixion",
+    "productName": "DIXION Storm patient monitor family",
+    "model": "Storm D8/D6/D5/D3 family",
+    "category": "Монитор пациента"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_fa787e693afc33435af18e0a",
+      "productSlug": "wave2-dixion-storm-family",
+      "productTitle": "DIXION Storm patient monitor family",
+      "claimCandidateId": "claim_44c2c8f60c15de8cd7820f04",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Скачать прайс-лист",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_f8c41c378d46b9af8c1e8114"
+      ],
+      "documentVersionIds": [
+        "document_version_6eb7c7cd6f9f0d0afb8683ff"
+      ],
+      "sourceUrls": [
+        "https://dixion.ru/upload/documents/price.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_40ee4dba172e299a2ed1398b",
+      "productSlug": "wave2-dixion-storm-family",
+      "productTitle": "DIXION Storm patient monitor family",
+      "claimCandidateId": "claim_7a36a49cf66735db05d60e3a",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_7b73784dcc8c3a4116b96f08"
+      ],
+      "documentVersionIds": [
+        "document_version_6eb7c7cd6f9f0d0afb8683ff"
+      ],
+      "sourceUrls": [
+        "https://dixion.ru/upload/documents/price.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_d5fd8a01d6d0c94144d5994d",
+      "productSlug": "wave2-dixion-storm-family",
+      "productTitle": "DIXION Storm patient monitor family",
+      "claimCandidateId": "claim_6adf1d828878219660caab86",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "12",
+        "unit": "inch"
+      },
+      "evidenceCandidateIds": [
+        "evidence_9fdaeede341b2a4cdd37d07f"
+      ],
+      "documentVersionIds": [
+        "document_version_6eb7c7cd6f9f0d0afb8683ff"
+      ],
+      "sourceUrls": [
+        "https://dixion.ru/upload/documents/price.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5bb2e26f6ed27c97f7c03252",
+      "productSlug": "wave2-dixion-storm-family",
+      "productTitle": "DIXION Storm patient monitor family",
+      "claimCandidateId": "claim_17142e272594292f7c0d4225",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "14",
+        "unit": "inch"
+      },
+      "evidenceCandidateIds": [
+        "evidence_934ef381855d87e9dfa5b0e6"
+      ],
+      "documentVersionIds": [
+        "document_version_6eb7c7cd6f9f0d0afb8683ff"
+      ],
+      "sourceUrls": [
+        "https://dixion.ru/upload/documents/price.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_ca3e05d247760ed0849f4479",
+      "productSlug": "wave2-dixion-storm-family",
+      "productTitle": "DIXION Storm patient monitor family",
+      "claimCandidateId": "claim_d97aa7817e5f08a45f355122",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "17",
+        "unit": "inch"
+      },
+      "evidenceCandidateIds": [
+        "evidence_6ebfb2739801af322787c50b"
+      ],
+      "documentVersionIds": [
+        "document_version_6eb7c7cd6f9f0d0afb8683ff"
+      ],
+      "sourceUrls": [
+        "https://dixion.ru/upload/documents/price.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_7b2d5529f2fe5669b74a6441",
+      "productSlug": "wave2-dixion-storm-family",
+      "productTitle": "DIXION Storm patient monitor family",
+      "claimCandidateId": "claim_cf441b8ea72b43c646a590f5",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "8,4",
+        "unit": "inch"
+      },
+      "evidenceCandidateIds": [
+        "evidence_8bd0eafee86288d1e16c168c"
+      ],
+      "documentVersionIds": [
+        "document_version_6eb7c7cd6f9f0d0afb8683ff"
+      ],
+      "sourceUrls": [
+        "https://dixion.ru/upload/documents/price.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_1c13a3d4d424f885b2f9b006",
+      "productSlug": "wave2-dixion-storm-family",
+      "productTitle": "DIXION Storm patient monitor family",
+      "claimCandidateId": "claim_79bf1524abcdea53eeadb864",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "15",
+        "unit": "inch"
+      },
+      "evidenceCandidateIds": [
+        "evidence_d574ad43ad213480c94ccd20"
+      ],
+      "documentVersionIds": [
+        "document_version_6eb7c7cd6f9f0d0afb8683ff"
+      ],
+      "sourceUrls": [
+        "https://dixion.ru/upload/documents/price.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_4fc909dfa9d134f55311e293",
+      "productSlug": "wave2-dixion-storm-family",
+      "productTitle": "DIXION Storm patient monitor family",
+      "claimCandidateId": "claim_1d6e219cecec4d07fff0b3bf",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "10",
+        "unit": "inch"
+      },
+      "evidenceCandidateIds": [
+        "evidence_63344b1930b610c949f628d1"
+      ],
+      "documentVersionIds": [
+        "document_version_6eb7c7cd6f9f0d0afb8683ff"
+      ],
+      "sourceUrls": [
+        "https://dixion.ru/upload/documents/price.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_05157241f4c9493949fe5a70",
+      "productSlug": "wave2-dixion-storm-family",
+      "productTitle": "DIXION Storm patient monitor family",
+      "claimCandidateId": "claim_ef2dd935b2b3ff1b7f1a3d1d",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "5,7",
+        "unit": "inch"
+      },
+      "evidenceCandidateIds": [
+        "evidence_ffd136b6370b9f8eb4651cf2"
+      ],
+      "documentVersionIds": [
+        "document_version_6eb7c7cd6f9f0d0afb8683ff"
+      ],
+      "sourceUrls": [
+        "https://dixion.ru/upload/documents/price.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_fecee88ae39130e052e4228e",
+      "productSlug": "wave2-dixion-storm-family",
+      "productTitle": "DIXION Storm patient monitor family",
+      "claimCandidateId": "claim_c9a4d0dadb2dcddecea92d1b",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "12,1",
+        "unit": "inch"
+      },
+      "evidenceCandidateIds": [
+        "evidence_62d569828bb2acb3ffa6aca6"
+      ],
+      "documentVersionIds": [
+        "document_version_6eb7c7cd6f9f0d0afb8683ff"
+      ],
+      "sourceUrls": [
+        "https://dixion.ru/upload/documents/price.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b5fb84c7db047fa31b4e2e6e",
+      "productSlug": "wave2-dixion-storm-family",
+      "productTitle": "DIXION Storm patient monitor family",
+      "claimCandidateId": "claim_f323d92c8a3bd5a007ba85f6",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "19",
+        "unit": "inch"
+      },
+      "evidenceCandidateIds": [
+        "evidence_1aa4e5ee91988a09b53e067d"
+      ],
+      "documentVersionIds": [
+        "document_version_6eb7c7cd6f9f0d0afb8683ff"
+      ],
+      "sourceUrls": [
+        "https://dixion.ru/upload/documents/price.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_fa787e693afc33435af18e0a",
+        "productSlug": "wave2-dixion-storm-family",
+        "productTitle": "DIXION Storm patient monitor family",
+        "claimCandidateId": "claim_44c2c8f60c15de8cd7820f04",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Скачать прайс-лист",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_f8c41c378d46b9af8c1e8114"
+        ],
+        "documentVersionIds": [
+          "document_version_6eb7c7cd6f9f0d0afb8683ff"
+        ],
+        "sourceUrls": [
+          "https://dixion.ru/upload/documents/price.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_40ee4dba172e299a2ed1398b",
+        "productSlug": "wave2-dixion-storm-family",
+        "productTitle": "DIXION Storm patient monitor family",
+        "claimCandidateId": "claim_7a36a49cf66735db05d60e3a",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_7b73784dcc8c3a4116b96f08"
+        ],
+        "documentVersionIds": [
+          "document_version_6eb7c7cd6f9f0d0afb8683ff"
+        ],
+        "sourceUrls": [
+          "https://dixion.ru/upload/documents/price.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.display": [
+      {
+        "reviewItemId": "review_item_d5fd8a01d6d0c94144d5994d",
+        "productSlug": "wave2-dixion-storm-family",
+        "productTitle": "DIXION Storm patient monitor family",
+        "claimCandidateId": "claim_6adf1d828878219660caab86",
+        "suggestedClaimType": "product.display",
+        "valuePayload": {
+          "value": "12",
+          "unit": "inch"
+        },
+        "evidenceCandidateIds": [
+          "evidence_9fdaeede341b2a4cdd37d07f"
+        ],
+        "documentVersionIds": [
+          "document_version_6eb7c7cd6f9f0d0afb8683ff"
+        ],
+        "sourceUrls": [
+          "https://dixion.ru/upload/documents/price.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_5bb2e26f6ed27c97f7c03252",
+        "productSlug": "wave2-dixion-storm-family",
+        "productTitle": "DIXION Storm patient monitor family",
+        "claimCandidateId": "claim_17142e272594292f7c0d4225",
+        "suggestedClaimType": "product.display",
+        "valuePayload": {
+          "value": "14",
+          "unit": "inch"
+        },
+        "evidenceCandidateIds": [
+          "evidence_934ef381855d87e9dfa5b0e6"
+        ],
+        "documentVersionIds": [
+          "document_version_6eb7c7cd6f9f0d0afb8683ff"
+        ],
+        "sourceUrls": [
+          "https://dixion.ru/upload/documents/price.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_ca3e05d247760ed0849f4479",
+        "productSlug": "wave2-dixion-storm-family",
+        "productTitle": "DIXION Storm patient monitor family",
+        "claimCandidateId": "claim_d97aa7817e5f08a45f355122",
+        "suggestedClaimType": "product.display",
+        "valuePayload": {
+          "value": "17",
+          "unit": "inch"
+        },
+        "evidenceCandidateIds": [
+          "evidence_6ebfb2739801af322787c50b"
+        ],
+        "documentVersionIds": [
+          "document_version_6eb7c7cd6f9f0d0afb8683ff"
+        ],
+        "sourceUrls": [
+          "https://dixion.ru/upload/documents/price.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_7b2d5529f2fe5669b74a6441",
+        "productSlug": "wave2-dixion-storm-family",
+        "productTitle": "DIXION Storm patient monitor family",
+        "claimCandidateId": "claim_cf441b8ea72b43c646a590f5",
+        "suggestedClaimType": "product.display",
+        "valuePayload": {
+          "value": "8,4",
+          "unit": "inch"
+        },
+        "evidenceCandidateIds": [
+          "evidence_8bd0eafee86288d1e16c168c"
+        ],
+        "documentVersionIds": [
+          "document_version_6eb7c7cd6f9f0d0afb8683ff"
+        ],
+        "sourceUrls": [
+          "https://dixion.ru/upload/documents/price.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_1c13a3d4d424f885b2f9b006",
+        "productSlug": "wave2-dixion-storm-family",
+        "productTitle": "DIXION Storm patient monitor family",
+        "claimCandidateId": "claim_79bf1524abcdea53eeadb864",
+        "suggestedClaimType": "product.display",
+        "valuePayload": {
+          "value": "15",
+          "unit": "inch"
+        },
+        "evidenceCandidateIds": [
+          "evidence_d574ad43ad213480c94ccd20"
+        ],
+        "documentVersionIds": [
+          "document_version_6eb7c7cd6f9f0d0afb8683ff"
+        ],
+        "sourceUrls": [
+          "https://dixion.ru/upload/documents/price.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_4fc909dfa9d134f55311e293",
+        "productSlug": "wave2-dixion-storm-family",
+        "productTitle": "DIXION Storm patient monitor family",
+        "claimCandidateId": "claim_1d6e219cecec4d07fff0b3bf",
+        "suggestedClaimType": "product.display",
+        "valuePayload": {
+          "value": "10",
+          "unit": "inch"
+        },
+        "evidenceCandidateIds": [
+          "evidence_63344b1930b610c949f628d1"
+        ],
+        "documentVersionIds": [
+          "document_version_6eb7c7cd6f9f0d0afb8683ff"
+        ],
+        "sourceUrls": [
+          "https://dixion.ru/upload/documents/price.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_05157241f4c9493949fe5a70",
+        "productSlug": "wave2-dixion-storm-family",
+        "productTitle": "DIXION Storm patient monitor family",
+        "claimCandidateId": "claim_ef2dd935b2b3ff1b7f1a3d1d",
+        "suggestedClaimType": "product.display",
+        "valuePayload": {
+          "value": "5,7",
+          "unit": "inch"
+        },
+        "evidenceCandidateIds": [
+          "evidence_ffd136b6370b9f8eb4651cf2"
+        ],
+        "documentVersionIds": [
+          "document_version_6eb7c7cd6f9f0d0afb8683ff"
+        ],
+        "sourceUrls": [
+          "https://dixion.ru/upload/documents/price.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_fecee88ae39130e052e4228e",
+        "productSlug": "wave2-dixion-storm-family",
+        "productTitle": "DIXION Storm patient monitor family",
+        "claimCandidateId": "claim_c9a4d0dadb2dcddecea92d1b",
+        "suggestedClaimType": "product.display",
+        "valuePayload": {
+          "value": "12,1",
+          "unit": "inch"
+        },
+        "evidenceCandidateIds": [
+          "evidence_62d569828bb2acb3ffa6aca6"
+        ],
+        "documentVersionIds": [
+          "document_version_6eb7c7cd6f9f0d0afb8683ff"
+        ],
+        "sourceUrls": [
+          "https://dixion.ru/upload/documents/price.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_b5fb84c7db047fa31b4e2e6e",
+        "productSlug": "wave2-dixion-storm-family",
+        "productTitle": "DIXION Storm patient monitor family",
+        "claimCandidateId": "claim_f323d92c8a3bd5a007ba85f6",
+        "suggestedClaimType": "product.display",
+        "valuePayload": {
+          "value": "19",
+          "unit": "inch"
+        },
+        "evidenceCandidateIds": [
+          "evidence_1aa4e5ee91988a09b53e067d"
+        ],
+        "documentVersionIds": [
+          "document_version_6eb7c7cd6f9f0d0afb8683ff"
+        ],
+        "sourceUrls": [
+          "https://dixion.ru/upload/documents/price.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_6eb7c7cd6f9f0d0afb8683ff",
+      "documentType": "unknown",
+      "title": "Скачать прайс-лист",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8"
+    }
+  ],
+  "missingEvidence": [],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=7; classifiedDocuments={\"Brochure\":11,\"Unknown\":1}; confidenceDistribution={\"80\":9,\"100\":3}; duplicatesRemoved=5",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

@@ -1,20 +1,20 @@
 {
   "manufacturer": "Comen",
   "generatedAt": "wave2-execution-v1",
-  "productsDiscovered": 10,
-  "officialSources": 1,
-  "documentsFound": 14,
-  "downloads": 9,
-  "artifacts": 9,
-  "candidateFacts": 29,
-  "reviewItems": 29,
-  "blockedProducts": 1,
+  "productsDiscovered": 15,
+  "officialSources": 15,
+  "documentsFound": 22,
+  "downloads": 15,
+  "artifacts": 15,
+  "candidateFacts": 44,
+  "reviewItems": 44,
+  "blockedProducts": 2,
   "errors": [],
   "warnings": [
     "Required document coverage is below Wave 2 target.",
     "Wave 2 execution creates reports only; no publication is performed."
   ],
-  "durationMs": 1425,
+  "durationMs": 1610,
   "retries": [],
   "stages": [
     {

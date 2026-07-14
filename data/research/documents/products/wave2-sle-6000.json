@@ -1,0 +1,74 @@
+{
+  "product": {
+    "productSlug": "wave2-sle-6000",
+    "manufacturer": "SLE",
+    "productName": "SLE6000 Infant Ventilator",
+    "model": "SLE6000",
+    "category": "Neonatal ventilator"
+  },
+  "attemptedDownloads": [
+    {
+      "documentCandidateId": "document_002540527a04972da5a86fb5",
+      "sourceId": "source_6bb311b05a26cf06d514160f",
+      "productSlug": "wave2-sle-6000",
+      "title": "SLE6000 operator manual / IFU UM165 UK Issue 22",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/03/UM165-UK-Issue-22-SLE6000-User-Manual-English.pdf",
+      "documentType": "ifu",
+      "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_d95f1e24c650a0b5447370a3",
+      "sourceId": "source_754f17745963da67cc7ec1f6",
+      "productSlug": "wave2-sle-6000",
+      "title": "SLE6000 official brochure",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/10/MK-PHL-00003920Issue20120-20Product20Brochure20-20SLE6000.pdf",
+      "documentType": "brochure",
+      "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_c00a812037ce0fe5c3ec7128",
+      "sourceId": "source_4e8dc4f6d36142b66b12cfa7",
+      "productSlug": "wave2-sle-6000",
+      "title": "SLE6000 official technical specification datasheet",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2025/06/MK-PHL-00004320Issue20220-20SLE600020Datasheet20-2.pdf",
+      "documentType": "datasheet",
+      "trustTier": 1
+    }
+  ],
+  "downloadedArtifacts": [],
+  "failedDownloads": [
+    {
+      "documentCandidateId": "document_002540527a04972da5a86fb5",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/03/UM165-UK-Issue-22-SLE6000-User-Manual-English.pdf",
+      "title": "SLE6000 operator manual / IFU UM165 UK Issue 22",
+      "reason": "HTTP 403 Forbidden",
+      "retryable": false
+    },
+    {
+      "documentCandidateId": "document_d95f1e24c650a0b5447370a3",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/10/MK-PHL-00003920Issue20120-20Product20Brochure20-20SLE6000.pdf",
+      "title": "SLE6000 official brochure",
+      "reason": "HTTP 403 Forbidden",
+      "retryable": false
+    },
+    {
+      "documentCandidateId": "document_c00a812037ce0fe5c3ec7128",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2025/06/MK-PHL-00004320Issue20220-20SLE600020Datasheet20-2.pdf",
+      "title": "SLE6000 official technical specification datasheet",
+      "reason": "HTTP 403 Forbidden",
+      "retryable": false
+    }
+  ],
+  "skippedDocuments": [],
+  "documentVersions": [],
+  "warnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/product/sle6000/: HTTP 403",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": false,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}

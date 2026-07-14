@@ -1,0 +1,382 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-phototherapy-xhz-family",
+    "manufacturer": "Dixion",
+    "productName": "DIXION XHZ phototherapy family",
+    "model": "XHZ family",
+    "category": "Неонатальное оборудование"
+  },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [
+      "https://dixion.ru/category/neonatologiya.html",
+      "https://dixion.ru/upload/iblock/59f/3a4mcqkdays64uqvu9a3rw6zzmdeonl5/Dixion_Phototherapy_XHZ_2025.pdf"
+    ],
+    "normalizedUrls": [
+      "https://dixion.ru/category/neonatologiya.html",
+      "https://dixion.ru/upload/iblock/59f/3a4mcqkdays64uqvu9a3rw6zzmdeonl5/Dixion_Phototherapy_XHZ_2025.pdf"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “Dixion”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_20673903bd4ffe54301587b1",
+      "productSlug": "wave2-dixion-phototherapy-xhz-family",
+      "manufacturer": "Dixion",
+      "productName": "DIXION XHZ phototherapy family",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://dixion.ru/category/neonatologiya.html",
+      "title": "DIXION neonatal equipment official category",
+      "snippet": "Family discovery entry; XHZ-90L/P/Q/S and XHZ-200 remain separate models/configurations pending model-level evidence.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Family discovery entry; XHZ-90L/P/Q/S and XHZ-200 remain separate models/configurations pending model-level evidence."
+      ]
+    },
+    {
+      "sourceId": "source_535f488d5a7d0bfa7ee73e24",
+      "productSlug": "wave2-dixion-phototherapy-xhz-family",
+      "manufacturer": "Dixion",
+      "productName": "DIXION XHZ phototherapy family",
+      "sourceType": "manufacturer_document",
+      "url": "https://dixion.ru/upload/iblock/59f/3a4mcqkdays64uqvu9a3rw6zzmdeonl5/Dixion_Phototherapy_XHZ_2025.pdf",
+      "title": "DIXION XHZ 2025 official brochure",
+      "snippet": "Official current family catalogue.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "manufacturer-hosted document candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official current family catalogue."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_bf851309cc8e1194215a2b70",
+      "sourceId": "source_20673903bd4ffe54301587b1",
+      "productSlug": "wave2-dixion-phototherapy-xhz-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/category/neonatologiya.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_e483d569cb82a02db5942e41",
+      "sourceId": "source_20673903bd4ffe54301587b1",
+      "productSlug": "wave2-dixion-phototherapy-xhz-family",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/category/neonatologiya.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_bd45bade56f9cc9119adb004",
+      "sourceId": "source_535f488d5a7d0bfa7ee73e24",
+      "productSlug": "wave2-dixion-phototherapy-xhz-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/upload/iblock/59f/3a4mcqkdays64uqvu9a3rw6zzmdeonl5/Dixion_Phototherapy_XHZ_2025.pdf",
+      "title": "DIXION XHZ 2025 official brochure",
+      "language": null,
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "source URL is itself a document candidate"
+      ]
+    },
+    {
+      "documentId": "document_db2f40cfa83945abdd5c7c6d",
+      "sourceId": "source_20673903bd4ffe54301587b1",
+      "productSlug": "wave2-dixion-phototherapy-xhz-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/category/neonatologiya.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_526f0dca2e310b56de2d9eb4",
+      "sourceId": "source_20673903bd4ffe54301587b1",
+      "productSlug": "wave2-dixion-phototherapy-xhz-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/category/neonatologiya.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_2877decdc9c0395883effabb",
+      "sourceId": "source_20673903bd4ffe54301587b1",
+      "productSlug": "wave2-dixion-phototherapy-xhz-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/category/neonatologiya.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_d3542feba85f24e1ce0ee65d",
+      "sourceId": "source_20673903bd4ffe54301587b1",
+      "productSlug": "wave2-dixion-phototherapy-xhz-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/category/neonatologiya.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_82fc472081df7eb2ee822230",
+      "sourceId": "source_20673903bd4ffe54301587b1",
+      "productSlug": "wave2-dixion-phototherapy-xhz-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Склад",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/category/neonatologiya.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_db2f40cfa83945abdd5c7c6d",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_20673903bd4ffe54301587b1",
+      "linkText": "Медицинское оборудование",
+      "resolvedFromUrl": "https://dixion.ru/category/neonatologiya.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_526f0dca2e310b56de2d9eb4",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_20673903bd4ffe54301587b1",
+      "linkText": "Каталоги оборудования",
+      "resolvedFromUrl": "https://dixion.ru/category/neonatologiya.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_2877decdc9c0395883effabb",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_20673903bd4ffe54301587b1",
+      "linkText": "Новинки оборудования",
+      "resolvedFromUrl": "https://dixion.ru/category/neonatologiya.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_d3542feba85f24e1ce0ee65d",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_20673903bd4ffe54301587b1",
+      "linkText": "Скоро в продаже",
+      "resolvedFromUrl": "https://dixion.ru/category/neonatologiya.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_82fc472081df7eb2ee822230",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Склад",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_20673903bd4ffe54301587b1",
+      "linkText": "Склад",
+      "resolvedFromUrl": "https://dixion.ru/category/neonatologiya.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_bf851309cc8e1194215a2b70",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_20673903bd4ffe54301587b1",
+      "linkText": "Скачать каталог в формате PDF",
+      "resolvedFromUrl": "https://dixion.ru/category/neonatologiya.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_e483d569cb82a02db5942e41",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_20673903bd4ffe54301587b1",
+      "linkText": "Скачать прайс-лист",
+      "resolvedFromUrl": "https://dixion.ru/category/neonatologiya.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=7; classifiedDocuments={\"Brochure\":10,\"Unknown\":1}; confidenceDistribution={\"80\":8,\"100\":3}; duplicatesRemoved=4"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-dixion-phototherapy-xhz-family",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-phototherapy-xhz-family",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-phototherapy-xhz-family",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 2,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 2,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=7; classifiedDocuments={\"Brochure\":10,\"Unknown\":1}; confidenceDistribution={\"80\":8,\"100\":3}; duplicatesRemoved=4",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

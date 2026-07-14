@@ -1,0 +1,58 @@
+{
+  "product": {
+    "productSlug": "wave2-comen-c30",
+    "manufacturer": "Comen",
+    "productName": "Comen C30",
+    "model": "C30",
+    "category": "Монитор пациента"
+  },
+  "documentVersions": [],
+  "extractedFactCandidates": [],
+  "evidenceCandidates": [],
+  "candidateClaims": [],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "patient-monitor"
+    ],
+    "patternsMatched": {},
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "patient-monitor": [
+        "battery_runtime",
+        "modules",
+        "parameters",
+        "screen"
+      ]
+    },
+    "coveragePercent": 0
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: http://es.comen.com/",
+    "Resolver rejected unsafe document URL: http://www.comen.com/",
+    "Resolver rejected unsafe document URL: http://en.comen.com/",
+    "Resolver rejected unsafe document URL: http://rus.comen.com/",
+    "Resolver rejected unsafe document URL: http://fr.comen.com/",
+    "Resolver rejected unsafe document URL: http://en.comen.com/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCqSdrKuGFz_TRqVqyklRRjw",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/3816778/admin/",
+    "Resolver rejected offsite document URL: https://www.facebook.com/shenzhencomen/?eid=ARC6RajEKpPDYD9gfg8GVjdY9GS4brP6LD6s9wgOUmP47A2Fb45V7zHdfn6Tu8TCgcowtBZ57w7RjaGz",
+    "Resolver rejected offsite document URL: https://twitter.com/ComenShenzhen",
+    "resolver=default; attempts=1; matchedLinks=0; classifiedDocuments={}; confidenceDistribution={}; duplicatesRemoved=0",
+    "Resolver found no document links on https://es.comen.com/pages/C30.html.",
+    "Discovery creates candidates only; no verified claims or publication.",
+    "No DocumentCandidate records were available for download."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": false,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}

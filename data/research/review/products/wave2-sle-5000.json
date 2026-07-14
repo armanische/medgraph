@@ -1,0 +1,957 @@
+{
+  "product": {
+    "productSlug": "wave2-sle-5000",
+    "manufacturer": "SLE",
+    "productName": "SLE5000 Neonatal Ventilator",
+    "model": "SLE5000",
+    "category": "Neonatal ventilator"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_19d8de11af364a8e25a6f541",
+      "productSlug": "wave2-sle-5000",
+      "productTitle": "SLE5000 Neonatal Ventilator",
+      "claimCandidateId": "claim_318d41b76e2ab867ceaa8d3b",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "SLE5000 official partner brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_fd2d42fd5108827177f88c9a"
+      ],
+      "documentVersionIds": [
+        "document_version_de7edf342d164fa2ee9d9ffb"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_38c48a4997f13ee47abded04",
+      "productSlug": "wave2-sle-5000",
+      "productTitle": "SLE5000 Neonatal Ventilator",
+      "claimCandidateId": "claim_7696fd07024eebfb767e699f",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_071c857101969265400c4828"
+      ],
+      "documentVersionIds": [
+        "document_version_de7edf342d164fa2ee9d9ffb"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_1b19039526c46e18ec189f3c",
+      "productSlug": "wave2-sle-5000",
+      "productTitle": "SLE5000 Neonatal Ventilator",
+      "claimCandidateId": "claim_0889d97243bc84167ae0802e",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Conventional",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_1162279ae5fb97a4d86a3ab7"
+      ],
+      "documentVersionIds": [
+        "document_version_de7edf342d164fa2ee9d9ffb"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_e48cd7eefad507df219c090b",
+      "productSlug": "wave2-sle-5000",
+      "productTitle": "SLE5000 Neonatal Ventilator",
+      "claimCandidateId": "claim_a44f96b0853b1431cd80a1b4",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "HFO",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_065536f632ea0f830b1bd03b"
+      ],
+      "documentVersionIds": [
+        "document_version_de7edf342d164fa2ee9d9ffb"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_bb95455370a73dd7fab8532d",
+      "productSlug": "wave2-sle-5000",
+      "productTitle": "SLE5000 Neonatal Ventilator",
+      "claimCandidateId": "claim_346c0ce6b8ad5e273fe96018",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "Neonatal",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_44573ca444a0dcf31bbfb2d2"
+      ],
+      "documentVersionIds": [
+        "document_version_de7edf342d164fa2ee9d9ffb"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b22730a2c93ebb895c732f9d",
+      "productSlug": "wave2-sle-5000",
+      "productTitle": "SLE5000 Neonatal Ventilator",
+      "claimCandidateId": "claim_b56b9db1b177e181fc8b1b2e",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "neonate",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_12f31c871979e8fc2f35bd83"
+      ],
+      "documentVersionIds": [
+        "document_version_de7edf342d164fa2ee9d9ffb"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_04e4f1ba3b50858c7f66fe2b",
+      "productSlug": "wave2-sle-5000",
+      "productTitle": "SLE5000 Neonatal Ventilator",
+      "claimCandidateId": "claim_e642bb0cb0f510cfcac20de3",
+      "suggestedClaimType": "product.safetyFeatures",
+      "valuePayload": {
+        "value": "High Pressure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_35dc1edc58b08b6125648ebf"
+      ],
+      "documentVersionIds": [
+        "document_version_de7edf342d164fa2ee9d9ffb"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "critical",
+      "riskLevel": "high",
+      "reasons": [
+        "High-risk clinical, safety, compatibility or procurement claim.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_3c804ef27b621c0da44428e3",
+      "productSlug": "wave2-sle-5000",
+      "productTitle": "SLE5000 Neonatal Ventilator",
+      "claimCandidateId": "claim_aa3556ea90a387ff7ea7c10d",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Tidal Volume",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_fa2fb7f84f481d230ed0404c"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_45b4ecb641719522188fa8a9",
+      "productSlug": "wave2-sle-5000",
+      "productTitle": "SLE5000 Neonatal Ventilator",
+      "claimCandidateId": "claim_a27bac66d8aa681f96f50937",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_ef779f18c2eb9fef1d7ce7b8"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_c4edcccd180c71706dfac382",
+      "productSlug": "wave2-sle-5000",
+      "productTitle": "SLE5000 Neonatal Ventilator",
+      "claimCandidateId": "claim_f3e8c10de02ad3a253f9c7fe",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_d63a1ca4d29eb3b267d25f9a"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_17dde77e9128f09246132d47",
+      "productSlug": "wave2-sle-5000",
+      "productTitle": "SLE5000 Neonatal Ventilator",
+      "claimCandidateId": "claim_842fd289f58276f55fc71e02",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Ventilation Modes",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_1162279ae5fb97a4d86a3ab7"
+      ],
+      "documentVersionIds": [
+        "document_version_de7edf342d164fa2ee9d9ffb"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_2fd07af7e8ab1166466767c0",
+      "productSlug": "wave2-sle-5000",
+      "productTitle": "SLE5000 Neonatal Ventilator",
+      "claimCandidateId": "claim_2b92b7ead02e31b5816b1bb9",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Flow Rate",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_2fd58e388e4da758d07d33fe"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_cf9bcc8da76d514b310c2835",
+      "productSlug": "wave2-sle-5000",
+      "productTitle": "SLE5000 Neonatal Ventilator",
+      "claimCandidateId": "claim_1a6fb0cf365de5a236099728",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_07b89401fb9b35281321f56b"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_9f6c76ca7f9cb3d4bf2ec196",
+      "productSlug": "wave2-sle-5000",
+      "productTitle": "SLE5000 Neonatal Ventilator",
+      "claimCandidateId": "claim_5254bc91496529b699742423",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Minute Volume",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_d0f0deb45b55f2dc81037b7b"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_e03abfc4d218797fd4c72786",
+      "productSlug": "wave2-sle-5000",
+      "productTitle": "SLE5000 Neonatal Ventilator",
+      "claimCandidateId": "claim_d82f2aa3f87ae003bc305cc2",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_3a5714d81f1f85ff165874ce"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_19d8de11af364a8e25a6f541",
+        "productSlug": "wave2-sle-5000",
+        "productTitle": "SLE5000 Neonatal Ventilator",
+        "claimCandidateId": "claim_318d41b76e2ab867ceaa8d3b",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "SLE5000 official partner brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_fd2d42fd5108827177f88c9a"
+        ],
+        "documentVersionIds": [
+          "document_version_de7edf342d164fa2ee9d9ffb"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_38c48a4997f13ee47abded04",
+        "productSlug": "wave2-sle-5000",
+        "productTitle": "SLE5000 Neonatal Ventilator",
+        "claimCandidateId": "claim_7696fd07024eebfb767e699f",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_071c857101969265400c4828"
+        ],
+        "documentVersionIds": [
+          "document_version_de7edf342d164fa2ee9d9ffb"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.operatingModes": [
+      {
+        "reviewItemId": "review_item_1b19039526c46e18ec189f3c",
+        "productSlug": "wave2-sle-5000",
+        "productTitle": "SLE5000 Neonatal Ventilator",
+        "claimCandidateId": "claim_0889d97243bc84167ae0802e",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "Conventional",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_1162279ae5fb97a4d86a3ab7"
+        ],
+        "documentVersionIds": [
+          "document_version_de7edf342d164fa2ee9d9ffb"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_e48cd7eefad507df219c090b",
+        "productSlug": "wave2-sle-5000",
+        "productTitle": "SLE5000 Neonatal Ventilator",
+        "claimCandidateId": "claim_a44f96b0853b1431cd80a1b4",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "HFO",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_065536f632ea0f830b1bd03b"
+        ],
+        "documentVersionIds": [
+          "document_version_de7edf342d164fa2ee9d9ffb"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.patientGroup": [
+      {
+        "reviewItemId": "review_item_bb95455370a73dd7fab8532d",
+        "productSlug": "wave2-sle-5000",
+        "productTitle": "SLE5000 Neonatal Ventilator",
+        "claimCandidateId": "claim_346c0ce6b8ad5e273fe96018",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "Neonatal",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_44573ca444a0dcf31bbfb2d2"
+        ],
+        "documentVersionIds": [
+          "document_version_de7edf342d164fa2ee9d9ffb"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_b22730a2c93ebb895c732f9d",
+        "productSlug": "wave2-sle-5000",
+        "productTitle": "SLE5000 Neonatal Ventilator",
+        "claimCandidateId": "claim_b56b9db1b177e181fc8b1b2e",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "neonate",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_12f31c871979e8fc2f35bd83"
+        ],
+        "documentVersionIds": [
+          "document_version_de7edf342d164fa2ee9d9ffb"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.safetyFeatures": [
+      {
+        "reviewItemId": "review_item_04e4f1ba3b50858c7f66fe2b",
+        "productSlug": "wave2-sle-5000",
+        "productTitle": "SLE5000 Neonatal Ventilator",
+        "claimCandidateId": "claim_e642bb0cb0f510cfcac20de3",
+        "suggestedClaimType": "product.safetyFeatures",
+        "valuePayload": {
+          "value": "High Pressure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_35dc1edc58b08b6125648ebf"
+        ],
+        "documentVersionIds": [
+          "document_version_de7edf342d164fa2ee9d9ffb"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "critical",
+        "riskLevel": "high",
+        "reasons": [
+          "High-risk clinical, safety, compatibility or procurement claim.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "technical.term": [
+      {
+        "reviewItemId": "review_item_3c804ef27b621c0da44428e3",
+        "productSlug": "wave2-sle-5000",
+        "productTitle": "SLE5000 Neonatal Ventilator",
+        "claimCandidateId": "claim_aa3556ea90a387ff7ea7c10d",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Tidal Volume",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_fa2fb7f84f481d230ed0404c"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_45b4ecb641719522188fa8a9",
+        "productSlug": "wave2-sle-5000",
+        "productTitle": "SLE5000 Neonatal Ventilator",
+        "claimCandidateId": "claim_a27bac66d8aa681f96f50937",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_ef779f18c2eb9fef1d7ce7b8"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_c4edcccd180c71706dfac382",
+        "productSlug": "wave2-sle-5000",
+        "productTitle": "SLE5000 Neonatal Ventilator",
+        "claimCandidateId": "claim_f3e8c10de02ad3a253f9c7fe",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_d63a1ca4d29eb3b267d25f9a"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_17dde77e9128f09246132d47",
+        "productSlug": "wave2-sle-5000",
+        "productTitle": "SLE5000 Neonatal Ventilator",
+        "claimCandidateId": "claim_842fd289f58276f55fc71e02",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Ventilation Modes",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_1162279ae5fb97a4d86a3ab7"
+        ],
+        "documentVersionIds": [
+          "document_version_de7edf342d164fa2ee9d9ffb"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_2fd07af7e8ab1166466767c0",
+        "productSlug": "wave2-sle-5000",
+        "productTitle": "SLE5000 Neonatal Ventilator",
+        "claimCandidateId": "claim_2b92b7ead02e31b5816b1bb9",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Flow Rate",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_2fd58e388e4da758d07d33fe"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_cf9bcc8da76d514b310c2835",
+        "productSlug": "wave2-sle-5000",
+        "productTitle": "SLE5000 Neonatal Ventilator",
+        "claimCandidateId": "claim_1a6fb0cf365de5a236099728",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_07b89401fb9b35281321f56b"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_9f6c76ca7f9cb3d4bf2ec196",
+        "productSlug": "wave2-sle-5000",
+        "productTitle": "SLE5000 Neonatal Ventilator",
+        "claimCandidateId": "claim_5254bc91496529b699742423",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Minute Volume",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_d0f0deb45b55f2dc81037b7b"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_e03abfc4d218797fd4c72786",
+        "productSlug": "wave2-sle-5000",
+        "productTitle": "SLE5000 Neonatal Ventilator",
+        "claimCandidateId": "claim_d82f2aa3f87ae003bc305cc2",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_3a5714d81f1f85ff165874ce"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentType": "brochure",
+      "title": "SLE5000 official partner brochure",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "sha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc"
+    }
+  ],
+  "missingEvidence": [
+    {
+      "claimCandidateId": "claim_aa3556ea90a387ff7ea7c10d",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_a27bac66d8aa681f96f50937",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_f3e8c10de02ad3a253f9c7fe",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_2b92b7ead02e31b5816b1bb9",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_1a6fb0cf365de5a236099728",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_5254bc91496529b699742423",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_d82f2aa3f87ae003bc305cc2",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    }
+  ],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/product/sle5000/: HTTP 403",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

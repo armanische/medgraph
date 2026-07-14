@@ -1,0 +1,691 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-vacus-7308",
+    "manufacturer": "Dixion",
+    "productName": "DIXION Vacus 7308",
+    "model": "Vacus 7308",
+    "category": "Аспиратор"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_cabee0da29784c51da94e933",
+      "documentCandidateId": "document_66a2fc7755888301394012a8",
+      "sourceId": "source_1c3fa3bb79b8169d4d745ad2",
+      "productSlug": "wave2-dixion-vacus-7308",
+      "documentKey": "trusted-document:document_66a2fc7755888301394012a8",
+      "documentType": "unknown",
+      "title": "Скачать прайс-лист",
+      "language": null,
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "contentType": "application/pdf",
+      "byteSize": 178281,
+      "filePath": "data/research/artifacts/artifacts/sha256/1c/da/1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_1429b427cea83eea57c61c1f",
+      "documentCandidateId": "document_564eb9e974c2b2d0509156cf",
+      "sourceId": "source_1c3fa3bb79b8169d4d745ad2",
+      "productSlug": "wave2-dixion-vacus-7308",
+      "documentKey": "trusted-document:document_564eb9e974c2b2d0509156cf",
+      "documentType": "unknown",
+      "title": "Скачать буклет «‎Аспираторы Dixion Вакус»",
+      "language": null,
+      "sourceUrl": "https://dixion.ru/upload/documents/Vacus.pdf",
+      "sha256": "ee959b58e501963b2b9de2af3304db407d2f0a12b1ae9da2edcee96223f34496",
+      "contentType": "application/pdf",
+      "byteSize": 363023,
+      "filePath": "data/research/artifacts/artifacts/sha256/ee/95/ee959b58e501963b2b9de2af3304db407d2f0a12b1ae9da2edcee96223f34496.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_077ce7bd9a17fcef18d6f8fc",
+      "documentCandidateId": "document_59f0871a2d21b4f7c84dfe3a",
+      "sourceId": "source_1c3fa3bb79b8169d4d745ad2",
+      "productSlug": "wave2-dixion-vacus-7308",
+      "documentKey": "trusted-document:document_59f0871a2d21b4f7c84dfe3a",
+      "documentType": "unknown",
+      "title": "Unclassified manufacturer document",
+      "language": null,
+      "sourceUrl": "https://dixion.ru/upload/Vacus_2025.pdf",
+      "sha256": "233308f885fa2d5462dae9891c5b379f4966c0d21d5b85f627aa474264831cc2",
+      "contentType": "application/pdf",
+      "byteSize": 619940,
+      "filePath": "data/research/artifacts/artifacts/sha256/23/33/233308f885fa2d5462dae9891c5b379f4966c0d21d5b85f627aa474264831cc2.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_ab04c0ebe695be08dafdc3a1",
+      "documentCandidateId": "document_4618e61bfd4e100832160687",
+      "sourceId": "source_6427f8b0ceb5b5444e58752d",
+      "productSlug": "wave2-dixion-vacus-7308",
+      "documentKey": "trusted-document:document_4618e61bfd4e100832160687",
+      "documentType": "brochure",
+      "title": "DIXION Vacus 2025 official brochure",
+      "language": null,
+      "sourceUrl": "https://dixion.ru/upload/iblock/f36/09ku27s16t3pugnt9p32qomwjzgwd3jk/Dixion_Vacus_2025.pdf",
+      "sha256": "9a476f813c2cd06ca017d7360db6958e9b787682ce89ecac40021d2289131d33",
+      "contentType": "application/pdf",
+      "byteSize": 623984,
+      "filePath": "data/research/artifacts/artifacts/sha256/9a/47/9a476f813c2cd06ca017d7360db6958e9b787682ce89ecac40021d2289131d33.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_8c9a2a3f82e67cc58d91e340",
+      "productSlug": "wave2-dixion-vacus-7308",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Скачать прайс-лист",
+      "unit": null,
+      "rawText": "Document title: Скачать прайс-лист",
+      "documentVersionId": "document_version_cabee0da29784c51da94e933",
+      "documentCandidateId": "document_66a2fc7755888301394012a8",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_e0209c10041cb3df202f177d",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_ed113a02db0ab0cca8c7a364",
+      "productSlug": "wave2-dixion-vacus-7308",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_cabee0da29784c51da94e933",
+      "documentCandidateId": "document_66a2fc7755888301394012a8",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_d0a49841ad27690f0986d3ef",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_bff0636978cb5698f7663026",
+      "productSlug": "wave2-dixion-vacus-7308",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Скачать буклет «‎Аспираторы Dixion Вакус»",
+      "unit": null,
+      "rawText": "Document title: Скачать буклет «‎Аспираторы Dixion Вакус»",
+      "documentVersionId": "document_version_1429b427cea83eea57c61c1f",
+      "documentCandidateId": "document_564eb9e974c2b2d0509156cf",
+      "documentSha256": "ee959b58e501963b2b9de2af3304db407d2f0a12b1ae9da2edcee96223f34496",
+      "sourceUrl": "https://dixion.ru/upload/documents/Vacus.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_89f5e03dabb946c9bc17904f",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_c63204ff535743f8cb581083",
+      "productSlug": "wave2-dixion-vacus-7308",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_1429b427cea83eea57c61c1f",
+      "documentCandidateId": "document_564eb9e974c2b2d0509156cf",
+      "documentSha256": "ee959b58e501963b2b9de2af3304db407d2f0a12b1ae9da2edcee96223f34496",
+      "sourceUrl": "https://dixion.ru/upload/documents/Vacus.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_ad9153144ab8fb96239332d2",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_bd75fea9e4ac60faff39c908",
+      "productSlug": "wave2-dixion-vacus-7308",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Unclassified manufacturer document",
+      "unit": null,
+      "rawText": "Document title: Unclassified manufacturer document",
+      "documentVersionId": "document_version_077ce7bd9a17fcef18d6f8fc",
+      "documentCandidateId": "document_59f0871a2d21b4f7c84dfe3a",
+      "documentSha256": "233308f885fa2d5462dae9891c5b379f4966c0d21d5b85f627aa474264831cc2",
+      "sourceUrl": "https://dixion.ru/upload/Vacus_2025.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_b9adf49d40ea2f28c6181f0c",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_a60d600d9aa3d39ecaa91714",
+      "productSlug": "wave2-dixion-vacus-7308",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_077ce7bd9a17fcef18d6f8fc",
+      "documentCandidateId": "document_59f0871a2d21b4f7c84dfe3a",
+      "documentSha256": "233308f885fa2d5462dae9891c5b379f4966c0d21d5b85f627aa474264831cc2",
+      "sourceUrl": "https://dixion.ru/upload/Vacus_2025.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_ff3b7f5b1c9e5963ec7aed9c",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_cdf80f99806a8e604db560fd",
+      "productSlug": "wave2-dixion-vacus-7308",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "DIXION Vacus 2025 official brochure",
+      "unit": null,
+      "rawText": "Document title: DIXION Vacus 2025 official brochure",
+      "documentVersionId": "document_version_ab04c0ebe695be08dafdc3a1",
+      "documentCandidateId": "document_4618e61bfd4e100832160687",
+      "documentSha256": "9a476f813c2cd06ca017d7360db6958e9b787682ce89ecac40021d2289131d33",
+      "sourceUrl": "https://dixion.ru/upload/iblock/f36/09ku27s16t3pugnt9p32qomwjzgwd3jk/Dixion_Vacus_2025.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_b7904741b7daf763e3832eef",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_46aa8ea70d0dfc27a4240853",
+      "productSlug": "wave2-dixion-vacus-7308",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_ab04c0ebe695be08dafdc3a1",
+      "documentCandidateId": "document_4618e61bfd4e100832160687",
+      "documentSha256": "9a476f813c2cd06ca017d7360db6958e9b787682ce89ecac40021d2289131d33",
+      "sourceUrl": "https://dixion.ru/upload/iblock/f36/09ku27s16t3pugnt9p32qomwjzgwd3jk/Dixion_Vacus_2025.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_bb21d1acfca9d3e0e2ffbd61",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_e0209c10041cb3df202f177d",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_cabee0da29784c51da94e933",
+      "documentCandidateId": "document_66a2fc7755888301394012a8",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Скачать прайс-лист",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_d0a49841ad27690f0986d3ef",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_cabee0da29784c51da94e933",
+      "documentCandidateId": "document_66a2fc7755888301394012a8",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_89f5e03dabb946c9bc17904f",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_1429b427cea83eea57c61c1f",
+      "documentCandidateId": "document_564eb9e974c2b2d0509156cf",
+      "sha256": "ee959b58e501963b2b9de2af3304db407d2f0a12b1ae9da2edcee96223f34496",
+      "sourceUrl": "https://dixion.ru/upload/documents/Vacus.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Скачать буклет «‎Аспираторы Dixion Вакус»",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ad9153144ab8fb96239332d2",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_1429b427cea83eea57c61c1f",
+      "documentCandidateId": "document_564eb9e974c2b2d0509156cf",
+      "sha256": "ee959b58e501963b2b9de2af3304db407d2f0a12b1ae9da2edcee96223f34496",
+      "sourceUrl": "https://dixion.ru/upload/documents/Vacus.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_b9adf49d40ea2f28c6181f0c",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_077ce7bd9a17fcef18d6f8fc",
+      "documentCandidateId": "document_59f0871a2d21b4f7c84dfe3a",
+      "sha256": "233308f885fa2d5462dae9891c5b379f4966c0d21d5b85f627aa474264831cc2",
+      "sourceUrl": "https://dixion.ru/upload/Vacus_2025.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Unclassified manufacturer document",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ff3b7f5b1c9e5963ec7aed9c",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_077ce7bd9a17fcef18d6f8fc",
+      "documentCandidateId": "document_59f0871a2d21b4f7c84dfe3a",
+      "sha256": "233308f885fa2d5462dae9891c5b379f4966c0d21d5b85f627aa474264831cc2",
+      "sourceUrl": "https://dixion.ru/upload/Vacus_2025.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_b7904741b7daf763e3832eef",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_ab04c0ebe695be08dafdc3a1",
+      "documentCandidateId": "document_4618e61bfd4e100832160687",
+      "sha256": "9a476f813c2cd06ca017d7360db6958e9b787682ce89ecac40021d2289131d33",
+      "sourceUrl": "https://dixion.ru/upload/iblock/f36/09ku27s16t3pugnt9p32qomwjzgwd3jk/Dixion_Vacus_2025.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: DIXION Vacus 2025 official brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_bb21d1acfca9d3e0e2ffbd61",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_ab04c0ebe695be08dafdc3a1",
+      "documentCandidateId": "document_4618e61bfd4e100832160687",
+      "sha256": "9a476f813c2cd06ca017d7360db6958e9b787682ce89ecac40021d2289131d33",
+      "sourceUrl": "https://dixion.ru/upload/iblock/f36/09ku27s16t3pugnt9p32qomwjzgwd3jk/Dixion_Vacus_2025.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_2107e66525fc052962c90fe7",
+      "productSlug": "wave2-dixion-vacus-7308",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Скачать прайс-лист",
+        "unit": null
+      },
+      "rawText": "Document title: Скачать прайс-лист",
+      "evidenceCandidateIds": [
+        "evidence_e0209c10041cb3df202f177d"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_a0228e4ff02c8b6aff664b9b",
+      "productSlug": "wave2-dixion-vacus-7308",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_d0a49841ad27690f0986d3ef"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_ee55d8ef0bc993b1b0713532",
+      "productSlug": "wave2-dixion-vacus-7308",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Скачать буклет «‎Аспираторы Dixion Вакус»",
+        "unit": null
+      },
+      "rawText": "Document title: Скачать буклет «‎Аспираторы Dixion Вакус»",
+      "evidenceCandidateIds": [
+        "evidence_89f5e03dabb946c9bc17904f"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_8fa68fc3ff9654f8b41ad778",
+      "productSlug": "wave2-dixion-vacus-7308",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_ad9153144ab8fb96239332d2"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_87db886af85e696579520126",
+      "productSlug": "wave2-dixion-vacus-7308",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Unclassified manufacturer document",
+        "unit": null
+      },
+      "rawText": "Document title: Unclassified manufacturer document",
+      "evidenceCandidateIds": [
+        "evidence_b9adf49d40ea2f28c6181f0c"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_acc78ccaa460086f29f04db0",
+      "productSlug": "wave2-dixion-vacus-7308",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_ff3b7f5b1c9e5963ec7aed9c"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_ccb59bff11e665cc7206bd75",
+      "productSlug": "wave2-dixion-vacus-7308",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "DIXION Vacus 2025 official brochure",
+        "unit": null
+      },
+      "rawText": "Document title: DIXION Vacus 2025 official brochure",
+      "evidenceCandidateIds": [
+        "evidence_b7904741b7daf763e3832eef"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_dbae2cd700e81cb2e208cc55",
+      "productSlug": "wave2-dixion-vacus-7308",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_bb21d1acfca9d3e0e2ffbd61"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry"
+    ],
+    "patternsMatched": {},
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ]
+    },
+    "coveragePercent": 0
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=9; classifiedDocuments={\"Brochure\":11,\"Unknown\":4}; confidenceDistribution={\"80\":9,\"100\":6}; duplicatesRemoved=6",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

@@ -1266,6 +1266,259 @@
       ]
     },
     {
+      "slug": "wave2-sonoscape-hd-350",
+      "productName": "SonoScape HD-350",
+      "manufacturer": "SonoScape",
+      "model": "HD-350",
+      "category": "Видеоэндоскопические системы",
+      "officialSources": [{
+        "url": "https://www.sonoscape.com/en/products/endoscopy/image_processor/2018/0622/51.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "SonoScape",
+        "title": "SonoScape HD-350 official product page",
+        "notes": "Official image processor page; public brochure, IFU and service documentation were not exposed.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-sonoscape-hd-500",
+      "productName": "SonoScape HD-500",
+      "manufacturer": "SonoScape",
+      "model": "HD-500",
+      "category": "Видеоэндоскопические системы",
+      "officialSources": [{
+        "url": "https://www.sonoscape.com/en/products/endoscopy/image_processor/2018/0403/35.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "SonoScape",
+        "title": "SonoScape HD-500 official product page",
+        "notes": "Official image processor page; compatibility must remain limited to explicitly named components.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-sonoscape-hd-550",
+      "productName": "SonoScape HD-550",
+      "manufacturer": "SonoScape",
+      "model": "HD-550",
+      "category": "Видеоэндоскопические системы",
+      "officialSources": [{
+        "url": "https://www.sonoscape.com/en/products/endoscopy/image_processor/2019/0403/100.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "SonoScape",
+        "title": "SonoScape HD-550 official product page",
+        "notes": "Official product page confirms the HD-550 processor; public operator and service manuals were not found.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-sonoscape-p50",
+      "productName": "SonoScape P50",
+      "manufacturer": "SonoScape",
+      "model": "P50",
+      "category": "УЗИ аппараты",
+      "officialSources": [{
+        "url": "https://www.sonoscape.com/en/products/ultrasound/trolley_color_doppler/2018/0401/4.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "SonoScape",
+        "title": "SonoScape P50 official product page",
+        "notes": "Official P50 page; transducer statements are model-scoped and require explicit evidence.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-sonoscape-p60",
+      "productName": "SonoScape P60",
+      "manufacturer": "SonoScape",
+      "model": "P60",
+      "category": "УЗИ аппараты",
+      "officialSources": [{
+        "url": "https://www.sonoscape.com/en/products/ultrasound/trolley_color_doppler/2020/0715/113.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "SonoScape",
+        "title": "SonoScape P60 official product page",
+        "notes": "Official P60 page; P60 Exp is a separate current catalogue entry and is not treated as the same model.",
+        "trustTier": 1
+      }, {
+        "url": "https://www.sonoscape.de/uploadfile/2023/0427/20230427103011986.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "SonoScape Medical Germany",
+        "title": "SonoScape P60 official brochure",
+        "notes": "Public official regional brochure discovered through the SonoScape Germany Downloads section.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-sonoscape-p20",
+      "productName": "SonoScape P20",
+      "manufacturer": "SonoScape",
+      "model": "P20",
+      "category": "УЗИ аппараты",
+      "officialSources": [{
+        "url": "https://www.sonoscape.com/en/products/ultrasound/trolley_color_doppler/2021/0414/128.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "SonoScape",
+        "title": "SonoScape P20 official product page",
+        "notes": "Official P20 page; P20 Elite is a separate catalogue entry.",
+        "trustTier": 1
+      }, {
+        "url": "https://www.sonoscape.de/uploadfile/2023/0427/20230427102717409.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "SonoScape Medical Germany",
+        "title": "SonoScape P25/P20 official brochure",
+        "notes": "Public official regional family brochure linked from the SonoScape Germany Downloads section.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-sonoscape-p40-elite",
+      "productName": "SonoScape P40 Elite",
+      "manufacturer": "SonoScape",
+      "model": "P40 Elite",
+      "category": "УЗИ аппараты",
+      "officialSources": [{
+        "url": "https://www.sonoscape.com/en/products/ultrasound/trolley_color_doppler/2023/0110/167.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "SonoScape",
+        "title": "SonoScape P40 Elite official product page",
+        "notes": "Official current product page; feature availability is configuration dependent.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-sonoscape-e1",
+      "productName": "SonoScape E1",
+      "manufacturer": "SonoScape",
+      "model": "E1",
+      "category": "УЗИ аппараты",
+      "officialSources": [{
+        "url": "https://www.sonoscape.com/en/products/ultrasound/b_w_ultrasound/2018/0402/20.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "SonoScape",
+        "title": "SonoScape E1 official product page",
+        "notes": "Official B/W ultrasound product page; E1 Exp is a separate color Doppler model.",
+        "trustTier": 1
+      }, {
+        "url": "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "SonoScape Medical Germany",
+        "title": "SonoScape E1 official brochure",
+        "notes": "Public official regional brochure linked from the SonoScape Germany Downloads section.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-sonoscape-e2",
+      "productName": "SonoScape E2",
+      "manufacturer": "SonoScape",
+      "model": "E2",
+      "category": "УЗИ аппараты",
+      "officialSources": [{
+        "url": "https://www.sonoscape.com/en/products/ultrasound/portable_color_doppler/2018/0402/13.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "SonoScape",
+        "title": "SonoScape E2 official product page",
+        "notes": "Official portable color Doppler page; no public IFU was linked.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-sonoscape-e3",
+      "productName": "SonoScape E3",
+      "manufacturer": "SonoScape",
+      "model": "E3",
+      "category": "УЗИ аппараты",
+      "officialSources": [{
+        "url": "https://www.sonoscape.com/en/products/ultrasound/portable_color_doppler/2018/0402/14.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "SonoScape",
+        "title": "SonoScape E3 official product page",
+        "notes": "Official portable color Doppler page; veterinary E3V evidence is excluded.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-sonoscape-e7",
+      "productName": "SonoScape E7",
+      "manufacturer": "SonoScape",
+      "model": "E7",
+      "category": "УЗИ аппараты",
+      "officialSources": [{
+        "url": "https://www.sonoscape.com/en/products/ultrasound/",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "SonoScape",
+        "title": "SonoScape official ultrasound catalogue — E7 check",
+        "notes": "E7 was checked but is absent from the current official catalogue; this is a discovery-only source, not evidence of a current E7 product.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-sonoscape-s8",
+      "productName": "SonoScape S8",
+      "manufacturer": "SonoScape",
+      "model": "S8",
+      "category": "УЗИ аппараты",
+      "officialSources": [{
+        "url": "https://www.sonoscape.com/en/products/ultrasound/portable_color_doppler/2018/0402/16.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "SonoScape",
+        "title": "SonoScape S8 Exp official product page",
+        "notes": "The current official catalogue identifies S8 Exp; evidence is preserved under the requested S8 check without dropping the Exp suffix.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-sonoscape-s9",
+      "productName": "SonoScape S9",
+      "manufacturer": "SonoScape",
+      "model": "S9",
+      "category": "УЗИ аппараты",
+      "officialSources": [{
+        "url": "https://www.sonoscape.com/en/products/ultrasound/portable_color_doppler/2018/0402/15.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "SonoScape",
+        "title": "SonoScape S9 official product page",
+        "notes": "Official portable color Doppler product page.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-sonoscape-s20",
+      "productName": "SonoScape S20",
+      "manufacturer": "SonoScape",
+      "model": "S20",
+      "category": "УЗИ аппараты",
+      "officialSources": [{
+        "url": "https://www.sonoscape.com/en/about/",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "SonoScape",
+        "title": "SonoScape official history — S20",
+        "notes": "Official history confirms the legacy S20 award; S20 is absent from the current product catalogue and no current product page was found.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-sonoscape-x3",
+      "productName": "SonoScape X3",
+      "manufacturer": "SonoScape",
+      "model": "X3",
+      "category": "УЗИ аппараты",
+      "officialSources": [{
+        "url": "https://www.sonoscape.com/en/products/ultrasound/portable_color_doppler/2018/0402/12.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "SonoScape",
+        "title": "SonoScape X3 official product page",
+        "notes": "Official portable color Doppler product page; veterinary X3V evidence is excluded.",
+        "trustTier": 1
+      }, {
+        "url": "https://www.sonoscape.de/uploadfile/2023/0427/20230427101658727.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "SonoScape Medical Germany",
+        "title": "SonoScape X3 official brochure",
+        "notes": "Public official regional brochure with named X3 probes and accessories.",
+        "trustTier": 1
+      }]
+    },
+    {
       "slug": "wave2-sonoscape-products-index",
       "productName": "Wave 2 SonoScape products index",
       "manufacturer": "SonoScape",
@@ -1283,6 +1536,216 @@
       ]
     },
     {
+      "slug": "wave2-comen-n10",
+      "productName": "Comen N10",
+      "manufacturer": "Comen",
+      "model": "N10",
+      "category": "Монитор пациента",
+      "officialSources": [{
+        "url": "https://en.comen.com/products/NSeries",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Comen",
+        "title": "Comen N Series official product page — N10",
+        "notes": "Current official family page explicitly identifies N10 as the transport configuration; public IFU and operator manual links were not exposed.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-comen-n12",
+      "productName": "Comen N12",
+      "manufacturer": "Comen",
+      "model": "N12",
+      "category": "Монитор пациента",
+      "officialSources": [{
+        "url": "https://en.comen.com/products/NSeries",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Comen",
+        "title": "Comen N Series official product page — N12",
+        "notes": "Current official N Series family page; model-scoped facts require explicit N12 wording in captured evidence.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-comen-n15",
+      "productName": "Comen N15",
+      "manufacturer": "Comen",
+      "model": "N15",
+      "category": "Монитор пациента",
+      "officialSources": [{
+        "url": "https://en.comen.com/products/NSeries",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Comen",
+        "title": "Comen N Series official product page — N15",
+        "notes": "Current official N Series family page; configuration-dependent parameters remain review-only.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-comen-n17",
+      "productName": "Comen N17",
+      "manufacturer": "Comen",
+      "model": "N17",
+      "category": "Монитор пациента",
+      "officialSources": [{
+        "url": "https://en.comen.com/products/category/PatientMonitoring",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Comen",
+        "title": "Comen official patient monitoring catalogue — N17 check",
+        "notes": "N17 was checked but is not named in the current official catalogue or N Series page; discovery entry only.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-comen-c30",
+      "productName": "Comen C30",
+      "manufacturer": "Comen",
+      "model": "C30",
+      "category": "Монитор пациента",
+      "officialSources": [{
+        "url": "https://es.comen.com/pages/C30.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Comen",
+        "title": "Comen C30 official regional product page",
+        "notes": "Official Spanish product page confirms the transport monitor and explicitly documents C70/C90 integration; no public official PDF was linked.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-comen-c50",
+      "productName": "Comen C50",
+      "manufacturer": "Comen",
+      "model": "C50",
+      "category": "Монитор пациента",
+      "officialSources": [{
+        "url": "https://en.comen.com/products/category/PatientMonitoring",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Comen",
+        "title": "Comen official patient monitoring catalogue — C50 check",
+        "notes": "C50 was checked but is absent from the current global catalogue; non-manufacturer manuals and reseller pages are excluded.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-comen-c60",
+      "productName": "Comen C60",
+      "manufacturer": "Comen",
+      "model": "C60",
+      "category": "Монитор пациента",
+      "officialSources": [{
+        "url": "https://es.comen.com/pages/C60.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Comen",
+        "title": "Comen C60 official regional product page",
+        "notes": "Official Spanish legacy page confirms the neonatal monitor; accessories and optional modules are not generalized beyond the page.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-comen-star8000",
+      "productName": "Comen STAR8000",
+      "manufacturer": "Comen",
+      "model": "STAR8000",
+      "category": "Монитор пациента",
+      "officialSources": [{
+        "url": "https://www.comen.com/products/STAR8000",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Comen",
+        "title": "Comen STAR8000 official product page",
+        "notes": "Official Chinese product page identifies the 8000E/F/H family; no public manual or brochure download was exposed.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-comen-nc8",
+      "productName": "Comen NC8",
+      "manufacturer": "Comen",
+      "model": "NC8",
+      "category": "Монитор пациента",
+      "officialSources": [{
+        "url": "https://www.comen.com/products/category/NCSeries",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Comen",
+        "title": "Comen NC Series official catalogue — NC8",
+        "notes": "Official Chinese NC Series catalogue explicitly lists NC8/10/12 patient monitors; no model-specific public document was linked.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-comen-cms8000",
+      "productName": "Comen CMS8000",
+      "manufacturer": "Comen",
+      "model": "CMS8000",
+      "category": "Центральная станция мониторинга",
+      "officialSources": [{
+        "url": "https://en.comen.com/products/ECenterCMS",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Comen",
+        "title": "Comen eCenter-CMS official page — CMS8000 check",
+        "notes": "CMS8000 was checked as a requested legacy name but is not explicitly named on the current eCenter-CMS page; discovery entry only.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-comen-cms9000",
+      "productName": "Comen CMS9000",
+      "manufacturer": "Comen",
+      "model": "CMS9000",
+      "category": "Центральная станция мониторинга",
+      "officialSources": [{
+        "url": "https://en.comen.com/products/ECenterCMS",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Comen",
+        "title": "Comen eCenter-CMS official page — CMS9000 check",
+        "notes": "CMS9000 was checked but is not explicitly named by the current official CMS page; unrelated CONMED CMS9000 evidence is excluded.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-comen-h8",
+      "productName": "Comen H8",
+      "manufacturer": "Comen",
+      "model": "H8",
+      "category": "Медицинское оборудование",
+      "officialSources": [{
+        "url": "https://en.comen.com/products",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Comen",
+        "title": "Comen official products catalogue — H8 check",
+        "notes": "H8 was checked but no exact current official product entry or public documentation was found; discovery entry only.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-comen-l8",
+      "productName": "Comen L8",
+      "manufacturer": "Comen",
+      "model": "L8",
+      "category": "Хирургические светильники",
+      "officialSources": [{
+        "url": "https://en.comen.com/products",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Comen",
+        "title": "Comen official products catalogue — L8 check",
+        "notes": "L8 was checked but the current official surgical-light catalogue exposes L9 and L5, not L8; discovery entry only.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-comen-k12",
+      "productName": "Comen K12 Pro",
+      "manufacturer": "Comen",
+      "model": "K12 Pro",
+      "category": "Монитор пациента",
+      "officialSources": [{
+        "url": "https://en.comen.com/products/KPro",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Comen",
+        "title": "Comen K Pro Series official product page — K12 Pro",
+        "notes": "Current official K Pro family page; the requested K12 check resolves to the explicitly documented K12 Pro designation.",
+        "trustTier": 1
+      }]
+    },
+    {
       "slug": "wave2-comen-products-index",
       "productName": "Wave 2 Comen products index",
       "manufacturer": "Comen",
@@ -1290,7 +1753,7 @@
       "category": "Wave 2 source discovery",
       "officialSources": [
         {
-          "url": "https://www.comen.com/en/products",
+          "url": "https://en.comen.com/products",
           "sourceType": "official_manufacturer_page",
           "publisher": "Comen",
           "title": "Comen official products index",
@@ -1300,6 +1763,332 @@
       ]
     },
     {
+      "slug": "wave2-sle-6000",
+      "productName": "SLE6000 Infant Ventilator",
+      "manufacturer": "SLE",
+      "model": "SLE6000",
+      "category": "Neonatal ventilator",
+      "officialSources": [{
+        "url": "https://inspirationhealthcaregroup.com/product/sle6000/",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Inspiration Healthcare Group / SLE Ltd",
+        "title": "SLE6000 official product page",
+        "notes": "Current official product page. HFOV/HFO, NIV, nCPAP and High Flow Oxygen Therapy are modes or licensed modules, not standalone products.",
+        "trustTier": 1
+      }, {
+        "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/10/MK-PHL-00003920Issue20120-20Product20Brochure20-20SLE6000.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "SLE Ltd",
+        "title": "SLE6000 official brochure",
+        "notes": "Official brochure with model-scoped modes, modules, monitoring and interface evidence.",
+        "trustTier": 1
+      }, {
+        "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2025/06/MK-PHL-00004320Issue20220-20SLE600020Datasheet20-2.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "SLE Ltd",
+        "title": "SLE6000 official technical specification datasheet",
+        "notes": "Official technical specifications; configuration-dependent ranges must retain module qualifiers.",
+        "trustTier": 1
+      }, {
+        "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/03/UM165-UK-Issue-22-SLE6000-User-Manual-English.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "SLE Ltd",
+        "title": "SLE6000 operator manual / IFU UM165 UK Issue 22",
+        "notes": "Official archived manual for SLE6000 and SLE6000H/C/N variants.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-sle-6000h",
+      "productName": "SLE6000H Neonatal Ventilator",
+      "manufacturer": "SLE",
+      "model": "SLE6000H",
+      "category": "Neonatal ventilator",
+      "officialSources": [{
+        "url": "https://inspirationhealthcaregroup.com/sle6000h-sle6000c-sle6000n/",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Inspiration Healthcare Group / SLE Ltd",
+        "title": "SLE6000H official range page",
+        "notes": "Official H configuration of the SLE6000 range; this resolves the requested SLE 6000 HFO check without treating HFOV itself as a product.",
+        "trustTier": 1
+      }, {
+        "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/SLE6000NCH-Brochure.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "SLE Ltd",
+        "title": "SLE6000H C N official range brochure",
+        "notes": "Official family brochure; evidence must retain the H/C/N configuration column.",
+        "trustTier": 1
+      }, {
+        "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/Whats-included.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "SLE Ltd",
+        "title": "SLE6000H C N configuration and software compatibility matrix",
+        "notes": "Official one-page model/configuration matrix for standard, optional and unavailable modes and modules.",
+        "trustTier": 1
+      }, {
+        "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/09/MK-PHL-00007120Issue20120-20Quick20Reference20Guide20-20SLE6000H20SLE6000C.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "SLE Ltd",
+        "title": "SLE6000H and SLE6000C official quick reference guide",
+        "notes": "Official quick guide; not a replacement for the IFU.",
+        "trustTier": 1
+      }, {
+        "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/03/UM165-UK-Issue-22-SLE6000-User-Manual-English.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "SLE Ltd",
+        "title": "SLE6000H operator manual / IFU UM165 UK Issue 22",
+        "notes": "Official manual explicitly covering the SLE6000H variant.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-sle-6000c",
+      "productName": "SLE6000C Neonatal Ventilator",
+      "manufacturer": "SLE",
+      "model": "SLE6000C",
+      "category": "Neonatal ventilator",
+      "officialSources": [{
+        "url": "https://inspirationhealthcaregroup.com/product/sle6000c/",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Inspiration Healthcare Group / SLE Ltd",
+        "title": "SLE6000C official product page",
+        "notes": "Additional current official SLE6000 configuration discovered during Wave 2.",
+        "trustTier": 1
+      }, {
+        "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/SLE6000NCH-Brochure.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "SLE Ltd",
+        "title": "SLE6000H C N official range brochure",
+        "notes": "Official family brochure; only the SLE6000C column applies to this entry.",
+        "trustTier": 1
+      }, {
+        "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/SLE6000C-Datasheet.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "SLE Ltd",
+        "title": "SLE6000C official technical specification datasheet",
+        "notes": "Official C configuration technical specification.",
+        "trustTier": 1
+      }, {
+        "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/Whats-included.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "SLE Ltd",
+        "title": "SLE6000H C N configuration and software compatibility matrix",
+        "notes": "Official matrix; options and N/A rows remain configuration-scoped.",
+        "trustTier": 1
+      }, {
+        "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/09/MK-PHL-00007120Issue20120-20Quick20Reference20Guide20-20SLE6000H20SLE6000C.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "SLE Ltd",
+        "title": "SLE6000H and SLE6000C official quick reference guide",
+        "notes": "Official quick guide; not a replacement for the IFU.",
+        "trustTier": 1
+      }, {
+        "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/03/UM165-UK-Issue-22-SLE6000-User-Manual-English.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "SLE Ltd",
+        "title": "SLE6000C operator manual / IFU UM165 UK Issue 22",
+        "notes": "Official manual explicitly covering the SLE6000C variant.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-sle-6000n",
+      "productName": "SLE6000N Non-Invasive Ventilator",
+      "manufacturer": "SLE",
+      "model": "SLE6000N",
+      "category": "Neonatal respiratory ventilator",
+      "officialSources": [{
+        "url": "https://inspirationhealthcaregroup.com/product/sle6000n/",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Inspiration Healthcare Group / SLE Ltd",
+        "title": "SLE6000N official product page",
+        "notes": "Official non-invasive SLE6000 variant. NIV, nCPAP and oxygen therapy remain modes within this product.",
+        "trustTier": 1
+      }, {
+        "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/SLE6000NCH-Brochure.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "SLE Ltd",
+        "title": "SLE6000H C N official range brochure",
+        "notes": "Official family brochure; only the N configuration evidence applies here.",
+        "trustTier": 1
+      }, {
+        "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2025/06/MK-PHL-00004220Issue20220-20SLE6000N20Datasheet.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "SLE Ltd",
+        "title": "SLE6000N official technical specification datasheet",
+        "notes": "Official technical specifications for the non-invasive configuration.",
+        "trustTier": 1
+      }, {
+        "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/Whats-included.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "SLE Ltd",
+        "title": "SLE6000H C N configuration and software compatibility matrix",
+        "notes": "Official standard/option/N-A matrix for the SLE6000 configurations.",
+        "trustTier": 1
+      }, {
+        "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/09/MK-PHL-00007020Issue120-20Quick20Reference20Guide20-20SLE6000N.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "SLE Ltd",
+        "title": "SLE6000N official quick reference guide",
+        "notes": "Official quick guide; not a replacement for the IFU.",
+        "trustTier": 1
+      }, {
+        "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/03/UM165-UK-Issue-22-SLE6000-User-Manual-English.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "SLE Ltd",
+        "title": "SLE6000N operator manual / IFU UM165 UK Issue 22",
+        "notes": "Official manual explicitly covering the SLE6000N variant.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-sle-5000",
+      "productName": "SLE5000 Neonatal Ventilator",
+      "manufacturer": "SLE",
+      "model": "SLE5000",
+      "category": "Neonatal ventilator",
+      "officialSources": [{
+        "url": "https://inspirationhealthcaregroup.com/product/sle5000/",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Inspiration Healthcare Group / SLE Ltd",
+        "title": "SLE5000 official legacy product page",
+        "notes": "Official page remains online; the owner annual report identifies SLE5000 as discontinued/end-of-life.",
+        "trustTier": 1
+      }, {
+        "url": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "GE HealthCare India, official SLE partner",
+        "title": "SLE5000 official partner brochure",
+        "notes": "Official GE HealthCare India brochure; legacy product evidence only.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-sle-4000",
+      "productName": "SLE4000 Neonatal Ventilator",
+      "manufacturer": "SLE",
+      "model": "SLE4000",
+      "category": "Neonatal ventilator",
+      "officialSources": [{
+        "url": "https://inspirationhealthcaregroup.com/product/sle4000/",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Inspiration Healthcare Group / SLE Ltd",
+        "title": "SLE4000 official legacy product page",
+        "notes": "Official legacy page with manual selector; direct public English manual URL was not exposed.",
+        "trustTier": 1
+      }, {
+        "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/03/IFU7-Issue-1-Flow-Sensor-Reusable-IFU.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "SLE Ltd",
+        "title": "Reusable flow sensor IFU for SLE4000 SLE5000 SLE6000",
+        "notes": "Official accessory IFU explicitly naming compatible ventilator models.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-sle-2000",
+      "productName": "SLE2000 Infant Ventilator",
+      "manufacturer": "SLE",
+      "model": "SLE2000",
+      "category": "Neonatal ventilator",
+      "officialSources": [{
+        "url": "https://www.gehealthcare.com/en-in/products/ventilators/sle2000",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "GE HealthCare India, official SLE partner",
+        "title": "SLE2000 official partner product page",
+        "notes": "Official regional partner page; product availability is market dependent and treated as legacy evidence.",
+        "trustTier": 1
+      }, {
+        "url": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "GE HealthCare India, official SLE partner",
+        "title": "SLE2000 official partner brochure",
+        "notes": "Official GE HealthCare India product brochure; legacy regional evidence.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-sle-1000",
+      "productName": "SLE1000 CPAP Driver",
+      "manufacturer": "SLE",
+      "model": "SLE1000",
+      "category": "Neonatal respiratory support",
+      "officialSources": [{
+        "url": "https://inspirationhealthcaregroup.com/product/sle1000/",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Inspiration Healthcare Group / SLE Ltd",
+        "title": "SLE1000 official legacy product page",
+        "notes": "Official page remains online; owner annual reporting identifies SLE1000 as discontinued/end-of-life.",
+        "trustTier": 1
+      }, {
+        "url": "https://inspirationhealthcaregroup.com/product/sle1000-ncpap-generator/",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Inspiration Healthcare Group / SLE Ltd",
+        "title": "SLE1000 nCPAP generator official accessories page",
+        "notes": "Explicit family-level interface and circuit compatibility; generator is an accessory, not the CPAP driver itself.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-sle-3600",
+      "productName": "SLE3600 archive check",
+      "manufacturer": "SLE",
+      "model": "SLE3600",
+      "category": "Neonatal ventilator",
+      "officialSources": [{
+        "url": "https://inspirationhealthcaregroup.com/areas-of-care/acute-care/neonatal/",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Inspiration Healthcare Group / SLE Ltd",
+        "title": "Official SLE neonatal catalogue — SLE3600 archive check",
+        "notes": "SLE3600 is absent from the current owner catalogue and no public official archive document was found; discovery-only legacy check.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-sle-2100",
+      "productName": "SLE2100 archive check",
+      "manufacturer": "SLE",
+      "model": "SLE2100",
+      "category": "Neonatal ventilator",
+      "officialSources": [{
+        "url": "https://inspirationhealthcaregroup.com/areas-of-care/acute-care/neonatal/",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Inspiration Healthcare Group / SLE Ltd",
+        "title": "Official SLE neonatal catalogue — SLE2100 archive check",
+        "notes": "SLE2100 is absent from the current owner catalogue and no public official archive document was found; discovery-only legacy check.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-sle-1500",
+      "productName": "SLE1500 Respiratory Therapy System",
+      "manufacturer": "SLE",
+      "model": "SLE1500",
+      "category": "Neonatal respiratory support",
+      "officialSources": [{
+        "url": "https://inspirationhealthcaregroup.com/product/sle1500/",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Inspiration Healthcare Group / SLE Ltd",
+        "title": "SLE1500 official product page",
+        "notes": "Current official non-invasive respiratory therapy system; OxyGenie is a module, not a separate product.",
+        "trustTier": 1
+      }, {
+        "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/11/MK-PHL-00000820Issue20120-20Product20Brochure20-20SLE1500.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "SLE Ltd",
+        "title": "SLE1500 official brochure",
+        "notes": "Official product brochure with NIV, nCPAP, high-flow therapy, monitoring and OxyGenie evidence.",
+        "trustTier": 1
+      }, {
+        "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2026/02/MK-PHL-000116-SLE-Essential-Brochure.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "SLE Ltd",
+        "title": "SLE Essential High Flow Nasal Cannula official accessories brochure",
+        "notes": "Official compatibility evidence explicitly naming SLE1500 and SLE6000H/C/N.",
+        "trustTier": 1
+      }]
+    },
+    {
       "slug": "wave2-sle-products-index",
       "productName": "Wave 2 SLE products index",
       "manufacturer": "SLE",
@@ -1307,11 +2096,11 @@
       "category": "Wave 2 source discovery",
       "officialSources": [
         {
-          "url": "https://www.inspiration-healthcare.com/products",
+          "url": "https://inspirationhealthcaregroup.com/areas-of-care/acute-care/neonatal/",
           "sourceType": "official_manufacturer_page",
           "publisher": "Inspiration Healthcare",
           "title": "Inspiration Healthcare official products index",
-          "notes": "Wave 2 official discovery entry point only; SLE legacy naming must be preserved.",
+          "notes": "Wave 2 official current-owner discovery entry point only; SLE legacy naming and H/C/N configuration boundaries must be preserved.",
           "trustTier": 1
         }
       ]
@@ -1324,14 +2113,315 @@
       "category": "Wave 2 source discovery",
       "officialSources": [
         {
-          "url": "https://www.dixion.de/products",
+          "url": "https://dixion.ru/catalog/catalogs/",
           "sourceType": "official_manufacturer_page",
           "publisher": "Dixion",
           "title": "Dixion official products index",
-          "notes": "Wave 2 official discovery entry point only; regional model naming requires RU review.",
+          "notes": "Wave 2 official discovery entry point only; the live 2026 page exposes current category and model catalogues. Regional naming and family/configuration boundaries require human review.",
           "trustTier": 1
         }
       ]
+    },
+    {
+      "slug": "wave2-dixion-remodix-9507",
+      "productName": "DIXION Remodix 9507",
+      "manufacturer": "Dixion",
+      "model": "Remodix 9507",
+      "category": "Рентгеновское оборудование",
+      "officialSources": [{
+        "url": "https://dixion.ru/goods/palatniy-rentgenovskiy-apparat-Remodix-9507.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Dixion",
+        "title": "DIXION Remodix 9507 official product page",
+        "notes": "Live official product page; identity and availability evidence only.",
+        "trustTier": 1
+      }, {
+        "url": "https://dixion.ru/upload/iblock/198/tsx6q0z2rkdc1y385x7pircdc422fidj/Dixion_Remodix_9507.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "Dixion",
+        "title": "DIXION Remodix 9507 official brochure",
+        "notes": "Official model catalogue PDF; conservatively classified as brochure.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-dixion-vacus-7018",
+      "productName": "DIXION Vacus 7018",
+      "manufacturer": "Dixion",
+      "model": "Vacus 7018",
+      "category": "Аспиратор",
+      "officialSources": [{
+        "url": "https://dixion.ru/goods/portativniy-aspirator-Vacus-7018.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Dixion",
+        "title": "DIXION Vacus 7018 official product page",
+        "notes": "Live official product page; distinct portable aspirator model.",
+        "trustTier": 1
+      }, {
+        "url": "https://dixion.ru/upload/iblock/f36/09ku27s16t3pugnt9p32qomwjzgwd3jk/Dixion_Vacus_2025.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "Dixion",
+        "title": "DIXION Vacus 2025 official brochure",
+        "notes": "Official current family catalogue; family-level evidence must not be transferred without a model locator.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-dixion-vacus-7308",
+      "productName": "DIXION Vacus 7308",
+      "manufacturer": "Dixion",
+      "model": "Vacus 7308",
+      "category": "Аспиратор",
+      "officialSources": [{
+        "url": "https://dixion.ru/goods/hirurgicheskiy-aspirator-Vacus-7308.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Dixion",
+        "title": "DIXION Vacus 7308 official product page",
+        "notes": "Live official product page; distinct surgical aspirator model.",
+        "trustTier": 1
+      }, {
+        "url": "https://dixion.ru/upload/iblock/f36/09ku27s16t3pugnt9p32qomwjzgwd3jk/Dixion_Vacus_2025.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "Dixion",
+        "title": "DIXION Vacus 2025 official brochure",
+        "notes": "Official current family catalogue; duplicate artifact across model entries is expected and must be deduplicated by hash.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-dixion-4700",
+      "productName": "DIXION 4700",
+      "manufacturer": "Dixion",
+      "model": "4700",
+      "category": "Аппарат ИВЛ",
+      "officialSources": [{
+        "url": "https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Dixion",
+        "title": "DIXION 4700 official product page",
+        "notes": "Live official product page.",
+        "trustTier": 1
+      }, {
+        "url": "https://dixion.ru/upload/iblock/953/o447tecefs6hsgx35zfiw3duz59dox5d/Dixion-4700.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "Dixion",
+        "title": "DIXION 4700 official brochure",
+        "notes": "Official model catalogue PDF; not an IFU or operator manual.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-dixion-practice-family",
+      "productName": "DIXION Practice anesthesia workstation family",
+      "manufacturer": "Dixion",
+      "model": "Practice family",
+      "category": "Наркозно-дыхательное оборудование",
+      "officialSources": [{
+        "url": "https://dixion.ru/subcategory/narkoznie-apparati.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Dixion",
+        "title": "DIXION Practice official category page",
+        "notes": "Family discovery entry covering the separately listed Practice 3000, 3100 and 3700 models; no configuration is promoted to a separate fact without model evidence.",
+        "trustTier": 1
+      }, {
+        "url": "https://dixion.ru/upload/iblock/603/inby275dx6d9a77kanbbzv2fcjdpo1w2/Dixion_Practice_2025.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "Dixion",
+        "title": "DIXION Practice 2025 official brochure",
+        "notes": "Official current family catalogue; family-level evidence remains family-level.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-dixion-storm-family",
+      "productName": "DIXION Storm patient monitor family",
+      "manufacturer": "Dixion",
+      "model": "Storm D8/D6/D5/D3 family",
+      "category": "Монитор пациента",
+      "officialSources": [{
+        "url": "https://dixion.ru/subcategory/prikrovatnie-monitori.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Dixion",
+        "title": "DIXION Storm official patient monitor category",
+        "notes": "Family discovery entry; central station, stands, sensors and modules remain accessories/options.",
+        "trustTier": 1
+      }, {
+        "url": "https://dixion.ru/upload/iblock/b2a/Storm%20D6%20%D0%B8%20Storm%20D8_out.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "Dixion",
+        "title": "DIXION Storm D8/D6/D5/D3 official brochure",
+        "notes": "Official modular-monitor family brochure; model-specific transfer requires an explicit locator.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-dixion-convelar-family",
+      "productName": "DIXION Convelar surgical light family",
+      "manufacturer": "Dixion",
+      "model": "Convelar family",
+      "category": "Операционное освещение",
+      "officialSources": [{
+        "url": "https://dixion.ru/subcategory/operatsionnie-svetilniki.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Dixion",
+        "title": "DIXION Convelar official category page",
+        "notes": "Family entry; single/double dome and mounting variants are configurations, not automatically separate products.",
+        "trustTier": 1
+      }, {
+        "url": "https://dixion.ru/upload/iblock/882/ew07fblc1eoklaugkpkp8kmt9bx7iinp/Dixion_Convelar_2024.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "Dixion",
+        "title": "DIXION Convelar 2024 official brochure",
+        "notes": "Official family catalogue.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-dixion-altafor-plus-family",
+      "productName": "DIXION Altafor Plus electrosurgery family",
+      "manufacturer": "Dixion",
+      "model": "Altafor Plus family",
+      "category": "Электрохирургическое оборудование",
+      "officialSources": [{
+        "url": "https://dixion.ru/subcategory/elektrokoagulyatori.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Dixion",
+        "title": "DIXION Altafor Plus official category page",
+        "notes": "Family entry covering 1310/1320/1330/1340/1345 Plus; argon module, tools and electrodes remain options/accessories.",
+        "trustTier": 1
+      }, {
+        "url": "https://dixion.ru/upload/iblock/1a5/5kgzqoiipi8doyrcbf9hla09evummmsf/Dixion_Altafor.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "Dixion",
+        "title": "DIXION Altafor Plus official brochure",
+        "notes": "Official current family catalogue.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-dixion-instilar-family",
+      "productName": "DIXION Instilar infusion pump family",
+      "manufacturer": "Dixion",
+      "model": "Instilar family",
+      "category": "Инфузионное оборудование",
+      "officialSources": [{
+        "url": "https://dixion.ru/subcategory/infuzionnie-i-shpritsevie-nasosi.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Dixion",
+        "title": "DIXION Instilar official category page",
+        "notes": "Family entry covering 1428, 1438, 1486, 1487 and 1488; fluid warmer is not part of the pump family.",
+        "trustTier": 1
+      }, {
+        "url": "https://dixion.ru/upload/iblock/d87/4ri5d78o7s067t9l9ri2v6zq5w5kk19t/Dixion_Instilar.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "Dixion",
+        "title": "DIXION Instilar official brochure",
+        "notes": "Official family catalogue; unsupported extraction category falls back to registry only.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-dixion-babyguard-1120",
+      "productName": "DIXION Babyguard 1120",
+      "manufacturer": "Dixion",
+      "model": "Babyguard 1120",
+      "category": "Неонатальное оборудование",
+      "officialSources": [{
+        "url": "https://dixion.ru/goods/BabyGuard-I-1120.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Dixion",
+        "title": "DIXION Babyguard 1120 official product page",
+        "notes": "Live official incubator product page.",
+        "trustTier": 1
+      }, {
+        "url": "https://dixion.ru/upload/iblock/418/g93oe4vdj2bevwyh9r5i80mcm81cnlok/Babyguard_1120.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "Dixion",
+        "title": "DIXION Babyguard 1120 official brochure",
+        "notes": "Official model catalogue PDF.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-dixion-phototherapy-xhz-family",
+      "productName": "DIXION XHZ phototherapy family",
+      "manufacturer": "Dixion",
+      "model": "XHZ family",
+      "category": "Неонатальное оборудование",
+      "officialSources": [{
+        "url": "https://dixion.ru/category/neonatologiya.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Dixion",
+        "title": "DIXION neonatal equipment official category",
+        "notes": "Family discovery entry; XHZ-90L/P/Q/S and XHZ-200 remain separate models/configurations pending model-level evidence.",
+        "trustTier": 1
+      }, {
+        "url": "https://dixion.ru/upload/iblock/59f/3a4mcqkdays64uqvu9a3rw6zzmdeonl5/Dixion_Phototherapy_XHZ_2025.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "Dixion",
+        "title": "DIXION XHZ 2025 official brochure",
+        "notes": "Official current family catalogue.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "productName": "DIXION Intensive Care Bed CGD family",
+      "manufacturer": "Dixion",
+      "model": "Intensive Care Bed CGD family",
+      "category": "Функциональная кровать",
+      "officialSources": [{
+        "url": "https://dixion.ru/goods/funktsionalnaya-krovat-Dixion-Intensive-Care-Bed.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Dixion",
+        "title": "DIXION Intensive Care Bed official product page",
+        "notes": "Family entry; accessories and bed configurations are not separate products.",
+        "trustTier": 1
+      }, {
+        "url": "https://dixion.ru/upload/iblock/5ba/wbqo3m0auw33ljaysimp7yw6wjxju63a/Dixion_Intensive_Care_Bed_CGD.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "Dixion",
+        "title": "DIXION Intensive Care Bed CGD official brochure",
+        "notes": "Official family catalogue; unsupported extraction category falls back to registry only.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-dixion-heart-pad",
+      "productName": "DIXION Heart PAD",
+      "manufacturer": "Dixion",
+      "model": "Heart PAD",
+      "category": "Реанимационное оборудование",
+      "officialSources": [{
+        "url": "https://dixion.ru/goods/dixion_pad.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Dixion",
+        "title": "DIXION Heart PAD official product page",
+        "notes": "Live official AED product page.",
+        "trustTier": 1
+      }, {
+        "url": "https://dixion.ru/upload/iblock/0c7/heart_pad-.pdf",
+        "sourceType": "manufacturer_document",
+        "publisher": "Dixion",
+        "title": "DIXION Heart PAD official brochure",
+        "notes": "Official model brochure; unsupported extraction category falls back to registry only.",
+        "trustTier": 1
+      }]
+    },
+    {
+      "slug": "wave2-dixion-endoscopy-portfolio",
+      "productName": "DIXION endoscopy equipment portfolio",
+      "manufacturer": "Dixion",
+      "model": "Endoscopy portfolio family",
+      "category": "Эндоскопическое оборудование",
+      "officialSources": [{
+        "url": "https://dixion.ru/category/endoskopiya.html",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Dixion",
+        "title": "DIXION endoscopy equipment official category",
+        "notes": "Official category currently exposes no public model cards or model PDF in the catalogue index; retained as a blocked family discovery entry, not a fabricated product model.",
+        "trustTier": 1
+      }]
     }
   ]
 }

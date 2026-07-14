@@ -1,185 +1,147 @@
 {
-  "productsProcessed": 20,
-  "officialSourcesFound": 20,
-  "documentsFound": 7921,
-  "requiredDocumentsMissing": 39,
+  "productsProcessed": 15,
+  "officialSourcesFound": 28,
+  "documentsFound": 159,
+  "requiredDocumentsMissing": 45,
   "productsReadyForExtraction": 0,
-  "productsBlocked": 20,
-  "resolvedDocumentLinksFound": 7917,
-  "productsWithResolvedDocuments": 9,
-  "productsStillMissingDocuments": 20,
+  "productsBlocked": 15,
+  "resolvedDocumentLinksFound": 146,
+  "productsWithResolvedDocuments": 15,
+  "productsStillMissingDocuments": 15,
   "providersUsed": [
-    "ge-healthcare"
+    "default"
   ],
   "productsPerProvider": {
-    "ge-healthcare": 20
+    "default": 15
   },
-  "fallbackProviderProducts": 0,
-  "totalCandidateUrls": 20,
-  "totalNormalizedUrls": 20,
+  "fallbackProviderProducts": 15,
+  "totalCandidateUrls": 28,
+  "totalNormalizedUrls": 28,
   "totalDuplicatesRemoved": 0,
   "totalBlockedUrls": 0,
   "unsupportedPortalsDetected": 0,
-  "providerWarnings": [],
+  "providerWarnings": [
+    "No configured provider matched manufacturer “Dixion”; DefaultProvider was used without changing trust tier."
+  ],
   "productReports": [
     {
-      "productSlug": "wave2-ge-healthcare-products-index",
+      "productSlug": "wave2-dixion-products-index",
       "sources": 1,
-      "documents": 881,
-      "resolvedDocumentLinks": 881,
-      "missingDocumentTasks": 1,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-ge-logiq-p9",
-      "sources": 1,
-      "documents": 0,
-      "resolvedDocumentLinks": 0,
+      "documents": 33,
+      "resolvedDocumentLinks": 33,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-ge-logiq-p10",
-      "sources": 1,
-      "documents": 0,
-      "resolvedDocumentLinks": 0,
+      "productSlug": "wave2-dixion-remodix-9507",
+      "sources": 2,
+      "documents": 9,
+      "resolvedDocumentLinks": 8,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-ge-logiq-e10",
-      "sources": 1,
-      "documents": 876,
-      "resolvedDocumentLinks": 876,
-      "missingDocumentTasks": 1,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-ge-logiq-e10s",
-      "sources": 1,
-      "documents": 876,
-      "resolvedDocumentLinks": 876,
-      "missingDocumentTasks": 1,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-ge-logiq-fortis",
-      "sources": 1,
-      "documents": 0,
-      "resolvedDocumentLinks": 0,
+      "productSlug": "wave2-dixion-vacus-7018",
+      "sources": 2,
+      "documents": 10,
+      "resolvedDocumentLinks": 9,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-ge-versana-active",
-      "sources": 1,
-      "documents": 878,
-      "resolvedDocumentLinks": 878,
-      "missingDocumentTasks": 1,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-ge-versana-balance",
-      "sources": 1,
-      "documents": 878,
-      "resolvedDocumentLinks": 878,
-      "missingDocumentTasks": 1,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-ge-versana-premier",
-      "sources": 1,
-      "documents": 878,
-      "resolvedDocumentLinks": 878,
-      "missingDocumentTasks": 1,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-ge-vivid-t8",
-      "sources": 1,
-      "documents": 0,
-      "resolvedDocumentLinks": 0,
+      "productSlug": "wave2-dixion-vacus-7308",
+      "sources": 2,
+      "documents": 10,
+      "resolvedDocumentLinks": 9,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-ge-vivid-t9",
-      "sources": 1,
-      "documents": 0,
-      "resolvedDocumentLinks": 0,
+      "productSlug": "wave2-dixion-4700",
+      "sources": 2,
+      "documents": 13,
+      "resolvedDocumentLinks": 12,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-ge-vivid-s70n",
-      "sources": 1,
-      "documents": 0,
-      "resolvedDocumentLinks": 0,
+      "productSlug": "wave2-dixion-practice-family",
+      "sources": 2,
+      "documents": 8,
+      "resolvedDocumentLinks": 7,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-ge-vivid-e95",
-      "sources": 1,
-      "documents": 0,
-      "resolvedDocumentLinks": 0,
+      "productSlug": "wave2-dixion-storm-family",
+      "sources": 2,
+      "documents": 8,
+      "resolvedDocumentLinks": 7,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-ge-venue-fit",
-      "sources": 1,
-      "documents": 0,
-      "resolvedDocumentLinks": 0,
+      "productSlug": "wave2-dixion-convelar-family",
+      "sources": 2,
+      "documents": 8,
+      "resolvedDocumentLinks": 7,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-ge-venue-go",
-      "sources": 1,
-      "documents": 884,
-      "resolvedDocumentLinks": 884,
-      "missingDocumentTasks": 1,
+      "productSlug": "wave2-dixion-altafor-plus-family",
+      "sources": 2,
+      "documents": 8,
+      "resolvedDocumentLinks": 7,
+      "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-ge-carescape-b450",
-      "sources": 1,
-      "documents": 882,
-      "resolvedDocumentLinks": 881,
-      "missingDocumentTasks": 1,
+      "productSlug": "wave2-dixion-instilar-family",
+      "sources": 2,
+      "documents": 8,
+      "resolvedDocumentLinks": 7,
+      "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-ge-carescape-b650",
-      "sources": 1,
-      "documents": 1,
-      "resolvedDocumentLinks": 0,
-      "missingDocumentTasks": 2,
+      "productSlug": "wave2-dixion-babyguard-1120",
+      "sources": 2,
+      "documents": 9,
+      "resolvedDocumentLinks": 8,
+      "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-ge-carescape-b850",
-      "sources": 1,
-      "documents": 1,
-      "resolvedDocumentLinks": 0,
-      "missingDocumentTasks": 2,
+      "productSlug": "wave2-dixion-phototherapy-xhz-family",
+      "sources": 2,
+      "documents": 8,
+      "resolvedDocumentLinks": 7,
+      "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-ge-aisys-cs2",
-      "sources": 1,
-      "documents": 885,
-      "resolvedDocumentLinks": 885,
-      "missingDocumentTasks": 1,
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "sources": 2,
+      "documents": 10,
+      "resolvedDocumentLinks": 9,
+      "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-ge-aespire-view",
+      "productSlug": "wave2-dixion-heart-pad",
+      "sources": 2,
+      "documents": 10,
+      "resolvedDocumentLinks": 9,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-dixion-endoscopy-portfolio",
       "sources": 1,
-      "documents": 1,
-      "resolvedDocumentLinks": 0,
-      "missingDocumentTasks": 2,
+      "documents": 7,
+      "resolvedDocumentLinks": 7,
+      "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     }
   ],

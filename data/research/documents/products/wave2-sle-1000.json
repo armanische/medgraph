@@ -1,0 +1,26 @@
+{
+  "product": {
+    "productSlug": "wave2-sle-1000",
+    "manufacturer": "SLE",
+    "productName": "SLE1000 CPAP Driver",
+    "model": "SLE1000",
+    "category": "Neonatal respiratory support"
+  },
+  "attemptedDownloads": [],
+  "downloadedArtifacts": [],
+  "failedDownloads": [],
+  "skippedDocuments": [],
+  "documentVersions": [],
+  "warnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/product/sle1000-ncpap-generator/: HTTP 403",
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/product/sle1000/: HTTP 403",
+    "Discovery creates candidates only; no verified claims or publication.",
+    "No DocumentCandidate records were available for download."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": false,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}

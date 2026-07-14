@@ -1,7 +1,7 @@
 # Philips Wave 2 Execution Report
 
-**Task:** MVP-043 — Philips Wave 2 Full Import  
-**Scope:** official Philips sources only  
+**Task:** MVP-043 — Philips Wave 2 Full Import
+**Scope:** official Philips sources only
 **Status:** candidate-only pipeline executed; no verification or publication changes
 
 ## Executive summary

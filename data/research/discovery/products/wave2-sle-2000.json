@@ -1,0 +1,419 @@
+{
+  "product": {
+    "productSlug": "wave2-sle-2000",
+    "manufacturer": "SLE",
+    "productName": "SLE2000 Infant Ventilator",
+    "model": "SLE2000",
+    "category": "Neonatal ventilator"
+  },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [
+      "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf",
+      "https://www.gehealthcare.com/en-in/products/ventilators/sle2000"
+    ],
+    "normalizedUrls": [
+      "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf",
+      "https://www.gehealthcare.com/en-in/products/ventilators/sle2000"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “SLE”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_fe372ee75bd9585efa5fbf46",
+      "productSlug": "wave2-sle-2000",
+      "manufacturer": "SLE",
+      "productName": "SLE2000 Infant Ventilator",
+      "sourceType": "manufacturer_document",
+      "url": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf",
+      "title": "SLE2000 official partner brochure",
+      "snippet": "Official GE HealthCare India product brochure; legacy regional evidence.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "manufacturer-hosted document candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official GE HealthCare India product brochure; legacy regional evidence."
+      ]
+    },
+    {
+      "sourceId": "source_63fdfd927882724cafc9c244",
+      "productSlug": "wave2-sle-2000",
+      "manufacturer": "SLE",
+      "productName": "SLE2000 Infant Ventilator",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.gehealthcare.com/en-in/products/ventilators/sle2000",
+      "title": "SLE2000 official partner product page",
+      "snippet": "Official regional partner page; product availability is market dependent and treated as legacy evidence.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official regional partner page; product availability is market dependent and treated as legacy evidence."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_91f83b900a24e97ea4421963",
+      "sourceId": "source_63fdfd927882724cafc9c244",
+      "productSlug": "wave2-sle-2000",
+      "documentType": "unknown",
+      "url": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf",
+      "title": "Unclassified manufacturer document",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ge",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.gehealthcare.com/en-in/products/ventilators/sle2000",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_ca22deb39664190e96113075",
+      "sourceId": "source_63fdfd927882724cafc9c244",
+      "productSlug": "wave2-sle-2000",
+      "documentType": "unknown",
+      "url": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle500-smart-and-sle500-easy-compressors.pdf",
+      "title": "Unclassified manufacturer document",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ge",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.gehealthcare.com/en-in/products/ventilators/sle2000",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_0b0bcec4b841ff323d2099a0",
+      "sourceId": "source_fe372ee75bd9585efa5fbf46",
+      "productSlug": "wave2-sle-2000",
+      "documentType": "brochure",
+      "url": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf",
+      "title": "SLE2000 official partner brochure",
+      "language": null,
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "source URL is itself a document candidate"
+      ]
+    },
+    {
+      "documentId": "document_134e33c3382107c2e5b70b23",
+      "sourceId": "source_63fdfd927882724cafc9c244",
+      "productSlug": "wave2-sle-2000",
+      "documentType": "unknown",
+      "url": "https://www.gehealthcare.com/content/gehealthcare/in/en/products/contrast-media/support.html",
+      "title": "Support",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ge",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.gehealthcare.com/en-in/products/contrast-media",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_3d4c57dacf30aef706ca8f49",
+      "sourceId": "source_63fdfd927882724cafc9c244",
+      "productSlug": "wave2-sle-2000",
+      "documentType": "unknown",
+      "url": "https://www.gehealthcare.com/en-in/products/contrast-media/support",
+      "title": "Support",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ge",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.gehealthcare.com/en-in/products/contrast-media",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1795a56a8f0c6abc1ea43edf",
+      "sourceId": "source_63fdfd927882724cafc9c244",
+      "productSlug": "wave2-sle-2000",
+      "documentType": "unknown",
+      "url": "https://www.gehealthcare.com/en-in/products/contrast-media",
+      "title": "Try Again",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ge",
+        "resolver_confidence:80",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.gehealthcare.com/en-in/products/contrast-media",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_e497fd9b6c44cc09d3ad2054",
+      "sourceId": "source_63fdfd927882724cafc9c244",
+      "productSlug": "wave2-sle-2000",
+      "documentType": "unknown",
+      "url": "https://www.gehealthcare.com/en-in/products/contrast-media/products",
+      "title": "Visit Products ico-caret-right",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ge",
+        "resolver_confidence:80",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.gehealthcare.com/en-in/products/contrast-media",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_91f83b900a24e97ea4421963",
+      "url": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle2000/sle2000-english-2018.pdf",
+      "title": "Unclassified manufacturer document",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_63fdfd927882724cafc9c244",
+      "linkText": "",
+      "resolvedFromUrl": "https://www.gehealthcare.com/en-in/products/ventilators/sle2000",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_ca22deb39664190e96113075",
+      "url": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle500-smart-and-sle500-easy-compressors.pdf",
+      "title": "Unclassified manufacturer document",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_63fdfd927882724cafc9c244",
+      "linkText": "",
+      "resolvedFromUrl": "https://www.gehealthcare.com/en-in/products/ventilators/sle2000",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_134e33c3382107c2e5b70b23",
+      "url": "https://www.gehealthcare.com/content/gehealthcare/in/en/products/contrast-media/support.html",
+      "title": "Support",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_63fdfd927882724cafc9c244",
+      "linkText": "Support",
+      "resolvedFromUrl": "https://www.gehealthcare.com/en-in/products/contrast-media",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1795a56a8f0c6abc1ea43edf",
+      "url": "https://www.gehealthcare.com/en-in/products/contrast-media",
+      "title": "Try Again",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_63fdfd927882724cafc9c244",
+      "linkText": "Try Again",
+      "resolvedFromUrl": "https://www.gehealthcare.com/en-in/products/contrast-media",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_e497fd9b6c44cc09d3ad2054",
+      "url": "https://www.gehealthcare.com/en-in/products/contrast-media/products",
+      "title": "Visit Products ico-caret-right",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_63fdfd927882724cafc9c244",
+      "linkText": "Visit Products ico-caret-right",
+      "resolvedFromUrl": "https://www.gehealthcare.com/en-in/products/contrast-media",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_3d4c57dacf30aef706ca8f49",
+      "url": "https://www.gehealthcare.com/en-in/products/contrast-media/support",
+      "title": "Support",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_63fdfd927882724cafc9c244",
+      "linkText": "Support",
+      "resolvedFromUrl": "https://www.gehealthcare.com/en-in/products/contrast-media",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver adapter used: ge",
+    "Resolver rejected offsite document URL: https://www.gehccommandcenter.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.in/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.advamed.org/member-center/resource-library/advamed-code-of-ethics-on-interactions-with-health-care-professionals-in-india/",
+    "Resolver rejected offsite document URL: https://www.gehccommandcenter.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.in/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.advamed.org/member-center/resource-library/advamed-code-of-ethics-on-interactions-with-health-care-professionals-in-india/",
+    "Resolver rejected unsafe document URL: tel:1800-102-2977",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHCIndia/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/@GEHealthCareIndiaYT",
+    "Resolver rejected offsite document URL: https://www.gehccommandcenter.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.in/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.advamed.org/member-center/resource-library/advamed-code-of-ethics-on-interactions-with-health-care-professionals-in-india/",
+    "Resolver rejected offsite document URL: https://www.gehccommandcenter.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.in/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.advamed.org/member-center/resource-library/advamed-code-of-ethics-on-interactions-with-health-care-professionals-in-india/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHCIndia/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/@GEHealthCareIndiaYT",
+    "resolver=ge; attempts=2; matchedLinks=6; classifiedDocuments={\"Unknown\":20}; confidenceDistribution={\"80\":15,\"90\":3,\"100\":2}; duplicatesRemoved=14"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-sle-2000",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-sle-2000",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-sle-2000",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 2,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 2,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver adapter used: ge",
+    "Resolver rejected offsite document URL: https://www.gehccommandcenter.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.in/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.advamed.org/member-center/resource-library/advamed-code-of-ethics-on-interactions-with-health-care-professionals-in-india/",
+    "Resolver rejected offsite document URL: https://www.gehccommandcenter.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.in/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.advamed.org/member-center/resource-library/advamed-code-of-ethics-on-interactions-with-health-care-professionals-in-india/",
+    "Resolver rejected unsafe document URL: tel:1800-102-2977",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHCIndia/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/@GEHealthCareIndiaYT",
+    "Resolver rejected offsite document URL: https://www.gehccommandcenter.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.in/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.advamed.org/member-center/resource-library/advamed-code-of-ethics-on-interactions-with-health-care-professionals-in-india/",
+    "Resolver rejected offsite document URL: https://www.gehccommandcenter.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.in/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.advamed.org/member-center/resource-library/advamed-code-of-ethics-on-interactions-with-health-care-professionals-in-india/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHCIndia/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/@GEHealthCareIndiaYT",
+    "resolver=ge; attempts=2; matchedLinks=6; classifiedDocuments={\"Unknown\":20}; confidenceDistribution={\"80\":15,\"90\":3,\"100\":2}; duplicatesRemoved=14",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "product": {
+    "productSlug": "wave2-sle-5000",
+    "manufacturer": "SLE",
+    "productName": "SLE5000 Neonatal Ventilator",
+    "model": "SLE5000",
+    "category": "Neonatal ventilator"
+  },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [
+      "https://inspirationhealthcaregroup.com/product/sle5000/",
+      "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf"
+    ],
+    "normalizedUrls": [
+      "https://inspirationhealthcaregroup.com/product/sle5000",
+      "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “SLE”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_b5d24045bdd8408fbcdd273c",
+      "productSlug": "wave2-sle-5000",
+      "manufacturer": "SLE",
+      "productName": "SLE5000 Neonatal Ventilator",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://inspirationhealthcaregroup.com/product/sle5000/",
+      "title": "SLE5000 official legacy product page",
+      "snippet": "Official page remains online; the owner annual report identifies SLE5000 as discontinued/end-of-life.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official page remains online; the owner annual report identifies SLE5000 as discontinued/end-of-life."
+      ]
+    },
+    {
+      "sourceId": "source_b39bc38fa997eb602d949372",
+      "productSlug": "wave2-sle-5000",
+      "manufacturer": "SLE",
+      "productName": "SLE5000 Neonatal Ventilator",
+      "sourceType": "manufacturer_document",
+      "url": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "title": "SLE5000 official partner brochure",
+      "snippet": "Official GE HealthCare India brochure; legacy product evidence only.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "manufacturer-hosted document candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official GE HealthCare India brochure; legacy product evidence only."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_3cae73e9e66b4cc99634c894",
+      "sourceId": "source_b39bc38fa997eb602d949372",
+      "productSlug": "wave2-sle-5000",
+      "documentType": "brochure",
+      "url": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "title": "SLE5000 official partner brochure",
+      "language": null,
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "source URL is itself a document candidate"
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [],
+  "resolverWarnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/product/sle5000/: HTTP 403"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-sle-5000",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-sle-5000",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-sle-5000",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 2,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 2,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/product/sle5000/: HTTP 403",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

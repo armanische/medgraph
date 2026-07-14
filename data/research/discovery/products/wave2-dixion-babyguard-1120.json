@@ -1,0 +1,417 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-babyguard-1120",
+    "manufacturer": "Dixion",
+    "productName": "DIXION Babyguard 1120",
+    "model": "Babyguard 1120",
+    "category": "Неонатальное оборудование"
+  },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [
+      "https://dixion.ru/goods/BabyGuard-I-1120.html",
+      "https://dixion.ru/upload/iblock/418/g93oe4vdj2bevwyh9r5i80mcm81cnlok/Babyguard_1120.pdf"
+    ],
+    "normalizedUrls": [
+      "https://dixion.ru/goods/BabyGuard-I-1120.html",
+      "https://dixion.ru/upload/iblock/418/g93oe4vdj2bevwyh9r5i80mcm81cnlok/Babyguard_1120.pdf"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “Dixion”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_8f7ba855ff09e77c96bebe4f",
+      "productSlug": "wave2-dixion-babyguard-1120",
+      "manufacturer": "Dixion",
+      "productName": "DIXION Babyguard 1120",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://dixion.ru/goods/BabyGuard-I-1120.html",
+      "title": "DIXION Babyguard 1120 official product page",
+      "snippet": "Live official incubator product page.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Live official incubator product page."
+      ]
+    },
+    {
+      "sourceId": "source_f94a09092e92f9a9148b8dc4",
+      "productSlug": "wave2-dixion-babyguard-1120",
+      "manufacturer": "Dixion",
+      "productName": "DIXION Babyguard 1120",
+      "sourceType": "manufacturer_document",
+      "url": "https://dixion.ru/upload/iblock/418/g93oe4vdj2bevwyh9r5i80mcm81cnlok/Babyguard_1120.pdf",
+      "title": "DIXION Babyguard 1120 official brochure",
+      "snippet": "Official model catalogue PDF.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "manufacturer-hosted document candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official model catalogue PDF."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_d886c0cde25ba807b8693adc",
+      "sourceId": "source_8f7ba855ff09e77c96bebe4f",
+      "productSlug": "wave2-dixion-babyguard-1120",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/BabyGuard-I-1120.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_1c990111456c2bc408807695",
+      "sourceId": "source_8f7ba855ff09e77c96bebe4f",
+      "productSlug": "wave2-dixion-babyguard-1120",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/documents/Dixion_Neonatology_.pdf",
+      "title": "Скачать буклет «‎Оборудование для неонатологии Dixion»",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/goods/BabyGuard-I-1120.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_3615f3745edf23557daa776d",
+      "sourceId": "source_8f7ba855ff09e77c96bebe4f",
+      "productSlug": "wave2-dixion-babyguard-1120",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/goods/BabyGuard-I-1120.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_8c830ac86ad5f0be8c2f9bf3",
+      "sourceId": "source_f94a09092e92f9a9148b8dc4",
+      "productSlug": "wave2-dixion-babyguard-1120",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/upload/iblock/418/g93oe4vdj2bevwyh9r5i80mcm81cnlok/Babyguard_1120.pdf",
+      "title": "DIXION Babyguard 1120 official brochure",
+      "language": null,
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "source URL is itself a document candidate"
+      ]
+    },
+    {
+      "documentId": "document_685a06a1ec532db6a0098fd6",
+      "sourceId": "source_8f7ba855ff09e77c96bebe4f",
+      "productSlug": "wave2-dixion-babyguard-1120",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/BabyGuard-I-1120.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_4d5cc1ff68fc3e10f7150a0e",
+      "sourceId": "source_8f7ba855ff09e77c96bebe4f",
+      "productSlug": "wave2-dixion-babyguard-1120",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/BabyGuard-I-1120.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_37b424ac3e75edda1aa1ca33",
+      "sourceId": "source_8f7ba855ff09e77c96bebe4f",
+      "productSlug": "wave2-dixion-babyguard-1120",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/BabyGuard-I-1120.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_9f3f6c122d8b26d2a9e85292",
+      "sourceId": "source_8f7ba855ff09e77c96bebe4f",
+      "productSlug": "wave2-dixion-babyguard-1120",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/BabyGuard-I-1120.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_f8ec1aff179684b84b5afb65",
+      "sourceId": "source_8f7ba855ff09e77c96bebe4f",
+      "productSlug": "wave2-dixion-babyguard-1120",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Manufacturer Brochure",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/BabyGuard-I-1120.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_685a06a1ec532db6a0098fd6",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_8f7ba855ff09e77c96bebe4f",
+      "linkText": "Медицинское оборудование",
+      "resolvedFromUrl": "https://dixion.ru/goods/BabyGuard-I-1120.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_4d5cc1ff68fc3e10f7150a0e",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_8f7ba855ff09e77c96bebe4f",
+      "linkText": "Каталоги оборудования",
+      "resolvedFromUrl": "https://dixion.ru/goods/BabyGuard-I-1120.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_37b424ac3e75edda1aa1ca33",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_8f7ba855ff09e77c96bebe4f",
+      "linkText": "Новинки оборудования",
+      "resolvedFromUrl": "https://dixion.ru/goods/BabyGuard-I-1120.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_9f3f6c122d8b26d2a9e85292",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_8f7ba855ff09e77c96bebe4f",
+      "linkText": "Скоро в продаже",
+      "resolvedFromUrl": "https://dixion.ru/goods/BabyGuard-I-1120.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_f8ec1aff179684b84b5afb65",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Manufacturer Brochure",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_8f7ba855ff09e77c96bebe4f",
+      "linkText": "",
+      "resolvedFromUrl": "https://dixion.ru/goods/BabyGuard-I-1120.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_d886c0cde25ba807b8693adc",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_8f7ba855ff09e77c96bebe4f",
+      "linkText": "Скачать каталог в формате PDF",
+      "resolvedFromUrl": "https://dixion.ru/goods/BabyGuard-I-1120.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_1c990111456c2bc408807695",
+      "url": "https://dixion.ru/upload/documents/Dixion_Neonatology_.pdf",
+      "title": "Скачать буклет «‎Оборудование для неонатологии Dixion»",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_8f7ba855ff09e77c96bebe4f",
+      "linkText": "Скачать буклет «‎Оборудование для неонатологии Dixion»",
+      "resolvedFromUrl": "https://dixion.ru/goods/BabyGuard-I-1120.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_3615f3745edf23557daa776d",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_8f7ba855ff09e77c96bebe4f",
+      "linkText": "Скачать прайс-лист",
+      "resolvedFromUrl": "https://dixion.ru/goods/BabyGuard-I-1120.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=8; classifiedDocuments={\"Brochure\":11,\"Unknown\":3}; confidenceDistribution={\"80\":9,\"100\":5}; duplicatesRemoved=6"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-dixion-babyguard-1120",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-babyguard-1120",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-babyguard-1120",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 2,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 2,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=8; classifiedDocuments={\"Brochure\":11,\"Unknown\":3}; confidenceDistribution={\"80\":9,\"100\":5}; duplicatesRemoved=6",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

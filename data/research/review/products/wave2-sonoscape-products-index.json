@@ -1,0 +1,167 @@
+{
+  "product": {
+    "productSlug": "wave2-sonoscape-products-index",
+    "manufacturer": "SonoScape",
+    "productName": "Wave 2 SonoScape products index",
+    "model": "Wave 2 discovery index",
+    "category": "Wave 2 source discovery"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_5ffd73ccb5b54213a8c1e83c",
+      "productSlug": "wave2-sonoscape-products-index",
+      "productTitle": "Wave 2 SonoScape products index",
+      "claimCandidateId": "claim_5fd631c3c968610d7a70187c",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Privacy Policy",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_fc4b7b6c84d46ea58c2dc5fd"
+      ],
+      "documentVersionIds": [
+        "document_version_9b38b43feedd1c1bc51765e5"
+      ],
+      "sourceUrls": [
+        "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_f5307fa3e697beb9b9944983",
+      "productSlug": "wave2-sonoscape-products-index",
+      "productTitle": "Wave 2 SonoScape products index",
+      "claimCandidateId": "claim_5535cbba56029a4461740460",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_b2822faba9d4bdb4b150ecf0"
+      ],
+      "documentVersionIds": [
+        "document_version_9b38b43feedd1c1bc51765e5"
+      ],
+      "sourceUrls": [
+        "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_5ffd73ccb5b54213a8c1e83c",
+        "productSlug": "wave2-sonoscape-products-index",
+        "productTitle": "Wave 2 SonoScape products index",
+        "claimCandidateId": "claim_5fd631c3c968610d7a70187c",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Privacy Policy",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_fc4b7b6c84d46ea58c2dc5fd"
+        ],
+        "documentVersionIds": [
+          "document_version_9b38b43feedd1c1bc51765e5"
+        ],
+        "sourceUrls": [
+          "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_f5307fa3e697beb9b9944983",
+        "productSlug": "wave2-sonoscape-products-index",
+        "productTitle": "Wave 2 SonoScape products index",
+        "claimCandidateId": "claim_5535cbba56029a4461740460",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_b2822faba9d4bdb4b150ecf0"
+        ],
+        "documentVersionIds": [
+          "document_version_9b38b43feedd1c1bc51765e5"
+        ],
+        "sourceUrls": [
+          "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_9b38b43feedd1c1bc51765e5",
+      "documentType": "unknown",
+      "title": "Privacy Policy",
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "sha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c"
+    }
+  ],
+  "missingEvidence": [],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected offsite document URL: https://www.sonoscape.com.cn/",
+    "Resolver rejected offsite document URL: https://www.sonoscape.de/",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected unsafe document URL: mailto:market@sonoscape.net",
+    "Resolver rejected offsite document URL: https://www.facebook.com/sonoscapemedicalcorp",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/sonoscape_co._ltd?trk=company_logo",
+    "Resolver rejected offsite document URL: https://beian.miit.gov.cn/",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "resolver=default; attempts=1; matchedLinks=1; classifiedDocuments={\"Unknown\":1}; confidenceDistribution={\"100\":1}; duplicatesRemoved=0",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

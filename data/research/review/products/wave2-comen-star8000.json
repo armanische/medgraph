@@ -1,0 +1,26 @@
+{
+  "product": {
+    "productSlug": "wave2-comen-star8000",
+    "manufacturer": "Comen",
+    "productName": "Comen STAR8000",
+    "model": "STAR8000",
+    "category": "Монитор пациента"
+  },
+  "reviewItems": [],
+  "groupedByClaimType": {},
+  "sourceDocumentSummary": [],
+  "missingEvidence": [],
+  "recommendedReviewerAction": "No reviewable candidate claims yet. Collect more evidence before review.",
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver retry skipped https://www.comen.com/RDC/mediaVideo: HTTP 500",
+    "Resolver rejected unsafe document URL: http://en.comen.com/",
+    "Resolver rejected unsafe document URL: http://fr.comen.com/",
+    "Resolver rejected unsafe document URL: http://es.comen.com/",
+    "Resolver rejected offsite document URL: https://szcomen.zhiye.com/",
+    "Resolver rejected offsite document URL: https://szcomen.zhiye.com/campus",
+    "Resolver rejected offsite document URL: https://szcomen.zhiye.com/social",
+    "resolver=default; attempts=2; matchedLinks=1; classifiedDocuments={\"Unknown\":1}; confidenceDistribution={\"90\":1}; duplicatesRemoved=0",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

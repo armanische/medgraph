@@ -1,0 +1,167 @@
+{
+  "product": {
+    "productSlug": "wave2-sonoscape-p40-elite",
+    "manufacturer": "SonoScape",
+    "productName": "SonoScape P40 Elite",
+    "model": "P40 Elite",
+    "category": "УЗИ аппараты"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_12c38bfca38ade374dbba187",
+      "productSlug": "wave2-sonoscape-p40-elite",
+      "productTitle": "SonoScape P40 Elite",
+      "claimCandidateId": "claim_c4aad923c270c9581fe62e54",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Privacy Policy",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_29d3f47b3ee5f977794f562d"
+      ],
+      "documentVersionIds": [
+        "document_version_a5b73076a1bf2310a59feb05"
+      ],
+      "sourceUrls": [
+        "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b0081a176c8dcc15252c7751",
+      "productSlug": "wave2-sonoscape-p40-elite",
+      "productTitle": "SonoScape P40 Elite",
+      "claimCandidateId": "claim_168ebd824c3d39071c9f399d",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_f7642373464e6e0d6f68704b"
+      ],
+      "documentVersionIds": [
+        "document_version_a5b73076a1bf2310a59feb05"
+      ],
+      "sourceUrls": [
+        "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_12c38bfca38ade374dbba187",
+        "productSlug": "wave2-sonoscape-p40-elite",
+        "productTitle": "SonoScape P40 Elite",
+        "claimCandidateId": "claim_c4aad923c270c9581fe62e54",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Privacy Policy",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_29d3f47b3ee5f977794f562d"
+        ],
+        "documentVersionIds": [
+          "document_version_a5b73076a1bf2310a59feb05"
+        ],
+        "sourceUrls": [
+          "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_b0081a176c8dcc15252c7751",
+        "productSlug": "wave2-sonoscape-p40-elite",
+        "productTitle": "SonoScape P40 Elite",
+        "claimCandidateId": "claim_168ebd824c3d39071c9f399d",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_f7642373464e6e0d6f68704b"
+        ],
+        "documentVersionIds": [
+          "document_version_a5b73076a1bf2310a59feb05"
+        ],
+        "sourceUrls": [
+          "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_a5b73076a1bf2310a59feb05",
+      "documentType": "unknown",
+      "title": "Privacy Policy",
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "sha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c"
+    }
+  ],
+  "missingEvidence": [],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected offsite document URL: https://www.sonoscape.com.cn/",
+    "Resolver rejected offsite document URL: https://www.sonoscape.de/",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected unsafe document URL: mailto:market@sonoscape.net",
+    "Resolver rejected offsite document URL: https://www.facebook.com/sonoscapemedicalcorp",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/sonoscape_co._ltd?trk=company_logo",
+    "Resolver rejected offsite document URL: https://beian.miit.gov.cn/",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "resolver=default; attempts=1; matchedLinks=1; classifiedDocuments={\"Unknown\":1}; confidenceDistribution={\"100\":1}; duplicatesRemoved=0",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

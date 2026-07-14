@@ -1,0 +1,533 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-heart-pad",
+    "manufacturer": "Dixion",
+    "productName": "DIXION Heart PAD",
+    "model": "Heart PAD",
+    "category": "Реанимационное оборудование"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_f0f7daafcd0ff55a22563b43",
+      "documentCandidateId": "document_dada10ae236d8293e01a089c",
+      "sourceId": "source_dc865b8ba3037802ed254643",
+      "productSlug": "wave2-dixion-heart-pad",
+      "documentKey": "trusted-document:document_dada10ae236d8293e01a089c",
+      "documentType": "unknown",
+      "title": "Скачать прайс-лист",
+      "language": null,
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "contentType": "application/pdf",
+      "byteSize": 178281,
+      "filePath": "data/research/artifacts/artifacts/sha256/1c/da/1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_d4e6bf14507cf1907a1cf25e",
+      "documentCandidateId": "document_dbbcf8f63a3bbba8905f9e8d",
+      "sourceId": "source_dc865b8ba3037802ed254643",
+      "productSlug": "wave2-dixion-heart-pad",
+      "documentKey": "trusted-document:document_dbbcf8f63a3bbba8905f9e8d",
+      "documentType": "unknown",
+      "title": "Скачать буклет «‎Дефибриллятор Dixion Heart Pad»",
+      "language": null,
+      "sourceUrl": "https://dixion.ru/upload/iblock/0c7/heart_pad-.pdf",
+      "sha256": "2bad61f764038a279dfd4e959c30f67d7ec1a686851399b22d10f22766be883d",
+      "contentType": "application/pdf",
+      "byteSize": 1222267,
+      "filePath": "data/research/artifacts/artifacts/sha256/2b/ad/2bad61f764038a279dfd4e959c30f67d7ec1a686851399b22d10f22766be883d.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_7c74189d6bb8a4f4062e2a58",
+      "documentCandidateId": "document_5f2861ab451b9bfed37bdd0e",
+      "sourceId": "source_e628d07851df991bc69e6c23",
+      "productSlug": "wave2-dixion-heart-pad",
+      "documentKey": "trusted-document:document_5f2861ab451b9bfed37bdd0e",
+      "documentType": "brochure",
+      "title": "DIXION Heart PAD official brochure",
+      "language": null,
+      "sourceUrl": "https://dixion.ru/upload/iblock/0c7/heart_pad-.pdf",
+      "sha256": "2bad61f764038a279dfd4e959c30f67d7ec1a686851399b22d10f22766be883d",
+      "contentType": "application/pdf",
+      "byteSize": 1222267,
+      "filePath": "data/research/artifacts/artifacts/sha256/2b/ad/2bad61f764038a279dfd4e959c30f67d7ec1a686851399b22d10f22766be883d.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_539eae5c27d141e50ea19e58",
+      "productSlug": "wave2-dixion-heart-pad",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Скачать прайс-лист",
+      "unit": null,
+      "rawText": "Document title: Скачать прайс-лист",
+      "documentVersionId": "document_version_f0f7daafcd0ff55a22563b43",
+      "documentCandidateId": "document_dada10ae236d8293e01a089c",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_b3b1795e613d9ed34cf1497d",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_63510065a3a4df4dc38d1408",
+      "productSlug": "wave2-dixion-heart-pad",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_f0f7daafcd0ff55a22563b43",
+      "documentCandidateId": "document_dada10ae236d8293e01a089c",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_ab48d2ba846ec21bdcf717e3",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_d61af45a5fa03c619f3506a2",
+      "productSlug": "wave2-dixion-heart-pad",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Скачать буклет «‎Дефибриллятор Dixion Heart Pad»",
+      "unit": null,
+      "rawText": "Document title: Скачать буклет «‎Дефибриллятор Dixion Heart Pad»",
+      "documentVersionId": "document_version_d4e6bf14507cf1907a1cf25e",
+      "documentCandidateId": "document_dbbcf8f63a3bbba8905f9e8d",
+      "documentSha256": "2bad61f764038a279dfd4e959c30f67d7ec1a686851399b22d10f22766be883d",
+      "sourceUrl": "https://dixion.ru/upload/iblock/0c7/heart_pad-.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_420c9e795585395d42e3245e",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_a794830f024eb8cb8eb955fc",
+      "productSlug": "wave2-dixion-heart-pad",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_d4e6bf14507cf1907a1cf25e",
+      "documentCandidateId": "document_dbbcf8f63a3bbba8905f9e8d",
+      "documentSha256": "2bad61f764038a279dfd4e959c30f67d7ec1a686851399b22d10f22766be883d",
+      "sourceUrl": "https://dixion.ru/upload/iblock/0c7/heart_pad-.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_ba401cec39f2310ff953bdf2",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_5605827a58b4d2282925e44a",
+      "productSlug": "wave2-dixion-heart-pad",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "DIXION Heart PAD official brochure",
+      "unit": null,
+      "rawText": "Document title: DIXION Heart PAD official brochure",
+      "documentVersionId": "document_version_7c74189d6bb8a4f4062e2a58",
+      "documentCandidateId": "document_5f2861ab451b9bfed37bdd0e",
+      "documentSha256": "2bad61f764038a279dfd4e959c30f67d7ec1a686851399b22d10f22766be883d",
+      "sourceUrl": "https://dixion.ru/upload/iblock/0c7/heart_pad-.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_0126e351cfd1f191ac4895d8",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_2763d971015b1f2f6c9d2e19",
+      "productSlug": "wave2-dixion-heart-pad",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_7c74189d6bb8a4f4062e2a58",
+      "documentCandidateId": "document_5f2861ab451b9bfed37bdd0e",
+      "documentSha256": "2bad61f764038a279dfd4e959c30f67d7ec1a686851399b22d10f22766be883d",
+      "sourceUrl": "https://dixion.ru/upload/iblock/0c7/heart_pad-.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_ef6d427cce0266dc790fd4ca",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_b3b1795e613d9ed34cf1497d",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_f0f7daafcd0ff55a22563b43",
+      "documentCandidateId": "document_dada10ae236d8293e01a089c",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Скачать прайс-лист",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ab48d2ba846ec21bdcf717e3",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_f0f7daafcd0ff55a22563b43",
+      "documentCandidateId": "document_dada10ae236d8293e01a089c",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_420c9e795585395d42e3245e",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_d4e6bf14507cf1907a1cf25e",
+      "documentCandidateId": "document_dbbcf8f63a3bbba8905f9e8d",
+      "sha256": "2bad61f764038a279dfd4e959c30f67d7ec1a686851399b22d10f22766be883d",
+      "sourceUrl": "https://dixion.ru/upload/iblock/0c7/heart_pad-.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Скачать буклет «‎Дефибриллятор Dixion Heart Pad»",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ba401cec39f2310ff953bdf2",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_d4e6bf14507cf1907a1cf25e",
+      "documentCandidateId": "document_dbbcf8f63a3bbba8905f9e8d",
+      "sha256": "2bad61f764038a279dfd4e959c30f67d7ec1a686851399b22d10f22766be883d",
+      "sourceUrl": "https://dixion.ru/upload/iblock/0c7/heart_pad-.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_0126e351cfd1f191ac4895d8",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_7c74189d6bb8a4f4062e2a58",
+      "documentCandidateId": "document_5f2861ab451b9bfed37bdd0e",
+      "sha256": "2bad61f764038a279dfd4e959c30f67d7ec1a686851399b22d10f22766be883d",
+      "sourceUrl": "https://dixion.ru/upload/iblock/0c7/heart_pad-.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: DIXION Heart PAD official brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ef6d427cce0266dc790fd4ca",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_7c74189d6bb8a4f4062e2a58",
+      "documentCandidateId": "document_5f2861ab451b9bfed37bdd0e",
+      "sha256": "2bad61f764038a279dfd4e959c30f67d7ec1a686851399b22d10f22766be883d",
+      "sourceUrl": "https://dixion.ru/upload/iblock/0c7/heart_pad-.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_912872436d628358ba82996d",
+      "productSlug": "wave2-dixion-heart-pad",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Скачать прайс-лист",
+        "unit": null
+      },
+      "rawText": "Document title: Скачать прайс-лист",
+      "evidenceCandidateIds": [
+        "evidence_b3b1795e613d9ed34cf1497d"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_65da7614ff8c540e97c1657c",
+      "productSlug": "wave2-dixion-heart-pad",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_ab48d2ba846ec21bdcf717e3"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_754854d07474467270161c3d",
+      "productSlug": "wave2-dixion-heart-pad",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Скачать буклет «‎Дефибриллятор Dixion Heart Pad»",
+        "unit": null
+      },
+      "rawText": "Document title: Скачать буклет «‎Дефибриллятор Dixion Heart Pad»",
+      "evidenceCandidateIds": [
+        "evidence_420c9e795585395d42e3245e"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_424b5a278dfad6f1ecc515db",
+      "productSlug": "wave2-dixion-heart-pad",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_ba401cec39f2310ff953bdf2"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_835308241288e9d183a51f34",
+      "productSlug": "wave2-dixion-heart-pad",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "DIXION Heart PAD official brochure",
+        "unit": null
+      },
+      "rawText": "Document title: DIXION Heart PAD official brochure",
+      "evidenceCandidateIds": [
+        "evidence_0126e351cfd1f191ac4895d8"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_88bf9785ecc3957a73e02a4d",
+      "productSlug": "wave2-dixion-heart-pad",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_ef6d427cce0266dc790fd4ca"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry"
+    ],
+    "patternsMatched": {},
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ]
+    },
+    "coveragePercent": 0
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=9; classifiedDocuments={\"Brochure\":11,\"Unknown\":4}; confidenceDistribution={\"80\":9,\"100\":6}; duplicatesRemoved=6",
+    "Discovery creates candidates only; no verified claims or publication.",
+    "No extractable text was found for Скачать буклет «‎Дефибриллятор Dixion Heart Pad».",
+    "No extractable text was found for DIXION Heart PAD official brochure."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

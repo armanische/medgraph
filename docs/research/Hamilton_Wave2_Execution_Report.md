@@ -1,7 +1,7 @@
 # Hamilton Wave 2 Execution Report
 
-**Task:** Wave 2 Sprint 1 - Hamilton Medical Full Import  
-**Scope:** official Hamilton Medical sources only  
+**Task:** Wave 2 Sprint 1 - Hamilton Medical Full Import
+**Scope:** official Hamilton Medical sources only
 **Status:** research pipeline executed; no publication, no Supabase writes, no verification changes
 
 ## Summary

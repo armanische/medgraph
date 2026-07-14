@@ -1,0 +1,362 @@
+{
+  "product": {
+    "productSlug": "wave2-sonoscape-x3",
+    "manufacturer": "SonoScape",
+    "productName": "SonoScape X3",
+    "model": "X3",
+    "category": "УЗИ аппараты"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_6832158f3f60611137557fb7",
+      "productSlug": "wave2-sonoscape-x3",
+      "productTitle": "SonoScape X3",
+      "claimCandidateId": "claim_223fb366048853e8962c1b79",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Privacy Policy",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_abddae354217523d89c39924"
+      ],
+      "documentVersionIds": [
+        "document_version_43033550885b186511dba091"
+      ],
+      "sourceUrls": [
+        "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_df18f05e0eb193278ba8e60b",
+      "productSlug": "wave2-sonoscape-x3",
+      "productTitle": "SonoScape X3",
+      "claimCandidateId": "claim_91319647dca6d7532c703ca9",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_a5440bde0963e8940a36f6b4"
+      ],
+      "documentVersionIds": [
+        "document_version_43033550885b186511dba091"
+      ],
+      "sourceUrls": [
+        "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_77fbba7ee014c204bafdcb70",
+      "productSlug": "wave2-sonoscape-x3",
+      "productTitle": "SonoScape X3",
+      "claimCandidateId": "claim_a27e1f68badcd3d95c05191f",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "SonoScape X3 official brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_6d4619b81dc0888caebb839b"
+      ],
+      "documentVersionIds": [
+        "document_version_3b5869fc29c6b7b4b9bbe4d5"
+      ],
+      "sourceUrls": [
+        "https://www.sonoscape.de/uploadfile/2023/0427/20230427101658727.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_fce9530a57e96828b69f40eb",
+      "productSlug": "wave2-sonoscape-x3",
+      "productTitle": "SonoScape X3",
+      "claimCandidateId": "claim_ee2ad75f6f657ce6838cc63a",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_ca2e8aa1a7827065df0b4e9b"
+      ],
+      "documentVersionIds": [
+        "document_version_3b5869fc29c6b7b4b9bbe4d5"
+      ],
+      "sourceUrls": [
+        "https://www.sonoscape.de/uploadfile/2023/0427/20230427101658727.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_f12e797ce25530ff387e7a4d",
+      "productSlug": "wave2-sonoscape-x3",
+      "productTitle": "SonoScape X3",
+      "claimCandidateId": "claim_2aff4b440c40c0949a1981b8",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Doppler",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_f0ea5f2fb7271c0ac3d20b5b"
+      ],
+      "documentVersionIds": [
+        "document_version_3b5869fc29c6b7b4b9bbe4d5"
+      ],
+      "sourceUrls": [
+        "https://www.sonoscape.de/uploadfile/2023/0427/20230427101658727.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_6832158f3f60611137557fb7",
+        "productSlug": "wave2-sonoscape-x3",
+        "productTitle": "SonoScape X3",
+        "claimCandidateId": "claim_223fb366048853e8962c1b79",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Privacy Policy",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_abddae354217523d89c39924"
+        ],
+        "documentVersionIds": [
+          "document_version_43033550885b186511dba091"
+        ],
+        "sourceUrls": [
+          "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_77fbba7ee014c204bafdcb70",
+        "productSlug": "wave2-sonoscape-x3",
+        "productTitle": "SonoScape X3",
+        "claimCandidateId": "claim_a27e1f68badcd3d95c05191f",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "SonoScape X3 official brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_6d4619b81dc0888caebb839b"
+        ],
+        "documentVersionIds": [
+          "document_version_3b5869fc29c6b7b4b9bbe4d5"
+        ],
+        "sourceUrls": [
+          "https://www.sonoscape.de/uploadfile/2023/0427/20230427101658727.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_df18f05e0eb193278ba8e60b",
+        "productSlug": "wave2-sonoscape-x3",
+        "productTitle": "SonoScape X3",
+        "claimCandidateId": "claim_91319647dca6d7532c703ca9",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_a5440bde0963e8940a36f6b4"
+        ],
+        "documentVersionIds": [
+          "document_version_43033550885b186511dba091"
+        ],
+        "sourceUrls": [
+          "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_fce9530a57e96828b69f40eb",
+        "productSlug": "wave2-sonoscape-x3",
+        "productTitle": "SonoScape X3",
+        "claimCandidateId": "claim_ee2ad75f6f657ce6838cc63a",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_ca2e8aa1a7827065df0b4e9b"
+        ],
+        "documentVersionIds": [
+          "document_version_3b5869fc29c6b7b4b9bbe4d5"
+        ],
+        "sourceUrls": [
+          "https://www.sonoscape.de/uploadfile/2023/0427/20230427101658727.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.operatingModes": [
+      {
+        "reviewItemId": "review_item_f12e797ce25530ff387e7a4d",
+        "productSlug": "wave2-sonoscape-x3",
+        "productTitle": "SonoScape X3",
+        "claimCandidateId": "claim_2aff4b440c40c0949a1981b8",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "Doppler",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_f0ea5f2fb7271c0ac3d20b5b"
+        ],
+        "documentVersionIds": [
+          "document_version_3b5869fc29c6b7b4b9bbe4d5"
+        ],
+        "sourceUrls": [
+          "https://www.sonoscape.de/uploadfile/2023/0427/20230427101658727.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_43033550885b186511dba091",
+      "documentType": "unknown",
+      "title": "Privacy Policy",
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "sha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c"
+    },
+    {
+      "documentVersionId": "document_version_3b5869fc29c6b7b4b9bbe4d5",
+      "documentType": "brochure",
+      "title": "SonoScape X3 official brochure",
+      "sourceUrl": "https://www.sonoscape.de/uploadfile/2023/0427/20230427101658727.pdf",
+      "sha256": "06237035c3293a0835039f1cc872d0b45979ba477a83abc40566f73296e39ca2"
+    }
+  ],
+  "missingEvidence": [],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected offsite document URL: https://www.sonoscape.com.cn/",
+    "Resolver rejected offsite document URL: https://www.sonoscape.de/",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected unsafe document URL: mailto:market@sonoscape.net",
+    "Resolver rejected offsite document URL: https://www.facebook.com/sonoscapemedicalcorp",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/sonoscape_co._ltd?trk=company_logo",
+    "Resolver rejected offsite document URL: https://beian.miit.gov.cn/",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "resolver=default; attempts=1; matchedLinks=1; classifiedDocuments={\"Unknown\":1}; confidenceDistribution={\"100\":1}; duplicatesRemoved=0",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

@@ -1,0 +1,485 @@
+{
+  "product": {
+    "productSlug": "wave2-sonoscape-e1",
+    "manufacturer": "SonoScape",
+    "productName": "SonoScape E1",
+    "model": "E1",
+    "category": "УЗИ аппараты"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_21ea6deb0fd555bebbe2fe72",
+      "productSlug": "wave2-sonoscape-e1",
+      "productTitle": "SonoScape E1",
+      "claimCandidateId": "claim_7b20013a47736a5489b3d73a",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Privacy Policy",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_ab55d5e5d120ac95dc59757f"
+      ],
+      "documentVersionIds": [
+        "document_version_c533d1ca7418eb84abc170d5"
+      ],
+      "sourceUrls": [
+        "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_4b4d26fad97aab8a30564f6f",
+      "productSlug": "wave2-sonoscape-e1",
+      "productTitle": "SonoScape E1",
+      "claimCandidateId": "claim_cf2a4908a33829f5321b3aec",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_6b448571d16558e8af3ad406"
+      ],
+      "documentVersionIds": [
+        "document_version_c533d1ca7418eb84abc170d5"
+      ],
+      "sourceUrls": [
+        "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_9f099d9d03e0369d8d9bb999",
+      "productSlug": "wave2-sonoscape-e1",
+      "productTitle": "SonoScape E1",
+      "claimCandidateId": "claim_e80e80681f4bc6a5557d4751",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "SonoScape E1 official brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_1306b0a3eb7cf12311e5a582"
+      ],
+      "documentVersionIds": [
+        "document_version_17d792d1cb5389a05ddc5069"
+      ],
+      "sourceUrls": [
+        "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_1cb6bd6a4057b872c1289eb1",
+      "productSlug": "wave2-sonoscape-e1",
+      "productTitle": "SonoScape E1",
+      "claimCandidateId": "claim_bdf9b07fb1d80f12dc5527be",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_8b070159862e58965c3f9ef5"
+      ],
+      "documentVersionIds": [
+        "document_version_17d792d1cb5389a05ddc5069"
+      ],
+      "sourceUrls": [
+        "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_9fd5e72e858f69d8b75577fb",
+      "productSlug": "wave2-sonoscape-e1",
+      "productTitle": "SonoScape E1",
+      "claimCandidateId": "claim_a97a92306bc0a676dcd39ee8",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Doppler",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_5c85a22c6288c6c115de40ca"
+      ],
+      "documentVersionIds": [
+        "document_version_17d792d1cb5389a05ddc5069"
+      ],
+      "sourceUrls": [
+        "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_ba203ba1b01da262dce378e4",
+      "productSlug": "wave2-sonoscape-e1",
+      "productTitle": "SonoScape E1",
+      "claimCandidateId": "claim_b5bc81cf358dadd22bf850fa",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_d65a5912992e64cf0ad70f8e"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_2ba94076c68dbb41aad197d2",
+      "productSlug": "wave2-sonoscape-e1",
+      "productTitle": "SonoScape E1",
+      "claimCandidateId": "claim_f9bfea9e29fc8dd2434a30bc",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_7c12d39e51a78fb7eec18dd1"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_21ea6deb0fd555bebbe2fe72",
+        "productSlug": "wave2-sonoscape-e1",
+        "productTitle": "SonoScape E1",
+        "claimCandidateId": "claim_7b20013a47736a5489b3d73a",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Privacy Policy",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_ab55d5e5d120ac95dc59757f"
+        ],
+        "documentVersionIds": [
+          "document_version_c533d1ca7418eb84abc170d5"
+        ],
+        "sourceUrls": [
+          "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_9f099d9d03e0369d8d9bb999",
+        "productSlug": "wave2-sonoscape-e1",
+        "productTitle": "SonoScape E1",
+        "claimCandidateId": "claim_e80e80681f4bc6a5557d4751",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "SonoScape E1 official brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_1306b0a3eb7cf12311e5a582"
+        ],
+        "documentVersionIds": [
+          "document_version_17d792d1cb5389a05ddc5069"
+        ],
+        "sourceUrls": [
+          "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_4b4d26fad97aab8a30564f6f",
+        "productSlug": "wave2-sonoscape-e1",
+        "productTitle": "SonoScape E1",
+        "claimCandidateId": "claim_cf2a4908a33829f5321b3aec",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_6b448571d16558e8af3ad406"
+        ],
+        "documentVersionIds": [
+          "document_version_c533d1ca7418eb84abc170d5"
+        ],
+        "sourceUrls": [
+          "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_1cb6bd6a4057b872c1289eb1",
+        "productSlug": "wave2-sonoscape-e1",
+        "productTitle": "SonoScape E1",
+        "claimCandidateId": "claim_bdf9b07fb1d80f12dc5527be",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_8b070159862e58965c3f9ef5"
+        ],
+        "documentVersionIds": [
+          "document_version_17d792d1cb5389a05ddc5069"
+        ],
+        "sourceUrls": [
+          "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.operatingModes": [
+      {
+        "reviewItemId": "review_item_9fd5e72e858f69d8b75577fb",
+        "productSlug": "wave2-sonoscape-e1",
+        "productTitle": "SonoScape E1",
+        "claimCandidateId": "claim_a97a92306bc0a676dcd39ee8",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "Doppler",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_5c85a22c6288c6c115de40ca"
+        ],
+        "documentVersionIds": [
+          "document_version_17d792d1cb5389a05ddc5069"
+        ],
+        "sourceUrls": [
+          "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "technical.term": [
+      {
+        "reviewItemId": "review_item_ba203ba1b01da262dce378e4",
+        "productSlug": "wave2-sonoscape-e1",
+        "productTitle": "SonoScape E1",
+        "claimCandidateId": "claim_b5bc81cf358dadd22bf850fa",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_d65a5912992e64cf0ad70f8e"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_2ba94076c68dbb41aad197d2",
+        "productSlug": "wave2-sonoscape-e1",
+        "productTitle": "SonoScape E1",
+        "claimCandidateId": "claim_f9bfea9e29fc8dd2434a30bc",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_7c12d39e51a78fb7eec18dd1"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_c533d1ca7418eb84abc170d5",
+      "documentType": "unknown",
+      "title": "Privacy Policy",
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "sha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c"
+    },
+    {
+      "documentVersionId": "document_version_17d792d1cb5389a05ddc5069",
+      "documentType": "brochure",
+      "title": "SonoScape E1 official brochure",
+      "sourceUrl": "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf",
+      "sha256": "4a132cbb6dea3ff6f712b43371c753ea94e379a60595a31d9e5aae6314497761"
+    }
+  ],
+  "missingEvidence": [
+    {
+      "claimCandidateId": "claim_b5bc81cf358dadd22bf850fa",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_f9bfea9e29fc8dd2434a30bc",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    }
+  ],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected offsite document URL: https://www.sonoscape.com.cn/",
+    "Resolver rejected offsite document URL: https://www.sonoscape.de/",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected unsafe document URL: mailto:market@sonoscape.net",
+    "Resolver rejected offsite document URL: https://www.facebook.com/sonoscapemedicalcorp",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/sonoscape_co._ltd?trk=company_logo",
+    "Resolver rejected offsite document URL: https://beian.miit.gov.cn/",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "resolver=default; attempts=1; matchedLinks=1; classifiedDocuments={\"Unknown\":1}; confidenceDistribution={\"100\":1}; duplicatesRemoved=0",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

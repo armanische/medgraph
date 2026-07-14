@@ -1,0 +1,165 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-endoscopy-portfolio",
+    "manufacturer": "Dixion",
+    "productName": "DIXION endoscopy equipment portfolio",
+    "model": "Endoscopy portfolio family",
+    "category": "Эндоскопическое оборудование"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_adebd20fd55f0b976bcd22ce",
+      "productSlug": "wave2-dixion-endoscopy-portfolio",
+      "productTitle": "DIXION endoscopy equipment portfolio",
+      "claimCandidateId": "claim_1082639c8474177f813fdf95",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Скачать прайс-лист",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_274472a621e4b3aead8713ea"
+      ],
+      "documentVersionIds": [
+        "document_version_f6124d66dcc031753feccf36"
+      ],
+      "sourceUrls": [
+        "https://dixion.ru/upload/documents/price.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_611fd9a57d90b755edd426e6",
+      "productSlug": "wave2-dixion-endoscopy-portfolio",
+      "productTitle": "DIXION endoscopy equipment portfolio",
+      "claimCandidateId": "claim_64f9a4342256763b30000551",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_f407c6f3db9bfe90eb5c2183"
+      ],
+      "documentVersionIds": [
+        "document_version_f6124d66dcc031753feccf36"
+      ],
+      "sourceUrls": [
+        "https://dixion.ru/upload/documents/price.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_adebd20fd55f0b976bcd22ce",
+        "productSlug": "wave2-dixion-endoscopy-portfolio",
+        "productTitle": "DIXION endoscopy equipment portfolio",
+        "claimCandidateId": "claim_1082639c8474177f813fdf95",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Скачать прайс-лист",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_274472a621e4b3aead8713ea"
+        ],
+        "documentVersionIds": [
+          "document_version_f6124d66dcc031753feccf36"
+        ],
+        "sourceUrls": [
+          "https://dixion.ru/upload/documents/price.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_611fd9a57d90b755edd426e6",
+        "productSlug": "wave2-dixion-endoscopy-portfolio",
+        "productTitle": "DIXION endoscopy equipment portfolio",
+        "claimCandidateId": "claim_64f9a4342256763b30000551",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_f407c6f3db9bfe90eb5c2183"
+        ],
+        "documentVersionIds": [
+          "document_version_f6124d66dcc031753feccf36"
+        ],
+        "sourceUrls": [
+          "https://dixion.ru/upload/documents/price.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_f6124d66dcc031753feccf36",
+      "documentType": "unknown",
+      "title": "Скачать прайс-лист",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8"
+    }
+  ],
+  "missingEvidence": [],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=7; classifiedDocuments={\"Brochure\":10,\"Unknown\":1}; confidenceDistribution={\"80\":8,\"100\":3}; duplicatesRemoved=4",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

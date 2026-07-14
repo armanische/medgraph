@@ -1,0 +1,531 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+    "manufacturer": "Dixion",
+    "productName": "DIXION Intensive Care Bed CGD family",
+    "model": "Intensive Care Bed CGD family",
+    "category": "Функциональная кровать"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_d6caed2cfe9e82e01bfbbb75",
+      "documentCandidateId": "document_7a74a89cf0d4f6fa4a17f04a",
+      "sourceId": "source_e60e6c81446aa0766c462c37",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "documentKey": "trusted-document:document_7a74a89cf0d4f6fa4a17f04a",
+      "documentType": "brochure",
+      "title": "Скачать каталог в формате PDF",
+      "language": null,
+      "sourceUrl": "https://dixion.ru/upload/documents/catalog.pdf",
+      "sha256": "667e77712668a8091cf9de69d355879e62d9e166788b37c77072d1b6a734d642",
+      "contentType": "application/pdf",
+      "byteSize": 14061950,
+      "filePath": "data/research/artifacts/artifacts/sha256/66/7e/667e77712668a8091cf9de69d355879e62d9e166788b37c77072d1b6a734d642.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_8eb2050c4c44cf0b6a307538",
+      "documentCandidateId": "document_c53259979aa29519debb2667",
+      "sourceId": "source_e60e6c81446aa0766c462c37",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "documentKey": "trusted-document:document_c53259979aa29519debb2667",
+      "documentType": "unknown",
+      "title": "Скачать прайс-лист",
+      "language": null,
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "contentType": "application/pdf",
+      "byteSize": 178281,
+      "filePath": "data/research/artifacts/artifacts/sha256/1c/da/1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_7b2eb749b5427086039463c6",
+      "documentCandidateId": "document_d7624be74ba005c36c493133",
+      "sourceId": "source_0453f68b1be63ff5d6940acc",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "documentKey": "trusted-document:document_d7624be74ba005c36c493133",
+      "documentType": "brochure",
+      "title": "DIXION Intensive Care Bed CGD official brochure",
+      "language": null,
+      "sourceUrl": "https://dixion.ru/upload/iblock/5ba/wbqo3m0auw33ljaysimp7yw6wjxju63a/Dixion_Intensive_Care_Bed_CGD.pdf",
+      "sha256": "a99124c1efe81600eb7414dc9d9f58d0916f3ea39a02b4f2f2f361416ce7189c",
+      "contentType": "application/pdf",
+      "byteSize": 514721,
+      "filePath": "data/research/artifacts/artifacts/sha256/a9/91/a99124c1efe81600eb7414dc9d9f58d0916f3ea39a02b4f2f2f361416ce7189c.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_744ea03d766b37e4b9ae6f44",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Скачать каталог в формате PDF",
+      "unit": null,
+      "rawText": "Document title: Скачать каталог в формате PDF",
+      "documentVersionId": "document_version_d6caed2cfe9e82e01bfbbb75",
+      "documentCandidateId": "document_7a74a89cf0d4f6fa4a17f04a",
+      "documentSha256": "667e77712668a8091cf9de69d355879e62d9e166788b37c77072d1b6a734d642",
+      "sourceUrl": "https://dixion.ru/upload/documents/catalog.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_2747a398a6cb15dca2fc8aac",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_638e69bda1cf60b77f638eff",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_d6caed2cfe9e82e01bfbbb75",
+      "documentCandidateId": "document_7a74a89cf0d4f6fa4a17f04a",
+      "documentSha256": "667e77712668a8091cf9de69d355879e62d9e166788b37c77072d1b6a734d642",
+      "sourceUrl": "https://dixion.ru/upload/documents/catalog.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_47038957ddbac1025191e968",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_cbcbaa65fdb8185d63400c3d",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Скачать прайс-лист",
+      "unit": null,
+      "rawText": "Document title: Скачать прайс-лист",
+      "documentVersionId": "document_version_8eb2050c4c44cf0b6a307538",
+      "documentCandidateId": "document_c53259979aa29519debb2667",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_5b3e69cbbe06d307765dddf4",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_0d09f166bccb57e1f08c4c24",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_8eb2050c4c44cf0b6a307538",
+      "documentCandidateId": "document_c53259979aa29519debb2667",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_6dc02a9e50c6e734dbcee1b3",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_e07dd986d283af5c65277a2e",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "DIXION Intensive Care Bed CGD official brochure",
+      "unit": null,
+      "rawText": "Document title: DIXION Intensive Care Bed CGD official brochure",
+      "documentVersionId": "document_version_7b2eb749b5427086039463c6",
+      "documentCandidateId": "document_d7624be74ba005c36c493133",
+      "documentSha256": "a99124c1efe81600eb7414dc9d9f58d0916f3ea39a02b4f2f2f361416ce7189c",
+      "sourceUrl": "https://dixion.ru/upload/iblock/5ba/wbqo3m0auw33ljaysimp7yw6wjxju63a/Dixion_Intensive_Care_Bed_CGD.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_3b0bc8920c5e16f22d1208fa",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_765bf6c2584ce4462885fa6f",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_7b2eb749b5427086039463c6",
+      "documentCandidateId": "document_d7624be74ba005c36c493133",
+      "documentSha256": "a99124c1efe81600eb7414dc9d9f58d0916f3ea39a02b4f2f2f361416ce7189c",
+      "sourceUrl": "https://dixion.ru/upload/iblock/5ba/wbqo3m0auw33ljaysimp7yw6wjxju63a/Dixion_Intensive_Care_Bed_CGD.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_7a93438749f958e38ca374cc",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_2747a398a6cb15dca2fc8aac",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_d6caed2cfe9e82e01bfbbb75",
+      "documentCandidateId": "document_7a74a89cf0d4f6fa4a17f04a",
+      "sha256": "667e77712668a8091cf9de69d355879e62d9e166788b37c77072d1b6a734d642",
+      "sourceUrl": "https://dixion.ru/upload/documents/catalog.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Скачать каталог в формате PDF",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_47038957ddbac1025191e968",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_d6caed2cfe9e82e01bfbbb75",
+      "documentCandidateId": "document_7a74a89cf0d4f6fa4a17f04a",
+      "sha256": "667e77712668a8091cf9de69d355879e62d9e166788b37c77072d1b6a734d642",
+      "sourceUrl": "https://dixion.ru/upload/documents/catalog.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_5b3e69cbbe06d307765dddf4",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_8eb2050c4c44cf0b6a307538",
+      "documentCandidateId": "document_c53259979aa29519debb2667",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Скачать прайс-лист",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_6dc02a9e50c6e734dbcee1b3",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_8eb2050c4c44cf0b6a307538",
+      "documentCandidateId": "document_c53259979aa29519debb2667",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_3b0bc8920c5e16f22d1208fa",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_7b2eb749b5427086039463c6",
+      "documentCandidateId": "document_d7624be74ba005c36c493133",
+      "sha256": "a99124c1efe81600eb7414dc9d9f58d0916f3ea39a02b4f2f2f361416ce7189c",
+      "sourceUrl": "https://dixion.ru/upload/iblock/5ba/wbqo3m0auw33ljaysimp7yw6wjxju63a/Dixion_Intensive_Care_Bed_CGD.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: DIXION Intensive Care Bed CGD official brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_7a93438749f958e38ca374cc",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_7b2eb749b5427086039463c6",
+      "documentCandidateId": "document_d7624be74ba005c36c493133",
+      "sha256": "a99124c1efe81600eb7414dc9d9f58d0916f3ea39a02b4f2f2f361416ce7189c",
+      "sourceUrl": "https://dixion.ru/upload/iblock/5ba/wbqo3m0auw33ljaysimp7yw6wjxju63a/Dixion_Intensive_Care_Bed_CGD.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_ea43763e84af640feebb9d9d",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Скачать каталог в формате PDF",
+        "unit": null
+      },
+      "rawText": "Document title: Скачать каталог в формате PDF",
+      "evidenceCandidateIds": [
+        "evidence_2747a398a6cb15dca2fc8aac"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_c1e7e494cfc4ee48c1aa4d60",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_47038957ddbac1025191e968"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_b570eda4cf4137e49b85a0fa",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Скачать прайс-лист",
+        "unit": null
+      },
+      "rawText": "Document title: Скачать прайс-лист",
+      "evidenceCandidateIds": [
+        "evidence_5b3e69cbbe06d307765dddf4"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_a3b7fb6652f6520bf48adc12",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_6dc02a9e50c6e734dbcee1b3"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_27801ae4959619cd887fe81e",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "DIXION Intensive Care Bed CGD official brochure",
+        "unit": null
+      },
+      "rawText": "Document title: DIXION Intensive Care Bed CGD official brochure",
+      "evidenceCandidateIds": [
+        "evidence_3b0bc8920c5e16f22d1208fa"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_6d57ee6fadb8fa5635f7a4a2",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_7a93438749f958e38ca374cc"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry"
+    ],
+    "patternsMatched": {},
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ]
+    },
+    "coveragePercent": 0
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=9; classifiedDocuments={\"Brochure\":11,\"Unknown\":4}; confidenceDistribution={\"80\":9,\"100\":6}; duplicatesRemoved=6",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}
