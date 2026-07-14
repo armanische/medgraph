@@ -1,0 +1,107 @@
+{
+  "product": {
+    "productSlug": "wave2-ge-carescape-b850",
+    "manufacturer": "GE HealthCare",
+    "productName": "GE HealthCare CARESCAPE B850",
+    "model": "CARESCAPE B850",
+    "category": "Монитор пациента"
+  },
+  "providerDiagnostics": {
+    "providerName": "ge-healthcare",
+    "strategyUsed": "GE HealthCare products, support, resources and document library",
+    "pagesVisited": [
+      "https://www.gehealthcare.com/en-us/products/patient-monitoring/patient-monitors/carescape-monitor-b850"
+    ],
+    "candidateUrls": [
+      "https://www.gehealthcare.com/en-us/products/patient-monitoring/patient-monitors/carescape-monitor-b850"
+    ],
+    "normalizedUrls": [
+      "https://www.gehealthcare.com/en-us/products/patient-monitoring/patient-monitors/carescape-monitor-b850"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": []
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": false,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_5191b9a845c5cdd0aada3718",
+      "productSlug": "wave2-ge-carescape-b850",
+      "manufacturer": "GE HealthCare",
+      "productName": "GE HealthCare CARESCAPE B850",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.gehealthcare.com/en-us/products/patient-monitoring/patient-monitors/carescape-monitor-b850",
+      "title": "GE HealthCare CARESCAPE B850 official product page",
+      "snippet": "Official product page candidate.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official product page candidate."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_9ed175cb8f16d38b70b6eaa2",
+      "sourceId": "source_5191b9a845c5cdd0aada3718",
+      "productSlug": "wave2-ge-carescape-b850",
+      "documentType": "user_manual",
+      "url": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf",
+      "title": "CARESCAPE B850/B650/B450 User Manual",
+      "language": "en",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Official shared CARESCAPE Bx50 manual."
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [],
+  "resolverWarnings": [
+    "Resolver fetch failed for https://www.gehealthcare.com/en-us/products/patient-monitoring/patient-monitors/carescape-monitor-b850: HTTP 404"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-ge-carescape-b850",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-ge-carescape-b850",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver fetch failed for https://www.gehealthcare.com/en-us/products/patient-monitoring/patient-monitors/carescape-monitor-b850: HTTP 404",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

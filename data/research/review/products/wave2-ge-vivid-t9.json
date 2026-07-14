@@ -1,0 +1,19 @@
+{
+  "product": {
+    "productSlug": "wave2-ge-vivid-t9",
+    "manufacturer": "GE HealthCare",
+    "productName": "GE HealthCare Vivid T9",
+    "model": "Vivid T9",
+    "category": "УЗИ аппараты"
+  },
+  "reviewItems": [],
+  "groupedByClaimType": {},
+  "sourceDocumentSummary": [],
+  "missingEvidence": [],
+  "recommendedReviewerAction": "No reviewable candidate claims yet. Collect more evidence before review.",
+  "warnings": [
+    "Resolver fetch failed for https://www.gehealthcare.com/en/products/ultrasound/cardiovascular/vivid-t9: HTTP 404",
+    "Discovery creates candidates only; no verified claims or publication.",
+    "No DocumentCandidate records were available for download."
+  ]
+}

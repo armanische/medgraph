@@ -1,19 +1,19 @@
 {
   "manufacturer": "GE",
   "generatedAt": "wave2-execution-v1",
-  "productsDiscovered": 11,
-  "officialSources": 1,
-  "documentsFound": 24,
-  "downloads": 16,
-  "artifacts": 16,
-  "candidateFacts": 38,
-  "reviewItems": 38,
-  "blockedProducts": 1,
+  "productsDiscovered": 20,
+  "officialSources": 20,
+  "documentsFound": 43,
+  "downloads": 28,
+  "artifacts": 28,
+  "candidateFacts": 70,
+  "reviewItems": 70,
+  "blockedProducts": 2,
   "errors": [],
   "warnings": [
     "Wave 2 execution creates reports only; no publication is performed."
   ],
-  "durationMs": 1429,
+  "durationMs": 1762,
   "retries": [],
   "stages": [
     {

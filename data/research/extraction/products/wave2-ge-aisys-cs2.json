@@ -1,0 +1,1086 @@
+{
+  "product": {
+    "productSlug": "wave2-ge-aisys-cs2",
+    "manufacturer": "GE HealthCare",
+    "productName": "GE HealthCare Aisys CS²",
+    "model": "Aisys CS²",
+    "category": "Наркозно-дыхательные аппараты"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_ac610b2b0f530320466c5c29",
+      "documentCandidateId": "document_b4a4fcfe9fd461849626768b",
+      "sourceId": "source_fe58f114fd47604148ea83ca",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "documentKey": "trusted-document:document_b4a4fcfe9fd461849626768b",
+      "documentType": "unknown",
+      "title": "Read more",
+      "language": null,
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/aisyscs2-anesthesia_services-br-en.pdf",
+      "sha256": "7817405cd1c8a9066fcf92e645a1b947195858e1568394b2fd86fc21f6db0cf7",
+      "contentType": "application/pdf",
+      "byteSize": 1239620,
+      "filePath": "data/research/artifacts/artifacts/sha256/78/17/7817405cd1c8a9066fcf92e645a1b947195858e1568394b2fd86fc21f6db0cf7.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_ea919b542a369ba2a153a636",
+      "documentCandidateId": "document_af0d8cd5ef839a4445dc5f4b",
+      "sourceId": "source_fe58f114fd47604148ea83ca",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "documentKey": "trusted-document:document_af0d8cd5ef839a4445dc5f4b",
+      "documentType": "brochure",
+      "title": "Download brochure",
+      "language": null,
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf",
+      "sha256": "9d6ad927a5a2c473951ed881b599bb97937eb0135a8dac7dee1f4afe102f52c3",
+      "contentType": "application/pdf",
+      "byteSize": 11312916,
+      "filePath": "data/research/artifacts/artifacts/sha256/9d/6a/9d6ad927a5a2c473951ed881b599bb97937eb0135a8dac7dee1f4afe102f52c3.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_88e5a97da030a4eb1595a259",
+      "documentCandidateId": "document_ec322b0dbfa056c3e06248c7",
+      "sourceId": "source_fe58f114fd47604148ea83ca",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "documentKey": "trusted-document:document_ec322b0dbfa056c3e06248c7",
+      "documentType": "unknown",
+      "title": "Unclassified manufacturer document",
+      "language": null,
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/whitepaper-EtControl-JB22327XX-cs-en.pdf",
+      "sha256": "b138782a4311a74cbd94587f3da9f8c96a227af4bc64b79d926b89de4dc488a6",
+      "contentType": "application/pdf",
+      "byteSize": 417280,
+      "filePath": "data/research/artifacts/artifacts/sha256/b1/38/b138782a4311a74cbd94587f3da9f8c96a227af4bc64b79d926b89de4dc488a6.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_6b0295352f34c6ea3032d584",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Read more",
+      "unit": null,
+      "rawText": "Document title: Read more",
+      "documentVersionId": "document_version_ac610b2b0f530320466c5c29",
+      "documentCandidateId": "document_b4a4fcfe9fd461849626768b",
+      "documentSha256": "7817405cd1c8a9066fcf92e645a1b947195858e1568394b2fd86fc21f6db0cf7",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/aisyscs2-anesthesia_services-br-en.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_03fef759fa24f9e4f56fe303",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_b7420fd88ae6bde7bafe2b67",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_ac610b2b0f530320466c5c29",
+      "documentCandidateId": "document_b4a4fcfe9fd461849626768b",
+      "documentSha256": "7817405cd1c8a9066fcf92e645a1b947195858e1568394b2fd86fc21f6db0cf7",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/aisyscs2-anesthesia_services-br-en.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_a09bf969cba7418fc47cb1a2",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_238308c9024a204fb4727e13",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Download brochure",
+      "unit": null,
+      "rawText": "Document title: Download brochure",
+      "documentVersionId": "document_version_ea919b542a369ba2a153a636",
+      "documentCandidateId": "document_af0d8cd5ef839a4445dc5f4b",
+      "documentSha256": "9d6ad927a5a2c473951ed881b599bb97937eb0135a8dac7dee1f4afe102f52c3",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_fcdcba5ca4cf4aab2a408afb",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_e0a449185b42e7ec79941bf6",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_ea919b542a369ba2a153a636",
+      "documentCandidateId": "document_af0d8cd5ef839a4445dc5f4b",
+      "documentSha256": "9d6ad927a5a2c473951ed881b599bb97937eb0135a8dac7dee1f4afe102f52c3",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_7364ef6ecab17d6c9f120dba",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_e7023a633593f4bd16015827",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "factType": "product.patientGroup",
+      "label": "Неонатальные пациенты",
+      "value": "neonatal",
+      "unit": null,
+      "rawText": "neonatal",
+      "documentVersionId": "document_version_ea919b542a369ba2a153a636",
+      "documentCandidateId": "document_af0d8cd5ef839a4445dc5f4b",
+      "documentSha256": "9d6ad927a5a2c473951ed881b599bb97937eb0135a8dac7dee1f4afe102f52c3",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 267
+      },
+      "evidenceCandidateId": "evidence_55cef3f788f0a332aad2d3e9",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:anesthesia",
+        "matchedPattern:neonatal",
+        "matchedSynonym:Neonatal",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_76fdb067933883a899f40a80",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "factType": "product.patientGroup",
+      "label": "Взрослые пациенты",
+      "value": "adults",
+      "unit": null,
+      "rawText": "adults",
+      "documentVersionId": "document_version_ea919b542a369ba2a153a636",
+      "documentCandidateId": "document_af0d8cd5ef839a4445dc5f4b",
+      "documentSha256": "9d6ad927a5a2c473951ed881b599bb97937eb0135a8dac7dee1f4afe102f52c3",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf",
+      "locator": {
+        "page": 11,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 384
+      },
+      "evidenceCandidateId": "evidence_c7988e1d6f80cb526df52659",
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:anesthesia",
+        "matchedPattern:adult",
+        "matchedSynonym:Adult",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_db83832cf9ac8651a16d4029",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "factType": "product.patientGroup",
+      "label": "Педиатрические пациенты",
+      "value": "pediatric",
+      "unit": null,
+      "rawText": "pediatric",
+      "documentVersionId": "document_version_ea919b542a369ba2a153a636",
+      "documentCandidateId": "document_af0d8cd5ef839a4445dc5f4b",
+      "documentSha256": "9d6ad927a5a2c473951ed881b599bb97937eb0135a8dac7dee1f4afe102f52c3",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 267
+      },
+      "evidenceCandidateId": "evidence_0942777a0ee4bbb7fc1de5cc",
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:anesthesia",
+        "matchedPattern:pediatric",
+        "matchedSynonym:Pediatric",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_6597ac45fe176f57673d7504",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "display",
+      "unit": null,
+      "rawText": "display",
+      "documentVersionId": "document_version_ea919b542a369ba2a153a636",
+      "documentCandidateId": "document_af0d8cd5ef839a4445dc5f4b",
+      "documentSha256": "9d6ad927a5a2c473951ed881b599bb97937eb0135a8dac7dee1f4afe102f52c3",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 206
+      },
+      "evidenceCandidateId": "evidence_4b545d40bb6f06038bcfe690",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_3e155d4c8e41189b2855590c",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "tidal volume",
+      "unit": null,
+      "rawText": "tidal volume, positive end-expiratory pressure, and lung recruitment maneuvers.",
+      "documentVersionId": "document_version_ea919b542a369ba2a153a636",
+      "documentCandidateId": "document_af0d8cd5ef839a4445dc5f4b",
+      "documentSha256": "9d6ad927a5a2c473951ed881b599bb97937eb0135a8dac7dee1f4afe102f52c3",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf",
+      "locator": {
+        "page": 9,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 305
+      },
+      "evidenceCandidateId": "evidence_321546aec61d1388aa0357d4",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_a4d9357f11b2fd9fedd437ca",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Unclassified manufacturer document",
+      "unit": null,
+      "rawText": "Document title: Unclassified manufacturer document",
+      "documentVersionId": "document_version_88e5a97da030a4eb1595a259",
+      "documentCandidateId": "document_ec322b0dbfa056c3e06248c7",
+      "documentSha256": "b138782a4311a74cbd94587f3da9f8c96a227af4bc64b79d926b89de4dc488a6",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/whitepaper-EtControl-JB22327XX-cs-en.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_23c65747910c9feb99f8ea47",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_c55d4d0a5765ec7392a0fefe",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_88e5a97da030a4eb1595a259",
+      "documentCandidateId": "document_ec322b0dbfa056c3e06248c7",
+      "documentSha256": "b138782a4311a74cbd94587f3da9f8c96a227af4bc64b79d926b89de4dc488a6",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/whitepaper-EtControl-JB22327XX-cs-en.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_327114e371c86afa722f4578",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_d6651bdcdb8255955b74b69d",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "display",
+      "unit": null,
+      "rawText": "display showing end-tidal targets (bottom left",
+      "documentVersionId": "document_version_88e5a97da030a4eb1595a259",
+      "documentCandidateId": "document_ec322b0dbfa056c3e06248c7",
+      "documentSha256": "b138782a4311a74cbd94587f3da9f8c96a227af4bc64b79d926b89de4dc488a6",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/whitepaper-EtControl-JB22327XX-cs-en.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 51
+      },
+      "evidenceCandidateId": "evidence_5b7f80870d83d045a2e70ee6",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_6e4601d2193040f6ef099345",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "flow rate",
+      "unit": null,
+      "rawText": "flow rate = 1.00 l/min and Et Sevoflurane = 2.1%.",
+      "documentVersionId": "document_version_88e5a97da030a4eb1595a259",
+      "documentCandidateId": "document_ec322b0dbfa056c3e06248c7",
+      "documentSha256": "b138782a4311a74cbd94587f3da9f8c96a227af4bc64b79d926b89de4dc488a6",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/whitepaper-EtControl-JB22327XX-cs-en.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 52
+      },
+      "evidenceCandidateId": "evidence_7a6b9e0c8c2c6a0b200a4e62",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_03fef759fa24f9e4f56fe303",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_ac610b2b0f530320466c5c29",
+      "documentCandidateId": "document_b4a4fcfe9fd461849626768b",
+      "sha256": "7817405cd1c8a9066fcf92e645a1b947195858e1568394b2fd86fc21f6db0cf7",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/aisyscs2-anesthesia_services-br-en.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Read more",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_a09bf969cba7418fc47cb1a2",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_ac610b2b0f530320466c5c29",
+      "documentCandidateId": "document_b4a4fcfe9fd461849626768b",
+      "sha256": "7817405cd1c8a9066fcf92e645a1b947195858e1568394b2fd86fc21f6db0cf7",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/aisyscs2-anesthesia_services-br-en.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_fcdcba5ca4cf4aab2a408afb",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_ea919b542a369ba2a153a636",
+      "documentCandidateId": "document_af0d8cd5ef839a4445dc5f4b",
+      "sha256": "9d6ad927a5a2c473951ed881b599bb97937eb0135a8dac7dee1f4afe102f52c3",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Download brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_7364ef6ecab17d6c9f120dba",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_ea919b542a369ba2a153a636",
+      "documentCandidateId": "document_af0d8cd5ef839a4445dc5f4b",
+      "sha256": "9d6ad927a5a2c473951ed881b599bb97937eb0135a8dac7dee1f4afe102f52c3",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_55cef3f788f0a332aad2d3e9",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ea919b542a369ba2a153a636",
+      "documentCandidateId": "document_af0d8cd5ef839a4445dc5f4b",
+      "sha256": "9d6ad927a5a2c473951ed881b599bb97937eb0135a8dac7dee1f4afe102f52c3",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 267
+      },
+      "quotedText": "neonatal",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_c7988e1d6f80cb526df52659",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ea919b542a369ba2a153a636",
+      "documentCandidateId": "document_af0d8cd5ef839a4445dc5f4b",
+      "sha256": "9d6ad927a5a2c473951ed881b599bb97937eb0135a8dac7dee1f4afe102f52c3",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf",
+      "locator": {
+        "page": 11,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 384
+      },
+      "quotedText": "adults",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_0942777a0ee4bbb7fc1de5cc",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ea919b542a369ba2a153a636",
+      "documentCandidateId": "document_af0d8cd5ef839a4445dc5f4b",
+      "sha256": "9d6ad927a5a2c473951ed881b599bb97937eb0135a8dac7dee1f4afe102f52c3",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 267
+      },
+      "quotedText": "pediatric",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_23c65747910c9feb99f8ea47",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_88e5a97da030a4eb1595a259",
+      "documentCandidateId": "document_ec322b0dbfa056c3e06248c7",
+      "sha256": "b138782a4311a74cbd94587f3da9f8c96a227af4bc64b79d926b89de4dc488a6",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/whitepaper-EtControl-JB22327XX-cs-en.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Unclassified manufacturer document",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_327114e371c86afa722f4578",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_88e5a97da030a4eb1595a259",
+      "documentCandidateId": "document_ec322b0dbfa056c3e06248c7",
+      "sha256": "b138782a4311a74cbd94587f3da9f8c96a227af4bc64b79d926b89de4dc488a6",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/whitepaper-EtControl-JB22327XX-cs-en.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_38f20330825e49ee98a67b8c",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Read more",
+        "unit": null
+      },
+      "rawText": "Document title: Read more",
+      "evidenceCandidateIds": [
+        "evidence_03fef759fa24f9e4f56fe303"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_d1fc280374d229b1ff853482",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_a09bf969cba7418fc47cb1a2"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_55a5c48888b9857e00992919",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Download brochure",
+        "unit": null
+      },
+      "rawText": "Document title: Download brochure",
+      "evidenceCandidateIds": [
+        "evidence_fcdcba5ca4cf4aab2a408afb"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_84c453959b8cf276feff2257",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_7364ef6ecab17d6c9f120dba"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_44bcbbbad978a2ba54803ae9",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "subjectType": "product",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "neonatal",
+        "unit": null
+      },
+      "rawText": "neonatal",
+      "evidenceCandidateIds": [
+        "evidence_55cef3f788f0a332aad2d3e9"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_846db56d3ab62ca47e3dc022",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "subjectType": "product",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "adults",
+        "unit": null
+      },
+      "rawText": "adults",
+      "evidenceCandidateIds": [
+        "evidence_c7988e1d6f80cb526df52659"
+      ],
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_fcf10c9a2ac4e70c2e6913ea",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "subjectType": "product",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "pediatric",
+        "unit": null
+      },
+      "rawText": "pediatric",
+      "evidenceCandidateIds": [
+        "evidence_0942777a0ee4bbb7fc1de5cc"
+      ],
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_e42ab5b866c7c7f8cf2e7b54",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "rawText": "display",
+      "evidenceCandidateIds": [
+        "evidence_4b545d40bb6f06038bcfe690"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_876579265c20cf4221a7043c",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "tidal volume",
+        "unit": null
+      },
+      "rawText": "tidal volume, positive end-expiratory pressure, and lung recruitment maneuvers.",
+      "evidenceCandidateIds": [
+        "evidence_321546aec61d1388aa0357d4"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_88f86931571c2708623d3138",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Unclassified manufacturer document",
+        "unit": null
+      },
+      "rawText": "Document title: Unclassified manufacturer document",
+      "evidenceCandidateIds": [
+        "evidence_23c65747910c9feb99f8ea47"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_ad795af85f09aec2035dae8e",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_327114e371c86afa722f4578"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_5dac3085dc29ca5c81cf7a44",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "rawText": "display showing end-tidal targets (bottom left",
+      "evidenceCandidateIds": [
+        "evidence_5b7f80870d83d045a2e70ee6"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_c3e696419657b0af66865ecc",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "flow rate",
+        "unit": null
+      },
+      "rawText": "flow rate = 1.00 l/min and Et Sevoflurane = 2.1%.",
+      "evidenceCandidateIds": [
+        "evidence_7a6b9e0c8c2c6a0b200a4e62"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "anesthesia"
+    ],
+    "patternsMatched": {
+      "anesthesia.neonatal": 1,
+      "anesthesia.adult": 1,
+      "anesthesia.pediatric": 1
+    },
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "anesthesia": [
+        "battery_runtime",
+        "modes",
+        "niv",
+        "oxygen",
+        "screen",
+        "turbine",
+        "weight"
+      ]
+    },
+    "coveragePercent": 15
+  },
+  "warnings": [
+    "Resolver adapter used: ge",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://clinicalview.gehealthcare.com/blog/advancing-anesthesia-excellence-part-2-lung-protective-ventilation-us",
+    "Resolver rejected offsite document URL: https://clinicalview.gehealthcare.com/article/sustained-adoption-end-tidal-control-paradigm-shift-anesthesia-delivery",
+    "Resolver rejected offsite document URL: https://clinicalview.gehealthcare.com/article/key-outcomes-end-tidal-control-randomized-controlled-study-master-trial",
+    "Resolver rejected offsite document URL: https://clinicalview.gehealthcare.com/article/advancing-pediatric-and-neonatal-anesthesia-excellence-three-part-series-us",
+    "Resolver rejected unsafe document URL: tel:1-866-281-7545",
+    "Resolver rejected unsafe document URL: tel:18004371171",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/contact/generic?referrer&",
+    "Resolver rejected unsafe document URL: tel:1-800-668-0732",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/contact/generic?referrer&",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://www.kkt-chillersusa.com/GE/",
+    "Resolver rejected offsite document URL: https://www.kkt-chillersusa.com/GE/",
+    "Resolver rejected offsite document URL: https://rise.articulate.com/share/w0JzZ2DRMAvXe_z7ERMVslfsEDn696hZ",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "resolver=ge; attempts=7; matchedLinks=885; classifiedDocuments={\"Unknown\":3308,\"Brochure\":1,\"Datasheet\":4,\"Software\":4,\"IFU\":8}; confidenceDistribution={\"80\":23,\"90\":723,\"100\":2579}; duplicatesRemoved=2440",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

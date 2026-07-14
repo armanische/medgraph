@@ -1,0 +1,3213 @@
+{
+  "product": {
+    "productSlug": "wave2-ge-versana-premier",
+    "manufacturer": "GE HealthCare",
+    "productName": "GE HealthCare Versana Premier",
+    "model": "Versana Premier",
+    "category": "УЗИ аппараты"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_980b9b34025c1636cd4bb2e6",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_cbec7cc677a225168aa5dc99",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "See brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_7ad44fda590dae3c54cb9eaa"
+      ],
+      "documentVersionIds": [
+        "document_version_d477c08f2a0c5bac40dcd672"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-gp-ss-march-2025-jb29044-xx-br-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_874083284b1f95f25a91fd5f",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_6ff4cbd4758b698b469134ad",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_b4343f251c5fa8f47ec0e51f"
+      ],
+      "documentVersionIds": [
+        "document_version_d477c08f2a0c5bac40dcd672"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-gp-ss-march-2025-jb29044-xx-br-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b7a92223b82e8c6362c5c249",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_ba1b96e8103fb7a15802d464",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Power Doppler",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_33e7e0e196f69385bd9cd952"
+      ],
+      "documentVersionIds": [
+        "document_version_d477c08f2a0c5bac40dcd672"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-gp-ss-march-2025-jb29044-xx-br-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_6d19a5edd7ddaadfe399fe25",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_14b51722723355b86e2c482d",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "color Doppler",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_fa72edac84e0c9ab055d4f1e"
+      ],
+      "documentVersionIds": [
+        "document_version_d477c08f2a0c5bac40dcd672"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-gp-ss-march-2025-jb29044-xx-br-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_4d2548b72c8815a3737a5853",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_5ece3aee899ee18b855f0efd",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "3D/4D",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_4bb3205306e0b6dc4ae2d0b0"
+      ],
+      "documentVersionIds": [
+        "document_version_d477c08f2a0c5bac40dcd672"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-gp-ss-march-2025-jb29044-xx-br-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_9e67bd45fd5f33b0fc65b7e3",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_a9ce12b5ce64a84396a4162b",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "3D",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_2df9fd155eb6fd02683b91a3"
+      ],
+      "documentVersionIds": [
+        "document_version_d477c08f2a0c5bac40dcd672"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-gp-ss-march-2025-jb29044-xx-br-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5af5b45f5dda4c6beb89ba13",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_8619a239fd9d3840a7c4db62",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "powered scanning",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_776b93db40763e9b1b1a3621"
+      ],
+      "documentVersionIds": [
+        "document_version_d477c08f2a0c5bac40dcd672"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-gp-ss-march-2025-jb29044-xx-br-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_26e6e05db1c5cee8b7df940b",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_915625d0d10058121ab9da98",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c86595e8e64c40cf1827e6a9"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_cbf48ba535353a5368936f38",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_d13c50aa3b48568215873dd4",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_20a2892c8909182089d9c5e0"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_42215563617be29e9526e5ac",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_9cd4dfca934c57462984feee",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Manufacturer Brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_5c911b81cd1ab9bb48bbfc82"
+      ],
+      "documentVersionIds": [
+        "document_version_9fd1bfcf6811bcbec2f03ab4"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-GP-SS-march-2025-JB29044XX-.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_e7f8c535d0e6c3519ba420a2",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_f451e88d79bc82d76f5bb826",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c9d655853daf23f3f391023f"
+      ],
+      "documentVersionIds": [
+        "document_version_9fd1bfcf6811bcbec2f03ab4"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-GP-SS-march-2025-JB29044XX-.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_19637a88cb972c1a1dc37022",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_db06240b3c6d77371cc99100",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Power Doppler",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c587e363f048a30ceb5f4f84"
+      ],
+      "documentVersionIds": [
+        "document_version_9fd1bfcf6811bcbec2f03ab4"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-GP-SS-march-2025-JB29044XX-.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_586a4661219e8bea321a324d",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_2ddda6cbe952d370c9aaf9cb",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "color Doppler",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_02e4812eaa485353a6e1bebc"
+      ],
+      "documentVersionIds": [
+        "document_version_9fd1bfcf6811bcbec2f03ab4"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-GP-SS-march-2025-JB29044XX-.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_e28d565a8e1da7f80830d1b5",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_0530289aae5b8cc0c39ea854",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "3D/4D",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c9b3668ed34e61d476bb8af5"
+      ],
+      "documentVersionIds": [
+        "document_version_9fd1bfcf6811bcbec2f03ab4"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-GP-SS-march-2025-JB29044XX-.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_d047a7b64120a8ab528d974c",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_695096eb54667f39b7044ba9",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "3D",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_31e5231640cc876eb062e121"
+      ],
+      "documentVersionIds": [
+        "document_version_9fd1bfcf6811bcbec2f03ab4"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-GP-SS-march-2025-JB29044XX-.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_1e11d49e09df497a8d7eaba9",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_0dfa0768b118c14a6ad50c4c",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "powered scanning",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c7b73d53b9cec878f7ad8ca9"
+      ],
+      "documentVersionIds": [
+        "document_version_9fd1bfcf6811bcbec2f03ab4"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-GP-SS-march-2025-JB29044XX-.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_f9401cc36b4423809b1a93b8",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_7e623d289b8d4d11b1411a1b",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_f6e0c5588e46c285f2a19e1b"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_3d77305da5103ec43cf16c56",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_eb6ba9799884dd403497f00d",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_8a5e807e46ea448c8be488c5"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b3cc9f30204fabf2b751125e",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_7d8719fa5e8fcd434133f317",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Unclassified manufacturer document",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_79e14cc919677d6111ad8c1c"
+      ],
+      "documentVersionIds": [
+        "document_version_fbd07c411b8e7b1707335c54"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/transducer-guide-versana-premier-r3-may-2025-DOC2993174.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_94d668843b6d62c0f914aec0",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_75b760b0263bbe040a32fdfb",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c34f7dd3cc95cb911fa5c127"
+      ],
+      "documentVersionIds": [
+        "document_version_fbd07c411b8e7b1707335c54"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/transducer-guide-versana-premier-r3-may-2025-DOC2993174.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_19d4ecfcff3871f680887237",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_aabba12bc598a7ebd0b2510f",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "PDF resource from page metadata",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_77b73735964f066bf36a81b2"
+      ],
+      "documentVersionIds": [
+        "document_version_aced4af26a6acea55ebc0ae3"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Active-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_ee66987dffd828917b219291",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_cf1129e22ae016add6b236c7",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_ec4b57073d5e12b35450cb9a"
+      ],
+      "documentVersionIds": [
+        "document_version_aced4af26a6acea55ebc0ae3"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Active-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_2d9f8d811e02b39349d67daa",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_7a326f7db7048e170431262e",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "4D",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_270f5d0518033c3795c85b20"
+      ],
+      "documentVersionIds": [
+        "document_version_aced4af26a6acea55ebc0ae3"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Active-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_12cb0001e134d01107a72bfd",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_e893e48a92020d3d1bf18029",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_182b4391d73bf8289e333bb3"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_a18f6a6d38e60cb3494864c4",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_f1f044aaa47500853e130a0c",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_e3c644c96ef29a19c599189a"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_9678f46deab766cc9f106cc3",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_1cd9c47e6fe5aeeb44324e27",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "PDF resource from page metadata",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_b75482e4b0ca73c7e7195ea1"
+      ],
+      "documentVersionIds": [
+        "document_version_5c6c23a87f80c82945101350"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Balance-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_6d36ecada3cf00a6dd07ad11",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_212382d8f79680f154b9f8de",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_27d0ffa3e7acdc3b9d9f53bc"
+      ],
+      "documentVersionIds": [
+        "document_version_5c6c23a87f80c82945101350"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Balance-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_692c250b718f31d48861b7b5",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_47c7fb5ceb82ba459ee63547",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_4fc9db15767b2de59fe8d3e0"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_adfbc1f4c0edf9bc6a41f0a7",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_ba52f362de433a4834bbfe75",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_86bc7b033d7f10e2aa28d68c"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_1c12dcdbb2d0c228aa8e61f4",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_8ad6243baa6af382244ad360",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "PDF resource from page metadata",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_e0fd6d34c94539ed4d59a4b9"
+      ],
+      "documentVersionIds": [
+        "document_version_ce4d163b8bf146a2c107c4ae"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VERSANA-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_f996f7b801cd46f2a6dc1f85",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_f1e82f8d933cc694827b79f6",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_e996af062844881191a6fd65"
+      ],
+      "documentVersionIds": [
+        "document_version_ce4d163b8bf146a2c107c4ae"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VERSANA-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_d78d774370dbb4324851abc2",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_323b1aa0291b7eecb2b92299",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_25f82f3dd7b9c0fce76e2223"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_d19fc666cd7902b90ccee689",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_adb496d9abf4cdc06f182c51",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "PDF resource from page metadata",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_ac70eb21f42e39acd6e60dc8"
+      ],
+      "documentVersionIds": [
+        "document_version_f584d41b61f0983afc634a6c"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Premier-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_c3351b4c55aad02b6edbdf2f",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_089245aa07a23b8db91d3021",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_49e2ea0dba64dbae1e9306b0"
+      ],
+      "documentVersionIds": [
+        "document_version_f584d41b61f0983afc634a6c"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Premier-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_fd5840246778f466d6374c71",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_6b335561b196666fcccfcdc5",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_db60dc40aae0ecab31d23526"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_c77e1677a09abfc1c69f2e18",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_8fcf34a6746e097b29d645ea",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_1d67aaa5660c25421f2de113"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_e91c85a768975f67aaea2051",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_7665f5a8d9ac8a5fcee4fe4a",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Manufacturer Datasheet",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_9d00d926c22853d56ec2ec60"
+      ],
+      "documentVersionIds": [
+        "document_version_f1120c6262c10624f4527048"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/versana-premier/DOC2923015_Versana%20Premier_Datasheet_Rev%203_v10.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_46a21c07a8b7348c3aa1845d",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_c1615672deba3af9ee9b6f16",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "datasheet",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_7b985ea6e2894d150292633d"
+      ],
+      "documentVersionIds": [
+        "document_version_f1120c6262c10624f4527048"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/versana-premier/DOC2923015_Versana%20Premier_Datasheet_Rev%203_v10.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_e2861dd2d78da56803efd056",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_a333725e13fa95694d7091d7",
+      "suggestedClaimType": "product.interfaces",
+      "valuePayload": {
+        "value": "8",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_2e7d6a600e7c007d139cf830"
+      ],
+      "documentVersionIds": [
+        "document_version_f1120c6262c10624f4527048"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/versana-premier/DOC2923015_Versana%20Premier_Datasheet_Rev%203_v10.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_9a9b7dbc36713afa42985b85",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_5b232ea2e6ec4c08daac7bcb",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Doppler",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_1a07438f6603977b3368c91b"
+      ],
+      "documentVersionIds": [
+        "document_version_f1120c6262c10624f4527048"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/versana-premier/DOC2923015_Versana%20Premier_Datasheet_Rev%203_v10.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_76ca8039c7901f97ffde90ac",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_edc43a721834e8c17d56e0b5",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Power Doppler",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_e08211409cc7f169dc7e8095"
+      ],
+      "documentVersionIds": [
+        "document_version_f1120c6262c10624f4527048"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/versana-premier/DOC2923015_Versana%20Premier_Datasheet_Rev%203_v10.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_7ce5d8d4485bdfb39f812610",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_495ae18931af4eca50bb57dc",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Elastography",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_87475dc0d22ad4ea01f070ca"
+      ],
+      "documentVersionIds": [
+        "document_version_f1120c6262c10624f4527048"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/versana-premier/DOC2923015_Versana%20Premier_Datasheet_Rev%203_v10.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_138a97cdd4eae300a9eccb3a",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_93cb7363c7b3a6a2196d5522",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "3D/4D",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_5f92017c540cd85e5bf6271a"
+      ],
+      "documentVersionIds": [
+        "document_version_f1120c6262c10624f4527048"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/versana-premier/DOC2923015_Versana%20Premier_Datasheet_Rev%203_v10.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_9a7affb03ee04b6a5e9b6e7d",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_1803b11a8058894974a29a70",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "3D",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_ba63be340b54dce60ef64cef"
+      ],
+      "documentVersionIds": [
+        "document_version_f1120c6262c10624f4527048"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/versana-premier/DOC2923015_Versana%20Premier_Datasheet_Rev%203_v10.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_70ef98ba8c3240bd398c50ce",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_0cef4d08030ea997a83b9e6e",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "4D",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_fdc5846be5754c8b44da09ce"
+      ],
+      "documentVersionIds": [
+        "document_version_f1120c6262c10624f4527048"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/versana-premier/DOC2923015_Versana%20Premier_Datasheet_Rev%203_v10.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_3636ed9e3c23eab54e50e61f",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_cc9fd1a6a631a6df1b52d140",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_3a6dd4067e01c61dd3acdaed"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_44c04343dc88158d01bc031d",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_82a5dd1376d5f8b5515fb5f3",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_eeaeb38bc4fd3df2adefefa7"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_ff69f3aa5732e7c423c0b2fc",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_f6d9906fbba04b5604b9355c",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_af87683499579759c647d448"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_463d7c6cf69edc12324a98fc",
+      "productSlug": "wave2-ge-versana-premier",
+      "productTitle": "GE HealthCare Versana Premier",
+      "claimCandidateId": "claim_1207ead2a419e1ad90271e50",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_224e406dd1a5ab333eaecde7"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_980b9b34025c1636cd4bb2e6",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_cbec7cc677a225168aa5dc99",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "See brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_7ad44fda590dae3c54cb9eaa"
+        ],
+        "documentVersionIds": [
+          "document_version_d477c08f2a0c5bac40dcd672"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-gp-ss-march-2025-jb29044-xx-br-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_42215563617be29e9526e5ac",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_9cd4dfca934c57462984feee",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Manufacturer Brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_5c911b81cd1ab9bb48bbfc82"
+        ],
+        "documentVersionIds": [
+          "document_version_9fd1bfcf6811bcbec2f03ab4"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-GP-SS-march-2025-JB29044XX-.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_b3cc9f30204fabf2b751125e",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_7d8719fa5e8fcd434133f317",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Unclassified manufacturer document",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_79e14cc919677d6111ad8c1c"
+        ],
+        "documentVersionIds": [
+          "document_version_fbd07c411b8e7b1707335c54"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/transducer-guide-versana-premier-r3-may-2025-DOC2993174.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_19d4ecfcff3871f680887237",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_aabba12bc598a7ebd0b2510f",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "PDF resource from page metadata",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_77b73735964f066bf36a81b2"
+        ],
+        "documentVersionIds": [
+          "document_version_aced4af26a6acea55ebc0ae3"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Active-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_9678f46deab766cc9f106cc3",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_1cd9c47e6fe5aeeb44324e27",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "PDF resource from page metadata",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_b75482e4b0ca73c7e7195ea1"
+        ],
+        "documentVersionIds": [
+          "document_version_5c6c23a87f80c82945101350"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Balance-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_1c12dcdbb2d0c228aa8e61f4",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_8ad6243baa6af382244ad360",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "PDF resource from page metadata",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_e0fd6d34c94539ed4d59a4b9"
+        ],
+        "documentVersionIds": [
+          "document_version_ce4d163b8bf146a2c107c4ae"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VERSANA-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_d19fc666cd7902b90ccee689",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_adb496d9abf4cdc06f182c51",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "PDF resource from page metadata",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_ac70eb21f42e39acd6e60dc8"
+        ],
+        "documentVersionIds": [
+          "document_version_f584d41b61f0983afc634a6c"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Premier-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_e91c85a768975f67aaea2051",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_7665f5a8d9ac8a5fcee4fe4a",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Manufacturer Datasheet",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_9d00d926c22853d56ec2ec60"
+        ],
+        "documentVersionIds": [
+          "document_version_f1120c6262c10624f4527048"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/versana-premier/DOC2923015_Versana%20Premier_Datasheet_Rev%203_v10.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_874083284b1f95f25a91fd5f",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_6ff4cbd4758b698b469134ad",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_b4343f251c5fa8f47ec0e51f"
+        ],
+        "documentVersionIds": [
+          "document_version_d477c08f2a0c5bac40dcd672"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-gp-ss-march-2025-jb29044-xx-br-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_e7f8c535d0e6c3519ba420a2",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_f451e88d79bc82d76f5bb826",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c9d655853daf23f3f391023f"
+        ],
+        "documentVersionIds": [
+          "document_version_9fd1bfcf6811bcbec2f03ab4"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-GP-SS-march-2025-JB29044XX-.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_94d668843b6d62c0f914aec0",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_75b760b0263bbe040a32fdfb",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c34f7dd3cc95cb911fa5c127"
+        ],
+        "documentVersionIds": [
+          "document_version_fbd07c411b8e7b1707335c54"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/transducer-guide-versana-premier-r3-may-2025-DOC2993174.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_ee66987dffd828917b219291",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_cf1129e22ae016add6b236c7",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_ec4b57073d5e12b35450cb9a"
+        ],
+        "documentVersionIds": [
+          "document_version_aced4af26a6acea55ebc0ae3"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Active-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_6d36ecada3cf00a6dd07ad11",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_212382d8f79680f154b9f8de",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_27d0ffa3e7acdc3b9d9f53bc"
+        ],
+        "documentVersionIds": [
+          "document_version_5c6c23a87f80c82945101350"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Balance-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_f996f7b801cd46f2a6dc1f85",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_f1e82f8d933cc694827b79f6",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_e996af062844881191a6fd65"
+        ],
+        "documentVersionIds": [
+          "document_version_ce4d163b8bf146a2c107c4ae"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VERSANA-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_c3351b4c55aad02b6edbdf2f",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_089245aa07a23b8db91d3021",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_49e2ea0dba64dbae1e9306b0"
+        ],
+        "documentVersionIds": [
+          "document_version_f584d41b61f0983afc634a6c"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Premier-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_46a21c07a8b7348c3aa1845d",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_c1615672deba3af9ee9b6f16",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "datasheet",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_7b985ea6e2894d150292633d"
+        ],
+        "documentVersionIds": [
+          "document_version_f1120c6262c10624f4527048"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/versana-premier/DOC2923015_Versana%20Premier_Datasheet_Rev%203_v10.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.operatingModes": [
+      {
+        "reviewItemId": "review_item_b7a92223b82e8c6362c5c249",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_ba1b96e8103fb7a15802d464",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "Power Doppler",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_33e7e0e196f69385bd9cd952"
+        ],
+        "documentVersionIds": [
+          "document_version_d477c08f2a0c5bac40dcd672"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-gp-ss-march-2025-jb29044-xx-br-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_6d19a5edd7ddaadfe399fe25",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_14b51722723355b86e2c482d",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "color Doppler",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_fa72edac84e0c9ab055d4f1e"
+        ],
+        "documentVersionIds": [
+          "document_version_d477c08f2a0c5bac40dcd672"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-gp-ss-march-2025-jb29044-xx-br-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_4d2548b72c8815a3737a5853",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_5ece3aee899ee18b855f0efd",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "3D/4D",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_4bb3205306e0b6dc4ae2d0b0"
+        ],
+        "documentVersionIds": [
+          "document_version_d477c08f2a0c5bac40dcd672"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-gp-ss-march-2025-jb29044-xx-br-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_9e67bd45fd5f33b0fc65b7e3",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_a9ce12b5ce64a84396a4162b",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "3D",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_2df9fd155eb6fd02683b91a3"
+        ],
+        "documentVersionIds": [
+          "document_version_d477c08f2a0c5bac40dcd672"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-gp-ss-march-2025-jb29044-xx-br-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_19637a88cb972c1a1dc37022",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_db06240b3c6d77371cc99100",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "Power Doppler",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c587e363f048a30ceb5f4f84"
+        ],
+        "documentVersionIds": [
+          "document_version_9fd1bfcf6811bcbec2f03ab4"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-GP-SS-march-2025-JB29044XX-.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_586a4661219e8bea321a324d",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_2ddda6cbe952d370c9aaf9cb",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "color Doppler",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_02e4812eaa485353a6e1bebc"
+        ],
+        "documentVersionIds": [
+          "document_version_9fd1bfcf6811bcbec2f03ab4"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-GP-SS-march-2025-JB29044XX-.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_e28d565a8e1da7f80830d1b5",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_0530289aae5b8cc0c39ea854",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "3D/4D",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c9b3668ed34e61d476bb8af5"
+        ],
+        "documentVersionIds": [
+          "document_version_9fd1bfcf6811bcbec2f03ab4"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-GP-SS-march-2025-JB29044XX-.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_d047a7b64120a8ab528d974c",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_695096eb54667f39b7044ba9",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "3D",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_31e5231640cc876eb062e121"
+        ],
+        "documentVersionIds": [
+          "document_version_9fd1bfcf6811bcbec2f03ab4"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-GP-SS-march-2025-JB29044XX-.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_2d9f8d811e02b39349d67daa",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_7a326f7db7048e170431262e",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "4D",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_270f5d0518033c3795c85b20"
+        ],
+        "documentVersionIds": [
+          "document_version_aced4af26a6acea55ebc0ae3"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Active-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_9a9b7dbc36713afa42985b85",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_5b232ea2e6ec4c08daac7bcb",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "Doppler",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_1a07438f6603977b3368c91b"
+        ],
+        "documentVersionIds": [
+          "document_version_f1120c6262c10624f4527048"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/versana-premier/DOC2923015_Versana%20Premier_Datasheet_Rev%203_v10.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_76ca8039c7901f97ffde90ac",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_edc43a721834e8c17d56e0b5",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "Power Doppler",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_e08211409cc7f169dc7e8095"
+        ],
+        "documentVersionIds": [
+          "document_version_f1120c6262c10624f4527048"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/versana-premier/DOC2923015_Versana%20Premier_Datasheet_Rev%203_v10.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_7ce5d8d4485bdfb39f812610",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_495ae18931af4eca50bb57dc",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "Elastography",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_87475dc0d22ad4ea01f070ca"
+        ],
+        "documentVersionIds": [
+          "document_version_f1120c6262c10624f4527048"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/versana-premier/DOC2923015_Versana%20Premier_Datasheet_Rev%203_v10.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_138a97cdd4eae300a9eccb3a",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_93cb7363c7b3a6a2196d5522",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "3D/4D",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_5f92017c540cd85e5bf6271a"
+        ],
+        "documentVersionIds": [
+          "document_version_f1120c6262c10624f4527048"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/versana-premier/DOC2923015_Versana%20Premier_Datasheet_Rev%203_v10.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_9a7affb03ee04b6a5e9b6e7d",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_1803b11a8058894974a29a70",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "3D",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_ba63be340b54dce60ef64cef"
+        ],
+        "documentVersionIds": [
+          "document_version_f1120c6262c10624f4527048"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/versana-premier/DOC2923015_Versana%20Premier_Datasheet_Rev%203_v10.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_70ef98ba8c3240bd398c50ce",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_0cef4d08030ea997a83b9e6e",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "4D",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_fdc5846be5754c8b44da09ce"
+        ],
+        "documentVersionIds": [
+          "document_version_f1120c6262c10624f4527048"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/versana-premier/DOC2923015_Versana%20Premier_Datasheet_Rev%203_v10.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.battery": [
+      {
+        "reviewItemId": "review_item_5af5b45f5dda4c6beb89ba13",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_8619a239fd9d3840a7c4db62",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "powered scanning",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_776b93db40763e9b1b1a3621"
+        ],
+        "documentVersionIds": [
+          "document_version_d477c08f2a0c5bac40dcd672"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-gp-ss-march-2025-jb29044-xx-br-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_1e11d49e09df497a8d7eaba9",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_0dfa0768b118c14a6ad50c4c",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "powered scanning",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c7b73d53b9cec878f7ad8ca9"
+        ],
+        "documentVersionIds": [
+          "document_version_9fd1bfcf6811bcbec2f03ab4"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-GP-SS-march-2025-JB29044XX-.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "technical.term": [
+      {
+        "reviewItemId": "review_item_26e6e05db1c5cee8b7df940b",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_915625d0d10058121ab9da98",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c86595e8e64c40cf1827e6a9"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_cbf48ba535353a5368936f38",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_d13c50aa3b48568215873dd4",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_20a2892c8909182089d9c5e0"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_f9401cc36b4423809b1a93b8",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_7e623d289b8d4d11b1411a1b",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_f6e0c5588e46c285f2a19e1b"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_3d77305da5103ec43cf16c56",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_eb6ba9799884dd403497f00d",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_8a5e807e46ea448c8be488c5"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_12cb0001e134d01107a72bfd",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_e893e48a92020d3d1bf18029",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_182b4391d73bf8289e333bb3"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_a18f6a6d38e60cb3494864c4",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_f1f044aaa47500853e130a0c",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_e3c644c96ef29a19c599189a"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_692c250b718f31d48861b7b5",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_47c7fb5ceb82ba459ee63547",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_4fc9db15767b2de59fe8d3e0"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_adfbc1f4c0edf9bc6a41f0a7",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_ba52f362de433a4834bbfe75",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_86bc7b033d7f10e2aa28d68c"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_d78d774370dbb4324851abc2",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_323b1aa0291b7eecb2b92299",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_25f82f3dd7b9c0fce76e2223"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_fd5840246778f466d6374c71",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_6b335561b196666fcccfcdc5",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_db60dc40aae0ecab31d23526"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_c77e1677a09abfc1c69f2e18",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_8fcf34a6746e097b29d645ea",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_1d67aaa5660c25421f2de113"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_3636ed9e3c23eab54e50e61f",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_cc9fd1a6a631a6df1b52d140",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_3a6dd4067e01c61dd3acdaed"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_44c04343dc88158d01bc031d",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_82a5dd1376d5f8b5515fb5f3",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_eeaeb38bc4fd3df2adefefa7"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_ff69f3aa5732e7c423c0b2fc",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_f6d9906fbba04b5604b9355c",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_af87683499579759c647d448"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_463d7c6cf69edc12324a98fc",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_1207ead2a419e1ad90271e50",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_224e406dd1a5ab333eaecde7"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.interfaces": [
+      {
+        "reviewItemId": "review_item_e2861dd2d78da56803efd056",
+        "productSlug": "wave2-ge-versana-premier",
+        "productTitle": "GE HealthCare Versana Premier",
+        "claimCandidateId": "claim_a333725e13fa95694d7091d7",
+        "suggestedClaimType": "product.interfaces",
+        "valuePayload": {
+          "value": "8",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_2e7d6a600e7c007d139cf830"
+        ],
+        "documentVersionIds": [
+          "document_version_f1120c6262c10624f4527048"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/versana-premier/DOC2923015_Versana%20Premier_Datasheet_Rev%203_v10.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_d477c08f2a0c5bac40dcd672",
+      "documentType": "brochure",
+      "title": "See brochure",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-gp-ss-march-2025-jb29044-xx-br-en.pdf",
+      "sha256": "e530140cefc79328ef0f86ab7e387b1691eaccc5be36ad82a85be8c0c73b96cc"
+    },
+    {
+      "documentVersionId": "document_version_9fd1bfcf6811bcbec2f03ab4",
+      "documentType": "brochure",
+      "title": "Manufacturer Brochure",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/brochure-versana-premier-GP-SS-march-2025-JB29044XX-.pdf",
+      "sha256": "e530140cefc79328ef0f86ab7e387b1691eaccc5be36ad82a85be8c0c73b96cc"
+    },
+    {
+      "documentVersionId": "document_version_fbd07c411b8e7b1707335c54",
+      "documentType": "unknown",
+      "title": "Unclassified manufacturer document",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-premier/documents/transducer-guide-versana-premier-r3-may-2025-DOC2993174.pdf",
+      "sha256": "e74975a5e0d7fd6f249fb6b6ae4136d90a4c02291c01fd4cb9b28c7f9bffd00c"
+    },
+    {
+      "documentVersionId": "document_version_aced4af26a6acea55ebc0ae3",
+      "documentType": "unknown",
+      "title": "PDF resource from page metadata",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Active-ds-en.pdf",
+      "sha256": "7629cdd44020e3eddeea93d8226b7fee2f1fa83a751c08f02fc93da2725351e3"
+    },
+    {
+      "documentVersionId": "document_version_5c6c23a87f80c82945101350",
+      "documentType": "unknown",
+      "title": "PDF resource from page metadata",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Balance-ds-en.pdf",
+      "sha256": "9e84177cf86331ff7873d254a45be4821b21bd479eb4ec69f003f5aa0d3e7b14"
+    },
+    {
+      "documentVersionId": "document_version_ce4d163b8bf146a2c107c4ae",
+      "documentType": "unknown",
+      "title": "PDF resource from page metadata",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VERSANA-ds-en.pdf",
+      "sha256": "b059bdc22f2cf7636acb374da6454cda32457828266b01bda0ce3491c9676f5a"
+    },
+    {
+      "documentVersionId": "document_version_f584d41b61f0983afc634a6c",
+      "documentType": "unknown",
+      "title": "PDF resource from page metadata",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Premier-ds-en.pdf",
+      "sha256": "46bf6f72243acb478629db31bbb0ffcf8416468c5c3f34219096ce2b170b9549"
+    },
+    {
+      "documentVersionId": "document_version_f1120c6262c10624f4527048",
+      "documentType": "datasheet",
+      "title": "Manufacturer Datasheet",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/versana-premier/DOC2923015_Versana%20Premier_Datasheet_Rev%203_v10.pdf",
+      "sha256": "974bd44cc2371ff7e607e57933543121b178e5f4070ffd2b13beaa4e00726fd4"
+    }
+  ],
+  "missingEvidence": [
+    {
+      "claimCandidateId": "claim_915625d0d10058121ab9da98",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_d13c50aa3b48568215873dd4",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_7e623d289b8d4d11b1411a1b",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_eb6ba9799884dd403497f00d",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_e893e48a92020d3d1bf18029",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_f1f044aaa47500853e130a0c",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_47c7fb5ceb82ba459ee63547",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_ba52f362de433a4834bbfe75",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_323b1aa0291b7eecb2b92299",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_6b335561b196666fcccfcdc5",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_8fcf34a6746e097b29d645ea",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_cc9fd1a6a631a6df1b52d140",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_82a5dd1376d5f8b5515fb5f3",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_f6d9906fbba04b5604b9355c",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_1207ead2a419e1ad90271e50",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    }
+  ],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver adapter used: ge",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected unsafe document URL: tel:18004371171",
+    "Resolver rejected unsafe document URL: tel:18004371171",
+    "Resolver rejected unsafe document URL: tel:18004371171",
+    "Resolver rejected unsafe document URL: tel:18662817545",
+    "Resolver rejected unsafe document URL: tel:18006680732",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://www.kkt-chillersusa.com/GE/",
+    "Resolver rejected offsite document URL: https://www.kkt-chillersusa.com/GE/",
+    "Resolver rejected offsite document URL: https://rise.articulate.com/share/w0JzZ2DRMAvXe_z7ERMVslfsEDn696hZ",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://www.kkt-chillersusa.com/GE/",
+    "Resolver rejected offsite document URL: https://rise.articulate.com/share/w0JzZ2DRMAvXe_z7ERMVslfsEDn696hZ",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/whyge",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://ci.gehealthcare.com/us",
+    "Resolver rejected offsite document URL: https://ci.gehealthcare.com/us",
+    "Resolver rejected offsite document URL: https://ci.gehealthcare.com/us",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "resolver=ge; attempts=7; matchedLinks=878; classifiedDocuments={\"Unknown\":4840,\"Brochure\":2,\"Datasheet\":7,\"Software\":6,\"IFU\":12}; confidenceDistribution={\"80\":2,\"90\":1016,\"100\":3849}; duplicatesRemoved=3989",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

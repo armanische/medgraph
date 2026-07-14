@@ -1,0 +1,42 @@
+{
+  "product": {
+    "productSlug": "wave2-ge-aespire-view",
+    "manufacturer": "GE HealthCare",
+    "productName": "GE HealthCare Aespire View",
+    "model": "Aespire View",
+    "category": "Наркозно-дыхательные аппараты"
+  },
+  "attemptedDownloads": [
+    {
+      "documentCandidateId": "document_d32fde3390f713e9518f74ca",
+      "sourceId": "source_b31449d2a0e774498d1248b8",
+      "productSlug": "wave2-ge-aespire-view",
+      "title": "Aespire View 6.x Participant Guide",
+      "url": "https://www.gehealthcare.com/middle-east/-/jssmedia/global/products/images/anesthesia_delivery_systems_user_resources/new/aespire-6x-participant-guide.pdf",
+      "documentType": "user_manual",
+      "trustTier": 1
+    }
+  ],
+  "downloadedArtifacts": [],
+  "failedDownloads": [
+    {
+      "documentCandidateId": "document_d32fde3390f713e9518f74ca",
+      "url": "https://www.gehealthcare.com/middle-east/-/jssmedia/global/products/images/anesthesia_delivery_systems_user_resources/new/aespire-6x-participant-guide.pdf",
+      "title": "Aespire View 6.x Participant Guide",
+      "reason": "HTTP 404 Not Found",
+      "retryable": false
+    }
+  ],
+  "skippedDocuments": [],
+  "documentVersions": [],
+  "warnings": [
+    "Resolver fetch failed for https://www.gehealthcare.com/en-us/products/anesthesia-delivery/aespire-view: HTTP 404",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": false,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}

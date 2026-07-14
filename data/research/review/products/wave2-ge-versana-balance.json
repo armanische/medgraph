@@ -1,0 +1,2775 @@
+{
+  "product": {
+    "productSlug": "wave2-ge-versana-balance",
+    "manufacturer": "GE HealthCare",
+    "productName": "GE HealthCare Versana Balance",
+    "model": "Versana Balance",
+    "category": "УЗИ аппараты"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_108272b2bdac6e5242750baa",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_1d226eaea62089a06a8f0969",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Unclassified manufacturer document",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_fdbe48dd8a343afb76bf342e"
+      ],
+      "documentVersionIds": [
+        "document_version_f5d71bce62ce3267e60bd3de"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-balanca-sustainability-br-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b7c9fcd7c22ee4ee48745423",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_1d382083dba9c9b3021787d9",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_8c8ca719f3da1f6d6e127363"
+      ],
+      "documentVersionIds": [
+        "document_version_f5d71bce62ce3267e60bd3de"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-balanca-sustainability-br-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_d08f26c9890f028c55237bee",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_a8f4ac0439c011de75370005",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "4D",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_94bbcf21aba0dc67ab6cca84"
+      ],
+      "documentVersionIds": [
+        "document_version_f5d71bce62ce3267e60bd3de"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-balanca-sustainability-br-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_6a85f0bfe72a6c386a2f2b4c",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_3f1ae1cfb25c44d4f4cade19",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_98047de40727a52812888d9e"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_d01608297637ffe90d598911",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_5de32e9d0446e9e9c2d3112c",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Manufacturer Brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_73ec67f1b62456cac79c9326"
+      ],
+      "documentVersionIds": [
+        "document_version_7d1c654e2e5a79174b066cde"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-balance-ultrasound-general-practicebrochureversanabalancev2GPSSSept2024JB30848XX.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_cfe9612b49fa01ba856f8657",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_18c93c8c16aca693d2554e30",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_6084aba17f16bb0dd2103cc9"
+      ],
+      "documentVersionIds": [
+        "document_version_7d1c654e2e5a79174b066cde"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-balance-ultrasound-general-practicebrochureversanabalancev2GPSSSept2024JB30848XX.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_87438bf9f861f5f525c3370b",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_d027db25849d7970606133bd",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Power Doppler",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_8e2d22c89f950d9f1bbfe00e"
+      ],
+      "documentVersionIds": [
+        "document_version_7d1c654e2e5a79174b066cde"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-balance-ultrasound-general-practicebrochureversanabalancev2GPSSSept2024JB30848XX.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_fe981fe3f3ea6b3511776067",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_b25739dba3595b041d285107",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "color Doppler",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_8f211e05a75c8a2df761ee69"
+      ],
+      "documentVersionIds": [
+        "document_version_7d1c654e2e5a79174b066cde"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-balance-ultrasound-general-practicebrochureversanabalancev2GPSSSept2024JB30848XX.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_018e3ff466609cbe5a4d960d",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_92e6f5dfd46d6113567d1824",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Doppler",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_586f2e79aac94aaf9cec9ae8"
+      ],
+      "documentVersionIds": [
+        "document_version_7d1c654e2e5a79174b066cde"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-balance-ultrasound-general-practicebrochureversanabalancev2GPSSSept2024JB30848XX.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_143892ca422c139fb03628f8",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_a5b07039adb42713396ed17a",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Elastography",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_e91bc42505aae316eee626de"
+      ],
+      "documentVersionIds": [
+        "document_version_7d1c654e2e5a79174b066cde"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-balance-ultrasound-general-practicebrochureversanabalancev2GPSSSept2024JB30848XX.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_9db8dee92df972a0b09c7308",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_a2291faf17d5ad0f56611ef7",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "3D/4D",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_0b85944ecc1c24d85d620d93"
+      ],
+      "documentVersionIds": [
+        "document_version_7d1c654e2e5a79174b066cde"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-balance-ultrasound-general-practicebrochureversanabalancev2GPSSSept2024JB30848XX.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_3854db3e1c950b2c68288bf7",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_5642544ee09d4afba2012592",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_cf101034e6715ee4695e57d2"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_533ccdbad00fadb8c89a3cb8",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_84350148e3fecba92bc0be73",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Unclassified manufacturer document",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_d6e4b59562ee96034bf8f220"
+      ],
+      "documentVersionIds": [
+        "document_version_b5b3b962bd949d7e0c5be7a7"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-Balance-V2-Transducer-Guide.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_6a5d7ab42aca3b90970763c7",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_3aa395e8edb62da864b719e4",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_adbaabbed718d3c3a7378872"
+      ],
+      "documentVersionIds": [
+        "document_version_b5b3b962bd949d7e0c5be7a7"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-Balance-V2-Transducer-Guide.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_42f1d26cac471bc3e6f3c970",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_e5c43ec0722965cd837df802",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "PDF resource from page metadata",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_fe1b4e7c2d59441061cd33ae"
+      ],
+      "documentVersionIds": [
+        "document_version_00663e5884df1cc3a161e267"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Active-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_aeda431c347cb20337880439",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_bd164763345ead385ad213ba",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_247e7f7d50661d4afcf6cb8d"
+      ],
+      "documentVersionIds": [
+        "document_version_00663e5884df1cc3a161e267"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Active-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_d9489287f716a5d0699eb602",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_59d3ba6f0da2b65480d26d34",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "4D",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_797e521ad32fd78e366bf5f2"
+      ],
+      "documentVersionIds": [
+        "document_version_00663e5884df1cc3a161e267"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Active-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_008fca3c8a0b4bf63123b815",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_62f361561f0467c871e79831",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_886a70990993f4ad029eac80"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_236db73b3513d07ec5b4c0db",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_c2e9ea04a6b662da4305ab1d",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_e4fe3417fff24d5bba768e9a"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_bee967bb7f6ca7a0cae5d9c9",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_008b152b22511d17413e9e61",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "PDF resource from page metadata",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c3c41bcad23d49c1834a854d"
+      ],
+      "documentVersionIds": [
+        "document_version_b9430cb6d35888e4853799b9"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Balance-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5c6db258cda56f8e472fdb3e",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_81e70083f4faea8b60899742",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_18ddacf117fa841dd3e833b9"
+      ],
+      "documentVersionIds": [
+        "document_version_b9430cb6d35888e4853799b9"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Balance-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_fbbddca6fb5a6f174fd873e1",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_94a81ac62eb83264112a2872",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_44673c250f38164532ad44af"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_570863c408a8346962861e31",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_52059ecf15a0b15117aa095e",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_390d97439b53ca73a4b472c4"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_16c6bb6769a90e92fc4951af",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_4268f922db3a7650cd99e4fc",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "PDF resource from page metadata",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_0ddfdee0651e0b76cd3790ad"
+      ],
+      "documentVersionIds": [
+        "document_version_e56d030f0fa14d032a55a7ee"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VERSANA-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_9f10a4a0be16f901d966e885",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_c86c2b32a7bd71a1d8c9eacc",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_1473adfeeeedf6410f9067c5"
+      ],
+      "documentVersionIds": [
+        "document_version_e56d030f0fa14d032a55a7ee"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VERSANA-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_909bef630a5ae26ef9a81504",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_96a0b1830b4104e1a960c374",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_1e0b406afa7957426a7cf161"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_8b5e137616d8b57eb803b52a",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_2e222119935b61925ecbf211",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "PDF resource from page metadata",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_7b2273951772c945cb1dca66"
+      ],
+      "documentVersionIds": [
+        "document_version_2b8eb193b5d24eda35cb55b9"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Premier-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_ffa5b8ffd395845e679e273a",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_31c93a94113f1ba050df4327",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_833f0b2cd79874fcdcf34282"
+      ],
+      "documentVersionIds": [
+        "document_version_2b8eb193b5d24eda35cb55b9"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Premier-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_1a2721797ca84cfdbd9555e6",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_5b0a439aa22f5376e22f74cf",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_a6a80775c66d31eb4d71e5a8"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_f7d89c3e40c7418ea27b7a2f",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_c99e083f04df8a0d64ff4883",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_9f5a17db6df00dd95cc98332"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_e7f1e94ba82037ee229ea160",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_da6109bc998ad6dd1f49822f",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Unclassified manufacturer document",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_b75870a89ff2b823d98d592d"
+      ],
+      "documentVersionIds": [
+        "document_version_2c6aa616f066d694c0f8a14a"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/Versana%20Balance/Versana%20Balance_V2_Specsheet_NTP_DOC2593795_rebrand_v3.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b391204d2160071d75fa0e68",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_9bfe66ad543a77d5288b44d6",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_8a13a805462c99b969890976"
+      ],
+      "documentVersionIds": [
+        "document_version_2c6aa616f066d694c0f8a14a"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/Versana%20Balance/Versana%20Balance_V2_Specsheet_NTP_DOC2593795_rebrand_v3.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5ef28072b248b5c1984ae3fa",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_5d5c24fd34bc9826f8615692",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Doppler",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_8296baa0da633e32df40f57f"
+      ],
+      "documentVersionIds": [
+        "document_version_2c6aa616f066d694c0f8a14a"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/Versana%20Balance/Versana%20Balance_V2_Specsheet_NTP_DOC2593795_rebrand_v3.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_02f8a3945f7ce41ba403d7dc",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_532884e441a72f4359552ff7",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Power Doppler",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_b81da8479202c42f544dc869"
+      ],
+      "documentVersionIds": [
+        "document_version_2c6aa616f066d694c0f8a14a"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/Versana%20Balance/Versana%20Balance_V2_Specsheet_NTP_DOC2593795_rebrand_v3.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_00de1a40e041f375d3f33144",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_01d70cf93c196e307d7ad6ae",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Elastography",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_0743a0f8105931eac47f24fb"
+      ],
+      "documentVersionIds": [
+        "document_version_2c6aa616f066d694c0f8a14a"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/Versana%20Balance/Versana%20Balance_V2_Specsheet_NTP_DOC2593795_rebrand_v3.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_d9bc3ee9367542aba2fb649f",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_b452c54084e7f7729ab8947a",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "3D/4D",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_df6808f323eeb2c3265a18f1"
+      ],
+      "documentVersionIds": [
+        "document_version_2c6aa616f066d694c0f8a14a"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/Versana%20Balance/Versana%20Balance_V2_Specsheet_NTP_DOC2593795_rebrand_v3.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_a79aaf4c7e9041f1f07da93a",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_bb08ccb6c2c75085f432870f",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "3D",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_e0ff134f54b174e5070dad1f"
+      ],
+      "documentVersionIds": [
+        "document_version_2c6aa616f066d694c0f8a14a"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/Versana%20Balance/Versana%20Balance_V2_Specsheet_NTP_DOC2593795_rebrand_v3.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_d14e23dbcace778dc9e6c99a",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_39a478b6c90b6432e5b1ff29",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "4D",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_89d0cbf7aef9283af0d3fa92"
+      ],
+      "documentVersionIds": [
+        "document_version_2c6aa616f066d694c0f8a14a"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/Versana%20Balance/Versana%20Balance_V2_Specsheet_NTP_DOC2593795_rebrand_v3.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_7aa0eaeca119f68617b69750",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_926ad4673a8b7531936ad655",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_33e891f3193720f53ce43256"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_27758f97ee753cfd966657d4",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_f488c1aeb212f362c579b6c2",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_dc039cf91be82bb210b32dd2"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5f1b1b0c606ca4dc0317f928",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_448999aeadd0bc9a01755442",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_7d4733327400c937b23caecf"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_8e6b46c68478828a7bff65fb",
+      "productSlug": "wave2-ge-versana-balance",
+      "productTitle": "GE HealthCare Versana Balance",
+      "claimCandidateId": "claim_40c90a4bf988295369f068a6",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_02e84ce54a060a4988fc90d2"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_108272b2bdac6e5242750baa",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_1d226eaea62089a06a8f0969",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Unclassified manufacturer document",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_fdbe48dd8a343afb76bf342e"
+        ],
+        "documentVersionIds": [
+          "document_version_f5d71bce62ce3267e60bd3de"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-balanca-sustainability-br-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_d01608297637ffe90d598911",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_5de32e9d0446e9e9c2d3112c",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Manufacturer Brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_73ec67f1b62456cac79c9326"
+        ],
+        "documentVersionIds": [
+          "document_version_7d1c654e2e5a79174b066cde"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-balance-ultrasound-general-practicebrochureversanabalancev2GPSSSept2024JB30848XX.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_533ccdbad00fadb8c89a3cb8",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_84350148e3fecba92bc0be73",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Unclassified manufacturer document",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_d6e4b59562ee96034bf8f220"
+        ],
+        "documentVersionIds": [
+          "document_version_b5b3b962bd949d7e0c5be7a7"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-Balance-V2-Transducer-Guide.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_42f1d26cac471bc3e6f3c970",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_e5c43ec0722965cd837df802",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "PDF resource from page metadata",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_fe1b4e7c2d59441061cd33ae"
+        ],
+        "documentVersionIds": [
+          "document_version_00663e5884df1cc3a161e267"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Active-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_bee967bb7f6ca7a0cae5d9c9",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_008b152b22511d17413e9e61",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "PDF resource from page metadata",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c3c41bcad23d49c1834a854d"
+        ],
+        "documentVersionIds": [
+          "document_version_b9430cb6d35888e4853799b9"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Balance-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_16c6bb6769a90e92fc4951af",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_4268f922db3a7650cd99e4fc",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "PDF resource from page metadata",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_0ddfdee0651e0b76cd3790ad"
+        ],
+        "documentVersionIds": [
+          "document_version_e56d030f0fa14d032a55a7ee"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VERSANA-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_8b5e137616d8b57eb803b52a",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_2e222119935b61925ecbf211",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "PDF resource from page metadata",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_7b2273951772c945cb1dca66"
+        ],
+        "documentVersionIds": [
+          "document_version_2b8eb193b5d24eda35cb55b9"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Premier-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_e7f1e94ba82037ee229ea160",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_da6109bc998ad6dd1f49822f",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Unclassified manufacturer document",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_b75870a89ff2b823d98d592d"
+        ],
+        "documentVersionIds": [
+          "document_version_2c6aa616f066d694c0f8a14a"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/Versana%20Balance/Versana%20Balance_V2_Specsheet_NTP_DOC2593795_rebrand_v3.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_b7c9fcd7c22ee4ee48745423",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_1d382083dba9c9b3021787d9",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_8c8ca719f3da1f6d6e127363"
+        ],
+        "documentVersionIds": [
+          "document_version_f5d71bce62ce3267e60bd3de"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-balanca-sustainability-br-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_cfe9612b49fa01ba856f8657",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_18c93c8c16aca693d2554e30",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_6084aba17f16bb0dd2103cc9"
+        ],
+        "documentVersionIds": [
+          "document_version_7d1c654e2e5a79174b066cde"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-balance-ultrasound-general-practicebrochureversanabalancev2GPSSSept2024JB30848XX.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_6a5d7ab42aca3b90970763c7",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_3aa395e8edb62da864b719e4",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_adbaabbed718d3c3a7378872"
+        ],
+        "documentVersionIds": [
+          "document_version_b5b3b962bd949d7e0c5be7a7"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-Balance-V2-Transducer-Guide.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_aeda431c347cb20337880439",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_bd164763345ead385ad213ba",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_247e7f7d50661d4afcf6cb8d"
+        ],
+        "documentVersionIds": [
+          "document_version_00663e5884df1cc3a161e267"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Active-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_5c6db258cda56f8e472fdb3e",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_81e70083f4faea8b60899742",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_18ddacf117fa841dd3e833b9"
+        ],
+        "documentVersionIds": [
+          "document_version_b9430cb6d35888e4853799b9"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Balance-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_9f10a4a0be16f901d966e885",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_c86c2b32a7bd71a1d8c9eacc",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_1473adfeeeedf6410f9067c5"
+        ],
+        "documentVersionIds": [
+          "document_version_e56d030f0fa14d032a55a7ee"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VERSANA-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_ffa5b8ffd395845e679e273a",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_31c93a94113f1ba050df4327",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_833f0b2cd79874fcdcf34282"
+        ],
+        "documentVersionIds": [
+          "document_version_2b8eb193b5d24eda35cb55b9"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Premier-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_b391204d2160071d75fa0e68",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_9bfe66ad543a77d5288b44d6",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_8a13a805462c99b969890976"
+        ],
+        "documentVersionIds": [
+          "document_version_2c6aa616f066d694c0f8a14a"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/Versana%20Balance/Versana%20Balance_V2_Specsheet_NTP_DOC2593795_rebrand_v3.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.operatingModes": [
+      {
+        "reviewItemId": "review_item_d08f26c9890f028c55237bee",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_a8f4ac0439c011de75370005",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "4D",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_94bbcf21aba0dc67ab6cca84"
+        ],
+        "documentVersionIds": [
+          "document_version_f5d71bce62ce3267e60bd3de"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-balanca-sustainability-br-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_87438bf9f861f5f525c3370b",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_d027db25849d7970606133bd",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "Power Doppler",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_8e2d22c89f950d9f1bbfe00e"
+        ],
+        "documentVersionIds": [
+          "document_version_7d1c654e2e5a79174b066cde"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-balance-ultrasound-general-practicebrochureversanabalancev2GPSSSept2024JB30848XX.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_fe981fe3f3ea6b3511776067",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_b25739dba3595b041d285107",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "color Doppler",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_8f211e05a75c8a2df761ee69"
+        ],
+        "documentVersionIds": [
+          "document_version_7d1c654e2e5a79174b066cde"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-balance-ultrasound-general-practicebrochureversanabalancev2GPSSSept2024JB30848XX.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_018e3ff466609cbe5a4d960d",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_92e6f5dfd46d6113567d1824",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "Doppler",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_586f2e79aac94aaf9cec9ae8"
+        ],
+        "documentVersionIds": [
+          "document_version_7d1c654e2e5a79174b066cde"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-balance-ultrasound-general-practicebrochureversanabalancev2GPSSSept2024JB30848XX.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_143892ca422c139fb03628f8",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_a5b07039adb42713396ed17a",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "Elastography",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_e91bc42505aae316eee626de"
+        ],
+        "documentVersionIds": [
+          "document_version_7d1c654e2e5a79174b066cde"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-balance-ultrasound-general-practicebrochureversanabalancev2GPSSSept2024JB30848XX.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_9db8dee92df972a0b09c7308",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_a2291faf17d5ad0f56611ef7",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "3D/4D",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_0b85944ecc1c24d85d620d93"
+        ],
+        "documentVersionIds": [
+          "document_version_7d1c654e2e5a79174b066cde"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-balance-ultrasound-general-practicebrochureversanabalancev2GPSSSept2024JB30848XX.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_d9489287f716a5d0699eb602",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_59d3ba6f0da2b65480d26d34",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "4D",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_797e521ad32fd78e366bf5f2"
+        ],
+        "documentVersionIds": [
+          "document_version_00663e5884df1cc3a161e267"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Active-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_5ef28072b248b5c1984ae3fa",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_5d5c24fd34bc9826f8615692",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "Doppler",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_8296baa0da633e32df40f57f"
+        ],
+        "documentVersionIds": [
+          "document_version_2c6aa616f066d694c0f8a14a"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/Versana%20Balance/Versana%20Balance_V2_Specsheet_NTP_DOC2593795_rebrand_v3.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_02f8a3945f7ce41ba403d7dc",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_532884e441a72f4359552ff7",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "Power Doppler",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_b81da8479202c42f544dc869"
+        ],
+        "documentVersionIds": [
+          "document_version_2c6aa616f066d694c0f8a14a"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/Versana%20Balance/Versana%20Balance_V2_Specsheet_NTP_DOC2593795_rebrand_v3.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_00de1a40e041f375d3f33144",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_01d70cf93c196e307d7ad6ae",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "Elastography",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_0743a0f8105931eac47f24fb"
+        ],
+        "documentVersionIds": [
+          "document_version_2c6aa616f066d694c0f8a14a"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/Versana%20Balance/Versana%20Balance_V2_Specsheet_NTP_DOC2593795_rebrand_v3.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_d9bc3ee9367542aba2fb649f",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_b452c54084e7f7729ab8947a",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "3D/4D",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_df6808f323eeb2c3265a18f1"
+        ],
+        "documentVersionIds": [
+          "document_version_2c6aa616f066d694c0f8a14a"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/Versana%20Balance/Versana%20Balance_V2_Specsheet_NTP_DOC2593795_rebrand_v3.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_a79aaf4c7e9041f1f07da93a",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_bb08ccb6c2c75085f432870f",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "3D",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_e0ff134f54b174e5070dad1f"
+        ],
+        "documentVersionIds": [
+          "document_version_2c6aa616f066d694c0f8a14a"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/Versana%20Balance/Versana%20Balance_V2_Specsheet_NTP_DOC2593795_rebrand_v3.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_d14e23dbcace778dc9e6c99a",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_39a478b6c90b6432e5b1ff29",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "4D",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_89d0cbf7aef9283af0d3fa92"
+        ],
+        "documentVersionIds": [
+          "document_version_2c6aa616f066d694c0f8a14a"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/Versana%20Balance/Versana%20Balance_V2_Specsheet_NTP_DOC2593795_rebrand_v3.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "technical.term": [
+      {
+        "reviewItemId": "review_item_6a85f0bfe72a6c386a2f2b4c",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_3f1ae1cfb25c44d4f4cade19",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_98047de40727a52812888d9e"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_3854db3e1c950b2c68288bf7",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_5642544ee09d4afba2012592",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_cf101034e6715ee4695e57d2"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_008fca3c8a0b4bf63123b815",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_62f361561f0467c871e79831",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_886a70990993f4ad029eac80"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_236db73b3513d07ec5b4c0db",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_c2e9ea04a6b662da4305ab1d",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_e4fe3417fff24d5bba768e9a"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_fbbddca6fb5a6f174fd873e1",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_94a81ac62eb83264112a2872",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_44673c250f38164532ad44af"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_570863c408a8346962861e31",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_52059ecf15a0b15117aa095e",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_390d97439b53ca73a4b472c4"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_909bef630a5ae26ef9a81504",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_96a0b1830b4104e1a960c374",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_1e0b406afa7957426a7cf161"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_1a2721797ca84cfdbd9555e6",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_5b0a439aa22f5376e22f74cf",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_a6a80775c66d31eb4d71e5a8"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_f7d89c3e40c7418ea27b7a2f",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_c99e083f04df8a0d64ff4883",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_9f5a17db6df00dd95cc98332"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_7aa0eaeca119f68617b69750",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_926ad4673a8b7531936ad655",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_33e891f3193720f53ce43256"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_27758f97ee753cfd966657d4",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_f488c1aeb212f362c579b6c2",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_dc039cf91be82bb210b32dd2"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_5f1b1b0c606ca4dc0317f928",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_448999aeadd0bc9a01755442",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_7d4733327400c937b23caecf"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_8e6b46c68478828a7bff65fb",
+        "productSlug": "wave2-ge-versana-balance",
+        "productTitle": "GE HealthCare Versana Balance",
+        "claimCandidateId": "claim_40c90a4bf988295369f068a6",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_02e84ce54a060a4988fc90d2"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_f5d71bce62ce3267e60bd3de",
+      "documentType": "unknown",
+      "title": "Unclassified manufacturer document",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-balanca-sustainability-br-en.pdf",
+      "sha256": "994438cb09a8566849bf002dc9d008705614c47ecff7fe77eab806703a911428"
+    },
+    {
+      "documentVersionId": "document_version_7d1c654e2e5a79174b066cde",
+      "documentType": "brochure",
+      "title": "Manufacturer Brochure",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-balance-ultrasound-general-practicebrochureversanabalancev2GPSSSept2024JB30848XX.pdf",
+      "sha256": "dd17681c0fa1077d1c8a2bd5f5d764f606d31c4f0f9c628a2e885e24e1698e8f"
+    },
+    {
+      "documentVersionId": "document_version_b5b3b962bd949d7e0c5be7a7",
+      "documentType": "unknown",
+      "title": "Unclassified manufacturer document",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/ultrasound/versana/versana-balance/documents/versana-Balance-V2-Transducer-Guide.pdf",
+      "sha256": "fac347508f1b03c5d7b358d5bb0de23396935156a002f4d5f369ba700776e188"
+    },
+    {
+      "documentVersionId": "document_version_00663e5884df1cc3a161e267",
+      "documentType": "unknown",
+      "title": "PDF resource from page metadata",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Active-ds-en.pdf",
+      "sha256": "7629cdd44020e3eddeea93d8226b7fee2f1fa83a751c08f02fc93da2725351e3"
+    },
+    {
+      "documentVersionId": "document_version_b9430cb6d35888e4853799b9",
+      "documentType": "unknown",
+      "title": "PDF resource from page metadata",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Balance-ds-en.pdf",
+      "sha256": "9e84177cf86331ff7873d254a45be4821b21bd479eb4ec69f003f5aa0d3e7b14"
+    },
+    {
+      "documentVersionId": "document_version_e56d030f0fa14d032a55a7ee",
+      "documentType": "unknown",
+      "title": "PDF resource from page metadata",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VERSANA-ds-en.pdf",
+      "sha256": "b059bdc22f2cf7636acb374da6454cda32457828266b01bda0ce3491c9676f5a"
+    },
+    {
+      "documentVersionId": "document_version_2b8eb193b5d24eda35cb55b9",
+      "documentType": "unknown",
+      "title": "PDF resource from page metadata",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-Versana-Premier-ds-en.pdf",
+      "sha256": "46bf6f72243acb478629db31bbb0ffcf8416468c5c3f34219096ce2b170b9549"
+    },
+    {
+      "documentVersionId": "document_version_2c6aa616f066d694c0f8a14a",
+      "documentType": "unknown",
+      "title": "Unclassified manufacturer document",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/versana/Versana%20Balance/Versana%20Balance_V2_Specsheet_NTP_DOC2593795_rebrand_v3.pdf",
+      "sha256": "b81b3fa5bd8212b45d6e7a42d8a84267369c780f9341187a16e920e34df71ac9"
+    }
+  ],
+  "missingEvidence": [
+    {
+      "claimCandidateId": "claim_3f1ae1cfb25c44d4f4cade19",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_5642544ee09d4afba2012592",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_62f361561f0467c871e79831",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_c2e9ea04a6b662da4305ab1d",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_94a81ac62eb83264112a2872",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_52059ecf15a0b15117aa095e",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_96a0b1830b4104e1a960c374",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_5b0a439aa22f5376e22f74cf",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_c99e083f04df8a0d64ff4883",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_926ad4673a8b7531936ad655",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_f488c1aeb212f362c579b6c2",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_448999aeadd0bc9a01755442",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_40c90a4bf988295369f068a6",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    }
+  ],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver adapter used: ge",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://www.versanaclub.net/us/home",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://www.kkt-chillersusa.com/GE/",
+    "Resolver rejected offsite document URL: https://www.kkt-chillersusa.com/GE/",
+    "Resolver rejected offsite document URL: https://rise.articulate.com/share/w0JzZ2DRMAvXe_z7ERMVslfsEDn696hZ",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://www.kkt-chillersusa.com/GE/",
+    "Resolver rejected offsite document URL: https://rise.articulate.com/share/w0JzZ2DRMAvXe_z7ERMVslfsEDn696hZ",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/whyge",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://ci.gehealthcare.com/us",
+    "Resolver rejected offsite document URL: https://ci.gehealthcare.com/us",
+    "Resolver rejected offsite document URL: https://ci.gehealthcare.com/us",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "resolver=ge; attempts=7; matchedLinks=878; classifiedDocuments={\"Unknown\":4844,\"Brochure\":2,\"Datasheet\":6,\"Software\":6,\"IFU\":12}; confidenceDistribution={\"80\":2,\"90\":1017,\"100\":3851}; duplicatesRemoved=3992",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

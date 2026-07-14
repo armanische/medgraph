@@ -1,0 +1,25 @@
+{
+  "product": {
+    "productSlug": "wave2-ge-logiq-p10",
+    "manufacturer": "GE HealthCare",
+    "productName": "GE HealthCare LOGIQ P10",
+    "model": "LOGIQ P10",
+    "category": "УЗИ аппараты"
+  },
+  "attemptedDownloads": [],
+  "downloadedArtifacts": [],
+  "failedDownloads": [],
+  "skippedDocuments": [],
+  "documentVersions": [],
+  "warnings": [
+    "Resolver fetch failed for https://www.gehealthcare.com/en/products/ultrasound/logiq/logiq-p-series: HTTP 404",
+    "Discovery creates candidates only; no verified claims or publication.",
+    "No DocumentCandidate records were available for download."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": false,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}

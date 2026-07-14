@@ -1,0 +1,962 @@
+{
+  "product": {
+    "productSlug": "wave2-ge-aisys-cs2",
+    "manufacturer": "GE HealthCare",
+    "productName": "GE HealthCare Aisys CS²",
+    "model": "Aisys CS²",
+    "category": "Наркозно-дыхательные аппараты"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_3a5934201526a2ec2bb964c1",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "productTitle": "GE HealthCare Aisys CS²",
+      "claimCandidateId": "claim_38f20330825e49ee98a67b8c",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Read more",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_03fef759fa24f9e4f56fe303"
+      ],
+      "documentVersionIds": [
+        "document_version_ac610b2b0f530320466c5c29"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/aisyscs2-anesthesia_services-br-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_1593511ad3a436087ae8707d",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "productTitle": "GE HealthCare Aisys CS²",
+      "claimCandidateId": "claim_d1fc280374d229b1ff853482",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_a09bf969cba7418fc47cb1a2"
+      ],
+      "documentVersionIds": [
+        "document_version_ac610b2b0f530320466c5c29"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/aisyscs2-anesthesia_services-br-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_57054bc8b938fbab3b8fb696",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "productTitle": "GE HealthCare Aisys CS²",
+      "claimCandidateId": "claim_55a5c48888b9857e00992919",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Download brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_fcdcba5ca4cf4aab2a408afb"
+      ],
+      "documentVersionIds": [
+        "document_version_ea919b542a369ba2a153a636"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_2628f57210154ccbec034c4d",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "productTitle": "GE HealthCare Aisys CS²",
+      "claimCandidateId": "claim_84c453959b8cf276feff2257",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_7364ef6ecab17d6c9f120dba"
+      ],
+      "documentVersionIds": [
+        "document_version_ea919b542a369ba2a153a636"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_a4eb20690d16412f79a9722b",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "productTitle": "GE HealthCare Aisys CS²",
+      "claimCandidateId": "claim_44bcbbbad978a2ba54803ae9",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "neonatal",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_55cef3f788f0a332aad2d3e9"
+      ],
+      "documentVersionIds": [
+        "document_version_ea919b542a369ba2a153a636"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_68a814fa7724ffdafd90f7c8",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "productTitle": "GE HealthCare Aisys CS²",
+      "claimCandidateId": "claim_846db56d3ab62ca47e3dc022",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "adults",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c7988e1d6f80cb526df52659"
+      ],
+      "documentVersionIds": [
+        "document_version_ea919b542a369ba2a153a636"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_e2244b53fd7744017799d2e3",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "productTitle": "GE HealthCare Aisys CS²",
+      "claimCandidateId": "claim_fcf10c9a2ac4e70c2e6913ea",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "pediatric",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_0942777a0ee4bbb7fc1de5cc"
+      ],
+      "documentVersionIds": [
+        "document_version_ea919b542a369ba2a153a636"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_d437cbad5c5aedc258654802",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "productTitle": "GE HealthCare Aisys CS²",
+      "claimCandidateId": "claim_e42ab5b866c7c7f8cf2e7b54",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_4b545d40bb6f06038bcfe690"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_62d8e7e746da8969d6442b1c",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "productTitle": "GE HealthCare Aisys CS²",
+      "claimCandidateId": "claim_876579265c20cf4221a7043c",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "tidal volume",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_321546aec61d1388aa0357d4"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_4d1b15ccc54bc39a7cb4de9e",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "productTitle": "GE HealthCare Aisys CS²",
+      "claimCandidateId": "claim_88f86931571c2708623d3138",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Unclassified manufacturer document",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_23c65747910c9feb99f8ea47"
+      ],
+      "documentVersionIds": [
+        "document_version_88e5a97da030a4eb1595a259"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/whitepaper-EtControl-JB22327XX-cs-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_810cf69b5e5196eb4d1bb1e1",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "productTitle": "GE HealthCare Aisys CS²",
+      "claimCandidateId": "claim_ad795af85f09aec2035dae8e",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_327114e371c86afa722f4578"
+      ],
+      "documentVersionIds": [
+        "document_version_88e5a97da030a4eb1595a259"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/whitepaper-EtControl-JB22327XX-cs-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_2ee3bdcaca07f55993f5edff",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "productTitle": "GE HealthCare Aisys CS²",
+      "claimCandidateId": "claim_5dac3085dc29ca5c81cf7a44",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_5b7f80870d83d045a2e70ee6"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_9b4fa695288133e607822066",
+      "productSlug": "wave2-ge-aisys-cs2",
+      "productTitle": "GE HealthCare Aisys CS²",
+      "claimCandidateId": "claim_c3e696419657b0af66865ecc",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "flow rate",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_7a6b9e0c8c2c6a0b200a4e62"
+      ],
+      "documentVersionIds": [],
+      "sourceUrls": [],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data.",
+        "No DocumentVersion was linked through evidence."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_3a5934201526a2ec2bb964c1",
+        "productSlug": "wave2-ge-aisys-cs2",
+        "productTitle": "GE HealthCare Aisys CS²",
+        "claimCandidateId": "claim_38f20330825e49ee98a67b8c",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Read more",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_03fef759fa24f9e4f56fe303"
+        ],
+        "documentVersionIds": [
+          "document_version_ac610b2b0f530320466c5c29"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/aisyscs2-anesthesia_services-br-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_57054bc8b938fbab3b8fb696",
+        "productSlug": "wave2-ge-aisys-cs2",
+        "productTitle": "GE HealthCare Aisys CS²",
+        "claimCandidateId": "claim_55a5c48888b9857e00992919",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Download brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_fcdcba5ca4cf4aab2a408afb"
+        ],
+        "documentVersionIds": [
+          "document_version_ea919b542a369ba2a153a636"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_4d1b15ccc54bc39a7cb4de9e",
+        "productSlug": "wave2-ge-aisys-cs2",
+        "productTitle": "GE HealthCare Aisys CS²",
+        "claimCandidateId": "claim_88f86931571c2708623d3138",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Unclassified manufacturer document",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_23c65747910c9feb99f8ea47"
+        ],
+        "documentVersionIds": [
+          "document_version_88e5a97da030a4eb1595a259"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/whitepaper-EtControl-JB22327XX-cs-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_1593511ad3a436087ae8707d",
+        "productSlug": "wave2-ge-aisys-cs2",
+        "productTitle": "GE HealthCare Aisys CS²",
+        "claimCandidateId": "claim_d1fc280374d229b1ff853482",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_a09bf969cba7418fc47cb1a2"
+        ],
+        "documentVersionIds": [
+          "document_version_ac610b2b0f530320466c5c29"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/aisyscs2-anesthesia_services-br-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_2628f57210154ccbec034c4d",
+        "productSlug": "wave2-ge-aisys-cs2",
+        "productTitle": "GE HealthCare Aisys CS²",
+        "claimCandidateId": "claim_84c453959b8cf276feff2257",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_7364ef6ecab17d6c9f120dba"
+        ],
+        "documentVersionIds": [
+          "document_version_ea919b542a369ba2a153a636"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_810cf69b5e5196eb4d1bb1e1",
+        "productSlug": "wave2-ge-aisys-cs2",
+        "productTitle": "GE HealthCare Aisys CS²",
+        "claimCandidateId": "claim_ad795af85f09aec2035dae8e",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_327114e371c86afa722f4578"
+        ],
+        "documentVersionIds": [
+          "document_version_88e5a97da030a4eb1595a259"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/whitepaper-EtControl-JB22327XX-cs-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.patientGroup": [
+      {
+        "reviewItemId": "review_item_a4eb20690d16412f79a9722b",
+        "productSlug": "wave2-ge-aisys-cs2",
+        "productTitle": "GE HealthCare Aisys CS²",
+        "claimCandidateId": "claim_44bcbbbad978a2ba54803ae9",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "neonatal",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_55cef3f788f0a332aad2d3e9"
+        ],
+        "documentVersionIds": [
+          "document_version_ea919b542a369ba2a153a636"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_68a814fa7724ffdafd90f7c8",
+        "productSlug": "wave2-ge-aisys-cs2",
+        "productTitle": "GE HealthCare Aisys CS²",
+        "claimCandidateId": "claim_846db56d3ab62ca47e3dc022",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "adults",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c7988e1d6f80cb526df52659"
+        ],
+        "documentVersionIds": [
+          "document_version_ea919b542a369ba2a153a636"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_e2244b53fd7744017799d2e3",
+        "productSlug": "wave2-ge-aisys-cs2",
+        "productTitle": "GE HealthCare Aisys CS²",
+        "claimCandidateId": "claim_fcf10c9a2ac4e70c2e6913ea",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "pediatric",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_0942777a0ee4bbb7fc1de5cc"
+        ],
+        "documentVersionIds": [
+          "document_version_ea919b542a369ba2a153a636"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "technical.term": [
+      {
+        "reviewItemId": "review_item_d437cbad5c5aedc258654802",
+        "productSlug": "wave2-ge-aisys-cs2",
+        "productTitle": "GE HealthCare Aisys CS²",
+        "claimCandidateId": "claim_e42ab5b866c7c7f8cf2e7b54",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_4b545d40bb6f06038bcfe690"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_62d8e7e746da8969d6442b1c",
+        "productSlug": "wave2-ge-aisys-cs2",
+        "productTitle": "GE HealthCare Aisys CS²",
+        "claimCandidateId": "claim_876579265c20cf4221a7043c",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "tidal volume",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_321546aec61d1388aa0357d4"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_2ee3bdcaca07f55993f5edff",
+        "productSlug": "wave2-ge-aisys-cs2",
+        "productTitle": "GE HealthCare Aisys CS²",
+        "claimCandidateId": "claim_5dac3085dc29ca5c81cf7a44",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_5b7f80870d83d045a2e70ee6"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_9b4fa695288133e607822066",
+        "productSlug": "wave2-ge-aisys-cs2",
+        "productTitle": "GE HealthCare Aisys CS²",
+        "claimCandidateId": "claim_c3e696419657b0af66865ecc",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "flow rate",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_7a6b9e0c8c2c6a0b200a4e62"
+        ],
+        "documentVersionIds": [],
+        "sourceUrls": [],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data.",
+          "No DocumentVersion was linked through evidence."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_ac610b2b0f530320466c5c29",
+      "documentType": "unknown",
+      "title": "Read more",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/aisyscs2-anesthesia_services-br-en.pdf",
+      "sha256": "7817405cd1c8a9066fcf92e645a1b947195858e1568394b2fd86fc21f6db0cf7"
+    },
+    {
+      "documentVersionId": "document_version_ea919b542a369ba2a153a636",
+      "documentType": "brochure",
+      "title": "Download brochure",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf",
+      "sha256": "9d6ad927a5a2c473951ed881b599bb97937eb0135a8dac7dee1f4afe102f52c3"
+    },
+    {
+      "documentVersionId": "document_version_88e5a97da030a4eb1595a259",
+      "documentType": "unknown",
+      "title": "Unclassified manufacturer document",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/whitepaper-EtControl-JB22327XX-cs-en.pdf",
+      "sha256": "b138782a4311a74cbd94587f3da9f8c96a227af4bc64b79d926b89de4dc488a6"
+    }
+  ],
+  "missingEvidence": [
+    {
+      "claimCandidateId": "claim_e42ab5b866c7c7f8cf2e7b54",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_876579265c20cf4221a7043c",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_5dac3085dc29ca5c81cf7a44",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    },
+    {
+      "claimCandidateId": "claim_c3e696419657b0af66865ecc",
+      "reason": "Evidence exists but no DocumentVersion could be linked."
+    }
+  ],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver adapter used: ge",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://clinicalview.gehealthcare.com/blog/advancing-anesthesia-excellence-part-2-lung-protective-ventilation-us",
+    "Resolver rejected offsite document URL: https://clinicalview.gehealthcare.com/article/sustained-adoption-end-tidal-control-paradigm-shift-anesthesia-delivery",
+    "Resolver rejected offsite document URL: https://clinicalview.gehealthcare.com/article/key-outcomes-end-tidal-control-randomized-controlled-study-master-trial",
+    "Resolver rejected offsite document URL: https://clinicalview.gehealthcare.com/article/advancing-pediatric-and-neonatal-anesthesia-excellence-three-part-series-us",
+    "Resolver rejected unsafe document URL: tel:1-866-281-7545",
+    "Resolver rejected unsafe document URL: tel:18004371171",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/contact/generic?referrer&",
+    "Resolver rejected unsafe document URL: tel:1-800-668-0732",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/contact/generic?referrer&",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://www.kkt-chillersusa.com/GE/",
+    "Resolver rejected offsite document URL: https://www.kkt-chillersusa.com/GE/",
+    "Resolver rejected offsite document URL: https://rise.articulate.com/share/w0JzZ2DRMAvXe_z7ERMVslfsEDn696hZ",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "resolver=ge; attempts=7; matchedLinks=885; classifiedDocuments={\"Unknown\":3308,\"Brochure\":1,\"Datasheet\":4,\"Software\":4,\"IFU\":8}; confidenceDistribution={\"80\":23,\"90\":723,\"100\":2579}; duplicatesRemoved=2440",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

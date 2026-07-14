@@ -1,29 +1,37 @@
 {
-  "productsProcessed": 16,
-  "officialSourcesFound": 16,
-  "documentsFound": 371,
-  "requiredDocumentsMissing": 32,
+  "productsProcessed": 20,
+  "officialSourcesFound": 20,
+  "documentsFound": 7921,
+  "requiredDocumentsMissing": 39,
   "productsReadyForExtraction": 0,
-  "productsBlocked": 16,
-  "resolvedDocumentLinksFound": 364,
-  "productsWithResolvedDocuments": 14,
-  "productsStillMissingDocuments": 16,
+  "productsBlocked": 20,
+  "resolvedDocumentLinksFound": 7917,
+  "productsWithResolvedDocuments": 9,
+  "productsStillMissingDocuments": 20,
   "providersUsed": [
-    "philips"
+    "ge-healthcare"
   ],
   "productsPerProvider": {
-    "philips": 16
+    "ge-healthcare": 20
   },
   "fallbackProviderProducts": 0,
-  "totalCandidateUrls": 16,
-  "totalNormalizedUrls": 16,
+  "totalCandidateUrls": 20,
+  "totalNormalizedUrls": 20,
   "totalDuplicatesRemoved": 0,
   "totalBlockedUrls": 0,
   "unsupportedPortalsDetected": 0,
   "providerWarnings": [],
   "productReports": [
     {
-      "productSlug": "wave2-philips-healthcare-products-index",
+      "productSlug": "wave2-ge-healthcare-products-index",
+      "sources": 1,
+      "documents": 881,
+      "resolvedDocumentLinks": 881,
+      "missingDocumentTasks": 1,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-ge-logiq-p9",
       "sources": 1,
       "documents": 0,
       "resolvedDocumentLinks": 0,
@@ -31,119 +39,143 @@
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-philips-intellivue-mx400",
+      "productSlug": "wave2-ge-logiq-p10",
       "sources": 1,
-      "documents": 27,
-      "resolvedDocumentLinks": 26,
-      "missingDocumentTasks": 2,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-philips-intellivue-mx450",
+      "productSlug": "wave2-ge-logiq-e10",
       "sources": 1,
-      "documents": 26,
-      "resolvedDocumentLinks": 25,
-      "missingDocumentTasks": 2,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-philips-intellivue-mx500",
-      "sources": 1,
-      "documents": 26,
-      "resolvedDocumentLinks": 25,
-      "missingDocumentTasks": 2,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-philips-intellivue-mx550",
-      "sources": 1,
-      "documents": 26,
-      "resolvedDocumentLinks": 25,
-      "missingDocumentTasks": 2,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-philips-intellivue-mx700",
-      "sources": 1,
-      "documents": 25,
-      "resolvedDocumentLinks": 25,
-      "missingDocumentTasks": 2,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-philips-intellivue-mx750",
-      "sources": 1,
-      "documents": 27,
-      "resolvedDocumentLinks": 27,
-      "missingDocumentTasks": 2,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-philips-efficia-cm10",
-      "sources": 1,
-      "documents": 24,
-      "resolvedDocumentLinks": 24,
-      "missingDocumentTasks": 2,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-philips-efficia-cm12",
-      "sources": 1,
-      "documents": 24,
-      "resolvedDocumentLinks": 24,
-      "missingDocumentTasks": 2,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-philips-affiniti-50",
-      "sources": 1,
-      "documents": 28,
-      "resolvedDocumentLinks": 28,
-      "missingDocumentTasks": 2,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-philips-affiniti-70",
-      "sources": 1,
-      "documents": 29,
-      "resolvedDocumentLinks": 28,
+      "documents": 876,
+      "resolvedDocumentLinks": 876,
       "missingDocumentTasks": 1,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-philips-epiq-5",
+      "productSlug": "wave2-ge-logiq-e10s",
       "sources": 1,
-      "documents": 27,
-      "resolvedDocumentLinks": 27,
+      "documents": 876,
+      "resolvedDocumentLinks": 876,
+      "missingDocumentTasks": 1,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-ge-logiq-fortis",
+      "sources": 1,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-ge-versana-active",
+      "sources": 1,
+      "documents": 878,
+      "resolvedDocumentLinks": 878,
+      "missingDocumentTasks": 1,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-ge-versana-balance",
+      "sources": 1,
+      "documents": 878,
+      "resolvedDocumentLinks": 878,
+      "missingDocumentTasks": 1,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-ge-versana-premier",
+      "sources": 1,
+      "documents": 878,
+      "resolvedDocumentLinks": 878,
+      "missingDocumentTasks": 1,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-ge-vivid-t8",
+      "sources": 1,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-ge-vivid-t9",
+      "sources": 1,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-ge-vivid-s70n",
+      "sources": 1,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-ge-vivid-e95",
+      "sources": 1,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-ge-venue-fit",
+      "sources": 1,
+      "documents": 0,
+      "resolvedDocumentLinks": 0,
+      "missingDocumentTasks": 3,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-ge-venue-go",
+      "sources": 1,
+      "documents": 884,
+      "resolvedDocumentLinks": 884,
+      "missingDocumentTasks": 1,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-ge-carescape-b450",
+      "sources": 1,
+      "documents": 882,
+      "resolvedDocumentLinks": 881,
+      "missingDocumentTasks": 1,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-ge-carescape-b650",
+      "sources": 1,
+      "documents": 1,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 2,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-philips-epiq-7",
+      "productSlug": "wave2-ge-carescape-b850",
       "sources": 1,
-      "documents": 25,
-      "resolvedDocumentLinks": 25,
+      "documents": 1,
+      "resolvedDocumentLinks": 0,
       "missingDocumentTasks": 2,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-philips-lumify",
+      "productSlug": "wave2-ge-aisys-cs2",
       "sources": 1,
-      "documents": 28,
-      "resolvedDocumentLinks": 27,
-      "missingDocumentTasks": 2,
+      "documents": 885,
+      "resolvedDocumentLinks": 885,
+      "missingDocumentTasks": 1,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-philips-azurion-7",
-      "sources": 1,
-      "documents": 28,
-      "resolvedDocumentLinks": 28,
-      "missingDocumentTasks": 2,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-philips-heartstart-fr3",
+      "productSlug": "wave2-ge-aespire-view",
       "sources": 1,
       "documents": 1,
       "resolvedDocumentLinks": 0,

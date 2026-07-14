@@ -1,0 +1,94 @@
+{
+  "product": {
+    "productSlug": "wave2-ge-logiq-fortis",
+    "manufacturer": "GE HealthCare",
+    "productName": "GE HealthCare LOGIQ Fortis",
+    "model": "LOGIQ Fortis",
+    "category": "УЗИ аппараты"
+  },
+  "providerDiagnostics": {
+    "providerName": "ge-healthcare",
+    "strategyUsed": "GE HealthCare products, support, resources and document library",
+    "pagesVisited": [
+      "https://www.gehealthcare.com/en/products/ultrasound/logiq/logiq-fortis"
+    ],
+    "candidateUrls": [
+      "https://www.gehealthcare.com/en/products/ultrasound/logiq/logiq-fortis"
+    ],
+    "normalizedUrls": [
+      "https://www.gehealthcare.com/en/products/ultrasound/logiq/logiq-fortis"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": []
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": false,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_2b1d717ad1cf12411d67ea22",
+      "productSlug": "wave2-ge-logiq-fortis",
+      "manufacturer": "GE HealthCare",
+      "productName": "GE HealthCare LOGIQ Fortis",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.gehealthcare.com/en/products/ultrasound/logiq/logiq-fortis",
+      "title": "GE HealthCare LOGIQ Fortis official product page",
+      "snippet": "Official product page candidate.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official product page candidate."
+      ]
+    }
+  ],
+  "documentCandidates": [],
+  "resolvedDocumentLinks": [],
+  "resolverWarnings": [
+    "Resolver fetch failed for https://www.gehealthcare.com/en/products/ultrasound/logiq/logiq-fortis: HTTP 404"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-ge-logiq-fortis",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-ge-logiq-fortis",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-ge-logiq-fortis",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver fetch failed for https://www.gehealthcare.com/en/products/ultrasound/logiq/logiq-fortis: HTTP 404",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}
