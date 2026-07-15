@@ -3,68 +3,68 @@
   "manufacturers": [
     "Hamilton",
     "Mindray",
-    "Ambu",
     "Drager",
+    "GE",
+    "Philips",
+    "Ambu",
     "SonoScape",
     "Comen",
     "SLE",
-    "Dixion",
-    "GE",
-    "Philips"
+    "Dixion"
   ],
   "totals": {
-    "productsDiscovered": 153,
-    "officialSources": 187,
-    "documentsFound": 306,
-    "downloads": 201,
-    "artifacts": 201,
-    "candidateFacts": 470,
-    "reviewItems": 470,
+    "productsDiscovered": 157,
+    "officialSources": 198,
+    "documentsFound": 312,
+    "downloads": 205,
+    "artifacts": 205,
+    "candidateFacts": 479,
+    "reviewItems": 479,
     "blockedProducts": 19,
     "errors": 0,
     "warnings": 14,
-    "durationMs": 16288
+    "durationMs": 16436
   },
   "reports": [
     {
       "manufacturer": "Hamilton",
-      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/Hamilton/summary.generated.json"
+      "path": "data/research/wave2/Hamilton/summary.generated.json"
     },
     {
       "manufacturer": "Mindray",
-      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/Mindray/summary.generated.json"
-    },
-    {
-      "manufacturer": "Ambu",
-      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/Ambu/summary.generated.json"
+      "path": "data/research/wave2/Mindray/summary.generated.json"
     },
     {
       "manufacturer": "Drager",
-      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/Drager/summary.generated.json"
-    },
-    {
-      "manufacturer": "SonoScape",
-      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/SonoScape/summary.generated.json"
-    },
-    {
-      "manufacturer": "Comen",
-      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/Comen/summary.generated.json"
-    },
-    {
-      "manufacturer": "SLE",
-      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/SLE/summary.generated.json"
-    },
-    {
-      "manufacturer": "Dixion",
-      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/Dixion/summary.generated.json"
+      "path": "data/research/wave2/Drager/summary.generated.json"
     },
     {
       "manufacturer": "GE",
-      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/GE/summary.generated.json"
+      "path": "data/research/wave2/GE/summary.generated.json"
     },
     {
       "manufacturer": "Philips",
-      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/Philips/summary.generated.json"
+      "path": "data/research/wave2/Philips/summary.generated.json"
+    },
+    {
+      "manufacturer": "Ambu",
+      "path": "data/research/wave2/Ambu/summary.generated.json"
+    },
+    {
+      "manufacturer": "SonoScape",
+      "path": "data/research/wave2/SonoScape/summary.generated.json"
+    },
+    {
+      "manufacturer": "Comen",
+      "path": "data/research/wave2/Comen/summary.generated.json"
+    },
+    {
+      "manufacturer": "SLE",
+      "path": "data/research/wave2/SLE/summary.generated.json"
+    },
+    {
+      "manufacturer": "Dixion",
+      "path": "data/research/wave2/Dixion/summary.generated.json"
     }
   ],
   "safety": {

@@ -67,7 +67,7 @@ test("wave2 aggregate report is created", async () => {
   const outputRoot = await mkdtemp(join(tmpdir(), "wave2-aggregate-"));
   const result = await executeWave2("Ambu", { outputRoot });
   assert.deepEqual(result.aggregate.manufacturers, ["Ambu"]);
-  assert.equal(result.aggregate.totals.productsDiscovered, 10);
+  assert.equal(result.aggregate.totals.productsDiscovered, 14);
   assert.equal(result.aggregate.safety.publicationCreated, false);
   const written = JSON.parse(
     await readFile(join(outputRoot, "wave2-summary.generated.json"), "utf8"),

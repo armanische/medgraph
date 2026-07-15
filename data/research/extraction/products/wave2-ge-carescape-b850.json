@@ -254,6 +254,24 @@
       "quotedText": "model: B850",
       "status": "candidate",
       "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_dd6b9933e52463d967cb90bd",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_788c49b6890cf56d3f30a933",
+      "documentCandidateId": "document_9ed175cb8f16d38b70b6eaa2",
+      "sha256": "9e9890d92ceb402d9a91a1725a4ef974b742e01dfdda08d84a39547575d3123c",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf",
+      "locator": {
+        "page": 72,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 95602
+      },
+      "quotedText": "Display",
+      "status": "candidate",
+      "requiresHumanReview": true
     }
   ],
   "candidateClaims": [

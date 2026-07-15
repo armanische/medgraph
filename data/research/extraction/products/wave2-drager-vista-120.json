@@ -13712,6 +13712,2166 @@
       "quotedText": "accuracy: ±15 ml/min",
       "status": "candidate",
       "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_e046c66333d26b82972c4441",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ff7bd3b6f3023623cbe0a0b3",
+      "documentCandidateId": "document_a098fb132a9ab57b9b3be8b6",
+      "sha256": "09d0d893bec47eabf7eea7ea3d11dbed848935e8a576b7e36eae6cd1a3a904a8",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/4212-br-history-of-anaesthesia_a5_en_191212-lr.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 117
+      },
+      "quotedText": "weight.",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_d8a9e9fe3f108d75a7583a25",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ff7bd3b6f3023623cbe0a0b3",
+      "documentCandidateId": "document_a098fb132a9ab57b9b3be8b6",
+      "sha256": "09d0d893bec47eabf7eea7ea3d11dbed848935e8a576b7e36eae6cd1a3a904a8",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/4212-br-history-of-anaesthesia_a5_en_191212-lr.pdf",
+      "locator": {
+        "page": 54,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1197
+      },
+      "quotedText": "tidal volume to 1000 ml, it was",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_4717dab47ff13ffbbe93f58b",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_b4151178a1e95b0cdfb25ac3",
+      "documentCandidateId": "document_811b194e03a7051549ea8236",
+      "sha256": "5b5c119e49307f6ba44a661cb6f4aba881a51bc91921cee7f51147c4409976b1",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/casestudy_norwalk_whitepaper_en.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 98
+      },
+      "quotedText": "ventilation modes,",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_f480b7c68b5c650e7c9e88c7",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_64cd26929ad21bf9e6d2119f",
+      "documentCandidateId": "document_7c0e6406b1ce1dcf0c4e0149",
+      "sha256": "504d3dd3f1e1ba010ca86e5b022a6523f8d9f1d780b0299b50a7d1753b6d2cd8",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/derriford_hospital_cs_.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 35
+      },
+      "quotedText": "display at the point of care. Innovian, a Web-based clinical",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_b8e326b5edc65e07ad3a35e8",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_64cd26929ad21bf9e6d2119f",
+      "documentCandidateId": "document_7c0e6406b1ce1dcf0c4e0149",
+      "sha256": "504d3dd3f1e1ba010ca86e5b022a6523f8d9f1d780b0299b50a7d1753b6d2cd8",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/derriford_hospital_cs_.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 73
+      },
+      "quotedText": "battery power, and once the hospital’s power came back",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_f13c2e99fa257ea3745fcd1a",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_133d5632a09c61e6a77ae3d0",
+      "documentCandidateId": "document_5864277636cd80224fec057a",
+      "sha256": "fe139eadbba8838b0a1984dbff709777d5b8d5476ca5de00061ef102e8e4d8cc",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/DID-YOU-KNOW_DYK-DYK-etCO2_monitoring_in_ventilators-1.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 15
+      },
+      "quotedText": "display.",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_886c242d554d85468915fefd",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ab8f70725843fd79ec7aaa48",
+      "documentCandidateId": "document_3fd1311193d7283af88cc3c6",
+      "sha256": "a4722e962367d1a04a211df1e36dda0e3af0e2bb69a1a5f82b5a6eeb60f57ce2",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/DID-YOU-KNOW_DYK-etCO2_Dead_space.ai.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 4
+      },
+      "quotedText": "tidal volume is composed of two volumes: the gas",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_246e259115310139c41281d8",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ab8f70725843fd79ec7aaa48",
+      "documentCandidateId": "document_3fd1311193d7283af88cc3c6",
+      "sha256": "a4722e962367d1a04a211df1e36dda0e3af0e2bb69a1a5f82b5a6eeb60f57ce2",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/DID-YOU-KNOW_DYK-etCO2_Dead_space.ai.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 12
+      },
+      "quotedText": "display them as one reading. This does not provide the user with the",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_651fb863cacca3704143a7e6",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_68acd9f21a136933304caf81",
+      "documentCandidateId": "document_1618710199d01d6008ecf9ff",
+      "sha256": "33bfa048af6767d1a534c9bcffff7272b13e6ed1791134ec8095c1a81a0d8bec",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/Did-you-know-15-Time-constant-1.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 111
+      },
+      "quotedText": "Tidal Volume,",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_4524781e0aeb598a2096e761",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_4992069858789823722ea336",
+      "documentCandidateId": "document_b6801f1f13eb2b685fbd190e",
+      "sha256": "c42b1d144664651ab5be275b46178e7a74903fb5cba1fff25b0e1362b6047d05",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/Did-you-know-20-Smart-Pulmonary-View-1.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 10
+      },
+      "quotedText": "ventilation modes.",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_9bad78e91130b50f5c4276d3",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_4992069858789823722ea336",
+      "documentCandidateId": "document_b6801f1f13eb2b685fbd190e",
+      "sha256": "c42b1d144664651ab5be275b46178e7a74903fb5cba1fff25b0e1362b6047d05",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/Did-you-know-20-Smart-Pulmonary-View-1.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 23
+      },
+      "quotedText": "minute volume chart shows",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_17c1c498943e60a0bd3636ec",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_d13e5f28a40e9fb787835a56",
+      "documentCandidateId": "document_6c57d6178555665750da00ee",
+      "sha256": "5ddf8309a0c35cc2dc6b8f86a0f076dee83905be552f71888f9a9c75a4597aef",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/Did%20you%20know%2013%20Volume%20Guarantee%20with%20outcome.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 7
+      },
+      "quotedText": "tidal volume is",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_9b17cc81663771605cb6fb48",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_125d50d0b00c48d86945b26e",
+      "documentCandidateId": "document_89e3a6f75f5fcf029ad6ef9a",
+      "sha256": "8cc36ffbd45ecb4227c98491b4551dff3280e5dafe442a90034abd0c6b115757",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/Did%20you%20know%2014%20Variable%20Pressure%20Support.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 6
+      },
+      "quotedText": "ventilation mode with an additional setting:",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_06b7937d9586bfa57d30f142",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_125d50d0b00c48d86945b26e",
+      "documentCandidateId": "document_89e3a6f75f5fcf029ad6ef9a",
+      "sha256": "8cc36ffbd45ecb4227c98491b4551dff3280e5dafe442a90034abd0c6b115757",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/Did%20you%20know%2014%20Variable%20Pressure%20Support.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 21
+      },
+      "quotedText": "tidal volume in healthy subjects",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_bd31b6413f258bdfbbf9556b",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_9db192ced3d1c4a63360aad6",
+      "documentCandidateId": "document_ed8584d3113034e7d075afb0",
+      "sha256": "3dcfa1c4d1cb88fbd932443f8c7cb620f027e73f2c24d78269516f96fb373403",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/DYK_atc-illuph-D-3203-2022-en-master.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 8
+      },
+      "quotedText": "ventilation modes in Dräger",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_734f06321666c5247f1ed434",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_14dca941efd22e10b1a10045",
+      "documentCandidateId": "document_d9a10360faee436901f4139d",
+      "sha256": "b8d0f22da3d0aa9fdd22847ec43bcef8dd76559a6c9a275d62262555a5346235",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/DYK_Intermittent_sighs-illuph-D-777-2021-en-master-21070.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 11
+      },
+      "quotedText": "ventilation modes",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_03ebe16e41afdb9b54090031",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_eb51e172983612dda27b17be",
+      "documentCandidateId": "document_9b179244661019cb286a6346",
+      "sha256": "b604aea21f9282ba6e71e580511cc72332a5b7d94118c8b4671a368809a7e0fd",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/DYK_leak_adaptation-illuph-D-3202-2022-en-master.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 17
+      },
+      "quotedText": "ventilation modes",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_e63dbbf329561b626e8d275e",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_a43a9ecf1dbb141a3f36b94e",
+      "documentCandidateId": "document_9f33ef2fd96b34bef7aa257e",
+      "sha256": "9c7038c50066a769ed702c3b40f46b888478c1635a7dd9a5959eebc64c9c4a02",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/DYK_leak_compensation-illuph-D-3205-2022-en-master.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 4
+      },
+      "quotedText": "tidal volume that flow to the",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_c95b449d6ea0563477e49c84",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_a43a9ecf1dbb141a3f36b94e",
+      "documentCandidateId": "document_9f33ef2fd96b34bef7aa257e",
+      "sha256": "9c7038c50066a769ed702c3b40f46b888478c1635a7dd9a5959eebc64c9c4a02",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/DYK_leak_compensation-illuph-D-3205-2022-en-master.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 6
+      },
+      "quotedText": "display the leakage-corrected values of",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_c7b0bdf53108855a79c5b530",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_a43a9ecf1dbb141a3f36b94e",
+      "documentCandidateId": "document_9f33ef2fd96b34bef7aa257e",
+      "sha256": "9c7038c50066a769ed702c3b40f46b888478c1635a7dd9a5959eebc64c9c4a02",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/DYK_leak_compensation-illuph-D-3205-2022-en-master.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 7
+      },
+      "quotedText": "minute volume",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_0ee49f209d4f6c712b0d14c9",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_8a2cc4aed7b89a7b6f24c544",
+      "documentCandidateId": "document_a4f70ea35a1dc0f0c855ae11",
+      "sha256": "768a91be7cc3374289772e504d2a25b27c5e304b6c4b3cb1d474f4f7b12bc324",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/DYK_Manual_disconnection_anti_air_shower-illuph-DMC-103054-en-master.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 15
+      },
+      "quotedText": "ventilation mode.",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_f163374b197fd865f16e5abb",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_8a2cc4aed7b89a7b6f24c544",
+      "documentCandidateId": "document_a4f70ea35a1dc0f0c855ae11",
+      "sha256": "768a91be7cc3374289772e504d2a25b27c5e304b6c4b3cb1d474f4f7b12bc324",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/DYK_Manual_disconnection_anti_air_shower-illuph-DMC-103054-en-master.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 32
+      },
+      "quotedText": "minute volume may be reduced due to the already",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_9308a61ba69d8e1117b4982a",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_7ad09c6b3993f8183c937902",
+      "documentCandidateId": "document_7dcd955a2e9b37215a9d95cc",
+      "sha256": "bfdc6d78ac3f1f7ab2ac57eb5acbad0b2fb5732b841773ae3341f26500e43f38",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/DYK_SmartCare-illuph-DMC-103055-en-master.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 9
+      },
+      "quotedText": "tidal volume and end",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_d8088694b61fc83cf8706ecb",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_7ad09c6b3993f8183c937902",
+      "documentCandidateId": "document_7dcd955a2e9b37215a9d95cc",
+      "sha256": "bfdc6d78ac3f1f7ab2ac57eb5acbad0b2fb5732b841773ae3341f26500e43f38",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/DYK_SmartCare-illuph-DMC-103055-en-master.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 25
+      },
+      "quotedText": "ventilation mode that shortens weaning",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_d15de03e8672c018a46096b1",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_120f59fba5a16e562deead3c",
+      "documentCandidateId": "document_4c7d4e4e7e6d7119344d75fa",
+      "sha256": "2474e05f14c0e5613f547eef00792883a1475c26d4ed28e6fd955db6aed7f491",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/DYK_Suction_manoeuvre-illuph-DMC-103056-en-master.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 19
+      },
+      "quotedText": "minute volume is deactivated.",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_885838baf29dfd000634dc8f",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_120f59fba5a16e562deead3c",
+      "documentCandidateId": "document_4c7d4e4e7e6d7119344d75fa",
+      "sha256": "2474e05f14c0e5613f547eef00792883a1475c26d4ed28e6fd955db6aed7f491",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/DYK_Suction_manoeuvre-illuph-DMC-103056-en-master.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 24
+      },
+      "quotedText": "ventilation mode and with the",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_b8f7b95400251879c30b3b8f",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_3f7c392b7197a281645e5229",
+      "documentCandidateId": "document_964cb81ed70a80318d88e3b1",
+      "sha256": "97cb20f7d7eaf7b416dc54c186b4ab4ed448777eb95ea9cfc0e7826567fd915f",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/glenfield_case_study.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 130
+      },
+      "quotedText": "tidal volume variability.",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_7dfc8f39bce24771ae803661",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e07431b37f69f117d2e53d8a",
+      "documentCandidateId": "document_80ba42fff9b26dc2b3386d84",
+      "sha256": "e1a65bef90c32a80dfc00dac796c5398094eb3a6219ecb02cfbffb389934eb56",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/H205401_P385783_Why-Dr%C3%A4ger-Original-Sample-Lines_-illuph-DGT-3102-2021-en-master.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 19
+      },
+      "quotedText": "display it is essential to keep this",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_24a5b1bc08372e3803c3c7fd",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_bd38b14aa1469b79f9fd3d69",
+      "documentCandidateId": "document_f82d6bfe2a859d7b5cb77bcd",
+      "sha256": "d7b0de4486e976731baf28c80d14152968217b6a145b29c01fc481fb87f9bad5",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/H220126_P433325_Did_you_know_40_by_40.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 42
+      },
+      "quotedText": "ventilation mode.4",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_b1c9f282433eff2a8c281e89",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_69a5c27afdf2d1d9f2c64328",
+      "documentCandidateId": "document_e194382c491061a3625b27ee",
+      "sha256": "d10a34faaa64634703f38f968476aae80ec9b1138c13dfa0457dfd01408e23a2",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/hfov-bk-9102693-en.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 72
+      },
+      "quotedText": "tidal volume",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ec77a1e6f3e7c0991e56acfb",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_69a5c27afdf2d1d9f2c64328",
+      "documentCandidateId": "document_e194382c491061a3625b27ee",
+      "sha256": "d10a34faaa64634703f38f968476aae80ec9b1138c13dfa0457dfd01408e23a2",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/hfov-bk-9102693-en.pdf",
+      "locator": {
+        "page": 5,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 222
+      },
+      "quotedText": "battery backup. The",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_2f74589d45ff8069b371d591",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_69a5c27afdf2d1d9f2c64328",
+      "documentCandidateId": "document_e194382c491061a3625b27ee",
+      "sha256": "d10a34faaa64634703f38f968476aae80ec9b1138c13dfa0457dfd01408e23a2",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/hfov-bk-9102693-en.pdf",
+      "locator": {
+        "page": 9,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 487
+      },
+      "quotedText": "minute volume (determined by the product of tidal volume and respiratory rate)",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_64e8b698af89d1341edb4ef4",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_69a5c27afdf2d1d9f2c64328",
+      "documentCandidateId": "document_e194382c491061a3625b27ee",
+      "sha256": "d10a34faaa64634703f38f968476aae80ec9b1138c13dfa0457dfd01408e23a2",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/hfov-bk-9102693-en.pdf",
+      "locator": {
+        "page": 10,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 539
+      },
+      "quotedText": "weight (i.e. f * VT",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_f305c64ef6439b5fdfbba554",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_69a5c27afdf2d1d9f2c64328",
+      "documentCandidateId": "document_e194382c491061a3625b27ee",
+      "sha256": "d10a34faaa64634703f38f968476aae80ec9b1138c13dfa0457dfd01408e23a2",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/hfov-bk-9102693-en.pdf",
+      "locator": {
+        "page": 13,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 691
+      },
+      "quotedText": "display the distal lung is exposed to at least the same pressure and likely",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_0f5c6bb54e361c15dca532ad",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_69a5c27afdf2d1d9f2c64328",
+      "documentCandidateId": "document_e194382c491061a3625b27ee",
+      "sha256": "d10a34faaa64634703f38f968476aae80ec9b1138c13dfa0457dfd01408e23a2",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/hfov-bk-9102693-en.pdf",
+      "locator": {
+        "page": 32,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 2091
+      },
+      "quotedText": "ventilation mode (C) in the header bar.",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_b2cf0c0376c496798e5bee2f",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_69a5c27afdf2d1d9f2c64328",
+      "documentCandidateId": "document_e194382c491061a3625b27ee",
+      "sha256": "d10a34faaa64634703f38f968476aae80ec9b1138c13dfa0457dfd01408e23a2",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/hfov-bk-9102693-en.pdf",
+      "locator": {
+        "page": 32,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 2126
+      },
+      "quotedText": "ventilation modes. By default these are set at the",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_b771c924b4572dc3209fbc12",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_51dde3861892217af2a8e3f7",
+      "documentCandidateId": "document_b9df1e49f1ad34472b0d387e",
+      "sha256": "383c0a4618e24291a9ee1770324f2d09e7e6d68cbab8852f645cca3d469c515c",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/low-minimal-flow-anaesthesie-bk-9067990.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 124
+      },
+      "quotedText": "minute volume. If a lower flow of",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_240a4afd42c4536f0879aec2",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_51dde3861892217af2a8e3f7",
+      "documentCandidateId": "document_b9df1e49f1ad34472b0d387e",
+      "sha256": "383c0a4618e24291a9ee1770324f2d09e7e6d68cbab8852f645cca3d469c515c",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/low-minimal-flow-anaesthesie-bk-9067990.pdf",
+      "locator": {
+        "page": 30,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 772
+      },
+      "quotedText": "weight in kilograms",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_b25fac49f6e474e9a1ca0054",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_a7bdc4da54fe554404c3cc49",
+      "documentCandidateId": "document_d73bfbfc9cd8af011a103793",
+      "sha256": "130547a8f3262463c800c427c5279e73720ef5cf90de2794e838e85c33301630",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/lpp-booklet-9066355-en.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 80
+      },
+      "quotedText": "ventilation modes, modern ventilators provide a myriad",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_8c7148c8d876408823bdc516",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_a7bdc4da54fe554404c3cc49",
+      "documentCandidateId": "document_d73bfbfc9cd8af011a103793",
+      "sha256": "130547a8f3262463c800c427c5279e73720ef5cf90de2794e838e85c33301630",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/lpp-booklet-9066355-en.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 85
+      },
+      "quotedText": "ventilation mode",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_818e539b280be7f7be6b317e",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_a7bdc4da54fe554404c3cc49",
+      "documentCandidateId": "document_d73bfbfc9cd8af011a103793",
+      "sha256": "130547a8f3262463c800c427c5279e73720ef5cf90de2794e838e85c33301630",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/lpp-booklet-9066355-en.pdf",
+      "locator": {
+        "page": 9,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 160
+      },
+      "quotedText": "tidal volume delivered",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_46955d4df920ebdd91a7b121",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_a7bdc4da54fe554404c3cc49",
+      "documentCandidateId": "document_d73bfbfc9cd8af011a103793",
+      "sha256": "130547a8f3262463c800c427c5279e73720ef5cf90de2794e838e85c33301630",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/lpp-booklet-9066355-en.pdf",
+      "locator": {
+        "page": 11,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 210
+      },
+      "quotedText": "weight, which may underestimate the injurious effect of even small",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_c198bbece0bc326560c5675a",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_7c0eb1f98066f87f7c72d581",
+      "documentCandidateId": "document_b6c9a6fea3eb25aa82b5981c",
+      "sha256": "f99cc9c6f74d389909d4ade511ee9eeb9e0f152a9fbcc142f25da1bc6c3b74d8",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/nomenklatur-bk-gesamt-9066477-en_new.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1
+      },
+      "quotedText": "Ventilation modes in intensive care",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_6849eabadb36930fb69608dd",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_7c0eb1f98066f87f7c72d581",
+      "documentCandidateId": "document_b6c9a6fea3eb25aa82b5981c",
+      "sha256": "f99cc9c6f74d389909d4ade511ee9eeb9e0f152a9fbcc142f25da1bc6c3b74d8",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/nomenklatur-bk-gesamt-9066477-en_new.pdf",
+      "locator": {
+        "page": 9,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 149
+      },
+      "quotedText": "ventilation mode. For example, the literature",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_c92184e42cbd772aafbe1dfe",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_7c0eb1f98066f87f7c72d581",
+      "documentCandidateId": "document_b6c9a6fea3eb25aa82b5981c",
+      "sha256": "f99cc9c6f74d389909d4ade511ee9eeb9e0f152a9fbcc142f25da1bc6c3b74d8",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/nomenklatur-bk-gesamt-9066477-en_new.pdf",
+      "locator": {
+        "page": 18,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 335
+      },
+      "quotedText": "tidal volume is supplied by",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_300c8460fb721951532406af",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_7c0eb1f98066f87f7c72d581",
+      "documentCandidateId": "document_b6c9a6fea3eb25aa82b5981c",
+      "sha256": "f99cc9c6f74d389909d4ade511ee9eeb9e0f152a9fbcc142f25da1bc6c3b74d8",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/nomenklatur-bk-gesamt-9066477-en_new.pdf",
+      "locator": {
+        "page": 18,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 340
+      },
+      "quotedText": "minute volume (MV). The",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_7568a2316c5f22128e8b94ce",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_325c3d0e31793a778be69c58",
+      "documentCandidateId": "document_566e532c4515edd275f2f717",
+      "sha256": "35883a16ab1a6bf24f9dc882b3657d1eedaa445a2d91023a616c86d6ff84e0ce",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/nottingham-city-hospital-innovative-workplace-design-cs-9100330-en-uk-1602-1-v3.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 86
+      },
+      "quotedText": "weight",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_dbfadffc1759c086bd8e0138",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e2a0269893f99adb26db87d2",
+      "documentCandidateId": "document_e68a24e936d25bbd70adab4e",
+      "sha256": "6ee6fc94b4de876c45250122bb226dfa63d6e6bb191966dea75fd5ec01363ee0",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/or-pediatric-anesthesia-book-en.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 85
+      },
+      "quotedText": "Ventilation Mode IPPV 61",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_f43d8a3558e5969077b2b87c",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e2a0269893f99adb26db87d2",
+      "documentCandidateId": "document_e68a24e936d25bbd70adab4e",
+      "sha256": "6ee6fc94b4de876c45250122bb226dfa63d6e6bb191966dea75fd5ec01363ee0",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/or-pediatric-anesthesia-book-en.pdf",
+      "locator": {
+        "page": 10,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 204
+      },
+      "quotedText": "tidal volume which an",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_188af6414163e532f4e54669",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e2a0269893f99adb26db87d2",
+      "documentCandidateId": "document_e68a24e936d25bbd70adab4e",
+      "sha256": "6ee6fc94b4de876c45250122bb226dfa63d6e6bb191966dea75fd5ec01363ee0",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/or-pediatric-anesthesia-book-en.pdf",
+      "locator": {
+        "page": 15,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 323
+      },
+      "quotedText": "minute volume, followed by hypo-",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_6b48bf57c493ab17c5ff4138",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e2a0269893f99adb26db87d2",
+      "documentCandidateId": "document_e68a24e936d25bbd70adab4e",
+      "sha256": "6ee6fc94b4de876c45250122bb226dfa63d6e6bb191966dea75fd5ec01363ee0",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/or-pediatric-anesthesia-book-en.pdf",
+      "locator": {
+        "page": 17,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 387
+      },
+      "quotedText": "weight 2.5 to 5 kg 5 to 10 kg 10 to 20 kg > 20 kg",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_e5a750791eba5ec3d9bdddcd",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e2a0269893f99adb26db87d2",
+      "documentCandidateId": "document_e68a24e936d25bbd70adab4e",
+      "sha256": "6ee6fc94b4de876c45250122bb226dfa63d6e6bb191966dea75fd5ec01363ee0",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/or-pediatric-anesthesia-book-en.pdf",
+      "locator": {
+        "page": 61,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1565
+      },
+      "quotedText": "ventilation modes used in pediatric anesthesia",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_f47a10ba684c299f903ac098",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e2a0269893f99adb26db87d2",
+      "documentCandidateId": "document_e68a24e936d25bbd70adab4e",
+      "sha256": "6ee6fc94b4de876c45250122bb226dfa63d6e6bb191966dea75fd5ec01363ee0",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/or-pediatric-anesthesia-book-en.pdf",
+      "locator": {
+        "page": 99,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 2552
+      },
+      "quotedText": "dimensions of",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_573acf054f7b9fbc53ccbf65",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e2a0269893f99adb26db87d2",
+      "documentCandidateId": "document_e68a24e936d25bbd70adab4e",
+      "sha256": "6ee6fc94b4de876c45250122bb226dfa63d6e6bb191966dea75fd5ec01363ee0",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/or-pediatric-anesthesia-book-en.pdf",
+      "locator": {
+        "page": 123,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 3317
+      },
+      "quotedText": "display a change in concentration of 10 % to 90 %. This",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_384d32feb30e72357076d706",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e2a0269893f99adb26db87d2",
+      "documentCandidateId": "document_e68a24e936d25bbd70adab4e",
+      "sha256": "6ee6fc94b4de876c45250122bb226dfa63d6e6bb191966dea75fd5ec01363ee0",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/or-pediatric-anesthesia-book-en.pdf",
+      "locator": {
+        "page": 126,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 3404
+      },
+      "quotedText": "flow rate requires a high level of electric current in",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_277c51ebfb0639d7f867f19e",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_0104fe61af7342db8413981b",
+      "documentCandidateId": "document_a0b84a08042131b2a79bfa77",
+      "sha256": "5232cca1bbc9b5947f312150ec6b7947888a22b4d9877684fa5d66cfd95095d4",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/pulmotor-bk-9097434-en.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 58
+      },
+      "quotedText": "Ventilation Modes: Conclusion 84",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_2685fe1d39c9858d22048449",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_0104fe61af7342db8413981b",
+      "documentCandidateId": "document_a0b84a08042131b2a79bfa77",
+      "sha256": "5232cca1bbc9b5947f312150ec6b7947888a22b4d9877684fa5d66cfd95095d4",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/pulmotor-bk-9097434-en.pdf",
+      "locator": {
+        "page": 27,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 434
+      },
+      "quotedText": "weight of the earlier cased version of the Pulmotor. The PK 60",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_5087e3ec8cbb562c54d017ee",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_0104fe61af7342db8413981b",
+      "documentCandidateId": "document_a0b84a08042131b2a79bfa77",
+      "sha256": "5232cca1bbc9b5947f312150ec6b7947888a22b4d9877684fa5d66cfd95095d4",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/pulmotor-bk-9097434-en.pdf",
+      "locator": {
+        "page": 52,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 951
+      },
+      "quotedText": "minute volume could now be adjusted",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_6111b0f18596e80d5d048497",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_0104fe61af7342db8413981b",
+      "documentCandidateId": "document_a0b84a08042131b2a79bfa77",
+      "sha256": "5232cca1bbc9b5947f312150ec6b7947888a22b4d9877684fa5d66cfd95095d4",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/pulmotor-bk-9097434-en.pdf",
+      "locator": {
+        "page": 54,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1004
+      },
+      "quotedText": "display, introduced a",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_98ddd2c5b82344bec826ed4c",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_0104fe61af7342db8413981b",
+      "documentCandidateId": "document_a0b84a08042131b2a79bfa77",
+      "sha256": "5232cca1bbc9b5947f312150ec6b7947888a22b4d9877684fa5d66cfd95095d4",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/pulmotor-bk-9097434-en.pdf",
+      "locator": {
+        "page": 58,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1078
+      },
+      "quotedText": "ventilation mode describes the interaction",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_4c9453aa53d1646db3326fa2",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_0104fe61af7342db8413981b",
+      "documentCandidateId": "document_a0b84a08042131b2a79bfa77",
+      "sha256": "5232cca1bbc9b5947f312150ec6b7947888a22b4d9877684fa5d66cfd95095d4",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/pulmotor-bk-9097434-en.pdf",
+      "locator": {
+        "page": 66,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1301
+      },
+      "quotedText": "dimensions in dynamic dosing of inspiratory gases. The same applied to the",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_006adf91d04f22988e0c4a88",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_0104fe61af7342db8413981b",
+      "documentCandidateId": "document_a0b84a08042131b2a79bfa77",
+      "sha256": "5232cca1bbc9b5947f312150ec6b7947888a22b4d9877684fa5d66cfd95095d4",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/pulmotor-bk-9097434-en.pdf",
+      "locator": {
+        "page": 82,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1678
+      },
+      "quotedText": "tidal volume and end-tidal CO 2. In cases of insufficient",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ad51e27e4b9403dcf0aa90c7",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_58c022197932b5af6f677be6",
+      "documentCandidateId": "document_4fa2e734bc7e0ff6aa60c8d8",
+      "sha256": "1139b69b3b65c9370e6afb328e5ee3ae0646b94ee1e3f5a9964f16c2ed576e12",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_autoflow_booklet_9066357_en.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 13
+      },
+      "quotedText": "ventilation modes. Deep sedation is",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_49ae8443f67850f425001662",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_58c022197932b5af6f677be6",
+      "documentCandidateId": "document_4fa2e734bc7e0ff6aa60c8d8",
+      "sha256": "1139b69b3b65c9370e6afb328e5ee3ae0646b94ee1e3f5a9964f16c2ed576e12",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_autoflow_booklet_9066357_en.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 100
+      },
+      "quotedText": "ventilation mode, it automati-",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_e2dec31b61875124a36c37d0",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_58c022197932b5af6f677be6",
+      "documentCandidateId": "document_4fa2e734bc7e0ff6aa60c8d8",
+      "sha256": "1139b69b3b65c9370e6afb328e5ee3ae0646b94ee1e3f5a9964f16c2ed576e12",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_autoflow_booklet_9066357_en.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 108
+      },
+      "quotedText": "tidal volume at the lowest possible inspiratory pressure.",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_5a6d0756c478d9e5d833a3ba",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_58c022197932b5af6f677be6",
+      "documentCandidateId": "document_4fa2e734bc7e0ff6aa60c8d8",
+      "sha256": "1139b69b3b65c9370e6afb328e5ee3ae0646b94ee1e3f5a9964f16c2ed576e12",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_autoflow_booklet_9066357_en.pdf",
+      "locator": {
+        "page": 14,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 265
+      },
+      "quotedText": "minute volume results from set volume (RR x VT)",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_fc30e48e10e4fc68a955e590",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_5e72f72718781252e1adcc6e",
+      "documentCandidateId": "document_d6afe03da9f94273a2883db1",
+      "sha256": "277e2eb0bcc26c4f8ad78bc3680e482dabd5418646349021d1a332e671d74981",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_breathing_booklet_9066665_en.pdf",
+      "locator": {
+        "page": 5,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 40
+      },
+      "quotedText": "ventilation modes 26",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_327a9d4c2fe70c9408be88b4",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_5e72f72718781252e1adcc6e",
+      "documentCandidateId": "document_d6afe03da9f94273a2883db1",
+      "sha256": "277e2eb0bcc26c4f8ad78bc3680e482dabd5418646349021d1a332e671d74981",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_breathing_booklet_9066665_en.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 125
+      },
+      "quotedText": "display discernible",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_98f6c8734925b8f331a0e715",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_5e72f72718781252e1adcc6e",
+      "documentCandidateId": "document_d6afe03da9f94273a2883db1",
+      "sha256": "277e2eb0bcc26c4f8ad78bc3680e482dabd5418646349021d1a332e671d74981",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_breathing_booklet_9066665_en.pdf",
+      "locator": {
+        "page": 12,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 213
+      },
+      "quotedText": "ventilation mode with electromagnetic",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_244fa32402c74fa5f0cc09c9",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_5e72f72718781252e1adcc6e",
+      "documentCandidateId": "document_d6afe03da9f94273a2883db1",
+      "sha256": "277e2eb0bcc26c4f8ad78bc3680e482dabd5418646349021d1a332e671d74981",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_breathing_booklet_9066665_en.pdf",
+      "locator": {
+        "page": 31,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 617
+      },
+      "quotedText": "tidal volume is measured and the breathing pressure is adjusted for the next breath",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_a31b15a9b55a8d7da3fd3134",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_5e72f72718781252e1adcc6e",
+      "documentCandidateId": "document_d6afe03da9f94273a2883db1",
+      "sha256": "277e2eb0bcc26c4f8ad78bc3680e482dabd5418646349021d1a332e671d74981",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_breathing_booklet_9066665_en.pdf",
+      "locator": {
+        "page": 31,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 618
+      },
+      "quotedText": "minute volume is measured continuously and the breathing frequency is adjusted",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_38af9efed9fffb1277f77a86",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_5e72f72718781252e1adcc6e",
+      "documentCandidateId": "document_d6afe03da9f94273a2883db1",
+      "sha256": "277e2eb0bcc26c4f8ad78bc3680e482dabd5418646349021d1a332e671d74981",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_breathing_booklet_9066665_en.pdf",
+      "locator": {
+        "page": 36,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 756
+      },
+      "quotedText": "flow rate only at the beginning of a breath and then continues to gradually",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_19d267c467b806a665f8f7ef",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_5e72f72718781252e1adcc6e",
+      "documentCandidateId": "document_d6afe03da9f94273a2883db1",
+      "sha256": "277e2eb0bcc26c4f8ad78bc3680e482dabd5418646349021d1a332e671d74981",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_breathing_booklet_9066665_en.pdf",
+      "locator": {
+        "page": 53,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1252
+      },
+      "quotedText": "weight (3). In terms of the second possibility, the following effect",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_14ca3dec728a837e17bf5d6a",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_df4973c4be44f6d3e684fc71",
+      "documentCandidateId": "document_778f6afddb78216ebf4f5b4e",
+      "sha256": "075a630647be0a6980f9f4317acbf0113ae9f51575f3b8f66ce79a3d2cc7cd02",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_eit_br_9050980_en.pdf",
+      "locator": {
+        "page": 5,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 342
+      },
+      "quotedText": "tidal volume distribution?",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_d856bd0798cbe3eb2f29ee59",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_8ca1539be64333bbc2252b82",
+      "documentCandidateId": "document_b9d5b8c5b49848d163cbd1ee",
+      "sha256": "e9b63e0ef5dbc6246ec9c8597d1a00e4ff492fbaac2e341418492feb0a3af285",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_knowledge_based_weaning_cs_9049624_en_1.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 108
+      },
+      "quotedText": "weight < 55 Kg, PetCO 2 < 55",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_b24aefb08279001b6654ade3",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_8ca1539be64333bbc2252b82",
+      "documentCandidateId": "document_b9d5b8c5b49848d163cbd1ee",
+      "sha256": "e9b63e0ef5dbc6246ec9c8597d1a00e4ff492fbaac2e341418492feb0a3af285",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_knowledge_based_weaning_cs_9049624_en_1.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 113
+      },
+      "quotedText": "ventilation mode.",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_eaf144ef99092aed5d271fe8",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_19c26a559fd3ff75aa1e839a",
+      "documentCandidateId": "document_5ae052efc3031cfa058fa2ef",
+      "sha256": "fdc1734dcbfba4b3652dd6a8a722964c0b38c1d5f35c2e7bba6c8ead18031e6b",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_pressure_support_ventilation_booklet_9097499_en.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 3
+      },
+      "quotedText": "Ventilation Mode for Neonates",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_39eb8b23d7b5b66dcabd94be",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_19c26a559fd3ff75aa1e839a",
+      "documentCandidateId": "document_5ae052efc3031cfa058fa2ef",
+      "sha256": "fdc1734dcbfba4b3652dd6a8a722964c0b38c1d5f35c2e7bba6c8ead18031e6b",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_pressure_support_ventilation_booklet_9097499_en.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 64
+      },
+      "quotedText": "Ventilation Modes 34",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_35735238e02537549827416d",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_19c26a559fd3ff75aa1e839a",
+      "documentCandidateId": "document_5ae052efc3031cfa058fa2ef",
+      "sha256": "fdc1734dcbfba4b3652dd6a8a722964c0b38c1d5f35c2e7bba6c8ead18031e6b",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_pressure_support_ventilation_booklet_9097499_en.pdf",
+      "locator": {
+        "page": 11,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 193
+      },
+      "quotedText": "minute volume. Pressure Support",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_b112b0b10e5158891655ebf2",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_19c26a559fd3ff75aa1e839a",
+      "documentCandidateId": "document_5ae052efc3031cfa058fa2ef",
+      "sha256": "fdc1734dcbfba4b3652dd6a8a722964c0b38c1d5f35c2e7bba6c8ead18031e6b",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_pressure_support_ventilation_booklet_9097499_en.pdf",
+      "locator": {
+        "page": 12,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 204
+      },
+      "quotedText": "tidal volume and minute volume, an increase in oxygen consumption, an",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_94e1d6d60ce45728ab141b32",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_19c26a559fd3ff75aa1e839a",
+      "documentCandidateId": "document_5ae052efc3031cfa058fa2ef",
+      "sha256": "fdc1734dcbfba4b3652dd6a8a722964c0b38c1d5f35c2e7bba6c8ead18031e6b",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_pressure_support_ventilation_booklet_9097499_en.pdf",
+      "locator": {
+        "page": 33,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 665
+      },
+      "quotedText": "weight",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_5f55e76d799e12c7dda956ad",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_b7b8ce416ad4451b6f4f0a49",
+      "documentCandidateId": "document_62513c995691fbb6571cae11",
+      "sha256": "75156b82bd843540befc9ec081dda21c6d6cf714f06d4362d987827af76df9c1",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_smartcare_ps_cs_9050747_en_1.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 29
+      },
+      "quotedText": "ventilation modes like Mandatory Minute",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_a184bf0e0c2715b713e8e689",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_b7b8ce416ad4451b6f4f0a49",
+      "documentCandidateId": "document_62513c995691fbb6571cae11",
+      "sha256": "75156b82bd843540befc9ec081dda21c6d6cf714f06d4362d987827af76df9c1",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_smartcare_ps_cs_9050747_en_1.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 130
+      },
+      "quotedText": "tidal volume should only",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_bc9537d7ae65b642bb3a14cb",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_b7b8ce416ad4451b6f4f0a49",
+      "documentCandidateId": "document_62513c995691fbb6571cae11",
+      "sha256": "75156b82bd843540befc9ec081dda21c6d6cf714f06d4362d987827af76df9c1",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_smartcare_ps_cs_9050747_en_1.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 153
+      },
+      "quotedText": "weight, airway access and",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_c3442ae0fed98db6c6548c6a",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_b7b8ce416ad4451b6f4f0a49",
+      "documentCandidateId": "document_62513c995691fbb6571cae11",
+      "sha256": "75156b82bd843540befc9ec081dda21c6d6cf714f06d4362d987827af76df9c1",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_smartcare_ps_cs_9050747_en_1.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 221
+      },
+      "quotedText": "minute volume targets in order to simplify weaning of",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_32b717a7aae3cdeac08a4600",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_b7b8ce416ad4451b6f4f0a49",
+      "documentCandidateId": "document_62513c995691fbb6571cae11",
+      "sha256": "75156b82bd843540befc9ec081dda21c6d6cf714f06d4362d987827af76df9c1",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_smartcare_ps_cs_9050747_en_1.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 227
+      },
+      "quotedText": "ventilation mode.",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_4d99a2a3769b84ba8ab135af",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ea07d0b88bad1dd3b6879c23",
+      "documentCandidateId": "document_d871425d3e4a4d7169edc22c",
+      "sha256": "d42ff39ea240786cb577d775d58a3b0f2fd6d3d201a0d5e56c4f2167b05f313b",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_volume_guarantee_booklet_9097501_en.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 89
+      },
+      "quotedText": "tidal volume that pressure-limited ventilation alone produces. It can",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_1df150ed5c6cf3f6ba5a1fb4",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ea07d0b88bad1dd3b6879c23",
+      "documentCandidateId": "document_d871425d3e4a4d7169edc22c",
+      "sha256": "d42ff39ea240786cb577d775d58a3b0f2fd6d3d201a0d5e56c4f2167b05f313b",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_volume_guarantee_booklet_9097501_en.pdf",
+      "locator": {
+        "page": 9,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 167
+      },
+      "quotedText": "minute volume. This in turn would lead rapidly",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_b9d4f8d478145e8654508d5f",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ea07d0b88bad1dd3b6879c23",
+      "documentCandidateId": "document_d871425d3e4a4d7169edc22c",
+      "sha256": "d42ff39ea240786cb577d775d58a3b0f2fd6d3d201a0d5e56c4f2167b05f313b",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_volume_guarantee_booklet_9097501_en.pdf",
+      "locator": {
+        "page": 20,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 443
+      },
+      "quotedText": "flow rate and FiO2. During inflation the valve closes, gas flows",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_1bc29ea144e17800ca2cea23",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ea07d0b88bad1dd3b6879c23",
+      "documentCandidateId": "document_d871425d3e4a4d7169edc22c",
+      "sha256": "d42ff39ea240786cb577d775d58a3b0f2fd6d3d201a0d5e56c4f2167b05f313b",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_volume_guarantee_booklet_9097501_en.pdf",
+      "locator": {
+        "page": 25,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 655
+      },
+      "quotedText": "ventilation modes are used alone.",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_3ba71676a33c7713cfb96d3c",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ea07d0b88bad1dd3b6879c23",
+      "documentCandidateId": "document_d871425d3e4a4d7169edc22c",
+      "sha256": "d42ff39ea240786cb577d775d58a3b0f2fd6d3d201a0d5e56c4f2167b05f313b",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_volume_guarantee_booklet_9097501_en.pdf",
+      "locator": {
+        "page": 32,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 839
+      },
+      "quotedText": "weight, a larger infant will be less",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_fee4f8916c7b877fa8d5b801",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ea07d0b88bad1dd3b6879c23",
+      "documentCandidateId": "document_d871425d3e4a4d7169edc22c",
+      "sha256": "d42ff39ea240786cb577d775d58a3b0f2fd6d3d201a0d5e56c4f2167b05f313b",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp_volume_guarantee_booklet_9097501_en.pdf",
+      "locator": {
+        "page": 36,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 904
+      },
+      "quotedText": "display.",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_eaeadb37d3d1b79f611efdb0",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ffa9e936161450e0968ba913",
+      "documentCandidateId": "document_65cab15d6fd5aa4f7bb24088",
+      "sha256": "62d6fb5015d679479952c41d9418b32c469101234307697333df7afa70a58559",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp-eit-booklet-9066788-en.pdf",
+      "locator": {
+        "page": 9,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 149
+      },
+      "quotedText": "weight of the lung, alveolar collapse may predominantly",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_9cc89985b2031b802e06f907",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ffa9e936161450e0968ba913",
+      "documentCandidateId": "document_65cab15d6fd5aa4f7bb24088",
+      "sha256": "62d6fb5015d679479952c41d9418b32c469101234307697333df7afa70a58559",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp-eit-booklet-9066788-en.pdf",
+      "locator": {
+        "page": 10,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 173
+      },
+      "quotedText": "tidal volume and to keep the lung as open as",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_fcaf7183e1bca14e018900aa",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ffa9e936161450e0968ba913",
+      "documentCandidateId": "document_65cab15d6fd5aa4f7bb24088",
+      "sha256": "62d6fb5015d679479952c41d9418b32c469101234307697333df7afa70a58559",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp-eit-booklet-9066788-en.pdf",
+      "locator": {
+        "page": 16,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 339
+      },
+      "quotedText": "display of EIT images and waveforms possible. The user",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_290d5443d01a00ad0472f704",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ffa9e936161450e0968ba913",
+      "documentCandidateId": "document_65cab15d6fd5aa4f7bb24088",
+      "sha256": "62d6fb5015d679479952c41d9418b32c469101234307697333df7afa70a58559",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp-eit-booklet-9066788-en.pdf",
+      "locator": {
+        "page": 32,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1070
+      },
+      "quotedText": "dimensions, the bioelectric properties and the shape of the thorax, and",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_7b911408b20e16dbfa720242",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ffa9e936161450e0968ba913",
+      "documentCandidateId": "document_65cab15d6fd5aa4f7bb24088",
+      "sha256": "62d6fb5015d679479952c41d9418b32c469101234307697333df7afa70a58559",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp-eit-booklet-9066788-en.pdf",
+      "locator": {
+        "page": 59,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1613
+      },
+      "quotedText": "compatibility tests will be performed to identify those devices",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_f282096d023080ec3520e5cf",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ffa9e936161450e0968ba913",
+      "documentCandidateId": "document_65cab15d6fd5aa4f7bb24088",
+      "sha256": "62d6fb5015d679479952c41d9418b32c469101234307697333df7afa70a58559",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/rsp-eit-booklet-9066788-en.pdf",
+      "locator": {
+        "page": 72,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1864
+      },
+      "quotedText": "ventilation modes and settings.",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_732a6deedf7ef5826075618d",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ae8c248b3f4f828f8cfccbb2",
+      "documentCandidateId": "document_fff46ad7dd87aac5da5b116e",
+      "sha256": "abea61e6658ed7acf5149a4387de9aaec5610652b33caf6e37f56d04760cbb42",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/smartcare_ps_booklet_9051398_en.pdf",
+      "locator": {
+        "page": 15,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 316
+      },
+      "quotedText": "weight above 15 kg.",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_c957fb921c244ed82f0d56f2",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ae8c248b3f4f828f8cfccbb2",
+      "documentCandidateId": "document_fff46ad7dd87aac5da5b116e",
+      "sha256": "abea61e6658ed7acf5149a4387de9aaec5610652b33caf6e37f56d04760cbb42",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/smartcare_ps_booklet_9051398_en.pdf",
+      "locator": {
+        "page": 20,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 455
+      },
+      "quotedText": "tidal volume (V T )",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ad5965da31c9597d816c9159",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ae8c248b3f4f828f8cfccbb2",
+      "documentCandidateId": "document_fff46ad7dd87aac5da5b116e",
+      "sha256": "abea61e6658ed7acf5149a4387de9aaec5610652b33caf6e37f56d04760cbb42",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/smartcare_ps_booklet_9051398_en.pdf",
+      "locator": {
+        "page": 23,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 575
+      },
+      "quotedText": "display of Status",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_068784731235954f9550f0dd",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ae8c248b3f4f828f8cfccbb2",
+      "documentCandidateId": "document_fff46ad7dd87aac5da5b116e",
+      "sha256": "abea61e6658ed7acf5149a4387de9aaec5610652b33caf6e37f56d04760cbb42",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/smartcare_ps_booklet_9051398_en.pdf",
+      "locator": {
+        "page": 26,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 652
+      },
+      "quotedText": "ventilation modes",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_5b4e18971aba14dee8d90d2a",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ae8c248b3f4f828f8cfccbb2",
+      "documentCandidateId": "document_fff46ad7dd87aac5da5b116e",
+      "sha256": "abea61e6658ed7acf5149a4387de9aaec5610652b33caf6e37f56d04760cbb42",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/smartcare_ps_booklet_9051398_en.pdf",
+      "locator": {
+        "page": 35,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1002
+      },
+      "quotedText": "ventilation mode is CPAP/PS.",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_33d5a2d16fc46a1dd18d2849",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ae8c248b3f4f828f8cfccbb2",
+      "documentCandidateId": "document_fff46ad7dd87aac5da5b116e",
+      "sha256": "abea61e6658ed7acf5149a4387de9aaec5610652b33caf6e37f56d04760cbb42",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/smartcare_ps_booklet_9051398_en.pdf",
+      "locator": {
+        "page": 60,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1605
+      },
+      "quotedText": "Minute Volume, the volume ventilated in one minute",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_bc12c08f59fec5119eb2b9f3",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_a606a41b7f0cb2b4de071ff3",
+      "documentCandidateId": "document_a6f4d97f928e676b5068c5e7",
+      "sha256": "dc1197c36cc0bcdb36c7793c89fd883fb39555f4aa38c12ddae7e4aed12612f4",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/sunderland_cs_9066780_en.pdf",
+      "locator": {
+        "page": 5,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 186
+      },
+      "quotedText": "minute volume",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_f69cbbf19a152e21bed1ef6d",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_c3b12994ade5d1743f475b99",
+      "documentCandidateId": "document_465920da451e2f4483013f3a",
+      "sha256": "9bb48c664a0043b4aa7c1aef58889397f7e5b3442f83f433379eab9463d0e0d2",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/volume-guarantee-cs-9072930-en-1601-1.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 112
+      },
+      "quotedText": "weight in",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_c4b7ce233ea81c3031aa67b6",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_3ee7021490164ba8daf55b80",
+      "documentCandidateId": "document_e45b9120731e6215df19b946",
+      "sha256": "e21f27e08970d984cf7666b62944b7e0c2fd9c1d5a5a497ed2afd859051df0a6",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/Why-use-Drager-Original-Flow-sensor-illuph-DGT-2875-2020-en-master.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 35
+      },
+      "quotedText": "tidal volume from four anaesthesia ventilators during",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_b9bba3979dc6548f92437473",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_9eb93cb817796f4d97895863",
+      "documentCandidateId": "document_49bf5e7755c1c947721fd9b9",
+      "sha256": "a848852f3165e646fa714f0ed24b352502e6792e1a2f4f2404367407f57d3b58",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/why-use-oxylog-illuph-DGT-2973-2021-en-master.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 4
+      },
+      "quotedText": "Tidal Volume is accurately delivered",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_f5be9638db331fe10d12ac39",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_9eb93cb817796f4d97895863",
+      "documentCandidateId": "document_49bf5e7755c1c947721fd9b9",
+      "sha256": "a848852f3165e646fa714f0ed24b352502e6792e1a2f4f2404367407f57d3b58",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Content/why-use-oxylog-illuph-DGT-2973-2021-en-master.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 57
+      },
+      "quotedText": "flow rate works as feedback to the Oxylog to adjust",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_0b3a0a8bdc061227a7bdfe96",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_d74e6557b57884b862dbdd55",
+      "documentCandidateId": "document_fcc9f5383cfcd1bb65daada3",
+      "sha256": "da2d9034c138952f58174ea02a0d15c0246e354ca6d54bf160d0ed9eba6c4664",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Products/accessory-ca-9066485-en-gb.pdf",
+      "locator": {
+        "page": 13,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 206
+      },
+      "quotedText": "compatibility with our devices, as we know that",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_c1ef836fafecd5c582c10f17",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_d74e6557b57884b862dbdd55",
+      "documentCandidateId": "document_fcc9f5383cfcd1bb65daada3",
+      "sha256": "da2d9034c138952f58174ea02a0d15c0246e354ca6d54bf160d0ed9eba6c4664",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Products/accessory-ca-9066485-en-gb.pdf",
+      "locator": {
+        "page": 32,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 776
+      },
+      "quotedText": "display",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_8643e5760cd2ad8895c4c110",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_d74e6557b57884b862dbdd55",
+      "documentCandidateId": "document_fcc9f5383cfcd1bb65daada3",
+      "sha256": "da2d9034c138952f58174ea02a0d15c0246e354ca6d54bf160d0ed9eba6c4664",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Products/accessory-ca-9066485-en-gb.pdf",
+      "locator": {
+        "page": 65,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1699
+      },
+      "quotedText": "tidal volume 300 to 1500 ml 300 to 1500 ml 300 to 1500 ml",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_6ce4895607fff39084254769",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_d74e6557b57884b862dbdd55",
+      "documentCandidateId": "document_fcc9f5383cfcd1bb65daada3",
+      "sha256": "da2d9034c138952f58174ea02a0d15c0246e354ca6d54bf160d0ed9eba6c4664",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Products/accessory-ca-9066485-en-gb.pdf",
+      "locator": {
+        "page": 247,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 7354
+      },
+      "quotedText": "battery* 2606229 ¢ ¢",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_f2f229e7263948b402786273",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_d74e6557b57884b862dbdd55",
+      "documentCandidateId": "document_fcc9f5383cfcd1bb65daada3",
+      "sha256": "da2d9034c138952f58174ea02a0d15c0246e354ca6d54bf160d0ed9eba6c4664",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Products/accessory-ca-9066485-en-gb.pdf",
+      "locator": {
+        "page": 271,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 7848
+      },
+      "quotedText": "flow rate at 4.5 bar ± 0.5 bar (1,013 hpa/20 °C)**",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_48e50816109bf6b54c66f4f6",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_d74e6557b57884b862dbdd55",
+      "documentCandidateId": "document_fcc9f5383cfcd1bb65daada3",
+      "sha256": "da2d9034c138952f58174ea02a0d15c0246e354ca6d54bf160d0ed9eba6c4664",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Products/accessory-ca-9066485-en-gb.pdf",
+      "locator": {
+        "page": 271,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 7853
+      },
+      "quotedText": "dimensions (H × W × d ): 160 × 40 × 130 mm",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_3246e8ff7dc87fa51ffe8718",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_d74e6557b57884b862dbdd55",
+      "documentCandidateId": "document_fcc9f5383cfcd1bb65daada3",
+      "sha256": "da2d9034c138952f58174ea02a0d15c0246e354ca6d54bf160d0ed9eba6c4664",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Products/accessory-ca-9066485-en-gb.pdf",
+      "locator": {
+        "page": 271,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 7858
+      },
+      "quotedText": "Weight: Approx. 500 g (1.1 lb)",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_96fe37a7ef682cc1dc333384",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_5a0766a5416e62514ed90113",
+      "documentCandidateId": "document_9a867f7b77124141852bf5ff",
+      "sha256": "b9aee4fbe9fcb5ac79a28fb6f6cac1397367dae0f91f7aea43e17f740da7a126",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Products/Vista-120-pi-102507-en-MASTER.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 39
+      },
+      "quotedText": "display (1,024 x 768) is bright",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_1c9440d791b5174f2b422306",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_5a0766a5416e62514ed90113",
+      "documentCandidateId": "document_9a867f7b77124141852bf5ff",
+      "sha256": "b9aee4fbe9fcb5ac79a28fb6f6cac1397367dae0f91f7aea43e17f740da7a126",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Products/Vista-120-pi-102507-en-MASTER.pdf",
+      "locator": {
+        "page": 12,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 368
+      },
+      "quotedText": "flow rate:",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_167faadaae86b641c0fd7b87",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_5a0766a5416e62514ed90113",
+      "documentCandidateId": "document_9a867f7b77124141852bf5ff",
+      "sha256": "b9aee4fbe9fcb5ac79a28fb6f6cac1397367dae0f91f7aea43e17f740da7a126",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Products/Vista-120-pi-102507-en-MASTER.pdf",
+      "locator": {
+        "page": 20,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 713
+      },
+      "quotedText": "Weight <7.0 kg (15.4 lbs)",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_1cb5d203c27b8e497fc47a30",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_5a0766a5416e62514ed90113",
+      "documentCandidateId": "document_9a867f7b77124141852bf5ff",
+      "sha256": "b9aee4fbe9fcb5ac79a28fb6f6cac1397367dae0f91f7aea43e17f740da7a126",
+      "sourceUrl": "https://www.draeger.com/Content/Documents/Products/Vista-120-pi-102507-en-MASTER.pdf",
+      "locator": {
+        "page": 21,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 726
+      },
+      "quotedText": "Battery (optional)",
+      "status": "candidate",
+      "requiresHumanReview": true
     }
   ],
   "candidateClaims": [

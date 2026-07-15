@@ -698,6 +698,114 @@
       "quotedText": "weight: 1352 kg",
       "status": "candidate",
       "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_0b23e6735c66c2b4493fe66d",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_d695c2786254bacd2c1fdbec",
+      "documentCandidateId": "document_49113ce2df6240dd50730a72",
+      "sha256": "cd0829bab7403c2362b20b66088806575a1ff8b89504bd5e2683497a461624e7",
+      "sourceUrl": "https://www.documents.philips.com/assets/20171020/bd2728d04ed8468f984fa81200c5fcae.pdf",
+      "locator": {
+        "page": 5,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 73
+      },
+      "quotedText": "display can be re-arranged and re-sized on",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_4caf87bda2926e0a82fd0f3c",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_fb21db16d4bd9c3f485df54a",
+      "documentCandidateId": "document_7d73a9c6bf46bb2aa686f4a4",
+      "sha256": "6507913def2839984644787290d7e203b96e2c4fdb6f223bd98d7eda00cab2f1",
+      "sourceUrl": "https://www.documents.philips.com/assets/20191112/367a282211e94b08a7b0ab0300ac9c1b.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 59
+      },
+      "quotedText": "Dimensions of the mattress:",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_0ac26c2a4dd97c932edcf8ef",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_fb21db16d4bd9c3f485df54a",
+      "documentCandidateId": "document_7d73a9c6bf46bb2aa686f4a4",
+      "sha256": "6507913def2839984644787290d7e203b96e2c4fdb6f223bd98d7eda00cab2f1",
+      "sourceUrl": "https://www.documents.philips.com/assets/20191112/367a282211e94b08a7b0ab0300ac9c1b.pdf",
+      "locator": {
+        "page": 5,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 111
+      },
+      "quotedText": "weight.",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ea2615f98dd5016c1e8f3b8c",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_c0dca7f2f921c41ea9395d31",
+      "documentCandidateId": "document_2dc819e202cb6b0b767769ad",
+      "sha256": "387aa4718a31e552f9bb056d4cef21c4b312931a9a9c74c894fe238d16754c15",
+      "sourceUrl": "https://www.documents.philips.com/assets/20200403/23fe7d73f44243eb8e33ab9200bd9d82.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 87
+      },
+      "quotedText": "display to re-arrange and",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ba30087b4cecb087eea450c9",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_c0dca7f2f921c41ea9395d31",
+      "documentCandidateId": "document_2dc819e202cb6b0b767769ad",
+      "sha256": "387aa4718a31e552f9bb056d4cef21c4b312931a9a9c74c894fe238d16754c15",
+      "sourceUrl": "https://www.documents.philips.com/assets/20200403/23fe7d73f44243eb8e33ab9200bd9d82.pdf",
+      "locator": {
+        "page": 14,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 402
+      },
+      "quotedText": "weight is reused during",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ef6b828bdec6536ada2b53d8",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e1cf4746175e63526950003e",
+      "documentCandidateId": "document_118965a041ec46c87ff46f0b",
+      "sha256": "9cdda9de68fb8b80a815959bf9bc2dba13eda5c63f2e4aca5c87726868c5889e",
+      "sourceUrl": "https://www.documents.philips.com/assets/20211001/e7c7d1603303487b8d4eadb400a87992.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 60
+      },
+      "quotedText": "weight being reused,",
+      "status": "candidate",
+      "requiresHumanReview": true
     }
   ],
   "candidateClaims": [

@@ -6,7 +6,7 @@ import Wave2Dashboard from "@/components/internal/Wave2Dashboard";
 import { loadWave2Dashboard } from "@/lib/wave2-dashboard";
 
 export const metadata: Metadata = {
-  title: "Wave 2 Progress",
+  title: "Wave 2 Orchestration Progress",
   robots: {
     index: false,
     follow: false,
@@ -73,12 +73,16 @@ export default async function InternalWave2Page() {
             Internal · Read only
           </div>
           <h1 className="mt-3 text-4xl font-semibold tracking-tight text-slate-950">
-            Wave 2 Progress
+            Wave 2 Orchestration Progress
           </h1>
           <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
             Progress across planned manufacturers, calculated only from the
             existing Wave 2 generated summaries. This screen cannot run or
             change the import pipeline.
+          </p>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-amber-800">
+            Completion reflects orchestration stages, not evidence completeness,
+            verification, or publication readiness.
           </p>
         </div>
 

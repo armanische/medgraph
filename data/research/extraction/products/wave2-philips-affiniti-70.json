@@ -1010,6 +1010,114 @@
       "quotedText": "3D",
       "status": "candidate",
       "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_48feb26d56ff346735aa346d",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_9ba363904c7447a9f9addbbe",
+      "documentCandidateId": "document_0b41eb5c12c5f9d4eaba1e25",
+      "sha256": "c88cfa3ed8d2524aa4b15a2f11d30c0638c496ab6cf40cb3080a3a5fb4be295b",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/752a90cd7bd646758be4b067014fdc63.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 11
+      },
+      "quotedText": "display*",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_253bd1e7a64e3bb4e5a4be37",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_9ba363904c7447a9f9addbbe",
+      "documentCandidateId": "document_0b41eb5c12c5f9d4eaba1e25",
+      "sha256": "c88cfa3ed8d2524aa4b15a2f11d30c0638c496ab6cf40cb3080a3a5fb4be295b",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/752a90cd7bd646758be4b067014fdc63.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 22
+      },
+      "quotedText": "Battery backup",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_9172a78e0d2c752e643de95b",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_11d2cce911cd7c885473f1b1",
+      "documentCandidateId": "document_1872dd21ae1657989e6856b1",
+      "sha256": "21fe2b720aa0c2a405b285a99507ab1dabf024615339f8a20a89bfe4c466ff5c",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/c717079f784c4620a184b067014fd67d.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 11
+      },
+      "quotedText": "display*",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ed2cfb79f0b68502be6e9247",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_11d2cce911cd7c885473f1b1",
+      "documentCandidateId": "document_1872dd21ae1657989e6856b1",
+      "sha256": "21fe2b720aa0c2a405b285a99507ab1dabf024615339f8a20a89bfe4c466ff5c",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/c717079f784c4620a184b067014fd67d.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 22
+      },
+      "quotedText": "Battery backup",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_dbf2aa9108e5a35d01d74045",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_908605bdca31c4f0e18f7c9f",
+      "documentCandidateId": "document_d055a0ae364e1413855cee3b",
+      "sha256": "3961071e3c50107bcf8d08071f12b062ba8efac8f06e78de17594a57c6d9bef6",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/edb4b78f9bd744cb849fb067014fd155.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 63
+      },
+      "quotedText": "display*",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_1fdd142826695225166b4af4",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_908605bdca31c4f0e18f7c9f",
+      "documentCandidateId": "document_d055a0ae364e1413855cee3b",
+      "sha256": "3961071e3c50107bcf8d08071f12b062ba8efac8f06e78de17594a57c6d9bef6",
+      "sourceUrl": "https://www.documents.philips.com/assets/20230823/edb4b78f9bd744cb849fb067014fd155.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 74
+      },
+      "quotedText": "Battery backup",
+      "status": "candidate",
+      "requiresHumanReview": true
     }
   ],
   "candidateClaims": [

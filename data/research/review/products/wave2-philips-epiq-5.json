@@ -454,16 +454,19 @@
       "evidenceCandidateIds": [
         "evidence_5aff645eddfa7976606845c0"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_a0681b167031ee9b918a890e"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20170523/268dfdfc40d247d4964aa77c0168d6b0.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -1235,16 +1238,19 @@
         "evidenceCandidateIds": [
           "evidence_5aff645eddfa7976606845c0"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_a0681b167031ee9b918a890e"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20170523/268dfdfc40d247d4964aa77c0168d6b0.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -1275,12 +1281,7 @@
       "sha256": "3066c3881b348d4550f6f41669abeed91287082df503ef88bbef0ffc9fdf6322"
     }
   ],
-  "missingEvidence": [
-    {
-      "claimCandidateId": "claim_3e806e469e779c262c3265d6",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    }
-  ],
+  "missingEvidence": [],
   "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
   "warnings": [
     "Resolver adapter used: philips",

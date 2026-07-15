@@ -350,6 +350,42 @@
       "quotedText": "Doppler",
       "status": "candidate",
       "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_d65a5912992e64cf0ad70f8e",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_17d792d1cb5389a05ddc5069",
+      "documentCandidateId": "document_513f6f0e85006ceebfe8520e",
+      "sha256": "4a132cbb6dea3ff6f712b43371c753ea94e379a60595a31d9e5aae6314497761",
+      "sourceUrl": "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 20
+      },
+      "quotedText": "Weight and Compact",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_7c12d39e51a78fb7eec18dd1",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_17d792d1cb5389a05ddc5069",
+      "documentCandidateId": "document_513f6f0e85006ceebfe8520e",
+      "sha256": "4a132cbb6dea3ff6f712b43371c753ea94e379a60595a31d9e5aae6314497761",
+      "sourceUrl": "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 24
+      },
+      "quotedText": "Battery for 90mins",
+      "status": "candidate",
+      "requiresHumanReview": true
     }
   ],
   "candidateClaims": [

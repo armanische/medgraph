@@ -65,15 +65,31 @@
       "productName": "Одноразовый эндоскоп aScope 4 Broncho Ambu",
       "manufacturer": "Ambu",
       "model": "aScope 4 Broncho",
-      "category": "Прочее оборудование",
+      "category": "Эндоскопия",
       "officialSources": [
         {
           "url": "https://www.ambu.com/endoscopy/pulmonology/products",
           "sourceType": "official_manufacturer_page",
           "publisher": "Ambu",
           "title": "Ambu pulmonology products",
-          "notes": "Official Ambu pulmonology products page observed during MVP-020 pilot; exact aScope 4 IFU still required.",
-          "trustTier": 1
+          "notes": "Official Ambu pulmonology product page; model identity and generation-specific downloads confirmed for MVP-052.",
+          "trustTier": 1,
+          "documents": [
+            {
+              "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+4+Broncho%2fDatasheets%2fLBL-006608_aScope-4-Broncho-Regular_EN_V05_202404_TCC-11603.pdf",
+              "documentType": "datasheet",
+              "title": "Ambu aScope 4 Broncho Regular datasheet V05 2024/04",
+              "language": "en",
+              "trustTier": 1
+            },
+            {
+              "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2f492476000-aScope-4-Broncho_IFU_Multi_V7_202403_TCC-11608_Online.pdf",
+              "documentType": "ifu",
+              "title": "Ambu aScope 4 Broncho Family IFU V07 2024/03",
+              "language": "multi",
+              "trustTier": 1
+            }
+          ]
         },
         {
           "url": "https://www.ambu.com/",
@@ -97,10 +113,360 @@
           "sourceType": "official_manufacturer_page",
           "publisher": "Ambu",
           "title": "Ambu aScope 5 Broncho official product page",
-          "notes": "Official product page observed during MVP-020 pilot; IFU and datasheet still require artifact capture.",
-          "trustTier": 1
+          "notes": "Official current product page with generation-specific downloads and display compatibility.",
+          "trustTier": 1,
+          "documents": [
+            {
+              "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho%2fDatasheets%2fLBL-007876-aScope-5-Broncho-HD-50-22_EN_V3_202404_TCC-11612_pdf.pdf",
+              "documentType": "datasheet",
+              "title": "Ambu aScope 5 Broncho HD 5.0/2.2 datasheet V03 2024/04",
+              "language": "en",
+              "trustTier": 1
+            },
+            {
+              "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho%2fInstructions+for+use%2f492621000-IFU_aScope-5-Broncho-HD_Multi_V11_202509_IB-11730_Online.pdf",
+              "documentType": "ifu",
+              "title": "Ambu aScope 5 Broncho HD IFU V11 2025/09",
+              "language": "multi",
+              "trustTier": 1
+            }
+          ]
         }
       ]
+    },
+    {
+      "slug": "wave2-ambu-ascope-duodeno-2",
+      "productName": "Ambu aScope Duodeno 2",
+      "manufacturer": "Ambu",
+      "model": "aScope Duodeno 2",
+      "category": "Эндоскопия",
+      "officialSources": [{
+        "url": "https://www.ambu.com/endoscopy/gastroenterology/duodenoscopes/product/ambu-ascope-duodeno-2",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Ambu",
+        "title": "Ambu aScope Duodeno 2 official product page",
+        "notes": "Current generation confirmed; the unqualified aScope Duodeno name is not merged across generations.",
+        "trustTier": 1,
+        "documents": [
+          {
+            "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Duodeno+2%2fDatasheets%2fLBL-009829-Datasheet_aScope-Duodeno-2_EN_V01_202503_TCC-11700.pdf",
+            "documentType": "datasheet",
+            "title": "Ambu aScope Duodeno 2 datasheet V01 2025/03",
+            "language": "en",
+            "trustTier": 1
+          },
+          {
+            "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Duodeno+2%2fInstructions+of+use%2f492486300-aScope-Duodeno-2-IFU_EU-ROW_Multi_V02_202411_TCC-11660_Online.pdf",
+            "documentType": "ifu",
+            "title": "Ambu aScope Duodeno 2 IFU V02 2024/11",
+            "language": "multi",
+            "trustTier": 1
+          }
+        ]
+      }]
+    },
+    {
+      "slug": "wave2-ambu-ascope-gastro",
+      "productName": "Ambu aScope Gastro",
+      "manufacturer": "Ambu",
+      "model": "aScope Gastro",
+      "category": "Эндоскопия",
+      "officialSources": [{
+        "url": "https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Ambu",
+        "title": "Ambu aScope Gastro official product page",
+        "notes": "Official current product page; regional availability remains conditional.",
+        "trustTier": 1,
+        "documents": [
+          {
+            "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fDatasheets%2fLBL-008096_IE_Datasheet_aScope-Gastro-V03.pdf",
+            "documentType": "datasheet",
+            "title": "Ambu aScope Gastro datasheet V03",
+            "language": "en",
+            "trustTier": 1
+          },
+          {
+            "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fInstructions+for+use%2f492483300-IFU-aScope-Gastro_Multi_V07_202210_TCC-11349_Online.pdf",
+            "documentType": "ifu",
+            "title": "Ambu aScope Gastro IFU V07 2022/10",
+            "language": "multi",
+            "trustTier": 1
+          }
+        ]
+      }]
+    },
+    {
+      "slug": "wave2-ambu-ascope-4-cysto",
+      "productName": "Ambu aScope 4 Cysto",
+      "manufacturer": "Ambu",
+      "model": "aScope 4 Cysto",
+      "category": "Эндоскопия",
+      "officialSources": [{
+        "url": "https://www.ambu.com/endoscopy/urology/cystoscopes/product/ambu-ascope-4-cysto",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Ambu",
+        "title": "Ambu aScope 4 Cysto official product page",
+        "notes": "The requested family-level aScope Cysto check is represented by the explicitly identified aScope 4 generation.",
+        "trustTier": 1,
+        "documents": [
+          {
+            "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fDatasheets%2fLBL-006397-aScope-4-Cysto_EN_V8_202512_IB-11821.pdf",
+            "documentType": "datasheet",
+            "title": "Ambu aScope 4 Cysto datasheet V08 2025/12",
+            "language": "en",
+            "trustTier": 1
+          },
+          {
+            "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fInstructions+for+Use%2f492600000-IFU-aScope-4-Cysto_Multi_V09_202505_TCC-11711_Online.pdf",
+            "documentType": "ifu",
+            "title": "Ambu aScope 4 Cysto IFU V09 2025/05",
+            "language": "multi",
+            "trustTier": 1
+          }
+        ]
+      }]
+    },
+    {
+      "slug": "wave2-ambu-aview-2-advance",
+      "productName": "Ambu aView 2 Advance",
+      "manufacturer": "Ambu",
+      "model": "aView 2 Advance",
+      "category": "Эндоскопические системы",
+      "officialSources": [{
+        "url": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Ambu",
+        "title": "Ambu aView 2 Advance official product page",
+        "notes": "Independent displaying and processing unit; not merged with aBox 2.",
+        "trustTier": 1,
+        "documents": [
+          {
+            "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf",
+            "documentType": "datasheet",
+            "title": "Ambu aView 2 Advance datasheet V03 2026/05",
+            "language": "en",
+            "trustTier": 1
+          },
+          {
+            "url": "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FDisplaying-and-Processing-Units%2FPUB-002015-displaying-processing-units-tabel-overview-incl-SureSight.pdf",
+            "documentType": "unknown",
+            "title": "Ambu endoscopy systems compatibility table V01 2024/10",
+            "language": "en",
+            "trustTier": 1,
+            "notes": "Conservatively classified as unknown because the current discovery schema has no compatibility document type."
+          }
+        ]
+      }]
+    },
+    {
+      "slug": "wave2-ambu-abox-2",
+      "productName": "Ambu aBox 2",
+      "manufacturer": "Ambu",
+      "model": "aBox 2",
+      "category": "Эндоскопические системы",
+      "officialSources": [{
+        "url": "https://www.ambu.com/endoscopy/monitors/product/abox-2",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Ambu",
+        "title": "Ambu aBox 2 official product page",
+        "notes": "Independent displaying and processing unit; compatibility is generation-specific.",
+        "trustTier": 1,
+        "documents": [
+          {
+            "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fDisplaying-and-Processing-Units%2faBox+2%2fDatasheets%2fLBL-008315_aBox-2_Datasheet_EN_V03_202212_TCC-11415_Online.pdf",
+            "documentType": "datasheet",
+            "title": "Ambu aBox 2 datasheet V03 2022/12",
+            "language": "en",
+            "trustTier": 1
+          },
+          {
+            "url": "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FDisplaying-and-Processing-Units%2FPUB-002015-displaying-processing-units-tabel-overview-incl-SureSight.pdf",
+            "documentType": "unknown",
+            "title": "Ambu endoscopy systems compatibility table V01 2024/10",
+            "language": "en",
+            "trustTier": 1,
+            "notes": "Conservatively classified as unknown because the current discovery schema has no compatibility document type."
+          }
+        ]
+      }]
+    },
+    {
+      "slug": "wave2-ambu-ascope-5-broncho-sampler-set",
+      "productName": "Ambu aScope 5 Broncho Sampler Set",
+      "manufacturer": "Ambu",
+      "model": "aScope 5 Broncho Sampler Set",
+      "category": "Эндоскопические расходные материалы",
+      "officialSources": [{
+        "url": "https://www.ambu.com/endoscopy/pulmonology/bronchoscopes/product/ambu-ascope-5-broncho-sampler-set",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Ambu",
+        "title": "Ambu aScope 5 Broncho Sampler Set official product page",
+        "notes": "Official packaged product identity; not generalized to other BronchoSampler generations.",
+        "trustTier": 1,
+        "documents": [
+          {
+            "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho+Sampler+Set%2fDatasheet%2fLBL-008790-aScope-5-Broncho-HD-56-28-Sampler-Set_EN_V2_202404_TCC-11612_pdf.pdf",
+            "documentType": "datasheet",
+            "title": "Ambu aScope 5 Broncho HD 5.6/2.8 Sampler Set datasheet V02 2024/04",
+            "language": "en",
+            "trustTier": 1
+          },
+          {
+            "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho+Sampler+Set%2fInstructions+for+use%2f492621200-IFU-aScope-5-Broncho-Sampler-Set-part-2_Multi_V06_202402.pdf",
+            "documentType": "ifu",
+            "title": "Ambu aScope 5 Broncho Sampler Set IFU Part 2 V06 2024/02",
+            "language": "multi",
+            "trustTier": 1
+          }
+        ]
+      }]
+    },
+    {
+      "slug": "wave2-ambu-vivasight-2-dlt",
+      "productName": "Ambu VivaSight 2 DLT",
+      "manufacturer": "Ambu",
+      "model": "VivaSight 2 DLT",
+      "category": "Анестезиология и эндоскопия",
+      "officialSources": [{
+        "url": "https://www.ambu.com/airway-management-and-anaesthesia/double-lumen-tubes/product/vivasight-2-dlt",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Ambu",
+        "title": "Ambu VivaSight 2 DLT official product page",
+        "notes": "Current VivaSight 2 DLT generation; legacy VivaSight names are not merged.",
+        "trustTier": 1,
+        "documents": [
+          {
+            "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fDouble_Lumen_tube_with_Integrated_Camera%2fVivaSight+2+DLT%2fDatasheets%2fIE-VivaSight-2-DLT-Datasheet_V2.pdf",
+            "documentType": "datasheet",
+            "title": "Ambu VivaSight 2 DLT datasheet V02",
+            "language": "en",
+            "trustTier": 1
+          },
+          {
+            "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fDouble_Lumen_tube_with_Integrated_Camera%2fVivaSight+2+DLT%2fInstructions+for+use%2f492412020-VivaSight-2-DLT-IFU_Multi_V05_202206_TCC-11224_Online.pdf",
+            "documentType": "ifu",
+            "title": "Ambu VivaSight 2 DLT IFU V05 2022/06",
+            "language": "multi",
+            "trustTier": 1
+          }
+        ]
+      }]
+    },
+    {
+      "slug": "wave2-ambu-bluesensor-br",
+      "productName": "Ambu BlueSensor BR",
+      "manufacturer": "Ambu",
+      "model": "BlueSensor BR",
+      "category": "Мониторинг пациентов — расходные материалы",
+      "officialSources": [{
+        "url": "https://www.ambu.com/cardiology/ecg-electrodes/product/ambu-bluesensor-br",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Ambu",
+        "title": "Ambu BlueSensor BR official product page",
+        "notes": "Representative officially identified BlueSensor family member; facts remain model-specific.",
+        "trustTier": 1,
+        "documents": [
+          {
+            "url": "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FCardiology%2FAmbu_BlueSensor-Catalogue.pdf",
+            "documentType": "brochure",
+            "title": "Ambu BlueSensor catalogue",
+            "language": "en",
+            "trustTier": 1
+          },
+          {
+            "url": "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FCardiology%2FNeonatal_ECG_electrodes%2FBlueSensor+BR%2FDatasheets%2FLBL-007442_Datasheet-Bluesensor_BR_V01_202110_TCC-11105-1.pdf",
+            "documentType": "datasheet",
+            "title": "Ambu BlueSensor BR datasheet V01 2021/10",
+            "language": "en",
+            "trustTier": 1
+          }
+        ]
+      }]
+    },
+    {
+      "slug": "wave2-ambu-neuroline-cup",
+      "productName": "Ambu Neuroline Cup",
+      "manufacturer": "Ambu",
+      "model": "Neuroline Cup",
+      "category": "Неврологические расходные материалы",
+      "officialSources": [{
+        "url": "https://www.ambu.com/neurology/eeg-electrodes/product/ambu-neuroline-cup",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Ambu",
+        "title": "Ambu Neuroline Cup official product page",
+        "notes": "Representative officially identified Neuroline family member; facts remain model-specific.",
+        "trustTier": 1,
+        "documents": [
+          {
+            "url": "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FNeurology%2FEEG_electrodes%2FNeuroline+Cup%2FDatasheets%2FLBL-006791-Datasheet-Ambu-Neuroline-Cup-726_IE_V2_202207_TCC-11330.pdf",
+            "documentType": "datasheet",
+            "title": "Ambu Neuroline Cup datasheet V02 2022/07",
+            "language": "en",
+            "trustTier": 1
+          },
+          {
+            "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fNeurology%2fEEG_electrodes%2fNeuroline+Cup%2fInstructions+for+use%2f492726000-IFU-Neuroline-Cup-726-surface-electrodes_Multi_V02_202311_TCC-11245_Online.pdf",
+            "documentType": "ifu",
+            "title": "Ambu Neuroline Cup IFU V02 2023/11",
+            "language": "multi",
+            "trustTier": 1
+          }
+        ]
+      }]
+    },
+    {
+      "slug": "wave2-ambu-man-basic",
+      "productName": "AmbuMan Basic",
+      "manufacturer": "Ambu",
+      "model": "AmbuMan Basic",
+      "category": "Учебные манекены",
+      "officialSources": [{
+        "url": "https://www.ambu.com/emergency-care-and-training/training-manikins/product/ambu-man-basic",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Ambu",
+        "title": "AmbuMan Basic official product page",
+        "notes": "Current official member used to represent the requested AmbuMan family check; obsolete Ambu Man is reported separately.",
+        "trustTier": 1,
+        "documents": [{
+          "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fEmergency_Care_and_Training%2fTraining_Manikins%2fAmbu+Man+Basic%2fDatasheets%2fIE_Man_Basic_V02_0518_10499.pdf",
+          "documentType": "datasheet",
+          "title": "AmbuMan Basic datasheet V02",
+          "language": "en",
+          "trustTier": 1
+        }]
+      }]
+    },
+    {
+      "slug": "wave2-ambu-spur-ii",
+      "productName": "Ambu SPUR II Disposable Resuscitator",
+      "manufacturer": "Ambu",
+      "model": "SPUR II",
+      "category": "Анестезиология и реанимация",
+      "officialSources": [{
+        "url": "https://www.ambu.com/emergency-care-and-training/resuscitators/product/ambu-spur-ii",
+        "sourceType": "official_manufacturer_page",
+        "publisher": "Ambu",
+        "title": "Ambu SPUR II official product page",
+        "notes": "Official resuscitator family with adult, paediatric and infant variants.",
+        "trustTier": 1,
+        "documents": [
+          {
+            "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fDatasheets%2fLBL-006982-Datasheet-for-SPUR-II_EN_V06_202401.pdf",
+            "documentType": "datasheet",
+            "title": "Ambu SPUR II datasheet V06 2024/01",
+            "language": "en",
+            "trustTier": 1
+          },
+          {
+            "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fInstructions+for+use%2f492230040-IFU-SPUR-II-Resuscitator_Multi_V13_202504_TCC-11679_Online.pdf",
+            "documentType": "ifu",
+            "title": "Ambu SPUR II IFU V13 2025/04",
+            "language": "multi",
+            "trustTier": 1
+          }
+        ]
+      }]
     },
     {
       "slug": "wave2-hamilton-medical-products-index",

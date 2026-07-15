@@ -628,6 +628,78 @@
       "quotedText": "Document type: unknown",
       "status": "candidate",
       "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_4b545d40bb6f06038bcfe690",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ea919b542a369ba2a153a636",
+      "documentCandidateId": "document_af0d8cd5ef839a4445dc5f4b",
+      "sha256": "9d6ad927a5a2c473951ed881b599bb97937eb0135a8dac7dee1f4afe102f52c3",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 206
+      },
+      "quotedText": "display",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_321546aec61d1388aa0357d4",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_ea919b542a369ba2a153a636",
+      "documentCandidateId": "document_af0d8cd5ef839a4445dc5f4b",
+      "sha256": "9d6ad927a5a2c473951ed881b599bb97937eb0135a8dac7dee1f4afe102f52c3",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/AisysCS2-w-EtC-br-en.pdf",
+      "locator": {
+        "page": 9,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 305
+      },
+      "quotedText": "tidal volume, positive end-expiratory pressure, and lung recruitment maneuvers.",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_5b7f80870d83d045a2e70ee6",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_88e5a97da030a4eb1595a259",
+      "documentCandidateId": "document_ec322b0dbfa056c3e06248c7",
+      "sha256": "b138782a4311a74cbd94587f3da9f8c96a227af4bc64b79d926b89de4dc488a6",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/whitepaper-EtControl-JB22327XX-cs-en.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 51
+      },
+      "quotedText": "display showing end-tidal targets (bottom left",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_7a6b9e0c8c2c6a0b200a4e62",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_88e5a97da030a4eb1595a259",
+      "documentCandidateId": "document_ec322b0dbfa056c3e06248c7",
+      "sha256": "b138782a4311a74cbd94587f3da9f8c96a227af4bc64b79d926b89de4dc488a6",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/products/anesthesia-delivery/aisys-cs2/documents/whitepaper-EtControl-JB22327XX-cs-en.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 52
+      },
+      "quotedText": "flow rate = 1.00 l/min and Et Sevoflurane = 2.1%.",
+      "status": "candidate",
+      "requiresHumanReview": true
     }
   ],
   "candidateClaims": [

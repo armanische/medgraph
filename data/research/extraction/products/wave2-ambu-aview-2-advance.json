@@ -1,0 +1,964 @@
+{
+  "product": {
+    "productSlug": "wave2-ambu-aview-2-advance",
+    "manufacturer": "Ambu",
+    "productName": "Ambu aView 2 Advance",
+    "model": "aView 2 Advance",
+    "category": "Эндоскопические системы"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_1c072ac463e2081c78645865",
+      "documentCandidateId": "document_419a7a32f9baf5f02fe20546",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentKey": "trusted-document:document_419a7a32f9baf5f02fe20546",
+      "documentType": "datasheet",
+      "title": "Ambu® aView™ 2 Advance Datasheet V03 2026/05",
+      "language": null,
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf",
+      "sha256": "3412e81d0481384f22f929ca613f9ab4a5407d85bd2ba64e2e4ce222c7197975",
+      "contentType": "application/pdf",
+      "byteSize": 684665,
+      "filePath": "data/research/artifacts/artifacts/sha256/34/12/3412e81d0481384f22f929ca613f9ab4a5407d85bd2ba64e2e4ce222c7197975.aspx",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_4227d5a64105990a5d14f37c",
+      "documentCandidateId": "document_6e1602a7770cfbafca9425ad",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentKey": "trusted-document:document_6e1602a7770cfbafca9425ad",
+      "documentType": "unknown",
+      "title": "Ambu endoscopy systems compatibility table V01 2024/10",
+      "language": "en",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FDisplaying-and-Processing-Units%2FPUB-002015-displaying-processing-units-tabel-overview-incl-SureSight.pdf",
+      "sha256": "d89c2f6b62436ddf23454ab09633d0a260c87cc262cb4ffa07baa592e786ef19",
+      "contentType": "application/pdf",
+      "byteSize": 435474,
+      "filePath": "data/research/artifacts/artifacts/sha256/d8/9c/d89c2f6b62436ddf23454ab09633d0a260c87cc262cb4ffa07baa592e786ef19.aspx",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_0de64a1f4657c93285c8747c",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Ambu® aView™ 2 Advance Datasheet V03 2026/05",
+      "unit": null,
+      "rawText": "Document title: Ambu® aView™ 2 Advance Datasheet V03 2026/05",
+      "documentVersionId": "document_version_1c072ac463e2081c78645865",
+      "documentCandidateId": "document_419a7a32f9baf5f02fe20546",
+      "documentSha256": "3412e81d0481384f22f929ca613f9ab4a5407d85bd2ba64e2e4ce222c7197975",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_f8da6c1a6bacc93e92fc6917",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_0c11a7d6bb95f87f7391fc48",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "datasheet",
+      "unit": null,
+      "rawText": "Document type: datasheet",
+      "documentVersionId": "document_version_1c072ac463e2081c78645865",
+      "documentCandidateId": "document_419a7a32f9baf5f02fe20546",
+      "documentSha256": "3412e81d0481384f22f929ca613f9ab4a5407d85bd2ba64e2e4ce222c7197975",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_33ea1ca42eb6fa2d886941ec",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_fd0f882f0419136e690e54a7",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "factType": "product.intendedUse",
+      "label": "Одноразовое применение",
+      "value": "single-use",
+      "unit": null,
+      "rawText": "single-use",
+      "documentVersionId": "document_version_1c072ac463e2081c78645865",
+      "documentCandidateId": "document_419a7a32f9baf5f02fe20546",
+      "documentSha256": "3412e81d0481384f22f929ca613f9ab4a5407d85bd2ba64e2e4ce222c7197975",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 7
+      },
+      "evidenceCandidateId": "evidence_ef363ac381c77ac6cb787f39",
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:endoscopy",
+        "matchedPattern:single_use",
+        "matchedSynonym:Single-use",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_c607b954771d7c3dedb05d88",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "battery",
+      "unit": null,
+      "rawText": "battery time.",
+      "documentVersionId": "document_version_1c072ac463e2081c78645865",
+      "documentCandidateId": "document_419a7a32f9baf5f02fe20546",
+      "documentSha256": "3412e81d0481384f22f929ca613f9ab4a5407d85bd2ba64e2e4ce222c7197975",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 15
+      },
+      "evidenceCandidateId": "evidence_185d3ec0b8332d54888d2f0f",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_4ecca13f7ea0e782e2fe9fd2",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Display",
+      "unit": null,
+      "rawText": "Display",
+      "documentVersionId": "document_version_1c072ac463e2081c78645865",
+      "documentCandidateId": "document_419a7a32f9baf5f02fe20546",
+      "documentSha256": "3412e81d0481384f22f929ca613f9ab4a5407d85bd2ba64e2e4ce222c7197975",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 44
+      },
+      "evidenceCandidateId": "evidence_b91b8d4a35cbcd846ed7a3d1",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_dd63c8e2913a4a244d3140f6",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Weight",
+      "unit": null,
+      "rawText": "Weight 360 g (0.79 lbs)",
+      "documentVersionId": "document_version_1c072ac463e2081c78645865",
+      "documentCandidateId": "document_419a7a32f9baf5f02fe20546",
+      "documentSha256": "3412e81d0481384f22f929ca613f9ab4a5407d85bd2ba64e2e4ce222c7197975",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 66
+      },
+      "evidenceCandidateId": "evidence_301e042ed5f1871bab13cbea",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_b46a3504bc1b34d645b64e08",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "compatibility",
+      "unit": null,
+      "rawText": "compatibility to current and future Ambu endoscopes",
+      "documentVersionId": "document_version_1c072ac463e2081c78645865",
+      "documentCandidateId": "document_419a7a32f9baf5f02fe20546",
+      "documentSha256": "3412e81d0481384f22f929ca613f9ab4a5407d85bd2ba64e2e4ce222c7197975",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 80
+      },
+      "evidenceCandidateId": "evidence_27d5e924dd3bbabf3e04d2c8",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_53ec2a1fe0da2bc5245c23a2",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Dimensions",
+      "unit": null,
+      "rawText": "Dimensions",
+      "documentVersionId": "document_version_1c072ac463e2081c78645865",
+      "documentCandidateId": "document_419a7a32f9baf5f02fe20546",
+      "documentSha256": "3412e81d0481384f22f929ca613f9ab4a5407d85bd2ba64e2e4ce222c7197975",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 83
+      },
+      "evidenceCandidateId": "evidence_658bb8aa10a85232f251a7e6",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_3f4303318c3d77c79b50f939",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Ambu endoscopy systems compatibility table V01 2024/10",
+      "unit": null,
+      "rawText": "Document title: Ambu endoscopy systems compatibility table V01 2024/10",
+      "documentVersionId": "document_version_4227d5a64105990a5d14f37c",
+      "documentCandidateId": "document_6e1602a7770cfbafca9425ad",
+      "documentSha256": "d89c2f6b62436ddf23454ab09633d0a260c87cc262cb4ffa07baa592e786ef19",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FDisplaying-and-Processing-Units%2FPUB-002015-displaying-processing-units-tabel-overview-incl-SureSight.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_3d9faa5480ef96e1217b4c09",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_ba88cd4e08b6c3e05b4ee847",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "factType": "document.language",
+      "label": "Язык документа",
+      "value": "en",
+      "unit": null,
+      "rawText": "Document language: en",
+      "documentVersionId": "document_version_4227d5a64105990a5d14f37c",
+      "documentCandidateId": "document_6e1602a7770cfbafca9425ad",
+      "documentSha256": "d89c2f6b62436ddf23454ab09633d0a260c87cc262cb4ffa07baa592e786ef19",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FDisplaying-and-Processing-Units%2FPUB-002015-displaying-processing-units-tabel-overview-incl-SureSight.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_d7d5a32aade7864b17cf3a67",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_bddc38f00b2151d3513d9ecc",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_4227d5a64105990a5d14f37c",
+      "documentCandidateId": "document_6e1602a7770cfbafca9425ad",
+      "documentSha256": "d89c2f6b62436ddf23454ab09633d0a260c87cc262cb4ffa07baa592e786ef19",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FDisplaying-and-Processing-Units%2FPUB-002015-displaying-processing-units-tabel-overview-incl-SureSight.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_9755c0bc7bebc9ed57cddfde",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_f8da6c1a6bacc93e92fc6917",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_1c072ac463e2081c78645865",
+      "documentCandidateId": "document_419a7a32f9baf5f02fe20546",
+      "sha256": "3412e81d0481384f22f929ca613f9ab4a5407d85bd2ba64e2e4ce222c7197975",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Ambu® aView™ 2 Advance Datasheet V03 2026/05",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_33ea1ca42eb6fa2d886941ec",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_1c072ac463e2081c78645865",
+      "documentCandidateId": "document_419a7a32f9baf5f02fe20546",
+      "sha256": "3412e81d0481384f22f929ca613f9ab4a5407d85bd2ba64e2e4ce222c7197975",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: datasheet",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ef363ac381c77ac6cb787f39",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_1c072ac463e2081c78645865",
+      "documentCandidateId": "document_419a7a32f9baf5f02fe20546",
+      "sha256": "3412e81d0481384f22f929ca613f9ab4a5407d85bd2ba64e2e4ce222c7197975",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 7
+      },
+      "quotedText": "single-use",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_185d3ec0b8332d54888d2f0f",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_1c072ac463e2081c78645865",
+      "documentCandidateId": "document_419a7a32f9baf5f02fe20546",
+      "sha256": "3412e81d0481384f22f929ca613f9ab4a5407d85bd2ba64e2e4ce222c7197975",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 15
+      },
+      "quotedText": "battery time.",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_b91b8d4a35cbcd846ed7a3d1",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_1c072ac463e2081c78645865",
+      "documentCandidateId": "document_419a7a32f9baf5f02fe20546",
+      "sha256": "3412e81d0481384f22f929ca613f9ab4a5407d85bd2ba64e2e4ce222c7197975",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 44
+      },
+      "quotedText": "Display",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_301e042ed5f1871bab13cbea",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_1c072ac463e2081c78645865",
+      "documentCandidateId": "document_419a7a32f9baf5f02fe20546",
+      "sha256": "3412e81d0481384f22f929ca613f9ab4a5407d85bd2ba64e2e4ce222c7197975",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 66
+      },
+      "quotedText": "Weight 360 g (0.79 lbs)",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_27d5e924dd3bbabf3e04d2c8",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_1c072ac463e2081c78645865",
+      "documentCandidateId": "document_419a7a32f9baf5f02fe20546",
+      "sha256": "3412e81d0481384f22f929ca613f9ab4a5407d85bd2ba64e2e4ce222c7197975",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 80
+      },
+      "quotedText": "compatibility to current and future Ambu endoscopes",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_658bb8aa10a85232f251a7e6",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_1c072ac463e2081c78645865",
+      "documentCandidateId": "document_419a7a32f9baf5f02fe20546",
+      "sha256": "3412e81d0481384f22f929ca613f9ab4a5407d85bd2ba64e2e4ce222c7197975",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 83
+      },
+      "quotedText": "Dimensions",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_3d9faa5480ef96e1217b4c09",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_4227d5a64105990a5d14f37c",
+      "documentCandidateId": "document_6e1602a7770cfbafca9425ad",
+      "sha256": "d89c2f6b62436ddf23454ab09633d0a260c87cc262cb4ffa07baa592e786ef19",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FDisplaying-and-Processing-Units%2FPUB-002015-displaying-processing-units-tabel-overview-incl-SureSight.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Ambu endoscopy systems compatibility table V01 2024/10",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_d7d5a32aade7864b17cf3a67",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_4227d5a64105990a5d14f37c",
+      "documentCandidateId": "document_6e1602a7770cfbafca9425ad",
+      "sha256": "d89c2f6b62436ddf23454ab09633d0a260c87cc262cb4ffa07baa592e786ef19",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FDisplaying-and-Processing-Units%2FPUB-002015-displaying-processing-units-tabel-overview-incl-SureSight.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document language: en",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_9755c0bc7bebc9ed57cddfde",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_4227d5a64105990a5d14f37c",
+      "documentCandidateId": "document_6e1602a7770cfbafca9425ad",
+      "sha256": "d89c2f6b62436ddf23454ab09633d0a260c87cc262cb4ffa07baa592e786ef19",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FDisplaying-and-Processing-Units%2FPUB-002015-displaying-processing-units-tabel-overview-incl-SureSight.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_68409b9c0ce1dc42cdd884ac",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Ambu® aView™ 2 Advance Datasheet V03 2026/05",
+        "unit": null
+      },
+      "rawText": "Document title: Ambu® aView™ 2 Advance Datasheet V03 2026/05",
+      "evidenceCandidateIds": [
+        "evidence_f8da6c1a6bacc93e92fc6917"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_51ee8ec4361c7aafcf83f0ab",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "datasheet",
+        "unit": null
+      },
+      "rawText": "Document type: datasheet",
+      "evidenceCandidateIds": [
+        "evidence_33ea1ca42eb6fa2d886941ec"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_5f02b6e0865d028ecde50b07",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "subjectType": "product",
+      "suggestedClaimType": "product.intendedUse",
+      "valuePayload": {
+        "value": "single-use",
+        "unit": null
+      },
+      "rawText": "single-use",
+      "evidenceCandidateIds": [
+        "evidence_ef363ac381c77ac6cb787f39"
+      ],
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_91b5c303e1458fd5bc4a039c",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "rawText": "battery time.",
+      "evidenceCandidateIds": [
+        "evidence_185d3ec0b8332d54888d2f0f"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_9e562e272b7dba1a001bd23e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Display",
+        "unit": null
+      },
+      "rawText": "Display",
+      "evidenceCandidateIds": [
+        "evidence_b91b8d4a35cbcd846ed7a3d1"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_abdbaa8a58851848488144a2",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "rawText": "Weight 360 g (0.79 lbs)",
+      "evidenceCandidateIds": [
+        "evidence_301e042ed5f1871bab13cbea"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_ebcb5e30ba0a96b2cd916067",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "compatibility",
+        "unit": null
+      },
+      "rawText": "compatibility to current and future Ambu endoscopes",
+      "evidenceCandidateIds": [
+        "evidence_27d5e924dd3bbabf3e04d2c8"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_7cb4fb254207a5555b495844",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "rawText": "Dimensions",
+      "evidenceCandidateIds": [
+        "evidence_658bb8aa10a85232f251a7e6"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_471b1a187f45a1bc182c8ee6",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Ambu endoscopy systems compatibility table V01 2024/10",
+        "unit": null
+      },
+      "rawText": "Document title: Ambu endoscopy systems compatibility table V01 2024/10",
+      "evidenceCandidateIds": [
+        "evidence_3d9faa5480ef96e1217b4c09"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_fbbcda71bb30e82236710e53",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "subjectType": "product",
+      "suggestedClaimType": "document.language",
+      "valuePayload": {
+        "value": "en",
+        "unit": null
+      },
+      "rawText": "Document language: en",
+      "evidenceCandidateIds": [
+        "evidence_d7d5a32aade7864b17cf3a67"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_909020efcf49cb52b151cb4c",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_9755c0bc7bebc9ed57cddfde"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "endoscopy"
+    ],
+    "patternsMatched": {
+      "endoscopy.single_use": 1
+    },
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "endoscopy": [
+        "diameter",
+        "length",
+        "sterile",
+        "working_channel"
+      ]
+    },
+    "coveragePercent": 10
+  },
+  "warnings": [
+    "Resolver adapter used: ambu",
+    "Resolver retry skipped https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fAMP2_4-CycloneDX-2.json: HTTP 406",
+    "Resolver retry skipped https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fAMP2_4-SPDX-2.json: HTTP 406",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: mailto:tisc@ambu.com",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: http://www.ambuusa.com/corporate-giving",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "resolver=ambu; attempts=6; matchedLinks=36; classifiedDocuments={\"Unknown\":32,\"Quick Guide\":2,\"Datasheet\":2,\"IFU\":9}; confidenceDistribution={\"80\":13,\"90\":2,\"95\":4,\"100\":26}; duplicatesRemoved=9",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

@@ -636,6 +636,114 @@
       "quotedText": "doppler",
       "status": "candidate",
       "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_069abea52b93bdf51fafdf81",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_c437d7a2d894b598651ffaeb",
+      "documentCandidateId": "document_0c62dc1f28b08602df5375b6",
+      "sha256": "466f0e904e14a683eff8420d8df8997af5a6ab645ae4f36da80ab6c91d3c4877",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VENUE-ds-en.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 54
+      },
+      "quotedText": "Dimensions and Weight (mm) :",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_1f6e0997f4b7ec0e42107c9f",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_203933733ed869443e0d527b",
+      "documentCandidateId": "document_f5f8a0dbac7121864d290753",
+      "sha256": "4cc692a6a6849496325fe4aadb2661095b12d01f39546fefe4943547367864f0",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VENUE-GO-ds-en.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 56
+      },
+      "quotedText": "Dimensions and Weight :",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_7a2585a5f142c4a629b3f856",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_0a555e42282550f0a8d83f3b",
+      "documentCandidateId": "document_3d1fa49bbbdba53f16e101ee",
+      "sha256": "1d905f0b18ab9e5699bca787f73706f134e5613053937bc190ff3a52bde07119",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/venue/brochure-venue-go-pocus-r5-jb29264xx.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 101
+      },
+      "quotedText": "dimensions and calculates the bladder volume",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_27cffd064b7d4fbccd429723",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_0a555e42282550f0a8d83f3b",
+      "documentCandidateId": "document_3d1fa49bbbdba53f16e101ee",
+      "sha256": "1d905f0b18ab9e5699bca787f73706f134e5613053937bc190ff3a52bde07119",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/venue/brochure-venue-go-pocus-r5-jb29264xx.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 117
+      },
+      "quotedText": "weight ratio.",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_e2ca6af96e1f6f93fcc418dd",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_0a555e42282550f0a8d83f3b",
+      "documentCandidateId": "document_3d1fa49bbbdba53f16e101ee",
+      "sha256": "1d905f0b18ab9e5699bca787f73706f134e5613053937bc190ff3a52bde07119",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/venue/brochure-venue-go-pocus-r5-jb29264xx.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 179
+      },
+      "quotedText": "display the frame",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_e4fe66e4797b23827aa7b987",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_0a555e42282550f0a8d83f3b",
+      "documentCandidateId": "document_3d1fa49bbbdba53f16e101ee",
+      "sha256": "1d905f0b18ab9e5699bca787f73706f134e5613053937bc190ff3a52bde07119",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/venue/brochure-venue-go-pocus-r5-jb29264xx.pdf",
+      "locator": {
+        "page": 9,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 325
+      },
+      "quotedText": "compatibility with commercially available Ultrasound",
+      "status": "candidate",
+      "requiresHumanReview": true
     }
   ],
   "candidateClaims": [

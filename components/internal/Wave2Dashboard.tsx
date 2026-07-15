@@ -202,7 +202,7 @@ export default function Wave2Dashboard({ data }: { data: Wave2DashboardData }) {
         <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <div className="text-xs font-semibold uppercase tracking-wide text-teal-700">
-              Overall Progress
+              Orchestration Progress
             </div>
             <h2 className="mt-2 text-xl font-semibold text-slate-950">Wave 2</h2>
             <p className="mt-2 text-sm text-slate-600">
@@ -211,7 +211,10 @@ export default function Wave2Dashboard({ data }: { data: Wave2DashboardData }) {
             </p>
           </div>
           <div className="w-full lg:max-w-xl">
-            <ProgressBar value={data.overallProgress} label="Wave 2" />
+            <ProgressBar
+              value={data.overallProgress}
+              label="Wave 2 orchestration"
+            />
           </div>
         </div>
       </section>

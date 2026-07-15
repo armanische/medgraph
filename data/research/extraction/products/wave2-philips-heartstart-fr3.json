@@ -504,6 +504,78 @@
       "quotedText": "warning: DANGER: IF THE FR3 IS USED TO GIVE A SHOCK IN THE PRESENCE OF",
       "status": "candidate",
       "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_6b6c2023e3b2603cf6f2b628",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_b69a2395713b739bec137983",
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "sha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 59
+      },
+      "quotedText": "Battery. Long-life battery used",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_3d1627c33ef46a8e2e730374",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_b69a2395713b739bec137983",
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "sha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 225
+      },
+      "quotedText": "Display",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_fdd9276b77cb676ee47eb170",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_b69a2395713b739bec137983",
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "sha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "locator": {
+        "page": 28,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1090
+      },
+      "quotedText": "weight affected the defibrillation",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_0be1ee0d51c1c88e5c755392",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_b69a2395713b739bec137983",
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "sha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "locator": {
+        "page": 94,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 3949
+      },
+      "quotedText": "Dimensions 2.8 in wide x 2.1in high (72 mm x 54 mm).",
+      "status": "candidate",
+      "requiresHumanReview": true
     }
   ],
   "candidateClaims": [

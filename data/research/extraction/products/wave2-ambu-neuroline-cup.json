@@ -1,0 +1,603 @@
+{
+  "product": {
+    "productSlug": "wave2-ambu-neuroline-cup",
+    "manufacturer": "Ambu",
+    "productName": "Ambu Neuroline Cup",
+    "model": "Neuroline Cup",
+    "category": "Неврологические расходные материалы"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_387da1aa8f7f35ec7914f098",
+      "documentCandidateId": "document_1f88fa88a58fd22187f95958",
+      "sourceId": "source_b0d15dc8b722c779c9458c1a",
+      "productSlug": "wave2-ambu-neuroline-cup",
+      "documentKey": "trusted-document:document_1f88fa88a58fd22187f95958",
+      "documentType": "ifu",
+      "title": "IFU Ambu® Neuroline Cup V02 2023/11",
+      "language": null,
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fNeurology%2fEEG_electrodes%2fNeuroline+Cup%2fInstructions+for+use%2f492726000-IFU-Neuroline-Cup-726-surface-electrodes_Multi_V02_202311_TCC-11245_Online.pdf",
+      "sha256": "dbd840027206445a8eb99358753908069ca609369ff918421792bab6c5819152",
+      "contentType": "application/pdf",
+      "byteSize": 3186211,
+      "filePath": "data/research/artifacts/artifacts/sha256/db/d8/dbd840027206445a8eb99358753908069ca609369ff918421792bab6c5819152.aspx",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_d07f3f65a3611f3d46fe3be6",
+      "documentCandidateId": "document_436f8e483a214612a29a835f",
+      "sourceId": "source_b0d15dc8b722c779c9458c1a",
+      "productSlug": "wave2-ambu-neuroline-cup",
+      "documentKey": "trusted-document:document_436f8e483a214612a29a835f",
+      "documentType": "datasheet",
+      "title": "Ambu Neuroline Cup datasheet V02 2022/07",
+      "language": "en",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FNeurology%2FEEG_electrodes%2FNeuroline+Cup%2FDatasheets%2FLBL-006791-Datasheet-Ambu-Neuroline-Cup-726_IE_V2_202207_TCC-11330.pdf",
+      "sha256": "554340becb6c385032926d052a2b009aa1fe7f634c4945362bb8e474e95f4861",
+      "contentType": "application/pdf",
+      "byteSize": 305880,
+      "filePath": "data/research/artifacts/artifacts/sha256/55/43/554340becb6c385032926d052a2b009aa1fe7f634c4945362bb8e474e95f4861.aspx",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_d865908c0528dcec0d8e5c20",
+      "productSlug": "wave2-ambu-neuroline-cup",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "IFU Ambu® Neuroline Cup V02 2023/11",
+      "unit": null,
+      "rawText": "Document title: IFU Ambu® Neuroline Cup V02 2023/11",
+      "documentVersionId": "document_version_387da1aa8f7f35ec7914f098",
+      "documentCandidateId": "document_1f88fa88a58fd22187f95958",
+      "documentSha256": "dbd840027206445a8eb99358753908069ca609369ff918421792bab6c5819152",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fNeurology%2fEEG_electrodes%2fNeuroline+Cup%2fInstructions+for+use%2f492726000-IFU-Neuroline-Cup-726-surface-electrodes_Multi_V02_202311_TCC-11245_Online.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_acd014de6d29a56243cc7256",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_51adff650c0a15e9b0ad9ba7",
+      "productSlug": "wave2-ambu-neuroline-cup",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "ifu",
+      "unit": null,
+      "rawText": "Document type: ifu",
+      "documentVersionId": "document_version_387da1aa8f7f35ec7914f098",
+      "documentCandidateId": "document_1f88fa88a58fd22187f95958",
+      "documentSha256": "dbd840027206445a8eb99358753908069ca609369ff918421792bab6c5819152",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fNeurology%2fEEG_electrodes%2fNeuroline+Cup%2fInstructions+for+use%2f492726000-IFU-Neuroline-Cup-726-surface-electrodes_Multi_V02_202311_TCC-11245_Online.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_1c9cad2be1a0274db5f9ea8b",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_e17acd3fcd0cb87a3993dd70",
+      "productSlug": "wave2-ambu-neuroline-cup",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "weight",
+      "unit": null,
+      "rawText": "weight less than 3.5 kg as",
+      "documentVersionId": "document_version_387da1aa8f7f35ec7914f098",
+      "documentCandidateId": "document_1f88fa88a58fd22187f95958",
+      "documentSha256": "dbd840027206445a8eb99358753908069ca609369ff918421792bab6c5819152",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fNeurology%2fEEG_electrodes%2fNeuroline+Cup%2fInstructions+for+use%2f492726000-IFU-Neuroline-Cup-726-surface-electrodes_Multi_V02_202311_TCC-11245_Online.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 59
+      },
+      "evidenceCandidateId": "evidence_1c669a36140505486870c6fd",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_35f5997d1fb7bf3010221a9c",
+      "productSlug": "wave2-ambu-neuroline-cup",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Ambu Neuroline Cup datasheet V02 2022/07",
+      "unit": null,
+      "rawText": "Document title: Ambu Neuroline Cup datasheet V02 2022/07",
+      "documentVersionId": "document_version_d07f3f65a3611f3d46fe3be6",
+      "documentCandidateId": "document_436f8e483a214612a29a835f",
+      "documentSha256": "554340becb6c385032926d052a2b009aa1fe7f634c4945362bb8e474e95f4861",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FNeurology%2FEEG_electrodes%2FNeuroline+Cup%2FDatasheets%2FLBL-006791-Datasheet-Ambu-Neuroline-Cup-726_IE_V2_202207_TCC-11330.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_51c3c2c5082507c37437f786",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_36edbb2dd8c42e861ae46b81",
+      "productSlug": "wave2-ambu-neuroline-cup",
+      "factType": "document.language",
+      "label": "Язык документа",
+      "value": "en",
+      "unit": null,
+      "rawText": "Document language: en",
+      "documentVersionId": "document_version_d07f3f65a3611f3d46fe3be6",
+      "documentCandidateId": "document_436f8e483a214612a29a835f",
+      "documentSha256": "554340becb6c385032926d052a2b009aa1fe7f634c4945362bb8e474e95f4861",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FNeurology%2FEEG_electrodes%2FNeuroline+Cup%2FDatasheets%2FLBL-006791-Datasheet-Ambu-Neuroline-Cup-726_IE_V2_202207_TCC-11330.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_4e202406f61c9aaee1dd50df",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_97dcf9e2c535bb8520ddf68b",
+      "productSlug": "wave2-ambu-neuroline-cup",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "datasheet",
+      "unit": null,
+      "rawText": "Document type: datasheet",
+      "documentVersionId": "document_version_d07f3f65a3611f3d46fe3be6",
+      "documentCandidateId": "document_436f8e483a214612a29a835f",
+      "documentSha256": "554340becb6c385032926d052a2b009aa1fe7f634c4945362bb8e474e95f4861",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FNeurology%2FEEG_electrodes%2FNeuroline+Cup%2FDatasheets%2FLBL-006791-Datasheet-Ambu-Neuroline-Cup-726_IE_V2_202207_TCC-11330.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_94d1bd38384a0642a8f8afd2",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_acd014de6d29a56243cc7256",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_387da1aa8f7f35ec7914f098",
+      "documentCandidateId": "document_1f88fa88a58fd22187f95958",
+      "sha256": "dbd840027206445a8eb99358753908069ca609369ff918421792bab6c5819152",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fNeurology%2fEEG_electrodes%2fNeuroline+Cup%2fInstructions+for+use%2f492726000-IFU-Neuroline-Cup-726-surface-electrodes_Multi_V02_202311_TCC-11245_Online.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: IFU Ambu® Neuroline Cup V02 2023/11",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_1c9cad2be1a0274db5f9ea8b",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_387da1aa8f7f35ec7914f098",
+      "documentCandidateId": "document_1f88fa88a58fd22187f95958",
+      "sha256": "dbd840027206445a8eb99358753908069ca609369ff918421792bab6c5819152",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fNeurology%2fEEG_electrodes%2fNeuroline+Cup%2fInstructions+for+use%2f492726000-IFU-Neuroline-Cup-726-surface-electrodes_Multi_V02_202311_TCC-11245_Online.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: ifu",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_1c669a36140505486870c6fd",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_387da1aa8f7f35ec7914f098",
+      "documentCandidateId": "document_1f88fa88a58fd22187f95958",
+      "sha256": "dbd840027206445a8eb99358753908069ca609369ff918421792bab6c5819152",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fNeurology%2fEEG_electrodes%2fNeuroline+Cup%2fInstructions+for+use%2f492726000-IFU-Neuroline-Cup-726-surface-electrodes_Multi_V02_202311_TCC-11245_Online.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 59
+      },
+      "quotedText": "weight less than 3.5 kg as",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_51c3c2c5082507c37437f786",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_d07f3f65a3611f3d46fe3be6",
+      "documentCandidateId": "document_436f8e483a214612a29a835f",
+      "sha256": "554340becb6c385032926d052a2b009aa1fe7f634c4945362bb8e474e95f4861",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FNeurology%2FEEG_electrodes%2FNeuroline+Cup%2FDatasheets%2FLBL-006791-Datasheet-Ambu-Neuroline-Cup-726_IE_V2_202207_TCC-11330.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Ambu Neuroline Cup datasheet V02 2022/07",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_4e202406f61c9aaee1dd50df",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_d07f3f65a3611f3d46fe3be6",
+      "documentCandidateId": "document_436f8e483a214612a29a835f",
+      "sha256": "554340becb6c385032926d052a2b009aa1fe7f634c4945362bb8e474e95f4861",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FNeurology%2FEEG_electrodes%2FNeuroline+Cup%2FDatasheets%2FLBL-006791-Datasheet-Ambu-Neuroline-Cup-726_IE_V2_202207_TCC-11330.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document language: en",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_94d1bd38384a0642a8f8afd2",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_d07f3f65a3611f3d46fe3be6",
+      "documentCandidateId": "document_436f8e483a214612a29a835f",
+      "sha256": "554340becb6c385032926d052a2b009aa1fe7f634c4945362bb8e474e95f4861",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FNeurology%2FEEG_electrodes%2FNeuroline+Cup%2FDatasheets%2FLBL-006791-Datasheet-Ambu-Neuroline-Cup-726_IE_V2_202207_TCC-11330.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: datasheet",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_70040c63c6fcc9fe6d017e8a",
+      "productSlug": "wave2-ambu-neuroline-cup",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "IFU Ambu® Neuroline Cup V02 2023/11",
+        "unit": null
+      },
+      "rawText": "Document title: IFU Ambu® Neuroline Cup V02 2023/11",
+      "evidenceCandidateIds": [
+        "evidence_acd014de6d29a56243cc7256"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_75a1b9b5111ff3f52e05161f",
+      "productSlug": "wave2-ambu-neuroline-cup",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "ifu",
+        "unit": null
+      },
+      "rawText": "Document type: ifu",
+      "evidenceCandidateIds": [
+        "evidence_1c9cad2be1a0274db5f9ea8b"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_297cc3d44d51844f829f7a05",
+      "productSlug": "wave2-ambu-neuroline-cup",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "weight",
+        "unit": null
+      },
+      "rawText": "weight less than 3.5 kg as",
+      "evidenceCandidateIds": [
+        "evidence_1c669a36140505486870c6fd"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_709347dff9aa04d8b7f42138",
+      "productSlug": "wave2-ambu-neuroline-cup",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Ambu Neuroline Cup datasheet V02 2022/07",
+        "unit": null
+      },
+      "rawText": "Document title: Ambu Neuroline Cup datasheet V02 2022/07",
+      "evidenceCandidateIds": [
+        "evidence_51c3c2c5082507c37437f786"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_b631dc9a18ee8c4f007c28d8",
+      "productSlug": "wave2-ambu-neuroline-cup",
+      "subjectType": "product",
+      "suggestedClaimType": "document.language",
+      "valuePayload": {
+        "value": "en",
+        "unit": null
+      },
+      "rawText": "Document language: en",
+      "evidenceCandidateIds": [
+        "evidence_4e202406f61c9aaee1dd50df"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_ee253268901f6eca904e4044",
+      "productSlug": "wave2-ambu-neuroline-cup",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "datasheet",
+        "unit": null
+      },
+      "rawText": "Document type: datasheet",
+      "evidenceCandidateIds": [
+        "evidence_94d1bd38384a0642a8f8afd2"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "consumables"
+    ],
+    "patternsMatched": {},
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "consumables": [
+        "connector",
+        "dead_space",
+        "filtration_efficiency",
+        "humidification",
+        "sterile",
+        "usage"
+      ]
+    },
+    "coveragePercent": 0
+  },
+  "warnings": [
+    "Resolver adapter used: ambu",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: mailto:tisc@ambu.com",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: http://www.ambuusa.com/corporate-giving",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "resolver=ambu; attempts=4; matchedLinks=18; classifiedDocuments={\"Unknown\":23,\"Brochure\":1,\"Datasheet\":1,\"IFU\":2}; confidenceDistribution={\"80\":13,\"95\":4,\"100\":10}; duplicatesRemoved=9",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

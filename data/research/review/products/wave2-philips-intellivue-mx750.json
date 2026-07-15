@@ -82,16 +82,19 @@
       "evidenceCandidateIds": [
         "evidence_c29b7c7426247f1c30d81bdf"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_30e7f6149360727c43fedd72"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20200818/d0cca619e3354e7badeeac1b00f32609.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -172,16 +175,19 @@
       "evidenceCandidateIds": [
         "evidence_c57a65c161626ef05624c1e0"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_1097beb061f2c519a6204a34"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20240226/eaeec99947fc4fcd8dd1b1220170bf6c.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -262,16 +268,19 @@
       "evidenceCandidateIds": [
         "evidence_6184fe1829718cf69aaa6809"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_769e8ad5c0dda1e5897ce1a7"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/assets/20240516/ac0d259914484f86a825b1720145e807.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -483,16 +492,19 @@
         "evidenceCandidateIds": [
           "evidence_c29b7c7426247f1c30d81bdf"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_30e7f6149360727c43fedd72"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20200818/d0cca619e3354e7badeeac1b00f32609.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -511,16 +523,19 @@
         "evidenceCandidateIds": [
           "evidence_c57a65c161626ef05624c1e0"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_1097beb061f2c519a6204a34"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20240226/eaeec99947fc4fcd8dd1b1220170bf6c.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -539,16 +554,19 @@
         "evidenceCandidateIds": [
           "evidence_6184fe1829718cf69aaa6809"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_769e8ad5c0dda1e5897ce1a7"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/assets/20240516/ac0d259914484f86a825b1720145e807.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -579,20 +597,7 @@
       "sha256": "a6b542bdf13217a8aecedf5c4b6efdb9d2bbbfc31fc683daa48fd497379e0752"
     }
   ],
-  "missingEvidence": [
-    {
-      "claimCandidateId": "claim_08d3e8e09d12381d0f949d98",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_253cbe42ef574c964d3d831e",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_ffa0106950f71d7ac5b300f3",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    }
-  ],
+  "missingEvidence": [],
   "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
   "warnings": [
     "Resolver adapter used: philips",

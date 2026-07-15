@@ -175,16 +175,19 @@
       "evidenceCandidateIds": [
         "evidence_d65a5912992e64cf0ad70f8e"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_17d792d1cb5389a05ddc5069"
+      ],
+      "sourceUrls": [
+        "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -203,16 +206,19 @@
       "evidenceCandidateIds": [
         "evidence_7c12d39e51a78fb7eec18dd1"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_17d792d1cb5389a05ddc5069"
+      ],
+      "sourceUrls": [
+        "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -395,16 +401,19 @@
         "evidenceCandidateIds": [
           "evidence_d65a5912992e64cf0ad70f8e"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_17d792d1cb5389a05ddc5069"
+        ],
+        "sourceUrls": [
+          "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -423,16 +432,19 @@
         "evidenceCandidateIds": [
           "evidence_7c12d39e51a78fb7eec18dd1"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_17d792d1cb5389a05ddc5069"
+        ],
+        "sourceUrls": [
+          "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -456,16 +468,7 @@
       "sha256": "4a132cbb6dea3ff6f712b43371c753ea94e379a60595a31d9e5aae6314497761"
     }
   ],
-  "missingEvidence": [
-    {
-      "claimCandidateId": "claim_b5bc81cf358dadd22bf850fa",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_f9bfea9e29fc8dd2434a30bc",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    }
-  ],
+  "missingEvidence": [],
   "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
   "warnings": [
     "Resolver adapter used: default",

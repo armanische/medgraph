@@ -1,20 +1,20 @@
 {
   "manufacturer": "Ambu",
   "generatedAt": "wave2-execution-v1",
-  "productsDiscovered": 10,
-  "officialSources": 4,
-  "documentsFound": 14,
-  "downloads": 9,
-  "artifacts": 9,
-  "candidateFacts": 23,
-  "reviewItems": 23,
+  "productsDiscovered": 14,
+  "officialSources": 15,
+  "documentsFound": 20,
+  "downloads": 13,
+  "artifacts": 13,
+  "candidateFacts": 32,
+  "reviewItems": 32,
   "blockedProducts": 1,
   "errors": [],
   "warnings": [
     "Required document coverage is below Wave 2 target.",
     "Wave 2 execution creates reports only; no publication is performed."
   ],
-  "durationMs": 1414,
+  "durationMs": 1562,
   "retries": [],
   "stages": [
     {

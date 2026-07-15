@@ -638,6 +638,19 @@ function locatorFor(text: string, index: number) {
   };
 }
 
+export function canonicalEvidenceId(input: {
+  documentVersionId: string;
+  rawText: string;
+  locator: EvidenceCandidateReference["locator"];
+}) {
+  return stableId("evidence", [
+    input.documentVersionId,
+    input.rawText,
+    input.locator.page,
+    input.locator.paragraph,
+  ]);
+}
+
 function evidenceForFact(input: {
   version: DocumentVersion;
   rawText: string;
@@ -645,12 +658,11 @@ function evidenceForFact(input: {
   kind?: EvidenceCandidateReference["kind"];
 }) {
   return {
-    evidenceCandidateId: stableId("evidence", [
-      input.version.versionId,
-      input.rawText,
-      input.locator.page,
-      input.locator.paragraph,
-    ]),
+    evidenceCandidateId: canonicalEvidenceId({
+      documentVersionId: input.version.versionId,
+      rawText: input.rawText,
+      locator: input.locator,
+    }),
     kind: input.kind ?? "document_excerpt",
     documentVersionId: input.version.versionId,
     documentCandidateId: input.version.documentCandidateId,
@@ -719,6 +731,7 @@ function explicitTextFacts(input: {
     },
   ];
   const output: ExtractedFactCandidate[] = [];
+  const evidenceCandidates: EvidenceCandidateReference[] = [];
   const seen = new Set<string>();
   for (const rule of rules) {
     rule.pattern.lastIndex = 0;
@@ -735,6 +748,7 @@ function explicitTextFacts(input: {
         rawText,
         locator,
       });
+      evidenceCandidates.push(evidence);
       output.push({
         factCandidateId: stableId("fact", [
           input.product.productSlug,
@@ -764,7 +778,7 @@ function explicitTextFacts(input: {
       });
     }
   }
-  return output;
+  return { facts: output, evidenceCandidates };
 }
 
 export function candidateClaimFromExtractedFact(
@@ -970,13 +984,13 @@ export async function runTrustedDocumentExtractionForReports(input: {
           ],
         });
       }
-      facts.push(
-        ...explicitTextFacts({
-          text,
-          product: downloadReport.product,
-          version,
-        }),
-      );
+      const explicitFacts = explicitTextFacts({
+        text,
+        product: downloadReport.product,
+        version,
+      });
+      facts.push(...explicitFacts.facts);
+      evidenceCandidates.push(...explicitFacts.evidenceCandidates);
     }
 
     const dedupedFacts = dedupeFacts(facts);

@@ -1,0 +1,1274 @@
+{
+  "product": {
+    "productSlug": "wave2-ambu-ascope-4-cysto",
+    "manufacturer": "Ambu",
+    "productName": "Ambu aScope 4 Cysto",
+    "model": "aScope 4 Cysto",
+    "category": "Эндоскопия"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_d64df77f9cbf5509149cbd43",
+      "documentCandidateId": "document_7d251759bc39b8699d0a1a67",
+      "sourceId": "source_87a91d08d1209f387491eb4f",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "documentKey": "trusted-document:document_7d251759bc39b8699d0a1a67",
+      "documentType": "datasheet",
+      "title": "Ambu® aScope™ 4 Cysto Datasheet",
+      "language": null,
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fDatasheets%2fLBL-006397-aScope-4-Cysto_EN_V8_202512_IB-11821.pdf",
+      "sha256": "776fc4e404cac907bfe73580a0b6f55b658dc670add297c044f5445a54be28e8",
+      "contentType": "application/pdf",
+      "byteSize": 860783,
+      "filePath": "data/research/artifacts/artifacts/sha256/77/6f/776fc4e404cac907bfe73580a0b6f55b658dc670add297c044f5445a54be28e8.aspx",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_c26011c1d1f189bc3e9356fa",
+      "documentCandidateId": "document_33760925c11e27cfa0265695",
+      "sourceId": "source_87a91d08d1209f387491eb4f",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "documentKey": "trusted-document:document_33760925c11e27cfa0265695",
+      "documentType": "ifu",
+      "title": "IFU Ambu® aScope™ 4 Cysto (Multi) V09 2025/05",
+      "language": null,
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fInstructions+for+Use%2f492600000-IFU-aScope-4-Cysto_Multi_V09_202505_TCC-11711_Online.pdf",
+      "sha256": "02f67220db6799f46fa09c3e817fe764f4810d6dea0d0e2ce1fb59cca716fea2",
+      "contentType": "application/pdf",
+      "byteSize": 11345499,
+      "filePath": "data/research/artifacts/artifacts/sha256/02/f6/02f67220db6799f46fa09c3e817fe764f4810d6dea0d0e2ce1fb59cca716fea2.aspx",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_38ab1a867024c7484e184ac5",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Ambu® aScope™ 4 Cysto Datasheet",
+      "unit": null,
+      "rawText": "Document title: Ambu® aScope™ 4 Cysto Datasheet",
+      "documentVersionId": "document_version_d64df77f9cbf5509149cbd43",
+      "documentCandidateId": "document_7d251759bc39b8699d0a1a67",
+      "documentSha256": "776fc4e404cac907bfe73580a0b6f55b658dc670add297c044f5445a54be28e8",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fDatasheets%2fLBL-006397-aScope-4-Cysto_EN_V8_202512_IB-11821.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_942510635371e752c6e2142e",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_aea2dcd247bad610b3142c16",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "datasheet",
+      "unit": null,
+      "rawText": "Document type: datasheet",
+      "documentVersionId": "document_version_d64df77f9cbf5509149cbd43",
+      "documentCandidateId": "document_7d251759bc39b8699d0a1a67",
+      "documentSha256": "776fc4e404cac907bfe73580a0b6f55b658dc670add297c044f5445a54be28e8",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fDatasheets%2fLBL-006397-aScope-4-Cysto_EN_V8_202512_IB-11821.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_5a4ae78f464db7eba5e6ccbf",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_cc5bd9c92317870b83fe1a90",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "factType": "product.dimensions",
+      "label": "Длина",
+      "value": "390",
+      "unit": "mm",
+      "rawText": "Working length 390 mm",
+      "documentVersionId": "document_version_d64df77f9cbf5509149cbd43",
+      "documentCandidateId": "document_7d251759bc39b8699d0a1a67",
+      "documentSha256": "776fc4e404cac907bfe73580a0b6f55b658dc670add297c044f5445a54be28e8",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fDatasheets%2fLBL-006397-aScope-4-Cysto_EN_V8_202512_IB-11821.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 77
+      },
+      "evidenceCandidateId": "evidence_20a8ce9541e9ce517448a83a",
+      "confidence": 0.84,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:endoscopy",
+        "matchedPattern:length",
+        "matchedSynonym:Working length",
+        "unitParsed:mm"
+      ]
+    },
+    {
+      "factCandidateId": "fact_58d205f1c2cbc275db51ae8b",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "factType": "product.intendedUse",
+      "label": "Одноразовое применение",
+      "value": "Single-use",
+      "unit": null,
+      "rawText": "Single-use",
+      "documentVersionId": "document_version_d64df77f9cbf5509149cbd43",
+      "documentCandidateId": "document_7d251759bc39b8699d0a1a67",
+      "documentSha256": "776fc4e404cac907bfe73580a0b6f55b658dc670add297c044f5445a54be28e8",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fDatasheets%2fLBL-006397-aScope-4-Cysto_EN_V8_202512_IB-11821.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 2
+      },
+      "evidenceCandidateId": "evidence_0e29d9be948330394c196b4c",
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:endoscopy",
+        "matchedPattern:single_use",
+        "matchedSynonym:Single-use",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_d9e6530c3bfe02528e9371e9",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "factType": "product.intendedUse",
+      "label": "Одноразовое применение",
+      "value": "Disposable",
+      "unit": null,
+      "rawText": "Disposable",
+      "documentVersionId": "document_version_d64df77f9cbf5509149cbd43",
+      "documentCandidateId": "document_7d251759bc39b8699d0a1a67",
+      "documentSha256": "776fc4e404cac907bfe73580a0b6f55b658dc670add297c044f5445a54be28e8",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fDatasheets%2fLBL-006397-aScope-4-Cysto_EN_V8_202512_IB-11821.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 107
+      },
+      "evidenceCandidateId": "evidence_03621c71d62a6b9080baf7d4",
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:endoscopy",
+        "matchedPattern:single_use",
+        "matchedSynonym:Disposable",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_5f3c76ee3824bc5e59b730f5",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Dimensions",
+      "unit": null,
+      "rawText": "Dimensions",
+      "documentVersionId": "document_version_d64df77f9cbf5509149cbd43",
+      "documentCandidateId": "document_7d251759bc39b8699d0a1a67",
+      "documentSha256": "776fc4e404cac907bfe73580a0b6f55b658dc670add297c044f5445a54be28e8",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fDatasheets%2fLBL-006397-aScope-4-Cysto_EN_V8_202512_IB-11821.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 98
+      },
+      "evidenceCandidateId": "evidence_7844ce7aea304ac2412af34e",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_1943372d9d3db93ac2c78e61",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Weight",
+      "unit": null,
+      "rawText": "Weight 158 g",
+      "documentVersionId": "document_version_d64df77f9cbf5509149cbd43",
+      "documentCandidateId": "document_7d251759bc39b8699d0a1a67",
+      "documentSha256": "776fc4e404cac907bfe73580a0b6f55b658dc670add297c044f5445a54be28e8",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fDatasheets%2fLBL-006397-aScope-4-Cysto_EN_V8_202512_IB-11821.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 99
+      },
+      "evidenceCandidateId": "evidence_98f203fab10120726cee7a9f",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_d8adaa9b5803b41f8947c375",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "IFU Ambu® aScope™ 4 Cysto (Multi) V09 2025/05",
+      "unit": null,
+      "rawText": "Document title: IFU Ambu® aScope™ 4 Cysto (Multi) V09 2025/05",
+      "documentVersionId": "document_version_c26011c1d1f189bc3e9356fa",
+      "documentCandidateId": "document_33760925c11e27cfa0265695",
+      "documentSha256": "02f67220db6799f46fa09c3e817fe764f4810d6dea0d0e2ce1fb59cca716fea2",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fInstructions+for+Use%2f492600000-IFU-aScope-4-Cysto_Multi_V09_202505_TCC-11711_Online.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_1c36fe343ad04846910e9490",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_98331c2172f250b87c2d47c5",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "ifu",
+      "unit": null,
+      "rawText": "Document type: ifu",
+      "documentVersionId": "document_version_c26011c1d1f189bc3e9356fa",
+      "documentCandidateId": "document_33760925c11e27cfa0265695",
+      "documentSha256": "02f67220db6799f46fa09c3e817fe764f4810d6dea0d0e2ce1fb59cca716fea2",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fInstructions+for+Use%2f492600000-IFU-aScope-4-Cysto_Multi_V09_202505_TCC-11711_Online.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_5f4e7b14e90b476bdd7f6890",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_b663c5d90eaa2d7eb4ea35e4",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "factType": "product.safetyFeatures",
+      "label": "Стерильность",
+      "value": "sterile",
+      "unit": null,
+      "rawText": "sterile",
+      "documentVersionId": "document_version_c26011c1d1f189bc3e9356fa",
+      "documentCandidateId": "document_33760925c11e27cfa0265695",
+      "documentSha256": "02f67220db6799f46fa09c3e817fe764f4810d6dea0d0e2ce1fb59cca716fea2",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fInstructions+for+Use%2f492600000-IFU-aScope-4-Cysto_Multi_V09_202505_TCC-11711_Online.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 49
+      },
+      "evidenceCandidateId": "evidence_ad8f3245e9c16c5166a2a7ee",
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:endoscopy",
+        "matchedPattern:sterile",
+        "matchedSynonym:Sterile",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_5ecb2a20c3f6bd7421cdfa38",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "factType": "product.intendedUse",
+      "label": "Одноразовое применение",
+      "value": "single-use",
+      "unit": null,
+      "rawText": "single-use",
+      "documentVersionId": "document_version_c26011c1d1f189bc3e9356fa",
+      "documentCandidateId": "document_33760925c11e27cfa0265695",
+      "documentSha256": "02f67220db6799f46fa09c3e817fe764f4810d6dea0d0e2ce1fb59cca716fea2",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fInstructions+for+Use%2f492600000-IFU-aScope-4-Cysto_Multi_V09_202505_TCC-11711_Online.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 49
+      },
+      "evidenceCandidateId": "evidence_aeb1931f314e46a818fc214e",
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:endoscopy",
+        "matchedPattern:single_use",
+        "matchedSynonym:Single-use",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_774e38833fc3d0a03fc20d6a",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "factType": "product.intendedUse",
+      "label": "Одноразовое применение",
+      "value": "single use",
+      "unit": null,
+      "rawText": "single use",
+      "documentVersionId": "document_version_c26011c1d1f189bc3e9356fa",
+      "documentCandidateId": "document_33760925c11e27cfa0265695",
+      "documentSha256": "02f67220db6799f46fa09c3e817fe764f4810d6dea0d0e2ce1fb59cca716fea2",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fInstructions+for+Use%2f492600000-IFU-aScope-4-Cysto_Multi_V09_202505_TCC-11711_Online.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 67
+      },
+      "evidenceCandidateId": "evidence_05c0a105f092d95abfc0d3e3",
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:endoscopy",
+        "matchedPattern:single_use",
+        "matchedSynonym:Single-use",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_11b44b459c60d44171c9dca6",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "factType": "product.display",
+      "label": "Дисплей",
+      "value": "– Ambu aView 2 Advance",
+      "unit": null,
+      "rawText": "display: – Ambu aView 2 Advance",
+      "documentVersionId": "document_version_c26011c1d1f189bc3e9356fa",
+      "documentCandidateId": "document_33760925c11e27cfa0265695",
+      "documentSha256": "02f67220db6799f46fa09c3e817fe764f4810d6dea0d0e2ce1fb59cca716fea2",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fInstructions+for+Use%2f492600000-IFU-aScope-4-Cysto_Multi_V09_202505_TCC-11711_Online.pdf",
+      "locator": {
+        "page": 80,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 3709
+      },
+      "evidenceCandidateId": "evidence_c7b1a552c43a25ec1ef50c9d",
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.display",
+        "matchedSynonym:Дисплей",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_2a5ac7744ee59ad5533bc2a2",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "compatibility",
+      "unit": null,
+      "rawText": "compatibility",
+      "documentVersionId": "document_version_c26011c1d1f189bc3e9356fa",
+      "documentCandidateId": "document_33760925c11e27cfa0265695",
+      "documentSha256": "02f67220db6799f46fa09c3e817fe764f4810d6dea0d0e2ce1fb59cca716fea2",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fInstructions+for+Use%2f492600000-IFU-aScope-4-Cysto_Multi_V09_202505_TCC-11711_Online.pdf",
+      "locator": {
+        "page": 5,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 134
+      },
+      "evidenceCandidateId": "evidence_9ff616c988f9576cc4ad3bde",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_87431bda2d82127795299cbe",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "display",
+      "unit": null,
+      "rawText": "display Ambu e accessori.",
+      "documentVersionId": "document_version_c26011c1d1f189bc3e9356fa",
+      "documentCandidateId": "document_33760925c11e27cfa0265695",
+      "documentSha256": "02f67220db6799f46fa09c3e817fe764f4810d6dea0d0e2ce1fb59cca716fea2",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fInstructions+for+Use%2f492600000-IFU-aScope-4-Cysto_Multi_V09_202505_TCC-11711_Online.pdf",
+      "locator": {
+        "page": 78,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 3613
+      },
+      "evidenceCandidateId": "evidence_f7e950a11733c9ae96651116",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_942510635371e752c6e2142e",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_d64df77f9cbf5509149cbd43",
+      "documentCandidateId": "document_7d251759bc39b8699d0a1a67",
+      "sha256": "776fc4e404cac907bfe73580a0b6f55b658dc670add297c044f5445a54be28e8",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fDatasheets%2fLBL-006397-aScope-4-Cysto_EN_V8_202512_IB-11821.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Ambu® aScope™ 4 Cysto Datasheet",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_5a4ae78f464db7eba5e6ccbf",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_d64df77f9cbf5509149cbd43",
+      "documentCandidateId": "document_7d251759bc39b8699d0a1a67",
+      "sha256": "776fc4e404cac907bfe73580a0b6f55b658dc670add297c044f5445a54be28e8",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fDatasheets%2fLBL-006397-aScope-4-Cysto_EN_V8_202512_IB-11821.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: datasheet",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_20a8ce9541e9ce517448a83a",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_d64df77f9cbf5509149cbd43",
+      "documentCandidateId": "document_7d251759bc39b8699d0a1a67",
+      "sha256": "776fc4e404cac907bfe73580a0b6f55b658dc670add297c044f5445a54be28e8",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fDatasheets%2fLBL-006397-aScope-4-Cysto_EN_V8_202512_IB-11821.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 77
+      },
+      "quotedText": "Working length 390 mm",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_0e29d9be948330394c196b4c",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_d64df77f9cbf5509149cbd43",
+      "documentCandidateId": "document_7d251759bc39b8699d0a1a67",
+      "sha256": "776fc4e404cac907bfe73580a0b6f55b658dc670add297c044f5445a54be28e8",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fDatasheets%2fLBL-006397-aScope-4-Cysto_EN_V8_202512_IB-11821.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 2
+      },
+      "quotedText": "Single-use",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_03621c71d62a6b9080baf7d4",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_d64df77f9cbf5509149cbd43",
+      "documentCandidateId": "document_7d251759bc39b8699d0a1a67",
+      "sha256": "776fc4e404cac907bfe73580a0b6f55b658dc670add297c044f5445a54be28e8",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fDatasheets%2fLBL-006397-aScope-4-Cysto_EN_V8_202512_IB-11821.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 107
+      },
+      "quotedText": "Disposable",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_7844ce7aea304ac2412af34e",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_d64df77f9cbf5509149cbd43",
+      "documentCandidateId": "document_7d251759bc39b8699d0a1a67",
+      "sha256": "776fc4e404cac907bfe73580a0b6f55b658dc670add297c044f5445a54be28e8",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fDatasheets%2fLBL-006397-aScope-4-Cysto_EN_V8_202512_IB-11821.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 98
+      },
+      "quotedText": "Dimensions",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_98f203fab10120726cee7a9f",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_d64df77f9cbf5509149cbd43",
+      "documentCandidateId": "document_7d251759bc39b8699d0a1a67",
+      "sha256": "776fc4e404cac907bfe73580a0b6f55b658dc670add297c044f5445a54be28e8",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fDatasheets%2fLBL-006397-aScope-4-Cysto_EN_V8_202512_IB-11821.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 99
+      },
+      "quotedText": "Weight 158 g",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_1c36fe343ad04846910e9490",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_c26011c1d1f189bc3e9356fa",
+      "documentCandidateId": "document_33760925c11e27cfa0265695",
+      "sha256": "02f67220db6799f46fa09c3e817fe764f4810d6dea0d0e2ce1fb59cca716fea2",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fInstructions+for+Use%2f492600000-IFU-aScope-4-Cysto_Multi_V09_202505_TCC-11711_Online.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: IFU Ambu® aScope™ 4 Cysto (Multi) V09 2025/05",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_5f4e7b14e90b476bdd7f6890",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_c26011c1d1f189bc3e9356fa",
+      "documentCandidateId": "document_33760925c11e27cfa0265695",
+      "sha256": "02f67220db6799f46fa09c3e817fe764f4810d6dea0d0e2ce1fb59cca716fea2",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fInstructions+for+Use%2f492600000-IFU-aScope-4-Cysto_Multi_V09_202505_TCC-11711_Online.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: ifu",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ad8f3245e9c16c5166a2a7ee",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_c26011c1d1f189bc3e9356fa",
+      "documentCandidateId": "document_33760925c11e27cfa0265695",
+      "sha256": "02f67220db6799f46fa09c3e817fe764f4810d6dea0d0e2ce1fb59cca716fea2",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fInstructions+for+Use%2f492600000-IFU-aScope-4-Cysto_Multi_V09_202505_TCC-11711_Online.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 49
+      },
+      "quotedText": "sterile",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_aeb1931f314e46a818fc214e",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_c26011c1d1f189bc3e9356fa",
+      "documentCandidateId": "document_33760925c11e27cfa0265695",
+      "sha256": "02f67220db6799f46fa09c3e817fe764f4810d6dea0d0e2ce1fb59cca716fea2",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fInstructions+for+Use%2f492600000-IFU-aScope-4-Cysto_Multi_V09_202505_TCC-11711_Online.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 49
+      },
+      "quotedText": "single-use",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_05c0a105f092d95abfc0d3e3",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_c26011c1d1f189bc3e9356fa",
+      "documentCandidateId": "document_33760925c11e27cfa0265695",
+      "sha256": "02f67220db6799f46fa09c3e817fe764f4810d6dea0d0e2ce1fb59cca716fea2",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fInstructions+for+Use%2f492600000-IFU-aScope-4-Cysto_Multi_V09_202505_TCC-11711_Online.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 67
+      },
+      "quotedText": "single use",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_c7b1a552c43a25ec1ef50c9d",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_c26011c1d1f189bc3e9356fa",
+      "documentCandidateId": "document_33760925c11e27cfa0265695",
+      "sha256": "02f67220db6799f46fa09c3e817fe764f4810d6dea0d0e2ce1fb59cca716fea2",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fInstructions+for+Use%2f492600000-IFU-aScope-4-Cysto_Multi_V09_202505_TCC-11711_Online.pdf",
+      "locator": {
+        "page": 80,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 3709
+      },
+      "quotedText": "display: – Ambu aView 2 Advance",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_9ff616c988f9576cc4ad3bde",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_c26011c1d1f189bc3e9356fa",
+      "documentCandidateId": "document_33760925c11e27cfa0265695",
+      "sha256": "02f67220db6799f46fa09c3e817fe764f4810d6dea0d0e2ce1fb59cca716fea2",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fInstructions+for+Use%2f492600000-IFU-aScope-4-Cysto_Multi_V09_202505_TCC-11711_Online.pdf",
+      "locator": {
+        "page": 5,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 134
+      },
+      "quotedText": "compatibility",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_f7e950a11733c9ae96651116",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_c26011c1d1f189bc3e9356fa",
+      "documentCandidateId": "document_33760925c11e27cfa0265695",
+      "sha256": "02f67220db6799f46fa09c3e817fe764f4810d6dea0d0e2ce1fb59cca716fea2",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fCystoscopes%2faScope+4+Cysto%2fInstructions+for+Use%2f492600000-IFU-aScope-4-Cysto_Multi_V09_202505_TCC-11711_Online.pdf",
+      "locator": {
+        "page": 78,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 3613
+      },
+      "quotedText": "display Ambu e accessori.",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_3e36732e1bacad25bc9367e9",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Ambu® aScope™ 4 Cysto Datasheet",
+        "unit": null
+      },
+      "rawText": "Document title: Ambu® aScope™ 4 Cysto Datasheet",
+      "evidenceCandidateIds": [
+        "evidence_942510635371e752c6e2142e"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_60fa884de3a8eaf5d361fb60",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "datasheet",
+        "unit": null
+      },
+      "rawText": "Document type: datasheet",
+      "evidenceCandidateIds": [
+        "evidence_5a4ae78f464db7eba5e6ccbf"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_5579b87f3723c9a68ba42e73",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "subjectType": "product",
+      "suggestedClaimType": "product.dimensions",
+      "valuePayload": {
+        "value": "390",
+        "unit": "mm"
+      },
+      "rawText": "Working length 390 mm",
+      "evidenceCandidateIds": [
+        "evidence_20a8ce9541e9ce517448a83a"
+      ],
+      "confidence": 0.84,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_aac561858ab5e93dbb74bb3a",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "subjectType": "product",
+      "suggestedClaimType": "product.intendedUse",
+      "valuePayload": {
+        "value": "Single-use",
+        "unit": null
+      },
+      "rawText": "Single-use",
+      "evidenceCandidateIds": [
+        "evidence_0e29d9be948330394c196b4c"
+      ],
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_c1430324ca61976e0475064b",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "subjectType": "product",
+      "suggestedClaimType": "product.intendedUse",
+      "valuePayload": {
+        "value": "Disposable",
+        "unit": null
+      },
+      "rawText": "Disposable",
+      "evidenceCandidateIds": [
+        "evidence_03621c71d62a6b9080baf7d4"
+      ],
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_f2e50f47d67f06a890aadcf8",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "rawText": "Dimensions",
+      "evidenceCandidateIds": [
+        "evidence_7844ce7aea304ac2412af34e"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_3cc853b16b24a7ad0edf553f",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "rawText": "Weight 158 g",
+      "evidenceCandidateIds": [
+        "evidence_98f203fab10120726cee7a9f"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_59583eb95f399c9168c736ed",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "IFU Ambu® aScope™ 4 Cysto (Multi) V09 2025/05",
+        "unit": null
+      },
+      "rawText": "Document title: IFU Ambu® aScope™ 4 Cysto (Multi) V09 2025/05",
+      "evidenceCandidateIds": [
+        "evidence_1c36fe343ad04846910e9490"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_72edc33e03b10967f55e3710",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "ifu",
+        "unit": null
+      },
+      "rawText": "Document type: ifu",
+      "evidenceCandidateIds": [
+        "evidence_5f4e7b14e90b476bdd7f6890"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_f626584128203cd93ca6747a",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "subjectType": "product",
+      "suggestedClaimType": "product.safetyFeatures",
+      "valuePayload": {
+        "value": "sterile",
+        "unit": null
+      },
+      "rawText": "sterile",
+      "evidenceCandidateIds": [
+        "evidence_ad8f3245e9c16c5166a2a7ee"
+      ],
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_42efb048a623730e3f5a210c",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "subjectType": "product",
+      "suggestedClaimType": "product.intendedUse",
+      "valuePayload": {
+        "value": "single-use",
+        "unit": null
+      },
+      "rawText": "single-use",
+      "evidenceCandidateIds": [
+        "evidence_aeb1931f314e46a818fc214e"
+      ],
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_ef0584721e7f5ae1e16bd754",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "subjectType": "product",
+      "suggestedClaimType": "product.intendedUse",
+      "valuePayload": {
+        "value": "single use",
+        "unit": null
+      },
+      "rawText": "single use",
+      "evidenceCandidateIds": [
+        "evidence_05c0a105f092d95abfc0d3e3"
+      ],
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_c0d6cd5414d4beb03ff22242",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "subjectType": "product",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "– Ambu aView 2 Advance",
+        "unit": null
+      },
+      "rawText": "display: – Ambu aView 2 Advance",
+      "evidenceCandidateIds": [
+        "evidence_c7b1a552c43a25ec1ef50c9d"
+      ],
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_3a50533e41d01c6f990e31a7",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "compatibility",
+        "unit": null
+      },
+      "rawText": "compatibility",
+      "evidenceCandidateIds": [
+        "evidence_9ff616c988f9576cc4ad3bde"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_f00f0086a2afbc1210d816fb",
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "rawText": "display Ambu e accessori.",
+      "evidenceCandidateIds": [
+        "evidence_f7e950a11733c9ae96651116"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "endoscopy"
+    ],
+    "patternsMatched": {
+      "registry.generic.display": 1,
+      "endoscopy.length": 1,
+      "endoscopy.single_use": 4,
+      "endoscopy.sterile": 1
+    },
+    "normalizedUnits": {
+      "mm": 1
+    },
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "endoscopy": [
+        "diameter",
+        "working_channel"
+      ]
+    },
+    "coveragePercent": 47
+  },
+  "warnings": [
+    "Resolver adapter used: ambu",
+    "Resolver rejected unsafe document URL: mailto:ambu@ambu.com",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: mailto:tisc@ambu.com",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: http://www.ambuusa.com/corporate-giving",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "resolver=ambu; attempts=4; matchedLinks=21; classifiedDocuments={\"Unknown\":22,\"Brochure\":2,\"Datasheet\":2,\"IFU\":4}; confidenceDistribution={\"80\":13,\"95\":4,\"100\":13}; duplicatesRemoved=9",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

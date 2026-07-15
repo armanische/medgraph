@@ -442,6 +442,60 @@
       "quotedText": "Document type: unknown",
       "status": "candidate",
       "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_c29b7c7426247f1c30d81bdf",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_30e7f6149360727c43fedd72",
+      "documentCandidateId": "document_0c6be81a4f5d15725c9efce0",
+      "sha256": "3d0340ca9e796c2d88193968f918d798bed4dfe9e9be39907c4506f93a018cec",
+      "sourceUrl": "https://www.documents.philips.com/assets/20200818/d0cca619e3354e7badeeac1b00f32609.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 13
+      },
+      "quotedText": "display data and",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_c57a65c161626ef05624c1e0",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_1097beb061f2c519a6204a34",
+      "documentCandidateId": "document_7181d029012994a8492b844c",
+      "sha256": "8f2b72224efef55a834ad9054ed45690a60496d615a32e6e1387fcf68039cfc5",
+      "sourceUrl": "https://www.documents.philips.com/assets/20240226/eaeec99947fc4fcd8dd1b1220170bf6c.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 18
+      },
+      "quotedText": "display means that physiological data",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_6184fe1829718cf69aaa6809",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_769e8ad5c0dda1e5897ce1a7",
+      "documentCandidateId": "document_ca73e74b8c87e1ff406fe9f7",
+      "sha256": "a6b542bdf13217a8aecedf5c4b6efdb9d2bbbfc31fc683daa48fd497379e0752",
+      "sourceUrl": "https://www.documents.philips.com/assets/20240516/ac0d259914484f86a825b1720145e807.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 41
+      },
+      "quotedText": "weight without iP C: 8.1 kg",
+      "status": "candidate",
+      "requiresHumanReview": true
     }
   ],
   "candidateClaims": [

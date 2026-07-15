@@ -1058,6 +1058,24 @@
       "quotedText": "4D",
       "status": "candidate",
       "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_5aff645eddfa7976606845c0",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_a0681b167031ee9b918a890e",
+      "documentCandidateId": "document_02201dc21f20030e0f825ec8",
+      "sha256": "4f44f5853b6cdd677fc7ce7f67cdd667baea144dbd5df1bc632184bb21b164ad",
+      "sourceUrl": "https://www.documents.philips.com/assets/20170523/268dfdfc40d247d4964aa77c0168d6b0.pdf",
+      "locator": {
+        "page": 15,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 348
+      },
+      "quotedText": "compatibility with",
+      "status": "candidate",
+      "requiresHumanReview": true
     }
   ],
   "candidateClaims": [
