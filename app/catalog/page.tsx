@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import CatalogExplorer from "@/components/catalog/CatalogExplorer";
-import {
-  getDraftCatalogCards,
-  getDraftCatalogCategories,
-} from "@/lib/catalog-drafts";
+import { getCatalogCardsWithFallback } from "@/lib/published-catalog";
 
 export const metadata: Metadata = {
   title: "Каталог медицинских изделий",
@@ -20,8 +17,10 @@ export default async function CatalogPage({
   searchParams: Promise<{ q?: string }>;
 }) {
   const { q = "" } = await searchParams;
-  const products = getDraftCatalogCards();
-  const categories = getDraftCatalogCategories(products);
+  const products = getCatalogCardsWithFallback();
+  const categories = Array.from(new Set(products.map((product) => product.category))).sort(
+    (left, right) => left.localeCompare(right, "ru-RU"),
+  );
 
   return (
     <main className="min-h-screen bg-cm-canvas">

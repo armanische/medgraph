@@ -1,7 +1,8 @@
 import type { MetadataRoute } from "next";
 
 import { manufacturers } from "@/data/manufacturers";
-import { getDraftCatalogGeneratedAt, getDraftCatalogProducts } from "@/lib/catalog-drafts";
+import { getDraftCatalogGeneratedAt } from "@/lib/catalog-drafts";
+import { getCatalogCardsWithFallback } from "@/lib/published-catalog";
 
 const siteUrl = "https://cybermedica.ru";
 
@@ -63,7 +64,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  const catalogRoutes = getDraftCatalogProducts().map((product) => ({
+  const catalogRoutes = getCatalogCardsWithFallback().map((product) => ({
     url: url(`/catalog/${product.slug}`),
     lastModified,
     changeFrequency: "weekly" as const,

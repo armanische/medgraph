@@ -97,7 +97,10 @@ Draft decision остаётся только локальным состояни
 
 ## Data Layer
 
-Текущий MVP использует mock/report layer в `lib/review/workspace.ts`.
+Начиная с MVP-057 Reviewer Workspace использует server-side DTO из реальной
+Review Queue и append-only store `data/review-decisions`. Старый client-only
+mock/draft layer удалён; human decision сохраняется только через gated Server
+Action со snapshot и stale protection.
 
 Причины:
 

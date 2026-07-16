@@ -3,30 +3,26 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
-import {
-  searchDraftCatalogCards,
-} from "@/lib/catalog-drafts";
-import type {
-  DraftCatalogCard,
-  DraftResearchStatus,
-} from "@/types/catalog-draft";
+import { searchCatalogCards, type PublicCatalogCard } from "@/lib/published-catalog";
 
 interface CatalogExplorerProps {
   initialQuery?: string;
-  products: DraftCatalogCard[];
+  products: PublicCatalogCard[];
   categories: string[];
 }
 
 // Safety invariant for draft data: Verification not performed; candidate facts are never shown as verified.
-function statusClass(status: DraftResearchStatus) {
+function statusClass(status: PublicCatalogCard["displayStatus"]) {
+  if (status === "published") return "border-cm-verified/25 bg-cm-verified-soft text-cm-verified";
   if (status === "research_ready") return "border-cm-teal/24 bg-cm-teal-soft/70 text-cm-teal";
   if (status === "partially_researched") return "border-[var(--cm-rule)] bg-white text-cm-slate";
   if (status === "blocked") return "border-red-200 bg-red-50 text-red-700";
   return "border-amber-200 bg-amber-50 text-amber-800";
 }
 
-function statusLabel(status: DraftResearchStatus) {
-  const labels: Record<DraftResearchStatus, string> = {
+function statusLabel(status: PublicCatalogCard["displayStatus"]) {
+  const labels: Record<PublicCatalogCard["displayStatus"], string> = {
+    published: "Опубликовано",
     needs_source: "Нет подтверждённых данных",
     partially_researched: "Проверяется",
     research_ready: "Проверяется",
@@ -39,17 +35,23 @@ function displayCount(value: number) {
   return value > 0 ? String(value) : "—";
 }
 
-function researchSteps(product: DraftCatalogCard) {
+function researchSteps(product: PublicCatalogCard) {
+  if (product.displayStatus === "published") {
+    return [
+      "экспертная проверка завершена",
+      "официальные источники опубликованы",
+      "документы связаны с записью",
+      "целостность публикации проверена",
+    ];
+  }
   return [
-    product.sourcesSummary.official > 0
+    product.sources > 0
       ? "официальные источники найдены"
       : "нужны официальные источники",
-    product.documentsSummary.total > 0
+    product.documents > 0
       ? "документы есть"
       : "требуются документы",
-    product.candidateClaimsCount > 0
-      ? "характеристики собраны"
-      : "подготовка характеристик",
+    product.coverage > 0 ? "характеристики собраны" : "подготовка характеристик",
     "проверяется специалистом",
   ];
 }
@@ -64,12 +66,12 @@ export default function CatalogExplorer({
   const [status, setStatus] = useState("Все статусы");
 
   const results = useMemo(() => {
-    const matches = searchDraftCatalogCards(query, products);
+    const matches = searchCatalogCards(query, products);
     return matches.filter((product) => {
       const categoryMatches =
         category === "Все категории" || product.category === category;
       const statusMatches =
-        status === "Все статусы" || product.researchStatus === status;
+        status === "Все статусы" || product.displayStatus === status;
       return categoryMatches && statusMatches;
     });
   }, [category, products, query, status]);
@@ -107,6 +109,7 @@ export default function CatalogExplorer({
                 className="cm-field min-h-10 py-2 text-xs transition duration-200"
               >
                 <option>Все статусы</option>
+                <option value="published">Опубликовано</option>
                 <option value="needs_source">Нет подтверждённых данных</option>
                 <option value="partially_researched">Проверяется</option>
                 <option value="research_ready">Проверяется</option>
@@ -165,15 +168,15 @@ export default function CatalogExplorer({
                   <span className="rounded-md border border-[var(--cm-rule)] bg-white px-2.5 py-1 font-mono text-[9px] font-semibold text-cm-dim">
                     {product.category}
                   </span>
-                  <span className={`rounded-md border px-2.5 py-1 font-mono text-[9px] font-semibold ${statusClass(product.researchStatus)}`}>
-                    {statusLabel(product.researchStatus)}
+                  <span className={`rounded-md border px-2.5 py-1 font-mono text-[9px] font-semibold ${statusClass(product.displayStatus)}`}>
+                    {statusLabel(product.displayStatus)}
                   </span>
                 </div>
                 <h2 className="mt-4 text-[15px] font-bold leading-6 tracking-[-0.01em]">{product.title}</h2>
                 <div className="mt-3 grid gap-1.5 text-[12px] leading-5 text-cm-slate">
                   <div>
                     <span className="text-cm-dim">Производитель: </span>
-                    <span className="font-medium text-cm-ink">{product.manufacturer ?? product.brand ?? "требует подтверждения"}</span>
+                    <span className="font-medium text-cm-ink">{product.manufacturer ?? "требует подтверждения"}</span>
                   </div>
                   <div>
                     <span className="text-cm-dim">Модель: </span>
@@ -181,9 +184,9 @@ export default function CatalogExplorer({
                   </div>
                 </div>
                 <div className="mt-4 grid grid-cols-3 gap-2 text-[11px]">
-                  <Metric label="Документы" value={displayCount(product.documentsSummary.total)} />
-                  <Metric label="Источники" value={displayCount(product.sourcesSummary.total)} />
-                  <Metric label="Проверка" value={displayCount(product.readinessScore)} />
+                  <Metric label="Документы" value={displayCount(product.documents)} />
+                  <Metric label="Источники" value={displayCount(product.sources)} />
+                  <Metric label="Покрытие" value={product.coverage > 0 ? `${product.coverage}%` : "—"} />
                 </div>
                 <div className="mt-4 rounded-md border border-[var(--cm-rule)] bg-cm-surface-low/65 p-3">
                   <div className="text-[11px] font-semibold text-cm-ink">Состояние записи</div>

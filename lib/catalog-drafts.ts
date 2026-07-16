@@ -1,4 +1,4 @@
-import catalogProducts from "@/data/catalog-products.generated.json";
+import catalogProducts from "../data/catalog-products.generated.json" with { type: "json" };
 import type {
   CatalogProductsFile,
   DraftCatalogCard,

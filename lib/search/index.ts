@@ -1,5 +1,6 @@
 import { products } from "../../data/products.ts";
 import { comparisonProducts } from "../compare/mock-data.ts";
+import { getPublishedProducts } from "../published-catalog.ts";
 
 export type SearchKnowledgeStatus = "verified" | "publication_ready" | "published";
 export type SearchSourceKind = "published_product" | "comparison_mock" | "candidate_claim";
@@ -130,7 +131,31 @@ function tokenFieldScore(tokens: string[], document: SearchIndexDocument) {
 }
 
 function productDocuments(): SearchIndexDocument[] {
-  return products.map((product) => ({
+  const published = getPublishedProducts();
+  const publishedSlugs = new Set(published.map((product) => product.slug));
+  const publicDocuments: SearchIndexDocument[] = published.map((product) => ({
+    id: `published:${product.slug}`,
+    slug: product.slug,
+    title: product.name,
+    manufacturer: product.manufacturer,
+    model: product.model,
+    category: product.category,
+    registrationNumber: null,
+    sku: null,
+    aliases: [
+      product.slug,
+      ...product.facts.map((fact) => fact.value),
+      ...product.compatibility,
+    ],
+    synonyms: product.facts.map((fact) => fact.type),
+    status: "published",
+    lastUpdated: product.publishedAt,
+    href: `/catalog/${product.slug}`,
+    sourceKind: "published_product",
+  }));
+  const fallbackDocuments: SearchIndexDocument[] = products
+    .filter((product) => !publishedSlugs.has(product.slug))
+    .map((product) => ({
     id: `published:${product.slug}`,
     slug: product.slug,
     title: product.name,
@@ -151,6 +176,7 @@ function productDocuments(): SearchIndexDocument[] {
     href: `/knowledge/${product.slug}`,
     sourceKind: "published_product",
   }));
+  return [...publicDocuments, ...fallbackDocuments];
 }
 
 function comparisonDocuments(): SearchIndexDocument[] {

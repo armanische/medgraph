@@ -822,7 +822,11 @@ async function writeJsonAtomic(path: string, value: unknown) {
 
 async function listProductFiles() {
   return (await readdir(EXTRACTION_PRODUCTS))
-    .filter((file) => file.endsWith(".json"))
+    .filter(
+      (file) =>
+        file.endsWith(".json") &&
+        !/(?: [23]| copy| final| new)\.[^.]+$/iu.test(file),
+    )
     .sort();
 }
 

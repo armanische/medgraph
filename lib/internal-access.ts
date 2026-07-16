@@ -11,3 +11,12 @@ export function internalRouteMetadata(enabled: boolean, title: string): Metadata
     robots,
   };
 }
+
+export function internalReviewEnabled(input?: {
+  env?: NodeJS.ProcessEnv;
+  nodeEnv?: string;
+}) {
+  const env = input?.env ?? process.env;
+  const nodeEnv = input?.nodeEnv ?? process.env.NODE_ENV;
+  return nodeEnv !== "production" || env.CYBERMEDICA_ENABLE_INTERNAL_REVIEW === "1";
+}

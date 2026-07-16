@@ -3,15 +3,8 @@ import { notFound } from "next/navigation";
 import { connection } from "next/server";
 
 import ReviewerWorkspace from "@/components/internal/ReviewerWorkspace";
-import { internalRouteMetadata } from "@/lib/internal-access";
-import { createReviewerWorkspaceModel } from "@/lib/review/workspace";
-
-function internalReviewEnabled() {
-  return (
-    process.env.NODE_ENV !== "production" ||
-    process.env.CYBERMEDICA_ENABLE_INTERNAL_REVIEW === "1"
-  );
-}
+import { internalReviewEnabled, internalRouteMetadata } from "@/lib/internal-access";
+import { loadHumanReviewerWorkspace } from "@/lib/review/human-workspace";
 
 export async function generateMetadata(): Promise<Metadata> {
   await connection();
@@ -25,7 +18,7 @@ export default async function InternalReviewerPage() {
     notFound();
   }
 
-  const model = createReviewerWorkspaceModel();
+  const model = await loadHumanReviewerWorkspace();
 
   return (
     <main className="min-h-screen bg-slate-50">
@@ -38,8 +31,8 @@ export default async function InternalReviewerPage() {
             Reviewer Workspace
           </h1>
           <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
-            Профессиональный центр проверки: очередь изделий, факты,
-            документы, draft decisions и история без публикации данных.
+            Реальная очередь пилотных изделий, evidence, immutable human
+            decisions, история и готовность к публикации.
           </p>
           <p className="mt-2 max-w-3xl text-sm leading-6 text-amber-800">
             Env-флаг не является аутентификацией. При включении в Preview
@@ -47,6 +40,14 @@ export default async function InternalReviewerPage() {
             граница доступа.
           </p>
         </div>
+
+        {!model.reviewerIdConfigured ? (
+          <div className="mb-6 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
+            Development использует явно задокументированный identity
+            <code className="mx-1">development-reviewer</code>. Для Production
+            обязателен server-only <code>CYBERMEDICA_REVIEWER_ID</code>.
+          </div>
+        ) : null}
 
         <ReviewerWorkspace model={model} />
       </section>

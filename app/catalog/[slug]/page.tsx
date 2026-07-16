@@ -7,10 +7,17 @@ import {
   getDraftCatalogProduct,
   getDraftCatalogProducts,
 } from "@/lib/catalog-drafts";
+import { getPublishedProduct, getPublishedProducts } from "@/lib/published-catalog";
+import type { PublishedProduct } from "@/scripts/importers/catalog/publication/types";
 import type { DraftResearchStatus } from "@/types/catalog-draft";
 
 export function generateStaticParams() {
-  return getDraftCatalogProducts().map((product) => ({ slug: product.slug }));
+  return [
+    ...new Set([
+      ...getPublishedProducts().map((product) => product.slug),
+      ...getDraftCatalogProducts().map((product) => product.slug),
+    ]),
+  ].map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({
@@ -19,16 +26,20 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
+  const published = getPublishedProduct(slug);
   const product = getDraftCatalogProduct(slug);
   return {
-    title: product
-      ? `${product.title} — карточка медицинского изделия`
+    title: published
+      ? `${published.name} — опубликованная карточка`
+      : product
+        ? `${product.title} — карточка медицинского изделия`
       : "Карточка медицинского изделия",
     description:
+      published?.summary ??
       "Карточка медицинского изделия CyberMedica с источниками, документами и статусом проверки.",
-    alternates: product
+    alternates: published || product
       ? {
-          canonical: `/catalog/${product.slug}`,
+          canonical: `/catalog/${published?.slug ?? product?.slug}`,
         }
       : undefined,
   };
@@ -40,6 +51,8 @@ export default async function DraftCatalogProductPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
+  const published = getPublishedProduct(slug);
+  if (published) return <PublishedProductPage product={published} />;
   const product = getDraftCatalogProduct(slug);
   if (!product) notFound();
   const researchSteps = [
@@ -317,6 +330,112 @@ export default async function DraftCatalogProductPage({
               <div>Приоритет: {priorityLabel(product.reviewPriority)}</div>
               <div>Роль: медицинский эксперт данных</div>
               <div>Блокирующие вопросы: {product.blockingIssues.length || "нет"}</div>
+            </div>
+          </Section>
+        </aside>
+      </div>
+    </main>
+  );
+}
+
+function PublishedProductPage({ product }: { product: PublishedProduct }) {
+  return (
+    <main className="min-h-screen bg-cm-canvas">
+      <section className="border-b border-[var(--cm-rule)] bg-[linear-gradient(135deg,#ffffff_0%,#f6fafc_56%,#e8f5f7_100%)]">
+        <div className="cm-container py-10">
+          <div className="cm-label">
+            <Link href="/catalog" className="hover:text-cm-teal">Каталог</Link>
+            {" · опубликованная карточка"}
+          </div>
+          <div className="mt-5 grid gap-7 lg:grid-cols-[minmax(0,1fr)_19rem]">
+            <div>
+              <Badge tone="good">Опубликовано</Badge>
+              <h1 className="mt-4 max-w-4xl text-3xl font-extrabold tracking-[-0.03em]">
+                {product.name}
+              </h1>
+              <p className="mt-4 max-w-3xl text-sm leading-7 text-cm-slate">
+                {product.summary}
+              </p>
+              <div className="mt-5 flex flex-wrap gap-2">
+                <Link
+                  href={`/request?product=${encodeURIComponent(product.name)}`}
+                  className="cm-button-primary"
+                >
+                  Запросить КП
+                </Link>
+                <Link href="/catalog" className="cm-button-secondary">Вернуться в каталог</Link>
+              </div>
+            </div>
+            <div className="cm-card p-4">
+              <div className="cm-label !text-cm-teal">Публикация</div>
+              <div className="mt-4 grid grid-cols-2 gap-2">
+                <Metric label="Покрытие" value={`${product.coverage}%`} />
+                <Metric label="Факты" value={String(product.facts.length)} />
+                <Metric label="Документы" value={String(product.documents.length)} />
+                <Metric label="Источники" value={String(product.sources.length)} />
+              </div>
+              <div className="mt-4 text-[11px] leading-5 text-cm-slate">
+                Уровень: проверено рецензентом
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="cm-container grid gap-6 py-8 lg:grid-cols-[minmax(0,1fr)_19rem]">
+        <div className="space-y-6">
+          <Section title="Характеристики">
+            <ListEmptyWhen empty={product.facts.length === 0} message="Опубликованных характеристик нет.">
+              <div className="overflow-hidden rounded-lg border border-[var(--cm-rule)] bg-white">
+                {product.facts.map((fact, index) => (
+                  <div key={`${fact.type}:${fact.value}:${index}`} className="grid gap-2 border-b border-[var(--cm-rule)] p-4 last:border-0 md:grid-cols-[14rem_1fr]">
+                    <div className="cm-label">{fact.type}</div>
+                    <div className="text-sm font-semibold">
+                      {fact.value}{fact.unit ? ` ${fact.unit}` : ""}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </ListEmptyWhen>
+          </Section>
+
+          <Section title="Документы">
+            <div className="grid gap-3 md:grid-cols-2">
+              {product.documents.map((document) => (
+                <a key={document.url} href={document.url} target="_blank" rel="noreferrer" className="cm-card p-4">
+                  <Badge tone="neutral">{document.type}</Badge>
+                  <div className="mt-3 text-sm font-semibold">{document.title}</div>
+                  <div className="mt-2 font-mono text-[9px] text-cm-dim">SHA-256: {document.sha256}</div>
+                </a>
+              ))}
+            </div>
+          </Section>
+
+          <Section title="Документально подтверждённая совместимость">
+            <ListEmptyWhen empty={product.compatibility.length === 0} message="Опубликованных данных о совместимости нет.">
+              <ul className="grid gap-2 text-sm text-cm-slate">
+                {product.compatibility.map((item) => <li key={item}>• {item}</li>)}
+              </ul>
+            </ListEmptyWhen>
+          </Section>
+        </div>
+
+        <aside className="space-y-6">
+          <Section title="Изделие">
+            <dl className="space-y-3 text-xs">
+              <div><dt className="cm-label">Производитель</dt><dd className="mt-1 font-semibold">{product.manufacturer}</dd></div>
+              <div><dt className="cm-label">Модель</dt><dd className="mt-1 font-semibold">{product.model ?? "Не указана"}</dd></div>
+              <div><dt className="cm-label">Категория</dt><dd className="mt-1 font-semibold">{product.category}</dd></div>
+              <div><dt className="cm-label">Статус</dt><dd className="mt-1 font-semibold text-cm-verified">Опубликовано</dd></div>
+            </dl>
+          </Section>
+          <Section title="Источники">
+            <div className="space-y-3">
+              {product.sources.map((source) => (
+                <a key={source.url} href={source.url} target="_blank" rel="noreferrer" className="block text-xs font-semibold text-cm-teal">
+                  {source.title} ↗
+                </a>
+              ))}
             </div>
           </Section>
         </aside>

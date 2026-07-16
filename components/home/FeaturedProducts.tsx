@@ -1,7 +1,24 @@
 import Link from "next/link";
 import { products } from "@/data/products";
+import { getPublishedProducts } from "@/lib/published-catalog";
 
 export default function FeaturedProducts() {
+  const published = getPublishedProducts();
+  const entries = published.length
+    ? published.map((product) => ({
+        slug: product.slug,
+        category: product.category,
+        name: product.name,
+        description: product.summary,
+        href: `/catalog/${product.slug}`,
+      }))
+    : products.map((product) => ({
+        slug: product.slug,
+        category: product.category,
+        name: product.name,
+        description: product.description,
+        href: `/knowledge/${product.slug}`,
+      }));
   return (
     <section className="cm-container py-16">
       <div className="mb-7 flex items-end justify-between gap-5">
@@ -17,10 +34,10 @@ export default function FeaturedProducts() {
       </div>
 
       <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-        {products.map((product) => (
+        {entries.map((product) => (
           <Link
             key={product.slug}
-            href={`/knowledge/${product.slug}`}
+            href={product.href}
             className="group cm-card flex min-h-56 flex-col p-5"
           >
             <div className="flex items-center justify-between gap-3">

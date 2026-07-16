@@ -3,6 +3,11 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { manufacturers } from "@/data/manufacturers";
+import {
+  getPublishedCatalog,
+  getPublishedManufacturer,
+  getPublishedManufacturerProducts,
+} from "@/lib/published-catalog";
 import { getManufacturerProducts } from "@/lib/products";
 
 interface ManufacturerPageProps {
@@ -10,9 +15,12 @@ interface ManufacturerPageProps {
 }
 
 export function generateStaticParams() {
-  return manufacturers.map((manufacturer) => ({
-    slug: manufacturer.slug,
-  }));
+  return [
+    ...new Set([
+      ...manufacturers.map((manufacturer) => manufacturer.slug),
+      ...getPublishedCatalog().manufacturers.map((manufacturer) => manufacturer.slug),
+    ]),
+  ].map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({
@@ -20,13 +28,15 @@ export async function generateMetadata({
 }: ManufacturerPageProps): Promise<Metadata> {
   const { slug } = await params;
   const manufacturer = manufacturers.find((item) => item.slug === slug);
+  const published = getPublishedManufacturer(slug);
 
-  return manufacturer
+  return manufacturer || published
     ? {
-        title: `${manufacturer.name}: изделия и документы`,
-        description: manufacturer.description,
+        title: `${published?.name ?? manufacturer?.name}: изделия и документы`,
+        description:
+          manufacturer?.description ?? "Опубликованные изделия и документы производителя.",
         alternates: {
-          canonical: `/manufacturers/${manufacturer.slug}`,
+          canonical: `/manufacturers/${slug}`,
         },
       }
     : { title: "Производитель не найден" };
@@ -36,13 +46,23 @@ export default async function ManufacturerPage({
   params,
 }: ManufacturerPageProps) {
   const { slug } = await params;
-  const manufacturer = manufacturers.find((item) => item.slug === slug);
+  const fallbackManufacturer = manufacturers.find((item) => item.slug === slug);
+  const publishedManufacturer = getPublishedManufacturer(slug);
 
-  if (!manufacturer) {
+  if (!fallbackManufacturer && !publishedManufacturer) {
     notFound();
   }
 
-  const products = getManufacturerProducts(manufacturer.slug);
+  const manufacturer = {
+    slug,
+    name: publishedManufacturer?.name ?? fallbackManufacturer?.name ?? slug,
+    country: fallbackManufacturer?.country ?? "Не указана",
+    description:
+      fallbackManufacturer?.description ?? "Опубликованные изделия и документы производителя.",
+    categories: publishedManufacturer?.categories ?? fallbackManufacturer?.categories ?? [],
+  };
+  const publishedProducts = getPublishedManufacturerProducts(slug);
+  const fallbackProducts = publishedManufacturer ? [] : getManufacturerProducts(slug);
 
   return (
     <main className="min-h-screen bg-cm-canvas">
@@ -53,8 +73,8 @@ export default async function ManufacturerPage({
         <div className="mt-6 cm-card overflow-hidden">
           <div className="flex items-center justify-between gap-4 border-b border-[var(--cm-rule)] bg-cm-surface-low px-5 py-3">
             <span className="cm-label">Карточка производителя</span>
-            <span className="rounded-md border border-[var(--cm-verified-border)] bg-cm-verified-soft px-2 py-1 font-mono text-[9px] font-semibold text-cm-verified">
-              Опубликовано
+            <span className={`rounded-md border px-2 py-1 font-mono text-[9px] font-semibold ${publishedManufacturer ? "border-[var(--cm-verified-border)] bg-cm-verified-soft text-cm-verified" : "border-amber-200 bg-amber-50 text-amber-800"}`}>
+              {publishedManufacturer ? "Опубликовано" : "Карточки готовятся"}
             </span>
           </div>
           <div className="grid gap-8 p-6 sm:p-8 lg:grid-cols-[1fr_18rem]">
@@ -72,8 +92,8 @@ export default async function ManufacturerPage({
             </div>
             <dl className="divide-y divide-[var(--cm-rule)] border-t border-[var(--cm-rule)] lg:border-t-0">
               <div className="flex justify-between gap-4 py-3"><dt className="cm-label">Страна</dt><dd className="text-xs font-semibold">{manufacturer.country}</dd></div>
-              <div className="flex justify-between gap-4 py-3"><dt className="cm-label">Изделий</dt><dd className="font-mono text-xs font-semibold">{products.length}</dd></div>
-              <div className="flex justify-between gap-4 py-3"><dt className="cm-label">Статус</dt><dd className="text-xs font-semibold text-cm-verified">Опубликовано</dd></div>
+              <div className="flex justify-between gap-4 py-3"><dt className="cm-label">Изделий</dt><dd className="font-mono text-xs font-semibold">{publishedProducts.length || fallbackProducts.length}</dd></div>
+              <div className="flex justify-between gap-4 py-3"><dt className="cm-label">Статус</dt><dd className="text-xs font-semibold text-cm-verified">{publishedManufacturer ? "Опубликовано" : "Ожидает публикации"}</dd></div>
             </dl>
           </div>
         </div>
@@ -88,22 +108,33 @@ export default async function ManufacturerPage({
           </Link>
         </div>
 
-        {products.length > 0 ? (
+        {publishedProducts.length > 0 ? (
           <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-            {products.map((product) => (
+            {publishedProducts.map((product) => (
               <Link
                 key={product.slug}
-                href={`/knowledge/${product.slug}`}
+                href={`/catalog/${product.slug}`}
                 className="group cm-card flex min-h-56 flex-col p-5"
               >
                 <div className="font-mono text-[9px] uppercase tracking-[0.08em] text-cm-dim">
                   {product.category}
                 </div>
                 <h3 className="mt-4 text-sm font-bold leading-5">{product.name}</h3>
-                <p className="mt-3 text-xs leading-6 text-cm-slate">{product.description}</p>
+                <p className="mt-3 text-xs leading-6 text-cm-slate">{product.summary}</p>
                 <div className="mt-auto border-t border-[var(--cm-rule)] pt-4 text-xs font-semibold text-cm-dim group-hover:text-cm-teal">
                   Открыть карточку →
                 </div>
+              </Link>
+            ))}
+          </div>
+        ) : fallbackProducts.length > 0 ? (
+          <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+            {fallbackProducts.map((product) => (
+              <Link key={product.slug} href={`/knowledge/${product.slug}`} className="group cm-card flex min-h-56 flex-col p-5">
+                <div className="font-mono text-[9px] uppercase tracking-[0.08em] text-cm-dim">{product.category}</div>
+                <h3 className="mt-4 text-sm font-bold leading-5">{product.name}</h3>
+                <p className="mt-3 text-xs leading-6 text-cm-slate">{product.description}</p>
+                <div className="mt-auto border-t border-[var(--cm-rule)] pt-4 text-xs font-semibold text-cm-dim group-hover:text-cm-teal">Открыть fallback-карточку →</div>
               </Link>
             ))}
           </div>

@@ -1,11 +1,15 @@
 # CyberMedica Production Readiness Report
 
 Дата: 2026-07-16
-Ветка: `feature/wave2-expansion`
+Ветка: `feature/publication-pipeline`
 Вердикт: **READY WITH CONDITIONS**
-Итоговая оценка: **8.8/10**
+Итоговая оценка после MVP-057: **8.6/10**
 
 ## Executive summary
+
+MVP-057 закрыл функциональный разрыв между Review Queue и Publication: добавлены human-only state machine, append-only decisions, stale/idempotency protection, evidence workspace и deterministic eligibility. Реальных approvals и publications не создавалось; public catalog безопасно пуст до ручного решения пользователя.
+
+Вердикт остаётся **READY WITH CONDITIONS** для защищённого pilot/Preview. Production blocker для reviewer writes — локальный file store на ephemeral/multi-instance runtime и отсутствие полноценной authenticated reviewer identity. До production включения `/internal/reviewer` необходимы persistent transactional backend и Vercel Deployment Protection либо эквивалентная access boundary.
 
 Ветка проходит production build, lint, 234 теста, TypeScript и whitespace validation. Архитектурные safety boundaries Wave 2/Evidence сохранены, evidence integrity имеет 0 текущих нарушений, а artifact audit не выявил checksum, PDF, duplicate, HTML или temporary-file проблем.
 

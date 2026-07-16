@@ -26,6 +26,7 @@ interface ArtifactReference {
 const GENERATED_AT = "artifact-storage-audit-v1" as const;
 const TEMPORARY_EXTENSION = /\.(?:part|tmp|bak)$/i;
 const SHA256 = /^[a-f0-9]{64}$/;
+const UNEXPECTED_COPY = /(?: [23]| copy| final| new)\.[^.]+$/iu;
 const SIZE_BUCKETS: ArtifactSizeBucket[] = [
   "0-1 MB",
   "1-5 MB",
@@ -70,7 +71,7 @@ async function walkFiles(root: string): Promise<string[]> {
     for (const entry of entries.sort((a, b) => a.name.localeCompare(b.name))) {
       const path = join(directory, entry.name);
       if (entry.isDirectory()) await walk(path);
-      else if (entry.isFile()) files.push(path);
+      else if (entry.isFile() && !UNEXPECTED_COPY.test(entry.name)) files.push(path);
     }
   }
   await walk(root);

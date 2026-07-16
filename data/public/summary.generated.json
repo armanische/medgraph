@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "published-catalog-v1",
+  "generatedAt": "publication-pipeline-v1",
+  "products": [],
+  "manufacturers": [],
+  "categories": [],
+  "knowledge": [],
+  "kpi": {
+    "publishedProducts": 0,
+    "publishedItems": 0,
+    "blocked": 5480,
+    "rejected": 0,
+    "manufacturers": 0,
+    "categories": 0,
+    "knowledgeEntries": 0
+  },
+  "blockedByReason": {
+    "not_ready": 5480
+  }
+}
