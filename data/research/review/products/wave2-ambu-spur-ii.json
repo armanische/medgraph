@@ -1,0 +1,1187 @@
+{
+  "product": {
+    "productSlug": "wave2-ambu-spur-ii",
+    "manufacturer": "Ambu",
+    "productName": "Ambu SPUR II Disposable Resuscitator",
+    "model": "SPUR II",
+    "category": "Анестезиология и реанимация"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_2cad3bfe8d2fc3e401800e96",
+      "productSlug": "wave2-ambu-spur-ii",
+      "productTitle": "Ambu SPUR II Disposable Resuscitator",
+      "claimCandidateId": "claim_7d9c29a65cd23454c75e86a3",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Ambu® SPUR II Datasheet V06 2024/01",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_5bf65836820dd01fad3a058f"
+      ],
+      "documentVersionIds": [
+        "document_version_e1a233c92d3c2df01809abb7"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fDatasheets%2fLBL-006982-Datasheet-for-SPUR-II_EN_V06_202401.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5cd53bc25149dac3170abcab",
+      "productSlug": "wave2-ambu-spur-ii",
+      "productTitle": "Ambu SPUR II Disposable Resuscitator",
+      "claimCandidateId": "claim_576ead48678359dfb6ebd60a",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "datasheet",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_093cc68ed5f7255341a7afda"
+      ],
+      "documentVersionIds": [
+        "document_version_e1a233c92d3c2df01809abb7"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fDatasheets%2fLBL-006982-Datasheet-for-SPUR-II_EN_V06_202401.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5af0629ce4877b82dfaacddd",
+      "productSlug": "wave2-ambu-spur-ii",
+      "productTitle": "Ambu SPUR II Disposable Resuscitator",
+      "claimCandidateId": "claim_be4c3b3792fc4d36521c79d3",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "paediatric",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c5ea80280913a6b9f7797466"
+      ],
+      "documentVersionIds": [
+        "document_version_e1a233c92d3c2df01809abb7"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fDatasheets%2fLBL-006982-Datasheet-for-SPUR-II_EN_V06_202401.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_97830eef2efa9a0647386325",
+      "productSlug": "wave2-ambu-spur-ii",
+      "productTitle": "Ambu SPUR II Disposable Resuscitator",
+      "claimCandidateId": "claim_c845648898435aace21ed03a",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "Pediatric",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_a5fdb559314710cb6ef0dd2d"
+      ],
+      "documentVersionIds": [
+        "document_version_e1a233c92d3c2df01809abb7"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fDatasheets%2fLBL-006982-Datasheet-for-SPUR-II_EN_V06_202401.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_bf538d74b5d89566a0fc5295",
+      "productSlug": "wave2-ambu-spur-ii",
+      "productTitle": "Ambu SPUR II Disposable Resuscitator",
+      "claimCandidateId": "claim_da7c0bbf0017e19d7e0b3dee",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_6c8f668ebd8a5ef3f72e421a"
+      ],
+      "documentVersionIds": [
+        "document_version_e1a233c92d3c2df01809abb7"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fDatasheets%2fLBL-006982-Datasheet-for-SPUR-II_EN_V06_202401.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b066876929b890ff5c391537",
+      "productSlug": "wave2-ambu-spur-ii",
+      "productTitle": "Ambu SPUR II Disposable Resuscitator",
+      "claimCandidateId": "claim_d8d7bd16cae388d1325840e9",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_09780a49413c26a7e6b8858f"
+      ],
+      "documentVersionIds": [
+        "document_version_e1a233c92d3c2df01809abb7"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fDatasheets%2fLBL-006982-Datasheet-for-SPUR-II_EN_V06_202401.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_82f5ec90ebae2217c837706c",
+      "productSlug": "wave2-ambu-spur-ii",
+      "productTitle": "Ambu SPUR II Disposable Resuscitator",
+      "claimCandidateId": "claim_872128d8495bedde3c385a3a",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "IFU Ambu® SPUR® II Disposable V13 2025/04",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_89425099dbc509cae9062512"
+      ],
+      "documentVersionIds": [
+        "document_version_141c9d19ba0275b860a4d101"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fInstructions+for+use%2f492230040-IFU-SPUR-II-Resuscitator_Multi_V13_202504_TCC-11679_Online.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_15ffc8086926f3d2b866a527",
+      "productSlug": "wave2-ambu-spur-ii",
+      "productTitle": "Ambu SPUR II Disposable Resuscitator",
+      "claimCandidateId": "claim_d7710744f2f2da4117c4cd45",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "ifu",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_9719e7948b47c43e3301ef44"
+      ],
+      "documentVersionIds": [
+        "document_version_141c9d19ba0275b860a4d101"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fInstructions+for+use%2f492230040-IFU-SPUR-II-Resuscitator_Multi_V13_202504_TCC-11679_Online.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_a94d2dc275aba11f512f20fb",
+      "productSlug": "wave2-ambu-spur-ii",
+      "productTitle": "Ambu SPUR II Disposable Resuscitator",
+      "claimCandidateId": "claim_db8f5401abc920cec4c7d83a",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "Neonatal",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_864f649ca82aff3f2ceef317"
+      ],
+      "documentVersionIds": [
+        "document_version_141c9d19ba0275b860a4d101"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fInstructions+for+use%2f492230040-IFU-SPUR-II-Resuscitator_Multi_V13_202504_TCC-11679_Online.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_a52b664139b82b39c9618397",
+      "productSlug": "wave2-ambu-spur-ii",
+      "productTitle": "Ambu SPUR II Disposable Resuscitator",
+      "claimCandidateId": "claim_7fd6248afb2c0352656c6cd3",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "Adults",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_94932bb988db3f4b25f3d9b8"
+      ],
+      "documentVersionIds": [
+        "document_version_141c9d19ba0275b860a4d101"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fInstructions+for+use%2f492230040-IFU-SPUR-II-Resuscitator_Multi_V13_202504_TCC-11679_Online.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_0b090a58aa5ac4de3b7aad5e",
+      "productSlug": "wave2-ambu-spur-ii",
+      "productTitle": "Ambu SPUR II Disposable Resuscitator",
+      "claimCandidateId": "claim_64d381b6cad586f1ea67de76",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "children",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_43f8767981af88f3bf556508"
+      ],
+      "documentVersionIds": [
+        "document_version_141c9d19ba0275b860a4d101"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fInstructions+for+use%2f492230040-IFU-SPUR-II-Resuscitator_Multi_V13_202504_TCC-11679_Online.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5c88e0ec613ac48648ca9740",
+      "productSlug": "wave2-ambu-spur-ii",
+      "productTitle": "Ambu SPUR II Disposable Resuscitator",
+      "claimCandidateId": "claim_22cc4e6eff4862e022171cd7",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "Pediatric",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_5d0e47ea888bb2d8624d002a"
+      ],
+      "documentVersionIds": [
+        "document_version_141c9d19ba0275b860a4d101"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fInstructions+for+use%2f492230040-IFU-SPUR-II-Resuscitator_Multi_V13_202504_TCC-11679_Online.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_488b56e3bbb625ba53396fa4",
+      "productSlug": "wave2-ambu-spur-ii",
+      "productTitle": "Ambu SPUR II Disposable Resuscitator",
+      "claimCandidateId": "claim_31870dcf557adad222b45ad6",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "Paediatric",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_e95e35e1f1c9e7e50875ee02"
+      ],
+      "documentVersionIds": [
+        "document_version_141c9d19ba0275b860a4d101"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fInstructions+for+use%2f492230040-IFU-SPUR-II-Resuscitator_Multi_V13_202504_TCC-11679_Online.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_9d128dac36990608ef6a9e2a",
+      "productSlug": "wave2-ambu-spur-ii",
+      "productTitle": "Ambu SPUR II Disposable Resuscitator",
+      "claimCandidateId": "claim_2ec1d6a471178d0042f4d166",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_747e4ad2a7db43373e110946"
+      ],
+      "documentVersionIds": [
+        "document_version_141c9d19ba0275b860a4d101"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fInstructions+for+use%2f492230040-IFU-SPUR-II-Resuscitator_Multi_V13_202504_TCC-11679_Online.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_1e86cf52a35ab5b24219d4dc",
+      "productSlug": "wave2-ambu-spur-ii",
+      "productTitle": "Ambu SPUR II Disposable Resuscitator",
+      "claimCandidateId": "claim_eb5b30bed9c702b65f5aaea8",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Tidal Volume",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_5481dde1abc717bdd5f640e6"
+      ],
+      "documentVersionIds": [
+        "document_version_141c9d19ba0275b860a4d101"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fInstructions+for+use%2f492230040-IFU-SPUR-II-Resuscitator_Multi_V13_202504_TCC-11679_Online.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_300accf486bdafb142f6aad2",
+      "productSlug": "wave2-ambu-spur-ii",
+      "productTitle": "Ambu SPUR II Disposable Resuscitator",
+      "claimCandidateId": "claim_ffa9c247c906bcd42f778c92",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "compatibility",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_832d348f4270c8d4818df913"
+      ],
+      "documentVersionIds": [
+        "document_version_141c9d19ba0275b860a4d101"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fInstructions+for+use%2f492230040-IFU-SPUR-II-Resuscitator_Multi_V13_202504_TCC-11679_Online.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_d1d269b09b09b45d56de844b",
+      "productSlug": "wave2-ambu-spur-ii",
+      "productTitle": "Ambu SPUR II Disposable Resuscitator",
+      "claimCandidateId": "claim_3e2b6007f875d3c97516b1d7",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_f70dc814bb934ea114e8bc65"
+      ],
+      "documentVersionIds": [
+        "document_version_141c9d19ba0275b860a4d101"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fInstructions+for+use%2f492230040-IFU-SPUR-II-Resuscitator_Multi_V13_202504_TCC-11679_Online.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_2cad3bfe8d2fc3e401800e96",
+        "productSlug": "wave2-ambu-spur-ii",
+        "productTitle": "Ambu SPUR II Disposable Resuscitator",
+        "claimCandidateId": "claim_7d9c29a65cd23454c75e86a3",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Ambu® SPUR II Datasheet V06 2024/01",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_5bf65836820dd01fad3a058f"
+        ],
+        "documentVersionIds": [
+          "document_version_e1a233c92d3c2df01809abb7"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fDatasheets%2fLBL-006982-Datasheet-for-SPUR-II_EN_V06_202401.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_82f5ec90ebae2217c837706c",
+        "productSlug": "wave2-ambu-spur-ii",
+        "productTitle": "Ambu SPUR II Disposable Resuscitator",
+        "claimCandidateId": "claim_872128d8495bedde3c385a3a",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "IFU Ambu® SPUR® II Disposable V13 2025/04",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_89425099dbc509cae9062512"
+        ],
+        "documentVersionIds": [
+          "document_version_141c9d19ba0275b860a4d101"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fInstructions+for+use%2f492230040-IFU-SPUR-II-Resuscitator_Multi_V13_202504_TCC-11679_Online.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_5cd53bc25149dac3170abcab",
+        "productSlug": "wave2-ambu-spur-ii",
+        "productTitle": "Ambu SPUR II Disposable Resuscitator",
+        "claimCandidateId": "claim_576ead48678359dfb6ebd60a",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "datasheet",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_093cc68ed5f7255341a7afda"
+        ],
+        "documentVersionIds": [
+          "document_version_e1a233c92d3c2df01809abb7"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fDatasheets%2fLBL-006982-Datasheet-for-SPUR-II_EN_V06_202401.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_15ffc8086926f3d2b866a527",
+        "productSlug": "wave2-ambu-spur-ii",
+        "productTitle": "Ambu SPUR II Disposable Resuscitator",
+        "claimCandidateId": "claim_d7710744f2f2da4117c4cd45",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "ifu",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_9719e7948b47c43e3301ef44"
+        ],
+        "documentVersionIds": [
+          "document_version_141c9d19ba0275b860a4d101"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fInstructions+for+use%2f492230040-IFU-SPUR-II-Resuscitator_Multi_V13_202504_TCC-11679_Online.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.patientGroup": [
+      {
+        "reviewItemId": "review_item_5af0629ce4877b82dfaacddd",
+        "productSlug": "wave2-ambu-spur-ii",
+        "productTitle": "Ambu SPUR II Disposable Resuscitator",
+        "claimCandidateId": "claim_be4c3b3792fc4d36521c79d3",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "paediatric",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c5ea80280913a6b9f7797466"
+        ],
+        "documentVersionIds": [
+          "document_version_e1a233c92d3c2df01809abb7"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fDatasheets%2fLBL-006982-Datasheet-for-SPUR-II_EN_V06_202401.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_97830eef2efa9a0647386325",
+        "productSlug": "wave2-ambu-spur-ii",
+        "productTitle": "Ambu SPUR II Disposable Resuscitator",
+        "claimCandidateId": "claim_c845648898435aace21ed03a",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "Pediatric",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_a5fdb559314710cb6ef0dd2d"
+        ],
+        "documentVersionIds": [
+          "document_version_e1a233c92d3c2df01809abb7"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fDatasheets%2fLBL-006982-Datasheet-for-SPUR-II_EN_V06_202401.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_a94d2dc275aba11f512f20fb",
+        "productSlug": "wave2-ambu-spur-ii",
+        "productTitle": "Ambu SPUR II Disposable Resuscitator",
+        "claimCandidateId": "claim_db8f5401abc920cec4c7d83a",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "Neonatal",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_864f649ca82aff3f2ceef317"
+        ],
+        "documentVersionIds": [
+          "document_version_141c9d19ba0275b860a4d101"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fInstructions+for+use%2f492230040-IFU-SPUR-II-Resuscitator_Multi_V13_202504_TCC-11679_Online.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_a52b664139b82b39c9618397",
+        "productSlug": "wave2-ambu-spur-ii",
+        "productTitle": "Ambu SPUR II Disposable Resuscitator",
+        "claimCandidateId": "claim_7fd6248afb2c0352656c6cd3",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "Adults",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_94932bb988db3f4b25f3d9b8"
+        ],
+        "documentVersionIds": [
+          "document_version_141c9d19ba0275b860a4d101"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fInstructions+for+use%2f492230040-IFU-SPUR-II-Resuscitator_Multi_V13_202504_TCC-11679_Online.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_0b090a58aa5ac4de3b7aad5e",
+        "productSlug": "wave2-ambu-spur-ii",
+        "productTitle": "Ambu SPUR II Disposable Resuscitator",
+        "claimCandidateId": "claim_64d381b6cad586f1ea67de76",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "children",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_43f8767981af88f3bf556508"
+        ],
+        "documentVersionIds": [
+          "document_version_141c9d19ba0275b860a4d101"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fInstructions+for+use%2f492230040-IFU-SPUR-II-Resuscitator_Multi_V13_202504_TCC-11679_Online.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_5c88e0ec613ac48648ca9740",
+        "productSlug": "wave2-ambu-spur-ii",
+        "productTitle": "Ambu SPUR II Disposable Resuscitator",
+        "claimCandidateId": "claim_22cc4e6eff4862e022171cd7",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "Pediatric",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_5d0e47ea888bb2d8624d002a"
+        ],
+        "documentVersionIds": [
+          "document_version_141c9d19ba0275b860a4d101"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fInstructions+for+use%2f492230040-IFU-SPUR-II-Resuscitator_Multi_V13_202504_TCC-11679_Online.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_488b56e3bbb625ba53396fa4",
+        "productSlug": "wave2-ambu-spur-ii",
+        "productTitle": "Ambu SPUR II Disposable Resuscitator",
+        "claimCandidateId": "claim_31870dcf557adad222b45ad6",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "Paediatric",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_e95e35e1f1c9e7e50875ee02"
+        ],
+        "documentVersionIds": [
+          "document_version_141c9d19ba0275b860a4d101"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fInstructions+for+use%2f492230040-IFU-SPUR-II-Resuscitator_Multi_V13_202504_TCC-11679_Online.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "technical.term": [
+      {
+        "reviewItemId": "review_item_bf538d74b5d89566a0fc5295",
+        "productSlug": "wave2-ambu-spur-ii",
+        "productTitle": "Ambu SPUR II Disposable Resuscitator",
+        "claimCandidateId": "claim_da7c0bbf0017e19d7e0b3dee",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_6c8f668ebd8a5ef3f72e421a"
+        ],
+        "documentVersionIds": [
+          "document_version_e1a233c92d3c2df01809abb7"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fDatasheets%2fLBL-006982-Datasheet-for-SPUR-II_EN_V06_202401.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_b066876929b890ff5c391537",
+        "productSlug": "wave2-ambu-spur-ii",
+        "productTitle": "Ambu SPUR II Disposable Resuscitator",
+        "claimCandidateId": "claim_d8d7bd16cae388d1325840e9",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_09780a49413c26a7e6b8858f"
+        ],
+        "documentVersionIds": [
+          "document_version_e1a233c92d3c2df01809abb7"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fDatasheets%2fLBL-006982-Datasheet-for-SPUR-II_EN_V06_202401.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_9d128dac36990608ef6a9e2a",
+        "productSlug": "wave2-ambu-spur-ii",
+        "productTitle": "Ambu SPUR II Disposable Resuscitator",
+        "claimCandidateId": "claim_2ec1d6a471178d0042f4d166",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_747e4ad2a7db43373e110946"
+        ],
+        "documentVersionIds": [
+          "document_version_141c9d19ba0275b860a4d101"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fInstructions+for+use%2f492230040-IFU-SPUR-II-Resuscitator_Multi_V13_202504_TCC-11679_Online.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_1e86cf52a35ab5b24219d4dc",
+        "productSlug": "wave2-ambu-spur-ii",
+        "productTitle": "Ambu SPUR II Disposable Resuscitator",
+        "claimCandidateId": "claim_eb5b30bed9c702b65f5aaea8",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Tidal Volume",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_5481dde1abc717bdd5f640e6"
+        ],
+        "documentVersionIds": [
+          "document_version_141c9d19ba0275b860a4d101"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fInstructions+for+use%2f492230040-IFU-SPUR-II-Resuscitator_Multi_V13_202504_TCC-11679_Online.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_300accf486bdafb142f6aad2",
+        "productSlug": "wave2-ambu-spur-ii",
+        "productTitle": "Ambu SPUR II Disposable Resuscitator",
+        "claimCandidateId": "claim_ffa9c247c906bcd42f778c92",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "compatibility",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_832d348f4270c8d4818df913"
+        ],
+        "documentVersionIds": [
+          "document_version_141c9d19ba0275b860a4d101"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fInstructions+for+use%2f492230040-IFU-SPUR-II-Resuscitator_Multi_V13_202504_TCC-11679_Online.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_d1d269b09b09b45d56de844b",
+        "productSlug": "wave2-ambu-spur-ii",
+        "productTitle": "Ambu SPUR II Disposable Resuscitator",
+        "claimCandidateId": "claim_3e2b6007f875d3c97516b1d7",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_f70dc814bb934ea114e8bc65"
+        ],
+        "documentVersionIds": [
+          "document_version_141c9d19ba0275b860a4d101"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fInstructions+for+use%2f492230040-IFU-SPUR-II-Resuscitator_Multi_V13_202504_TCC-11679_Online.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_e1a233c92d3c2df01809abb7",
+      "documentType": "datasheet",
+      "title": "Ambu® SPUR II Datasheet V06 2024/01",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fDatasheets%2fLBL-006982-Datasheet-for-SPUR-II_EN_V06_202401.pdf",
+      "sha256": "04b24aed670be1b086fc44958ae6a03a3c2f4d00b8016a34513df9cf369db71c"
+    },
+    {
+      "documentVersionId": "document_version_141c9d19ba0275b860a4d101",
+      "documentType": "ifu",
+      "title": "IFU Ambu® SPUR® II Disposable V13 2025/04",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fResuscitator%2fSPUR+II+-+Disposable+Resuscitator%2fInstructions+for+use%2f492230040-IFU-SPUR-II-Resuscitator_Multi_V13_202504_TCC-11679_Online.pdf",
+      "sha256": "4d077d360d252986acf4d7abdf93324b2cbf09da2ef17364f3b2ebe5b683530f"
+    }
+  ],
+  "missingEvidence": [],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver adapter used: ambu",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: mailto:tisc@ambu.com",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: http://www.ambuusa.com/corporate-giving",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "resolver=ambu; attempts=4; matchedLinks=20; classifiedDocuments={\"Unknown\":22,\"Brochure\":1,\"Datasheet\":2,\"IFU\":4}; confidenceDistribution={\"80\":13,\"95\":4,\"100\":12}; duplicatesRemoved=9",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

@@ -1,0 +1,1149 @@
+{
+  "product": {
+    "productSlug": "wave2-sle-5000",
+    "manufacturer": "SLE",
+    "productName": "SLE5000 Neonatal Ventilator",
+    "model": "SLE5000",
+    "category": "Neonatal ventilator"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "sourceId": "source_b39bc38fa997eb602d949372",
+      "productSlug": "wave2-sle-5000",
+      "documentKey": "trusted-document:document_3cae73e9e66b4cc99634c894",
+      "documentType": "brochure",
+      "title": "SLE5000 official partner brochure",
+      "language": null,
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "sha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "contentType": "application/pdf",
+      "byteSize": 1493337,
+      "filePath": "data/research/artifacts/artifacts/sha256/76/78/767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_b47714bd7c7a19207f1d19a2",
+      "productSlug": "wave2-sle-5000",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "SLE5000 official partner brochure",
+      "unit": null,
+      "rawText": "Document title: SLE5000 official partner brochure",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "documentSha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_fd2d42fd5108827177f88c9a",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_de07be2a0a71f65ee1516b53",
+      "productSlug": "wave2-sle-5000",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "documentSha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_071c857101969265400c4828",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_78de086c4aad4d923cb1d36a",
+      "productSlug": "wave2-sle-5000",
+      "factType": "product.operatingModes",
+      "label": "Режимы вентиляции",
+      "value": "Conventional",
+      "unit": null,
+      "rawText": "Ventilation Modes: Conventional",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "documentSha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 190
+      },
+      "evidenceCandidateId": "evidence_1162279ae5fb97a4d86a3ab7",
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:modes",
+        "matchedSynonym:Ventilation Modes",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_ebd5361d3fbdd30c4b1bb782",
+      "productSlug": "wave2-sle-5000",
+      "factType": "product.operatingModes",
+      "label": "Режимы вентиляции",
+      "value": "HFO",
+      "unit": null,
+      "rawText": "Ventilation Modes: HFO",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "documentSha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 211
+      },
+      "evidenceCandidateId": "evidence_065536f632ea0f830b1bd03b",
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:modes",
+        "matchedSynonym:Ventilation Modes",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_7a11072f94da57305a52cce7",
+      "productSlug": "wave2-sle-5000",
+      "factType": "product.patientGroup",
+      "label": "Неонатальные пациенты",
+      "value": "Neonatal",
+      "unit": null,
+      "rawText": "Neonatal",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "documentSha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 2
+      },
+      "evidenceCandidateId": "evidence_44573ca444a0dcf31bbfb2d2",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:neonatal",
+        "matchedSynonym:Neonatal",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_d1e554ceed9c81f063f2296f",
+      "productSlug": "wave2-sle-5000",
+      "factType": "product.patientGroup",
+      "label": "Неонатальные пациенты",
+      "value": "neonate",
+      "unit": null,
+      "rawText": "neonate",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "documentSha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 66
+      },
+      "evidenceCandidateId": "evidence_12f31c871979e8fc2f35bd83",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:neonatal",
+        "matchedSynonym:Neonate",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_d7f44cfca1f1834760bd5741",
+      "productSlug": "wave2-sle-5000",
+      "factType": "product.safetyFeatures",
+      "label": "Тревоги",
+      "value": "High Pressure",
+      "unit": null,
+      "rawText": "Alarms: High Pressure",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "documentSha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 267
+      },
+      "evidenceCandidateId": "evidence_35dc1edc58b08b6125648ebf",
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:neonatal",
+        "matchedPattern:alarms",
+        "matchedSynonym:Alarms",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_0a35cc3c7a981aeae941c1f3",
+      "productSlug": "wave2-sle-5000",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Tidal Volume",
+      "unit": null,
+      "rawText": "Tidal Volume plus (TTVplus)",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "documentSha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 26
+      },
+      "evidenceCandidateId": "evidence_fa2fb7f84f481d230ed0404c",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_4942633b84c4a0f5917b0b16",
+      "productSlug": "wave2-sle-5000",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Battery",
+      "unit": null,
+      "rawText": "Battery",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "documentSha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 94
+      },
+      "evidenceCandidateId": "evidence_ef779f18c2eb9fef1d7ce7b8",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_d3dcd11b1a7788c9bf26cc27",
+      "productSlug": "wave2-sle-5000",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Display",
+      "unit": null,
+      "rawText": "Display",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "documentSha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 5,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 132
+      },
+      "evidenceCandidateId": "evidence_d63a1ca4d29eb3b267d25f9a",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_07e12aeb527037619f920b78",
+      "productSlug": "wave2-sle-5000",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Ventilation Modes",
+      "unit": null,
+      "rawText": "Ventilation Modes: Conventional",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "documentSha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 190
+      },
+      "evidenceCandidateId": "evidence_1162279ae5fb97a4d86a3ab7",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_8e86aeb6ab52a69e05629f65",
+      "productSlug": "wave2-sle-5000",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Flow Rate",
+      "unit": null,
+      "rawText": "Flow Rate .............................................. 0.2 to 30 l/min",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "documentSha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 234
+      },
+      "evidenceCandidateId": "evidence_2fd58e388e4da758d07d33fe",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_d29626c4fcff2057edb01eec",
+      "productSlug": "wave2-sle-5000",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Weight",
+      "unit": null,
+      "rawText": "Weight .......................................................... 10g",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "documentSha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 237
+      },
+      "evidenceCandidateId": "evidence_07b89401fb9b35281321f56b",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_d3285f7387faeb80c40758ef",
+      "productSlug": "wave2-sle-5000",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Minute Volume",
+      "unit": null,
+      "rawText": "Minute Volume",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "documentSha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 291
+      },
+      "evidenceCandidateId": "evidence_d0f0deb45b55f2dc81037b7b",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_f6d542101d8d3ad978a09f00",
+      "productSlug": "wave2-sle-5000",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Dimensions",
+      "unit": null,
+      "rawText": "Dimensions",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "documentSha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 320
+      },
+      "evidenceCandidateId": "evidence_3a5714d81f1f85ff165874ce",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_fd2d42fd5108827177f88c9a",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "sha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: SLE5000 official partner brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_071c857101969265400c4828",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "sha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_1162279ae5fb97a4d86a3ab7",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "sha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 190
+      },
+      "quotedText": "Ventilation Modes: Conventional",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_065536f632ea0f830b1bd03b",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "sha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 211
+      },
+      "quotedText": "Ventilation Modes: HFO",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_44573ca444a0dcf31bbfb2d2",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "sha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 2
+      },
+      "quotedText": "Neonatal",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_12f31c871979e8fc2f35bd83",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "sha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 66
+      },
+      "quotedText": "neonate",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_35dc1edc58b08b6125648ebf",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "sha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 267
+      },
+      "quotedText": "Alarms: High Pressure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_fa2fb7f84f481d230ed0404c",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "sha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 26
+      },
+      "quotedText": "Tidal Volume plus (TTVplus)",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ef779f18c2eb9fef1d7ce7b8",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "sha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 94
+      },
+      "quotedText": "Battery",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_d63a1ca4d29eb3b267d25f9a",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "sha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 5,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 132
+      },
+      "quotedText": "Display",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_2fd58e388e4da758d07d33fe",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "sha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 234
+      },
+      "quotedText": "Flow Rate .............................................. 0.2 to 30 l/min",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_07b89401fb9b35281321f56b",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "sha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 237
+      },
+      "quotedText": "Weight .......................................................... 10g",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_d0f0deb45b55f2dc81037b7b",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "sha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 291
+      },
+      "quotedText": "Minute Volume",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_3a5714d81f1f85ff165874ce",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "sha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 320
+      },
+      "quotedText": "Dimensions",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_318d41b76e2ab867ceaa8d3b",
+      "productSlug": "wave2-sle-5000",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "SLE5000 official partner brochure",
+        "unit": null
+      },
+      "rawText": "Document title: SLE5000 official partner brochure",
+      "evidenceCandidateIds": [
+        "evidence_fd2d42fd5108827177f88c9a"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_7696fd07024eebfb767e699f",
+      "productSlug": "wave2-sle-5000",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_071c857101969265400c4828"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_0889d97243bc84167ae0802e",
+      "productSlug": "wave2-sle-5000",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Conventional",
+        "unit": null
+      },
+      "rawText": "Ventilation Modes: Conventional",
+      "evidenceCandidateIds": [
+        "evidence_1162279ae5fb97a4d86a3ab7"
+      ],
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_a44f96b0853b1431cd80a1b4",
+      "productSlug": "wave2-sle-5000",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "HFO",
+        "unit": null
+      },
+      "rawText": "Ventilation Modes: HFO",
+      "evidenceCandidateIds": [
+        "evidence_065536f632ea0f830b1bd03b"
+      ],
+      "confidence": 0.82,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_346c0ce6b8ad5e273fe96018",
+      "productSlug": "wave2-sle-5000",
+      "subjectType": "product",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "Neonatal",
+        "unit": null
+      },
+      "rawText": "Neonatal",
+      "evidenceCandidateIds": [
+        "evidence_44573ca444a0dcf31bbfb2d2"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_b56b9db1b177e181fc8b1b2e",
+      "productSlug": "wave2-sle-5000",
+      "subjectType": "product",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "neonate",
+        "unit": null
+      },
+      "rawText": "neonate",
+      "evidenceCandidateIds": [
+        "evidence_12f31c871979e8fc2f35bd83"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_e642bb0cb0f510cfcac20de3",
+      "productSlug": "wave2-sle-5000",
+      "subjectType": "product",
+      "suggestedClaimType": "product.safetyFeatures",
+      "valuePayload": {
+        "value": "High Pressure",
+        "unit": null
+      },
+      "rawText": "Alarms: High Pressure",
+      "evidenceCandidateIds": [
+        "evidence_35dc1edc58b08b6125648ebf"
+      ],
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_aa3556ea90a387ff7ea7c10d",
+      "productSlug": "wave2-sle-5000",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Tidal Volume",
+        "unit": null
+      },
+      "rawText": "Tidal Volume plus (TTVplus)",
+      "evidenceCandidateIds": [
+        "evidence_fa2fb7f84f481d230ed0404c"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_a27bac66d8aa681f96f50937",
+      "productSlug": "wave2-sle-5000",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Battery",
+        "unit": null
+      },
+      "rawText": "Battery",
+      "evidenceCandidateIds": [
+        "evidence_ef779f18c2eb9fef1d7ce7b8"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_f3e8c10de02ad3a253f9c7fe",
+      "productSlug": "wave2-sle-5000",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Display",
+        "unit": null
+      },
+      "rawText": "Display",
+      "evidenceCandidateIds": [
+        "evidence_d63a1ca4d29eb3b267d25f9a"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_842fd289f58276f55fc71e02",
+      "productSlug": "wave2-sle-5000",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Ventilation Modes",
+        "unit": null
+      },
+      "rawText": "Ventilation Modes: Conventional",
+      "evidenceCandidateIds": [
+        "evidence_1162279ae5fb97a4d86a3ab7"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_2b92b7ead02e31b5816b1bb9",
+      "productSlug": "wave2-sle-5000",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Flow Rate",
+        "unit": null
+      },
+      "rawText": "Flow Rate .............................................. 0.2 to 30 l/min",
+      "evidenceCandidateIds": [
+        "evidence_2fd58e388e4da758d07d33fe"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_1a6fb0cf365de5a236099728",
+      "productSlug": "wave2-sle-5000",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "rawText": "Weight .......................................................... 10g",
+      "evidenceCandidateIds": [
+        "evidence_07b89401fb9b35281321f56b"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_5254bc91496529b699742423",
+      "productSlug": "wave2-sle-5000",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Minute Volume",
+        "unit": null
+      },
+      "rawText": "Minute Volume",
+      "evidenceCandidateIds": [
+        "evidence_d0f0deb45b55f2dc81037b7b"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_d82f2aa3f87ae003bc305cc2",
+      "productSlug": "wave2-sle-5000",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "rawText": "Dimensions",
+      "evidenceCandidateIds": [
+        "evidence_3a5714d81f1f85ff165874ce"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "ventilator",
+      "neonatal"
+    ],
+    "patternsMatched": {
+      "ventilator.modes": 2,
+      "ventilator.neonatal": 2,
+      "neonatal.alarms": 1
+    },
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "ventilator": [
+        "adult",
+        "battery_runtime",
+        "niv",
+        "oxygen",
+        "pediatric",
+        "screen",
+        "turbine",
+        "weight"
+      ],
+      "neonatal": [
+        "humidity",
+        "oxygen",
+        "temperature",
+        "weight_capacity"
+      ]
+    },
+    "coveragePercent": 13
+  },
+  "warnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/product/sle5000/: HTTP 403",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

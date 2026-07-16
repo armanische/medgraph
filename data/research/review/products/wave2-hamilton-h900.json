@@ -82,16 +82,19 @@
       "evidenceCandidateIds": [
         "evidence_d8978004c19866354e590e8b"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_d909f3a59f505a8f234d49f9"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:42ef56ba-06fd-4937-a6b1-dc4667fb9eb9/HAMILTON-H900_brochure_en_689504.05.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -152,6 +155,99 @@
       "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_df29f23509d792bdea76c649",
+      "productSlug": "wave2-hamilton-h900",
+      "productTitle": "HAMILTON-H900",
+      "claimCandidateId": "claim_ecb7aeb3a773be8c08d722e0",
+      "suggestedClaimType": "product.registrationNumber",
+      "valuePayload": {
+        "value": "шения правил эксплуатации продукта",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_55ee350d56c5adf7b93bb70c"
+      ],
+      "documentVersionIds": [
+        "document_version_2485f616fbab418f085469b4"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "high",
+      "reasons": [
+        "Registration data requires high-priority human review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_04bba1a06c482953b6b418ba",
+      "productSlug": "wave2-hamilton-h900",
+      "productTitle": "HAMILTON-H900",
+      "claimCandidateId": "claim_146fc57fb82d24190a93aec3",
+      "suggestedClaimType": "product.registrationNumber",
+      "valuePayload": {
+        "value": "жающей среды",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_3c785bf1458fffe22f26f236"
+      ],
+      "documentVersionIds": [
+        "document_version_2485f616fbab418f085469b4"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "high",
+      "reasons": [
+        "Registration data requires high-priority human review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b9a5daff082647f4fd7ca252",
+      "productSlug": "wave2-hamilton-h900",
+      "productTitle": "HAMILTON-H900",
+      "claimCandidateId": "claim_2815c8d15549aeca9e0d0ef5",
+      "suggestedClaimType": "product.registrationNumber",
+      "valuePayload": {
+        "value": "довании »",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_38f342e935f2f333f40b1f94"
+      ],
+      "documentVersionIds": [
+        "document_version_2485f616fbab418f085469b4"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "high",
+      "reasons": [
+        "Registration data requires high-priority human review.",
         "Review Queue item is not a Verified Claim.",
         "Reviewer decision does not publish data."
       ],
@@ -265,16 +361,19 @@
       "evidenceCandidateIds": [
         "evidence_f1a7009ac185fc9a153ecb7d"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_2485f616fbab418f085469b4"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -293,16 +392,19 @@
       "evidenceCandidateIds": [
         "evidence_5db1cd939960d5003a3ebf99"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_2485f616fbab418f085469b4"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -321,16 +423,19 @@
       "evidenceCandidateIds": [
         "evidence_0f1a695f13a3d75c2c8cb6db"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_2485f616fbab418f085469b4"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -349,16 +454,19 @@
       "evidenceCandidateIds": [
         "evidence_2ec890f5cbc26fa5a38a997c"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_2485f616fbab418f085469b4"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -377,16 +485,19 @@
       "evidenceCandidateIds": [
         "evidence_b5942e5150ef934d7b0dc6b7"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_2485f616fbab418f085469b4"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -498,16 +609,19 @@
       "evidenceCandidateIds": [
         "evidence_c23dedd04fe6a4d2bef638db"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_7d3e33e1392da2d7d0e44dd2"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -526,16 +640,19 @@
       "evidenceCandidateIds": [
         "evidence_6c7c35b05c1e4cb7ac7f88f5"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_7d3e33e1392da2d7d0e44dd2"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -554,16 +671,19 @@
       "evidenceCandidateIds": [
         "evidence_a07000f16b64fb03d82e2269"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_7d3e33e1392da2d7d0e44dd2"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -582,16 +702,19 @@
       "evidenceCandidateIds": [
         "evidence_e002b046a550aa3b1fb3d457"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_7d3e33e1392da2d7d0e44dd2"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -803,16 +926,19 @@
         "evidenceCandidateIds": [
           "evidence_d8978004c19866354e590e8b"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_d909f3a59f505a8f234d49f9"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:42ef56ba-06fd-4937-a6b1-dc4667fb9eb9/HAMILTON-H900_brochure_en_689504.05.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -831,16 +957,19 @@
         "evidenceCandidateIds": [
           "evidence_f1a7009ac185fc9a153ecb7d"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_2485f616fbab418f085469b4"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -859,16 +988,19 @@
         "evidenceCandidateIds": [
           "evidence_5db1cd939960d5003a3ebf99"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_2485f616fbab418f085469b4"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -887,16 +1019,19 @@
         "evidenceCandidateIds": [
           "evidence_0f1a695f13a3d75c2c8cb6db"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_2485f616fbab418f085469b4"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -915,16 +1050,19 @@
         "evidenceCandidateIds": [
           "evidence_2ec890f5cbc26fa5a38a997c"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_2485f616fbab418f085469b4"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -943,16 +1081,19 @@
         "evidenceCandidateIds": [
           "evidence_b5942e5150ef934d7b0dc6b7"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_2485f616fbab418f085469b4"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -971,16 +1112,19 @@
         "evidenceCandidateIds": [
           "evidence_c23dedd04fe6a4d2bef638db"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_7d3e33e1392da2d7d0e44dd2"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -999,16 +1143,19 @@
         "evidenceCandidateIds": [
           "evidence_6c7c35b05c1e4cb7ac7f88f5"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_7d3e33e1392da2d7d0e44dd2"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -1027,16 +1174,19 @@
         "evidenceCandidateIds": [
           "evidence_a07000f16b64fb03d82e2269"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_7d3e33e1392da2d7d0e44dd2"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -1055,16 +1205,114 @@
         "evidenceCandidateIds": [
           "evidence_e002b046a550aa3b1fb3d457"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_7d3e33e1392da2d7d0e44dd2"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:e3f5330b-9682-407d-a0fc-2451b867d263/HAMILTON-H900_tech-specs_v1.10x_en_689509.05.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.registrationNumber": [
+      {
+        "reviewItemId": "review_item_df29f23509d792bdea76c649",
+        "productSlug": "wave2-hamilton-h900",
+        "productTitle": "HAMILTON-H900",
+        "claimCandidateId": "claim_ecb7aeb3a773be8c08d722e0",
+        "suggestedClaimType": "product.registrationNumber",
+        "valuePayload": {
+          "value": "шения правил эксплуатации продукта",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_55ee350d56c5adf7b93bb70c"
+        ],
+        "documentVersionIds": [
+          "document_version_2485f616fbab418f085469b4"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "high",
+        "reasons": [
+          "Registration data requires high-priority human review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_04bba1a06c482953b6b418ba",
+        "productSlug": "wave2-hamilton-h900",
+        "productTitle": "HAMILTON-H900",
+        "claimCandidateId": "claim_146fc57fb82d24190a93aec3",
+        "suggestedClaimType": "product.registrationNumber",
+        "valuePayload": {
+          "value": "жающей среды",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_3c785bf1458fffe22f26f236"
+        ],
+        "documentVersionIds": [
+          "document_version_2485f616fbab418f085469b4"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "high",
+        "reasons": [
+          "Registration data requires high-priority human review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_b9a5daff082647f4fd7ca252",
+        "productSlug": "wave2-hamilton-h900",
+        "productTitle": "HAMILTON-H900",
+        "claimCandidateId": "claim_2815c8d15549aeca9e0d0ef5",
+        "suggestedClaimType": "product.registrationNumber",
+        "valuePayload": {
+          "value": "довании »",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_38f342e935f2f333f40b1f94"
+        ],
+        "documentVersionIds": [
+          "document_version_2485f616fbab418f085469b4"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:4412f561-4f5d-41a6-bcf8-a2e1d90414cc/HAMILTON-H900_ifu_en-de-fr-es-it-pt-ru-tr-zh_624431.10.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "high",
+        "reasons": [
+          "Registration data requires high-priority human review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -1225,48 +1473,7 @@
       "sha256": "ecf291a32fcbee03503cc5aad6ab8e79e1f446295ed50e289061763253bf286b"
     }
   ],
-  "missingEvidence": [
-    {
-      "claimCandidateId": "claim_2c5d19f3b10e2bb26ca68c67",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_7d348bb560414d9d3c4e5d4b",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_aa25b964daeb5f00f644bc3e",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_a64fa08b6e400b1ac6bec7b3",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_11bb623bc23bd795be90f9af",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_acc35da3cf93b2150a9ee3c4",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_8f2e510f4f014be35ad7d189",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_c1bbdc61a70c1ab304def69b",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_ba5b9638c8ddc6ffe207f770",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_2fca06ed8bf057f3cadf0009",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    }
-  ],
+  "missingEvidence": [],
   "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
   "warnings": [
     "Resolver rejected offsite document URL: https://youtu.be/PfRKuDdpba4?t=152",

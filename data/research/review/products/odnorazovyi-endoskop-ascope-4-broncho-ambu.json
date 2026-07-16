@@ -4,17 +4,780 @@
     "manufacturer": "Ambu",
     "productName": "Одноразовый эндоскоп aScope 4 Broncho Ambu",
     "model": "aScope 4 Broncho",
-    "category": "Прочее оборудование"
+    "category": "Эндоскопия"
   },
-  "reviewItems": [],
-  "groupedByClaimType": {},
-  "sourceDocumentSummary": [],
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_28b4564a8e3690f9a76bb4dc",
+      "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+      "productTitle": "Одноразовый эндоскоп aScope 4 Broncho Ambu",
+      "claimCandidateId": "claim_7391a586ab3df91d0c4ebbc4",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Ambu aScope 4 Broncho Regular datasheet V05 2024/04",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_14bc9f8c71e3b13406fd7dc8"
+      ],
+      "documentVersionIds": [
+        "document_version_28769a2edb86b3d8b8c68c51"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+4+Broncho%2fDatasheets%2fLBL-006608_aScope-4-Broncho-Regular_EN_V05_202404_TCC-11603.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_98972e4d689712272de5cf77",
+      "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+      "productTitle": "Одноразовый эндоскоп aScope 4 Broncho Ambu",
+      "claimCandidateId": "claim_c8783dbdb0f4c5dbe4ac4a85",
+      "suggestedClaimType": "document.language",
+      "valuePayload": {
+        "value": "en",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_0fa8520a81d741cbf4719b51"
+      ],
+      "documentVersionIds": [
+        "document_version_28769a2edb86b3d8b8c68c51"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+4+Broncho%2fDatasheets%2fLBL-006608_aScope-4-Broncho-Regular_EN_V05_202404_TCC-11603.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b4e147aecc347d3a6dd03e50",
+      "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+      "productTitle": "Одноразовый эндоскоп aScope 4 Broncho Ambu",
+      "claimCandidateId": "claim_cfdd958284a7f6971cafd42a",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "datasheet",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_be2b66678b910aa6ad904cbd"
+      ],
+      "documentVersionIds": [
+        "document_version_28769a2edb86b3d8b8c68c51"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+4+Broncho%2fDatasheets%2fLBL-006608_aScope-4-Broncho-Regular_EN_V05_202404_TCC-11603.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_ddde36860d80a82a3f6461ab",
+      "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+      "productTitle": "Одноразовый эндоскоп aScope 4 Broncho Ambu",
+      "claimCandidateId": "claim_bf9436d013ef1b41384c668a",
+      "suggestedClaimType": "product.dimensions",
+      "valuePayload": {
+        "value": "5.0",
+        "unit": "mm"
+      },
+      "evidenceCandidateIds": [
+        "evidence_8e9d44f1754fe228560d1daf"
+      ],
+      "documentVersionIds": [
+        "document_version_28769a2edb86b3d8b8c68c51"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+4+Broncho%2fDatasheets%2fLBL-006608_aScope-4-Broncho-Regular_EN_V05_202404_TCC-11603.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_405ca4fda3c45d37c5c811b9",
+      "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+      "productTitle": "Одноразовый эндоскоп aScope 4 Broncho Ambu",
+      "claimCandidateId": "claim_7c9480a980770629f5522648",
+      "suggestedClaimType": "product.dimensions",
+      "valuePayload": {
+        "value": "5.4",
+        "unit": "mm"
+      },
+      "evidenceCandidateIds": [
+        "evidence_f8f71eca967b44cdb263e100"
+      ],
+      "documentVersionIds": [
+        "document_version_28769a2edb86b3d8b8c68c51"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+4+Broncho%2fDatasheets%2fLBL-006608_aScope-4-Broncho-Regular_EN_V05_202404_TCC-11603.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_6f800df592611e0867fde91c",
+      "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+      "productTitle": "Одноразовый эндоскоп aScope 4 Broncho Ambu",
+      "claimCandidateId": "claim_bbe992e5772719c29fc7dca2",
+      "suggestedClaimType": "product.dimensions",
+      "valuePayload": {
+        "value": "2.2",
+        "unit": "mm"
+      },
+      "evidenceCandidateIds": [
+        "evidence_b265968335c3ae4c934d8f91"
+      ],
+      "documentVersionIds": [
+        "document_version_28769a2edb86b3d8b8c68c51"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+4+Broncho%2fDatasheets%2fLBL-006608_aScope-4-Broncho-Regular_EN_V05_202404_TCC-11603.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_7a3ec901895e9e0e24b5d344",
+      "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+      "productTitle": "Одноразовый эндоскоп aScope 4 Broncho Ambu",
+      "claimCandidateId": "claim_f3f45936c4c5462be702700e",
+      "suggestedClaimType": "product.dimensions",
+      "valuePayload": {
+        "value": "600",
+        "unit": "mm"
+      },
+      "evidenceCandidateIds": [
+        "evidence_2d9505519889bb815d4d914e"
+      ],
+      "documentVersionIds": [
+        "document_version_28769a2edb86b3d8b8c68c51"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+4+Broncho%2fDatasheets%2fLBL-006608_aScope-4-Broncho-Regular_EN_V05_202404_TCC-11603.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_ecdac515d5d98c6bd5dfea7c",
+      "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+      "productTitle": "Одноразовый эндоскоп aScope 4 Broncho Ambu",
+      "claimCandidateId": "claim_8a2f4dd3bf5637b8e4707e80",
+      "suggestedClaimType": "product.safetyFeatures",
+      "valuePayload": {
+        "value": "sterile",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_366cfd8bad9b77ad695e5837"
+      ],
+      "documentVersionIds": [
+        "document_version_28769a2edb86b3d8b8c68c51"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+4+Broncho%2fDatasheets%2fLBL-006608_aScope-4-Broncho-Regular_EN_V05_202404_TCC-11603.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "critical",
+      "riskLevel": "high",
+      "reasons": [
+        "High-risk clinical, safety, compatibility or procurement claim.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_e6cbfe7e981e8baef3aa0d76",
+      "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+      "productTitle": "Одноразовый эндоскоп aScope 4 Broncho Ambu",
+      "claimCandidateId": "claim_417a7f377e0ae51ef96b77fc",
+      "suggestedClaimType": "product.intendedUse",
+      "valuePayload": {
+        "value": "single-use",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_b951a5bde94831ad38917699"
+      ],
+      "documentVersionIds": [
+        "document_version_28769a2edb86b3d8b8c68c51"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+4+Broncho%2fDatasheets%2fLBL-006608_aScope-4-Broncho-Regular_EN_V05_202404_TCC-11603.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_28b4564a8e3690f9a76bb4dc",
+        "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+        "productTitle": "Одноразовый эндоскоп aScope 4 Broncho Ambu",
+        "claimCandidateId": "claim_7391a586ab3df91d0c4ebbc4",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Ambu aScope 4 Broncho Regular datasheet V05 2024/04",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_14bc9f8c71e3b13406fd7dc8"
+        ],
+        "documentVersionIds": [
+          "document_version_28769a2edb86b3d8b8c68c51"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+4+Broncho%2fDatasheets%2fLBL-006608_aScope-4-Broncho-Regular_EN_V05_202404_TCC-11603.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.language": [
+      {
+        "reviewItemId": "review_item_98972e4d689712272de5cf77",
+        "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+        "productTitle": "Одноразовый эндоскоп aScope 4 Broncho Ambu",
+        "claimCandidateId": "claim_c8783dbdb0f4c5dbe4ac4a85",
+        "suggestedClaimType": "document.language",
+        "valuePayload": {
+          "value": "en",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_0fa8520a81d741cbf4719b51"
+        ],
+        "documentVersionIds": [
+          "document_version_28769a2edb86b3d8b8c68c51"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+4+Broncho%2fDatasheets%2fLBL-006608_aScope-4-Broncho-Regular_EN_V05_202404_TCC-11603.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_b4e147aecc347d3a6dd03e50",
+        "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+        "productTitle": "Одноразовый эндоскоп aScope 4 Broncho Ambu",
+        "claimCandidateId": "claim_cfdd958284a7f6971cafd42a",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "datasheet",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_be2b66678b910aa6ad904cbd"
+        ],
+        "documentVersionIds": [
+          "document_version_28769a2edb86b3d8b8c68c51"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+4+Broncho%2fDatasheets%2fLBL-006608_aScope-4-Broncho-Regular_EN_V05_202404_TCC-11603.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.dimensions": [
+      {
+        "reviewItemId": "review_item_ddde36860d80a82a3f6461ab",
+        "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+        "productTitle": "Одноразовый эндоскоп aScope 4 Broncho Ambu",
+        "claimCandidateId": "claim_bf9436d013ef1b41384c668a",
+        "suggestedClaimType": "product.dimensions",
+        "valuePayload": {
+          "value": "5.0",
+          "unit": "mm"
+        },
+        "evidenceCandidateIds": [
+          "evidence_8e9d44f1754fe228560d1daf"
+        ],
+        "documentVersionIds": [
+          "document_version_28769a2edb86b3d8b8c68c51"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+4+Broncho%2fDatasheets%2fLBL-006608_aScope-4-Broncho-Regular_EN_V05_202404_TCC-11603.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_405ca4fda3c45d37c5c811b9",
+        "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+        "productTitle": "Одноразовый эндоскоп aScope 4 Broncho Ambu",
+        "claimCandidateId": "claim_7c9480a980770629f5522648",
+        "suggestedClaimType": "product.dimensions",
+        "valuePayload": {
+          "value": "5.4",
+          "unit": "mm"
+        },
+        "evidenceCandidateIds": [
+          "evidence_f8f71eca967b44cdb263e100"
+        ],
+        "documentVersionIds": [
+          "document_version_28769a2edb86b3d8b8c68c51"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+4+Broncho%2fDatasheets%2fLBL-006608_aScope-4-Broncho-Regular_EN_V05_202404_TCC-11603.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_6f800df592611e0867fde91c",
+        "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+        "productTitle": "Одноразовый эндоскоп aScope 4 Broncho Ambu",
+        "claimCandidateId": "claim_bbe992e5772719c29fc7dca2",
+        "suggestedClaimType": "product.dimensions",
+        "valuePayload": {
+          "value": "2.2",
+          "unit": "mm"
+        },
+        "evidenceCandidateIds": [
+          "evidence_b265968335c3ae4c934d8f91"
+        ],
+        "documentVersionIds": [
+          "document_version_28769a2edb86b3d8b8c68c51"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+4+Broncho%2fDatasheets%2fLBL-006608_aScope-4-Broncho-Regular_EN_V05_202404_TCC-11603.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_7a3ec901895e9e0e24b5d344",
+        "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+        "productTitle": "Одноразовый эндоскоп aScope 4 Broncho Ambu",
+        "claimCandidateId": "claim_f3f45936c4c5462be702700e",
+        "suggestedClaimType": "product.dimensions",
+        "valuePayload": {
+          "value": "600",
+          "unit": "mm"
+        },
+        "evidenceCandidateIds": [
+          "evidence_2d9505519889bb815d4d914e"
+        ],
+        "documentVersionIds": [
+          "document_version_28769a2edb86b3d8b8c68c51"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+4+Broncho%2fDatasheets%2fLBL-006608_aScope-4-Broncho-Regular_EN_V05_202404_TCC-11603.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.safetyFeatures": [
+      {
+        "reviewItemId": "review_item_ecdac515d5d98c6bd5dfea7c",
+        "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+        "productTitle": "Одноразовый эндоскоп aScope 4 Broncho Ambu",
+        "claimCandidateId": "claim_8a2f4dd3bf5637b8e4707e80",
+        "suggestedClaimType": "product.safetyFeatures",
+        "valuePayload": {
+          "value": "sterile",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_366cfd8bad9b77ad695e5837"
+        ],
+        "documentVersionIds": [
+          "document_version_28769a2edb86b3d8b8c68c51"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+4+Broncho%2fDatasheets%2fLBL-006608_aScope-4-Broncho-Regular_EN_V05_202404_TCC-11603.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "critical",
+        "riskLevel": "high",
+        "reasons": [
+          "High-risk clinical, safety, compatibility or procurement claim.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.intendedUse": [
+      {
+        "reviewItemId": "review_item_e6cbfe7e981e8baef3aa0d76",
+        "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+        "productTitle": "Одноразовый эндоскоп aScope 4 Broncho Ambu",
+        "claimCandidateId": "claim_417a7f377e0ae51ef96b77fc",
+        "suggestedClaimType": "product.intendedUse",
+        "valuePayload": {
+          "value": "single-use",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_b951a5bde94831ad38917699"
+        ],
+        "documentVersionIds": [
+          "document_version_28769a2edb86b3d8b8c68c51"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+4+Broncho%2fDatasheets%2fLBL-006608_aScope-4-Broncho-Regular_EN_V05_202404_TCC-11603.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_28769a2edb86b3d8b8c68c51",
+      "documentType": "datasheet",
+      "title": "Ambu aScope 4 Broncho Regular datasheet V05 2024/04",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+4+Broncho%2fDatasheets%2fLBL-006608_aScope-4-Broncho-Regular_EN_V05_202404_TCC-11603.pdf",
+      "sha256": "841492813f5510bac361d1a3f409cbe305a4a3405878a893f5da2338ef955cb6"
+    }
+  ],
   "missingEvidence": [],
-  "recommendedReviewerAction": "No reviewable candidate claims yet. Collect more evidence before review.",
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
   "warnings": [
-    "Resolver fetch failed for https://www.ambu.com/: The operation was aborted due to timeout",
-    "Resolver fetch failed for https://www.ambu.com/endoscopy/pulmonology/products: The operation was aborted due to timeout",
-    "Discovery creates candidates only; no verified claims or publication.",
-    "No DocumentCandidate records were available for download."
+    "Resolver adapter used: ambu",
+    "Resolver rejected unsafe document URL: mailto:{{email.value}}",
+    "Resolver rejected unsafe document URL: http://{{web.value}}/",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: mailto:tisc@ambu.com",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: http://www.ambuusa.com/corporate-giving",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "resolver=ambu; attempts=4; matchedLinks=11; classifiedDocuments={\"Unknown\":20}; confidenceDistribution={\"80\":13,\"95\":4,\"100\":3}; duplicatesRemoved=9",
+    "Resolver adapter used: ambu",
+    "Resolver rejected offsite document URL: https://www.sciencedirect.com/science/article/abs/pii/S2210844019301777?via%3Dihub",
+    "Resolver rejected offsite document URL: https://www.karger.com/Article/FullText/511982",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: mailto:tisc@ambu.com",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: http://www.ambuusa.com/corporate-giving",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "resolver=ambu; attempts=4; matchedLinks=16; classifiedDocuments={\"Unknown\":24,\"Brochure\":1}; confidenceDistribution={\"80\":13,\"95\":4,\"100\":8}; duplicatesRemoved=9",
+    "Discovery creates candidates only; no verified claims or publication."
   ]
 }

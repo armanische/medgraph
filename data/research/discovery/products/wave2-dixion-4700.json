@@ -1,0 +1,565 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-4700",
+    "manufacturer": "Dixion",
+    "productName": "DIXION 4700",
+    "model": "4700",
+    "category": "Аппарат ИВЛ"
+  },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [
+      "https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+      "https://dixion.ru/upload/iblock/953/o447tecefs6hsgx35zfiw3duz59dox5d/Dixion-4700.pdf"
+    ],
+    "normalizedUrls": [
+      "https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+      "https://dixion.ru/upload/iblock/953/o447tecefs6hsgx35zfiw3duz59dox5d/Dixion-4700.pdf"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “Dixion”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_e35eaadc182c94b46c98ed57",
+      "productSlug": "wave2-dixion-4700",
+      "manufacturer": "Dixion",
+      "productName": "DIXION 4700",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+      "title": "DIXION 4700 official product page",
+      "snippet": "Live official product page.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Live official product page."
+      ]
+    },
+    {
+      "sourceId": "source_93de8792142a3f6e97a51072",
+      "productSlug": "wave2-dixion-4700",
+      "manufacturer": "Dixion",
+      "productName": "DIXION 4700",
+      "sourceType": "manufacturer_document",
+      "url": "https://dixion.ru/upload/iblock/953/o447tecefs6hsgx35zfiw3duz59dox5d/Dixion-4700.pdf",
+      "title": "DIXION 4700 official brochure",
+      "snippet": "Official model catalogue PDF; not an IFU or operator manual.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "manufacturer-hosted document candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official model catalogue PDF; not an IFU or operator manual."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_8f65b41e303162f2ad3be099",
+      "sourceId": "source_e35eaadc182c94b46c98ed57",
+      "productSlug": "wave2-dixion-4700",
+      "documentType": "unknown",
+      "url": "https://dixion.ru//upload/documents/Dixion_4700_.pdf",
+      "title": "Скачать буклет «‎Аппарат ИВЛ Dixion 4700»",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1c794c407513f97d132c27bf",
+      "sourceId": "source_e35eaadc182c94b46c98ed57",
+      "productSlug": "wave2-dixion-4700",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_05dcfe5155206d84eb84fbe5",
+      "sourceId": "source_e35eaadc182c94b46c98ed57",
+      "productSlug": "wave2-dixion-4700",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_e3aad903120767d81bc0ac58",
+      "sourceId": "source_93de8792142a3f6e97a51072",
+      "productSlug": "wave2-dixion-4700",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/upload/iblock/953/o447tecefs6hsgx35zfiw3duz59dox5d/Dixion-4700.pdf",
+      "title": "DIXION 4700 official brochure",
+      "language": null,
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "source URL is itself a document candidate"
+      ]
+    },
+    {
+      "documentId": "document_9a36b497d6e50125fbc40b4b",
+      "sourceId": "source_e35eaadc182c94b46c98ed57",
+      "productSlug": "wave2-dixion-4700",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/medialibrary/0c7/yr971d61tywvouqy820gce5mjfytiamt/Hospital-Medical-Equipment-ICU-Ventilator-VG70-Respiratory-CE-Aeonmed%20copy.jpg",
+      "title": "Unclassified manufacturer document",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_12f78aea50bf763d3b1b228d",
+      "sourceId": "source_e35eaadc182c94b46c98ed57",
+      "productSlug": "wave2-dixion-4700",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/medialibrary/78c/gh377n5do84venwd6iw3d2xywlgulr7j/ivl-min.png",
+      "title": "Unclassified manufacturer document",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_15fab3896efea647f72fd46f",
+      "sourceId": "source_e35eaadc182c94b46c98ed57",
+      "productSlug": "wave2-dixion-4700",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/medialibrary/dc2/0qo3seb961p6ceiuk1ia44xnai075u1g/4700-gigapixel-standard-scale-2_00x.jpg",
+      "title": "Unclassified manufacturer document",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1e3942f5659c8478654d4bf9",
+      "sourceId": "source_e35eaadc182c94b46c98ed57",
+      "productSlug": "wave2-dixion-4700",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/medialibrary/e33/hmq8rcy6ds0ilpr23brbl3axe7f0nvgx/img725.jpg",
+      "title": "Unclassified manufacturer document",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_5c255d8850251670bebe76b9",
+      "sourceId": "source_e35eaadc182c94b46c98ed57",
+      "productSlug": "wave2-dixion-4700",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_8545b46d336367d5e5a2e19a",
+      "sourceId": "source_e35eaadc182c94b46c98ed57",
+      "productSlug": "wave2-dixion-4700",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_03116f26d320392138059bfb",
+      "sourceId": "source_e35eaadc182c94b46c98ed57",
+      "productSlug": "wave2-dixion-4700",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_49136e6697f2235d6e45990d",
+      "sourceId": "source_e35eaadc182c94b46c98ed57",
+      "productSlug": "wave2-dixion-4700",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_d9195dfda4d97e141f725921",
+      "sourceId": "source_e35eaadc182c94b46c98ed57",
+      "productSlug": "wave2-dixion-4700",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Manufacturer Brochure",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_8f65b41e303162f2ad3be099",
+      "url": "https://dixion.ru//upload/documents/Dixion_4700_.pdf",
+      "title": "Скачать буклет «‎Аппарат ИВЛ Dixion 4700»",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_e35eaadc182c94b46c98ed57",
+      "linkText": "Скачать буклет «‎Аппарат ИВЛ Dixion 4700»",
+      "resolvedFromUrl": "https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_5c255d8850251670bebe76b9",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_e35eaadc182c94b46c98ed57",
+      "linkText": "Медицинское оборудование",
+      "resolvedFromUrl": "https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_8545b46d336367d5e5a2e19a",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_e35eaadc182c94b46c98ed57",
+      "linkText": "Каталоги оборудования",
+      "resolvedFromUrl": "https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_03116f26d320392138059bfb",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_e35eaadc182c94b46c98ed57",
+      "linkText": "Новинки оборудования",
+      "resolvedFromUrl": "https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_49136e6697f2235d6e45990d",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_e35eaadc182c94b46c98ed57",
+      "linkText": "Скоро в продаже",
+      "resolvedFromUrl": "https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_d9195dfda4d97e141f725921",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Manufacturer Brochure",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_e35eaadc182c94b46c98ed57",
+      "linkText": "",
+      "resolvedFromUrl": "https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_1c794c407513f97d132c27bf",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_e35eaadc182c94b46c98ed57",
+      "linkText": "Скачать каталог в формате PDF",
+      "resolvedFromUrl": "https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_05dcfe5155206d84eb84fbe5",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_e35eaadc182c94b46c98ed57",
+      "linkText": "Скачать прайс-лист",
+      "resolvedFromUrl": "https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_9a36b497d6e50125fbc40b4b",
+      "url": "https://dixion.ru/upload/medialibrary/0c7/yr971d61tywvouqy820gce5mjfytiamt/Hospital-Medical-Equipment-ICU-Ventilator-VG70-Respiratory-CE-Aeonmed%20copy.jpg",
+      "title": "Unclassified manufacturer document",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_e35eaadc182c94b46c98ed57",
+      "linkText": "",
+      "resolvedFromUrl": "https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_12f78aea50bf763d3b1b228d",
+      "url": "https://dixion.ru/upload/medialibrary/78c/gh377n5do84venwd6iw3d2xywlgulr7j/ivl-min.png",
+      "title": "Unclassified manufacturer document",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_e35eaadc182c94b46c98ed57",
+      "linkText": "",
+      "resolvedFromUrl": "https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_15fab3896efea647f72fd46f",
+      "url": "https://dixion.ru/upload/medialibrary/dc2/0qo3seb961p6ceiuk1ia44xnai075u1g/4700-gigapixel-standard-scale-2_00x.jpg",
+      "title": "Unclassified manufacturer document",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_e35eaadc182c94b46c98ed57",
+      "linkText": "",
+      "resolvedFromUrl": "https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1e3942f5659c8478654d4bf9",
+      "url": "https://dixion.ru/upload/medialibrary/e33/hmq8rcy6ds0ilpr23brbl3axe7f0nvgx/img725.jpg",
+      "title": "Unclassified manufacturer document",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_e35eaadc182c94b46c98ed57",
+      "linkText": "",
+      "resolvedFromUrl": "https://dixion.ru/goods/apparat-ivl-dixion-4700.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver adapter used: default",
+    "Resolver retry skipped https://dixion.ru/upload/medialibrary/78c/gh377n5do84venwd6iw3d2xywlgulr7j/ivl-min.png: expected HTML but received image/png",
+    "Resolver retry skipped https://dixion.ru/upload/medialibrary/dc2/0qo3seb961p6ceiuk1ia44xnai075u1g/4700-gigapixel-standard-scale-2_00x.jpg: expected HTML but received image/jpeg",
+    "Resolver retry skipped https://dixion.ru/upload/medialibrary/0c7/yr971d61tywvouqy820gce5mjfytiamt/Hospital-Medical-Equipment-ICU-Ventilator-VG70-Respiratory-CE-Aeonmed%20copy.jpg: expected HTML but received image/jpeg",
+    "Resolver retry skipped https://dixion.ru/upload/medialibrary/e33/hmq8rcy6ds0ilpr23brbl3axe7f0nvgx/img725.jpg: expected HTML but received image/jpeg",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=5; matchedLinks=12; classifiedDocuments={\"Brochure\":11,\"Unknown\":8}; confidenceDistribution={\"80\":9,\"90\":4,\"100\":6}; duplicatesRemoved=7"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-dixion-4700",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-4700",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-4700",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 2,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 2,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver retry skipped https://dixion.ru/upload/medialibrary/78c/gh377n5do84venwd6iw3d2xywlgulr7j/ivl-min.png: expected HTML but received image/png",
+    "Resolver retry skipped https://dixion.ru/upload/medialibrary/dc2/0qo3seb961p6ceiuk1ia44xnai075u1g/4700-gigapixel-standard-scale-2_00x.jpg: expected HTML but received image/jpeg",
+    "Resolver retry skipped https://dixion.ru/upload/medialibrary/0c7/yr971d61tywvouqy820gce5mjfytiamt/Hospital-Medical-Equipment-ICU-Ventilator-VG70-Respiratory-CE-Aeonmed%20copy.jpg: expected HTML but received image/jpeg",
+    "Resolver retry skipped https://dixion.ru/upload/medialibrary/e33/hmq8rcy6ds0ilpr23brbl3axe7f0nvgx/img725.jpg: expected HTML but received image/jpeg",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=5; matchedLinks=12; classifiedDocuments={\"Brochure\":11,\"Unknown\":8}; confidenceDistribution={\"80\":9,\"90\":4,\"100\":6}; duplicatesRemoved=7",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

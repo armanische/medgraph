@@ -1,7 +1,7 @@
 # Mindray Wave 2 Execution Report
 
-**Task:** Wave 2 Sprint 2 - Mindray Full Import  
-**Scope:** official Mindray sources only  
+**Task:** Wave 2 Sprint 2 - Mindray Full Import
+**Scope:** official Mindray sources only
 **Status:** research pipeline executed; no publication, no Supabase writes, no verification changes
 
 ## Summary

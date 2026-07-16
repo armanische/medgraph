@@ -1,0 +1,1507 @@
+{
+  "product": {
+    "productSlug": "wave2-ambu-aview-2-advance",
+    "manufacturer": "Ambu",
+    "productName": "Ambu aView 2 Advance",
+    "model": "aView 2 Advance",
+    "category": "Эндоскопические системы"
+  },
+  "providerDiagnostics": {
+    "providerName": "ambu",
+    "strategyUsed": "Ambu products, IFU documentation and downloads",
+    "pagesVisited": [
+      "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance"
+    ],
+    "candidateUrls": [
+      "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance"
+    ],
+    "normalizedUrls": [
+      "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": []
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": false,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "manufacturer": "Ambu",
+      "productName": "Ambu aView 2 Advance",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "title": "Ambu aView 2 Advance official product page",
+      "snippet": "Independent displaying and processing unit; not merged with aBox 2.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Independent displaying and processing unit; not merged with aBox 2."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_c6f2f0f58277de71f4a86a9b",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fAmbu%2fLanding_Pages%2fVivaSight_Cost_Effectiveness_Campaign%2fVivaSight-HE-Study-Summary-pager.pdf",
+      "title": "Download",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/airway-management-and-anaesthesia/vivasight-dl-cost-effectiveness/download-summary",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_b2af42b1deb9cbc1cad81b8c",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "user_manual",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fDisplaying-and-Processing-Units%2fQuick-Guide_VESA-Mount_EN_V02.pdf",
+      "title": "Quick Guide - VESA Mount, V 02",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:Quick Guide",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_96570521cde5442720d6c5a8",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "user_manual",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fActivate-Endoscopes_aView-2-Advance.pdf",
+      "title": "How to activate a new endoscope – Quick Guide",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:Quick Guide",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_419a7a32f9baf5f02fe20546",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "datasheet",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf",
+      "title": "Ambu® aView™ 2 Advance Datasheet V03 2026/05",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:Datasheet",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_5f04ff784cd33924df156caf",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "ifu",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fInstructions+for+Use%2f492405200-EU-aView-2-Advance-Gen2-Safari-IFU_EURO-A_V2_202208_TCC-11321.pdf",
+      "title": "IFU (EN, DE, ES, FR, IT, NL, PT) Ambu® aView™ 2 Advance V02 2022/08_EU A",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:IFU",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_85e921984b2dad66cb2ec062",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "ifu",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fInstructions+for+Use%2f492405200-IFU-aView-2-Advance_EURO-A_V3_202406_TCC-11595_Online.pdf",
+      "title": "IFU (EN, DE, ES, FR, IT, NL, PT) Ambu® aView™ 2 Advance V03 2024/06_EU A",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:IFU",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_a8139f63a90da4860c888144",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "ifu",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fInstructions+for+Use%2f492405300-EU-aview-2-advance-Gen2-Safari-IFU_EURO-B_V2_202208_TCC-11321.pdf",
+      "title": "IFU (EN, DK, EE, FI, LT, LV, NO, SE) Ambu® aView™ 2 Advance V02 2022/08_EU B",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:IFU",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_e39f236ceaba5563dda3accf",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "ifu",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fInstructions+for+Use%2f492405300-IFU-aView-2-Advance_EURO-B_V3_202406_TCC-11595_Online.pdf",
+      "title": "IFU (EN, DK, EE, FI, LT, LV, NO, SE) Ambu® aView™ 2 Advance V03 2024/06_EU B",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:IFU",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_4f1ad12c63ec429b9783b407",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "ifu",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fInstructions+for+Use%2f492405400-EU-aView-2-advance-Gen2-Safari-IFU_EURO-C_V2_202208_TCC-11321.pdf",
+      "title": "IFU (EN, BG, CZ, GR, HR, HU, PL, RO, SI, SK, TR) Ambu® aView™ 2 Advance V02 2022/08_EU C",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:IFU",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_85a4cc9e08a7d804d29ccb71",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "ifu",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fInstructions+for+Use%2f492405400-IFU-aView-2-Advance_EURO-C_V3_202406_TCC-11595_Online.pdf",
+      "title": "IFU (EN, BG, CZ, GR, HR, HU, PL, RO, SI, SK, TR) Ambu® aView™ 2 Advance V03 2024/06_EU C",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:IFU",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_8d2c1e92b8aaafbe076de9eb",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "ifu",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fInstructions+for+Use%2f492405700-Safari-IFU_ROW_V1_202304_TCC-11477_Online.pdf",
+      "title": "IFU (EN, PT, ES, TR) Ambu® aView™ 2 Advance V01 2023/04",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:IFU",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_204c72b788e66d4da5e414d8",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "ifu",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fInstructions+for+Use%2fIFU-EN-Ambu-aView-2-Advance-V02-202211_Australia.pdf",
+      "title": "IFU (EN) Ambu® aView™ 2 Advance V02 202211 Australia",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:IFU",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_fb914aef34663d4229411ff9",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "ifu",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fInstructions+for+Use%2fLBL-009246-IFU-Insert-VESA-Mount_DK_Multi_V1_202310_TCC-11545_Online.pdf",
+      "title": "IFU Insert (Multi) Ambu® aView™ 2 Advance V01 2023/10",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:IFU",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_0a92199d5a07c2e71b9de0c9",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2f495405000-Safari-Spare-Part-Replacement-Manual_Multi_V2_202411_TCC-11467_Online.pdf",
+      "title": "Ambu® aView™ 2 Advance Spare Part Replacement Manual",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_94a583402e7c6f645cdc9aff",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "datasheet",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fLBL-006679_SparePart-Datasheet_EN_V02_202306_TCC-11486_Interactive_Online.pdf",
+      "title": "aView™ 2 Advance Spare Part Kits V02 2023/06",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:Datasheet",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_b761ff34435767a6cd3ce3c3",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fPUB-001632-MDS-2-SW-23_aView2-Advance-and-aBox-2_EN_V2_202409_TCC-11658_Online.pdf",
+      "title": "MDS2 aBOX 2 SW2.3",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_c68e82438ceb18dd608644ce",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fPUB-001640_Cyber-Security-documentation_aBox-2-and-aView-2-Advance_SW-23_EN_V02_202411.pdf",
+      "title": "Cyber Security Documentation aView 2 Advance and aBox 2 SW2.3 V2 2024/11",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_4d628343e6913059c8ffa5e0",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fPUB-001641_DICOM-Conformance-Statement_with-SW-23_EN_V3_202412.pdf",
+      "title": "DICOM Conformance Statement aBox 2 SW2.3",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_3875a29747466b91014f9983",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fPUB-001997-MDS2_aView2-Advance-and-aBox-2_SW-24_EN_V1_202410.pdf",
+      "title": "MDS2 aView2 Advance and aBox 2 SW2.4",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_cd94172a84e0ae68ece6f38b",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fPUB-002012_DICOM-Conformance-Statement_aView-2-Advance-and-aBox-2_with-SW-232_EN_V1_202411.pdf",
+      "title": "DICOM Conformance Statement aView 2 Advance and aBox 2 SW2.3.2.",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_5255ef9eab5c8aec5b031e99",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fPUB-002017_DICOM-Conformance-Statement_aView-2-Advance-and-aBox-2_with-SW-24_EN_V1_202410.pdf",
+      "title": "DICOM Conformance Statement aView 2 Advance and aBox 2 SW2.4",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_cf4a016d4e851fd1a27cb2ee",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fPUB-002018_Cyber-Security-documentation_aBox-2-and-aView-2-Advance_SW-24_EN_V01_202410.pdf",
+      "title": "Cyber Security documentation aBox 2 and aView 2 Advance SW2.4",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_c2930c8e37f7311a2ac1d311",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fPUB-000227-Symbol-Explanation.pdf",
+      "title": "Symbol Explanation",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_9f935e74ad18841c2ca9caf3",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fPUB-001166-Latex-and-REACH-substances-in-Medical-Devices.pdf",
+      "title": "Overview of Ambu’s Medical Devices in relation to content of Latex and REACH Regulated SVHC substances",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_20e0a7f3376defa5532fe884",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Files/Files/Ambu/Career/Ambu_At-a-glance-2024-25.pdf",
+      "title": "Unclassified manufacturer document",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/corporate-info/media",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_14c55846bed244e127e02cc9",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/airway-management-and-anaesthesia/vivasight-dl-cost-effectiveness/download-summary",
+      "title": "Download summary",
+      "language": null,
+      "confidence": 0.95,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:95",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/investigator-initiated-studies",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_6e1602a7770cfbafca9425ad",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FDisplaying-and-Processing-Units%2FPUB-002015-displaying-processing-units-tabel-overview-incl-SureSight.pdf",
+      "title": "Ambu endoscopy systems compatibility table V01 2024/10",
+      "language": "en",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Conservatively classified as unknown because the current discovery schema has no compatibility document type."
+      ]
+    },
+    {
+      "documentId": "document_01435717c596dcea7d900581",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fAMP2_4-CycloneDX-2.json",
+      "title": "eSBOM aView 2 Advance and aBox 2 with SW 2.4 (CycloneDX)",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_df23894205c876f6ce68f399",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fAMP2_4-SPDX-2.json",
+      "title": "eSBOM aView 2 Advance and aBox 2 with SW 2.4 (SPDX)",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_f52f16da5524c23063de2339",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/corporate-info/media",
+      "title": "Media",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:80",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/investigator-initiated-studies",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_ae0dd7f2246152688092a621",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/corporate-info/media/image-bank",
+      "title": "Image Bank",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:80",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/corporate-info/media",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_885a6d0056e95e1fc6e7dcd7",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/corporate-info/media/image-bank/company-photos",
+      "title": "Company photos",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:80",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/corporate-info/media",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_c11e323afe102770c4d0f297",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/corporate-info/media/image-bank/executive-management",
+      "title": "Executive Management",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:80",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/corporate-info/media",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_8ed928b88658eea1837eaeaf",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/corporate-info/media/image-bank/history",
+      "title": "History",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:80",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/corporate-info/media",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_13d6bae1699c73e33f639069",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/corporate-info/media/image-bank/logo",
+      "title": "Logo",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:80",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/corporate-info/media",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_9fac07c09d76292cbdaab6c6",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/corporate-info/media/image-bank/products",
+      "title": "Products",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:80",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/corporate-info/media",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_8c158140ef7373404d46a07a",
+      "sourceId": "source_f4e7aa60f0749f182e901a6e",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/corporate-info/media/media",
+      "title": "Media",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:80",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/corporate-info/media",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_c6f2f0f58277de71f4a86a9b",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fAmbu%2fLanding_Pages%2fVivaSight_Cost_Effectiveness_Campaign%2fVivaSight-HE-Study-Summary-pager.pdf",
+      "title": "Download",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "Download",
+      "resolvedFromUrl": "https://www.ambu.com/airway-management-and-anaesthesia/vivasight-dl-cost-effectiveness/download-summary",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_b2af42b1deb9cbc1cad81b8c",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fDisplaying-and-Processing-Units%2fQuick-Guide_VESA-Mount_EN_V02.pdf",
+      "title": "Quick Guide - VESA Mount, V 02",
+      "documentTypeGuess": "user_manual",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "Quick Guide - VESA Mount, V 02",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": []
+    },
+    {
+      "documentId": "document_96570521cde5442720d6c5a8",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fActivate-Endoscopes_aView-2-Advance.pdf",
+      "title": "How to activate a new endoscope – Quick Guide",
+      "documentTypeGuess": "user_manual",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "How to activate a new endoscope – Quick Guide",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": []
+    },
+    {
+      "documentId": "document_419a7a32f9baf5f02fe20546",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf",
+      "title": "Ambu® aView™ 2 Advance Datasheet V03 2026/05",
+      "documentTypeGuess": "datasheet",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "Ambu® aView™ 2 Advance Datasheet V03 2026/05",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": []
+    },
+    {
+      "documentId": "document_5f04ff784cd33924df156caf",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fInstructions+for+Use%2f492405200-EU-aView-2-Advance-Gen2-Safari-IFU_EURO-A_V2_202208_TCC-11321.pdf",
+      "title": "IFU (EN, DE, ES, FR, IT, NL, PT) Ambu® aView™ 2 Advance V02 2022/08_EU A",
+      "documentTypeGuess": "ifu",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "IFU (EN, DE, ES, FR, IT, NL, PT) Ambu® aView™ 2 Advance V02 2022/08_EU A",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": []
+    },
+    {
+      "documentId": "document_85e921984b2dad66cb2ec062",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fInstructions+for+Use%2f492405200-IFU-aView-2-Advance_EURO-A_V3_202406_TCC-11595_Online.pdf",
+      "title": "IFU (EN, DE, ES, FR, IT, NL, PT) Ambu® aView™ 2 Advance V03 2024/06_EU A",
+      "documentTypeGuess": "ifu",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "IFU (EN, DE, ES, FR, IT, NL, PT) Ambu® aView™ 2 Advance V03 2024/06_EU A",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": []
+    },
+    {
+      "documentId": "document_a8139f63a90da4860c888144",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fInstructions+for+Use%2f492405300-EU-aview-2-advance-Gen2-Safari-IFU_EURO-B_V2_202208_TCC-11321.pdf",
+      "title": "IFU (EN, DK, EE, FI, LT, LV, NO, SE) Ambu® aView™ 2 Advance V02 2022/08_EU B",
+      "documentTypeGuess": "ifu",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "IFU (EN, DK, EE, FI, LT, LV, NO, SE) Ambu® aView™ 2 Advance V02 2022/08_EU B",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": []
+    },
+    {
+      "documentId": "document_e39f236ceaba5563dda3accf",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fInstructions+for+Use%2f492405300-IFU-aView-2-Advance_EURO-B_V3_202406_TCC-11595_Online.pdf",
+      "title": "IFU (EN, DK, EE, FI, LT, LV, NO, SE) Ambu® aView™ 2 Advance V03 2024/06_EU B",
+      "documentTypeGuess": "ifu",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "IFU (EN, DK, EE, FI, LT, LV, NO, SE) Ambu® aView™ 2 Advance V03 2024/06_EU B",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": []
+    },
+    {
+      "documentId": "document_4f1ad12c63ec429b9783b407",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fInstructions+for+Use%2f492405400-EU-aView-2-advance-Gen2-Safari-IFU_EURO-C_V2_202208_TCC-11321.pdf",
+      "title": "IFU (EN, BG, CZ, GR, HR, HU, PL, RO, SI, SK, TR) Ambu® aView™ 2 Advance V02 2022/08_EU C",
+      "documentTypeGuess": "ifu",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "IFU (EN, BG, CZ, GR, HR, HU, PL, RO, SI, SK, TR) Ambu® aView™ 2 Advance V02 2022/08_EU C",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": []
+    },
+    {
+      "documentId": "document_85a4cc9e08a7d804d29ccb71",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fInstructions+for+Use%2f492405400-IFU-aView-2-Advance_EURO-C_V3_202406_TCC-11595_Online.pdf",
+      "title": "IFU (EN, BG, CZ, GR, HR, HU, PL, RO, SI, SK, TR) Ambu® aView™ 2 Advance V03 2024/06_EU C",
+      "documentTypeGuess": "ifu",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "IFU (EN, BG, CZ, GR, HR, HU, PL, RO, SI, SK, TR) Ambu® aView™ 2 Advance V03 2024/06_EU C",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": []
+    },
+    {
+      "documentId": "document_8d2c1e92b8aaafbe076de9eb",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fInstructions+for+Use%2f492405700-Safari-IFU_ROW_V1_202304_TCC-11477_Online.pdf",
+      "title": "IFU (EN, PT, ES, TR) Ambu® aView™ 2 Advance V01 2023/04",
+      "documentTypeGuess": "ifu",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "IFU (EN, PT, ES, TR) Ambu® aView™ 2 Advance V01 2023/04",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": []
+    },
+    {
+      "documentId": "document_204c72b788e66d4da5e414d8",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fInstructions+for+Use%2fIFU-EN-Ambu-aView-2-Advance-V02-202211_Australia.pdf",
+      "title": "IFU (EN) Ambu® aView™ 2 Advance V02 202211 Australia",
+      "documentTypeGuess": "ifu",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "IFU (EN) Ambu® aView™ 2 Advance V02 202211 Australia",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": []
+    },
+    {
+      "documentId": "document_fb914aef34663d4229411ff9",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fInstructions+for+Use%2fLBL-009246-IFU-Insert-VESA-Mount_DK_Multi_V1_202310_TCC-11545_Online.pdf",
+      "title": "IFU Insert (Multi) Ambu® aView™ 2 Advance V01 2023/10",
+      "documentTypeGuess": "ifu",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "IFU Insert (Multi) Ambu® aView™ 2 Advance V01 2023/10",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": []
+    },
+    {
+      "documentId": "document_0a92199d5a07c2e71b9de0c9",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2f495405000-Safari-Spare-Part-Replacement-Manual_Multi_V2_202411_TCC-11467_Online.pdf",
+      "title": "Ambu® aView™ 2 Advance Spare Part Replacement Manual",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "Ambu® aView™ 2 Advance Spare Part Replacement Manual",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_01435717c596dcea7d900581",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fAMP2_4-CycloneDX-2.json",
+      "title": "eSBOM aView 2 Advance and aBox 2 with SW 2.4 (CycloneDX)",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "eSBOM aView 2 Advance and aBox 2 with SW 2.4 (CycloneDX)",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_df23894205c876f6ce68f399",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fAMP2_4-SPDX-2.json",
+      "title": "eSBOM aView 2 Advance and aBox 2 with SW 2.4 (SPDX)",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "eSBOM aView 2 Advance and aBox 2 with SW 2.4 (SPDX)",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_94a583402e7c6f645cdc9aff",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fLBL-006679_SparePart-Datasheet_EN_V02_202306_TCC-11486_Interactive_Online.pdf",
+      "title": "aView™ 2 Advance Spare Part Kits V02 2023/06",
+      "documentTypeGuess": "datasheet",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "aView™ 2 Advance Spare Part Kits V02 2023/06",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": []
+    },
+    {
+      "documentId": "document_b761ff34435767a6cd3ce3c3",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fPUB-001632-MDS-2-SW-23_aView2-Advance-and-aBox-2_EN_V2_202409_TCC-11658_Online.pdf",
+      "title": "MDS2 aBOX 2 SW2.3",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "MDS2 aBOX 2 SW2.3",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_c68e82438ceb18dd608644ce",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fPUB-001640_Cyber-Security-documentation_aBox-2-and-aView-2-Advance_SW-23_EN_V02_202411.pdf",
+      "title": "Cyber Security Documentation aView 2 Advance and aBox 2 SW2.3 V2 2024/11",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "Cyber Security Documentation aView 2 Advance and aBox 2 SW2.3 V2 2024/11",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_4d628343e6913059c8ffa5e0",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fPUB-001641_DICOM-Conformance-Statement_with-SW-23_EN_V3_202412.pdf",
+      "title": "DICOM Conformance Statement aBox 2 SW2.3",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "DICOM Conformance Statement aBox 2 SW2.3",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_3875a29747466b91014f9983",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fPUB-001997-MDS2_aView2-Advance-and-aBox-2_SW-24_EN_V1_202410.pdf",
+      "title": "MDS2 aView2 Advance and aBox 2 SW2.4",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "MDS2 aView2 Advance and aBox 2 SW2.4",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_cd94172a84e0ae68ece6f38b",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fPUB-002012_DICOM-Conformance-Statement_aView-2-Advance-and-aBox-2_with-SW-232_EN_V1_202411.pdf",
+      "title": "DICOM Conformance Statement aView 2 Advance and aBox 2 SW2.3.2.",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "DICOM Conformance Statement aView 2 Advance and aBox 2 SW2.3.2.",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_5255ef9eab5c8aec5b031e99",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fPUB-002017_DICOM-Conformance-Statement_aView-2-Advance-and-aBox-2_with-SW-24_EN_V1_202410.pdf",
+      "title": "DICOM Conformance Statement aView 2 Advance and aBox 2 SW2.4",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "DICOM Conformance Statement aView 2 Advance and aBox 2 SW2.4",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_cf4a016d4e851fd1a27cb2ee",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fPUB-002018_Cyber-Security-documentation_aBox-2-and-aView-2-Advance_SW-24_EN_V01_202410.pdf",
+      "title": "Cyber Security documentation aBox 2 and aView 2 Advance SW2.4",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "Cyber Security documentation aBox 2 and aView 2 Advance SW2.4",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_c2930c8e37f7311a2ac1d311",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fPUB-000227-Symbol-Explanation.pdf",
+      "title": "Symbol Explanation",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "Symbol Explanation",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_9f935e74ad18841c2ca9caf3",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fPUB-001166-Latex-and-REACH-substances-in-Medical-Devices.pdf",
+      "title": "Overview of Ambu’s Medical Devices in relation to content of Latex and REACH Regulated SVHC substances",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "Overview of Ambu’s Medical Devices in relation to content of Latex and REACH Regulated SVHC substances",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/monitors/product/aview-2-advance",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_14c55846bed244e127e02cc9",
+      "url": "https://www.ambu.com/airway-management-and-anaesthesia/vivasight-dl-cost-effectiveness/download-summary",
+      "title": "Download summary",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "Download summary",
+      "resolvedFromUrl": "https://www.ambu.com/investigator-initiated-studies",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_f52f16da5524c23063de2339",
+      "url": "https://www.ambu.com/corporate-info/media",
+      "title": "Media",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "Media",
+      "resolvedFromUrl": "https://www.ambu.com/investigator-initiated-studies",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_ae0dd7f2246152688092a621",
+      "url": "https://www.ambu.com/corporate-info/media/image-bank",
+      "title": "Image Bank",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "Image Bank",
+      "resolvedFromUrl": "https://www.ambu.com/corporate-info/media",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_885a6d0056e95e1fc6e7dcd7",
+      "url": "https://www.ambu.com/corporate-info/media/image-bank/company-photos",
+      "title": "Company photos",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "Company photos",
+      "resolvedFromUrl": "https://www.ambu.com/corporate-info/media",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_c11e323afe102770c4d0f297",
+      "url": "https://www.ambu.com/corporate-info/media/image-bank/executive-management",
+      "title": "Executive Management",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "Executive Management",
+      "resolvedFromUrl": "https://www.ambu.com/corporate-info/media",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_8ed928b88658eea1837eaeaf",
+      "url": "https://www.ambu.com/corporate-info/media/image-bank/history",
+      "title": "History",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "History",
+      "resolvedFromUrl": "https://www.ambu.com/corporate-info/media",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_13d6bae1699c73e33f639069",
+      "url": "https://www.ambu.com/corporate-info/media/image-bank/logo",
+      "title": "Logo",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "Logo",
+      "resolvedFromUrl": "https://www.ambu.com/corporate-info/media",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_9fac07c09d76292cbdaab6c6",
+      "url": "https://www.ambu.com/corporate-info/media/image-bank/products",
+      "title": "Products",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "Products",
+      "resolvedFromUrl": "https://www.ambu.com/corporate-info/media",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_8c158140ef7373404d46a07a",
+      "url": "https://www.ambu.com/corporate-info/media/media",
+      "title": "Media",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "Media",
+      "resolvedFromUrl": "https://www.ambu.com/corporate-info/media",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_20e0a7f3376defa5532fe884",
+      "url": "https://www.ambu.com/Files/Files/Ambu/Career/Ambu_At-a-glance-2024-25.pdf",
+      "title": "Unclassified manufacturer document",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_f4e7aa60f0749f182e901a6e",
+      "linkText": "",
+      "resolvedFromUrl": "https://www.ambu.com/corporate-info/media",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver adapter used: ambu",
+    "Resolver retry skipped https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fAMP2_4-CycloneDX-2.json: HTTP 406",
+    "Resolver retry skipped https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fAMP2_4-SPDX-2.json: HTTP 406",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: mailto:tisc@ambu.com",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: http://www.ambuusa.com/corporate-giving",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "resolver=ambu; attempts=6; matchedLinks=36; classifiedDocuments={\"Unknown\":32,\"Quick Guide\":2,\"Datasheet\":2,\"IFU\":9}; confidenceDistribution={\"80\":13,\"90\":2,\"95\":4,\"100\":26}; duplicatesRemoved=9"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver adapter used: ambu",
+    "Resolver retry skipped https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fAMP2_4-CycloneDX-2.json: HTTP 406",
+    "Resolver retry skipped https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fAMP2_4-SPDX-2.json: HTTP 406",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: mailto:tisc@ambu.com",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: http://www.ambuusa.com/corporate-giving",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "resolver=ambu; attempts=6; matchedLinks=36; classifiedDocuments={\"Unknown\":32,\"Quick Guide\":2,\"Datasheet\":2,\"IFU\":9}; confidenceDistribution={\"80\":13,\"90\":2,\"95\":4,\"100\":26}; duplicatesRemoved=9",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

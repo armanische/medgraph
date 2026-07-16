@@ -1,0 +1,25 @@
+{
+  "product": {
+    "productSlug": "wave2-sle-products-index",
+    "manufacturer": "SLE",
+    "productName": "Wave 2 SLE products index",
+    "model": "Wave 2 discovery index",
+    "category": "Wave 2 source discovery"
+  },
+  "attemptedDownloads": [],
+  "downloadedArtifacts": [],
+  "failedDownloads": [],
+  "skippedDocuments": [],
+  "documentVersions": [],
+  "warnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/areas-of-care/acute-care/neonatal/: HTTP 403",
+    "Discovery creates candidates only; no verified claims or publication.",
+    "No DocumentCandidate records were available for download."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": false,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}

@@ -10,6 +10,34 @@
   "extractedFactCandidates": [],
   "evidenceCandidates": [],
   "candidateClaims": [],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "ventilator"
+    ],
+    "patternsMatched": {},
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "ventilator": [
+        "adult",
+        "battery_runtime",
+        "modes",
+        "neonatal",
+        "niv",
+        "oxygen",
+        "pediatric",
+        "screen",
+        "turbine",
+        "weight"
+      ]
+    },
+    "coveragePercent": 0
+  },
   "warnings": [
     "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/15165301",
     "Resolver rejected offsite document URL: https://pubmed.ncbi.nlm.nih.gov/41117573",

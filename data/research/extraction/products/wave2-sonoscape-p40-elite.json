@@ -1,0 +1,221 @@
+{
+  "product": {
+    "productSlug": "wave2-sonoscape-p40-elite",
+    "manufacturer": "SonoScape",
+    "productName": "SonoScape P40 Elite",
+    "model": "P40 Elite",
+    "category": "УЗИ аппараты"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_a5b73076a1bf2310a59feb05",
+      "documentCandidateId": "document_872f34829abac490d5cafc3e",
+      "sourceId": "source_4e856eedbda4d9b0b42ecb20",
+      "productSlug": "wave2-sonoscape-p40-elite",
+      "documentKey": "trusted-document:document_872f34829abac490d5cafc3e",
+      "documentType": "unknown",
+      "title": "Privacy Policy",
+      "language": null,
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "sha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c",
+      "contentType": "application/pdf",
+      "byteSize": 407279,
+      "filePath": "data/research/artifacts/artifacts/sha256/25/9a/259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_891012a1a4824db904c1ed13",
+      "productSlug": "wave2-sonoscape-p40-elite",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Privacy Policy",
+      "unit": null,
+      "rawText": "Document title: Privacy Policy",
+      "documentVersionId": "document_version_a5b73076a1bf2310a59feb05",
+      "documentCandidateId": "document_872f34829abac490d5cafc3e",
+      "documentSha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c",
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_29d3f47b3ee5f977794f562d",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_ee595f8fac3cf56dee430706",
+      "productSlug": "wave2-sonoscape-p40-elite",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_a5b73076a1bf2310a59feb05",
+      "documentCandidateId": "document_872f34829abac490d5cafc3e",
+      "documentSha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c",
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_f7642373464e6e0d6f68704b",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_29d3f47b3ee5f977794f562d",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_a5b73076a1bf2310a59feb05",
+      "documentCandidateId": "document_872f34829abac490d5cafc3e",
+      "sha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c",
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Privacy Policy",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_f7642373464e6e0d6f68704b",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_a5b73076a1bf2310a59feb05",
+      "documentCandidateId": "document_872f34829abac490d5cafc3e",
+      "sha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c",
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_c4aad923c270c9581fe62e54",
+      "productSlug": "wave2-sonoscape-p40-elite",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Privacy Policy",
+        "unit": null
+      },
+      "rawText": "Document title: Privacy Policy",
+      "evidenceCandidateIds": [
+        "evidence_29d3f47b3ee5f977794f562d"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_168ebd824c3d39071c9f399d",
+      "productSlug": "wave2-sonoscape-p40-elite",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_f7642373464e6e0d6f68704b"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "ultrasound"
+    ],
+    "patternsMatched": {},
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "ultrasound": [
+        "3d_4d",
+        "channels",
+        "doppler",
+        "elastography",
+        "probe_ports"
+      ]
+    },
+    "coveragePercent": 0
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected offsite document URL: https://www.sonoscape.com.cn/",
+    "Resolver rejected offsite document URL: https://www.sonoscape.de/",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected unsafe document URL: mailto:market@sonoscape.net",
+    "Resolver rejected offsite document URL: https://www.facebook.com/sonoscapemedicalcorp",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/sonoscape_co._ltd?trk=company_logo",
+    "Resolver rejected offsite document URL: https://beian.miit.gov.cn/",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "resolver=default; attempts=1; matchedLinks=1; classifiedDocuments={\"Unknown\":1}; confidenceDistribution={\"100\":1}; duplicatesRemoved=0",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

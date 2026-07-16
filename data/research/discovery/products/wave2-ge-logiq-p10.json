@@ -1,0 +1,94 @@
+{
+  "product": {
+    "productSlug": "wave2-ge-logiq-p10",
+    "manufacturer": "GE HealthCare",
+    "productName": "GE HealthCare LOGIQ P10",
+    "model": "LOGIQ P10",
+    "category": "УЗИ аппараты"
+  },
+  "providerDiagnostics": {
+    "providerName": "ge-healthcare",
+    "strategyUsed": "GE HealthCare products, support, resources and document library",
+    "pagesVisited": [
+      "https://www.gehealthcare.com/en/products/ultrasound/logiq/logiq-p-series"
+    ],
+    "candidateUrls": [
+      "https://www.gehealthcare.com/en/products/ultrasound/logiq/logiq-p-series"
+    ],
+    "normalizedUrls": [
+      "https://www.gehealthcare.com/en/products/ultrasound/logiq/logiq-p-series"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": []
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": false,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_8a9168f8d390ca1603542843",
+      "productSlug": "wave2-ge-logiq-p10",
+      "manufacturer": "GE HealthCare",
+      "productName": "GE HealthCare LOGIQ P10",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.gehealthcare.com/en/products/ultrasound/logiq/logiq-p-series",
+      "title": "GE HealthCare LOGIQ P Series official product page",
+      "snippet": "Official family page explicitly covering LOGIQ P10; candidate-only source.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official family page explicitly covering LOGIQ P10; candidate-only source."
+      ]
+    }
+  ],
+  "documentCandidates": [],
+  "resolvedDocumentLinks": [],
+  "resolverWarnings": [
+    "Resolver fetch failed for https://www.gehealthcare.com/en/products/ultrasound/logiq/logiq-p-series: HTTP 404"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-ge-logiq-p10",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-ge-logiq-p10",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-ge-logiq-p10",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver fetch failed for https://www.gehealthcare.com/en/products/ultrasound/logiq/logiq-p-series: HTTP 404",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

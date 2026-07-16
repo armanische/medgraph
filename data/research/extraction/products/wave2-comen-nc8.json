@@ -1,0 +1,53 @@
+{
+  "product": {
+    "productSlug": "wave2-comen-nc8",
+    "manufacturer": "Comen",
+    "productName": "Comen NC8",
+    "model": "NC8",
+    "category": "Монитор пациента"
+  },
+  "documentVersions": [],
+  "extractedFactCandidates": [],
+  "evidenceCandidates": [],
+  "candidateClaims": [],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "patient-monitor"
+    ],
+    "patternsMatched": {},
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "patient-monitor": [
+        "battery_runtime",
+        "modules",
+        "parameters",
+        "screen"
+      ]
+    },
+    "coveragePercent": 0
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver retry skipped https://www.comen.com/RDC/mediaVideo: HTTP 500",
+    "Resolver rejected unsafe document URL: http://en.comen.com/",
+    "Resolver rejected unsafe document URL: http://fr.comen.com/",
+    "Resolver rejected unsafe document URL: http://es.comen.com/",
+    "Resolver rejected offsite document URL: https://szcomen.zhiye.com/",
+    "Resolver rejected offsite document URL: https://szcomen.zhiye.com/campus",
+    "Resolver rejected offsite document URL: https://szcomen.zhiye.com/social",
+    "resolver=default; attempts=2; matchedLinks=1; classifiedDocuments={\"Unknown\":1}; confidenceDistribution={\"90\":1}; duplicatesRemoved=0",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": false,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}

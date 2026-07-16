@@ -1,0 +1,750 @@
+{
+  "product": {
+    "productSlug": "wave2-ambu-ascope-duodeno-2",
+    "manufacturer": "Ambu",
+    "productName": "Ambu aScope Duodeno 2",
+    "model": "aScope Duodeno 2",
+    "category": "Эндоскопия"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_e2b24ff11f6fea270249a813",
+      "productSlug": "wave2-ambu-ascope-duodeno-2",
+      "productTitle": "Ambu aScope Duodeno 2",
+      "claimCandidateId": "claim_3273a20f55af583873dfab39",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Ambu® aScope™ Duodeno 2 datasheet",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_deb0decf983fda9a244397fb"
+      ],
+      "documentVersionIds": [
+        "document_version_7df3236919fcabaab3e4686d"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Duodeno+2%2fDatasheets%2fLBL-009829-Datasheet_aScope-Duodeno-2_EN_V01_202503_TCC-11700.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_998d6dc9b8129e97ef3301de",
+      "productSlug": "wave2-ambu-ascope-duodeno-2",
+      "productTitle": "Ambu aScope Duodeno 2",
+      "claimCandidateId": "claim_6a8704b6223e979f921c894d",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "datasheet",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_1c0f2ca1f98744f1979f9c7f"
+      ],
+      "documentVersionIds": [
+        "document_version_7df3236919fcabaab3e4686d"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Duodeno+2%2fDatasheets%2fLBL-009829-Datasheet_aScope-Duodeno-2_EN_V01_202503_TCC-11700.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_d6b3f4ea9fab5e981db55383",
+      "productSlug": "wave2-ambu-ascope-duodeno-2",
+      "productTitle": "Ambu aScope Duodeno 2",
+      "claimCandidateId": "claim_98e75b4c92466edc7b576d3f",
+      "suggestedClaimType": "product.dimensions",
+      "valuePayload": {
+        "value": "13.7",
+        "unit": "mm"
+      },
+      "evidenceCandidateIds": [
+        "evidence_55d70ef67a11d852165ec4ce"
+      ],
+      "documentVersionIds": [
+        "document_version_7df3236919fcabaab3e4686d"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Duodeno+2%2fDatasheets%2fLBL-009829-Datasheet_aScope-Duodeno-2_EN_V01_202503_TCC-11700.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_1c01fd77eea1e44e4eb5f810",
+      "productSlug": "wave2-ambu-ascope-duodeno-2",
+      "productTitle": "Ambu aScope Duodeno 2",
+      "claimCandidateId": "claim_c6bbfc81024ecd2850e74a78",
+      "suggestedClaimType": "product.dimensions",
+      "valuePayload": {
+        "value": "11.5",
+        "unit": "mm"
+      },
+      "evidenceCandidateIds": [
+        "evidence_b5751c7805cd6879ea17d157"
+      ],
+      "documentVersionIds": [
+        "document_version_7df3236919fcabaab3e4686d"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Duodeno+2%2fDatasheets%2fLBL-009829-Datasheet_aScope-Duodeno-2_EN_V01_202503_TCC-11700.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_3f907ebcec309d341e866cbe",
+      "productSlug": "wave2-ambu-ascope-duodeno-2",
+      "productTitle": "Ambu aScope Duodeno 2",
+      "claimCandidateId": "claim_61026a96e98d13525883e0a5",
+      "suggestedClaimType": "product.dimensions",
+      "valuePayload": {
+        "value": "4.2",
+        "unit": "mm"
+      },
+      "evidenceCandidateIds": [
+        "evidence_a2ff0fe5346cf75646eb2877"
+      ],
+      "documentVersionIds": [
+        "document_version_7df3236919fcabaab3e4686d"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Duodeno+2%2fDatasheets%2fLBL-009829-Datasheet_aScope-Duodeno-2_EN_V01_202503_TCC-11700.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_1024ee8697dbdb330c3264fe",
+      "productSlug": "wave2-ambu-ascope-duodeno-2",
+      "productTitle": "Ambu aScope Duodeno 2",
+      "claimCandidateId": "claim_dcf6617b0199855480c8ca55",
+      "suggestedClaimType": "product.dimensions",
+      "valuePayload": {
+        "value": "1240",
+        "unit": "mm"
+      },
+      "evidenceCandidateIds": [
+        "evidence_17926dad5a733691ea0b3969"
+      ],
+      "documentVersionIds": [
+        "document_version_7df3236919fcabaab3e4686d"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Duodeno+2%2fDatasheets%2fLBL-009829-Datasheet_aScope-Duodeno-2_EN_V01_202503_TCC-11700.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_bc0206114aa390bb3b0e01c8",
+      "productSlug": "wave2-ambu-ascope-duodeno-2",
+      "productTitle": "Ambu aScope Duodeno 2",
+      "claimCandidateId": "claim_a682281882f258f2210fffc6",
+      "suggestedClaimType": "product.safetyFeatures",
+      "valuePayload": {
+        "value": "sterile",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_54d8e47929d91f46229d55b4"
+      ],
+      "documentVersionIds": [
+        "document_version_7df3236919fcabaab3e4686d"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Duodeno+2%2fDatasheets%2fLBL-009829-Datasheet_aScope-Duodeno-2_EN_V01_202503_TCC-11700.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "critical",
+      "riskLevel": "high",
+      "reasons": [
+        "High-risk clinical, safety, compatibility or procurement claim.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_3ca0842906329dde22a4f163",
+      "productSlug": "wave2-ambu-ascope-duodeno-2",
+      "productTitle": "Ambu aScope Duodeno 2",
+      "claimCandidateId": "claim_2bbd121fce196cf7b2d662cc",
+      "suggestedClaimType": "product.intendedUse",
+      "valuePayload": {
+        "value": "disposable",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_eae9a62afbc86e37bd2481f4"
+      ],
+      "documentVersionIds": [
+        "document_version_7df3236919fcabaab3e4686d"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Duodeno+2%2fDatasheets%2fLBL-009829-Datasheet_aScope-Duodeno-2_EN_V01_202503_TCC-11700.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b63308dccbea7fdb289ab5b1",
+      "productSlug": "wave2-ambu-ascope-duodeno-2",
+      "productTitle": "Ambu aScope Duodeno 2",
+      "claimCandidateId": "claim_4aee46bc4135426ecf362640",
+      "suggestedClaimType": "product.intendedUse",
+      "valuePayload": {
+        "value": "Single-use",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_1d1f7818c18d816d9de85b07"
+      ],
+      "documentVersionIds": [
+        "document_version_7df3236919fcabaab3e4686d"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Duodeno+2%2fDatasheets%2fLBL-009829-Datasheet_aScope-Duodeno-2_EN_V01_202503_TCC-11700.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_23095143eed4ad18a2d34121",
+      "productSlug": "wave2-ambu-ascope-duodeno-2",
+      "productTitle": "Ambu aScope Duodeno 2",
+      "claimCandidateId": "claim_5471c080c026141a7535458a",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_0ff5257a9402a200d6327f87"
+      ],
+      "documentVersionIds": [
+        "document_version_7df3236919fcabaab3e4686d"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Duodeno+2%2fDatasheets%2fLBL-009829-Datasheet_aScope-Duodeno-2_EN_V01_202503_TCC-11700.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_e2b24ff11f6fea270249a813",
+        "productSlug": "wave2-ambu-ascope-duodeno-2",
+        "productTitle": "Ambu aScope Duodeno 2",
+        "claimCandidateId": "claim_3273a20f55af583873dfab39",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Ambu® aScope™ Duodeno 2 datasheet",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_deb0decf983fda9a244397fb"
+        ],
+        "documentVersionIds": [
+          "document_version_7df3236919fcabaab3e4686d"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Duodeno+2%2fDatasheets%2fLBL-009829-Datasheet_aScope-Duodeno-2_EN_V01_202503_TCC-11700.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_998d6dc9b8129e97ef3301de",
+        "productSlug": "wave2-ambu-ascope-duodeno-2",
+        "productTitle": "Ambu aScope Duodeno 2",
+        "claimCandidateId": "claim_6a8704b6223e979f921c894d",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "datasheet",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_1c0f2ca1f98744f1979f9c7f"
+        ],
+        "documentVersionIds": [
+          "document_version_7df3236919fcabaab3e4686d"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Duodeno+2%2fDatasheets%2fLBL-009829-Datasheet_aScope-Duodeno-2_EN_V01_202503_TCC-11700.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.dimensions": [
+      {
+        "reviewItemId": "review_item_d6b3f4ea9fab5e981db55383",
+        "productSlug": "wave2-ambu-ascope-duodeno-2",
+        "productTitle": "Ambu aScope Duodeno 2",
+        "claimCandidateId": "claim_98e75b4c92466edc7b576d3f",
+        "suggestedClaimType": "product.dimensions",
+        "valuePayload": {
+          "value": "13.7",
+          "unit": "mm"
+        },
+        "evidenceCandidateIds": [
+          "evidence_55d70ef67a11d852165ec4ce"
+        ],
+        "documentVersionIds": [
+          "document_version_7df3236919fcabaab3e4686d"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Duodeno+2%2fDatasheets%2fLBL-009829-Datasheet_aScope-Duodeno-2_EN_V01_202503_TCC-11700.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_1c01fd77eea1e44e4eb5f810",
+        "productSlug": "wave2-ambu-ascope-duodeno-2",
+        "productTitle": "Ambu aScope Duodeno 2",
+        "claimCandidateId": "claim_c6bbfc81024ecd2850e74a78",
+        "suggestedClaimType": "product.dimensions",
+        "valuePayload": {
+          "value": "11.5",
+          "unit": "mm"
+        },
+        "evidenceCandidateIds": [
+          "evidence_b5751c7805cd6879ea17d157"
+        ],
+        "documentVersionIds": [
+          "document_version_7df3236919fcabaab3e4686d"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Duodeno+2%2fDatasheets%2fLBL-009829-Datasheet_aScope-Duodeno-2_EN_V01_202503_TCC-11700.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_3f907ebcec309d341e866cbe",
+        "productSlug": "wave2-ambu-ascope-duodeno-2",
+        "productTitle": "Ambu aScope Duodeno 2",
+        "claimCandidateId": "claim_61026a96e98d13525883e0a5",
+        "suggestedClaimType": "product.dimensions",
+        "valuePayload": {
+          "value": "4.2",
+          "unit": "mm"
+        },
+        "evidenceCandidateIds": [
+          "evidence_a2ff0fe5346cf75646eb2877"
+        ],
+        "documentVersionIds": [
+          "document_version_7df3236919fcabaab3e4686d"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Duodeno+2%2fDatasheets%2fLBL-009829-Datasheet_aScope-Duodeno-2_EN_V01_202503_TCC-11700.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_1024ee8697dbdb330c3264fe",
+        "productSlug": "wave2-ambu-ascope-duodeno-2",
+        "productTitle": "Ambu aScope Duodeno 2",
+        "claimCandidateId": "claim_dcf6617b0199855480c8ca55",
+        "suggestedClaimType": "product.dimensions",
+        "valuePayload": {
+          "value": "1240",
+          "unit": "mm"
+        },
+        "evidenceCandidateIds": [
+          "evidence_17926dad5a733691ea0b3969"
+        ],
+        "documentVersionIds": [
+          "document_version_7df3236919fcabaab3e4686d"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Duodeno+2%2fDatasheets%2fLBL-009829-Datasheet_aScope-Duodeno-2_EN_V01_202503_TCC-11700.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.safetyFeatures": [
+      {
+        "reviewItemId": "review_item_bc0206114aa390bb3b0e01c8",
+        "productSlug": "wave2-ambu-ascope-duodeno-2",
+        "productTitle": "Ambu aScope Duodeno 2",
+        "claimCandidateId": "claim_a682281882f258f2210fffc6",
+        "suggestedClaimType": "product.safetyFeatures",
+        "valuePayload": {
+          "value": "sterile",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_54d8e47929d91f46229d55b4"
+        ],
+        "documentVersionIds": [
+          "document_version_7df3236919fcabaab3e4686d"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Duodeno+2%2fDatasheets%2fLBL-009829-Datasheet_aScope-Duodeno-2_EN_V01_202503_TCC-11700.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "critical",
+        "riskLevel": "high",
+        "reasons": [
+          "High-risk clinical, safety, compatibility or procurement claim.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.intendedUse": [
+      {
+        "reviewItemId": "review_item_3ca0842906329dde22a4f163",
+        "productSlug": "wave2-ambu-ascope-duodeno-2",
+        "productTitle": "Ambu aScope Duodeno 2",
+        "claimCandidateId": "claim_2bbd121fce196cf7b2d662cc",
+        "suggestedClaimType": "product.intendedUse",
+        "valuePayload": {
+          "value": "disposable",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_eae9a62afbc86e37bd2481f4"
+        ],
+        "documentVersionIds": [
+          "document_version_7df3236919fcabaab3e4686d"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Duodeno+2%2fDatasheets%2fLBL-009829-Datasheet_aScope-Duodeno-2_EN_V01_202503_TCC-11700.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_b63308dccbea7fdb289ab5b1",
+        "productSlug": "wave2-ambu-ascope-duodeno-2",
+        "productTitle": "Ambu aScope Duodeno 2",
+        "claimCandidateId": "claim_4aee46bc4135426ecf362640",
+        "suggestedClaimType": "product.intendedUse",
+        "valuePayload": {
+          "value": "Single-use",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_1d1f7818c18d816d9de85b07"
+        ],
+        "documentVersionIds": [
+          "document_version_7df3236919fcabaab3e4686d"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Duodeno+2%2fDatasheets%2fLBL-009829-Datasheet_aScope-Duodeno-2_EN_V01_202503_TCC-11700.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "technical.term": [
+      {
+        "reviewItemId": "review_item_23095143eed4ad18a2d34121",
+        "productSlug": "wave2-ambu-ascope-duodeno-2",
+        "productTitle": "Ambu aScope Duodeno 2",
+        "claimCandidateId": "claim_5471c080c026141a7535458a",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_0ff5257a9402a200d6327f87"
+        ],
+        "documentVersionIds": [
+          "document_version_7df3236919fcabaab3e4686d"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Duodeno+2%2fDatasheets%2fLBL-009829-Datasheet_aScope-Duodeno-2_EN_V01_202503_TCC-11700.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_7df3236919fcabaab3e4686d",
+      "documentType": "datasheet",
+      "title": "Ambu® aScope™ Duodeno 2 datasheet",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Duodeno+2%2fDatasheets%2fLBL-009829-Datasheet_aScope-Duodeno-2_EN_V01_202503_TCC-11700.pdf",
+      "sha256": "9fd7496291178ad6d0f65d6666ac3f2767ce46ec5657b29bf8419cb38a962c79"
+    }
+  ],
+  "missingEvidence": [],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver adapter used: ambu",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: mailto:tisc@ambu.com",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: http://www.ambuusa.com/corporate-giving",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "resolver=ambu; attempts=4; matchedLinks=15; classifiedDocuments={\"Unknown\":22,\"Datasheet\":1,\"IFU\":1}; confidenceDistribution={\"80\":13,\"95\":4,\"100\":7}; duplicatesRemoved=9",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

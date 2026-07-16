@@ -1,0 +1,299 @@
+{
+  "product": {
+    "productSlug": "wave2-sle-6000n",
+    "manufacturer": "SLE",
+    "productName": "SLE6000N Non-Invasive Ventilator",
+    "model": "SLE6000N",
+    "category": "Neonatal respiratory ventilator"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_c7472376639058c1a1b34f5b",
+      "documentCandidateId": "document_a3c62c170e29cfe9c0607da3",
+      "sourceId": "source_1ec2faaa20aed77a6bc9af52",
+      "productSlug": "wave2-sle-6000n",
+      "documentKey": "trusted-document:document_a3c62c170e29cfe9c0607da3",
+      "documentType": "unknown",
+      "title": "SLE6000H C N configuration and software compatibility matrix",
+      "language": null,
+      "sourceUrl": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/Whats-included.pdf",
+      "sha256": "6e748e4efb5637ff3ccadf562e2c6900d374b4a3cc370c37c01e512e94a0b8f1",
+      "contentType": "application/pdf",
+      "byteSize": 780082,
+      "filePath": "data/research/artifacts/artifacts/sha256/6e/74/6e748e4efb5637ff3ccadf562e2c6900d374b4a3cc370c37c01e512e94a0b8f1.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_92dac19fbe464022b72c6069",
+      "productSlug": "wave2-sle-6000n",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "SLE6000H C N configuration and software compatibility matrix",
+      "unit": null,
+      "rawText": "Document title: SLE6000H C N configuration and software compatibility matrix",
+      "documentVersionId": "document_version_c7472376639058c1a1b34f5b",
+      "documentCandidateId": "document_a3c62c170e29cfe9c0607da3",
+      "documentSha256": "6e748e4efb5637ff3ccadf562e2c6900d374b4a3cc370c37c01e512e94a0b8f1",
+      "sourceUrl": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/Whats-included.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_8f4c91348a284b106bbecf11",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_5612cb0ce930c40e74964055",
+      "productSlug": "wave2-sle-6000n",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_c7472376639058c1a1b34f5b",
+      "documentCandidateId": "document_a3c62c170e29cfe9c0607da3",
+      "documentSha256": "6e748e4efb5637ff3ccadf562e2c6900d374b4a3cc370c37c01e512e94a0b8f1",
+      "sourceUrl": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/Whats-included.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_82eb9971c6b55c8e39d35113",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_383af8e57b1d010818cfc638",
+      "productSlug": "wave2-sle-6000n",
+      "factType": "product.operatingModes",
+      "label": "NIV",
+      "value": "Non-Invasive Ventilation",
+      "unit": null,
+      "rawText": "Non-Invasive Ventilation",
+      "documentVersionId": "document_version_c7472376639058c1a1b34f5b",
+      "documentCandidateId": "document_a3c62c170e29cfe9c0607da3",
+      "documentSha256": "6e748e4efb5637ff3ccadf562e2c6900d374b4a3cc370c37c01e512e94a0b8f1",
+      "sourceUrl": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/Whats-included.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 30
+      },
+      "evidenceCandidateId": "evidence_9e5a6dc0de4a33f978ddebe5",
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:niv",
+        "matchedSynonym:Non-invasive ventilation",
+        "unitParsed:none"
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_8f4c91348a284b106bbecf11",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_c7472376639058c1a1b34f5b",
+      "documentCandidateId": "document_a3c62c170e29cfe9c0607da3",
+      "sha256": "6e748e4efb5637ff3ccadf562e2c6900d374b4a3cc370c37c01e512e94a0b8f1",
+      "sourceUrl": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/Whats-included.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: SLE6000H C N configuration and software compatibility matrix",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_82eb9971c6b55c8e39d35113",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_c7472376639058c1a1b34f5b",
+      "documentCandidateId": "document_a3c62c170e29cfe9c0607da3",
+      "sha256": "6e748e4efb5637ff3ccadf562e2c6900d374b4a3cc370c37c01e512e94a0b8f1",
+      "sourceUrl": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/Whats-included.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_9e5a6dc0de4a33f978ddebe5",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_c7472376639058c1a1b34f5b",
+      "documentCandidateId": "document_a3c62c170e29cfe9c0607da3",
+      "sha256": "6e748e4efb5637ff3ccadf562e2c6900d374b4a3cc370c37c01e512e94a0b8f1",
+      "sourceUrl": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/Whats-included.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 30
+      },
+      "quotedText": "Non-Invasive Ventilation",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_d402d41201e94d60edb75997",
+      "productSlug": "wave2-sle-6000n",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "SLE6000H C N configuration and software compatibility matrix",
+        "unit": null
+      },
+      "rawText": "Document title: SLE6000H C N configuration and software compatibility matrix",
+      "evidenceCandidateIds": [
+        "evidence_8f4c91348a284b106bbecf11"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_b9c2b7dbe462e224ba0e0c59",
+      "productSlug": "wave2-sle-6000n",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_82eb9971c6b55c8e39d35113"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_145acf6fff0093c7cac905f4",
+      "productSlug": "wave2-sle-6000n",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Non-Invasive Ventilation",
+        "unit": null
+      },
+      "rawText": "Non-Invasive Ventilation",
+      "evidenceCandidateIds": [
+        "evidence_9e5a6dc0de4a33f978ddebe5"
+      ],
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "ventilator",
+      "neonatal"
+    ],
+    "patternsMatched": {
+      "ventilator.niv": 1
+    },
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "ventilator": [
+        "adult",
+        "battery_runtime",
+        "modes",
+        "neonatal",
+        "oxygen",
+        "pediatric",
+        "screen",
+        "turbine",
+        "weight"
+      ],
+      "neonatal": [
+        "alarms",
+        "humidity",
+        "oxygen",
+        "temperature",
+        "weight_capacity"
+      ]
+    },
+    "coveragePercent": 3
+  },
+  "warnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/product/sle6000n/: HTTP 403",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

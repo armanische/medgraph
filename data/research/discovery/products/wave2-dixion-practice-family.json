@@ -1,0 +1,382 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-practice-family",
+    "manufacturer": "Dixion",
+    "productName": "DIXION Practice anesthesia workstation family",
+    "model": "Practice family",
+    "category": "Наркозно-дыхательное оборудование"
+  },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [
+      "https://dixion.ru/subcategory/narkoznie-apparati.html",
+      "https://dixion.ru/upload/iblock/603/inby275dx6d9a77kanbbzv2fcjdpo1w2/Dixion_Practice_2025.pdf"
+    ],
+    "normalizedUrls": [
+      "https://dixion.ru/subcategory/narkoznie-apparati.html",
+      "https://dixion.ru/upload/iblock/603/inby275dx6d9a77kanbbzv2fcjdpo1w2/Dixion_Practice_2025.pdf"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “Dixion”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_81f7802acaa71f82ef309bee",
+      "productSlug": "wave2-dixion-practice-family",
+      "manufacturer": "Dixion",
+      "productName": "DIXION Practice anesthesia workstation family",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://dixion.ru/subcategory/narkoznie-apparati.html",
+      "title": "DIXION Practice official category page",
+      "snippet": "Family discovery entry covering the separately listed Practice 3000, 3100 and 3700 models; no configuration is promoted to a separate fact without model evidence.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Family discovery entry covering the separately listed Practice 3000, 3100 and 3700 models; no configuration is promoted to a separate fact without model evidence."
+      ]
+    },
+    {
+      "sourceId": "source_cf18585808bcea5f37a71466",
+      "productSlug": "wave2-dixion-practice-family",
+      "manufacturer": "Dixion",
+      "productName": "DIXION Practice anesthesia workstation family",
+      "sourceType": "manufacturer_document",
+      "url": "https://dixion.ru/upload/iblock/603/inby275dx6d9a77kanbbzv2fcjdpo1w2/Dixion_Practice_2025.pdf",
+      "title": "DIXION Practice 2025 official brochure",
+      "snippet": "Official current family catalogue; family-level evidence remains family-level.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "manufacturer-hosted document candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official current family catalogue; family-level evidence remains family-level."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_46a983cc0db23c644053bb75",
+      "sourceId": "source_81f7802acaa71f82ef309bee",
+      "productSlug": "wave2-dixion-practice-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/narkoznie-apparati.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_f3db827f14a16f4813bb31e4",
+      "sourceId": "source_81f7802acaa71f82ef309bee",
+      "productSlug": "wave2-dixion-practice-family",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/subcategory/narkoznie-apparati.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_b587b0607d33e77862c41212",
+      "sourceId": "source_cf18585808bcea5f37a71466",
+      "productSlug": "wave2-dixion-practice-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/upload/iblock/603/inby275dx6d9a77kanbbzv2fcjdpo1w2/Dixion_Practice_2025.pdf",
+      "title": "DIXION Practice 2025 official brochure",
+      "language": null,
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "source URL is itself a document candidate"
+      ]
+    },
+    {
+      "documentId": "document_7ca3b33621de3853450b6808",
+      "sourceId": "source_81f7802acaa71f82ef309bee",
+      "productSlug": "wave2-dixion-practice-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/narkoznie-apparati.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_8792a35851ac80ec684380ae",
+      "sourceId": "source_81f7802acaa71f82ef309bee",
+      "productSlug": "wave2-dixion-practice-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/narkoznie-apparati.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_81bf68efd21147b0bd851292",
+      "sourceId": "source_81f7802acaa71f82ef309bee",
+      "productSlug": "wave2-dixion-practice-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/narkoznie-apparati.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_8eb30f5f93a4d4805de0af1f",
+      "sourceId": "source_81f7802acaa71f82ef309bee",
+      "productSlug": "wave2-dixion-practice-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/narkoznie-apparati.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_774b657d53dcd8441d02bb8d",
+      "sourceId": "source_81f7802acaa71f82ef309bee",
+      "productSlug": "wave2-dixion-practice-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Manufacturer Brochure",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/narkoznie-apparati.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_7ca3b33621de3853450b6808",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_81f7802acaa71f82ef309bee",
+      "linkText": "Медицинское оборудование",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/narkoznie-apparati.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_8792a35851ac80ec684380ae",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_81f7802acaa71f82ef309bee",
+      "linkText": "Каталоги оборудования",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/narkoznie-apparati.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_81bf68efd21147b0bd851292",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_81f7802acaa71f82ef309bee",
+      "linkText": "Новинки оборудования",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/narkoznie-apparati.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_8eb30f5f93a4d4805de0af1f",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_81f7802acaa71f82ef309bee",
+      "linkText": "Скоро в продаже",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/narkoznie-apparati.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_774b657d53dcd8441d02bb8d",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Manufacturer Brochure",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_81f7802acaa71f82ef309bee",
+      "linkText": "",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/narkoznie-apparati.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_46a983cc0db23c644053bb75",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_81f7802acaa71f82ef309bee",
+      "linkText": "Скачать каталог в формате PDF",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/narkoznie-apparati.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_f3db827f14a16f4813bb31e4",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_81f7802acaa71f82ef309bee",
+      "linkText": "Скачать прайс-лист",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/narkoznie-apparati.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=7; classifiedDocuments={\"Brochure\":11,\"Unknown\":1}; confidenceDistribution={\"80\":9,\"100\":3}; duplicatesRemoved=5"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-dixion-practice-family",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-practice-family",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-practice-family",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 2,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 2,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=7; classifiedDocuments={\"Brochure\":11,\"Unknown\":1}; confidenceDistribution={\"80\":9,\"100\":3}; duplicatesRemoved=5",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

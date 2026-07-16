@@ -1,0 +1,207 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-practice-family",
+    "manufacturer": "Dixion",
+    "productName": "DIXION Practice anesthesia workstation family",
+    "model": "Practice family",
+    "category": "Наркозно-дыхательное оборудование"
+  },
+  "attemptedDownloads": [
+    {
+      "documentCandidateId": "document_46a983cc0db23c644053bb75",
+      "sourceId": "source_81f7802acaa71f82ef309bee",
+      "productSlug": "wave2-dixion-practice-family",
+      "title": "Скачать каталог в формате PDF",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "documentType": "brochure",
+      "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "sourceId": "source_81f7802acaa71f82ef309bee",
+      "productSlug": "wave2-dixion-practice-family",
+      "title": "Скачать прайс-лист",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "documentType": "unknown",
+      "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_b587b0607d33e77862c41212",
+      "sourceId": "source_cf18585808bcea5f37a71466",
+      "productSlug": "wave2-dixion-practice-family",
+      "title": "DIXION Practice 2025 official brochure",
+      "url": "https://dixion.ru/upload/iblock/603/inby275dx6d9a77kanbbzv2fcjdpo1w2/Dixion_Practice_2025.pdf",
+      "documentType": "brochure",
+      "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_7ca3b33621de3853450b6808",
+      "sourceId": "source_81f7802acaa71f82ef309bee",
+      "productSlug": "wave2-dixion-practice-family",
+      "title": "Медицинское оборудование",
+      "url": "https://dixion.ru/catalog/",
+      "documentType": "brochure",
+      "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_8792a35851ac80ec684380ae",
+      "sourceId": "source_81f7802acaa71f82ef309bee",
+      "productSlug": "wave2-dixion-practice-family",
+      "title": "Каталоги оборудования",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "documentType": "brochure",
+      "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_81bf68efd21147b0bd851292",
+      "sourceId": "source_81f7802acaa71f82ef309bee",
+      "productSlug": "wave2-dixion-practice-family",
+      "title": "Новинки оборудования",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "documentType": "brochure",
+      "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_8eb30f5f93a4d4805de0af1f",
+      "sourceId": "source_81f7802acaa71f82ef309bee",
+      "productSlug": "wave2-dixion-practice-family",
+      "title": "Скоро в продаже",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "documentType": "brochure",
+      "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_774b657d53dcd8441d02bb8d",
+      "sourceId": "source_81f7802acaa71f82ef309bee",
+      "productSlug": "wave2-dixion-practice-family",
+      "title": "Manufacturer Brochure",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "documentType": "brochure",
+      "trustTier": 1
+    }
+  ],
+  "downloadedArtifacts": [
+    {
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "documentType": "unknown",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "contentType": "application/pdf",
+      "byteSize": 178281,
+      "filePath": "data/research/artifacts/artifacts/sha256/1c/da/1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8.pdf"
+    },
+    {
+      "documentCandidateId": "document_b587b0607d33e77862c41212",
+      "sourceUrl": "https://dixion.ru/upload/iblock/603/inby275dx6d9a77kanbbzv2fcjdpo1w2/Dixion_Practice_2025.pdf",
+      "title": "DIXION Practice 2025 official brochure",
+      "documentType": "brochure",
+      "sha256": "54db6c3777c28c216ea359cc1d61eaa73c431e031d247a3c409b62ca9f00c31f",
+      "contentType": "application/pdf",
+      "byteSize": 344202,
+      "filePath": "data/research/artifacts/artifacts/sha256/54/db/54db6c3777c28c216ea359cc1d61eaa73c431e031d247a3c409b62ca9f00c31f.pdf"
+    }
+  ],
+  "failedDownloads": [
+    {
+      "documentCandidateId": "document_46a983cc0db23c644053bb75",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "reason": "terminated",
+      "retryable": false
+    },
+    {
+      "documentCandidateId": "document_7ca3b33621de3853450b6808",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "reason": "Rejected document content type: text/html",
+      "retryable": false
+    },
+    {
+      "documentCandidateId": "document_8792a35851ac80ec684380ae",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "reason": "Rejected document content type: text/html",
+      "retryable": false
+    },
+    {
+      "documentCandidateId": "document_81bf68efd21147b0bd851292",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "reason": "Rejected document content type: text/html",
+      "retryable": false
+    },
+    {
+      "documentCandidateId": "document_8eb30f5f93a4d4805de0af1f",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "reason": "Rejected document content type: text/html",
+      "retryable": false
+    },
+    {
+      "documentCandidateId": "document_774b657d53dcd8441d02bb8d",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Manufacturer Brochure",
+      "reason": "Rejected document content type: text/html",
+      "retryable": false
+    }
+  ],
+  "skippedDocuments": [],
+  "documentVersions": [
+    {
+      "versionId": "document_version_1c1b522662f4eb4a9524faea",
+      "documentCandidateId": "document_f3db827f14a16f4813bb31e4",
+      "sourceId": "source_81f7802acaa71f82ef309bee",
+      "productSlug": "wave2-dixion-practice-family",
+      "documentKey": "trusted-document:document_f3db827f14a16f4813bb31e4",
+      "documentType": "unknown",
+      "title": "Скачать прайс-лист",
+      "language": null,
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "contentType": "application/pdf",
+      "byteSize": 178281,
+      "filePath": "data/research/artifacts/artifacts/sha256/1c/da/1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_31cc1699d36a9b11df016e89",
+      "documentCandidateId": "document_b587b0607d33e77862c41212",
+      "sourceId": "source_cf18585808bcea5f37a71466",
+      "productSlug": "wave2-dixion-practice-family",
+      "documentKey": "trusted-document:document_b587b0607d33e77862c41212",
+      "documentType": "brochure",
+      "title": "DIXION Practice 2025 official brochure",
+      "language": null,
+      "sourceUrl": "https://dixion.ru/upload/iblock/603/inby275dx6d9a77kanbbzv2fcjdpo1w2/Dixion_Practice_2025.pdf",
+      "sha256": "54db6c3777c28c216ea359cc1d61eaa73c431e031d247a3c409b62ca9f00c31f",
+      "contentType": "application/pdf",
+      "byteSize": 344202,
+      "filePath": "data/research/artifacts/artifacts/sha256/54/db/54db6c3777c28c216ea359cc1d61eaa73c431e031d247a3c409b62ca9f00c31f.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=7; classifiedDocuments={\"Brochure\":11,\"Unknown\":1}; confidenceDistribution={\"80\":9,\"100\":3}; duplicatesRemoved=5",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}

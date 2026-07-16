@@ -1,0 +1,39 @@
+{
+  "product": {
+    "productSlug": "wave2-drager-infinity-delta",
+    "manufacturer": "Drager",
+    "productName": "Dräger Infinity Delta",
+    "model": "Infinity Delta",
+    "category": "Мониторы пациента"
+  },
+  "documentVersions": [],
+  "extractedFactCandidates": [],
+  "evidenceCandidates": [],
+  "candidateClaims": [],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry"
+    ],
+    "patternsMatched": {},
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ]
+    },
+    "coveragePercent": 0
+  },
+  "warnings": [
+    "Resolver fetch failed for https://www.draeger.com/en_uk/Products/Infinity-Delta: HTTP 404",
+    "Discovery creates candidates only; no verified claims or publication.",
+    "No DocumentCandidate records were available for download."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": false,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}

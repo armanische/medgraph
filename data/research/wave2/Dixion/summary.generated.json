@@ -1,20 +1,20 @@
 {
   "manufacturer": "Dixion",
   "generatedAt": "wave2-execution-v1",
-  "productsDiscovered": 10,
-  "officialSources": 1,
-  "documentsFound": 14,
-  "downloads": 9,
-  "artifacts": 9,
-  "candidateFacts": 23,
-  "reviewItems": 23,
-  "blockedProducts": 1,
+  "productsDiscovered": 15,
+  "officialSources": 28,
+  "documentsFound": 28,
+  "downloads": 18,
+  "artifacts": 18,
+  "candidateFacts": 35,
+  "reviewItems": 35,
+  "blockedProducts": 2,
   "errors": [],
   "warnings": [
     "Required document coverage is below Wave 2 target.",
     "Wave 2 execution creates reports only; no publication is performed."
   ],
-  "durationMs": 1436,
+  "durationMs": 1621,
   "retries": [],
   "stages": [
     {

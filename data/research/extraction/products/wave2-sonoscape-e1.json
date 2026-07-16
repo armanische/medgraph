@@ -1,0 +1,599 @@
+{
+  "product": {
+    "productSlug": "wave2-sonoscape-e1",
+    "manufacturer": "SonoScape",
+    "productName": "SonoScape E1",
+    "model": "E1",
+    "category": "УЗИ аппараты"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_c533d1ca7418eb84abc170d5",
+      "documentCandidateId": "document_d2eca55016783d78c0462beb",
+      "sourceId": "source_36df1f1a4ec16bf1cdb15396",
+      "productSlug": "wave2-sonoscape-e1",
+      "documentKey": "trusted-document:document_d2eca55016783d78c0462beb",
+      "documentType": "unknown",
+      "title": "Privacy Policy",
+      "language": null,
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "sha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c",
+      "contentType": "application/pdf",
+      "byteSize": 407279,
+      "filePath": "data/research/artifacts/artifacts/sha256/25/9a/259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_17d792d1cb5389a05ddc5069",
+      "documentCandidateId": "document_513f6f0e85006ceebfe8520e",
+      "sourceId": "source_2bffc27c4e9fb62ab26c8066",
+      "productSlug": "wave2-sonoscape-e1",
+      "documentKey": "trusted-document:document_513f6f0e85006ceebfe8520e",
+      "documentType": "brochure",
+      "title": "SonoScape E1 official brochure",
+      "language": null,
+      "sourceUrl": "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf",
+      "sha256": "4a132cbb6dea3ff6f712b43371c753ea94e379a60595a31d9e5aae6314497761",
+      "contentType": "application/pdf",
+      "byteSize": 703188,
+      "filePath": "data/research/artifacts/artifacts/sha256/4a/13/4a132cbb6dea3ff6f712b43371c753ea94e379a60595a31d9e5aae6314497761.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_88a6fe344578a6bf453863fe",
+      "productSlug": "wave2-sonoscape-e1",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Privacy Policy",
+      "unit": null,
+      "rawText": "Document title: Privacy Policy",
+      "documentVersionId": "document_version_c533d1ca7418eb84abc170d5",
+      "documentCandidateId": "document_d2eca55016783d78c0462beb",
+      "documentSha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c",
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_ab55d5e5d120ac95dc59757f",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_3f5b93a05572665a8a8a4fcc",
+      "productSlug": "wave2-sonoscape-e1",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_c533d1ca7418eb84abc170d5",
+      "documentCandidateId": "document_d2eca55016783d78c0462beb",
+      "documentSha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c",
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_6b448571d16558e8af3ad406",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_5b2b8230d99dc3f9fbde5a55",
+      "productSlug": "wave2-sonoscape-e1",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "SonoScape E1 official brochure",
+      "unit": null,
+      "rawText": "Document title: SonoScape E1 official brochure",
+      "documentVersionId": "document_version_17d792d1cb5389a05ddc5069",
+      "documentCandidateId": "document_513f6f0e85006ceebfe8520e",
+      "documentSha256": "4a132cbb6dea3ff6f712b43371c753ea94e379a60595a31d9e5aae6314497761",
+      "sourceUrl": "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_1306b0a3eb7cf12311e5a582",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_ab5625d7f82a9fb9be456876",
+      "productSlug": "wave2-sonoscape-e1",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_17d792d1cb5389a05ddc5069",
+      "documentCandidateId": "document_513f6f0e85006ceebfe8520e",
+      "documentSha256": "4a132cbb6dea3ff6f712b43371c753ea94e379a60595a31d9e5aae6314497761",
+      "sourceUrl": "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_8b070159862e58965c3f9ef5",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_9ae9e8276dc3f86d79bc35c6",
+      "productSlug": "wave2-sonoscape-e1",
+      "factType": "product.operatingModes",
+      "label": "Doppler",
+      "value": "Doppler",
+      "unit": null,
+      "rawText": "Doppler",
+      "documentVersionId": "document_version_17d792d1cb5389a05ddc5069",
+      "documentCandidateId": "document_513f6f0e85006ceebfe8520e",
+      "documentSha256": "4a132cbb6dea3ff6f712b43371c753ea94e379a60595a31d9e5aae6314497761",
+      "sourceUrl": "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 34
+      },
+      "evidenceCandidateId": "evidence_5c85a22c6288c6c115de40ca",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ultrasound",
+        "matchedPattern:doppler",
+        "matchedSynonym:Doppler",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_3bb5e4d221cc9f22606825ab",
+      "productSlug": "wave2-sonoscape-e1",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Weight",
+      "unit": null,
+      "rawText": "Weight and Compact",
+      "documentVersionId": "document_version_17d792d1cb5389a05ddc5069",
+      "documentCandidateId": "document_513f6f0e85006ceebfe8520e",
+      "documentSha256": "4a132cbb6dea3ff6f712b43371c753ea94e379a60595a31d9e5aae6314497761",
+      "sourceUrl": "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 20
+      },
+      "evidenceCandidateId": "evidence_d65a5912992e64cf0ad70f8e",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_0a33a0e6cd8ee85b25b69c26",
+      "productSlug": "wave2-sonoscape-e1",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Battery",
+      "unit": null,
+      "rawText": "Battery for 90mins",
+      "documentVersionId": "document_version_17d792d1cb5389a05ddc5069",
+      "documentCandidateId": "document_513f6f0e85006ceebfe8520e",
+      "documentSha256": "4a132cbb6dea3ff6f712b43371c753ea94e379a60595a31d9e5aae6314497761",
+      "sourceUrl": "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 24
+      },
+      "evidenceCandidateId": "evidence_7c12d39e51a78fb7eec18dd1",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_ab55d5e5d120ac95dc59757f",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_c533d1ca7418eb84abc170d5",
+      "documentCandidateId": "document_d2eca55016783d78c0462beb",
+      "sha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c",
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Privacy Policy",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_6b448571d16558e8af3ad406",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_c533d1ca7418eb84abc170d5",
+      "documentCandidateId": "document_d2eca55016783d78c0462beb",
+      "sha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c",
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_1306b0a3eb7cf12311e5a582",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_17d792d1cb5389a05ddc5069",
+      "documentCandidateId": "document_513f6f0e85006ceebfe8520e",
+      "sha256": "4a132cbb6dea3ff6f712b43371c753ea94e379a60595a31d9e5aae6314497761",
+      "sourceUrl": "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: SonoScape E1 official brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_8b070159862e58965c3f9ef5",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_17d792d1cb5389a05ddc5069",
+      "documentCandidateId": "document_513f6f0e85006ceebfe8520e",
+      "sha256": "4a132cbb6dea3ff6f712b43371c753ea94e379a60595a31d9e5aae6314497761",
+      "sourceUrl": "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_5c85a22c6288c6c115de40ca",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_17d792d1cb5389a05ddc5069",
+      "documentCandidateId": "document_513f6f0e85006ceebfe8520e",
+      "sha256": "4a132cbb6dea3ff6f712b43371c753ea94e379a60595a31d9e5aae6314497761",
+      "sourceUrl": "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 34
+      },
+      "quotedText": "Doppler",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_d65a5912992e64cf0ad70f8e",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_17d792d1cb5389a05ddc5069",
+      "documentCandidateId": "document_513f6f0e85006ceebfe8520e",
+      "sha256": "4a132cbb6dea3ff6f712b43371c753ea94e379a60595a31d9e5aae6314497761",
+      "sourceUrl": "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 20
+      },
+      "quotedText": "Weight and Compact",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_7c12d39e51a78fb7eec18dd1",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_17d792d1cb5389a05ddc5069",
+      "documentCandidateId": "document_513f6f0e85006ceebfe8520e",
+      "sha256": "4a132cbb6dea3ff6f712b43371c753ea94e379a60595a31d9e5aae6314497761",
+      "sourceUrl": "https://www.sonoscape.de/uploadfile/2023/0427/20230427020028981.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 24
+      },
+      "quotedText": "Battery for 90mins",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_7b20013a47736a5489b3d73a",
+      "productSlug": "wave2-sonoscape-e1",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Privacy Policy",
+        "unit": null
+      },
+      "rawText": "Document title: Privacy Policy",
+      "evidenceCandidateIds": [
+        "evidence_ab55d5e5d120ac95dc59757f"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_cf2a4908a33829f5321b3aec",
+      "productSlug": "wave2-sonoscape-e1",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_6b448571d16558e8af3ad406"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_e80e80681f4bc6a5557d4751",
+      "productSlug": "wave2-sonoscape-e1",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "SonoScape E1 official brochure",
+        "unit": null
+      },
+      "rawText": "Document title: SonoScape E1 official brochure",
+      "evidenceCandidateIds": [
+        "evidence_1306b0a3eb7cf12311e5a582"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_bdf9b07fb1d80f12dc5527be",
+      "productSlug": "wave2-sonoscape-e1",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_8b070159862e58965c3f9ef5"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_a97a92306bc0a676dcd39ee8",
+      "productSlug": "wave2-sonoscape-e1",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Doppler",
+        "unit": null
+      },
+      "rawText": "Doppler",
+      "evidenceCandidateIds": [
+        "evidence_5c85a22c6288c6c115de40ca"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_b5bc81cf358dadd22bf850fa",
+      "productSlug": "wave2-sonoscape-e1",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "rawText": "Weight and Compact",
+      "evidenceCandidateIds": [
+        "evidence_d65a5912992e64cf0ad70f8e"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_f9bfea9e29fc8dd2434a30bc",
+      "productSlug": "wave2-sonoscape-e1",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Battery",
+        "unit": null
+      },
+      "rawText": "Battery for 90mins",
+      "evidenceCandidateIds": [
+        "evidence_7c12d39e51a78fb7eec18dd1"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "ultrasound"
+    ],
+    "patternsMatched": {
+      "ultrasound.doppler": 1
+    },
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "ultrasound": [
+        "3d_4d",
+        "channels",
+        "elastography",
+        "probe_ports"
+      ]
+    },
+    "coveragePercent": 10
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected offsite document URL: https://www.sonoscape.com.cn/",
+    "Resolver rejected offsite document URL: https://www.sonoscape.de/",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected unsafe document URL: mailto:market@sonoscape.net",
+    "Resolver rejected offsite document URL: https://www.facebook.com/sonoscapemedicalcorp",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/sonoscape_co._ltd?trk=company_logo",
+    "Resolver rejected offsite document URL: https://beian.miit.gov.cn/",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "resolver=default; attempts=1; matchedLinks=1; classifiedDocuments={\"Unknown\":1}; confidenceDistribution={\"100\":1}; duplicatesRemoved=0",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

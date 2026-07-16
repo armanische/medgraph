@@ -1,0 +1,221 @@
+{
+  "product": {
+    "productSlug": "wave2-sonoscape-hd-350",
+    "manufacturer": "SonoScape",
+    "productName": "SonoScape HD-350",
+    "model": "HD-350",
+    "category": "Видеоэндоскопические системы"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_290953cc7ff519da561c98ed",
+      "documentCandidateId": "document_15d88734d063921c52cefb7d",
+      "sourceId": "source_fc9b68ac4159d0a3588aab7d",
+      "productSlug": "wave2-sonoscape-hd-350",
+      "documentKey": "trusted-document:document_15d88734d063921c52cefb7d",
+      "documentType": "unknown",
+      "title": "Privacy Policy",
+      "language": null,
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "sha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c",
+      "contentType": "application/pdf",
+      "byteSize": 407279,
+      "filePath": "data/research/artifacts/artifacts/sha256/25/9a/259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_56cac8d93b53dc0334d8de7a",
+      "productSlug": "wave2-sonoscape-hd-350",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Privacy Policy",
+      "unit": null,
+      "rawText": "Document title: Privacy Policy",
+      "documentVersionId": "document_version_290953cc7ff519da561c98ed",
+      "documentCandidateId": "document_15d88734d063921c52cefb7d",
+      "documentSha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c",
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_3e7527f1264d61bee4011a61",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_6f081d0c8e915a2bb9c2c61c",
+      "productSlug": "wave2-sonoscape-hd-350",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_290953cc7ff519da561c98ed",
+      "documentCandidateId": "document_15d88734d063921c52cefb7d",
+      "documentSha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c",
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_8a81f31c8b294e929b62783e",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_3e7527f1264d61bee4011a61",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_290953cc7ff519da561c98ed",
+      "documentCandidateId": "document_15d88734d063921c52cefb7d",
+      "sha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c",
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Privacy Policy",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_8a81f31c8b294e929b62783e",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_290953cc7ff519da561c98ed",
+      "documentCandidateId": "document_15d88734d063921c52cefb7d",
+      "sha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c",
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_cf627c405481e921dcbd5f76",
+      "productSlug": "wave2-sonoscape-hd-350",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Privacy Policy",
+        "unit": null
+      },
+      "rawText": "Document title: Privacy Policy",
+      "evidenceCandidateIds": [
+        "evidence_3e7527f1264d61bee4011a61"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_f10e0dc024c8ff289f3bbb4d",
+      "productSlug": "wave2-sonoscape-hd-350",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_8a81f31c8b294e929b62783e"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "endoscopy"
+    ],
+    "patternsMatched": {},
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "endoscopy": [
+        "diameter",
+        "length",
+        "single_use",
+        "sterile",
+        "working_channel"
+      ]
+    },
+    "coveragePercent": 0
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected offsite document URL: https://www.sonoscape.com.cn/",
+    "Resolver rejected offsite document URL: https://www.sonoscape.de/",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected unsafe document URL: mailto:market@sonoscape.net",
+    "Resolver rejected offsite document URL: https://www.facebook.com/sonoscapemedicalcorp",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/sonoscape_co._ltd?trk=company_logo",
+    "Resolver rejected offsite document URL: https://beian.miit.gov.cn/",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "resolver=default; attempts=1; matchedLinks=1; classifiedDocuments={\"Unknown\":1}; confidenceDistribution={\"100\":1}; duplicatesRemoved=0",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

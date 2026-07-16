@@ -1,0 +1,19 @@
+{
+  "product": {
+    "productSlug": "wave2-ge-venue-fit",
+    "manufacturer": "GE HealthCare",
+    "productName": "GE HealthCare Venue Fit",
+    "model": "Venue Fit",
+    "category": "УЗИ аппараты"
+  },
+  "reviewItems": [],
+  "groupedByClaimType": {},
+  "sourceDocumentSummary": [],
+  "missingEvidence": [],
+  "recommendedReviewerAction": "No reviewable candidate claims yet. Collect more evidence before review.",
+  "warnings": [
+    "Resolver fetch failed for https://www.gehealthcare.com/en-us/products/ultrasound/point-of-care-ultrasound/venue/venuefit: HTTP 404",
+    "Discovery creates candidates only; no verified claims or publication.",
+    "No DocumentCandidate records were available for download."
+  ]
+}

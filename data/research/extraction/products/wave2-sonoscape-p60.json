@@ -1,0 +1,382 @@
+{
+  "product": {
+    "productSlug": "wave2-sonoscape-p60",
+    "manufacturer": "SonoScape",
+    "productName": "SonoScape P60",
+    "model": "P60",
+    "category": "УЗИ аппараты"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_b9c91207bb535e46a7a9f106",
+      "documentCandidateId": "document_f34a47892067b8bbb5dc6b73",
+      "sourceId": "source_1a3fcc0f5da43ccef23d6704",
+      "productSlug": "wave2-sonoscape-p60",
+      "documentKey": "trusted-document:document_f34a47892067b8bbb5dc6b73",
+      "documentType": "unknown",
+      "title": "Privacy Policy",
+      "language": null,
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "sha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c",
+      "contentType": "application/pdf",
+      "byteSize": 407279,
+      "filePath": "data/research/artifacts/artifacts/sha256/25/9a/259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_039e2407c0cb4c7f51f97e49",
+      "documentCandidateId": "document_d22d75b0f362d1f8072c6c8b",
+      "sourceId": "source_191b778d3c07a210c0716178",
+      "productSlug": "wave2-sonoscape-p60",
+      "documentKey": "trusted-document:document_d22d75b0f362d1f8072c6c8b",
+      "documentType": "brochure",
+      "title": "SonoScape P60 official brochure",
+      "language": null,
+      "sourceUrl": "https://www.sonoscape.de/uploadfile/2023/0427/20230427103011986.pdf",
+      "sha256": "f7ed13c1b00de7bc0d8d4bff51946c42b48d705268ac463aa2e9268747653822",
+      "contentType": "application/pdf",
+      "byteSize": 3924687,
+      "filePath": "data/research/artifacts/artifacts/sha256/f7/ed/f7ed13c1b00de7bc0d8d4bff51946c42b48d705268ac463aa2e9268747653822.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_e4c26882323d5b39ae10aefd",
+      "productSlug": "wave2-sonoscape-p60",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Privacy Policy",
+      "unit": null,
+      "rawText": "Document title: Privacy Policy",
+      "documentVersionId": "document_version_b9c91207bb535e46a7a9f106",
+      "documentCandidateId": "document_f34a47892067b8bbb5dc6b73",
+      "documentSha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c",
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_588cfd90d1338d7c0b3f9030",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_9a0f1eae2fc6ab586c0e8736",
+      "productSlug": "wave2-sonoscape-p60",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_b9c91207bb535e46a7a9f106",
+      "documentCandidateId": "document_f34a47892067b8bbb5dc6b73",
+      "documentSha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c",
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_1ab1e13843ce572dd471d6fd",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_d78df75534351a21cc98daa0",
+      "productSlug": "wave2-sonoscape-p60",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "SonoScape P60 official brochure",
+      "unit": null,
+      "rawText": "Document title: SonoScape P60 official brochure",
+      "documentVersionId": "document_version_039e2407c0cb4c7f51f97e49",
+      "documentCandidateId": "document_d22d75b0f362d1f8072c6c8b",
+      "documentSha256": "f7ed13c1b00de7bc0d8d4bff51946c42b48d705268ac463aa2e9268747653822",
+      "sourceUrl": "https://www.sonoscape.de/uploadfile/2023/0427/20230427103011986.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_98082d645f7da45faa22143b",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_1bcf4255e80899bbb12da405",
+      "productSlug": "wave2-sonoscape-p60",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_039e2407c0cb4c7f51f97e49",
+      "documentCandidateId": "document_d22d75b0f362d1f8072c6c8b",
+      "documentSha256": "f7ed13c1b00de7bc0d8d4bff51946c42b48d705268ac463aa2e9268747653822",
+      "sourceUrl": "https://www.sonoscape.de/uploadfile/2023/0427/20230427103011986.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_abf9f4c06fb35c3a0288b4df",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_588cfd90d1338d7c0b3f9030",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_b9c91207bb535e46a7a9f106",
+      "documentCandidateId": "document_f34a47892067b8bbb5dc6b73",
+      "sha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c",
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Privacy Policy",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_1ab1e13843ce572dd471d6fd",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_b9c91207bb535e46a7a9f106",
+      "documentCandidateId": "document_f34a47892067b8bbb5dc6b73",
+      "sha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c",
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_98082d645f7da45faa22143b",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_039e2407c0cb4c7f51f97e49",
+      "documentCandidateId": "document_d22d75b0f362d1f8072c6c8b",
+      "sha256": "f7ed13c1b00de7bc0d8d4bff51946c42b48d705268ac463aa2e9268747653822",
+      "sourceUrl": "https://www.sonoscape.de/uploadfile/2023/0427/20230427103011986.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: SonoScape P60 official brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_abf9f4c06fb35c3a0288b4df",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_039e2407c0cb4c7f51f97e49",
+      "documentCandidateId": "document_d22d75b0f362d1f8072c6c8b",
+      "sha256": "f7ed13c1b00de7bc0d8d4bff51946c42b48d705268ac463aa2e9268747653822",
+      "sourceUrl": "https://www.sonoscape.de/uploadfile/2023/0427/20230427103011986.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_2ffaf74570e0ffa4038d3cd8",
+      "productSlug": "wave2-sonoscape-p60",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Privacy Policy",
+        "unit": null
+      },
+      "rawText": "Document title: Privacy Policy",
+      "evidenceCandidateIds": [
+        "evidence_588cfd90d1338d7c0b3f9030"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_7264f99aea18d80ebfce4fd6",
+      "productSlug": "wave2-sonoscape-p60",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_1ab1e13843ce572dd471d6fd"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_3c2e05e7975d138091bd6111",
+      "productSlug": "wave2-sonoscape-p60",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "SonoScape P60 official brochure",
+        "unit": null
+      },
+      "rawText": "Document title: SonoScape P60 official brochure",
+      "evidenceCandidateIds": [
+        "evidence_98082d645f7da45faa22143b"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_57755cedf63e237bf696ee19",
+      "productSlug": "wave2-sonoscape-p60",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_abf9f4c06fb35c3a0288b4df"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "ultrasound"
+    ],
+    "patternsMatched": {},
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "ultrasound": [
+        "3d_4d",
+        "channels",
+        "doppler",
+        "elastography",
+        "probe_ports"
+      ]
+    },
+    "coveragePercent": 0
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected offsite document URL: https://www.sonoscape.com.cn/",
+    "Resolver rejected offsite document URL: https://www.sonoscape.de/",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected unsafe document URL: mailto:market@sonoscape.net",
+    "Resolver rejected offsite document URL: https://www.facebook.com/sonoscapemedicalcorp",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/sonoscape_co._ltd?trk=company_logo",
+    "Resolver rejected offsite document URL: https://beian.miit.gov.cn/",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "resolver=default; attempts=1; matchedLinks=1; classifiedDocuments={\"Unknown\":1}; confidenceDistribution={\"100\":1}; duplicatesRemoved=0",
+    "Discovery creates candidates only; no verified claims or publication.",
+    "No extractable text was found for SonoScape P60 official brochure."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

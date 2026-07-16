@@ -1,0 +1,1024 @@
+{
+  "product": {
+    "productSlug": "wave2-ge-venue-go",
+    "manufacturer": "GE HealthCare",
+    "productName": "GE HealthCare Venue Go",
+    "model": "Venue Go",
+    "category": "УЗИ аппараты"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_fdc1ef254a694775575eff77",
+      "productSlug": "wave2-ge-venue-go",
+      "productTitle": "GE HealthCare Venue Go",
+      "claimCandidateId": "claim_98ca4ce1cbb5370ca4556dbf",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "PDF resource from page metadata",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_5117178b2cd6c48c1f6ca1a6"
+      ],
+      "documentVersionIds": [
+        "document_version_c437d7a2d894b598651ffaeb"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VENUE-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_08f252c4681e700af0decf56",
+      "productSlug": "wave2-ge-venue-go",
+      "productTitle": "GE HealthCare Venue Go",
+      "claimCandidateId": "claim_8e33502d60c666514c66f123",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_b57b6dd14a6723f3a56caa70"
+      ],
+      "documentVersionIds": [
+        "document_version_c437d7a2d894b598651ffaeb"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VENUE-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_dceb6a2bbe8ed0b64dd9cd38",
+      "productSlug": "wave2-ge-venue-go",
+      "productTitle": "GE HealthCare Venue Go",
+      "claimCandidateId": "claim_187bfa1a5e78c8b60cb593e4",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_069abea52b93bdf51fafdf81"
+      ],
+      "documentVersionIds": [
+        "document_version_c437d7a2d894b598651ffaeb"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VENUE-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_01ddf5490d017116b09bb088",
+      "productSlug": "wave2-ge-venue-go",
+      "productTitle": "GE HealthCare Venue Go",
+      "claimCandidateId": "claim_0f7686666f39be2ad0b222de",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "PDF resource from page metadata",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_0128daa6c3088bcb9ef4db77"
+      ],
+      "documentVersionIds": [
+        "document_version_203933733ed869443e0d527b"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VENUE-GO-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_dd2abbad9a79a149ec6e74ed",
+      "productSlug": "wave2-ge-venue-go",
+      "productTitle": "GE HealthCare Venue Go",
+      "claimCandidateId": "claim_f963a823c9b5f4834efbd307",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_86982d9ad852c290a5c4131c"
+      ],
+      "documentVersionIds": [
+        "document_version_203933733ed869443e0d527b"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VENUE-GO-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5654218a8d8a29e384c02ce6",
+      "productSlug": "wave2-ge-venue-go",
+      "productTitle": "GE HealthCare Venue Go",
+      "claimCandidateId": "claim_a11571f70e7ea64d93a5eb28",
+      "suggestedClaimType": "product.weight",
+      "valuePayload": {
+        "value": "10.5",
+        "unit": "kg"
+      },
+      "evidenceCandidateIds": [
+        "evidence_1e0db058ca940c34c93ba746"
+      ],
+      "documentVersionIds": [
+        "document_version_203933733ed869443e0d527b"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VENUE-GO-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_44085facae3d29d7829d4a08",
+      "productSlug": "wave2-ge-venue-go",
+      "productTitle": "GE HealthCare Venue Go",
+      "claimCandidateId": "claim_7feec78a4e6d7c8e071d4a67",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_1f6e0997f4b7ec0e42107c9f"
+      ],
+      "documentVersionIds": [
+        "document_version_203933733ed869443e0d527b"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VENUE-GO-ds-en.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_e7aa577c763a7967d23466ac",
+      "productSlug": "wave2-ge-venue-go",
+      "productTitle": "GE HealthCare Venue Go",
+      "claimCandidateId": "claim_47f6e62bb66fba2b2e4436d8",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Venue Go brochure&lt;/p> \"}' data-analytics-event=\"linkTracking\">Download Brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_3cbad625262ea8fbd4f9d461"
+      ],
+      "documentVersionIds": [
+        "document_version_0a555e42282550f0a8d83f3b"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/venue/brochure-venue-go-pocus-r5-jb29264xx.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_d3cf35a15e6cd4f33dd4a050",
+      "productSlug": "wave2-ge-venue-go",
+      "productTitle": "GE HealthCare Venue Go",
+      "claimCandidateId": "claim_61f677d8d99f26e5092c72d1",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_96c0c0ef7c4f0fd1a6f83725"
+      ],
+      "documentVersionIds": [
+        "document_version_0a555e42282550f0a8d83f3b"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/venue/brochure-venue-go-pocus-r5-jb29264xx.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_6094e0084e1e6ec1b2f8dd75",
+      "productSlug": "wave2-ge-venue-go",
+      "productTitle": "GE HealthCare Venue Go",
+      "claimCandidateId": "claim_9084832da9e43941d6c7ca3f",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "doppler",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c628ef9f192b05b74658436a"
+      ],
+      "documentVersionIds": [
+        "document_version_0a555e42282550f0a8d83f3b"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/venue/brochure-venue-go-pocus-r5-jb29264xx.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_2e10d3f89f1dd1c57716c39e",
+      "productSlug": "wave2-ge-venue-go",
+      "productTitle": "GE HealthCare Venue Go",
+      "claimCandidateId": "claim_ddb560dbe4184cc830087c8a",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_7a2585a5f142c4a629b3f856"
+      ],
+      "documentVersionIds": [
+        "document_version_0a555e42282550f0a8d83f3b"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/venue/brochure-venue-go-pocus-r5-jb29264xx.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_e631df488481f9013d78e4a2",
+      "productSlug": "wave2-ge-venue-go",
+      "productTitle": "GE HealthCare Venue Go",
+      "claimCandidateId": "claim_755f95596f37118e5deb1d80",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_27cffd064b7d4fbccd429723"
+      ],
+      "documentVersionIds": [
+        "document_version_0a555e42282550f0a8d83f3b"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/venue/brochure-venue-go-pocus-r5-jb29264xx.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_e294ab5011e1fc1d3209c992",
+      "productSlug": "wave2-ge-venue-go",
+      "productTitle": "GE HealthCare Venue Go",
+      "claimCandidateId": "claim_340e8991bc51c38226f69560",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_e2ca6af96e1f6f93fcc418dd"
+      ],
+      "documentVersionIds": [
+        "document_version_0a555e42282550f0a8d83f3b"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/venue/brochure-venue-go-pocus-r5-jb29264xx.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b0728fba3be2580aa8eaf275",
+      "productSlug": "wave2-ge-venue-go",
+      "productTitle": "GE HealthCare Venue Go",
+      "claimCandidateId": "claim_5c5407cb8aa51ef710b938a1",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "compatibility",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_e4fe66e4797b23827aa7b987"
+      ],
+      "documentVersionIds": [
+        "document_version_0a555e42282550f0a8d83f3b"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/venue/brochure-venue-go-pocus-r5-jb29264xx.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_fdc1ef254a694775575eff77",
+        "productSlug": "wave2-ge-venue-go",
+        "productTitle": "GE HealthCare Venue Go",
+        "claimCandidateId": "claim_98ca4ce1cbb5370ca4556dbf",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "PDF resource from page metadata",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_5117178b2cd6c48c1f6ca1a6"
+        ],
+        "documentVersionIds": [
+          "document_version_c437d7a2d894b598651ffaeb"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VENUE-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_01ddf5490d017116b09bb088",
+        "productSlug": "wave2-ge-venue-go",
+        "productTitle": "GE HealthCare Venue Go",
+        "claimCandidateId": "claim_0f7686666f39be2ad0b222de",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "PDF resource from page metadata",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_0128daa6c3088bcb9ef4db77"
+        ],
+        "documentVersionIds": [
+          "document_version_203933733ed869443e0d527b"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VENUE-GO-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_e7aa577c763a7967d23466ac",
+        "productSlug": "wave2-ge-venue-go",
+        "productTitle": "GE HealthCare Venue Go",
+        "claimCandidateId": "claim_47f6e62bb66fba2b2e4436d8",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Venue Go brochure&lt;/p> \"}' data-analytics-event=\"linkTracking\">Download Brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_3cbad625262ea8fbd4f9d461"
+        ],
+        "documentVersionIds": [
+          "document_version_0a555e42282550f0a8d83f3b"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/venue/brochure-venue-go-pocus-r5-jb29264xx.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_08f252c4681e700af0decf56",
+        "productSlug": "wave2-ge-venue-go",
+        "productTitle": "GE HealthCare Venue Go",
+        "claimCandidateId": "claim_8e33502d60c666514c66f123",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_b57b6dd14a6723f3a56caa70"
+        ],
+        "documentVersionIds": [
+          "document_version_c437d7a2d894b598651ffaeb"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VENUE-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_dd2abbad9a79a149ec6e74ed",
+        "productSlug": "wave2-ge-venue-go",
+        "productTitle": "GE HealthCare Venue Go",
+        "claimCandidateId": "claim_f963a823c9b5f4834efbd307",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_86982d9ad852c290a5c4131c"
+        ],
+        "documentVersionIds": [
+          "document_version_203933733ed869443e0d527b"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VENUE-GO-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_d3cf35a15e6cd4f33dd4a050",
+        "productSlug": "wave2-ge-venue-go",
+        "productTitle": "GE HealthCare Venue Go",
+        "claimCandidateId": "claim_61f677d8d99f26e5092c72d1",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "brochure",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_96c0c0ef7c4f0fd1a6f83725"
+        ],
+        "documentVersionIds": [
+          "document_version_0a555e42282550f0a8d83f3b"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/venue/brochure-venue-go-pocus-r5-jb29264xx.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "technical.term": [
+      {
+        "reviewItemId": "review_item_dceb6a2bbe8ed0b64dd9cd38",
+        "productSlug": "wave2-ge-venue-go",
+        "productTitle": "GE HealthCare Venue Go",
+        "claimCandidateId": "claim_187bfa1a5e78c8b60cb593e4",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_069abea52b93bdf51fafdf81"
+        ],
+        "documentVersionIds": [
+          "document_version_c437d7a2d894b598651ffaeb"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VENUE-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_44085facae3d29d7829d4a08",
+        "productSlug": "wave2-ge-venue-go",
+        "productTitle": "GE HealthCare Venue Go",
+        "claimCandidateId": "claim_7feec78a4e6d7c8e071d4a67",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_1f6e0997f4b7ec0e42107c9f"
+        ],
+        "documentVersionIds": [
+          "document_version_203933733ed869443e0d527b"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VENUE-GO-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_2e10d3f89f1dd1c57716c39e",
+        "productSlug": "wave2-ge-venue-go",
+        "productTitle": "GE HealthCare Venue Go",
+        "claimCandidateId": "claim_ddb560dbe4184cc830087c8a",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_7a2585a5f142c4a629b3f856"
+        ],
+        "documentVersionIds": [
+          "document_version_0a555e42282550f0a8d83f3b"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/venue/brochure-venue-go-pocus-r5-jb29264xx.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_e631df488481f9013d78e4a2",
+        "productSlug": "wave2-ge-venue-go",
+        "productTitle": "GE HealthCare Venue Go",
+        "claimCandidateId": "claim_755f95596f37118e5deb1d80",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_27cffd064b7d4fbccd429723"
+        ],
+        "documentVersionIds": [
+          "document_version_0a555e42282550f0a8d83f3b"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/venue/brochure-venue-go-pocus-r5-jb29264xx.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_e294ab5011e1fc1d3209c992",
+        "productSlug": "wave2-ge-venue-go",
+        "productTitle": "GE HealthCare Venue Go",
+        "claimCandidateId": "claim_340e8991bc51c38226f69560",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_e2ca6af96e1f6f93fcc418dd"
+        ],
+        "documentVersionIds": [
+          "document_version_0a555e42282550f0a8d83f3b"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/venue/brochure-venue-go-pocus-r5-jb29264xx.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_b0728fba3be2580aa8eaf275",
+        "productSlug": "wave2-ge-venue-go",
+        "productTitle": "GE HealthCare Venue Go",
+        "claimCandidateId": "claim_5c5407cb8aa51ef710b938a1",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "compatibility",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_e4fe66e4797b23827aa7b987"
+        ],
+        "documentVersionIds": [
+          "document_version_0a555e42282550f0a8d83f3b"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/venue/brochure-venue-go-pocus-r5-jb29264xx.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.weight": [
+      {
+        "reviewItemId": "review_item_5654218a8d8a29e384c02ce6",
+        "productSlug": "wave2-ge-venue-go",
+        "productTitle": "GE HealthCare Venue Go",
+        "claimCandidateId": "claim_a11571f70e7ea64d93a5eb28",
+        "suggestedClaimType": "product.weight",
+        "valuePayload": {
+          "value": "10.5",
+          "unit": "kg"
+        },
+        "evidenceCandidateIds": [
+          "evidence_1e0db058ca940c34c93ba746"
+        ],
+        "documentVersionIds": [
+          "document_version_203933733ed869443e0d527b"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VENUE-GO-ds-en.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.operatingModes": [
+      {
+        "reviewItemId": "review_item_6094e0084e1e6ec1b2f8dd75",
+        "productSlug": "wave2-ge-venue-go",
+        "productTitle": "GE HealthCare Venue Go",
+        "claimCandidateId": "claim_9084832da9e43941d6c7ca3f",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "doppler",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c628ef9f192b05b74658436a"
+        ],
+        "documentVersionIds": [
+          "document_version_0a555e42282550f0a8d83f3b"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/venue/brochure-venue-go-pocus-r5-jb29264xx.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_c437d7a2d894b598651ffaeb",
+      "documentType": "unknown",
+      "title": "PDF resource from page metadata",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VENUE-ds-en.pdf",
+      "sha256": "466f0e904e14a683eff8420d8df8997af5a6ab645ae4f36da80ab6c91d3c4877"
+    },
+    {
+      "documentVersionId": "document_version_203933733ed869443e0d527b",
+      "documentType": "unknown",
+      "title": "PDF resource from page metadata",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/global/support/site-planning/documents/US-Site-Preparation-VENUE-GO-ds-en.pdf",
+      "sha256": "4cc692a6a6849496325fe4aadb2661095b12d01f39546fefe4943547367864f0"
+    },
+    {
+      "documentVersionId": "document_version_0a555e42282550f0a8d83f3b",
+      "documentType": "brochure",
+      "title": "Venue Go brochure&lt;/p> \"}' data-analytics-event=\"linkTracking\">Download Brochure",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/us/files/products/ultrasound/venue/brochure-venue-go-pocus-r5-jb29264xx.pdf",
+      "sha256": "1d905f0b18ab9e5699bca787f73706f134e5613053937bc190ff3a52bde07119"
+    }
+  ],
+  "missingEvidence": [],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver adapter used: ge",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://www.kkt-chillersusa.com/GE/",
+    "Resolver rejected offsite document URL: https://www.kkt-chillersusa.com/GE/",
+    "Resolver rejected offsite document URL: https://rise.articulate.com/share/w0JzZ2DRMAvXe_z7ERMVslfsEDn696hZ",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://hls.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://cleaning.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://services.gehealthcare.com/gehcstorefront/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://investor.gehealthcare.com/",
+    "Resolver rejected offsite document URL: https://careers.gehealthcare.com/global/en",
+    "Resolver rejected offsite document URL: https://www.facebook.com/GEHealthcare/",
+    "Resolver rejected offsite document URL: https://www.instagram.com/gehealthcare",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/gehealthcare/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/gehealthcare",
+    "resolver=ge; attempts=7; matchedLinks=884; classifiedDocuments={\"Unknown\":3308,\"Brochure\":1,\"Datasheet\":4,\"Software\":4,\"IFU\":8}; confidenceDistribution={\"80\":23,\"90\":725,\"100\":2577}; duplicatesRemoved=2441",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

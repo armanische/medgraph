@@ -14,6 +14,9 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=
 CYBERMEDICA_LEADS_WEBHOOK_URL=
 CYBERMEDICA_LEADS_WEBHOOK_TOKEN=
 CYBERMEDICA_ENABLE_ADMIN=
+CYBERMEDICA_ENABLE_INTERNAL_REVIEW=
+CYBERMEDICA_ENABLE_IMPORT_CENTER=
+CYBERMEDICA_ENABLE_WAVE2_DASHBOARD=
 ```
 
 Rules:
@@ -21,6 +24,7 @@ Rules:
 - `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` are used only for read access to `public_api`.
 - Never use a Supabase `service_role` key in the Portal.
 - Leave `CYBERMEDICA_ENABLE_ADMIN` empty for external preview. `/admin` must remain hidden in production unless explicitly enabled for a controlled internal environment.
+- Leave `CYBERMEDICA_ENABLE_INTERNAL_REVIEW`, `CYBERMEDICA_ENABLE_IMPORT_CENTER`, and `CYBERMEDICA_ENABLE_WAVE2_DASHBOARD` empty for external preview. Their `/internal/*` routes must remain hidden unless explicitly enabled for a controlled internal environment.
 - Store real values only in Vercel environment settings or local `.env.local`. Do not commit secrets.
 
 ## 2. Build checks
@@ -58,6 +62,9 @@ Expected behavior:
 - `/products/fs510` reads only published projection data from Supabase.
 - If Supabase env is missing or unavailable, `/products/fs510` shows a neutral temporary-unavailable state, not infrastructure details.
 - `/admin` returns not found in production unless `CYBERMEDICA_ENABLE_ADMIN=1`.
+- `/internal/review-queue` and `/internal/reviewer` return not found unless `CYBERMEDICA_ENABLE_INTERNAL_REVIEW=1`.
+- `/internal/import-center` returns not found unless `CYBERMEDICA_ENABLE_IMPORT_CENTER=1`.
+- `/internal/wave2` returns not found unless `CYBERMEDICA_ENABLE_WAVE2_DASHBOARD=1`.
 
 ## 4. Request form behavior
 

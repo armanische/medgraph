@@ -70,6 +70,130 @@
       "updatedAt": "candidate-review-queue"
     },
     {
+      "reviewItemId": "review_item_ab3600e3798b3d9034afdf28",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_68de499059d867ab7abd0d93",
+      "suggestedClaimType": "product.weight",
+      "valuePayload": {
+        "value": "6.8",
+        "unit": "kg"
+      },
+      "evidenceCandidateIds": [
+        "evidence_c70f1cada5045497fc171010"
+      ],
+      "documentVersionIds": [
+        "document_version_a8d422aaac2a66e3f474fc7c"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_b00a3467563ecd6d03888d7e",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_99d029e032e1a9cd394fe00e",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "NIV",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_1e56e81e1025e0fb51d9237d"
+      ],
+      "documentVersionIds": [
+        "document_version_a8d422aaac2a66e3f474fc7c"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_371a0d74a031c07660b08e52",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_9e1fefb12c430509061087d1",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "Neonatal",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_51f4272b3ee4373ea73e1eda"
+      ],
+      "documentVersionIds": [
+        "document_version_a8d422aaac2a66e3f474fc7c"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_008de4495eecff7eb104a02b",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_30923d743b86cc60b70f1f34",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "pediatric",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_2f2a70de0b70b479451ac4d3"
+      ],
+      "documentVersionIds": [
+        "document_version_a8d422aaac2a66e3f474fc7c"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
       "reviewItemId": "review_item_614b3fffb82066f71850d314",
       "productSlug": "wave2-hamilton-mr1",
       "productTitle": "HAMILTON-MR1",
@@ -113,16 +237,19 @@
       "evidenceCandidateIds": [
         "evidence_ab5a369a04c3a277088c9163"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_a8d422aaac2a66e3f474fc7c"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -141,16 +268,19 @@
       "evidenceCandidateIds": [
         "evidence_4558f1991c81888d60525271"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_a8d422aaac2a66e3f474fc7c"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -169,16 +299,19 @@
       "evidenceCandidateIds": [
         "evidence_3a748ca9c059da35bd8c8186"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_a8d422aaac2a66e3f474fc7c"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -197,16 +330,19 @@
       "evidenceCandidateIds": [
         "evidence_42e4076994884ee1c91653a4"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_a8d422aaac2a66e3f474fc7c"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -225,16 +361,19 @@
       "evidenceCandidateIds": [
         "evidence_344fe2501428ab6b7c273476"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_a8d422aaac2a66e3f474fc7c"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -253,16 +392,19 @@
       "evidenceCandidateIds": [
         "evidence_da53d398afe964d603608155"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_a8d422aaac2a66e3f474fc7c"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -281,16 +423,19 @@
       "evidenceCandidateIds": [
         "evidence_939049fbec63829ccd362f23"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_a8d422aaac2a66e3f474fc7c"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -309,16 +454,19 @@
       "evidenceCandidateIds": [
         "evidence_991c334e4ae15f1347a7818a"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_a8d422aaac2a66e3f474fc7c"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -418,6 +566,130 @@
       "updatedAt": "candidate-review-queue"
     },
     {
+      "reviewItemId": "review_item_c7a3daa5a0d20d59fe86aba7",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_3c10ac0a505d621de6b940dd",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "NIV",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_b460f71f2ffa07f6f5f6623c"
+      ],
+      "documentVersionIds": [
+        "document_version_c6104d28acd120fefee06556"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_6f86ca424f98e63037b33a8f",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_f4236dc281079053e40b10ad",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "neonatal",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_bc663a99a7114a31e315fdd7"
+      ],
+      "documentVersionIds": [
+        "document_version_c6104d28acd120fefee06556"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_f861bd6da2d95e813a0d05d0",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_8bcfb3a6fb29257d105b80cd",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "pediatric",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_ad04094429b9fd9dd4388b10"
+      ],
+      "documentVersionIds": [
+        "document_version_c6104d28acd120fefee06556"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_40e90270ad2f4523d67429de",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_44d644c7e7fdf7ba9bac190f",
+      "suggestedClaimType": "product.power",
+      "valuePayload": {
+        "value": "turbine",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_7d2e22e50fddc88868763916"
+      ],
+      "documentVersionIds": [
+        "document_version_c6104d28acd120fefee06556"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
       "reviewItemId": "review_item_d57625b827b609921983a2d3",
       "productSlug": "wave2-hamilton-mr1",
       "productTitle": "HAMILTON-MR1",
@@ -430,16 +702,19 @@
       "evidenceCandidateIds": [
         "evidence_91f2cb7b1c308d333d679f1b"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_c6104d28acd120fefee06556"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -458,16 +733,19 @@
       "evidenceCandidateIds": [
         "evidence_321fb263b48c97be77b251b1"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_c6104d28acd120fefee06556"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -486,16 +764,19 @@
       "evidenceCandidateIds": [
         "evidence_fd2a6cb9a738ae6f9ea83c6a"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_c6104d28acd120fefee06556"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -514,16 +795,19 @@
       "evidenceCandidateIds": [
         "evidence_85e5eae8808a9bac8cc64a4e"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_c6104d28acd120fefee06556"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -623,6 +907,192 @@
       "updatedAt": "candidate-review-queue"
     },
     {
+      "reviewItemId": "review_item_1807826313678fb4b241a9c6",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_4f78129722fca1563e2056a7",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "NIV",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_9718a3ab002774edcdfbb06f"
+      ],
+      "documentVersionIds": [
+        "document_version_9820ebff49cdf5577039748d"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_f08f2731fe205531b9a9cc5d",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_9bb7beb8b2a7de39bd13cb0e",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "Neonatal",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_768422e2bdd7d37bd4c3372b"
+      ],
+      "documentVersionIds": [
+        "document_version_9820ebff49cdf5577039748d"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_15897c25abb0108eaba6d6fe",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_f4b17ebe601c945f71625922",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "adults",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_79c4546aa4f73006439cf3f8"
+      ],
+      "documentVersionIds": [
+        "document_version_9820ebff49cdf5577039748d"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_7c863d5740e833d6f60ed7a4",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_42f643256a0cbf841cdbed2e",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "adult patients",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_42978ff4c1619ce034462422"
+      ],
+      "documentVersionIds": [
+        "document_version_9820ebff49cdf5577039748d"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_f21fc265d2683409d76f727f",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_60b2358012224f0856347ed2",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "pediatric",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_31c8327ba78442161d36848d"
+      ],
+      "documentVersionIds": [
+        "document_version_9820ebff49cdf5577039748d"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_f9e4d4eab98b616ff1f7cd81",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_3284da81f2e31a628bd78c12",
+      "suggestedClaimType": "product.power",
+      "valuePayload": {
+        "value": "turbine",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_a757dc0ed2ffcbf7b64ac78b"
+      ],
+      "documentVersionIds": [
+        "document_version_9820ebff49cdf5577039748d"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
       "reviewItemId": "review_item_4d47424b137e1dafef303ce8",
       "productSlug": "wave2-hamilton-mr1",
       "productTitle": "HAMILTON-MR1",
@@ -635,16 +1105,19 @@
       "evidenceCandidateIds": [
         "evidence_eee3531ae50b149c34917b27"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_9820ebff49cdf5577039748d"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -663,16 +1136,19 @@
       "evidenceCandidateIds": [
         "evidence_f77c00df2d28f7f082fcbe9f"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_9820ebff49cdf5577039748d"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -691,16 +1167,19 @@
       "evidenceCandidateIds": [
         "evidence_70a24e8fe9217a7375c540ac"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_9820ebff49cdf5577039748d"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -719,16 +1198,19 @@
       "evidenceCandidateIds": [
         "evidence_1b0a05778bc7c36b60621dee"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_9820ebff49cdf5577039748d"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -747,16 +1229,19 @@
       "evidenceCandidateIds": [
         "evidence_919619896c38d3330ab2ec37"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_9820ebff49cdf5577039748d"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -775,16 +1260,19 @@
       "evidenceCandidateIds": [
         "evidence_3b6b06e4bf9b1ddd5ac19c71"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_9820ebff49cdf5577039748d"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -865,16 +1353,19 @@
       "evidenceCandidateIds": [
         "evidence_9ff43bc5def2935611789dc2"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_31a3302b06e608cb857d68cf"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:f8d9a6b7-a163-4ed1-8995-b774ca1de285/IntelliSync_brochure_en_ELO20240217N.01.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -1028,6 +1519,68 @@
       "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_006fc9f381bdba442d970550",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_715a73039003fce81ba50e9e",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "NIV",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_d02ae0022c840d0d72d5ccc6"
+      ],
+      "documentVersionIds": [
+        "document_version_7bf26dfbde320a66837ef1c8"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:f0315631-25e6-47a2-8a50-7f22776c93c4/HAMILTON-C1-T1-MR1_flyer_v3.1.1_en_ELO20240910N.00.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_802a69a02114d6d22b524759",
+      "productSlug": "wave2-hamilton-mr1",
+      "productTitle": "HAMILTON-MR1",
+      "claimCandidateId": "claim_48a8745ea0413bfa1818bdec",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "adults",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_76e99125b6e3f440dffc5c7e"
+      ],
+      "documentVersionIds": [
+        "document_version_7bf26dfbde320a66837ef1c8"
+      ],
+      "sourceUrls": [
+        "https://www.hamilton-medical.com/dam/jcr:f0315631-25e6-47a2-8a50-7f22776c93c4/HAMILTON-C1-T1-MR1_flyer_v3.1.1_en_ELO20240910N.00.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
         "Review Queue item is not a Verified Claim.",
         "Reviewer decision does not publish data."
       ],
@@ -1413,6 +1966,446 @@
         "updatedAt": "candidate-review-queue"
       }
     ],
+    "product.weight": [
+      {
+        "reviewItemId": "review_item_ab3600e3798b3d9034afdf28",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_68de499059d867ab7abd0d93",
+        "suggestedClaimType": "product.weight",
+        "valuePayload": {
+          "value": "6.8",
+          "unit": "kg"
+        },
+        "evidenceCandidateIds": [
+          "evidence_c70f1cada5045497fc171010"
+        ],
+        "documentVersionIds": [
+          "document_version_a8d422aaac2a66e3f474fc7c"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.operatingModes": [
+      {
+        "reviewItemId": "review_item_b00a3467563ecd6d03888d7e",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_99d029e032e1a9cd394fe00e",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "NIV",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_1e56e81e1025e0fb51d9237d"
+        ],
+        "documentVersionIds": [
+          "document_version_a8d422aaac2a66e3f474fc7c"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_c7a3daa5a0d20d59fe86aba7",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_3c10ac0a505d621de6b940dd",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "NIV",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_b460f71f2ffa07f6f5f6623c"
+        ],
+        "documentVersionIds": [
+          "document_version_c6104d28acd120fefee06556"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_1807826313678fb4b241a9c6",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_4f78129722fca1563e2056a7",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "NIV",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_9718a3ab002774edcdfbb06f"
+        ],
+        "documentVersionIds": [
+          "document_version_9820ebff49cdf5577039748d"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_006fc9f381bdba442d970550",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_715a73039003fce81ba50e9e",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "NIV",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_d02ae0022c840d0d72d5ccc6"
+        ],
+        "documentVersionIds": [
+          "document_version_7bf26dfbde320a66837ef1c8"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:f0315631-25e6-47a2-8a50-7f22776c93c4/HAMILTON-C1-T1-MR1_flyer_v3.1.1_en_ELO20240910N.00.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.patientGroup": [
+      {
+        "reviewItemId": "review_item_371a0d74a031c07660b08e52",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_9e1fefb12c430509061087d1",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "Neonatal",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_51f4272b3ee4373ea73e1eda"
+        ],
+        "documentVersionIds": [
+          "document_version_a8d422aaac2a66e3f474fc7c"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_008de4495eecff7eb104a02b",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_30923d743b86cc60b70f1f34",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "pediatric",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_2f2a70de0b70b479451ac4d3"
+        ],
+        "documentVersionIds": [
+          "document_version_a8d422aaac2a66e3f474fc7c"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_6f86ca424f98e63037b33a8f",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_f4236dc281079053e40b10ad",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "neonatal",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_bc663a99a7114a31e315fdd7"
+        ],
+        "documentVersionIds": [
+          "document_version_c6104d28acd120fefee06556"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_f861bd6da2d95e813a0d05d0",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_8bcfb3a6fb29257d105b80cd",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "pediatric",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_ad04094429b9fd9dd4388b10"
+        ],
+        "documentVersionIds": [
+          "document_version_c6104d28acd120fefee06556"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_f08f2731fe205531b9a9cc5d",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_9bb7beb8b2a7de39bd13cb0e",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "Neonatal",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_768422e2bdd7d37bd4c3372b"
+        ],
+        "documentVersionIds": [
+          "document_version_9820ebff49cdf5577039748d"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_15897c25abb0108eaba6d6fe",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_f4b17ebe601c945f71625922",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "adults",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_79c4546aa4f73006439cf3f8"
+        ],
+        "documentVersionIds": [
+          "document_version_9820ebff49cdf5577039748d"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_7c863d5740e833d6f60ed7a4",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_42f643256a0cbf841cdbed2e",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "adult patients",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_42978ff4c1619ce034462422"
+        ],
+        "documentVersionIds": [
+          "document_version_9820ebff49cdf5577039748d"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_f21fc265d2683409d76f727f",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_60b2358012224f0856347ed2",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "pediatric",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_31c8327ba78442161d36848d"
+        ],
+        "documentVersionIds": [
+          "document_version_9820ebff49cdf5577039748d"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_802a69a02114d6d22b524759",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_48a8745ea0413bfa1818bdec",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "adults",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_76e99125b6e3f440dffc5c7e"
+        ],
+        "documentVersionIds": [
+          "document_version_7bf26dfbde320a66837ef1c8"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:f0315631-25e6-47a2-8a50-7f22776c93c4/HAMILTON-C1-T1-MR1_flyer_v3.1.1_en_ELO20240910N.00.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
     "product.accuracy": [
       {
         "reviewItemId": "review_item_614b3fffb82066f71850d314",
@@ -1460,16 +2453,19 @@
         "evidenceCandidateIds": [
           "evidence_ab5a369a04c3a277088c9163"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_a8d422aaac2a66e3f474fc7c"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -1488,16 +2484,19 @@
         "evidenceCandidateIds": [
           "evidence_4558f1991c81888d60525271"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_a8d422aaac2a66e3f474fc7c"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -1516,16 +2515,19 @@
         "evidenceCandidateIds": [
           "evidence_3a748ca9c059da35bd8c8186"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_a8d422aaac2a66e3f474fc7c"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -1544,16 +2546,19 @@
         "evidenceCandidateIds": [
           "evidence_42e4076994884ee1c91653a4"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_a8d422aaac2a66e3f474fc7c"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -1572,16 +2577,19 @@
         "evidenceCandidateIds": [
           "evidence_344fe2501428ab6b7c273476"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_a8d422aaac2a66e3f474fc7c"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -1600,16 +2608,19 @@
         "evidenceCandidateIds": [
           "evidence_da53d398afe964d603608155"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_a8d422aaac2a66e3f474fc7c"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -1628,16 +2639,19 @@
         "evidenceCandidateIds": [
           "evidence_939049fbec63829ccd362f23"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_a8d422aaac2a66e3f474fc7c"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -1656,16 +2670,19 @@
         "evidenceCandidateIds": [
           "evidence_991c334e4ae15f1347a7818a"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_a8d422aaac2a66e3f474fc7c"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:0144720b-ef77-457a-96bf-7b826186f084/HAMILTON-MR1_tech-specs_v3.1.x_en_10101911.03.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -1684,16 +2701,19 @@
         "evidenceCandidateIds": [
           "evidence_91f2cb7b1c308d333d679f1b"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_c6104d28acd120fefee06556"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -1712,16 +2732,19 @@
         "evidenceCandidateIds": [
           "evidence_321fb263b48c97be77b251b1"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_c6104d28acd120fefee06556"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -1740,16 +2763,19 @@
         "evidenceCandidateIds": [
           "evidence_fd2a6cb9a738ae6f9ea83c6a"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_c6104d28acd120fefee06556"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -1768,16 +2794,19 @@
         "evidenceCandidateIds": [
           "evidence_85e5eae8808a9bac8cc64a4e"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_c6104d28acd120fefee06556"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -1796,16 +2825,19 @@
         "evidenceCandidateIds": [
           "evidence_eee3531ae50b149c34917b27"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_9820ebff49cdf5577039748d"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -1824,16 +2856,19 @@
         "evidenceCandidateIds": [
           "evidence_f77c00df2d28f7f082fcbe9f"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_9820ebff49cdf5577039748d"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -1852,16 +2887,19 @@
         "evidenceCandidateIds": [
           "evidence_70a24e8fe9217a7375c540ac"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_9820ebff49cdf5577039748d"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -1880,16 +2918,19 @@
         "evidenceCandidateIds": [
           "evidence_1b0a05778bc7c36b60621dee"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_9820ebff49cdf5577039748d"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -1908,16 +2949,19 @@
         "evidenceCandidateIds": [
           "evidence_919619896c38d3330ab2ec37"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_9820ebff49cdf5577039748d"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -1936,16 +2980,19 @@
         "evidenceCandidateIds": [
           "evidence_3b6b06e4bf9b1ddd5ac19c71"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_9820ebff49cdf5577039748d"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -1964,16 +3011,19 @@
         "evidenceCandidateIds": [
           "evidence_9ff43bc5def2935611789dc2"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_31a3302b06e608cb857d68cf"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:f8d9a6b7-a163-4ed1-8995-b774ca1de285/IntelliSync_brochure_en_ELO20240217N.01.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -2074,6 +3124,70 @@
         "createdAt": "candidate-review-queue",
         "updatedAt": "candidate-review-queue"
       }
+    ],
+    "product.power": [
+      {
+        "reviewItemId": "review_item_40e90270ad2f4523d67429de",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_44d644c7e7fdf7ba9bac190f",
+        "suggestedClaimType": "product.power",
+        "valuePayload": {
+          "value": "turbine",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_7d2e22e50fddc88868763916"
+        ],
+        "documentVersionIds": [
+          "document_version_c6104d28acd120fefee06556"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:8a36bf51-bf22-4383-8f3b-953ec55b69b1/HAMILTON-MR1_brochure-v3.1.x_brochure_en_ELO20250413S.00.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_f9e4d4eab98b616ff1f7cd81",
+        "productSlug": "wave2-hamilton-mr1",
+        "productTitle": "HAMILTON-MR1",
+        "claimCandidateId": "claim_3284da81f2e31a628bd78c12",
+        "suggestedClaimType": "product.power",
+        "valuePayload": {
+          "value": "turbine",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_a757dc0ed2ffcbf7b64ac78b"
+        ],
+        "documentVersionIds": [
+          "document_version_9820ebff49cdf5577039748d"
+        ],
+        "sourceUrls": [
+          "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
     ]
   },
   "sourceDocumentSummary": [
@@ -2120,84 +3234,7 @@
       "sha256": "df5cf43a50ab20af042c19ea5967b2f136a18d898f3ed543fa0987784c73f1fa"
     }
   ],
-  "missingEvidence": [
-    {
-      "claimCandidateId": "claim_e060ed2d4b02fb205382fcd1",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_364043fac1f23ce0385485dd",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_4519ae9a58c5d4a76f422d7f",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_c87841641abf7fb9b87bdf70",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_a7f8902d1b51b7a78dee99d8",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_9316a721de4b4679d6905fd3",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_98bbb4e4100f8b9765db725e",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_f405d3fb04d54bfb12ee40f6",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_989c85f6dac1a3cde40cb171",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_1b77b9736d95a3856b098daa",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_f97c81bddebf3439fb15205f",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_b34a649a8cf30d029a6dbb6f",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_537e4af956c45831c6ec792c",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_4343c2e93e1e02901f188d4c",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_493e54a3206ac668ed102501",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_e218f48512c4bd61792a7f40",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_410d830482345b7cdc1894cf",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_e3407d23e2d55cd2e5b08fa1",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_f8742499353271fbff11f570",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    }
-  ],
+  "missingEvidence": [],
   "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
   "warnings": [
     "Resolver rejected offsite document URL: https://youtu.be/Nm_4WOQ9pao",

@@ -1,148 +1,137 @@
 {
-  "productsProcessed": 17,
-  "officialSourcesFound": 17,
-  "documentsFound": 7,
-  "requiredDocumentsMissing": 51,
+  "productsProcessed": 14,
+  "officialSourcesFound": 15,
+  "documentsFound": 369,
+  "requiredDocumentsMissing": 17,
   "productsReadyForExtraction": 0,
-  "productsBlocked": 17,
-  "resolvedDocumentLinksFound": 7,
-  "productsWithResolvedDocuments": 5,
-  "productsStillMissingDocuments": 17,
+  "productsBlocked": 14,
+  "resolvedDocumentLinksFound": 362,
+  "productsWithResolvedDocuments": 14,
+  "productsStillMissingDocuments": 14,
+  "providersUsed": [
+    "ambu"
+  ],
+  "productsPerProvider": {
+    "ambu": 14
+  },
+  "fallbackProviderProducts": 0,
+  "totalCandidateUrls": 15,
+  "totalNormalizedUrls": 15,
+  "totalDuplicatesRemoved": 0,
+  "totalBlockedUrls": 0,
+  "unsupportedPortalsDetected": 0,
+  "providerWarnings": [],
   "productReports": [
     {
-      "productSlug": "wave2-mindray-products-index",
+      "productSlug": "ambu-ascope-5-broncho",
       "sources": 1,
-      "documents": 0,
-      "resolvedDocumentLinks": 0,
+      "documents": 51,
+      "resolvedDocumentLinks": 51,
+      "missingDocumentTasks": 1,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "odnorazovyi-endoskop-ascope-4-broncho-ambu",
+      "sources": 2,
+      "documents": 18,
+      "resolvedDocumentLinks": 16,
+      "missingDocumentTasks": 1,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-ambu-abox-2",
+      "sources": 1,
+      "documents": 46,
+      "resolvedDocumentLinks": 45,
+      "missingDocumentTasks": 1,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-ambu-ascope-4-cysto",
+      "sources": 1,
+      "documents": 21,
+      "resolvedDocumentLinks": 21,
+      "missingDocumentTasks": 1,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-ambu-ascope-5-broncho-sampler-set",
+      "sources": 1,
+      "documents": 48,
+      "resolvedDocumentLinks": 48,
+      "missingDocumentTasks": 1,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-ambu-ascope-duodeno-2",
+      "sources": 1,
+      "documents": 15,
+      "resolvedDocumentLinks": 15,
+      "missingDocumentTasks": 1,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "sources": 1,
+      "documents": 28,
+      "resolvedDocumentLinks": 28,
+      "missingDocumentTasks": 1,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "sources": 1,
+      "documents": 37,
+      "resolvedDocumentLinks": 36,
+      "missingDocumentTasks": 1,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-ambu-bluesensor-br",
+      "sources": 1,
+      "documents": 21,
+      "resolvedDocumentLinks": 19,
+      "missingDocumentTasks": 1,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-ambu-man-basic",
+      "sources": 1,
+      "documents": 15,
+      "resolvedDocumentLinks": 15,
+      "missingDocumentTasks": 2,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-ambu-neuroline-cup",
+      "sources": 1,
+      "documents": 19,
+      "resolvedDocumentLinks": 18,
+      "missingDocumentTasks": 1,
+      "canProceedToExtraction": false
+    },
+    {
+      "productSlug": "wave2-ambu-products-index",
+      "sources": 1,
+      "documents": 11,
+      "resolvedDocumentLinks": 11,
       "missingDocumentTasks": 3,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-mindray-sv300",
+      "productSlug": "wave2-ambu-spur-ii",
       "sources": 1,
-      "documents": 0,
-      "resolvedDocumentLinks": 0,
-      "missingDocumentTasks": 3,
+      "documents": 20,
+      "resolvedDocumentLinks": 20,
+      "missingDocumentTasks": 1,
       "canProceedToExtraction": false
     },
     {
-      "productSlug": "wave2-mindray-sv300-pro",
+      "productSlug": "wave2-ambu-vivasight-2-dlt",
       "sources": 1,
-      "documents": 0,
-      "resolvedDocumentLinks": 0,
-      "missingDocumentTasks": 3,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-mindray-sv800-sv600",
-      "sources": 1,
-      "documents": 0,
-      "resolvedDocumentLinks": 0,
-      "missingDocumentTasks": 3,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-mindray-a5",
-      "sources": 1,
-      "documents": 1,
-      "resolvedDocumentLinks": 1,
-      "missingDocumentTasks": 3,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-mindray-a7",
-      "sources": 1,
-      "documents": 1,
-      "resolvedDocumentLinks": 1,
-      "missingDocumentTasks": 3,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-mindray-a8",
-      "sources": 1,
-      "documents": 3,
-      "resolvedDocumentLinks": 3,
-      "missingDocumentTasks": 3,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-mindray-benevision-n1",
-      "sources": 1,
-      "documents": 1,
-      "resolvedDocumentLinks": 1,
-      "missingDocumentTasks": 3,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-mindray-benevision-n17-n15-n12",
-      "sources": 1,
-      "documents": 1,
-      "resolvedDocumentLinks": 1,
-      "missingDocumentTasks": 3,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-mindray-m9-poc",
-      "sources": 1,
-      "documents": 0,
-      "resolvedDocumentLinks": 0,
-      "missingDocumentTasks": 3,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-mindray-m9-cardiology",
-      "sources": 1,
-      "documents": 0,
-      "resolvedDocumentLinks": 0,
-      "missingDocumentTasks": 3,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-mindray-resona-i9",
-      "sources": 1,
-      "documents": 0,
-      "resolvedDocumentLinks": 0,
-      "missingDocumentTasks": 3,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-mindray-resona-i9-elite",
-      "sources": 1,
-      "documents": 0,
-      "resolvedDocumentLinks": 0,
-      "missingDocumentTasks": 3,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-mindray-hyled-x-series",
-      "sources": 1,
-      "documents": 0,
-      "resolvedDocumentLinks": 0,
-      "missingDocumentTasks": 3,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-mindray-hyled-c-series",
-      "sources": 1,
-      "documents": 0,
-      "resolvedDocumentLinks": 0,
-      "missingDocumentTasks": 3,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-mindray-hyled-q-series",
-      "sources": 1,
-      "documents": 0,
-      "resolvedDocumentLinks": 0,
-      "missingDocumentTasks": 3,
-      "canProceedToExtraction": false
-    },
-    {
-      "productSlug": "wave2-mindray-hyled-8-series",
-      "sources": 1,
-      "documents": 0,
-      "resolvedDocumentLinks": 0,
-      "missingDocumentTasks": 3,
+      "documents": 19,
+      "resolvedDocumentLinks": 19,
+      "missingDocumentTasks": 1,
       "canProceedToExtraction": false
     }
   ],

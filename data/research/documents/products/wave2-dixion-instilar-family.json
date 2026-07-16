@@ -1,0 +1,207 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-instilar-family",
+    "manufacturer": "Dixion",
+    "productName": "DIXION Instilar infusion pump family",
+    "model": "Instilar family",
+    "category": "Инфузионное оборудование"
+  },
+  "attemptedDownloads": [
+    {
+      "documentCandidateId": "document_bc5661d5ae2c0b6a7dd767ee",
+      "sourceId": "source_a2027cf26c0cb4f4a82d09d6",
+      "productSlug": "wave2-dixion-instilar-family",
+      "title": "Скачать каталог в формате PDF",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "documentType": "brochure",
+      "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_7c03f6e9e5a6c2949dafe4d3",
+      "sourceId": "source_a2027cf26c0cb4f4a82d09d6",
+      "productSlug": "wave2-dixion-instilar-family",
+      "title": "Скачать прайс-лист",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "documentType": "unknown",
+      "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_0640086fe1955177cc821853",
+      "sourceId": "source_f0209d045b23f4f45efcb71e",
+      "productSlug": "wave2-dixion-instilar-family",
+      "title": "DIXION Instilar official brochure",
+      "url": "https://dixion.ru/upload/iblock/d87/4ri5d78o7s067t9l9ri2v6zq5w5kk19t/Dixion_Instilar.pdf",
+      "documentType": "brochure",
+      "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_4bf511742a4c6e831082aea4",
+      "sourceId": "source_a2027cf26c0cb4f4a82d09d6",
+      "productSlug": "wave2-dixion-instilar-family",
+      "title": "Медицинское оборудование",
+      "url": "https://dixion.ru/catalog/",
+      "documentType": "brochure",
+      "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_744b5ae34d85db9fc3f53503",
+      "sourceId": "source_a2027cf26c0cb4f4a82d09d6",
+      "productSlug": "wave2-dixion-instilar-family",
+      "title": "Каталоги оборудования",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "documentType": "brochure",
+      "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_f6aa051165533b5e274a6371",
+      "sourceId": "source_a2027cf26c0cb4f4a82d09d6",
+      "productSlug": "wave2-dixion-instilar-family",
+      "title": "Новинки оборудования",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "documentType": "brochure",
+      "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_3ecd5a01f4bc3f391c2a0a96",
+      "sourceId": "source_a2027cf26c0cb4f4a82d09d6",
+      "productSlug": "wave2-dixion-instilar-family",
+      "title": "Скоро в продаже",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "documentType": "brochure",
+      "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_9a6d7e0131bdaf555262b102",
+      "sourceId": "source_a2027cf26c0cb4f4a82d09d6",
+      "productSlug": "wave2-dixion-instilar-family",
+      "title": "Manufacturer Brochure",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "documentType": "brochure",
+      "trustTier": 1
+    }
+  ],
+  "downloadedArtifacts": [
+    {
+      "documentCandidateId": "document_7c03f6e9e5a6c2949dafe4d3",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "documentType": "unknown",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "contentType": "application/pdf",
+      "byteSize": 178281,
+      "filePath": "data/research/artifacts/artifacts/sha256/1c/da/1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8.pdf"
+    },
+    {
+      "documentCandidateId": "document_0640086fe1955177cc821853",
+      "sourceUrl": "https://dixion.ru/upload/iblock/d87/4ri5d78o7s067t9l9ri2v6zq5w5kk19t/Dixion_Instilar.pdf",
+      "title": "DIXION Instilar official brochure",
+      "documentType": "brochure",
+      "sha256": "6bf915dd0ac5a9e11c993c7fbb3c3b75a9629a433894b94d3504fd9a4cbeb1de",
+      "contentType": "application/pdf",
+      "byteSize": 525604,
+      "filePath": "data/research/artifacts/artifacts/sha256/6b/f9/6bf915dd0ac5a9e11c993c7fbb3c3b75a9629a433894b94d3504fd9a4cbeb1de.pdf"
+    }
+  ],
+  "failedDownloads": [
+    {
+      "documentCandidateId": "document_bc5661d5ae2c0b6a7dd767ee",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "reason": "The operation was aborted due to timeout",
+      "retryable": true
+    },
+    {
+      "documentCandidateId": "document_4bf511742a4c6e831082aea4",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "reason": "Rejected document content type: text/html",
+      "retryable": false
+    },
+    {
+      "documentCandidateId": "document_744b5ae34d85db9fc3f53503",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "reason": "Rejected document content type: text/html",
+      "retryable": false
+    },
+    {
+      "documentCandidateId": "document_f6aa051165533b5e274a6371",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "reason": "Rejected document content type: text/html",
+      "retryable": false
+    },
+    {
+      "documentCandidateId": "document_3ecd5a01f4bc3f391c2a0a96",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "reason": "Rejected document content type: text/html",
+      "retryable": false
+    },
+    {
+      "documentCandidateId": "document_9a6d7e0131bdaf555262b102",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Manufacturer Brochure",
+      "reason": "Rejected document content type: text/html",
+      "retryable": false
+    }
+  ],
+  "skippedDocuments": [],
+  "documentVersions": [
+    {
+      "versionId": "document_version_270e7f87011ca26f884f5530",
+      "documentCandidateId": "document_7c03f6e9e5a6c2949dafe4d3",
+      "sourceId": "source_a2027cf26c0cb4f4a82d09d6",
+      "productSlug": "wave2-dixion-instilar-family",
+      "documentKey": "trusted-document:document_7c03f6e9e5a6c2949dafe4d3",
+      "documentType": "unknown",
+      "title": "Скачать прайс-лист",
+      "language": null,
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "contentType": "application/pdf",
+      "byteSize": 178281,
+      "filePath": "data/research/artifacts/artifacts/sha256/1c/da/1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_2364e536e1222d8c6004f1a4",
+      "documentCandidateId": "document_0640086fe1955177cc821853",
+      "sourceId": "source_f0209d045b23f4f45efcb71e",
+      "productSlug": "wave2-dixion-instilar-family",
+      "documentKey": "trusted-document:document_0640086fe1955177cc821853",
+      "documentType": "brochure",
+      "title": "DIXION Instilar official brochure",
+      "language": null,
+      "sourceUrl": "https://dixion.ru/upload/iblock/d87/4ri5d78o7s067t9l9ri2v6zq5w5kk19t/Dixion_Instilar.pdf",
+      "sha256": "6bf915dd0ac5a9e11c993c7fbb3c3b75a9629a433894b94d3504fd9a4cbeb1de",
+      "contentType": "application/pdf",
+      "byteSize": 525604,
+      "filePath": "data/research/artifacts/artifacts/sha256/6b/f9/6bf915dd0ac5a9e11c993c7fbb3c3b75a9629a433894b94d3504fd9a4cbeb1de.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=7; classifiedDocuments={\"Brochure\":11,\"Unknown\":1}; confidenceDistribution={\"80\":9,\"100\":3}; duplicatesRemoved=5",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}

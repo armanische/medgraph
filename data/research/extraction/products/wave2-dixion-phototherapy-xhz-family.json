@@ -1,0 +1,371 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-phototherapy-xhz-family",
+    "manufacturer": "Dixion",
+    "productName": "DIXION XHZ phototherapy family",
+    "model": "XHZ family",
+    "category": "Неонатальное оборудование"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_789890f2542a096240699edd",
+      "documentCandidateId": "document_e483d569cb82a02db5942e41",
+      "sourceId": "source_20673903bd4ffe54301587b1",
+      "productSlug": "wave2-dixion-phototherapy-xhz-family",
+      "documentKey": "trusted-document:document_e483d569cb82a02db5942e41",
+      "documentType": "unknown",
+      "title": "Скачать прайс-лист",
+      "language": null,
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "contentType": "application/pdf",
+      "byteSize": 178281,
+      "filePath": "data/research/artifacts/artifacts/sha256/1c/da/1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    },
+    {
+      "versionId": "document_version_77d50750360ea26f465e99a2",
+      "documentCandidateId": "document_bd45bade56f9cc9119adb004",
+      "sourceId": "source_535f488d5a7d0bfa7ee73e24",
+      "productSlug": "wave2-dixion-phototherapy-xhz-family",
+      "documentKey": "trusted-document:document_bd45bade56f9cc9119adb004",
+      "documentType": "brochure",
+      "title": "DIXION XHZ 2025 official brochure",
+      "language": null,
+      "sourceUrl": "https://dixion.ru/upload/iblock/59f/3a4mcqkdays64uqvu9a3rw6zzmdeonl5/Dixion_Phototherapy_XHZ_2025.pdf",
+      "sha256": "e03cbfc3ee7ddcfd2e7144dc47037be1add958a110b6194d46c970946471171c",
+      "contentType": "application/pdf",
+      "byteSize": 418634,
+      "filePath": "data/research/artifacts/artifacts/sha256/e0/3c/e03cbfc3ee7ddcfd2e7144dc47037be1add958a110b6194d46c970946471171c.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_b7149eb3137bfe58500e504e",
+      "productSlug": "wave2-dixion-phototherapy-xhz-family",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Скачать прайс-лист",
+      "unit": null,
+      "rawText": "Document title: Скачать прайс-лист",
+      "documentVersionId": "document_version_789890f2542a096240699edd",
+      "documentCandidateId": "document_e483d569cb82a02db5942e41",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_5533504e53011a1ee37052a4",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_e49d89e6c82813077aead827",
+      "productSlug": "wave2-dixion-phototherapy-xhz-family",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_789890f2542a096240699edd",
+      "documentCandidateId": "document_e483d569cb82a02db5942e41",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_fd5d692e880639e7ed6efc3d",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_7181b6507ca368622fc186eb",
+      "productSlug": "wave2-dixion-phototherapy-xhz-family",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "DIXION XHZ 2025 official brochure",
+      "unit": null,
+      "rawText": "Document title: DIXION XHZ 2025 official brochure",
+      "documentVersionId": "document_version_77d50750360ea26f465e99a2",
+      "documentCandidateId": "document_bd45bade56f9cc9119adb004",
+      "documentSha256": "e03cbfc3ee7ddcfd2e7144dc47037be1add958a110b6194d46c970946471171c",
+      "sourceUrl": "https://dixion.ru/upload/iblock/59f/3a4mcqkdays64uqvu9a3rw6zzmdeonl5/Dixion_Phototherapy_XHZ_2025.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_fb40611cd321ebcbc9b6dbf9",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_6893092a9afff41c03a53be5",
+      "productSlug": "wave2-dixion-phototherapy-xhz-family",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "brochure",
+      "unit": null,
+      "rawText": "Document type: brochure",
+      "documentVersionId": "document_version_77d50750360ea26f465e99a2",
+      "documentCandidateId": "document_bd45bade56f9cc9119adb004",
+      "documentSha256": "e03cbfc3ee7ddcfd2e7144dc47037be1add958a110b6194d46c970946471171c",
+      "sourceUrl": "https://dixion.ru/upload/iblock/59f/3a4mcqkdays64uqvu9a3rw6zzmdeonl5/Dixion_Phototherapy_XHZ_2025.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_677d02f82330baca610ce111",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_5533504e53011a1ee37052a4",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_789890f2542a096240699edd",
+      "documentCandidateId": "document_e483d569cb82a02db5942e41",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Скачать прайс-лист",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_fd5d692e880639e7ed6efc3d",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_789890f2542a096240699edd",
+      "documentCandidateId": "document_e483d569cb82a02db5942e41",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_fb40611cd321ebcbc9b6dbf9",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_77d50750360ea26f465e99a2",
+      "documentCandidateId": "document_bd45bade56f9cc9119adb004",
+      "sha256": "e03cbfc3ee7ddcfd2e7144dc47037be1add958a110b6194d46c970946471171c",
+      "sourceUrl": "https://dixion.ru/upload/iblock/59f/3a4mcqkdays64uqvu9a3rw6zzmdeonl5/Dixion_Phototherapy_XHZ_2025.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: DIXION XHZ 2025 official brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_677d02f82330baca610ce111",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_77d50750360ea26f465e99a2",
+      "documentCandidateId": "document_bd45bade56f9cc9119adb004",
+      "sha256": "e03cbfc3ee7ddcfd2e7144dc47037be1add958a110b6194d46c970946471171c",
+      "sourceUrl": "https://dixion.ru/upload/iblock/59f/3a4mcqkdays64uqvu9a3rw6zzmdeonl5/Dixion_Phototherapy_XHZ_2025.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: brochure",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_cccd173c832b2da63360e780",
+      "productSlug": "wave2-dixion-phototherapy-xhz-family",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Скачать прайс-лист",
+        "unit": null
+      },
+      "rawText": "Document title: Скачать прайс-лист",
+      "evidenceCandidateIds": [
+        "evidence_5533504e53011a1ee37052a4"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_a01e8fce3d6fa74d10c9f8ff",
+      "productSlug": "wave2-dixion-phototherapy-xhz-family",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_fd5d692e880639e7ed6efc3d"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_1708b925bb7e5c04a7f4d2c0",
+      "productSlug": "wave2-dixion-phototherapy-xhz-family",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "DIXION XHZ 2025 official brochure",
+        "unit": null
+      },
+      "rawText": "Document title: DIXION XHZ 2025 official brochure",
+      "evidenceCandidateIds": [
+        "evidence_fb40611cd321ebcbc9b6dbf9"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_18772f080435b1a56e12f840",
+      "productSlug": "wave2-dixion-phototherapy-xhz-family",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "brochure",
+        "unit": null
+      },
+      "rawText": "Document type: brochure",
+      "evidenceCandidateIds": [
+        "evidence_677d02f82330baca610ce111"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry"
+    ],
+    "patternsMatched": {},
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ]
+    },
+    "coveragePercent": 0
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=7; classifiedDocuments={\"Brochure\":10,\"Unknown\":1}; confidenceDistribution={\"80\":8,\"100\":3}; duplicatesRemoved=4",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

@@ -1,0 +1,3015 @@
+{
+  "product": {
+    "productSlug": "wave2-drager-perseus-a500",
+    "manufacturer": "Drager",
+    "productName": "Dräger Perseus A500",
+    "model": "Perseus A500",
+    "category": "Наркозно-дыхательные аппараты"
+  },
+  "sourceCandidates": [
+    {
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "manufacturer": "Drager",
+      "productName": "Dräger Perseus A500",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.draeger.com/en_uk/Products/Perseus-A500",
+      "title": "Dräger Perseus A500 official product page",
+      "snippet": "Official product page; candidate-only source.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official product page; candidate-only source."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_0a4c547584e2416b6e23ba41",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/4212-br-history-of-anaesthesia_a5_en_191212-lr.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a8dcae9b8b6fe96640d5bc03",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/9067246-dr%C3%A4ger%20expiration%20valve-case%20study-en.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_63b2d5fde58cd4cd794780ff",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/casestudy_norwalk_whitepaper_en.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_6a3de9e69fa2d7ca4b3e7f2c",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/derriford_hospital_cs_.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_53b6421cd589495c77779351",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/DID-YOU-KNOW_DYK-DYK-etCO2_monitoring_in_ventilators-1.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_d6c381a327df4c1d682f1999",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/DID-YOU-KNOW_DYK-DYK-PEEPi-1.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_2b2935770c08f08e0ccca1cb",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/DID-YOU-KNOW_DYK-etCO2_Dead_space.ai.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_42eba2530be62f346eddf7d3",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/Did-you-know-12-Autorelease.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_e37740cb7928226ccae96441",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/Did-you-know-15-Time-constant-1.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_b6b0701fa1a617e1ec7399b3",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/Did-you-know-20-Smart-Pulmonary-View-1.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_ea7aa56ca37fb8b9c766faf5",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/did-you-know-co2-production-illu-DGT-2579-2020-en-master-1.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_dd1f49393bc22fafce9845c3",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/Did%20you%20know%2013%20Volume%20Guarantee%20with%20outcome.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_499845a1495925fd35252255",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/Did%20you%20know%2014%20Variable%20Pressure%20Support.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_120d3b6b866188c0e8b8d504",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/Did%20you%20know%206%20APRV.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_8e16a16fa5fa80a1757a1294",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/didyouknow_1_NIF_en.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_dcfb6d900d1937b5c067d56f",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/didyouknow_3_P0.1_en.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1c36ea3c6f4d011e072d073f",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/didyouknow_4_PPS.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_80a8a4a17a654e73696199c0",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/didyouknow_5_Trigger.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_9fbc26e243590e3bc6ad6984",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/didyouknow-2-C20C_en.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_d60a5837c68a6953f7eb2a0c",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/Didyouknow10QuickSet_en.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_3570dc40f53654f45aa071af",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/Didyouknow7Autoflow_en.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1210f3b0dbd04f6518dc1ada",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/Didyouknow8MMV_en.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_c056f7dc4fa63ba5457e21c6",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/DYK_atc-illuph-D-3203-2022-en-master.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_bfd64bfedf535778cbfb83b5",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/DYK_Avoiding_Pressure_Ulcers_in_NIV2.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_63c45e7d025636012668f623",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/DYK_Intermittent_sighs-illuph-D-777-2021-en-master-21070.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_b5734045e20d6928179f01c4",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/DYK_leak_adaptation-illuph-D-3202-2022-en-master.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1068815f6bb1a02d3552ca34",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/DYK_leak_compensation-illuph-D-3205-2022-en-master.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_8a00a8f79e473ecd1fe4b4a2",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/DYK_Manual_disconnection_anti_air_shower-illuph-DMC-103054-en-master.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1a50227091a297e821ad2cb9",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/DYK_Pressure_Link2.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_09ab951452d5cec4486143e4",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/DYK_SmartCare-illuph-DMC-103055-en-master.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_e34047012d97487646fe5fbf",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/DYK_Suction_manoeuvre-illuph-DMC-103056-en-master.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_ffafaebfc4da218a5b38a700",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/DYK_volume_support-illuph-D-3204-en-master-2022.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_f6ae19530cd0453a3f894517",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/FILTERS-IN-ANAESTHESIA-illuph-DGT-3103-2021-en-master.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_f59c5442e31ac76cfa8f4606",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/final-anaesthesia-case-study-hi-res-02-09-15.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_2af91eeef0116428584ee6f0",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/glenfield_case_study.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_62257f91c28267e1699a369b",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/H205401_P385783_Why-Dr%C3%A4ger-Original-Sample-Lines_-illuph-DGT-3102-2021-en-master.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_bb7ab6595e07455c86da26ad",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/H220125_P433324_Did_you_know_Incremental_PEEP_and_Pinsp.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_73d49ff17c4653f69264379d",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/H220126_P433325_Did_you_know_40_by_40.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_851da4b2b78f1ccf386e1d56",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/H220127_P433327_Did_you_know_Sustained_inflation.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_19f0b0f249986610aec2e8a9",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/hfov-bk-9102693-en.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_7dd49b57240905e18203d4d7",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/IPS-Smarter-Anaesthesia-Dosing-illuph-DGT-3104-2021-en-master.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_8f1b5d6fd0929d74f4160229",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/low-minimal-flow-anaesthesie-bk-9067990.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_ca022ea13d27be590ac77b6e",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/lpp-booklet-9066355-en.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_e265bda7c5d9e39567bf8abe",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/nomenklatur-bk-gesamt-9066477-en_new.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_be2ec379bbc4613a8ba706be",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/nottingham-city-hospital-innovative-workplace-design-cs-9100330-en-uk-1602-1-v3.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_4e720f5b21f5079975503bc9",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/or-pediatric-anesthesia-book-en.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_f77413e85f4910a1d297f26b",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/pulmotor-bk-9097434-en.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_3bee7988f0db1aed8e3b4e67",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/rsp_autoflow_booklet_9066357_en.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_740d107f3ebb5ed7508d3a32",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/rsp_breathing_booklet_9066665_en.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_f1c1d7cf2b184a68bd416c6a",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/rsp_eit_br_9050980_en.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_341a50f2f06fddceb3d2f1a8",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/rsp_knowledge_based_weaning_cs_9049576_en_1.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_417c9fbd7f2c6f5581324b4e",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/rsp_knowledge_based_weaning_cs_9049624_en_1.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_50989457d984d6e3f6a09060",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/rsp_pressure_support_ventilation_booklet_9097499_en.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1add8a964bf2880ddcb2e47c",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/rsp_smartcare_ps_cs_9050747_en_1.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_48d8fa25918ccb7cee4a45c6",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/rsp_smartcare_ps_cs_9051147_en_1.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_6e4af73d31adf78f78baf1d3",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/rsp_volume_guarantee_booklet_9097501_en.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_be67850113948aa61d563eeb",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/rsp-eit-booklet-9066788-en.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_416c603ce1f084d8713edbb1",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/smartcare_ps_booklet_9051398_en.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_08e44a7bfbc2cbc28f56245c",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/sunderland_cs_9066780_en.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1068f5df2fb7001e005298f5",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/ven_scps_utahvalley_success_en_1.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_8169587eed69a467f3ac7403",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/volume-guarantee-cs-9072930-en-1601-1.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_b09c6dc527720e50b3b6813e",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/why-use-co2-cuvette-illuph-DGT-2972-2021-en-master.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_eb87388b667f3689b80accb3",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/Why-use-Drager-Original-Flow-sensor-illuph-DGT-2875-2020-en-master.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_45dbb89dbed5c117a8d59cc1",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Content/why-use-oxylog-illuph-DGT-2973-2021-en-master.pdf",
+      "title": "Download PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_69bd1a738e1cbde601d25fb4",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "brochure",
+      "url": "https://www.draeger.com/Content/Documents/Products/accessory-ca-9066485-en-gb.pdf",
+      "title": "Accessory Catalogue 2025/2026, en",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://www.draeger.com/en_uk/Products/Perseus-A500",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_374b7570ce639456f322aa53",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/eit-intraoperative-ventilation-wp-dmc-110727-en-master.pdf",
+      "title": "White Paper Individualizing intraop ventilation using EIT, en",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Products/Perseus-A500",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_531806c5e1e8932afc11ba66",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/green-anaesthesia-dmc-101150-en-master.pdf",
+      "title": "Green Anaesthesia Infographic, en-master",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Products/Perseus-A500",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_712bcc6889542a8e302b97eb",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/Infografic-SmartPilot-View-DGT-3104-2021-en-master.pdf",
+      "title": "SmartPilot View Infographic, en",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Products/Perseus-A500",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_d11be79594f39b058b7fa4f0",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/low-minimal-flow-anaesthesie-bk-9067990-en.pdf",
+      "title": "Low Flow Anaesthesia Booklet, en",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Products/Perseus-A500",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_6d39995a4b25d12f45023b8a",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/Perseus-A500-Ceiling-pi-101841-en-MASTER.pdf",
+      "title": "Product information: Dräger Perseus A500 Ceiling-mounted version (PDF)",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Products/Perseus-A500",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_ae2e7e9442b2725c36aa90c3",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/Perseus-A500-pi-100140-en-MASTER.pdf",
+      "title": "Product Information: Dräger Perseus A500 (PDF)",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Products/Perseus-A500",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_4ed473c1c2f0a9a647fd3822",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/perseus-a500-po-a1-9067069-en-master.pdf",
+      "title": "Perseus A500 Breathing System Disassembly/Assembly Poster, en-master",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Products/Perseus-A500",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_cf073b2cecb3af4b3fbc752c",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/perseus-and-more-ca-9067302-en.pdf",
+      "title": "Perseus® A500 & More (PDF)",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Products/Perseus-A500",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_498c4c4db9b7ba07552de9e4",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "brochure",
+      "url": "https://www.draeger.com/Content/Documents/Products/perseus-br-9067209-en-master.pdf",
+      "title": "Brochure: Perseus A500",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:100",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://www.draeger.com/en_uk/Products/Perseus-A500",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_15c2f2db4631d6130983da83",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/perseus-lung-recruitment-video-DV-272-2017-safe-en.mp4",
+      "title": "Video: Perseus A500 Lung Recruitment - Safe",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Products/Perseus-A500",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_3c2b7c699c41f2712bc96ecf",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/perseus-lung-recruitment-video-DV-273-2017-intuitive-en.mp4",
+      "title": "Video: Perseus A500 Lung Recruitment - Intuitive",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Products/Perseus-A500",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_5b8a602e137e5ea95837dacc",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/Content/Documents/Products/perseus-lung-recruitment-video-DV-274-2017-assessable_en.mp4",
+      "title": "Perseus A500 Lung Recruitment - Assessable Video, en",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Products/Perseus-A500",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_d3277f8e3ce46ecd91c5c098",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "title": "Downloads & Resources",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Products/Perseus-A500",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_7eb743f66596f162dc9588ac",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/en_uk/Hospital/Downloads/V800-Simulator-Registration",
+      "title": "Access Trainer",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/en_uk/Hospital/Downloads",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_4c62e505424d180a612c4697",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "unknown",
+      "url": "https://www.draeger.com/pl_pl/Hospital/Downloads",
+      "title": "Szkolenia produktowe i broszury",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.draeger.com/ifu",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_5b5091a2d7785e82d11d1ec6",
+      "sourceId": "source_d49936a075348f16f8557292",
+      "productSlug": "wave2-drager-perseus-a500",
+      "documentType": "ifu",
+      "url": "https://www.draeger.com/ifu",
+      "title": "Technical Documentation Service",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:drager",
+        "resolver_confidence:80",
+        "resolver_document_label:IFU",
+        "resolved_from:https://www.draeger.com/en_uk/Products/Perseus-A500",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_0a4c547584e2416b6e23ba41",
+      "url": "https://www.draeger.com/Content/Documents/Content/4212-br-history-of-anaesthesia_a5_en_191212-lr.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a8dcae9b8b6fe96640d5bc03",
+      "url": "https://www.draeger.com/Content/Documents/Content/9067246-dr%C3%A4ger%20expiration%20valve-case%20study-en.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_63b2d5fde58cd4cd794780ff",
+      "url": "https://www.draeger.com/Content/Documents/Content/casestudy_norwalk_whitepaper_en.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_6a3de9e69fa2d7ca4b3e7f2c",
+      "url": "https://www.draeger.com/Content/Documents/Content/derriford_hospital_cs_.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_53b6421cd589495c77779351",
+      "url": "https://www.draeger.com/Content/Documents/Content/DID-YOU-KNOW_DYK-DYK-etCO2_monitoring_in_ventilators-1.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_d6c381a327df4c1d682f1999",
+      "url": "https://www.draeger.com/Content/Documents/Content/DID-YOU-KNOW_DYK-DYK-PEEPi-1.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_2b2935770c08f08e0ccca1cb",
+      "url": "https://www.draeger.com/Content/Documents/Content/DID-YOU-KNOW_DYK-etCO2_Dead_space.ai.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_42eba2530be62f346eddf7d3",
+      "url": "https://www.draeger.com/Content/Documents/Content/Did-you-know-12-Autorelease.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_e37740cb7928226ccae96441",
+      "url": "https://www.draeger.com/Content/Documents/Content/Did-you-know-15-Time-constant-1.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_b6b0701fa1a617e1ec7399b3",
+      "url": "https://www.draeger.com/Content/Documents/Content/Did-you-know-20-Smart-Pulmonary-View-1.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_ea7aa56ca37fb8b9c766faf5",
+      "url": "https://www.draeger.com/Content/Documents/Content/did-you-know-co2-production-illu-DGT-2579-2020-en-master-1.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_dd1f49393bc22fafce9845c3",
+      "url": "https://www.draeger.com/Content/Documents/Content/Did%20you%20know%2013%20Volume%20Guarantee%20with%20outcome.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_499845a1495925fd35252255",
+      "url": "https://www.draeger.com/Content/Documents/Content/Did%20you%20know%2014%20Variable%20Pressure%20Support.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_120d3b6b866188c0e8b8d504",
+      "url": "https://www.draeger.com/Content/Documents/Content/Did%20you%20know%206%20APRV.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_8e16a16fa5fa80a1757a1294",
+      "url": "https://www.draeger.com/Content/Documents/Content/didyouknow_1_NIF_en.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_dcfb6d900d1937b5c067d56f",
+      "url": "https://www.draeger.com/Content/Documents/Content/didyouknow_3_P0.1_en.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1c36ea3c6f4d011e072d073f",
+      "url": "https://www.draeger.com/Content/Documents/Content/didyouknow_4_PPS.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_80a8a4a17a654e73696199c0",
+      "url": "https://www.draeger.com/Content/Documents/Content/didyouknow_5_Trigger.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_9fbc26e243590e3bc6ad6984",
+      "url": "https://www.draeger.com/Content/Documents/Content/didyouknow-2-C20C_en.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_d60a5837c68a6953f7eb2a0c",
+      "url": "https://www.draeger.com/Content/Documents/Content/Didyouknow10QuickSet_en.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_3570dc40f53654f45aa071af",
+      "url": "https://www.draeger.com/Content/Documents/Content/Didyouknow7Autoflow_en.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1210f3b0dbd04f6518dc1ada",
+      "url": "https://www.draeger.com/Content/Documents/Content/Didyouknow8MMV_en.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_c056f7dc4fa63ba5457e21c6",
+      "url": "https://www.draeger.com/Content/Documents/Content/DYK_atc-illuph-D-3203-2022-en-master.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_bfd64bfedf535778cbfb83b5",
+      "url": "https://www.draeger.com/Content/Documents/Content/DYK_Avoiding_Pressure_Ulcers_in_NIV2.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_63c45e7d025636012668f623",
+      "url": "https://www.draeger.com/Content/Documents/Content/DYK_Intermittent_sighs-illuph-D-777-2021-en-master-21070.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_b5734045e20d6928179f01c4",
+      "url": "https://www.draeger.com/Content/Documents/Content/DYK_leak_adaptation-illuph-D-3202-2022-en-master.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1068815f6bb1a02d3552ca34",
+      "url": "https://www.draeger.com/Content/Documents/Content/DYK_leak_compensation-illuph-D-3205-2022-en-master.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_8a00a8f79e473ecd1fe4b4a2",
+      "url": "https://www.draeger.com/Content/Documents/Content/DYK_Manual_disconnection_anti_air_shower-illuph-DMC-103054-en-master.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1a50227091a297e821ad2cb9",
+      "url": "https://www.draeger.com/Content/Documents/Content/DYK_Pressure_Link2.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_09ab951452d5cec4486143e4",
+      "url": "https://www.draeger.com/Content/Documents/Content/DYK_SmartCare-illuph-DMC-103055-en-master.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_e34047012d97487646fe5fbf",
+      "url": "https://www.draeger.com/Content/Documents/Content/DYK_Suction_manoeuvre-illuph-DMC-103056-en-master.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_ffafaebfc4da218a5b38a700",
+      "url": "https://www.draeger.com/Content/Documents/Content/DYK_volume_support-illuph-D-3204-en-master-2022.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_f6ae19530cd0453a3f894517",
+      "url": "https://www.draeger.com/Content/Documents/Content/FILTERS-IN-ANAESTHESIA-illuph-DGT-3103-2021-en-master.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_f59c5442e31ac76cfa8f4606",
+      "url": "https://www.draeger.com/Content/Documents/Content/final-anaesthesia-case-study-hi-res-02-09-15.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_2af91eeef0116428584ee6f0",
+      "url": "https://www.draeger.com/Content/Documents/Content/glenfield_case_study.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_62257f91c28267e1699a369b",
+      "url": "https://www.draeger.com/Content/Documents/Content/H205401_P385783_Why-Dr%C3%A4ger-Original-Sample-Lines_-illuph-DGT-3102-2021-en-master.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_bb7ab6595e07455c86da26ad",
+      "url": "https://www.draeger.com/Content/Documents/Content/H220125_P433324_Did_you_know_Incremental_PEEP_and_Pinsp.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_73d49ff17c4653f69264379d",
+      "url": "https://www.draeger.com/Content/Documents/Content/H220126_P433325_Did_you_know_40_by_40.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_851da4b2b78f1ccf386e1d56",
+      "url": "https://www.draeger.com/Content/Documents/Content/H220127_P433327_Did_you_know_Sustained_inflation.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_19f0b0f249986610aec2e8a9",
+      "url": "https://www.draeger.com/Content/Documents/Content/hfov-bk-9102693-en.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_7dd49b57240905e18203d4d7",
+      "url": "https://www.draeger.com/Content/Documents/Content/IPS-Smarter-Anaesthesia-Dosing-illuph-DGT-3104-2021-en-master.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_8f1b5d6fd0929d74f4160229",
+      "url": "https://www.draeger.com/Content/Documents/Content/low-minimal-flow-anaesthesie-bk-9067990.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_ca022ea13d27be590ac77b6e",
+      "url": "https://www.draeger.com/Content/Documents/Content/lpp-booklet-9066355-en.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_e265bda7c5d9e39567bf8abe",
+      "url": "https://www.draeger.com/Content/Documents/Content/nomenklatur-bk-gesamt-9066477-en_new.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_be2ec379bbc4613a8ba706be",
+      "url": "https://www.draeger.com/Content/Documents/Content/nottingham-city-hospital-innovative-workplace-design-cs-9100330-en-uk-1602-1-v3.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_4e720f5b21f5079975503bc9",
+      "url": "https://www.draeger.com/Content/Documents/Content/or-pediatric-anesthesia-book-en.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_f77413e85f4910a1d297f26b",
+      "url": "https://www.draeger.com/Content/Documents/Content/pulmotor-bk-9097434-en.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_3bee7988f0db1aed8e3b4e67",
+      "url": "https://www.draeger.com/Content/Documents/Content/rsp_autoflow_booklet_9066357_en.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_740d107f3ebb5ed7508d3a32",
+      "url": "https://www.draeger.com/Content/Documents/Content/rsp_breathing_booklet_9066665_en.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_f1c1d7cf2b184a68bd416c6a",
+      "url": "https://www.draeger.com/Content/Documents/Content/rsp_eit_br_9050980_en.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_341a50f2f06fddceb3d2f1a8",
+      "url": "https://www.draeger.com/Content/Documents/Content/rsp_knowledge_based_weaning_cs_9049576_en_1.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_417c9fbd7f2c6f5581324b4e",
+      "url": "https://www.draeger.com/Content/Documents/Content/rsp_knowledge_based_weaning_cs_9049624_en_1.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_50989457d984d6e3f6a09060",
+      "url": "https://www.draeger.com/Content/Documents/Content/rsp_pressure_support_ventilation_booklet_9097499_en.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1add8a964bf2880ddcb2e47c",
+      "url": "https://www.draeger.com/Content/Documents/Content/rsp_smartcare_ps_cs_9050747_en_1.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_48d8fa25918ccb7cee4a45c6",
+      "url": "https://www.draeger.com/Content/Documents/Content/rsp_smartcare_ps_cs_9051147_en_1.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_6e4af73d31adf78f78baf1d3",
+      "url": "https://www.draeger.com/Content/Documents/Content/rsp_volume_guarantee_booklet_9097501_en.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_be67850113948aa61d563eeb",
+      "url": "https://www.draeger.com/Content/Documents/Content/rsp-eit-booklet-9066788-en.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_416c603ce1f084d8713edbb1",
+      "url": "https://www.draeger.com/Content/Documents/Content/smartcare_ps_booklet_9051398_en.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_08e44a7bfbc2cbc28f56245c",
+      "url": "https://www.draeger.com/Content/Documents/Content/sunderland_cs_9066780_en.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1068f5df2fb7001e005298f5",
+      "url": "https://www.draeger.com/Content/Documents/Content/ven_scps_utahvalley_success_en_1.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_8169587eed69a467f3ac7403",
+      "url": "https://www.draeger.com/Content/Documents/Content/volume-guarantee-cs-9072930-en-1601-1.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_b09c6dc527720e50b3b6813e",
+      "url": "https://www.draeger.com/Content/Documents/Content/why-use-co2-cuvette-illuph-DGT-2972-2021-en-master.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_eb87388b667f3689b80accb3",
+      "url": "https://www.draeger.com/Content/Documents/Content/Why-use-Drager-Original-Flow-sensor-illuph-DGT-2875-2020-en-master.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_45dbb89dbed5c117a8d59cc1",
+      "url": "https://www.draeger.com/Content/Documents/Content/why-use-oxylog-illuph-DGT-2973-2021-en-master.pdf",
+      "title": "Download PDF",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Download PDF",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_69bd1a738e1cbde601d25fb4",
+      "url": "https://www.draeger.com/Content/Documents/Products/accessory-ca-9066485-en-gb.pdf",
+      "title": "Accessory Catalogue 2025/2026, en",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Accessory Catalogue 2025/2026, en",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Products/Perseus-A500",
+      "warnings": []
+    },
+    {
+      "documentId": "document_374b7570ce639456f322aa53",
+      "url": "https://www.draeger.com/Content/Documents/Products/eit-intraoperative-ventilation-wp-dmc-110727-en-master.pdf",
+      "title": "White Paper Individualizing intraop ventilation using EIT, en",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "White Paper Individualizing intraop ventilation using EIT, en",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Products/Perseus-A500",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_531806c5e1e8932afc11ba66",
+      "url": "https://www.draeger.com/Content/Documents/Products/green-anaesthesia-dmc-101150-en-master.pdf",
+      "title": "Green Anaesthesia Infographic, en-master",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Green Anaesthesia Infographic, en-master",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Products/Perseus-A500",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_712bcc6889542a8e302b97eb",
+      "url": "https://www.draeger.com/Content/Documents/Products/Infografic-SmartPilot-View-DGT-3104-2021-en-master.pdf",
+      "title": "SmartPilot View Infographic, en",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "SmartPilot View Infographic, en",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Products/Perseus-A500",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_d11be79594f39b058b7fa4f0",
+      "url": "https://www.draeger.com/Content/Documents/Products/low-minimal-flow-anaesthesie-bk-9067990-en.pdf",
+      "title": "Low Flow Anaesthesia Booklet, en",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Low Flow Anaesthesia Booklet, en",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Products/Perseus-A500",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_6d39995a4b25d12f45023b8a",
+      "url": "https://www.draeger.com/Content/Documents/Products/Perseus-A500-Ceiling-pi-101841-en-MASTER.pdf",
+      "title": "Product information: Dräger Perseus A500 Ceiling-mounted version (PDF)",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Product information: Dräger Perseus A500 Ceiling-mounted version (PDF)",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Products/Perseus-A500",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_ae2e7e9442b2725c36aa90c3",
+      "url": "https://www.draeger.com/Content/Documents/Products/Perseus-A500-pi-100140-en-MASTER.pdf",
+      "title": "Product Information: Dräger Perseus A500 (PDF)",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Product Information: Dräger Perseus A500 (PDF)",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Products/Perseus-A500",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_4ed473c1c2f0a9a647fd3822",
+      "url": "https://www.draeger.com/Content/Documents/Products/perseus-a500-po-a1-9067069-en-master.pdf",
+      "title": "Perseus A500 Breathing System Disassembly/Assembly Poster, en-master",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Perseus A500 Breathing System Disassembly/Assembly Poster, en-master",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Products/Perseus-A500",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_cf073b2cecb3af4b3fbc752c",
+      "url": "https://www.draeger.com/Content/Documents/Products/perseus-and-more-ca-9067302-en.pdf",
+      "title": "Perseus® A500 & More (PDF)",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Perseus® A500 & More (PDF)",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Products/Perseus-A500",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_498c4c4db9b7ba07552de9e4",
+      "url": "https://www.draeger.com/Content/Documents/Products/perseus-br-9067209-en-master.pdf",
+      "title": "Brochure: Perseus A500",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Brochure: Perseus A500",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Products/Perseus-A500",
+      "warnings": []
+    },
+    {
+      "documentId": "document_15c2f2db4631d6130983da83",
+      "url": "https://www.draeger.com/Content/Documents/Products/perseus-lung-recruitment-video-DV-272-2017-safe-en.mp4",
+      "title": "Video: Perseus A500 Lung Recruitment - Safe",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Video: Perseus A500 Lung Recruitment - Safe",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Products/Perseus-A500",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_3c2b7c699c41f2712bc96ecf",
+      "url": "https://www.draeger.com/Content/Documents/Products/perseus-lung-recruitment-video-DV-273-2017-intuitive-en.mp4",
+      "title": "Video: Perseus A500 Lung Recruitment - Intuitive",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Video: Perseus A500 Lung Recruitment - Intuitive",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Products/Perseus-A500",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_5b8a602e137e5ea95837dacc",
+      "url": "https://www.draeger.com/Content/Documents/Products/perseus-lung-recruitment-video-DV-274-2017-assessable_en.mp4",
+      "title": "Perseus A500 Lung Recruitment - Assessable Video, en",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Perseus A500 Lung Recruitment - Assessable Video, en",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Products/Perseus-A500",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_d3277f8e3ce46ecd91c5c098",
+      "url": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "title": "Downloads & Resources",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Downloads & Resources",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Products/Perseus-A500",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_7eb743f66596f162dc9588ac",
+      "url": "https://www.draeger.com/en_uk/Hospital/Downloads/V800-Simulator-Registration",
+      "title": "Access Trainer",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Access Trainer",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Hospital/Downloads",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_5b5091a2d7785e82d11d1ec6",
+      "url": "https://www.draeger.com/ifu",
+      "title": "Technical Documentation Service",
+      "documentTypeGuess": "ifu",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Technical Documentation Service",
+      "resolvedFromUrl": "https://www.draeger.com/en_uk/Products/Perseus-A500",
+      "warnings": []
+    },
+    {
+      "documentId": "document_4c62e505424d180a612c4697",
+      "url": "https://www.draeger.com/pl_pl/Hospital/Downloads",
+      "title": "Szkolenia produktowe i broszury",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_d49936a075348f16f8557292",
+      "linkText": "Szkolenia produktowe i broszury",
+      "resolvedFromUrl": "https://www.draeger.com/ifu",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver adapter used: drager",
+    "Resolver retry skipped https://www.draeger.com/Content/Documents/Products/perseus-lung-recruitment-video-DV-272-2017-safe-en.mp4: expected HTML but received video/mp4",
+    "Resolver retry skipped https://www.draeger.com/Content/Documents/Products/perseus-lung-recruitment-video-DV-273-2017-intuitive-en.mp4: expected HTML but received video/mp4",
+    "Resolver retry skipped https://www.draeger.com/Content/Documents/Products/perseus-lung-recruitment-video-DV-274-2017-assessable_en.mp4: expected HTML but received video/mp4",
+    "Resolver rejected offsite document URL: https://safetyshop.draeger.com/en_uk",
+    "Resolver rejected offsite document URL: https://ukjobs.draeger.com/jobs",
+    "Resolver rejected offsite document URL: https://ukjobs.draeger.com/connect/login",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch",
+    "Resolver rejected unsafe document URL: tel:+44 (0) 1442 213 542",
+    "Resolver rejected unsafe document URL: tel:+353 (1) 428 6400",
+    "Resolver rejected offsite document URL: https://www.facebook.com/DraegerGlobal",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/draeger",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draeger.global/",
+    "Resolver rejected offsite document URL: https://opensource.draeger.com/",
+    "Resolver rejected offsite document URL: https://safetyshop.draeger.com/en_uk",
+    "Resolver rejected offsite document URL: https://ukjobs.draeger.com/jobs",
+    "Resolver rejected offsite document URL: https://ukjobs.draeger.com/connect/login",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch",
+    "Resolver rejected offsite document URL: https://static.draeger.com/ventilation/Simulators/Savina300/",
+    "Resolver rejected offsite document URL: https://static.draeger.com/ventilation/Simulators/Savina300SW/start.html",
+    "Resolver rejected offsite document URL: https://static.draeger.com/anaesthesia/Simulators/PerseusA500/start.html",
+    "Resolver rejected offsite document URL: https://static.draeger.com/anaesthesia/Simulators/PerseusA500v2n/start.html",
+    "Resolver rejected offsite document URL: https://static.draeger.com/ventilation/Simulators/EvitaV500/index.html",
+    "Resolver rejected offsite document URL: https://static.draeger.com/ventilation/Simulators/BabylogVN500/index.html",
+    "Resolver rejected offsite document URL: https://static.draeger.com/ventilation/Simulators/Oxylog3000plus/start.html",
+    "Resolver rejected offsite document URL: https://static.draeger.com/ventilation/Simulators/Primus/index.html",
+    "Resolver rejected offsite document URL: https://static.draeger.com/ventilation/Simulators/PrimusIE/index.html",
+    "Resolver rejected unsafe document URL: tel:+44 (0) 1442 213 542",
+    "Resolver rejected unsafe document URL: tel:+353 (1) 428 6400",
+    "Resolver rejected offsite document URL: https://www.facebook.com/DraegerGlobal",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/draeger",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draeger.global/",
+    "Resolver rejected offsite document URL: https://opensource.draeger.com/",
+    "Resolver rejected offsite document URL: https://safetyshop.draeger.com/en_uk",
+    "Resolver rejected offsite document URL: https://ukjobs.draeger.com/jobs",
+    "Resolver rejected offsite document URL: https://ukjobs.draeger.com/connect/login",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch",
+    "Resolver rejected unsafe document URL: tel:+44 (0) 1442 213 542",
+    "Resolver rejected unsafe document URL: tel:+353 (1) 428 6400",
+    "Resolver rejected offsite document URL: https://www.facebook.com/DraegerGlobal",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/draeger",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draeger.global/",
+    "Resolver rejected offsite document URL: https://opensource.draeger.com/",
+    "Resolver rejected offsite document URL: https://erecruitment.draeger.com/",
+    "Resolver rejected offsite document URL: https://erecruitment.draeger.com/index.php",
+    "Resolver rejected offsite document URL: https://www.facebook.com/DraegerGlobal",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draeger.global/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/draeger",
+    "Resolver rejected offsite document URL: https://opensource.draeger.com/",
+    "resolver=drager; attempts=7; matchedLinks=81; classifiedDocuments={\"Unknown\":95,\"Brochure\":6,\"IFU\":2}; confidenceDistribution={\"80\":2,\"90\":11,\"100\":90}; duplicatesRemoved=22"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-drager-perseus-a500",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-drager-perseus-a500",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver adapter used: drager",
+    "Resolver retry skipped https://www.draeger.com/Content/Documents/Products/perseus-lung-recruitment-video-DV-272-2017-safe-en.mp4: expected HTML but received video/mp4",
+    "Resolver retry skipped https://www.draeger.com/Content/Documents/Products/perseus-lung-recruitment-video-DV-273-2017-intuitive-en.mp4: expected HTML but received video/mp4",
+    "Resolver retry skipped https://www.draeger.com/Content/Documents/Products/perseus-lung-recruitment-video-DV-274-2017-assessable_en.mp4: expected HTML but received video/mp4",
+    "Resolver rejected offsite document URL: https://safetyshop.draeger.com/en_uk",
+    "Resolver rejected offsite document URL: https://ukjobs.draeger.com/jobs",
+    "Resolver rejected offsite document URL: https://ukjobs.draeger.com/connect/login",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch",
+    "Resolver rejected unsafe document URL: tel:+44 (0) 1442 213 542",
+    "Resolver rejected unsafe document URL: tel:+353 (1) 428 6400",
+    "Resolver rejected offsite document URL: https://www.facebook.com/DraegerGlobal",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/draeger",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draeger.global/",
+    "Resolver rejected offsite document URL: https://opensource.draeger.com/",
+    "Resolver rejected offsite document URL: https://safetyshop.draeger.com/en_uk",
+    "Resolver rejected offsite document URL: https://ukjobs.draeger.com/jobs",
+    "Resolver rejected offsite document URL: https://ukjobs.draeger.com/connect/login",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch",
+    "Resolver rejected offsite document URL: https://static.draeger.com/ventilation/Simulators/Savina300/",
+    "Resolver rejected offsite document URL: https://static.draeger.com/ventilation/Simulators/Savina300SW/start.html",
+    "Resolver rejected offsite document URL: https://static.draeger.com/anaesthesia/Simulators/PerseusA500/start.html",
+    "Resolver rejected offsite document URL: https://static.draeger.com/anaesthesia/Simulators/PerseusA500v2n/start.html",
+    "Resolver rejected offsite document URL: https://static.draeger.com/ventilation/Simulators/EvitaV500/index.html",
+    "Resolver rejected offsite document URL: https://static.draeger.com/ventilation/Simulators/BabylogVN500/index.html",
+    "Resolver rejected offsite document URL: https://static.draeger.com/ventilation/Simulators/Oxylog3000plus/start.html",
+    "Resolver rejected offsite document URL: https://static.draeger.com/ventilation/Simulators/Primus/index.html",
+    "Resolver rejected offsite document URL: https://static.draeger.com/ventilation/Simulators/PrimusIE/index.html",
+    "Resolver rejected unsafe document URL: tel:+44 (0) 1442 213 542",
+    "Resolver rejected unsafe document URL: tel:+353 (1) 428 6400",
+    "Resolver rejected offsite document URL: https://www.facebook.com/DraegerGlobal",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/draeger",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draeger.global/",
+    "Resolver rejected offsite document URL: https://opensource.draeger.com/",
+    "Resolver rejected offsite document URL: https://safetyshop.draeger.com/en_uk",
+    "Resolver rejected offsite document URL: https://ukjobs.draeger.com/jobs",
+    "Resolver rejected offsite document URL: https://ukjobs.draeger.com/connect/login",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch",
+    "Resolver rejected offsite document URL: https://www.youtube.com/watch",
+    "Resolver rejected unsafe document URL: tel:+44 (0) 1442 213 542",
+    "Resolver rejected unsafe document URL: tel:+353 (1) 428 6400",
+    "Resolver rejected offsite document URL: https://www.facebook.com/DraegerGlobal",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/draeger",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draeger.global/",
+    "Resolver rejected offsite document URL: https://opensource.draeger.com/",
+    "Resolver rejected offsite document URL: https://erecruitment.draeger.com/",
+    "Resolver rejected offsite document URL: https://erecruitment.draeger.com/index.php",
+    "Resolver rejected offsite document URL: https://www.facebook.com/DraegerGlobal",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/draeger",
+    "Resolver rejected offsite document URL: https://www.instagram.com/draeger.global/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/user/draeger",
+    "Resolver rejected offsite document URL: https://opensource.draeger.com/",
+    "resolver=drager; attempts=7; matchedLinks=81; classifiedDocuments={\"Unknown\":95,\"Brochure\":6,\"IFU\":2}; confidenceDistribution={\"80\":2,\"90\":11,\"100\":90}; duplicatesRemoved=22",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

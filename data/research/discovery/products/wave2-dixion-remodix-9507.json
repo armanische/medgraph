@@ -1,0 +1,417 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-remodix-9507",
+    "manufacturer": "Dixion",
+    "productName": "DIXION Remodix 9507",
+    "model": "Remodix 9507",
+    "category": "Рентгеновское оборудование"
+  },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [
+      "https://dixion.ru/goods/palatniy-rentgenovskiy-apparat-Remodix-9507.html",
+      "https://dixion.ru/upload/iblock/198/tsx6q0z2rkdc1y385x7pircdc422fidj/Dixion_Remodix_9507.pdf"
+    ],
+    "normalizedUrls": [
+      "https://dixion.ru/goods/palatniy-rentgenovskiy-apparat-Remodix-9507.html",
+      "https://dixion.ru/upload/iblock/198/tsx6q0z2rkdc1y385x7pircdc422fidj/Dixion_Remodix_9507.pdf"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “Dixion”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_4fff349326c28f44bdd01772",
+      "productSlug": "wave2-dixion-remodix-9507",
+      "manufacturer": "Dixion",
+      "productName": "DIXION Remodix 9507",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://dixion.ru/goods/palatniy-rentgenovskiy-apparat-Remodix-9507.html",
+      "title": "DIXION Remodix 9507 official product page",
+      "snippet": "Live official product page; identity and availability evidence only.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Live official product page; identity and availability evidence only."
+      ]
+    },
+    {
+      "sourceId": "source_9ce65115f785360dfe268c46",
+      "productSlug": "wave2-dixion-remodix-9507",
+      "manufacturer": "Dixion",
+      "productName": "DIXION Remodix 9507",
+      "sourceType": "manufacturer_document",
+      "url": "https://dixion.ru/upload/iblock/198/tsx6q0z2rkdc1y385x7pircdc422fidj/Dixion_Remodix_9507.pdf",
+      "title": "DIXION Remodix 9507 official brochure",
+      "snippet": "Official model catalogue PDF; conservatively classified as brochure.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "manufacturer-hosted document candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official model catalogue PDF; conservatively classified as brochure."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_a4f3b7bebe2b0bdd86ff354b",
+      "sourceId": "source_4fff349326c28f44bdd01772",
+      "productSlug": "wave2-dixion-remodix-9507",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/palatniy-rentgenovskiy-apparat-Remodix-9507.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_c2d02f02f734c226ff8e9266",
+      "sourceId": "source_4fff349326c28f44bdd01772",
+      "productSlug": "wave2-dixion-remodix-9507",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/documents/Dixion_Remodix_9507_.pdf",
+      "title": "Скачать буклет «Диагностический палатный рентген Dixion Remodix 9507»",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/goods/palatniy-rentgenovskiy-apparat-Remodix-9507.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_5f33c3642a8c14417f7970a9",
+      "sourceId": "source_4fff349326c28f44bdd01772",
+      "productSlug": "wave2-dixion-remodix-9507",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/goods/palatniy-rentgenovskiy-apparat-Remodix-9507.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_0ffc598f4fd939fed4e57dde",
+      "sourceId": "source_9ce65115f785360dfe268c46",
+      "productSlug": "wave2-dixion-remodix-9507",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/upload/iblock/198/tsx6q0z2rkdc1y385x7pircdc422fidj/Dixion_Remodix_9507.pdf",
+      "title": "DIXION Remodix 9507 official brochure",
+      "language": null,
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "source URL is itself a document candidate"
+      ]
+    },
+    {
+      "documentId": "document_6780be508626ec5b48485cd3",
+      "sourceId": "source_4fff349326c28f44bdd01772",
+      "productSlug": "wave2-dixion-remodix-9507",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/palatniy-rentgenovskiy-apparat-Remodix-9507.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_2725bd3f23a94de96314722e",
+      "sourceId": "source_4fff349326c28f44bdd01772",
+      "productSlug": "wave2-dixion-remodix-9507",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/palatniy-rentgenovskiy-apparat-Remodix-9507.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_18a3591a45202d290587b108",
+      "sourceId": "source_4fff349326c28f44bdd01772",
+      "productSlug": "wave2-dixion-remodix-9507",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/palatniy-rentgenovskiy-apparat-Remodix-9507.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_4a51bb860e7306c1a22fbc00",
+      "sourceId": "source_4fff349326c28f44bdd01772",
+      "productSlug": "wave2-dixion-remodix-9507",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/palatniy-rentgenovskiy-apparat-Remodix-9507.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_fb6f16095fceb57a5ab5bc38",
+      "sourceId": "source_4fff349326c28f44bdd01772",
+      "productSlug": "wave2-dixion-remodix-9507",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Manufacturer Brochure",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/palatniy-rentgenovskiy-apparat-Remodix-9507.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_6780be508626ec5b48485cd3",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_4fff349326c28f44bdd01772",
+      "linkText": "Медицинское оборудование",
+      "resolvedFromUrl": "https://dixion.ru/goods/palatniy-rentgenovskiy-apparat-Remodix-9507.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_2725bd3f23a94de96314722e",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_4fff349326c28f44bdd01772",
+      "linkText": "Каталоги оборудования",
+      "resolvedFromUrl": "https://dixion.ru/goods/palatniy-rentgenovskiy-apparat-Remodix-9507.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_18a3591a45202d290587b108",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_4fff349326c28f44bdd01772",
+      "linkText": "Новинки оборудования",
+      "resolvedFromUrl": "https://dixion.ru/goods/palatniy-rentgenovskiy-apparat-Remodix-9507.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_4a51bb860e7306c1a22fbc00",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_4fff349326c28f44bdd01772",
+      "linkText": "Скоро в продаже",
+      "resolvedFromUrl": "https://dixion.ru/goods/palatniy-rentgenovskiy-apparat-Remodix-9507.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_fb6f16095fceb57a5ab5bc38",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Manufacturer Brochure",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_4fff349326c28f44bdd01772",
+      "linkText": "",
+      "resolvedFromUrl": "https://dixion.ru/goods/palatniy-rentgenovskiy-apparat-Remodix-9507.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_a4f3b7bebe2b0bdd86ff354b",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_4fff349326c28f44bdd01772",
+      "linkText": "Скачать каталог в формате PDF",
+      "resolvedFromUrl": "https://dixion.ru/goods/palatniy-rentgenovskiy-apparat-Remodix-9507.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_c2d02f02f734c226ff8e9266",
+      "url": "https://dixion.ru/upload/documents/Dixion_Remodix_9507_.pdf",
+      "title": "Скачать буклет «Диагностический палатный рентген Dixion Remodix 9507»",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_4fff349326c28f44bdd01772",
+      "linkText": "Скачать буклет «Диагностический палатный рентген Dixion Remodix 9507»",
+      "resolvedFromUrl": "https://dixion.ru/goods/palatniy-rentgenovskiy-apparat-Remodix-9507.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_5f33c3642a8c14417f7970a9",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_4fff349326c28f44bdd01772",
+      "linkText": "Скачать прайс-лист",
+      "resolvedFromUrl": "https://dixion.ru/goods/palatniy-rentgenovskiy-apparat-Remodix-9507.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=8; classifiedDocuments={\"Brochure\":11,\"Unknown\":3}; confidenceDistribution={\"80\":9,\"100\":5}; duplicatesRemoved=6"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-dixion-remodix-9507",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-remodix-9507",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-remodix-9507",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 2,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 2,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=8; classifiedDocuments={\"Brochure\":11,\"Unknown\":3}; confidenceDistribution={\"80\":9,\"100\":5}; duplicatesRemoved=6",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

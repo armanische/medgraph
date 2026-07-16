@@ -163,6 +163,285 @@
       "updatedAt": "candidate-review-queue"
     },
     {
+      "reviewItemId": "review_item_26b9ea5fa1f521242ea3b3e7",
+      "productSlug": "wave2-mindray-a7",
+      "productTitle": "Mindray A7",
+      "claimCandidateId": "claim_0ea1981f1d65724a08a10b19",
+      "suggestedClaimType": "product.display",
+      "valuePayload": {
+        "value": "18.5",
+        "unit": "inch"
+      },
+      "evidenceCandidateIds": [
+        "evidence_49c8d47c2773892eb8733698"
+      ],
+      "documentVersionIds": [
+        "document_version_0e912da5f55a2f78fb0a6b47"
+      ],
+      "sourceUrls": [
+        "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_67d6bd801591bd315eab87fe",
+      "productSlug": "wave2-mindray-a7",
+      "productTitle": "Mindray A7",
+      "claimCandidateId": "claim_d8f0d32c3e90933177943085",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Inspiratory resistance in mechanical ventilation mode",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_ff1546eaac1f91aa673902cb"
+      ],
+      "documentVersionIds": [
+        "document_version_0e912da5f55a2f78fb0a6b47"
+      ],
+      "sourceUrls": [
+        "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_df46d895f659f926c83489e0",
+      "productSlug": "wave2-mindray-a7",
+      "productTitle": "Mindray A7",
+      "claimCandidateId": "claim_a778acfddb3487550b905aec",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "neonate",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_eaf2d95856d84c0579648585"
+      ],
+      "documentVersionIds": [
+        "document_version_0e912da5f55a2f78fb0a6b47"
+      ],
+      "sourceUrls": [
+        "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5f1cd6cdb2f473126fe1721f",
+      "productSlug": "wave2-mindray-a7",
+      "productTitle": "Mindray A7",
+      "claimCandidateId": "claim_41717cc8ad35c620ffcfff5b",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "neonatal",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c42bc5d708d80dac17a51ffa"
+      ],
+      "documentVersionIds": [
+        "document_version_0e912da5f55a2f78fb0a6b47"
+      ],
+      "sourceUrls": [
+        "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_8340651cfe8fcfeab12792d2",
+      "productSlug": "wave2-mindray-a7",
+      "productTitle": "Mindray A7",
+      "claimCandidateId": "claim_4e5f3553ac05f901ce7c4e0a",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "children",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_247d44a9b351d93f25784e9e"
+      ],
+      "documentVersionIds": [
+        "document_version_0e912da5f55a2f78fb0a6b47"
+      ],
+      "sourceUrls": [
+        "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_012911c9aceb7039d59f1a77",
+      "productSlug": "wave2-mindray-a7",
+      "productTitle": "Mindray A7",
+      "claimCandidateId": "claim_1a48b0b9018a744f9cbdb4b4",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "pediatric",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c65e84967ec49949b7c131cc"
+      ],
+      "documentVersionIds": [
+        "document_version_0e912da5f55a2f78fb0a6b47"
+      ],
+      "sourceUrls": [
+        "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_e6d55cf9714a9df5a930bb1d",
+      "productSlug": "wave2-mindray-a7",
+      "productTitle": "Mindray A7",
+      "claimCandidateId": "claim_cb691d11b00404e3a58cbc6b",
+      "suggestedClaimType": "product.measurementRanges",
+      "valuePayload": {
+        "value": "1",
+        "unit": "%"
+      },
+      "evidenceCandidateIds": [
+        "evidence_b73915f5261646f4761a6332"
+      ],
+      "documentVersionIds": [
+        "document_version_0e912da5f55a2f78fb0a6b47"
+      ],
+      "sourceUrls": [
+        "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_1ebb795ae2fda6cc0d642c4b",
+      "productSlug": "wave2-mindray-a7",
+      "productTitle": "Mindray A7",
+      "claimCandidateId": "claim_6ceac4d35bc8fc10082fe98f",
+      "suggestedClaimType": "product.measurementRanges",
+      "valuePayload": {
+        "value": "0.1",
+        "unit": "%"
+      },
+      "evidenceCandidateIds": [
+        "evidence_6b18fb1e8e3f7163b511177b"
+      ],
+      "documentVersionIds": [
+        "document_version_0e912da5f55a2f78fb0a6b47"
+      ],
+      "sourceUrls": [
+        "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_24a4a221fcdfd53f3b38cfcf",
+      "productSlug": "wave2-mindray-a7",
+      "productTitle": "Mindray A7",
+      "claimCandidateId": "claim_85bd2aaea91eb6ab6175715c",
+      "suggestedClaimType": "product.measurementRanges",
+      "valuePayload": {
+        "value": "0",
+        "unit": "%"
+      },
+      "evidenceCandidateIds": [
+        "evidence_db406cfb2177c6b4bf17178e"
+      ],
+      "documentVersionIds": [
+        "document_version_0e912da5f55a2f78fb0a6b47"
+      ],
+      "sourceUrls": [
+        "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
       "reviewItemId": "review_item_b97d161372c17da81e727a38",
       "productSlug": "wave2-mindray-a7",
       "productTitle": "Mindray A7",
@@ -5104,16 +5383,19 @@
       "evidenceCandidateIds": [
         "evidence_d91416beaa003568ca902c46"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_0e912da5f55a2f78fb0a6b47"
+      ],
+      "sourceUrls": [
+        "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -5132,16 +5414,19 @@
       "evidenceCandidateIds": [
         "evidence_d2cc19fda7797887eaf3ee31"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_0e912da5f55a2f78fb0a6b47"
+      ],
+      "sourceUrls": [
+        "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -5160,16 +5445,19 @@
       "evidenceCandidateIds": [
         "evidence_ad99906ef2a2d1a61f707cbb"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_0e912da5f55a2f78fb0a6b47"
+      ],
+      "sourceUrls": [
+        "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -5188,16 +5476,19 @@
       "evidenceCandidateIds": [
         "evidence_26015202a652953117745595"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_0e912da5f55a2f78fb0a6b47"
+      ],
+      "sourceUrls": [
+        "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -5216,16 +5507,19 @@
       "evidenceCandidateIds": [
         "evidence_9675b07584fac3cd12b23a4e"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_0e912da5f55a2f78fb0a6b47"
+      ],
+      "sourceUrls": [
+        "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -5244,16 +5538,19 @@
       "evidenceCandidateIds": [
         "evidence_a8e973ec7daa3268ffe1d92b"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_0e912da5f55a2f78fb0a6b47"
+      ],
+      "sourceUrls": [
+        "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -5272,16 +5569,19 @@
       "evidenceCandidateIds": [
         "evidence_d21e0fd5c8cf1f0520ea4ea1"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_0e912da5f55a2f78fb0a6b47"
+      ],
+      "sourceUrls": [
+        "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -5300,16 +5600,19 @@
       "evidenceCandidateIds": [
         "evidence_e15f749e140311ca5350386f"
       ],
-      "documentVersionIds": [],
-      "sourceUrls": [],
+      "documentVersionIds": [
+        "document_version_0e912da5f55a2f78fb0a6b47"
+      ],
+      "sourceUrls": [
+        "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+      ],
       "status": "pending_review",
-      "priority": "high",
-      "riskLevel": "medium",
+      "priority": "medium",
+      "riskLevel": "low",
       "reasons": [
         "Document metadata or low-level extracted term requires review.",
         "Review Queue item is not a Verified Claim.",
-        "Reviewer decision does not publish data.",
-        "No DocumentVersion was linked through evidence."
+        "Reviewer decision does not publish data."
       ],
       "reviewerNotes": null,
       "createdAt": "candidate-review-queue",
@@ -5482,6 +5785,37 @@
     ],
     "product.display": [
       {
+        "reviewItemId": "review_item_26b9ea5fa1f521242ea3b3e7",
+        "productSlug": "wave2-mindray-a7",
+        "productTitle": "Mindray A7",
+        "claimCandidateId": "claim_0ea1981f1d65724a08a10b19",
+        "suggestedClaimType": "product.display",
+        "valuePayload": {
+          "value": "18.5",
+          "unit": "inch"
+        },
+        "evidenceCandidateIds": [
+          "evidence_49c8d47c2773892eb8733698"
+        ],
+        "documentVersionIds": [
+          "document_version_0e912da5f55a2f78fb0a6b47"
+        ],
+        "sourceUrls": [
+          "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
         "reviewItemId": "review_item_b97d161372c17da81e727a38",
         "productSlug": "wave2-mindray-a7",
         "productTitle": "Mindray A7",
@@ -5524,6 +5858,322 @@
         },
         "evidenceCandidateIds": [
           "evidence_bdebd4ae29b06896537ed07f"
+        ],
+        "documentVersionIds": [
+          "document_version_0e912da5f55a2f78fb0a6b47"
+        ],
+        "sourceUrls": [
+          "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.operatingModes": [
+      {
+        "reviewItemId": "review_item_67d6bd801591bd315eab87fe",
+        "productSlug": "wave2-mindray-a7",
+        "productTitle": "Mindray A7",
+        "claimCandidateId": "claim_d8f0d32c3e90933177943085",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "Inspiratory resistance in mechanical ventilation mode",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_ff1546eaac1f91aa673902cb"
+        ],
+        "documentVersionIds": [
+          "document_version_0e912da5f55a2f78fb0a6b47"
+        ],
+        "sourceUrls": [
+          "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.patientGroup": [
+      {
+        "reviewItemId": "review_item_df46d895f659f926c83489e0",
+        "productSlug": "wave2-mindray-a7",
+        "productTitle": "Mindray A7",
+        "claimCandidateId": "claim_a778acfddb3487550b905aec",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "neonate",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_eaf2d95856d84c0579648585"
+        ],
+        "documentVersionIds": [
+          "document_version_0e912da5f55a2f78fb0a6b47"
+        ],
+        "sourceUrls": [
+          "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_5f1cd6cdb2f473126fe1721f",
+        "productSlug": "wave2-mindray-a7",
+        "productTitle": "Mindray A7",
+        "claimCandidateId": "claim_41717cc8ad35c620ffcfff5b",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "neonatal",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c42bc5d708d80dac17a51ffa"
+        ],
+        "documentVersionIds": [
+          "document_version_0e912da5f55a2f78fb0a6b47"
+        ],
+        "sourceUrls": [
+          "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_8340651cfe8fcfeab12792d2",
+        "productSlug": "wave2-mindray-a7",
+        "productTitle": "Mindray A7",
+        "claimCandidateId": "claim_4e5f3553ac05f901ce7c4e0a",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "children",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_247d44a9b351d93f25784e9e"
+        ],
+        "documentVersionIds": [
+          "document_version_0e912da5f55a2f78fb0a6b47"
+        ],
+        "sourceUrls": [
+          "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_012911c9aceb7039d59f1a77",
+        "productSlug": "wave2-mindray-a7",
+        "productTitle": "Mindray A7",
+        "claimCandidateId": "claim_1a48b0b9018a744f9cbdb4b4",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "pediatric",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c65e84967ec49949b7c131cc"
+        ],
+        "documentVersionIds": [
+          "document_version_0e912da5f55a2f78fb0a6b47"
+        ],
+        "sourceUrls": [
+          "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.measurementRanges": [
+      {
+        "reviewItemId": "review_item_e6d55cf9714a9df5a930bb1d",
+        "productSlug": "wave2-mindray-a7",
+        "productTitle": "Mindray A7",
+        "claimCandidateId": "claim_cb691d11b00404e3a58cbc6b",
+        "suggestedClaimType": "product.measurementRanges",
+        "valuePayload": {
+          "value": "1",
+          "unit": "%"
+        },
+        "evidenceCandidateIds": [
+          "evidence_b73915f5261646f4761a6332"
+        ],
+        "documentVersionIds": [
+          "document_version_0e912da5f55a2f78fb0a6b47"
+        ],
+        "sourceUrls": [
+          "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_1ebb795ae2fda6cc0d642c4b",
+        "productSlug": "wave2-mindray-a7",
+        "productTitle": "Mindray A7",
+        "claimCandidateId": "claim_6ceac4d35bc8fc10082fe98f",
+        "suggestedClaimType": "product.measurementRanges",
+        "valuePayload": {
+          "value": "0.1",
+          "unit": "%"
+        },
+        "evidenceCandidateIds": [
+          "evidence_6b18fb1e8e3f7163b511177b"
+        ],
+        "documentVersionIds": [
+          "document_version_0e912da5f55a2f78fb0a6b47"
+        ],
+        "sourceUrls": [
+          "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_24a4a221fcdfd53f3b38cfcf",
+        "productSlug": "wave2-mindray-a7",
+        "productTitle": "Mindray A7",
+        "claimCandidateId": "claim_85bd2aaea91eb6ab6175715c",
+        "suggestedClaimType": "product.measurementRanges",
+        "valuePayload": {
+          "value": "0",
+          "unit": "%"
+        },
+        "evidenceCandidateIds": [
+          "evidence_db406cfb2177c6b4bf17178e"
+        ],
+        "documentVersionIds": [
+          "document_version_0e912da5f55a2f78fb0a6b47"
+        ],
+        "sourceUrls": [
+          "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_43c1a99f40c305084e2675e5",
+        "productSlug": "wave2-mindray-a7",
+        "productTitle": "Mindray A7",
+        "claimCandidateId": "claim_75ccb2d1138ff631e3547966",
+        "suggestedClaimType": "product.measurementRanges",
+        "valuePayload": {
+          "value": "2 bpm to 100 bpm",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_96a1814657e15b2686154973"
+        ],
+        "documentVersionIds": [
+          "document_version_0e912da5f55a2f78fb0a6b47"
+        ],
+        "sourceUrls": [
+          "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_3eac201908b447bfa5c668a6",
+        "productSlug": "wave2-mindray-a7",
+        "productTitle": "Mindray A7",
+        "claimCandidateId": "claim_4e42ed2c10c6785286b1c523",
+        "suggestedClaimType": "product.measurementRanges",
+        "valuePayload": {
+          "value": "0 bpm to 150 bpm",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_7cb79f856057390b7ae664c2"
         ],
         "documentVersionIds": [
           "document_version_0e912da5f55a2f78fb0a6b47"
@@ -5621,70 +6271,6 @@
         },
         "evidenceCandidateIds": [
           "evidence_4c81c05d029c6f58630887c2"
-        ],
-        "documentVersionIds": [
-          "document_version_0e912da5f55a2f78fb0a6b47"
-        ],
-        "sourceUrls": [
-          "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
-        ],
-        "status": "pending_review",
-        "priority": "medium",
-        "riskLevel": "medium",
-        "reasons": [
-          "Candidate claim requires human review before verification.",
-          "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data."
-        ],
-        "reviewerNotes": null,
-        "createdAt": "candidate-review-queue",
-        "updatedAt": "candidate-review-queue"
-      }
-    ],
-    "product.measurementRanges": [
-      {
-        "reviewItemId": "review_item_43c1a99f40c305084e2675e5",
-        "productSlug": "wave2-mindray-a7",
-        "productTitle": "Mindray A7",
-        "claimCandidateId": "claim_75ccb2d1138ff631e3547966",
-        "suggestedClaimType": "product.measurementRanges",
-        "valuePayload": {
-          "value": "2 bpm to 100 bpm",
-          "unit": null
-        },
-        "evidenceCandidateIds": [
-          "evidence_96a1814657e15b2686154973"
-        ],
-        "documentVersionIds": [
-          "document_version_0e912da5f55a2f78fb0a6b47"
-        ],
-        "sourceUrls": [
-          "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
-        ],
-        "status": "pending_review",
-        "priority": "medium",
-        "riskLevel": "medium",
-        "reasons": [
-          "Candidate claim requires human review before verification.",
-          "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data."
-        ],
-        "reviewerNotes": null,
-        "createdAt": "candidate-review-queue",
-        "updatedAt": "candidate-review-queue"
-      },
-      {
-        "reviewItemId": "review_item_3eac201908b447bfa5c668a6",
-        "productSlug": "wave2-mindray-a7",
-        "productTitle": "Mindray A7",
-        "claimCandidateId": "claim_4e42ed2c10c6785286b1c523",
-        "suggestedClaimType": "product.measurementRanges",
-        "valuePayload": {
-          "value": "0 bpm to 150 bpm",
-          "unit": null
-        },
-        "evidenceCandidateIds": [
-          "evidence_7cb79f856057390b7ae664c2"
         ],
         "documentVersionIds": [
           "document_version_0e912da5f55a2f78fb0a6b47"
@@ -10435,16 +11021,19 @@
         "evidenceCandidateIds": [
           "evidence_d91416beaa003568ca902c46"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_0e912da5f55a2f78fb0a6b47"
+        ],
+        "sourceUrls": [
+          "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -10463,16 +11052,19 @@
         "evidenceCandidateIds": [
           "evidence_d2cc19fda7797887eaf3ee31"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_0e912da5f55a2f78fb0a6b47"
+        ],
+        "sourceUrls": [
+          "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -10491,16 +11083,19 @@
         "evidenceCandidateIds": [
           "evidence_ad99906ef2a2d1a61f707cbb"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_0e912da5f55a2f78fb0a6b47"
+        ],
+        "sourceUrls": [
+          "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -10519,16 +11114,19 @@
         "evidenceCandidateIds": [
           "evidence_26015202a652953117745595"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_0e912da5f55a2f78fb0a6b47"
+        ],
+        "sourceUrls": [
+          "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -10547,16 +11145,19 @@
         "evidenceCandidateIds": [
           "evidence_9675b07584fac3cd12b23a4e"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_0e912da5f55a2f78fb0a6b47"
+        ],
+        "sourceUrls": [
+          "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -10575,16 +11176,19 @@
         "evidenceCandidateIds": [
           "evidence_a8e973ec7daa3268ffe1d92b"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_0e912da5f55a2f78fb0a6b47"
+        ],
+        "sourceUrls": [
+          "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -10603,16 +11207,19 @@
         "evidenceCandidateIds": [
           "evidence_d21e0fd5c8cf1f0520ea4ea1"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_0e912da5f55a2f78fb0a6b47"
+        ],
+        "sourceUrls": [
+          "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -10631,16 +11238,19 @@
         "evidenceCandidateIds": [
           "evidence_e15f749e140311ca5350386f"
         ],
-        "documentVersionIds": [],
-        "sourceUrls": [],
+        "documentVersionIds": [
+          "document_version_0e912da5f55a2f78fb0a6b47"
+        ],
+        "sourceUrls": [
+          "https://www.mindray.com/content/dam/xpace/en/site/mdr-sscp/anesthesia/kf-h-046-026049-00-a7-satety-and-performance-information.pdf"
+        ],
         "status": "pending_review",
-        "priority": "high",
-        "riskLevel": "medium",
+        "priority": "medium",
+        "riskLevel": "low",
         "reasons": [
           "Document metadata or low-level extracted term requires review.",
           "Review Queue item is not a Verified Claim.",
-          "Reviewer decision does not publish data.",
-          "No DocumentVersion was linked through evidence."
+          "Reviewer decision does not publish data."
         ],
         "reviewerNotes": null,
         "createdAt": "candidate-review-queue",
@@ -10657,40 +11267,7 @@
       "sha256": "4f92e32295a46a54d47ff214f156a975aa677ad8bc7a239aeb5e227a11abf575"
     }
   ],
-  "missingEvidence": [
-    {
-      "claimCandidateId": "claim_7f3fb43b0caf8af45813d003",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_d68e089baab0a84e009126bb",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_e0565dd493ec90c5cd7dd2bc",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_969cf66307bec2301d37fb4c",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_6bb8f4b8adb74821355fb2bf",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_76958529f9711b8462aa86d6",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_9461b927a9caeebbfa5fdbfe",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    },
-    {
-      "claimCandidateId": "claim_f238a692f29920e2c109f4cb",
-      "reason": "Evidence exists but no DocumentVersion could be linked."
-    }
-  ],
+  "missingEvidence": [],
   "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
   "warnings": [
     "Resolver rejected unsafe document URL: javascript:void(0);",

@@ -1,0 +1,926 @@
+{
+  "product": {
+    "productSlug": "wave2-ambu-ascope-5-broncho-sampler-set",
+    "manufacturer": "Ambu",
+    "productName": "Ambu aScope 5 Broncho Sampler Set",
+    "model": "aScope 5 Broncho Sampler Set",
+    "category": "Эндоскопические расходные материалы"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_e54c3c247b55ffbe038e64a7",
+      "documentCandidateId": "document_095fae2bd55c787a74c99a89",
+      "sourceId": "source_aaa8d72d4cd2bfc52f73caca",
+      "productSlug": "wave2-ambu-ascope-5-broncho-sampler-set",
+      "documentKey": "trusted-document:document_095fae2bd55c787a74c99a89",
+      "documentType": "datasheet",
+      "title": "Ambu® aScope™ 5 Broncho HD 5.6/2.8 Sampler Set Datasheet v02 2024/04",
+      "language": null,
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho+Sampler+Set%2fDatasheet%2fLBL-008790-aScope-5-Broncho-HD-56-28-Sampler-Set_EN_V2_202404_TCC-11612_pdf.pdf",
+      "sha256": "8db5892fb5129bd40f7f0ee107c28cb76e6266ca8e8bef7cf1ed4a77726d403e",
+      "contentType": "application/pdf",
+      "byteSize": 614703,
+      "filePath": "data/research/artifacts/artifacts/sha256/8d/b5/8db5892fb5129bd40f7f0ee107c28cb76e6266ca8e8bef7cf1ed4a77726d403e.aspx",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_eb1566c423660e22b89ab0d3",
+      "productSlug": "wave2-ambu-ascope-5-broncho-sampler-set",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Ambu® aScope™ 5 Broncho HD 5.6/2.8 Sampler Set Datasheet v02 2024/04",
+      "unit": null,
+      "rawText": "Document title: Ambu® aScope™ 5 Broncho HD 5.6/2.8 Sampler Set Datasheet v02 2024/04",
+      "documentVersionId": "document_version_e54c3c247b55ffbe038e64a7",
+      "documentCandidateId": "document_095fae2bd55c787a74c99a89",
+      "documentSha256": "8db5892fb5129bd40f7f0ee107c28cb76e6266ca8e8bef7cf1ed4a77726d403e",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho+Sampler+Set%2fDatasheet%2fLBL-008790-aScope-5-Broncho-HD-56-28-Sampler-Set_EN_V2_202404_TCC-11612_pdf.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_f219e4135f96665e2e1a3455",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_83bb8b5d6f2b7bf09b7e9f97",
+      "productSlug": "wave2-ambu-ascope-5-broncho-sampler-set",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "datasheet",
+      "unit": null,
+      "rawText": "Document type: datasheet",
+      "documentVersionId": "document_version_e54c3c247b55ffbe038e64a7",
+      "documentCandidateId": "document_095fae2bd55c787a74c99a89",
+      "documentSha256": "8db5892fb5129bd40f7f0ee107c28cb76e6266ca8e8bef7cf1ed4a77726d403e",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho+Sampler+Set%2fDatasheet%2fLBL-008790-aScope-5-Broncho-HD-56-28-Sampler-Set_EN_V2_202404_TCC-11612_pdf.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_190e7530ac9549f5daf78851",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_b89602b197ffd92abc2d6f24",
+      "productSlug": "wave2-ambu-ascope-5-broncho-sampler-set",
+      "factType": "product.dimensions",
+      "label": "Диаметр",
+      "value": "5.6",
+      "unit": "mm",
+      "rawText": "diameter 5.6 mm",
+      "documentVersionId": "document_version_e54c3c247b55ffbe038e64a7",
+      "documentCandidateId": "document_095fae2bd55c787a74c99a89",
+      "documentSha256": "8db5892fb5129bd40f7f0ee107c28cb76e6266ca8e8bef7cf1ed4a77726d403e",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho+Sampler+Set%2fDatasheet%2fLBL-008790-aScope-5-Broncho-HD-56-28-Sampler-Set_EN_V2_202404_TCC-11612_pdf.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 51
+      },
+      "evidenceCandidateId": "evidence_9354976e7c555e4cc81acf74",
+      "confidence": 0.84,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:endoscopy",
+        "matchedPattern:diameter",
+        "matchedSynonym:Diameter",
+        "unitParsed:mm"
+      ]
+    },
+    {
+      "factCandidateId": "fact_84a161754c97cc39bbec79e4",
+      "productSlug": "wave2-ambu-ascope-5-broncho-sampler-set",
+      "factType": "product.dimensions",
+      "label": "Диаметр",
+      "value": "6.0",
+      "unit": "mm",
+      "rawText": "diameter 6.0 mm",
+      "documentVersionId": "document_version_e54c3c247b55ffbe038e64a7",
+      "documentCandidateId": "document_095fae2bd55c787a74c99a89",
+      "documentSha256": "8db5892fb5129bd40f7f0ee107c28cb76e6266ca8e8bef7cf1ed4a77726d403e",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho+Sampler+Set%2fDatasheet%2fLBL-008790-aScope-5-Broncho-HD-56-28-Sampler-Set_EN_V2_202404_TCC-11612_pdf.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 52
+      },
+      "evidenceCandidateId": "evidence_704f769d0a18675dde8606af",
+      "confidence": 0.84,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:endoscopy",
+        "matchedPattern:diameter",
+        "matchedSynonym:Diameter",
+        "unitParsed:mm"
+      ]
+    },
+    {
+      "factCandidateId": "fact_292c7e0d57caecd626cc7791",
+      "productSlug": "wave2-ambu-ascope-5-broncho-sampler-set",
+      "factType": "product.dimensions",
+      "label": "Длина",
+      "value": "600",
+      "unit": "mm",
+      "rawText": "Working length 600 mm",
+      "documentVersionId": "document_version_e54c3c247b55ffbe038e64a7",
+      "documentCandidateId": "document_095fae2bd55c787a74c99a89",
+      "documentSha256": "8db5892fb5129bd40f7f0ee107c28cb76e6266ca8e8bef7cf1ed4a77726d403e",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho+Sampler+Set%2fDatasheet%2fLBL-008790-aScope-5-Broncho-HD-56-28-Sampler-Set_EN_V2_202404_TCC-11612_pdf.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 55
+      },
+      "evidenceCandidateId": "evidence_72e257f3c7387a50628ae8fc",
+      "confidence": 0.84,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:endoscopy",
+        "matchedPattern:length",
+        "matchedSynonym:Working length",
+        "unitParsed:mm"
+      ]
+    },
+    {
+      "factCandidateId": "fact_c59eb9d8e5b0b5651b68a6ce",
+      "productSlug": "wave2-ambu-ascope-5-broncho-sampler-set",
+      "factType": "product.safetyFeatures",
+      "label": "Стерильность",
+      "value": "sterile",
+      "unit": null,
+      "rawText": "sterile",
+      "documentVersionId": "document_version_e54c3c247b55ffbe038e64a7",
+      "documentCandidateId": "document_095fae2bd55c787a74c99a89",
+      "documentSha256": "8db5892fb5129bd40f7f0ee107c28cb76e6266ca8e8bef7cf1ed4a77726d403e",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho+Sampler+Set%2fDatasheet%2fLBL-008790-aScope-5-Broncho-HD-56-28-Sampler-Set_EN_V2_202404_TCC-11612_pdf.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 17
+      },
+      "evidenceCandidateId": "evidence_dc5cb504ffd26a9ca3cfbff2",
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:consumables",
+        "matchedPattern:sterile",
+        "matchedSynonym:Sterile",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_57fa52900bbcec418ddc2844",
+      "productSlug": "wave2-ambu-ascope-5-broncho-sampler-set",
+      "factType": "product.intendedUse",
+      "label": "Одноразовое применение",
+      "value": "single-use",
+      "unit": null,
+      "rawText": "single-use",
+      "documentVersionId": "document_version_e54c3c247b55ffbe038e64a7",
+      "documentCandidateId": "document_095fae2bd55c787a74c99a89",
+      "documentSha256": "8db5892fb5129bd40f7f0ee107c28cb76e6266ca8e8bef7cf1ed4a77726d403e",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho+Sampler+Set%2fDatasheet%2fLBL-008790-aScope-5-Broncho-HD-56-28-Sampler-Set_EN_V2_202404_TCC-11612_pdf.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 35
+      },
+      "evidenceCandidateId": "evidence_2a55395f56915b6e2fd601c4",
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:endoscopy",
+        "matchedPattern:single_use",
+        "matchedSynonym:Single-use",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_cf8220e1831e885699cb8f23",
+      "productSlug": "wave2-ambu-ascope-5-broncho-sampler-set",
+      "factType": "product.intendedUse",
+      "label": "Применение",
+      "value": "endoscopy/environment",
+      "unit": null,
+      "rawText": "use-endoscopy/environment",
+      "documentVersionId": "document_version_e54c3c247b55ffbe038e64a7",
+      "documentCandidateId": "document_095fae2bd55c787a74c99a89",
+      "documentSha256": "8db5892fb5129bd40f7f0ee107c28cb76e6266ca8e8bef7cf1ed4a77726d403e",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho+Sampler+Set%2fDatasheet%2fLBL-008790-aScope-5-Broncho-HD-56-28-Sampler-Set_EN_V2_202404_TCC-11612_pdf.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 108
+      },
+      "evidenceCandidateId": "evidence_888f4ab9248a5d5c635faee3",
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:consumables",
+        "matchedPattern:usage",
+        "matchedSynonym:Use",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_5bf2385c96d56c04cc72173d",
+      "productSlug": "wave2-ambu-ascope-5-broncho-sampler-set",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "display",
+      "unit": null,
+      "rawText": "display devices may not be",
+      "documentVersionId": "document_version_e54c3c247b55ffbe038e64a7",
+      "documentCandidateId": "document_095fae2bd55c787a74c99a89",
+      "documentSha256": "8db5892fb5129bd40f7f0ee107c28cb76e6266ca8e8bef7cf1ed4a77726d403e",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho+Sampler+Set%2fDatasheet%2fLBL-008790-aScope-5-Broncho-HD-56-28-Sampler-Set_EN_V2_202404_TCC-11612_pdf.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1
+      },
+      "evidenceCandidateId": "evidence_3be2c724f825e1110dd092cb",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_fb601fa65dff5f1512c23a3d",
+      "productSlug": "wave2-ambu-ascope-5-broncho-sampler-set",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Compatibility",
+      "unit": null,
+      "rawText": "Compatibility High-frequency endotherapy instruments,",
+      "documentVersionId": "document_version_e54c3c247b55ffbe038e64a7",
+      "documentCandidateId": "document_095fae2bd55c787a74c99a89",
+      "documentSha256": "8db5892fb5129bd40f7f0ee107c28cb76e6266ca8e8bef7cf1ed4a77726d403e",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho+Sampler+Set%2fDatasheet%2fLBL-008790-aScope-5-Broncho-HD-56-28-Sampler-Set_EN_V2_202404_TCC-11612_pdf.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 83
+      },
+      "evidenceCandidateId": "evidence_267999124d3177236b1469a0",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_f219e4135f96665e2e1a3455",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_e54c3c247b55ffbe038e64a7",
+      "documentCandidateId": "document_095fae2bd55c787a74c99a89",
+      "sha256": "8db5892fb5129bd40f7f0ee107c28cb76e6266ca8e8bef7cf1ed4a77726d403e",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho+Sampler+Set%2fDatasheet%2fLBL-008790-aScope-5-Broncho-HD-56-28-Sampler-Set_EN_V2_202404_TCC-11612_pdf.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Ambu® aScope™ 5 Broncho HD 5.6/2.8 Sampler Set Datasheet v02 2024/04",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_190e7530ac9549f5daf78851",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_e54c3c247b55ffbe038e64a7",
+      "documentCandidateId": "document_095fae2bd55c787a74c99a89",
+      "sha256": "8db5892fb5129bd40f7f0ee107c28cb76e6266ca8e8bef7cf1ed4a77726d403e",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho+Sampler+Set%2fDatasheet%2fLBL-008790-aScope-5-Broncho-HD-56-28-Sampler-Set_EN_V2_202404_TCC-11612_pdf.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: datasheet",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_9354976e7c555e4cc81acf74",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e54c3c247b55ffbe038e64a7",
+      "documentCandidateId": "document_095fae2bd55c787a74c99a89",
+      "sha256": "8db5892fb5129bd40f7f0ee107c28cb76e6266ca8e8bef7cf1ed4a77726d403e",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho+Sampler+Set%2fDatasheet%2fLBL-008790-aScope-5-Broncho-HD-56-28-Sampler-Set_EN_V2_202404_TCC-11612_pdf.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 51
+      },
+      "quotedText": "diameter 5.6 mm",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_704f769d0a18675dde8606af",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e54c3c247b55ffbe038e64a7",
+      "documentCandidateId": "document_095fae2bd55c787a74c99a89",
+      "sha256": "8db5892fb5129bd40f7f0ee107c28cb76e6266ca8e8bef7cf1ed4a77726d403e",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho+Sampler+Set%2fDatasheet%2fLBL-008790-aScope-5-Broncho-HD-56-28-Sampler-Set_EN_V2_202404_TCC-11612_pdf.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 52
+      },
+      "quotedText": "diameter 6.0 mm",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_72e257f3c7387a50628ae8fc",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e54c3c247b55ffbe038e64a7",
+      "documentCandidateId": "document_095fae2bd55c787a74c99a89",
+      "sha256": "8db5892fb5129bd40f7f0ee107c28cb76e6266ca8e8bef7cf1ed4a77726d403e",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho+Sampler+Set%2fDatasheet%2fLBL-008790-aScope-5-Broncho-HD-56-28-Sampler-Set_EN_V2_202404_TCC-11612_pdf.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 55
+      },
+      "quotedText": "Working length 600 mm",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_dc5cb504ffd26a9ca3cfbff2",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e54c3c247b55ffbe038e64a7",
+      "documentCandidateId": "document_095fae2bd55c787a74c99a89",
+      "sha256": "8db5892fb5129bd40f7f0ee107c28cb76e6266ca8e8bef7cf1ed4a77726d403e",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho+Sampler+Set%2fDatasheet%2fLBL-008790-aScope-5-Broncho-HD-56-28-Sampler-Set_EN_V2_202404_TCC-11612_pdf.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 17
+      },
+      "quotedText": "sterile",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_2a55395f56915b6e2fd601c4",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e54c3c247b55ffbe038e64a7",
+      "documentCandidateId": "document_095fae2bd55c787a74c99a89",
+      "sha256": "8db5892fb5129bd40f7f0ee107c28cb76e6266ca8e8bef7cf1ed4a77726d403e",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho+Sampler+Set%2fDatasheet%2fLBL-008790-aScope-5-Broncho-HD-56-28-Sampler-Set_EN_V2_202404_TCC-11612_pdf.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 35
+      },
+      "quotedText": "single-use",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_888f4ab9248a5d5c635faee3",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e54c3c247b55ffbe038e64a7",
+      "documentCandidateId": "document_095fae2bd55c787a74c99a89",
+      "sha256": "8db5892fb5129bd40f7f0ee107c28cb76e6266ca8e8bef7cf1ed4a77726d403e",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho+Sampler+Set%2fDatasheet%2fLBL-008790-aScope-5-Broncho-HD-56-28-Sampler-Set_EN_V2_202404_TCC-11612_pdf.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 108
+      },
+      "quotedText": "use-endoscopy/environment",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_3be2c724f825e1110dd092cb",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e54c3c247b55ffbe038e64a7",
+      "documentCandidateId": "document_095fae2bd55c787a74c99a89",
+      "sha256": "8db5892fb5129bd40f7f0ee107c28cb76e6266ca8e8bef7cf1ed4a77726d403e",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho+Sampler+Set%2fDatasheet%2fLBL-008790-aScope-5-Broncho-HD-56-28-Sampler-Set_EN_V2_202404_TCC-11612_pdf.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1
+      },
+      "quotedText": "display devices may not be",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_267999124d3177236b1469a0",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_e54c3c247b55ffbe038e64a7",
+      "documentCandidateId": "document_095fae2bd55c787a74c99a89",
+      "sha256": "8db5892fb5129bd40f7f0ee107c28cb76e6266ca8e8bef7cf1ed4a77726d403e",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fBronchoscopes%2faScope+5+Broncho+Sampler+Set%2fDatasheet%2fLBL-008790-aScope-5-Broncho-HD-56-28-Sampler-Set_EN_V2_202404_TCC-11612_pdf.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 83
+      },
+      "quotedText": "Compatibility High-frequency endotherapy instruments,",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_5b499b0594eec1bfd2af137d",
+      "productSlug": "wave2-ambu-ascope-5-broncho-sampler-set",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Ambu® aScope™ 5 Broncho HD 5.6/2.8 Sampler Set Datasheet v02 2024/04",
+        "unit": null
+      },
+      "rawText": "Document title: Ambu® aScope™ 5 Broncho HD 5.6/2.8 Sampler Set Datasheet v02 2024/04",
+      "evidenceCandidateIds": [
+        "evidence_f219e4135f96665e2e1a3455"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_4ae36265a11e635c7dff7f40",
+      "productSlug": "wave2-ambu-ascope-5-broncho-sampler-set",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "datasheet",
+        "unit": null
+      },
+      "rawText": "Document type: datasheet",
+      "evidenceCandidateIds": [
+        "evidence_190e7530ac9549f5daf78851"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_1f5038fca1fc3afaae9047e9",
+      "productSlug": "wave2-ambu-ascope-5-broncho-sampler-set",
+      "subjectType": "product",
+      "suggestedClaimType": "product.dimensions",
+      "valuePayload": {
+        "value": "5.6",
+        "unit": "mm"
+      },
+      "rawText": "diameter 5.6 mm",
+      "evidenceCandidateIds": [
+        "evidence_9354976e7c555e4cc81acf74"
+      ],
+      "confidence": 0.84,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_b336dc0140a0360c924a43aa",
+      "productSlug": "wave2-ambu-ascope-5-broncho-sampler-set",
+      "subjectType": "product",
+      "suggestedClaimType": "product.dimensions",
+      "valuePayload": {
+        "value": "6.0",
+        "unit": "mm"
+      },
+      "rawText": "diameter 6.0 mm",
+      "evidenceCandidateIds": [
+        "evidence_704f769d0a18675dde8606af"
+      ],
+      "confidence": 0.84,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_faedb1419219d106c4c0c296",
+      "productSlug": "wave2-ambu-ascope-5-broncho-sampler-set",
+      "subjectType": "product",
+      "suggestedClaimType": "product.dimensions",
+      "valuePayload": {
+        "value": "600",
+        "unit": "mm"
+      },
+      "rawText": "Working length 600 mm",
+      "evidenceCandidateIds": [
+        "evidence_72e257f3c7387a50628ae8fc"
+      ],
+      "confidence": 0.84,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_3c524e0186c675a3d2e67bdb",
+      "productSlug": "wave2-ambu-ascope-5-broncho-sampler-set",
+      "subjectType": "product",
+      "suggestedClaimType": "product.safetyFeatures",
+      "valuePayload": {
+        "value": "sterile",
+        "unit": null
+      },
+      "rawText": "sterile",
+      "evidenceCandidateIds": [
+        "evidence_dc5cb504ffd26a9ca3cfbff2"
+      ],
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_5bb72326d3a3a2eafb739de4",
+      "productSlug": "wave2-ambu-ascope-5-broncho-sampler-set",
+      "subjectType": "product",
+      "suggestedClaimType": "product.intendedUse",
+      "valuePayload": {
+        "value": "single-use",
+        "unit": null
+      },
+      "rawText": "single-use",
+      "evidenceCandidateIds": [
+        "evidence_2a55395f56915b6e2fd601c4"
+      ],
+      "confidence": 0.8,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_a1eb39c6742238d797e363bb",
+      "productSlug": "wave2-ambu-ascope-5-broncho-sampler-set",
+      "subjectType": "product",
+      "suggestedClaimType": "product.intendedUse",
+      "valuePayload": {
+        "value": "endoscopy/environment",
+        "unit": null
+      },
+      "rawText": "use-endoscopy/environment",
+      "evidenceCandidateIds": [
+        "evidence_888f4ab9248a5d5c635faee3"
+      ],
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_4d44c47243cfb52f5b0c5ba8",
+      "productSlug": "wave2-ambu-ascope-5-broncho-sampler-set",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "rawText": "display devices may not be",
+      "evidenceCandidateIds": [
+        "evidence_3be2c724f825e1110dd092cb"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_8cedc8c06b322dd514ae1979",
+      "productSlug": "wave2-ambu-ascope-5-broncho-sampler-set",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Compatibility",
+        "unit": null
+      },
+      "rawText": "Compatibility High-frequency endotherapy instruments,",
+      "evidenceCandidateIds": [
+        "evidence_267999124d3177236b1469a0"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "endoscopy",
+      "consumables"
+    ],
+    "patternsMatched": {
+      "endoscopy.diameter": 2,
+      "endoscopy.length": 1,
+      "endoscopy.sterile": 1,
+      "endoscopy.single_use": 1,
+      "consumables.sterile": 1,
+      "consumables.usage": 1
+    },
+    "normalizedUnits": {
+      "mm": 3
+    },
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "endoscopy": [
+        "working_channel"
+      ],
+      "consumables": [
+        "connector",
+        "dead_space",
+        "filtration_efficiency",
+        "humidification"
+      ]
+    },
+    "coveragePercent": 38
+  },
+  "warnings": [
+    "Resolver adapter used: ambu",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: mailto:tisc@ambu.com",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: http://www.ambuusa.com/corporate-giving",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "resolver=ambu; attempts=5; matchedLinks=48; classifiedDocuments={\"Unknown\":24,\"Quick Guide\":2,\"Datasheet\":3,\"IFU\":31}; confidenceDistribution={\"80\":14,\"90\":3,\"95\":5,\"100\":38}; duplicatesRemoved=12",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

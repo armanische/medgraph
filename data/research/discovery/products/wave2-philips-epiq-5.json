@@ -1,0 +1,1129 @@
+{
+  "product": {
+    "productSlug": "wave2-philips-epiq-5",
+    "manufacturer": "Philips",
+    "productName": "Philips EPIQ 5",
+    "model": "EPIQ 5",
+    "category": "УЗИ аппараты"
+  },
+  "providerDiagnostics": {
+    "providerName": "philips",
+    "strategyUsed": "Philips professional products, support and documentation",
+    "pagesVisited": [
+      "https://www.usa.philips.com/healthcare/product/HC795118/epiq-5-ultrasound-system"
+    ],
+    "candidateUrls": [
+      "https://www.usa.philips.com/healthcare/product/HC795118/epiq-5-ultrasound-system"
+    ],
+    "normalizedUrls": [
+      "https://www.usa.philips.com/healthcare/product/HC795118/epiq-5-ultrasound-system"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": []
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": false,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "manufacturer": "Philips",
+      "productName": "Philips EPIQ 5",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.usa.philips.com/healthcare/product/HC795118/epiq-5-ultrasound-system",
+      "title": "Philips EPIQ 5 Circular Edition official product page",
+      "snippet": "Official current refurbished-system page; candidate-only source.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official current refurbished-system page; candidate-only source."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_7588a920e9b40c2ecd8b5985",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "brochure",
+      "url": "https://www.documents.philips.com/assets/20170523/1e30d38ef3b249bc9e9ea77c015ea1a4.pdf",
+      "title": "Product Brochure Philips EPIQ 5 – Ultrasound system for women&#x27;s health care PDF | 4.27 MB",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:100",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://www.usa.philips.com/healthcare/product/HC795118/epiq-5-ultrasound-system",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_02201dc21f20030e0f825ec8",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "brochure",
+      "url": "https://www.documents.philips.com/assets/20170523/268dfdfc40d247d4964aa77c0168d6b0.pdf",
+      "title": "Product Brochure Philips EPIQ 5 – Advance Ultrasound system - General Imaging PDF | 5.36 MB",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:100",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://www.usa.philips.com/healthcare/product/HC795118/epiq-5-ultrasound-system",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_ba618114290e6892f0b4cc59",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "brochure",
+      "url": "https://www.documents.philips.com/assets/20170523/bea659412ad647d69b14a77c01454629.pdf",
+      "title": "Product Brochure Philips EPIQ 5 – DS Advance Ultrasound system PDF | 3.63 MB",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:100",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://www.usa.philips.com/healthcare/product/HC795118/epiq-5-ultrasound-system",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_e80ecad146ed00f94addb1a9",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/c-s/support",
+      "title": "Customer support",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/support",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1749ae9a23fb41cd7f06d934",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/c-s/support/contact",
+      "title": "Explore Support contact",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/support",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a5c4716b8da3045926b49bca",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/c-w/support-home.html",
+      "title": "Consumer support hub",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/e-commerce",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a36b394b16c9154e48a1c220",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/c-w/support-home/support-contact-page",
+      "title": "Consumer contact information",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/e-commerce",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_c0b22643ad36f0bb0fbf230a",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/about/support",
+      "title": "Contact and support",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/support",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_e2e78854fdc3b4d4729be9b7",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support",
+      "title": "Contact & support",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/resource-center",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_0cf97a335ae802059f1c3caa",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/compliance",
+      "title": "Compliance Program",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/e-commerce",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_bfae9b51056a55fe929754cf",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/customer-payment-portal",
+      "title": "Contract payments",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/e-commerce",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_d08c1e648a9de5b89e24d155",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/customer-service-portal",
+      "title": "Customer service portal",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/resource-center",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_4e27f63376a203be54bec7d1",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/customer-service-portal?FormType=CSP",
+      "title": "here",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/customer-service-portal",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a62aa55343fbefa009a19174",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/distributors",
+      "title": "Distributor locator",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/e-commerce",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_f48ecc7bb658652aec557f83",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/e-commerce",
+      "title": "Shops",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/resource-center",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_5005ee7de827ce8d8d0bdaad",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/incenter",
+      "title": "Service and upgrade documents",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/e-commerce",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_97041ba0803ffa4b894b8257",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/interoperability-standards",
+      "title": "IT Standards",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/e-commerce",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_864203457003a4666ac87c6d",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/myphilips-community",
+      "title": "Register now",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_fb4e151bcb8ceecb3542d97f",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "title": "More",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/resource-center",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_3248857f855a4b4c7a41e0c0",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "certificate",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center/results?sort=relevancy&amp;f:@ps_contenttype=[Declaration%20of%20Compatibility]&amp;f:@ps_language=[English,English%20(US)]",
+      "title": "Declarations of compatibility",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/resource-center",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_f7561c348314960deeaedc4b",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center/results?sort=relevancy&amp;f:@ps_contenttype=[DICOM%20Conformance%20Statement]&amp;f:@ps_language=[English,English%20(US)]",
+      "title": "DICOM conformance statements",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/resource-center",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_4388f6130de526737e2664f4",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "certificate",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center/results?sort=relevancy&amp;f:@ps_contenttype=[EU%20Declaration%20of%20conformity]&amp;f:@ps_language=[English%20(US),English]%20Expand%20(1%20line)",
+      "title": "EU declarations of conformity",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/resource-center",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_c313d604d83d7b29b273a2e6",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center/results?sort=relevancy&amp;f:@ps_contenttype=[IHE%20Integration%20Statements]&amp;f:@ps_language=[English,English%20(US)]",
+      "title": "IHE integration statements",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/resource-center",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_59472107094338f84521ad2a",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "ifu",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center/results?sort=relevancy&amp;f:@ps_contenttype=[Instruction%20for%20Use]&amp;f:@ps_language=[English%20(US),English]",
+      "title": "Instructions for use & manuals",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:IFU",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/resource-center",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_a79add89c86b67ab27913179",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center/results?sort=relevancy&amp;f:@ps_contenttype=[Technical%20Description]&amp;f:@ps_language=[English%20(US),English]",
+      "title": "Technical descriptions",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/resource-center",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_325438f4ed3340bc0edad3a5",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/support",
+      "title": "Consumer support",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/resource-center",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_63e56a5dc1d0d51c7fefef86",
+      "sourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "productSlug": "wave2-philips-epiq-5",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/c-m-so/media-players/latest",
+      "title": "Media Players",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:80",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/support",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_7588a920e9b40c2ecd8b5985",
+      "url": "https://www.documents.philips.com/assets/20170523/1e30d38ef3b249bc9e9ea77c015ea1a4.pdf",
+      "title": "Product Brochure Philips EPIQ 5 – Ultrasound system for women&#x27;s health care PDF | 4.27 MB",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "Product Brochure Philips EPIQ 5 – Ultrasound system for women&#x27;s health care PDF | 4.27 MB",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/product/HC795118/epiq-5-ultrasound-system",
+      "warnings": []
+    },
+    {
+      "documentId": "document_02201dc21f20030e0f825ec8",
+      "url": "https://www.documents.philips.com/assets/20170523/268dfdfc40d247d4964aa77c0168d6b0.pdf",
+      "title": "Product Brochure Philips EPIQ 5 – Advance Ultrasound system - General Imaging PDF | 5.36 MB",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "Product Brochure Philips EPIQ 5 – Advance Ultrasound system - General Imaging PDF | 5.36 MB",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/product/HC795118/epiq-5-ultrasound-system",
+      "warnings": []
+    },
+    {
+      "documentId": "document_ba618114290e6892f0b4cc59",
+      "url": "https://www.documents.philips.com/assets/20170523/bea659412ad647d69b14a77c01454629.pdf",
+      "title": "Product Brochure Philips EPIQ 5 – DS Advance Ultrasound system PDF | 3.63 MB",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "Product Brochure Philips EPIQ 5 – DS Advance Ultrasound system PDF | 3.63 MB",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/product/HC795118/epiq-5-ultrasound-system",
+      "warnings": []
+    },
+    {
+      "documentId": "document_63e56a5dc1d0d51c7fefef86",
+      "url": "https://www.usa.philips.com/c-m-so/media-players/latest",
+      "title": "Media Players",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "Media Players",
+      "resolvedFromUrl": "https://www.usa.philips.com/support",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_e80ecad146ed00f94addb1a9",
+      "url": "https://www.usa.philips.com/c-s/support",
+      "title": "Customer support",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "Customer support",
+      "resolvedFromUrl": "https://www.usa.philips.com/support",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1749ae9a23fb41cd7f06d934",
+      "url": "https://www.usa.philips.com/c-s/support/contact",
+      "title": "Explore Support contact",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "Explore Support contact",
+      "resolvedFromUrl": "https://www.usa.philips.com/support",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a5c4716b8da3045926b49bca",
+      "url": "https://www.usa.philips.com/c-w/support-home.html",
+      "title": "Consumer support hub",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "Consumer support hub",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/e-commerce",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a36b394b16c9154e48a1c220",
+      "url": "https://www.usa.philips.com/c-w/support-home/support-contact-page",
+      "title": "Consumer contact information",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "Consumer contact information",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/e-commerce",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_c0b22643ad36f0bb0fbf230a",
+      "url": "https://www.usa.philips.com/healthcare/about/support",
+      "title": "Contact and support",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "Contact and support",
+      "resolvedFromUrl": "https://www.usa.philips.com/support",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_e2e78854fdc3b4d4729be9b7",
+      "url": "https://www.usa.philips.com/healthcare/support",
+      "title": "Contact & support",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "Contact & support",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_0cf97a335ae802059f1c3caa",
+      "url": "https://www.usa.philips.com/healthcare/support/compliance",
+      "title": "Compliance Program",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "Compliance Program",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/e-commerce",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_bfae9b51056a55fe929754cf",
+      "url": "https://www.usa.philips.com/healthcare/support/customer-payment-portal",
+      "title": "Contract payments",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "Contract payments",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/e-commerce",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_d08c1e648a9de5b89e24d155",
+      "url": "https://www.usa.philips.com/healthcare/support/customer-service-portal",
+      "title": "Customer service portal",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "Customer service portal",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_4e27f63376a203be54bec7d1",
+      "url": "https://www.usa.philips.com/healthcare/support/customer-service-portal?FormType=CSP",
+      "title": "here",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "here",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/customer-service-portal",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a62aa55343fbefa009a19174",
+      "url": "https://www.usa.philips.com/healthcare/support/distributors",
+      "title": "Distributor locator",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "Distributor locator",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/e-commerce",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_f48ecc7bb658652aec557f83",
+      "url": "https://www.usa.philips.com/healthcare/support/e-commerce",
+      "title": "Shops",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "Shops",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_5005ee7de827ce8d8d0bdaad",
+      "url": "https://www.usa.philips.com/healthcare/support/incenter",
+      "title": "Service and upgrade documents",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "Service and upgrade documents",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/e-commerce",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_97041ba0803ffa4b894b8257",
+      "url": "https://www.usa.philips.com/healthcare/support/interoperability-standards",
+      "title": "IT Standards",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "IT Standards",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/e-commerce",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_864203457003a4666ac87c6d",
+      "url": "https://www.usa.philips.com/healthcare/support/myphilips-community",
+      "title": "Register now",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "Register now",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_fb4e151bcb8ceecb3542d97f",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "title": "More",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "More",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_3248857f855a4b4c7a41e0c0",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center/results?sort=relevancy&amp;f:@ps_contenttype=[Declaration%20of%20Compatibility]&amp;f:@ps_language=[English,English%20(US)]",
+      "title": "Declarations of compatibility",
+      "documentTypeGuess": "certificate",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "Declarations of compatibility",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "warnings": []
+    },
+    {
+      "documentId": "document_f7561c348314960deeaedc4b",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center/results?sort=relevancy&amp;f:@ps_contenttype=[DICOM%20Conformance%20Statement]&amp;f:@ps_language=[English,English%20(US)]",
+      "title": "DICOM conformance statements",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "DICOM conformance statements",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_4388f6130de526737e2664f4",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center/results?sort=relevancy&amp;f:@ps_contenttype=[EU%20Declaration%20of%20conformity]&amp;f:@ps_language=[English%20(US),English]%20Expand%20(1%20line)",
+      "title": "EU declarations of conformity",
+      "documentTypeGuess": "certificate",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "EU declarations of conformity",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "warnings": []
+    },
+    {
+      "documentId": "document_c313d604d83d7b29b273a2e6",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center/results?sort=relevancy&amp;f:@ps_contenttype=[IHE%20Integration%20Statements]&amp;f:@ps_language=[English,English%20(US)]",
+      "title": "IHE integration statements",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "IHE integration statements",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_59472107094338f84521ad2a",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center/results?sort=relevancy&amp;f:@ps_contenttype=[Instruction%20for%20Use]&amp;f:@ps_language=[English%20(US),English]",
+      "title": "Instructions for use & manuals",
+      "documentTypeGuess": "ifu",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "Instructions for use & manuals",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "warnings": []
+    },
+    {
+      "documentId": "document_a79add89c86b67ab27913179",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center/results?sort=relevancy&amp;f:@ps_contenttype=[Technical%20Description]&amp;f:@ps_language=[English%20(US),English]",
+      "title": "Technical descriptions",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "Technical descriptions",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_325438f4ed3340bc0edad3a5",
+      "url": "https://www.usa.philips.com/support",
+      "title": "Consumer support",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a8c564edc30f9f6c250f8dc4",
+      "linkText": "Consumer support",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver adapter used: philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/all-coffee-espresso-machines",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/accessories-collection",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-baristina-espresso-machine-milky-white-bar300-00",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/airfyers",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-artisan-pasta-noodle-maker",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Kitchen-Appliances",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Airfryer",
+    "Resolver rejected offsite document URL: https://www.philips-hue.com/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected unsafe document URL: tel:1-800-722-9377",
+    "Resolver rejected unsafe document URL: tel:1-800-229-6417",
+    "Resolver rejected unsafe document URL: tel:1-800-225-0230",
+    "Resolver rejected unsafe document URL: tel:1-800-345-6443",
+    "Resolver rejected unsafe document URL: tel:1-800-422-9448",
+    "Resolver rejected unsafe document URL: tel:1-800-542-8368",
+    "Resolver rejected unsafe document URL: tel:1-800-228-4728",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://www.adobe.com/es/acrobat/pricing.html?mv=search&amp;mv2=paidsearch&amp;sdid=BDDS3F8G&amp;ef_id=6f0d31b717991d11c4b85672a14576da:G:s&amp;s_kwcid=AL!3085!10!79577362531267!79577498729085&amp;msclkid=6f0d31b717991d11c4b85672a14576da",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "resolver=philips; attempts=6; matchedLinks=27; classifiedDocuments={\"Unknown\":97,\"Brochure\":6,\"IFU\":1}; confidenceDistribution={\"80\":1,\"90\":97,\"100\":6}; duplicatesRemoved=77"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-philips-epiq-5",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-philips-epiq-5",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver adapter used: philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/all-coffee-espresso-machines",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/accessories-collection",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-baristina-espresso-machine-milky-white-bar300-00",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/airfyers",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-artisan-pasta-noodle-maker",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Kitchen-Appliances",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Airfryer",
+    "Resolver rejected offsite document URL: https://www.philips-hue.com/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected unsafe document URL: tel:1-800-722-9377",
+    "Resolver rejected unsafe document URL: tel:1-800-229-6417",
+    "Resolver rejected unsafe document URL: tel:1-800-225-0230",
+    "Resolver rejected unsafe document URL: tel:1-800-345-6443",
+    "Resolver rejected unsafe document URL: tel:1-800-422-9448",
+    "Resolver rejected unsafe document URL: tel:1-800-542-8368",
+    "Resolver rejected unsafe document URL: tel:1-800-228-4728",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://www.adobe.com/es/acrobat/pricing.html?mv=search&amp;mv2=paidsearch&amp;sdid=BDDS3F8G&amp;ef_id=6f0d31b717991d11c4b85672a14576da:G:s&amp;s_kwcid=AL!3085!10!79577362531267!79577498729085&amp;msclkid=6f0d31b717991d11c4b85672a14576da",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "resolver=philips; attempts=6; matchedLinks=27; classifiedDocuments={\"Unknown\":97,\"Brochure\":6,\"IFU\":1}; confidenceDistribution={\"80\":1,\"90\":97,\"100\":6}; duplicatesRemoved=77",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

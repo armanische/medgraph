@@ -1,0 +1,63 @@
+{
+  "product": {
+    "productSlug": "wave2-philips-heartstart-fr3",
+    "manufacturer": "Philips",
+    "productName": "Philips HeartStart FR3",
+    "model": "HeartStart FR3",
+    "category": "Дефибрилляторы"
+  },
+  "attemptedDownloads": [
+    {
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "sourceId": "source_534adcd9c71ca4c64ca324e5",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "title": "Philips HeartStart FR3 Technical Reference Manual",
+      "url": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "documentType": "user_manual",
+      "trustTier": 1
+    }
+  ],
+  "downloadedArtifacts": [
+    {
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "title": "Philips HeartStart FR3 Technical Reference Manual",
+      "documentType": "user_manual",
+      "sha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "contentType": "application/pdf",
+      "byteSize": 3237662,
+      "filePath": "data/research/artifacts/artifacts/sha256/3f/4b/3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525.pdf"
+    }
+  ],
+  "failedDownloads": [],
+  "skippedDocuments": [],
+  "documentVersions": [
+    {
+      "versionId": "document_version_b69a2395713b739bec137983",
+      "documentCandidateId": "document_8c5367cb0efec8952c5dfcf7",
+      "sourceId": "source_534adcd9c71ca4c64ca324e5",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "documentKey": "trusted-document:document_8c5367cb0efec8952c5dfcf7",
+      "documentType": "user_manual",
+      "title": "Philips HeartStart FR3 Technical Reference Manual",
+      "language": null,
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "sha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525",
+      "contentType": "application/pdf",
+      "byteSize": 3237662,
+      "filePath": "data/research/artifacts/artifacts/sha256/3f/4b/3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "warnings": [
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}

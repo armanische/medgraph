@@ -1,0 +1,218 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-convelar-family",
+    "manufacturer": "Dixion",
+    "productName": "DIXION Convelar surgical light family",
+    "model": "Convelar family",
+    "category": "Операционное освещение"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_a8bab0b85c6ec6f5f1a45311",
+      "documentCandidateId": "document_73206a2772ab6a61be27b69a",
+      "sourceId": "source_7772a4c20e4856c87c8fdadd",
+      "productSlug": "wave2-dixion-convelar-family",
+      "documentKey": "trusted-document:document_73206a2772ab6a61be27b69a",
+      "documentType": "unknown",
+      "title": "Скачать прайс-лист",
+      "language": null,
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "contentType": "application/pdf",
+      "byteSize": 178281,
+      "filePath": "data/research/artifacts/artifacts/sha256/1c/da/1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_c6662b8a79889ff13558ad93",
+      "productSlug": "wave2-dixion-convelar-family",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "Скачать прайс-лист",
+      "unit": null,
+      "rawText": "Document title: Скачать прайс-лист",
+      "documentVersionId": "document_version_a8bab0b85c6ec6f5f1a45311",
+      "documentCandidateId": "document_73206a2772ab6a61be27b69a",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_5ac68642650a8bea551dc55f",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_a7f1ae5a42157b0b248a80fe",
+      "productSlug": "wave2-dixion-convelar-family",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "unknown",
+      "unit": null,
+      "rawText": "Document type: unknown",
+      "documentVersionId": "document_version_a8bab0b85c6ec6f5f1a45311",
+      "documentCandidateId": "document_73206a2772ab6a61be27b69a",
+      "documentSha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_772ba29c2ffb8c00187b38d2",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_5ac68642650a8bea551dc55f",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_a8bab0b85c6ec6f5f1a45311",
+      "documentCandidateId": "document_73206a2772ab6a61be27b69a",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: Скачать прайс-лист",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_772ba29c2ffb8c00187b38d2",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_a8bab0b85c6ec6f5f1a45311",
+      "documentCandidateId": "document_73206a2772ab6a61be27b69a",
+      "sha256": "1cda5420f6cb1fb01209911b40b8c2113ad29c9e55fe3eb71bdaeb8c66481ca8",
+      "sourceUrl": "https://dixion.ru/upload/documents/price.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: unknown",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_5ee8f121f66402924a8ce37d",
+      "productSlug": "wave2-dixion-convelar-family",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Скачать прайс-лист",
+        "unit": null
+      },
+      "rawText": "Document title: Скачать прайс-лист",
+      "evidenceCandidateIds": [
+        "evidence_5ac68642650a8bea551dc55f"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_16c38112ae86ee4f4b77a7c6",
+      "productSlug": "wave2-dixion-convelar-family",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "rawText": "Document type: unknown",
+      "evidenceCandidateIds": [
+        "evidence_772ba29c2ffb8c00187b38d2"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "lighting"
+    ],
+    "patternsMatched": {},
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "lighting": [
+        "color_temperature",
+        "diameter",
+        "illumination",
+        "sterile_handle"
+      ]
+    },
+    "coveragePercent": 0
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=7; classifiedDocuments={\"Brochure\":11,\"Unknown\":1}; confidenceDistribution={\"80\":9,\"100\":3}; duplicatesRemoved=5",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

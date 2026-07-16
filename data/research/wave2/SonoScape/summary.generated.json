@@ -1,20 +1,20 @@
 {
   "manufacturer": "SonoScape",
   "generatedAt": "wave2-execution-v1",
-  "productsDiscovered": 10,
-  "officialSources": 1,
-  "documentsFound": 14,
-  "downloads": 9,
-  "artifacts": 9,
-  "candidateFacts": 29,
-  "reviewItems": 29,
-  "blockedProducts": 1,
+  "productsDiscovered": 16,
+  "officialSources": 20,
+  "documentsFound": 23,
+  "downloads": 15,
+  "artifacts": 15,
+  "candidateFacts": 46,
+  "reviewItems": 46,
+  "blockedProducts": 2,
   "errors": [],
   "warnings": [
     "Required document coverage is below Wave 2 target.",
     "Wave 2 execution creates reports only; no publication is performed."
   ],
-  "durationMs": 1469,
+  "durationMs": 1691,
   "retries": [],
   "stages": [
     {

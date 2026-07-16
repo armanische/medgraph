@@ -1,0 +1,382 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-convelar-family",
+    "manufacturer": "Dixion",
+    "productName": "DIXION Convelar surgical light family",
+    "model": "Convelar family",
+    "category": "Операционное освещение"
+  },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [
+      "https://dixion.ru/subcategory/operatsionnie-svetilniki.html",
+      "https://dixion.ru/upload/iblock/882/ew07fblc1eoklaugkpkp8kmt9bx7iinp/Dixion_Convelar_2024.pdf"
+    ],
+    "normalizedUrls": [
+      "https://dixion.ru/subcategory/operatsionnie-svetilniki.html",
+      "https://dixion.ru/upload/iblock/882/ew07fblc1eoklaugkpkp8kmt9bx7iinp/Dixion_Convelar_2024.pdf"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “Dixion”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_7772a4c20e4856c87c8fdadd",
+      "productSlug": "wave2-dixion-convelar-family",
+      "manufacturer": "Dixion",
+      "productName": "DIXION Convelar surgical light family",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://dixion.ru/subcategory/operatsionnie-svetilniki.html",
+      "title": "DIXION Convelar official category page",
+      "snippet": "Family entry; single/double dome and mounting variants are configurations, not automatically separate products.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Family entry; single/double dome and mounting variants are configurations, not automatically separate products."
+      ]
+    },
+    {
+      "sourceId": "source_ce237e6f5b5dd9e34a92d037",
+      "productSlug": "wave2-dixion-convelar-family",
+      "manufacturer": "Dixion",
+      "productName": "DIXION Convelar surgical light family",
+      "sourceType": "manufacturer_document",
+      "url": "https://dixion.ru/upload/iblock/882/ew07fblc1eoklaugkpkp8kmt9bx7iinp/Dixion_Convelar_2024.pdf",
+      "title": "DIXION Convelar 2024 official brochure",
+      "snippet": "Official family catalogue.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "manufacturer-hosted document candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official family catalogue."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_c9915e81d8d6a1ef9e4879dc",
+      "sourceId": "source_7772a4c20e4856c87c8fdadd",
+      "productSlug": "wave2-dixion-convelar-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/operatsionnie-svetilniki.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_73206a2772ab6a61be27b69a",
+      "sourceId": "source_7772a4c20e4856c87c8fdadd",
+      "productSlug": "wave2-dixion-convelar-family",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/subcategory/operatsionnie-svetilniki.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_58aba0731ceb5ef60362b0e8",
+      "sourceId": "source_ce237e6f5b5dd9e34a92d037",
+      "productSlug": "wave2-dixion-convelar-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/upload/iblock/882/ew07fblc1eoklaugkpkp8kmt9bx7iinp/Dixion_Convelar_2024.pdf",
+      "title": "DIXION Convelar 2024 official brochure",
+      "language": null,
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "source URL is itself a document candidate"
+      ]
+    },
+    {
+      "documentId": "document_13e66316a8497d6fbc801c10",
+      "sourceId": "source_7772a4c20e4856c87c8fdadd",
+      "productSlug": "wave2-dixion-convelar-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/operatsionnie-svetilniki.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_cf2e979921e81a1a6f47344d",
+      "sourceId": "source_7772a4c20e4856c87c8fdadd",
+      "productSlug": "wave2-dixion-convelar-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/operatsionnie-svetilniki.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_991496c834c04d5c7143027e",
+      "sourceId": "source_7772a4c20e4856c87c8fdadd",
+      "productSlug": "wave2-dixion-convelar-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/operatsionnie-svetilniki.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_0f69617ca04e780bf5b50718",
+      "sourceId": "source_7772a4c20e4856c87c8fdadd",
+      "productSlug": "wave2-dixion-convelar-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/operatsionnie-svetilniki.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_9bee7dbae654a3f51a28e986",
+      "sourceId": "source_7772a4c20e4856c87c8fdadd",
+      "productSlug": "wave2-dixion-convelar-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Manufacturer Brochure",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/operatsionnie-svetilniki.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_13e66316a8497d6fbc801c10",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_7772a4c20e4856c87c8fdadd",
+      "linkText": "Медицинское оборудование",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/operatsionnie-svetilniki.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_cf2e979921e81a1a6f47344d",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_7772a4c20e4856c87c8fdadd",
+      "linkText": "Каталоги оборудования",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/operatsionnie-svetilniki.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_991496c834c04d5c7143027e",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_7772a4c20e4856c87c8fdadd",
+      "linkText": "Новинки оборудования",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/operatsionnie-svetilniki.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_0f69617ca04e780bf5b50718",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_7772a4c20e4856c87c8fdadd",
+      "linkText": "Скоро в продаже",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/operatsionnie-svetilniki.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_9bee7dbae654a3f51a28e986",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Manufacturer Brochure",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_7772a4c20e4856c87c8fdadd",
+      "linkText": "",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/operatsionnie-svetilniki.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_c9915e81d8d6a1ef9e4879dc",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_7772a4c20e4856c87c8fdadd",
+      "linkText": "Скачать каталог в формате PDF",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/operatsionnie-svetilniki.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_73206a2772ab6a61be27b69a",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_7772a4c20e4856c87c8fdadd",
+      "linkText": "Скачать прайс-лист",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/operatsionnie-svetilniki.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=7; classifiedDocuments={\"Brochure\":11,\"Unknown\":1}; confidenceDistribution={\"80\":9,\"100\":3}; duplicatesRemoved=5"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-dixion-convelar-family",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-convelar-family",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-convelar-family",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 2,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 2,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=7; classifiedDocuments={\"Brochure\":11,\"Unknown\":1}; confidenceDistribution={\"80\":9,\"100\":3}; duplicatesRemoved=5",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

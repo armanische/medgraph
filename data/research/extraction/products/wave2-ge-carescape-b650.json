@@ -1,0 +1,427 @@
+{
+  "product": {
+    "productSlug": "wave2-ge-carescape-b650",
+    "manufacturer": "GE HealthCare",
+    "productName": "GE HealthCare CARESCAPE B650",
+    "model": "CARESCAPE B650",
+    "category": "Монитор пациента"
+  },
+  "documentVersions": [
+    {
+      "versionId": "document_version_d6da5ef2db9258994a931591",
+      "documentCandidateId": "document_45be27985fb02661fd763007",
+      "sourceId": "source_62f96b35e350d06f0bbc115e",
+      "productSlug": "wave2-ge-carescape-b650",
+      "documentKey": "trusted-document:document_45be27985fb02661fd763007",
+      "documentType": "user_manual",
+      "title": "CARESCAPE B850/B650/B450 User Manual",
+      "language": "en",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf",
+      "sha256": "9e9890d92ceb402d9a91a1725a4ef974b742e01dfdda08d84a39547575d3123c",
+      "contentType": "application/pdf",
+      "byteSize": 16271742,
+      "filePath": "data/research/artifacts/artifacts/sha256/9e/98/9e9890d92ceb402d9a91a1725a4ef974b742e01dfdda08d84a39547575d3123c.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "extractedFactCandidates": [
+    {
+      "factCandidateId": "fact_2b0fdbdb9644d7cb36ed933c",
+      "productSlug": "wave2-ge-carescape-b650",
+      "factType": "document.title",
+      "label": "Название документа",
+      "value": "CARESCAPE B850/B650/B450 User Manual",
+      "unit": null,
+      "rawText": "Document title: CARESCAPE B850/B650/B450 User Manual",
+      "documentVersionId": "document_version_d6da5ef2db9258994a931591",
+      "documentCandidateId": "document_45be27985fb02661fd763007",
+      "documentSha256": "9e9890d92ceb402d9a91a1725a4ef974b742e01dfdda08d84a39547575d3123c",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_06deada05192b8e127055629",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_82ead18fc90d5a4dabf2e6b7",
+      "productSlug": "wave2-ge-carescape-b650",
+      "factType": "document.language",
+      "label": "Язык документа",
+      "value": "en",
+      "unit": null,
+      "rawText": "Document language: en",
+      "documentVersionId": "document_version_d6da5ef2db9258994a931591",
+      "documentCandidateId": "document_45be27985fb02661fd763007",
+      "documentSha256": "9e9890d92ceb402d9a91a1725a4ef974b742e01dfdda08d84a39547575d3123c",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_3d9b8246049cd738dc9b8aba",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_3efcd7dfc8a3876f35f252ea",
+      "productSlug": "wave2-ge-carescape-b650",
+      "factType": "document.type",
+      "label": "Тип документа",
+      "value": "user_manual",
+      "unit": null,
+      "rawText": "Document type: user_manual",
+      "documentVersionId": "document_version_d6da5ef2db9258994a931591",
+      "documentCandidateId": "document_45be27985fb02661fd763007",
+      "documentSha256": "9e9890d92ceb402d9a91a1725a4ef974b742e01dfdda08d84a39547575d3123c",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "evidenceCandidateId": "evidence_6ddcc3d4126f32ed10d8eb2f",
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Document metadata only; human review is required."
+      ]
+    },
+    {
+      "factCandidateId": "fact_327d1bf0367eade717c7945b",
+      "productSlug": "wave2-ge-carescape-b650",
+      "factType": "product.model",
+      "label": "Модель",
+      "value": "B850",
+      "unit": null,
+      "rawText": "model: B850",
+      "documentVersionId": "document_version_d6da5ef2db9258994a931591",
+      "documentCandidateId": "document_45be27985fb02661fd763007",
+      "documentSha256": "9e9890d92ceb402d9a91a1725a4ef974b742e01dfdda08d84a39547575d3123c",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf",
+      "locator": {
+        "page": 45,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 83805
+      },
+      "evidenceCandidateId": "evidence_565274c9ef977acf9d10f187",
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:model",
+        "matchedSynonym:Model",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_430560802955cae60f79707e",
+      "productSlug": "wave2-ge-carescape-b650",
+      "factType": "technical.term",
+      "label": "Технический термин",
+      "value": "Display",
+      "unit": null,
+      "rawText": "Display",
+      "documentVersionId": "document_version_d6da5ef2db9258994a931591",
+      "documentCandidateId": "document_45be27985fb02661fd763007",
+      "documentSha256": "9e9890d92ceb402d9a91a1725a4ef974b742e01dfdda08d84a39547575d3123c",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf",
+      "locator": {
+        "page": 72,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 95602
+      },
+      "evidenceCandidateId": "evidence_8efdcceb5817925869c0bd79",
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required."
+      ]
+    }
+  ],
+  "evidenceCandidates": [
+    {
+      "evidenceCandidateId": "evidence_06deada05192b8e127055629",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_d6da5ef2db9258994a931591",
+      "documentCandidateId": "document_45be27985fb02661fd763007",
+      "sha256": "9e9890d92ceb402d9a91a1725a4ef974b742e01dfdda08d84a39547575d3123c",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document title: CARESCAPE B850/B650/B450 User Manual",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_3d9b8246049cd738dc9b8aba",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_d6da5ef2db9258994a931591",
+      "documentCandidateId": "document_45be27985fb02661fd763007",
+      "sha256": "9e9890d92ceb402d9a91a1725a4ef974b742e01dfdda08d84a39547575d3123c",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document language: en",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_6ddcc3d4126f32ed10d8eb2f",
+      "kind": "document_metadata",
+      "documentVersionId": "document_version_d6da5ef2db9258994a931591",
+      "documentCandidateId": "document_45be27985fb02661fd763007",
+      "sha256": "9e9890d92ceb402d9a91a1725a4ef974b742e01dfdda08d84a39547575d3123c",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf",
+      "locator": {
+        "page": null,
+        "section": "document_metadata",
+        "heading": null,
+        "table": null,
+        "paragraph": null
+      },
+      "quotedText": "Document type: user_manual",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_565274c9ef977acf9d10f187",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_d6da5ef2db9258994a931591",
+      "documentCandidateId": "document_45be27985fb02661fd763007",
+      "sha256": "9e9890d92ceb402d9a91a1725a4ef974b742e01dfdda08d84a39547575d3123c",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf",
+      "locator": {
+        "page": 45,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 83805
+      },
+      "quotedText": "model: B850",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_8efdcceb5817925869c0bd79",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_d6da5ef2db9258994a931591",
+      "documentCandidateId": "document_45be27985fb02661fd763007",
+      "sha256": "9e9890d92ceb402d9a91a1725a4ef974b742e01dfdda08d84a39547575d3123c",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf",
+      "locator": {
+        "page": 72,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 95602
+      },
+      "quotedText": "Display",
+      "status": "candidate",
+      "requiresHumanReview": true
+    }
+  ],
+  "candidateClaims": [
+    {
+      "claimId": "claim_2994bbcbd04a8f711ec4f924",
+      "productSlug": "wave2-ge-carescape-b650",
+      "subjectType": "product",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "CARESCAPE B850/B650/B450 User Manual",
+        "unit": null
+      },
+      "rawText": "Document title: CARESCAPE B850/B650/B450 User Manual",
+      "evidenceCandidateIds": [
+        "evidence_06deada05192b8e127055629"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_627c3b21ffce11d628342867",
+      "productSlug": "wave2-ge-carescape-b650",
+      "subjectType": "product",
+      "suggestedClaimType": "document.language",
+      "valuePayload": {
+        "value": "en",
+        "unit": null
+      },
+      "rawText": "Document language: en",
+      "evidenceCandidateIds": [
+        "evidence_3d9b8246049cd738dc9b8aba"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_1c9e06fde1eec023f4578599",
+      "productSlug": "wave2-ge-carescape-b650",
+      "subjectType": "product",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "user_manual",
+        "unit": null
+      },
+      "rawText": "Document type: user_manual",
+      "evidenceCandidateIds": [
+        "evidence_6ddcc3d4126f32ed10d8eb2f"
+      ],
+      "confidence": 0.7,
+      "extractionMethod": "document_metadata",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_d74f0f38fa4535e43b21b49c",
+      "productSlug": "wave2-ge-carescape-b650",
+      "subjectType": "product",
+      "suggestedClaimType": "product.model",
+      "valuePayload": {
+        "value": "B850",
+        "unit": null
+      },
+      "rawText": "model: B850",
+      "evidenceCandidateIds": [
+        "evidence_565274c9ef977acf9d10f187"
+      ],
+      "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_fda73aab5333697fe8b66fab",
+      "productSlug": "wave2-ge-carescape-b650",
+      "subjectType": "product",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Display",
+        "unit": null
+      },
+      "rawText": "Display",
+      "evidenceCandidateIds": [
+        "evidence_8efdcceb5817925869c0bd79"
+      ],
+      "confidence": 0.64,
+      "extractionMethod": "rule_based",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    }
+  ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "patient-monitor"
+    ],
+    "patternsMatched": {
+      "registry.model": 1
+    },
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "registration_number"
+      ],
+      "patient-monitor": [
+        "battery_runtime",
+        "modules",
+        "parameters",
+        "screen"
+      ]
+    },
+    "coveragePercent": 17
+  },
+  "warnings": [
+    "Resolver fetch failed for https://www.gehealthcare.com/en-us/products/patient-monitoring/patient-monitors/carescape-monitor-b650: HTTP 404",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": true,
+    "hasCandidateClaims": true,
+    "canProceedToReview": true
+  }
+}

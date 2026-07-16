@@ -1,0 +1,167 @@
+{
+  "product": {
+    "productSlug": "wave2-sonoscape-hd-500",
+    "manufacturer": "SonoScape",
+    "productName": "SonoScape HD-500",
+    "model": "HD-500",
+    "category": "Видеоэндоскопические системы"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_5e33e31e4123ce91a1dbf60a",
+      "productSlug": "wave2-sonoscape-hd-500",
+      "productTitle": "SonoScape HD-500",
+      "claimCandidateId": "claim_99e02082e8013f8d5c8cf332",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Privacy Policy",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_6c922a41616d73f524c5833f"
+      ],
+      "documentVersionIds": [
+        "document_version_ca2891b6a694543dbaa35ef8"
+      ],
+      "sourceUrls": [
+        "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_0afd9ccfcfcee368c934e87d",
+      "productSlug": "wave2-sonoscape-hd-500",
+      "productTitle": "SonoScape HD-500",
+      "claimCandidateId": "claim_6c5023c9cfb97c6a9be2cd2f",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_a4f840ad960dd76921a13345"
+      ],
+      "documentVersionIds": [
+        "document_version_ca2891b6a694543dbaa35ef8"
+      ],
+      "sourceUrls": [
+        "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_5e33e31e4123ce91a1dbf60a",
+        "productSlug": "wave2-sonoscape-hd-500",
+        "productTitle": "SonoScape HD-500",
+        "claimCandidateId": "claim_99e02082e8013f8d5c8cf332",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Privacy Policy",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_6c922a41616d73f524c5833f"
+        ],
+        "documentVersionIds": [
+          "document_version_ca2891b6a694543dbaa35ef8"
+        ],
+        "sourceUrls": [
+          "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_0afd9ccfcfcee368c934e87d",
+        "productSlug": "wave2-sonoscape-hd-500",
+        "productTitle": "SonoScape HD-500",
+        "claimCandidateId": "claim_6c5023c9cfb97c6a9be2cd2f",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_a4f840ad960dd76921a13345"
+        ],
+        "documentVersionIds": [
+          "document_version_ca2891b6a694543dbaa35ef8"
+        ],
+        "sourceUrls": [
+          "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_ca2891b6a694543dbaa35ef8",
+      "documentType": "unknown",
+      "title": "Privacy Policy",
+      "sourceUrl": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "sha256": "259a187641c286b37d9662188d6f3add5f8fadca2d0aadeb94847d622dbfcf7c"
+    }
+  ],
+  "missingEvidence": [],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected offsite document URL: https://www.sonoscape.com.cn/",
+    "Resolver rejected offsite document URL: https://www.sonoscape.de/",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected unsafe document URL: mailto:market@sonoscape.net",
+    "Resolver rejected offsite document URL: https://www.facebook.com/sonoscapemedicalcorp",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/sonoscape_co._ltd?trk=company_logo",
+    "Resolver rejected offsite document URL: https://beian.miit.gov.cn/",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "resolver=default; attempts=1; matchedLinks=1; classifiedDocuments={\"Unknown\":1}; confidenceDistribution={\"100\":1}; duplicatesRemoved=0",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

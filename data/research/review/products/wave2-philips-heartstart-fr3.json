@@ -1,0 +1,719 @@
+{
+  "product": {
+    "productSlug": "wave2-philips-heartstart-fr3",
+    "manufacturer": "Philips",
+    "productName": "Philips HeartStart FR3",
+    "model": "HeartStart FR3",
+    "category": "Дефибрилляторы"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_843c815ce5f6d61fe7e44de5",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "productTitle": "Philips HeartStart FR3",
+      "claimCandidateId": "claim_9d1a00c104a2de3192008a27",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Philips HeartStart FR3 Technical Reference Manual",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_fffc2d954da0941010b5b14e"
+      ],
+      "documentVersionIds": [
+        "document_version_b69a2395713b739bec137983"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_ee18b2262600d1d3903f8512",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "productTitle": "Philips HeartStart FR3",
+      "claimCandidateId": "claim_97216faa324c741dcf79a6cd",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "user_manual",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_08f55f43f47a3a02ba282357"
+      ],
+      "documentVersionIds": [
+        "document_version_b69a2395713b739bec137983"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_5ee572bf0dbfc82749d108bb",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "productTitle": "Philips HeartStart FR3",
+      "claimCandidateId": "claim_06499c3a1f8553ce0a2ebe94",
+      "suggestedClaimType": "product.battery",
+      "valuePayload": {
+        "value": "powered direct",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c6d2371bc504f313adc4a09b"
+      ],
+      "documentVersionIds": [
+        "document_version_b69a2395713b739bec137983"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_cb00a145e15c88ae55d6c0f7",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "productTitle": "Philips HeartStart FR3",
+      "claimCandidateId": "claim_9f1baf507bc958a54424fa77",
+      "suggestedClaimType": "product.warnings",
+      "valuePayload": {
+        "value": "Although SMART CPR can be used for adults and children",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_3d9a878f37e29f73f9a9c7de"
+      ],
+      "documentVersionIds": [
+        "document_version_b69a2395713b739bec137983"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "critical",
+      "riskLevel": "high",
+      "reasons": [
+        "High-risk clinical, safety, compatibility or procurement claim.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_16ba15eb752642cae078c7b6",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "productTitle": "Philips HeartStart FR3",
+      "claimCandidateId": "claim_c49e62caf1f7bc25ed39cf2b",
+      "suggestedClaimType": "product.warnings",
+      "valuePayload": {
+        "value": "Most cardiac arrests in children are not caused by heart",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_603deee1a9fec6438811ddce"
+      ],
+      "documentVersionIds": [
+        "document_version_b69a2395713b739bec137983"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "critical",
+      "riskLevel": "high",
+      "reasons": [
+        "High-risk clinical, safety, compatibility or procurement claim.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_012d8130b5e118016df76284",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "productTitle": "Philips HeartStart FR3",
+      "claimCandidateId": "claim_ba582a65e77219dbdca3e860",
+      "suggestedClaimType": "product.warnings",
+      "valuePayload": {
+        "value": "9 shocks, 15 minutes of operating time",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c9f27f5772b841b17cb08994"
+      ],
+      "documentVersionIds": [
+        "document_version_b69a2395713b739bec137983"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "critical",
+      "riskLevel": "high",
+      "reasons": [
+        "High-risk clinical, safety, compatibility or procurement claim.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_fc55a300681cc3ed35e1a6e3",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "productTitle": "Philips HeartStart FR3",
+      "claimCandidateId": "claim_8d47945640b0bc1087c2a629",
+      "suggestedClaimType": "product.warnings",
+      "valuePayload": {
+        "value": "DANGER: IF THE FR3 IS USED TO GIVE A SHOCK IN THE PRESENCE OF",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_68bbca7238834e251e2bb354"
+      ],
+      "documentVersionIds": [
+        "document_version_b69a2395713b739bec137983"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "critical",
+      "riskLevel": "high",
+      "reasons": [
+        "High-risk clinical, safety, compatibility or procurement claim.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_623276a6245ca68428f0f7ac",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "productTitle": "Philips HeartStart FR3",
+      "claimCandidateId": "claim_7df915df39b85e81813c2b9d",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_6b6c2023e3b2603cf6f2b628"
+      ],
+      "documentVersionIds": [
+        "document_version_b69a2395713b739bec137983"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_1d0f59cc462983d5d7aee072",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "productTitle": "Philips HeartStart FR3",
+      "claimCandidateId": "claim_fce7597a41dd841faed0a447",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_3d1627c33ef46a8e2e730374"
+      ],
+      "documentVersionIds": [
+        "document_version_b69a2395713b739bec137983"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_f9b929bc76be23055bb078fa",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "productTitle": "Philips HeartStart FR3",
+      "claimCandidateId": "claim_569a369124564daed5094ea5",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_fdd9276b77cb676ee47eb170"
+      ],
+      "documentVersionIds": [
+        "document_version_b69a2395713b739bec137983"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_44be9d5e891c663e8cb3ed54",
+      "productSlug": "wave2-philips-heartstart-fr3",
+      "productTitle": "Philips HeartStart FR3",
+      "claimCandidateId": "claim_e55094c941a8685145555be1",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_0be1ee0d51c1c88e5c755392"
+      ],
+      "documentVersionIds": [
+        "document_version_b69a2395713b739bec137983"
+      ],
+      "sourceUrls": [
+        "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_843c815ce5f6d61fe7e44de5",
+        "productSlug": "wave2-philips-heartstart-fr3",
+        "productTitle": "Philips HeartStart FR3",
+        "claimCandidateId": "claim_9d1a00c104a2de3192008a27",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Philips HeartStart FR3 Technical Reference Manual",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_fffc2d954da0941010b5b14e"
+        ],
+        "documentVersionIds": [
+          "document_version_b69a2395713b739bec137983"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_ee18b2262600d1d3903f8512",
+        "productSlug": "wave2-philips-heartstart-fr3",
+        "productTitle": "Philips HeartStart FR3",
+        "claimCandidateId": "claim_97216faa324c741dcf79a6cd",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "user_manual",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_08f55f43f47a3a02ba282357"
+        ],
+        "documentVersionIds": [
+          "document_version_b69a2395713b739bec137983"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.battery": [
+      {
+        "reviewItemId": "review_item_5ee572bf0dbfc82749d108bb",
+        "productSlug": "wave2-philips-heartstart-fr3",
+        "productTitle": "Philips HeartStart FR3",
+        "claimCandidateId": "claim_06499c3a1f8553ce0a2ebe94",
+        "suggestedClaimType": "product.battery",
+        "valuePayload": {
+          "value": "powered direct",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c6d2371bc504f313adc4a09b"
+        ],
+        "documentVersionIds": [
+          "document_version_b69a2395713b739bec137983"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.warnings": [
+      {
+        "reviewItemId": "review_item_cb00a145e15c88ae55d6c0f7",
+        "productSlug": "wave2-philips-heartstart-fr3",
+        "productTitle": "Philips HeartStart FR3",
+        "claimCandidateId": "claim_9f1baf507bc958a54424fa77",
+        "suggestedClaimType": "product.warnings",
+        "valuePayload": {
+          "value": "Although SMART CPR can be used for adults and children",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_3d9a878f37e29f73f9a9c7de"
+        ],
+        "documentVersionIds": [
+          "document_version_b69a2395713b739bec137983"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "critical",
+        "riskLevel": "high",
+        "reasons": [
+          "High-risk clinical, safety, compatibility or procurement claim.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_16ba15eb752642cae078c7b6",
+        "productSlug": "wave2-philips-heartstart-fr3",
+        "productTitle": "Philips HeartStart FR3",
+        "claimCandidateId": "claim_c49e62caf1f7bc25ed39cf2b",
+        "suggestedClaimType": "product.warnings",
+        "valuePayload": {
+          "value": "Most cardiac arrests in children are not caused by heart",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_603deee1a9fec6438811ddce"
+        ],
+        "documentVersionIds": [
+          "document_version_b69a2395713b739bec137983"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "critical",
+        "riskLevel": "high",
+        "reasons": [
+          "High-risk clinical, safety, compatibility or procurement claim.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_012d8130b5e118016df76284",
+        "productSlug": "wave2-philips-heartstart-fr3",
+        "productTitle": "Philips HeartStart FR3",
+        "claimCandidateId": "claim_ba582a65e77219dbdca3e860",
+        "suggestedClaimType": "product.warnings",
+        "valuePayload": {
+          "value": "9 shocks, 15 minutes of operating time",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c9f27f5772b841b17cb08994"
+        ],
+        "documentVersionIds": [
+          "document_version_b69a2395713b739bec137983"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "critical",
+        "riskLevel": "high",
+        "reasons": [
+          "High-risk clinical, safety, compatibility or procurement claim.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_fc55a300681cc3ed35e1a6e3",
+        "productSlug": "wave2-philips-heartstart-fr3",
+        "productTitle": "Philips HeartStart FR3",
+        "claimCandidateId": "claim_8d47945640b0bc1087c2a629",
+        "suggestedClaimType": "product.warnings",
+        "valuePayload": {
+          "value": "DANGER: IF THE FR3 IS USED TO GIVE A SHOCK IN THE PRESENCE OF",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_68bbca7238834e251e2bb354"
+        ],
+        "documentVersionIds": [
+          "document_version_b69a2395713b739bec137983"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "critical",
+        "riskLevel": "high",
+        "reasons": [
+          "High-risk clinical, safety, compatibility or procurement claim.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "technical.term": [
+      {
+        "reviewItemId": "review_item_623276a6245ca68428f0f7ac",
+        "productSlug": "wave2-philips-heartstart-fr3",
+        "productTitle": "Philips HeartStart FR3",
+        "claimCandidateId": "claim_7df915df39b85e81813c2b9d",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_6b6c2023e3b2603cf6f2b628"
+        ],
+        "documentVersionIds": [
+          "document_version_b69a2395713b739bec137983"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_1d0f59cc462983d5d7aee072",
+        "productSlug": "wave2-philips-heartstart-fr3",
+        "productTitle": "Philips HeartStart FR3",
+        "claimCandidateId": "claim_fce7597a41dd841faed0a447",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_3d1627c33ef46a8e2e730374"
+        ],
+        "documentVersionIds": [
+          "document_version_b69a2395713b739bec137983"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_f9b929bc76be23055bb078fa",
+        "productSlug": "wave2-philips-heartstart-fr3",
+        "productTitle": "Philips HeartStart FR3",
+        "claimCandidateId": "claim_569a369124564daed5094ea5",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_fdd9276b77cb676ee47eb170"
+        ],
+        "documentVersionIds": [
+          "document_version_b69a2395713b739bec137983"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_44be9d5e891c663e8cb3ed54",
+        "productSlug": "wave2-philips-heartstart-fr3",
+        "productTitle": "Philips HeartStart FR3",
+        "claimCandidateId": "claim_e55094c941a8685145555be1",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_0be1ee0d51c1c88e5c755392"
+        ],
+        "documentVersionIds": [
+          "document_version_b69a2395713b739bec137983"
+        ],
+        "sourceUrls": [
+          "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_b69a2395713b739bec137983",
+      "documentType": "user_manual",
+      "title": "Philips HeartStart FR3 Technical Reference Manual",
+      "sourceUrl": "https://www.documents.philips.com/doclib/enc/fetch/577817/1512001/HeartStart_FR3_Technical_Reference_Manual.pdf",
+      "sha256": "3f4bfa7c3eca3145caf2c75af68dd46f94fd13040b4f07d64b9ccfa93940d525"
+    }
+  ],
+  "missingEvidence": [],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

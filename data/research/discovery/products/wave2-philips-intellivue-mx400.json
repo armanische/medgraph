@@ -1,0 +1,1115 @@
+{
+  "product": {
+    "productSlug": "wave2-philips-intellivue-mx400",
+    "manufacturer": "Philips",
+    "productName": "Philips IntelliVue MX400",
+    "model": "IntelliVue MX400",
+    "category": "Монитор пациента"
+  },
+  "providerDiagnostics": {
+    "providerName": "philips",
+    "strategyUsed": "Philips professional products, support and documentation",
+    "pagesVisited": [
+      "https://www.usa.philips.com/healthcare/product/HC866060/intellivue-mx400-patient-monitor"
+    ],
+    "candidateUrls": [
+      "https://www.usa.philips.com/healthcare/product/HC866060/intellivue-mx400-patient-monitor"
+    ],
+    "normalizedUrls": [
+      "https://www.usa.philips.com/healthcare/product/HC866060/intellivue-mx400-patient-monitor"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": []
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": false,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "manufacturer": "Philips",
+      "productName": "Philips IntelliVue MX400",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.usa.philips.com/healthcare/product/HC866060/intellivue-mx400-patient-monitor",
+      "title": "Philips IntelliVue MX400 official product page",
+      "snippet": "Official Philips product URL candidate; candidate-only source.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official Philips product URL candidate; candidate-only source."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_a44f616e77acf4aab10f0f82",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "brochure",
+      "url": "https://www.documents.philips.com/assets/20170523/249925ed18bc493a8905a77c014ee52e.pdf",
+      "title": "Product Brochure Philips IntelliVue Portable/bedside patient monitor MX400 PDF | 3.18 MB",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:100",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://www.usa.philips.com/healthcare/product/HC866060/intellivue-mx400-patient-monitor",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_3e8e8adc1b38d635fe751042",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "brochure",
+      "url": "https://www.documents.philips.com/assets/20230421/0ff75f971fe043c0aba9afeb010d8905.pdf",
+      "title": "Product Brochure PDF | 902.82 KB",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:100",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://www.usa.philips.com/healthcare/product/HC866060/intellivue-mx400-patient-monitor",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_c104a24d5ce99ac90d1c0f7f",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "ifu",
+      "url": "https://www.documents.philips.com/assets/Instruction%20for%20Use/20260424/83cba6c0fe91400ea93ab436008655e7.pdf?feed=ifu_docs_feed",
+      "title": "IntelliVue MX400/MX450/MX500/MX550 Instructions for Use",
+      "language": "en",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Official shared family IFU."
+      ]
+    },
+    {
+      "documentId": "document_1270dcbd38189ef61e469d0e",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/c-s/support",
+      "title": "Customer support",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/support",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_411002523b7e6ba153df9a5a",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/c-s/support/contact",
+      "title": "Explore Support contact",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/support",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_9f889f6a4d2b1f8c29c5c0d1",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/c-w/support-home.html",
+      "title": "Consumer support hub",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/e-commerce",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a59c6ba203f8aa809b7a1e10",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/c-w/support-home/support-contact-page",
+      "title": "Consumer contact information",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/e-commerce",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_d1ef06f0af9c1289f3a82293",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/about/support",
+      "title": "Contact and support",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/support",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_e633f29830e480ff92efe1d3",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support",
+      "title": "Contact & support",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/resource-center",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_71156459703f5a8bbb691adb",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/compliance",
+      "title": "Compliance Program",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/e-commerce",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_12f67be7b0b52fb12b84ae38",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/customer-payment-portal",
+      "title": "Contract payments",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/e-commerce",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a1ae4085dafe19c6cfdd8254",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/customer-service-portal",
+      "title": "Customer service portal",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/resource-center",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1b338de480840082d3ec6c6c",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/customer-service-portal?FormType=CSP",
+      "title": "here",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/customer-service-portal",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_36507040f2d1c7b6dd5662c7",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/distributors",
+      "title": "Distributor locator",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/e-commerce",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_681abc2306bb3c673782aace",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/e-commerce",
+      "title": "Shops",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/resource-center",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_d83f61be4a0ffd4187d13f5d",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/incenter",
+      "title": "Service and upgrade documents",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/e-commerce",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_d705bf51c5e13e0dcb2fe543",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/interoperability-standards",
+      "title": "IT Standards",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/e-commerce",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_ba32e545ea826653b6a5d7ce",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/myphilips-community",
+      "title": "Register now",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_7819d1d2c91d2581e5fc56db",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "title": "More",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/resource-center",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a6c2804698c203c404a18e02",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "certificate",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center/results?sort=relevancy&amp;f:@ps_contenttype=[Declaration%20of%20Compatibility]&amp;f:@ps_language=[English,English%20(US)]",
+      "title": "Declarations of compatibility",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/resource-center",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_2acfc93db4f9240ad4248948",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center/results?sort=relevancy&amp;f:@ps_contenttype=[DICOM%20Conformance%20Statement]&amp;f:@ps_language=[English,English%20(US)]",
+      "title": "DICOM conformance statements",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/resource-center",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_78de7be2cd05804205d4ef50",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "certificate",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center/results?sort=relevancy&amp;f:@ps_contenttype=[EU%20Declaration%20of%20conformity]&amp;f:@ps_language=[English%20(US),English]%20Expand%20(1%20line)",
+      "title": "EU declarations of conformity",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/resource-center",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_5aa7bb5e776c4ba058698fc1",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center/results?sort=relevancy&amp;f:@ps_contenttype=[IHE%20Integration%20Statements]&amp;f:@ps_language=[English,English%20(US)]",
+      "title": "IHE integration statements",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/resource-center",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_38185bc9faf9ce60f87196ec",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "ifu",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center/results?sort=relevancy&amp;f:@ps_contenttype=[Instruction%20for%20Use]&amp;f:@ps_language=[English%20(US),English]",
+      "title": "Instructions for use & manuals",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:IFU",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/resource-center",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_f4dc56e824ad5a491209b442",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center/results?sort=relevancy&amp;f:@ps_contenttype=[Technical%20Description]&amp;f:@ps_language=[English%20(US),English]",
+      "title": "Technical descriptions",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/resource-center",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_55e760fa096e37936f73c0f6",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/support",
+      "title": "Consumer support",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/healthcare/support/resource-center",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_5593febe8b85b4ac4ce18c71",
+      "sourceId": "source_8442606454dacbc550904a5e",
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "documentType": "unknown",
+      "url": "https://www.usa.philips.com/c-m-so/media-players/latest",
+      "title": "Media Players",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:philips",
+        "resolver_confidence:80",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.usa.philips.com/support",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_a44f616e77acf4aab10f0f82",
+      "url": "https://www.documents.philips.com/assets/20170523/249925ed18bc493a8905a77c014ee52e.pdf",
+      "title": "Product Brochure Philips IntelliVue Portable/bedside patient monitor MX400 PDF | 3.18 MB",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "Product Brochure Philips IntelliVue Portable/bedside patient monitor MX400 PDF | 3.18 MB",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/product/HC866060/intellivue-mx400-patient-monitor",
+      "warnings": []
+    },
+    {
+      "documentId": "document_3e8e8adc1b38d635fe751042",
+      "url": "https://www.documents.philips.com/assets/20230421/0ff75f971fe043c0aba9afeb010d8905.pdf",
+      "title": "Product Brochure PDF | 902.82 KB",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "Product Brochure PDF | 902.82 KB",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/product/HC866060/intellivue-mx400-patient-monitor",
+      "warnings": []
+    },
+    {
+      "documentId": "document_5593febe8b85b4ac4ce18c71",
+      "url": "https://www.usa.philips.com/c-m-so/media-players/latest",
+      "title": "Media Players",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "Media Players",
+      "resolvedFromUrl": "https://www.usa.philips.com/support",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1270dcbd38189ef61e469d0e",
+      "url": "https://www.usa.philips.com/c-s/support",
+      "title": "Customer support",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "Customer support",
+      "resolvedFromUrl": "https://www.usa.philips.com/support",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_411002523b7e6ba153df9a5a",
+      "url": "https://www.usa.philips.com/c-s/support/contact",
+      "title": "Explore Support contact",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "Explore Support contact",
+      "resolvedFromUrl": "https://www.usa.philips.com/support",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_9f889f6a4d2b1f8c29c5c0d1",
+      "url": "https://www.usa.philips.com/c-w/support-home.html",
+      "title": "Consumer support hub",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "Consumer support hub",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/e-commerce",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a59c6ba203f8aa809b7a1e10",
+      "url": "https://www.usa.philips.com/c-w/support-home/support-contact-page",
+      "title": "Consumer contact information",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "Consumer contact information",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/e-commerce",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_d1ef06f0af9c1289f3a82293",
+      "url": "https://www.usa.philips.com/healthcare/about/support",
+      "title": "Contact and support",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "Contact and support",
+      "resolvedFromUrl": "https://www.usa.philips.com/support",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_e633f29830e480ff92efe1d3",
+      "url": "https://www.usa.philips.com/healthcare/support",
+      "title": "Contact & support",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "Contact & support",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_71156459703f5a8bbb691adb",
+      "url": "https://www.usa.philips.com/healthcare/support/compliance",
+      "title": "Compliance Program",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "Compliance Program",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/e-commerce",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_12f67be7b0b52fb12b84ae38",
+      "url": "https://www.usa.philips.com/healthcare/support/customer-payment-portal",
+      "title": "Contract payments",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "Contract payments",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/e-commerce",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a1ae4085dafe19c6cfdd8254",
+      "url": "https://www.usa.philips.com/healthcare/support/customer-service-portal",
+      "title": "Customer service portal",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "Customer service portal",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1b338de480840082d3ec6c6c",
+      "url": "https://www.usa.philips.com/healthcare/support/customer-service-portal?FormType=CSP",
+      "title": "here",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "here",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/customer-service-portal",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_36507040f2d1c7b6dd5662c7",
+      "url": "https://www.usa.philips.com/healthcare/support/distributors",
+      "title": "Distributor locator",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "Distributor locator",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/e-commerce",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_681abc2306bb3c673782aace",
+      "url": "https://www.usa.philips.com/healthcare/support/e-commerce",
+      "title": "Shops",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "Shops",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_d83f61be4a0ffd4187d13f5d",
+      "url": "https://www.usa.philips.com/healthcare/support/incenter",
+      "title": "Service and upgrade documents",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "Service and upgrade documents",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/e-commerce",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_d705bf51c5e13e0dcb2fe543",
+      "url": "https://www.usa.philips.com/healthcare/support/interoperability-standards",
+      "title": "IT Standards",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "IT Standards",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/e-commerce",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_ba32e545ea826653b6a5d7ce",
+      "url": "https://www.usa.philips.com/healthcare/support/myphilips-community",
+      "title": "Register now",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "Register now",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_7819d1d2c91d2581e5fc56db",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "title": "More",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "More",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_a6c2804698c203c404a18e02",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center/results?sort=relevancy&amp;f:@ps_contenttype=[Declaration%20of%20Compatibility]&amp;f:@ps_language=[English,English%20(US)]",
+      "title": "Declarations of compatibility",
+      "documentTypeGuess": "certificate",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "Declarations of compatibility",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "warnings": []
+    },
+    {
+      "documentId": "document_2acfc93db4f9240ad4248948",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center/results?sort=relevancy&amp;f:@ps_contenttype=[DICOM%20Conformance%20Statement]&amp;f:@ps_language=[English,English%20(US)]",
+      "title": "DICOM conformance statements",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "DICOM conformance statements",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_78de7be2cd05804205d4ef50",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center/results?sort=relevancy&amp;f:@ps_contenttype=[EU%20Declaration%20of%20conformity]&amp;f:@ps_language=[English%20(US),English]%20Expand%20(1%20line)",
+      "title": "EU declarations of conformity",
+      "documentTypeGuess": "certificate",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "EU declarations of conformity",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "warnings": []
+    },
+    {
+      "documentId": "document_5aa7bb5e776c4ba058698fc1",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center/results?sort=relevancy&amp;f:@ps_contenttype=[IHE%20Integration%20Statements]&amp;f:@ps_language=[English,English%20(US)]",
+      "title": "IHE integration statements",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "IHE integration statements",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_38185bc9faf9ce60f87196ec",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center/results?sort=relevancy&amp;f:@ps_contenttype=[Instruction%20for%20Use]&amp;f:@ps_language=[English%20(US),English]",
+      "title": "Instructions for use & manuals",
+      "documentTypeGuess": "ifu",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "Instructions for use & manuals",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "warnings": []
+    },
+    {
+      "documentId": "document_f4dc56e824ad5a491209b442",
+      "url": "https://www.usa.philips.com/healthcare/support/resource-center/results?sort=relevancy&amp;f:@ps_contenttype=[Technical%20Description]&amp;f:@ps_language=[English%20(US),English]",
+      "title": "Technical descriptions",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "Technical descriptions",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_55e760fa096e37936f73c0f6",
+      "url": "https://www.usa.philips.com/support",
+      "title": "Consumer support",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_8442606454dacbc550904a5e",
+      "linkText": "Consumer support",
+      "resolvedFromUrl": "https://www.usa.philips.com/healthcare/support/resource-center",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver adapter used: philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/all-coffee-espresso-machines",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/accessories-collection",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-baristina-espresso-machine-milky-white-bar300-00",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/airfyers",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-artisan-pasta-noodle-maker",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Kitchen-Appliances",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Airfryer",
+    "Resolver rejected offsite document URL: https://www.philips-hue.com/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected unsafe document URL: tel:1-800-722-9377",
+    "Resolver rejected unsafe document URL: tel:1-800-229-6417",
+    "Resolver rejected unsafe document URL: tel:1-800-225-0230",
+    "Resolver rejected unsafe document URL: tel:1-800-345-6443",
+    "Resolver rejected unsafe document URL: tel:1-800-422-9448",
+    "Resolver rejected unsafe document URL: tel:1-800-542-8368",
+    "Resolver rejected unsafe document URL: tel:1-800-228-4728",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://www.adobe.com/es/acrobat/pricing.html?mv=search&amp;mv2=paidsearch&amp;sdid=BDDS3F8G&amp;ef_id=6f0d31b717991d11c4b85672a14576da:G:s&amp;s_kwcid=AL!3085!10!79577362531267!79577498729085&amp;msclkid=6f0d31b717991d11c4b85672a14576da",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "resolver=philips; attempts=6; matchedLinks=26; classifiedDocuments={\"Unknown\":97,\"Brochure\":4,\"IFU\":1}; confidenceDistribution={\"80\":1,\"90\":97,\"100\":4}; duplicatesRemoved=76"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-philips-intellivue-mx400",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver adapter used: philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/all-coffee-espresso-machines",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/accessories-collection",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-baristina-espresso-machine-milky-white-bar300-00",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/collections/airfyers",
+    "Resolver rejected offsite document URL: https://us.home-appliances.philips/products/philips-artisan-pasta-noodle-maker",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Kitchen-Appliances",
+    "Resolver rejected offsite document URL: https://philips.encompass.com/parts-accessories/Philips-Airfryer",
+    "Resolver rejected offsite document URL: https://www.philips-hue.com/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected offsite document URL: https://www.healthcare.shop.philips.co.uk/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://x.com/Philips",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips?app=desktop",
+    "Resolver rejected offsite document URL: https://www.pinterest.com/philipsglobal/",
+    "Resolver rejected unsafe document URL: tel:1-800-722-9377",
+    "Resolver rejected unsafe document URL: tel:1-800-229-6417",
+    "Resolver rejected unsafe document URL: tel:1-800-225-0230",
+    "Resolver rejected unsafe document URL: tel:1-800-345-6443",
+    "Resolver rejected unsafe document URL: tel:1-800-422-9448",
+    "Resolver rejected unsafe document URL: tel:1-800-542-8368",
+    "Resolver rejected unsafe document URL: tel:1-800-228-4728",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "Resolver rejected offsite document URL: https://www.adobe.com/es/acrobat/pricing.html?mv=search&amp;mv2=paidsearch&amp;sdid=BDDS3F8G&amp;ef_id=6f0d31b717991d11c4b85672a14576da:G:s&amp;s_kwcid=AL!3085!10!79577362531267!79577498729085&amp;msclkid=6f0d31b717991d11c4b85672a14576da",
+    "Resolver rejected offsite document URL: https://x.com/PhilipsHealth",
+    "Resolver rejected offsite document URL: https://www.facebook.com/Philips",
+    "Resolver rejected offsite document URL: https://www.instagram.com/Philips/",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/philips/",
+    "Resolver rejected offsite document URL: https://www.youtube.com/Philips",
+    "resolver=philips; attempts=6; matchedLinks=26; classifiedDocuments={\"Unknown\":97,\"Brochure\":4,\"IFU\":1}; confidenceDistribution={\"80\":1,\"90\":97,\"100\":4}; duplicatesRemoved=76",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

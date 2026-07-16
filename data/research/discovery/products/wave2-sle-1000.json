@@ -1,0 +1,119 @@
+{
+  "product": {
+    "productSlug": "wave2-sle-1000",
+    "manufacturer": "SLE",
+    "productName": "SLE1000 CPAP Driver",
+    "model": "SLE1000",
+    "category": "Neonatal respiratory support"
+  },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [
+      "https://inspirationhealthcaregroup.com/product/sle1000-ncpap-generator/",
+      "https://inspirationhealthcaregroup.com/product/sle1000/"
+    ],
+    "normalizedUrls": [
+      "https://inspirationhealthcaregroup.com/product/sle1000-ncpap-generator",
+      "https://inspirationhealthcaregroup.com/product/sle1000"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “SLE”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_07fa64415f494612dedccf9c",
+      "productSlug": "wave2-sle-1000",
+      "manufacturer": "SLE",
+      "productName": "SLE1000 CPAP Driver",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://inspirationhealthcaregroup.com/product/sle1000-ncpap-generator/",
+      "title": "SLE1000 nCPAP generator official accessories page",
+      "snippet": "Explicit family-level interface and circuit compatibility; generator is an accessory, not the CPAP driver itself.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Explicit family-level interface and circuit compatibility; generator is an accessory, not the CPAP driver itself."
+      ]
+    },
+    {
+      "sourceId": "source_caa150b5930e2d216d99d1ab",
+      "productSlug": "wave2-sle-1000",
+      "manufacturer": "SLE",
+      "productName": "SLE1000 CPAP Driver",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://inspirationhealthcaregroup.com/product/sle1000/",
+      "title": "SLE1000 official legacy product page",
+      "snippet": "Official page remains online; owner annual reporting identifies SLE1000 as discontinued/end-of-life.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official page remains online; owner annual reporting identifies SLE1000 as discontinued/end-of-life."
+      ]
+    }
+  ],
+  "documentCandidates": [],
+  "resolvedDocumentLinks": [],
+  "resolverWarnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/product/sle1000-ncpap-generator/: HTTP 403",
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/product/sle1000/: HTTP 403"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-sle-1000",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-sle-1000",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-sle-1000",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 2,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 2,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/product/sle1000-ncpap-generator/: HTTP 403",
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/product/sle1000/: HTTP 403",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

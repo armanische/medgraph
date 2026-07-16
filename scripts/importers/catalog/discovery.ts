@@ -9,6 +9,10 @@ import {
   type ResolvedDocumentLink,
 } from "./document-link-resolver.ts";
 import type { CatalogSeed, CatalogSeedItem } from "./types.ts";
+import {
+  providerForManufacturer,
+  type ProviderDiagnostics,
+} from "./providers/index.ts";
 
 const SEED_PATH = resolve(process.cwd(), "data/catalog-seed.generated.json");
 const MANUAL_SOURCE_SEEDS_PATH = resolve(
@@ -137,6 +141,9 @@ interface ManualSeedFile {
 
 export interface DiscoveryProductReport {
   product: DiscoveryProductInput;
+  providerDiagnostics: ProviderDiagnostics;
+  providerSelectedAutomatically: boolean;
+  fallbackProviderUsed: boolean;
   sourceCandidates: SourceCandidate[];
   documentCandidates: DocumentCandidate[];
   resolvedDocumentLinks: Array<{
@@ -178,6 +185,15 @@ export interface DiscoveryAggregateReport {
   resolvedDocumentLinksFound: number;
   productsWithResolvedDocuments: number;
   productsStillMissingDocuments: number;
+  providersUsed: string[];
+  productsPerProvider: Record<string, number>;
+  fallbackProviderProducts: number;
+  totalCandidateUrls: number;
+  totalNormalizedUrls: number;
+  totalDuplicatesRemoved: number;
+  totalBlockedUrls: number;
+  unsupportedPortalsDetected: number;
+  providerWarnings: string[];
   productReports: Array<{
     productSlug: string;
     sources: number;
@@ -658,6 +674,22 @@ export async function discoverProduct(
       }`,
     );
   }
+  const manufacturerProvider = providerForManufacturer(product.manufacturer);
+  const fallbackProviderUsed = manufacturerProvider.name === "default";
+  const providerDiagnostics = manufacturerProvider.diagnostics({
+    manufacturer: product.manufacturer,
+    urls: sources.map((source) => ({
+      url: source.url,
+      title: source.title,
+    })),
+  });
+  if (fallbackProviderUsed) {
+    providerDiagnostics.warnings.push(
+      product.manufacturer
+        ? `No configured provider matched manufacturer “${product.manufacturer}”; DefaultProvider was used without changing trust tier.`
+        : "Manufacturer is missing; DefaultProvider was used without changing trust tier.",
+    );
+  }
   const safeSources = dedupeSources(
     sources.filter((source) => {
       const safe = isSafePublicUrl(source.url);
@@ -726,6 +758,9 @@ export async function discoverProduct(
 
   return {
     product,
+    providerDiagnostics,
+    providerSelectedAutomatically: true,
+    fallbackProviderUsed,
     sourceCandidates: safeSources,
     documentCandidates: documents,
     resolvedDocumentLinks: resolved.map(resolvedLinkReport),
@@ -809,6 +844,34 @@ export async function runDiscoveryForProducts(input: {
     productsStillMissingDocuments: reports.filter(
       (report) => report.missingDocumentTasks.length > 0,
     ).length,
+    providersUsed: [...new Set(reports.map((report) => report.providerDiagnostics.providerName))].sort(),
+    productsPerProvider: reports.reduce<Record<string, number>>((counts, report) => {
+      const providerName = report.providerDiagnostics.providerName;
+      counts[providerName] = (counts[providerName] ?? 0) + 1;
+      return counts;
+    }, {}),
+    fallbackProviderProducts: reports.filter((report) => report.fallbackProviderUsed).length,
+    totalCandidateUrls: reports.reduce(
+      (sum, report) => sum + report.providerDiagnostics.candidateUrls.length,
+      0,
+    ),
+    totalNormalizedUrls: reports.reduce(
+      (sum, report) => sum + report.providerDiagnostics.normalizedUrls.length,
+      0,
+    ),
+    totalDuplicatesRemoved: reports.reduce(
+      (sum, report) => sum + report.providerDiagnostics.duplicatesRemoved,
+      0,
+    ),
+    totalBlockedUrls: reports.reduce(
+      (sum, report) => sum + report.providerDiagnostics.blockedUrls.length,
+      0,
+    ),
+    unsupportedPortalsDetected: reports.reduce(
+      (sum, report) => sum + report.providerDiagnostics.unsupportedPortals.length,
+      0,
+    ),
+    providerWarnings: [...new Set(reports.flatMap((report) => report.providerDiagnostics.warnings))].sort(),
     productReports: reports.map((report) => ({
       productSlug: report.product.productSlug,
       sources: report.sourceCandidates.length,

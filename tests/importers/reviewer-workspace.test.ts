@@ -54,13 +54,14 @@ test("reviewer draft decisions are local only", () => {
 });
 
 test("reviewer workspace route is protected", async () => {
-  const source = await readFile(
-    resolve("app/internal/reviewer/page.tsx"),
-    "utf8",
-  );
+  const [source, access] = await Promise.all([
+    readFile(resolve("app/internal/reviewer/page.tsx"), "utf8"),
+    readFile(resolve("lib/internal-access.ts"), "utf8"),
+  ]);
   assert.match(source, /CYBERMEDICA_ENABLE_INTERNAL_REVIEW/);
   assert.match(source, /notFound\(\)/);
-  assert.match(source, /index:\s*false/);
+  assert.match(source, /internalRouteMetadata/);
+  assert.match(access, /index:\s*false/);
 });
 
 test("reviewer workspace does not import forbidden writers", async () => {

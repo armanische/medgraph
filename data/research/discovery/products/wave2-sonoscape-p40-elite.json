@@ -1,0 +1,153 @@
+{
+  "product": {
+    "productSlug": "wave2-sonoscape-p40-elite",
+    "manufacturer": "SonoScape",
+    "productName": "SonoScape P40 Elite",
+    "model": "P40 Elite",
+    "category": "УЗИ аппараты"
+  },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [
+      "https://www.sonoscape.com/en/products/ultrasound/trolley_color_doppler/2023/0110/167.html"
+    ],
+    "normalizedUrls": [
+      "https://www.sonoscape.com/en/products/ultrasound/trolley_color_doppler/2023/0110/167.html"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “SonoScape”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_4e856eedbda4d9b0b42ecb20",
+      "productSlug": "wave2-sonoscape-p40-elite",
+      "manufacturer": "SonoScape",
+      "productName": "SonoScape P40 Elite",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.sonoscape.com/en/products/ultrasound/trolley_color_doppler/2023/0110/167.html",
+      "title": "SonoScape P40 Elite official product page",
+      "snippet": "Official current product page; feature availability is configuration dependent.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official current product page; feature availability is configuration dependent."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_872f34829abac490d5cafc3e",
+      "sourceId": "source_4e856eedbda4d9b0b42ecb20",
+      "productSlug": "wave2-sonoscape-p40-elite",
+      "documentType": "unknown",
+      "url": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "title": "Privacy Policy",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.sonoscape.com/en/products/ultrasound/trolley_color_doppler/2023/0110/167.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_872f34829abac490d5cafc3e",
+      "url": "https://www.sonoscape.com/uploadfile/2026/0605/SonoScape_Data_Protection_Protocol_Billingual.pdf",
+      "title": "Privacy Policy",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_4e856eedbda4d9b0b42ecb20",
+      "linkText": "Privacy Policy",
+      "resolvedFromUrl": "https://www.sonoscape.com/en/products/ultrasound/trolley_color_doppler/2023/0110/167.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected offsite document URL: https://www.sonoscape.com.cn/",
+    "Resolver rejected offsite document URL: https://www.sonoscape.de/",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected unsafe document URL: mailto:market@sonoscape.net",
+    "Resolver rejected offsite document URL: https://www.facebook.com/sonoscapemedicalcorp",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/sonoscape_co._ltd?trk=company_logo",
+    "Resolver rejected offsite document URL: https://beian.miit.gov.cn/",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "resolver=default; attempts=1; matchedLinks=1; classifiedDocuments={\"Unknown\":1}; confidenceDistribution={\"100\":1}; duplicatesRemoved=0"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-sonoscape-p40-elite",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-sonoscape-p40-elite",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-sonoscape-p40-elite",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected offsite document URL: https://www.sonoscape.com.cn/",
+    "Resolver rejected offsite document URL: https://www.sonoscape.de/",
+    "Resolver rejected unsafe document URL: javascript:void(0);",
+    "Resolver rejected unsafe document URL: mailto:market@sonoscape.net",
+    "Resolver rejected offsite document URL: https://www.facebook.com/sonoscapemedicalcorp",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/sonoscape_co._ltd?trk=company_logo",
+    "Resolver rejected offsite document URL: https://beian.miit.gov.cn/",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "Resolver rejected unsafe document URL: javascript:void();",
+    "resolver=default; attempts=1; matchedLinks=1; classifiedDocuments={\"Unknown\":1}; confidenceDistribution={\"100\":1}; duplicatesRemoved=0",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

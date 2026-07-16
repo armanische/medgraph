@@ -2,9 +2,13 @@ import type {
   ComplianceEvidence,
   ComplianceResult,
   ComplianceStatus,
+  TenderRequirementDraft,
+  TenderWorkflowAnalysisInput,
   RequirementResult,
+  PublishedTenderProduct,
   TenderProductValue,
   TenderRequirement,
+  TenderRiskLevel,
   TenderValue,
 } from "./types.ts";
 
@@ -14,6 +18,13 @@ function hasEvidence(evidence: ComplianceEvidence | null) {
       evidence.evidenceIds.length > 0 &&
       evidence.source.url &&
       evidence.documentVersion.id,
+  );
+}
+
+function isAllowedPublishedSource(value: TenderProductValue) {
+  return (
+    value.sourceKind === "published_knowledge" ||
+    value.sourceKind === "publication_ready_report"
   );
 }
 
@@ -37,6 +48,58 @@ function formatValue(value: TenderValue | null, unit: string | null) {
   if (value === null) return "Нет подтверждённых данных";
   const display = Array.isArray(value) ? value.join(", ") : String(value);
   return `${display}${unit ? ` ${unit}` : ""}`;
+}
+
+function parseExpectedValue(input: {
+  operator: TenderRequirement["operator"];
+  value: string;
+}): TenderValue {
+  const trimmed = input.value.trim();
+  if (input.operator === "boolean") {
+    return /^(true|yes|да|есть|поддерживается|1)$/iu.test(trimmed);
+  }
+  if (
+    input.operator === "numeric_gte" ||
+    input.operator === "numeric_lte" ||
+    input.operator === "numeric_eq"
+  ) {
+    const numeric = Number(trimmed.replace(",", "."));
+    return Number.isFinite(numeric) ? numeric : trimmed;
+  }
+  if (input.operator === "enum") {
+    return trimmed
+      .split(",")
+      .map((item) => item.trim())
+      .filter(Boolean);
+  }
+  return trimmed;
+}
+
+export function parseTenderRequirementDrafts(
+  drafts: TenderRequirementDraft[],
+): TenderRequirement[] {
+  return drafts
+    .filter((draft) => draft.label.trim() && draft.expectedValueInput.trim())
+    .slice(0, 10)
+    .map((draft, index) => ({
+      requirementId: draft.characteristicKey.trim() || stableRequirementId(draft.label, index),
+      label: draft.label.trim(),
+      category: draft.category.trim() || "Требование ТЗ",
+      operator: draft.operator,
+      expectedValue: parseExpectedValue({
+        operator: draft.operator,
+        value: draft.expectedValueInput,
+      }),
+      unit: draft.unit?.trim() || null,
+    }));
+}
+
+function stableRequirementId(label: string, index: number) {
+  return label
+    .toLocaleLowerCase("ru-RU")
+    .replace(/[^a-zа-я0-9]+/giu, "_")
+    .replace(/^_+|_+$/gu, "")
+    .slice(0, 48) || `requirement_${index + 1}`;
 }
 
 function statusForRule(
@@ -144,7 +207,7 @@ export function evaluateRequirement(input: {
   if (
     !productValue ||
     productValue.value === null ||
-    productValue.sourceKind === "candidate_claim" ||
+    !isAllowedPublishedSource(productValue) ||
     !hasEvidence(productValue.evidence)
   ) {
     return {
@@ -170,9 +233,23 @@ export function evaluateRequirement(input: {
   };
 }
 
+export function calculateTenderRisk(summary: {
+  totalRequirements: number;
+  doesNotMatch: number;
+  notVerified: number;
+  unknown: number;
+}): TenderRiskLevel {
+  if (summary.doesNotMatch > 0) return "High";
+  const missing = summary.notVerified + summary.unknown;
+  if (summary.totalRequirements === 0) return "High";
+  if (missing / summary.totalRequirements >= 0.4) return "High";
+  if (missing > 0) return "Medium";
+  return "Low";
+}
+
 export function evaluateTenderCompliance(input: {
   tenderTitle: string;
-  product: ComplianceResult["product"];
+  product: ComplianceResult["product"] | PublishedTenderProduct;
   requirements: TenderRequirement[];
   productValues: TenderProductValue[];
 }): ComplianceResult {
@@ -186,21 +263,26 @@ export function evaluateTenderCompliance(input: {
     }),
   );
 
+  const summary = {
+    totalRequirements: results.length,
+    matches: results.filter((result) => result.status === "matches").length,
+    doesNotMatch: results.filter((result) => result.status === "does_not_match")
+      .length,
+    partiallyMatches: results.filter(
+      (result) => result.status === "partially_matches",
+    ).length,
+    notVerified: results.filter((result) => result.status === "not_verified")
+      .length,
+    unknown: results.filter((result) => result.status === "unknown").length,
+  };
+
   return {
     tenderTitle: input.tenderTitle,
     product: input.product,
     results,
     summary: {
-      totalRequirements: results.length,
-      matches: results.filter((result) => result.status === "matches").length,
-      doesNotMatch: results.filter((result) => result.status === "does_not_match")
-        .length,
-      partiallyMatches: results.filter(
-        (result) => result.status === "partially_matches",
-      ).length,
-      notVerified: results.filter((result) => result.status === "not_verified")
-        .length,
-      unknown: results.filter((result) => result.status === "unknown").length,
+      ...summary,
+      riskLevel: calculateTenderRisk(summary),
     },
     warnings: [
       "Tender Compliance Engine is deterministic and does not use LLM.",
@@ -208,4 +290,47 @@ export function evaluateTenderCompliance(input: {
       "Results are not published and do not change Verification or Publication state.",
     ],
   };
+}
+
+export function analyzeTenderWorkflow(input: {
+  workflow: TenderWorkflowAnalysisInput;
+  products: PublishedTenderProduct[];
+}): ComplianceResult {
+  const product = input.products.find(
+    (item) =>
+      item.slug === input.workflow.productSlug &&
+      item.status === "published_projection",
+  );
+  const requirements = parseTenderRequirementDrafts(input.workflow.drafts);
+  if (!product) {
+    return {
+      tenderTitle: input.workflow.tenderTitle,
+      product: {
+        slug: input.workflow.productSlug,
+        title: "Изделие не выбрано",
+        manufacturer: "Нет данных",
+        category: "Нет данных",
+      },
+      results: [],
+      summary: {
+        totalRequirements: 0,
+        matches: 0,
+        doesNotMatch: 0,
+        partiallyMatches: 0,
+        notVerified: 0,
+        unknown: 0,
+        riskLevel: "High",
+      },
+      warnings: [
+        "Выберите изделие из опубликованной проекции перед анализом.",
+        "Candidate Claims are ignored and cannot satisfy tender requirements.",
+      ],
+    };
+  }
+  return evaluateTenderCompliance({
+    tenderTitle: input.workflow.tenderTitle,
+    product,
+    requirements,
+    productValues: product.values,
+  });
 }

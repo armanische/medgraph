@@ -1,0 +1,59 @@
+{
+  "product": {
+    "productSlug": "wave2-sle-6000",
+    "manufacturer": "SLE",
+    "productName": "SLE6000 Infant Ventilator",
+    "model": "SLE6000",
+    "category": "Neonatal ventilator"
+  },
+  "documentVersions": [],
+  "extractedFactCandidates": [],
+  "evidenceCandidates": [],
+  "candidateClaims": [],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "ventilator",
+      "neonatal"
+    ],
+    "patternsMatched": {},
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "ventilator": [
+        "adult",
+        "battery_runtime",
+        "modes",
+        "neonatal",
+        "niv",
+        "oxygen",
+        "pediatric",
+        "screen",
+        "turbine",
+        "weight"
+      ],
+      "neonatal": [
+        "alarms",
+        "humidity",
+        "oxygen",
+        "temperature",
+        "weight_capacity"
+      ]
+    },
+    "coveragePercent": 0
+  },
+  "warnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/product/sle6000/: HTTP 403",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": false,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}

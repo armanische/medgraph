@@ -1,0 +1,106 @@
+{
+  "product": {
+    "productSlug": "wave2-sle-6000c",
+    "manufacturer": "SLE",
+    "productName": "SLE6000C Neonatal Ventilator",
+    "model": "SLE6000C",
+    "category": "Neonatal ventilator"
+  },
+  "attemptedDownloads": [
+    {
+      "documentCandidateId": "document_7dd32248bd40fc86e5807dbd",
+      "sourceId": "source_b1c749d99aa6093187632111",
+      "productSlug": "wave2-sle-6000c",
+      "title": "SLE6000C official technical specification datasheet",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/SLE6000C-Datasheet.pdf",
+      "documentType": "datasheet",
+      "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_f0ef9c1084c4a69c0cdec278",
+      "sourceId": "source_e60ea0f56c8b20cc05d2827a",
+      "productSlug": "wave2-sle-6000c",
+      "title": "SLE6000H C N official range brochure",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/SLE6000NCH-Brochure.pdf",
+      "documentType": "brochure",
+      "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_4968127ab4f4a55a96b71f0b",
+      "sourceId": "source_8cf2ceeac0d8f3a4387c48dd",
+      "productSlug": "wave2-sle-6000c",
+      "title": "SLE6000H C N configuration and software compatibility matrix",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/Whats-included.pdf",
+      "documentType": "unknown",
+      "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_c3af129edccea4a5297f02a5",
+      "sourceId": "source_14bc4c21077aedd342aa6952",
+      "productSlug": "wave2-sle-6000c",
+      "title": "SLE6000C operator manual / IFU UM165 UK Issue 22",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/03/UM165-UK-Issue-22-SLE6000-User-Manual-English.pdf",
+      "documentType": "ifu",
+      "trustTier": 1
+    },
+    {
+      "documentCandidateId": "document_a4586ed1175deafe3b43b58a",
+      "sourceId": "source_2dd58853819857749e2e75ca",
+      "productSlug": "wave2-sle-6000c",
+      "title": "SLE6000H and SLE6000C official quick reference guide",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/09/MK-PHL-00007120Issue20120-20Quick20Reference20Guide20-20SLE6000H20SLE6000C.pdf",
+      "documentType": "unknown",
+      "trustTier": 1
+    }
+  ],
+  "downloadedArtifacts": [],
+  "failedDownloads": [
+    {
+      "documentCandidateId": "document_7dd32248bd40fc86e5807dbd",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/SLE6000C-Datasheet.pdf",
+      "title": "SLE6000C official technical specification datasheet",
+      "reason": "HTTP 403 Forbidden",
+      "retryable": false
+    },
+    {
+      "documentCandidateId": "document_f0ef9c1084c4a69c0cdec278",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/SLE6000NCH-Brochure.pdf",
+      "title": "SLE6000H C N official range brochure",
+      "reason": "HTTP 403 Forbidden",
+      "retryable": false
+    },
+    {
+      "documentCandidateId": "document_4968127ab4f4a55a96b71f0b",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/Whats-included.pdf",
+      "title": "SLE6000H C N configuration and software compatibility matrix",
+      "reason": "HTTP 403 Forbidden",
+      "retryable": false
+    },
+    {
+      "documentCandidateId": "document_c3af129edccea4a5297f02a5",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/03/UM165-UK-Issue-22-SLE6000-User-Manual-English.pdf",
+      "title": "SLE6000C operator manual / IFU UM165 UK Issue 22",
+      "reason": "HTTP 403 Forbidden",
+      "retryable": false
+    },
+    {
+      "documentCandidateId": "document_a4586ed1175deafe3b43b58a",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/09/MK-PHL-00007120Issue20120-20Quick20Reference20Guide20-20SLE6000H20SLE6000C.pdf",
+      "title": "SLE6000H and SLE6000C official quick reference guide",
+      "reason": "HTTP 403 Forbidden",
+      "retryable": false
+    }
+  ],
+  "skippedDocuments": [],
+  "documentVersions": [],
+  "warnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/product/sle6000c/: HTTP 403",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": false,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}

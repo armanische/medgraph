@@ -6,6 +6,21 @@
     "model": "Уникос-03",
     "category": "Акушерство и гинекология"
   },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [],
+    "normalizedUrls": [],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "Manufacturer is missing; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
   "sourceCandidates": [],
   "documentCandidates": [],
   "resolvedDocumentLinks": [],

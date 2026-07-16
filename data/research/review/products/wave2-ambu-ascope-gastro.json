@@ -1,0 +1,753 @@
+{
+  "product": {
+    "productSlug": "wave2-ambu-ascope-gastro",
+    "manufacturer": "Ambu",
+    "productName": "Ambu aScope Gastro",
+    "model": "aScope Gastro",
+    "category": "Эндоскопия"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_4082ca0e812be17806ee5b12",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "productTitle": "Ambu aScope Gastro",
+      "claimCandidateId": "claim_6afc6a66120898ee1af011aa",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Ambu® aScope™ Gastro datasheet",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_5095448b63b2d66c7ab252a4"
+      ],
+      "documentVersionIds": [
+        "document_version_1d591b152474d63f6df221f8"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fDatasheets%2fLBL-008096_IE_Datasheet_aScope-Gastro-V03.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_86fe5935824bfd35ce3c9b14",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "productTitle": "Ambu aScope Gastro",
+      "claimCandidateId": "claim_40a1913e271e4b016d8cb7e2",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "datasheet",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_23b8d1bd8b4e02be31c78581"
+      ],
+      "documentVersionIds": [
+        "document_version_1d591b152474d63f6df221f8"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fDatasheets%2fLBL-008096_IE_Datasheet_aScope-Gastro-V03.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_3f60cabb70a772fdf5f4018c",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "productTitle": "Ambu aScope Gastro",
+      "claimCandidateId": "claim_587a7c0e8d790cd23f683432",
+      "suggestedClaimType": "product.dimensions",
+      "valuePayload": {
+        "value": "9.9",
+        "unit": "mm"
+      },
+      "evidenceCandidateIds": [
+        "evidence_a4a43e4422bd690f34675528"
+      ],
+      "documentVersionIds": [
+        "document_version_1d591b152474d63f6df221f8"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fDatasheets%2fLBL-008096_IE_Datasheet_aScope-Gastro-V03.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_f0254c6821c428f9e3a1a6e8",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "productTitle": "Ambu aScope Gastro",
+      "claimCandidateId": "claim_709335e8c641f112d79037a9",
+      "suggestedClaimType": "product.dimensions",
+      "valuePayload": {
+        "value": "2.8",
+        "unit": "mm"
+      },
+      "evidenceCandidateIds": [
+        "evidence_5e1f2c0e61ee9c0ad3faf977"
+      ],
+      "documentVersionIds": [
+        "document_version_1d591b152474d63f6df221f8"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fDatasheets%2fLBL-008096_IE_Datasheet_aScope-Gastro-V03.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_54e5274750f7499a6804b6d3",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "productTitle": "Ambu aScope Gastro",
+      "claimCandidateId": "claim_88f677ec3e101050fda63057",
+      "suggestedClaimType": "product.dimensions",
+      "valuePayload": {
+        "value": "103",
+        "unit": "cm"
+      },
+      "evidenceCandidateIds": [
+        "evidence_6e04f84eab25559228d8e0f6"
+      ],
+      "documentVersionIds": [
+        "document_version_1d591b152474d63f6df221f8"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fDatasheets%2fLBL-008096_IE_Datasheet_aScope-Gastro-V03.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_ce182adefde6663442ff5bf8",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "productTitle": "Ambu aScope Gastro",
+      "claimCandidateId": "claim_7a4ffaa64e7e107fc4c64815",
+      "suggestedClaimType": "product.safetyFeatures",
+      "valuePayload": {
+        "value": "sterile",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_2bdd93cf5990d84b9eadd949"
+      ],
+      "documentVersionIds": [
+        "document_version_1d591b152474d63f6df221f8"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fDatasheets%2fLBL-008096_IE_Datasheet_aScope-Gastro-V03.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "critical",
+      "riskLevel": "high",
+      "reasons": [
+        "High-risk clinical, safety, compatibility or procurement claim.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_021342fc5581d08b7bf52514",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "productTitle": "Ambu aScope Gastro",
+      "claimCandidateId": "claim_2fc85920a885d19862284390",
+      "suggestedClaimType": "product.intendedUse",
+      "valuePayload": {
+        "value": "SINGLE-USE",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_b218ce55b03dd9424da9c3ef"
+      ],
+      "documentVersionIds": [
+        "document_version_1d591b152474d63f6df221f8"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fDatasheets%2fLBL-008096_IE_Datasheet_aScope-Gastro-V03.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_81adceaae422b6d6b7f6ae6a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "productTitle": "Ambu aScope Gastro",
+      "claimCandidateId": "claim_f9648d64be2d7db5399be8d7",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "compatibility",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_89b7d6ad7df41e09e7df1046"
+      ],
+      "documentVersionIds": [
+        "document_version_1d591b152474d63f6df221f8"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fDatasheets%2fLBL-008096_IE_Datasheet_aScope-Gastro-V03.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_a80a25b80e5e0eedc1ff5cfa",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "productTitle": "Ambu aScope Gastro",
+      "claimCandidateId": "claim_e012913779647887e987c447",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_ba525bedcecf73bc5f9a9d5e"
+      ],
+      "documentVersionIds": [
+        "document_version_1d591b152474d63f6df221f8"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fDatasheets%2fLBL-008096_IE_Datasheet_aScope-Gastro-V03.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_e3edf14713fbd5cc9c94af2d",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "productTitle": "Ambu aScope Gastro",
+      "claimCandidateId": "claim_4c5dc307b0d7c81dc6873c6b",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_c46eee0715029965b94fa4e9"
+      ],
+      "documentVersionIds": [
+        "document_version_1d591b152474d63f6df221f8"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fDatasheets%2fLBL-008096_IE_Datasheet_aScope-Gastro-V03.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_4082ca0e812be17806ee5b12",
+        "productSlug": "wave2-ambu-ascope-gastro",
+        "productTitle": "Ambu aScope Gastro",
+        "claimCandidateId": "claim_6afc6a66120898ee1af011aa",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Ambu® aScope™ Gastro datasheet",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_5095448b63b2d66c7ab252a4"
+        ],
+        "documentVersionIds": [
+          "document_version_1d591b152474d63f6df221f8"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fDatasheets%2fLBL-008096_IE_Datasheet_aScope-Gastro-V03.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_86fe5935824bfd35ce3c9b14",
+        "productSlug": "wave2-ambu-ascope-gastro",
+        "productTitle": "Ambu aScope Gastro",
+        "claimCandidateId": "claim_40a1913e271e4b016d8cb7e2",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "datasheet",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_23b8d1bd8b4e02be31c78581"
+        ],
+        "documentVersionIds": [
+          "document_version_1d591b152474d63f6df221f8"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fDatasheets%2fLBL-008096_IE_Datasheet_aScope-Gastro-V03.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.dimensions": [
+      {
+        "reviewItemId": "review_item_3f60cabb70a772fdf5f4018c",
+        "productSlug": "wave2-ambu-ascope-gastro",
+        "productTitle": "Ambu aScope Gastro",
+        "claimCandidateId": "claim_587a7c0e8d790cd23f683432",
+        "suggestedClaimType": "product.dimensions",
+        "valuePayload": {
+          "value": "9.9",
+          "unit": "mm"
+        },
+        "evidenceCandidateIds": [
+          "evidence_a4a43e4422bd690f34675528"
+        ],
+        "documentVersionIds": [
+          "document_version_1d591b152474d63f6df221f8"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fDatasheets%2fLBL-008096_IE_Datasheet_aScope-Gastro-V03.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_f0254c6821c428f9e3a1a6e8",
+        "productSlug": "wave2-ambu-ascope-gastro",
+        "productTitle": "Ambu aScope Gastro",
+        "claimCandidateId": "claim_709335e8c641f112d79037a9",
+        "suggestedClaimType": "product.dimensions",
+        "valuePayload": {
+          "value": "2.8",
+          "unit": "mm"
+        },
+        "evidenceCandidateIds": [
+          "evidence_5e1f2c0e61ee9c0ad3faf977"
+        ],
+        "documentVersionIds": [
+          "document_version_1d591b152474d63f6df221f8"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fDatasheets%2fLBL-008096_IE_Datasheet_aScope-Gastro-V03.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_54e5274750f7499a6804b6d3",
+        "productSlug": "wave2-ambu-ascope-gastro",
+        "productTitle": "Ambu aScope Gastro",
+        "claimCandidateId": "claim_88f677ec3e101050fda63057",
+        "suggestedClaimType": "product.dimensions",
+        "valuePayload": {
+          "value": "103",
+          "unit": "cm"
+        },
+        "evidenceCandidateIds": [
+          "evidence_6e04f84eab25559228d8e0f6"
+        ],
+        "documentVersionIds": [
+          "document_version_1d591b152474d63f6df221f8"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fDatasheets%2fLBL-008096_IE_Datasheet_aScope-Gastro-V03.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.safetyFeatures": [
+      {
+        "reviewItemId": "review_item_ce182adefde6663442ff5bf8",
+        "productSlug": "wave2-ambu-ascope-gastro",
+        "productTitle": "Ambu aScope Gastro",
+        "claimCandidateId": "claim_7a4ffaa64e7e107fc4c64815",
+        "suggestedClaimType": "product.safetyFeatures",
+        "valuePayload": {
+          "value": "sterile",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_2bdd93cf5990d84b9eadd949"
+        ],
+        "documentVersionIds": [
+          "document_version_1d591b152474d63f6df221f8"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fDatasheets%2fLBL-008096_IE_Datasheet_aScope-Gastro-V03.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "critical",
+        "riskLevel": "high",
+        "reasons": [
+          "High-risk clinical, safety, compatibility or procurement claim.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.intendedUse": [
+      {
+        "reviewItemId": "review_item_021342fc5581d08b7bf52514",
+        "productSlug": "wave2-ambu-ascope-gastro",
+        "productTitle": "Ambu aScope Gastro",
+        "claimCandidateId": "claim_2fc85920a885d19862284390",
+        "suggestedClaimType": "product.intendedUse",
+        "valuePayload": {
+          "value": "SINGLE-USE",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_b218ce55b03dd9424da9c3ef"
+        ],
+        "documentVersionIds": [
+          "document_version_1d591b152474d63f6df221f8"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fDatasheets%2fLBL-008096_IE_Datasheet_aScope-Gastro-V03.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "technical.term": [
+      {
+        "reviewItemId": "review_item_81adceaae422b6d6b7f6ae6a",
+        "productSlug": "wave2-ambu-ascope-gastro",
+        "productTitle": "Ambu aScope Gastro",
+        "claimCandidateId": "claim_f9648d64be2d7db5399be8d7",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "compatibility",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_89b7d6ad7df41e09e7df1046"
+        ],
+        "documentVersionIds": [
+          "document_version_1d591b152474d63f6df221f8"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fDatasheets%2fLBL-008096_IE_Datasheet_aScope-Gastro-V03.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_a80a25b80e5e0eedc1ff5cfa",
+        "productSlug": "wave2-ambu-ascope-gastro",
+        "productTitle": "Ambu aScope Gastro",
+        "claimCandidateId": "claim_e012913779647887e987c447",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_ba525bedcecf73bc5f9a9d5e"
+        ],
+        "documentVersionIds": [
+          "document_version_1d591b152474d63f6df221f8"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fDatasheets%2fLBL-008096_IE_Datasheet_aScope-Gastro-V03.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_e3edf14713fbd5cc9c94af2d",
+        "productSlug": "wave2-ambu-ascope-gastro",
+        "productTitle": "Ambu aScope Gastro",
+        "claimCandidateId": "claim_4c5dc307b0d7c81dc6873c6b",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_c46eee0715029965b94fa4e9"
+        ],
+        "documentVersionIds": [
+          "document_version_1d591b152474d63f6df221f8"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fDatasheets%2fLBL-008096_IE_Datasheet_aScope-Gastro-V03.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_1d591b152474d63f6df221f8",
+      "documentType": "datasheet",
+      "title": "Ambu® aScope™ Gastro datasheet",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fDatasheets%2fLBL-008096_IE_Datasheet_aScope-Gastro-V03.pdf",
+      "sha256": "5ac0eeae0accf99f7e7b9305f468f61800649aceccb662e753a5ccf406314369"
+    }
+  ],
+  "missingEvidence": [],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver adapter used: ambu",
+    "Resolver retry skipped https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-11-6-video.mp4: HTTP 406",
+    "Resolver retry skipped https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-10-6-video.mp4: HTTP 406",
+    "Resolver retry skipped https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-9-6-video.mp4: HTTP 406",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: mailto:tisc@ambu.com",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: http://www.ambuusa.com/corporate-giving",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "resolver=ambu; attempts=7; matchedLinks=28; classifiedDocuments={\"Unknown\":32,\"Brochure\":1,\"Datasheet\":2,\"IFU\":2}; confidenceDistribution={\"80\":13,\"90\":11,\"95\":4,\"100\":9}; duplicatesRemoved=9",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

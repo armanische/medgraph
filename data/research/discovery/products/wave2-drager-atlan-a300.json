@@ -1,0 +1,91 @@
+{
+  "product": {
+    "productSlug": "wave2-drager-atlan-a300",
+    "manufacturer": "Drager",
+    "productName": "Dräger Atlan A300",
+    "model": "Atlan A300",
+    "category": "Наркозно-дыхательные аппараты"
+  },
+  "providerDiagnostics": {
+    "providerName": "drager",
+    "strategyUsed": "Dräger products, media and technical documentation services",
+    "pagesVisited": [
+      "https://www.draeger.com/en_uk/Products/Atlan-A300-A300-XL"
+    ],
+    "candidateUrls": [
+      "https://www.draeger.com/en_uk/Products/Atlan-A300-A300-XL"
+    ],
+    "normalizedUrls": [
+      "https://www.draeger.com/en_uk/Products/Atlan-A300-A300-XL"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": []
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": false,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_998ff80dd66179691bbc39bb",
+      "productSlug": "wave2-drager-atlan-a300",
+      "manufacturer": "Drager",
+      "productName": "Dräger Atlan A300",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.draeger.com/en_uk/Products/Atlan-A300-A300-XL",
+      "title": "Dräger Atlan A300/A300 XL official product page",
+      "snippet": "Official product-family page; candidate-only source.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official product-family page; candidate-only source."
+      ]
+    }
+  ],
+  "documentCandidates": [],
+  "resolvedDocumentLinks": [],
+  "resolverWarnings": [],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-drager-atlan-a300",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-drager-atlan-a300",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-drager-atlan-a300",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

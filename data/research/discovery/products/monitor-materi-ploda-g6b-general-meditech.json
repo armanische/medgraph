@@ -6,6 +6,21 @@
     "model": "G6B",
     "category": "Акушерство и гинекология"
   },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [],
+    "normalizedUrls": [],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “General Meditech”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
   "sourceCandidates": [],
   "documentCandidates": [],
   "resolvedDocumentLinks": [],

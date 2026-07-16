@@ -1,0 +1,94 @@
+{
+  "product": {
+    "productSlug": "wave2-ge-venue-fit",
+    "manufacturer": "GE HealthCare",
+    "productName": "GE HealthCare Venue Fit",
+    "model": "Venue Fit",
+    "category": "УЗИ аппараты"
+  },
+  "providerDiagnostics": {
+    "providerName": "ge-healthcare",
+    "strategyUsed": "GE HealthCare products, support, resources and document library",
+    "pagesVisited": [
+      "https://www.gehealthcare.com/en-us/products/ultrasound/point-of-care-ultrasound/venue/venuefit"
+    ],
+    "candidateUrls": [
+      "https://www.gehealthcare.com/en-us/products/ultrasound/point-of-care-ultrasound/venue/venuefit"
+    ],
+    "normalizedUrls": [
+      "https://www.gehealthcare.com/en-us/products/ultrasound/point-of-care-ultrasound/venue/venuefit"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": []
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": false,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_1af952d02ad92aa586785c2a",
+      "productSlug": "wave2-ge-venue-fit",
+      "manufacturer": "GE HealthCare",
+      "productName": "GE HealthCare Venue Fit",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.gehealthcare.com/en-us/products/ultrasound/point-of-care-ultrasound/venue/venuefit",
+      "title": "GE HealthCare Venue Fit official product page",
+      "snippet": "Official product page candidate.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official product page candidate."
+      ]
+    }
+  ],
+  "documentCandidates": [],
+  "resolvedDocumentLinks": [],
+  "resolverWarnings": [
+    "Resolver fetch failed for https://www.gehealthcare.com/en-us/products/ultrasound/point-of-care-ultrasound/venue/venuefit: HTTP 404"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-ge-venue-fit",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-ge-venue-fit",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-ge-venue-fit",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver fetch failed for https://www.gehealthcare.com/en-us/products/ultrasound/point-of-care-ultrasound/venue/venuefit: HTTP 404",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

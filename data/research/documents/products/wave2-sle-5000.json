@@ -1,0 +1,64 @@
+{
+  "product": {
+    "productSlug": "wave2-sle-5000",
+    "manufacturer": "SLE",
+    "productName": "SLE5000 Neonatal Ventilator",
+    "model": "SLE5000",
+    "category": "Neonatal ventilator"
+  },
+  "attemptedDownloads": [
+    {
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "sourceId": "source_b39bc38fa997eb602d949372",
+      "productSlug": "wave2-sle-5000",
+      "title": "SLE5000 official partner brochure",
+      "url": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "documentType": "brochure",
+      "trustTier": 1
+    }
+  ],
+  "downloadedArtifacts": [
+    {
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "title": "SLE5000 official partner brochure",
+      "documentType": "brochure",
+      "sha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "contentType": "application/pdf",
+      "byteSize": 1493337,
+      "filePath": "data/research/artifacts/artifacts/sha256/76/78/767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc.pdf"
+    }
+  ],
+  "failedDownloads": [],
+  "skippedDocuments": [],
+  "documentVersions": [
+    {
+      "versionId": "document_version_de7edf342d164fa2ee9d9ffb",
+      "documentCandidateId": "document_3cae73e9e66b4cc99634c894",
+      "sourceId": "source_b39bc38fa997eb602d949372",
+      "productSlug": "wave2-sle-5000",
+      "documentKey": "trusted-document:document_3cae73e9e66b4cc99634c894",
+      "documentType": "brochure",
+      "title": "SLE5000 official partner brochure",
+      "language": null,
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/gehc/in/images/products/ventilators/sle5000/sle5000_white_english.pdf",
+      "sha256": "767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc",
+      "contentType": "application/pdf",
+      "byteSize": 1493337,
+      "filePath": "data/research/artifacts/artifacts/sha256/76/78/767885b5afb7c4376865215d8c1a915065007c53d98a6a050e4e9b124d7acfdc.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "warnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/product/sle5000/: HTTP 403",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "product": {
+    "productSlug": "wave2-ge-aespire-view",
+    "manufacturer": "GE HealthCare",
+    "productName": "GE HealthCare Aespire View",
+    "model": "Aespire View",
+    "category": "Наркозно-дыхательные аппараты"
+  },
+  "reviewItems": [],
+  "groupedByClaimType": {},
+  "sourceDocumentSummary": [],
+  "missingEvidence": [],
+  "recommendedReviewerAction": "No reviewable candidate claims yet. Collect more evidence before review.",
+  "warnings": [
+    "Resolver fetch failed for https://www.gehealthcare.com/en-us/products/anesthesia-delivery/aespire-view: HTTP 404",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

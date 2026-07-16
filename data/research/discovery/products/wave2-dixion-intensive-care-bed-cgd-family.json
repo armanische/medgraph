@@ -1,0 +1,452 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+    "manufacturer": "Dixion",
+    "productName": "DIXION Intensive Care Bed CGD family",
+    "model": "Intensive Care Bed CGD family",
+    "category": "Функциональная кровать"
+  },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [
+      "https://dixion.ru/goods/funktsionalnaya-krovat-Dixion-Intensive-Care-Bed.html",
+      "https://dixion.ru/upload/iblock/5ba/wbqo3m0auw33ljaysimp7yw6wjxju63a/Dixion_Intensive_Care_Bed_CGD.pdf"
+    ],
+    "normalizedUrls": [
+      "https://dixion.ru/goods/funktsionalnaya-krovat-Dixion-Intensive-Care-Bed.html",
+      "https://dixion.ru/upload/iblock/5ba/wbqo3m0auw33ljaysimp7yw6wjxju63a/Dixion_Intensive_Care_Bed_CGD.pdf"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “Dixion”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_e60e6c81446aa0766c462c37",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "manufacturer": "Dixion",
+      "productName": "DIXION Intensive Care Bed CGD family",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://dixion.ru/goods/funktsionalnaya-krovat-Dixion-Intensive-Care-Bed.html",
+      "title": "DIXION Intensive Care Bed official product page",
+      "snippet": "Family entry; accessories and bed configurations are not separate products.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Family entry; accessories and bed configurations are not separate products."
+      ]
+    },
+    {
+      "sourceId": "source_0453f68b1be63ff5d6940acc",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "manufacturer": "Dixion",
+      "productName": "DIXION Intensive Care Bed CGD family",
+      "sourceType": "manufacturer_document",
+      "url": "https://dixion.ru/upload/iblock/5ba/wbqo3m0auw33ljaysimp7yw6wjxju63a/Dixion_Intensive_Care_Bed_CGD.pdf",
+      "title": "DIXION Intensive Care Bed CGD official brochure",
+      "snippet": "Official family catalogue; unsupported extraction category falls back to registry only.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "manufacturer-hosted document candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official family catalogue; unsupported extraction category falls back to registry only."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_7a74a89cf0d4f6fa4a17f04a",
+      "sourceId": "source_e60e6c81446aa0766c462c37",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/funktsionalnaya-krovat-Dixion-Intensive-Care-Bed.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_c53259979aa29519debb2667",
+      "sourceId": "source_e60e6c81446aa0766c462c37",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/goods/funktsionalnaya-krovat-Dixion-Intensive-Care-Bed.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_35cb84208c1ccdcf09cb45dd",
+      "sourceId": "source_e60e6c81446aa0766c462c37",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/4e1/%D0%A4%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%BA%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D0%B8%20Intensive%20Care%20Bed%20CGD.pdf",
+      "title": "Скачать буклет «‎Функциональная кровать Intensive Care Bed Dixion»",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/goods/funktsionalnaya-krovat-Dixion-Intensive-Care-Bed.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_b2d4a5dd439366f20d9484c3",
+      "sourceId": "source_e60e6c81446aa0766c462c37",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/75c/DIXION.%20%D0%9C%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D1%8B%20%D0%BF%D0%B0%D1%86%D0%B8%D0%B5%D0%BD%D1%82%D0%B0(1).pdf",
+      "title": "Unclassified manufacturer document",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/goods/funktsionalnaya-krovat-Dixion-Intensive-Care-Bed.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_d7624be74ba005c36c493133",
+      "sourceId": "source_0453f68b1be63ff5d6940acc",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/upload/iblock/5ba/wbqo3m0auw33ljaysimp7yw6wjxju63a/Dixion_Intensive_Care_Bed_CGD.pdf",
+      "title": "DIXION Intensive Care Bed CGD official brochure",
+      "language": null,
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "source URL is itself a document candidate"
+      ]
+    },
+    {
+      "documentId": "document_801b265f51e8d0e0d5898d5a",
+      "sourceId": "source_e60e6c81446aa0766c462c37",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/funktsionalnaya-krovat-Dixion-Intensive-Care-Bed.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_521cdd64091995daedb72c48",
+      "sourceId": "source_e60e6c81446aa0766c462c37",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/funktsionalnaya-krovat-Dixion-Intensive-Care-Bed.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_e42d6b9109553367cc041293",
+      "sourceId": "source_e60e6c81446aa0766c462c37",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/funktsionalnaya-krovat-Dixion-Intensive-Care-Bed.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_5153b8031bfbafde5bc4acf0",
+      "sourceId": "source_e60e6c81446aa0766c462c37",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/funktsionalnaya-krovat-Dixion-Intensive-Care-Bed.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_19063f65907b3dff3e826efb",
+      "sourceId": "source_e60e6c81446aa0766c462c37",
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Manufacturer Brochure",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/funktsionalnaya-krovat-Dixion-Intensive-Care-Bed.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_801b265f51e8d0e0d5898d5a",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_e60e6c81446aa0766c462c37",
+      "linkText": "Медицинское оборудование",
+      "resolvedFromUrl": "https://dixion.ru/goods/funktsionalnaya-krovat-Dixion-Intensive-Care-Bed.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_521cdd64091995daedb72c48",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_e60e6c81446aa0766c462c37",
+      "linkText": "Каталоги оборудования",
+      "resolvedFromUrl": "https://dixion.ru/goods/funktsionalnaya-krovat-Dixion-Intensive-Care-Bed.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_e42d6b9109553367cc041293",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_e60e6c81446aa0766c462c37",
+      "linkText": "Новинки оборудования",
+      "resolvedFromUrl": "https://dixion.ru/goods/funktsionalnaya-krovat-Dixion-Intensive-Care-Bed.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_5153b8031bfbafde5bc4acf0",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_e60e6c81446aa0766c462c37",
+      "linkText": "Скоро в продаже",
+      "resolvedFromUrl": "https://dixion.ru/goods/funktsionalnaya-krovat-Dixion-Intensive-Care-Bed.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_19063f65907b3dff3e826efb",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Manufacturer Brochure",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_e60e6c81446aa0766c462c37",
+      "linkText": "",
+      "resolvedFromUrl": "https://dixion.ru/goods/funktsionalnaya-krovat-Dixion-Intensive-Care-Bed.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_7a74a89cf0d4f6fa4a17f04a",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_e60e6c81446aa0766c462c37",
+      "linkText": "Скачать каталог в формате PDF",
+      "resolvedFromUrl": "https://dixion.ru/goods/funktsionalnaya-krovat-Dixion-Intensive-Care-Bed.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_c53259979aa29519debb2667",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_e60e6c81446aa0766c462c37",
+      "linkText": "Скачать прайс-лист",
+      "resolvedFromUrl": "https://dixion.ru/goods/funktsionalnaya-krovat-Dixion-Intensive-Care-Bed.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_35cb84208c1ccdcf09cb45dd",
+      "url": "https://dixion.ru/upload/iblock/4e1/%D0%A4%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%BA%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D0%B8%20Intensive%20Care%20Bed%20CGD.pdf",
+      "title": "Скачать буклет «‎Функциональная кровать Intensive Care Bed Dixion»",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_e60e6c81446aa0766c462c37",
+      "linkText": "Скачать буклет «‎Функциональная кровать Intensive Care Bed Dixion»",
+      "resolvedFromUrl": "https://dixion.ru/goods/funktsionalnaya-krovat-Dixion-Intensive-Care-Bed.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_b2d4a5dd439366f20d9484c3",
+      "url": "https://dixion.ru/upload/iblock/75c/DIXION.%20%D0%9C%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D1%8B%20%D0%BF%D0%B0%D1%86%D0%B8%D0%B5%D0%BD%D1%82%D0%B0(1).pdf",
+      "title": "Unclassified manufacturer document",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_e60e6c81446aa0766c462c37",
+      "linkText": "",
+      "resolvedFromUrl": "https://dixion.ru/goods/funktsionalnaya-krovat-Dixion-Intensive-Care-Bed.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=9; classifiedDocuments={\"Brochure\":11,\"Unknown\":4}; confidenceDistribution={\"80\":9,\"100\":6}; duplicatesRemoved=6"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-intensive-care-bed-cgd-family",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 2,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 2,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=9; classifiedDocuments={\"Brochure\":11,\"Unknown\":4}; confidenceDistribution={\"80\":9,\"100\":6}; duplicatesRemoved=6",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

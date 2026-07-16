@@ -1,0 +1,348 @@
+{
+  "product": {
+    "productSlug": "wave2-ge-carescape-b650",
+    "manufacturer": "GE HealthCare",
+    "productName": "GE HealthCare CARESCAPE B650",
+    "model": "CARESCAPE B650",
+    "category": "Монитор пациента"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_92f041d7a867614858b55fab",
+      "productSlug": "wave2-ge-carescape-b650",
+      "productTitle": "GE HealthCare CARESCAPE B650",
+      "claimCandidateId": "claim_2994bbcbd04a8f711ec4f924",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "CARESCAPE B850/B650/B450 User Manual",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_06deada05192b8e127055629"
+      ],
+      "documentVersionIds": [
+        "document_version_d6da5ef2db9258994a931591"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_20499e4a395bdf975ee1755a",
+      "productSlug": "wave2-ge-carescape-b650",
+      "productTitle": "GE HealthCare CARESCAPE B650",
+      "claimCandidateId": "claim_627c3b21ffce11d628342867",
+      "suggestedClaimType": "document.language",
+      "valuePayload": {
+        "value": "en",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_3d9b8246049cd738dc9b8aba"
+      ],
+      "documentVersionIds": [
+        "document_version_d6da5ef2db9258994a931591"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_74b640d3bf200b18a2fdfc1d",
+      "productSlug": "wave2-ge-carescape-b650",
+      "productTitle": "GE HealthCare CARESCAPE B650",
+      "claimCandidateId": "claim_1c9e06fde1eec023f4578599",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "user_manual",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_6ddcc3d4126f32ed10d8eb2f"
+      ],
+      "documentVersionIds": [
+        "document_version_d6da5ef2db9258994a931591"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_dc30ea4f872dea1681ffd0e1",
+      "productSlug": "wave2-ge-carescape-b650",
+      "productTitle": "GE HealthCare CARESCAPE B650",
+      "claimCandidateId": "claim_d74f0f38fa4535e43b21b49c",
+      "suggestedClaimType": "product.model",
+      "valuePayload": {
+        "value": "B850",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_565274c9ef977acf9d10f187"
+      ],
+      "documentVersionIds": [
+        "document_version_d6da5ef2db9258994a931591"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "high",
+      "riskLevel": "medium",
+      "reasons": [
+        "Identity data affects product matching and review routing.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_99ad73bf56f4cd9b394c6ca1",
+      "productSlug": "wave2-ge-carescape-b650",
+      "productTitle": "GE HealthCare CARESCAPE B650",
+      "claimCandidateId": "claim_fda73aab5333697fe8b66fab",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_8efdcceb5817925869c0bd79"
+      ],
+      "documentVersionIds": [
+        "document_version_d6da5ef2db9258994a931591"
+      ],
+      "sourceUrls": [
+        "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_92f041d7a867614858b55fab",
+        "productSlug": "wave2-ge-carescape-b650",
+        "productTitle": "GE HealthCare CARESCAPE B650",
+        "claimCandidateId": "claim_2994bbcbd04a8f711ec4f924",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "CARESCAPE B850/B650/B450 User Manual",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_06deada05192b8e127055629"
+        ],
+        "documentVersionIds": [
+          "document_version_d6da5ef2db9258994a931591"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.language": [
+      {
+        "reviewItemId": "review_item_20499e4a395bdf975ee1755a",
+        "productSlug": "wave2-ge-carescape-b650",
+        "productTitle": "GE HealthCare CARESCAPE B650",
+        "claimCandidateId": "claim_627c3b21ffce11d628342867",
+        "suggestedClaimType": "document.language",
+        "valuePayload": {
+          "value": "en",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_3d9b8246049cd738dc9b8aba"
+        ],
+        "documentVersionIds": [
+          "document_version_d6da5ef2db9258994a931591"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_74b640d3bf200b18a2fdfc1d",
+        "productSlug": "wave2-ge-carescape-b650",
+        "productTitle": "GE HealthCare CARESCAPE B650",
+        "claimCandidateId": "claim_1c9e06fde1eec023f4578599",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "user_manual",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_6ddcc3d4126f32ed10d8eb2f"
+        ],
+        "documentVersionIds": [
+          "document_version_d6da5ef2db9258994a931591"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.model": [
+      {
+        "reviewItemId": "review_item_dc30ea4f872dea1681ffd0e1",
+        "productSlug": "wave2-ge-carescape-b650",
+        "productTitle": "GE HealthCare CARESCAPE B650",
+        "claimCandidateId": "claim_d74f0f38fa4535e43b21b49c",
+        "suggestedClaimType": "product.model",
+        "valuePayload": {
+          "value": "B850",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_565274c9ef977acf9d10f187"
+        ],
+        "documentVersionIds": [
+          "document_version_d6da5ef2db9258994a931591"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "high",
+        "riskLevel": "medium",
+        "reasons": [
+          "Identity data affects product matching and review routing.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "technical.term": [
+      {
+        "reviewItemId": "review_item_99ad73bf56f4cd9b394c6ca1",
+        "productSlug": "wave2-ge-carescape-b650",
+        "productTitle": "GE HealthCare CARESCAPE B650",
+        "claimCandidateId": "claim_fda73aab5333697fe8b66fab",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_8efdcceb5817925869c0bd79"
+        ],
+        "documentVersionIds": [
+          "document_version_d6da5ef2db9258994a931591"
+        ],
+        "sourceUrls": [
+          "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_d6da5ef2db9258994a931591",
+      "documentType": "user_manual",
+      "title": "CARESCAPE B850/B650/B450 User Manual",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf",
+      "sha256": "9e9890d92ceb402d9a91a1725a4ef974b742e01dfdda08d84a39547575d3123c"
+    }
+  ],
+  "missingEvidence": [],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver fetch failed for https://www.gehealthcare.com/en-us/products/patient-monitoring/patient-monitors/carescape-monitor-b650: HTTP 404",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

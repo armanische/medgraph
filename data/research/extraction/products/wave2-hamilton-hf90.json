@@ -168,7 +168,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:manufacturer",
+        "matchedSynonym:Manufacturer",
+        "unitParsed:none"
       ]
     },
     {
@@ -438,7 +442,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.battery",
+        "matchedSynonym:Аккумулятор",
+        "unitParsed:none"
       ]
     },
     {
@@ -468,7 +476,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:generic.softwareVersion",
+        "matchedSynonym:Версия программного обеспечения",
+        "unitParsed:none"
       ]
     },
     {
@@ -848,6 +860,150 @@
         "paragraph": 318
       },
       "quotedText": "Software version: The software",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_f79d6d28aa5ab07a02f6413d",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_a175796f714ce1411f5a9cab",
+      "documentCandidateId": "document_7cf01c06fa9428cd1acf510f",
+      "sha256": "d02a13194a684ea3feb07b622eaa79e6c405580d64d58aad95208dfffb1c0ffd",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:2dd5a34c-a92a-4107-99ca-a3e5030a36f6/HAMILTON-HF90-product-brochure_en_ELO20211006N.00.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 71
+      },
+      "quotedText": "Flow rate: 2–80 l/min",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_5c8dd613258f8be0b76f098e",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_a175796f714ce1411f5a9cab",
+      "documentCandidateId": "document_7cf01c06fa9428cd1acf510f",
+      "sha256": "d02a13194a684ea3feb07b622eaa79e6c405580d64d58aad95208dfffb1c0ffd",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:2dd5a34c-a92a-4107-99ca-a3e5030a36f6/HAMILTON-HF90-product-brochure_en_ELO20211006N.00.pdf",
+      "locator": {
+        "page": 5,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 101
+      },
+      "quotedText": "Battery power on",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_b2534d4d32662c3000a06e4e",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_676b75f5b1fa35280d81f64c",
+      "documentCandidateId": "document_d30ec391967436c8667411e6",
+      "sha256": "b332c64e165918acc1dfc2512461f2b980294e0b8ad90d3b0a4209ecb3f30464",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e4a9bf4d-8948-4eea-ac3a-40dc4a51f9d6/HAMILTON-HF90_ops-manual_v1.0.x_en_10108396.00.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 112
+      },
+      "quotedText": "display ................................................................. 39",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_9f07437e006bb8c65606f460",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_676b75f5b1fa35280d81f64c",
+      "documentCandidateId": "document_d30ec391967436c8667411e6",
+      "sha256": "b332c64e165918acc1dfc2512461f2b980294e0b8ad90d3b0a4209ecb3f30464",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e4a9bf4d-8948-4eea-ac3a-40dc4a51f9d6/HAMILTON-HF90_ops-manual_v1.0.x_en_10108396.00.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 121
+      },
+      "quotedText": "battery power ..................................................................... 45",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_e2c70bc242ff0a08e3112e06",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_676b75f5b1fa35280d81f64c",
+      "documentCandidateId": "document_d30ec391967436c8667411e6",
+      "sha256": "b332c64e165918acc1dfc2512461f2b980294e0b8ad90d3b0a4209ecb3f30464",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e4a9bf4d-8948-4eea-ac3a-40dc4a51f9d6/HAMILTON-HF90_ops-manual_v1.0.x_en_10108396.00.pdf",
+      "locator": {
+        "page": 19,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 528
+      },
+      "quotedText": "Compatibility), and",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_322e13e260c76b3d9be2f399",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_676b75f5b1fa35280d81f64c",
+      "documentCandidateId": "document_d30ec391967436c8667411e6",
+      "sha256": "b332c64e165918acc1dfc2512461f2b980294e0b8ad90d3b0a4209ecb3f30464",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e4a9bf4d-8948-4eea-ac3a-40dc4a51f9d6/HAMILTON-HF90_ops-manual_v1.0.x_en_10108396.00.pdf",
+      "locator": {
+        "page": 23,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 809
+      },
+      "quotedText": "flow rate is outside the",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_0d08b9d59baedbe7c318f0b9",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_676b75f5b1fa35280d81f64c",
+      "documentCandidateId": "document_d30ec391967436c8667411e6",
+      "sha256": "b332c64e165918acc1dfc2512461f2b980294e0b8ad90d3b0a4209ecb3f30464",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e4a9bf4d-8948-4eea-ac3a-40dc4a51f9d6/HAMILTON-HF90_ops-manual_v1.0.x_en_10108396.00.pdf",
+      "locator": {
+        "page": 127,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 5956
+      },
+      "quotedText": "Weight Device (without options",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_f41c5eac51f269620b96de9b",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_676b75f5b1fa35280d81f64c",
+      "documentCandidateId": "document_d30ec391967436c8667411e6",
+      "sha256": "b332c64e165918acc1dfc2512461f2b980294e0b8ad90d3b0a4209ecb3f30464",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:e4a9bf4d-8948-4eea-ac3a-40dc4a51f9d6/HAMILTON-HF90_ops-manual_v1.0.x_en_10108396.00.pdf",
+      "locator": {
+        "page": 127,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 5965
+      },
+      "quotedText": "Dimensions See the following figures.",
       "status": "candidate",
       "requiresHumanReview": true
     }
@@ -1291,6 +1447,24 @@
       ]
     }
   ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry"
+    ],
+    "patternsMatched": {
+      "registry.manufacturer": 1,
+      "registry.generic.battery": 1,
+      "registry.generic.softwareVersion": 1
+    },
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "model",
+        "registration_number"
+      ]
+    },
+    "coveragePercent": 100
+  },
   "warnings": [
     "Resolver rejected offsite document URL: https://youtu.be/6EPiYLTrHBE",
     "Resolver rejected offsite document URL: https://youtu.be/5n22mT7L_nw",

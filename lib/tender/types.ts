@@ -5,6 +5,13 @@ export type ComplianceStatus =
   | "not_verified"
   | "unknown";
 
+export type TenderRiskLevel = "Low" | "Medium" | "High";
+export type TenderWorkflowStep =
+  | "select_product"
+  | "edit_requirements"
+  | "analysis"
+  | "result";
+
 export type TenderRuleOperator =
   | "numeric_gte"
   | "numeric_lte"
@@ -76,6 +83,31 @@ export interface ComplianceResult {
     partiallyMatches: number;
     notVerified: number;
     unknown: number;
+    riskLevel: TenderRiskLevel;
   };
   warnings: string[];
+}
+
+export interface PublishedTenderProduct {
+  slug: string;
+  title: string;
+  manufacturer: string;
+  category: string;
+  status: "published_projection";
+  values: TenderProductValue[];
+}
+
+export interface TenderRequirementDraft {
+  characteristicKey: string;
+  label: string;
+  category: string;
+  operator: TenderRuleOperator;
+  expectedValueInput: string;
+  unit: string | null;
+}
+
+export interface TenderWorkflowAnalysisInput {
+  tenderTitle: string;
+  productSlug: string;
+  drafts: TenderRequirementDraft[];
 }

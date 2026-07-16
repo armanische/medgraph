@@ -1,0 +1,220 @@
+{
+  "product": {
+    "productSlug": "wave2-sle-6000n",
+    "manufacturer": "SLE",
+    "productName": "SLE6000N Non-Invasive Ventilator",
+    "model": "SLE6000N",
+    "category": "Neonatal respiratory ventilator"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_a30d5d4bf3147abfd38bdc5a",
+      "productSlug": "wave2-sle-6000n",
+      "productTitle": "SLE6000N Non-Invasive Ventilator",
+      "claimCandidateId": "claim_d402d41201e94d60edb75997",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "SLE6000H C N configuration and software compatibility matrix",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_8f4c91348a284b106bbecf11"
+      ],
+      "documentVersionIds": [
+        "document_version_c7472376639058c1a1b34f5b"
+      ],
+      "sourceUrls": [
+        "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/Whats-included.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_427539e7119f4f8b16d8fd6b",
+      "productSlug": "wave2-sle-6000n",
+      "productTitle": "SLE6000N Non-Invasive Ventilator",
+      "claimCandidateId": "claim_b9c2b7dbe462e224ba0e0c59",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_82eb9971c6b55c8e39d35113"
+      ],
+      "documentVersionIds": [
+        "document_version_c7472376639058c1a1b34f5b"
+      ],
+      "sourceUrls": [
+        "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/Whats-included.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_7904725fada386aec3d869db",
+      "productSlug": "wave2-sle-6000n",
+      "productTitle": "SLE6000N Non-Invasive Ventilator",
+      "claimCandidateId": "claim_145acf6fff0093c7cac905f4",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "Non-Invasive Ventilation",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_9e5a6dc0de4a33f978ddebe5"
+      ],
+      "documentVersionIds": [
+        "document_version_c7472376639058c1a1b34f5b"
+      ],
+      "sourceUrls": [
+        "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/Whats-included.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_a30d5d4bf3147abfd38bdc5a",
+        "productSlug": "wave2-sle-6000n",
+        "productTitle": "SLE6000N Non-Invasive Ventilator",
+        "claimCandidateId": "claim_d402d41201e94d60edb75997",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "SLE6000H C N configuration and software compatibility matrix",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_8f4c91348a284b106bbecf11"
+        ],
+        "documentVersionIds": [
+          "document_version_c7472376639058c1a1b34f5b"
+        ],
+        "sourceUrls": [
+          "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/Whats-included.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_427539e7119f4f8b16d8fd6b",
+        "productSlug": "wave2-sle-6000n",
+        "productTitle": "SLE6000N Non-Invasive Ventilator",
+        "claimCandidateId": "claim_b9c2b7dbe462e224ba0e0c59",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_82eb9971c6b55c8e39d35113"
+        ],
+        "documentVersionIds": [
+          "document_version_c7472376639058c1a1b34f5b"
+        ],
+        "sourceUrls": [
+          "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/Whats-included.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.operatingModes": [
+      {
+        "reviewItemId": "review_item_7904725fada386aec3d869db",
+        "productSlug": "wave2-sle-6000n",
+        "productTitle": "SLE6000N Non-Invasive Ventilator",
+        "claimCandidateId": "claim_145acf6fff0093c7cac905f4",
+        "suggestedClaimType": "product.operatingModes",
+        "valuePayload": {
+          "value": "Non-Invasive Ventilation",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_9e5a6dc0de4a33f978ddebe5"
+        ],
+        "documentVersionIds": [
+          "document_version_c7472376639058c1a1b34f5b"
+        ],
+        "sourceUrls": [
+          "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/Whats-included.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_c7472376639058c1a1b34f5b",
+      "documentType": "unknown",
+      "title": "SLE6000H C N configuration and software compatibility matrix",
+      "sourceUrl": "https://inspirationhealthcaregroup.com/wp-content/uploads/2023/05/Whats-included.pdf",
+      "sha256": "6e748e4efb5637ff3ccadf562e2c6900d374b4a3cc370c37c01e512e94a0b8f1"
+    }
+  ],
+  "missingEvidence": [],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/product/sle6000n/: HTTP 403",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

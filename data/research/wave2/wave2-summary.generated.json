@@ -1,25 +1,70 @@
 {
   "generatedAt": "wave2-execution-v1",
   "manufacturers": [
-    "Mindray"
+    "Hamilton",
+    "Mindray",
+    "Drager",
+    "GE",
+    "Philips",
+    "Ambu",
+    "SonoScape",
+    "Comen",
+    "SLE",
+    "Dixion"
   ],
   "totals": {
-    "productsDiscovered": 22,
-    "officialSources": 22,
-    "documentsFound": 48,
-    "downloads": 32,
-    "artifacts": 32,
-    "candidateFacts": 77,
-    "reviewItems": 77,
-    "blockedProducts": 3,
+    "productsDiscovered": 157,
+    "officialSources": 198,
+    "documentsFound": 312,
+    "downloads": 205,
+    "artifacts": 205,
+    "candidateFacts": 479,
+    "reviewItems": 479,
+    "blockedProducts": 19,
     "errors": 0,
-    "warnings": 1,
-    "durationMs": 1891
+    "warnings": 14,
+    "durationMs": 16436
   },
   "reports": [
     {
+      "manufacturer": "Hamilton",
+      "path": "data/research/wave2/Hamilton/summary.generated.json"
+    },
+    {
       "manufacturer": "Mindray",
-      "path": "/Users/arman/Desktop/cybermedica-platform/data/research/wave2/Mindray/summary.generated.json"
+      "path": "data/research/wave2/Mindray/summary.generated.json"
+    },
+    {
+      "manufacturer": "Drager",
+      "path": "data/research/wave2/Drager/summary.generated.json"
+    },
+    {
+      "manufacturer": "GE",
+      "path": "data/research/wave2/GE/summary.generated.json"
+    },
+    {
+      "manufacturer": "Philips",
+      "path": "data/research/wave2/Philips/summary.generated.json"
+    },
+    {
+      "manufacturer": "Ambu",
+      "path": "data/research/wave2/Ambu/summary.generated.json"
+    },
+    {
+      "manufacturer": "SonoScape",
+      "path": "data/research/wave2/SonoScape/summary.generated.json"
+    },
+    {
+      "manufacturer": "Comen",
+      "path": "data/research/wave2/Comen/summary.generated.json"
+    },
+    {
+      "manufacturer": "SLE",
+      "path": "data/research/wave2/SLE/summary.generated.json"
+    },
+    {
+      "manufacturer": "Dixion",
+      "path": "data/research/wave2/Dixion/summary.generated.json"
     }
   ],
   "safety": {

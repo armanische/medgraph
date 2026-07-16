@@ -1,0 +1,75 @@
+{
+  "product": {
+    "productSlug": "wave2-drager-infinity-delta",
+    "manufacturer": "Drager",
+    "productName": "Dräger Infinity Delta",
+    "model": "Infinity Delta",
+    "category": "Мониторы пациента"
+  },
+  "sourceCandidates": [
+    {
+      "sourceId": "source_77b93954640dda2ccc62bcc0",
+      "productSlug": "wave2-drager-infinity-delta",
+      "manufacturer": "Drager",
+      "productName": "Dräger Infinity Delta",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.draeger.com/en_uk/Products/Infinity-Delta",
+      "title": "Dräger Infinity Delta official product page",
+      "snippet": "Official legacy product page; candidate-only source.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official legacy product page; candidate-only source."
+      ]
+    }
+  ],
+  "documentCandidates": [],
+  "resolvedDocumentLinks": [],
+  "resolverWarnings": [
+    "Resolver fetch failed for https://www.draeger.com/en_uk/Products/Infinity-Delta: HTTP 404"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-drager-infinity-delta",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-drager-infinity-delta",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-drager-infinity-delta",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver fetch failed for https://www.draeger.com/en_uk/Products/Infinity-Delta: HTTP 404",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

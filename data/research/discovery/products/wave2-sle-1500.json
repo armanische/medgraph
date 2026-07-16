@@ -1,0 +1,177 @@
+{
+  "product": {
+    "productSlug": "wave2-sle-1500",
+    "manufacturer": "SLE",
+    "productName": "SLE1500 Respiratory Therapy System",
+    "model": "SLE1500",
+    "category": "Neonatal respiratory support"
+  },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [
+      "https://inspirationhealthcaregroup.com/product/sle1500/",
+      "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/11/MK-PHL-00000820Issue20120-20Product20Brochure20-20SLE1500.pdf",
+      "https://inspirationhealthcaregroup.com/wp-content/uploads/2026/02/MK-PHL-000116-SLE-Essential-Brochure.pdf"
+    ],
+    "normalizedUrls": [
+      "https://inspirationhealthcaregroup.com/product/sle1500",
+      "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/11/MK-PHL-00000820Issue20120-20Product20Brochure20-20SLE1500.pdf",
+      "https://inspirationhealthcaregroup.com/wp-content/uploads/2026/02/MK-PHL-000116-SLE-Essential-Brochure.pdf"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “SLE”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_94471ce97400ecaac625df79",
+      "productSlug": "wave2-sle-1500",
+      "manufacturer": "SLE",
+      "productName": "SLE1500 Respiratory Therapy System",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://inspirationhealthcaregroup.com/product/sle1500/",
+      "title": "SLE1500 official product page",
+      "snippet": "Current official non-invasive respiratory therapy system; OxyGenie is a module, not a separate product.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Current official non-invasive respiratory therapy system; OxyGenie is a module, not a separate product."
+      ]
+    },
+    {
+      "sourceId": "source_c01c98b71ee2869413e724f6",
+      "productSlug": "wave2-sle-1500",
+      "manufacturer": "SLE",
+      "productName": "SLE1500 Respiratory Therapy System",
+      "sourceType": "manufacturer_document",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/11/MK-PHL-00000820Issue20120-20Product20Brochure20-20SLE1500.pdf",
+      "title": "SLE1500 official brochure",
+      "snippet": "Official product brochure with NIV, nCPAP, high-flow therapy, monitoring and OxyGenie evidence.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "manufacturer-hosted document candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official product brochure with NIV, nCPAP, high-flow therapy, monitoring and OxyGenie evidence."
+      ]
+    },
+    {
+      "sourceId": "source_64be6b6cbf03c05af8ffc3a7",
+      "productSlug": "wave2-sle-1500",
+      "manufacturer": "SLE",
+      "productName": "SLE1500 Respiratory Therapy System",
+      "sourceType": "manufacturer_document",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2026/02/MK-PHL-000116-SLE-Essential-Brochure.pdf",
+      "title": "SLE Essential High Flow Nasal Cannula official accessories brochure",
+      "snippet": "Official compatibility evidence explicitly naming SLE1500 and SLE6000H/C/N.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "manufacturer-hosted document candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official compatibility evidence explicitly naming SLE1500 and SLE6000H/C/N."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_bc932f5d5dcd18139aa26908",
+      "sourceId": "source_c01c98b71ee2869413e724f6",
+      "productSlug": "wave2-sle-1500",
+      "documentType": "brochure",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2024/11/MK-PHL-00000820Issue20120-20Product20Brochure20-20SLE1500.pdf",
+      "title": "SLE1500 official brochure",
+      "language": null,
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "source URL is itself a document candidate"
+      ]
+    },
+    {
+      "documentId": "document_811dc5ee708f474cd832433e",
+      "sourceId": "source_64be6b6cbf03c05af8ffc3a7",
+      "productSlug": "wave2-sle-1500",
+      "documentType": "brochure",
+      "url": "https://inspirationhealthcaregroup.com/wp-content/uploads/2026/02/MK-PHL-000116-SLE-Essential-Brochure.pdf",
+      "title": "SLE Essential High Flow Nasal Cannula official accessories brochure",
+      "language": null,
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "source URL is itself a document candidate"
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [],
+  "resolverWarnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/product/sle1500/: HTTP 403"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-sle-1500",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-sle-1500",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-sle-1500",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 3,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 3,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/product/sle1500/: HTTP 403",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

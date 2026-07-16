@@ -1,0 +1,452 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-heart-pad",
+    "manufacturer": "Dixion",
+    "productName": "DIXION Heart PAD",
+    "model": "Heart PAD",
+    "category": "Реанимационное оборудование"
+  },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [
+      "https://dixion.ru/goods/dixion_pad.html",
+      "https://dixion.ru/upload/iblock/0c7/heart_pad-.pdf"
+    ],
+    "normalizedUrls": [
+      "https://dixion.ru/goods/dixion_pad.html",
+      "https://dixion.ru/upload/iblock/0c7/heart_pad-.pdf"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “Dixion”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_dc865b8ba3037802ed254643",
+      "productSlug": "wave2-dixion-heart-pad",
+      "manufacturer": "Dixion",
+      "productName": "DIXION Heart PAD",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://dixion.ru/goods/dixion_pad.html",
+      "title": "DIXION Heart PAD official product page",
+      "snippet": "Live official AED product page.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Live official AED product page."
+      ]
+    },
+    {
+      "sourceId": "source_e628d07851df991bc69e6c23",
+      "productSlug": "wave2-dixion-heart-pad",
+      "manufacturer": "Dixion",
+      "productName": "DIXION Heart PAD",
+      "sourceType": "manufacturer_document",
+      "url": "https://dixion.ru/upload/iblock/0c7/heart_pad-.pdf",
+      "title": "DIXION Heart PAD official brochure",
+      "snippet": "Official model brochure; unsupported extraction category falls back to registry only.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "manufacturer-hosted document candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official model brochure; unsupported extraction category falls back to registry only."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_3d98440bc70d72c5f767a9bb",
+      "sourceId": "source_dc865b8ba3037802ed254643",
+      "productSlug": "wave2-dixion-heart-pad",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/dixion_pad.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_dada10ae236d8293e01a089c",
+      "sourceId": "source_dc865b8ba3037802ed254643",
+      "productSlug": "wave2-dixion-heart-pad",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/goods/dixion_pad.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_dbbcf8f63a3bbba8905f9e8d",
+      "sourceId": "source_dc865b8ba3037802ed254643",
+      "productSlug": "wave2-dixion-heart-pad",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/0c7/heart_pad-.pdf",
+      "title": "Скачать буклет «‎Дефибриллятор Dixion Heart Pad»",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/goods/dixion_pad.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_082a5e4f52181b561389f1a9",
+      "sourceId": "source_dc865b8ba3037802ed254643",
+      "productSlug": "wave2-dixion-heart-pad",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/iblock/f69/g26oxr2b5tlom6wylcg916zbzd51jev7/Dixion_Defi.pdf",
+      "title": "Unclassified manufacturer document",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/goods/dixion_pad.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_5f2861ab451b9bfed37bdd0e",
+      "sourceId": "source_e628d07851df991bc69e6c23",
+      "productSlug": "wave2-dixion-heart-pad",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/upload/iblock/0c7/heart_pad-.pdf",
+      "title": "DIXION Heart PAD official brochure",
+      "language": null,
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "source URL is itself a document candidate"
+      ]
+    },
+    {
+      "documentId": "document_7dc79a634313d704ebed5896",
+      "sourceId": "source_dc865b8ba3037802ed254643",
+      "productSlug": "wave2-dixion-heart-pad",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/dixion_pad.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_b019b313a29732d0ebc20766",
+      "sourceId": "source_dc865b8ba3037802ed254643",
+      "productSlug": "wave2-dixion-heart-pad",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/dixion_pad.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_083fe3f01f8144000dc7a616",
+      "sourceId": "source_dc865b8ba3037802ed254643",
+      "productSlug": "wave2-dixion-heart-pad",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/dixion_pad.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_edfa5a13e36ebb022c58fb97",
+      "sourceId": "source_dc865b8ba3037802ed254643",
+      "productSlug": "wave2-dixion-heart-pad",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/dixion_pad.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_3ed6be7c48648208678ed4ad",
+      "sourceId": "source_dc865b8ba3037802ed254643",
+      "productSlug": "wave2-dixion-heart-pad",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Manufacturer Brochure",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/goods/dixion_pad.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_7dc79a634313d704ebed5896",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_dc865b8ba3037802ed254643",
+      "linkText": "Медицинское оборудование",
+      "resolvedFromUrl": "https://dixion.ru/goods/dixion_pad.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_b019b313a29732d0ebc20766",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_dc865b8ba3037802ed254643",
+      "linkText": "Каталоги оборудования",
+      "resolvedFromUrl": "https://dixion.ru/goods/dixion_pad.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_083fe3f01f8144000dc7a616",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_dc865b8ba3037802ed254643",
+      "linkText": "Новинки оборудования",
+      "resolvedFromUrl": "https://dixion.ru/goods/dixion_pad.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_edfa5a13e36ebb022c58fb97",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_dc865b8ba3037802ed254643",
+      "linkText": "Скоро в продаже",
+      "resolvedFromUrl": "https://dixion.ru/goods/dixion_pad.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_3ed6be7c48648208678ed4ad",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Manufacturer Brochure",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_dc865b8ba3037802ed254643",
+      "linkText": "",
+      "resolvedFromUrl": "https://dixion.ru/goods/dixion_pad.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_3d98440bc70d72c5f767a9bb",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_dc865b8ba3037802ed254643",
+      "linkText": "Скачать каталог в формате PDF",
+      "resolvedFromUrl": "https://dixion.ru/goods/dixion_pad.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_dada10ae236d8293e01a089c",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_dc865b8ba3037802ed254643",
+      "linkText": "Скачать прайс-лист",
+      "resolvedFromUrl": "https://dixion.ru/goods/dixion_pad.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_dbbcf8f63a3bbba8905f9e8d",
+      "url": "https://dixion.ru/upload/iblock/0c7/heart_pad-.pdf",
+      "title": "Скачать буклет «‎Дефибриллятор Dixion Heart Pad»",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_dc865b8ba3037802ed254643",
+      "linkText": "Скачать буклет «‎Дефибриллятор Dixion Heart Pad»",
+      "resolvedFromUrl": "https://dixion.ru/goods/dixion_pad.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_082a5e4f52181b561389f1a9",
+      "url": "https://dixion.ru/upload/iblock/f69/g26oxr2b5tlom6wylcg916zbzd51jev7/Dixion_Defi.pdf",
+      "title": "Unclassified manufacturer document",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_dc865b8ba3037802ed254643",
+      "linkText": "",
+      "resolvedFromUrl": "https://dixion.ru/goods/dixion_pad.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=9; classifiedDocuments={\"Brochure\":11,\"Unknown\":4}; confidenceDistribution={\"80\":9,\"100\":6}; duplicatesRemoved=6"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-dixion-heart-pad",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-heart-pad",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-heart-pad",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 2,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 2,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=9; classifiedDocuments={\"Brochure\":11,\"Unknown\":4}; confidenceDistribution={\"80\":9,\"100\":6}; duplicatesRemoved=6",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

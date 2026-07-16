@@ -1,0 +1,819 @@
+{
+  "product": {
+    "productSlug": "wave2-ambu-aview-2-advance",
+    "manufacturer": "Ambu",
+    "productName": "Ambu aView 2 Advance",
+    "model": "aView 2 Advance",
+    "category": "Эндоскопические системы"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_4846c5913a72536a18360d0c",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "productTitle": "Ambu aView 2 Advance",
+      "claimCandidateId": "claim_68409b9c0ce1dc42cdd884ac",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Ambu® aView™ 2 Advance Datasheet V03 2026/05",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_f8da6c1a6bacc93e92fc6917"
+      ],
+      "documentVersionIds": [
+        "document_version_1c072ac463e2081c78645865"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_3be05dd61a6ab875ed8574ac",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "productTitle": "Ambu aView 2 Advance",
+      "claimCandidateId": "claim_51ee8ec4361c7aafcf83f0ab",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "datasheet",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_33ea1ca42eb6fa2d886941ec"
+      ],
+      "documentVersionIds": [
+        "document_version_1c072ac463e2081c78645865"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_1ac96624d3ac2ee191c9fe21",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "productTitle": "Ambu aView 2 Advance",
+      "claimCandidateId": "claim_5f02b6e0865d028ecde50b07",
+      "suggestedClaimType": "product.intendedUse",
+      "valuePayload": {
+        "value": "single-use",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_ef363ac381c77ac6cb787f39"
+      ],
+      "documentVersionIds": [
+        "document_version_1c072ac463e2081c78645865"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_4a2b1d7192c42cf06a331bff",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "productTitle": "Ambu aView 2 Advance",
+      "claimCandidateId": "claim_91b5c303e1458fd5bc4a039c",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "battery",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_185d3ec0b8332d54888d2f0f"
+      ],
+      "documentVersionIds": [
+        "document_version_1c072ac463e2081c78645865"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_c27cc33e3fbc6df1ee02d6f1",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "productTitle": "Ambu aView 2 Advance",
+      "claimCandidateId": "claim_9e562e272b7dba1a001bd23e",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Display",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_b91b8d4a35cbcd846ed7a3d1"
+      ],
+      "documentVersionIds": [
+        "document_version_1c072ac463e2081c78645865"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_26f703125d26dd8762d71024",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "productTitle": "Ambu aView 2 Advance",
+      "claimCandidateId": "claim_abdbaa8a58851848488144a2",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Weight",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_301e042ed5f1871bab13cbea"
+      ],
+      "documentVersionIds": [
+        "document_version_1c072ac463e2081c78645865"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_ef9cc7c559917449aefb72b3",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "productTitle": "Ambu aView 2 Advance",
+      "claimCandidateId": "claim_ebcb5e30ba0a96b2cd916067",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "compatibility",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_27d5e924dd3bbabf3e04d2c8"
+      ],
+      "documentVersionIds": [
+        "document_version_1c072ac463e2081c78645865"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_c63b479ee9761c4b178b3c38",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "productTitle": "Ambu aView 2 Advance",
+      "claimCandidateId": "claim_7cb4fb254207a5555b495844",
+      "suggestedClaimType": "technical.term",
+      "valuePayload": {
+        "value": "Dimensions",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_658bb8aa10a85232f251a7e6"
+      ],
+      "documentVersionIds": [
+        "document_version_1c072ac463e2081c78645865"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_76f36c0a20053398eebafce3",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "productTitle": "Ambu aView 2 Advance",
+      "claimCandidateId": "claim_471b1a187f45a1bc182c8ee6",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Ambu endoscopy systems compatibility table V01 2024/10",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_3d9faa5480ef96e1217b4c09"
+      ],
+      "documentVersionIds": [
+        "document_version_4227d5a64105990a5d14f37c"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FDisplaying-and-Processing-Units%2FPUB-002015-displaying-processing-units-tabel-overview-incl-SureSight.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_6d9d35cf045a0511939b9234",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "productTitle": "Ambu aView 2 Advance",
+      "claimCandidateId": "claim_fbbcda71bb30e82236710e53",
+      "suggestedClaimType": "document.language",
+      "valuePayload": {
+        "value": "en",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_d7d5a32aade7864b17cf3a67"
+      ],
+      "documentVersionIds": [
+        "document_version_4227d5a64105990a5d14f37c"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FDisplaying-and-Processing-Units%2FPUB-002015-displaying-processing-units-tabel-overview-incl-SureSight.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_45fe1a6997e1fb111115e61c",
+      "productSlug": "wave2-ambu-aview-2-advance",
+      "productTitle": "Ambu aView 2 Advance",
+      "claimCandidateId": "claim_909020efcf49cb52b151cb4c",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "unknown",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_9755c0bc7bebc9ed57cddfde"
+      ],
+      "documentVersionIds": [
+        "document_version_4227d5a64105990a5d14f37c"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FDisplaying-and-Processing-Units%2FPUB-002015-displaying-processing-units-tabel-overview-incl-SureSight.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_4846c5913a72536a18360d0c",
+        "productSlug": "wave2-ambu-aview-2-advance",
+        "productTitle": "Ambu aView 2 Advance",
+        "claimCandidateId": "claim_68409b9c0ce1dc42cdd884ac",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Ambu® aView™ 2 Advance Datasheet V03 2026/05",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_f8da6c1a6bacc93e92fc6917"
+        ],
+        "documentVersionIds": [
+          "document_version_1c072ac463e2081c78645865"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_76f36c0a20053398eebafce3",
+        "productSlug": "wave2-ambu-aview-2-advance",
+        "productTitle": "Ambu aView 2 Advance",
+        "claimCandidateId": "claim_471b1a187f45a1bc182c8ee6",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Ambu endoscopy systems compatibility table V01 2024/10",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_3d9faa5480ef96e1217b4c09"
+        ],
+        "documentVersionIds": [
+          "document_version_4227d5a64105990a5d14f37c"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FDisplaying-and-Processing-Units%2FPUB-002015-displaying-processing-units-tabel-overview-incl-SureSight.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_3be05dd61a6ab875ed8574ac",
+        "productSlug": "wave2-ambu-aview-2-advance",
+        "productTitle": "Ambu aView 2 Advance",
+        "claimCandidateId": "claim_51ee8ec4361c7aafcf83f0ab",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "datasheet",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_33ea1ca42eb6fa2d886941ec"
+        ],
+        "documentVersionIds": [
+          "document_version_1c072ac463e2081c78645865"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_45fe1a6997e1fb111115e61c",
+        "productSlug": "wave2-ambu-aview-2-advance",
+        "productTitle": "Ambu aView 2 Advance",
+        "claimCandidateId": "claim_909020efcf49cb52b151cb4c",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "unknown",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_9755c0bc7bebc9ed57cddfde"
+        ],
+        "documentVersionIds": [
+          "document_version_4227d5a64105990a5d14f37c"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FDisplaying-and-Processing-Units%2FPUB-002015-displaying-processing-units-tabel-overview-incl-SureSight.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.intendedUse": [
+      {
+        "reviewItemId": "review_item_1ac96624d3ac2ee191c9fe21",
+        "productSlug": "wave2-ambu-aview-2-advance",
+        "productTitle": "Ambu aView 2 Advance",
+        "claimCandidateId": "claim_5f02b6e0865d028ecde50b07",
+        "suggestedClaimType": "product.intendedUse",
+        "valuePayload": {
+          "value": "single-use",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_ef363ac381c77ac6cb787f39"
+        ],
+        "documentVersionIds": [
+          "document_version_1c072ac463e2081c78645865"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "technical.term": [
+      {
+        "reviewItemId": "review_item_4a2b1d7192c42cf06a331bff",
+        "productSlug": "wave2-ambu-aview-2-advance",
+        "productTitle": "Ambu aView 2 Advance",
+        "claimCandidateId": "claim_91b5c303e1458fd5bc4a039c",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "battery",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_185d3ec0b8332d54888d2f0f"
+        ],
+        "documentVersionIds": [
+          "document_version_1c072ac463e2081c78645865"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_c27cc33e3fbc6df1ee02d6f1",
+        "productSlug": "wave2-ambu-aview-2-advance",
+        "productTitle": "Ambu aView 2 Advance",
+        "claimCandidateId": "claim_9e562e272b7dba1a001bd23e",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Display",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_b91b8d4a35cbcd846ed7a3d1"
+        ],
+        "documentVersionIds": [
+          "document_version_1c072ac463e2081c78645865"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_26f703125d26dd8762d71024",
+        "productSlug": "wave2-ambu-aview-2-advance",
+        "productTitle": "Ambu aView 2 Advance",
+        "claimCandidateId": "claim_abdbaa8a58851848488144a2",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Weight",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_301e042ed5f1871bab13cbea"
+        ],
+        "documentVersionIds": [
+          "document_version_1c072ac463e2081c78645865"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_ef9cc7c559917449aefb72b3",
+        "productSlug": "wave2-ambu-aview-2-advance",
+        "productTitle": "Ambu aView 2 Advance",
+        "claimCandidateId": "claim_ebcb5e30ba0a96b2cd916067",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "compatibility",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_27d5e924dd3bbabf3e04d2c8"
+        ],
+        "documentVersionIds": [
+          "document_version_1c072ac463e2081c78645865"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      },
+      {
+        "reviewItemId": "review_item_c63b479ee9761c4b178b3c38",
+        "productSlug": "wave2-ambu-aview-2-advance",
+        "productTitle": "Ambu aView 2 Advance",
+        "claimCandidateId": "claim_7cb4fb254207a5555b495844",
+        "suggestedClaimType": "technical.term",
+        "valuePayload": {
+          "value": "Dimensions",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_658bb8aa10a85232f251a7e6"
+        ],
+        "documentVersionIds": [
+          "document_version_1c072ac463e2081c78645865"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.language": [
+      {
+        "reviewItemId": "review_item_6d9d35cf045a0511939b9234",
+        "productSlug": "wave2-ambu-aview-2-advance",
+        "productTitle": "Ambu aView 2 Advance",
+        "claimCandidateId": "claim_fbbcda71bb30e82236710e53",
+        "suggestedClaimType": "document.language",
+        "valuePayload": {
+          "value": "en",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_d7d5a32aade7864b17cf3a67"
+        ],
+        "documentVersionIds": [
+          "document_version_4227d5a64105990a5d14f37c"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FDisplaying-and-Processing-Units%2FPUB-002015-displaying-processing-units-tabel-overview-incl-SureSight.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_1c072ac463e2081c78645865",
+      "documentType": "datasheet",
+      "title": "Ambu® aView™ 2 Advance Datasheet V03 2026/05",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fDatasheets%2fLBL-008664-IE-Datasheet-Ambu-aView-2-Advance_EN_V03_202605_IB-11846.pdf",
+      "sha256": "3412e81d0481384f22f929ca613f9ab4a5407d85bd2ba64e2e4ce222c7197975"
+    },
+    {
+      "documentVersionId": "document_version_4227d5a64105990a5d14f37c",
+      "documentType": "unknown",
+      "title": "Ambu endoscopy systems compatibility table V01 2024/10",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/Download.aspx?file=Files%2FFiles%2FDownloads%2FAmbu+com%2FDisplaying-and-Processing-Units%2FPUB-002015-displaying-processing-units-tabel-overview-incl-SureSight.pdf",
+      "sha256": "d89c2f6b62436ddf23454ab09633d0a260c87cc262cb4ffa07baa592e786ef19"
+    }
+  ],
+  "missingEvidence": [],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver adapter used: ambu",
+    "Resolver retry skipped https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fAMP2_4-CycloneDX-2.json: HTTP 406",
+    "Resolver retry skipped https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fMonitors%2faView+2+Advance+2nd%2fSupplementary+Information%2fAMP2_4-SPDX-2.json: HTTP 406",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: mailto:tisc@ambu.com",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: http://www.ambuusa.com/corporate-giving",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "resolver=ambu; attempts=6; matchedLinks=36; classifiedDocuments={\"Unknown\":32,\"Quick Guide\":2,\"Datasheet\":2,\"IFU\":9}; confidenceDistribution={\"80\":13,\"90\":2,\"95\":4,\"100\":26}; duplicatesRemoved=9",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

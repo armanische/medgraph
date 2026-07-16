@@ -1,0 +1,382 @@
+{
+  "product": {
+    "productSlug": "wave2-dixion-instilar-family",
+    "manufacturer": "Dixion",
+    "productName": "DIXION Instilar infusion pump family",
+    "model": "Instilar family",
+    "category": "Инфузионное оборудование"
+  },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [
+      "https://dixion.ru/subcategory/infuzionnie-i-shpritsevie-nasosi.html",
+      "https://dixion.ru/upload/iblock/d87/4ri5d78o7s067t9l9ri2v6zq5w5kk19t/Dixion_Instilar.pdf"
+    ],
+    "normalizedUrls": [
+      "https://dixion.ru/subcategory/infuzionnie-i-shpritsevie-nasosi.html",
+      "https://dixion.ru/upload/iblock/d87/4ri5d78o7s067t9l9ri2v6zq5w5kk19t/Dixion_Instilar.pdf"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “Dixion”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_a2027cf26c0cb4f4a82d09d6",
+      "productSlug": "wave2-dixion-instilar-family",
+      "manufacturer": "Dixion",
+      "productName": "DIXION Instilar infusion pump family",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://dixion.ru/subcategory/infuzionnie-i-shpritsevie-nasosi.html",
+      "title": "DIXION Instilar official category page",
+      "snippet": "Family entry covering 1428, 1438, 1486, 1487 and 1488; fluid warmer is not part of the pump family.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Family entry covering 1428, 1438, 1486, 1487 and 1488; fluid warmer is not part of the pump family."
+      ]
+    },
+    {
+      "sourceId": "source_f0209d045b23f4f45efcb71e",
+      "productSlug": "wave2-dixion-instilar-family",
+      "manufacturer": "Dixion",
+      "productName": "DIXION Instilar infusion pump family",
+      "sourceType": "manufacturer_document",
+      "url": "https://dixion.ru/upload/iblock/d87/4ri5d78o7s067t9l9ri2v6zq5w5kk19t/Dixion_Instilar.pdf",
+      "title": "DIXION Instilar official brochure",
+      "snippet": "Official family catalogue; unsupported extraction category falls back to registry only.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "manufacturer-hosted document candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official family catalogue; unsupported extraction category falls back to registry only."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_bc5661d5ae2c0b6a7dd767ee",
+      "sourceId": "source_a2027cf26c0cb4f4a82d09d6",
+      "productSlug": "wave2-dixion-instilar-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/infuzionnie-i-shpritsevie-nasosi.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_7c03f6e9e5a6c2949dafe4d3",
+      "sourceId": "source_a2027cf26c0cb4f4a82d09d6",
+      "productSlug": "wave2-dixion-instilar-family",
+      "documentType": "unknown",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://dixion.ru/subcategory/infuzionnie-i-shpritsevie-nasosi.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_0640086fe1955177cc821853",
+      "sourceId": "source_f0209d045b23f4f45efcb71e",
+      "productSlug": "wave2-dixion-instilar-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/upload/iblock/d87/4ri5d78o7s067t9l9ri2v6zq5w5kk19t/Dixion_Instilar.pdf",
+      "title": "DIXION Instilar official brochure",
+      "language": null,
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "source URL is itself a document candidate"
+      ]
+    },
+    {
+      "documentId": "document_4bf511742a4c6e831082aea4",
+      "sourceId": "source_a2027cf26c0cb4f4a82d09d6",
+      "productSlug": "wave2-dixion-instilar-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/infuzionnie-i-shpritsevie-nasosi.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_744b5ae34d85db9fc3f53503",
+      "sourceId": "source_a2027cf26c0cb4f4a82d09d6",
+      "productSlug": "wave2-dixion-instilar-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/infuzionnie-i-shpritsevie-nasosi.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_f6aa051165533b5e274a6371",
+      "sourceId": "source_a2027cf26c0cb4f4a82d09d6",
+      "productSlug": "wave2-dixion-instilar-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/infuzionnie-i-shpritsevie-nasosi.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_3ecd5a01f4bc3f391c2a0a96",
+      "sourceId": "source_a2027cf26c0cb4f4a82d09d6",
+      "productSlug": "wave2-dixion-instilar-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/infuzionnie-i-shpritsevie-nasosi.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_9a6d7e0131bdaf555262b102",
+      "sourceId": "source_a2027cf26c0cb4f4a82d09d6",
+      "productSlug": "wave2-dixion-instilar-family",
+      "documentType": "brochure",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Manufacturer Brochure",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:default",
+        "resolver_confidence:80",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://dixion.ru/subcategory/infuzionnie-i-shpritsevie-nasosi.html",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_4bf511742a4c6e831082aea4",
+      "url": "https://dixion.ru/catalog/",
+      "title": "Медицинское оборудование",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a2027cf26c0cb4f4a82d09d6",
+      "linkText": "Медицинское оборудование",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/infuzionnie-i-shpritsevie-nasosi.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_744b5ae34d85db9fc3f53503",
+      "url": "https://dixion.ru/catalog/catalogs/",
+      "title": "Каталоги оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a2027cf26c0cb4f4a82d09d6",
+      "linkText": "Каталоги оборудования",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/infuzionnie-i-shpritsevie-nasosi.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_f6aa051165533b5e274a6371",
+      "url": "https://dixion.ru/catalog/new_equipment/",
+      "title": "Новинки оборудования",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a2027cf26c0cb4f4a82d09d6",
+      "linkText": "Новинки оборудования",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/infuzionnie-i-shpritsevie-nasosi.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_3ecd5a01f4bc3f391c2a0a96",
+      "url": "https://dixion.ru/catalog/sale_soon/",
+      "title": "Скоро в продаже",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a2027cf26c0cb4f4a82d09d6",
+      "linkText": "Скоро в продаже",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/infuzionnie-i-shpritsevie-nasosi.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_9a6d7e0131bdaf555262b102",
+      "url": "https://dixion.ru/catalog/special_offer/",
+      "title": "Manufacturer Brochure",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a2027cf26c0cb4f4a82d09d6",
+      "linkText": "",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/infuzionnie-i-shpritsevie-nasosi.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_bc5661d5ae2c0b6a7dd767ee",
+      "url": "https://dixion.ru/upload/documents/catalog.pdf",
+      "title": "Скачать каталог в формате PDF",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_a2027cf26c0cb4f4a82d09d6",
+      "linkText": "Скачать каталог в формате PDF",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/infuzionnie-i-shpritsevie-nasosi.html",
+      "warnings": []
+    },
+    {
+      "documentId": "document_7c03f6e9e5a6c2949dafe4d3",
+      "url": "https://dixion.ru/upload/documents/price.pdf",
+      "title": "Скачать прайс-лист",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_a2027cf26c0cb4f4a82d09d6",
+      "linkText": "Скачать прайс-лист",
+      "resolvedFromUrl": "https://dixion.ru/subcategory/infuzionnie-i-shpritsevie-nasosi.html",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=7; classifiedDocuments={\"Brochure\":11,\"Unknown\":1}; confidenceDistribution={\"80\":9,\"100\":3}; duplicatesRemoved=5"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-dixion-instilar-family",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-instilar-family",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-dixion-instilar-family",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 2,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 2,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: tel:+7 (495) 780-07-93",
+    "Resolver rejected unsafe document URL: http://www.dixion.ru/politika-konfidentsio",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion.de/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected unsafe document URL: http://dixion-healthcare.com/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "Resolver rejected offsite document URL: https://klinika-dixion.ru/",
+    "resolver=default; attempts=1; matchedLinks=7; classifiedDocuments={\"Brochure\":11,\"Unknown\":1}; confidenceDistribution={\"80\":9,\"100\":3}; duplicatesRemoved=5",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

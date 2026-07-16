@@ -1100,6 +1100,19 @@ function trustedDiscoveryReport(
 ): DiscoveryProductReport {
   return {
     product: discoveryProduct,
+    providerDiagnostics: {
+      providerName: "hamilton",
+      strategyUsed: "test fixture",
+      pagesVisited: [],
+      candidateUrls: [],
+      normalizedUrls: [],
+      duplicatesRemoved: 0,
+      blockedUrls: [],
+      unsupportedPortals: [],
+      warnings: [],
+    },
+    providerSelectedAutomatically: true,
+    fallbackProviderUsed: false,
     sourceCandidates: [discoverySource()],
     documentCandidates: documents,
     resolvedDocumentLinks: [],

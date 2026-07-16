@@ -1,0 +1,458 @@
+{
+  "product": {
+    "productSlug": "wave2-ambu-vivasight-2-dlt",
+    "manufacturer": "Ambu",
+    "productName": "Ambu VivaSight 2 DLT",
+    "model": "VivaSight 2 DLT",
+    "category": "Анестезиология и эндоскопия"
+  },
+  "reviewItems": [
+    {
+      "reviewItemId": "review_item_0f7f6099676b20278aef25d2",
+      "productSlug": "wave2-ambu-vivasight-2-dlt",
+      "productTitle": "Ambu VivaSight 2 DLT",
+      "claimCandidateId": "claim_370dba351dceb57ca699fe28",
+      "suggestedClaimType": "document.title",
+      "valuePayload": {
+        "value": "Ambu® VivaSight™ 2 DLT datasheet",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_4428a8c6ebb2b79a646d94bc"
+      ],
+      "documentVersionIds": [
+        "document_version_0961ccc511373d4e41f7b193"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fDouble_Lumen_tube_with_Integrated_Camera%2fVivaSight+2+DLT%2fDatasheets%2fIE-VivaSight-2-DLT-Datasheet_V2.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_1533cadc68eed4bfcc51f62d",
+      "productSlug": "wave2-ambu-vivasight-2-dlt",
+      "productTitle": "Ambu VivaSight 2 DLT",
+      "claimCandidateId": "claim_ea880b298efa7fd629a0c88e",
+      "suggestedClaimType": "document.type",
+      "valuePayload": {
+        "value": "datasheet",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_ce94a39832fa6b20fc7b6c63"
+      ],
+      "documentVersionIds": [
+        "document_version_0961ccc511373d4e41f7b193"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fDouble_Lumen_tube_with_Integrated_Camera%2fVivaSight+2+DLT%2fDatasheets%2fIE-VivaSight-2-DLT-Datasheet_V2.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "low",
+      "reasons": [
+        "Document metadata or low-level extracted term requires review.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_4193186e63d43987bfaef76a",
+      "productSlug": "wave2-ambu-vivasight-2-dlt",
+      "productTitle": "Ambu VivaSight 2 DLT",
+      "claimCandidateId": "claim_fe6301e85f4dc348b194504a",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "Adult Patients",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_676a807fcae0c9c8c84d5990"
+      ],
+      "documentVersionIds": [
+        "document_version_0961ccc511373d4e41f7b193"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fDouble_Lumen_tube_with_Integrated_Camera%2fVivaSight+2+DLT%2fDatasheets%2fIE-VivaSight-2-DLT-Datasheet_V2.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_e04ee3f840b24b437a46ac34",
+      "productSlug": "wave2-ambu-vivasight-2-dlt",
+      "productTitle": "Ambu VivaSight 2 DLT",
+      "claimCandidateId": "claim_9fcba21d91fab356d622ed0a",
+      "suggestedClaimType": "product.safetyFeatures",
+      "valuePayload": {
+        "value": "sterile",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_aea1fd5b48bc7ab1a6044122"
+      ],
+      "documentVersionIds": [
+        "document_version_0961ccc511373d4e41f7b193"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fDouble_Lumen_tube_with_Integrated_Camera%2fVivaSight+2+DLT%2fDatasheets%2fIE-VivaSight-2-DLT-Datasheet_V2.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "critical",
+      "riskLevel": "high",
+      "reasons": [
+        "High-risk clinical, safety, compatibility or procurement claim.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    },
+    {
+      "reviewItemId": "review_item_651e6c2b61c830ae15545266",
+      "productSlug": "wave2-ambu-vivasight-2-dlt",
+      "productTitle": "Ambu VivaSight 2 DLT",
+      "claimCandidateId": "claim_a3c13d81593827d324cd1a06",
+      "suggestedClaimType": "product.intendedUse",
+      "valuePayload": {
+        "value": "single-use",
+        "unit": null
+      },
+      "evidenceCandidateIds": [
+        "evidence_a0d314bfc073195102c50fa6"
+      ],
+      "documentVersionIds": [
+        "document_version_0961ccc511373d4e41f7b193"
+      ],
+      "sourceUrls": [
+        "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fDouble_Lumen_tube_with_Integrated_Camera%2fVivaSight+2+DLT%2fDatasheets%2fIE-VivaSight-2-DLT-Datasheet_V2.pdf"
+      ],
+      "status": "pending_review",
+      "priority": "medium",
+      "riskLevel": "medium",
+      "reasons": [
+        "Candidate claim requires human review before verification.",
+        "Review Queue item is not a Verified Claim.",
+        "Reviewer decision does not publish data."
+      ],
+      "reviewerNotes": null,
+      "createdAt": "candidate-review-queue",
+      "updatedAt": "candidate-review-queue"
+    }
+  ],
+  "groupedByClaimType": {
+    "document.title": [
+      {
+        "reviewItemId": "review_item_0f7f6099676b20278aef25d2",
+        "productSlug": "wave2-ambu-vivasight-2-dlt",
+        "productTitle": "Ambu VivaSight 2 DLT",
+        "claimCandidateId": "claim_370dba351dceb57ca699fe28",
+        "suggestedClaimType": "document.title",
+        "valuePayload": {
+          "value": "Ambu® VivaSight™ 2 DLT datasheet",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_4428a8c6ebb2b79a646d94bc"
+        ],
+        "documentVersionIds": [
+          "document_version_0961ccc511373d4e41f7b193"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fDouble_Lumen_tube_with_Integrated_Camera%2fVivaSight+2+DLT%2fDatasheets%2fIE-VivaSight-2-DLT-Datasheet_V2.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "document.type": [
+      {
+        "reviewItemId": "review_item_1533cadc68eed4bfcc51f62d",
+        "productSlug": "wave2-ambu-vivasight-2-dlt",
+        "productTitle": "Ambu VivaSight 2 DLT",
+        "claimCandidateId": "claim_ea880b298efa7fd629a0c88e",
+        "suggestedClaimType": "document.type",
+        "valuePayload": {
+          "value": "datasheet",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_ce94a39832fa6b20fc7b6c63"
+        ],
+        "documentVersionIds": [
+          "document_version_0961ccc511373d4e41f7b193"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fDouble_Lumen_tube_with_Integrated_Camera%2fVivaSight+2+DLT%2fDatasheets%2fIE-VivaSight-2-DLT-Datasheet_V2.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "low",
+        "reasons": [
+          "Document metadata or low-level extracted term requires review.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.patientGroup": [
+      {
+        "reviewItemId": "review_item_4193186e63d43987bfaef76a",
+        "productSlug": "wave2-ambu-vivasight-2-dlt",
+        "productTitle": "Ambu VivaSight 2 DLT",
+        "claimCandidateId": "claim_fe6301e85f4dc348b194504a",
+        "suggestedClaimType": "product.patientGroup",
+        "valuePayload": {
+          "value": "Adult Patients",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_676a807fcae0c9c8c84d5990"
+        ],
+        "documentVersionIds": [
+          "document_version_0961ccc511373d4e41f7b193"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fDouble_Lumen_tube_with_Integrated_Camera%2fVivaSight+2+DLT%2fDatasheets%2fIE-VivaSight-2-DLT-Datasheet_V2.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.safetyFeatures": [
+      {
+        "reviewItemId": "review_item_e04ee3f840b24b437a46ac34",
+        "productSlug": "wave2-ambu-vivasight-2-dlt",
+        "productTitle": "Ambu VivaSight 2 DLT",
+        "claimCandidateId": "claim_9fcba21d91fab356d622ed0a",
+        "suggestedClaimType": "product.safetyFeatures",
+        "valuePayload": {
+          "value": "sterile",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_aea1fd5b48bc7ab1a6044122"
+        ],
+        "documentVersionIds": [
+          "document_version_0961ccc511373d4e41f7b193"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fDouble_Lumen_tube_with_Integrated_Camera%2fVivaSight+2+DLT%2fDatasheets%2fIE-VivaSight-2-DLT-Datasheet_V2.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "critical",
+        "riskLevel": "high",
+        "reasons": [
+          "High-risk clinical, safety, compatibility or procurement claim.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ],
+    "product.intendedUse": [
+      {
+        "reviewItemId": "review_item_651e6c2b61c830ae15545266",
+        "productSlug": "wave2-ambu-vivasight-2-dlt",
+        "productTitle": "Ambu VivaSight 2 DLT",
+        "claimCandidateId": "claim_a3c13d81593827d324cd1a06",
+        "suggestedClaimType": "product.intendedUse",
+        "valuePayload": {
+          "value": "single-use",
+          "unit": null
+        },
+        "evidenceCandidateIds": [
+          "evidence_a0d314bfc073195102c50fa6"
+        ],
+        "documentVersionIds": [
+          "document_version_0961ccc511373d4e41f7b193"
+        ],
+        "sourceUrls": [
+          "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fDouble_Lumen_tube_with_Integrated_Camera%2fVivaSight+2+DLT%2fDatasheets%2fIE-VivaSight-2-DLT-Datasheet_V2.pdf"
+        ],
+        "status": "pending_review",
+        "priority": "medium",
+        "riskLevel": "medium",
+        "reasons": [
+          "Candidate claim requires human review before verification.",
+          "Review Queue item is not a Verified Claim.",
+          "Reviewer decision does not publish data."
+        ],
+        "reviewerNotes": null,
+        "createdAt": "candidate-review-queue",
+        "updatedAt": "candidate-review-queue"
+      }
+    ]
+  },
+  "sourceDocumentSummary": [
+    {
+      "documentVersionId": "document_version_0961ccc511373d4e41f7b193",
+      "documentType": "datasheet",
+      "title": "Ambu® VivaSight™ 2 DLT datasheet",
+      "sourceUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fDouble_Lumen_tube_with_Integrated_Camera%2fVivaSight+2+DLT%2fDatasheets%2fIE-VivaSight-2-DLT-Datasheet_V2.pdf",
+      "sha256": "6751fbbf69a011c3a345f8bb62d452326be0eab0e9e1e856b542a8103f59bce9"
+    }
+  ],
+  "missingEvidence": [],
+  "recommendedReviewerAction": "Review extracted candidate claims against linked document versions. Do not publish from this queue.",
+  "warnings": [
+    "Resolver adapter used: ambu",
+    "Resolver rejected unsafe document URL: mailto:ambu@ambu.com",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: mailto:tisc@ambu.com",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: http://www.ambuusa.com/corporate-giving",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "resolver=ambu; attempts=5; matchedLinks=19; classifiedDocuments={\"Unknown\":26,\"Brochure\":1,\"Datasheet\":1,\"IFU\":3}; confidenceDistribution={\"80\":13,\"95\":7,\"100\":11}; duplicatesRemoved=12",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

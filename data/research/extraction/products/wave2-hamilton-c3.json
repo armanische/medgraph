@@ -168,7 +168,113 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:manufacturer",
+        "matchedSynonym:Manufacturer",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_65cecaaa682520df1e9f33fd",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "product.operatingModes",
+      "label": "NIV",
+      "value": "NIV",
+      "unit": null,
+      "rawText": "NIV",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "documentSha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 40
+      },
+      "evidenceCandidateId": "evidence_c8352538c4a0a821d3b2d48c",
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:niv",
+        "matchedSynonym:NIV",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_f6109ff838873a3b62c88460",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "product.patientGroup",
+      "label": "Неонатальные пациенты",
+      "value": "Neonatal",
+      "unit": null,
+      "rawText": "Neonatal",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "documentSha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1
+      },
+      "evidenceCandidateId": "evidence_59d2b212e41568ce55a7bfc2",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:neonatal",
+        "matchedSynonym:Neonatal",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_13385a3ddbfdfeb6c992d62d",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "product.patientGroup",
+      "label": "Педиатрические пациенты",
+      "value": "pediatric",
+      "unit": null,
+      "rawText": "pediatric",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "documentSha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 119
+      },
+      "evidenceCandidateId": "evidence_ebaae6bd48ba1d87dfd868f5",
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:pediatric",
+        "matchedSynonym:Pediatric",
+        "unitParsed:none"
       ]
     },
     {
@@ -468,7 +574,147 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:manufacturer",
+        "matchedSynonym:Manufacturer",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_2a85f3c1d82d68f2df648bef",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "product.operatingModes",
+      "label": "NIV",
+      "value": "NIV",
+      "unit": null,
+      "rawText": "NIV",
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "documentSha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 27
+      },
+      "evidenceCandidateId": "evidence_a97f754e715c37bf5ea956e1",
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:niv",
+        "matchedSynonym:NIV",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_c03abcf43a66df954152a00f",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "product.patientGroup",
+      "label": "Неонатальные пациенты",
+      "value": "neonatal",
+      "unit": null,
+      "rawText": "neonatal",
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "documentSha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 30
+      },
+      "evidenceCandidateId": "evidence_ff250f9c4b6bd89fba3c59d1",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:neonatal",
+        "matchedSynonym:Neonatal",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_911a9101c56f92eb596c93df",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "product.patientGroup",
+      "label": "Педиатрические пациенты",
+      "value": "pediatric",
+      "unit": null,
+      "rawText": "pediatric",
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "documentSha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 30
+      },
+      "evidenceCandidateId": "evidence_f55b10754b988e2f36a86a72",
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:pediatric",
+        "matchedSynonym:Pediatric",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_152c5726025b4ba83e699b13",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "product.power",
+      "label": "Турбина",
+      "value": "turbine",
+      "unit": null,
+      "rawText": "turbine",
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "documentSha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 33
+      },
+      "evidenceCandidateId": "evidence_6e16c1bc2cadf5c32c3f5652",
+      "confidence": 0.72,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:turbine",
+        "matchedSynonym:Turbine",
+        "unitParsed:none"
       ]
     },
     {
@@ -708,7 +954,215 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:manufacturer",
+        "matchedSynonym:Manufacturer",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_e48c37a1aa26b49e8a837f21",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "product.operatingModes",
+      "label": "NIV",
+      "value": "NIV",
+      "unit": null,
+      "rawText": "NIV",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "documentSha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 10,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 238
+      },
+      "evidenceCandidateId": "evidence_a936f2bb56b66cce2843cf46",
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:niv",
+        "matchedSynonym:NIV",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_627ef12d4adc54e182eb6379",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "product.patientGroup",
+      "label": "Неонатальные пациенты",
+      "value": "Neonatal",
+      "unit": null,
+      "rawText": "Neonatal",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "documentSha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 9,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 199
+      },
+      "evidenceCandidateId": "evidence_f84d60d0ad7273bc60ca26b0",
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:neonatal",
+        "matchedSynonym:Neonatal",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_fd1779a5ce26772b2877b71c",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "product.patientGroup",
+      "label": "Взрослые пациенты",
+      "value": "adults",
+      "unit": null,
+      "rawText": "adults",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "documentSha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 14
+      },
+      "evidenceCandidateId": "evidence_947cb0e860b2ded8e14502f9",
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:adult",
+        "matchedSynonym:Adult",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_bb5b30f84e722155754057db",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "product.patientGroup",
+      "label": "Взрослые пациенты",
+      "value": "adult patients",
+      "unit": null,
+      "rawText": "adult patients",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "documentSha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 12,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 287
+      },
+      "evidenceCandidateId": "evidence_0a81a445680e3243afe0b761",
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:adult",
+        "matchedSynonym:Adult",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_a91e77d7b47e6d46829d332f",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "product.patientGroup",
+      "label": "Педиатрические пациенты",
+      "value": "pediatric",
+      "unit": null,
+      "rawText": "pediatric",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "documentSha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 12,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 287
+      },
+      "evidenceCandidateId": "evidence_72b7fe2ce597e657299a6b7c",
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:pediatric",
+        "matchedSynonym:Pediatric",
+        "unitParsed:none"
+      ]
+    },
+    {
+      "factCandidateId": "fact_9602e14ccdc7daa5f79b5dbb",
+      "productSlug": "wave2-hamilton-c3",
+      "factType": "product.power",
+      "label": "Турбина",
+      "value": "turbine",
+      "unit": null,
+      "rawText": "turbine",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "documentSha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 161
+      },
+      "evidenceCandidateId": "evidence_cf6a0ba9a4ce39edd37d0e7f",
+      "confidence": 0.72,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Rule-based extraction; human review is required.",
+        "profile:ventilator",
+        "matchedPattern:turbine",
+        "matchedSynonym:Turbine",
+        "unitParsed:none"
       ]
     },
     {
@@ -978,7 +1432,11 @@
       "autoPublish": false,
       "requiresHumanReview": true,
       "warnings": [
-        "Rule-based extraction; human review is required."
+        "Rule-based extraction; human review is required.",
+        "profile:registry",
+        "matchedPattern:manufacturer",
+        "matchedSynonym:Manufacturer",
+        "unitParsed:none"
       ]
     },
     {
@@ -1068,6 +1526,60 @@
       "requiresHumanReview": true
     },
     {
+      "evidenceCandidateId": "evidence_c8352538c4a0a821d3b2d48c",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "sha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 40
+      },
+      "quotedText": "NIV",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_59d2b212e41568ce55a7bfc2",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "sha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 1
+      },
+      "quotedText": "Neonatal",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ebaae6bd48ba1d87dfd868f5",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "sha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 119
+      },
+      "quotedText": "pediatric",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
       "evidenceCandidateId": "evidence_5b056e4641e7026c9c2e192a",
       "kind": "document_metadata",
       "documentVersionId": "document_version_09df686e64d416cfb8b05001",
@@ -1118,6 +1630,78 @@
         "paragraph": 161
       },
       "quotedText": "Manufacturer: Hamilton Medical AG",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_a97f754e715c37bf5ea956e1",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "sha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 27
+      },
+      "quotedText": "NIV",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ff250f9c4b6bd89fba3c59d1",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "sha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 30
+      },
+      "quotedText": "neonatal",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_f55b10754b988e2f36a86a72",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "sha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 30
+      },
+      "quotedText": "pediatric",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_6e16c1bc2cadf5c32c3f5652",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "sha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 33
+      },
+      "quotedText": "turbine",
       "status": "candidate",
       "requiresHumanReview": true
     },
@@ -1176,6 +1760,114 @@
       "requiresHumanReview": true
     },
     {
+      "evidenceCandidateId": "evidence_a936f2bb56b66cce2843cf46",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "sha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 10,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 238
+      },
+      "quotedText": "NIV",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_f84d60d0ad7273bc60ca26b0",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "sha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 9,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 199
+      },
+      "quotedText": "Neonatal",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_947cb0e860b2ded8e14502f9",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "sha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 14
+      },
+      "quotedText": "adults",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_0a81a445680e3243afe0b761",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "sha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 12,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 287
+      },
+      "quotedText": "adult patients",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_72b7fe2ce597e657299a6b7c",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "sha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 12,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 287
+      },
+      "quotedText": "pediatric",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_cf6a0ba9a4ce39edd37d0e7f",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "sha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 161
+      },
+      "quotedText": "turbine",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
       "evidenceCandidateId": "evidence_8aa244b54777fd556ec05bbc",
       "kind": "document_metadata",
       "documentVersionId": "document_version_6ccfa7f1dfc269cd33e3b3ac",
@@ -1226,6 +1918,348 @@
         "paragraph": 46
       },
       "quotedText": "Manufacturer: Hamilton Medical AG",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_cad5f3ff9977e0e882fbfafd",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "sha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 30
+      },
+      "quotedText": "tidal volume,",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_a0c39b7d5bd0fb7faca7d081",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "sha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": 1,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 52
+      },
+      "quotedText": "Ventilation modes",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_1b2790bf03b212085d3434dd",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "sha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 76
+      },
+      "quotedText": "battery O O",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_d721d45ce096bcb30920d097",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "sha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 108
+      },
+      "quotedText": "compatibility According to IEC 60601-1-2:2014",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_2cbb7117231c7ff3eddc351d",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "sha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": 5,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 178
+      },
+      "quotedText": "Weight (kg) -- 0.2 to 30.0",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_ace20ca62fed9a48befd8ff6",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "sha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 194
+      },
+      "quotedText": "minute volume",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_2628469840d5b075aeafd036",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_4c88842368b3422976cf628c",
+      "documentCandidateId": "document_b85d25104e0c77b1ba3d8043",
+      "sha256": "aec55ce628ccf4261fcb347f66e18e020f36d16bc07d23c7062dde425e9ff1b2",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:3a804651-1c17-410b-8291-276f267302eb/HAMILTON-C3_tech-specs_en_689469.09.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 253
+      },
+      "quotedText": "Dimensions See graphic above",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_7bb5e8164c70420343fe40d4",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "sha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "locator": {
+        "page": 4,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 34
+      },
+      "quotedText": "battery allows you to ventilate your",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_3767aab0abfd250ca3e22cae",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "sha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 68
+      },
+      "quotedText": "tidal volume, lung",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_4e97c5e98db21e2b186a11e4",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "sha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "locator": {
+        "page": 7,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 83
+      },
+      "quotedText": "display.",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_3f5a236cb464b77918434565",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "sha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "locator": {
+        "page": 9,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 115
+      },
+      "quotedText": "ventilation mode based on ASV. The clinician defines the",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_bfbead7423476507f7d0646b",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_09df686e64d416cfb8b05001",
+      "documentCandidateId": "document_8034ffd100572fe36ec6d19a",
+      "sha256": "487515508d49daa28a3e427a3a6f40f16abca2612c68ec5beef61c6cde05ff27",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:cf5c54ac-fbcb-4380-a69c-dfad3558629f/HAMILTON-C3_brochure_en_ELO20250303S.00.pdf",
+      "locator": {
+        "page": 10,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 124
+      },
+      "quotedText": "ventilation modes",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_d499ecdf9bdd60d8d30366f6",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "sha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 3,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 20
+      },
+      "quotedText": "ventilation modes",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_3d403db8d17ffc8b554aaff3",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "sha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 5,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 53
+      },
+      "quotedText": "tidal volume, lung",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_09c4264c884f3ad8240635d4",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "sha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 5,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 67
+      },
+      "quotedText": "display.",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_54160c5ea3bebf154cb16c6a",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "sha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 6,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 71
+      },
+      "quotedText": "ventilation mode ASV continuously adjusts breath-by-breath, the respiratory",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_b39ee6899c593a24c0d87c33",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "sha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 8,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 186
+      },
+      "quotedText": "battery backup",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_485bd5f81156d902d93fdf6d",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_0caff67e1c9b49003504bee3",
+      "documentCandidateId": "document_355757232ef2f32fcd5c16cb",
+      "sha256": "c0008ff4a1fc972ad9652a3abb62e6faae5c4bb6631ce68f51c5c44b0103a913",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:d078692d-a4ef-4a2e-be82-66e4594be4c4/Company-brochure_Intelligent-Ventilation_brochure_en_ELO20240301N.02.pdf",
+      "locator": {
+        "page": 9,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 220
+      },
+      "quotedText": "Compatibility with Night vision goggles (NVG) X X X O X",
+      "status": "candidate",
+      "requiresHumanReview": true
+    },
+    {
+      "evidenceCandidateId": "evidence_1c602d13198da43629f4e375",
+      "kind": "document_excerpt",
+      "documentVersionId": "document_version_6ccfa7f1dfc269cd33e3b3ac",
+      "documentCandidateId": "document_0af818d21b9c9800afab9b79",
+      "sha256": "bb108ad4d4eb8e0e69b8265c91801b8e6d2db8537820132588f5319c8a357616",
+      "sourceUrl": "https://www.hamilton-medical.com/dam/jcr:67545a5c-4bbc-4255-b9ab-8acc54587f74/HAMILTON-C2-C3_Transport-and-storage-solutions_flyer_en_ELO20210322N.01.pdf",
+      "locator": {
+        "page": 2,
+        "section": null,
+        "heading": null,
+        "table": null,
+        "paragraph": 45
+      },
+      "quotedText": "dimensions",
       "status": "candidate",
       "requiresHumanReview": true
     }
@@ -1291,6 +2325,75 @@
         "evidence_ffe37be693fde62bc79495f1"
       ],
       "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_055947ea942d283f47c0bfde",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "NIV",
+        "unit": null
+      },
+      "rawText": "NIV",
+      "evidenceCandidateIds": [
+        "evidence_c8352538c4a0a821d3b2d48c"
+      ],
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_185e53872ce63712f0a0eba4",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "Neonatal",
+        "unit": null
+      },
+      "rawText": "Neonatal",
+      "evidenceCandidateIds": [
+        "evidence_59d2b212e41568ce55a7bfc2"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_a14fd10c3f9963eef791eb92",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "pediatric",
+        "unit": null
+      },
+      "rawText": "pediatric",
+      "evidenceCandidateIds": [
+        "evidence_ebaae6bd48ba1d87dfd868f5"
+      ],
+      "confidence": 0.74,
       "extractionMethod": "pdf_text",
       "status": "candidate",
       "verificationStatus": "unverified",
@@ -1531,6 +2634,98 @@
       ]
     },
     {
+      "claimId": "claim_822b6156d7966a313f883a3c",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "NIV",
+        "unit": null
+      },
+      "rawText": "NIV",
+      "evidenceCandidateIds": [
+        "evidence_a97f754e715c37bf5ea956e1"
+      ],
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_ee553b5b2856a0fd6259eb02",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "neonatal",
+        "unit": null
+      },
+      "rawText": "neonatal",
+      "evidenceCandidateIds": [
+        "evidence_ff250f9c4b6bd89fba3c59d1"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_5f16a5192644a1a34987fc20",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "pediatric",
+        "unit": null
+      },
+      "rawText": "pediatric",
+      "evidenceCandidateIds": [
+        "evidence_f55b10754b988e2f36a86a72"
+      ],
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_d734487dce62f9af4b200435",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "product.power",
+      "valuePayload": {
+        "value": "turbine",
+        "unit": null
+      },
+      "rawText": "turbine",
+      "evidenceCandidateIds": [
+        "evidence_6e16c1bc2cadf5c32c3f5652"
+      ],
+      "confidence": 0.72,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
       "claimId": "claim_a9942b36a91e43fe59af1475",
       "productSlug": "wave2-hamilton-c3",
       "subjectType": "product",
@@ -1705,6 +2900,144 @@
         "evidence_bed7d3d670fa566f5ad21d6f"
       ],
       "confidence": 0.86,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_b39111316bfccfd0e61cbaef",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "product.operatingModes",
+      "valuePayload": {
+        "value": "NIV",
+        "unit": null
+      },
+      "rawText": "NIV",
+      "evidenceCandidateIds": [
+        "evidence_a936f2bb56b66cce2843cf46"
+      ],
+      "confidence": 0.78,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_cb2f344f1091f991ceae4c9f",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "Neonatal",
+        "unit": null
+      },
+      "rawText": "Neonatal",
+      "evidenceCandidateIds": [
+        "evidence_f84d60d0ad7273bc60ca26b0"
+      ],
+      "confidence": 0.76,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_8d1c8c18bb5c84532739177b",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "adults",
+        "unit": null
+      },
+      "rawText": "adults",
+      "evidenceCandidateIds": [
+        "evidence_947cb0e860b2ded8e14502f9"
+      ],
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_aea4ea03a33640686604df13",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "adult patients",
+        "unit": null
+      },
+      "rawText": "adult patients",
+      "evidenceCandidateIds": [
+        "evidence_0a81a445680e3243afe0b761"
+      ],
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_208515079e7a0a5ae4f72200",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "product.patientGroup",
+      "valuePayload": {
+        "value": "pediatric",
+        "unit": null
+      },
+      "rawText": "pediatric",
+      "evidenceCandidateIds": [
+        "evidence_72b7fe2ce597e657299a6b7c"
+      ],
+      "confidence": 0.74,
+      "extractionMethod": "pdf_text",
+      "status": "candidate",
+      "verificationStatus": "unverified",
+      "autoPublish": false,
+      "requiresHumanReview": true,
+      "warnings": [
+        "Candidate claim handoff only; not verified and not published."
+      ]
+    },
+    {
+      "claimId": "claim_86d4e0232a967530cd9e54ab",
+      "productSlug": "wave2-hamilton-c3",
+      "subjectType": "product",
+      "suggestedClaimType": "product.power",
+      "valuePayload": {
+        "value": "turbine",
+        "unit": null
+      },
+      "rawText": "turbine",
+      "evidenceCandidateIds": [
+        "evidence_cf6a0ba9a4ce39edd37d0e7f"
+      ],
+      "confidence": 0.72,
       "extractionMethod": "pdf_text",
       "status": "candidate",
       "verificationStatus": "unverified",
@@ -1945,6 +3278,35 @@
       ]
     }
   ],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "ventilator"
+    ],
+    "patternsMatched": {
+      "registry.manufacturer": 4,
+      "ventilator.niv": 3,
+      "ventilator.neonatal": 3,
+      "ventilator.pediatric": 3,
+      "ventilator.turbine": 2,
+      "ventilator.adult": 2
+    },
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "model",
+        "registration_number"
+      ],
+      "ventilator": [
+        "battery_runtime",
+        "modes",
+        "oxygen",
+        "screen",
+        "weight"
+      ]
+    },
+    "coveragePercent": 42
+  },
   "warnings": [
     "Resolver rejected offsite document URL: https://youtu.be/1plecudVVjY?si=dIrympV9P4XhW59U",
     "Resolver rejected offsite document URL: https://www.youtube.com/watch?v=nCD0zUrc7B0",

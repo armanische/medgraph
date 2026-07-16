@@ -1,0 +1,51 @@
+{
+  "product": {
+    "productSlug": "wave2-ge-aespire-view",
+    "manufacturer": "GE HealthCare",
+    "productName": "GE HealthCare Aespire View",
+    "model": "Aespire View",
+    "category": "Наркозно-дыхательные аппараты"
+  },
+  "documentVersions": [],
+  "extractedFactCandidates": [],
+  "evidenceCandidates": [],
+  "candidateClaims": [],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "anesthesia"
+    ],
+    "patternsMatched": {},
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "anesthesia": [
+        "adult",
+        "battery_runtime",
+        "modes",
+        "neonatal",
+        "niv",
+        "oxygen",
+        "pediatric",
+        "screen",
+        "turbine",
+        "weight"
+      ]
+    },
+    "coveragePercent": 0
+  },
+  "warnings": [
+    "Resolver fetch failed for https://www.gehealthcare.com/en-us/products/anesthesia-delivery/aespire-view: HTTP 404",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": false,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}

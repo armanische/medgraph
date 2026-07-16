@@ -1,20 +1,19 @@
 {
   "manufacturer": "SLE",
   "generatedAt": "wave2-execution-v1",
-  "productsDiscovered": 8,
-  "officialSources": 1,
-  "documentsFound": 12,
-  "downloads": 8,
-  "artifacts": 8,
-  "candidateFacts": 23,
-  "reviewItems": 23,
-  "blockedProducts": 1,
+  "productsDiscovered": 12,
+  "officialSources": 35,
+  "documentsFound": 35,
+  "downloads": 23,
+  "artifacts": 23,
+  "candidateFacts": 35,
+  "reviewItems": 35,
+  "blockedProducts": 2,
   "errors": [],
   "warnings": [
-    "Required document coverage is below Wave 2 target.",
     "Wave 2 execution creates reports only; no publication is performed."
   ],
-  "durationMs": 1329,
+  "durationMs": 1477,
   "retries": [],
   "stages": [
     {

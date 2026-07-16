@@ -1,0 +1,94 @@
+{
+  "product": {
+    "productSlug": "wave2-ge-vivid-e95",
+    "manufacturer": "GE HealthCare",
+    "productName": "GE HealthCare Vivid E95",
+    "model": "Vivid E95",
+    "category": "УЗИ аппараты"
+  },
+  "providerDiagnostics": {
+    "providerName": "ge-healthcare",
+    "strategyUsed": "GE HealthCare products, support, resources and document library",
+    "pagesVisited": [
+      "https://www.gehealthcare.com/en/products/ultrasound/cardiovascular/vivid-e95"
+    ],
+    "candidateUrls": [
+      "https://www.gehealthcare.com/en/products/ultrasound/cardiovascular/vivid-e95"
+    ],
+    "normalizedUrls": [
+      "https://www.gehealthcare.com/en/products/ultrasound/cardiovascular/vivid-e95"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": []
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": false,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_360b230781759449926dc572",
+      "productSlug": "wave2-ge-vivid-e95",
+      "manufacturer": "GE HealthCare",
+      "productName": "GE HealthCare Vivid E95",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.gehealthcare.com/en/products/ultrasound/cardiovascular/vivid-e95",
+      "title": "GE HealthCare Vivid E95 official product page",
+      "snippet": "Official product URL candidate.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official product URL candidate."
+      ]
+    }
+  ],
+  "documentCandidates": [],
+  "resolvedDocumentLinks": [],
+  "resolverWarnings": [
+    "Resolver fetch failed for https://www.gehealthcare.com/en/products/ultrasound/cardiovascular/vivid-e95: HTTP 404"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-ge-vivid-e95",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-ge-vivid-e95",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-ge-vivid-e95",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver fetch failed for https://www.gehealthcare.com/en/products/ultrasound/cardiovascular/vivid-e95: HTTP 404",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

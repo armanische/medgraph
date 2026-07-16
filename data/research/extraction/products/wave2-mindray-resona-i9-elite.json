@@ -10,6 +10,29 @@
   "extractedFactCandidates": [],
   "evidenceCandidates": [],
   "candidateClaims": [],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "ultrasound"
+    ],
+    "patternsMatched": {},
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "ultrasound": [
+        "3d_4d",
+        "channels",
+        "doppler",
+        "elastography",
+        "probe_ports"
+      ]
+    },
+    "coveragePercent": 0
+  },
   "warnings": [
     "Resolver rejected unsafe document URL: javascript:void(0);",
     "Resolver rejected unsafe document URL: javascript:void(0);",

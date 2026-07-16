@@ -1,0 +1,94 @@
+{
+  "product": {
+    "productSlug": "wave2-sle-2100",
+    "manufacturer": "SLE",
+    "productName": "SLE2100 archive check",
+    "model": "SLE2100",
+    "category": "Neonatal ventilator"
+  },
+  "providerDiagnostics": {
+    "providerName": "default",
+    "strategyUsed": "Conservative official products and common document sections",
+    "pagesVisited": [],
+    "candidateUrls": [
+      "https://inspirationhealthcaregroup.com/areas-of-care/acute-care/neonatal/"
+    ],
+    "normalizedUrls": [
+      "https://inspirationhealthcaregroup.com/areas-of-care/acute-care/neonatal"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": [
+      "No configured provider matched manufacturer “SLE”; DefaultProvider was used without changing trust tier."
+    ]
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": true,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_3d08a82907ff35f45ae24468",
+      "productSlug": "wave2-sle-2100",
+      "manufacturer": "SLE",
+      "productName": "SLE2100 archive check",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://inspirationhealthcaregroup.com/areas-of-care/acute-care/neonatal/",
+      "title": "Official SLE neonatal catalogue — SLE2100 archive check",
+      "snippet": "SLE2100 is absent from the current owner catalogue and no public official archive document was found; discovery-only legacy check.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "SLE2100 is absent from the current owner catalogue and no public official archive document was found; discovery-only legacy check."
+      ]
+    }
+  ],
+  "documentCandidates": [],
+  "resolvedDocumentLinks": [],
+  "resolverWarnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/areas-of-care/acute-care/neonatal/: HTTP 403"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-sle-2100",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-sle-2100",
+      "requiredDocumentType": "ifu",
+      "priority": "high",
+      "reason": "ifu is required before product can be considered extraction-ready."
+    },
+    {
+      "productSlug": "wave2-sle-2100",
+      "requiredDocumentType": "datasheet",
+      "priority": "medium",
+      "reason": "datasheet is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver fetch failed for https://inspirationhealthcaregroup.com/areas-of-care/acute-care/neonatal/: HTTP 403",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

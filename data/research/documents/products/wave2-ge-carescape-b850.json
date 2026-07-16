@@ -1,0 +1,64 @@
+{
+  "product": {
+    "productSlug": "wave2-ge-carescape-b850",
+    "manufacturer": "GE HealthCare",
+    "productName": "GE HealthCare CARESCAPE B850",
+    "model": "CARESCAPE B850",
+    "category": "Монитор пациента"
+  },
+  "attemptedDownloads": [
+    {
+      "documentCandidateId": "document_9ed175cb8f16d38b70b6eaa2",
+      "sourceId": "source_5191b9a845c5cdd0aada3718",
+      "productSlug": "wave2-ge-carescape-b850",
+      "title": "CARESCAPE B850/B650/B450 User Manual",
+      "url": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf",
+      "documentType": "user_manual",
+      "trustTier": 1
+    }
+  ],
+  "downloadedArtifacts": [
+    {
+      "documentCandidateId": "document_9ed175cb8f16d38b70b6eaa2",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf",
+      "title": "CARESCAPE B850/B650/B450 User Manual",
+      "documentType": "user_manual",
+      "sha256": "9e9890d92ceb402d9a91a1725a4ef974b742e01dfdda08d84a39547575d3123c",
+      "contentType": "application/pdf",
+      "byteSize": 16271742,
+      "filePath": "data/research/artifacts/artifacts/sha256/9e/98/9e9890d92ceb402d9a91a1725a4ef974b742e01dfdda08d84a39547575d3123c.pdf"
+    }
+  ],
+  "failedDownloads": [],
+  "skippedDocuments": [],
+  "documentVersions": [
+    {
+      "versionId": "document_version_788c49b6890cf56d3f30a933",
+      "documentCandidateId": "document_9ed175cb8f16d38b70b6eaa2",
+      "sourceId": "source_5191b9a845c5cdd0aada3718",
+      "productSlug": "wave2-ge-carescape-b850",
+      "documentKey": "trusted-document:document_9ed175cb8f16d38b70b6eaa2",
+      "documentType": "user_manual",
+      "title": "CARESCAPE B850/B650/B450 User Manual",
+      "language": "en",
+      "sourceUrl": "https://www.gehealthcare.com/content/dam/gehc/sitecore-migrated-assets/global/uk/patient-monitoring/pl-pdfs/attachment_8_pol_5815925-25_bx50_um.pdf",
+      "sha256": "9e9890d92ceb402d9a91a1725a4ef974b742e01dfdda08d84a39547575d3123c",
+      "contentType": "application/pdf",
+      "byteSize": 16271742,
+      "filePath": "data/research/artifacts/artifacts/sha256/9e/98/9e9890d92ceb402d9a91a1725a4ef974b742e01dfdda08d84a39547575d3123c.pdf",
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "status": "candidate"
+    }
+  ],
+  "warnings": [
+    "Resolver fetch failed for https://www.gehealthcare.com/en-us/products/patient-monitoring/patient-monitors/carescape-monitor-b850: HTTP 404",
+    "Discovery creates candidates only; no verified claims or publication."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": true,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}

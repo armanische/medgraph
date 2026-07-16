@@ -1,0 +1,1235 @@
+{
+  "product": {
+    "productSlug": "wave2-ambu-ascope-gastro",
+    "manufacturer": "Ambu",
+    "productName": "Ambu aScope Gastro",
+    "model": "aScope Gastro",
+    "category": "Эндоскопия"
+  },
+  "providerDiagnostics": {
+    "providerName": "ambu",
+    "strategyUsed": "Ambu products, IFU documentation and downloads",
+    "pagesVisited": [
+      "https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro"
+    ],
+    "candidateUrls": [
+      "https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro"
+    ],
+    "normalizedUrls": [
+      "https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro"
+    ],
+    "duplicatesRemoved": 0,
+    "blockedUrls": [],
+    "unsupportedPortals": [],
+    "warnings": []
+  },
+  "providerSelectedAutomatically": true,
+  "fallbackProviderUsed": false,
+  "sourceCandidates": [
+    {
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "manufacturer": "Ambu",
+      "productName": "Ambu aScope Gastro",
+      "sourceType": "official_manufacturer_page",
+      "url": "https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+      "title": "Ambu aScope Gastro official product page",
+      "snippet": "Official current product page; regional availability remains conditional.",
+      "discoveredBy": "manual-seed-discovery",
+      "confidence": 0.92,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "official manufacturer page candidate",
+        "snippet is not evidence",
+        "LLM output is not a source",
+        "Official current product page; regional availability remains conditional."
+      ]
+    }
+  ],
+  "documentCandidates": [
+    {
+      "documentId": "document_e25516ddf6c209febe0fa25d",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fAmbu%2fLanding_Pages%2fVivaSight_Cost_Effectiveness_Campaign%2fVivaSight-HE-Study-Summary-pager.pdf",
+      "title": "Download",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/airway-management-and-anaesthesia/vivasight-dl-cost-effectiveness/download-summary",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_497b2eb7c97e2db6fdcf1385",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "brochure",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fBrochures%2faScope-Gastro-Brochure_IE.pdf",
+      "title": "THINK FAST. THINK CLEAN. THINK SINGLE-USE.",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:Brochure",
+        "resolved_from:https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_28f9970dba5c9a82a2a536f5",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "datasheet",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fDatasheets%2fLBL-008096_IE_Datasheet_aScope-Gastro-V03.pdf",
+      "title": "Ambu® aScope™ Gastro datasheet",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:Datasheet",
+        "resolved_from:https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_df466770d6794d87fe6a969f",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "ifu",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fInstructions+for+use%2f492483300-IFU-aScope-Gastro_Multi_V07_202210_TCC-11349_Online.pdf",
+      "title": "IFU Ambu® aScope™ Gastro V07 2022/10",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:IFU",
+        "resolved_from:https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_5f3be1354a89f23e500db986",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "ifu",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fInstructions+for+use%2f492483300-IFU-aScope-Gastro_Multi_V6_202201_TCC-10907_Online.pdf",
+      "title": "IFU Ambu® aScope™ Gastro V06 2022/01",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:IFU",
+        "resolved_from:https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_d9ce6e56e024279a07e1e559",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fPUB-000227-Symbol-Explanation.pdf",
+      "title": "Symbol Explanation",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_0de2ce9124da04a01eadcf23",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fPUB-001166-Latex-and-REACH-substances-in-Medical-Devices.pdf",
+      "title": "Overview of Ambu’s Medical Devices in relation to content of Latex and REACH Regulated SVHC substances",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_c88395247347dc1e9fa176c1",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Files/Files/Ambu/Career/Ambu_At-a-glance-2024-25.pdf",
+      "title": "Unclassified manufacturer document",
+      "language": null,
+      "confidence": 1,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:100",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/corporate-info/media",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_b01492b1a287f642afefb644",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/airway-management-and-anaesthesia/vivasight-dl-cost-effectiveness/download-summary",
+      "title": "Download summary",
+      "language": null,
+      "confidence": 0.95,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:95",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/investigator-initiated-studies",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_fd28eaaf3841f272245e9ef1",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-1-4-video.mp4",
+      "title": "aScope™ Gastro Video Tutorial 1: Introduction",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_0a66ea00b3f6fea6f81a1cc0",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-10-6-video.mp4",
+      "title": "aScope™ Gastro Video Tutorial 10: During Procedure",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_df09a02ec3afe934e645b7f4",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-11-6-video.mp4",
+      "title": "aScope™ Gastro Video Tutorial 11: Post-Procedure",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_209d4ac07f25c4d677dd5c76",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-2-6-video.mp4",
+      "title": "aScope™ Gastro Video Tutorial 2: Intended Use",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_d25c680a3e69f34b5d6e5b01",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-3-5-video.mp4",
+      "title": "aScope™ Gastro Video Tutorial 3: Clinical Benefits",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_74e511abbbd20e074ad39657",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-4-6-video.mp4",
+      "title": "aScope™ Gastro Video Tutorial 4: Compatibility",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_0f272c73cab82836494c7eb7",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-5-4-video.mp4",
+      "title": "aScope™ Gastro Video Tutorial 5: Packaging",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_5edba1171e25b248abe0c43d",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "datasheet",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-6-4-video.mp4",
+      "title": "aScope™ Gastro Video Tutorial 6: Specifications",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:90",
+        "resolver_document_label:Datasheet",
+        "resolved_from:https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification"
+      ]
+    },
+    {
+      "documentId": "document_ede8a0395c5b85a9918c0f3f",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-7-6-video.mp4",
+      "title": "aScope™ Gastro Video Tutorial 7: Inspection",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_f7ba2d8bc965a1cdb58fd599",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-8-5-video.mp4",
+      "title": "aScope™ Gastro Video Tutorial 8: Connecting",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_882c642c7d4bb2309bc2b6d3",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-9-6-video.mp4",
+      "title": "aScope™ Gastro Video Tutorial 9: Pre-Procedure",
+      "language": null,
+      "confidence": 0.9,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:90",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_ac16143429e450364815375a",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/corporate-info/media",
+      "title": "Media",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:80",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/investigator-initiated-studies",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1284eeacabc854ff01dc7c4f",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/corporate-info/media/image-bank",
+      "title": "Image Bank",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:80",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/corporate-info/media",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_415ae6bcd738b5ec1c4850e8",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/corporate-info/media/image-bank/company-photos",
+      "title": "Company photos",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:80",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/corporate-info/media",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_350c995defbb3501c2b68783",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/corporate-info/media/image-bank/executive-management",
+      "title": "Executive Management",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:80",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/corporate-info/media",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_4540d30e0fa0b958fdab5ca5",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/corporate-info/media/image-bank/history",
+      "title": "History",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:80",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/corporate-info/media",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_11bff9e2c3e93d63e23e5839",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/corporate-info/media/image-bank/logo",
+      "title": "Logo",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:80",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/corporate-info/media",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_95837859a482319aa455c937",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/corporate-info/media/image-bank/products",
+      "title": "Products",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:80",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/corporate-info/media",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1136f705a8e278db17048e49",
+      "sourceId": "source_0287c46d332c3c4447ccbe4a",
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "documentType": "unknown",
+      "url": "https://www.ambu.com/corporate-info/media/media",
+      "title": "Media",
+      "language": null,
+      "confidence": 0.8,
+      "trustTier": 1,
+      "requiresHumanReview": true,
+      "reasons": [
+        "trust_tier:1",
+        "resolver:ambu",
+        "resolver_confidence:80",
+        "resolver_document_label:Unknown",
+        "resolved_from:https://www.ambu.com/corporate-info/media",
+        "resolved from official manufacturer page",
+        "document candidate only; download, hash and locator are still required",
+        "requires human review before verification",
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolvedDocumentLinks": [
+    {
+      "documentId": "document_e25516ddf6c209febe0fa25d",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fAmbu%2fLanding_Pages%2fVivaSight_Cost_Effectiveness_Campaign%2fVivaSight-HE-Study-Summary-pager.pdf",
+      "title": "Download",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "Download",
+      "resolvedFromUrl": "https://www.ambu.com/airway-management-and-anaesthesia/vivasight-dl-cost-effectiveness/download-summary",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_497b2eb7c97e2db6fdcf1385",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fBrochures%2faScope-Gastro-Brochure_IE.pdf",
+      "title": "THINK FAST. THINK CLEAN. THINK SINGLE-USE.",
+      "documentTypeGuess": "brochure",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "THINK FAST. THINK CLEAN. THINK SINGLE-USE.",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+      "warnings": []
+    },
+    {
+      "documentId": "document_28f9970dba5c9a82a2a536f5",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fDatasheets%2fLBL-008096_IE_Datasheet_aScope-Gastro-V03.pdf",
+      "title": "Ambu® aScope™ Gastro datasheet",
+      "documentTypeGuess": "datasheet",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "Ambu® aScope™ Gastro datasheet",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+      "warnings": []
+    },
+    {
+      "documentId": "document_df466770d6794d87fe6a969f",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fInstructions+for+use%2f492483300-IFU-aScope-Gastro_Multi_V07_202210_TCC-11349_Online.pdf",
+      "title": "IFU Ambu® aScope™ Gastro V07 2022/10",
+      "documentTypeGuess": "ifu",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "IFU Ambu® aScope™ Gastro V07 2022/10",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+      "warnings": []
+    },
+    {
+      "documentId": "document_5f3be1354a89f23e500db986",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fInstructions+for+use%2f492483300-IFU-aScope-Gastro_Multi_V6_202201_TCC-10907_Online.pdf",
+      "title": "IFU Ambu® aScope™ Gastro V06 2022/01",
+      "documentTypeGuess": "ifu",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "IFU Ambu® aScope™ Gastro V06 2022/01",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+      "warnings": []
+    },
+    {
+      "documentId": "document_fd28eaaf3841f272245e9ef1",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-1-4-video.mp4",
+      "title": "aScope™ Gastro Video Tutorial 1: Introduction",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "aScope™ Gastro Video Tutorial 1: Introduction",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_0a66ea00b3f6fea6f81a1cc0",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-10-6-video.mp4",
+      "title": "aScope™ Gastro Video Tutorial 10: During Procedure",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "aScope™ Gastro Video Tutorial 10: During Procedure",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_df09a02ec3afe934e645b7f4",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-11-6-video.mp4",
+      "title": "aScope™ Gastro Video Tutorial 11: Post-Procedure",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "aScope™ Gastro Video Tutorial 11: Post-Procedure",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_209d4ac07f25c4d677dd5c76",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-2-6-video.mp4",
+      "title": "aScope™ Gastro Video Tutorial 2: Intended Use",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "aScope™ Gastro Video Tutorial 2: Intended Use",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_d25c680a3e69f34b5d6e5b01",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-3-5-video.mp4",
+      "title": "aScope™ Gastro Video Tutorial 3: Clinical Benefits",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "aScope™ Gastro Video Tutorial 3: Clinical Benefits",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_74e511abbbd20e074ad39657",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-4-6-video.mp4",
+      "title": "aScope™ Gastro Video Tutorial 4: Compatibility",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "aScope™ Gastro Video Tutorial 4: Compatibility",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_0f272c73cab82836494c7eb7",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-5-4-video.mp4",
+      "title": "aScope™ Gastro Video Tutorial 5: Packaging",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "aScope™ Gastro Video Tutorial 5: Packaging",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_5edba1171e25b248abe0c43d",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-6-4-video.mp4",
+      "title": "aScope™ Gastro Video Tutorial 6: Specifications",
+      "documentTypeGuess": "datasheet",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "aScope™ Gastro Video Tutorial 6: Specifications",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+      "warnings": []
+    },
+    {
+      "documentId": "document_ede8a0395c5b85a9918c0f3f",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-7-6-video.mp4",
+      "title": "aScope™ Gastro Video Tutorial 7: Inspection",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "aScope™ Gastro Video Tutorial 7: Inspection",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_f7ba2d8bc965a1cdb58fd599",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-8-5-video.mp4",
+      "title": "aScope™ Gastro Video Tutorial 8: Connecting",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "aScope™ Gastro Video Tutorial 8: Connecting",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_882c642c7d4bb2309bc2b6d3",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-9-6-video.mp4",
+      "title": "aScope™ Gastro Video Tutorial 9: Pre-Procedure",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "aScope™ Gastro Video Tutorial 9: Pre-Procedure",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_d9ce6e56e024279a07e1e559",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fPUB-000227-Symbol-Explanation.pdf",
+      "title": "Symbol Explanation",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "Symbol Explanation",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_0de2ce9124da04a01eadcf23",
+      "url": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fPUB-001166-Latex-and-REACH-substances-in-Medical-Devices.pdf",
+      "title": "Overview of Ambu’s Medical Devices in relation to content of Latex and REACH Regulated SVHC substances",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "Overview of Ambu’s Medical Devices in relation to content of Latex and REACH Regulated SVHC substances",
+      "resolvedFromUrl": "https://www.ambu.com/endoscopy/gastroenterology/gastroscope/product/ascope-gastro",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_b01492b1a287f642afefb644",
+      "url": "https://www.ambu.com/airway-management-and-anaesthesia/vivasight-dl-cost-effectiveness/download-summary",
+      "title": "Download summary",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "Download summary",
+      "resolvedFromUrl": "https://www.ambu.com/investigator-initiated-studies",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_ac16143429e450364815375a",
+      "url": "https://www.ambu.com/corporate-info/media",
+      "title": "Media",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "Media",
+      "resolvedFromUrl": "https://www.ambu.com/investigator-initiated-studies",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1284eeacabc854ff01dc7c4f",
+      "url": "https://www.ambu.com/corporate-info/media/image-bank",
+      "title": "Image Bank",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "Image Bank",
+      "resolvedFromUrl": "https://www.ambu.com/corporate-info/media",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_415ae6bcd738b5ec1c4850e8",
+      "url": "https://www.ambu.com/corporate-info/media/image-bank/company-photos",
+      "title": "Company photos",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "Company photos",
+      "resolvedFromUrl": "https://www.ambu.com/corporate-info/media",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_350c995defbb3501c2b68783",
+      "url": "https://www.ambu.com/corporate-info/media/image-bank/executive-management",
+      "title": "Executive Management",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "Executive Management",
+      "resolvedFromUrl": "https://www.ambu.com/corporate-info/media",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_4540d30e0fa0b958fdab5ca5",
+      "url": "https://www.ambu.com/corporate-info/media/image-bank/history",
+      "title": "History",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "History",
+      "resolvedFromUrl": "https://www.ambu.com/corporate-info/media",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_11bff9e2c3e93d63e23e5839",
+      "url": "https://www.ambu.com/corporate-info/media/image-bank/logo",
+      "title": "Logo",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "Logo",
+      "resolvedFromUrl": "https://www.ambu.com/corporate-info/media",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_95837859a482319aa455c937",
+      "url": "https://www.ambu.com/corporate-info/media/image-bank/products",
+      "title": "Products",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "Products",
+      "resolvedFromUrl": "https://www.ambu.com/corporate-info/media",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_1136f705a8e278db17048e49",
+      "url": "https://www.ambu.com/corporate-info/media/media",
+      "title": "Media",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "Media",
+      "resolvedFromUrl": "https://www.ambu.com/corporate-info/media",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    },
+    {
+      "documentId": "document_c88395247347dc1e9fa176c1",
+      "url": "https://www.ambu.com/Files/Files/Ambu/Career/Ambu_At-a-glance-2024-25.pdf",
+      "title": "Unclassified manufacturer document",
+      "documentTypeGuess": "unknown",
+      "parentSourceId": "source_0287c46d332c3c4447ccbe4a",
+      "linkText": "",
+      "resolvedFromUrl": "https://www.ambu.com/corporate-info/media",
+      "warnings": [
+        "Document type could not be classified confidently."
+      ]
+    }
+  ],
+  "resolverWarnings": [
+    "Resolver adapter used: ambu",
+    "Resolver retry skipped https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-11-6-video.mp4: HTTP 406",
+    "Resolver retry skipped https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-10-6-video.mp4: HTTP 406",
+    "Resolver retry skipped https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-9-6-video.mp4: HTTP 406",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: mailto:tisc@ambu.com",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: http://www.ambuusa.com/corporate-giving",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "resolver=ambu; attempts=7; matchedLinks=28; classifiedDocuments={\"Unknown\":32,\"Brochure\":1,\"Datasheet\":2,\"IFU\":2}; confidenceDistribution={\"80\":13,\"90\":11,\"95\":4,\"100\":9}; duplicatesRemoved=9"
+  ],
+  "missingDocumentTasks": [
+    {
+      "productSlug": "wave2-ambu-ascope-gastro",
+      "requiredDocumentType": "registration_certificate",
+      "priority": "critical",
+      "reason": "registration_certificate is required before product can be considered extraction-ready."
+    }
+  ],
+  "trustSummary": {
+    "tier1": 1,
+    "tier2": 0,
+    "tier3": 0,
+    "tier4": 0,
+    "canUseForPublication": 1,
+    "cannotUseForPublication": 0
+  },
+  "readiness": {
+    "hasOfficialManufacturerPage": true,
+    "hasRegulatorRecord": false,
+    "hasRequiredDocuments": false,
+    "canProceedToExtraction": false
+  },
+  "warnings": [
+    "Resolver adapter used: ambu",
+    "Resolver retry skipped https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-11-6-video.mp4: HTTP 406",
+    "Resolver retry skipped https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-10-6-video.mp4: HTTP 406",
+    "Resolver retry skipped https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fFlexibleEndoscopes%2fGI%2faScope+Gastro%2fVideos%2fascope-gastro-video-tutorial-9-6-video.mp4: HTTP 406",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: mailto:tisc@ambu.com",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "Resolver rejected unsafe document URL: http://www.ambuusa.com/corporate-giving",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected unsafe document URL: http://www.ambu.com/contact-us",
+    "Resolver rejected offsite document URL: https://twitter.com/Ambueurope",
+    "Resolver rejected offsite document URL: https://dk.linkedin.com/company/ambu-as",
+    "Resolver rejected offsite document URL: https://www.youtube.com/channel/UCdFCtJCfbWVU6bKUjrmsIQg",
+    "Resolver rejected unsafe document URL: javascript:history.back();",
+    "Resolver rejected offsite document URL: https://d1jhm577bx9zey.cloudfront.net/Files/%7B%7B%7Bfilepath%7D%7D%7D/%7B%7B%7Bfilename%7D%7D%7D",
+    "Resolver rejected offsite document URL: https://www.ambu.co.uk/",
+    "Resolver rejected offsite document URL: https://www.ambu.de/",
+    "Resolver rejected offsite document URL: https://www.ambu.fr/",
+    "Resolver rejected offsite document URL: https://www.ambu.es/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambu.it/",
+    "Resolver rejected offsite document URL: https://www.ambu.dk/",
+    "Resolver rejected offsite document URL: https://www.ambu.no/",
+    "Resolver rejected offsite document URL: https://www.ambu.se/",
+    "Resolver rejected offsite document URL: https://www.ambu.fi/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambuusa.com/",
+    "Resolver rejected offsite document URL: https://www.ambu.pt/",
+    "Resolver rejected offsite document URL: https://www.ambuaustralia.com.au/",
+    "Resolver rejected offsite document URL: https://www.ambu.co.jp/",
+    "Resolver rejected unsafe document URL: http://ambuchina.com/",
+    "Resolver rejected offsite document URL: https://www.ambuasia.com/",
+    "resolver=ambu; attempts=7; matchedLinks=28; classifiedDocuments={\"Unknown\":32,\"Brochure\":1,\"Datasheet\":2,\"IFU\":2}; confidenceDistribution={\"80\":13,\"90\":11,\"95\":4,\"100\":9}; duplicatesRemoved=9",
+    "Discovery creates candidates only; no verified claims or publication."
+  ]
+}

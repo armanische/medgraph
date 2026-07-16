@@ -1,0 +1,54 @@
+{
+  "product": {
+    "productSlug": "wave2-comen-k12",
+    "manufacturer": "Comen",
+    "productName": "Comen K12 Pro",
+    "model": "K12 Pro",
+    "category": "Монитор пациента"
+  },
+  "documentVersions": [],
+  "extractedFactCandidates": [],
+  "evidenceCandidates": [],
+  "candidateClaims": [],
+  "extractionProfileSummary": {
+    "profilesUsed": [
+      "registry",
+      "patient-monitor"
+    ],
+    "patternsMatched": {},
+    "normalizedUnits": {},
+    "failedFields": {
+      "registry": [
+        "manufacturer",
+        "model",
+        "registration_number"
+      ],
+      "patient-monitor": [
+        "battery_runtime",
+        "modules",
+        "parameters",
+        "screen"
+      ]
+    },
+    "coveragePercent": 0
+  },
+  "warnings": [
+    "Resolver adapter used: default",
+    "Resolver rejected unsafe document URL: mailto:info@szcomen.com",
+    "Resolver rejected offsite document URL: https://www.youtube.com/@comen3512",
+    "Resolver rejected offsite document URL: https://www.linkedin.com/company/3816778/",
+    "Resolver rejected offsite document URL: https://www.facebook.com/shenzhencomen/?eid=ARC6RajEKpPDYD9gfg8GVjdY9GS4brP6LD6s9wgOUmP47A2Fb45V7zHdfn6Tu8TCgcowtBZ57w7RjaGz",
+    "Resolver rejected offsite document URL: https://twitter.com/ComenShenzhen",
+    "Resolver rejected unsafe document URL: mailto:info@szcomen.com",
+    "resolver=default; attempts=1; matchedLinks=0; classifiedDocuments={}; confidenceDistribution={}; duplicatesRemoved=0",
+    "Resolver found no document links on https://en.comen.com/products/KPro.",
+    "Discovery creates candidates only; no verified claims or publication.",
+    "No DocumentCandidate records were available for download."
+  ],
+  "readiness": {
+    "hasDownloadedDocuments": false,
+    "hasExtractedText": false,
+    "hasCandidateClaims": false,
+    "canProceedToReview": false
+  }
+}
