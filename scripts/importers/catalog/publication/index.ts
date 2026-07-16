@@ -4,9 +4,11 @@ export * from "./types.ts";
 export * from "./publication-builder.ts";
 export * from "./publication-summary.ts";
 export * from "./publication-validator.ts";
+export * from "./publication-candidates.ts";
 export * from "./publisher.ts";
 
-import { auditPublication, publishCatalog } from "./publisher.ts";
+import { buildFirstPublicationCandidateReport } from "./publication-candidates.ts";
+import { auditPublication, loadPublicationInput, publishCatalog } from "./publisher.ts";
 
 async function runCli() {
   const mode = process.argv[2] ?? "build";
@@ -14,6 +16,16 @@ async function runCli() {
     const result = await auditPublication();
     console.log(JSON.stringify(result, null, 2));
     if (!result.valid) process.exitCode = 1;
+    return;
+  }
+  if (mode === "candidates") {
+    console.log(
+      JSON.stringify(
+        buildFirstPublicationCandidateReport(await loadPublicationInput()),
+        null,
+        2,
+      ),
+    );
     return;
   }
   if (mode !== "build") throw new Error(`Unknown publication mode: ${mode}`);

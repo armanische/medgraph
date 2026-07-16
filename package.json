@@ -24,6 +24,7 @@
     "review:audit": "node scripts/importers/catalog/review/index.ts audit",
     "publication:build": "node scripts/importers/catalog/publication/index.ts build",
     "publication:audit": "node scripts/importers/catalog/publication/index.ts audit",
+    "publication:candidates": "node scripts/importers/catalog/publication/index.ts candidates",
     "wave2:execute": "node scripts/importers/catalog/wave2-execution.ts",
     "audit:artifact-storage": "node scripts/importers/catalog/artifact-storage/index.ts audit",
     "qa:preview-smoke": "node scripts/qa/preview-smoke.ts",

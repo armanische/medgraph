@@ -120,7 +120,7 @@ export default async function ManufacturerPage({
                   {product.category}
                 </div>
                 <h3 className="mt-4 text-sm font-bold leading-5">{product.name}</h3>
-                <p className="mt-3 text-xs leading-6 text-cm-slate">{product.summary}</p>
+                <p className="mt-3 text-xs leading-6 text-cm-slate">{product.description}</p>
                 <div className="mt-auto border-t border-[var(--cm-rule)] pt-4 text-xs font-semibold text-cm-dim group-hover:text-cm-teal">
                   Открыть карточку →
                 </div>

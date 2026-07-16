@@ -66,7 +66,7 @@ export interface PublicationIntegrityViolation {
   documentVersionId?: string | null;
 }
 
-export interface PublishedFact {
+export interface PublishedSpecification {
   type: string;
   value: string;
   unit: string | null;
@@ -76,7 +76,6 @@ export interface PublishedDocument {
   title: string;
   type: string;
   url: string;
-  sha256: string;
 }
 
 export interface PublishedSource {
@@ -93,12 +92,12 @@ export interface PublishedProduct {
   name: string;
   category: string;
   categorySlug: string;
-  summary: string;
-  facts: PublishedFact[];
+  description: string;
+  specifications: PublishedSpecification[];
   compatibility: string[];
   documents: PublishedDocument[];
-  sources: PublishedSource[];
-  publishedAt: string;
+  officialSources: PublishedSource[];
+  updatedAt: string;
   verificationLevel: "reviewed";
   coverage: number;
   status: "published";
@@ -126,11 +125,12 @@ export interface PublishedKnowledgeEntry {
   slug: string;
   productSlug: string;
   title: string;
-  summary: string;
-  facts: PublishedFact[];
+  description: string;
+  specifications: PublishedSpecification[];
   compatibility: string[];
   documents: PublishedDocument[];
-  sources: PublishedSource[];
+  officialSources: PublishedSource[];
+  updatedAt: string;
 }
 
 export type PublicationBlockReason =
@@ -143,7 +143,9 @@ export type PublicationBlockReason =
   | "integrity_violation"
   | "verification_conflict"
   | "invalid_product_identity"
+  | "invalid_decision"
   | "stale_approval"
+  | "not_selected"
   | "required_field_missing";
 
 export interface PublicationBlockedItem {
@@ -162,7 +164,7 @@ export interface PublicationKpi {
 }
 
 export interface PublishedCatalog {
-  schemaVersion: "published-catalog-v1";
+  schemaVersion: "published-catalog-v2";
   generatedAt: string;
   products: PublishedProduct[];
   manufacturers: PublishedManufacturer[];
@@ -178,7 +180,30 @@ export interface PublicationBuildInput {
   artifacts: PublicationArtifact[];
   integrityViolations: PublicationIntegrityViolation[];
   verificationConflictReviewItemIds?: string[];
+  selectedProductSlugs?: string[];
   generatedAt?: string;
+}
+
+export interface FirstPublicationCandidate {
+  productSlug: string;
+  productName: string;
+  manufacturer: string;
+  available: boolean;
+  totalItems: number;
+  approvedItems: number;
+  rejectedItems: number;
+  pendingItems: number;
+  publicationEligible: boolean;
+  blockingReasons: Partial<Record<PublicationBlockReason, number>>;
+  reviewerPath: "/internal/reviewer";
+}
+
+export interface FirstPublicationCandidateReport {
+  schemaVersion: "first-publication-candidates-v1";
+  candidates: FirstPublicationCandidate[];
+  eligibleProducts: number;
+  approvedItems: number;
+  automaticApprovalsCreated: 0;
 }
 
 export interface PublicationBuildResult {

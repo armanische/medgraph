@@ -80,10 +80,11 @@ export function buildKnowledgeIndex(
     slug: product.slug,
     productSlug: product.slug,
     title: product.name,
-    summary: product.summary,
-    facts: product.facts,
+    description: product.description,
+    specifications: product.specifications,
     compatibility: product.compatibility,
     documents: product.documents,
-    sources: product.sources,
+    officialSources: product.officialSources,
+    updatedAt: product.updatedAt,
   }));
 }

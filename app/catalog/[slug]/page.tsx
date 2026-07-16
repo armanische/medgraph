@@ -35,7 +35,7 @@ export async function generateMetadata({
         ? `${product.title} — карточка медицинского изделия`
       : "Карточка медицинского изделия",
     description:
-      published?.summary ??
+      published?.description ??
       "Карточка медицинского изделия CyberMedica с источниками, документами и статусом проверки.",
     alternates: published || product
       ? {
@@ -354,7 +354,7 @@ function PublishedProductPage({ product }: { product: PublishedProduct }) {
                 {product.name}
               </h1>
               <p className="mt-4 max-w-3xl text-sm leading-7 text-cm-slate">
-                {product.summary}
+                {product.description}
               </p>
               <div className="mt-5 flex flex-wrap gap-2">
                 <Link
@@ -370,9 +370,9 @@ function PublishedProductPage({ product }: { product: PublishedProduct }) {
               <div className="cm-label !text-cm-teal">Публикация</div>
               <div className="mt-4 grid grid-cols-2 gap-2">
                 <Metric label="Покрытие" value={`${product.coverage}%`} />
-                <Metric label="Факты" value={String(product.facts.length)} />
+                <Metric label="Характеристики" value={String(product.specifications.length)} />
                 <Metric label="Документы" value={String(product.documents.length)} />
-                <Metric label="Источники" value={String(product.sources.length)} />
+                <Metric label="Источники" value={String(product.officialSources.length)} />
               </div>
               <div className="mt-4 text-[11px] leading-5 text-cm-slate">
                 Уровень: проверено рецензентом
@@ -385,13 +385,13 @@ function PublishedProductPage({ product }: { product: PublishedProduct }) {
       <div className="cm-container grid gap-6 py-8 lg:grid-cols-[minmax(0,1fr)_19rem]">
         <div className="space-y-6">
           <Section title="Характеристики">
-            <ListEmptyWhen empty={product.facts.length === 0} message="Опубликованных характеристик нет.">
+            <ListEmptyWhen empty={product.specifications.length === 0} message="Опубликованных характеристик нет.">
               <div className="overflow-hidden rounded-lg border border-[var(--cm-rule)] bg-white">
-                {product.facts.map((fact, index) => (
-                  <div key={`${fact.type}:${fact.value}:${index}`} className="grid gap-2 border-b border-[var(--cm-rule)] p-4 last:border-0 md:grid-cols-[14rem_1fr]">
-                    <div className="cm-label">{fact.type}</div>
+                {product.specifications.map((specification, index) => (
+                  <div key={`${specification.type}:${specification.value}:${index}`} className="grid gap-2 border-b border-[var(--cm-rule)] p-4 last:border-0 md:grid-cols-[14rem_1fr]">
+                    <div className="cm-label">{specification.type}</div>
                     <div className="text-sm font-semibold">
-                      {fact.value}{fact.unit ? ` ${fact.unit}` : ""}
+                      {specification.value}{specification.unit ? ` ${specification.unit}` : ""}
                     </div>
                   </div>
                 ))}
@@ -405,7 +405,6 @@ function PublishedProductPage({ product }: { product: PublishedProduct }) {
                 <a key={document.url} href={document.url} target="_blank" rel="noreferrer" className="cm-card p-4">
                   <Badge tone="neutral">{document.type}</Badge>
                   <div className="mt-3 text-sm font-semibold">{document.title}</div>
-                  <div className="mt-2 font-mono text-[9px] text-cm-dim">SHA-256: {document.sha256}</div>
                 </a>
               ))}
             </div>
@@ -431,12 +430,17 @@ function PublishedProductPage({ product }: { product: PublishedProduct }) {
           </Section>
           <Section title="Источники">
             <div className="space-y-3">
-              {product.sources.map((source) => (
+              {product.officialSources.map((source) => (
                 <a key={source.url} href={source.url} target="_blank" rel="noreferrer" className="block text-xs font-semibold text-cm-teal">
                   {source.title} ↗
                 </a>
               ))}
             </div>
+          </Section>
+          <Section title="Обновление">
+            <time dateTime={product.updatedAt} className="text-xs text-cm-slate">
+              {product.updatedAt}
+            </time>
           </Section>
         </aside>
       </div>

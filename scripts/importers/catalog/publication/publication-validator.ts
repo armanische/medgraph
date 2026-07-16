@@ -26,6 +26,9 @@ function inspectPublicStrings(value: unknown, path: string, issues: PublicationA
     if (/\.json(?:$|[?#])/iu.test(value)) {
       issues.push({ code: "internal_json_link", message: `JSON link at ${path}.`, path });
     }
+    if (/^[a-f0-9]{64}$/iu.test(value)) {
+      issues.push({ code: "sha_hash_exposed", message: `SHA hash exposed at ${path}.`, path });
+    }
     return;
   }
   if (Array.isArray(value)) {
@@ -39,16 +42,76 @@ function inspectPublicStrings(value: unknown, path: string, issues: PublicationA
   }
 }
 
+function validateKeys(
+  value: Record<string, unknown>,
+  allowed: readonly string[],
+  path: string,
+  issues: PublicationAuditIssue[],
+) {
+  const allowedKeys = new Set(allowed);
+  for (const key of Object.keys(value)) {
+    if (!allowedKeys.has(key)) {
+      issues.push({
+        code: "public_schema_violation",
+        message: `Unexpected public field ${key} at ${path}.`,
+        path: `${path}.${key}`,
+      });
+    }
+  }
+}
+
+function inspectForbiddenPublicKeys(
+  value: unknown,
+  path: string,
+  issues: PublicationAuditIssue[],
+) {
+  if (Array.isArray(value)) {
+    value.forEach((entry, index) =>
+      inspectForbiddenPublicKeys(entry, `${path}[${index}]`, issues),
+    );
+    return;
+  }
+  if (!value || typeof value !== "object") return;
+  for (const [key, entry] of Object.entries(value)) {
+    if (/^(?:review.*ids?|evidence.*ids?|documentVersion.*ids?|artifact.*paths?|comments?|internal.*|notes?|sha256)$/iu.test(key)) {
+      issues.push({
+        code: "internal_metadata_exposed",
+        message: `Forbidden public field ${key} at ${path}.`,
+        path: `${path}.${key}`,
+      });
+    }
+    inspectForbiddenPublicKeys(entry, `${path}.${key}`, issues);
+  }
+}
+
 function validateProduct(product: PublishedProduct, issues: PublicationAuditIssue[]) {
   const path = `products.${product.slug}`;
+  validateKeys(
+    product as unknown as Record<string, unknown>,
+    [
+      "id", "slug", "manufacturer", "manufacturerSlug", "model", "name",
+      "category", "categorySlug", "description", "specifications",
+      "compatibility", "documents", "officialSources", "updatedAt",
+      "verificationLevel", "coverage", "status",
+    ],
+    path,
+    issues,
+  );
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/u.test(product.slug)) {
     issues.push({ code: "invalid_slug", message: `Invalid product slug ${product.slug}.`, path });
   }
-  if (!product.documents.length || !product.sources.length) {
+  if (!product.description.trim() || !product.specifications.length) {
+    issues.push({ code: "public_schema_violation", message: `${product.slug} has incomplete public content.`, path });
+  }
+  if (Number.isNaN(Date.parse(product.updatedAt))) {
+    issues.push({ code: "public_schema_violation", message: `${product.slug} has invalid updatedAt.`, path });
+  }
+  if (!product.documents.length || !product.officialSources.length) {
     issues.push({ code: "missing_evidence", message: `${product.slug} has no public evidence chain.`, path });
   }
-  const sourceUrls = new Set(product.sources.map((source) => source.url));
+  const sourceUrls = new Set(product.officialSources.map((source) => source.url));
   for (const document of product.documents) {
+    validateKeys(document as unknown as Record<string, unknown>, ["title", "type", "url"], `${path}.documents`, issues);
     if (!sourceUrls.has(document.url)) {
       issues.push({
         code: "broken_link",
@@ -63,10 +126,22 @@ function validateProduct(product: PublishedProduct, issues: PublicationAuditIssu
       issues.push({ code: "broken_link", message: `Invalid document URL for ${product.slug}.`, path });
     }
   }
+  for (const source of product.officialSources) {
+    validateKeys(source as unknown as Record<string, unknown>, ["title", "url"], `${path}.officialSources`, issues);
+  }
+  for (const specification of product.specifications) {
+    validateKeys(specification as unknown as Record<string, unknown>, ["type", "value", "unit"], `${path}.specifications`, issues);
+  }
 }
 
 export function validatePublishedCatalog(catalog: PublishedCatalog): PublicationAuditResult {
   const issues: PublicationAuditIssue[] = [];
+  validateKeys(
+    catalog as unknown as Record<string, unknown>,
+    ["schemaVersion", "generatedAt", "products", "manufacturers", "categories", "knowledge", "kpi", "blockedByReason"],
+    "catalog",
+    issues,
+  );
   for (const id of duplicateValues(catalog.products.map((product) => product.id))) {
     issues.push({ code: "duplicate_id", message: `Duplicate product id ${id}.` });
   }
@@ -75,7 +150,35 @@ export function validatePublishedCatalog(catalog: PublishedCatalog): Publication
   }
   for (const product of catalog.products) validateProduct(product, issues);
 
+  for (const entry of catalog.knowledge) {
+    validateKeys(
+      entry as unknown as Record<string, unknown>,
+      [
+        "id", "slug", "productSlug", "title", "description", "specifications",
+        "compatibility", "documents", "officialSources", "updatedAt",
+      ],
+      `knowledge.${entry.slug}`,
+      issues,
+    );
+  }
+
   const productSlugs = new Set(catalog.products.map((product) => product.slug));
+  for (const manufacturer of catalog.manufacturers) {
+    validateKeys(
+      manufacturer as unknown as Record<string, unknown>,
+      ["id", "slug", "name", "categories", "productSlugs", "productCount"],
+      `manufacturers.${manufacturer.slug}`,
+      issues,
+    );
+  }
+  for (const category of catalog.categories) {
+    validateKeys(
+      category as unknown as Record<string, unknown>,
+      ["id", "slug", "name", "productSlugs", "productCount"],
+      `categories.${category.slug}`,
+      issues,
+    );
+  }
   for (const entry of [...catalog.manufacturers, ...catalog.categories]) {
     for (const slug of entry.productSlugs) {
       if (!productSlugs.has(slug)) {
@@ -92,6 +195,7 @@ export function validatePublishedCatalog(catalog: PublishedCatalog): Publication
     issues.push({ code: "orphan_publication", message: "Knowledge and product counts differ." });
   }
   inspectPublicStrings(catalog, "catalog", issues);
+  inspectForbiddenPublicKeys(catalog, "catalog", issues);
   return { valid: issues.length === 0, issues, kpi: catalog.kpi };
 }
 

@@ -144,12 +144,12 @@ function productDocuments(): SearchIndexDocument[] {
     sku: null,
     aliases: [
       product.slug,
-      ...product.facts.map((fact) => fact.value),
+      ...product.specifications.map((specification) => specification.value),
       ...product.compatibility,
     ],
-    synonyms: product.facts.map((fact) => fact.type),
+    synonyms: product.specifications.map((specification) => specification.type),
     status: "published",
-    lastUpdated: product.publishedAt,
+    lastUpdated: product.updatedAt,
     href: `/catalog/${product.slug}`,
     sourceKind: "published_product",
   }));

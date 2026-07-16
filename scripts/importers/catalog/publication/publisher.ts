@@ -18,6 +18,7 @@ import {
   createReviewFixturePublicationInput,
   reviewFixturesEnabled,
 } from "../review/fixtures.ts";
+import { FIRST_PUBLICATION_PRODUCT_SLUGS } from "../review/loader.ts";
 
 const DEFAULT_PUBLIC_ROOT = resolve(process.cwd(), "data/public");
 const DEFAULT_REVIEW_ROOT = resolve(process.cwd(), "data/research/review");
@@ -90,7 +91,11 @@ export async function loadPublicationInput(input?: {
     artifacts: [...artifactInventory.artifacts, ...(fixture?.artifacts ?? [])],
     integrityViolations:
       evidenceIntegrity.current.totalViolations > 0 ? evidenceIntegrity.violations : [],
-    generatedAt: "publication-pipeline-v1",
+    selectedProductSlugs: [
+      ...FIRST_PUBLICATION_PRODUCT_SLUGS,
+      ...(fixture ? ["review-fixture-monitor-100"] : []),
+    ],
+    generatedAt: "publication-pipeline-v2",
   };
 }
 

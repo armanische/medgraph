@@ -6,12 +6,14 @@ import { tmpdir } from "node:os";
 
 import {
   auditPublishedCatalog,
+  buildFirstPublicationCandidateReport,
   buildPublishedCatalog,
   publicSlug,
   publishCatalog,
   validatePublishedCatalog,
   type PublicationBuildInput,
 } from "../../scripts/importers/catalog/publication/index.ts";
+import { FIRST_PUBLICATION_PRODUCT_SLUGS } from "../../scripts/importers/catalog/review/index.ts";
 import { getCatalogCardsWithFallback } from "../../lib/published-catalog.ts";
 import {
   createReviewItemSnapshot,
@@ -123,13 +125,22 @@ function fixtureInput(overrides?: {
   return input;
 }
 
-test("valid READY review records create one public product without internal ids", () => {
+test("latest approved Review Items create one public-safe product", () => {
   const result = buildPublishedCatalog(fixtureInput());
   assert.equal(result.catalog.kpi.publishedProducts, 1);
   assert.equal(result.catalog.kpi.publishedItems, 2);
   assert.deepEqual(result.catalog.products[0].compatibility, ["Module A"]);
-  const serialized = JSON.stringify(result.catalog.products[0]);
-  assert.doesNotMatch(serialized, /review-ready|evidence-1|version-1/u);
+  const product = result.catalog.products[0];
+  const serialized = JSON.stringify(product);
+  assert.deepEqual(Object.keys(product).sort(), [
+    "category", "categorySlug", "compatibility", "coverage", "description",
+    "documents", "id", "manufacturer", "manufacturerSlug", "model", "name",
+    "officialSources", "slug", "specifications", "status", "updatedAt",
+    "verificationLevel",
+  ].sort());
+  assert.doesNotMatch(serialized, /review-ready|evidence-1|version-1|sha256|artifact|comment|internal/iu);
+  assert.doesNotMatch(serialized, /[a-f0-9]{64}/iu);
+  assert.equal(product.documents[0].url, product.officialSources[0].url);
   assert.equal(validatePublishedCatalog(result.catalog).valid, true);
 });
 
@@ -147,6 +158,63 @@ test("rejected review records are never published", () => {
   const result = buildPublishedCatalog(fixtureInput({ decision: "reject" }));
   assert.equal(result.catalog.kpi.publishedProducts, 0);
   assert.equal(result.catalog.kpi.rejected, 2);
+});
+
+test("only the latest decision controls publication", () => {
+  const input = fixtureInput();
+  input.decisions.push(
+    ...input.decisions.map((decision, index) => ({
+      ...decision,
+      id: `newer-rejection-${index}`,
+      decision: "reject" as const,
+      nextStatus: "rejected" as const,
+      reviewedAt: "2026-07-17T00:00:00.000Z",
+      publicationEligibility: {
+        eligible: false,
+        status: "not_ready" as const,
+        reasons: ["rejected"],
+      },
+    })),
+  );
+  const result = buildPublishedCatalog(input);
+  assert.equal(result.catalog.kpi.publishedProducts, 0);
+  assert.equal(result.catalog.kpi.rejected, 2);
+});
+
+test("stale approval blocks publication", () => {
+  const input = fixtureInput();
+  input.decisions[0].snapshotHash = "0".repeat(64);
+  const result = buildPublishedCatalog(input);
+  assert.equal(result.catalog.kpi.publishedProducts, 0);
+  assert.equal(result.catalog.blockedByReason.stale_approval, 1);
+});
+
+test("invalid decision timestamps fail closed", () => {
+  const input = fixtureInput();
+  input.decisions[0].reviewedAt = "not-a-timestamp";
+  const result = buildPublishedCatalog(input);
+  assert.equal(result.catalog.kpi.publishedProducts, 0);
+  assert.equal(result.catalog.blockedByReason.invalid_decision, 1);
+});
+
+test("first publication selection is explicit and never creates approvals", () => {
+  assert.deepEqual(FIRST_PUBLICATION_PRODUCT_SLUGS, [
+    "wave2-philips-intellivue-mx400",
+    "wave2-ge-carescape-b450",
+    "wave2-hamilton-h900",
+    "wave2-drager-babylog-vn800",
+    "wave2-ambu-vivasight-2-dlt",
+  ]);
+  const report = buildFirstPublicationCandidateReport(fixtureInput());
+  assert.equal(report.candidates.length, 5);
+  assert.equal(report.eligibleProducts, 0);
+  assert.equal(report.automaticApprovalsCreated, 0);
+
+  const unselected = fixtureInput();
+  unselected.selectedProductSlugs = ["another-product"];
+  const result = buildPublishedCatalog(unselected);
+  assert.equal(result.catalog.kpi.publishedProducts, 0);
+  assert.equal(result.catalog.blockedByReason.not_selected, 2);
 });
 
 test("integrity violations and verification conflicts block publication", () => {
@@ -216,22 +284,40 @@ test("validator rejects duplicate slugs, internal JSON links and absolute paths"
   assert.ok(validation.issues.some((issue) => issue.code === "internal_json_link"));
 });
 
+test("public schema validator rejects internal metadata and SHA hashes", () => {
+  const catalog = buildPublishedCatalog(fixtureInput()).catalog;
+  const product = catalog.products[0] as unknown as Record<string, unknown>;
+  product.reviewItemId = "review-ready-1";
+  (catalog.products[0].documents[0] as unknown as Record<string, unknown>).sha256 = "a".repeat(64);
+  const validation = validatePublishedCatalog(catalog);
+  assert.equal(validation.valid, false);
+  assert.ok(validation.issues.some((issue) => issue.code === "public_schema_violation"));
+  assert.ok(validation.issues.some((issue) => issue.code === "internal_metadata_exposed"));
+  assert.ok(validation.issues.some((issue) => issue.code === "sha_hash_exposed"));
+});
+
 test("current catalog uses draft fallback when no product is published", () => {
   const cards = getCatalogCardsWithFallback();
   assert.ok(cards.length > 0);
   assert.ok(cards.every((card) => card.displayStatus !== "published"));
 });
 
-test("public UI reads Published Catalog and retains explicit fallback", async () => {
-  const [catalogPage, productPage, manufacturerPage, loader] = await Promise.all([
+test("catalog, product, manufacturers and home read the Published Catalog", async () => {
+  const [catalogPage, productPage, manufacturerPage, manufacturersPage, featured, loader] = await Promise.all([
     readFile("app/catalog/page.tsx", "utf8"),
     readFile("app/catalog/[slug]/page.tsx", "utf8"),
     readFile("app/manufacturers/[slug]/page.tsx", "utf8"),
+    readFile("app/manufacturers/page.tsx", "utf8"),
+    readFile("components/home/FeaturedProducts.tsx", "utf8"),
     readFile("lib/published-catalog.ts", "utf8"),
   ]);
   assert.match(catalogPage, /getCatalogCardsWithFallback/u);
   assert.match(productPage, /PublishedProductPage/u);
   assert.match(manufacturerPage, /getPublishedManufacturerProducts/u);
+  assert.match(manufacturersPage, /getPublishedCatalog/u);
+  assert.match(featured, /getPublishedProducts/u);
+  assert.match(productPage, /officialSources|specifications|updatedAt/u);
+  assert.doesNotMatch(productPage, /SHA-256:/u);
   assert.match(loader, /summary\.generated\.json/u);
   assert.match(loader, /getDraftCatalogProduct/u);
 });
@@ -242,6 +328,7 @@ test("publication module does not import protected writers", async () => {
     "publication-builder.ts",
     "publication-validator.ts",
     "publication-summary.ts",
+    "publication-candidates.ts",
     "types.ts",
     "index.ts",
   ];

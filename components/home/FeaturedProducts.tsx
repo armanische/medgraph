@@ -9,7 +9,7 @@ export default function FeaturedProducts() {
         slug: product.slug,
         category: product.category,
         name: product.name,
-        description: product.summary,
+        description: product.description,
         href: `/catalog/${product.slug}`,
       }))
     : products.map((product) => ({

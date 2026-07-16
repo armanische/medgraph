@@ -1,6 +1,6 @@
 {
-  "schemaVersion": "published-catalog-v1",
-  "generatedAt": "publication-pipeline-v1",
+  "schemaVersion": "published-catalog-v2",
+  "generatedAt": "publication-pipeline-v2",
   "products": [],
   "manufacturers": [],
   "categories": [],
@@ -15,6 +15,7 @@
     "knowledgeEntries": 0
   },
   "blockedByReason": {
-    "not_ready": 5480
+    "not_selected": 5270,
+    "not_ready": 210
   }
 }

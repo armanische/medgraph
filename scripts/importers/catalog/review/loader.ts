@@ -18,13 +18,15 @@ export interface ReviewContext {
   integrityViolations: PublicationIntegrityViolation[];
 }
 
-export const PILOT_PRODUCT_SLUGS = [
-  "wave2-ambu-vivasight-2-dlt",
-  "wave2-hamilton-h900",
-  "wave2-drager-babylog-vn800",
+export const FIRST_PUBLICATION_PRODUCT_SLUGS = [
   "wave2-philips-intellivue-mx400",
   "wave2-ge-carescape-b450",
+  "wave2-hamilton-h900",
+  "wave2-drager-babylog-vn800",
+  "wave2-ambu-vivasight-2-dlt",
 ] as const;
+
+export const PILOT_PRODUCT_SLUGS = FIRST_PUBLICATION_PRODUCT_SLUGS;
 
 async function readJson<T>(path: string): Promise<T> {
   return JSON.parse(await readFile(path, "utf8")) as T;

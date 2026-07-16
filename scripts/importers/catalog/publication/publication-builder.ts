@@ -39,6 +39,22 @@ function isUsableArtifact(artifact: PublicationArtifact) {
   );
 }
 
+export function latestPublicationDecisions(decisions: PublicationReviewDecision[]) {
+  const latest = new Map<string, PublicationReviewDecision>();
+  for (const decision of decisions) {
+    const current = latest.get(decision.reviewItemId);
+    if (
+      !current ||
+      `${decision.reviewedAt}:${decision.id}`.localeCompare(
+          `${current.reviewedAt}:${current.id}`,
+        ) > 0
+    ) {
+      latest.set(decision.reviewItemId, decision);
+    }
+  }
+  return latest;
+}
+
 function hasIntegrityViolation(
   input: PublicationBuildInput,
   productSlug: string,
@@ -68,8 +84,10 @@ function eligibilityReason(input: {
   item: PublicationReviewItem;
   decision?: PublicationReviewDecision;
   artifactByVersion: Map<string, PublicationArtifact[]>;
+  invalidDecisionItemIds: Set<string>;
 }): PublicationBlockReason | null {
-  const { build, report, item, decision, artifactByVersion } = input;
+  const { build, report, item, decision, artifactByVersion, invalidDecisionItemIds } = input;
+  if (invalidDecisionItemIds.has(item.reviewItemId)) return "invalid_decision";
   if (decision?.decision === "reject" || decision?.nextStatus === "rejected") return "rejected";
   if (!decision || decision.decision !== "approve" || decision.nextStatus !== "approved") {
     return decision?.nextStatus === "conflicted" ? "verification_conflict" : "not_ready";
@@ -148,14 +166,13 @@ function buildProduct(input: {
       title: document.title,
       type: document.documentType,
       url: document.sourceUrl,
-      sha256: document.sha256,
     }))
     .sort((left, right) => left.url.localeCompare(right.url));
-  const sources = documents.map((document) => ({
+  const officialSources = documents.map((document) => ({
     title: document.title,
     url: document.url,
   }));
-  const facts = eligibleItems
+  const specifications = eligibleItems
     .map((item) => ({
       type: item.suggestedClaimType,
       value: item.valuePayload.value,
@@ -182,12 +199,12 @@ function buildProduct(input: {
     name,
     category,
     categorySlug: publicSlug(category),
-    summary: `${name} — ${category.toLocaleLowerCase("ru-RU")}; данные опубликованы после проверки официальных источников.`,
-    facts,
+    description: `${name} — ${category.toLocaleLowerCase("ru-RU")}; данные опубликованы после проверки официальных источников.`,
+    specifications,
     compatibility,
     documents,
-    sources,
-    publishedAt: publicationTimestamp(eligibleItems, decisions),
+    officialSources,
+    updatedAt: publicationTimestamp(eligibleItems, decisions),
     verificationLevel: "reviewed",
     coverage: Math.round((eligibleItems.length / report.reviewItems.length) * 100),
     status: "published",
@@ -195,7 +212,15 @@ function buildProduct(input: {
 }
 
 export function buildPublishedCatalog(input: PublicationBuildInput): PublicationBuildResult {
-  const decisions = new Map(input.decisions.map((decision) => [decision.reviewItemId, decision]));
+  const decisions = latestPublicationDecisions(input.decisions);
+  const invalidDecisionItemIds = new Set(
+    input.decisions
+      .filter((decision) => Number.isNaN(Date.parse(decision.reviewedAt)))
+      .map((decision) => decision.reviewItemId),
+  );
+  const selectedProducts = input.selectedProductSlugs
+    ? new Set(input.selectedProductSlugs)
+    : null;
   const artifactByVersion = new Map<string, PublicationArtifact[]>();
   for (const artifact of input.artifacts) {
     for (const versionId of artifact.referencedDocumentVersions) {
@@ -214,6 +239,15 @@ export function buildPublishedCatalog(input: PublicationBuildInput): Publication
   for (const report of [...input.reviewProducts].sort((left, right) =>
     left.product.productSlug.localeCompare(right.product.productSlug),
   )) {
+    if (selectedProducts && !selectedProducts.has(report.product.productSlug)) {
+      blockedItems.push(
+        ...report.reviewItems.map(() => ({
+          productSlug: report.product.productSlug,
+          reason: "not_selected" as const,
+        })),
+      );
+      continue;
+    }
     const eligibleItems: PublicationReviewItem[] = [];
     for (const item of report.reviewItems) {
       const reason = eligibilityReason({
@@ -222,6 +256,7 @@ export function buildPublishedCatalog(input: PublicationBuildInput): Publication
         item,
         decision: decisions.get(item.reviewItemId),
         artifactByVersion,
+        invalidDecisionItemIds,
       });
       if (reason) {
         blockedItems.push({ productSlug: report.product.productSlug, reason });
@@ -230,10 +265,17 @@ export function buildPublishedCatalog(input: PublicationBuildInput): Publication
       }
     }
     if (!eligibleItems.length) continue;
+    const eligibleItemIds = new Set(eligibleItems.map((item) => item.reviewItemId));
+    const policyDecisions = new Map(
+      [...decisions].filter(
+        ([reviewItemId, decision]) =>
+          eligibleItemIds.has(reviewItemId) || decision.nextStatus === "conflicted",
+      ),
+    );
     const productPolicy = evaluateProductPublicationPolicy({
       report,
       items: report.reviewItems,
-      latestDecisions: decisions,
+      latestDecisions: policyDecisions,
     });
     if (!productPolicy.eligible) {
       for (let index = 0; index < eligibleItems.length; index += 1) {
@@ -274,7 +316,7 @@ export function buildPublishedCatalog(input: PublicationBuildInput): Publication
 
   return {
     catalog: {
-      schemaVersion: "published-catalog-v1",
+      schemaVersion: "published-catalog-v2",
       generatedAt: input.generatedAt ?? "publication-pipeline-v1",
       products,
       manufacturers,

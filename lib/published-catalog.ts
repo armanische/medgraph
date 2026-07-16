@@ -70,9 +70,9 @@ export function getCatalogCardsWithFallback(): PublicCatalogCard[] {
     category: product.category,
     displayStatus: "published",
     documents: product.documents.length,
-    sources: product.sources.length,
+    sources: product.officialSources.length,
     coverage: product.coverage,
-    summary: product.summary,
+    summary: product.description,
   }));
   return [...publicCards, ...fallback].sort((left, right) =>
     left.title.localeCompare(right.title, "ru-RU"),

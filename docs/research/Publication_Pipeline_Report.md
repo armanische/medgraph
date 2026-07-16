@@ -1,10 +1,10 @@
 # Publication Pipeline Report
 
-## Результат MVP-056 / интеграция MVP-057
+## Результат MVP-056 / MVP-057 / MVP-058
 
 Создан отдельный fail-closed Publication Pipeline, который строит `data/public` исключительно из Review Queue после прохождения eligibility gates. Pipeline не встроен в Wave 2 и не изменяет существующие importer stages.
 
-Ветка: `feature/publication-pipeline`, создана от `main` (`66b0f97`). Коммит и deploy не выполнялись.
+Текущая ветка: `feature/publication-first-products`. Merge и deploy не выполнялись.
 
 ## Текущий source state
 
@@ -31,7 +31,7 @@
 | Categories | 0 |
 | Knowledge entries | 0 |
 
-Все 5 480 items блокированы причиной `not_ready`. MVP-057 сохранил это состояние: Pipeline теперь требует latest human approve, current snapshot и product policy, но не создаёт решения автоматически.
+После введения explicit first-publication scope 5 270 items блокированы как `not_selected`, а 210 items пяти кандидатов — как `not_ready`. Pipeline требует latest human approve, current snapshot и product policy, но не создаёт решения автоматически.
 
 ## FS510
 
@@ -46,6 +46,8 @@ FS510 существует как текущая статическая публ
 - Проверка latest human decision, snapshot, evidence, DocumentVersion, artifact, official source, product policy, integrity и conflicts.
 - Внутренний approval manifest, не раскрываемый Public UI.
 - Исключение внутренних IDs и filesystem paths из Published Product.
+- Public schema v2 исключает SHA hashes, review comments/notes и internal metadata.
+- Read-only candidate tooling и явный scope первых пяти продуктов.
 - Published Catalog подключён к каталогу, product pages, manufacturer pages, homepage, search, sitemap и platform statistics.
 - Существующий draft/static UI сохранён как fallback только при отсутствии Published Product.
 
