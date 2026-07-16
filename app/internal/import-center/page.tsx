@@ -3,21 +3,19 @@ import { notFound } from "next/navigation";
 import { connection } from "next/server";
 
 import ImportCenterDashboard from "@/components/internal/ImportCenterDashboard";
+import { internalRouteMetadata } from "@/lib/internal-access";
 import { loadInternalImportCenter } from "@/lib/internal-import-center";
-
-export const metadata: Metadata = {
-  title: "Import Center",
-  robots: {
-    index: false,
-    follow: false,
-  },
-};
 
 function importCenterEnabled() {
   return (
     process.env.NODE_ENV !== "production" ||
     process.env.CYBERMEDICA_ENABLE_IMPORT_CENTER === "1"
   );
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  await connection();
+  return internalRouteMetadata(importCenterEnabled(), "Import Center");
 }
 
 function CalmState({
@@ -83,6 +81,11 @@ export default async function InternalImportCenterPage() {
           <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
             Read-only dashboard по generated reports Wave 2: discovery,
             documents, downloads, artifacts, candidate facts и review handoff.
+          </p>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-amber-800">
+            Env-флаг не является аутентификацией. При включении в Preview
+            обязательна Vercel Deployment Protection или эквивалентная внешняя
+            граница доступа.
           </p>
         </div>
 

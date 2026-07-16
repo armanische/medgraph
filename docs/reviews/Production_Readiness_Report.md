@@ -1,203 +1,200 @@
 # CyberMedica Production Readiness Report
 
-Дата: 2026-07-09
+Дата: 2026-07-16
+Ветка: `feature/wave2-expansion`
+Вердикт: **READY WITH CONDITIONS**
+Итоговая оценка: **8.8/10**
 
-Область проверки: `/`, `/search`, `/catalog`, `/catalog/[slug]`, `/products/fs510`, `/knowledge/fs510`, `/compare`, `/tender`, `/workspace`, `/request`, `/thanks`, а также production safety для `/admin` и `/internal/review-queue`.
+## Executive summary
 
-## Executive Summary
+Ветка проходит production build, lint, 234 теста, TypeScript и whitespace validation. Архитектурные safety boundaries Wave 2/Evidence сохранены, evidence integrity имеет 0 текущих нарушений, а artifact audit не выявил checksum, PDF, duplicate, HTML или temporary-file проблем.
 
-Общая готовность к Closed Beta: 84%.
+Кодового blocker для создания защищённого Preview не найден. MVP-055 добавил global security headers, отключил `X-Powered-By`, закрыл `/thanks` от индексации, нейтрализовал metadata выключенных internal routes и добавил deterministic smoke command. Public Production нельзя считать безусловно готовым до внешнего Preview smoke, env validation, решения по moderate dependency advisory и подключения approved monitoring/access controls.
 
-CyberMedica уже выглядит как цельный B2B-продукт: главная, каталог, поиск, карточка изделия, сравнение, совместимость, проверка ТЗ, workspace и request-flow собраны в единую экспертную систему. Основные границы безопасности сохранены: Review Queue и admin закрыты флагами, robots по умолчанию запрещает индексацию preview, sitemap и metadata готовы для controlled indexing.
+В рамках MVP-055 pipeline, Wave 2, evidence semantics и generated reports не менялись. Hardening ограничен headers, internal access presentation, metadata, QA tooling, env/docs и тестами. Deploy не выполнялся.
 
-Главные сильные стороны:
+## Scorecard
 
-- Понятная экспертная ценность для врача, инженера и закупщика.
-- Единая визуальная система карточек, таблиц, бейджей и CTA.
-- Публичные страницы не должны обходить Verification/Publication boundary.
-- Есть fallback, empty и error states без технических stack traces.
-- Search, Compare, Compatibility, Tender и Workspace работают как deterministic layers.
+| Область | Оценка | Основание |
+| --- | ---: | --- |
+| Repository | 7.5/10 | ветка корректна; working tree содержит ожидаемые незакоммиченные MVP-053/054 изменения; repository около 2.45 GiB |
+| Architecture | 9.0/10 | разделены public/internal/import/evidence layers; архитектура не менялась |
+| Pipeline | 9.5/10 | deterministic import pipeline покрыт тестами и не запускается build/deploy |
+| Wave 2 | 8.5/10 | 10 manufacturers, 0 aggregate errors; остаются 19 blocked products и 14 warnings |
+| Evidence | 10/10 | current violations 0, blocked/unrecoverable 0, safety boundaries подтверждены |
+| Dashboard | 9.5/10 | read-only, env-gated, noindex; disabled metadata не раскрывает название workspace |
+| Security | 8.5/10 | global CSP/headers и no-store API; остаются soft 404, in-memory limiter и 2 moderate npm findings |
+| Storage | 7.5/10 | 276 artifacts целостны; 12 orphan candidates и Git-resident storage остаются conditions |
+| Testing | 10/10 | build/lint/234 tests/tsc/diff-check проходят |
+| Deployment | 7.0/10 | deterministic smoke command готов; реальный Preview, monitoring и real env validation ещё не выполнены |
 
-Главные риски:
+Средняя оценка: **8.8/10**.
 
-- Нужно провести ручной Lighthouse/keyboard pass в реальном preview окружении.
-- Нужны production monitoring, analytics и error reporting до расширения beta.
-- Юридические страницы, контакты и privacy/legal тексты должны быть финализированы до public beta.
-- Часть данных остаётся pilot/mock/report layer и должна быть явно ограничена в beta-коммуникации.
+## Repository audit
 
-## UI
+- Branch: `feature/wave2-expansion`, синхронизирована с `origin/feature/wave2-expansion` на precheck.
+- HEAD на старте: `ac07de3 Complete Ambu Wave 2 execution and repair release readiness`.
+- Working tree не clean: содержит результаты MVP-053, позднее дополненные только тремя review-документами MVP-054.
+- Repository disk footprint: примерно 2.45 GiB.
+- Git objects: 852.54 MiB.
+- `.env.local` ignored и не tracked; secret values не выводились.
 
-Проверено:
+Перед merge нужен reviewed diff и clean CI checkout. В рамках задачи commit не создавался.
 
-- Единый rhythm страниц первого уровня.
-- Карточки, таблицы, бейджи, CTA и empty states.
-- Mobile-safe таблицы через horizontal scroll containers.
-- Sticky columns в compare/tender сохраняют читаемость.
+## Internal routes audit
 
-Исправлено:
+| Route | Gate | Metadata | Public exposure | Production smoke |
+| --- | --- | --- | --- | --- |
+| `/admin` | `CYBERMEDICA_ENABLE_ADMIN` | title + noindex/nofollow | links/sitemap отсутствуют | internal content closed |
+| `/internal/review-queue` | `CYBERMEDICA_ENABLE_INTERNAL_REVIEW` | title + noindex/nofollow | links/sitemap отсутствуют | internal content closed |
+| `/internal/reviewer` | `CYBERMEDICA_ENABLE_INTERNAL_REVIEW` | title + noindex/nofollow | links/sitemap отсутствуют | internal content closed |
+| `/internal/import-center` | `CYBERMEDICA_ENABLE_IMPORT_CENTER` | title + noindex/nofollow | links/sitemap отсутствуют | internal content closed |
+| `/internal/wave2` | `CYBERMEDICA_ENABLE_WAVE2_DASHBOARD` | title + noindex/nofollow | links/sitemap отсутствуют | internal content closed |
 
-- Убраны публичные `confidence`/`надежность` из сравнения и карточки каталога.
-- Статусы каталога приведены к безопасной публичной терминологии: `Проверяется`, `Нет подтверждённых данных`.
-- Compatibility statuses приведены к: `Опубликовано`, `При условиях`, `Нет подтверждённых данных`, `Не применяется`.
-- 404 label заменён на человеческий русский текст.
-- Workspace copy очищен от технических терминов.
+Все страницы используют `notFound()` и production env gate. При unset flags локальный production server не раскрыл внутренний контент и отдал `noindex,nofollow`. MVP-055 перевёл `/admin` на ту же dynamic/no-store модель, а disabled metadata всех пяти маршрутов теперь использует нейтральный title «Страница не найдена».
 
-Оставить под наблюдением:
+Наблюдение: Next.js возвращает not-found body с HTTP 200, то есть soft 404. Хрупкий status workaround не добавлялся; smoke проверяет body, generic metadata, `noindex` и отсутствие sensitive markers. Env gate не заменяет auth: любой включённый internal route должен находиться за Vercel Deployment Protection или отдельной authentication boundary. Это явно указано и в документации, и в internal UI copy.
 
-- На малых экранах большие таблицы compare/tender читаемы, но требуют ручной проверки на реальных устройствах.
-- Каталог с большим количеством карточек может потребовать pagination или virtualized list после роста данных.
+## Environment audit
 
-## UX
+### Required for enabled production capabilities
 
-Проверенный основной сценарий:
+- `CYBERMEDICA_LEADS_WEBHOOK_URL` — обязателен для работающей формы заявки; без него API возвращает 503.
+- `NEXT_PUBLIC_SUPABASE_URL` и `NEXT_PUBLIC_SUPABASE_ANON_KEY` — обязательны для `/products/fs510` public projection. Несмотря на `NEXT_PUBLIC_` имена, client import не обнаружен; текущий клиент server-only и read-only.
 
-Главная -> Поиск -> Каталог -> Карточка изделия -> Сравнение -> Проверка ТЗ / Совместимость -> Запрос КП -> Спасибо.
+### Optional
 
-Наблюдения:
+- `CYBERMEDICA_LEADS_WEBHOOK_TOKEN` — Bearer token downstream webhook.
+- `CYBERMEDICA_ALLOW_INDEXING` — explicit opt-in; по умолчанию robots запрещает indexing.
 
-- Пользователь за 1-2 клика может перейти от поиска к карточке изделия или заявке.
-- Empty states объясняют следующий шаг без технических деталей.
-- Request flow выглядит как деловая заявка, а не маркетинговая форма.
-- Workspace работает как закупочный стол, не как чат.
+### Internal only
 
-Риск:
+- `CYBERMEDICA_ENABLE_ADMIN`
+- `CYBERMEDICA_ENABLE_INTERNAL_REVIEW`
+- `CYBERMEDICA_ENABLE_IMPORT_CENTER`
+- `CYBERMEDICA_ENABLE_WAVE2_DASHBOARD`
 
-- Перед Closed Beta нужно явно определить, какие pilot-разделы доступны beta-пользователям и как они объясняются в onboarding.
+Эти флаги не являются auth и должны оставаться выключенными на public deployment без внешней защиты.
 
-## Accessibility
+### Development/import only
 
-Проверено:
+- `CATALOG_RESEARCH_PROVIDER`
+- `CHROME_PATH`
+- `PDFTOTEXT_PATH`
+- `PYTHON_PATH`
 
-- Основные формы имеют labels или screen-reader labels.
-- CTA и ссылки используют видимые подписи.
-- Error/loading/not-found страницы не раскрывают технические ошибки.
-- Focus styles в основной UI-системе сохранены.
+`.env.example` теперь документирует все найденные переменные без значений и маркирует required/optional, internal-only, import-only, server-only, safe/forbidden in browser. Import-only paths не должны задаваться в Vercel.
 
-Риски:
+## Build audit
 
-- Нужен ручной keyboard pass по `/search`, `/compare`, `/tender`, `/workspace`, `/request`.
-- Нужно прогнать contrast audit в браузере после deploy, особенно для мелких моноширинных badge labels.
+- Next.js: 16.2.9, webpack production build.
+- Compile: success, без warnings.
+- TypeScript build phase: success.
+- Static generation: 79 pages.
+- Static routes включают `/`, `/compare`, `/manufacturers`, `/tender`, `/thanks`, `/workspace` и metadata routes.
+- SSG: 49 catalog paths, 1 knowledge path и 8 manufacturer paths.
+- Dynamic: request API, catalog/search/request/product projection и пять admin/internal routes.
+- Generated static browser assets: 43 JS files, 1,098,548 bytes (1.05 MiB) суммарно; CSS — 72,275 bytes.
+- Largest route-specific browser chunk: `/catalog`, 104,655 bytes.
+- Явных dynamic imports в `app/components/lib` нет; Next route splitting остаётся активным.
 
-## Performance
+Next 16 build output не предоставляет прежнюю per-route First Load JS таблицу. Указанные totals не равны пользовательской загрузке одной страницы; transfer size должен быть измерен в Preview.
 
-Проверено:
+### Preview deployment configuration
 
-- Workspace и pilot engines остаются server-rendered/static, без лишнего client state.
-- Client components ограничены там, где есть интерактивность: search filters, compatibility filters, request form.
-- Build создаёт `/workspace` как static route.
+- `vercel.json` отсутствует и не создан: custom build/install/output override не требуется.
+- Vercel должен auto-detect Next.js, выполнить clean lockfile install, `npm run build` и использовать `.next` output.
+- Node version не закреплена через `engines`/`.nvmrc`; совместимую версию требуется явно подтвердить в Project Settings и build log.
+- Internal server routes читают packaged generated JSON через build traces; artifact PDFs не импортируются в browser bundle.
+- Repository/Git footprint остаётся upload/clone condition, хотя clean build и локальный production start проходят.
 
-Риски:
+## Next.js audit
 
-- При росте каталога нужно отслеживать размер статических данных и bundle cost.
-- Search index пока строится из локального layer; для beta объём данных нужно держать контролируемым.
+### Confirmed
 
-## Security
+- Все 18 page routes экспортируют metadata или `generateMetadata`.
+- Root metadata содержит title template, description, OpenGraph, Twitter, metadataBase и controlled robots.
+- Public canonical declarations существуют для основных indexable routes.
+- `robots.ts` default-deny и разрешает crawl только при `CYBERMEDICA_ALLOW_INDEXING=1`.
+- Sitemap не включает admin/internal routes.
+- `favicon.ico` существует.
+- Viewport создаётся стандартным Next metadata default.
+- Static/dynamic caching соответствует build classification; Supabase projection использует `no-store`.
+- Все маршруты получают enforced self-only CSP, `nosniff`, strict referrer policy, frame denial, permissions policy и COOP.
+- `X-Powered-By` отключён; `/api/request` получает explicit `no-store`.
+- `/thanks` имеет canonical `/thanks`, `noindex,nofollow` и отсутствует в sitemap.
 
-Проверено:
+### Warnings
 
-- `/internal/review-queue` защищён `CYBERMEDICA_ENABLE_INTERNAL_REVIEW=1` и `notFound()` в production.
-- `/admin` закрыт `CYBERMEDICA_ENABLE_ADMIN=1` в production.
-- `/admin` и `/internal/review-queue` имеют `robots: noindex`.
-- `robots.txt` по умолчанию запрещает индексацию; разрешение только через `CYBERMEDICA_ALLOW_INDEXING=1`.
-- Sitemap не включает internal/admin routes.
-- Публичные страницы не пишут в Supabase и не публикуют verified data.
+- Web app manifest, apple-touch icon и dedicated OpenGraph image отсутствуют.
+- CSP сохраняет `'unsafe-inline'` для Next runtime и текущих inline styles/scripts. Nonce не введён, чтобы не отключать static generation; это accepted temporary limitation.
+- External origins не allowlisted: Supabase используется server-only, webhook выполняется server-side. Vercel Toolbar может потребовать отдельного review, а не wildcard.
+- HSTS не задан приложением и должен быть подтверждён на Vercel/custom-domain уровне до Production.
+- Root static response имеет длительный `s-maxage`; проверка обновления content после promotion должна входить в smoke test.
 
-Риски:
+## Security audit
 
-- До Closed Beta нужно проверить реальные env vars на хостинге.
-- Нужно убедиться, что preview deployments не включают indexing flag.
-- Нужны monitoring, audit logs и access policy для будущих internal tools.
+### Findings
 
-## SEO
+- High-confidence private key/AWS/GitHub/OpenAI token signatures не найдены. Два broad `sk-` совпадения оказались частью официального Ambu filename URL, не secrets.
+- Runtime localhost/test URLs и workstation absolute paths не найдены.
+- Absolute `/Users/` встречается только в integrity sanitizer и negative tests.
+- Debug endpoints, disabled-auth markers и runtime TODO/FIXME/HACK отсутствуют.
+- Единственный runtime console call — `console.error` при сбое public product projection; stack клиенту не отдаётся.
+- Request endpoint валидирует поля, content length, email, honeypot и timeout; rate limit ограничен памятью одного процесса/replica.
+- API contract не менялся. Global route config добавляет `/api/request` response `Cache-Control: no-store`; PII logging отсутствует.
+- Локальный production smoke прошёл 28/28 GET checks и 29/29 с optional invalid JSON request probe. Probe получил HTTP 400 и не создал lead/webhook payload.
 
-Проверено:
+### Conditions
 
-- Root metadata содержит title, description, OpenGraph, Twitter card, keywords.
-- Sitemap содержит public product/catalog/manufacturer/request routes.
-- Robots strategy поддерживает controlled indexing.
+- Подтвердить CSP и остальные headers на реальном Vercel Preview; HSTS проверить на platform/custom-domain уровне.
+- Не включать internal env flags без auth/deployment protection.
+- Для public scale заменить/дополнить in-memory rate limit shared/edge protection.
+- Реализовать provider integration по `docs/production/Monitoring_and_Logging_Policy.md`; MVP-055 подключение сервиса не выполняет.
 
-Риски:
+## Dependency audit
 
-- Для Public Beta потребуется финальная OG-картинка.
-- Нужны legal/privacy pages и стабильный canonical domain.
-- Нужно решить, индексировать ли pilot routes `/compare`, `/tender`, `/workspace` на первом публичном этапе.
+- Direct production dependencies: `next`, `react`, `react-dom`.
+- Deprecated lockfile entries: 0.
+- Lockfile содержит 13 transitive package names с несколькими версиями; это обычные nested ranges, не top-level duplicate declarations.
+- Явно unused top-level dependency не обнаружен. `react-dom` напрямую не импортируется исходниками, но является обязательным direct peer для Next/React приложения.
+- Чистый `npm ci` установил 358 packages без lockfile mutation; последующий `npm ls --depth=0` показал 0 extraneous entries.
+- Доступны patch releases: Next/eslint-config-next 16.2.10, React/React DOM 19.2.7, Playwright 1.61.1; обновление не выполнялось.
+- `npm audit --omit=dev`: 2 moderate, 0 high, 0 critical. Причина — Next 16.2.9 включает `postcss@8.4.31`, затронутый GHSA-qx2v-qp2m-jg93. Next 16.2.10 также объявляет PostCSS 8.4.31; автоматический downgrade, предложенный npm, не применять.
+- Temporary risk owner: Platform Engineering совместно с Security. Severity: Moderate. Review date: 2026-08-16 или при первом совместимом patch, который обновляет bundled PostCSS, что наступит раньше.
 
-## Consistency
+## Wave 2, Evidence and Storage
 
-Проверено:
+- Wave 2: 10 manufacturers, 157 products discovered, 198 official sources, 312 documents, 205 artifacts, 479 candidate facts/review items, 19 blocked products, 14 warnings, 0 errors.
+- Safety: Publication/Supabase/Verification/Review Decisions не изменены.
+- Evidence integrity: 0 current violations, 0 blocked/unrecoverable repair items.
+- Artifact storage: 276 files, 788.81 MiB logical; 0 hash/PDF/HTML/duplicate/temp failures; 12 retained orphan candidates.
+- Storage policy и `npm run audit:artifact-storage` существуют. External immutable migration не выполнена; Git footprint остаётся condition, но не blocker для защищённого Preview.
+- Git history rewrite и удаление artifacts запрещены до успешного Preview, backup/restore proof и отдельного approval.
+- Повторные evidence/artifact audits детерминированы: evidence violations 0; artifact inventory 276 files, 12 retained orphans, hashes generated reports не изменились.
+- Dashboard/Import Center остаются read-only и production-gated.
 
-- Публичные статусы нормализованы вокруг: `Опубликовано`, `Проверяется`, `Нет подтверждённых данных`, `При условиях`, `Не применяется`.
-- Убраны видимые технические маркеры из публичных workspace/catalog/compare блоков.
-- Empty/error/loading states выдержаны в спокойном B2B-стиле.
+## Blockers and warnings
 
-Оставить под наблюдением:
+### Code/build blockers
 
-- Internal route может использовать внутренние термины, но не должен быть публично доступен.
-- Документация содержит технические термины осознанно, так как это architecture/research layer.
+Не найдены.
 
-## Risks
+### Preview blockers
 
-High:
+Для обычного закрытого Preview — не найдены. Если internal flags должны быть включены, отсутствие Deployment Protection является blocker.
 
-- Нет production monitoring/error reporting.
-- Нет финального legal/privacy пакета.
-- Не выполнен ручной Lighthouse в реальном preview deployment.
+### Production go-live gates
 
-Medium:
+1. Пройти реальный Vercel Preview smoke (`npm run qa:preview-smoke -- <BASE_URL>`), Lighthouse/keyboard/mobile pass.
+2. Проверить production env values, Supabase RLS/public projection и webhook delivery.
+3. Зафиксировать mitigation или documented risk acceptance для PostCSS advisory.
+4. Подтвердить security headers на Vercel, monitoring integration, rollback и PII-safe logs.
+5. Оставить internal flags выключенными либо добавить настоящую access boundary.
+6. Принять явное решение по public indexing и legal/privacy форме заявки; `/thanks` уже закрыт через `noindex,nofollow`.
 
-- Pilot/mock/report данные могут быть неправильно восприняты как полный production catalog.
-- Большие таблицы требуют ручной mobile QA.
-- Для будущего роста нужна стратегия pagination/search index size.
+## Final verdict
 
-Low:
+**READY WITH CONDITIONS — 8.8/10.**
 
-- Нужна отдельная OG-картинка.
-- Нужна финальная редактура microcopy после первых beta-интервью.
-
-## Beta Blockers
-
-Blocking для Closed Beta:
-
-- Проверить production env flags: admin, internal review, indexing.
-- Подключить error reporting и monitoring.
-- Подготовить privacy/legal/contact минимум.
-- Пройти ручной smoke test в deployed preview.
-
-Не блокирует Closed Beta, но блокирует Public Beta:
-
-- Lighthouse report по production URL.
-- Финальный sitemap/robots decision для индексируемых страниц.
-- Юридическая проверка формулировок про документы, экспертизу и КП.
-- Политика обработки заявок и персональных данных.
-
-## Final Checklist
-
-Перед Closed Beta:
-
-☐ env
-
-☐ indexing
-
-☐ analytics
-
-☐ monitoring
-
-☐ backups
-
-☐ logs
-
-☐ error reporting
-
-☐ domain
-
-☐ SSL
-
-☐ robots
-
-☐ sitemap
-
-☐ legal
-
-☐ privacy
-
-☐ contacts
+Ветка технически готова к защищённому Preview. Production promotion допустим только после закрытия перечисленных operational/security gates. Никакой deploy или commit в рамках аудита не выполнялся.

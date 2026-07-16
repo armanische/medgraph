@@ -1,10 +1,10 @@
 # Wave 2 Release Readiness Report
 
-Date: 2026-07-15
+Date: 2026-07-16
 
 Branch: `feature/wave2-expansion`
 
-Audit: MVP-050, updated by MVP-051 and MVP-052
+Audit: MVP-050, updated by MVP-051, MVP-052, and MVP-055
 
 ## 1. Executive Summary
 
@@ -22,6 +22,12 @@ The branch is also unusually large: the working tree is 2.4 GB, `data/research` 
 | Documentation | 8/10 |
 | Merge Readiness | 7/10 |
 
+### MVP-055 Preview hardening addendum
+
+Wave 2 data and pipeline behavior remain unchanged. Preview hardening now applies a self-only CSP and standard security headers to every route, disables `X-Powered-By`, closes `/thanks` to indexing, documents every environment flag, and adds `npm run qa:preview-smoke -- <BASE_URL>`. Disabled internal routes retain their env gates and `notFound()` behavior, but use generic disabled metadata and explicitly state that a feature flag is not authentication. Enabling any internal route in Preview requires Vercel Deployment Protection or an equivalent external access boundary.
+
+The PostCSS advisory remains a temporary accepted Moderate risk because Next.js 16.2.9 and the available 16.2.10 patch both bundle `postcss@8.4.31`. Owner: Platform Engineering with Security. Review date: 2026-08-16 or the first compatible patch that removes the vulnerable version, whichever is earlier. No downgrade was performed.
+
 ## 2. Audit Scope
 
 The audit covered Git history and branch state, generated reports, artifact hashes and signatures, evidence/review linkages, all ten manufacturers, KPI reconciliation, protected internal routes, the Wave 2 Dashboard, repository size, build trace assumptions, secrets, documentation, and the required build/test commands. It did not change pipeline, resolver, downloader, extraction, review decision, verification, publication, Supabase, or public API logic.
@@ -37,11 +43,13 @@ History contains repeated manufacturer execution/checkpoint commits and one unre
 | Check | Result | Notes |
 | --- | --- | --- |
 | `npm ci` | PASS | 358 packages installed; no deprecated-package warning; funding notice only |
-| `npm run build -- --webpack` | PASS | Next.js 16.2.9; compiled in 2.5s; total command time 12.4s; 79 pages; no route or hydration warning |
+| `npm run build -- --webpack` | PASS | Next.js 16.2.9; 79 pages; `/admin` and internal routes dynamic; no route or hydration warning |
 | `npm run lint` | PASS | No errors or warnings |
-| `npm test` | PASS | 216 passed; 0 failed/skipped after remediation |
+| `npm test` | PASS | 234 passed; 0 failed/skipped after Preview hardening |
 | `npx tsc --noEmit --pretty false` | PASS | No errors or warnings |
 | `git diff --check` | PASS | No whitespace errors |
+
+MVP-055 local production smoke passed 28/28 GET checks and 29/29 with the optional invalid request probe. Evidence and artifact audits were rerun after `npm ci`; both outputs retained identical SHA-256 hashes, evidence violations remained zero, and no artifact was changed.
 
 No audit can be upgraded to merge-ready unless every required check passes. Preview deployment remains untested.
 
@@ -152,9 +160,9 @@ The branch does include a separate tender-assistant public feature relative to `
 | `/internal/reviewer` | `CYBERMEDICA_ENABLE_INTERNAL_REVIEW=1` | Yes | Client-side draft only; no persisted decisions |
 | `/internal/import-center` | `CYBERMEDICA_ENABLE_IMPORT_CENTER=1` | Yes | Read-only reports |
 | `/internal/wave2` | `CYBERMEDICA_ENABLE_WAVE2_DASHBOARD=1` | Yes | Read-only reports |
-| `/admin` | `CYBERMEDICA_ENABLE_ADMIN=1` | Yes | Existing protected route |
+| `/admin` | `CYBERMEDICA_ENABLE_ADMIN=1` | Yes | Internal route; external protection required when enabled |
 
-Disabled routes call `notFound()` in production. No public-header link to these routes was found. Empty/corrupt report states are bounded and do not expose stack traces. The three Wave 2/internal review flags were added to `.env.example` and the Preview checklist.
+Disabled routes call `notFound()` in production. No public-header link to these routes was found. Empty/corrupt report states are bounded and do not expose stack traces. All internal flags and import-only environment variables are documented in `.env.example`. Disabled metadata is generic and the UI copy requires Deployment Protection when a flag is enabled. The remaining soft-404 HTTP 200 behavior is documented and tested by body/metadata leakage checks rather than a brittle status workaround.
 
 ## 11. Dashboard Review
 
@@ -177,17 +185,19 @@ The heading and warning now explicitly label the percentage as **orchestration p
 | PDFs over 100 MB | 0 |
 | Largest artifact | about 39 MB |
 
-No individual artifact crosses GitHub's 100 MB hard file limit, but the aggregate branch/repository size materially increases clone, CI, Preview deployment, and Git object growth risk. Git LFS or external immutable artifact storage should be evaluated in a separate architecture task; no storage migration was attempted here.
+No individual artifact crosses GitHub's 100 MB hard file limit, but the aggregate branch/repository size materially increases clone, CI, Preview deployment, and Git object growth risk. `Artifact_Storage_Policy.md`, the deterministic inventory, and `npm run audit:artifact-storage` now exist. External immutable migration was not attempted. The Git footprint is a condition, not a blocker for a protected Preview; history rewrite or deletion remains prohibited until a successful Preview, backup/restore proof, and separate approval.
 
 ## 13. Deployment Readiness
 
 Next.js build traces for the internal Wave 2 and Import Center routes include the ten manufacturer summaries and the aggregate summary, so their server-side filesystem reads are packaged for deployment. PDFs are not imported into the frontend bundle. Internal routes are server-rendered and environment-gated.
 
-The production build passes. A local production smoke test returned the public home page and confirmed `notFound` plus `noindex` markers for every disabled internal/admin route. Next.js streamed these responses with HTTP 200 after rendering began, so the response bodies—not status alone—were used to verify the boundary. Deployment is not considered ready until a real Vercel Preview is exercised. The repository/artifact volume remains a deployment risk even though compilation succeeds.
+The production build passes. `npm run qa:preview-smoke -- <BASE_URL>` checks public routes, global security headers, robots, sitemap, `/thanks`, unknown-route 404, and all disabled internal/admin routes without browser automation or secrets. Its optional request validation mode sends only invalid JSON and never submits a real lead. Deployment Protection is classified as `protected_preview`, not an application failure. Deployment is not considered fully validated until the command and manual browser smoke run against a real Vercel Preview.
 
 ## 14. Security and Secrets
 
 A safe tracked-file scan for common API key, token, password, private-key, service-role, bearer-token, cookie, and session patterns produced no secret finding. Only `.env.example` is tracked; local environment files remain ignored. Internal pages are noindexed and production-gated. No credential values were printed during the audit.
+
+All routes now receive CSP, `X-Content-Type-Options: nosniff`, strict referrer policy, `X-Frame-Options: DENY`, restricted Permissions Policy, and `Cross-Origin-Opener-Policy: same-origin`; `X-Powered-By` is disabled. CSP deliberately retains `'unsafe-inline'` for the current static Next runtime and declares no external browser origin. Supabase and webhook traffic remain server-side. HSTS and actual header delivery must still be verified on Vercel/custom domain.
 
 ## 15. Documentation Quality
 
@@ -219,9 +229,9 @@ The final execution documentation's headline KPI values agree with the recalcula
 
 ## 18. Merge Blockers
 
-1. Make and review an explicit decision on the tracked artifact strategy before merging this branch into `main`.
-2. Produce a clean, committed, pushed PR branch and pass CI plus a Vercel Preview smoke test.
-3. Separate the unrelated tender-assistant changes or explicitly include them in the PR scope and review.
+1. Produce a clean, committed, pushed PR branch and pass CI plus a Vercel Preview smoke test.
+2. Separate the unrelated tender-assistant changes or explicitly include them in the PR scope and review.
+3. Record explicit acceptance of the current Git artifact footprint and temporary PostCSS advisory for Preview. Storage migration itself is not a protected-Preview blocker.
 
 ## 19. Recommended Merge Strategy
 
@@ -240,6 +250,9 @@ Before Pull Request:
 - [x] no tracked duplicate/temp data files after verified cleanup
 - [x] no secrets
 - [x] internal routes gated
+- [x] security headers configured and `X-Powered-By` disabled
+- [x] `/thanks` noindex
+- [x] deterministic Preview smoke command implemented
 - [x] no publication
 - [x] no verification changes
 - [x] no Supabase writes
@@ -252,4 +265,4 @@ Before Pull Request:
 
 # READY WITH CONDITIONS
 
-Wave 2 orchestration, manufacturer execution documentation, and evidence-reference integrity are complete. Merge remains conditional on repository/artifact scale approval, mixed branch scope cleanup, and outstanding Preview/CI release checks. Ambu's four timed-out IFUs remain a data-completeness follow-up, not a structural release-record blocker.
+Wave 2 orchestration, manufacturer execution documentation, evidence-reference integrity, and minimal Preview hardening are complete. Merge remains conditional on clean PR scope, CI, real protected Preview smoke, artifact-footprint acceptance, and temporary advisory disposition. Ambu's four timed-out IFUs remain a data-completeness follow-up, not a structural release-record blocker.

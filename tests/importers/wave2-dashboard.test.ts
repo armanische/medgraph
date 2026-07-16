@@ -216,9 +216,13 @@ test("wave2 dashboard is read-only and has no API or pipeline controls", async (
 });
 
 test("wave2 route is internal, dynamic and excluded from indexing", async () => {
-  const source = await readFile("app/internal/wave2/page.tsx", "utf8");
+  const [source, access] = await Promise.all([
+    readFile("app/internal/wave2/page.tsx", "utf8"),
+    readFile("lib/internal-access.ts", "utf8"),
+  ]);
   assert.match(source, /CYBERMEDICA_ENABLE_WAVE2_DASHBOARD/);
   assert.match(source, /await connection\(\)/);
   assert.match(source, /notFound\(\)/);
-  assert.match(source, /index:\s*false/);
+  assert.match(source, /internalRouteMetadata/);
+  assert.match(access, /index:\s*false/);
 });

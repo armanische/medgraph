@@ -5,6 +5,13 @@ export const metadata: Metadata = {
   title: "Заявка принята",
   description:
     "CyberMedica получила заявку и подготовит ответ по изделию, документам или коммерческому предложению.",
+  alternates: {
+    canonical: "/thanks",
+  },
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function ThanksPage() {

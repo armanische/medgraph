@@ -3,21 +3,19 @@ import { notFound } from "next/navigation";
 import { connection } from "next/server";
 
 import ReviewerWorkspace from "@/components/internal/ReviewerWorkspace";
+import { internalRouteMetadata } from "@/lib/internal-access";
 import { createReviewerWorkspaceModel } from "@/lib/review/workspace";
-
-export const metadata: Metadata = {
-  title: "Reviewer Workspace",
-  robots: {
-    index: false,
-    follow: false,
-  },
-};
 
 function internalReviewEnabled() {
   return (
     process.env.NODE_ENV !== "production" ||
     process.env.CYBERMEDICA_ENABLE_INTERNAL_REVIEW === "1"
   );
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  await connection();
+  return internalRouteMetadata(internalReviewEnabled(), "Reviewer Workspace");
 }
 
 export default async function InternalReviewerPage() {
@@ -42,6 +40,11 @@ export default async function InternalReviewerPage() {
           <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
             Профессиональный центр проверки: очередь изделий, факты,
             документы, draft decisions и история без публикации данных.
+          </p>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-amber-800">
+            Env-флаг не является аутентификацией. При включении в Preview
+            обязательна Vercel Deployment Protection или эквивалентная внешняя
+            граница доступа.
           </p>
         </div>
 

@@ -7,10 +7,14 @@ import test from "node:test";
 import { loadInternalImportCenter } from "../../lib/internal-import-center.ts";
 
 test("import center route is protected by CYBERMEDICA_ENABLE_IMPORT_CENTER", async () => {
-  const source = await readFile("app/internal/import-center/page.tsx", "utf8");
+  const [source, access] = await Promise.all([
+    readFile("app/internal/import-center/page.tsx", "utf8"),
+    readFile("lib/internal-access.ts", "utf8"),
+  ]);
   assert.match(source, /CYBERMEDICA_ENABLE_IMPORT_CENTER/);
   assert.match(source, /notFound\(\)/);
-  assert.match(source, /index:\s*false/);
+  assert.match(source, /internalRouteMetadata/);
+  assert.match(access, /index:\s*false/);
 });
 
 test("import center page reads only wave2 reports", async () => {

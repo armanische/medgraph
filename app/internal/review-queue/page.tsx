@@ -4,20 +4,18 @@ import { connection } from "next/server";
 
 import ReviewQueueView from "@/components/internal/ReviewQueueView";
 import { loadInternalReviewQueue } from "@/lib/internal-review-queue";
-
-export const metadata: Metadata = {
-  title: "Очередь проверки",
-  robots: {
-    index: false,
-    follow: false,
-  },
-};
+import { internalRouteMetadata } from "@/lib/internal-access";
 
 function internalReviewEnabled() {
   return (
     process.env.NODE_ENV !== "production" ||
     process.env.CYBERMEDICA_ENABLE_INTERNAL_REVIEW === "1"
   );
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  await connection();
+  return internalRouteMetadata(internalReviewEnabled(), "Очередь проверки");
 }
 
 function Metric({ label, value }: { label: string; value: number }) {
@@ -94,6 +92,11 @@ export default async function InternalReviewQueuePage() {
           <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
             Только просмотр кандидатных фактов, источников и документов перед
             ручной проверкой.
+          </p>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-amber-800">
+            Env-флаг не является аутентификацией. При включении в Preview
+            обязательна Vercel Deployment Protection или эквивалентная внешняя
+            граница доступа.
           </p>
         </div>
 

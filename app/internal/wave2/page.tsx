@@ -3,20 +3,21 @@ import { notFound } from "next/navigation";
 import { connection } from "next/server";
 
 import Wave2Dashboard from "@/components/internal/Wave2Dashboard";
+import { internalRouteMetadata } from "@/lib/internal-access";
 import { loadWave2Dashboard } from "@/lib/wave2-dashboard";
-
-export const metadata: Metadata = {
-  title: "Wave 2 Orchestration Progress",
-  robots: {
-    index: false,
-    follow: false,
-  },
-};
 
 function dashboardEnabled() {
   return (
     process.env.NODE_ENV !== "production" ||
     process.env.CYBERMEDICA_ENABLE_WAVE2_DASHBOARD === "1"
+  );
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  await connection();
+  return internalRouteMetadata(
+    dashboardEnabled(),
+    "Wave 2 Orchestration Progress",
   );
 }
 
@@ -83,6 +84,11 @@ export default async function InternalWave2Page() {
           <p className="mt-2 max-w-3xl text-sm leading-6 text-amber-800">
             Completion reflects orchestration stages, not evidence completeness,
             verification, or publication readiness.
+          </p>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-amber-800">
+            The environment flag is not authentication. Enabling this route in
+            Preview requires Vercel Deployment Protection or an equivalent
+            external access boundary.
           </p>
         </div>
 
