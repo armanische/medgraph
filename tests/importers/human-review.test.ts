@@ -18,10 +18,8 @@ import {
   transitionReviewStatus,
   type ReviewContext,
 } from "../../scripts/importers/catalog/review/index.ts";
-import {
-  buildPublishedCatalog,
-  publishCatalog,
-} from "../../scripts/importers/catalog/publication/index.ts";
+import { buildPublishedCatalog } from "../../scripts/importers/catalog/publication/publication-builder.ts";
+import { publishCatalog } from "../../scripts/importers/catalog/publication/publisher.ts";
 
 function fixtureContext(): ReviewContext {
   const fixture = createReviewFixturePublicationInput();

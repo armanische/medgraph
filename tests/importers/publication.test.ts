@@ -4,15 +4,15 @@ import { join } from "node:path";
 import test from "node:test";
 import { tmpdir } from "node:os";
 
+import { buildPublishedCatalog } from "../../scripts/importers/catalog/publication/publication-builder.ts";
+import { buildFirstPublicationCandidateReport } from "../../scripts/importers/catalog/publication/publication-candidates.ts";
+import { publicSlug } from "../../scripts/importers/catalog/publication/publication-summary.ts";
 import {
   auditPublishedCatalog,
-  buildFirstPublicationCandidateReport,
-  buildPublishedCatalog,
-  publicSlug,
-  publishCatalog,
   validatePublishedCatalog,
-  type PublicationBuildInput,
-} from "../../scripts/importers/catalog/publication/index.ts";
+} from "../../scripts/importers/catalog/publication/publication-validator.ts";
+import { publishCatalog } from "../../scripts/importers/catalog/publication/publisher.ts";
+import type { PublicationBuildInput } from "../../scripts/importers/catalog/publication/types.ts";
 import { FIRST_PUBLICATION_PRODUCT_SLUGS } from "../../scripts/importers/catalog/review/index.ts";
 import {
   createReviewItemSnapshot,
@@ -328,7 +328,6 @@ test("publication module does not import protected writers", async () => {
     "publication-summary.ts",
     "publication-candidates.ts",
     "types.ts",
-    "index.ts",
   ];
   const source = (
     await Promise.all(

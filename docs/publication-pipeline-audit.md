@@ -10,6 +10,11 @@ Scope: dependency audit only; no runtime, data, pipeline, or UI changes
 > `lib/published-catalog.ts`, `lib/search/index.ts`, and
 > `tests/importers/search.test.ts` — were removed. All **Requires migration**
 > and **Blocked** items below remain in place.
+>
+> RFC-017 later retired the `publication/index.ts` CLI entry point and removed
+> `publication:build`, `publication:audit`, and `publication:candidates` from
+> `package.json`. Protected Builder/Review/Wave 2 modules remain available only
+> through direct internal/test imports pending their own migrations.
 
 ## 1. Executive Summary
 

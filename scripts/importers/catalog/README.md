@@ -28,3 +28,8 @@ data/research/source-seeds.manual.json
 
 Discovery inputs are candidates only. Verification, publication, reviewer
 decisions, and public Storefront records remain separate workflows.
+
+The legacy `publication:build`, `publication:audit`, and
+`publication:candidates` commands were retired by RFC-017. Retained Publication
+implementation files must not be executed directly; they remain temporarily as
+Review/Wave 2 migration dependencies.

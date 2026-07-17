@@ -7,6 +7,12 @@ Branch: `feature/publication-first-products`
 Scope: static dependency and responsibility audit; no runtime, data, pipeline,
 or UI changes
 
+> Post-audit status (RFC-017): `publication/index.ts` and the three
+> `publication:*` npm commands were removed. Tests now import retained modules
+> directly. Builder and `types.ts` remain protected by Group B; Publisher and
+> Candidates remain protected by Group C. Summary and Validator remain because
+> those protected modules still import them.
+
 ## 1. Executive Summary
 
 None of the seven audited Publication modules is imported by a Next.js route,

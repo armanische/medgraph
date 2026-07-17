@@ -1,5 +1,10 @@
 # Publication Pipeline
 
+> Historical architecture. RFC-017 retired the executable Publication CLI and
+> removed its barrel entry point. The retained Builder, Publisher, Validator,
+> Summary, Candidates, and types are migration dependencies for Review and Wave
+> 2; they are not a supported operational publication workflow.
+
 ## Назначение
 
 Publication Pipeline — отдельная граница между внутренней Review Queue и публичным каталогом CyberMedica. Он не является частью Wave 2 и не читает Discovery, Documents, Extraction или Wave 2 summary как источник публичных утверждений.
@@ -76,27 +81,24 @@ data/public/
 
 `summary.generated.json` — детерминированный UI bundle и индекс. Внутренний manifest связывает publication только с approval decision IDs и не читается Public UI. Файлы в каталогах являются каноническими представлениями отдельных records.
 
-## CLI
+## Retired CLI
 
-```text
-npm run publication:build
-npm run publication:audit
-npm run publication:candidates
-```
+RFC-017 удалил команды `publication:build`, `publication:audit` и
+`publication:candidates`. Не запускайте retained implementation files напрямую:
+они сохраняются временно только из-за Review/Wave 2 coupling, описанного в
+`docs/publication-builder-audit.md`.
 
-`publication:build` сначала строит модель в памяти и валидирует её, затем атомарно заменяет файлы `data/public`. `publication:audit` ничего не пишет: он заново вычисляет ожидаемый каталог из текущей Review Queue и сравнивает его с `data/public`.
-
-Audit проверяет duplicate IDs/slugs, orphan records, несогласованность summary и файлов, missing public evidence chain, структурно битые URL, внутренние JSON references и абсолютные пути.
-
-`publication:candidates` — read-only readiness report для Philips IntelliVue MX400, GE HealthCare CARESCAPE B450, Hamilton H900, Dräger Babylog VN800 и Ambu VivaSight 2 DLT. Команда не создаёт approvals и направляет reviewer в существующий `/internal/reviewer`.
+Human Review продолжается через `/internal/reviewer`, `review:summary` и
+`review:audit`. Решения reviewer не публикуют и не изменяют Storefront catalog.
 
 ## Детерминированность
 
 Stable public IDs основаны только на публичной identity, массивы сортируются, `generatedAt` является версией pipeline, а `updatedAt` берётся из детерминированных review timestamps. Artifact checksum в public output не переносится. Одинаковый input создаёт байт-в-байт одинаковый output.
 
-## Public UI и fallback
+## Storefront boundary
 
-Public UI сначала ищет запись в Published Catalog. Если её нет, используется существующая draft/static fallback-карточка. Published record всегда перекрывает fallback с тем же slug. Candidate facts из fallback не становятся опубликованными.
+Public UI использует только Storefront Data Layer. `data/public` и retained
+Publication modules не являются источником публичных Storefront-маршрутов.
 
 ## Ограничения
 

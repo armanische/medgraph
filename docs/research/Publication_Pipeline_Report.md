@@ -1,5 +1,9 @@
 # Publication Pipeline Report
 
+> Historical MVP report. RFC-017 removed the Publication CLI entry point and
+> its npm commands. Command output and operational instructions below describe
+> the former implementation and must not be used as a current runbook.
+
 ## Результат MVP-056 / MVP-057 / MVP-058
 
 Создан отдельный fail-closed Publication Pipeline, который строит `data/public` исключительно из Review Queue после прохождения eligibility gates. Pipeline не встроен в Wave 2 и не изменяет существующие importer stages.
@@ -69,4 +73,6 @@ FS510 существует как текущая статическая публ
 
 ## Ограничения и следующий безопасный шаг
 
-Чтобы получить первую реальную публикацию, пользователь должен вручную обработать один пилотный продукт в защищённом Reviewer Workspace. После появления достаточных approvals выполняются `review:audit`, `publication:build` и `publication:audit`. File-based decision store остаётся development/pilot backend и требует persistent replacement до multi-instance production.
+Legacy Publication CLI retired. Human Review remains available through the
+protected Reviewer Workspace and `review:audit`, but it does not publish into
+Storefront. Any future Storefront handoff requires a separately approved RFC.
