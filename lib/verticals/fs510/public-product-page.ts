@@ -1,13 +1,13 @@
 import "server-only";
 
-import { createServerSupabaseClient } from "@/lib/supabase/server";
+import { createServerSupabaseClient } from "./supabase-projection.ts";
 import type {
   PublicProductClaim,
   PublicProductCharacteristic,
   PublicProductPage,
   PublicProductPublicationEvent,
   PublicProductSource,
-} from "@/types/public-product-page";
+} from "./types.ts";
 
 export type ProductPageLoadResult =
   | { status: "success"; product: PublicProductPage }

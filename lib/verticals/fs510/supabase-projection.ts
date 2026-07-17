@@ -1,6 +1,6 @@
 import "server-only";
 
-import type { PublicProductPageRow } from "@/types/public-product-page";
+import type { PublicProductPageRow } from "./types.ts";
 
 const PUBLIC_SCHEMA = "public_api";
 

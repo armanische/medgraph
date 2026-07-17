@@ -7,6 +7,12 @@ Branch: `feature/publication-first-products`
 Scope: dependency isolation audit only. No runtime, UI, Supabase schema, data,
 route, pipeline, or behavior changes.
 
+> **Post-audit status (RFC-021):** the FS510 payload loader, Supabase read
+> adapter, types, provenance component, and legacy sitemap entries were moved
+> into explicit `lib/verticals/fs510` and `components/verticals/fs510`
+> boundaries. The route, UI, Storefront data, Supabase schema, Projection
+> contract, and runtime behavior remain unchanged.
+
 ## 1. Executive Summary
 
 The active Supabase Projection dependency is already narrow but is not yet

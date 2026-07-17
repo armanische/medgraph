@@ -1,4 +1,4 @@
-import type { PublicProductSource } from "@/types/public-product-page";
+import type { PublicProductSource } from "@/lib/verticals/fs510/types";
 
 export function ProvenanceChain({ source }: { source: PublicProductSource }) {
   const stages = [

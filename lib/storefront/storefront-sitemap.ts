@@ -69,18 +69,6 @@ export async function buildStorefrontSitemap(
       priority: 0.76,
     },
     {
-      url: url("/products/fs510"),
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: url("/knowledge/fs510"),
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
       url: url("/manufacturers"),
       lastModified,
       changeFrequency: "monthly",

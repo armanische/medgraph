@@ -4,10 +4,10 @@ import Link from "next/link";
 import { connection } from "next/server";
 
 import CompatibilityEvidencePanel from "@/components/knowledge/CompatibilityEvidencePanel";
-import { ProvenanceChain } from "@/components/product-page/ProvenanceChain";
+import { ProvenanceChain } from "@/components/verticals/fs510/ProvenanceChain";
 import { getCompatibilityResult } from "@/lib/compatibility/mock-data";
 import { formatDate } from "@/lib/date";
-import { getPublicProductPage } from "@/lib/public-product-page";
+import { getPublicProductPage } from "@/lib/verticals/fs510/public-product-page";
 
 export const metadata: Metadata = {
   title: "FS510 — карточка медицинского изделия",
