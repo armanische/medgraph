@@ -4,6 +4,10 @@ Date: 2026-07-17
 Branch: `feature/publication-first-products`  
 Method: static import, filesystem-reference, command, route, and test audit
 
+> Post-audit status: the V1 candidate cohort identified below was removed by
+> RFC-013 on 2026-07-17. The production dependencies documented for Review,
+> Integrity, Extraction, and Wave 2 remain in place.
+
 ## 1. Executive Summary
 
 The public Storefront routes and Storefront service graph do not import the

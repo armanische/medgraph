@@ -1,6 +1,6 @@
 # Generated Data Policy
 
-Status: Approved for MVP-007
+Status: Updated after RFC-013
 
 ## Purpose
 
@@ -20,8 +20,11 @@ Generated files are pipeline outputs. They support local demos, tests, and revie
 - `data/catalog-seed.generated.json`
 - `data/catalog-import-report.generated.json`
 - `data/catalog-products.generated.json`
-- `data/catalog-research-report.generated.json`
-- `data/research/products/*.research.json`
+
+The retired V1 outputs `data/catalog-research-report.generated.json` and
+`data/research/products/*.research.json` are no longer allowed generated files.
+Active Discovery, Documents, Extraction, Review, Integrity, Artifact, and Wave
+2 outputs are governed by their dedicated architecture documents.
 
 ## Commit expectations
 

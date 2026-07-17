@@ -30,8 +30,6 @@
     "qa:preview-smoke": "node scripts/qa/preview-smoke.ts",
     "audit:evidence-integrity": "node scripts/importers/catalog/evidence-integrity.ts audit",
     "repair:evidence-references": "node scripts/importers/catalog/evidence-integrity.ts repair",
-    "research:catalog-products": "node scripts/importers/catalog/research.ts",
-    "research:product": "node scripts/importers/catalog/research-product.ts",
     "test": "node --test tests/importers/*.test.ts"
   },
   "dependencies": {

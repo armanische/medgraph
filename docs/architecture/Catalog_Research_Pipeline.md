@@ -1,115 +1,24 @@
-# Catalog Research Pipeline
+# Catalog Research Pipeline — Retired
 
-**Статус:** MVP-007 v1  
-**Область:** локальное формирование кандидатных данных каталога
+**Former scope:** MVP-007 V1
+**Status:** retired by RFC-013 on 2026-07-17
 
-## Назначение
+The V1 Catalog Research Runtime and its per-product `.research.json` reports are
+no longer available. Its npm commands, orchestrator, manifest, claim builder,
+knowledge engine, tests, and generated aggregate were removed after RFC-012
+confirmed that no production route imported them.
 
-Pipeline превращает seed-list медицинских изделий в набор данных, готовый к
-последующей ручной проверке. Он не является частью Verification или
-Publication.
+This retirement does not remove or replace the active operational boundaries:
 
-## Поток данных
+- Discovery;
+- Trusted Documents and Extraction;
+- Review and append-only reviewer decisions;
+- Evidence Integrity;
+- Artifact Storage;
+- Publication;
+- Wave 2;
+- Storefront Data Layer.
 
-```text
-PDF Catalog
-→ Seed Item
-→ ManufacturerResolver
-→ SourceFinder / ResearchProvider
-→ SourceRanker
-→ SourceCandidate
-→ DocumentFinder / DocumentCandidate
-→ Downloader
-→ Raw immutable artifact
-→ Document parser / CandidateCharacteristic
-→ EvidenceCandidate
-→ CandidateClaim
-→ ConflictDetector
-→ MissingInformationDetector
-→ ReportBuilder
-→ Draft Product
-→ Human Review
-```
-
-## Seed-list
-
-PDF определяет только позиции, исходное название и раздел каталога. Тексты PDF
-не являются Evidence и не используются для создания характеристик.
-
-## Независимое исследование
-
-`ResearchProvider` обнаруживает внешние URL. Реализация provider-neutral:
-источник поиска можно заменить без изменения downloader, extractor, Claim
-builder или UI-модели.
-
-Если внешний поиск недоступен, допускается ручной файл
-`data/research/source-seeds.manual.json`. Он содержит только official URL seeds
-и создаёт кандидатные источники/документы. Такой seed не является Evidence и не
-меняет статус Verification.
-
-Поисковый результат является только `SourceCandidate`. Сниппет не является
-фактом.
-
-`ManufacturerResolver` возвращает кандидатов. При нескольких вариантах
-фиксируется ambiguity; случайный выбор запрещён. `SourceRanker` применяет
-воспроизводимый приоритет официальных производителей, регуляторов, IFU,
-datasheet, научных публикаций и официальных дистрибьюторов.
-
-## Документы
-
-`DocumentDownloader` принимает только публичный HTTPS URL. Документ сохраняется
-в content-addressed storage и не перезаписывается. Неуспешная загрузка
-фиксируется warning и не останавливает обработку остальных товаров.
-
-Каждый скачанный SHA регистрируется через
-`tmp/catalog-research/import-manifest.json`. Повторный SHA не создаёт новую
-DocumentVersion.
-
-## Характеристики
-
-`CharacteristicExtractor` работает с текстом конкретного документа. Каждая
-характеристика содержит источник, исходный фрагмент, locator, метод извлечения,
-confidence и обязательный статус `unverified`.
-
-MVP-007 не использует OCR или LLM.
-
-## Candidate Claims
-
-`CandidateClaimBuilder` создаёт только предложения для будущей редакционной
-работы. Каждый Candidate Claim имеет минимум один EvidenceCandidate,
-`verificationStatus: unverified` и `autoPublish: false`.
-
-Candidate Claim не является Claim Revision.
-
-## Конфликты и неполные данные
-
-Разные значения одной характеристики сохраняются как `Conflict` со статусом
-`needs_review`. Движок не выбирает значение автоматически.
-
-`MissingInformationDetector` формирует перечень отсутствующих характеристик
-для следующего исследовательского прохода и reviewer.
-
-## Review readiness
-
-Product research report содержит:
-
-- missing critical fields;
-- blocking issues;
-- source quality score;
-- readiness score;
-- review priority;
-- `reviewStatus: pending`.
-
-Эти поля предназначены для будущей Review Queue и не заменяют решение reviewer.
-
-## Запреты
-
-Pipeline не имеет права:
-
-- писать в Supabase или `public_api`;
-- создавать Verified Claims;
-- создавать Publication;
-- использовать PDF-каталог как Evidence;
-- автоматически повышать confidence до статуса проверки;
-- скрывать отсутствие источников;
-- создавать медицинские рекомендации.
+Use the explicit commands documented in
+`scripts/importers/catalog/README.md`. Do not reintroduce the V1
+`research:catalog-products` or `research:product` commands.
