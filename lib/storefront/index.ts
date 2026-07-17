@@ -14,6 +14,10 @@ export { FilesystemCatalogRepository } from "./filesystem-catalog-repository.ts"
 export { ManufacturerService } from "./manufacturer-service.ts";
 export { ProductService } from "./product-service.ts";
 export { SearchService } from "./search-service.ts";
+export {
+  buildStorefrontSitemap,
+  STOREFRONT_SITE_URL,
+} from "./storefront-sitemap.ts";
 export * from "./schemas.ts";
 export * from "./types.ts";
 export type {

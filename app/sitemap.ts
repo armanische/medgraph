@@ -1,82 +1,16 @@
 import type { MetadataRoute } from "next";
 
-import { manufacturers } from "@/data/manufacturers";
-import { getDraftCatalogGeneratedAt } from "@/lib/catalog-drafts";
-import { getCatalogCardsWithFallback } from "@/lib/published-catalog";
+import {
+  categoryService,
+  manufacturerService,
+  productService,
+} from "@/lib/storefront";
+import { buildStorefrontSitemap } from "@/lib/storefront/storefront-sitemap";
 
-const siteUrl = "https://cybermedica.ru";
-
-function url(path: string) {
-  return new URL(path, siteUrl).toString();
-}
-
-export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date(getDraftCatalogGeneratedAt());
-
-  const staticRoutes: MetadataRoute.Sitemap = [
-    {
-      url: url("/"),
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 1,
-    },
-    {
-      url: url("/catalog"),
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 0.95,
-    },
-    {
-      url: url("/search"),
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: url("/compare"),
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.76,
-    },
-    {
-      url: url("/products/fs510"),
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: url("/knowledge/fs510"),
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
-      url: url("/manufacturers"),
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.75,
-    },
-    {
-      url: url("/request"),
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-  ];
-
-  const catalogRoutes = getCatalogCardsWithFallback().map((product) => ({
-    url: url(`/catalog/${product.slug}`),
-    lastModified,
-    changeFrequency: "weekly" as const,
-    priority: 0.72,
-  }));
-
-  const manufacturerRoutes = manufacturers.map((manufacturer) => ({
-    url: url(`/manufacturers/${manufacturer.slug}`),
-    lastModified,
-    changeFrequency: "monthly" as const,
-    priority: 0.62,
-  }));
-
-  return [...staticRoutes, ...catalogRoutes, ...manufacturerRoutes];
+export default function sitemap(): Promise<MetadataRoute.Sitemap> {
+  return buildStorefrontSitemap({
+    productService,
+    manufacturerService,
+    categoryService,
+  });
 }
