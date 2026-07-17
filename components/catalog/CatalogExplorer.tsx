@@ -1,80 +1,71 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
-import { searchCatalogCards, type PublicCatalogCard } from "@/lib/published-catalog";
+import { SearchService } from "@/lib/storefront/search-service";
+import type {
+  Category,
+  Manufacturer,
+  Product,
+} from "@/lib/storefront/types";
 
 interface CatalogExplorerProps {
   initialQuery?: string;
-  products: PublicCatalogCard[];
-  categories: string[];
-}
-
-// Safety invariant for draft data: Verification not performed; candidate facts are never shown as verified.
-function statusClass(status: PublicCatalogCard["displayStatus"]) {
-  if (status === "published") return "border-cm-verified/25 bg-cm-verified-soft text-cm-verified";
-  if (status === "research_ready") return "border-cm-teal/24 bg-cm-teal-soft/70 text-cm-teal";
-  if (status === "partially_researched") return "border-[var(--cm-rule)] bg-white text-cm-slate";
-  if (status === "blocked") return "border-red-200 bg-red-50 text-red-700";
-  return "border-amber-200 bg-amber-50 text-amber-800";
-}
-
-function statusLabel(status: PublicCatalogCard["displayStatus"]) {
-  const labels: Record<PublicCatalogCard["displayStatus"], string> = {
-    published: "Опубликовано",
-    needs_source: "Нет подтверждённых данных",
-    partially_researched: "Проверяется",
-    research_ready: "Проверяется",
-    blocked: "Проверяется",
-  };
-  return labels[status];
-}
-
-function displayCount(value: number) {
-  return value > 0 ? String(value) : "—";
-}
-
-function researchSteps(product: PublicCatalogCard) {
-  if (product.displayStatus === "published") {
-    return [
-      "экспертная проверка завершена",
-      "официальные источники опубликованы",
-      "документы связаны с записью",
-      "целостность публикации проверена",
-    ];
-  }
-  return [
-    product.sources > 0
-      ? "официальные источники найдены"
-      : "нужны официальные источники",
-    product.documents > 0
-      ? "документы есть"
-      : "требуются документы",
-    product.coverage > 0 ? "характеристики собраны" : "подготовка характеристик",
-    "проверяется специалистом",
-  ];
+  products: readonly Product[];
+  categories: readonly Category[];
+  manufacturers: readonly Manufacturer[];
+  initialSearchResultIds?: readonly string[];
 }
 
 export default function CatalogExplorer({
   initialQuery = "",
   products,
   categories,
+  manufacturers,
+  initialSearchResultIds = [],
 }: CatalogExplorerProps) {
   const [query, setQuery] = useState(initialQuery);
   const [category, setCategory] = useState("Все категории");
-  const [status, setStatus] = useState("Все статусы");
+  const [manufacturer, setManufacturer] = useState("Все производители");
+  const [searchResultIds, setSearchResultIds] = useState(
+    () => new Set(initialSearchResultIds),
+  );
+  const productSearchService = useMemo(
+    () => SearchService.forProducts(products, manufacturers, categories),
+    [categories, manufacturers, products],
+  );
+  const categoriesById = useMemo(
+    () => new Map(categories.map((item) => [item.id, item])),
+    [categories],
+  );
+  const manufacturersById = useMemo(
+    () => new Map(manufacturers.map((item) => [item.id, item])),
+    [manufacturers],
+  );
+
+  useEffect(() => {
+    let active = true;
+    void productSearchService.searchProducts(query).then((matches) => {
+      if (active) setSearchResultIds(new Set(matches.map(({ id }) => id)));
+    });
+    return () => {
+      active = false;
+    };
+  }, [productSearchService, query]);
 
   const results = useMemo(() => {
-    const matches = searchCatalogCards(query, products);
-    return matches.filter((product) => {
+    return products.filter((product) => {
+      const searchMatches = !query.trim() || searchResultIds.has(product.id);
       const categoryMatches =
-        category === "Все категории" || product.category === category;
-      const statusMatches =
-        status === "Все статусы" || product.displayStatus === status;
-      return categoryMatches && statusMatches;
+        category === "Все категории" || product.categoryId === category;
+      const manufacturerMatches =
+        manufacturer === "Все производители" ||
+        product.manufacturerId === manufacturer;
+      return searchMatches && categoryMatches && manufacturerMatches;
     });
-  }, [category, products, query, status]);
+  }, [category, manufacturer, products, query, searchResultIds]);
 
   return (
     <div className="grid gap-7 lg:grid-cols-[14rem_1fr]">
@@ -94,32 +85,34 @@ export default function CatalogExplorer({
               >
                 <option>Все категории</option>
                 {categories.map((item) => (
-                  <option key={item}>{item}</option>
+                  <option key={item.id} value={item.id}>
+                    {item.name}
+                  </option>
                 ))}
               </select>
             </label>
           </div>
           <div>
-            <div className="cm-label mb-2">Статус</div>
+            <div className="cm-label mb-2">Производитель</div>
             <label>
-              <span className="sr-only">Статус исследования</span>
+              <span className="sr-only">Производитель</span>
               <select
-                value={status}
-                onChange={(event) => setStatus(event.target.value)}
+                value={manufacturer}
+                onChange={(event) => setManufacturer(event.target.value)}
                 className="cm-field min-h-10 py-2 text-xs transition duration-200"
               >
-                <option>Все статусы</option>
-                <option value="published">Опубликовано</option>
-                <option value="needs_source">Нет подтверждённых данных</option>
-                <option value="partially_researched">Проверяется</option>
-                <option value="research_ready">Проверяется</option>
-                <option value="blocked">Проверяется</option>
+                <option>Все производители</option>
+                {manufacturers.map((item) => (
+                  <option key={item.id} value={item.id}>
+                    {item.name}
+                  </option>
+                ))}
               </select>
             </label>
           </div>
           <div className="rounded-md border border-[var(--cm-rule)] bg-cm-surface-low/70 p-3 text-[11px] leading-5 text-cm-slate">
-            Используйте статус и категорию, чтобы быстро найти изделия,
-            требующие документов или готовые к экспертной проверке.
+            Используйте категорию и производителя, чтобы быстро найти
+            нужное медицинское оборудование.
           </div>
         </div>
       </aside>
@@ -132,7 +125,7 @@ export default function CatalogExplorer({
             <input
               value={query}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder="Название, модель, производитель или источник"
+              placeholder="Название, модель, производитель или категория"
               className="min-h-13 min-w-0 flex-1 bg-transparent px-3 text-[13px] placeholder:text-cm-dim"
             />
           </label>
@@ -152,7 +145,7 @@ export default function CatalogExplorer({
             Найдено: <strong className="text-cm-ink">{results.length}</strong> из {products.length}
           </div>
           <div className="hidden text-[11px] text-cm-dim sm:block">
-            Записи обновляются после проверки документов
+            Каталог медицинского оборудования
           </div>
         </div>
 
@@ -166,38 +159,25 @@ export default function CatalogExplorer({
               >
                 <div className="flex items-start justify-between gap-3">
                   <span className="rounded-md border border-[var(--cm-rule)] bg-white px-2.5 py-1 font-mono text-[9px] font-semibold text-cm-dim">
-                    {product.category}
+                    {categoriesById.get(product.categoryId)?.name ??
+                      product.categoryId}
                   </span>
-                  <span className={`rounded-md border px-2.5 py-1 font-mono text-[9px] font-semibold ${statusClass(product.displayStatus)}`}>
-                    {statusLabel(product.displayStatus)}
-                  </span>
+                  <ProductImage product={product} />
                 </div>
-                <h2 className="mt-4 text-[15px] font-bold leading-6 tracking-[-0.01em]">{product.title}</h2>
+                <h2 className="mt-4 text-[15px] font-bold leading-6 tracking-[-0.01em]">{product.name}</h2>
                 <div className="mt-3 grid gap-1.5 text-[12px] leading-5 text-cm-slate">
                   <div>
                     <span className="text-cm-dim">Производитель: </span>
-                    <span className="font-medium text-cm-ink">{product.manufacturer ?? "требует подтверждения"}</span>
+                    <span className="font-medium text-cm-ink">
+                      {manufacturersById.get(product.manufacturerId)?.name ??
+                        product.manufacturerId}
+                    </span>
                   </div>
-                  <div>
-                    <span className="text-cm-dim">Модель: </span>
-                    <span>{product.model ?? "требует проверки"}</span>
-                  </div>
-                </div>
-                <div className="mt-4 grid grid-cols-3 gap-2 text-[11px]">
-                  <Metric label="Документы" value={displayCount(product.documents)} />
-                  <Metric label="Источники" value={displayCount(product.sources)} />
-                  <Metric label="Покрытие" value={product.coverage > 0 ? `${product.coverage}%` : "—"} />
                 </div>
                 <div className="mt-4 rounded-md border border-[var(--cm-rule)] bg-cm-surface-low/65 p-3">
-                  <div className="text-[11px] font-semibold text-cm-ink">Состояние записи</div>
-                  <ul className="mt-2 grid gap-1.5 text-[11px] leading-5 text-cm-slate">
-                    {researchSteps(product).map((step) => (
-                      <li key={step} className="flex gap-2">
-                        <span aria-hidden="true" className="mt-2 size-1 rounded-full bg-cm-teal/60" />
-                        <span>{step}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <p className="text-[11px] leading-5 text-cm-slate">
+                    {product.shortDescription}
+                  </p>
                 </div>
                 <div className="mt-auto flex items-center justify-between border-t border-[var(--cm-rule)] pt-4">
                   <span className="text-[11px] text-cm-dim">Карточка изделия</span>
@@ -232,13 +212,19 @@ export default function CatalogExplorer({
   );
 }
 
-function Metric({ label, value }: { label: string; value: string }) {
+function ProductImage({ product }: { product: Product }) {
+  const image = product.media.find(({ type }) => type === "image");
+  if (!image) return null;
+
   return (
-    <div className="rounded-md border border-[var(--cm-rule)] bg-white/80 p-2">
-      <div className="cm-label text-[8px]">{label}</div>
-      <div className="mt-1 font-mono text-[12px] font-semibold text-cm-ink">
-        {value}
-      </div>
-    </div>
+    <span className="relative size-10 shrink-0 overflow-hidden rounded-md border border-[var(--cm-rule)] bg-white">
+      <Image
+        src={image.url}
+        alt={image.alt}
+        fill
+        sizes="40px"
+        className="object-cover"
+      />
+    </span>
   );
 }

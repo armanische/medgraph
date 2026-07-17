@@ -2,6 +2,7 @@ import { readFile, readdir } from "node:fs/promises";
 import { join, resolve } from "node:path";
 
 import type { CatalogRepository } from "./catalog-repository.ts";
+import { filterProductsForSearch } from "./search-service.ts";
 import { validateStorefrontCatalog } from "./schemas.ts";
 import {
   PUBLIC_PRODUCT_STATUSES,
@@ -23,15 +24,6 @@ function byName<T extends { name: string }>(left: T, right: T) {
 
 function byCategoryPosition(left: Category, right: Category) {
   return left.position - right.position || byName(left, right);
-}
-
-function normalizeSearchText(value: string) {
-  return value
-    .toLocaleLowerCase("ru-RU")
-    .replace(/ё/g, "е")
-    .replace(/[^\p{L}\p{N}]+/gu, " ")
-    .replace(/\s+/g, " ")
-    .trim();
 }
 
 async function readJson(path: string): Promise<unknown> {
@@ -135,31 +127,12 @@ export class FilesystemCatalogRepository implements CatalogRepository {
   }
 
   async searchProducts(query: string): Promise<readonly Product[]> {
-    const normalizedQuery = normalizeSearchText(query);
-    if (!normalizedQuery) return [];
-    const queryTokens = normalizedQuery.split(" ");
-    const products = await this.getActiveProducts();
-
-    return products.filter((product) => {
-      const haystack = normalizeSearchText(
-        [
-          product.name,
-          product.model,
-          product.slug,
-          product.shortDescription,
-          product.description,
-          ...product.applicationAreas,
-          ...product.keyFeatures,
-          ...product.specifications.flatMap(({ group, label, value, unit }) => [
-            group,
-            label,
-            value,
-            unit ?? "",
-          ]),
-        ].join(" "),
-      );
-      return queryTokens.every((token) => haystack.includes(token));
-    });
+    const [products, manufacturers, categories] = await Promise.all([
+      this.getActiveProducts(),
+      this.getManufacturers(),
+      this.getCategories(),
+    ]);
+    return filterProductsForSearch(products, query, manufacturers, categories);
   }
 
   async getCatalogSummary(): Promise<CatalogSummary> {

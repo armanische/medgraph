@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import CatalogExplorer from "@/components/catalog/CatalogExplorer";
-import { getCatalogCardsWithFallback } from "@/lib/published-catalog";
+import {
+  categoryService,
+  manufacturerService,
+  productService,
+  searchService,
+} from "@/lib/storefront";
 
 export const metadata: Metadata = {
   title: "Каталог медицинских изделий",
@@ -17,10 +22,13 @@ export default async function CatalogPage({
   searchParams: Promise<{ q?: string }>;
 }) {
   const { q = "" } = await searchParams;
-  const products = getCatalogCardsWithFallback();
-  const categories = Array.from(new Set(products.map((product) => product.category))).sort(
-    (left, right) => left.localeCompare(right, "ru-RU"),
-  );
+  const [products, categories, manufacturers, initialSearchResults] =
+    await Promise.all([
+      productService.getActiveProducts(),
+      categoryService.getCategories(),
+      manufacturerService.getManufacturers(),
+      q ? searchService.searchProducts(q) : Promise.resolve([]),
+    ]);
 
   return (
     <main className="min-h-screen bg-cm-canvas">
@@ -33,8 +41,8 @@ export default async function CatalogPage({
                 Каталог медицинских изделий
               </h1>
               <p className="mt-3 max-w-2xl text-sm leading-7 text-cm-slate">
-                Рабочая база изделий для инженерной, клинической и закупочной
-                проверки: производители, категории, документы и готовность записи.
+                Медицинское оборудование по категориям и производителям:
+                описания, технические характеристики и подбор оборудования.
               </p>
             </div>
             <div className="rounded-lg border border-[var(--cm-rule)] bg-white/78 p-4 shadow-[0_12px_34px_rgba(11,19,32,0.055)] backdrop-blur">
@@ -58,6 +66,8 @@ export default async function CatalogPage({
           initialQuery={q}
           products={products}
           categories={categories}
+          manufacturers={manufacturers}
+          initialSearchResultIds={initialSearchResults.map(({ id }) => id)}
         />
       </div>
     </main>

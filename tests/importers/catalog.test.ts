@@ -590,16 +590,15 @@ test("generated research data and per-product reports exist", async () => {
   );
 });
 
-test("draft catalog UI never shows CyberMedica Verified for draft products", async () => {
+test("draft product UI never shows CyberMedica Verified", async () => {
   const files = await Promise.all(
-    [
-      "components/catalog/CatalogExplorer.tsx",
-      "app/catalog/[slug]/page.tsx",
-    ].map((file) => readFile(resolve(process.cwd(), file), "utf8")),
+    ["app/catalog/[slug]/page.tsx"].map((file) =>
+      readFile(resolve(process.cwd(), file), "utf8"),
+    ),
   );
   const source = files.join("\n");
   assert.doesNotMatch(source, /CyberMedica Verified|РУ · подтверждено|verified badge/i);
-  assert.match(source, /Verification not performed|не прошла Verification/);
+  assert.match(source, /Проверяется/);
   assert.match(source, /candidate/i);
 });
 

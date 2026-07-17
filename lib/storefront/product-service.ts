@@ -12,6 +12,10 @@ export class ProductService {
     return this.repository.getActiveProducts();
   }
 
+  getActiveProducts() {
+    return this.repository.getActiveProducts();
+  }
+
   async getProductBySlug(slug: string): Promise<Product | null> {
     const product = await this.repository.getProductBySlug(slug);
     return product && PUBLIC_PRODUCT_STATUSES.has(product.status) ? product : null;
