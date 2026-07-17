@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { access, readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import test from "node:test";
 
@@ -121,4 +121,30 @@ test("metadata is generated from Storefront Product", async () => {
   assert.match(source, /title: `\$\{product\.name\}/);
   assert.match(source, /description: product\.shortDescription/);
   assert.match(source, /canonical: `\/catalog\/\$\{product\.slug\}`/);
+  assert.match(source, /product\.media\.find\(\(\{ type \}\) => type === "image"\)/);
+  assert.match(source, /image: image \? \{ url: image\.url, alt: image\.alt \} : undefined/);
+});
+
+test("Ambu VivaSight image is catalog-ready and available to catalog and product UI", async () => {
+  const repository = new FilesystemCatalogRepository(
+    resolve(root, "data/storefront"),
+  );
+  const product = await repository.getProductBySlug("ambu-vivasight-2-dlt");
+  assert.ok(product);
+  const image = product.media.find(({ type }) => type === "image");
+
+  assert.deepEqual(image, {
+    type: "image",
+    url: "/products/ambu-vivasight-2-dlt/photo.jpg",
+    alt: "Ambu VivaSight 2 DLT, подключённая к монитору Ambu aView 2 Advance",
+    position: 10,
+  });
+  await access(resolve(root, "public", image.url.slice(1)));
+
+  const [productPage, catalogExplorer] = await Promise.all([
+    pageSource(),
+    readFile(resolve(root, "components/catalog/CatalogExplorer.tsx"), "utf8"),
+  ]);
+  assert.match(productPage, /<ProductGallery product=\{product\}/u);
+  assert.match(catalogExplorer, /product\.media\.find/u);
 });

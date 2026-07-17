@@ -103,6 +103,36 @@ test("Product schema uses public Storefront fields and PropertyValue specificati
   );
 });
 
+test("Ambu VivaSight image flows into Product JSON-LD", async () => {
+  const [products, manufacturers, categories] = await Promise.all([
+    repository.getActiveProducts(),
+    repository.getManufacturers(),
+    repository.getCategories(),
+  ]);
+  const product = products.find(({ slug }) => slug === "ambu-vivasight-2-dlt");
+  assert.ok(product);
+  const manufacturer = manufacturers.find(({ id }) => id === product.manufacturerId);
+  const category = categories.find(({ id }) => id === product.categoryId);
+  const [schema] = buildProductStructuredData({
+    product,
+    manufacturer,
+    category,
+  });
+
+  assert.deepEqual(schema.image, [
+    `${STOREFRONT_SITE_URL}/products/ambu-vivasight-2-dlt/photo.jpg`,
+  ]);
+  assert.equal(schema.url, `${STOREFRONT_SITE_URL}/catalog/ambu-vivasight-2-dlt`);
+});
+
+test("FS510 Product JSON-LD keeps the Storefront canonical", async () => {
+  const product = await repository.getProductBySlug("fs510");
+  assert.ok(product);
+  const [schema] = buildProductStructuredData({ product });
+
+  assert.equal(schema.url, `${STOREFRONT_SITE_URL}/catalog/fs510`);
+});
+
 test("Product and Manufacturer breadcrumbs use absolute canonical URLs", async () => {
   const [products, manufacturers] = await Promise.all([
     repository.getActiveProducts(),

@@ -12,12 +12,6 @@ export function buildFs510Sitemap(
 
   return [
     {
-      url: url("/products/fs510"),
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
       url: url("/knowledge/fs510"),
       lastModified,
       changeFrequency: "monthly",

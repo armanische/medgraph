@@ -58,16 +58,22 @@ test("shared Storefront sitemap does not know FS510 vertical routes", async () =
   assert.match(appSource, /buildFs510Sitemap/u);
 });
 
-test("FS510 sitemap preserves legacy public URLs", () => {
+test("FS510 product vertical is noindex-follow and excluded from its sitemap", async () => {
   const modified = new Date("2026-07-17T00:00:00.000Z");
   const sitemap = buildFs510Sitemap(modified);
+  const pageSource = await readFile("app/products/fs510/page.tsx", "utf8");
 
   assert.deepEqual(
     sitemap.map(({ url }) => url),
-    [
-      `${STOREFRONT_SITE_URL}/products/fs510`,
-      `${STOREFRONT_SITE_URL}/knowledge/fs510`,
-    ],
+    [`${STOREFRONT_SITE_URL}/knowledge/fs510`],
+  );
+  assert.equal(
+    sitemap.some(({ url }) => new URL(url).pathname === "/products/fs510"),
+    false,
   );
   assert.ok(sitemap.every(({ lastModified }) => lastModified === modified));
+  assert.match(
+    pageSource,
+    /robots:\s*\{\s*index:\s*false,\s*follow:\s*true,?\s*\}/u,
+  );
 });

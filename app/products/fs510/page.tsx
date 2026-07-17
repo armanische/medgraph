@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/products/fs510",
   },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 function Checkmark({ className = "" }: { className?: string }) {

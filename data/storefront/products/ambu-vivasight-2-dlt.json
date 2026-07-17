@@ -42,7 +42,14 @@
       "position": 30
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "type": "image",
+      "url": "/products/ambu-vivasight-2-dlt/photo.jpg",
+      "alt": "Ambu VivaSight 2 DLT, подключённая к монитору Ambu aView 2 Advance",
+      "position": 10
+    }
+  ],
   "documents": [
     {
       "title": "Ambu VivaSight 2 DLT datasheet",
@@ -55,5 +62,5 @@
   "compatibility": [],
   "relatedProductIds": [],
   "createdAt": "2026-07-17T00:00:00.000Z",
-  "updatedAt": "2026-07-17T00:00:00.000Z"
+  "updatedAt": "2026-07-17T19:24:45.000Z"
 }

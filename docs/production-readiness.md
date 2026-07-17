@@ -1,6 +1,6 @@
 # RFC-028 — Production Release Readiness
 
-**Status:** Audit complete  
+**Status:** Blockers resolved; external release checks remain
 **Date:** 2026-07-17  
 **Branch:** `feature/publication-first-products`  
 **Audited revision:** `53d7f8419aea5c13dc994acebd851dab427f211f`  
@@ -9,30 +9,25 @@
 ## 1. Executive Summary
 
 CyberMedica Storefront is technically buildable and its Storefront boundary is
-well enforced. The final clean run passed all 328 tests, ESLint, TypeScript, the
-Next.js production build, and whitespace validation. The primary Storefront
+well enforced. The final blocker-resolution run passed all 331 tests, ESLint,
+TypeScript, the Next.js production build, and whitespace validation. The primary Storefront
 routes read through `lib/storefront`; no imports from Review, Publication,
 Research, Supabase Projection, or the FS510 vertical were found in their pages,
 loaders, or public Storefront components.
 
-The release verdict is **Not Ready** for an indexable production launch. This is
-not caused by a build or security failure. Two previously documented release
-gates remain open:
+The two repository blockers found by the initial audit are resolved:
 
-1. FS510 has two indexable, self-canonical product identities,
-   `/catalog/fs510` and `/products/fs510`, and both are emitted in the sitemap.
-   RFC-022 identifies this as a duplicate-entity and keyword-cannibalization
-   risk and recommends making the catalog URL the primary identity.
-2. `Ambu VivaSight 2 DLT` has no image. It therefore fails the catalog-ready
-   media rule defined by RFC-027 for a public `active` or `on_request` product.
+1. `/products/fs510` is now `noindex, follow` and absent from the sitemap;
+   `/catalog/fs510` remains the only indexable FS510 product URL and the Product
+   JSON-LD canonical.
+2. `Ambu VivaSight 2 DLT` now has a validated local JPEG with descriptive alt
+   text. The image is consumed by catalog/product UI, Open Graph, Twitter, and
+   Product JSON-LD through the existing Storefront media field.
 
-The application may be deployed to a protected Preview now. Production may be
-deployed with indexing disabled for final smoke testing, but public indexing
-must not be enabled until the two gates above are closed and the production
-environment checklist is confirmed.
-
-No functional code, route, data, UI, Storefront API, FS510, Review, or
-Publication file was changed by this RFC.
+The release verdict is **Ready with Minor Limitations**. A protected Preview and
+the external production checklist below are still required before indexing is
+enabled. The resolution does not change URLs, FS510 UI/functionality,
+Storefront API, Review, Publication, or pipeline architecture.
 
 ## 2. Audit Method and Boundary
 
@@ -122,9 +117,9 @@ documented and remain unresolved rather than silently reclassified.
 
 | Check | Result | Evidence |
 | --- | --- | --- |
-| Tests | Pass | 328 passed, 0 failed, 0 skipped |
-| Production build | Pass | Next.js 16.2.9, compiled in 1.607 s |
-| Build TypeScript phase | Pass | completed in 1.601 s |
+| Tests | Pass | 331 passed, 0 failed, 0 skipped |
+| Production build | Pass | Next.js 16.2.9, compiled in 1.637 s |
+| Build TypeScript phase | Pass | completed in 1.650 s |
 | ESLint | Pass | no warnings or errors |
 | Standalone TypeScript | Pass | no diagnostics |
 | `git diff --check` | Pass | no whitespace errors |
@@ -163,20 +158,19 @@ indexing; Preview and unconfigured environments remain noindex. The production
 release owner must verify the flag after deployment rather than assume it from
 build success.
 
-### 5.2 Blocking duplicate product identity
+### 5.2 FS510 product identity resolution
 
-Current output contains both:
+Current output applies the RFC-022 specialist-surface option:
 
 ```text
-/catalog/fs510   -> canonical /catalog/fs510   -> sitemap entry
-/products/fs510  -> canonical /products/fs510  -> sitemap entry
+/catalog/fs510   -> canonical /catalog/fs510   -> sitemap entry; indexable
+/products/fs510  -> canonical /products/fs510  -> noindex, follow; no sitemap entry
 ```
 
-Both describe the same product with overlapping intent. The content is not
-byte-identical, but two self-canonicals split entity and ranking signals. Before
-indexing, execute the RFC-022 Hybrid decision: make `/catalog/fs510` primary and
-either permanently redirect the vertical URL or explicitly make the specialist
-surface noindex and remove it from the sitemap.
+The vertical URL and functionality remain available for specialist users, but
+it no longer competes as a search result. Product structured data continues to
+emit `https://cybermedica.ru/catalog/fs510`; the vertical does not emit
+Storefront Product JSON-LD.
 
 There is no pagination today. Search and filtered-query canonicals intentionally
 consolidate to their base pages. Search and Compare correctly omit JSON-LD
@@ -221,7 +215,7 @@ The current Storefront baseline remains the RFC-027 baseline:
 | Products with key features | 2 / 2 |
 | Products with specifications | 2 / 2 |
 | Products with an official document | 2 / 2 |
-| Products with an image | 1 / 2 |
+| Products with an image | 2 / 2 |
 | Manufacturers | 2 |
 | Manufacturers with complete descriptions/country | 2 / 2 |
 | Manufacturers with logo | 0 / 2 |
@@ -231,9 +225,9 @@ The current Storefront baseline remains the RFC-027 baseline:
 
 The aggregate schema is valid: entity IDs/slugs are unique, references resolve,
 strict public schemas reject unknown internal fields, and summary counts match.
-However, schema-valid is not equivalent to catalog-ready. Ambu VivaSight 2 DLT
-is public without an image and fails the RFC-027 readiness rule. Manufacturer
-logos and category images are non-blocking enrichment warnings.
+Both current products now meet the RFC-027 catalog-ready minimum, including a
+usable local image and descriptive alt text. Manufacturer logos and category
+images remain non-blocking enrichment warnings.
 
 The repository does not yet implement the separate content-quality audit gate
 recommended by RFC-027. Root-relative FS510 assets exist; external document
@@ -286,12 +280,13 @@ Legend: `[x]` complete, `[!]` release condition, `[ ]` external/manual step.
 - [x] No Review, Publication, Research, Supabase, or FS510 imports in the
   Storefront page/component boundary.
 - [x] Storefront schemas reject internal workflow metadata.
-- [!] Resolve the dual FS510 public product identity per RFC-022.
+- [x] `/catalog/fs510` is the sole indexable FS510 product URL; the specialist
+  vertical is noindex-follow and excluded from sitemap.
 - [x] Relevant architecture and migration documents match the implementation.
 
 ### Testing and build
 
-- [x] 328 automated tests pass.
+- [x] 331 automated tests pass.
 - [x] Production build passes.
 - [x] ESLint passes.
 - [x] Standalone TypeScript passes.
@@ -304,7 +299,7 @@ Legend: `[x]` complete, `[!]` release condition, `[ ]` external/manual step.
 - [x] Metadata, Open Graph, Twitter, robots, and JSON-LD are present where
   appropriate.
 - [x] Search/query pages are noindex-follow when production indexing is on.
-- [!] Remove, redirect, or noindex the duplicate FS510 product identity.
+- [x] `/products/fs510` is noindex-follow and absent from sitemap.
 - [ ] Validate deployed robots and sitemap responses.
 - [ ] Validate representative product/manufacturer JSON-LD with external tools.
 - [ ] Set `CYBERMEDICA_ALLOW_INDEXING=1` only after every blocking item passes.
@@ -314,8 +309,8 @@ Legend: `[x]` complete, `[!]` release condition, `[ ]` external/manual step.
 - [x] Storefront aggregate schema and references validate.
 - [x] Every product has descriptions, features, specifications, and an official
   document.
-- [!] Add a usable public image and alt text to Ambu VivaSight 2 DLT, or keep
-  the incomplete record hidden until it meets RFC-027.
+- [x] Ambu VivaSight 2 DLT has a usable local product image and descriptive alt
+  text across catalog, product, Open Graph, and Product JSON-LD paths.
 - [ ] Verify external document URLs from the deployed region.
 - [ ] Record content-owner sign-off for product claims and compatibility.
 - [ ] Add the RFC-027 content-quality audit gate before mass import.
@@ -347,8 +342,8 @@ Legend: `[x]` complete, `[!]` release condition, `[ ]` external/manual step.
 
 ### Production blockers
 
-1. Dual self-canonical, sitemap-listed FS510 product routes.
-2. One public product fails the RFC-027 image baseline.
+None in the audited repository scope. The original FS510 indexing conflict and
+Ambu image gap are resolved.
 
 ### Non-blocking warnings
 
@@ -366,11 +361,9 @@ Legend: `[x]` complete, `[!]` release condition, `[ ]` external/manual step.
 
 ### Final assessment
 
-**NOT READY for an indexable production release.**
+**READY WITH MINOR LIMITATIONS.**
 
-The codebase is build- and Preview-ready, and no critical implementation defect
-was found that justified changing functionality in this RFC. Readiness is
-blocked by an SEO identity decision and a content-standard violation, not by
-test quality. Close those two gates, complete the external production checks,
-and rerun this checklist. If they pass, the expected next classification is
-**Ready for Production** without an architectural rewrite.
+The codebase is build- and Preview-ready, the two repository release blockers
+are closed, and no architectural rewrite is required. Production indexing still
+depends on completing the manual environment, deployment, external SEO,
+monitoring, dependency-scan, and smoke-test items above.
