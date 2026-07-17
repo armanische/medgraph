@@ -1,7 +1,8 @@
 import { compareProducts } from "../compare/engine.ts";
 import { getHamiltonPilotComparisonProducts } from "../compare/mock-data.ts";
 import { getCompatibilityResult } from "../compatibility/mock-data.ts";
-import { searchMedicalDevices } from "../search/index.ts";
+import { FilesystemCatalogRepository } from "../storefront/filesystem-catalog-repository.ts";
+import { SearchService } from "../storefront/search-service.ts";
 import { getHamiltonT1TenderCompliance } from "../tender/mock-data.ts";
 import type {
   WorkspaceInsight,
@@ -124,8 +125,12 @@ function buildRecommendations(input: {
   return recommendations;
 }
 
-export function createWorkspaceSession(): WorkspaceSession {
-  const search = searchMedicalDevices("FS510");
+export async function createWorkspaceSession(): Promise<WorkspaceSession> {
+  const query = "FS510";
+  const searchProducts = await new SearchService(
+    new FilesystemCatalogRepository(),
+  ).searchProducts(query);
+  const search = { query, total: searchProducts.length };
   const comparisonProducts = getHamiltonPilotComparisonProducts();
   if (!comparisonProducts.left) {
     throw new Error("Workspace comparison pilot requires a left product.");

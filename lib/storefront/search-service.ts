@@ -35,18 +35,9 @@ export function filterProductsForSearch(
         product.name,
         product.model,
         product.slug,
-        product.shortDescription,
-        product.description,
         manufacturerNames.get(product.manufacturerId) ?? "",
         categoryNames.get(product.categoryId) ?? "",
-        ...product.applicationAreas,
         ...product.keyFeatures,
-        ...product.specifications.flatMap(({ group, label, value, unit }) => [
-          group,
-          label,
-          value,
-          unit ?? "",
-        ]),
       ].join(" "),
     );
     return queryTokens.every((token) => haystack.includes(token));

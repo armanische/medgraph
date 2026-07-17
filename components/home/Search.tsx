@@ -1,17 +1,15 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { useEffect, useMemo, useState } from "react";
 
-interface HomepageSearchProduct {
-  id: string;
-  title: string;
-  model: string;
-  manufacturer: string;
-  category: string;
-  href: string;
-  searchText: string;
-}
+import { SearchService } from "@/lib/storefront/search-service";
+import type {
+  Category,
+  Manufacturer,
+  Product,
+} from "@/lib/storefront/types";
 
 interface HomepageStats {
   productCount: number;
@@ -32,46 +30,46 @@ function SearchIcon() {
   );
 }
 
-function normalizeSearchText(value: string) {
-  return value
-    .toLocaleLowerCase("ru-RU")
-    .replace(/ё/g, "е")
-    .replace(/[^\p{L}\p{N}]+/gu, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
 export default function Search({
   products,
+  manufacturers,
+  categories,
   stats,
 }: {
-  products: readonly HomepageSearchProduct[];
+  products: readonly Product[];
+  manufacturers: readonly Manufacturer[];
+  categories: readonly Category[];
   stats: HomepageStats;
 }) {
   const router = useRouter();
   const [query, setQuery] = useState("");
+  const [results, setResults] = useState<readonly Product[]>([]);
+  const productSearchService = useMemo(
+    () => SearchService.forProducts(products, manufacturers, categories),
+    [categories, manufacturers, products],
+  );
+  const manufacturersById = useMemo(
+    () => new Map(manufacturers.map((manufacturer) => [manufacturer.id, manufacturer])),
+    [manufacturers],
+  );
+  const categoriesById = useMemo(
+    () => new Map(categories.map((category) => [category.id, category])),
+    [categories],
+  );
   const popularQueries = useMemo(
     () => products.map((product) => product.model).filter(Boolean).slice(0, 5),
     [products],
   );
 
-  const results = useMemo(() => {
-    const normalizedQuery = normalizeSearchText(query);
-    if (!normalizedQuery) return [];
-    const tokens = normalizedQuery.split(" ");
-    return products.filter((product) => {
-      const haystack = normalizeSearchText(
-        [
-          product.title,
-          product.model,
-          product.manufacturer,
-          product.category,
-          product.searchText,
-        ].join(" "),
-      );
-      return tokens.every((token) => haystack.includes(token));
+  useEffect(() => {
+    let active = true;
+    void productSearchService.searchProducts(query).then((matches) => {
+      if (active) setResults(matches);
     });
-  }, [products, query]);
+    return () => {
+      active = false;
+    };
+  }, [productSearchService, query]);
 
   function handleSearch() {
     router.push(`/search?q=${encodeURIComponent(query.trim())}`);
@@ -132,13 +130,22 @@ export default function Search({
               <div className="absolute inset-x-0 top-[calc(100%+0.5rem)] z-30 rounded-lg border border-[var(--cm-rule)] bg-white p-2 shadow-[0_12px_40px_rgba(11,19,32,0.12)]">
                 {results.map((product) => (
                   <button
-                    key={product.id}
-                    onClick={() => router.push(product.href)}
-                    className="block w-full rounded-md p-3 text-left transition duration-200 hover:bg-cm-surface-low"
+                    key={product.slug}
+                    onClick={() => router.push(`/catalog/${product.slug}`)}
+                    className="flex w-full items-center gap-3 rounded-md p-3 text-left transition duration-200 hover:bg-cm-surface-low"
                   >
-                    <span className="block text-[13px] font-semibold">{product.title}</span>
-                    <span className="mt-1 block font-mono text-[10px] text-cm-dim">
-                      {product.manufacturer} · {product.category}
+                    <SearchResultImage product={product} />
+                    <span className="min-w-0">
+                      <span className="block text-[13px] font-semibold">
+                        {product.name}
+                      </span>
+                      <span className="mt-1 block font-mono text-[10px] text-cm-dim">
+                        {manufacturersById.get(product.manufacturerId)?.name ??
+                          product.manufacturerId}{" "}
+                        ·{" "}
+                        {categoriesById.get(product.categoryId)?.name ??
+                          product.categoryId}
+                      </span>
                     </span>
                   </button>
                 ))}
@@ -259,5 +266,28 @@ export default function Search({
         </div>
       </div>
     </section>
+  );
+}
+
+function SearchResultImage({ product }: { product: Product }) {
+  const image = product.media.find(({ type }) => type === "image");
+  if (!image) {
+    return (
+      <span className="flex size-10 shrink-0 items-center justify-center rounded-md border border-[var(--cm-rule)] bg-cm-surface-low text-cm-dim">
+        ▧
+      </span>
+    );
+  }
+
+  return (
+    <span className="relative size-10 shrink-0 overflow-hidden rounded-md border border-[var(--cm-rule)] bg-white">
+      <Image
+        src={image.url}
+        alt={image.alt}
+        fill
+        sizes="40px"
+        className="object-contain"
+      />
+    </span>
   );
 }

@@ -127,7 +127,7 @@ test("repository searches public products deterministically", async () => {
   const repository = new FilesystemCatalogRepository(catalogRoot);
 
   assert.deepEqual(
-    (await repository.searchProducts("одноразовая камера")).map(({ slug }) => slug),
+    (await repository.searchProducts("встроенная камера")).map(({ slug }) => slug),
     ["ambu-vivasight-2-dlt"],
   );
   assert.deepEqual(await repository.searchProducts(""), []);

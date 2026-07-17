@@ -1,7 +1,11 @@
 import type { ComparisonResult } from "../compare/types.ts";
 import type { CompatibilityResult } from "../compatibility/types.ts";
-import type { SearchResponse } from "../search/index.ts";
 import type { ComplianceResult } from "../tender/types.ts";
+
+export interface WorkspaceSearchSummary {
+  query: string;
+  total: number;
+}
 
 export interface WorkspaceSelection {
   primaryProductSlug: string;
@@ -30,7 +34,7 @@ export interface WorkspaceSession {
   sessionId: string;
   createdAt: string;
   selection: WorkspaceSelection;
-  search: SearchResponse;
+  search: WorkspaceSearchSummary;
   comparison: ComparisonResult;
   compatibility: CompatibilityResult;
   tender: ComplianceResult;

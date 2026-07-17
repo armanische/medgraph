@@ -1,47 +1,56 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
-import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
+import { useMemo, useState } from "react";
 
-import type { SearchResponse, SearchResult } from "@/lib/search";
+import type {
+  Category,
+  Manufacturer,
+  Product,
+} from "@/lib/storefront/types";
 
-function statusLabel(status: SearchResult["status"]) {
-  const labels: Record<SearchResult["status"], string> = {
-    published: "Опубликовано",
-    publication_ready: "Проверяется",
-    verified: "Опубликовано",
-  };
-  return labels[status];
-}
+function ResultCard({
+  product,
+  manufacturer,
+  category,
+}: {
+  product: Product;
+  manufacturer: string;
+  category: string;
+}) {
+  const image = product.media.find(({ type }) => type === "image");
 
-function ResultCard({ result }: { result: SearchResult }) {
   return (
     <Link
-      href={result.href}
+      href={`/catalog/${product.slug}`}
       className="cm-card block p-5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cm-teal"
     >
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-        <div>
+      <div className="flex items-start gap-4">
+        {image ? (
+          <span className="relative size-14 shrink-0 overflow-hidden rounded-md border border-[var(--cm-rule)] bg-white">
+            <Image
+              src={image.url}
+              alt={image.alt}
+              fill
+              sizes="56px"
+              className="object-contain"
+            />
+          </span>
+        ) : (
+          <span className="flex size-14 shrink-0 items-center justify-center rounded-md border border-[var(--cm-rule)] bg-cm-surface-low text-cm-dim">
+            ▧
+          </span>
+        )}
+        <div className="min-w-0">
           <h2 className="text-lg font-semibold tracking-[-0.015em] text-cm-ink">
-            {result.title}
+            {product.name}
           </h2>
           <p className="mt-2 text-sm leading-6 text-cm-slate">
-            {result.manufacturer} · {result.category}
+            {manufacturer} · {category}
           </p>
-          {result.model ? (
-            <p className="mt-1 font-mono text-xs text-cm-dim">{result.model}</p>
-          ) : null}
         </div>
-        <div className="rounded-md border border-cm-teal/20 bg-cm-teal-soft px-2.5 py-1 font-mono text-[10px] font-semibold text-cm-teal">
-          {statusLabel(result.status)}
-        </div>
-      </div>
-      <div className="mt-4 flex flex-wrap gap-2 text-[11px] text-cm-dim">
-        <span>Обновлено: {result.lastUpdated}</span>
-        {result.matchedFields.length ? (
-          <span>Совпадение: {result.matchedFields.join(", ")}</span>
-        ) : null}
       </div>
     </Link>
   );
@@ -49,10 +58,16 @@ function ResultCard({ result }: { result: SearchResult }) {
 
 export default function SearchExperience({
   initialQuery,
-  response,
+  products,
+  manufacturers,
+  categories,
+  suggestions: storefrontSuggestions,
 }: {
   initialQuery: string;
-  response: SearchResponse;
+  products: readonly Product[];
+  manufacturers: readonly Manufacturer[];
+  categories: readonly Category[];
+  suggestions: readonly string[];
 }) {
   const router = useRouter();
   const [query, setQuery] = useState(initialQuery);
@@ -65,10 +80,17 @@ export default function SearchExperience({
       return [];
     }
   });
-
+  const manufacturersById = useMemo(
+    () => new Map(manufacturers.map((manufacturer) => [manufacturer.id, manufacturer])),
+    [manufacturers],
+  );
+  const categoriesById = useMemo(
+    () => new Map(categories.map((category) => [category.id, category])),
+    [categories],
+  );
   const suggestions = useMemo(
-    () => [...new Set([...recentQueries, ...response.suggestions])].slice(0, 8),
-    [recentQueries, response.suggestions],
+    () => [...new Set([...recentQueries, ...storefrontSuggestions])].slice(0, 8),
+    [recentQueries, storefrontSuggestions],
   );
 
   function submit(nextQuery = query) {
@@ -102,7 +124,7 @@ export default function SearchExperience({
                 if (event.key === "Enter") submit();
               }}
               type="search"
-              placeholder="Производитель, модель, РУ, артикул или категория"
+              placeholder="Производитель, модель, название или категория"
               className="cm-field min-h-12"
             />
           </label>
@@ -132,35 +154,43 @@ export default function SearchExperience({
         </div>
       </section>
 
-      {response.normalizedQuery ? (
+      {initialQuery.trim() ? (
         <div className="flex items-center justify-between gap-4">
           <div className="text-sm text-cm-slate">
             Найдено изделий:{" "}
             <span className="font-mono font-semibold text-cm-ink">
-              {response.total}
+              {products.length}
             </span>
           </div>
-          <div className="cm-label">Точное ранжирование</div>
+          <div className="cm-label">Поиск по каталогу</div>
         </div>
       ) : null}
 
-      {!response.normalizedQuery ? (
+      {!initialQuery.trim() ? (
         <section className="cm-empty-state text-cm-slate">
-          Введите производителя, модель, регистрационный номер, артикул или
-          категорию.
+          Введите производителя, модель, название или категорию.
         </section>
-      ) : response.results.length ? (
+      ) : products.length ? (
         <div className="grid gap-3">
-          {response.results.map((result) => (
-            <ResultCard key={result.id} result={result} />
+          {products.map((product) => (
+            <ResultCard
+              key={product.slug}
+              product={product}
+              manufacturer={
+                manufacturersById.get(product.manufacturerId)?.name ??
+                product.manufacturerId
+              }
+              category={
+                categoriesById.get(product.categoryId)?.name ?? product.categoryId
+              }
+            />
           ))}
         </div>
       ) : (
         <section className="cm-empty-state text-cm-slate">
           <div className="font-semibold text-cm-ink">Ничего не найдено.</div>
           <p className="mt-2">
-            Попробуйте модель, производителя или регистрационный номер без лишних
-            слов.
+            Попробуйте название, модель, производителя или категорию.
           </p>
         </section>
       )}

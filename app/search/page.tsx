@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 
 import SearchExperience from "@/components/search/SearchExperience";
-import { searchMedicalDevices } from "@/lib/search";
+import {
+  categoryService,
+  manufacturerService,
+  productService,
+  searchService,
+} from "@/lib/storefront";
 
 export const metadata: Metadata = {
   title: "Поиск медицинских изделий",
   description:
-    "Профессиональный поиск по медицинским изделиям: производитель, модель, категория, регистрационный номер, артикул и синонимы.",
+    "Поиск медицинского оборудования по названию, модели, производителю и категории.",
   alternates: {
     canonical: "/search",
   },
@@ -18,7 +23,16 @@ export default async function SearchPage({
   searchParams: Promise<{ q?: string }>;
 }) {
   const { q = "" } = await searchParams;
-  const response = searchMedicalDevices(q);
+  const [results, products, manufacturers, categories] = await Promise.all([
+    searchService.searchProducts(q),
+    productService.getActiveProducts(),
+    manufacturerService.getManufacturers(),
+    categoryService.getCategories(),
+  ]);
+  const suggestionProducts = q.trim() ? results : products;
+  const suggestions = [
+    ...new Set(suggestionProducts.map(({ model }) => model).filter(Boolean)),
+  ].slice(0, 8);
 
   return (
     <main className="min-h-screen bg-cm-canvas">
@@ -29,15 +43,20 @@ export default async function SearchPage({
             Поиск медицинских изделий
           </h1>
           <p className="mt-3 max-w-2xl text-sm leading-7 text-cm-slate">
-            Точный поиск по производителю, модели, категории,
-            регистрационному номеру, артикулу, синонимам и сокращениям. Без
-            автоматических предположений и без обхода экспертной проверки.
+            Поиск по названию, модели, производителю, категории и ключевым
+            особенностям оборудования.
           </p>
         </div>
       </header>
 
       <section className="cm-container py-8">
-        <SearchExperience initialQuery={q} response={response} />
+        <SearchExperience
+          initialQuery={q}
+          products={results}
+          manufacturers={manufacturers}
+          categories={categories}
+          suggestions={suggestions}
+        />
       </section>
     </main>
   );

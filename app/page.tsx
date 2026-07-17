@@ -28,35 +28,9 @@ export default async function Home() {
     manufacturerService.getManufacturers(),
     categoryService.getCategories(),
   ]);
-  const manufacturersById = new Map(
-    manufacturers.map((manufacturer) => [manufacturer.id, manufacturer]),
-  );
   const categoriesById = new Map(
     categories.map((category) => [category.id, category]),
   );
-  const searchProducts = products.map((product) => ({
-    id: product.id,
-    title: product.name,
-    model: product.model,
-    manufacturer:
-      manufacturersById.get(product.manufacturerId)?.name ?? product.manufacturerId,
-    category: categoriesById.get(product.categoryId)?.name ?? product.categoryId,
-    href: `/catalog/${product.slug}`,
-    searchText: [
-      product.name,
-      product.model,
-      product.shortDescription,
-      product.description,
-      ...product.applicationAreas,
-      ...product.keyFeatures,
-      ...product.specifications.flatMap(({ group, label, value, unit }) => [
-        group,
-        label,
-        value,
-        unit ?? "",
-      ]),
-    ].join(" "),
-  }));
   const featuredEntries = featuredProducts.map((product) => ({
     id: product.id,
     slug: product.slug,
@@ -79,7 +53,12 @@ export default async function Home() {
 
   return (
     <main className="min-h-screen bg-cm-canvas">
-      <Search products={searchProducts} stats={stats} />
+      <Search
+        products={products}
+        manufacturers={manufacturers}
+        categories={categories}
+        stats={stats}
+      />
       <PlatformStats {...stats} />
       <FeaturedProducts products={featuredEntries} />
       <Categories categories={categoryEntries} />

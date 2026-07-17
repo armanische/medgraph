@@ -12,8 +12,8 @@ export const metadata: Metadata = {
   },
 };
 
-export default function WorkspacePage() {
-  const session = createWorkspaceSession();
+export default async function WorkspacePage() {
+  const session = await createWorkspaceSession();
 
   return (
     <main className="min-h-screen bg-cm-canvas">

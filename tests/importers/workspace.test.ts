@@ -5,8 +5,8 @@ import test from "node:test";
 
 import { createWorkspaceSession } from "../../lib/workspace/mock-data.ts";
 
-test("workspace session is created", () => {
-  const session = createWorkspaceSession();
+test("workspace session is created", async () => {
+  const session = await createWorkspaceSession();
 
   assert.equal(session.sessionId, "workspace_pilot_fs510");
   assert.equal(session.selection.primaryProductSlug, "fs510");
@@ -16,8 +16,8 @@ test("workspace session is created", () => {
   assert.ok(session.tender.summary.totalRequirements > 0);
 });
 
-test("workspace insights use only allowed engine results", () => {
-  const session = createWorkspaceSession();
+test("workspace insights use only allowed engine results", async () => {
+  const session = await createWorkspaceSession();
 
   assert.ok(session.insights.length > 0);
   assert.ok(
@@ -30,12 +30,12 @@ test("workspace insights use only allowed engine results", () => {
   assert.doesNotMatch(JSON.stringify(session.insights), /LLM|AI считает/i);
 });
 
-test("workspace recommendations are deterministic", () => {
-  assert.deepEqual(createWorkspaceSession(), createWorkspaceSession());
+test("workspace recommendations are deterministic", async () => {
+  assert.deepEqual(await createWorkspaceSession(), await createWorkspaceSession());
 });
 
-test("workspace does not include Candidate Claims", () => {
-  const session = createWorkspaceSession();
+test("workspace does not include Candidate Claims", async () => {
+  const session = await createWorkspaceSession();
 
   assert.doesNotMatch(
     JSON.stringify(session),
