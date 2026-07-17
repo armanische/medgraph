@@ -4,6 +4,11 @@ Date: 2026-07-17
 Branch: `feature/publication-first-products`  
 Audit type: static, read-only dependency audit
 
+> Post-audit status: `lib/platform-stats.ts` was removed by RFC-011;
+> `lib/published-catalog.ts`, `lib/search/index.ts`, and their legacy search
+> test were removed by RFC-015. Historical dependency tables below describe
+> the repository at the time of RFC-009.
+
 ## 1. Executive Summary
 
 The six routes in the RFC scope are fully migrated to the Storefront Data Layer:

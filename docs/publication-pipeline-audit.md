@@ -6,6 +6,11 @@ Branch: `feature/publication-first-products`
 
 Scope: dependency audit only; no runtime, data, pipeline, or UI changes
 
+> Post-audit status (RFC-015): the three items classified as **Safe now** —
+> `lib/published-catalog.ts`, `lib/search/index.ts`, and
+> `tests/importers/search.test.ts` — were removed. All **Requires migration**
+> and **Blocked** items below remain in place.
+
 ## 1. Executive Summary
 
 The Storefront migration has removed the legacy file-based Publication Pipeline

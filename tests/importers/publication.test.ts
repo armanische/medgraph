@@ -14,7 +14,6 @@ import {
   type PublicationBuildInput,
 } from "../../scripts/importers/catalog/publication/index.ts";
 import { FIRST_PUBLICATION_PRODUCT_SLUGS } from "../../scripts/importers/catalog/review/index.ts";
-import { getCatalogCardsWithFallback } from "../../lib/published-catalog.ts";
 import {
   createReviewItemSnapshot,
   evaluateItemPublicationEligibility,
@@ -296,19 +295,12 @@ test("public schema validator rejects internal metadata and SHA hashes", () => {
   assert.ok(validation.issues.some((issue) => issue.code === "sha_hash_exposed"));
 });
 
-test("current catalog uses draft fallback when no product is published", () => {
-  const cards = getCatalogCardsWithFallback();
-  assert.ok(cards.length > 0);
-  assert.ok(cards.every((card) => card.displayStatus !== "published"));
-});
-
 test("catalog and manufacturer pages use Storefront services", async () => {
-  const [catalogPage, productPage, manufacturerPage, manufacturersPage, loader] = await Promise.all([
+  const [catalogPage, productPage, manufacturerPage, manufacturersPage] = await Promise.all([
     readFile("app/catalog/page.tsx", "utf8"),
     readFile("app/catalog/[slug]/page.tsx", "utf8"),
     readFile("app/manufacturers/[slug]/page.tsx", "utf8"),
     readFile("app/manufacturers/page.tsx", "utf8"),
-    readFile("lib/published-catalog.ts", "utf8"),
   ]);
   assert.doesNotMatch(catalogPage, /getCatalogCardsWithFallback/u);
   assert.match(catalogPage, /productService\.getActiveProducts\(\)/u);
@@ -326,8 +318,6 @@ test("catalog and manufacturer pages use Storefront services", async () => {
   );
   assert.match(productPage, /product\.documents|product\.specifications/u);
   assert.doesNotMatch(productPage, /SHA-256:/u);
-  assert.match(loader, /summary\.generated\.json/u);
-  assert.match(loader, /getDraftCatalogProduct/u);
 });
 
 test("publication module does not import protected writers", async () => {
