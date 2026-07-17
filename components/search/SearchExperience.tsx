@@ -167,8 +167,23 @@ export default function SearchExperience({
       ) : null}
 
       {!initialQuery.trim() ? (
-        <section className="cm-empty-state text-cm-slate">
-          Введите производителя, модель, название или категорию.
+        <section className="cm-empty-state" aria-labelledby="search-start-title">
+          <div className="cm-empty-icon">⌕</div>
+          <h2 id="search-start-title" className="mt-4 text-sm font-bold">
+            Что вы хотите найти?
+          </h2>
+          <p className="mx-auto mt-2 max-w-md text-xs leading-6 text-cm-slate">
+            Введите производителя, модель, название или категорию либо начните
+            с просмотра каталога.
+          </p>
+          <div className="mt-5 flex flex-wrap justify-center gap-2">
+            <Link href="/catalog" className="cm-button-primary">
+              Открыть каталог
+            </Link>
+            <Link href="/manufacturers" className="cm-button-secondary">
+              Производители
+            </Link>
+          </div>
         </section>
       ) : products.length ? (
         <div className="grid gap-3">
@@ -188,10 +203,26 @@ export default function SearchExperience({
         </div>
       ) : (
         <section className="cm-empty-state text-cm-slate">
+          <div className="cm-empty-icon">⌕</div>
           <div className="font-semibold text-cm-ink">Ничего не найдено.</div>
-          <p className="mt-2">
+          <p className="mx-auto mt-2 max-w-md text-xs leading-6">
             Попробуйте название, модель, производителя или категорию.
           </p>
+          <div className="mt-5 flex flex-wrap justify-center gap-2">
+            <button
+              type="button"
+              onClick={() => {
+                setQuery("");
+                submit("");
+              }}
+              className="cm-button-secondary"
+            >
+              Очистить поиск
+            </button>
+            <Link href="/catalog" className="cm-button-primary">
+              Перейти в каталог
+            </Link>
+          </div>
         </section>
       )}
     </div>

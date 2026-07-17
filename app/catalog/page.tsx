@@ -16,7 +16,7 @@ const catalogDescription =
 export async function generateMetadata({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string }>;
+  searchParams: Promise<{ q?: string; category?: string; manufacturer?: string }>;
 }): Promise<Metadata> {
   const { q = "" } = await searchParams;
   return buildStorefrontMetadata({
@@ -30,9 +30,9 @@ export async function generateMetadata({
 export default async function CatalogPage({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string }>;
+  searchParams: Promise<{ q?: string; category?: string; manufacturer?: string }>;
 }) {
-  const { q = "" } = await searchParams;
+  const { q = "", category = "", manufacturer = "" } = await searchParams;
   const [products, categories, manufacturers, initialSearchResults] =
     await Promise.all([
       productService.getActiveProducts(),
@@ -82,6 +82,8 @@ export default async function CatalogPage({
       <div className="cm-container py-8">
         <CatalogExplorer
           initialQuery={q}
+          initialCategory={category}
+          initialManufacturer={manufacturer}
           products={products}
           categories={categories}
           manufacturers={manufacturers}

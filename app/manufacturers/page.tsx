@@ -86,8 +86,9 @@ export default async function ManufacturersPage() {
       </header>
 
       <section className="cm-container py-7">
-        <div className="grid gap-3 md:grid-cols-2">
-          {directory.map(({ manufacturer, productCount, categories: names }) => (
+        {directory.length > 0 ? (
+          <div className="grid gap-3 md:grid-cols-2">
+            {directory.map(({ manufacturer, productCount, categories: names }) => (
             <Link
               key={manufacturer.slug}
               href={`/manufacturers/${manufacturer.slug}`}
@@ -129,8 +130,28 @@ export default async function ManufacturersPage() {
                 Открыть производителя →
               </div>
             </Link>
-          ))}
-        </div>
+            ))}
+          </div>
+        ) : (
+          <div className="cm-empty-state">
+            <div className="cm-empty-icon">⌁</div>
+            <h2 className="mt-4 text-sm font-bold">
+              Производители пока не добавлены
+            </h2>
+            <p className="mx-auto mt-2 max-w-md text-xs leading-6 text-cm-slate">
+              Перейдите в каталог или воспользуйтесь поиском доступного
+              оборудования.
+            </p>
+            <div className="mt-5 flex flex-wrap justify-center gap-2">
+              <Link href="/catalog" className="cm-button-primary">
+                Открыть каталог
+              </Link>
+              <Link href="/search" className="cm-button-secondary">
+                Начать поиск
+              </Link>
+            </div>
+          </div>
+        )}
       </section>
     </main>
   );

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import ComparisonTable from "@/components/compare/ComparisonTable";
 import { catalogRepository, compareService } from "@/lib/storefront";
@@ -42,8 +43,23 @@ export default async function ComparePage() {
     return (
       <main className="min-h-screen bg-cm-canvas">
         <section className="cm-container py-14">
-          <div className="cm-empty-state text-cm-slate">
-            Для сравнения пока нет доступных товаров.
+          <div className="cm-empty-state" aria-labelledby="compare-empty-title">
+            <div className="cm-empty-icon">⇄</div>
+            <h1 id="compare-empty-title" className="mt-4 text-lg font-bold">
+              Для сравнения пока нет доступных товаров
+            </h1>
+            <p className="mx-auto mt-2 max-w-md text-xs leading-6 text-cm-slate">
+              Откройте каталог или воспользуйтесь поиском, чтобы посмотреть
+              доступное оборудование.
+            </p>
+            <div className="mt-5 flex flex-wrap justify-center gap-2">
+              <Link href="/catalog" className="cm-button-primary">
+                Открыть каталог
+              </Link>
+              <Link href="/search" className="cm-button-secondary">
+                Начать поиск
+              </Link>
+            </div>
           </div>
         </section>
       </main>
@@ -62,6 +78,14 @@ export default async function ComparePage() {
             Сопоставьте описание, технические характеристики, документы и
             совместимость товаров из каталога.
           </p>
+          <div className="mt-5 flex flex-wrap gap-2">
+            <Link href="/catalog" className="cm-button-primary">
+              Выбрать товары в каталоге
+            </Link>
+            <Link href="/search" className="cm-button-secondary">
+              Найти оборудование
+            </Link>
+          </div>
         </div>
       </header>
 
@@ -74,22 +98,38 @@ export default async function ComparePage() {
         </div>
 
         <div className="grid gap-3 lg:grid-cols-2">
-          {result.products.map((product) => (
-            <article
-              key={product.id}
-              className="rounded-lg border border-[var(--cm-rule)] bg-white p-5"
-            >
-              <div className="cm-label">
-                {manufacturersById.get(product.manufacturerId)?.name ?? ""}
-              </div>
-              <h2 className="mt-2 text-xl font-semibold text-cm-ink">
-                {product.name}
-              </h2>
-              <p className="mt-2 text-sm text-cm-slate">
-                {categoriesById.get(product.categoryId)?.name ?? ""} · {product.model}
-              </p>
-            </article>
-          ))}
+          {result.products.map((product) => {
+            const manufacturer = manufacturersById.get(product.manufacturerId);
+            return (
+              <article
+                key={product.id}
+                className="rounded-lg border border-[var(--cm-rule)] bg-white p-5"
+              >
+                {manufacturer ? (
+                  <Link
+                    href={`/manufacturers/${manufacturer.slug}`}
+                    className="cm-label hover:text-cm-teal"
+                  >
+                    {manufacturer.name} →
+                  </Link>
+                ) : null}
+                <h2 className="mt-2 text-xl font-semibold text-cm-ink">
+                  <Link href={`/catalog/${product.slug}`} className="hover:text-cm-teal">
+                    {product.name}
+                  </Link>
+                </h2>
+                <p className="mt-2 text-sm text-cm-slate">
+                  {categoriesById.get(product.categoryId)?.name ?? ""} · {product.model}
+                </p>
+                <Link
+                  href={`/catalog/${product.slug}`}
+                  className="mt-4 inline-flex text-xs font-semibold text-cm-teal"
+                >
+                  Открыть карточку товара →
+                </Link>
+              </article>
+            );
+          })}
         </div>
 
         <ComparisonTable

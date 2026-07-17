@@ -56,6 +56,9 @@ export default async function StorefrontProductPage({
   );
   const category = categories.find(({ id }) => id === product.categoryId);
   const specificationGroups = groupSpecifications(product.specifications);
+  const relatedProductsById = new Map(
+    relatedProducts.map((relatedProduct) => [relatedProduct.id, relatedProduct]),
+  );
 
   return (
     <main className="min-h-screen bg-cm-canvas">
@@ -89,6 +92,13 @@ export default async function StorefrontProductPage({
                 <Link href="/catalog" className="cm-button-secondary">
                   Вернуться в каталог
                 </Link>
+                <Link
+                  href="/compare"
+                  className="cm-button-secondary"
+                  aria-label={`Открыть сравнение для ${product.name}`}
+                >
+                  Открыть сравнение
+                </Link>
               </div>
             </div>
             <div className="cm-card overflow-hidden bg-white/82 p-4 shadow-[0_14px_40px_rgba(11,19,32,0.06)] backdrop-blur">
@@ -96,7 +106,15 @@ export default async function StorefrontProductPage({
                 <div className="cm-label !text-cm-teal">Изделие</div>
               </div>
               <dl className="space-y-3 text-xs">
-                <ProductDetail label="Производитель" value={manufacturer?.name ?? "Не указан"} />
+                {manufacturer ? (
+                  <ProductDetailLink
+                    label="Производитель"
+                    value={manufacturer.name}
+                    href={`/manufacturers/${manufacturer.slug}`}
+                  />
+                ) : (
+                  <ProductDetail label="Производитель" value="Не указан" />
+                )}
                 <ProductDetail label="Модель" value={product.model} />
                 <ProductDetail label="Категория" value={category?.name ?? "Не указана"} />
               </dl>
@@ -196,16 +214,30 @@ export default async function StorefrontProductPage({
               message="Данные о совместимости пока не добавлены."
             >
               <div className="space-y-3">
-                {product.compatibility.map((item) => (
-                  <div key={`${item.label}:${item.note}`} className="cm-card p-4">
-                    <div className="text-sm font-semibold">{item.label}</div>
-                    {item.note && (
-                      <p className="mt-2 text-xs leading-6 text-cm-slate">
-                        {item.note}
-                      </p>
-                    )}
-                  </div>
-                ))}
+                {product.compatibility.map((item) => {
+                  const compatibleProduct = item.compatibleProductId
+                    ? relatedProductsById.get(item.compatibleProductId)
+                    : undefined;
+                  return (
+                    <div key={`${item.label}:${item.note}`} className="cm-card p-4">
+                      {compatibleProduct ? (
+                        <Link
+                          href={`/catalog/${compatibleProduct.slug}`}
+                          className="text-sm font-semibold text-cm-teal hover:underline"
+                        >
+                          {item.label} →
+                        </Link>
+                      ) : (
+                        <div className="text-sm font-semibold">{item.label}</div>
+                      )}
+                      {item.note && (
+                        <p className="mt-2 text-xs leading-6 text-cm-slate">
+                          {item.note}
+                        </p>
+                      )}
+                    </div>
+                  );
+                })}
               </div>
             </ListEmptyWhen>
           </Section>
@@ -217,21 +249,31 @@ export default async function StorefrontProductPage({
             >
               <div className="grid gap-3 md:grid-cols-2">
                 {relatedProducts.map((relatedProduct) => (
-                  <Link
+                  <article
                     key={relatedProduct.slug}
-                    href={`/catalog/${relatedProduct.slug}`}
                     className="cm-card p-4"
                   >
-                    <div className="text-sm font-semibold">
+                    <Link
+                      href={`/catalog/${relatedProduct.slug}`}
+                      className="text-sm font-semibold hover:text-cm-teal"
+                    >
                       {relatedProduct.name}
-                    </div>
+                    </Link>
                     <p className="mt-2 text-xs leading-6 text-cm-slate">
                       {relatedProduct.shortDescription}
                     </p>
                     <div className="mt-3 text-xs font-semibold text-cm-teal">
                       Открыть →
                     </div>
-                  </Link>
+                    <div className="mt-3 border-t border-[var(--cm-rule)] pt-3">
+                      <Link
+                        href="/compare"
+                        className="text-xs font-semibold text-cm-slate hover:text-cm-teal"
+                      >
+                        Сравнить товары →
+                      </Link>
+                    </div>
+                  </article>
                 ))}
               </div>
             </ListEmptyWhen>
@@ -243,7 +285,15 @@ export default async function StorefrontProductPage({
             <dl className="space-y-3 text-xs">
               <ProductDetail label="Название" value={product.name} />
               <ProductDetail label="Модель" value={product.model} />
-              <ProductDetail label="Производитель" value={manufacturer?.name ?? "Не указан"} />
+              {manufacturer ? (
+                <ProductDetailLink
+                  label="Производитель"
+                  value={manufacturer.name}
+                  href={`/manufacturers/${manufacturer.slug}`}
+                />
+              ) : (
+                <ProductDetail label="Производитель" value="Не указан" />
+              )}
               <ProductDetail label="Категория" value={category?.name ?? "Не указана"} />
             </dl>
           </Section>
@@ -342,6 +392,27 @@ function ProductDetail({ label, value }: { label: string; value: string }) {
     <div>
       <dt className="cm-label">{label}</dt>
       <dd className="mt-1 font-semibold">{value}</dd>
+    </div>
+  );
+}
+
+function ProductDetailLink({
+  label,
+  value,
+  href,
+}: {
+  label: string;
+  value: string;
+  href: string;
+}) {
+  return (
+    <div>
+      <dt className="cm-label">{label}</dt>
+      <dd className="mt-1 font-semibold">
+        <Link href={href} className="text-cm-teal hover:underline">
+          {value} →
+        </Link>
+      </dd>
     </div>
   );
 }

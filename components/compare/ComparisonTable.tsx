@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import type {
   Category,
   Manufacturer,
@@ -60,7 +62,12 @@ export default function ComparisonTable({
             </th>
             {result.products.map((product) => (
               <th key={product.id} className="min-w-64 px-4 py-3 font-semibold">
-                {product.name}
+                <Link
+                  href={`/catalog/${product.slug}`}
+                  className="hover:text-cm-teal hover:underline"
+                >
+                  {product.name}
+                </Link>
               </th>
             ))}
           </tr>
@@ -72,7 +79,14 @@ export default function ComparisonTable({
             </th>
             {result.products.map((product) => (
               <td key={product.id} className="border-l border-[var(--cm-rule)] px-4 py-4 text-sm">
-                {manufacturers.get(product.manufacturerId)?.name ?? ""}
+                {manufacturers.get(product.manufacturerId) ? (
+                  <Link
+                    href={`/manufacturers/${manufacturers.get(product.manufacturerId)?.slug}`}
+                    className="font-semibold text-cm-teal hover:underline"
+                  >
+                    {manufacturers.get(product.manufacturerId)?.name}
+                  </Link>
+                ) : null}
               </td>
             ))}
           </tr>

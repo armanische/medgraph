@@ -13,6 +13,8 @@ import type {
 
 interface CatalogExplorerProps {
   initialQuery?: string;
+  initialCategory?: string;
+  initialManufacturer?: string;
   products: readonly Product[];
   categories: readonly Category[];
   manufacturers: readonly Manufacturer[];
@@ -21,14 +23,27 @@ interface CatalogExplorerProps {
 
 export default function CatalogExplorer({
   initialQuery = "",
+  initialCategory = "",
+  initialManufacturer = "",
   products,
   categories,
   manufacturers,
   initialSearchResultIds = [],
 }: CatalogExplorerProps) {
   const [query, setQuery] = useState(initialQuery);
-  const [category, setCategory] = useState("Все категории");
-  const [manufacturer, setManufacturer] = useState("Все производители");
+  const [category, setCategory] = useState(
+    () =>
+      categories.find(
+        (item) => item.id === initialCategory || item.slug === initialCategory,
+      )?.id ?? "Все категории",
+  );
+  const [manufacturer, setManufacturer] = useState(
+    () =>
+      manufacturers.find(
+        (item) =>
+          item.id === initialManufacturer || item.slug === initialManufacturer,
+      )?.id ?? "Все производители",
+  );
   const [searchResultIds, setSearchResultIds] = useState(
     () => new Set(initialSearchResultIds),
   );
@@ -66,6 +81,12 @@ export default function CatalogExplorer({
       return searchMatches && categoryMatches && manufacturerMatches;
     });
   }, [category, manufacturer, products, query, searchResultIds]);
+
+  function resetCatalogView() {
+    setQuery("");
+    setCategory("Все категории");
+    setManufacturer("Все производители");
+  }
 
   return (
     <div className="grid gap-7 lg:grid-cols-[14rem_1fr]">
@@ -195,15 +216,19 @@ export default function CatalogExplorer({
               производителю, модели либо категории изделия.
             </p>
             <div className="mt-5 flex flex-wrap justify-center gap-2">
-              {["Hamilton", "FS510", "Ambu", "ИВЛ"].map((item) => (
-                <button
-                  key={item}
-                  onClick={() => setQuery(item)}
-                  className="rounded-full border border-cm-teal/20 bg-cm-teal-soft px-3 py-1.5 font-mono text-[10px] text-cm-teal transition duration-200 hover:border-cm-teal/50 hover:bg-white"
-                >
-                  {item}
-                </button>
-              ))}
+              <button
+                type="button"
+                onClick={resetCatalogView}
+                className="cm-button-primary"
+              >
+                Сбросить фильтры
+              </button>
+              <Link href="/search" className="cm-button-secondary">
+                Начать новый поиск
+              </Link>
+              <Link href="/manufacturers" className="cm-button-secondary">
+                Производители
+              </Link>
             </div>
           </div>
         )}

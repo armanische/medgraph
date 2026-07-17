@@ -131,17 +131,21 @@ export default async function ManufacturerPage({ params }: ManufacturerPageProps
             <div className="cm-label">Каталог</div>
             <h2 className="mt-2 text-xl font-bold">Изделия производителя</h2>
           </div>
-          <Link href="/request" className="text-xs font-semibold text-cm-teal">
-            Запросить КП →
-          </Link>
+          <div className="flex flex-wrap gap-4">
+            <Link href="/catalog" className="text-xs font-semibold text-cm-slate hover:text-cm-teal">
+              Весь каталог
+            </Link>
+            <Link href="/request" className="text-xs font-semibold text-cm-teal">
+              Запросить КП →
+            </Link>
+          </div>
         </div>
 
         {products.length > 0 ? (
           <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
             {products.map((product) => (
-              <Link
+              <article
                 key={product.slug}
-                href={`/catalog/${product.slug}`}
                 className="group cm-card flex min-h-56 flex-col p-5"
               >
                 <div className="font-mono text-[9px] uppercase tracking-[0.08em] text-cm-dim">
@@ -149,15 +153,32 @@ export default async function ManufacturerPage({ params }: ManufacturerPageProps
                     "Медицинское оборудование"}
                 </div>
                 <h3 className="mt-4 text-sm font-bold leading-5">
-                  {product.name}
+                  <Link
+                    href={`/catalog/${product.slug}`}
+                    className="hover:text-cm-teal"
+                  >
+                    {product.name}
+                  </Link>
                 </h3>
                 <p className="mt-3 text-xs leading-6 text-cm-slate">
                   {product.shortDescription}
                 </p>
-                <div className="mt-auto border-t border-[var(--cm-rule)] pt-4 text-xs font-semibold text-cm-dim group-hover:text-cm-teal">
-                  Открыть карточку →
+                <div className="mt-auto flex flex-wrap items-center justify-between gap-3 border-t border-[var(--cm-rule)] pt-4 text-xs font-semibold">
+                  <Link
+                    href={`/catalog/${product.slug}`}
+                    className="text-cm-teal"
+                  >
+                    Открыть карточку →
+                  </Link>
+                  <Link
+                    href="/compare"
+                    aria-label={`Открыть сравнение для ${product.name}`}
+                    className="text-cm-slate hover:text-cm-teal"
+                  >
+                    Сравнить
+                  </Link>
                 </div>
-              </Link>
+              </article>
             ))}
           </div>
         ) : (
@@ -165,8 +186,20 @@ export default async function ManufacturerPage({ params }: ManufacturerPageProps
             <div className="cm-empty-icon">⌁</div>
             <h3 className="mt-4 text-sm font-bold">Товары пока не добавлены</h3>
             <p className="mx-auto mt-2 max-w-md text-xs leading-6 text-cm-slate">
-              Товары этого производителя появятся после обновления каталога.
+              Откройте общий каталог или воспользуйтесь поиском, чтобы найти
+              оборудование других производителей.
             </p>
+            <div className="mt-5 flex flex-wrap justify-center gap-2">
+              <Link href="/catalog" className="cm-button-primary">
+                Открыть каталог
+              </Link>
+              <Link href="/search" className="cm-button-secondary">
+                Начать поиск
+              </Link>
+              <Link href="/manufacturers" className="cm-button-secondary">
+                Все производители
+              </Link>
+            </div>
           </div>
         )}
       </section>
