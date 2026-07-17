@@ -590,7 +590,7 @@ test("generated research data and per-product reports exist", async () => {
   );
 });
 
-test("draft product UI never shows CyberMedica Verified", async () => {
+test("storefront product UI contains no internal verification state", async () => {
   const files = await Promise.all(
     ["app/catalog/[slug]/page.tsx"].map((file) =>
       readFile(resolve(process.cwd(), file), "utf8"),
@@ -598,8 +598,7 @@ test("draft product UI never shows CyberMedica Verified", async () => {
   );
   const source = files.join("\n");
   assert.doesNotMatch(source, /CyberMedica Verified|РУ · подтверждено|verified badge/i);
-  assert.match(source, /Проверяется/);
-  assert.match(source, /candidate/i);
+  assert.doesNotMatch(source, /candidate|evidence|readiness|coverage/i);
 });
 
 test("knowledge engine has no forbidden writes or publication", async () => {

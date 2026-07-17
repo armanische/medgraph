@@ -302,7 +302,7 @@ test("current catalog uses draft fallback when no product is published", () => {
   assert.ok(cards.every((card) => card.displayStatus !== "published"));
 });
 
-test("product and manufacturers continue to read the Published Catalog", async () => {
+test("catalog pages use Storefront while manufacturers retain their legacy source", async () => {
   const [catalogPage, productPage, manufacturerPage, manufacturersPage, loader] = await Promise.all([
     readFile("app/catalog/page.tsx", "utf8"),
     readFile("app/catalog/[slug]/page.tsx", "utf8"),
@@ -312,10 +312,11 @@ test("product and manufacturers continue to read the Published Catalog", async (
   ]);
   assert.doesNotMatch(catalogPage, /getCatalogCardsWithFallback/u);
   assert.match(catalogPage, /productService\.getActiveProducts\(\)/u);
-  assert.match(productPage, /PublishedProductPage/u);
+  assert.doesNotMatch(productPage, /PublishedProductPage|getPublishedProduct/u);
+  assert.match(productPage, /productService\.getProductBySlug\(slug\)/u);
   assert.match(manufacturerPage, /getPublishedManufacturerProducts/u);
   assert.match(manufacturersPage, /getPublishedCatalog/u);
-  assert.match(productPage, /officialSources|specifications|updatedAt/u);
+  assert.match(productPage, /product\.documents|product\.specifications/u);
   assert.doesNotMatch(productPage, /SHA-256:/u);
   assert.match(loader, /summary\.generated\.json/u);
   assert.match(loader, /getDraftCatalogProduct/u);

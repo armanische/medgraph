@@ -31,6 +31,17 @@ export class ProductService {
     return products.filter(({ status }) => PUBLIC_PRODUCT_STATUSES.has(status));
   }
 
+  async getRelatedProducts(product: Pick<Product, "relatedProductIds">) {
+    if (product.relatedProductIds.length === 0) return [];
+
+    const products = await this.repository.getActiveProducts();
+    const productsById = new Map(products.map((item) => [item.id, item]));
+    return product.relatedProductIds.flatMap((id) => {
+      const relatedProduct = productsById.get(id);
+      return relatedProduct ? [relatedProduct] : [];
+    });
+  }
+
   getFeaturedProducts() {
     return this.repository.getFeaturedProducts();
   }
