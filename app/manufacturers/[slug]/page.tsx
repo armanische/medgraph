@@ -3,12 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import JsonLd from "@/components/seo/JsonLd";
 import {
   catalogRepository,
   manufacturerService,
   productService,
 } from "@/lib/storefront";
 import { buildStorefrontMetadata } from "@/lib/storefront/seo";
+import { buildManufacturerStructuredData } from "@/lib/storefront/structured-data";
 
 interface ManufacturerPageProps {
   params: Promise<{ slug: string }>;
@@ -61,6 +63,7 @@ export default async function ManufacturerPage({ params }: ManufacturerPageProps
 
   return (
     <main className="min-h-screen bg-cm-canvas">
+      <JsonLd data={buildManufacturerStructuredData(manufacturer)} />
       <section className="cm-container py-8">
         <Link href="/manufacturers" className="text-xs font-semibold text-cm-teal">
           ← Все производители

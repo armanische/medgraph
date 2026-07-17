@@ -2,17 +2,21 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+import JsonLd from "@/components/seo/JsonLd";
 import {
   catalogRepository,
   manufacturerService,
   productService,
 } from "@/lib/storefront";
 import { buildStorefrontMetadata } from "@/lib/storefront/seo";
+import { buildCollectionPageStructuredData } from "@/lib/storefront/structured-data";
+
+const manufacturersDescription =
+  "Производители медицинского оборудования, представленные в каталоге CyberMedica.";
 
 export const metadata: Metadata = buildStorefrontMetadata({
   title: "Производители медицинских изделий",
-  description:
-    "Производители медицинского оборудования, представленные в каталоге CyberMedica.",
+  description: manufacturersDescription,
   canonical: "/manufacturers",
 });
 
@@ -47,6 +51,13 @@ export default async function ManufacturersPage() {
 
   return (
     <main className="min-h-screen bg-cm-canvas">
+      <JsonLd
+        data={buildCollectionPageStructuredData({
+          name: "Производители медицинских изделий",
+          description: manufacturersDescription,
+          path: "/manufacturers",
+        })}
+      />
       <header className="border-b border-[var(--cm-rule)] bg-[linear-gradient(135deg,#ffffff_0%,#f6fafc_58%,#e8f5f7_100%)]">
         <div className="cm-container py-8">
           <div className="cm-label">Каталог производителей</div>

@@ -13,6 +13,7 @@ interface StorefrontMetadataInput {
   description: string;
   canonical: `/${string}` | "/";
   image?: StorefrontSeoImage;
+  noindexFollow?: boolean;
 }
 
 export interface StorefrontBreadcrumbItem {
@@ -25,6 +26,7 @@ export function buildStorefrontMetadata({
   description,
   canonical,
   image,
+  noindexFollow = false,
 }: StorefrontMetadataInput): Metadata {
   const images = image ? [{ url: image.url, alt: image.alt }] : undefined;
   const allowIndexing = process.env.CYBERMEDICA_ALLOW_INDEXING === "1";
@@ -34,7 +36,7 @@ export function buildStorefrontMetadata({
     description,
     alternates: { canonical },
     robots: {
-      index: allowIndexing,
+      index: allowIndexing && !noindexFollow,
       follow: allowIndexing,
     },
     openGraph: {
@@ -69,5 +71,10 @@ export function buildBreadcrumbJsonLd(items: StorefrontBreadcrumbItem[]) {
 }
 
 export function serializeStorefrontJsonLd(value: unknown) {
-  return JSON.stringify(value).replaceAll("<", "\\u003c");
+  return JSON.stringify(value)
+    .replaceAll("&", "\\u0026")
+    .replaceAll("<", "\\u003c")
+    .replaceAll(">", "\\u003e")
+    .replaceAll("\u2028", "\\u2028")
+    .replaceAll("\u2029", "\\u2029");
 }

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 
+import JsonLd from "@/components/seo/JsonLd";
 import { catalogRepository, productService } from "@/lib/storefront";
 import type {
   Product,
@@ -11,6 +12,7 @@ import type {
   ProductSpecification,
 } from "@/lib/storefront/types";
 import { buildStorefrontMetadata } from "@/lib/storefront/seo";
+import { buildProductStructuredData } from "@/lib/storefront/structured-data";
 
 export async function generateStaticParams() {
   const products = await productService.getActiveProducts();
@@ -57,6 +59,9 @@ export default async function StorefrontProductPage({
 
   return (
     <main className="min-h-screen bg-cm-canvas">
+      <JsonLd
+        data={buildProductStructuredData({ product, manufacturer, category })}
+      />
       <section className="border-b border-[var(--cm-rule)] bg-[linear-gradient(135deg,#ffffff_0%,#f6fafc_56%,#e8f5f7_100%)]">
         <div className="cm-container py-10">
           <div className="cm-label">

@@ -82,7 +82,31 @@ test("breadcrumb JSON-LD is absolute deterministic and safely serialized", () =>
     },
   ]);
   assert.equal(serializeStorefrontJsonLd(breadcrumb).includes("<"), false);
-  assert.match(serializeStorefrontJsonLd(breadcrumb), /\\u003cоборудования>/u);
+  assert.match(
+    serializeStorefrontJsonLd(breadcrumb),
+    /\\u003cоборудования\\u003e/u,
+  );
+});
+
+test("query metadata can be noindex-follow without weakening the environment gate", () => {
+  const previous = process.env.CYBERMEDICA_ALLOW_INDEXING;
+  process.env.CYBERMEDICA_ALLOW_INDEXING = "1";
+  try {
+    const metadata = buildStorefrontMetadata({
+      title: "Search",
+      description: "Search results",
+      canonical: "/search",
+      noindexFollow: true,
+    });
+
+    assert.deepEqual(metadata.robots, { index: false, follow: true });
+  } finally {
+    if (previous === undefined) {
+      delete process.env.CYBERMEDICA_ALLOW_INDEXING;
+    } else {
+      process.env.CYBERMEDICA_ALLOW_INDEXING = previous;
+    }
+  }
 });
 
 test("Storefront sitemap and metadata share one site URL constant", async () => {

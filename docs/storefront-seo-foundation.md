@@ -19,8 +19,9 @@ metadata were inconsistent:
   inherited generic Twitter metadata;
 - canonical, title, and description objects were repeated across seven files;
 - the site URL was independently declared by layout, robots, and sitemap;
-- no audited Storefront route emitted JSON-LD;
-- none had a semantic breadcrumb trail or BreadcrumbList structured data;
+- no audited Storefront route emitted JSON-LD before RFC-024;
+- none had a semantic breadcrumb trail or BreadcrumbList structured data before
+  RFC-024;
 - pagination is not implemented on the audited routes.
 
 RFC-023 introduces `lib/storefront/seo.ts` as the Storefront metadata boundary.
@@ -34,11 +35,10 @@ Every audited route now calls `buildStorefrontMetadata()`, which supplies:
 - optional social image for products/manufacturers;
 - a shared site URL/name.
 
-The helper also provides a deterministic BreadcrumbList builder and a JSON-LD
-serializer that escapes `<` as `\u003c`, following the installed Next.js 16.2.9
-guidance. No JSON-LD script is emitted yet: schema semantics should be reviewed
-and validated before publication rather than inferred automatically from
-Storefront records.
+The helper also provides a deterministic BreadcrumbList builder and a safe
+JSON-LD serializer. RFC-024 now uses those primitives through centralized schema
+builders and a server-only JSON-LD component. The schema layer remains
+conservative and consumes Storefront records only.
 
 Existing staged changes under `data/public/**` and `data/review-decisions/**`
 were treated as user-owned state and were not changed.
@@ -53,13 +53,13 @@ Legend:
 
 | Route | Metadata API | Title / description | Canonical / alternates | Robots | Open Graph | Twitter | Breadcrumbs | JSON-LD | Pagination | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `/` | Static `metadata` | Storefront-specific | `/`; canonical only | Explicit helper policy | Complete website OG | `summary` | None | None emitted | N/A | Foundation |
-| `/catalog` | Static `metadata` | Catalog-specific | `/catalog`; query `q` consolidates to base canonical | Explicit helper policy | Complete website OG | `summary` | None | None emitted | N/A | Foundation |
-| `/catalog/[slug]` | `generateMetadata()` | Storefront Product name + short description | `/catalog/{slug}` | Explicit helper policy | Complete, with first product image when available | `summary_large_image` with image, otherwise `summary` | UI has a catalog label/link but no semantic trail | None emitted | N/A | Foundation |
-| `/manufacturers` | Static `metadata` | Directory-specific | `/manufacturers` | Explicit helper policy | Complete website OG | `summary` | None | None emitted | N/A | Foundation |
-| `/manufacturers/[slug]` | `generateMetadata()` | Manufacturer name + short description | `/manufacturers/{slug}` | Explicit helper policy | Complete, with logo when available | `summary_large_image` with logo, otherwise `summary` | Back-link only, not a semantic trail | None emitted | N/A | Foundation |
+| `/` | Static `metadata` | Storefront-specific | `/`; canonical only | Explicit helper policy | Complete website OG | `summary` | None | `WebSite`, `Organization` | N/A | Complete |
+| `/catalog` | `generateMetadata()` | Catalog-specific | `/catalog`; query `q` consolidates to base canonical | Query pages: noindex-follow | Complete website OG | `summary` | None | `CollectionPage` | N/A | Complete |
+| `/catalog/[slug]` | `generateMetadata()` | Storefront Product name + short description | `/catalog/{slug}` | Explicit helper policy | Complete, with first product image when available | `summary_large_image` with image, otherwise `summary` | Non-visual canonical trail | `Product`, `BreadcrumbList` | N/A | Complete |
+| `/manufacturers` | Static `metadata` | Directory-specific | `/manufacturers` | Explicit helper policy | Complete website OG | `summary` | None | `CollectionPage` | N/A | Complete |
+| `/manufacturers/[slug]` | `generateMetadata()` | Manufacturer name + short description | `/manufacturers/{slug}` | Explicit helper policy | Complete, with logo when available | `summary_large_image` with logo, otherwise `summary` | Non-visual canonical trail | `Organization`, `BreadcrumbList` | N/A | Complete |
 | `/compare` | Static `metadata` | Comparison-specific | `/compare` | Explicit helper policy | Complete website OG | `summary` | None | None emitted | N/A | Foundation |
-| `/search` | Static `metadata` | Search-specific | `/search`; query `q` consolidates to base canonical | Explicit helper policy | Complete website OG | `summary` | None | None emitted | N/A | Foundation |
+| `/search` | `generateMetadata()` | Search-specific | `/search`; query `q` consolidates to base canonical | Query pages: noindex-follow | Complete website OG | `summary` | None | Deliberately none | N/A | Complete |
 
 ### Routes explicitly outside RFC-023
 
@@ -143,32 +143,17 @@ routes and equivalent localized content exist.
 
 ## 4. Structured Data
 
-No audited Storefront page currently emits an
-`application/ld+json` script. This is recorded as a deliberate pending layer,
-not silently marked complete.
+RFC-024 implements the reviewed schema mapping through
+`lib/storefront/structured-data.ts` and
+`components/seo/JsonLd.tsx`. Homepage, catalog, product, manufacturer directory,
+and manufacturer detail pages now emit conservative JSON-LD. Search and compare
+deliberately emit none.
 
-RFC-023 adds two safe primitives:
-
-1. `buildBreadcrumbJsonLd()` creates absolute, ordered BreadcrumbList records.
-2. `serializeStorefrontJsonLd()` escapes `<` to prevent raw Storefront strings
-   from becoming script markup.
-
-Recommended future schema mapping:
-
-| Route | Candidate schema | Required review |
-| --- | --- | --- |
-| `/` | `WebSite` + `Organization`, optional `SearchAction` | Confirm public search target template and organization identity fields |
-| `/catalog` | `CollectionPage` + `ItemList` | Define list limits and whether filtered query pages are represented |
-| `/catalog/[slug]` | `Product` + `BreadcrumbList` | Do not add `Offer`, price, availability, rating, GTIN, or certification unless real public data exists |
-| `/manufacturers` | `CollectionPage` + `ItemList` | Decide whether entries are `Organization` or `Brand` for this catalog |
-| `/manufacturers/[slug]` | `Organization`/`Brand` + `BreadcrumbList` | Validate website/logo/country semantics and product relationships |
-| `/compare` | `WebPage` + `BreadcrumbList` | Avoid representing comparison metrics as reviews or ratings |
-| `/search` | `SearchResultsPage` + `BreadcrumbList` | Decide query-page indexing policy first |
-
-Structured data should be validated with Schema Markup Validator and Google's
-Rich Results Test before release. Storefront Product must remain public-safe;
-Review, Evidence, Verification, Publication, SHA, artifact paths, and internal
-IDs must never enter JSON-LD.
+Product specifications map to `PropertyValue`. Offers, price, availability,
+ratings, reviews, GTIN, registration, verification, provenance, internal IDs,
+artifact paths, and checksums are prohibited. Catalog directories use
+`CollectionPage` without a huge `ItemList`. Full contracts and validation are
+documented in `docs/storefront-structured-data.md`.
 
 ## 5. Canonical Strategy
 
@@ -191,15 +176,10 @@ duplicate URL declaration between Storefront metadata and sitemap.
 
 ### Query parameters
 
-`/catalog?q=...` and `/search?q=...` currently canonicalize to their base route.
-This consolidates query variations, but both routes remain indexable when the
-global indexing flag is enabled. Before public scale, choose one explicit rule:
-
-- keep query pages crawlable but canonicalize them to the base; or
-- return `noindex, follow` when a non-empty query is present.
-
-The second option would require `generateMetadata({ searchParams })` and is not
-implemented by this RFC.
+`/catalog?q=...` and `/search?q=...` canonicalize to their base route and return
+`noindex, follow` when the global indexing flag is enabled. Environments with
+indexing disabled retain `noindex, nofollow`. Empty-query base pages use the
+normal environment-controlled policy.
 
 ### Pagination
 
@@ -210,22 +190,16 @@ to page 1.
 
 ## 6. Risks
 
-1. **No JSON-LD today.** Search engines receive good metadata but no explicit
-   entity/list/breadcrumb graph.
-2. **No semantic Storefront breadcrumbs.** Dynamic pages show navigation links,
-   but not a consistent trail or BreadcrumbList.
-3. **Query-page crawl policy is implicit.** Search and catalog query variants
-   are canonicalized but not conditionally noindexed.
-4. **Static pages lack branded social images.** They use valid summary cards but
+1. **Static pages lack branded social images.** They use valid summary cards but
    have weaker share previews than product/manufacturer pages with media.
-5. **Root metadata retains legacy positioning.** Audited routes override their
+2. **Root metadata retains legacy positioning.** Audited routes override their
    title/description/social fields, but non-Storefront routes may still inherit
    old “expert knowledge” language. That requires a broader site-positioning
    RFC, not an FS510/Storefront-only change.
-6. **No automated rendered-head integration test.** Unit/source tests validate
-   helper contracts and usage; a future browser smoke should inspect actual
-   canonical, robots, OG, Twitter, and JSON-LD tags in Preview.
-7. **Environment-dependent indexing.** A production deployment with the flag
+3. **External validator checks remain a release step.** Automated tests and the
+   production build validate output locally; Schema Markup Validator and Rich
+   Results Test still require a deployed public URL.
+4. **Environment-dependent indexing.** A production deployment with the flag
    unset intentionally emits noindex. Release checks must verify the intended
    value rather than assume indexing.
 
@@ -239,14 +213,13 @@ to page 1.
   canonical through the helper.
 - Keep FS510 vertical outside this helper until its route strategy is executed.
 
-### Next safe SEO RFC
+### Structured data — completed by RFC-024
 
-1. Add a non-visual JSON-LD component that uses the safe serializer.
-2. Roll out BreadcrumbList to product and manufacturer detail pages.
-3. Add conservative Product JSON-LD without price/rating/availability claims.
-4. Add WebSite/Organization and CollectionPage mappings.
-5. Validate rendered markup in Preview and external validators.
-6. Decide query-page noindex policy.
+- Use a non-visual server-only JSON-LD component and shared safe serializer.
+- Emit BreadcrumbList on product and manufacturer detail pages.
+- Emit conservative Product JSON-LD without commercial or verification claims.
+- Emit WebSite/Organization and CollectionPage mappings.
+- Apply explicit noindex-follow metadata to non-empty search query pages.
 
 ### Later improvements
 
@@ -257,6 +230,6 @@ to page 1.
 - add browser-level SEO smoke checks for resolved absolute URLs and metadata
   inheritance.
 
-The foundation intentionally separates reliable metadata normalization from
-structured-data claims. Metadata is unified now; JSON-LD should be introduced
-only with verified public semantics.
+The foundation keeps metadata normalization and structured-data claims as
+separate modules. RFC-024 introduces JSON-LD only for reviewed, public
+Storefront semantics; future schemas must preserve the same fail-closed rule.

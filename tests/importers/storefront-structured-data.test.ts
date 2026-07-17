@@ -1,0 +1,182 @@
+import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
+import { resolve } from "node:path";
+import test from "node:test";
+
+import { FilesystemCatalogRepository } from "../../lib/storefront/filesystem-catalog-repository.ts";
+import {
+  serializeStorefrontJsonLd,
+  STOREFRONT_SITE_URL,
+} from "../../lib/storefront/seo.ts";
+import {
+  buildCollectionPageStructuredData,
+  buildHomepageStructuredData,
+  buildManufacturerStructuredData,
+  buildProductStructuredData,
+} from "../../lib/storefront/structured-data.ts";
+
+const root = process.cwd();
+const repository = new FilesystemCatalogRepository(
+  resolve(root, "data/storefront"),
+);
+
+test("JsonLd is a server-only layout-neutral script using the shared serializer", async () => {
+  const source = await readFile("components/seo/JsonLd.tsx", "utf8");
+
+  assert.doesNotMatch(source, /["']use client["']/u);
+  assert.doesNotMatch(source, /next\/script/u);
+  assert.match(source, /type="application\/ld\+json"/u);
+  assert.match(source, /serializeStorefrontJsonLd\(data\)/u);
+  assert.match(source, /StorefrontStructuredData/u);
+});
+
+test("safe JSON-LD serialization escapes script-sensitive characters and remains valid JSON", () => {
+  const value = {
+    text: "</script><tag>&\u2028line\u2029end",
+  };
+  const serialized = serializeStorefrontJsonLd(value);
+
+  assert.doesNotMatch(serialized, /<|>|&|\u2028|\u2029/u);
+  assert.match(serialized, /\\u003c\/script\\u003e/u);
+  assert.match(serialized, /\\u0026/u);
+  assert.match(serialized, /\\u2028/u);
+  assert.match(serialized, /\\u2029/u);
+  assert.deepEqual(JSON.parse(serialized), value);
+});
+
+test("homepage schema contains only conservative WebSite and Organization data", () => {
+  const schemas = buildHomepageStructuredData("Каталог оборудования");
+
+  assert.deepEqual(
+    schemas.map((schema) => schema["@type"]),
+    ["WebSite", "Organization"],
+  );
+  assert.equal(schemas[0].url, `${STOREFRONT_SITE_URL}/`);
+  assert.equal(schemas[0].description, "Каталог оборудования");
+  assert.equal(schemas[1].logo, undefined);
+  assert.equal(schemas[1].contactPoint, undefined);
+  assert.equal(schemas[1].sameAs, undefined);
+});
+
+test("catalog and manufacturer directories use CollectionPage without a full ItemList", () => {
+  const schema = buildCollectionPageStructuredData({
+    name: "Каталог",
+    description: "Каталог оборудования",
+    path: "/catalog",
+  });
+
+  assert.equal(schema["@type"], "CollectionPage");
+  assert.equal(schema.url, `${STOREFRONT_SITE_URL}/catalog`);
+  assert.equal((schema.isPartOf as Record<string, unknown>)["@type"], "WebSite");
+  assert.equal(schema.itemListElement, undefined);
+});
+
+test("Product schema uses public Storefront fields and PropertyValue specifications", async () => {
+  const [products, manufacturers, categories] = await Promise.all([
+    repository.getActiveProducts(),
+    repository.getManufacturers(),
+    repository.getCategories(),
+  ]);
+  const product = products[0];
+  assert.ok(product);
+  const manufacturer = manufacturers.find(({ id }) => id === product.manufacturerId);
+  const category = categories.find(({ id }) => id === product.categoryId);
+  const [schema, breadcrumb] = buildProductStructuredData({
+    product,
+    manufacturer,
+    category,
+  });
+
+  assert.equal(schema["@type"], "Product");
+  assert.equal(schema.url, `${STOREFRONT_SITE_URL}/catalog/${product.slug}`);
+  assert.equal(schema.mpn, product.model);
+  assert.equal((schema.brand as Record<string, unknown>)["@type"], "Brand");
+  const properties = schema.additionalProperty as Record<string, unknown>[];
+  assert.ok(properties.length > 0);
+  assert.ok(properties.every((property) => property["@type"] === "PropertyValue"));
+  assert.equal(breadcrumb["@type"], "BreadcrumbList");
+
+  const forbidden = JSON.stringify(schema);
+  assert.doesNotMatch(
+    forbidden,
+    /"(?:offers|price|availability|aggregateRating|review|gtin|registration|verification|provenance|evidence|artifactPath|sha256)"/u,
+  );
+});
+
+test("Product and Manufacturer breadcrumbs use absolute canonical URLs", async () => {
+  const [products, manufacturers] = await Promise.all([
+    repository.getActiveProducts(),
+    repository.getManufacturers(),
+  ]);
+  const product = products[0];
+  const manufacturer = manufacturers[0];
+  assert.ok(product);
+  assert.ok(manufacturer);
+
+  const productBreadcrumb = buildProductStructuredData({ product })[1];
+  const [manufacturerSchema, manufacturerBreadcrumb] =
+    buildManufacturerStructuredData(manufacturer);
+  const productItems = productBreadcrumb.itemListElement as Record<
+    string,
+    unknown
+  >[];
+  const manufacturerItems = manufacturerBreadcrumb.itemListElement as Record<
+    string,
+    unknown
+  >[];
+
+  assert.deepEqual(
+    productItems.map(({ name }) => name),
+    ["Главная", "Каталог", product.name],
+  );
+  assert.deepEqual(
+    manufacturerItems.map(({ name }) => name),
+    ["Главная", "Производители", manufacturer.name],
+  );
+  assert.ok(productItems.every(({ item }) => String(item).startsWith("https://")));
+  assert.ok(
+    manufacturerItems.every(({ item }) => String(item).startsWith("https://")),
+  );
+  assert.equal(manufacturerSchema["@type"], "Organization");
+  assert.equal(
+    manufacturerSchema.url,
+    `${STOREFRONT_SITE_URL}/manufacturers/${manufacturer.slug}`,
+  );
+});
+
+test("only stable Storefront pages render JSON-LD", async () => {
+  const structuredRoutes = [
+    "app/page.tsx",
+    "app/catalog/page.tsx",
+    "app/catalog/[slug]/page.tsx",
+    "app/manufacturers/page.tsx",
+    "app/manufacturers/[slug]/page.tsx",
+  ];
+  const unstructuredRoutes = ["app/search/page.tsx", "app/compare/page.tsx"];
+
+  for (const route of structuredRoutes) {
+    const source = await readFile(route, "utf8");
+    assert.match(source, /<JsonLd/u);
+    assert.match(source, /storefront\/structured-data/u);
+    assert.doesNotMatch(
+      source,
+      /publication|review|research|data\/public|data\/research|supabase|verticals\/fs510/iu,
+    );
+  }
+  for (const route of unstructuredRoutes) {
+    const source = await readFile(route, "utf8");
+    assert.doesNotMatch(source, /JsonLd|structured-data/u);
+  }
+});
+
+test("query result pages are noindex-follow without changing canonical URLs", async () => {
+  const sources = await Promise.all([
+    readFile("app/catalog/page.tsx", "utf8"),
+    readFile("app/search/page.tsx", "utf8"),
+  ]);
+
+  for (const source of sources) {
+    assert.match(source, /generateMetadata/u);
+    assert.match(source, /noindexFollow: q\.trim\(\)\.length > 0/u);
+  }
+});

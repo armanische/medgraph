@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import CatalogExplorer from "@/components/catalog/CatalogExplorer";
+import JsonLd from "@/components/seo/JsonLd";
 import {
   categoryService,
   manufacturerService,
@@ -7,13 +8,24 @@ import {
   searchService,
 } from "@/lib/storefront";
 import { buildStorefrontMetadata } from "@/lib/storefront/seo";
+import { buildCollectionPageStructuredData } from "@/lib/storefront/structured-data";
 
-export const metadata: Metadata = buildStorefrontMetadata({
-  title: "Каталог медицинских изделий",
-  description:
-    "Поиск медицинских изделий по названию, производителю, категории, документам, аналогам и совместимости.",
-  canonical: "/catalog",
-});
+const catalogDescription =
+  "Поиск медицинских изделий по названию, производителю, категории, документам, аналогам и совместимости.";
+
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<{ q?: string }>;
+}): Promise<Metadata> {
+  const { q = "" } = await searchParams;
+  return buildStorefrontMetadata({
+    title: "Каталог медицинских изделий",
+    description: catalogDescription,
+    canonical: "/catalog",
+    noindexFollow: q.trim().length > 0,
+  });
+}
 
 export default async function CatalogPage({
   searchParams,
@@ -31,6 +43,13 @@ export default async function CatalogPage({
 
   return (
     <main className="min-h-screen bg-cm-canvas">
+      <JsonLd
+        data={buildCollectionPageStructuredData({
+          name: "Каталог медицинских изделий",
+          description: catalogDescription,
+          path: "/catalog",
+        })}
+      />
       <header className="border-b border-[var(--cm-rule)] bg-[linear-gradient(135deg,#ffffff_0%,#f6fafc_58%,#e8f5f7_100%)]">
         <div className="cm-container py-10">
           <div className="grid gap-7 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-end">

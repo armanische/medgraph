@@ -9,12 +9,20 @@ import {
 } from "@/lib/storefront";
 import { buildStorefrontMetadata } from "@/lib/storefront/seo";
 
-export const metadata: Metadata = buildStorefrontMetadata({
-  title: "Поиск медицинских изделий",
-  description:
-    "Поиск медицинского оборудования по названию, модели, производителю и категории.",
-  canonical: "/search",
-});
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<{ q?: string }>;
+}): Promise<Metadata> {
+  const { q = "" } = await searchParams;
+  return buildStorefrontMetadata({
+    title: "Поиск медицинских изделий",
+    description:
+      "Поиск медицинского оборудования по названию, модели, производителю и категории.",
+    canonical: "/search",
+    noindexFollow: q.trim().length > 0,
+  });
+}
 
 export default async function SearchPage({
   searchParams,
