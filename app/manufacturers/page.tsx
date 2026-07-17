@@ -7,15 +7,14 @@ import {
   manufacturerService,
   productService,
 } from "@/lib/storefront";
+import { buildStorefrontMetadata } from "@/lib/storefront/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildStorefrontMetadata({
   title: "Производители медицинских изделий",
   description:
     "Производители медицинского оборудования, представленные в каталоге CyberMedica.",
-  alternates: {
-    canonical: "/manufacturers",
-  },
-};
+  canonical: "/manufacturers",
+});
 
 export default async function ManufacturersPage() {
   const [manufacturers, products, allCategories] = await Promise.all([

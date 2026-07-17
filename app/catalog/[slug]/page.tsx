@@ -10,6 +10,7 @@ import type {
   ProductDocumentKind,
   ProductSpecification,
 } from "@/lib/storefront/types";
+import { buildStorefrontMetadata } from "@/lib/storefront/seo";
 
 export async function generateStaticParams() {
   const products = await productService.getActiveProducts();
@@ -26,18 +27,12 @@ export async function generateMetadata({
   if (!product) notFound();
 
   const image = product.media.find(({ type }) => type === "image");
-  return {
+  return buildStorefrontMetadata({
     title: `${product.name} — медицинское оборудование`,
     description: product.shortDescription,
-    alternates: {
-      canonical: `/catalog/${product.slug}`,
-    },
-    openGraph: {
-      title: product.name,
-      description: product.shortDescription,
-      images: image ? [{ url: image.url, alt: image.alt }] : undefined,
-    },
-  };
+    canonical: `/catalog/${product.slug}`,
+    image: image ? { url: image.url, alt: image.alt } : undefined,
+  });
 }
 
 export default async function StorefrontProductPage({

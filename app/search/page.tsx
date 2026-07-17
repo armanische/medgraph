@@ -7,15 +7,14 @@ import {
   productService,
   searchService,
 } from "@/lib/storefront";
+import { buildStorefrontMetadata } from "@/lib/storefront/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildStorefrontMetadata({
   title: "Поиск медицинских изделий",
   description:
     "Поиск медицинского оборудования по названию, модели, производителю и категории.",
-  alternates: {
-    canonical: "/search",
-  },
-};
+  canonical: "/search",
+});
 
 export default async function SearchPage({
   searchParams,

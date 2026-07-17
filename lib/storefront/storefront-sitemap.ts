@@ -3,8 +3,9 @@ import type { MetadataRoute } from "next";
 import type { CategoryService } from "./category-service.ts";
 import type { ManufacturerService } from "./manufacturer-service.ts";
 import type { ProductService } from "./product-service.ts";
+import { STOREFRONT_SITE_URL } from "./seo.ts";
 
-export const STOREFRONT_SITE_URL = "https://cybermedica.ru";
+export { STOREFRONT_SITE_URL } from "./seo.ts";
 
 interface StorefrontSitemapSources {
   productService: Pick<ProductService, "getActiveProducts">;

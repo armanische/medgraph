@@ -2,15 +2,14 @@ import type { Metadata } from "next";
 
 import ComparisonTable from "@/components/compare/ComparisonTable";
 import { catalogRepository, compareService } from "@/lib/storefront";
+import { buildStorefrontMetadata } from "@/lib/storefront/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildStorefrontMetadata({
   title: "Сравнение медицинского оборудования",
   description:
     "Сравнение медицинского оборудования по описанию, техническим характеристикам, документам и совместимости.",
-  alternates: {
-    canonical: "/compare",
-  },
-};
+  canonical: "/compare",
+});
 
 function Metric({ label, value }: { label: string; value: number }) {
   return (

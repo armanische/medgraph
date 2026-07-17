@@ -8,6 +8,7 @@ import {
   manufacturerService,
   productService,
 } from "@/lib/storefront";
+import { buildStorefrontMetadata } from "@/lib/storefront/seo";
 
 interface ManufacturerPageProps {
   params: Promise<{ slug: string }>;
@@ -25,20 +26,14 @@ export async function generateMetadata({
   const manufacturer = await manufacturerService.getManufacturerBySlug(slug);
   if (!manufacturer) notFound();
 
-  return {
+  return buildStorefrontMetadata({
     title: `${manufacturer.name} — медицинское оборудование`,
     description: manufacturer.shortDescription,
-    alternates: {
-      canonical: `/manufacturers/${manufacturer.slug}`,
-    },
-    openGraph: {
-      title: manufacturer.name,
-      description: manufacturer.shortDescription,
-      images: manufacturer.logoUrl
-        ? [{ url: manufacturer.logoUrl, alt: `${manufacturer.name} — логотип` }]
-        : undefined,
-    },
-  };
+    canonical: `/manufacturers/${manufacturer.slug}`,
+    image: manufacturer.logoUrl
+      ? { url: manufacturer.logoUrl, alt: `${manufacturer.name} — логотип` }
+      : undefined,
+  });
 }
 
 export default async function ManufacturerPage({ params }: ManufacturerPageProps) {

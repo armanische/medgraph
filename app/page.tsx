@@ -11,15 +11,14 @@ import {
   manufacturerService,
   productService,
 } from "@/lib/storefront";
+import { buildStorefrontMetadata } from "@/lib/storefront/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildStorefrontMetadata({
   title: "Каталог медицинского оборудования",
   description:
     "CyberMedica объединяет медицинское оборудование, производителей, технические характеристики и подбор для клиник и закупочных команд.",
-  alternates: {
-    canonical: "/",
-  },
-};
+  canonical: "/",
+});
 
 export default async function Home() {
   const [products, featuredProducts, manufacturers, categories] = await Promise.all([
