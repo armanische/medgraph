@@ -11,8 +11,10 @@ import { ProductService } from "../../lib/storefront/product-service.ts";
 const root = process.cwd();
 const homepageFiles = [
   "app/page.tsx",
+  "components/home/Hero.tsx",
   "components/home/Search.tsx",
   "components/home/FeaturedProducts.tsx",
+  "components/home/FeaturedManufacturers.tsx",
   "components/home/Categories.tsx",
   "components/home/PlatformStats.tsx",
   "components/home/WhyCyberMedica.tsx",

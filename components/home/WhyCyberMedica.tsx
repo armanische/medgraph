@@ -7,9 +7,18 @@ const items = [
 
 export default function WhyCyberMedica() {
   return (
-    <section className="cm-container py-16">
+    <section
+      aria-labelledby="platform-benefits-title"
+      className="border-t border-[var(--cm-rule)] bg-white py-16"
+    >
+      <div className="cm-container">
       <div className="cm-label">Принципы платформы</div>
-      <h2 className="mt-2 text-[1.35rem] font-extrabold tracking-[-0.018em]">Почему CyberMedica</h2>
+      <h2
+        id="platform-benefits-title"
+        className="mt-2 text-[1.35rem] font-extrabold tracking-[-0.018em]"
+      >
+        Почему CyberMedica
+      </h2>
       <div className="mt-7 grid gap-3 md:grid-cols-2">
         {items.map(([number, title, text]) => (
           <div key={title} className="cm-card flex gap-4 p-5">
@@ -20,6 +29,7 @@ export default function WhyCyberMedica() {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );

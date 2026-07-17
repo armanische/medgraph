@@ -14,12 +14,20 @@ export default function Categories({
   categories: readonly CategoryEntry[];
 }) {
   return (
-    <section className="border-y border-[var(--cm-rule)] bg-white py-16">
+    <section
+      aria-labelledby="featured-categories-title"
+      className="bg-cm-canvas py-16"
+    >
       <div className="cm-container">
         <div className="flex items-end justify-between gap-5">
           <div>
             <div className="cm-label">Классификация</div>
-            <h2 className="mt-2 text-[1.35rem] font-extrabold tracking-[-0.018em]">Категории изделий</h2>
+            <h2
+              id="featured-categories-title"
+              className="mt-2 text-[1.35rem] font-extrabold tracking-[-0.018em]"
+            >
+              Популярные категории
+            </h2>
           </div>
           <Link href="/catalog" className="text-xs font-semibold text-cm-teal transition hover:text-cm-teal-dark">Весь каталог →</Link>
         </div>

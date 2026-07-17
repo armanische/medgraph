@@ -14,12 +14,18 @@ export default function FeaturedProducts({
   products: readonly FeaturedProductEntry[];
 }) {
   return (
-    <section className="cm-container py-16">
+    <section
+      aria-labelledby="popular-products-title"
+      className="cm-container py-16"
+    >
       <div className="mb-7 flex items-end justify-between gap-5">
         <div>
-          <div className="cm-label">Рекомендуемые товары</div>
-          <h2 className="mt-2 text-[1.35rem] font-extrabold tracking-[-0.018em]">
-            Медицинское оборудование
+          <div className="cm-label">Избранное из каталога</div>
+          <h2
+            id="popular-products-title"
+            className="mt-2 text-[1.35rem] font-extrabold tracking-[-0.018em]"
+          >
+            Популярные товары
           </h2>
         </div>
         <Link href="/catalog" className="text-xs font-semibold text-cm-teal transition hover:text-cm-teal-dark">
