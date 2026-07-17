@@ -25,11 +25,6 @@ const REVIEW_QUEUE_REPORT_PATH = resolve(
   REVIEW_ROOT,
   "review-queue.generated.json",
 );
-const REVIEW_DECISIONS_INPUT_PATH = resolve(REVIEW_ROOT, "decisions.manual.json");
-const REVIEW_DECISIONS_REPORT_PATH = resolve(
-  REVIEW_ROOT,
-  "review-decisions.generated.json",
-);
 const GENERATED_AT = "candidate-review-queue";
 
 export type ReviewQueueStatus =
@@ -41,12 +36,6 @@ export type ReviewQueueStatus =
 
 export type ReviewPriority = "critical" | "high" | "medium" | "low";
 export type ReviewRiskLevel = "high" | "medium" | "low";
-export type ReviewDecisionValue =
-  | "approve"
-  | "reject"
-  | "request_more_evidence"
-  | "mark_conflict";
-export type ReviewDecisionSource = "manual_json" | "future_ui" | "test_fixture";
 
 export interface ReviewQueueItem {
   reviewItemId: string;
@@ -65,53 +54,6 @@ export interface ReviewQueueItem {
   reviewerNotes: string | null;
   createdAt: string;
   updatedAt: string;
-}
-
-export interface ReviewDecision {
-  decisionId: string;
-  reviewItemId: string;
-  decision: ReviewDecisionValue;
-  reviewer: string;
-  notes: string;
-  decidedAt: string;
-  source: ReviewDecisionSource;
-}
-
-export interface ReviewDecisionSummary {
-  totalDecisions: number;
-  approved: number;
-  rejected: number;
-  moreEvidenceRequested: number;
-  conflictsMarked: number;
-  decisionsWithoutQueueItem: number;
-  queueItemsWithoutDecision: number;
-}
-
-export interface ReviewDecisionsInput {
-  decisions: ReviewDecision[];
-}
-
-export interface InvalidReviewDecision {
-  decision: unknown;
-  reasons: string[];
-}
-
-export interface ReviewDecisionQueueLink {
-  reviewItemId: string;
-  decisionId: string;
-  decision: ReviewDecisionValue;
-  productSlug: string;
-  suggestedClaimType: string;
-}
-
-export interface ReviewDecisionReport {
-  generatedAt: string;
-  decisions: ReviewDecision[];
-  summary: ReviewDecisionSummary;
-  invalidDecisions: InvalidReviewDecision[];
-  queueItemsWithDecision: ReviewDecisionQueueLink[];
-  queueItemsWithoutDecision: string[];
-  warnings: string[];
 }
 
 export interface ReviewQueueProductReport {
@@ -256,181 +198,6 @@ function sourceUrlsForClaim(
     evidenceIds.has(candidate.evidenceCandidateId),
   );
   return [...new Set(evidence.map((candidate) => candidate.sourceUrl))].sort();
-}
-
-export function reviewDecisionIsNotVerification(
-  decision: ReviewDecision,
-): ReviewDecision {
-  return decision;
-}
-
-function isReviewDecisionValue(value: unknown): value is ReviewDecisionValue {
-  return (
-    value === "approve" ||
-    value === "reject" ||
-    value === "request_more_evidence" ||
-    value === "mark_conflict"
-  );
-}
-
-function isReviewDecisionSource(value: unknown): value is ReviewDecisionSource {
-  return value === "manual_json" || value === "future_ui" || value === "test_fixture";
-}
-
-function isNonEmptyString(value: unknown): value is string {
-  return typeof value === "string" && value.trim().length > 0;
-}
-
-function validateReviewDecisionShape(value: unknown): {
-  decision: ReviewDecision | null;
-  reasons: string[];
-} {
-  const reasons: string[] = [];
-  if (!value || typeof value !== "object") {
-    return { decision: null, reasons: ["Decision must be an object."] };
-  }
-  const candidate = value as Partial<ReviewDecision>;
-  if (!isNonEmptyString(candidate.decisionId)) {
-    reasons.push("decisionId is required.");
-  }
-  if (!isNonEmptyString(candidate.reviewItemId)) {
-    reasons.push("reviewItemId is required.");
-  }
-  if (!isReviewDecisionValue(candidate.decision)) {
-    reasons.push("decision must be approve, reject, request_more_evidence or mark_conflict.");
-  }
-  if (!isNonEmptyString(candidate.reviewer)) {
-    reasons.push("reviewer is required.");
-  }
-  if (typeof candidate.notes !== "string") {
-    reasons.push("notes must be a string.");
-  }
-  if (!isNonEmptyString(candidate.decidedAt)) {
-    reasons.push("decidedAt is required.");
-  }
-  if (!isReviewDecisionSource(candidate.source)) {
-    reasons.push("source must be manual_json, future_ui or test_fixture.");
-  }
-  if (reasons.length) {
-    return { decision: null, reasons };
-  }
-  return { decision: candidate as ReviewDecision, reasons };
-}
-
-function countByDecision(decisions: ReviewDecision[]): ReviewDecisionSummary {
-  return {
-    totalDecisions: decisions.length,
-    approved: decisions.filter((decision) => decision.decision === "approve")
-      .length,
-    rejected: decisions.filter((decision) => decision.decision === "reject")
-      .length,
-    moreEvidenceRequested: decisions.filter(
-      (decision) => decision.decision === "request_more_evidence",
-    ).length,
-    conflictsMarked: decisions.filter(
-      (decision) => decision.decision === "mark_conflict",
-    ).length,
-    decisionsWithoutQueueItem: 0,
-    queueItemsWithoutDecision: 0,
-  };
-}
-
-export function processReviewDecisions(input: {
-  queueItems: ReviewQueueItem[];
-  decisions: unknown[];
-}): ReviewDecisionReport {
-  const queueById = new Map(
-    input.queueItems.map((item) => [item.reviewItemId, item]),
-  );
-  const duplicateReviewItemIds = new Set<string>();
-  const reviewItemIdCounts = new Map<string, number>();
-  for (const value of input.decisions) {
-    if (value && typeof value === "object") {
-      const reviewItemId = (value as Partial<ReviewDecision>).reviewItemId;
-      if (typeof reviewItemId === "string") {
-        reviewItemIdCounts.set(reviewItemId, (reviewItemIdCounts.get(reviewItemId) ?? 0) + 1);
-      }
-    }
-  }
-  for (const [reviewItemId, count] of reviewItemIdCounts) {
-    if (count > 1) duplicateReviewItemIds.add(reviewItemId);
-  }
-
-  const validDecisions: ReviewDecision[] = [];
-  const invalidDecisions: InvalidReviewDecision[] = [];
-  const warnings: string[] = [
-    "ReviewDecision approve is not Verification and does not create Verified Claims.",
-    "ReviewDecision processing does not publish data and does not write to Supabase.",
-  ];
-
-  for (const rawDecision of input.decisions) {
-    const validation = validateReviewDecisionShape(rawDecision);
-    if (!validation.decision) {
-      invalidDecisions.push({ decision: rawDecision, reasons: validation.reasons });
-      continue;
-    }
-    const decision = validation.decision;
-    const reasons: string[] = [];
-    const queueItem = queueById.get(decision.reviewItemId);
-    if (!queueItem) {
-      reasons.push("Unknown reviewItemId.");
-    }
-    if (duplicateReviewItemIds.has(decision.reviewItemId)) {
-      reasons.push("Duplicate decision for the same reviewItemId is not accepted.");
-    }
-    if (decision.decision === "approve") {
-      if (queueItem && (!queueItem.evidenceCandidateIds.length || !queueItem.documentVersionIds.length)) {
-        reasons.push("Approve requires linked evidenceCandidateIds and documentVersionIds.");
-      }
-    } else if (!decision.notes.trim()) {
-      reasons.push("Notes are required for reject, request_more_evidence and mark_conflict.");
-    }
-    if (reasons.length) {
-      invalidDecisions.push({ decision, reasons });
-      continue;
-    }
-    validDecisions.push(decision);
-  }
-
-  if (duplicateReviewItemIds.size) {
-    warnings.push(
-      `Duplicate decisions rejected for reviewItemIds: ${[...duplicateReviewItemIds].sort().join(", ")}`,
-    );
-  }
-
-  const decidedItemIds = new Set(validDecisions.map((decision) => decision.reviewItemId));
-  const queueItemsWithDecision = validDecisions
-    .map((decision) => {
-      const item = queueById.get(decision.reviewItemId);
-      if (!item) return null;
-      return {
-        reviewItemId: item.reviewItemId,
-        decisionId: decision.decisionId,
-        decision: decision.decision,
-        productSlug: item.productSlug,
-        suggestedClaimType: item.suggestedClaimType,
-      };
-    })
-    .filter((item): item is ReviewDecisionQueueLink => item !== null);
-  const queueItemsWithoutDecision = input.queueItems
-    .filter((item) => !decidedItemIds.has(item.reviewItemId))
-    .map((item) => item.reviewItemId)
-    .sort();
-  const summary = countByDecision(validDecisions);
-  summary.decisionsWithoutQueueItem = invalidDecisions.filter((invalid) =>
-    invalid.reasons.some((reason) => reason.includes("Unknown reviewItemId")),
-  ).length;
-  summary.queueItemsWithoutDecision = queueItemsWithoutDecision.length;
-
-  return {
-    generatedAt: "review-decision-report",
-    decisions: validDecisions,
-    summary,
-    invalidDecisions,
-    queueItemsWithDecision,
-    queueItemsWithoutDecision,
-    warnings,
-  };
 }
 
 export function buildReviewQueueForProduct(
@@ -633,42 +400,6 @@ export async function readReviewQueueSummary() {
   }
 }
 
-async function loadReviewQueueProductReports(
-  directory = REVIEW_PRODUCT_DIRECTORY,
-) {
-  const files = await listJsonFiles(directory);
-  return Promise.all(
-    files.map((file) => readJsonFile<ReviewQueueProductReport>(file)),
-  );
-}
-
-async function readReviewDecisionsInput(path = REVIEW_DECISIONS_INPUT_PATH) {
-  try {
-    const input = await readJsonFile<ReviewDecisionsInput>(path);
-    return Array.isArray(input.decisions) ? input.decisions : [];
-  } catch {
-    return [];
-  }
-}
-
-export async function processReviewDecisionReports(input?: {
-  queueItems?: ReviewQueueItem[];
-  decisions?: unknown[];
-  decisionReportPath?: string;
-}) {
-  const queueItems =
-    input?.queueItems ??
-    (await loadReviewQueueProductReports()).flatMap((report) => report.reviewItems);
-  const decisions =
-    input?.decisions ?? (await readReviewDecisionsInput(REVIEW_DECISIONS_INPUT_PATH));
-  const report = processReviewDecisions({ queueItems, decisions });
-  await writeJsonAtomic(
-    input?.decisionReportPath ?? REVIEW_DECISIONS_REPORT_PATH,
-    report,
-  );
-  return report;
-}
-
 async function runCli() {
   const mode = process.argv[2] ?? "build";
   if (mode === "summary") {
@@ -687,14 +418,6 @@ async function runCli() {
         null,
         2,
       ),
-    );
-    return;
-  }
-  if (mode === "decisions") {
-    await readReviewQueueSummary();
-    const report = await processReviewDecisionReports();
-    console.log(
-      `Review decisions: decisions=${report.summary.totalDecisions}, invalid=${report.invalidDecisions.length}, queueWithoutDecision=${report.summary.queueItemsWithoutDecision}`,
     );
     return;
   }

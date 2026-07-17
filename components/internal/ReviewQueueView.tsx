@@ -1,26 +1,36 @@
 import type {
-  ReviewDecision,
-  ReviewDecisionReport,
-  ReviewDecisionValue,
-  ReviewPriority,
-  ReviewQueueItem,
-  ReviewQueueProductReport,
-  ReviewRiskLevel,
-} from "@/lib/internal-review-queue";
+  HumanReviewerHistoryEntry,
+  HumanReviewerItem,
+  HumanReviewerProduct,
+  HumanReviewerWorkspaceModel,
+} from "@/lib/review/human-types";
+import type {
+  HumanReviewDecisionValue,
+  HumanReviewStatus,
+} from "@/scripts/importers/catalog/review/types";
 
-function statusLabel(status: ReviewQueueItem["status"]) {
-  const labels: Record<ReviewQueueItem["status"], string> = {
-    pending_review: "Ожидает проверки",
-    needs_more_evidence: "Не хватает подтверждения",
-    approved_for_verification: "Готово к Verification",
-    rejected: "Отклонено",
-    conflict: "Конфликт",
-  };
-  return labels[status];
-}
+const statusLabels: Record<HumanReviewStatus, string> = {
+  pending_review: "Ожидает проверки",
+  in_review: "На проверке",
+  approved: "Одобрено",
+  rejected: "Отклонено",
+  needs_changes: "Нужны изменения",
+  conflicted: "Конфликт",
+  archived: "Архив",
+};
 
-function priorityLabel(priority: ReviewPriority) {
-  const labels: Record<ReviewPriority, string> = {
+const decisionLabels: Record<HumanReviewDecisionValue, string> = {
+  start_review: "Проверка начата",
+  approve: "Одобрено reviewer-ом",
+  reject: "Отклонено reviewer-ом",
+  request_changes: "Запрошены изменения",
+  mark_conflict: "Отмечен конфликт",
+  reopen: "Возвращено на проверку",
+  archive: "Архивировано",
+};
+
+function priorityLabel(priority: HumanReviewerItem["priority"]) {
+  const labels: Record<HumanReviewerItem["priority"], string> = {
     critical: "Критический",
     high: "Высокий",
     medium: "Средний",
@@ -29,8 +39,8 @@ function priorityLabel(priority: ReviewPriority) {
   return labels[priority];
 }
 
-function riskLabel(risk: ReviewRiskLevel) {
-  const labels: Record<ReviewRiskLevel, string> = {
+function riskLabel(risk: HumanReviewerItem["risk"]) {
+  const labels: Record<HumanReviewerItem["risk"], string> = {
     high: "Высокий",
     medium: "Средний",
     low: "Низкий",
@@ -38,17 +48,7 @@ function riskLabel(risk: ReviewRiskLevel) {
   return labels[risk];
 }
 
-function decisionLabel(decision: ReviewDecisionValue) {
-  const labels: Record<ReviewDecisionValue, string> = {
-    approve: "Можно передать дальше",
-    reject: "Отклонено reviewer-ом",
-    request_more_evidence: "Нужно больше подтверждений",
-    mark_conflict: "Отмечен конфликт",
-  };
-  return labels[decision];
-}
-
-function toneForPriority(priority: ReviewPriority) {
+function toneForPriority(priority: HumanReviewerItem["priority"]) {
   if (priority === "critical" || priority === "high") {
     return "border-rose-200 bg-rose-50 text-rose-800";
   }
@@ -58,7 +58,7 @@ function toneForPriority(priority: ReviewPriority) {
   return "border-slate-200 bg-slate-50 text-slate-700";
 }
 
-function toneForRisk(risk: ReviewRiskLevel) {
+function toneForRisk(risk: HumanReviewerItem["risk"]) {
   if (risk === "high") return "border-rose-200 bg-rose-50 text-rose-800";
   if (risk === "medium") return "border-amber-200 bg-amber-50 text-amber-800";
   return "border-emerald-200 bg-emerald-50 text-emerald-800";
@@ -91,47 +91,44 @@ function Metric({ label, value }: { label: string; value: number }) {
   );
 }
 
-function itemReady(item: ReviewQueueItem) {
-  return item.evidenceCandidateIds.length > 0 && item.documentVersionIds.length > 0;
-}
-
-function ProductSummary({ product }: { product: ReviewQueueProductReport }) {
-  const highPriority = product.reviewItems.filter(
+function ProductSummary({
+  product,
+  items,
+}: {
+  product: HumanReviewerProduct;
+  items: HumanReviewerItem[];
+}) {
+  const highPriority = items.filter(
     (item) => item.priority === "high" || item.priority === "critical",
   ).length;
-  const ready = product.reviewItems.filter(itemReady).length;
-  const missing = product.reviewItems.filter(
-    (item) =>
-      item.evidenceCandidateIds.length === 0 || item.documentVersionIds.length === 0,
-  ).length;
-
   return (
     <div className="grid gap-3 border-b border-slate-200 pb-5 sm:grid-cols-4">
       <div className="sm:col-span-2">
         <h2 className="text-xl font-semibold text-slate-950">
-          {product.product.productName}
+          {product.productTitle}
         </h2>
         <p className="mt-1 font-mono text-xs text-slate-500">
-          {product.product.productSlug}
+          {product.productSlug}
         </p>
       </div>
-      <Metric label="Факты" value={product.reviewItems.length} />
+      <Metric label="Факты" value={product.total} />
       <Metric label="Высокий приоритет" value={highPriority} />
-      <Metric label="Готово к проверке" value={ready} />
-      <Metric label="Не хватает подтверждения" value={missing} />
+      <Metric label="Одобрено" value={product.approved} />
+      <Metric label="Missing artifact" value={product.missing} />
     </div>
   );
 }
 
 function DetailList({ label, values }: { label: string; values: string[] }) {
+  const visible = values.filter(Boolean);
   return (
     <div>
       <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
         {label}
       </div>
-      {values.length ? (
+      {visible.length ? (
         <ul className="mt-2 space-y-1.5">
-          {values.map((value) => (
+          {visible.map((value) => (
             <li
               key={value}
               className="break-all rounded-md bg-slate-50 px-3 py-2 font-mono text-xs text-slate-700"
@@ -149,159 +146,116 @@ function DetailList({ label, values }: { label: string; values: string[] }) {
   );
 }
 
-function DecisionStatus({ decision }: { decision: ReviewDecision | null }) {
+function DecisionStatus({
+  decision,
+}: {
+  decision: HumanReviewerHistoryEntry | null;
+}) {
   if (!decision) {
     return (
       <p className="mt-2 rounded-md bg-slate-50 px-3 py-2 text-sm text-slate-700">
-        Решения ещё не загружены.
+        Решение ещё не сохранено в canonical Human Review.
       </p>
     );
   }
   return (
     <div className="mt-2 rounded-md border border-teal-100 bg-teal-50 px-3 py-2 text-sm text-teal-950">
-      <div className="font-medium">{decisionLabel(decision.decision)}</div>
+      <div className="font-medium">{decisionLabels[decision.decision]}</div>
       <div className="mt-1 text-teal-900">
-        {decision.reviewer} · {decision.decidedAt}
+        {decision.reviewerId} · {decision.reviewedAt}
       </div>
-      {decision.notes ? <p className="mt-2">{decision.notes}</p> : null}
+      {decision.comment ? <p className="mt-2">{decision.comment}</p> : null}
     </div>
   );
 }
 
-function DecisionSummary({
-  report,
-  status,
-}: {
-  report: ReviewDecisionReport | null;
-  status: "ready" | "missing" | "invalid";
-}) {
-  if (status === "invalid") {
-    return (
-      <section className="rounded-lg border border-amber-200 bg-amber-50 p-5 text-sm text-amber-900">
-        Отчёт решений нельзя прочитать. Решения не применяются к очереди.
-      </section>
-    );
-  }
-  if (!report) {
-    return (
-      <section className="rounded-lg border border-slate-200 bg-white p-5 text-sm text-slate-700">
-        Решения ещё не загружены. Для обработки ручного файла используется{" "}
-        <span className="font-mono">npm run process:review-decisions</span>.
-      </section>
-    );
-  }
+function DecisionSummary({ model }: { model: HumanReviewerWorkspaceModel }) {
   return (
     <section className="grid gap-3 rounded-lg border border-slate-200 bg-white p-5 sm:grid-cols-3 lg:grid-cols-6">
-      <Metric label="Решений" value={report.summary.totalDecisions} />
-      <Metric label="Можно дальше" value={report.summary.approved} />
-      <Metric label="Отклонено" value={report.summary.rejected} />
-      <Metric
-        label="Нужно больше данных"
-        value={report.summary.moreEvidenceRequested}
-      />
-      <Metric label="Конфликт" value={report.summary.conflictsMarked} />
-      <Metric
-        label="Без решения"
-        value={report.summary.queueItemsWithoutDecision}
-      />
+      <Metric label="Ожидают" value={model.counters.pending} />
+      <Metric label="На проверке" value={model.counters.inReview} />
+      <Metric label="Одобрено" value={model.counters.approved} />
+      <Metric label="Отклонено" value={model.counters.rejected} />
+      <Metric label="Нужны изменения" value={model.counters.needsChanges} />
+      <Metric label="Конфликт" value={model.counters.conflicted} />
     </section>
   );
 }
 
-function ReviewItemCard({
-  item,
-  decision,
-}: {
-  item: ReviewQueueItem;
-  decision: ReviewDecision | null;
-}) {
+function ReviewItemCard({ item }: { item: HumanReviewerItem }) {
+  const latestDecision = item.history.at(-1) ?? null;
   return (
     <article className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm transition-colors hover:border-slate-300">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
         <div>
           <div className="font-mono text-xs text-slate-500">
-            {item.suggestedClaimType}
+            {item.characteristic}
           </div>
           <h3 className="mt-2 text-lg font-semibold text-slate-950">
-            {item.valuePayload.value}
-            {item.valuePayload.unit ? ` ${item.valuePayload.unit}` : ""}
+            {item.value}
+            {item.unit ? ` ${item.unit}` : ""}
           </h3>
         </div>
         <div className="flex flex-wrap gap-2">
           <Pill className="border-slate-200 bg-slate-50 text-slate-700">
-            {statusLabel(item.status)}
+            {statusLabels[item.currentStatus]}
           </Pill>
           <Pill className={toneForPriority(item.priority)}>
             Приоритет: {priorityLabel(item.priority)}
           </Pill>
-          <Pill className={toneForRisk(item.riskLevel)}>
-            Риск: {riskLabel(item.riskLevel)}
+          <Pill className={toneForRisk(item.risk)}>
+            Риск: {riskLabel(item.risk)}
           </Pill>
         </div>
       </div>
 
       <div className="mt-5 grid gap-4 lg:grid-cols-3">
-        <DetailList label="Источники" values={item.sourceUrls} />
-        <DetailList label="Документы" values={item.documentVersionIds} />
-        <DetailList label="Подтверждения" values={item.evidenceCandidateIds} />
+        <DetailList label="Источники" values={[item.officialSourceUrl]} />
+        <DetailList label="Документы" values={[item.documentVersion]} />
+        <DetailList label="Подтверждения" values={[item.evidenceSource]} />
       </div>
 
-      <div className="mt-5 grid gap-4 lg:grid-cols-[1fr_1fr]">
+      <div className="mt-5 grid gap-4 lg:grid-cols-2">
         <div>
           <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
-            Требуется действие
+            Raw text
           </div>
           <p className="mt-2 rounded-md bg-slate-50 px-3 py-2 text-sm text-slate-700">
-            Сверить значение с источником и документом. Не публиковать из этой
-            очереди.
+            {item.rawText}
           </p>
         </div>
         <div>
           <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
             Решение reviewer-а
           </div>
-          <DecisionStatus decision={decision} />
+          <DecisionStatus decision={latestDecision} />
         </div>
       </div>
 
-      <div className="mt-5">
-        <div>
+      {item.warnings.length ? (
+        <div className="mt-5">
           <div className="text-xs font-medium uppercase tracking-wide text-slate-500">
-            Причины
+            Предупреждения
           </div>
           <ul className="mt-2 space-y-1.5">
-            {item.reasons.map((reason) => (
-              <li key={reason} className="text-sm text-slate-700">
-                {reason}
+            {item.warnings.map((warning) => (
+              <li key={warning} className="text-sm text-slate-700">
+                {warning}
               </li>
             ))}
           </ul>
         </div>
-      </div>
+      ) : null}
     </article>
   );
 }
 
 export default function ReviewQueueView({
-  products,
-  warnings,
-  decisionReport,
-  decisionReportStatus,
+  model,
 }: {
-  products: ReviewQueueProductReport[];
-  warnings: string[];
-  decisionReport: ReviewDecisionReport | null;
-  decisionReportStatus: "ready" | "missing" | "invalid";
+  model: HumanReviewerWorkspaceModel;
 }) {
-  const items = products.flatMap((product) => product.reviewItems);
-  const decisionsByItem = new Map(
-    (decisionReport?.decisions ?? []).map((decision) => [
-      decision.reviewItemId,
-      decision,
-    ]),
-  );
-
-  if (!items.length) {
+  if (!model.items.length) {
     return (
       <section className="rounded-lg border border-slate-200 bg-white p-8 text-slate-700">
         Нет фактов, ожидающих проверки.
@@ -309,11 +263,15 @@ export default function ReviewQueueView({
     );
   }
 
+  const warnings = [
+    ...new Set(model.items.flatMap((item) => item.warnings)),
+  ];
+
   return (
     <div className="space-y-8">
-      <DecisionSummary report={decisionReport} status={decisionReportStatus} />
+      <DecisionSummary model={model} />
 
-      {warnings.length > 0 ? (
+      {warnings.length ? (
         <section className="rounded-lg border border-amber-200 bg-amber-50 p-5">
           <h2 className="text-base font-semibold text-amber-950">
             Предупреждения
@@ -326,29 +284,28 @@ export default function ReviewQueueView({
         </section>
       ) : null}
 
-      {products.map((product) => (
-        <section
-          key={product.product.productSlug}
-          className="space-y-5 rounded-xl border border-slate-200 bg-slate-50 p-5"
-        >
-          <ProductSummary product={product} />
-          <div className="rounded-lg border border-teal-100 bg-white p-4 text-sm text-slate-700">
-            <span className="font-semibold text-slate-950">
-              Требуется действие:
-            </span>{" "}
-            {product.recommendedReviewerAction}
-          </div>
-          <div className="space-y-4">
-            {product.reviewItems.map((item) => (
-              <ReviewItemCard
-                key={item.reviewItemId}
-                item={item}
-                decision={decisionsByItem.get(item.reviewItemId) ?? null}
-              />
-            ))}
-          </div>
-        </section>
-      ))}
+      {model.products.map((product) => {
+        const items = model.items.filter(
+          (item) => item.productSlug === product.productSlug,
+        );
+        return (
+          <section
+            key={product.productSlug}
+            className="space-y-5 rounded-xl border border-slate-200 bg-slate-50 p-5"
+          >
+            <ProductSummary product={product} items={items} />
+            <div className="rounded-lg border border-teal-100 bg-white p-4 text-sm text-slate-700">
+              Canonical status: {product.approved}/{product.total} approved ·
+              evidence {product.evidenceCompleteness}%.
+            </div>
+            <div className="space-y-4">
+              {items.map((item) => (
+                <ReviewItemCard key={item.reviewItemId} item={item} />
+              ))}
+            </div>
+          </section>
+        );
+      })}
     </div>
   );
 }

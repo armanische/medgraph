@@ -67,7 +67,7 @@ test("disabled internal metadata reveals no route title and remains noindex", ()
 test("all internal pages retain production gates and access-boundary copy", async () => {
   const routes = [
     ["app/admin/page.tsx", "CYBERMEDICA_ENABLE_ADMIN"],
-    ["app/internal/review-queue/page.tsx", "CYBERMEDICA_ENABLE_INTERNAL_REVIEW"],
+    ["app/internal/review-queue/page.tsx", "internalReviewEnabled"],
     ["app/internal/reviewer/page.tsx", "internalReviewEnabled"],
     ["app/internal/import-center/page.tsx", "CYBERMEDICA_ENABLE_IMPORT_CENTER"],
     ["app/internal/wave2/page.tsx", "CYBERMEDICA_ENABLE_WAVE2_DASHBOARD"],

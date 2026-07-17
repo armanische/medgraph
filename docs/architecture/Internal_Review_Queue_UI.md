@@ -1,111 +1,76 @@
-# Internal Review Queue UI
+# Consolidated Review Pipeline
 
-MVP-025 adds a first read-only internal screen for Review Queue items.
+RFC-019 makes Human Review the canonical review workflow. Review Queue remains
+an upstream generated input and a read-only internal projection; it has no
+decision business logic or independent decision model.
 
-Route:
+## Canonical boundary
 
-```text
-/internal/review-queue
-```
+The canonical runtime is `scripts/importers/catalog/review/`:
 
-## What It Does
+- `types.ts` owns statuses, decisions, snapshots, summaries, and store contracts;
+- `state-machine.ts` owns allowed transitions and replay;
+- `decision-store.ts` owns append-only decision history;
+- `review-service.ts` validates explicit reviewer actions;
+- `snapshot.ts` owns the unchanged snapshot format;
+- `publication-policy.ts` owns the unchanged readiness policy;
+- `lib/review/human-workspace.ts` builds the shared reviewer/read-only view model.
 
-The prototype reads generated Review Queue reports from:
-
-```text
-data/research/review/review-queue.generated.json
-data/research/review/products/*.json
-```
-
-It shows:
-
-- total queue items;
-- pending review count;
-- high-priority count;
-- ready-for-human-review count;
-- products with review items;
-- warnings;
-- product groups;
-- candidate facts;
-- priority and risk;
-- evidence ids;
-- document version ids;
-- source URLs;
-- reviewer action guidance.
-
-## Route Protection
-
-The route is protected by:
+Both internal routes consume `HumanReviewerWorkspaceModel` through
+`loadHumanReviewerWorkspace()`:
 
 ```text
-CYBERMEDICA_ENABLE_INTERNAL_REVIEW=1
+generated Review Queue products ─┐
+artifact/integrity inputs ────────┼─► Human Review workspace model
+append-only decisions ────────────┘              │
+                                                 ├─► /internal/reviewer (write)
+                                                 └─► /internal/review-queue (read-only)
 ```
 
-In production, if the flag is not set, the route calls `notFound()`.
+The optional workspace scope is presentation-only. `/internal/reviewer` keeps
+its existing pilot scope. `/internal/review-queue` requests `scope: "all"` to
+display all available canonical items. This does not change statuses,
+transitions, snapshots, policies, or persisted decisions.
 
-The page also uses Next.js `connection()` so the flag and report are evaluated at request time rather than being baked into the static build.
+## Sole decision-write point
 
-In development, access is allowed for local review.
+`/internal/reviewer` is the only UI that can submit review decisions. Its server
+actions continue to use the Human Review service and append-only decision store.
 
-## Why Read-Only
+`/internal/review-queue` contains no form, button, server action, mutation, or
+decision processor. It displays canonical current statuses and histories from
+the shared model. The legacy `decisions.manual.json` processor and
+`process:review-decisions` command were retired because they represented a
+second, incompatible decision workflow.
 
-The current Review Queue is a foundation layer, not a full reviewer workflow.
+## Removed duplication
 
-Read-only keeps the boundary clear:
+RFC-019 removed:
 
-- no approve/reject actions;
-- no writes;
-- no Verified Claims;
-- no Publication;
-- no Supabase dependency;
-- no public portal dependency.
+- the separate `lib/internal-review-queue.ts` loader;
+- duplicated queue-page status and decision DTOs;
+- the legacy generated decision-report model;
+- the manual JSON decision parser, validator, and CLI command;
+- direct route reads of `review-decisions.generated.json`.
 
-## What It Does Not Do
+The generated Review Queue item/report types remain because they are the stable
+upstream handoff from Extraction to Human Review. They are not a second decision
+workflow.
 
-The prototype does not:
+## Access and rendering
 
-- publish data;
-- create Verified Claims;
-- write to Supabase;
-- update `public_api`;
-- change Verification or Publication;
-- create a CMS;
-- expose public navigation;
-- allow reviewer decisions.
+Both routes use the shared `internalReviewEnabled()` gate and noindex metadata.
+When disabled, they call `notFound()`. `connection()` keeps the gate dynamic.
+An enabled environment flag is not authentication; Preview/Production still
+requires Deployment Protection or an equivalent external access boundary.
 
-## Safety Boundary
+## Safety invariants
 
-The screen includes explicit copy:
-
-> Эта страница показывает только кандидатные факты. Решение reviewer-а не публикует данные автоматически. Публикация выполняется отдельным процессом.
-
-The Portal must not read Review Queue directly.
-
-## Empty And Error States
-
-If the report is missing, the UI shows:
-
-```text
-Очередь проверки ещё не сформирована.
-npm run build:review-queue
-```
-
-If the report is invalid JSON, the UI shows a safe error without stack trace.
-
-If there are no items, the UI shows:
-
-```text
-Нет фактов, ожидающих проверки.
-```
-
-## Next Steps
-
-Before a real Review UI:
-
-- add authentication for internal users;
-- add reviewer identity model;
-- add decision persistence separate from Verification;
-- add conflict grouping;
-- render source excerpts next to PDF metadata;
-- add filtering by product, priority, risk, missing evidence, and claim type;
-- define the handoff from `approved_for_verification` to the Verification pipeline.
+- no automatic approval or publication;
+- no Verification or Supabase writes;
+- no state-machine, decision-store, reviewer-action, policy, or snapshot-format
+  changes;
+- no public navigation or public Storefront dependency;
+- Review Queue remains read-only;
+- Review, Integrity, Extraction, Artifacts, Wave 2, and retained Publication
+  runtimes remain present.

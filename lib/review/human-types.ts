@@ -4,6 +4,8 @@ import type {
   PublicationReadinessStatus,
 } from "../../scripts/importers/catalog/review/types.ts";
 
+export type HumanReviewerWorkspaceScope = "pilot" | "all";
+
 export interface HumanReviewerHistoryEntry {
   id: string;
   reviewerId: string;

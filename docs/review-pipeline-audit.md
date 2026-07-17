@@ -7,6 +7,14 @@ Branch: `feature/publication-first-products`
 Scope: dependency, entry-point, and ownership audit only; no runtime, data,
 pipeline, route, or UI changes
 
+> **Post-audit status (RFC-019):** Human Review is now the canonical workflow.
+> `/internal/review-queue` consumes the shared Human Review workspace model as a
+> read-only projection. The duplicate queue UI loader/types and legacy manual
+> decision processor/CLI were retired. The state machine, append-only decision
+> store, reviewer actions, policy, snapshot format, generated Review Queue
+> builder, Integrity, Extraction, Artifacts, Wave 2, and Publication were not
+> changed or removed.
+
 ## 1. Executive Summary
 
 The public Storefront does not import the Review Pipeline. Review is still an

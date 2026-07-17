@@ -14,6 +14,12 @@ npm run build:review-queue
 npm run wave2:execute -- <Manufacturer>
 ```
 
+Human Review is the sole canonical decision workflow. The generated Review
+Queue is an upstream handoff and read-only presentation input; reviewer
+decisions are written only through `/internal/reviewer` into the append-only
+decision store. The retired `process:review-decisions` manual-JSON command must
+not be restored.
+
 The public storefront reads only `data/storefront` through `lib/storefront`.
 Operational Discovery, Documents, Extraction, Review, Integrity, Artifact, and
 Wave 2 outputs remain under their existing `data/research` subdirectories until

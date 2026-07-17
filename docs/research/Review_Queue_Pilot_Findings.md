@@ -144,9 +144,12 @@ Reviewer decisions must not publish data.
 
 Only a future Verification handoff can convert approved review output into verified state, and Publication must remain a separate explicit boundary.
 
-## MVP-026 Decision Model Prototype
+## MVP-026 Decision Model Prototype (retired by RFC-019)
 
-MVP-026 added a file-level decision processor for Review Queue items.
+MVP-026 added a file-level decision processor for Review Queue items. RFC-019
+retired this prototype after the append-only Human Review workflow became the
+sole canonical decision path. The paths and command below are historical and
+must not be restored as an active workflow.
 
 Input:
 
@@ -156,11 +159,14 @@ Output:
 
 - `data/research/review/review-decisions.generated.json`
 
-Command:
+Retired command:
 
 ```text
 npm run process:review-decisions
 ```
+
+All new reviewer decisions are created only through `/internal/reviewer` and
+the canonical Human Review service/decision store.
 
 The current manual decision file is intentionally empty:
 

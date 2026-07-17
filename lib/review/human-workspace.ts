@@ -3,7 +3,11 @@ import "server-only";
 import { readFile } from "node:fs/promises";
 import { join, resolve } from "node:path";
 
-import type { HumanReviewerItem, HumanReviewerWorkspaceModel } from "./human-types.ts";
+import type {
+  HumanReviewerItem,
+  HumanReviewerWorkspaceModel,
+  HumanReviewerWorkspaceScope,
+} from "./human-types.ts";
 import { FileReviewDecisionStore } from "../../scripts/importers/catalog/review/decision-store.ts";
 import { loadReviewContext, selectPilotReports } from "../../scripts/importers/catalog/review/loader.ts";
 import { evaluateProductPublicationPolicy } from "../../scripts/importers/catalog/review/publication-policy.ts";
@@ -45,9 +49,15 @@ function locatorLabel(locator: ExtractionLocator | undefined) {
     .join(" · ") || "Локатор не указан";
 }
 
-export async function loadHumanReviewerWorkspace(): Promise<HumanReviewerWorkspaceModel> {
+export async function loadHumanReviewerWorkspace(input?: {
+  scope?: HumanReviewerWorkspaceScope;
+}): Promise<HumanReviewerWorkspaceModel> {
   const context = await loadReviewContext();
-  const reports = selectPilotReports(context);
+  const reports = input?.scope === "all"
+    ? [...context.reports].sort((left, right) =>
+        left.product.productSlug.localeCompare(right.product.productSlug),
+      )
+    : selectPilotReports(context);
   const decisions = await new FileReviewDecisionStore().list();
   const byItem = new Map<string, HumanReviewDecision[]>();
   const latest = new Map<string, HumanReviewDecision>();

@@ -36,3 +36,23 @@ test("reviewer writes are server-only and do not import protected writers", asyn
   assert.doesNotMatch(source, /@supabase|createClient|public_api|createVerifiedClaim/iu);
   assert.doesNotMatch(source, /autoApprove|approveAll|autoPublish/iu);
 });
+
+test("review queue is a read-only projection of canonical Human Review", async () => {
+  const [queuePage, reviewerPage, queueView, workspace, packageJson] =
+    await Promise.all([
+      readFile("app/internal/review-queue/page.tsx", "utf8"),
+      readFile("app/internal/reviewer/page.tsx", "utf8"),
+      readFile("components/internal/ReviewQueueView.tsx", "utf8"),
+      readFile("lib/review/human-workspace.ts", "utf8"),
+      readFile("package.json", "utf8"),
+    ]);
+
+  assert.match(queuePage, /loadHumanReviewerWorkspace/u);
+  assert.match(queuePage, /scope:\s*["']all["']/u);
+  assert.match(reviewerPage, /loadHumanReviewerWorkspace/u);
+  assert.match(workspace, /FileReviewDecisionStore/u);
+  assert.match(queueView, /human-types/u);
+  assert.doesNotMatch(queuePage + queueView, /internal-review-queue/u);
+  assert.doesNotMatch(queueView, /<form|<button|formAction|onSubmit|onClick/iu);
+  assert.doesNotMatch(packageJson, /process:review-decisions/u);
+});

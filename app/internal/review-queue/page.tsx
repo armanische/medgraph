@@ -3,15 +3,9 @@ import { notFound } from "next/navigation";
 import { connection } from "next/server";
 
 import ReviewQueueView from "@/components/internal/ReviewQueueView";
-import { loadInternalReviewQueue } from "@/lib/internal-review-queue";
-import { internalRouteMetadata } from "@/lib/internal-access";
-
-function internalReviewEnabled() {
-  return (
-    process.env.NODE_ENV !== "production" ||
-    process.env.CYBERMEDICA_ENABLE_INTERNAL_REVIEW === "1"
-  );
-}
+import { internalReviewEnabled, internalRouteMetadata } from "@/lib/internal-access";
+import { loadHumanReviewerWorkspace } from "@/lib/review/human-workspace";
+import type { HumanReviewerWorkspaceModel } from "@/lib/review/human-types";
 
 export async function generateMetadata(): Promise<Metadata> {
   await connection();
@@ -48,6 +42,10 @@ function CalmState({
   );
 }
 
+function missingReviewData(error: unknown) {
+  return error instanceof Error && "code" in error && error.code === "ENOENT";
+}
+
 export default async function InternalReviewQueuePage() {
   await connection();
 
@@ -55,29 +53,36 @@ export default async function InternalReviewQueuePage() {
     notFound();
   }
 
-  const queue = await loadInternalReviewQueue();
-
-  if (queue.status === "missing") {
-    return (
-      <CalmState title="Очередь проверки ещё не сформирована.">
-        <p>Сначала сформируйте внутренний отчёт.</p>
-        <p className="mt-3 rounded-md bg-slate-50 px-3 py-2 font-mono text-sm">
-          npm run build:review-queue
-        </p>
-      </CalmState>
-    );
-  }
-
-  if (queue.status === "invalid") {
+  let model: HumanReviewerWorkspaceModel;
+  try {
+    model = await loadHumanReviewerWorkspace({ scope: "all" });
+  } catch (error) {
+    if (missingReviewData(error)) {
+      return (
+        <CalmState title="Очередь проверки ещё не сформирована.">
+          <p>Сначала сформируйте внутренний отчёт.</p>
+          <p className="mt-3 rounded-md bg-slate-50 px-3 py-2 font-mono text-sm">
+            npm run build:review-queue
+          </p>
+        </CalmState>
+      );
+    }
     return (
       <CalmState title="Отчёт очереди проверки нельзя прочитать.">
         <p>
-          JSON-файл повреждён или имеет неожиданный формат. Проверьте generated
-          report и сформируйте очередь заново.
+          Данные имеют неожиданный формат. Проверьте canonical Human Review
+          inputs и сформируйте очередь заново.
         </p>
       </CalmState>
     );
   }
+
+  const highPriority = model.items.filter(
+    (item) => item.priority === "critical" || item.priority === "high",
+  ).length;
+  const evidenceReady = model.items.filter(
+    (item) => item.artifactStatus === "valid",
+  ).length;
 
   return (
     <main className="min-h-screen bg-slate-50">
@@ -90,8 +95,8 @@ export default async function InternalReviewQueuePage() {
             Очередь проверки
           </h1>
           <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
-            Только просмотр кандидатных фактов, источников и документов перед
-            ручной проверкой.
+            Только просмотр canonical Human Review items, источников и
+            документов перед ручной проверкой.
           </p>
           <p className="mt-2 max-w-3xl text-sm leading-6 text-amber-800">
             Env-флаг не является аутентификацией. При включении в Preview
@@ -103,32 +108,20 @@ export default async function InternalReviewQueuePage() {
         <section className="mb-8 rounded-xl border border-teal-200 bg-teal-50 p-5 text-teal-950">
           <h2 className="text-base font-semibold">Граница безопасности</h2>
           <p className="mt-2 text-sm leading-6">
-            Эта страница показывает только кандидатные факты. Решение reviewer-а
-            не публикует данные. Оно только подготавливает факт к следующему
-            этапу проверки. Публикация выполняется отдельным процессом.
+            Эта страница полностью read-only. Единственная точка записи решений
+            — защищённый Reviewer Workspace по адресу /internal/reviewer.
           </p>
         </section>
 
         <section className="mb-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-          <Metric label="Всего фактов" value={queue.aggregate.totalItems} />
-          <Metric label="Ожидает проверки" value={queue.aggregate.pendingReview} />
-          <Metric label="Высокий приоритет" value={queue.aggregate.highPriority} />
-          <Metric
-            label="Готово к проверке"
-            value={queue.aggregate.readyForHumanReview}
-          />
-          <Metric
-            label="Продукты"
-            value={queue.aggregate.productsWithReviewItems}
-          />
+          <Metric label="Всего фактов" value={model.items.length} />
+          <Metric label="Ожидает проверки" value={model.counters.pending} />
+          <Metric label="Высокий приоритет" value={highPriority} />
+          <Metric label="Valid artifact" value={evidenceReady} />
+          <Metric label="Продукты" value={model.products.length} />
         </section>
 
-        <ReviewQueueView
-          products={queue.products}
-          warnings={queue.aggregate.warnings}
-          decisionReport={queue.decisionReport}
-          decisionReportStatus={queue.decisionReportStatus}
-        />
+        <ReviewQueueView model={model} />
       </section>
     </main>
   );
