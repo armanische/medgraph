@@ -1,0 +1,59 @@
+{
+  "id": "product-ambu-vivasight-2-dlt",
+  "slug": "ambu-vivasight-2-dlt",
+  "manufacturerId": "manufacturer-ambu",
+  "categoryId": "category-airway-management",
+  "name": "Ambu VivaSight 2 DLT",
+  "model": "VivaSight 2 DLT",
+  "shortDescription": "Одноразовая двухпросветная эндобронхиальная трубка со встроенной камерой.",
+  "description": "Ambu VivaSight 2 DLT предназначена для изоляции лёгких и визуального контроля положения трубки во время процедур, требующих однолёгочной вентиляции.",
+  "status": "on_request",
+  "featured": false,
+  "applicationAreas": [
+    "Торакальная анестезиология",
+    "Однолёгочная вентиляция",
+    "Интубация"
+  ],
+  "keyFeatures": [
+    "Одноразовое изделие",
+    "Встроенная камера",
+    "Предназначено для взрослых пациентов"
+  ],
+  "specifications": [
+    {
+      "group": "Исполнение",
+      "label": "Тип использования",
+      "value": "Одноразовое",
+      "unit": null,
+      "position": 10
+    },
+    {
+      "group": "Применение",
+      "label": "Группа пациентов",
+      "value": "Взрослые",
+      "unit": null,
+      "position": 20
+    },
+    {
+      "group": "Исполнение",
+      "label": "Стерильность",
+      "value": "Стерильное",
+      "unit": null,
+      "position": 30
+    }
+  ],
+  "media": [],
+  "documents": [
+    {
+      "title": "Ambu VivaSight 2 DLT datasheet",
+      "kind": "datasheet",
+      "publicUrl": "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fDouble_Lumen_tube_with_Integrated_Camera%2fVivaSight+2+DLT%2fDatasheets%2fIE-VivaSight-2-DLT-Datasheet_V2.pdf",
+      "language": "en",
+      "isOfficial": true
+    }
+  ],
+  "compatibility": [],
+  "relatedProductIds": [],
+  "createdAt": "2026-07-17T00:00:00.000Z",
+  "updatedAt": "2026-07-17T00:00:00.000Z"
+}

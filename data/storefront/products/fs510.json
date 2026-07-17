@@ -1,0 +1,79 @@
+{
+  "id": "product-fs510",
+  "slug": "fs510",
+  "manufacturerId": "manufacturer-alba-healthcare",
+  "categoryId": "category-anesthesia-respiratory",
+  "name": "Тепловлагообменный фильтр FS510",
+  "model": "FS510",
+  "shortDescription": "Тепловлагообменный фильтр HMEF для установки в дыхательный контур со стороны пациента.",
+  "description": "FS510 сочетает функции сохранения тепла и влаги с бактериально-вирусной фильтрацией. Изделие предназначено для применения в дыхательном контуре в соответствии с инструкцией производителя.",
+  "status": "on_request",
+  "featured": true,
+  "applicationAreas": [
+    "Искусственная вентиляция лёгких",
+    "Анестезиология",
+    "Респираторная терапия"
+  ],
+  "keyFeatures": [
+    "Диапазон дыхательного объёма 100–2000 мл",
+    "Эффективность фильтрации ≥99.999%",
+    "Масса изделия 27 г"
+  ],
+  "specifications": [
+    {
+      "group": "Рабочие параметры",
+      "label": "Дыхательный объём",
+      "value": "100–2000",
+      "unit": "мл",
+      "position": 10
+    },
+    {
+      "group": "Фильтрация",
+      "label": "Эффективность фильтрации",
+      "value": "≥99.999",
+      "unit": "%",
+      "position": 20
+    },
+    {
+      "group": "Физические параметры",
+      "label": "Масса",
+      "value": "27",
+      "unit": "г",
+      "position": 30
+    }
+  ],
+  "media": [
+    {
+      "type": "image",
+      "url": "/products/fs510/photo.jpg",
+      "alt": "Тепловлагообменный фильтр FS510",
+      "position": 10
+    }
+  ],
+  "documents": [
+    {
+      "title": "Регистрационное удостоверение",
+      "kind": "registration",
+      "publicUrl": "/products/fs510/ru.pdf",
+      "language": "ru-RU",
+      "isOfficial": true
+    },
+    {
+      "title": "Инструкция по применению",
+      "kind": "ifu",
+      "publicUrl": "/products/fs510/manual.pdf",
+      "language": "ru-RU",
+      "isOfficial": true
+    }
+  ],
+  "compatibility": [
+    {
+      "compatibleProductId": null,
+      "label": "Hamilton C1",
+      "note": "Перед применением необходимо сверить параметры дыхательного контура и инструкцию производителя."
+    }
+  ],
+  "relatedProductIds": [],
+  "createdAt": "2026-07-17T00:00:00.000Z",
+  "updatedAt": "2026-07-17T00:00:00.000Z"
+}
