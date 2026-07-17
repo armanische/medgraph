@@ -76,7 +76,7 @@ export default function WorkspaceDashboard({
             {session.comparison.summary.differences}
           </div>
           <p className="mt-2 text-sm leading-6 text-cm-slate">
-            Различий между Hamilton T1 и Hamilton C1.
+            Различий между выбранными товарами каталога.
           </p>
         </Panel>
 

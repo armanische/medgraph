@@ -11,7 +11,7 @@ test("workspace session is created", async () => {
   assert.equal(session.sessionId, "workspace_pilot_fs510");
   assert.equal(session.selection.primaryProductSlug, "fs510");
   assert.ok(session.search.total > 0);
-  assert.ok(session.comparison.summary.totalCharacteristics > 0);
+  assert.ok(session.comparison.summary.specifications > 0);
   assert.ok(session.compatibility.totalRecords > 0);
   assert.ok(session.tender.summary.totalRequirements > 0);
 });

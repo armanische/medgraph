@@ -1,4 +1,4 @@
-import type { ComparisonResult } from "../compare/types.ts";
+import type { ProductComparison } from "../storefront/compare-service.ts";
 import type { CompatibilityResult } from "../compatibility/types.ts";
 import type { ComplianceResult } from "../tender/types.ts";
 
@@ -35,7 +35,7 @@ export interface WorkspaceSession {
   createdAt: string;
   selection: WorkspaceSelection;
   search: WorkspaceSearchSummary;
-  comparison: ComparisonResult;
+  comparison: ProductComparison;
   compatibility: CompatibilityResult;
   tender: ComplianceResult;
   insights: WorkspaceInsight[];

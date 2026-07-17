@@ -1,7 +1,7 @@
-import { compareProducts } from "../compare/engine.ts";
-import { getHamiltonPilotComparisonProducts } from "../compare/mock-data.ts";
 import { getCompatibilityResult } from "../compatibility/mock-data.ts";
+import { CompareService } from "../storefront/compare-service.ts";
 import { FilesystemCatalogRepository } from "../storefront/filesystem-catalog-repository.ts";
+import { ProductService } from "../storefront/product-service.ts";
 import { SearchService } from "../storefront/search-service.ts";
 import { getHamiltonT1TenderCompliance } from "../tender/mock-data.ts";
 import type {
@@ -127,18 +127,14 @@ function buildRecommendations(input: {
 
 export async function createWorkspaceSession(): Promise<WorkspaceSession> {
   const query = "FS510";
-  const searchProducts = await new SearchService(
-    new FilesystemCatalogRepository(),
-  ).searchProducts(query);
+  const repository = new FilesystemCatalogRepository();
+  const productService = new ProductService(repository);
+  const searchProducts = await new SearchService(repository).searchProducts(query);
   const search = { query, total: searchProducts.length };
-  const comparisonProducts = getHamiltonPilotComparisonProducts();
-  if (!comparisonProducts.left) {
-    throw new Error("Workspace comparison pilot requires a left product.");
-  }
-  const comparison = compareProducts({
-    left: comparisonProducts.left,
-    right: comparisonProducts.right,
-  });
+  const comparison = await new CompareService(productService).compareProducts([
+    "fs510",
+    "ambu-vivasight-2-dlt",
+  ]);
   const compatibility = getCompatibilityResult("fs510");
   const tender = getHamiltonT1TenderCompliance();
   const compatibilityRecords = compatibility.groups.flatMap((group) => group.records);
@@ -166,7 +162,7 @@ export async function createWorkspaceSession(): Promise<WorkspaceSession> {
     createdAt: "2026-07-09",
     selection: {
       primaryProductSlug: "fs510",
-      comparedProductSlugs: ["hamilton-t1", "hamilton-c1"],
+      comparedProductSlugs: ["fs510", "ambu-vivasight-2-dlt"],
       searchQuery: "FS510",
       tenderTitle: tender.tenderTitle,
     },
