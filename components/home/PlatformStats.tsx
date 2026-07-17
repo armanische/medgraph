@@ -1,12 +1,16 @@
-import { getPlatformStats } from "@/lib/platform-stats";
-
-export default function PlatformStats() {
-  const stats = getPlatformStats();
+export default function PlatformStats({
+  productCount,
+  manufacturerCount,
+  categoryCount,
+}: {
+  productCount: number;
+  manufacturerCount: number;
+  categoryCount: number;
+}) {
   const items = [
-    ["Устройства", stats.devices],
-    ["Производители", stats.manufacturers],
-    ["Опубликованные записи", stats.publishedRecords],
-    ["Проверяются", stats.researchItems],
+    ["Товары", productCount],
+    ["Производители", manufacturerCount],
+    ["Категории", categoryCount],
   ] as const;
 
   return (
@@ -14,7 +18,7 @@ export default function PlatformStats() {
       <div className="cm-container py-9 sm:py-11">
         <div className="cm-card overflow-hidden bg-white/92">
           <div className="border-b border-[var(--cm-rule)] bg-white px-5 py-3.5">
-            <div className="cm-label !text-cm-teal">Platform snapshot</div>
+            <div className="cm-label !text-cm-teal">Каталог</div>
           </div>
           <div className="grid gap-px bg-[var(--cm-rule)] sm:grid-cols-2 lg:grid-cols-4">
           {items.map(([label, value]) => (

@@ -7,24 +7,22 @@ export default function Hero() {
         <div className="max-w-4xl">
 
           <div className="inline-flex items-center rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm text-blue-700">
-            AI Knowledge Commerce Platform
+            Каталог медицинского оборудования
           </div>
 
           <h1 className="mt-8 text-6xl font-black leading-tight tracking-tight text-gray-900">
             Медицинские изделия.
             <br />
-            Не просто каталог.
+            Производители.
             <br />
-            База инженерных знаний.
+            Технические характеристики.
           </h1>
 
           <p className="mt-8 max-w-3xl text-xl leading-9 text-gray-600">
             CyberMedica объединяет производителей,
-            регистрационные удостоверения,
             характеристики,
-            аналоги,
-            совместимость,
-            тендеры
+            категории,
+            подбор оборудования
             и коммерческие предложения
             в одной системе.
           </p>
@@ -36,7 +34,7 @@ export default function Hero() {
             </button>
 
             <button className="rounded-xl border border-gray-300 bg-white px-8 py-4 font-semibold hover:bg-gray-50">
-              База знаний
+              Запросить КП
             </button>
 
           </div>

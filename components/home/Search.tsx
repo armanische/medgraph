@@ -3,9 +3,21 @@
 import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 
-import { searchMedicalDevices } from "@/lib/search";
+interface HomepageSearchProduct {
+  id: string;
+  title: string;
+  model: string;
+  manufacturer: string;
+  category: string;
+  href: string;
+  searchText: string;
+}
 
-const popularQueries = ["FS510", "Hamilton C3", "Mindray SV300", "Airtraq", "Ambu"];
+interface HomepageStats {
+  productCount: number;
+  manufacturerCount: number;
+  categoryCount: number;
+}
 const chipClassName =
   "inline-flex min-h-8 items-center rounded-md border border-cm-teal/18 bg-white/76 px-3.5 font-mono text-[10px] font-semibold text-cm-teal transition duration-200 hover:border-cm-teal/35 hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cm-teal";
 const audienceCardClassName =
@@ -20,14 +32,46 @@ function SearchIcon() {
   );
 }
 
-export default function Search() {
+function normalizeSearchText(value: string) {
+  return value
+    .toLocaleLowerCase("ru-RU")
+    .replace(/ё/g, "е")
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+export default function Search({
+  products,
+  stats,
+}: {
+  products: readonly HomepageSearchProduct[];
+  stats: HomepageStats;
+}) {
   const router = useRouter();
   const [query, setQuery] = useState("");
+  const popularQueries = useMemo(
+    () => products.map((product) => product.model).filter(Boolean).slice(0, 5),
+    [products],
+  );
 
   const results = useMemo(() => {
-    const value = query.trim();
-    return value ? searchMedicalDevices(value).results : [];
-  }, [query]);
+    const normalizedQuery = normalizeSearchText(query);
+    if (!normalizedQuery) return [];
+    const tokens = normalizedQuery.split(" ");
+    return products.filter((product) => {
+      const haystack = normalizeSearchText(
+        [
+          product.title,
+          product.model,
+          product.manufacturer,
+          product.category,
+          product.searchText,
+        ].join(" "),
+      );
+      return tokens.every((token) => haystack.includes(token));
+    });
+  }, [products, query]);
 
   function handleSearch() {
     router.push(`/search?q=${encodeURIComponent(query.trim())}`);
@@ -47,17 +91,17 @@ export default function Search() {
         <div className="max-w-[47rem]">
           <div className="cm-label mb-4 flex items-center gap-2 !text-cm-teal">
             <span className="size-1.5 rounded-full bg-cm-teal" />
-            Evidence Platform · Medical Devices
+            Medical Equipment Catalog
           </div>
 
           <h1 className="cm-balanced max-w-[45rem] text-[2.55rem] font-extrabold leading-[1.015] tracking-[-0.03em] text-cm-ink sm:text-[3.35rem] md:text-[3.85rem] lg:text-[3.35rem] xl:text-[3.55rem]">
-            База знаний
+            Каталог медицинского оборудования
             <br />
-            <span className="font-bold text-cm-teal lg:whitespace-nowrap">медицинских изделий</span>
+            <span className="font-bold text-cm-teal lg:whitespace-nowrap">для клиник и закупок</span>
           </h1>
           <p className="mt-5 max-w-[36.5rem] text-base leading-7 text-cm-slate sm:text-[17px] sm:leading-8">
-            Экспертная платформа для клиницистов, инженеров и закупочных команд:
-            проверенные характеристики, документы и совместимость в одной записи.
+            Производители, технические характеристики и подбор оборудования
+            для клиницистов, инженеров и закупочных команд.
           </p>
 
           <div className="relative mt-7 max-w-[38rem]">
@@ -108,7 +152,7 @@ export default function Search() {
                   Попробуйте один из запросов или продолжите поиск в каталоге.
                 </div>
                 <div className="mt-3 flex flex-wrap gap-2">
-                  {["Hamilton", "FS510", "Ambu", "ИВЛ"].map((item) => (
+                  {popularQueries.slice(0, 4).map((item) => (
                     <button
                       key={item}
                       onClick={() => setQuery(item)}
@@ -165,21 +209,21 @@ export default function Search() {
             />
             <div className="flex items-center justify-between gap-4">
               <div>
-                <div className="cm-label !text-cm-teal">Экспертная проверка</div>
+                <div className="cm-label !text-cm-teal">Подбор оборудования</div>
                 <h2 className="mt-2 text-[17px] font-bold tracking-[-0.018em]">
-                  Проверенная запись
+                  Каталог и характеристики
                 </h2>
               </div>
               <div className="rounded-md border border-cm-verified/18 bg-cm-verified-soft/80 px-3 py-2 font-mono text-[10px] font-semibold text-cm-verified">
-                Актуально
+                По запросу
               </div>
             </div>
 
             <div className="relative mt-5 grid gap-2.5">
               {[
-                ["Опубликованная запись", "FS510", "проверено CyberMedica"],
-                ["Исследование в работе", "49 изделий", "ожидают источники"],
-                ["Подтверждение данными", "Документ → подтверждение", "без неподтверждённых фактов"],
+                ["Товары", String(stats.productCount), "доступны для подбора"],
+                ["Производители", String(stats.manufacturerCount), "активные бренды"],
+                ["Категории", String(stats.categoryCount), "направления оборудования"],
               ].map(([label, value, note], index) => (
                 <div
                   key={label}
@@ -205,10 +249,10 @@ export default function Search() {
 
             <div className="relative mt-4 rounded-md border border-white/8 bg-cm-ink/95 p-3.5 text-white shadow-[0_12px_28px_rgba(11,19,32,0.11)]">
               <div className="font-mono text-[10px] uppercase tracking-[0.08em] text-white/45">
-                Правило публикации
+                Коммерческое предложение
               </div>
               <p className="mt-2 text-sm font-semibold leading-6">
-                Если факт нельзя подтвердить документом — он не публикуется как проверенный.
+                Выберите оборудование и отправьте запрос специалисту CyberMedica.
               </p>
             </div>
           </div>

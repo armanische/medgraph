@@ -26,7 +26,7 @@ export default function Header() {
   const pathname = usePathname();
   const navItems = [
     ["/catalog", "Каталог"],
-    ["/products/fs510", "База знаний"],
+    ["/compare", "Сравнение"],
     ["/manufacturers", "Производители"],
     ["/request", "Поставщикам"],
   ];

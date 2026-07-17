@@ -7,7 +7,7 @@ export default function CTA() {
         <div className="max-w-[38rem]">
           <h2 className="text-base font-bold tracking-[-0.01em]">Не нашли нужное изделие?</h2>
           <p className="mt-2 text-[13px] leading-6 text-cm-slate">
-            Опишите задачу — специалист проверит документы, параметры и доступные варианты.
+            Опишите задачу — специалист поможет подобрать оборудование и доступные варианты.
           </p>
         </div>
         <Link href="/request" className="cm-button-primary shrink-0">Запросить КП</Link>

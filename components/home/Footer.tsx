@@ -1,23 +1,23 @@
 import Link from "next/link";
 import packageJson from "@/package.json";
-import { getPlatformStats } from "@/lib/platform-stats";
+import { catalogRepository } from "@/lib/storefront";
 
-export default function Footer() {
-  const stats = getPlatformStats();
+export default async function Footer() {
+  const summary = await catalogRepository.getCatalogSummary();
   const updatedAt = new Intl.DateTimeFormat("ru-RU", {
     day: "2-digit",
     month: "2-digit",
     year: "numeric",
-  }).format(new Date(stats.lastDataUpdate));
+  }).format(new Date(summary.generatedAt));
 
   return (
     <footer className="bg-cm-ink text-white">
       <div className="cm-container border-b border-white/6 py-6">
         <div className="rounded-2xl border border-white/8 bg-white/[0.03] p-4">
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-            <div className="cm-label !text-white/30">Engineering principle</div>
+            <div className="cm-label !text-white/30">Подбор оборудования</div>
             <div className="max-w-2xl text-xs leading-6 text-white/55">
-              Нет происхождения данных — нет публичного факта.
+              Производители, категории и технические характеристики в одном каталоге.
             </div>
           </div>
         </div>
@@ -31,8 +31,8 @@ export default function Footer() {
             CyberMedica
           </div>
           <p className="mt-3 max-w-xs text-xs leading-6 text-white/40">
-            Платформа доказательных данных о медицинских изделиях. Каждый
-            опубликованный факт прослеживается до источника.
+            Каталог медицинского оборудования для клиник, инженеров и
+            закупочных команд.
           </p>
         </div>
 
@@ -40,7 +40,7 @@ export default function Footer() {
           <div className="cm-label !text-white/25">Платформа</div>
           <div className="mt-4 flex flex-col gap-2.5 text-xs text-white/45">
             <Link href="/catalog" className="transition duration-200 hover:text-white">Каталог</Link>
-            <Link href="/products/fs510" className="transition duration-200 hover:text-white">База знаний</Link>
+            <Link href="/compare" className="transition duration-200 hover:text-white">Сравнение</Link>
             <Link href="/manufacturers" className="transition duration-200 hover:text-white">Производители</Link>
           </div>
         </div>
@@ -55,9 +55,9 @@ export default function Footer() {
         </div>
 
         <div>
-          <div className="cm-label !text-white/25">Принцип данных</div>
+          <div className="cm-label !text-white/25">Структура каталога</div>
           <p className="mt-4 text-xs leading-6 text-white/40">
-            Источник → Документ → Доказательство → Проверка → Публикация.
+            Производитель → Категория → Товар → Запрос КП.
           </p>
         </div>
       </div>

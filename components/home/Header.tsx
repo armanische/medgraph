@@ -15,7 +15,7 @@ export default function Header() {
             </div>
 
             <div className="text-xs text-gray-500">
-              Knowledge Platform
+              Каталог оборудования
             </div>
           </div>
 
@@ -25,7 +25,7 @@ export default function Header() {
 
           <a href="#">Каталог</a>
 
-          <a href="#">База знаний</a>
+          <a href="#">Производители</a>
 
           <a href="#">Производители</a>
 
