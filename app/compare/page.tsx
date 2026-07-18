@@ -42,8 +42,8 @@ export default async function ComparePage() {
   if (!result.products.length) {
     return (
       <main className="min-h-screen bg-cm-canvas">
-        <section className="cm-container py-14">
-          <div className="cm-empty-state" aria-labelledby="compare-empty-title">
+        <section className="cm-container py-8">
+          <div className="cm-empty-state py-5" aria-labelledby="compare-empty-title">
             <div className="cm-empty-icon">⇄</div>
             <h1 id="compare-empty-title" className="mt-4 text-lg font-bold">
               Для сравнения пока нет доступных товаров
@@ -69,16 +69,16 @@ export default async function ComparePage() {
   return (
     <main className="min-h-screen bg-cm-canvas">
       <header className="border-b border-[var(--cm-rule)] bg-white">
-        <div className="cm-container py-10">
+        <div className="cm-container cm-page-intro">
           <div className="cm-label">CyberMedica · Сравнение</div>
-          <h1 className="mt-3 max-w-3xl text-3xl font-extrabold tracking-[-0.03em]">
+          <h1 className="mt-2 max-w-3xl text-3xl font-extrabold tracking-[-0.03em]">
             Сравнение медицинского оборудования
           </h1>
-          <p className="mt-3 max-w-2xl text-sm leading-7 text-cm-slate">
+          <p className="mt-2 max-w-2xl text-[13px] leading-6 text-cm-slate">
             Сопоставьте описание, технические характеристики, документы и
             совместимость товаров из каталога.
           </p>
-          <div className="mt-5 flex flex-wrap gap-2">
+          <div className="mt-4 flex flex-wrap gap-2">
             <Link href="/catalog" className="cm-button-primary">
               Выбрать товары в каталоге
             </Link>
@@ -89,7 +89,7 @@ export default async function ComparePage() {
         </div>
       </header>
 
-      <section className="cm-container space-y-6 py-8">
+      <section className="cm-container space-y-5 py-6">
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           <Metric label="товаров" value={result.summary.products} />
           <Metric label="характеристик" value={result.summary.specifications} />
@@ -103,7 +103,7 @@ export default async function ComparePage() {
             return (
               <article
                 key={product.id}
-                className="rounded-lg border border-[var(--cm-rule)] bg-white p-5"
+                className="rounded-xl border border-[var(--cm-rule)] bg-white p-4"
               >
                 {manufacturer ? (
                   <Link

@@ -44,19 +44,19 @@ export default async function SearchPage({
   return (
     <main className="min-h-screen bg-cm-canvas">
       <header className="border-b border-[var(--cm-rule)] bg-white">
-        <div className="cm-container py-10">
+        <div className="cm-container cm-page-intro">
           <div className="cm-label">CyberMedica · Поиск</div>
-          <h1 className="mt-3 max-w-3xl text-3xl font-extrabold tracking-[-0.03em]">
+          <h1 className="mt-2 max-w-3xl text-3xl font-extrabold tracking-[-0.03em]">
             Поиск медицинских изделий
           </h1>
-          <p className="mt-3 max-w-2xl text-sm leading-7 text-cm-slate">
+          <p className="mt-2 max-w-2xl text-[13px] leading-6 text-cm-slate">
             Поиск по названию, модели, производителю, категории и ключевым
             особенностям оборудования.
           </p>
         </div>
       </header>
 
-      <section className="cm-container py-8">
+      <section className="cm-container py-6">
         <SearchExperience
           initialQuery={q}
           products={results}

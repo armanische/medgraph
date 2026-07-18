@@ -148,3 +148,58 @@ test("Ambu VivaSight image is catalog-ready and available to catalog and product
   assert.match(productPage, /<ProductGallery product=\{product\}/u);
   assert.match(catalogExplorer, /product\.media\.find/u);
 });
+
+test("product hero uses a media-first 40/60 layout with catalog details", async () => {
+  const source = await pageSource();
+
+  assert.match(source, /data-testid="product-hero"/);
+  assert.match(
+    source,
+    /lg:grid-cols-\[minmax\(0,2fr\)_minmax\(0,3fr\)\]/,
+  );
+  assert.match(source, /<ProductGallery product=\{product\}/);
+  assert.match(source, /label="Регистрационное удостоверение"/);
+  assert.match(source, /label="Страна"/);
+  assert.match(source, /label="Модель \/ артикул"/);
+  assert.match(source, /label="Статус"/);
+  assert.match(source, /productStatusLabel\(product\.status\)/);
+});
+
+test("product detail has one hierarchy and ordered content sections", async () => {
+  const source = await pageSource();
+  const sectionMarkers = [
+    'title="Описание"',
+    'title="Преимущества"',
+    'title="Технические характеристики"',
+    'title="Комплектация"',
+    'title="Документы"',
+    'title="Связанные товары"',
+  ];
+
+  for (let index = 1; index < sectionMarkers.length; index += 1) {
+    assert.ok(
+      source.indexOf(sectionMarkers[index - 1]) <
+        source.indexOf(sectionMarkers[index]),
+      `${sectionMarkers[index - 1]} must precede ${sectionMarkers[index]}`,
+    );
+  }
+  assert.equal((source.match(/<h1\b/g) ?? []).length, 1);
+  assert.doesNotMatch(source, /title="Изделие"|>Изделие</);
+  assert.doesNotMatch(source, /title="Основная информация"|>Product</);
+});
+
+test("product hero offers accessible quick links without a client runtime", async () => {
+  const source = await pageSource();
+
+  assert.match(source, /aria-label="Быстрые ссылки по карточке товара"/);
+  for (const anchor of [
+    "#description",
+    "#advantages",
+    "#specifications",
+    "#documents",
+  ]) {
+    assert.match(source, new RegExp(`href="${anchor}"`));
+  }
+  assert.match(source, /preload/);
+  assert.doesNotMatch(source, /["']use client["']/);
+});

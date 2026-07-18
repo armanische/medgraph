@@ -53,15 +53,20 @@ export default function ComparisonTable({
   }
 
   return (
-    <div className="overflow-x-auto rounded-lg border border-[var(--cm-rule)] bg-white shadow-[var(--cm-shadow-card)]">
+    <div
+      className="overflow-x-auto rounded-xl border border-[var(--cm-rule)] bg-white shadow-[var(--cm-shadow-card)]"
+      role="region"
+      aria-label="Таблица сравнения товаров"
+      tabIndex={0}
+    >
       <table className="min-w-[860px] border-collapse text-left">
         <thead className="bg-cm-surface-low text-xs text-cm-slate">
           <tr>
-            <th className="sticky left-0 z-10 min-w-56 bg-cm-surface-low px-4 py-3 font-semibold">
+            <th className="sticky left-0 z-10 min-w-52 bg-cm-surface-low px-4 py-3 font-semibold">
               Параметр
             </th>
             {result.products.map((product) => (
-              <th key={product.id} className="min-w-64 px-4 py-3 font-semibold">
+              <th key={product.id} className="min-w-60 px-4 py-3 font-semibold leading-5">
                 <Link
                   href={`/catalog/${product.slug}`}
                   className="hover:text-cm-teal hover:underline"
@@ -74,11 +79,11 @@ export default function ComparisonTable({
         </thead>
         <tbody>
           <tr className="border-t border-[var(--cm-rule)]">
-            <th className="sticky left-0 bg-white px-4 py-4 text-sm font-semibold">
+            <th className="sticky left-0 bg-white px-4 py-3 text-sm font-semibold">
               Производитель
             </th>
             {result.products.map((product) => (
-              <td key={product.id} className="border-l border-[var(--cm-rule)] px-4 py-4 text-sm">
+              <td key={product.id} className="border-l border-[var(--cm-rule)] px-4 py-3 text-sm">
                 {manufacturers.get(product.manufacturerId) ? (
                   <Link
                     href={`/manufacturers/${manufacturers.get(product.manufacturerId)?.slug}`}
@@ -91,21 +96,21 @@ export default function ComparisonTable({
             ))}
           </tr>
           <tr className="border-t border-[var(--cm-rule)]">
-            <th className="sticky left-0 bg-white px-4 py-4 text-sm font-semibold">
+            <th className="sticky left-0 bg-white px-4 py-3 text-sm font-semibold">
               Категория
             </th>
             {result.products.map((product) => (
-              <td key={product.id} className="border-l border-[var(--cm-rule)] px-4 py-4 text-sm">
+              <td key={product.id} className="border-l border-[var(--cm-rule)] px-4 py-3 text-sm">
                 {categories.get(product.categoryId)?.name ?? ""}
               </td>
             ))}
           </tr>
           <tr className="border-t border-[var(--cm-rule)]">
-            <th className="sticky left-0 bg-white px-4 py-4 text-sm font-semibold">
+            <th className="sticky left-0 bg-white px-4 py-3 text-sm font-semibold">
               Описание
             </th>
             {result.products.map((product) => (
-              <td key={product.id} className="border-l border-[var(--cm-rule)] px-4 py-4 text-sm leading-6 text-cm-slate">
+              <td key={product.id} className="border-l border-[var(--cm-rule)] px-4 py-3 text-sm leading-5 text-cm-slate">
                 {product.shortDescription}
               </td>
             ))}
@@ -115,14 +120,14 @@ export default function ComparisonTable({
               key={row.key}
               className={`border-t border-[var(--cm-rule)] ${row.hasDifference ? "bg-amber-50/35" : ""}`}
             >
-              <th className="sticky left-0 bg-white px-4 py-4 align-top">
+              <th className="sticky left-0 bg-white px-4 py-3 align-top">
                 <div className="text-sm font-semibold text-cm-ink">{row.label}</div>
                 <div className="mt-1 text-xs text-cm-dim">{row.group}</div>
               </th>
               {row.cells.map(({ specification }, index) => (
                 <td
                   key={result.products[index]?.id ?? index}
-                  className="border-l border-[var(--cm-rule)] px-4 py-4 align-top text-sm font-semibold text-cm-ink"
+                  className="border-l border-[var(--cm-rule)] px-4 py-3 align-top text-sm font-semibold text-cm-ink"
                 >
                   {formatSpecification(specification)}
                 </td>
@@ -130,21 +135,21 @@ export default function ComparisonTable({
             </tr>
           ))}
           <tr className="border-t border-[var(--cm-rule)]">
-            <th className="sticky left-0 bg-white px-4 py-4 align-top text-sm font-semibold">
+            <th className="sticky left-0 bg-white px-4 py-3 align-top text-sm font-semibold">
               Документы
             </th>
             {result.products.map((product) => (
-              <td key={product.id} className="border-l border-[var(--cm-rule)] px-4 py-4 align-top">
+              <td key={product.id} className="border-l border-[var(--cm-rule)] px-4 py-3 align-top">
                 <Documents documents={product.documents} />
               </td>
             ))}
           </tr>
           <tr className="border-t border-[var(--cm-rule)]">
-            <th className="sticky left-0 bg-white px-4 py-4 align-top text-sm font-semibold">
+            <th className="sticky left-0 bg-white px-4 py-3 align-top text-sm font-semibold">
               Совместимость
             </th>
             {result.products.map((product) => (
-              <td key={product.id} className="border-l border-[var(--cm-rule)] px-4 py-4 align-top text-sm text-cm-slate">
+              <td key={product.id} className="border-l border-[var(--cm-rule)] px-4 py-3 align-top text-sm text-cm-slate">
                 {product.compatibility.map(({ label, note }) => (
                   <div key={`${label}-${note}`} className="mb-2 last:mb-0">
                     <span className="font-semibold text-cm-ink">{label}</span>

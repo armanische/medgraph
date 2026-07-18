@@ -12,7 +12,7 @@ export default async function Footer() {
 
   return (
     <footer className="bg-cm-ink text-white">
-      <div className="cm-container border-b border-white/6 py-6">
+      <div className="cm-container border-b border-white/6 py-5">
         <div className="rounded-2xl border border-white/8 bg-white/[0.03] p-4">
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <div className="cm-label !text-white/30">Подбор оборудования</div>
@@ -22,7 +22,7 @@ export default async function Footer() {
           </div>
         </div>
       </div>
-      <div className="cm-container grid gap-10 py-10 sm:grid-cols-2 lg:grid-cols-[1.35fr_1fr_1fr_1fr]">
+      <div className="cm-container grid gap-7 py-8 sm:grid-cols-2 lg:grid-cols-[1.35fr_1fr_1fr_1fr]">
         <div>
           <div className="flex items-center gap-2 text-sm font-bold">
             <span className="flex size-6 items-center justify-center rounded-md bg-white/8">

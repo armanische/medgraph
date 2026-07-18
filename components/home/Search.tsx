@@ -12,7 +12,7 @@ import type {
 } from "@/lib/storefront/types";
 
 const chipClassName =
-  "inline-flex min-h-9 items-center rounded-md border border-cm-teal/18 bg-white px-3.5 font-mono text-[10px] font-semibold text-cm-teal transition duration-200 hover:border-cm-teal/35 hover:bg-cm-teal-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cm-teal";
+  "inline-flex min-h-8 items-center rounded-md border border-cm-teal/18 bg-white px-3 font-mono text-[10px] font-semibold text-cm-teal transition duration-200 hover:border-cm-teal/35 hover:bg-cm-teal-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cm-teal";
 
 function SearchIcon() {
   return (
@@ -79,19 +79,19 @@ export default function Search({
     <section
       id="homepage-search"
       aria-labelledby="homepage-search-title"
-      className="border-b border-[var(--cm-rule)] bg-white py-12 sm:py-14"
+      className="cm-section border-b border-[var(--cm-rule)] bg-white"
     >
       <div className="cm-container">
-        <div className="grid gap-7 lg:grid-cols-[minmax(0,0.7fr)_minmax(28rem,1.3fr)] lg:items-center">
+        <div className="grid gap-5 lg:grid-cols-[minmax(0,0.7fr)_minmax(28rem,1.3fr)] lg:items-center">
           <div>
             <div className="cm-label !text-cm-teal">Быстрый поиск</div>
             <h2
               id="homepage-search-title"
-              className="mt-2 text-[1.45rem] font-extrabold tracking-[-0.02em]"
+              className="cm-section-title"
             >
               Найдите оборудование по названию или модели
             </h2>
-            <p className="mt-3 max-w-lg text-sm leading-7 text-cm-slate">
+            <p className="mt-2 max-w-lg text-[13px] leading-6 text-cm-slate">
               Поиск работает по товарам, производителям, категориям и ключевым
               особенностям каталога.
             </p>
@@ -106,7 +106,7 @@ export default function Search({
             >
               <label
                 htmlFor="homepage-search-input"
-                className="flex min-h-16 min-w-0 flex-1 items-center gap-3 px-4 sm:px-5"
+                className="flex min-h-14 min-w-0 flex-1 items-center gap-3 px-4 sm:px-5"
               >
                 <span className="text-cm-dim">
                   <SearchIcon />
@@ -120,12 +120,12 @@ export default function Search({
                   placeholder="Например, FS510 или Ambu"
                   autoComplete="off"
                   aria-controls="homepage-search-results"
-                  className="h-full min-w-0 flex-1 bg-transparent text-[15px] text-cm-ink placeholder:text-cm-dim"
+                  className="h-full min-w-0 flex-1 bg-transparent text-sm text-cm-ink placeholder:text-cm-dim"
                 />
               </label>
               <button
                 type="submit"
-                className="min-h-16 shrink-0 bg-cm-ink px-5 text-sm font-semibold text-white transition duration-200 hover:bg-cm-teal active:bg-cm-teal-dark sm:px-7"
+                className="min-h-14 shrink-0 bg-cm-ink px-5 text-[13px] font-semibold text-white transition duration-200 hover:bg-cm-teal active:bg-cm-teal-dark sm:px-7"
               >
                 Найти
               </button>

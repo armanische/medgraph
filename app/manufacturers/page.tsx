@@ -59,7 +59,7 @@ export default async function ManufacturersPage() {
         })}
       />
       <header className="border-b border-[var(--cm-rule)] bg-[linear-gradient(135deg,#ffffff_0%,#f6fafc_58%,#e8f5f7_100%)]">
-        <div className="cm-container py-8">
+        <div className="cm-container cm-page-intro">
           <div className="cm-label">Каталог производителей</div>
           <h1 className="mt-3 text-2xl font-extrabold tracking-[-0.025em]">
             Производители
@@ -68,31 +68,31 @@ export default async function ManufacturersPage() {
             Медицинское оборудование, категории и производители собраны в одном
             каталоге.
           </p>
-          <div className="mt-6 grid gap-2 overflow-hidden rounded-2xl border border-[var(--cm-rule)] bg-[var(--cm-rule)] shadow-[0_14px_44px_rgba(11,19,32,0.06)] sm:grid-cols-3">
+          <div className="mt-5 grid gap-px overflow-hidden rounded-xl border border-[var(--cm-rule)] bg-[var(--cm-rule)] shadow-[0_10px_32px_rgba(11,19,32,0.045)] grid-cols-3">
             {[
               ["Производителей", manufacturers.length],
               ["Изделий", products.length],
               ["Категорий", categories.length],
             ].map(([label, value]) => (
-              <div key={label} className="bg-white p-5">
-                <div className="font-mono text-2xl font-bold text-cm-ink">
+              <div key={label} className="bg-white p-3 sm:p-4">
+                <div className="font-mono text-lg font-bold text-cm-ink sm:text-xl">
                   {value}
                 </div>
-                <div className="mt-1 cm-label">{label}</div>
+                <div className="mt-1 font-mono text-[8px] uppercase tracking-[0.08em] text-cm-dim sm:text-[10px]">{label}</div>
               </div>
             ))}
           </div>
         </div>
       </header>
 
-      <section className="cm-container py-7">
+      <section className="cm-container py-6">
         {directory.length > 0 ? (
           <div className="grid gap-3 md:grid-cols-2">
             {directory.map(({ manufacturer, productCount, categories: names }) => (
             <Link
               key={manufacturer.slug}
               href={`/manufacturers/${manufacturer.slug}`}
-              className="group cm-card relative overflow-hidden p-5"
+              className="group cm-card relative overflow-hidden p-4"
             >
               <div
                 aria-hidden="true"
@@ -106,17 +106,17 @@ export default async function ManufacturersPage() {
                   Изделий в каталоге: {productCount}
                 </div>
               </div>
-              <div className="mt-4 flex items-center gap-3">
+              <div className="mt-3 flex items-center gap-3">
                 <ManufacturerLogo
                   logoUrl={manufacturer.logoUrl}
                   name={manufacturer.name}
                 />
                 <h2 className="text-lg font-bold">{manufacturer.name}</h2>
               </div>
-              <p className="mt-3 text-xs leading-6 text-cm-slate">
+              <p className="mt-3 text-xs leading-5 text-cm-slate">
                 {manufacturer.shortDescription}
               </p>
-              <div className="mt-5 flex flex-wrap gap-1.5">
+              <div className="mt-4 flex flex-wrap gap-1.5">
                 {names.map((name) => (
                   <span
                     key={name}
@@ -126,7 +126,7 @@ export default async function ManufacturersPage() {
                   </span>
                 ))}
               </div>
-              <div className="mt-5 border-t border-[var(--cm-rule)] pt-4 text-xs font-semibold text-cm-dim transition duration-200 group-hover:text-cm-teal">
+              <div className="mt-4 border-t border-[var(--cm-rule)] pt-3 text-xs font-semibold text-cm-dim transition duration-200 group-hover:text-cm-teal">
                 Открыть производителя →
               </div>
             </Link>

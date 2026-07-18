@@ -51,27 +51,27 @@ export default async function CatalogPage({
         })}
       />
       <header className="border-b border-[var(--cm-rule)] bg-[linear-gradient(135deg,#ffffff_0%,#f6fafc_58%,#e8f5f7_100%)]">
-        <div className="cm-container py-10">
-          <div className="grid gap-7 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-end">
+        <div className="cm-container cm-page-intro">
+          <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_17rem] lg:items-end">
             <div>
               <div className="cm-label">CyberMedica · Каталог</div>
-              <h1 className="mt-3 max-w-3xl text-3xl font-extrabold tracking-[-0.03em]">
+              <h1 className="mt-2 max-w-3xl text-3xl font-extrabold tracking-[-0.03em]">
                 Каталог медицинских изделий
               </h1>
-              <p className="mt-3 max-w-2xl text-sm leading-7 text-cm-slate">
+              <p className="mt-2 max-w-2xl text-[13px] leading-6 text-cm-slate">
                 Медицинское оборудование по категориям и производителям:
                 описания, технические характеристики и подбор оборудования.
               </p>
             </div>
-            <div className="rounded-lg border border-[var(--cm-rule)] bg-white/78 p-4 shadow-[0_12px_34px_rgba(11,19,32,0.055)] backdrop-blur">
+            <div className="rounded-xl border border-[var(--cm-rule)] bg-white/78 p-3 shadow-[0_12px_34px_rgba(11,19,32,0.055)] backdrop-blur">
               <div className="cm-label !text-cm-teal">Сводка каталога</div>
-              <div className="mt-3 grid grid-cols-2 gap-2.5">
-                <div className="rounded-md border border-[var(--cm-rule)] bg-white/70 p-3">
-                  <div className="font-mono text-xl font-bold">{products.length}</div>
+              <div className="mt-2 grid grid-cols-2 gap-2">
+                <div className="rounded-md border border-[var(--cm-rule)] bg-white/70 p-2.5">
+                  <div className="font-mono text-lg font-bold">{products.length}</div>
                   <div className="cm-label mt-1 text-[8px]">позиций</div>
                 </div>
-                <div className="rounded-md border border-[var(--cm-rule)] bg-white/70 p-3">
-                  <div className="font-mono text-xl font-bold">{categories.length}</div>
+                <div className="rounded-md border border-[var(--cm-rule)] bg-white/70 p-2.5">
+                  <div className="font-mono text-lg font-bold">{categories.length}</div>
                   <div className="cm-label mt-1 text-[8px]">категорий</div>
                 </div>
               </div>
@@ -79,7 +79,7 @@ export default async function CatalogPage({
           </div>
         </div>
       </header>
-      <div className="cm-container py-8">
+      <div className="cm-container py-6">
         <CatalogExplorer
           initialQuery={q}
           initialCategory={category}

@@ -30,6 +30,12 @@ export default function Header() {
     ["/manufacturers", "Производители"],
     ["/request", "Поставщикам"],
   ];
+  const mobileNavItems = [
+    ["/catalog", "Каталог"],
+    ["/compare", "Сравнение"],
+    ["/manufacturers", "Производители"],
+    ["/search", "Поиск"],
+  ];
   const isActive = (href: string) =>
     href === "/" ? pathname === href : pathname.startsWith(href);
 
@@ -85,13 +91,13 @@ export default function Header() {
 
       <nav
         aria-label="Мобильная навигация"
-        className="flex min-h-10 items-center gap-1.5 overflow-x-auto border-t border-[var(--cm-rule)] px-4 lg:hidden"
+        className="flex min-h-10 items-center justify-between gap-1 overflow-x-auto border-t border-[var(--cm-rule)] px-3 lg:hidden"
       >
-        {navItems.map(([href, label]) => (
+        {mobileNavItems.map(([href, label]) => (
           <Link
             key={href}
             href={href}
-            className={`shrink-0 rounded-lg px-2.5 py-2 text-xs transition duration-200 hover:bg-cm-surface-low hover:text-cm-teal ${
+            className={`shrink-0 rounded-lg px-2 py-2 text-[11px] transition duration-200 hover:bg-cm-surface-low hover:text-cm-teal ${
               isActive(href)
                 ? "bg-cm-teal-soft text-cm-teal"
                 : "text-cm-slate"

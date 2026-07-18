@@ -25,7 +25,7 @@ function ResultCard({
   return (
     <Link
       href={`/catalog/${product.slug}`}
-      className="cm-card block p-5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cm-teal"
+      className="cm-card block p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cm-teal"
     >
       <div className="flex items-start gap-4">
         {image ? (
@@ -44,10 +44,10 @@ function ResultCard({
           </span>
         )}
         <div className="min-w-0">
-          <h2 className="text-lg font-semibold tracking-[-0.015em] text-cm-ink">
+          <h2 className="text-base font-semibold tracking-[-0.015em] text-cm-ink">
             {product.name}
           </h2>
-          <p className="mt-2 text-sm leading-6 text-cm-slate">
+          <p className="mt-1.5 text-xs leading-5 text-cm-slate">
             {manufacturer} · {category}
           </p>
         </div>
@@ -112,8 +112,8 @@ export default function SearchExperience({
   }
 
   return (
-    <div className="space-y-7">
-      <section className="rounded-lg border border-[var(--cm-rule)] bg-white p-4 shadow-[var(--cm-shadow-card)]">
+    <div className="space-y-5">
+      <section className="rounded-xl border border-[var(--cm-rule)] bg-white p-3 shadow-[var(--cm-shadow-card)]">
         <div className="flex flex-col gap-3 sm:flex-row">
           <label className="min-w-0 flex-1">
             <span className="sr-only">Поиск медицинского изделия</span>
@@ -125,19 +125,19 @@ export default function SearchExperience({
               }}
               type="search"
               placeholder="Производитель, модель, название или категория"
-              className="cm-field min-h-12"
+              className="cm-field min-h-11"
             />
           </label>
           <button
             type="button"
             onClick={() => submit()}
-            className="cm-button-primary min-h-12 px-6"
+            className="cm-button-primary min-h-11 px-6"
           >
             Найти
           </button>
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-3 flex flex-wrap gap-2">
           {suggestions.map((suggestion) => (
             <button
               key={suggestion}
@@ -167,16 +167,16 @@ export default function SearchExperience({
       ) : null}
 
       {!initialQuery.trim() ? (
-        <section className="cm-empty-state" aria-labelledby="search-start-title">
+        <section className="cm-empty-state py-5" aria-labelledby="search-start-title">
           <div className="cm-empty-icon">⌕</div>
-          <h2 id="search-start-title" className="mt-4 text-sm font-bold">
+          <h2 id="search-start-title" className="mt-3 text-sm font-bold">
             Что вы хотите найти?
           </h2>
           <p className="mx-auto mt-2 max-w-md text-xs leading-6 text-cm-slate">
             Введите производителя, модель, название или категорию либо начните
             с просмотра каталога.
           </p>
-          <div className="mt-5 flex flex-wrap justify-center gap-2">
+          <div className="mt-4 flex flex-wrap justify-center gap-2">
             <Link href="/catalog" className="cm-button-primary">
               Открыть каталог
             </Link>
@@ -202,13 +202,13 @@ export default function SearchExperience({
           ))}
         </div>
       ) : (
-        <section className="cm-empty-state text-cm-slate">
+        <section className="cm-empty-state py-5 text-cm-slate">
           <div className="cm-empty-icon">⌕</div>
           <div className="font-semibold text-cm-ink">Ничего не найдено.</div>
           <p className="mx-auto mt-2 max-w-md text-xs leading-6">
             Попробуйте название, модель, производителя или категорию.
           </p>
-          <div className="mt-5 flex flex-wrap justify-center gap-2">
+          <div className="mt-4 flex flex-wrap justify-center gap-2">
             <button
               type="button"
               onClick={() => {

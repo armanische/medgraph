@@ -6,7 +6,7 @@ export default function CTA() {
       aria-labelledby="homepage-cta-title"
       className="border-t border-[var(--cm-rule)] bg-cm-ink text-white"
     >
-      <div className="cm-container flex flex-col gap-7 py-14 lg:flex-row lg:items-center lg:justify-between">
+      <div className="cm-container flex flex-col gap-5 py-10 lg:flex-row lg:items-center lg:justify-between">
         <div className="max-w-[38rem]">
           <h2 id="homepage-cta-title" className="text-xl font-bold tracking-[-0.02em]">
             Начните подбор оборудования

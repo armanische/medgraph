@@ -9,19 +9,19 @@ export default function WhyCyberMedica() {
   return (
     <section
       aria-labelledby="platform-benefits-title"
-      className="border-t border-[var(--cm-rule)] bg-white py-16"
+      className="cm-section border-t border-[var(--cm-rule)] bg-white"
     >
       <div className="cm-container">
       <div className="cm-label">Принципы платформы</div>
       <h2
         id="platform-benefits-title"
-        className="mt-2 text-[1.35rem] font-extrabold tracking-[-0.018em]"
+        className="cm-section-title"
       >
         Почему CyberMedica
       </h2>
-      <div className="mt-7 grid gap-3 md:grid-cols-2">
+      <div className="mt-5 grid gap-3 md:grid-cols-2">
         {items.map(([number, title, text]) => (
-          <div key={title} className="cm-card flex gap-4 p-5">
+          <div key={title} className="cm-card flex gap-3 p-4">
             <span className="font-mono text-sm font-bold text-cm-teal">{number}</span>
             <div>
               <h3 className="text-[13px] font-bold tracking-[-0.01em]">{title}</h3>

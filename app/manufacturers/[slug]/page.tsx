@@ -64,11 +64,11 @@ export default async function ManufacturerPage({ params }: ManufacturerPageProps
   return (
     <main className="min-h-screen bg-cm-canvas">
       <JsonLd data={buildManufacturerStructuredData(manufacturer)} />
-      <section className="cm-container py-8">
+      <section className="cm-container py-6">
         <Link href="/manufacturers" className="text-xs font-semibold text-cm-teal">
           ← Все производители
         </Link>
-        <div className="mt-6 cm-card overflow-hidden">
+        <div className="mt-4 cm-card overflow-hidden">
           <div className="flex items-center justify-between gap-4 border-b border-[var(--cm-rule)] bg-cm-surface-low px-5 py-3">
             <span className="cm-label">Карточка производителя</span>
             <ManufacturerLogo
@@ -76,18 +76,18 @@ export default async function ManufacturerPage({ params }: ManufacturerPageProps
               name={manufacturer.name}
             />
           </div>
-          <div className="grid gap-8 p-6 sm:p-8 lg:grid-cols-[1fr_18rem]">
+          <div className="grid gap-5 p-5 sm:p-6 lg:grid-cols-[1fr_18rem]">
             <div>
               <div className="font-mono text-[10px] uppercase tracking-[0.08em] text-cm-teal">
                 {manufacturer.country}
               </div>
-              <h1 className="mt-3 text-3xl font-extrabold tracking-[-0.03em]">
+              <h1 className="mt-2 text-3xl font-extrabold tracking-[-0.03em]">
                 {manufacturer.name}
               </h1>
-              <p className="mt-4 max-w-2xl text-[13px] leading-7 text-cm-slate">
+              <p className="mt-3 max-w-2xl text-[13px] leading-6 text-cm-slate">
                 {manufacturer.description}
               </p>
-              <div className="mt-6 flex flex-wrap gap-1.5">
+              <div className="mt-4 flex flex-wrap gap-1.5">
                 {manufacturerCategories.map((category) => (
                   <span
                     key={category}
@@ -126,7 +126,7 @@ export default async function ManufacturerPage({ params }: ManufacturerPageProps
           </div>
         </div>
 
-        <div className="mt-10 flex items-end justify-between gap-6">
+        <div className="mt-7 flex items-end justify-between gap-6">
           <div>
             <div className="cm-label">Каталог</div>
             <h2 className="mt-2 text-xl font-bold">Изделия производителя</h2>
@@ -142,17 +142,17 @@ export default async function ManufacturerPage({ params }: ManufacturerPageProps
         </div>
 
         {products.length > 0 ? (
-          <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+          <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
             {products.map((product) => (
               <article
                 key={product.slug}
-                className="group cm-card flex min-h-56 flex-col p-5"
+                className="group cm-card flex min-h-48 flex-col p-4"
               >
                 <div className="font-mono text-[9px] uppercase tracking-[0.08em] text-cm-dim">
                   {categoriesById.get(product.categoryId)?.name ??
                     "Медицинское оборудование"}
                 </div>
-                <h3 className="mt-4 text-sm font-bold leading-5">
+                <h3 className="mt-3 text-sm font-bold leading-5">
                   <Link
                     href={`/catalog/${product.slug}`}
                     className="hover:text-cm-teal"
@@ -160,10 +160,10 @@ export default async function ManufacturerPage({ params }: ManufacturerPageProps
                     {product.name}
                   </Link>
                 </h3>
-                <p className="mt-3 text-xs leading-6 text-cm-slate">
+                <p className="mt-2 text-xs leading-5 text-cm-slate">
                   {product.shortDescription}
                 </p>
-                <div className="mt-auto flex flex-wrap items-center justify-between gap-3 border-t border-[var(--cm-rule)] pt-4 text-xs font-semibold">
+                <div className="mt-auto flex flex-wrap items-center justify-between gap-3 border-t border-[var(--cm-rule)] pt-3 text-xs font-semibold">
                   <Link
                     href={`/catalog/${product.slug}`}
                     className="text-cm-teal"

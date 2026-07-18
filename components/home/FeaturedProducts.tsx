@@ -16,14 +16,14 @@ export default function FeaturedProducts({
   return (
     <section
       aria-labelledby="popular-products-title"
-      className="cm-container py-16"
+      className="cm-container cm-section"
     >
-      <div className="mb-7 flex items-end justify-between gap-5">
+      <div className="mb-5 flex items-end justify-between gap-5">
         <div>
           <div className="cm-label">Избранное из каталога</div>
           <h2
             id="popular-products-title"
-            className="mt-2 text-[1.35rem] font-extrabold tracking-[-0.018em]"
+            className="cm-section-title"
           >
             Популярные товары
           </h2>
@@ -38,21 +38,18 @@ export default function FeaturedProducts({
           <Link
             key={product.id}
             href={`/catalog/${product.slug}`}
-            className="group cm-card flex min-h-56 flex-col p-5"
+            className="group cm-card flex min-h-44 flex-col p-4"
           >
-            <div className="flex items-center justify-between gap-3">
+            <div className="flex items-center gap-3">
               <span className="font-mono text-[9px] uppercase tracking-[0.08em] text-cm-dim">
                 {product.category}
               </span>
-              <span className="rounded-md border border-cm-verified/25 bg-cm-verified-soft px-2.5 py-1 font-mono text-[9px] font-semibold text-cm-verified">
-                По запросу
-              </span>
             </div>
-            <h3 className="mt-5 text-[15px] font-bold leading-6 tracking-[-0.01em]">{product.name}</h3>
-            <p className="mt-3 line-clamp-3 max-w-[28rem] text-xs leading-6 text-cm-slate">
+            <h3 className="mt-3 text-[15px] font-bold leading-6 tracking-[-0.01em]">{product.name}</h3>
+            <p className="mt-2 line-clamp-3 max-w-[28rem] text-xs leading-5 text-cm-slate">
               {product.description}
             </p>
-            <div className="mt-auto border-t border-[var(--cm-rule)] pt-4 text-xs font-semibold text-cm-dim transition group-hover:text-cm-teal">
+            <div className="mt-auto border-t border-[var(--cm-rule)] pt-3 text-xs font-semibold text-cm-dim transition group-hover:text-cm-teal">
               Открыть карточку →
             </div>
           </Link>

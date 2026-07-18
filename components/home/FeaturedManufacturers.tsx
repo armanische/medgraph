@@ -19,7 +19,7 @@ export default function FeaturedManufacturers({
   return (
     <section
       aria-labelledby="featured-manufacturers-title"
-      className="border-y border-[var(--cm-rule)] bg-white py-16"
+      className="cm-section border-y border-[var(--cm-rule)] bg-white"
     >
       <div className="cm-container">
         <div className="flex items-end justify-between gap-5">
@@ -27,7 +27,7 @@ export default function FeaturedManufacturers({
             <div className="cm-label">Бренды каталога</div>
             <h2
               id="featured-manufacturers-title"
-              className="mt-2 text-[1.35rem] font-extrabold tracking-[-0.018em]"
+              className="cm-section-title"
             >
               Производители
             </h2>
@@ -40,12 +40,12 @@ export default function FeaturedManufacturers({
           </Link>
         </div>
 
-        <div className="mt-7 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
           {manufacturers.map((manufacturer) => (
             <Link
               key={manufacturer.id}
               href={`/manufacturers/${manufacturer.slug}`}
-              className="group cm-card flex min-h-48 flex-col p-5"
+              className="group cm-card flex min-h-40 flex-col p-4"
             >
               <div className="flex items-center gap-3">
                 <ManufacturerLogo manufacturer={manufacturer} />
@@ -56,10 +56,10 @@ export default function FeaturedManufacturers({
                   </div>
                 </div>
               </div>
-              <p className="mt-4 text-xs leading-6 text-cm-slate">
+              <p className="mt-3 text-xs leading-5 text-cm-slate">
                 {manufacturer.shortDescription}
               </p>
-              <div className="mt-auto flex items-center justify-between gap-4 border-t border-[var(--cm-rule)] pt-4 text-xs">
+              <div className="mt-auto flex items-center justify-between gap-4 border-t border-[var(--cm-rule)] pt-3 text-xs">
                 <span className="font-mono text-[9px] text-cm-dim">
                   {manufacturer.productCount} товаров
                 </span>

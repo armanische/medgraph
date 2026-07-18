@@ -89,10 +89,10 @@ export default function CatalogExplorer({
   }
 
   return (
-    <div className="grid gap-7 lg:grid-cols-[14rem_1fr]">
+    <div className="grid gap-5 lg:grid-cols-[13.5rem_1fr]">
       <aside>
-        <div className="sticky top-20 cm-card space-y-4 overflow-hidden p-4 shadow-[0_8px_28px_rgba(11,19,32,0.035)]">
-          <div className="-mx-4 -mt-4 border-b border-[var(--cm-rule)] bg-white px-4 py-3">
+        <div className="cm-card grid gap-3 overflow-hidden p-3 shadow-[0_8px_28px_rgba(11,19,32,0.035)] sm:grid-cols-2 lg:sticky lg:top-20 lg:block lg:space-y-4">
+          <div className="-mx-3 -mt-3 border-b border-[var(--cm-rule)] bg-white px-3 py-3 sm:col-span-2 lg:block">
             <div className="cm-label !text-cm-teal">Фильтры</div>
           </div>
           <div>
@@ -131,7 +131,7 @@ export default function CatalogExplorer({
               </select>
             </label>
           </div>
-          <div className="rounded-md border border-[var(--cm-rule)] bg-cm-surface-low/70 p-3 text-[11px] leading-5 text-cm-slate">
+          <div className="hidden rounded-md border border-[var(--cm-rule)] bg-cm-surface-low/70 p-3 text-[11px] leading-5 text-cm-slate lg:block">
             Используйте категорию и производителя, чтобы быстро найти
             нужное медицинское оборудование.
           </div>
@@ -139,7 +139,7 @@ export default function CatalogExplorer({
       </aside>
 
       <div className="min-w-0">
-        <div className="flex overflow-hidden rounded-xl border border-[var(--cm-rule-strong)] bg-white shadow-[0_12px_34px_rgba(11,19,32,0.055)] transition duration-200 hover:border-cm-teal/24 focus-within:border-cm-teal/70 focus-within:ring-3 focus-within:ring-cm-teal/10">
+        <div className="flex overflow-hidden rounded-xl border border-[var(--cm-rule-strong)] bg-white shadow-[0_8px_26px_rgba(11,19,32,0.045)] transition duration-200 hover:border-cm-teal/24 focus-within:border-cm-teal/70 focus-within:ring-3 focus-within:ring-cm-teal/10">
           <label className="flex min-w-0 flex-1 items-center">
             <span className="sr-only">Поиск по каталогу</span>
             <span aria-hidden="true" className="pl-4 text-cm-dim">⌕</span>
@@ -147,7 +147,7 @@ export default function CatalogExplorer({
               value={query}
               onChange={(event) => setQuery(event.target.value)}
               placeholder="Название, модель, производитель или категория"
-              className="min-h-13 min-w-0 flex-1 bg-transparent px-3 text-[13px] placeholder:text-cm-dim"
+              className="min-h-12 min-w-0 flex-1 bg-transparent px-3 text-[13px] placeholder:text-cm-dim"
             />
           </label>
           {query && (
@@ -171,44 +171,73 @@ export default function CatalogExplorer({
         </div>
 
         {results.length > 0 ? (
-          <div className="mt-4 grid gap-3 md:grid-cols-2">
+          <div className="mt-4 grid gap-4 md:grid-cols-2">
             {results.map((product) => (
-              <Link
+              <article
                 key={product.slug}
-                href={`/catalog/${product.slug}`}
-                className="group cm-card flex min-h-64 flex-col p-5"
+                className="group cm-card flex min-h-full flex-col overflow-hidden"
               >
-                <div className="flex items-start justify-between gap-3">
-                  <span className="rounded-md border border-[var(--cm-rule)] bg-white px-2.5 py-1 font-mono text-[9px] font-semibold text-cm-dim">
-                    {categoriesById.get(product.categoryId)?.name ??
-                      product.categoryId}
-                  </span>
-                  <ProductImage product={product} />
-                </div>
-                <h2 className="mt-4 text-[15px] font-bold leading-6 tracking-[-0.01em]">{product.name}</h2>
-                <div className="mt-3 grid gap-1.5 text-[12px] leading-5 text-cm-slate">
-                  <div>
-                    <span className="text-cm-dim">Производитель: </span>
-                    <span className="font-medium text-cm-ink">
-                      {manufacturersById.get(product.manufacturerId)?.name ??
-                        product.manufacturerId}
+                <ProductImage product={product} />
+                <div className="flex flex-1 flex-col p-4">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="rounded-md border border-[var(--cm-rule)] bg-cm-surface-low px-2 py-1 font-mono text-[9px] font-semibold text-cm-dim">
+                      {categoriesById.get(product.categoryId)?.name ??
+                        product.categoryId}
+                    </span>
+                    <span className="font-mono text-[9px] text-cm-dim">
+                      {product.model}
                     </span>
                   </div>
-                </div>
-                <div className="mt-4 rounded-md border border-[var(--cm-rule)] bg-cm-surface-low/65 p-3">
-                  <p className="text-[11px] leading-5 text-cm-slate">
+                  <h2 className="mt-3 text-base font-bold leading-6 tracking-[-0.015em]">
+                    <Link href={`/catalog/${product.slug}`} className="hover:text-cm-teal">
+                      {product.name}
+                    </Link>
+                  </h2>
+                  <div className="mt-2 text-xs text-cm-slate">
+                    {manufacturersById.get(product.manufacturerId) ? (
+                      <Link
+                        href={`/manufacturers/${manufacturersById.get(product.manufacturerId)?.slug}`}
+                        className="font-semibold text-cm-teal hover:underline"
+                      >
+                        {manufacturersById.get(product.manufacturerId)?.name}
+                      </Link>
+                    ) : (
+                      product.manufacturerId
+                    )}
+                  </div>
+                  <p className="mt-3 line-clamp-2 text-xs leading-5 text-cm-slate">
                     {product.shortDescription}
                   </p>
+                  {product.specifications.length > 0 && (
+                    <dl className="mt-3 grid gap-1.5 border-t border-[var(--cm-rule)] pt-3 text-[11px]">
+                      {product.specifications.slice(0, 2).map((specification) => (
+                        <div key={`${specification.label}:${specification.position}`} className="flex justify-between gap-3">
+                          <dt className="text-cm-dim">{specification.label}</dt>
+                          <dd className="text-right font-semibold text-cm-ink">
+                            {specification.value}{specification.unit ? ` ${specification.unit}` : ""}
+                          </dd>
+                        </div>
+                      ))}
+                    </dl>
+                  )}
+                  <div className="mt-auto flex items-center justify-between gap-3 pt-4 text-xs font-semibold">
+                    <Link href={`/catalog/${product.slug}`} className="text-cm-teal">
+                      Открыть карточку →
+                    </Link>
+                    <Link
+                      href="/compare"
+                      aria-label={`Открыть сравнение для ${product.name}`}
+                      className="text-cm-slate hover:text-cm-teal"
+                    >
+                      Сравнить
+                    </Link>
+                  </div>
                 </div>
-                <div className="mt-auto flex items-center justify-between border-t border-[var(--cm-rule)] pt-4">
-                  <span className="text-[11px] text-cm-dim">Карточка изделия</span>
-                  <span className="text-xs font-semibold text-cm-dim transition duration-200 group-hover:text-cm-teal">Открыть →</span>
-                </div>
-              </Link>
+              </article>
             ))}
           </div>
         ) : (
-          <div className="cm-empty-state mt-4">
+          <div className="cm-empty-state mt-4 py-5">
             <div className="cm-empty-icon">⌕</div>
             <h2 className="mt-4 text-sm font-bold">Ничего не найдено</h2>
             <p className="mx-auto mt-2 max-w-md text-xs leading-6 text-cm-slate">
@@ -242,13 +271,13 @@ function ProductImage({ product }: { product: Product }) {
   if (!image) return null;
 
   return (
-    <span className="relative size-10 shrink-0 overflow-hidden rounded-md border border-[var(--cm-rule)] bg-white">
+    <span className="relative block aspect-[16/9] w-full overflow-hidden border-b border-[var(--cm-rule)] bg-white">
       <Image
         src={image.url}
         alt={image.alt}
         fill
-        sizes="40px"
-        className="object-cover"
+        sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 32vw"
+        className="object-contain p-3 transition duration-300 group-hover:scale-[1.02]"
       />
     </span>
   );
