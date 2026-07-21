@@ -1,10 +1,14 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
+import { connection } from "next/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/home/Footer";
+import CloudCatalogPreviewBanner from "@/components/storefront/CloudCatalogPreviewBanner";
+import { isCloudPreviewCatalog } from "@/lib/storefront";
 
-const allowIndexing = process.env.CYBERMEDICA_ALLOW_INDEXING === "1";
+const allowIndexing =
+  process.env.CYBERMEDICA_ALLOW_INDEXING === "1" && !isCloudPreviewCatalog();
 const siteUrl = "https://cybermedica.ru";
 const siteTitle = "CyberMedica — экспертная база медицинских изделий";
 const siteDescription =
@@ -53,15 +57,21 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Resolve environment-specific data at request time. This keeps one prebuilt
+  // artifact reusable for static Production and the isolated Cloud Preview.
+  await connection();
+  const cloudPreview = isCloudPreviewCatalog();
+
   return (
     <html lang="ru">
       <body className="bg-cm-canvas text-cm-ink antialiased">
         <Header />
+        <CloudCatalogPreviewBanner enabled={cloudPreview} />
         {children}
         <Footer />
       </body>

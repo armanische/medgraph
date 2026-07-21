@@ -4,11 +4,13 @@ import {
   categoryService,
   manufacturerService,
   productService,
+  storefrontDataSource,
 } from "@/lib/storefront";
 import { buildStorefrontSitemap } from "@/lib/storefront/storefront-sitemap";
 import { buildFs510Sitemap } from "@/lib/verticals/fs510/sitemap";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  if (storefrontDataSource === "cloud_preview") return [];
   const storefrontSitemap = await buildStorefrontSitemap({
     productService,
     manufacturerService,

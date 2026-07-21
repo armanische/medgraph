@@ -13,7 +13,7 @@ import {
   runPreviewSmoke,
 } from "../../scripts/qa/preview-smoke.ts";
 
-test("security headers are applied globally without invented external origins", async () => {
+test("security headers are applied globally with only the approved Cloud media origin", async () => {
   assert.equal(nextConfig.poweredByHeader, false);
   assert.equal(typeof nextConfig.headers, "function");
   const rules = await nextConfig.headers!();
@@ -30,7 +30,10 @@ test("security headers are applied globally without invented external origins", 
   assert.equal(headers["content-security-policy"], contentSecurityPolicy);
   assert.match(contentSecurityPolicy, /default-src 'self'/);
   assert.match(contentSecurityPolicy, /frame-ancestors 'none'/);
-  assert.doesNotMatch(contentSecurityPolicy, /https?:\/\//);
+  assert.deepEqual(
+    [...new Set(contentSecurityPolicy.match(/https?:\/\/[^\s;]+/gu) ?? [])],
+    ["https://static.tildacdn.com"],
+  );
   assert.doesNotMatch(contentSecurityPolicy, /supabase|webhook/i);
   assert.ok(securityHeaders.length >= 6);
 });

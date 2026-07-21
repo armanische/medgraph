@@ -3,9 +3,14 @@ import { PUBLIC_PRODUCT_STATUSES, type Product } from "./types.ts";
 
 export class ProductService {
   private readonly repository: CatalogRepository;
+  private readonly visibleStatuses: ReadonlySet<Product["status"]>;
 
-  constructor(repository: CatalogRepository) {
+  constructor(
+    repository: CatalogRepository,
+    visibleStatuses: ReadonlySet<Product["status"]> = PUBLIC_PRODUCT_STATUSES,
+  ) {
     this.repository = repository;
+    this.visibleStatuses = visibleStatuses;
   }
 
   getProducts() {
@@ -18,17 +23,17 @@ export class ProductService {
 
   async getProductBySlug(slug: string): Promise<Product | null> {
     const product = await this.repository.getProductBySlug(slug);
-    return product && PUBLIC_PRODUCT_STATUSES.has(product.status) ? product : null;
+    return product && this.visibleStatuses.has(product.status) ? product : null;
   }
 
   async getProductsByManufacturer(manufacturerId: string) {
     const products = await this.repository.getProductsByManufacturer(manufacturerId);
-    return products.filter(({ status }) => PUBLIC_PRODUCT_STATUSES.has(status));
+    return products.filter(({ status }) => this.visibleStatuses.has(status));
   }
 
   async getProductsByCategory(categoryId: string) {
     const products = await this.repository.getProductsByCategory(categoryId);
-    return products.filter(({ status }) => PUBLIC_PRODUCT_STATUSES.has(status));
+    return products.filter(({ status }) => this.visibleStatuses.has(status));
   }
 
   async getRelatedProducts(product: Pick<Product, "relatedProductIds">) {

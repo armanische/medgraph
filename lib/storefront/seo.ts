@@ -29,7 +29,8 @@ export function buildStorefrontMetadata({
   noindexFollow = false,
 }: StorefrontMetadataInput): Metadata {
   const images = image ? [{ url: image.url, alt: image.alt }] : undefined;
-  const allowIndexing = process.env.CYBERMEDICA_ALLOW_INDEXING === "1";
+  const allowIndexing = process.env.CYBERMEDICA_ALLOW_INDEXING === "1"
+    && process.env.CATALOG_DATA_SOURCE !== "cloud_preview";
 
   return {
     title,

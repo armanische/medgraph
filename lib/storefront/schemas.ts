@@ -108,6 +108,14 @@ export const productCompatibilitySchema = z
   })
   .strict();
 
+export const productRegistrationSchema = z
+  .object({
+    number: requiredTextSchema.nullable(),
+    status: requiredTextSchema,
+    sourceUrl: externalUrlSchema.nullable(),
+  })
+  .strict();
+
 export const productSchema = z
   .object({
     id: identifierSchema,
@@ -119,12 +127,14 @@ export const productSchema = z
     shortDescription: requiredTextSchema,
     description: requiredTextSchema,
     status: z.enum(PRODUCT_STATUSES),
+    catalogQualityStatus: z.enum(["READY", "REQUIRES_EDITOR_REVIEW"]).optional(),
     featured: z.boolean(),
     applicationAreas: z.array(requiredTextSchema),
     keyFeatures: z.array(requiredTextSchema),
     specifications: z.array(productSpecificationSchema),
     media: z.array(productMediaSchema),
     documents: z.array(productDocumentSchema),
+    registrationRecords: z.array(productRegistrationSchema).optional(),
     compatibility: z.array(productCompatibilitySchema),
     relatedProductIds: z.array(identifierSchema),
     createdAt: timestampSchema,

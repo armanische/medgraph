@@ -466,13 +466,13 @@ function StatusBadge({ status }: { status: ProductStatus }) {
 }
 
 function productStatusLabel(status: ProductStatus) {
-  const labels: Record<ProductStatus, string> = {
+  const labels: Partial<Record<ProductStatus, string>> = {
     active: "В каталоге",
     on_request: "Под заказ",
     discontinued: "Снято с производства",
     hidden: "Скрыто",
   };
-  return labels[status];
+  return labels[status] ?? "Предпросмотр";
 }
 
 function groupSpecifications(specifications: readonly ProductSpecification[]) {

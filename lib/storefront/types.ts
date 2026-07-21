@@ -3,7 +3,12 @@ export const PRODUCT_STATUSES = [
   "on_request",
   "discontinued",
   "hidden",
+  "preview_draft",
 ] as const;
+
+export const CLOUD_PREVIEW_UNKNOWN_MANUFACTURER_ID = "cloud-preview-manufacturer-unassigned";
+export const CLOUD_PREVIEW_UNKNOWN_CATEGORY_ID = "cloud-preview-category-unassigned";
+export const CATALOG_QUALITY_STATUSES = ["READY", "REQUIRES_EDITOR_REVIEW"] as const;
 
 export const MANUFACTURER_STATUSES = ["active", "hidden"] as const;
 export const CATEGORY_STATUSES = ["active", "hidden"] as const;
@@ -32,6 +37,7 @@ export type ManufacturerStatus = (typeof MANUFACTURER_STATUSES)[number];
 export type CategoryStatus = (typeof CATEGORY_STATUSES)[number];
 export type ProductMediaType = (typeof PRODUCT_MEDIA_TYPES)[number];
 export type ProductDocumentKind = (typeof PRODUCT_DOCUMENT_KINDS)[number];
+export type CatalogQualityStatus = (typeof CATALOG_QUALITY_STATUSES)[number];
 
 export interface Manufacturer {
   id: string;
@@ -90,6 +96,12 @@ export interface ProductCompatibility {
   note: string;
 }
 
+export interface ProductRegistration {
+  number: string | null;
+  status: string;
+  sourceUrl: string | null;
+}
+
 export interface Product {
   id: string;
   slug: string;
@@ -100,12 +112,14 @@ export interface Product {
   shortDescription: string;
   description: string;
   status: ProductStatus;
+  catalogQualityStatus?: CatalogQualityStatus;
   featured: boolean;
   applicationAreas: string[];
   keyFeatures: string[];
   specifications: ProductSpecification[];
   media: ProductMedia[];
   documents: ProductDocument[];
+  registrationRecords?: ProductRegistration[];
   compatibility: ProductCompatibility[];
   relatedProductIds: string[];
   createdAt: string;

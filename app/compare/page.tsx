@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import ComparisonTable from "@/components/compare/ComparisonTable";
-import { catalogRepository, compareService } from "@/lib/storefront";
+import { catalogRepository, compareService, storefrontDataSource } from "@/lib/storefront";
 import { buildStorefrontMetadata } from "@/lib/storefront/seo";
 
 export const metadata: Metadata = buildStorefrontMetadata({
@@ -24,6 +24,27 @@ function Metric({ label, value }: { label: string; value: number }) {
 }
 
 export default async function ComparePage() {
+  if (storefrontDataSource === "cloud_preview") {
+    return (
+      <main className="min-h-screen bg-cm-canvas">
+        <section className="cm-container py-8">
+          <div className="cm-empty-state py-5" aria-labelledby="compare-preview-title">
+            <div className="cm-empty-icon">⇄</div>
+            <h1 id="compare-preview-title" className="mt-4 text-lg font-bold">
+              Сравнение недоступно в Cloud Catalog Preview
+            </h1>
+            <p className="mx-auto mt-2 max-w-md text-xs leading-6 text-cm-slate">
+              Draft-товары не сравниваются автоматически. Сценарий будет доступен
+              после проверки категорий и публикации сопоставимых изделий.
+            </p>
+            <Link href="/catalog" className="cm-button-primary mt-5">
+              Вернуться в каталог
+            </Link>
+          </div>
+        </section>
+      </main>
+    );
+  }
   const comparableProducts = await compareService.getComparableProducts();
   const result = await compareService.compareProducts(
     comparableProducts.slice(0, 2).map(({ slug }) => slug),
