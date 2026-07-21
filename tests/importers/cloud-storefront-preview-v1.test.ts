@@ -10,6 +10,7 @@ import {
   getStorefrontDataSource,
   isCloudPreviewCatalog,
 } from "../../lib/storefront/data-source.ts";
+import { sanitizeStorefrontHtml } from "../../lib/storefront/sanitize-html.ts";
 import {
   CLOUD_PREVIEW_UNKNOWN_CATEGORY_ID,
   CLOUD_PREVIEW_UNKNOWN_MANUFACTURER_ID,
@@ -139,6 +140,14 @@ test("preview drafts require an explicit preview-only service policy", async () 
   assert.equal((await previewService.getProductBySlug("benevision-n1"))?.slug, "benevision-n1");
 });
 
+test("HTML sanitizer removes executable markup and all attributes", () => {
+  const value = sanitizeStorefrontHtml(
+    '<p onclick="alert(1)">Text <strong class="x">safe</strong><img src=x onerror=alert(1)><script>alert(1)</script></p>',
+  );
+  assert.equal(value, "<p>Text <strong>safe</strong></p>");
+  assert.doesNotMatch(value, /script|onclick|onerror|img/iu);
+});
+
 test("Cloud Storefront transport is service-only, no-store and read-only", async () => {
   const [repository, migration] = await Promise.all([
     readFile("lib/storefront/cloud-preview-catalog-repository.ts", "utf8"),
@@ -155,17 +164,24 @@ test("Cloud Storefront transport is service-only, no-store and read-only", async
 });
 
 test("Preview routes expose banner, noindex/no-store and disable Compare", async () => {
-  const [layout, config, compare, robots, sitemap] = await Promise.all([
+  const [layout, config, catalog, compare, product, robots, sitemap] = await Promise.all([
     readFile("app/layout.tsx", "utf8"),
     readFile("next.config.ts", "utf8"),
+    readFile("components/catalog/CatalogExplorer.tsx", "utf8"),
     readFile("app/compare/page.tsx", "utf8"),
+    readFile("app/catalog/[slug]/page.tsx", "utf8"),
     readFile("app/robots.ts", "utf8"),
     readFile("app/sitemap.ts", "utf8"),
   ]);
   assert.match(layout, /CloudCatalogPreviewBanner/u);
   assert.match(config, /X-Robots-Tag/u);
   assert.match(config, /private, no-cache, no-store/u);
+  assert.match(catalog, /Все области применения/u);
+  assert.match(catalog, /updated-desc/u);
   assert.match(compare, /Сравнение недоступно в Cloud Catalog Preview/u);
+  assert.doesNotMatch(product, /PRODUCT_PRESENTATION_FALLBACKS\.registration/u);
+  assert.match(product, /registration &&/u);
+  assert.match(product, /SafeProductDescription/u);
   assert.match(robots, /isCloudPreviewCatalog/u);
   assert.match(sitemap, /storefrontDataSource === "cloud_preview"/u);
 });
@@ -189,10 +205,17 @@ test("Storefront source is resolved at request time for a reusable Preview artif
   assert.match(manufacturer, /productService\.getProductsByManufacturer/u);
 });
 
-test("Cloud media survives build-time source selection", async () => {
-  const config = await readFile("next.config.ts", "utf8");
+test("Cloud media and the approved brand asset survive build-time source selection", async () => {
+  const [config, header, footer] = await Promise.all([
+    readFile("next.config.ts", "utf8"),
+    readFile("components/layout/Header.tsx", "utf8"),
+    readFile("components/home/Footer.tsx", "utf8"),
+  ]);
+
   assert.match(config, /remotePatterns: \[\{ protocol: "https", hostname: "static\.tildacdn\.com" \}\]/u);
   assert.match(config, /img-src 'self' data: blob: \$\{cloudMediaOrigin\}/u);
+  assert.match(header, /\/brand\/cybermedica-logo\.png/u);
+  assert.match(footer, /\/brand\/cybermedica-logo\.png/u);
 });
 
 test("Cloud Preview deployment trace excludes private source datasets", async () => {

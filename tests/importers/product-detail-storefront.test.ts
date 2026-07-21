@@ -43,7 +43,8 @@ test("missing Storefront Product invokes notFound", async () => {
 test("specifications are grouped from ProductSpecification", async () => {
   const source = await pageSource();
 
-  assert.match(source, /groupSpecifications\(product\.specifications\)/);
+  assert.match(source, /product\.specifications\.filter\(isTechnicalSpecification\)/);
+  assert.match(source, /groupSpecifications\(technicalSpecifications\)/);
   assert.match(source, /specification\.group/);
   assert.match(source, /specification\.label/);
   assert.match(source, /specification\.value/);
@@ -119,7 +120,7 @@ test("metadata is generated from Storefront Product", async () => {
   const source = await pageSource();
 
   assert.match(source, /title: `\$\{product\.name\}/);
-  assert.match(source, /description: product\.shortDescription/);
+  assert.match(source, /description: presentation\.shortDescription/);
   assert.match(source, /canonical: `\/catalog\/\$\{product\.slug\}`/);
   assert.match(source, /product\.media\.find\(\(\{ type \}\) => type === "image"\)/);
   assert.match(source, /image: image \? \{ url: image\.url, alt: image\.alt \} : undefined/);
@@ -155,14 +156,14 @@ test("product hero uses a media-first 40/60 layout with catalog details", async 
   assert.match(source, /data-testid="product-hero"/);
   assert.match(
     source,
-    /lg:grid-cols-\[minmax\(0,2fr\)_minmax\(0,3fr\)\]/,
+    /lg:grid-cols-\[minmax\(0,40fr\)_minmax\(0,60fr\)\]/,
   );
   assert.match(source, /<ProductGallery product=\{product\}/);
   assert.match(source, /label="Регистрационное удостоверение"/);
-  assert.match(source, /label="Страна"/);
+  assert.match(source, /label="Страна производства"/);
   assert.match(source, /label="Модель \/ артикул"/);
-  assert.match(source, /label="Статус"/);
-  assert.match(source, /productStatusLabel\(product\.status\)/);
+  assert.doesNotMatch(source, /label="Статус"/);
+  assert.match(source, /presentation\.statusLabel/);
 });
 
 test("product detail has one hierarchy and ordered content sections", async () => {
@@ -191,14 +192,14 @@ test("product detail has one hierarchy and ordered content sections", async () =
 test("product hero offers accessible quick links without a client runtime", async () => {
   const source = await pageSource();
 
-  assert.match(source, /aria-label="Быстрые ссылки по карточке товара"/);
+  assert.match(source, /aria-label="Разделы карточки товара"/);
   for (const anchor of [
     "#description",
     "#advantages",
     "#specifications",
     "#documents",
   ]) {
-    assert.match(source, new RegExp(`href="${anchor}"`));
+    assert.match(source, new RegExp(`\\["${anchor.slice(1)}"`, "u"));
   }
   assert.match(source, /preload/);
   assert.doesNotMatch(source, /["']use client["']/);

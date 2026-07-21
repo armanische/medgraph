@@ -19,25 +19,28 @@ test("product hero contains the key commercial information", async () => {
 
   for (const label of [
     "Производитель",
-    "Страна",
+    "Страна производства",
     "Категория",
     "Модель / артикул",
     "Регистрационное удостоверение",
-    "Статус",
   ]) {
     assert.match(product, new RegExp(`label="${label}"`, "u"));
   }
+  assert.doesNotMatch(product, /label="Статус"/u);
   assert.match(product, /<ProductGallery product=\{product\}/u);
   assert.match(product, /href="\/compare"/u);
   assert.match(product, /`\/manufacturers\/\$\{manufacturer\.slug\}`/u);
 });
 
-test("optional product empty states are explicitly compact", async () => {
+test("optional product sections are omitted when public data is absent", async () => {
   const product = await source("app/catalog/[slug]/page.tsx");
 
-  assert.match(product, /data-optional-empty=\{compact \? "compact"/u);
-  assert.match(product, /message="Данные о совместимости пока не добавлены\."[\s\S]*?compact/u);
-  assert.match(product, /message="Связанные товары пока не добавлены\."[\s\S]*?compact/u);
+  assert.match(product, /presentation\.sections\.advantages/u);
+  assert.match(product, /technicalSpecifications\.length > 0/u);
+  assert.match(product, /presentation\.sections\.documents/u);
+  assert.match(product, /presentation\.sections\.compatibility/u);
+  assert.match(product, /presentation\.sections\.relatedProducts/u);
+  assert.doesNotMatch(product, /ListEmptyWhen/u);
 });
 
 test("catalog cards use real Storefront fields and expose useful journeys", async () => {

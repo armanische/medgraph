@@ -5,13 +5,17 @@ import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 
 import JsonLd from "@/components/seo/JsonLd";
-import { catalogRepository, productService } from "@/lib/storefront";
+import SafeProductDescription from "@/components/catalog/SafeProductDescription";
+import { catalogRepository, productService, storefrontDataSource } from "@/lib/storefront";
+import {
+  getProductPresentation,
+  PRODUCT_PRESENTATION_FALLBACKS,
+} from "@/lib/storefront/product-presentation";
 import type {
   Product,
   ProductDocument,
   ProductDocumentKind,
   ProductSpecification,
-  ProductStatus,
 } from "@/lib/storefront/types";
 import { buildStorefrontMetadata } from "@/lib/storefront/seo";
 import { buildProductStructuredData } from "@/lib/storefront/structured-data";
@@ -31,9 +35,10 @@ export async function generateMetadata({
   if (!product) notFound();
 
   const image = product.media.find(({ type }) => type === "image");
+  const presentation = getProductPresentation(product);
   return buildStorefrontMetadata({
     title: `${product.name} — медицинское оборудование`,
-    description: product.shortDescription,
+    description: presentation.shortDescription ?? `${product.name} в каталоге медицинского оборудования CyberMedica.`,
     canonical: `/catalog/${product.slug}`,
     image: image ? { url: image.url, alt: image.alt } : undefined,
   });
@@ -57,24 +62,50 @@ export default async function StorefrontProductPage({
     ({ id }) => id === product.manufacturerId,
   );
   const category = categories.find(({ id }) => id === product.categoryId);
-  const specificationGroups = groupSpecifications(product.specifications);
+  const presentation = getProductPresentation(product, {
+    categoryName: category?.name,
+    country: manufacturer?.country,
+    manufacturerName: manufacturer?.name,
+  });
+  const technicalSpecifications = product.specifications.filter(isTechnicalSpecification);
+  const specificationGroups = groupSpecifications(technicalSpecifications);
   const registrationDocument = product.documents.find(
     ({ kind }) => kind === "registration",
   );
+  const registrationRecord = product.registrationRecords?.[0];
   const accessoryDocuments = product.documents.filter(
     ({ kind }) => kind === "accessories",
   );
   const relatedProductsById = new Map(
     relatedProducts.map((relatedProduct) => [relatedProduct.id, relatedProduct]),
   );
+  const registration = registrationDocument
+    ? {
+        href: registrationDocument.publicUrl,
+        value: registrationRecord?.number || "Открыть документ",
+      }
+    : registrationRecord?.number
+      ? { href: registrationRecord.sourceUrl, value: registrationRecord.number }
+      : null;
+  const sectionLinks = [
+    presentation.sections.description && ["description", "Описание"],
+    presentation.sections.advantages && ["advantages", "Преимущества"],
+    technicalSpecifications.length > 0 && ["specifications", "Характеристики"],
+    presentation.sections.package && ["package", "Комплектация"],
+    presentation.sections.documents && ["documents", "Документы"],
+    (presentation.sections.compatibility || presentation.sections.relatedProducts) && [
+      "related-products",
+      "Связанные товары",
+    ],
+  ].filter((entry): entry is [string, string] => Boolean(entry));
 
   return (
     <main className="min-h-screen bg-cm-canvas">
-      <JsonLd
-        data={buildProductStructuredData({ product, manufacturer, category })}
-      />
+      {storefrontDataSource !== "cloud_preview" && (
+        <JsonLd data={buildProductStructuredData({ product, manufacturer, category })} />
+      )}
       <section className="border-b border-[var(--cm-rule)] bg-[linear-gradient(135deg,#ffffff_0%,#f6fafc_56%,#e8f5f7_100%)]">
-        <div className="cm-container py-5">
+        <div className="cm-container py-4 sm:py-5">
           <div className="cm-label">
             <Link href="/catalog" className="hover:text-cm-teal">
               Каталог
@@ -82,107 +113,97 @@ export default async function StorefrontProductPage({
             {" · карточка товара"}
           </div>
           <div
-            className="mt-4 grid overflow-hidden rounded-2xl border border-[var(--cm-rule)] bg-white shadow-[0_18px_55px_rgba(11,19,32,0.08)] lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]"
+            className="mt-3 grid overflow-hidden rounded-2xl border border-[var(--cm-rule)] bg-white shadow-[0_16px_45px_rgba(11,19,32,0.07)] md:grid-cols-[minmax(0,45fr)_minmax(0,55fr)] lg:grid-cols-[minmax(0,40fr)_minmax(0,60fr)]"
             data-testid="product-hero"
           >
-            <div className="border-b border-[var(--cm-rule)] bg-cm-surface-low/55 p-3 sm:p-4 lg:border-b-0 lg:border-r lg:p-5">
+            <div className="border-b border-[var(--cm-rule)] bg-cm-surface-low/45 p-3 sm:p-4 md:border-b-0 md:border-r">
               <ProductGallery product={product} />
             </div>
 
-            <div className="flex flex-col p-4 sm:p-6 lg:p-7">
-              <div className="flex flex-wrap items-center gap-2">
-                <Badge>{category?.name ?? "Медицинское оборудование"}</Badge>
-                <StatusBadge status={product.status} />
-              </div>
-              <h1 className="mt-3 max-w-4xl text-[1.75rem] font-extrabold leading-tight tracking-[-0.035em] sm:text-4xl">
+            <div className="flex flex-col p-4 sm:p-5 lg:p-6">
+              {presentation.state === "information_incomplete" && (
+                <div className="mb-3 w-fit rounded-full border border-cm-coral/25 bg-cm-coral/8 px-3 py-1.5 text-[11px] font-semibold text-cm-ink">
+                  {presentation.statusLabel}
+                </div>
+              )}
+              <h1 className="max-w-4xl text-[1.65rem] font-extrabold leading-[1.12] tracking-[-0.03em] sm:text-[2rem] lg:text-[2.25rem]">
                 {product.name}
               </h1>
-              <p className="mt-3 max-w-3xl text-sm leading-6 text-cm-slate">
-                {product.shortDescription}
-              </p>
+              {presentation.shortDescription && (
+                <p className="mt-3 line-clamp-4 max-w-3xl text-[13px] leading-6 text-cm-slate">
+                  {presentation.shortDescription}
+                </p>
+              )}
 
-              <dl className="mt-4 grid gap-x-6 gap-y-3 border-y border-[var(--cm-rule)] py-4 text-xs sm:grid-cols-2">
-                {manufacturer ? (
+              <dl className="mt-4 grid gap-x-6 gap-y-3 border-y border-[var(--cm-rule)] py-3.5 text-xs sm:grid-cols-2">
+                {manufacturer && presentation.manufacturer ? (
                   <ProductDetailLink
                     label="Производитель"
-                    value={manufacturer.name}
+                    value={presentation.manufacturer}
                     href={`/manufacturers/${manufacturer.slug}`}
                   />
-                ) : (
-                  <ProductDetail label="Производитель" value="Не указан" />
+                ) : null}
+                {presentation.model && (
+                  <ProductDetail label="Модель / артикул" value={presentation.model} />
                 )}
-                <ProductDetail
-                  label="Страна"
-                  value={manufacturer?.country || "Не указана"}
-                />
-                <ProductDetail
-                  label="Категория"
-                  value={category?.name ?? "Не указана"}
-                />
-                <ProductDetail label="Модель / артикул" value={product.model} />
-                {registrationDocument ? (
-                  <ProductDetailLink
+                {presentation.country && (
+                  <ProductDetail label="Страна производства" value={presentation.country} />
+                )}
+                {presentation.category && (
+                  <ProductDetail label="Категория" value={presentation.category} />
+                )}
+                {registration && (
+                  <ProductDetailLinkOrText
                     label="Регистрационное удостоверение"
-                    value="Открыть документ"
-                    href={registrationDocument.publicUrl}
-                    external
-                  />
-                ) : (
-                  <ProductDetail
-                    label="Регистрационное удостоверение"
-                    value="Не добавлено"
+                    value={registration.value}
+                    href={registration.href}
                   />
                 )}
-                <ProductDetail
-                  label="Статус"
-                  value={productStatusLabel(product.status)}
-                />
               </dl>
 
-              <div className="mt-4 flex flex-wrap gap-2">
-                <Link
-                  href={`/request?product=${encodeURIComponent(product.name)}`}
-                  className="cm-button-primary shadow-[0_12px_30px_rgba(11,19,32,0.16)]"
-                >
-                  Запросить КП
-                </Link>
-                <Link
-                  href="/compare"
-                  className="cm-button-secondary"
-                  aria-label={`Открыть сравнение для ${product.name}`}
-                >
-                  Открыть сравнение
-                </Link>
-              </div>
+              {presentation.canRequestQuote ? (
+                <div className="mt-4 flex flex-wrap gap-2">
+                  <Link
+                    href={`/request?product=${encodeURIComponent(product.name)}`}
+                    className="cm-button-primary shadow-[0_12px_30px_rgba(11,19,32,0.16)]"
+                  >
+                    Запросить КП
+                  </Link>
+                  {presentation.canCompare && storefrontDataSource !== "cloud_preview" ? (
+                  <Link
+                    href="/compare"
+                    className="cm-button-secondary"
+                    aria-label={`Открыть сравнение для ${product.name}`}
+                  >
+                    Открыть сравнение
+                  </Link>
+                  ) : null}
+                </div>
+              ) : null}
 
-              <nav
-                aria-label="Быстрые ссылки по карточке товара"
-                className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-[11px] font-semibold text-cm-slate"
-              >
-                <a href="#description" className="hover:text-cm-teal">
-                  Описание
-                </a>
-                <a href="#advantages" className="hover:text-cm-teal">
-                  Преимущества
-                </a>
-                <a href="#specifications" className="hover:text-cm-teal">
-                  Характеристики
-                </a>
-                <a href="#documents" className="hover:text-cm-teal">
-                  Документы
-                </a>
-              </nav>
+              {sectionLinks.length > 1 && (
+                <nav
+                  aria-label="Разделы карточки товара"
+                  className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-[11px] font-semibold text-cm-slate"
+                >
+                  {sectionLinks.map(([id, label]) => (
+                    <a key={id} href={`#${id}`} className="rounded-sm hover:text-cm-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cm-teal">
+                      {label}
+                    </a>
+                  ))}
+                </nav>
+              )}
             </div>
           </div>
         </div>
       </section>
 
-      <div className="cm-container space-y-4 py-5">
-        <div className="grid gap-4 lg:grid-cols-2">
+      <div className="cm-container py-2 sm:py-3">
+        {presentation.sections.description && (
           <Section id="description" title="Описание">
-            <p className="text-sm leading-7 text-cm-slate">{product.description}</p>
+            {presentation.description && <SafeProductDescription html={presentation.description} />}
             {product.applicationAreas.length > 0 && (
-              <div className="mt-5 border-t border-[var(--cm-rule)] pt-4">
+              <div className="mt-6 max-w-[56rem] border-t border-[var(--cm-rule)] pt-4">
                 <h3 className="cm-label">Области применения</h3>
                 <ul className="mt-3 flex flex-wrap gap-2 text-xs text-cm-slate">
                   {product.applicationAreas.map((area) => (
@@ -197,31 +218,24 @@ export default async function StorefrontProductPage({
               </div>
             )}
           </Section>
+        )}
 
+        {presentation.sections.advantages && (
           <Section id="advantages" title="Преимущества">
-            <ListEmptyWhen
-              empty={product.keyFeatures.length === 0}
-              message="Преимущества пока не добавлены."
-              compact
-            >
-              <ul className="grid gap-2 text-sm text-cm-slate sm:grid-cols-2">
-                {product.keyFeatures.map((feature) => (
-                  <li key={feature} className="flex gap-2">
-                    <span className="text-cm-teal">•</span>
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </ListEmptyWhen>
+            <ul className="grid max-w-[64rem] gap-x-8 gap-y-3 text-sm leading-6 text-cm-slate sm:grid-cols-2">
+              {product.keyFeatures.map((feature) => (
+                <li key={feature} className="flex gap-2.5">
+                  <span className="mt-2 size-1.5 shrink-0 rounded-full bg-cm-teal" aria-hidden="true" />
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
           </Section>
-        </div>
+        )}
 
+        {technicalSpecifications.length > 0 && (
           <Section id="specifications" title="Технические характеристики">
-            <ListEmptyWhen
-              empty={product.specifications.length === 0}
-              message="Технические характеристики пока не добавлены."
-            >
-              <div className="overflow-hidden rounded-lg border border-[var(--cm-rule)] bg-white">
+              <div className="max-w-[64rem] overflow-hidden rounded-lg border border-[var(--cm-rule)] bg-white">
                 {specificationGroups.map(([group, specifications]) => (
                   <div key={group}>
                     <h3 className="border-y border-[var(--cm-rule)] bg-cm-surface-low/65 px-4 py-2 text-xs font-semibold first:border-t-0">
@@ -230,7 +244,7 @@ export default async function StorefrontProductPage({
                     {specifications.map((specification) => (
                       <div
                         key={`${specification.label}:${specification.position}`}
-                        className="grid gap-1 border-b border-[var(--cm-rule)] px-4 py-3 last:border-b-0 sm:grid-cols-[minmax(12rem,0.8fr)_1.2fr] sm:items-center"
+                        className="grid gap-1 border-b border-[var(--cm-rule)] px-4 py-2.5 last:border-b-0 sm:grid-cols-[minmax(12rem,0.8fr)_1.2fr] sm:items-center"
                       >
                         <div className="text-xs text-cm-slate">{specification.label}</div>
                         <div className="text-sm font-semibold sm:text-right">
@@ -242,35 +256,22 @@ export default async function StorefrontProductPage({
                   </div>
                 ))}
               </div>
-            </ListEmptyWhen>
           </Section>
+        )}
 
+        {presentation.sections.package && (
         <Section id="package" title="Комплектация">
-            <ListEmptyWhen
-              empty={accessoryDocuments.length === 0}
-              message="Состав комплектации зависит от выбранной конфигурации. Уточните его в коммерческом предложении."
-              compact
-            >
-              <div className="space-y-2">
+              <div className="max-w-[64rem] space-y-2">
                 {accessoryDocuments.map((document) => (
                   <DocumentLink key={document.publicUrl} document={document} />
                 ))}
               </div>
-            </ListEmptyWhen>
-            <Link
-              href={`/request?product=${encodeURIComponent(product.name)}`}
-              className="mt-4 inline-flex text-xs font-semibold text-cm-teal hover:underline"
-            >
-              Уточнить комплектацию →
-            </Link>
         </Section>
+        )}
 
+        {presentation.sections.documents && (
           <Section id="documents" title="Документы">
-            <ListEmptyWhen
-              empty={product.documents.length === 0}
-              message="Документы пока не добавлены."
-            >
-              <div className="grid gap-3 md:grid-cols-2">
+              <div className="grid max-w-[64rem] gap-3 md:grid-cols-2">
                 {product.documents.map((document) => (
                   <DocumentLink
                     key={`${document.kind}:${document.publicUrl}`}
@@ -278,19 +279,16 @@ export default async function StorefrontProductPage({
                   />
                 ))}
               </div>
-            </ListEmptyWhen>
           </Section>
+        )}
 
+        {(presentation.sections.compatibility || presentation.sections.relatedProducts) && (
         <Section id="related-products" title="Связанные товары">
-          <div className="grid gap-5 lg:grid-cols-2">
+          <div className="grid max-w-[64rem] gap-5 lg:grid-cols-2">
+            {presentation.sections.compatibility && (
             <div>
               <h3 className="cm-label">Совместимость</h3>
               <div className="mt-3">
-                <ListEmptyWhen
-                  empty={product.compatibility.length === 0}
-                  message="Данные о совместимости пока не добавлены."
-                  compact
-                >
                   <div className="space-y-3">
                     {product.compatibility.map((item) => {
                       const compatibleProduct = item.compatibleProductId
@@ -320,17 +318,13 @@ export default async function StorefrontProductPage({
                       );
                     })}
                   </div>
-                </ListEmptyWhen>
               </div>
             </div>
+            )}
+            {presentation.sections.relatedProducts && (
             <div>
               <h3 className="cm-label">Товары</h3>
               <div className="mt-3">
-            <ListEmptyWhen
-              empty={relatedProducts.length === 0}
-              message="Связанные товары пока не добавлены."
-              compact
-            >
               <div className="grid gap-3">
                 {relatedProducts.map((relatedProduct) => (
                   <article
@@ -349,22 +343,25 @@ export default async function StorefrontProductPage({
                     <div className="mt-3 text-xs font-semibold text-cm-teal">
                       Открыть →
                     </div>
-                    <div className="mt-3 border-t border-[var(--cm-rule)] pt-3">
+                    {presentation.canCompare && (
+                      <div className="mt-3 border-t border-[var(--cm-rule)] pt-3">
                       <Link
                         href="/compare"
                         className="text-xs font-semibold text-cm-slate hover:text-cm-teal"
                       >
                         Сравнить товары →
                       </Link>
-                    </div>
+                      </div>
+                    )}
                   </article>
                 ))}
               </div>
-            </ListEmptyWhen>
               </div>
             </div>
+            )}
           </div>
         </Section>
+        )}
       </div>
     </main>
   );
@@ -373,10 +370,12 @@ export default async function StorefrontProductPage({
 function ProductGallery({ product }: { product: Product }) {
   if (product.media.length === 0) {
     return (
-      <div className="cm-empty-state px-4 py-5 text-xs leading-6 text-cm-slate">
+      <div className="grid aspect-[4/3] min-h-56 place-items-center rounded-xl border border-dashed border-[var(--cm-rule)] bg-white/70 px-4 text-center text-xs leading-6 text-cm-slate">
+        <div>
         <div className="cm-empty-icon">▧</div>
         <div className="mx-auto mt-3 max-w-sm">
-          Изображения товара пока не добавлены.
+          {PRODUCT_PRESENTATION_FALLBACKS.media}.
+        </div>
         </div>
       </div>
     );
@@ -388,7 +387,7 @@ function ProductGallery({ product }: { product: Product }) {
 
   return (
     <div>
-      <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-[var(--cm-rule)] bg-white">
+      <div className="relative aspect-[4/3] min-h-56 overflow-hidden rounded-xl border border-[var(--cm-rule)] bg-white">
         {primaryMedia.type === "image" ? (
           <Image
             src={primaryMedia.url}
@@ -396,7 +395,7 @@ function ProductGallery({ product }: { product: Product }) {
             fill
             preload
             sizes="(max-width: 1024px) 100vw, 40vw"
-            className="object-contain p-2"
+            className="object-contain p-1"
           />
         ) : (
           <video controls className="size-full" aria-label={primaryMedia.alt}>
@@ -442,7 +441,7 @@ function DocumentLink({ document }: { document: ProductDocument }) {
       href={document.publicUrl}
       target="_blank"
       rel="noreferrer"
-      className="block rounded-lg border border-[var(--cm-rule)] bg-white p-4 transition hover:border-cm-teal hover:shadow-sm"
+      className="block rounded-lg border border-[var(--cm-rule)] bg-white p-3.5 transition hover:border-cm-teal hover:shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cm-teal"
     >
       <div className="flex items-start justify-between gap-3">
         <div>
@@ -457,24 +456,6 @@ function DocumentLink({ document }: { document: ProductDocument }) {
   );
 }
 
-function StatusBadge({ status }: { status: ProductStatus }) {
-  return (
-    <span className="rounded-full border border-cm-teal/25 bg-cm-teal/10 px-2.5 py-1 text-[10px] font-semibold text-cm-teal">
-      {productStatusLabel(status)}
-    </span>
-  );
-}
-
-function productStatusLabel(status: ProductStatus) {
-  const labels: Partial<Record<ProductStatus, string>> = {
-    active: "В каталоге",
-    on_request: "Под заказ",
-    discontinued: "Снято с производства",
-    hidden: "Скрыто",
-  };
-  return labels[status] ?? "Предпросмотр";
-}
-
 function groupSpecifications(specifications: readonly ProductSpecification[]) {
   const groups = new Map<string, ProductSpecification[]>();
   for (const specification of [...specifications].sort(
@@ -485,6 +466,24 @@ function groupSpecifications(specifications: readonly ProductSpecification[]) {
     groups.set(specification.group, group);
   }
   return [...groups.entries()];
+}
+
+const PRODUCT_METADATA_SPECIFICATION_LABELS = new Set([
+  "артикул",
+  "категория",
+  "модель",
+  "производитель",
+  "регистрационное удостоверение",
+  "страна производства",
+  "тип товара",
+]);
+
+function isTechnicalSpecification(specification: ProductSpecification) {
+  const normalizedLabel = specification.label
+    .trim()
+    .toLocaleLowerCase("ru-RU")
+    .replace(/\s+/gu, " ");
+  return !PRODUCT_METADATA_SPECIFICATION_LABELS.has(normalizedLabel);
 }
 
 function documentKindLabel(kind: ProductDocumentKind) {
@@ -498,6 +497,20 @@ function ProductDetail({ label, value }: { label: string; value: string }) {
       <dd className="mt-1 font-semibold">{value}</dd>
     </div>
   );
+}
+
+function ProductDetailLinkOrText({
+  label,
+  value,
+  href,
+}: {
+  label: string;
+  value: string;
+  href: string | null;
+}) {
+  return href
+    ? <ProductDetailLink label={label} value={value} href={href} external />
+    : <ProductDetail label={label} value={value} />;
 }
 
 function ProductDetailLink({
@@ -546,10 +559,10 @@ function Section({
   return (
     <section
       id={id}
-      className="cm-card scroll-mt-24 p-4 shadow-[0_8px_30px_rgba(11,19,32,0.035)] sm:p-5"
+      className="scroll-mt-24 border-b border-[var(--cm-rule)] py-6 sm:py-8"
     >
-      <h2 className="text-sm font-bold tracking-[-0.01em]">{title}</h2>
-      <div className="mt-4">{children}</div>
+      <h2 className="text-lg font-bold tracking-[-0.02em] sm:text-xl">{title}</h2>
+      <div className="mt-4 sm:mt-5">{children}</div>
     </section>
   );
 }
@@ -560,55 +573,4 @@ function Badge({ children }: { children: ReactNode }) {
       {children}
     </span>
   );
-}
-
-function ListEmptyWhen({
-  empty,
-  message,
-  compact = false,
-  children,
-}: {
-  empty: boolean;
-  message: string;
-  compact?: boolean;
-  children: ReactNode;
-}) {
-  if (empty) {
-    return (
-      <div
-        data-optional-empty={compact ? "compact" : undefined}
-        className={
-          compact
-            ? "text-xs leading-6 text-cm-slate"
-            : "cm-empty-state px-5 py-7 text-xs leading-6 text-cm-slate"
-        }
-      >
-        {!compact && (
-          <div className="cm-empty-icon">
-            <svg
-              viewBox="0 0 24 24"
-              className="size-4"
-              fill="none"
-              aria-hidden="true"
-            >
-              <path
-                d="M7 4h7l3 3v13H7z"
-                stroke="currentColor"
-                strokeWidth="1.7"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M14 4v4h4M9 12h6M9 16h4"
-                stroke="currentColor"
-                strokeWidth="1.7"
-                strokeLinecap="round"
-              />
-            </svg>
-          </div>
-        )}
-        <div className={compact ? "" : "mx-auto mt-2 max-w-sm"}>{message}</div>
-      </div>
-    );
-  }
-  return children;
 }
