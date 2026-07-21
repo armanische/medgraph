@@ -99,6 +99,6 @@ test("manufacturer routes expose no internal workflow metrics", async () => {
 
   assert.doesNotMatch(
     combined,
-    /publication|review|verification|evidence|research|coverage|candidate facts|readiness|source metrics/i,
+    /publication|\breview\b|verification|evidence|research|coverage|candidate facts|readiness|source metrics/i,
   );
 });

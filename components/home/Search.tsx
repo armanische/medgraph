@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { FormEvent, useEffect, useMemo, useState } from "react";
 
 import { SearchService } from "@/lib/storefront/search-service";
+import { getProductPresentation } from "@/lib/storefront/product-presentation";
 import type {
   Category,
   Manufacturer,
@@ -12,7 +13,14 @@ import type {
 } from "@/lib/storefront/types";
 
 const chipClassName =
-  "inline-flex min-h-8 items-center rounded-md border border-cm-teal/18 bg-white px-3 font-mono text-[10px] font-semibold text-cm-teal transition duration-200 hover:border-cm-teal/35 hover:bg-cm-teal-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cm-teal";
+  "inline-flex min-h-8 items-center rounded-full border border-cm-teal/18 bg-white px-3 text-[11px] font-semibold text-cm-slate transition duration-200 hover:border-cm-teal/35 hover:bg-cm-teal-soft hover:text-cm-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cm-teal";
+
+const popularQueries = [
+  ["Аппараты ИВЛ", "ИВЛ"],
+  ["УЗИ", "УЗИ"],
+  ["Мониторы пациента", "монитор пациента"],
+  ["Эндоскопия", "эндоскопия"],
+] as const;
 
 function SearchIcon() {
   return (
@@ -55,11 +63,6 @@ export default function Search({
     () => new Map(categories.map((category) => [category.id, category])),
     [categories],
   );
-  const popularQueries = useMemo(
-    () => products.map((product) => product.model).filter(Boolean).slice(0, 5),
-    [products],
-  );
-
   useEffect(() => {
     let active = true;
     void productSearchService.searchProducts(query).then((matches) => {
@@ -79,21 +82,20 @@ export default function Search({
     <section
       id="homepage-search"
       aria-labelledby="homepage-search-title"
-      className="cm-section border-b border-[var(--cm-rule)] bg-white"
+      className="border-b border-[var(--cm-rule)] bg-cm-ink py-9 text-white sm:py-11"
     >
       <div className="cm-container">
-        <div className="grid gap-5 lg:grid-cols-[minmax(0,0.7fr)_minmax(28rem,1.3fr)] lg:items-center">
-          <div>
-            <div className="cm-label !text-cm-teal">Быстрый поиск</div>
+        <div className="grid gap-6 lg:grid-cols-[minmax(22rem,0.72fr)_minmax(28rem,1.28fr)] lg:items-center">
+          <div className="max-w-[25rem]">
+            <div className="cm-label !text-cm-coral">Поиск по каталогу</div>
             <h2
               id="homepage-search-title"
-              className="cm-section-title"
+              className="mt-2 text-[1.45rem] font-extrabold leading-tight tracking-[-0.025em] text-white xl:text-2xl"
             >
-              Найдите оборудование по названию или модели
+              Быстро найдите нужную модель
             </h2>
-            <p className="mt-2 max-w-lg text-[13px] leading-6 text-cm-slate">
-              Поиск работает по товарам, производителям, категориям и ключевым
-              особенностям каталога.
+            <p className="mt-2 text-[13px] leading-6 text-white/58">
+              По названию, производителю, модели или категории оборудования.
             </p>
           </div>
 
@@ -102,7 +104,7 @@ export default function Search({
               role="search"
               aria-label="Поиск по каталогу медицинского оборудования"
               onSubmit={handleSearch}
-              className="flex overflow-hidden rounded-xl border border-[var(--cm-rule-strong)] bg-white shadow-[0_14px_40px_rgba(11,19,32,0.065)] transition duration-200 focus-within:border-cm-teal/70 focus-within:ring-3 focus-within:ring-cm-teal/10"
+              className="flex overflow-hidden rounded-xl border border-white/12 bg-white shadow-[0_18px_44px_rgba(0,0,0,0.2)] transition duration-200 focus-within:border-cm-teal/70 focus-within:ring-3 focus-within:ring-cm-teal/20"
             >
               <label
                 htmlFor="homepage-search-input"
@@ -117,7 +119,7 @@ export default function Search({
                   type="search"
                   value={query}
                   onChange={(event) => setQuery(event.target.value)}
-                  placeholder="Например, FS510 или Ambu"
+                  placeholder="Введите производителя, модель или категорию оборудования..."
                   autoComplete="off"
                   aria-controls="homepage-search-results"
                   className="h-full min-w-0 flex-1 bg-transparent text-sm text-cm-ink placeholder:text-cm-dim"
@@ -125,7 +127,7 @@ export default function Search({
               </label>
               <button
                 type="submit"
-                className="min-h-14 shrink-0 bg-cm-ink px-5 text-[13px] font-semibold text-white transition duration-200 hover:bg-cm-teal active:bg-cm-teal-dark sm:px-7"
+                className="min-h-14 shrink-0 bg-cm-teal px-5 text-[13px] font-semibold text-white transition duration-200 hover:bg-cm-teal-dark active:bg-cm-ink sm:px-8"
               >
                 Найти
               </button>
@@ -138,7 +140,12 @@ export default function Search({
                 aria-label="Найденные товары"
                 className="absolute inset-x-0 top-[calc(100%+0.5rem)] z-30 rounded-lg border border-[var(--cm-rule)] bg-white p-2 shadow-[0_12px_40px_rgba(11,19,32,0.12)]"
               >
-                {results.map((product) => (
+                {results.map((product) => {
+                  const presentation = getProductPresentation(product, {
+                    categoryName: categoriesById.get(product.categoryId)?.name,
+                    manufacturerName: manufacturersById.get(product.manufacturerId)?.name,
+                  });
+                  return (
                   <button
                     key={product.slug}
                     type="button"
@@ -153,15 +160,14 @@ export default function Search({
                         {product.name}
                       </span>
                       <span className="mt-1 block font-mono text-[10px] text-cm-dim">
-                        {manufacturersById.get(product.manufacturerId)?.name ??
-                          product.manufacturerId}{" "}
+                        {presentation.manufacturerLabel}{" "}
                         ·{" "}
-                        {categoriesById.get(product.categoryId)?.name ??
-                          product.categoryId}
+                        {presentation.categoryLabel}
                       </span>
                     </span>
                   </button>
-                ))}
+                  );
+                })}
               </div>
             )}
 
@@ -178,21 +184,21 @@ export default function Search({
               </div>
             )}
 
-            {popularQueries.length > 0 && (
-              <div className="mt-3 flex flex-wrap items-center gap-2">
-                <span className="mr-1 text-[11px] text-cm-dim">Популярное:</span>
-                {popularQueries.map((item) => (
-                  <button
-                    key={item}
-                    type="button"
-                    onClick={() => setQuery(item)}
-                    className={chipClassName}
-                  >
-                    {item}
-                  </button>
-                ))}
-              </div>
-            )}
+            <div className="mt-3 flex flex-wrap items-center gap-2">
+              <span className="mr-1 text-[11px] text-white/42">
+                Популярные запросы:
+              </span>
+              {popularQueries.map(([label, value]) => (
+                <button
+                  key={label}
+                  type="button"
+                  onClick={() => setQuery(value)}
+                  className={chipClassName}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       </div>

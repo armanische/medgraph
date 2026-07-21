@@ -133,8 +133,18 @@ test("optional sections are visible only when existing data supports them", () =
   assert.equal(populated.sections.relatedProducts, true);
 });
 
-test("presentation contract stays independent of later UI releases", async () => {
-  const source = await readFile("lib/storefront/product-presentation.ts", "utf8");
-  assert.match(source, /isProductCommerciallyReady/u);
-  assert.doesNotMatch(source, /components\/|app\/catalog|country-presentation/u);
+test("public product surfaces consume the shared presentation contract", async () => {
+  const sources = await Promise.all([
+    "app/manufacturers/[slug]/page.tsx",
+    "app/page.tsx",
+    "components/catalog/CatalogExplorer.tsx",
+    "components/home/Search.tsx",
+    "components/search/SearchExperience.tsx",
+  ].map((path) => readFile(path, "utf8")));
+
+  for (const source of sources) {
+    assert.match(source, /getProductPresentation/u);
+  }
+  assert.doesNotMatch(sources[0], /presentation\.canCompare/u);
+  assert.match(sources[2], /presentation\.mediaFallbackLabel/u);
 });

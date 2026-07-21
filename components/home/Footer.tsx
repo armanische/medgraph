@@ -1,72 +1,45 @@
+import Image from "next/image";
 import Link from "next/link";
-import packageJson from "@/package.json";
-import { catalogRepository } from "@/lib/storefront";
 
-export default async function Footer() {
-  const summary = await catalogRepository.getCatalogSummary();
-  const updatedAt = new Intl.DateTimeFormat("ru-RU", {
-    day: "2-digit",
-    month: "2-digit",
-    year: "numeric",
-  }).format(new Date(summary.generatedAt));
-
+export default function Footer() {
   return (
     <footer className="bg-cm-ink text-white">
-      <div className="cm-container border-b border-white/6 py-5">
-        <div className="rounded-2xl border border-white/8 bg-white/[0.03] p-4">
-          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-            <div className="cm-label !text-white/30">Подбор оборудования</div>
-            <div className="max-w-2xl text-xs leading-6 text-white/55">
-              Производители, категории и технические характеристики в одном каталоге.
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="cm-container grid gap-7 py-8 sm:grid-cols-2 lg:grid-cols-[1.35fr_1fr_1fr_1fr]">
+      <div className="cm-container grid gap-5 py-6 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr] lg:gap-8">
         <div>
-          <div className="flex items-center gap-2 text-sm font-bold">
-            <span className="flex size-6 items-center justify-center rounded-md bg-white/8">
-              <span className="size-1.5 rounded-full bg-white/50" />
-            </span>
-            CyberMedica
-          </div>
-          <p className="mt-3 max-w-xs text-xs leading-6 text-white/40">
-            Каталог медицинского оборудования для клиник, инженеров и
-            закупочных команд.
+          <span className="inline-flex">
+            <Image
+              src="/brand/cybermedica-logo.png"
+              alt="Кибермедика"
+              width={1400}
+              height={293}
+              className="h-auto w-40"
+            />
+          </span>
+          <p className="mt-2 max-w-xs text-[11px] leading-5 text-white/70">
+            Профессиональный каталог медицинского оборудования для государственных и частных организаций.
           </p>
         </div>
 
         <div>
-          <div className="cm-label !text-white/25">Платформа</div>
-          <div className="mt-4 flex flex-col gap-2.5 text-xs text-white/45">
+          <div className="cm-label !text-white/65">Платформа</div>
+          <div className="mt-3 flex flex-col gap-2 text-[11px] text-white/75">
             <Link href="/catalog" className="transition duration-200 hover:text-white">Каталог</Link>
-            <Link href="/compare" className="transition duration-200 hover:text-white">Сравнение</Link>
             <Link href="/manufacturers" className="transition duration-200 hover:text-white">Производители</Link>
           </div>
         </div>
 
         <div>
-          <div className="cm-label !text-white/25">Специалистам</div>
-          <div className="mt-4 flex flex-col gap-2.5 text-xs text-white/45">
-            <Link href="/request" className="transition duration-200 hover:text-white">Закупщикам</Link>
-            <Link href="/request" className="transition duration-200 hover:text-white">Поставщикам</Link>
+          <div className="cm-label !text-white/65">Коммерческое предложение</div>
+          <div className="mt-3 flex flex-col gap-2 text-[11px] text-white/75">
             <Link href="/request" className="transition duration-200 hover:text-white">Запросить КП</Link>
+            <Link href="/search" className="transition duration-200 hover:text-white">Найти модель</Link>
+            <Link href="/manufacturers" className="transition duration-200 hover:text-white">Выбрать производителя</Link>
           </div>
         </div>
-
-        <div>
-          <div className="cm-label !text-white/25">Структура каталога</div>
-          <p className="mt-4 text-xs leading-6 text-white/40">
-            Производитель → Категория → Товар → Запрос КП.
-          </p>
-        </div>
       </div>
-      <div>
-        <div className="cm-container flex flex-col gap-2 py-4 font-mono text-[9px] text-white/25 sm:flex-row sm:justify-between">
-          <span>© 2026 CyberMedica. Все права защищены.</span>
-          <span>
-            Version {packageJson.version} · Build preview · Данные обновлены {updatedAt}
-          </span>
+      <div className="border-t border-white/10">
+        <div className="cm-container py-3 text-[10px] text-white/65">
+          <span>© 2026 Кибермедика. Все права защищены.</span>
         </div>
       </div>
     </footer>

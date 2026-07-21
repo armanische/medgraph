@@ -5,7 +5,12 @@ import { connection } from "next/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/home/Footer";
 import CloudCatalogPreviewBanner from "@/components/storefront/CloudCatalogPreviewBanner";
-import { isCloudPreviewCatalog } from "@/lib/storefront";
+import {
+  categoryService,
+  isCloudPreviewCatalog,
+  manufacturerService,
+  productService,
+} from "@/lib/storefront";
 
 const allowIndexing =
   process.env.CYBERMEDICA_ALLOW_INDEXING === "1" && !isCloudPreviewCatalog();
@@ -62,15 +67,25 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Resolve environment-specific data at request time. This keeps one prebuilt
-  // artifact reusable for static Production and the isolated Cloud Preview.
+  // The same prebuilt artifact can run against static Production data or the
+  // Cloud Preview catalog. Resolve that boundary at request time so static
+  // prerendering cannot bake one environment's catalog into another.
   await connection();
   const cloudPreview = isCloudPreviewCatalog();
+  const [products, manufacturers, categories] = await Promise.all([
+    productService.getActiveProducts(),
+    manufacturerService.getManufacturers(),
+    categoryService.getCategories(),
+  ]);
 
   return (
     <html lang="ru">
       <body className="bg-cm-canvas text-cm-ink antialiased">
-        <Header />
+        <Header
+          products={products}
+          manufacturers={manufacturers}
+          categories={categories}
+        />
         <CloudCatalogPreviewBanner enabled={cloudPreview} />
         {children}
         <Footer />

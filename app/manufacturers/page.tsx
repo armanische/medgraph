@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 
 import JsonLd from "@/components/seo/JsonLd";
+import ManufacturerMark from "@/components/storefront/ManufacturerMark";
 import {
   catalogRepository,
   manufacturerService,
   productService,
+  storefrontDataSource,
 } from "@/lib/storefront";
 import { buildStorefrontMetadata } from "@/lib/storefront/seo";
 import { buildCollectionPageStructuredData } from "@/lib/storefront/structured-data";
+import { formatCountryForPublic } from "@/lib/storefront/country-presentation";
 
 const manufacturersDescription =
   "Производители медицинского оборудования, представленные в каталоге CyberMedica.";
@@ -44,6 +46,7 @@ export default async function ManufacturersPage() {
     ];
     return {
       manufacturer,
+      country: formatCountryForPublic(manufacturer.country),
       productCount: manufacturerProducts.length,
       categories: manufacturerCategories,
     };
@@ -51,30 +54,32 @@ export default async function ManufacturersPage() {
 
   return (
     <main className="min-h-screen bg-cm-canvas">
-      <JsonLd
-        data={buildCollectionPageStructuredData({
-          name: "Производители медицинских изделий",
-          description: manufacturersDescription,
-          path: "/manufacturers",
-        })}
-      />
+      {storefrontDataSource !== "cloud_preview" && (
+        <JsonLd
+          data={buildCollectionPageStructuredData({
+            name: "Производители медицинских изделий",
+            description: manufacturersDescription,
+            path: "/manufacturers",
+          })}
+        />
+      )}
       <header className="border-b border-[var(--cm-rule)] bg-[linear-gradient(135deg,#ffffff_0%,#f6fafc_58%,#e8f5f7_100%)]">
-        <div className="cm-container cm-page-intro">
-          <div className="cm-label">Каталог производителей</div>
-          <h1 className="mt-3 text-2xl font-extrabold tracking-[-0.025em]">
-            Производители
-          </h1>
-          <p className="mt-3 max-w-2xl text-[13px] leading-6 text-cm-slate">
-            Медицинское оборудование, категории и производители собраны в одном
-            каталоге.
-          </p>
-          <div className="mt-5 grid gap-px overflow-hidden rounded-xl border border-[var(--cm-rule)] bg-[var(--cm-rule)] shadow-[0_10px_32px_rgba(11,19,32,0.045)] grid-cols-3">
+        <div className="cm-container py-7 sm:py-9">
+          <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_24rem] lg:items-end">
+            <div>
+              <div className="cm-label">Каталог производителей</div>
+              <h1 className="mt-2 text-3xl font-extrabold tracking-[-0.03em]">Производители</h1>
+              <p className="mt-2 max-w-2xl text-[13px] leading-6 text-cm-slate">
+                Производители медицинского оборудования, представленные в каталоге CyberMedica.
+              </p>
+            </div>
+          <div className="grid grid-cols-3 overflow-hidden rounded-xl border border-[var(--cm-rule)] bg-white/78">
             {[
               ["Производителей", manufacturers.length],
               ["Изделий", products.length],
               ["Категорий", categories.length],
             ].map(([label, value]) => (
-              <div key={label} className="bg-white p-3 sm:p-4">
+              <div key={label} className="border-r border-[var(--cm-rule)] px-3 py-3 last:border-r-0">
                 <div className="font-mono text-lg font-bold text-cm-ink sm:text-xl">
                   {value}
                 </div>
@@ -82,51 +87,40 @@ export default async function ManufacturersPage() {
               </div>
             ))}
           </div>
+          </div>
         </div>
       </header>
 
       <section className="cm-container py-6">
         {directory.length > 0 ? (
-          <div className="grid gap-3 md:grid-cols-2">
-            {directory.map(({ manufacturer, productCount, categories: names }) => (
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {directory.map(({ manufacturer, country, productCount }) => (
             <Link
               key={manufacturer.slug}
               href={`/manufacturers/${manufacturer.slug}`}
-              className="group cm-card relative overflow-hidden p-4"
+              className="group cm-card relative flex min-h-48 flex-col overflow-hidden p-4"
             >
               <div
                 aria-hidden="true"
                 className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-cm-teal/70 to-cm-verified/60 opacity-0 transition duration-200 group-hover:opacity-100"
               />
-              <div className="flex items-center justify-between gap-4">
-                <div className="font-mono text-[10px] text-cm-teal">
-                  {manufacturer.country}
-                </div>
+              <div className="flex items-center justify-between gap-3">
+                {country ? <div className="text-[10px] text-cm-slate">{country}</div> : <span />}
                 <div className="rounded border border-[var(--cm-rule)] bg-cm-surface-low px-2.5 py-1 font-mono text-[9px] text-cm-dim">
-                  Изделий в каталоге: {productCount}
+                  {productCount} товаров
                 </div>
               </div>
               <div className="mt-3 flex items-center gap-3">
-                <ManufacturerLogo
+                <ManufacturerMark
                   logoUrl={manufacturer.logoUrl}
                   name={manufacturer.name}
                 />
-                <h2 className="text-lg font-bold">{manufacturer.name}</h2>
+                <h2 className="text-[15px] font-bold leading-5">{manufacturer.name}</h2>
               </div>
-              <p className="mt-3 text-xs leading-5 text-cm-slate">
+              <p className="mt-3 line-clamp-2 text-[11px] leading-5 text-cm-slate">
                 {manufacturer.shortDescription}
               </p>
-              <div className="mt-4 flex flex-wrap gap-1.5">
-                {names.map((name) => (
-                  <span
-                    key={name}
-                    className="rounded-md border border-cm-teal/15 bg-cm-teal-soft px-2.5 py-1 text-[10px] font-medium text-cm-teal transition duration-200 group-hover:border-cm-teal/30"
-                  >
-                    {name}
-                  </span>
-                ))}
-              </div>
-              <div className="mt-4 border-t border-[var(--cm-rule)] pt-3 text-xs font-semibold text-cm-dim transition duration-200 group-hover:text-cm-teal">
+              <div className="mt-auto border-t border-[var(--cm-rule)] pt-3 text-xs font-semibold text-cm-dim transition duration-200 group-hover:text-cm-teal">
                 Открыть производителя →
               </div>
             </Link>
@@ -154,27 +148,5 @@ export default async function ManufacturersPage() {
         )}
       </section>
     </main>
-  );
-}
-
-function ManufacturerLogo({
-  logoUrl,
-  name,
-}: {
-  logoUrl: string | null;
-  name: string;
-}) {
-  if (!logoUrl) {
-    return (
-      <span className="flex size-10 shrink-0 items-center justify-center rounded-md border border-[var(--cm-rule)] bg-cm-surface-low font-mono text-xs font-bold text-cm-teal">
-        {name.slice(0, 1)}
-      </span>
-    );
-  }
-
-  return (
-    <span className="relative size-10 shrink-0 overflow-hidden rounded-md border border-[var(--cm-rule)] bg-white">
-      <Image src={logoUrl} alt={`${name} — логотип`} fill sizes="40px" className="object-contain" />
-    </span>
   );
 }

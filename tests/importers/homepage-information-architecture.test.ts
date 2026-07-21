@@ -24,15 +24,16 @@ test("homepage follows the Storefront information architecture", async () => {
   assert.doesNotMatch(page, /<PlatformStats/u);
 });
 
-test("Hero communicates value and exposes primary, secondary, search and compare actions", async () => {
+test("Hero communicates the catalog value and exposes only credible public actions", async () => {
   const hero = await source("components/home/Hero.tsx");
 
   assert.match(hero, /<h1/u);
-  assert.match(hero, /Найдите оборудование для клиники и закупки/u);
+  assert.match(hero, /Каталог медицинского оборудования/u);
   assert.match(hero, /href="\/catalog"/u);
+  assert.match(hero, /href="\/request"/u);
   assert.match(hero, /href="\/manufacturers"/u);
   assert.match(hero, /href="#homepage-search"/u);
-  assert.match(hero, /href="\/compare"/u);
+  assert.doesNotMatch(hero, /href="\/compare"/u);
   assert.doesNotMatch(hero, /["']use client["']/u);
 });
 

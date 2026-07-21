@@ -1,4 +1,5 @@
 import type { Category, Manufacturer, Product } from "./types.ts";
+import { isVerifiedLocalManufacturerLogo } from "./manufacturer-presentation.ts";
 import {
   buildBreadcrumbJsonLd,
   STOREFRONT_SITE_NAME,
@@ -134,7 +135,7 @@ export function buildManufacturerStructuredData(
     name: manufacturer.name,
     description: manufacturer.description,
     url: absoluteUrl(path),
-    ...(manufacturer.logoUrl
+    ...(isVerifiedLocalManufacturerLogo(manufacturer.logoUrl)
       ? { logo: absoluteUrl(manufacturer.logoUrl) }
       : {}),
   };

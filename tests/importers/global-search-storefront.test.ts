@@ -24,13 +24,15 @@ async function source(path: string) {
   return readFile(resolve(root, path), "utf8");
 }
 
-test("Header Search routes to the Storefront-backed global search", async () => {
+test("Header Search uses Storefront search and preserves the full search route", async () => {
   const [header, searchPage] = await Promise.all([
     source("components/layout/Header.tsx"),
     source("app/search/page.tsx"),
   ]);
 
-  assert.match(header, /href="\/search"/);
+  assert.match(header, /SearchService\.forProducts/);
+  assert.match(header, /`\/search\?q=\$\{encodeURIComponent\(query\.trim\(\)\)\}`/);
+  assert.match(header, /Все результаты/);
   assert.match(searchPage, /searchService\.searchProducts\(q\)/);
 });
 

@@ -10,6 +10,7 @@ import type {
   Manufacturer,
   Product,
 } from "@/lib/storefront/types";
+import { getProductPresentation } from "@/lib/storefront/product-presentation";
 
 function ResultCard({
   product,
@@ -191,13 +192,12 @@ export default function SearchExperience({
             <ResultCard
               key={product.slug}
               product={product}
-              manufacturer={
-                manufacturersById.get(product.manufacturerId)?.name ??
-                product.manufacturerId
-              }
-              category={
-                categoriesById.get(product.categoryId)?.name ?? product.categoryId
-              }
+              manufacturer={getProductPresentation(product, {
+                manufacturerName: manufacturersById.get(product.manufacturerId)?.name,
+              }).manufacturerLabel}
+              category={getProductPresentation(product, {
+                categoryName: categoriesById.get(product.categoryId)?.name,
+              }).categoryLabel}
             />
           ))}
         </div>

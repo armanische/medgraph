@@ -1,12 +1,11 @@
-import Image from "next/image";
 import Link from "next/link";
+import ManufacturerMark from "@/components/storefront/ManufacturerMark";
 
 interface ManufacturerEntry {
   id: string;
   slug: string;
   name: string;
-  country: string;
-  shortDescription: string;
+  country: string | null;
   logoUrl: string | null;
   productCount: number;
 }
@@ -40,25 +39,22 @@ export default function FeaturedManufacturers({
           </Link>
         </div>
 
-        <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {manufacturers.map((manufacturer) => (
             <Link
               key={manufacturer.id}
               href={`/manufacturers/${manufacturer.slug}`}
-              className="group cm-card flex min-h-40 flex-col p-4"
+              className="group cm-card flex min-h-32 flex-col p-4"
             >
               <div className="flex items-center gap-3">
-                <ManufacturerLogo manufacturer={manufacturer} />
+                <ManufacturerMark logoUrl={manufacturer.logoUrl} name={manufacturer.name} />
                 <div>
                   <h3 className="text-[15px] font-bold">{manufacturer.name}</h3>
-                  <div className="mt-1 font-mono text-[9px] uppercase tracking-[0.08em] text-cm-dim">
-                    {manufacturer.country}
-                  </div>
+                  {manufacturer.country && (
+                    <div className="mt-1 text-[10px] text-cm-slate">{manufacturer.country}</div>
+                  )}
                 </div>
               </div>
-              <p className="mt-3 text-xs leading-5 text-cm-slate">
-                {manufacturer.shortDescription}
-              </p>
               <div className="mt-auto flex items-center justify-between gap-4 border-t border-[var(--cm-rule)] pt-3 text-xs">
                 <span className="font-mono text-[9px] text-cm-dim">
                   {manufacturer.productCount} товаров
@@ -72,27 +68,5 @@ export default function FeaturedManufacturers({
         </div>
       </div>
     </section>
-  );
-}
-
-function ManufacturerLogo({ manufacturer }: { manufacturer: ManufacturerEntry }) {
-  if (!manufacturer.logoUrl) {
-    return (
-      <span className="flex size-11 shrink-0 items-center justify-center rounded-md border border-[var(--cm-rule)] bg-cm-teal-soft font-mono text-sm font-bold text-cm-teal">
-        {manufacturer.name.slice(0, 1)}
-      </span>
-    );
-  }
-
-  return (
-    <span className="relative size-11 shrink-0 overflow-hidden rounded-md border border-[var(--cm-rule)] bg-white">
-      <Image
-        src={manufacturer.logoUrl}
-        alt={`${manufacturer.name} — логотип`}
-        fill
-        sizes="44px"
-        className="object-contain"
-      />
-    </span>
   );
 }

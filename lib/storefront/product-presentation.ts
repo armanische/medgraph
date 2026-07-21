@@ -1,4 +1,5 @@
 import { isProductCommerciallyReady } from "./product-quality.ts";
+import { formatCountryForPublic } from "./country-presentation.ts";
 import type { Product } from "./types.ts";
 
 export const PRODUCT_PRESENTATION_FALLBACKS = {
@@ -90,7 +91,7 @@ export function getProductPresentation(
     : null;
   const description = publicOptionalText(product.description) ?? shortDescription;
   const category = publicOptionalText(context.categoryName);
-  const country = publicOptionalText(context.country);
+  const country = formatCountryForPublic(context.country);
   const manufacturer = publicOptionalText(context.manufacturerName);
   const model = publicOptionalText(product.model);
 

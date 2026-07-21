@@ -1,0 +1,104 @@
+import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
+import test from "node:test";
+
+import { formatCountryForPublic } from "../../lib/storefront/country-presentation.ts";
+import { isVerifiedLocalManufacturerLogo } from "../../lib/storefront/manufacturer-presentation.ts";
+
+async function source(path: string) {
+  return readFile(path, "utf8");
+}
+
+test("country presentation localizes canonical values and fails closed", () => {
+  assert.equal(formatCountryForPublic("RU"), "Россия");
+  assert.equal(formatCountryForPublic("CH"), "Швейцария");
+  assert.equal(formatCountryForPublic("CN"), "Китай");
+  assert.equal(formatCountryForPublic("DE"), "Германия");
+  assert.equal(formatCountryForPublic("US"), "США");
+  assert.equal(formatCountryForPublic("KR"), "Республика Корея");
+  assert.equal(formatCountryForPublic("JP"), "Япония");
+  assert.equal(formatCountryForPublic("GB"), "Великобритания");
+  assert.equal(formatCountryForPublic("ZZ"), null);
+  assert.equal(formatCountryForPublic("Швейцария"), "Швейцария");
+});
+
+test("manufacturer logos accept only the verified local asset convention", () => {
+  assert.equal(
+    isVerifiedLocalManufacturerLogo("/manufacturers/hamilton-medical/logo.webp"),
+    true,
+  );
+  assert.equal(
+    isVerifiedLocalManufacturerLogo("https://example.com/hamilton.svg"),
+    false,
+  );
+  assert.equal(isVerifiedLocalManufacturerLogo(null), false);
+});
+
+test("homepage ranks and limits READY categories and manufacturers", async () => {
+  const homepage = await source("app/page.tsx");
+  const categories = await source("components/home/Categories.tsx");
+
+  assert.match(homepage, /const readyProducts = products\.filter\(isProductCommerciallyReady\)/u);
+  assert.equal((homepage.match(/\.slice\(0, 8\)/gu) ?? []).length, 2);
+  assert.match(homepage, /right\.productCount - left\.productCount/u);
+  assert.match(categories, /Категории оборудования/u);
+  assert.match(categories, /Смотреть все категории/u);
+  assert.doesNotMatch(categories, /Популярные категории/u);
+  assert.doesNotMatch(categories, /function CategoryIcon/u);
+});
+
+test("unsupported comparison claims are absent from shared public navigation", async () => {
+  const [header, hero, footer, capabilities] = await Promise.all([
+    source("components/layout/Header.tsx"),
+    source("components/home/Hero.tsx"),
+    source("components/home/Footer.tsx"),
+    source("components/home/WhyCyberMedica.tsx"),
+  ]);
+
+  for (const publicComponent of [header, hero, footer, capabilities]) {
+    assert.doesNotMatch(publicComponent, /href="\/compare"/u);
+  }
+  assert.doesNotMatch(hero, /productCount|manufacturerCount|categoryCount/u);
+  assert.match(capabilities, /Поиск по каталогу/u);
+  assert.match(capabilities, /Фильтрация оборудования/u);
+  assert.match(capabilities, /Страницы производителей/u);
+  assert.doesNotMatch(capabilities, /Документы и спецификации|Совместимость/u);
+});
+
+test("header search uses the existing Storefront SearchService in place", async () => {
+  const header = await source("components/layout/Header.tsx");
+
+  assert.match(header, /SearchService\.forProducts/u);
+  assert.match(header, /aria-controls="header-search-panel"/u);
+  assert.match(header, /Закрыть поиск/u);
+  assert.match(header, /event\.key === "Enter"/u);
+  assert.match(header, /navigateSearch\(\)/u);
+  assert.match(header, /router\.push\(`\/catalog\/\$\{product\.slug\}`\)/u);
+  assert.match(header, /href=\{`\/search/u);
+});
+
+test("catalog summary is compact and product media is an accessible link", async () => {
+  const [page, explorer] = await Promise.all([
+    source("app/catalog/page.tsx"),
+    source("components/catalog/CatalogExplorer.tsx"),
+  ]);
+
+  assert.match(page, /sm:grid-cols-4/u);
+  assert.match(page, /overflow-hidden rounded-xl border/u);
+  assert.match(explorer, /aria-label=\{`Открыть карточку \$\{product\.name\}`\}/u);
+  assert.match(explorer, /href=\{`\/catalog\/\$\{product\.slug\}`\}/u);
+});
+
+test("manufacturer directory uses localized country labels and responsive density", async () => {
+  const [directory, detail, mark] = await Promise.all([
+    source("app/manufacturers/page.tsx"),
+    source("app/manufacturers/[slug]/page.tsx"),
+    source("components/storefront/ManufacturerMark.tsx"),
+  ]);
+
+  assert.match(directory, /formatCountryForPublic\(manufacturer\.country\)/u);
+  assert.match(directory, /sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4/u);
+  assert.match(detail, /const country = formatCountryForPublic/u);
+  assert.doesNotMatch(directory, /manufacturer\.country\}</u);
+  assert.doesNotMatch(mark, /name\.slice/u);
+});

@@ -6,7 +6,7 @@ async function source(path: string) {
   return readFile(path, "utf8");
 }
 
-test("homepage keeps direct catalog search manufacturer product and compare journeys", async () => {
+test("homepage keeps direct catalog search manufacturer and product journeys", async () => {
   const files = [
     "components/home/Hero.tsx",
     "components/home/Search.tsx",
@@ -18,13 +18,13 @@ test("homepage keeps direct catalog search manufacturer product and compare jour
   for (const target of [
     'href="/catalog"',
     'href="/manufacturers"',
-    'href="/compare"',
     "`/catalog/${product.slug}`",
     "`/manufacturers/${manufacturer.slug}`",
     "`/search?q=${encodeURIComponent(query.trim())}`",
   ]) {
     assert.ok(combined.includes(target), target);
   }
+  assert.doesNotMatch(combined, /href="\/compare"/u);
 });
 
 test("product page links to manufacturer comparison compatible products and catalog", async () => {
@@ -38,12 +38,12 @@ test("product page links to manufacturer comparison compatible products and cata
   assert.match(product, /compatibleProduct\.slug/u);
 });
 
-test("manufacturer products link to product detail and comparison", async () => {
+test("manufacturer products link to product detail without promoting comparison", async () => {
   const manufacturer = await source("app/manufacturers/[slug]/page.tsx");
 
   assert.match(manufacturer, /`\/catalog\/\$\{product\.slug\}`/u);
-  assert.match(manufacturer, /href="\/compare"/u);
-  assert.match(manufacturer, /aria-label=\{`Открыть сравнение/u);
+  assert.doesNotMatch(manufacturer, /href="\/compare"/u);
+  assert.doesNotMatch(manufacturer, /aria-label=\{`Открыть сравнение/u);
 });
 
 test("compare remains static and adds catalog search product and manufacturer links", async () => {
