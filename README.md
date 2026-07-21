@@ -1,3 +1,9 @@
+# CyberMedica
+
+Основной нормативный документ проекта: [PROJECT_GUIDE.md](docs/00-project/PROJECT_GUIDE.md).
+
+Он определяет архитектуру, источники данных, среды, процесс разработки, Definition of Done и правила релизов. При противоречии README и PROJECT_GUIDE приоритет имеет PROJECT_GUIDE.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
