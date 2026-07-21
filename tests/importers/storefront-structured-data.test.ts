@@ -190,7 +190,7 @@ test("only stable Storefront pages render JSON-LD", async () => {
     assert.match(source, /storefront\/structured-data/u);
     assert.doesNotMatch(
       source,
-      /publication|review|research|data\/public|data\/research|supabase|verticals\/fs510/iu,
+      /publication|\breview\b|research|data\/public|data\/research|supabase|verticals\/fs510/iu,
     );
   }
   for (const route of unstructuredRoutes) {

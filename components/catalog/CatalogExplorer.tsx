@@ -5,30 +5,41 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 
 import { SearchService } from "@/lib/storefront/search-service";
+import { getProductPresentation } from "@/lib/storefront/product-presentation";
 import type {
   Category,
   Manufacturer,
   Product,
 } from "@/lib/storefront/types";
+import {
+  CLOUD_PREVIEW_UNKNOWN_CATEGORY_ID,
+  CLOUD_PREVIEW_UNKNOWN_MANUFACTURER_ID,
+} from "@/lib/storefront/types";
+
+type CatalogSort = "name-asc" | "name-desc" | "updated-desc";
 
 interface CatalogExplorerProps {
   initialQuery?: string;
   initialCategory?: string;
   initialManufacturer?: string;
+  initialApplicationArea?: string;
   products: readonly Product[];
   categories: readonly Category[];
   manufacturers: readonly Manufacturer[];
   initialSearchResultIds?: readonly string[];
+  compareEnabled?: boolean;
 }
 
 export default function CatalogExplorer({
   initialQuery = "",
   initialCategory = "",
   initialManufacturer = "",
+  initialApplicationArea = "",
   products,
   categories,
   manufacturers,
   initialSearchResultIds = [],
+  compareEnabled = true,
 }: CatalogExplorerProps) {
   const [query, setQuery] = useState(initialQuery);
   const [category, setCategory] = useState(
@@ -44,6 +55,10 @@ export default function CatalogExplorer({
           item.id === initialManufacturer || item.slug === initialManufacturer,
       )?.id ?? "Все производители",
   );
+  const [applicationArea, setApplicationArea] = useState(
+    initialApplicationArea || "Все области применения",
+  );
+  const [sort, setSort] = useState<CatalogSort>("name-asc");
   const [searchResultIds, setSearchResultIds] = useState(
     () => new Set(initialSearchResultIds),
   );
@@ -59,6 +74,17 @@ export default function CatalogExplorer({
     () => new Map(manufacturers.map((item) => [item.id, item])),
     [manufacturers],
   );
+  const applicationAreas = useMemo(
+    () => [...new Set(products.flatMap((product) => product.applicationAreas))]
+      .sort((left, right) => left.localeCompare(right, "ru-RU")),
+    [products],
+  );
+  const hasUnassignedCategory = products.some(
+    (product) => product.categoryId === CLOUD_PREVIEW_UNKNOWN_CATEGORY_ID,
+  );
+  const hasUnassignedManufacturer = products.some(
+    (product) => product.manufacturerId === CLOUD_PREVIEW_UNKNOWN_MANUFACTURER_ID,
+  );
 
   useEffect(() => {
     let active = true;
@@ -71,38 +97,47 @@ export default function CatalogExplorer({
   }, [productSearchService, query]);
 
   const results = useMemo(() => {
-    return products.filter((product) => {
+    const filtered = products.filter((product) => {
       const searchMatches = !query.trim() || searchResultIds.has(product.id);
       const categoryMatches =
         category === "Все категории" || product.categoryId === category;
       const manufacturerMatches =
         manufacturer === "Все производители" ||
         product.manufacturerId === manufacturer;
-      return searchMatches && categoryMatches && manufacturerMatches;
+      const applicationAreaMatches = applicationArea === "Все области применения"
+        || product.applicationAreas.includes(applicationArea);
+      return searchMatches && categoryMatches && manufacturerMatches && applicationAreaMatches;
     });
-  }, [category, manufacturer, products, query, searchResultIds]);
+    return filtered.sort((left, right) => {
+      if (sort === "updated-desc") return right.updatedAt.localeCompare(left.updatedAt);
+      const order = left.name.localeCompare(right.name, "ru-RU");
+      return sort === "name-desc" ? -order : order;
+    });
+  }, [applicationArea, category, manufacturer, products, query, searchResultIds, sort]);
 
   function resetCatalogView() {
     setQuery("");
     setCategory("Все категории");
     setManufacturer("Все производители");
+    setApplicationArea("Все области применения");
+    setSort("name-asc");
   }
 
   return (
-    <div className="grid gap-5 lg:grid-cols-[13.5rem_1fr]">
+    <div className="grid gap-4 lg:grid-cols-[12rem_1fr]">
       <aside>
-        <div className="cm-card grid gap-3 overflow-hidden p-3 shadow-[0_8px_28px_rgba(11,19,32,0.035)] sm:grid-cols-2 lg:sticky lg:top-20 lg:block lg:space-y-4">
-          <div className="-mx-3 -mt-3 border-b border-[var(--cm-rule)] bg-white px-3 py-3 sm:col-span-2 lg:block">
-            <div className="cm-label !text-cm-teal">Фильтры</div>
+        <div className="cm-card grid gap-2.5 overflow-hidden p-2.5 shadow-[0_8px_28px_rgba(11,19,32,0.035)] sm:grid-cols-3 lg:sticky lg:top-20 lg:block lg:space-y-3">
+          <div className="-mx-2.5 -mt-2.5 border-b border-[var(--cm-rule)] bg-white px-2.5 py-2 sm:col-span-3 lg:block">
+            <div className="cm-label !text-[9px] !text-cm-teal">Фильтры</div>
           </div>
           <div>
-            <div className="cm-label mb-2">Категория</div>
+            <div className="cm-label mb-1.5 !text-[8px]">Категория</div>
             <label>
               <span className="sr-only">Категория</span>
               <select
                 value={category}
                 onChange={(event) => setCategory(event.target.value)}
-                className="cm-field min-h-10 py-2 text-xs transition duration-200"
+                className="cm-field cm-field-compact transition duration-200"
               >
                 <option>Все категории</option>
                 {categories.map((item) => (
@@ -110,17 +145,20 @@ export default function CatalogExplorer({
                     {item.name}
                   </option>
                 ))}
+                {hasUnassignedCategory && (
+                  <option value={CLOUD_PREVIEW_UNKNOWN_CATEGORY_ID}>Данные уточняются</option>
+                )}
               </select>
             </label>
           </div>
           <div>
-            <div className="cm-label mb-2">Производитель</div>
+            <div className="cm-label mb-1.5 !text-[8px]">Производитель</div>
             <label>
               <span className="sr-only">Производитель</span>
               <select
                 value={manufacturer}
                 onChange={(event) => setManufacturer(event.target.value)}
-                className="cm-field min-h-10 py-2 text-xs transition duration-200"
+                className="cm-field cm-field-compact transition duration-200"
               >
                 <option>Все производители</option>
                 {manufacturers.map((item) => (
@@ -128,11 +166,28 @@ export default function CatalogExplorer({
                     {item.name}
                   </option>
                 ))}
+                {hasUnassignedManufacturer && (
+                  <option value={CLOUD_PREVIEW_UNKNOWN_MANUFACTURER_ID}>Производитель не указан</option>
+                )}
               </select>
             </label>
           </div>
-          <div className="hidden rounded-md border border-[var(--cm-rule)] bg-cm-surface-low/70 p-3 text-[11px] leading-5 text-cm-slate lg:block">
-            Используйте категорию и производителя, чтобы быстро найти
+          <div>
+            <div className="cm-label mb-1.5 !text-[8px]">Область применения</div>
+            <label>
+              <span className="sr-only">Область применения</span>
+              <select
+                value={applicationArea}
+                onChange={(event) => setApplicationArea(event.target.value)}
+                className="cm-field cm-field-compact transition duration-200"
+              >
+                <option>Все области применения</option>
+                {applicationAreas.map((area) => <option key={area}>{area}</option>)}
+              </select>
+            </label>
+          </div>
+          <div className="hidden rounded-md border border-[var(--cm-rule)] bg-cm-surface-low/70 p-2.5 text-[10px] leading-4 text-cm-slate lg:block">
+            Используйте категорию, производителя и область применения, чтобы найти
             нужное медицинское оборудование.
           </div>
         </div>
@@ -161,55 +216,72 @@ export default function CatalogExplorer({
           )}
         </div>
 
-        <div className="mt-4 flex items-center justify-between gap-4">
+        <div className="mt-4 flex flex-wrap items-center justify-between gap-4">
           <div className="font-mono text-[10px] text-cm-slate">
             Найдено: <strong className="text-cm-ink">{results.length}</strong> из {products.length}
           </div>
-          <div className="hidden text-[11px] text-cm-dim sm:block">
-            Каталог медицинского оборудования
-          </div>
+          <label className="flex items-center gap-2 text-[11px] text-cm-dim">
+            <span>Сортировка</span>
+            <select
+              value={sort}
+              onChange={(event) => setSort(event.target.value as CatalogSort)}
+              className="cm-field min-h-9 py-1.5 text-xs text-cm-ink"
+            >
+              <option value="name-asc">По названию А–Я</option>
+              <option value="name-desc">По названию Я–А</option>
+              <option value="updated-desc">Сначала обновлённые</option>
+            </select>
+          </label>
         </div>
 
         {results.length > 0 ? (
-          <div className="mt-4 grid gap-4 md:grid-cols-2">
-            {results.map((product) => (
+          <div className="mt-4 grid gap-3 md:grid-cols-3 2xl:grid-cols-4">
+            {results.map((product) => {
+              const manufacturerEntry = manufacturersById.get(product.manufacturerId);
+              const presentation = getProductPresentation(product, {
+                categoryName: categoriesById.get(product.categoryId)?.name,
+                country: manufacturerEntry?.country,
+                manufacturerName: manufacturerEntry?.name,
+              });
+              return (
               <article
                 key={product.slug}
                 className="group cm-card flex min-h-full flex-col overflow-hidden"
               >
                 <ProductImage product={product} />
-                <div className="flex flex-1 flex-col p-4">
+                <div className="flex flex-1 flex-col p-3">
                   <div className="flex flex-wrap items-center gap-2">
                     <span className="rounded-md border border-[var(--cm-rule)] bg-cm-surface-low px-2 py-1 font-mono text-[9px] font-semibold text-cm-dim">
-                      {categoriesById.get(product.categoryId)?.name ??
-                        product.categoryId}
+                      {presentation.categoryLabel}
                     </span>
                     <span className="font-mono text-[9px] text-cm-dim">
-                      {product.model}
+                      {presentation.modelLabel}
                     </span>
                   </div>
-                  <h2 className="mt-3 text-base font-bold leading-6 tracking-[-0.015em]">
+                  <h2 className="mt-2.5 text-[15px] font-bold leading-5 tracking-[-0.015em]">
                     <Link href={`/catalog/${product.slug}`} className="hover:text-cm-teal">
                       {product.name}
                     </Link>
                   </h2>
-                  <div className="mt-2 text-xs text-cm-slate">
-                    {manufacturersById.get(product.manufacturerId) ? (
+                  <div className="mt-1.5 text-xs text-cm-slate">
+                    {manufacturerEntry ? (
                       <Link
-                        href={`/manufacturers/${manufacturersById.get(product.manufacturerId)?.slug}`}
-                        className="font-semibold text-cm-teal hover:underline"
+                        href={`/manufacturers/${manufacturerEntry.slug}`}
+                        className="inline-flex items-center rounded-md bg-cm-teal-soft px-2 py-1 font-bold text-cm-teal transition hover:bg-cm-teal/12 hover:underline"
                       >
-                        {manufacturersById.get(product.manufacturerId)?.name}
+                        {manufacturerEntry.name}
                       </Link>
                     ) : (
-                      product.manufacturerId
+                      presentation.manufacturerLabel
                     )}
                   </div>
-                  <p className="mt-3 line-clamp-2 text-xs leading-5 text-cm-slate">
-                    {product.shortDescription}
-                  </p>
+                  {presentation.shortDescription && (
+                    <p className="mt-2.5 line-clamp-2 text-[11px] leading-[1.125rem] text-cm-slate">
+                      {presentation.shortDescription}
+                    </p>
+                  )}
                   {product.specifications.length > 0 && (
-                    <dl className="mt-3 grid gap-1.5 border-t border-[var(--cm-rule)] pt-3 text-[11px]">
+                    <dl className="mt-2.5 grid gap-1 border-t border-[var(--cm-rule)] pt-2.5 text-[10px]">
                       {product.specifications.slice(0, 2).map((specification) => (
                         <div key={`${specification.label}:${specification.position}`} className="flex justify-between gap-3">
                           <dt className="text-cm-dim">{specification.label}</dt>
@@ -220,21 +292,24 @@ export default function CatalogExplorer({
                       ))}
                     </dl>
                   )}
-                  <div className="mt-auto flex items-center justify-between gap-3 pt-4 text-xs font-semibold">
+                  <div className="mt-auto flex items-center justify-between gap-2 pt-3 text-[11px] font-semibold">
                     <Link href={`/catalog/${product.slug}`} className="text-cm-teal">
                       Открыть карточку →
                     </Link>
-                    <Link
-                      href="/compare"
-                      aria-label={`Открыть сравнение для ${product.name}`}
-                      className="text-cm-slate hover:text-cm-teal"
-                    >
-                      Сравнить
-                    </Link>
+                    {compareEnabled && presentation.canCompare ? (
+                      <Link
+                        href="/compare"
+                        aria-label={`Открыть сравнение для ${product.name}`}
+                        className="text-cm-slate hover:text-cm-teal"
+                      >
+                        Сравнить
+                      </Link>
+                    ) : null}
                   </div>
                 </div>
               </article>
-            ))}
+              );
+            })}
           </div>
         ) : (
           <div className="cm-empty-state mt-4 py-5">
@@ -268,17 +343,32 @@ export default function CatalogExplorer({
 
 function ProductImage({ product }: { product: Product }) {
   const image = product.media.find(({ type }) => type === "image");
-  if (!image) return null;
+  if (!image) {
+    const presentation = getProductPresentation(product);
+    return (
+      <Link
+        href={`/catalog/${product.slug}`}
+        aria-label={`Открыть карточку ${product.name}`}
+        className="grid aspect-[16/6.5] w-full place-items-center border-b border-[var(--cm-rule)] bg-cm-surface-low text-[11px] text-cm-dim transition hover:bg-cm-teal-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-cm-teal"
+      >
+        {presentation.mediaFallbackLabel}
+      </Link>
+    );
+  }
 
   return (
-    <span className="relative block aspect-[16/9] w-full overflow-hidden border-b border-[var(--cm-rule)] bg-white">
+    <Link
+      href={`/catalog/${product.slug}`}
+      aria-label={`Открыть карточку ${product.name}`}
+      className="relative block aspect-[16/6.5] w-full overflow-hidden border-b border-[var(--cm-rule)] bg-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-cm-teal"
+    >
       <Image
         src={image.url}
         alt={image.alt}
         fill
-        sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 32vw"
-        className="object-contain p-3 transition duration-300 group-hover:scale-[1.02]"
+        sizes="(max-width: 767px) 100vw, (max-width: 1535px) 33vw, 25vw"
+        className="object-contain p-2.5 transition duration-300 group-hover:scale-[1.02]"
       />
-    </span>
+    </Link>
   );
 }

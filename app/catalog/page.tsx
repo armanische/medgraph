@@ -6,6 +6,7 @@ import {
   manufacturerService,
   productService,
   searchService,
+  storefrontDataSource,
 } from "@/lib/storefront";
 import { buildStorefrontMetadata } from "@/lib/storefront/seo";
 import { buildCollectionPageStructuredData } from "@/lib/storefront/structured-data";
@@ -16,7 +17,7 @@ const catalogDescription =
 export async function generateMetadata({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string; category?: string; manufacturer?: string }>;
+  searchParams: Promise<{ q?: string; category?: string; manufacturer?: string; applicationArea?: string }>;
 }): Promise<Metadata> {
   const { q = "" } = await searchParams;
   return buildStorefrontMetadata({
@@ -30,9 +31,9 @@ export async function generateMetadata({
 export default async function CatalogPage({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string; category?: string; manufacturer?: string }>;
+  searchParams: Promise<{ q?: string; category?: string; manufacturer?: string; applicationArea?: string }>;
 }) {
-  const { q = "", category = "", manufacturer = "" } = await searchParams;
+  const { q = "", category = "", manufacturer = "", applicationArea = "" } = await searchParams;
   const [products, categories, manufacturers, initialSearchResults] =
     await Promise.all([
       productService.getActiveProducts(),
@@ -40,19 +41,30 @@ export default async function CatalogPage({
       manufacturerService.getManufacturers(),
       q ? searchService.searchProducts(q) : Promise.resolve([]),
     ]);
+  const applicationAreaCount = new Set(
+    products.flatMap((product) => product.applicationAreas),
+  ).size;
+  const catalogSummary = [
+    ["Товары", products.length],
+    ["Производители", manufacturers.length],
+    ["Категории", categories.length],
+    ["Области применения", applicationAreaCount],
+  ] as const;
 
   return (
     <main className="min-h-screen bg-cm-canvas">
-      <JsonLd
-        data={buildCollectionPageStructuredData({
-          name: "Каталог медицинских изделий",
-          description: catalogDescription,
-          path: "/catalog",
-        })}
-      />
+      {storefrontDataSource !== "cloud_preview" && (
+        <JsonLd
+          data={buildCollectionPageStructuredData({
+            name: "Каталог медицинских изделий",
+            description: catalogDescription,
+            path: "/catalog",
+          })}
+        />
+      )}
       <header className="border-b border-[var(--cm-rule)] bg-[linear-gradient(135deg,#ffffff_0%,#f6fafc_58%,#e8f5f7_100%)]">
         <div className="cm-container cm-page-intro">
-          <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_17rem] lg:items-end">
+          <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_30rem] lg:items-end">
             <div>
               <div className="cm-label">CyberMedica · Каталог</div>
               <h1 className="mt-2 max-w-3xl text-3xl font-extrabold tracking-[-0.03em]">
@@ -63,17 +75,18 @@ export default async function CatalogPage({
                 описания, технические характеристики и подбор оборудования.
               </p>
             </div>
-            <div className="rounded-xl border border-[var(--cm-rule)] bg-white/78 p-3 shadow-[0_12px_34px_rgba(11,19,32,0.055)] backdrop-blur">
+            <div aria-label="Сводка каталога">
               <div className="cm-label !text-cm-teal">Сводка каталога</div>
-              <div className="mt-2 grid grid-cols-2 gap-2">
-                <div className="rounded-md border border-[var(--cm-rule)] bg-white/70 p-2.5">
-                  <div className="font-mono text-lg font-bold">{products.length}</div>
-                  <div className="cm-label mt-1 text-[8px]">позиций</div>
-                </div>
-                <div className="rounded-md border border-[var(--cm-rule)] bg-white/70 p-2.5">
-                  <div className="font-mono text-lg font-bold">{categories.length}</div>
-                  <div className="cm-label mt-1 text-[8px]">категорий</div>
-                </div>
+              <div className="mt-2 grid grid-cols-2 overflow-hidden rounded-xl border border-[var(--cm-rule)] bg-white/78 sm:grid-cols-4">
+                {catalogSummary.map(([label, value]) => (
+                  <div
+                    key={label}
+                    className="border-b border-r border-[var(--cm-rule)] px-3 py-2.5 even:border-r-0 [&:nth-last-child(-n+2)]:border-b-0 sm:border-b-0 sm:even:border-r sm:last:border-r-0"
+                  >
+                    <div className="font-mono text-lg font-bold leading-none text-cm-ink">{value}</div>
+                    <div className="mt-1.5 text-[9px] font-medium leading-3 text-cm-slate">{label}</div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -84,10 +97,12 @@ export default async function CatalogPage({
           initialQuery={q}
           initialCategory={category}
           initialManufacturer={manufacturer}
+          initialApplicationArea={applicationArea}
           products={products}
           categories={categories}
           manufacturers={manufacturers}
           initialSearchResultIds={initialSearchResults.map(({ id }) => id)}
+          compareEnabled={process.env.CATALOG_DATA_SOURCE !== "cloud_preview"}
         />
       </div>
     </main>

@@ -13,6 +13,9 @@
   --cm-teal: #0b7b8e;
   --cm-teal-dark: #09636f;
   --cm-teal-soft: #dcf0f4;
+  --cm-coral: #d84b43;
+  --cm-coral-dark: #b93834;
+  --cm-coral-soft: #fbe9e7;
   --cm-verified: #047857;
   --cm-verified-soft: #ecfdf5;
   --cm-verified-border: #6ee7b7;
@@ -42,6 +45,9 @@
   --color-cm-teal: var(--cm-teal);
   --color-cm-teal-dark: var(--cm-teal-dark);
   --color-cm-teal-soft: var(--cm-teal-soft);
+  --color-cm-coral: var(--cm-coral);
+  --color-cm-coral-dark: var(--cm-coral-dark);
+  --color-cm-coral-soft: var(--cm-coral-soft);
   --color-cm-verified: var(--cm-verified);
   --color-cm-verified-soft: var(--cm-verified-soft);
   --color-cm-warning: var(--cm-warning);
@@ -204,6 +210,14 @@ a.cm-card:hover {
   transition:
     border-color 160ms ease,
     box-shadow 160ms ease;
+}
+
+.cm-field-compact {
+  min-height: 2rem;
+  padding: 0.375rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.6875rem;
+  line-height: 1rem;
 }
 
 .cm-empty-state {

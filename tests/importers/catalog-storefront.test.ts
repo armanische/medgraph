@@ -94,7 +94,7 @@ test("catalog cards expose only storefront merchandising fields", async () => {
     assert.doesNotMatch(explorer, new RegExp(`\\b${internalField}\\b`, "i"));
   }
   assert.match(explorer, /product\.name/);
-  assert.match(explorer, /product\.shortDescription/);
+  assert.match(explorer, /presentation\.shortDescription/);
   assert.match(explorer, /product\.media/);
   assert.match(explorer, /product\.manufacturerId/);
   assert.match(explorer, /product\.categoryId/);
