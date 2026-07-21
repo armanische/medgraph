@@ -29,6 +29,7 @@ export {
 } from "./storefront-sitemap.ts";
 export * from "./schemas.ts";
 export * from "./types.ts";
+export * from "./product-quality.ts";
 export type {
   ComparisonSpecificationCell,
   ComparisonTableRow,
