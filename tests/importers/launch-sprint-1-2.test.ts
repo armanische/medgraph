@@ -14,13 +14,15 @@ test("catalog cards reserve consistent vertical regions", async () => {
   assert.match(catalog, /min-h-\[3\.625rem\]/u);
 });
 
-test("product metadata exposes labeled and value-only presentation variants", async () => {
+test("product metadata defaults to value-only and retains the labeled review variant", async () => {
   const page = await source("app/catalog/[slug]/page.tsx");
   assert.match(page, /metadataMode/u);
-  assert.match(page, /metadata === "values"/u);
+  assert.match(page, /metadata === "labels"/u);
+  assert.match(page, /\? "labels" : "values"/u);
   assert.match(page, /data-metadata-mode/u);
   assert.match(page, /className=\{metadataMode === "labels"/u);
   assert.doesNotMatch(page, /Модель \/ артикул/u);
+  assert.doesNotMatch(page, /presentation\.model/u);
 });
 
 test("product description stays visible and application metadata is not duplicated", async () => {

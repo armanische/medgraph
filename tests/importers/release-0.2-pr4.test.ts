@@ -68,7 +68,7 @@ test("product hero is compact and does not repeat quality or missing metadata", 
   assert.doesNotMatch(page, /PRODUCT_PRESENTATION_FALLBACKS\.registration/u);
   assert.match(page, /experience\.badges/u);
   assert.match(page, /aria-label="Ключевая информация о товаре"/u);
-  assert.match(page, /presentation\.model/u);
+  assert.doesNotMatch(page, /presentation\.model/u);
   assert.match(page, /experience\.summary/u);
 });
 

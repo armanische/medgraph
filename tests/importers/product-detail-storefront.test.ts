@@ -172,7 +172,8 @@ test("product hero uses a media-first 40/60 layout with catalog details", async 
   );
   assert.match(source, /<ProductGallery/);
   assert.match(source, /label="Регистрационное удостоверение"/);
-  assert.match(source, /<dt className="sr-only">Модель<\/dt>/);
+  assert.doesNotMatch(source, /<dt className="sr-only">Модель<\/dt>/);
+  assert.doesNotMatch(source, /presentation\.model/);
   assert.doesNotMatch(source, /Модель \/ артикул/);
   assert.doesNotMatch(source, /label="Статус"/);
   assert.match(source, /presentation\.statusLabel/);

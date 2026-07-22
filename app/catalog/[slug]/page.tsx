@@ -51,7 +51,7 @@ export default async function StorefrontProductPage({
   searchParams: Promise<{ metadata?: string | string[] }>;
 }) {
   const { slug } = await params;
-  const metadataMode = (await searchParams).metadata === "values" ? "values" : "labels";
+  const metadataMode = (await searchParams).metadata === "labels" ? "labels" : "values";
   const product = await productService.getProductBySlug(slug);
   if (!product) notFound();
 
@@ -151,21 +151,15 @@ export default async function StorefrontProductPage({
                 </dl>
               )}
 
-              <dl className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-3 border-y border-[var(--cm-rule)] py-3.5 text-xs">
-                {presentation.model && (
-                  <div className="rounded-md bg-cm-teal-soft px-2.5 py-1.5 font-semibold text-cm-teal">
-                    <dt className="sr-only">Модель</dt>
-                    <dd>{presentation.model}</dd>
-                  </div>
-                )}
-                {registration && (
+              {registration && (
+                <dl className="mt-4 border-y border-[var(--cm-rule)] py-3.5 text-xs">
                   <ProductDetailLinkOrText
                     label="Регистрационное удостоверение"
                     value={registration.value}
                     href={registration.href}
                   />
-                )}
-              </dl>
+                </dl>
+              )}
 
               {presentation.canRequestQuote ? (
                 <div className="mt-4 flex flex-wrap gap-2">
