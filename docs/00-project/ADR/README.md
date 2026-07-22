@@ -38,3 +38,4 @@ Accepted ADR не переписывается при смене решения.
 | [ADR-001](./ADR-001-cloud-first-source-of-truth.md) | Supabase как operational Source of Truth | Accepted |
 | [ADR-002](./ADR-002-storefront-repository-boundary.md) | Storefront Services и repository boundary | Accepted |
 | [ADR-003](./ADR-003-staging-acceptance-gate.md) | Staging как обязательная среда приёмки | Accepted |
+| [ADR-004](./ADR-004-main-production-branch-separation.md) | Разделение интеграционной и Production-веток | Accepted |

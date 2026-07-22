@@ -18,6 +18,17 @@
 
 Переход подтверждается evidence. Объявление статуса без evidence недействительно.
 
+### 1.1. Branch promotion model
+
+    feature/* -> main -> Preview
+    main -> explicit promotion -> production -> Production
+
+- `main` принимает завершённые изменения и автоматически разворачивается только как Preview;
+- `production` содержит только явно принятый production artifact;
+- Vercel Production branch настроена на `production`;
+- promotion из `main` в `production` требует отдельного разрешения и полного Production gate;
+- прямые feature-to-production merge и force push запрещены.
+
 ## 2. Release gates
 
 ### Local gate
@@ -39,6 +50,8 @@
 ### Production gate
 
 - принятый commit/artifact;
+- проверено, что выбранный commit уже существует в `main`;
+- подготовлен явный controlled promotion в ветку `production`;
 - production env review;
 - migration plan и backup при data changes;
 - rollback owner и previous deployment;

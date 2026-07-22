@@ -180,6 +180,28 @@ Local предназначен для разработки, tests, dry-run и п
 
 Разница между localhost и staging сама по себе не означает потерю данных.
 
+### 4.3. Git-ветки и deployment environments
+
+Нормативная модель веток:
+
+    feature/*
+        -> main
+        -> automatic Preview deployment
+
+    main
+        -> controlled promotion
+        -> production
+        -> Production deployment
+
+- `main` — каноническая интеграционная ветка разработки и источник всех новых feature-веток;
+- `main` не является Vercel Production branch и каждый push в неё создаёт только Preview;
+- `production` — единственная Vercel Production branch;
+- обновление `production` выполняется только явным контролируемым promotion принятого immutable commit из `main`;
+- push, merge или force update в `production` без пройденного Production gate запрещён;
+- Production domains и Production ENV не назначаются deployment из `main` или feature-веток.
+
+Решение зафиксировано в [ADR-004](./ADR/ADR-004-main-production-branch-separation.md).
+
 ---
 
 ## 5. Источники данных
