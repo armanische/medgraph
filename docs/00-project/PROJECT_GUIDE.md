@@ -1,9 +1,13 @@
 # CyberMedica — руководство проекта
 
-**Статус:** нормативный документ  
-**Версия:** 1.0  
-**Дата вступления в силу:** 21 июля 2026 года  
-**Владелец:** владелец продукта и технический руководитель CyberMedica  
+**Статус:** нормативный документ
+
+**Версия:** 2.0
+
+**Дата вступления в силу:** 22 июля 2026 года
+
+**Владелец:** владелец продукта и технический руководитель CyberMedica
+
 **Область действия:** репозиторий, облачная инфраструктура, разработка, данные и релизы
 
 ## Статус и приоритет
@@ -40,6 +44,7 @@ PROJECT_GUIDE является конституцией CyberMedica и глав�
 14. [ИИ-ассистенты](#14-правила-работы-ии)
 15. [История проекта](#15-история-проекта)
 16. [Обновление руководства](#16-порядок-обновления-документа)
+17. [Changelog](#17-changelog-документа)
 
 ---
 
@@ -125,7 +130,32 @@ CyberMedica — коммерческая B2B-витрина медицинско
                                                   v
                                        Supabase Cloud Catalog
 
-### 3.2. Frontend
+### 3.2. Слоистая архитектура
+
+Архитектурные зависимости направлены от устойчивого внутреннего слоя к сменяемым внешним реализациям:
+
+    Core
+      |
+      v
+    Contracts
+      |
+      v
+    Adapters
+      |
+      v
+    Infrastructure
+
+Нормативные правила:
+
+- Core содержит предметную логику и не знает о Cloud, Storefront, Review или Publication;
+- Contracts содержат переносимые модели и интерфейсы без типов внешних систем;
+- Adapters переводят Contracts во внешний формат и являются единственным местом знания конкретной внешней системы;
+- Infrastructure реализует transport, storage, framework и environment-specific integration;
+- внешняя система подключается через adapter, а не прямым импортом в Core;
+- Parser и Normalization зависят только от Core/Contracts и не импортируют Review, Publication, Storefront, Supabase или Cloud;
+- нарушение направления зависимостей является архитектурным дефектом и блокирует завершение задачи.
+
+### 3.3. Frontend
 
 - Next.js App Router, React и TypeScript.
 - Server Components используются по умолчанию.
@@ -134,11 +164,11 @@ CyberMedica — коммерческая B2B-витрина медицинско
 - SEO, metadata, sitemap и JSON-LD строятся из публичного Storefront contract.
 - Service credentials, internal IDs, checksums, artifact paths, review comments и raw snapshots запрещены в public UI.
 
-### 3.3. Backend
+### 3.4. Backend
 
 Backend состоит из server-only модулей, route handlers, repository adapters и CLI. Обязательны input validation, whitelist изменяемых полей, разделение public read/internal read/service-only write, no-store для internal API и отсутствие secrets в browser artifacts.
 
-### 3.4. Supabase
+### 3.5. Supabase
 
 - **cloud** — закрытая операционная схема;
 - **cloud_api** — контролируемые RPC;
@@ -148,7 +178,7 @@ Backend состоит из server-only модулей, route handlers, reposito
 
 Схема cloud не публикуется как общий PostgREST API. Заголовки custom schema применяются в конкретном adapter, а не глобально.
 
-### 3.5. Local
+### 3.6. Local
 
 Local предназначен для разработки, tests, dry-run и предварительного visual QA. По умолчанию Storefront использует CATALOG_DATA_SOURCE=static. Подключение к staging выполняется явно. Localhost не доказывает состояние staging или Production.
 
@@ -217,7 +247,7 @@ Local предназначен для разработки, tests, dry-run и п
 
 ### 5.3. Текущее переходное состояние
 
-На дату версии 1.0:
+На дату версии 2.0:
 
 - staging baseline: 79 товаров, 25 производителей, 19 assignable-категорий, 7 областей применения;
 - READY: 76; REQUIRES_EDITOR_REVIEW: 3; Published: 0;
@@ -300,6 +330,73 @@ Runtime fallback не делает static-файлы канонической б
 
 Запрещено запускать migration как side effect build/test/deploy, смешивать чужие staged changes с PR и использовать reset/restore/clean/stash без разрешения.
 
+### 7.1. Development Priority и Technical Debt Policy
+
+Все задачи получают одну приоритетную классификацию. Порядок выполнения:
+
+1. **Critical Technical Debt** — Git, Repository, Architecture, Pipeline, Decoupling и другие дефекты, создающие риск потери данных, невоспроизводимости или неправильных зависимостей.
+2. **Launch Critical** — Product Enrichment, Manufacturer Import, Production QA, Release Readiness и другие условия, без которых Production невозможен.
+3. **Important Technical Debt** — Developer Experience, Tooling, внутренний refactoring и производительность внутренних инструментов.
+4. **Growth Backlog** — UI polish, дополнительные фильтры, аналитика, второстепенные функции и интеграции после запуска.
+
+После закрытия Critical Technical Debt приоритет разработки автоматически смещается на Launch Critical. Important Technical Debt выполняется только тогда, когда он блокирует задачу Launch Critical или документированно и существенно снижает риск её разработки. Growth Backlog запрещено выполнять до закрытия Launch Critical, кроме исправления критического дефекта. Обнаруженная архитектурная проблема может изменить порядок работ, если это документированно уменьшает общий риск проекта.
+
+### 7.2. Atomic Commit Policy
+
+Один commit содержит одну логически законченную группу изменений с понятной ответственностью и проверяемым результатом.
+
+Запрещено:
+
+- смешивать UI и infrastructure;
+- смешивать Cloud и Frontend;
+- смешивать Runtime и Documentation;
+- создавать commits вида `misc fixes`;
+- включать в commit изменения без отношения к его цели;
+- создавать commit, который нельзя безопасно проверить или перенести независимо.
+
+Runtime и Documentation всегда оформляются отдельными commits, даже когда относятся к одному этапу. Самостоятельное нормативное или аудиторское изменение также оформляется отдельным documentation commit.
+
+### 7.3. Repository Workflow
+
+Целевая модель веток:
+
+    feature/*
+        |
+        v
+    preview/storefront
+        |
+        v
+    main
+
+- `feature/*` содержит одно независимое изменение;
+- `preview/storefront` является интеграционной веткой Storefront Preview;
+- `main` содержит принятый release-кандидат;
+- recovery-ветки используются только для ограниченного восстановления и не являются местом длительной разработки;
+- единственным источником истины для кода deployment является Git commit.
+
+Основной Preview workflow:
+
+    Commit
+      |
+      v
+    Push
+      |
+      v
+    GitHub
+      |
+      v
+    Automatic Vercel Preview
+
+Preview создаётся исключительно по цепочке Commit -> Push -> GitHub -> Automatic Vercel Preview. Ручной CLI Preview запрещён как основной release process и не считается принятым Preview проекта. Запрещено публиковать Preview из незакоммиченного или `gitDirty` состояния.
+
+### 7.4. Working Principles
+
+- Перед изменением выполняется аудит фактического состояния.
+- Перед рефакторингом разделяется ответственность компонентов.
+- Перед запуском подтверждается стабильность.
+- Каждый этап содержит проверки, критерии готовности и безопасную точку остановки.
+- Если во время задачи обнаружена архитектурная проблема, выполнение разрешено остановить, зафиксировать аудит, изменить план и продолжить только после определения безопасной границы.
+
 ---
 
 ## 8. Правила работы со staging
@@ -333,6 +430,17 @@ Runtime fallback не делает static-файлы канонической б
 | Production | артефакт развернут и проверен | deployment + smoke report |
 
 Build success не означает принятие, Preview не означает Production. Релиз связан с конкретным commit или immutable artifact. До Production определяются previous stable deployment, data rollback, владелец решения и post-rollback checks.
+
+### 9.1. Roadmap Policy
+
+Roadmap является живым документом управления проектом. После каждого завершённого крупного этапа в нём:
+
+- обновляется статус завершённого этапа;
+- явно отмечается текущий этап;
+- указывается следующий рекомендуемый этап;
+- отражается изменение приоритетов и зависимостей, если оно принято.
+
+Каждое обсуждение проекта завершается актуальным Roadmap или явной ссылкой на его актуальную версию. Release report фиксирует evidence завершённого этапа, а Roadmap — последовательность дальнейших работ; эти документы не заменяют друг друга.
 
 ---
 
@@ -368,6 +476,38 @@ Build success не означает принятие, Preview не означа�
 - Import diagnostics ≠ current catalog quality.
 
 Перед выводом фиксируются environment, deployment/commit, data source, Supabase project, release/baseline и operation mode.
+
+### 11.1. Product Data Policy
+
+- ИИ не придумывает Product Data и не заполняет отсутствующие значения предположениями.
+- Каждое фактическое поле имеет подтверждённый источник.
+- Каждая техническая характеристика сохраняет provenance до конкретного источника.
+- Приоритетными источниками являются официальные материалы производителя: официальный сайт, каталог, datasheet, IFU, руководство или иной авторитетный документ.
+- Неофициальный источник не повышает уверенность и не заменяет официальное подтверждение.
+- Если подтверждённого значения нет или соответствие неоднозначно, поле остаётся пустым либо получает fail-closed статус для редакторской обработки.
+- Immutable Source, source UID, raw payload и checksum не изменяются нормализацией или редакторской коррекцией.
+
+### 11.2. Product Enrichment Policy
+
+Нормативный поток обогащения:
+
+    Manufacturer
+        |
+        v
+    Extraction
+        |
+        v
+    Normalization
+        |
+        v
+    Review
+        |
+        v
+    Publication
+
+Extraction сохраняет исходные значения, Normalization формирует объяснимое предложение, Review принимает явное решение, Publication публикует только разрешённую проекцию. Автоматически сгенерированные или нормализованные данные не публикуются без Review. Pipeline не создаёт review decision и не выполняет publication как неявный side effect.
+
+### 11.3. Правила write-операций
 
 Правила write:
 
@@ -423,6 +563,34 @@ ADR обязателен при изменении Source of Truth, infrastructu
 
 Если состояние нельзя установить, ИИ сообщает ограничение и предлагает безопасную проверку.
 
+### 14.1. AI Development Policy и выбор Codex Model
+
+Каждая задача для Codex содержит явный блок `Recommended Codex Model`. Стандарт выбора:
+
+| Модель | Назначение |
+| --- | --- |
+| **Sol** | архитектурное проектирование, сложная консолидация, крупные рефакторинги, анализ большого dependency graph и сложный Git merge |
+| **Terra** | модель по умолчанию для Backend, Frontend, API, Supabase, средних рефакторингов и большинства задач разработки |
+| **Luna** | небольшие исправления, UI, тесты, документация и локальные изменения с узким scope |
+
+Рекомендация определяет требуемый профиль сложности, но не расширяет разрешения задачи и не отменяет review, QA или ограничения безопасности.
+
+### 14.2. Codex Task Standard
+
+Каждая задача формулируется конкретно и содержит:
+
+1. **Goal** — один проверяемый результат.
+2. **Working Directory** — точный путь репозитория или worktree.
+3. **Current Branch** — ожидаемая ветка и при необходимости контрольный HEAD.
+4. **Current State** — подтверждённое исходное состояние и зависимости.
+5. **Steps** — ограниченная последовательность действий.
+6. **Validation** — команды и domain-specific проверки.
+7. **Restrictions** — запрещённые системы, данные и операции.
+8. **Definition of Done** — объективные условия статуса READY.
+9. **Recommended Codex Model** — Sol, Terra или Luna с кратким основанием.
+
+Расплывчатая задача без проверяемой цели, scope, ограничений или Definition of Done не запускается как mutation task. Сначала она уточняется либо преобразуется в read-only аудит.
+
 ---
 
 ## 15. История проекта
@@ -454,6 +622,15 @@ PROJECT_GUIDE обновляется при изменении product boundary,
 7. Обновить checklists и gates.
 
 Опечатка не требует ADR. Изменение обязательного правила повышает minor version; изменение назначения, Source of Truth или governance — major version.
+
+---
+
+## 17. Changelog документа
+
+| Версия | Дата | Изменения |
+| --- | --- | --- |
+| 2.0 | 22 июля 2026 года | AI Development Policy и выбор Codex Model; Codex Task Standard; Development Priority и Technical Debt Policy; Roadmap Policy; Atomic Commit Policy; Git-based Repository Workflow; Architecture Layering; Product Data Policy; Product Enrichment Policy; безопасные Working Principles. |
+| 1.0 | 21 июля 2026 года | Первая нормативная версия PROJECT_GUIDE и единый Source of Truth проекта. |
 
 ## Связанные нормативные документы
 
