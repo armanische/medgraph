@@ -172,7 +172,8 @@ test("product hero uses a media-first 40/60 layout with catalog details", async 
   );
   assert.match(source, /<ProductGallery/);
   assert.match(source, /label="Регистрационное удостоверение"/);
-  assert.match(source, /label="Модель \/ артикул"/);
+  assert.match(source, /<dt className="sr-only">Модель<\/dt>/);
+  assert.doesNotMatch(source, /Модель \/ артикул/);
   assert.doesNotMatch(source, /label="Статус"/);
   assert.match(source, /presentation\.statusLabel/);
   assert.match(source, /aria-label="Ключевая информация о товаре"/);
@@ -244,7 +245,8 @@ test("product detail experience limits commercial content without mutating Produ
   });
 
   assert.ok(experience.summary);
-  assert.ok(experience.summary.length <= 481);
+  assert.ok(experience.summary.length >= 400);
+  assert.ok(experience.summary.length <= 700);
   assert.ok(experience.description);
   assert.ok(experience.advantages.length <= 6);
   assert.ok(experience.specifications.length <= 15);

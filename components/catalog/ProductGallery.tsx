@@ -94,8 +94,11 @@ export default function ProductGallery({
               sizes="(max-width: 1024px) 100vw, 40vw"
               className="object-contain p-2 transition duration-300 group-hover:scale-[1.015]"
             />
-            <span className="absolute bottom-3 right-3 rounded-full border border-[var(--cm-rule)] bg-white/92 px-3 py-1.5 text-[10px] font-semibold text-cm-slate shadow-sm backdrop-blur">
-              Увеличить
+            <span className="absolute bottom-3 right-3 grid size-10 place-items-center rounded-full border border-[var(--cm-rule)] bg-white/94 text-cm-slate shadow-[0_6px_18px_rgba(11,19,32,0.14)] backdrop-blur transition group-hover:border-cm-teal/40 group-hover:text-cm-teal" aria-hidden="true">
+              <svg viewBox="0 0 24 24" className="size-4" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
+                <circle cx="10.5" cy="10.5" r="5.5" />
+                <path d="m15 15 4 4M10.5 8v5M8 10.5h5" />
+              </svg>
             </span>
           </button>
         ) : (

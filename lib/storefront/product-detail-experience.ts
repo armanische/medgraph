@@ -45,13 +45,6 @@ const TECHNICAL_METADATA_LABELS = new Set([
   "тип товара",
 ]);
 
-const PATIENT_LABELS = new Set([
-  "возрастная категория пациентов",
-  "группа пациентов",
-  "категория пациентов",
-  "пациенты",
-]);
-
 function plainText(value: string) {
   return value
     .replace(/<[^>]*>/gu, " ")
@@ -73,20 +66,6 @@ function conciseText(value: string | null | undefined, maxLength = 720) {
   return `${shortened.slice(0, lastSpace > maxLength * 0.75 ? lastSpace : maxLength).trim()}…`;
 }
 
-function summaryText(value: string | null | undefined) {
-  const normalized = value ? plainText(value) : "";
-  if (!normalized) return null;
-
-  const sentences = normalized.match(/[^.!?]+[.!?]+|[^.!?]+$/gu) ?? [];
-  const summary = sentences
-    .map((sentence) => sentence.trim())
-    .filter(Boolean)
-    .slice(0, 4)
-    .join(" ");
-
-  return conciseText(summary, 480);
-}
-
 function sourceListItems(value: string | null | undefined) {
   if (!value) return [];
   return [...value.matchAll(/<li[^>]*>([\s\S]*?)<\/li>/giu)]
@@ -98,8 +77,17 @@ function derivedAdvantages(product: Product) {
   const candidates = product.keyFeatures.length > 0
     ? product.keyFeatures
     : sourceListItems(product.description);
-  return [...new Set(candidates.map((item) => conciseText(item, 150)).filter(Boolean))]
+  return [...new Set(candidates.map(compactAdvantage).filter(Boolean))]
     .slice(0, 6) as string[];
+}
+
+function compactAdvantage(value: string) {
+  const normalized = plainText(value).replace(/[.;]+$/gu, "");
+  const separator = normalized.indexOf(":");
+  const headline = separator >= 2 && separator <= 72
+    ? normalized.slice(0, separator)
+    : normalized.split(/[.!?]/u)[0] ?? normalized;
+  return conciseText(headline, 72);
 }
 
 function derivedSpecifications(product: Product) {
@@ -129,15 +117,45 @@ function normalizeLabel(label: string) {
   return label.trim().toLocaleLowerCase("ru-RU").replace(/\s+/gu, " ");
 }
 
-function findSpecificationValue(
-  specifications: readonly ProductSpecification[],
-  labels: ReadonlySet<string>,
-) {
-  const specification = specifications.find(({ label }) =>
-    labels.has(normalizeLabel(label)),
-  );
-  if (!specification) return null;
-  return `${specification.value}${specification.unit ? ` ${specification.unit}` : ""}`;
+function sentenceList(values: readonly string[]) {
+  if (values.length === 0) return "";
+  if (values.length === 1) return values[0] ?? "";
+  return `${values.slice(0, -1).join(", ")} и ${values.at(-1)}`;
+}
+
+function productSummary({
+  product,
+  manufacturer,
+  category,
+  advantages,
+  specifications,
+}: {
+  product: Product;
+  manufacturer?: Manufacturer;
+  category?: Category;
+  advantages: readonly string[];
+  specifications: readonly ProductSpecification[];
+}) {
+  const categoryName = category?.name ?? "Медицинское оборудование";
+  const manufacturerName = manufacturer?.name ? ` производителя ${manufacturer.name}` : "";
+  const sentences = [
+    `${product.name} — медицинское изделие категории «${categoryName}»${manufacturerName}.`,
+    product.applicationAreas.length > 0
+      ? `Изделие предназначено для таких областей, как ${sentenceList(product.applicationAreas.slice(0, 3))}.`
+      : "Назначение изделия раскрывается через его основные функции и технические параметры.",
+    advantages.length > 0
+      ? `Ключевые особенности модели: ${sentenceList(advantages.slice(0, 4).map((item) => item.toLocaleLowerCase("ru-RU")))}.`
+      : "Основные возможности собраны в карточке без смешивания с внутренними данными каталога.",
+    specifications.length > 0
+      ? `В технической части отдельно раскрываются ${sentenceList(specifications.slice(0, 3).map(({ label }) => label.toLocaleLowerCase("ru-RU")))}.`
+      : "Технические сведения показаны ниже в структурированном виде по мере их наличия.",
+    "Полное описание сохранено отдельным разделом, чтобы можно было быстро понять назначение изделия, а затем перейти к деталям, документам и данным производителя.",
+  ];
+  const summary = sentences.reduce((current, sentence) => {
+    const candidate = current ? `${current} ${sentence}` : sentence;
+    return candidate.length <= 640 || current.length < 400 ? candidate : current;
+  }, "");
+  return conciseText(summary, 700);
 }
 
 export function isTechnicalProductSpecification(
@@ -156,10 +174,6 @@ export function buildProductDetailExperience({
   category?: Category;
 }): ProductDetailExperience {
   const technicalSpecifications = derivedSpecifications(product);
-  const patientCategory = findSpecificationValue(
-    product.specifications,
-    PATIENT_LABELS,
-  );
   const primaryApplicationArea = product.applicationAreas[0] ?? null;
   const publicCountry = formatCountryForPublic(manufacturer?.country);
   const badges: ProductDetailBadge[] = [];
@@ -169,13 +183,18 @@ export function buildProductDetailExperience({
   if (primaryApplicationArea) {
     badges.push({ label: "Применение", value: primaryApplicationArea });
   }
-  if (patientCategory) badges.push({ label: "Пациенты", value: patientCategory });
   if (category?.name) {
     badges.push({ label: "Категория", value: category.name });
   }
 
   return {
-    summary: summaryText(product.shortDescription || product.description),
+    summary: productSummary({
+      product,
+      manufacturer,
+      category,
+      advantages: derivedAdvantages(product),
+      specifications: technicalSpecifications,
+    }),
     description: product.description || product.shortDescription || null,
     advantages: derivedAdvantages(product),
     specifications: technicalSpecifications,

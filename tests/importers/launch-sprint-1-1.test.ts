@@ -36,21 +36,22 @@ function product(overrides: Partial<Product> = {}): Product {
   };
 }
 
-test("product summary is limited to four source sentences", () => {
+test("product summary is a new 400–700 character presentation", () => {
   const experience = buildProductDetailExperience({ product: product() });
-  assert.equal((experience.summary?.match(/[.!?]/gu) ?? []).length, 4);
-  assert.doesNotMatch(experience.summary ?? "", /Пятое предложение/u);
+  assert.ok((experience.summary?.length ?? 0) >= 400);
+  assert.ok((experience.summary?.length ?? 0) <= 700);
+  assert.doesNotMatch(experience.summary ?? "", /Транспортный аппарат ИВЛ\. Работает для взрослых/u);
 });
 
 test("advantages and specifications may be derived only from explicit source list items", () => {
   const experience = buildProductDetailExperience({ product: product() });
   assert.deepEqual(experience.advantages, [
-    "Турбинный привод: автономная вентиляция",
-    "Аккумулятор: более 9 часов работы",
-    "Пациенты: взрослые и дети",
-    "Транспортировка: мобильное применение",
-    "Режим ASV: интеллектуальная вентиляция",
-    "Экран: сенсорное управление",
+    "Турбинный привод",
+    "Аккумулятор",
+    "Пациенты",
+    "Транспортировка",
+    "Режим ASV",
+    "Экран",
   ]);
   assert.deepEqual(experience.specifications.map(({ label, value }) => ({ label, value })), [
     { label: "Вес", value: "6,5 кг" },
@@ -74,6 +75,7 @@ test("product page exposes catalog return, scroll-to-top and complete lightbox c
   assert.match(gallery, /onTouchStart/u);
   assert.match(gallery, /onTouchEnd/u);
   assert.doesNotMatch(gallery, /target="_blank"/u);
+  assert.doesNotMatch(gallery, />\s*Увеличить\s*</u);
 });
 
 test("catalog cards use Category as the single public classification label", async () => {

@@ -22,7 +22,8 @@ test("product hero contains the key commercial information", async () => {
   ]);
 
   assert.match(product, /aria-label="Ключевая информация о товаре"/u);
-  assert.match(product, /label="Модель \/ артикул"/u);
+  assert.match(product, /<dt className="sr-only">Модель<\/dt>/u);
+  assert.doesNotMatch(product, /Модель \/ артикул/u);
   assert.match(product, /label="Регистрационное удостоверение"/u);
   for (const label of ["Производитель", "Страна", "Категория", "Применение"]) {
     assert.match(experience, new RegExp(`label: "${label}"`, "u"));

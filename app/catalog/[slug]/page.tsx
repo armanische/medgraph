@@ -45,10 +45,13 @@ export async function generateMetadata({
 
 export default async function StorefrontProductPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ slug: string }>;
+  searchParams: Promise<{ metadata?: string | string[] }>;
 }) {
   const { slug } = await params;
+  const metadataMode = (await searchParams).metadata === "values" ? "values" : "labels";
   const product = await productService.getProductBySlug(slug);
   if (!product) notFound();
 
@@ -133,16 +136,14 @@ export default async function StorefrontProductPage({
               )}
 
               {experience.badges.length > 0 && (
-                <dl className="mt-4 flex flex-wrap gap-2" aria-label="Ключевая информация о товаре">
+                <dl className="mt-4 flex flex-wrap gap-2" aria-label="Ключевая информация о товаре" data-metadata-mode={metadataMode}>
                   {experience.badges.map((badge) => (
                     <div
                       key={`${badge.label}:${badge.value}`}
-                      className="max-w-full rounded-lg border border-[var(--cm-rule)] bg-cm-surface-low/55 px-2.5 py-1.5"
+                      className={`max-w-full rounded-lg border border-[var(--cm-rule)] px-3 ${metadataMode === "labels" ? "bg-cm-surface-low/55 py-1.5" : "bg-white py-2 shadow-[0_3px_10px_rgba(11,19,32,0.04)]"}`}
                     >
-                      <dt className="text-[9px] font-semibold uppercase tracking-[0.08em] text-cm-dim">
-                        {badge.label}
-                      </dt>
-                      <dd className="mt-0.5 truncate text-[11px] font-semibold text-cm-ink">
+                      <dt className={metadataMode === "labels" ? "text-[9px] font-semibold uppercase tracking-[0.08em] text-cm-dim" : "sr-only"}>{badge.label}</dt>
+                      <dd className={`${metadataMode === "labels" ? "mt-0.5 text-[11px]" : "text-xs"} truncate font-semibold text-cm-ink`}>
                         {badge.value}
                       </dd>
                     </div>
@@ -150,9 +151,12 @@ export default async function StorefrontProductPage({
                 </dl>
               )}
 
-              <dl className="mt-4 grid gap-x-6 gap-y-3 border-y border-[var(--cm-rule)] py-3.5 text-xs sm:grid-cols-2">
+              <dl className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-3 border-y border-[var(--cm-rule)] py-3.5 text-xs">
                 {presentation.model && (
-                  <ProductDetail label="Модель / артикул" value={presentation.model} />
+                  <div className="rounded-md bg-cm-teal-soft px-2.5 py-1.5 font-semibold text-cm-teal">
+                    <dt className="sr-only">Модель</dt>
+                    <dd>{presentation.model}</dd>
+                  </div>
                 )}
                 {registration && (
                   <ProductDetailLinkOrText
@@ -204,31 +208,8 @@ export default async function StorefrontProductPage({
         {presentation.sections.description && (
           <Section id="description" title="Описание">
             {experience.description && (
-              <details className="group max-w-[62rem] rounded-xl border border-[var(--cm-rule)] bg-cm-surface-low/35 p-4 open:bg-white sm:p-5">
-                <summary className="cursor-pointer list-none text-sm font-bold text-cm-ink marker:hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cm-teal">
-                  <span className="inline-flex items-center gap-2">
-                    <span aria-hidden="true" className="transition group-open:rotate-90">→</span>
-                    Полное описание
-                  </span>
-                </summary>
-                <div className="mt-5 border-t border-[var(--cm-rule)] pt-5">
-                  <SafeProductDescription html={experience.description} />
-                </div>
-              </details>
-            )}
-            {product.applicationAreas.length > 0 && (
-              <div className="mt-6 max-w-[56rem] border-t border-[var(--cm-rule)] pt-4">
-                <h3 className="cm-label">Области применения</h3>
-                <ul className="mt-3 flex flex-wrap gap-2 text-xs text-cm-slate">
-                  {product.applicationAreas.map((area) => (
-                    <li
-                      key={area}
-                      className="rounded-full border border-[var(--cm-rule)] bg-cm-surface-low/55 px-3 py-1.5"
-                    >
-                      {area}
-                    </li>
-                  ))}
-                </ul>
+              <div className="max-w-[62rem] rounded-xl border border-[var(--cm-rule)] bg-cm-surface-low/25 p-4 sm:p-5">
+                <SafeProductDescription html={experience.description} />
               </div>
             )}
           </Section>
@@ -236,11 +217,11 @@ export default async function StorefrontProductPage({
 
         {experience.advantages.length > 0 && (
           <Section id="advantages" title="Преимущества">
-            <ul className="grid max-w-[68rem] gap-3 text-sm leading-6 text-cm-slate sm:grid-cols-2 lg:grid-cols-3">
+            <ul className="grid max-w-[68rem] gap-3 text-sm text-cm-slate sm:grid-cols-2 lg:grid-cols-3">
               {experience.advantages.map((feature) => (
-                <li key={feature} className="flex gap-2.5 rounded-xl border border-[var(--cm-rule)] bg-cm-surface-low/45 p-4">
-                  <span className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full bg-cm-teal/10 text-[11px] font-bold text-cm-teal" aria-hidden="true">✓</span>
-                  <span>{feature}</span>
+                <li key={feature} className="flex min-h-[4.25rem] items-center gap-3 rounded-xl border border-[var(--cm-rule)] bg-[linear-gradient(135deg,#ffffff_0%,#f4fafb_100%)] p-3.5 shadow-[0_5px_18px_rgba(11,19,32,0.025)]">
+                  <span className="grid size-7 shrink-0 place-items-center rounded-full border border-cm-teal/15 bg-cm-teal-soft text-[12px] font-extrabold leading-none text-cm-teal" aria-hidden="true">✓</span>
+                  <span className="font-semibold leading-5 text-cm-ink">{feature}</span>
                 </li>
               ))}
             </ul>
