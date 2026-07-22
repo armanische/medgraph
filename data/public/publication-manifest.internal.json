@@ -1,5 +1,16 @@
 {
   "schemaVersion": "publication-approval-manifest-v1",
   "generatedAt": "publication-pipeline-v2",
-  "products": []
+  "products": [
+    {
+      "productSlug": "wave2-ambu-vivasight-2-dlt",
+      "approvedDecisionIds": [
+        "review_decision_0ace374227920790a16d161f",
+        "review_decision_34ca94f7b63e81b71464d31d",
+        "review_decision_5e22db4ce849f10cd6286ae7",
+        "review_decision_601f1ace2fa35429467ab787",
+        "review_decision_a4cc08ffdfa6116e4b000a8b"
+      ]
+    }
+  ]
 }

@@ -1,0 +1,57 @@
+{
+  "id": "review_decision_1ccfd773056468f4181300de",
+  "idempotencyKey": "review_item_651e6c2b61c830ae15545266-pending_review-2aa9fbbc6ca4",
+  "reviewItemId": "review_item_651e6c2b61c830ae15545266",
+  "productSlug": "wave2-ambu-vivasight-2-dlt",
+  "reviewerId": "arman",
+  "decision": "start_review",
+  "previousStatus": "pending_review",
+  "nextStatus": "in_review",
+  "comment": "",
+  "reviewedAt": "2026-07-17T05:58:18.086Z",
+  "snapshotHash": "2aa9fbbc6ca4146877b05e4a781e88fcdcbec3de56217b7b1724064887730f2e",
+  "evidenceSnapshot": {
+    "evidenceIds": [
+      "evidence_a0d314bfc073195102c50fa6"
+    ],
+    "valid": true,
+    "integrityViolations": 0
+  },
+  "valueSnapshot": {
+    "claimType": "product.intendedUse",
+    "value": "single-use",
+    "unit": null,
+    "productSlug": "wave2-ambu-vivasight-2-dlt",
+    "productTitle": "Ambu VivaSight 2 DLT",
+    "manufacturer": "Ambu",
+    "model": "VivaSight 2 DLT",
+    "category": "Анестезиология и эндоскопия"
+  },
+  "sourceSnapshot": {
+    "urls": [
+      "https://www.ambu.com/Admin/Public/DWSDownload.aspx?File=%2fFiles%2fFiles%2fDownloads%2fAmbu+com%2fAirwayManagement%2fDouble_Lumen_tube_with_Integrated_Camera%2fVivaSight+2+DLT%2fDatasheets%2fIE-VivaSight-2-DLT-Datasheet_V2.pdf"
+    ],
+    "official": true
+  },
+  "documentVersionSnapshot": {
+    "ids": [
+      "document_version_0961ccc511373d4e41f7b193"
+    ],
+    "titles": [
+      "Ambu® VivaSight™ 2 DLT datasheet"
+    ],
+    "types": [
+      "datasheet"
+    ],
+    "artifactValid": true
+  },
+  "conflictReason": null,
+  "publicationEligibility": {
+    "eligible": false,
+    "status": "not_ready",
+    "reasons": [
+      "review_status_in_review"
+    ]
+  },
+  "schemaVersion": "human-review-decision-v1"
+}

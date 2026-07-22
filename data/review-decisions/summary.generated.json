@@ -2,14 +2,14 @@
   "schemaVersion": "human-review-summary-v1",
   "generatedAt": "human-review-summary-v1",
   "totalItems": 5480,
-  "pending": 5480,
+  "pending": 5475,
   "inReview": 0,
-  "approved": 0,
+  "approved": 5,
   "rejected": 0,
   "needsChanges": 0,
   "conflicted": 0,
   "archived": 0,
-  "publicationReady": 0,
+  "publicationReady": 1,
   "published": 0,
   "countsByManufacturer": {
     "Ambu": 120,
@@ -59,6 +59,79 @@
     "Neonatal respiratory ventilator": 3,
     "Видеоэндоскопические системы": 6
   },
-  "countsByReviewer": {},
-  "recentDecisions": []
+  "countsByReviewer": {
+    "arman": 10
+  },
+  "recentDecisions": [
+    {
+      "id": "review_decision_601f1ace2fa35429467ab787",
+      "reviewItemId": "review_item_1533cadc68eed4bfcc51f62d",
+      "reviewerId": "arman",
+      "decision": "approve",
+      "reviewedAt": "2026-07-17T05:58:57.563Z"
+    },
+    {
+      "id": "review_decision_34ca94f7b63e81b71464d31d",
+      "reviewItemId": "review_item_4193186e63d43987bfaef76a",
+      "reviewerId": "arman",
+      "decision": "approve",
+      "reviewedAt": "2026-07-17T05:58:55.013Z"
+    },
+    {
+      "id": "review_decision_a4cc08ffdfa6116e4b000a8b",
+      "reviewItemId": "review_item_651e6c2b61c830ae15545266",
+      "reviewerId": "arman",
+      "decision": "approve",
+      "reviewedAt": "2026-07-17T05:58:53.130Z"
+    },
+    {
+      "id": "review_decision_5e22db4ce849f10cd6286ae7",
+      "reviewItemId": "review_item_0f7f6099676b20278aef25d2",
+      "reviewerId": "arman",
+      "decision": "approve",
+      "reviewedAt": "2026-07-17T05:58:41.365Z"
+    },
+    {
+      "id": "review_decision_0ace374227920790a16d161f",
+      "reviewItemId": "review_item_e04ee3f840b24b437a46ac34",
+      "reviewerId": "arman",
+      "decision": "approve",
+      "reviewedAt": "2026-07-17T05:58:35.374Z"
+    },
+    {
+      "id": "review_decision_07f2e7e6e9c978d720fc1bf4",
+      "reviewItemId": "review_item_e04ee3f840b24b437a46ac34",
+      "reviewerId": "arman",
+      "decision": "start_review",
+      "reviewedAt": "2026-07-17T05:58:32.115Z"
+    },
+    {
+      "id": "review_decision_d25e9d9b1dceed5f3ae631d8",
+      "reviewItemId": "review_item_0f7f6099676b20278aef25d2",
+      "reviewerId": "arman",
+      "decision": "start_review",
+      "reviewedAt": "2026-07-17T05:58:26.943Z"
+    },
+    {
+      "id": "review_decision_212adab99909e3ca3ad49b27",
+      "reviewItemId": "review_item_1533cadc68eed4bfcc51f62d",
+      "reviewerId": "arman",
+      "decision": "start_review",
+      "reviewedAt": "2026-07-17T05:58:24.946Z"
+    },
+    {
+      "id": "review_decision_14760044bb11823f060fa45d",
+      "reviewItemId": "review_item_4193186e63d43987bfaef76a",
+      "reviewerId": "arman",
+      "decision": "start_review",
+      "reviewedAt": "2026-07-17T05:58:22.516Z"
+    },
+    {
+      "id": "review_decision_1ccfd773056468f4181300de",
+      "reviewItemId": "review_item_651e6c2b61c830ae15545266",
+      "reviewerId": "arman",
+      "decision": "start_review",
+      "reviewedAt": "2026-07-17T05:58:18.086Z"
+    }
+  ]
 }
