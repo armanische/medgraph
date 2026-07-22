@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 
 import { SearchService } from "@/lib/storefront/search-service";
@@ -52,6 +53,7 @@ export default function CatalogExplorer({
   initialSearchResultIds = [],
   compareEnabled = true,
 }: CatalogExplorerProps) {
+  const urlSearchParams = useSearchParams();
   const [query, setQuery] = useState(initialQuery);
   const [category, setCategory] = useState(
     () =>
@@ -114,7 +116,7 @@ export default function CatalogExplorer({
   }, [productSearchService, query]);
 
   useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
+    const params = new URLSearchParams(urlSearchParams.toString());
     const categoryParam = categoriesById.get(category)?.slug ?? category;
     const manufacturerParam = manufacturersById.get(manufacturer)?.slug ?? manufacturer;
 
@@ -137,8 +139,11 @@ export default function CatalogExplorer({
     setOptionalParam(params, "sort", sort === DEFAULT_SORT ? "" : sort);
 
     const queryString = params.toString();
-    window.history.replaceState(null, "", queryString ? `/catalog?${queryString}` : "/catalog");
-  }, [applicationArea, categoriesById, category, manufacturer, manufacturersById, query, sort]);
+    const nextUrl = queryString ? `/catalog?${queryString}` : "/catalog";
+    if (`${window.location.pathname}${window.location.search}` !== nextUrl) {
+      window.history.replaceState(null, "", nextUrl);
+    }
+  }, [applicationArea, categoriesById, category, manufacturer, manufacturersById, query, sort, urlSearchParams]);
 
   const results = useMemo(() => {
     const filtered = products.filter((product) => {
@@ -307,9 +312,9 @@ export default function CatalogExplorer({
                     </span>
                   </div>
                   <h2 className="mt-2.5 text-[15px] font-bold leading-5 tracking-[-0.015em]">
-                    <Link href={`/catalog/${product.slug}`} className="hover:text-cm-teal">
+                    <a href={`/catalog/${product.slug}`} className="hover:text-cm-teal">
                       {product.name}
-                    </Link>
+                    </a>
                   </h2>
                   <div className="mt-1.5 text-xs text-cm-slate">
                     {manufacturerEntry ? (
@@ -361,9 +366,9 @@ export default function CatalogExplorer({
                     </dl>
                   )}
                   <div className="mt-auto flex items-center justify-between gap-2 pt-3 text-[11px] font-semibold">
-                    <Link href={`/catalog/${product.slug}`} className="text-cm-teal">
+                    <a href={`/catalog/${product.slug}`} className="text-cm-teal">
                       Открыть карточку →
-                    </Link>
+                    </a>
                     {compareEnabled && presentation.canCompare ? (
                       <Link
                         href="/compare"
@@ -436,18 +441,18 @@ function ProductImage({ product }: { product: Product }) {
   if (!image) {
     const presentation = getProductPresentation(product);
     return (
-      <Link
+      <a
         href={`/catalog/${product.slug}`}
         aria-label={`Открыть карточку ${product.name}`}
         className="grid aspect-[16/6.5] w-full place-items-center border-b border-[var(--cm-rule)] bg-cm-surface-low text-[11px] text-cm-dim transition hover:bg-cm-teal-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-cm-teal"
       >
         {presentation.mediaFallbackLabel}
-      </Link>
+      </a>
     );
   }
 
   return (
-    <Link
+    <a
       href={`/catalog/${product.slug}`}
       aria-label={`Открыть карточку ${product.name}`}
       className="relative block aspect-[16/6.5] w-full overflow-hidden border-b border-[var(--cm-rule)] bg-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-cm-teal"
@@ -459,6 +464,6 @@ function ProductImage({ product }: { product: Product }) {
         sizes="(max-width: 767px) 100vw, (max-width: 1535px) 33vw, 25vw"
         className="object-contain p-2.5 transition duration-300 group-hover:scale-[1.02]"
       />
-    </Link>
+    </a>
   );
 }

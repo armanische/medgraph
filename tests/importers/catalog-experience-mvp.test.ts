@@ -37,8 +37,10 @@ test("catalog state is encoded in URL and browser history restores the list", as
     source("components/catalog/BackToCatalogButton.tsx"),
   ]);
 
-  assert.match(explorer, /new URLSearchParams\(window\.location\.search\)/);
-  assert.match(explorer, /window\.history\.replaceState/);
+  assert.match(explorer, /useSearchParams\(\)/);
+  assert.match(explorer, /new URLSearchParams\(urlSearchParams\.toString\(\)\)/);
+  assert.match(explorer, /window\.history\.replaceState\(null, "", nextUrl\)/);
+  assert.match(explorer, /<a href=\{`\/catalog\/\$\{product\.slug\}`\}/);
   for (const parameter of ["q", "category", "manufacturer", "applicationArea", "sort"]) {
     assert.match(explorer, new RegExp(`params,\\s*"${parameter}"`, "u"));
   }
