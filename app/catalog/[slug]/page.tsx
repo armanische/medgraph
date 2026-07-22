@@ -68,14 +68,25 @@ export default async function StorefrontProductPage({
     manufacturerName: manufacturer?.name,
   });
   const technicalSpecifications = product.specifications.filter(isTechnicalSpecification);
+  const keySpecifications = technicalSpecifications.slice(0, 4);
   const specificationGroups = groupSpecifications(technicalSpecifications);
-  const registrationDocument = product.documents.find(
+  const registrationDocuments = product.documents.filter(
     ({ kind }) => kind === "registration",
   );
+  const registrationDocument = registrationDocuments[0];
   const registrationRecord = product.registrationRecords?.[0];
+  const regulatoryRecords = (product.registrationRecords ?? []).filter(
+    ({ number, sourceUrl }) => Boolean(number || sourceUrl),
+  );
   const accessoryDocuments = product.documents.filter(
     ({ kind }) => kind === "accessories",
   );
+  const downloadDocuments = product.documents.filter(
+    ({ kind }) => kind !== "accessories" && kind !== "registration",
+  );
+  const hasRegulatoryInformation =
+    regulatoryRecords.length > 0 || registrationDocuments.length > 0;
+  const hasDownloads = presentation.sections.documents && downloadDocuments.length > 0;
   const relatedProductsById = new Map(
     relatedProducts.map((relatedProduct) => [relatedProduct.id, relatedProduct]),
   );
@@ -91,8 +102,9 @@ export default async function StorefrontProductPage({
     presentation.sections.description && ["description", "Описание"],
     presentation.sections.advantages && ["advantages", "Преимущества"],
     technicalSpecifications.length > 0 && ["specifications", "Характеристики"],
+    hasRegulatoryInformation && ["regulatory", "Регистрационная информация"],
     presentation.sections.package && ["package", "Комплектация"],
-    presentation.sections.documents && ["documents", "Документы"],
+    hasDownloads && ["documents", "Документы и загрузки"],
     (presentation.sections.compatibility || presentation.sections.relatedProducts) && [
       "related-products",
       "Связанные товары",
@@ -106,12 +118,38 @@ export default async function StorefrontProductPage({
       )}
       <section className="border-b border-[var(--cm-rule)] bg-[linear-gradient(135deg,#ffffff_0%,#f6fafc_56%,#e8f5f7_100%)]">
         <div className="cm-container py-4 sm:py-5">
-          <div className="cm-label">
-            <Link href="/catalog" className="hover:text-cm-teal">
-              Каталог
-            </Link>
-            {" · карточка товара"}
-          </div>
+          <nav aria-label="Хлебные крошки">
+            <ol className="flex flex-wrap items-center gap-2 text-[11px] font-semibold text-cm-slate">
+              <li>
+                <Link href="/" className="hover:text-cm-teal">
+                  Главная
+                </Link>
+              </li>
+              <li aria-hidden="true">/</li>
+              <li>
+                <Link href="/catalog" className="hover:text-cm-teal">
+                  Каталог
+                </Link>
+              </li>
+              {category ? (
+                <>
+                  <li aria-hidden="true">/</li>
+                  <li>
+                    <Link
+                      href={`/catalog?category=${encodeURIComponent(category.slug)}`}
+                      className="hover:text-cm-teal"
+                    >
+                      {category.name}
+                    </Link>
+                  </li>
+                </>
+              ) : null}
+              <li aria-hidden="true">/</li>
+              <li aria-current="page" className="break-words text-cm-ink">
+                {product.name}
+              </li>
+            </ol>
+          </nav>
           <div
             className="mt-3 grid overflow-hidden rounded-2xl border border-[var(--cm-rule)] bg-white shadow-[0_16px_45px_rgba(11,19,32,0.07)] md:grid-cols-[minmax(0,45fr)_minmax(0,55fr)] lg:grid-cols-[minmax(0,40fr)_minmax(0,60fr)]"
             data-testid="product-hero"
@@ -160,6 +198,28 @@ export default async function StorefrontProductPage({
                   />
                 )}
               </dl>
+
+              {keySpecifications.length > 0 && (
+                <div id="key-specifications" className="mt-4">
+                  <p className="cm-label">Ключевые характеристики</p>
+                  <dl className="mt-2 grid gap-2 sm:grid-cols-2">
+                    {keySpecifications.map((specification) => (
+                      <div
+                        key={`${specification.label}:${specification.position}`}
+                        className="rounded-lg bg-cm-surface-low/70 px-3 py-2"
+                      >
+                        <dt className="text-[10px] font-medium leading-4 text-cm-slate">
+                          {specification.label}
+                        </dt>
+                        <dd className="mt-0.5 text-xs font-semibold leading-5 text-cm-ink">
+                          {specification.value}
+                          {specification.unit ? ` ${specification.unit}` : ""}
+                        </dd>
+                      </div>
+                    ))}
+                  </dl>
+                </div>
+              )}
 
               {presentation.canRequestQuote ? (
                 <div className="mt-4 flex flex-wrap gap-2">
@@ -259,6 +319,39 @@ export default async function StorefrontProductPage({
           </Section>
         )}
 
+        {hasRegulatoryInformation && (
+          <Section id="regulatory" title="Регистрационная информация">
+            <div className="grid max-w-[64rem] gap-3 md:grid-cols-2">
+              {regulatoryRecords.map((record, index) => (
+                <article
+                  key={`${record.number}:${record.sourceUrl}:${index}`}
+                  className="rounded-lg border border-[var(--cm-rule)] bg-white p-3.5"
+                >
+                  <h3 className="text-sm font-semibold">
+                    {record.number ?? "Регистрационный документ"}
+                  </h3>
+                  {record.sourceUrl ? (
+                    <a
+                      href={record.sourceUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-2 inline-flex text-xs font-semibold text-cm-teal hover:underline"
+                    >
+                      Открыть источник →
+                    </a>
+                  ) : null}
+                </article>
+              ))}
+              {registrationDocuments.map((document) => (
+                <DocumentLink
+                  key={`${document.kind}:${document.publicUrl}`}
+                  document={document}
+                />
+              ))}
+            </div>
+          </Section>
+        )}
+
         {presentation.sections.package && (
         <Section id="package" title="Комплектация">
               <div className="max-w-[64rem] space-y-2">
@@ -269,10 +362,10 @@ export default async function StorefrontProductPage({
         </Section>
         )}
 
-        {presentation.sections.documents && (
-          <Section id="documents" title="Документы">
+        {hasDownloads && (
+          <Section id="documents" title="Документы и загрузки">
               <div className="grid max-w-[64rem] gap-3 md:grid-cols-2">
-                {product.documents.map((document) => (
+                {downloadDocuments.map((document) => (
                   <DocumentLink
                     key={`${document.kind}:${document.publicUrl}`}
                     document={document}
@@ -381,9 +474,11 @@ function ProductGallery({ product }: { product: Product }) {
     );
   }
 
-  const [primaryMedia, ...secondaryMedia] = [...product.media].sort(
+  const sortedMedia = [...product.media].sort(
     (left, right) => left.position - right.position,
   );
+  const primaryMedia = sortedMedia.find(({ type }) => type === "image") ?? sortedMedia[0];
+  const secondaryMedia = sortedMedia.filter(({ url }) => url !== primaryMedia.url);
 
   return (
     <div>

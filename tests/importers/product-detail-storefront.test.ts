@@ -44,6 +44,8 @@ test("specifications are grouped from ProductSpecification", async () => {
   const source = await pageSource();
 
   assert.match(source, /product\.specifications\.filter\(isTechnicalSpecification\)/);
+  assert.match(source, /const keySpecifications = technicalSpecifications\.slice\(0, 4\)/);
+  assert.match(source, /Ключевые характеристики/);
   assert.match(source, /groupSpecifications\(technicalSpecifications\)/);
   assert.match(source, /specification\.group/);
   assert.match(source, /specification\.label/);
@@ -54,6 +56,9 @@ test("specifications are grouped from ProductSpecification", async () => {
 test("documents expose only ProductDocument public fields", async () => {
   const source = await pageSource();
 
+  assert.match(source, /const registrationDocuments = product\.documents\.filter/);
+  assert.match(source, /const downloadDocuments = product\.documents\.filter/);
+  assert.match(source, /title="Документы и загрузки"/);
   assert.match(source, /document\.title/);
   assert.match(source, /document\.kind/);
   assert.match(source, /document\.language/);
@@ -166,14 +171,28 @@ test("product hero uses a media-first 40/60 layout with catalog details", async 
   assert.match(source, /presentation\.statusLabel/);
 });
 
+test("product detail exposes semantic breadcrumbs and public regulatory information", async () => {
+  const source = await pageSource();
+
+  assert.match(source, /aria-label="Хлебные крошки"/);
+  assert.match(source, /href="\/catalog"/);
+  assert.match(source, /aria-current="page"/);
+  assert.match(source, /hasRegulatoryInformation/);
+  assert.match(source, /title="Регистрационная информация"/);
+  assert.match(source, /record\.number/);
+  assert.match(source, /record\.sourceUrl/);
+  assert.doesNotMatch(source, /record\.status/);
+});
+
 test("product detail has one hierarchy and ordered content sections", async () => {
   const source = await pageSource();
   const sectionMarkers = [
     'title="Описание"',
     'title="Преимущества"',
     'title="Технические характеристики"',
+    'title="Регистрационная информация"',
     'title="Комплектация"',
-    'title="Документы"',
+    'title="Документы и загрузки"',
     'title="Связанные товары"',
   ];
 
