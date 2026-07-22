@@ -6,6 +6,7 @@ import type { ReactNode } from "react";
 
 import JsonLd from "@/components/seo/JsonLd";
 import SafeProductDescription from "@/components/catalog/SafeProductDescription";
+import BackToCatalogButton from "@/components/catalog/BackToCatalogButton";
 import { catalogRepository, productService, storefrontDataSource } from "@/lib/storefront";
 import {
   getProductPresentation,
@@ -118,6 +119,7 @@ export default async function StorefrontProductPage({
       )}
       <section className="border-b border-[var(--cm-rule)] bg-[linear-gradient(135deg,#ffffff_0%,#f6fafc_56%,#e8f5f7_100%)]">
         <div className="cm-container py-4 sm:py-5">
+          <BackToCatalogButton />
           <nav aria-label="Хлебные крошки">
             <ol className="flex flex-wrap items-center gap-2 text-[11px] font-semibold text-cm-slate">
               <li>

@@ -18,11 +18,21 @@ import {
 
 type CatalogSort = "name-asc" | "name-desc" | "updated-desc";
 
+const DEFAULT_CATEGORY = "Все категории";
+const DEFAULT_MANUFACTURER = "Все производители";
+const DEFAULT_APPLICATION_AREA = "Все области применения";
+const DEFAULT_SORT: CatalogSort = "name-asc";
+
+function isCatalogSort(value: string): value is CatalogSort {
+  return value === "name-asc" || value === "name-desc" || value === "updated-desc";
+}
+
 interface CatalogExplorerProps {
   initialQuery?: string;
   initialCategory?: string;
   initialManufacturer?: string;
   initialApplicationArea?: string;
+  initialSort?: string;
   products: readonly Product[];
   categories: readonly Category[];
   manufacturers: readonly Manufacturer[];
@@ -35,6 +45,7 @@ export default function CatalogExplorer({
   initialCategory = "",
   initialManufacturer = "",
   initialApplicationArea = "",
+  initialSort = DEFAULT_SORT,
   products,
   categories,
   manufacturers,
@@ -46,19 +57,25 @@ export default function CatalogExplorer({
     () =>
       categories.find(
         (item) => item.id === initialCategory || item.slug === initialCategory,
-      )?.id ?? "Все категории",
+      )?.id ?? (initialCategory === CLOUD_PREVIEW_UNKNOWN_CATEGORY_ID
+        ? CLOUD_PREVIEW_UNKNOWN_CATEGORY_ID
+        : DEFAULT_CATEGORY),
   );
   const [manufacturer, setManufacturer] = useState(
     () =>
       manufacturers.find(
         (item) =>
           item.id === initialManufacturer || item.slug === initialManufacturer,
-      )?.id ?? "Все производители",
+      )?.id ?? (initialManufacturer === CLOUD_PREVIEW_UNKNOWN_MANUFACTURER_ID
+        ? CLOUD_PREVIEW_UNKNOWN_MANUFACTURER_ID
+        : DEFAULT_MANUFACTURER),
   );
   const [applicationArea, setApplicationArea] = useState(
-    initialApplicationArea || "Все области применения",
+    initialApplicationArea || DEFAULT_APPLICATION_AREA,
   );
-  const [sort, setSort] = useState<CatalogSort>("name-asc");
+  const [sort, setSort] = useState<CatalogSort>(
+    isCatalogSort(initialSort) ? initialSort : DEFAULT_SORT,
+  );
   const [searchResultIds, setSearchResultIds] = useState(
     () => new Set(initialSearchResultIds),
   );
@@ -96,15 +113,42 @@ export default function CatalogExplorer({
     };
   }, [productSearchService, query]);
 
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const categoryParam = categoriesById.get(category)?.slug ?? category;
+    const manufacturerParam = manufacturersById.get(manufacturer)?.slug ?? manufacturer;
+
+    setOptionalParam(params, "q", query.trim());
+    setOptionalParam(
+      params,
+      "category",
+      categoryParam === DEFAULT_CATEGORY ? "" : categoryParam,
+    );
+    setOptionalParam(
+      params,
+      "manufacturer",
+      manufacturerParam === DEFAULT_MANUFACTURER ? "" : manufacturerParam,
+    );
+    setOptionalParam(
+      params,
+      "applicationArea",
+      applicationArea === DEFAULT_APPLICATION_AREA ? "" : applicationArea,
+    );
+    setOptionalParam(params, "sort", sort === DEFAULT_SORT ? "" : sort);
+
+    const queryString = params.toString();
+    window.history.replaceState(null, "", queryString ? `/catalog?${queryString}` : "/catalog");
+  }, [applicationArea, categoriesById, category, manufacturer, manufacturersById, query, sort]);
+
   const results = useMemo(() => {
     const filtered = products.filter((product) => {
       const searchMatches = !query.trim() || searchResultIds.has(product.id);
       const categoryMatches =
-        category === "Все категории" || product.categoryId === category;
+        category === DEFAULT_CATEGORY || product.categoryId === category;
       const manufacturerMatches =
-        manufacturer === "Все производители" ||
+        manufacturer === DEFAULT_MANUFACTURER ||
         product.manufacturerId === manufacturer;
-      const applicationAreaMatches = applicationArea === "Все области применения"
+      const applicationAreaMatches = applicationArea === DEFAULT_APPLICATION_AREA
         || product.applicationAreas.includes(applicationArea);
       return searchMatches && categoryMatches && manufacturerMatches && applicationAreaMatches;
     });
@@ -117,10 +161,14 @@ export default function CatalogExplorer({
 
   function resetCatalogView() {
     setQuery("");
-    setCategory("Все категории");
-    setManufacturer("Все производители");
-    setApplicationArea("Все области применения");
-    setSort("name-asc");
+    setCategory(DEFAULT_CATEGORY);
+    setManufacturer(DEFAULT_MANUFACTURER);
+    setApplicationArea(DEFAULT_APPLICATION_AREA);
+    setSort(DEFAULT_SORT);
+  }
+
+  if (products.length === 0) {
+    return <CatalogEmptyState />;
   }
 
   return (
@@ -139,7 +187,7 @@ export default function CatalogExplorer({
                 onChange={(event) => setCategory(event.target.value)}
                 className="cm-field cm-field-compact transition duration-200"
               >
-                <option>Все категории</option>
+                <option>{DEFAULT_CATEGORY}</option>
                 {categories.map((item) => (
                   <option key={item.id} value={item.id}>
                     {item.name}
@@ -160,7 +208,7 @@ export default function CatalogExplorer({
                 onChange={(event) => setManufacturer(event.target.value)}
                 className="cm-field cm-field-compact transition duration-200"
               >
-                <option>Все производители</option>
+                <option>{DEFAULT_MANUFACTURER}</option>
                 {manufacturers.map((item) => (
                   <option key={item.id} value={item.id}>
                     {item.name}
@@ -181,7 +229,7 @@ export default function CatalogExplorer({
                 onChange={(event) => setApplicationArea(event.target.value)}
                 className="cm-field cm-field-compact transition duration-200"
               >
-                <option>Все области применения</option>
+                <option>{DEFAULT_APPLICATION_AREA}</option>
                 {applicationAreas.map((area) => <option key={area}>{area}</option>)}
               </select>
             </label>
@@ -217,7 +265,7 @@ export default function CatalogExplorer({
         </div>
 
         <div className="mt-4 flex flex-wrap items-center justify-between gap-4">
-          <div className="font-mono text-[10px] text-cm-slate">
+          <div className="font-mono text-[10px] text-cm-slate" aria-live="polite">
             Найдено: <strong className="text-cm-ink">{results.length}</strong> из {products.length}
           </div>
           <label className="flex items-center gap-2 text-[11px] text-cm-dim">
@@ -280,6 +328,26 @@ export default function CatalogExplorer({
                       {presentation.shortDescription}
                     </p>
                   )}
+                  {product.applicationAreas.length > 0 && (
+                    <ul
+                      className="mt-2.5 flex flex-wrap gap-1.5"
+                      aria-label={`Области применения: ${product.name}`}
+                    >
+                      {product.applicationAreas.slice(0, 2).map((area) => (
+                        <li
+                          key={area}
+                          className="rounded-full border border-[var(--cm-rule)] bg-cm-surface-low/70 px-2 py-1 text-[9px] leading-3 text-cm-slate"
+                        >
+                          {area}
+                        </li>
+                      ))}
+                      {product.applicationAreas.length > 2 && (
+                        <li className="px-1 py-1 text-[9px] leading-3 text-cm-dim">
+                          +{product.applicationAreas.length - 2}
+                        </li>
+                      )}
+                    </ul>
+                  )}
                   {product.specifications.length > 0 && (
                     <dl className="mt-2.5 grid gap-1 border-t border-[var(--cm-rule)] pt-2.5 text-[10px]">
                       {product.specifications.slice(0, 2).map((specification) => (
@@ -338,6 +406,28 @@ export default function CatalogExplorer({
         )}
       </div>
     </div>
+  );
+}
+
+function setOptionalParam(params: URLSearchParams, key: string, value: string) {
+  if (value) params.set(key, value);
+  else params.delete(key);
+}
+
+function CatalogEmptyState() {
+  return (
+    <section className="cm-empty-state py-10" aria-labelledby="catalog-empty-title">
+      <div className="cm-empty-icon" aria-hidden="true">⌕</div>
+      <h2 id="catalog-empty-title" className="mt-4 text-base font-bold">
+        Каталог пока пуст
+      </h2>
+      <p className="mx-auto mt-2 max-w-md text-xs leading-6 text-cm-slate">
+        Товары временно недоступны. Вернитесь позже или перейдите на главную страницу.
+      </p>
+      <Link href="/" className="cm-button-secondary mt-5">
+        На главную
+      </Link>
+    </section>
   );
 }
 

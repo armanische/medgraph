@@ -17,7 +17,7 @@ const catalogDescription =
 export async function generateMetadata({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string; category?: string; manufacturer?: string; applicationArea?: string }>;
+  searchParams: Promise<{ q?: string; category?: string; manufacturer?: string; applicationArea?: string; sort?: string }>;
 }): Promise<Metadata> {
   const { q = "" } = await searchParams;
   return buildStorefrontMetadata({
@@ -31,9 +31,15 @@ export async function generateMetadata({
 export default async function CatalogPage({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string; category?: string; manufacturer?: string; applicationArea?: string }>;
+  searchParams: Promise<{ q?: string; category?: string; manufacturer?: string; applicationArea?: string; sort?: string }>;
 }) {
-  const { q = "", category = "", manufacturer = "", applicationArea = "" } = await searchParams;
+  const {
+    q = "",
+    category = "",
+    manufacturer = "",
+    applicationArea = "",
+    sort = "name-asc",
+  } = await searchParams;
   const [products, categories, manufacturers, initialSearchResults] =
     await Promise.all([
       productService.getActiveProducts(),
@@ -98,6 +104,7 @@ export default async function CatalogPage({
           initialCategory={category}
           initialManufacturer={manufacturer}
           initialApplicationArea={applicationArea}
+          initialSort={sort}
           products={products}
           categories={categories}
           manufacturers={manufacturers}
