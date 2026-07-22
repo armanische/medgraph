@@ -252,6 +252,7 @@ export default function CatalogExplorer({
                 <div className="flex flex-1 flex-col p-3">
                   <div className="flex flex-wrap items-center gap-2">
                     <span className="rounded-md border border-[var(--cm-rule)] bg-cm-surface-low px-2 py-1 font-mono text-[9px] font-semibold text-cm-dim">
+                      <span className="sr-only">Категория: </span>
                       {presentation.categoryLabel}
                     </span>
                     <span className="font-mono text-[9px] text-cm-dim">

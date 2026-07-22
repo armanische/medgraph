@@ -28,11 +28,15 @@ test("homepage keeps direct catalog search manufacturer and product journeys", a
 });
 
 test("product page links to manufacturer comparison compatible products and catalog", async () => {
-  const product = await source("app/catalog/[slug]/page.tsx");
+  const [product, manufacturer, navigation] = await Promise.all([
+    source("app/catalog/[slug]/page.tsx"),
+    source("components/catalog/ProductManufacturer.tsx"),
+    source("components/catalog/ProductPageNavigation.tsx"),
+  ]);
 
-  assert.match(product, /`\/manufacturers\/\$\{manufacturer\.slug\}`/u);
+  assert.match(manufacturer, /`\/manufacturers\/\$\{manufacturer\.slug\}`/u);
   assert.match(product, /href="\/compare"/u);
-  assert.match(product, /href="\/catalog"/u);
+  assert.match(navigation, /href="\/catalog"/u);
   assert.match(product, /item\.compatibleProductId/u);
   assert.match(product, /relatedProductsById\.get/u);
   assert.match(product, /compatibleProduct\.slug/u);

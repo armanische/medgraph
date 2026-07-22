@@ -5,11 +5,15 @@ import test from "node:test";
 
 import type { CatalogRepository } from "../../lib/storefront/catalog-repository.ts";
 import { FilesystemCatalogRepository } from "../../lib/storefront/filesystem-catalog-repository.ts";
+import { buildProductDetailExperience } from "../../lib/storefront/product-detail-experience.ts";
 import { ProductService } from "../../lib/storefront/product-service.ts";
 import type { Product } from "../../lib/storefront/types.ts";
 
 const root = process.cwd();
 const pagePath = resolve(root, "app/catalog/[slug]/page.tsx");
+const galleryPath = resolve(root, "components/catalog/ProductGallery.tsx");
+const documentsPath = resolve(root, "components/catalog/ProductDocuments.tsx");
+const specificationsPath = resolve(root, "components/catalog/ProductSpecifications.tsx");
 
 async function pageSource() {
   return readFile(pagePath, "utf8");
@@ -40,25 +44,33 @@ test("missing Storefront Product invokes notFound", async () => {
   assert.doesNotMatch(source, /getDraftCatalogProduct|getPublishedProduct/);
 });
 
-test("specifications are grouped from ProductSpecification", async () => {
-  const source = await pageSource();
+test("specifications use the universal ProductSpecification component", async () => {
+  const [source, specificationSource] = await Promise.all([
+    pageSource(),
+    readFile(specificationsPath, "utf8"),
+  ]);
 
-  assert.match(source, /product\.specifications\.filter\(isTechnicalSpecification\)/);
-  assert.match(source, /groupSpecifications\(technicalSpecifications\)/);
-  assert.match(source, /specification\.group/);
-  assert.match(source, /specification\.label/);
-  assert.match(source, /specification\.value/);
-  assert.match(source, /specification\.unit/);
+  assert.match(source, /buildProductDetailExperience/);
+  assert.match(source, /<ProductSpecifications specifications=\{technicalSpecifications\}/);
+  assert.match(specificationSource, /groupSpecifications\(specifications\)/);
+  assert.match(specificationSource, /specification\.group/);
+  assert.match(specificationSource, /specification\.label/);
+  assert.match(specificationSource, /specification\.value/);
+  assert.match(specificationSource, /specification\.unit/);
 });
 
 test("documents expose only ProductDocument public fields", async () => {
-  const source = await pageSource();
+  const [source, documentSource] = await Promise.all([
+    pageSource(),
+    readFile(documentsPath, "utf8"),
+  ]);
 
-  assert.match(source, /document\.title/);
-  assert.match(source, /document\.kind/);
-  assert.match(source, /document\.language/);
-  assert.match(source, /document\.publicUrl/);
-  assert.doesNotMatch(source, /document\.sha256|artifactPath|documentVersion/i);
+  assert.match(source, /<ProductDocuments documents=\{experience\.documents\}/);
+  assert.match(documentSource, /document\.title/);
+  assert.match(documentSource, /document\.kind/);
+  assert.match(documentSource, /document\.language/);
+  assert.match(documentSource, /document\.publicUrl/);
+  assert.doesNotMatch(documentSource, /document\.sha256|artifactPath|documentVersion/i);
 });
 
 test("compatibility uses ProductCompatibility without evidence", async () => {
@@ -146,7 +158,7 @@ test("Ambu VivaSight image is catalog-ready and available to catalog and product
     pageSource(),
     readFile(resolve(root, "components/catalog/CatalogExplorer.tsx"), "utf8"),
   ]);
-  assert.match(productPage, /<ProductGallery product=\{product\}/u);
+  assert.match(productPage, /media=\{experience\.media\}/u);
   assert.match(catalogExplorer, /product\.media\.find/u);
 });
 
@@ -158,12 +170,13 @@ test("product hero uses a media-first 40/60 layout with catalog details", async 
     source,
     /lg:grid-cols-\[minmax\(0,40fr\)_minmax\(0,60fr\)\]/,
   );
-  assert.match(source, /<ProductGallery product=\{product\}/);
+  assert.match(source, /<ProductGallery/);
   assert.match(source, /label="Регистрационное удостоверение"/);
-  assert.match(source, /label="Страна производства"/);
   assert.match(source, /label="Модель \/ артикул"/);
   assert.doesNotMatch(source, /label="Статус"/);
   assert.match(source, /presentation\.statusLabel/);
+  assert.match(source, /aria-label="Ключевая информация о товаре"/);
+  assert.match(source, /experience\.badges\.map/);
 });
 
 test("product detail has one hierarchy and ordered content sections", async () => {
@@ -189,8 +202,11 @@ test("product detail has one hierarchy and ordered content sections", async () =
   assert.doesNotMatch(source, /title="Основная информация"|>Product</);
 });
 
-test("product hero offers accessible quick links without a client runtime", async () => {
-  const source = await pageSource();
+test("product page remains server-rendered while gallery owns the client boundary", async () => {
+  const [source, gallerySource] = await Promise.all([
+    pageSource(),
+    readFile(galleryPath, "utf8"),
+  ]);
 
   assert.match(source, /aria-label="Разделы карточки товара"/);
   for (const anchor of [
@@ -201,6 +217,51 @@ test("product hero offers accessible quick links without a client runtime", asyn
   ]) {
     assert.match(source, new RegExp(`\\["${anchor.slice(1)}"`, "u"));
   }
-  assert.match(source, /preload/);
   assert.doesNotMatch(source, /["']use client["']/);
+  assert.match(gallerySource, /^"use client";/);
+  assert.match(gallerySource, /preload/);
+  assert.match(gallerySource, /event\.key === "Escape"/);
+  assert.match(gallerySource, /event\.key === "ArrowLeft"/);
+  assert.match(gallerySource, /event\.key === "ArrowRight"/);
+  assert.match(gallerySource, /onTouchStart/);
+  assert.match(gallerySource, /onTouchEnd/);
+  assert.doesNotMatch(gallerySource, /target="_blank"/);
+});
+
+test("product detail experience limits commercial content without mutating Product", async () => {
+  const repository = new FilesystemCatalogRepository(resolve(root, "data/storefront"));
+  const [product, manufacturers, categories] = await Promise.all([
+    repository.getProductBySlug("fs510"),
+    repository.getManufacturers(),
+    repository.getCategories(),
+  ]);
+  assert.ok(product);
+  const original = structuredClone(product);
+  const experience = buildProductDetailExperience({
+    product,
+    manufacturer: manufacturers.find(({ id }) => id === product.manufacturerId),
+    category: categories.find(({ id }) => id === product.categoryId),
+  });
+
+  assert.ok(experience.summary);
+  assert.ok(experience.summary.length <= 481);
+  assert.ok(experience.description);
+  assert.ok(experience.advantages.length <= 6);
+  assert.ok(experience.specifications.length <= 15);
+  assert.ok(experience.badges.some(({ label }) => label === "Производитель"));
+  assert.ok(experience.badges.some(({ label }) => label === "Страна"));
+  assert.deepEqual(product, original);
+});
+
+test("manufacturer block has a public profile CTA and a fail-closed placeholder", async () => {
+  const source = await readFile(
+    resolve(root, "components/catalog/ProductManufacturer.tsx"),
+    "utf8",
+  );
+
+  assert.match(source, /Все товары производителя/);
+  assert.match(source, /manufacturer\.shortDescription/);
+  assert.match(source, /formatCountryForPublic\(manufacturer\.country\)/);
+  assert.match(source, /manufacturer\.logoUrl/);
+  assert.match(source, /product-manufacturer-placeholder/);
 });

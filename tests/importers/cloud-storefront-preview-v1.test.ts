@@ -164,12 +164,13 @@ test("Cloud Storefront transport is service-only, no-store and read-only", async
 });
 
 test("Preview routes expose banner, noindex/no-store and disable Compare", async () => {
-  const [layout, config, catalog, compare, product, robots, sitemap] = await Promise.all([
+  const [layout, config, catalog, compare, product, experience, robots, sitemap] = await Promise.all([
     readFile("app/layout.tsx", "utf8"),
     readFile("next.config.ts", "utf8"),
     readFile("components/catalog/CatalogExplorer.tsx", "utf8"),
     readFile("app/compare/page.tsx", "utf8"),
     readFile("app/catalog/[slug]/page.tsx", "utf8"),
+    readFile("lib/storefront/product-detail-experience.ts", "utf8"),
     readFile("app/robots.ts", "utf8"),
     readFile("app/sitemap.ts", "utf8"),
   ]);
@@ -181,7 +182,8 @@ test("Preview routes expose banner, noindex/no-store and disable Compare", async
   assert.match(compare, /Сравнение недоступно в Cloud Catalog Preview/u);
   assert.doesNotMatch(product, /PRODUCT_PRESENTATION_FALLBACKS\.registration/u);
   assert.match(product, /registration &&/u);
-  assert.match(product, /SafeProductDescription/u);
+  assert.match(product, /buildProductDetailExperience/u);
+  assert.match(experience, /conciseText/u);
   assert.match(robots, /isCloudPreviewCatalog/u);
   assert.match(sitemap, /storefrontDataSource === "cloud_preview"/u);
 });
