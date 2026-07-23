@@ -13,10 +13,8 @@ const homepageFiles = [
   "app/page.tsx",
   "components/home/Hero.tsx",
   "components/home/Search.tsx",
-  "components/home/FeaturedProducts.tsx",
   "components/home/FeaturedManufacturers.tsx",
   "components/home/Categories.tsx",
-  "components/home/PlatformStats.tsx",
   "components/home/WhyCyberMedica.tsx",
   "components/home/CTA.tsx",
   "components/home/Footer.tsx",
@@ -31,10 +29,10 @@ test("homepage loads data through storefront services", async () => {
   const page = await source("app/page.tsx");
 
   assert.match(page, /from "@\/lib\/storefront"/);
-  assert.match(page, /productService\.getProducts\(\)/);
-  assert.match(page, /productService\.getFeaturedProducts\(\)/);
+  assert.match(page, /productService\.getActiveProducts\(\)/);
   assert.match(page, /manufacturerService\.getManufacturers\(\)/);
   assert.match(page, /categoryService\.getCategories\(\)/);
+  assert.doesNotMatch(page, /getFeaturedProducts|FeaturedProducts/u);
 });
 
 test("homepage does not import legacy catalog sources", async () => {

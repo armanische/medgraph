@@ -6,21 +6,22 @@ async function source(path: string) {
   return readFile(path, "utf8");
 }
 
-test("homepage keeps direct catalog search manufacturer and product journeys", async () => {
+test("homepage keeps direct Catalog search category and manufacturer journeys", async () => {
   const files = [
     "components/home/Hero.tsx",
     "components/home/Search.tsx",
+    "components/home/Categories.tsx",
     "components/home/FeaturedManufacturers.tsx",
-    "components/home/FeaturedProducts.tsx",
+    "components/home/CTA.tsx",
   ];
   const combined = (await Promise.all(files.map(source))).join("\n");
 
   for (const target of [
     'href="/catalog"',
     'href="/manufacturers"',
-    "`/catalog/${product.slug}`",
+    "`/catalog?category=${encodeURIComponent(category.slug)}`",
     "`/manufacturers/${manufacturer.slug}`",
-    "`/search?q=${encodeURIComponent(query.trim())}`",
+    "`/catalog?q=${encodeURIComponent(query)}`",
   ]) {
     assert.ok(combined.includes(target), target);
   }

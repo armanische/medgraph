@@ -214,7 +214,7 @@ test("Storefront source is resolved at request time for a reusable Preview artif
 
   assert.match(layout, /import \{ connection \} from "next\/server"/u);
   assert.match(layout, /await connection\(\)/u);
-  assert.match(homepage, /productService\.getProducts\(\)/u);
+  assert.match(homepage, /productService\.getActiveProducts\(\)/u);
   assert.match(homepage, /manufacturerService\.getManufacturers\(\)/u);
   assert.match(homepage, /categoryService\.getCategories\(\)/u);
   assert.match(product, /productService\.getProductBySlug\(slug\)/u);

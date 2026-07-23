@@ -34,15 +34,18 @@ test("manufacturer logos accept only the verified local asset convention", () =>
   assert.equal(isVerifiedLocalManufacturerLogo(null), false);
 });
 
-test("homepage ranks and limits READY categories and manufacturers", async () => {
+test("homepage ranks and limits active categories and manufacturers", async () => {
   const homepage = await source("app/page.tsx");
   const categories = await source("components/home/Categories.tsx");
 
-  assert.match(homepage, /const readyProducts = products\.filter\(isProductCommerciallyReady\)/u);
-  assert.equal((homepage.match(/\.slice\(0, 8\)/gu) ?? []).length, 2);
+  assert.match(homepage, /productService\.getActiveProducts\(\)/u);
+  assert.match(homepage, /categoryProductCounts/u);
+  assert.match(homepage, /manufacturerProductCounts/u);
+  assert.equal((homepage.match(/\.slice\(0, 6\)/gu) ?? []).length, 1);
+  assert.equal((homepage.match(/\.slice\(0, 8\)/gu) ?? []).length, 1);
   assert.match(homepage, /right\.productCount - left\.productCount/u);
   assert.match(categories, /Категории оборудования/u);
-  assert.match(categories, /Смотреть все категории/u);
+  assert.match(categories, /Все категории/u);
   assert.doesNotMatch(categories, /Популярные категории/u);
   assert.doesNotMatch(categories, /function CategoryIcon/u);
 });
@@ -59,10 +62,11 @@ test("unsupported comparison claims are absent from shared public navigation", a
     assert.doesNotMatch(publicComponent, /href="\/compare"/u);
   }
   assert.doesNotMatch(hero, /productCount|manufacturerCount|categoryCount/u);
-  assert.match(capabilities, /Поиск по каталогу/u);
-  assert.match(capabilities, /Фильтрация оборудования/u);
-  assert.match(capabilities, /Страницы производителей/u);
-  assert.doesNotMatch(capabilities, /Документы и спецификации|Совместимость/u);
+  assert.match(capabilities, /Подбор под задачу/u);
+  assert.match(capabilities, /Помощь с поиском аналогов/u);
+  assert.match(capabilities, /Доступные характеристики и документы/u);
+  assert.match(capabilities, /Сопровождение запроса/u);
+  assert.doesNotMatch(capabilities, /Совместимость|Тендерная аналитика/u);
 });
 
 test("header search uses the existing Storefront SearchService in place", async () => {

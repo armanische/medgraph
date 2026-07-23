@@ -15,6 +15,8 @@ export default function FeaturedManufacturers({
 }: {
   manufacturers: readonly ManufacturerEntry[];
 }) {
+  if (manufacturers.length === 0) return null;
+
   return (
     <section
       aria-labelledby="featured-manufacturers-title"
@@ -22,34 +24,31 @@ export default function FeaturedManufacturers({
     >
       <div className="cm-container">
         <div className="flex items-end justify-between gap-5">
-          <div>
-            <div className="cm-label">Бренды каталога</div>
-            <h2
-              id="featured-manufacturers-title"
-              className="cm-section-title"
-            >
-              Производители
-            </h2>
-          </div>
+          <h2
+            id="featured-manufacturers-title"
+            className="cm-section-title"
+          >
+            Производители
+          </h2>
           <Link
             href="/manufacturers"
-            className="text-xs font-semibold text-cm-teal transition hover:text-cm-teal-dark"
+            className="hidden text-xs font-semibold text-cm-teal transition hover:text-cm-teal-dark sm:inline-flex"
           >
             Все производители →
           </Link>
         </div>
 
-        <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {manufacturers.map((manufacturer) => (
             <Link
               key={manufacturer.id}
               href={`/manufacturers/${manufacturer.slug}`}
-              className="group cm-card flex min-h-32 flex-col p-4"
+              className="group cm-card flex min-h-24 flex-col p-4 sm:min-h-28"
             >
               <div className="flex items-center gap-3">
                 <ManufacturerMark logoUrl={manufacturer.logoUrl} name={manufacturer.name} />
-                <div>
-                  <h3 className="text-[15px] font-bold">{manufacturer.name}</h3>
+                <div className="min-w-0">
+                  <h3 className="text-[15px] font-bold leading-5">{manufacturer.name}</h3>
                   {manufacturer.country && (
                     <div className="mt-1 text-[10px] text-cm-slate">{manufacturer.country}</div>
                   )}
@@ -66,6 +65,12 @@ export default function FeaturedManufacturers({
             </Link>
           ))}
         </div>
+        <Link
+          href="/manufacturers"
+          className="cm-button-secondary mt-4 w-full sm:hidden"
+        >
+          Все производители
+        </Link>
       </div>
     </section>
   );

@@ -6,55 +6,45 @@ async function source(path: string) {
   return readFile(path, "utf8");
 }
 
-test("homepage uses the official brand asset and professional hero copy", async () => {
+test("homepage uses the official brand asset and approved search-first hero", async () => {
   const header = await source("components/layout/Header.tsx");
   const footer = await source("components/home/Footer.tsx");
   const hero = await source("components/home/Hero.tsx");
 
   assert.match(header, /\/brand\/cybermedica-logo\.png/u);
   assert.match(footer, /\/brand\/cybermedica-logo\.png/u);
-  assert.match(hero, /Каталог медицинского оборудования/u);
+  assert.match(hero, /Медицинское оборудование для клиник и медицинских организаций/u);
   assert.match(
     hero,
-    /Оборудование ведущих мировых производителей для государственных и/u,
+    /Найдите оборудование по названию, модели, производителю или категории/u,
   );
-  assert.match(hero, /Запросить коммерческое предложение/u);
-  assert.match(hero, /<Image/u);
+  assert.match(hero, /<Search \/>/u);
+  assert.match(hero, /Перейти в каталог/u);
+  assert.doesNotMatch(hero, /<Image|Запросить КП|ведущих мировых/u);
 });
 
-test("homepage search exposes the required prompt and popular queries", async () => {
+test("homepage search exposes the approved prompt without duplicate discovery UI", async () => {
   const search = await source("components/home/Search.tsx");
 
   assert.match(
     search,
-    /Введите производителя, модель или категорию оборудования\.\.\./u,
+    /Название, модель, производитель или категория/u,
   );
-  for (const query of [
-    "Аппараты ИВЛ",
-    "УЗИ",
-    "Мониторы пациента",
-    "Эндоскопия",
-  ]) {
-    assert.match(search, new RegExp(query, "u"));
-  }
   assert.match(search, />\s*Найти\s*</u);
+  assert.match(search, /`\/catalog\?q=/u);
+  assert.doesNotMatch(search, /popularQueries|Популярные запросы|role="listbox"/u);
 });
 
-test("category and product cards use visual public storefront fields", async () => {
+test("category cards are text-first and Homepage does not render product cards", async () => {
   const categories = await source("components/home/Categories.tsx");
-  const products = await source("components/home/FeaturedProducts.tsx");
   const page = await source("app/page.tsx");
 
-  assert.match(categories, /<Image/u);
-  assert.match(categories, /category\.image/u);
-  assert.doesNotMatch(categories, /<CategoryIcon/u);
+  assert.doesNotMatch(categories, /<Image|category\.image|<CategoryIcon/u);
   assert.doesNotMatch(categories, /padStart|String\(index \+ 1\)/u);
-  assert.match(products, /product\.image/u);
-  assert.match(products, /product\.manufacturer/u);
-  assert.match(products, /product\.country/u);
-  assert.match(products, /Запросить КП/u);
-  assert.match(page, /product\.media\.find/u);
-  assert.match(page, /manufacturersById/u);
+  assert.match(categories, /category\.shortDescription/u);
+  assert.match(categories, /category\.productCount/u);
+  assert.match(page, /categoryProductCounts/u);
+  assert.doesNotMatch(page, /FeaturedProducts|getFeaturedProducts|product\.media\.find/u);
 });
 
 test("rendered homepage removes obsolete technical copy", async () => {
@@ -63,7 +53,6 @@ test("rendered homepage removes obsolete technical copy", async () => {
     "components/home/Search.tsx",
     "components/home/Categories.tsx",
     "components/home/FeaturedManufacturers.tsx",
-    "components/home/FeaturedProducts.tsx",
     "components/home/WhyCyberMedica.tsx",
     "components/home/CTA.tsx",
     "components/home/Footer.tsx",
@@ -71,9 +60,9 @@ test("rendered homepage removes obsolete technical copy", async () => {
   const combined = (await Promise.all(renderedFiles.map(source))).join("\n");
 
   for (const obsolete of [
-    "закупочные команды",
-    "для клиник",
-    "подбор оборудования",
+    "ведущих мировых производителей",
+    "Популярные товары",
+    "Модель из каталога",
     "структура каталога",
     "Производитель → Категория → Товар → Запрос КП",
   ]) {
@@ -87,7 +76,9 @@ test("final homepage CTA uses the approved commercial request", async () => {
   assert.match(cta, /Не нашли нужную модель\?/u);
   assert.match(
     cta,
-    /Оставьте запрос, и мы поможем подобрать оборудование или аналог\./u,
+    /Перейдите в полный каталог или отправьте запрос/u,
   );
-  assert.match(cta, /Запросить коммерческое предложение/u);
+  assert.match(cta, /Перейти в каталог/u);
+  assert.match(cta, /Запросить КП/u);
+  assert.ok(cta.indexOf("Перейти в каталог") < cta.indexOf("Запросить КП"));
 });

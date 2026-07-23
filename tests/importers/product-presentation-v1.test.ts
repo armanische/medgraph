@@ -137,9 +137,7 @@ test("public product surfaces consume the shared presentation contract", async (
   const sources = await Promise.all([
     "app/catalog/[slug]/page.tsx",
     "app/manufacturers/[slug]/page.tsx",
-    "app/page.tsx",
     "components/catalog/CatalogExplorer.tsx",
-    "components/home/Search.tsx",
     "components/search/SearchExperience.tsx",
   ].map((path) => readFile(path, "utf8")));
 
@@ -149,5 +147,5 @@ test("public product surfaces consume the shared presentation contract", async (
   assert.match(sources[0], /presentation\.canRequestQuote/u);
   assert.match(sources[0], /presentation\.sections\.documents/u);
   assert.doesNotMatch(sources[1], /presentation\.canCompare/u);
-  assert.match(sources[3], /presentation\.mediaFallbackLabel/u);
+  assert.match(sources[2], /presentation\.mediaFallbackLabel/u);
 });

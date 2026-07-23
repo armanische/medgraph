@@ -36,17 +36,18 @@ test("Header Search uses Storefront search and preserves the full search route",
   assert.match(searchPage, /searchService\.searchProducts\(q\)/);
 });
 
-test("Homepage Search uses Storefront SearchService", async () => {
+test("Homepage Search delegates the complete query to Catalog", async () => {
   const [page, search] = await Promise.all([
     source("app/page.tsx"),
     source("components/home/Search.tsx"),
   ]);
 
-  assert.match(page, /products=\{products\}/);
-  assert.match(page, /manufacturers=\{manufacturers\}/);
-  assert.match(page, /categories=\{categories\}/);
-  assert.match(search, /SearchService\.forProducts/);
-  assert.match(search, /productSearchService\.searchProducts\(query\)/);
+  assert.match(page, /<Hero \/>/u);
+  assert.doesNotMatch(page, /products=\{products\}|manufacturers=\{manufacturers\}|categories=\{categories\}/u);
+  assert.match(search, /router\.push\(`\/catalog\?q=\$\{encodeURIComponent\(query\)\}`\)/u);
+  assert.match(search, /if \(!query\)/u);
+  assert.match(search, /inputRef\.current\?\.focus\(\)/u);
+  assert.doesNotMatch(search, /SearchService|Product\[\]|Manufacturer\[\]|Category\[\]/u);
 });
 
 test("Catalog Search continues to use Storefront SearchService", async () => {
@@ -60,13 +61,13 @@ test("Catalog Search continues to use Storefront SearchService", async () => {
   assert.match(explorer, /productSearchService\.searchProducts\(query\)/);
 });
 
-test("autocomplete uses Storefront SearchService results", async () => {
+test("Homepage Search does not duplicate Catalog autocomplete", async () => {
   const homepageSearch = await source("components/home/Search.tsx");
 
-  assert.match(homepageSearch, /setResults\(matches\)/);
-  assert.match(homepageSearch, /results\.map\(\(product\)/);
-  assert.match(homepageSearch, /product\.media/);
-  assert.match(homepageSearch, /`\/catalog\/\$\{product\.slug\}`/);
+  assert.doesNotMatch(homepageSearch, /setResults|results\.map|product\.media|role="listbox"/u);
+  assert.doesNotMatch(homepageSearch, /popularQueries|Популярные запросы/u);
+  assert.match(homepageSearch, /name="q"/u);
+  assert.match(homepageSearch, /type="search"/u);
 });
 
 test("Storefront search supports manufacturer and category names", async () => {
