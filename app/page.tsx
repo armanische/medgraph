@@ -15,6 +15,7 @@ import {
 import { buildStorefrontMetadata } from "@/lib/storefront/seo";
 import { buildHomepageStructuredData } from "@/lib/storefront/structured-data";
 import { formatCountryForPublic } from "@/lib/storefront/country-presentation";
+import { loadHomepageOverviewSources } from "@/lib/storefront/homepage-overview";
 
 const homepageDescription =
   "Каталог медицинского оборудования для клиник, медицинских организаций и специалистов по закупкам.";
@@ -26,15 +27,15 @@ export const metadata: Metadata = buildStorefrontMetadata({
 });
 
 export default async function Home() {
-  const [products, manufacturers, categories] = await Promise.all([
-    productService.getActiveProducts(),
-    manufacturerService.getManufacturers(),
-    categoryService.getCategories(),
-  ]);
+  const { products, manufacturers, categories } = await loadHomepageOverviewSources({
+    products: () => productService.getActiveProducts(),
+    manufacturers: () => manufacturerService.getManufacturers(),
+    categories: () => categoryService.getCategories(),
+  });
   const categoryProductCounts = new Map<string, number>();
   const manufacturerProductCounts = new Map<string, number>();
 
-  for (const product of products) {
+  for (const product of products ?? []) {
     categoryProductCounts.set(
       product.categoryId,
       (categoryProductCounts.get(product.categoryId) ?? 0) + 1,
@@ -45,7 +46,7 @@ export default async function Home() {
     );
   }
 
-  const categoryEntries = categories
+  const categoryEntries = products && categories ? categories
     .map((category) => ({
       id: category.id,
       slug: category.slug,
@@ -58,8 +59,8 @@ export default async function Home() {
       right.productCount - left.productCount ||
       left.name.localeCompare(right.name, "ru-RU"),
     )
-    .slice(0, 6);
-  const manufacturerEntries = manufacturers
+    .slice(0, 6) : null;
+  const manufacturerEntries = products && manufacturers ? manufacturers
     .map((manufacturer) => ({
       id: manufacturer.id,
       slug: manufacturer.slug,
@@ -73,7 +74,7 @@ export default async function Home() {
       right.productCount - left.productCount ||
       left.name.localeCompare(right.name, "ru-RU"),
     )
-    .slice(0, 8);
+    .slice(0, 8) : null;
 
   return (
     <main className="min-h-screen bg-cm-canvas">

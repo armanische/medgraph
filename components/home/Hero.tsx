@@ -24,7 +24,7 @@ export default function Hero() {
           <Search />
 
           <div className="mt-4">
-            <Link href="/catalog" className="cm-button-secondary w-full sm:w-auto">
+            <Link href="/catalog" className="cm-button-secondary min-h-[44px] w-full sm:w-auto">
               Перейти в каталог
             </Link>
           </div>

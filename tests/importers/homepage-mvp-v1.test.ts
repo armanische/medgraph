@@ -54,8 +54,8 @@ test("categories and manufacturers follow the approved deterministic grids", asy
   assert.match(page, /\.slice\(0, 8\)/u);
   assert.match(categories, /sm:grid-cols-2 lg:grid-cols-3/u);
   assert.match(manufacturers, /sm:grid-cols-2 lg:grid-cols-4/u);
-  assert.match(categories, /if \(categories\.length === 0\) return null/u);
-  assert.match(manufacturers, /if \(manufacturers\.length === 0\) return null/u);
+  assert.match(categories, /if \(categories\?\.length === 0\) return null/u);
+  assert.match(manufacturers, /if \(manufacturers\?\.length === 0\) return null/u);
   assert.doesNotMatch(categories, /<Image|category\.image|CategoryIcon/u);
   assert.match(manufacturers, /<ManufacturerMark/u);
 });

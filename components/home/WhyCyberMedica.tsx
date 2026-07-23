@@ -30,7 +30,7 @@ export default function WhyCyberMedica() {
       <div className="cm-container">
         <h2
           id="platform-benefits-title"
-          className="cm-section-title"
+          className="text-2xl font-extrabold leading-[1.2] tracking-[-0.025em] sm:text-[26px] lg:text-[30px]"
         >
           Как CyberMedica помогает с выбором
         </h2>

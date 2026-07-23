@@ -55,8 +55,8 @@ test("featured content is derived from existing Storefront services", async () =
   assert.match(page, /categoryService\.getCategories\(\)/u);
   assert.match(page, /categoryProductCounts/u);
   assert.match(page, /manufacturerProductCounts/u);
-  assert.match(page, /const manufacturerEntries = manufacturers\s+\.map/u);
-  assert.match(page, /const categoryEntries = categories\s+\.map/u);
+  assert.match(page, /const manufacturerEntries = products && manufacturers \? manufacturers\s+\.map/u);
+  assert.match(page, /const categoryEntries = products && categories \? categories\s+\.map/u);
   assert.doesNotMatch(page, /getFeaturedProducts|featuredProducts|popularProducts/u);
   assert.doesNotMatch(page, /data\/public|data\/research|published-catalog/iu);
 });
