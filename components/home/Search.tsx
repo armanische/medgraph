@@ -50,7 +50,7 @@ export default function Search() {
         </span>
         <button
           type="submit"
-          className="cm-button-primary min-h-[44px] w-full sm:min-h-[56px] sm:w-28 sm:shrink-0 sm:rounded-none sm:border-0"
+          className="cm-button-primary !min-h-[44px] w-full sm:!min-h-[56px] sm:w-28 sm:shrink-0 sm:rounded-none sm:border-0"
         >
           Найти
         </button>

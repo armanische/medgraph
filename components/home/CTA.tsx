@@ -24,10 +24,10 @@ export default function CTA() {
             aria-label="Следующие действия"
             className="flex flex-col gap-2 sm:flex-row sm:items-center lg:justify-end lg:gap-3"
           >
-            <Link href="/catalog" className="cm-button-primary min-h-[44px] w-full sm:w-auto">
+            <Link href="/catalog" className="cm-button-primary !min-h-[44px] w-full sm:w-auto">
               Перейти в каталог
             </Link>
-            <Link href="/request" className="cm-button-secondary min-h-[44px] w-full sm:w-auto">
+            <Link href="/request" className="cm-button-secondary !min-h-[44px] w-full sm:w-auto">
               Запросить КП
             </Link>
           </nav>

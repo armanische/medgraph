@@ -43,11 +43,11 @@ export default function Categories({
             <p>Категории временно недоступны.</p>
             <div className="mt-4 flex flex-col gap-2 sm:flex-row">
               <form action="/" method="get">
-                <button type="submit" className="cm-button-secondary min-h-[44px] w-full">
+                <button type="submit" className="cm-button-secondary !min-h-[44px] w-full">
                   Повторить
                 </button>
               </form>
-              <Link href="/catalog" className="cm-button-secondary min-h-[44px]">
+              <Link href="/catalog" className="cm-button-secondary !min-h-[44px]">
                 Перейти в каталог
               </Link>
             </div>
@@ -82,7 +82,7 @@ export default function Categories({
             </div>
             <Link
               href="/catalog"
-              className="cm-button-secondary mt-4 min-h-[44px] w-full sm:hidden"
+              className="cm-button-secondary mt-4 !min-h-[44px] w-full sm:hidden"
             >
               Все категории
             </Link>

@@ -115,12 +115,12 @@ test("Homepage mobile controls expose explicit 44px minimum targets", async () =
     source("components/home/CTA.tsx"),
   ]);
 
-  assert.match(hero, /cm-button-secondary min-h-\[44px\]/u);
+  assert.match(hero, /cm-button-secondary !min-h-\[44px\]/u);
   assert.match(search, /className="min-h-\[44px\][\s\S]*<\/span>/u);
-  assert.match(search, /cm-button-primary min-h-\[44px\]/u);
-  assert.match(categories, /cm-button-secondary mt-4 min-h-\[44px\]/u);
-  assert.match(manufacturers, /cm-button-secondary mt-4 min-h-\[44px\]/u);
-  assert.equal((cta.match(/min-h-\[44px\]/gu) ?? []).length, 2);
+  assert.match(search, /cm-button-primary !min-h-\[44px\]/u);
+  assert.match(categories, /cm-button-secondary mt-4 !min-h-\[44px\]/u);
+  assert.match(manufacturers, /cm-button-secondary mt-4 !min-h-\[44px\]/u);
+  assert.equal((cta.match(/!min-h-\[44px\]/gu) ?? []).length, 2);
 });
 
 test("Homepage Search reuses the established Catalog icon without changing routing", async () => {

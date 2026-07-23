@@ -45,11 +45,11 @@ export default function FeaturedManufacturers({
             <p>Производители временно недоступны.</p>
             <div className="mt-4 flex flex-col gap-2 sm:flex-row">
               <form action="/" method="get">
-                <button type="submit" className="cm-button-secondary min-h-[44px] w-full">
+                <button type="submit" className="cm-button-secondary !min-h-[44px] w-full">
                   Повторить
                 </button>
               </form>
-              <Link href="/manufacturers" className="cm-button-secondary min-h-[44px]">
+              <Link href="/manufacturers" className="cm-button-secondary !min-h-[44px]">
                 Все производители
               </Link>
             </div>
@@ -85,7 +85,7 @@ export default function FeaturedManufacturers({
             </div>
             <Link
               href="/manufacturers"
-              className="cm-button-secondary mt-4 min-h-[44px] w-full sm:hidden"
+              className="cm-button-secondary mt-4 !min-h-[44px] w-full sm:hidden"
             >
               Все производители
             </Link>
