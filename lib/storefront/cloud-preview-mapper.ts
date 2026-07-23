@@ -40,7 +40,20 @@ export interface CloudPreviewProductRow {
   updatedAt: string;
   createdAt: string;
   applicationAreas: Array<{ id: string; name: string }>;
-  characteristics: Array<{ name: string; value: string; unit: string | null }>;
+  /** Transitional legacy rows are deliberately ignored by Product Detail. */
+  characteristics?: Array<{ name: string; value: string; unit: string | null }>;
+  keyFeatures?: Array<{ text: string; sortOrder: number }>;
+  characteristicGroups?: Array<{
+    key: string;
+    title: string;
+    sortOrder: number;
+    items: Array<{
+      label: string;
+      value: string;
+      unit: string | null;
+      sortOrder: number;
+    }>;
+  }>;
   media: Array<{ url: string; role: string; format: string | null }>;
   documents: Array<{
     title: string;
@@ -130,16 +143,44 @@ function mapCategory(row: CloudReferenceRow, index: number): Category {
   };
 }
 
-function mapSpecifications(rows: CloudPreviewProductRow["characteristics"]): ProductSpecification[] {
-  return rows
-    .filter((row) => row.name.trim() && row.value.trim())
-    .map((row, position) => ({
-      group: "Характеристики",
-      label: row.name.trim(),
-      value: row.value.trim(),
-      unit: row.unit?.trim() || null,
-      position,
-    }));
+function structuredPlainText(value: string | null | undefined): string | null {
+  const normalized = value?.replace(/\s+/gu, " ").trim();
+  return normalized && !/[<>]/u.test(normalized) ? normalized : null;
+}
+
+function mapKeyFeatures(rows: CloudPreviewProductRow["keyFeatures"]): string[] {
+  return [...(rows ?? [])]
+    .sort((left, right) => left.sortOrder - right.sortOrder)
+    .flatMap(({ text }) => {
+      const value = structuredPlainText(text);
+      return value ? [value] : [];
+    });
+}
+
+function mapSpecifications(
+  groups: CloudPreviewProductRow["characteristicGroups"],
+): ProductSpecification[] {
+  return [...(groups ?? [])]
+    .sort((left, right) => left.sortOrder - right.sortOrder || left.key.localeCompare(right.key))
+    .flatMap((group) => {
+      const groupTitle = structuredPlainText(group.title);
+      if (!groupTitle) return [];
+      return [...group.items]
+        .sort((left, right) => left.sortOrder - right.sortOrder || left.label.localeCompare(right.label))
+        .flatMap((item) => {
+          const label = structuredPlainText(item.label);
+          const value = structuredPlainText(item.value);
+          if (!label || !value) return [];
+          return [{
+            group: groupTitle,
+            label,
+            value,
+            unit: structuredPlainText(item.unit),
+            position: 0,
+          }];
+        });
+    })
+    .map((specification, position) => ({ ...specification, position }));
 }
 
 function mapMedia(row: CloudPreviewProductRow): ProductMedia[] {
@@ -195,28 +236,28 @@ export function mapCloudPreviewSnapshot(snapshot: CloudPreviewCatalogSnapshot) {
       ? "READY" as const
       : "REQUIRES_EDITOR_REVIEW" as const;
     return {
-    id: row.slug,
-    slug: row.slug,
-    manufacturerId,
-    categoryId,
-    name: row.title.trim(),
-    model,
-    shortDescription: storefrontPlainText(row.shortDescription || row.description) || "Описание добавляется.",
-    description: row.description?.trim() || row.shortDescription?.trim() || "Описание добавляется.",
-    status: "preview_draft",
-    catalogQualityStatus,
-    featured: false,
-    applicationAreas: row.applicationAreas.map(({ name }) => name).filter(Boolean),
-    keyFeatures: [],
-    specifications: mapSpecifications(row.characteristics),
-    media: mapMedia(row),
-    documents: mapDocuments(row.documents),
-    registrationRecords: mapRegistrations(row.registrations),
-    compatibility: [],
-    relatedProductIds: [],
-    createdAt: row.createdAt,
-    updatedAt: row.updatedAt,
-  };
+      id: row.slug,
+      slug: row.slug,
+      manufacturerId,
+      categoryId,
+      name: row.title.trim(),
+      model,
+      shortDescription: storefrontPlainText(row.shortDescription || row.description) || "Описание добавляется.",
+      description: row.description?.trim() || row.shortDescription?.trim() || "Описание добавляется.",
+      status: "preview_draft",
+      catalogQualityStatus,
+      featured: false,
+      applicationAreas: row.applicationAreas.map(({ name }) => name).filter(Boolean),
+      keyFeatures: mapKeyFeatures(row.keyFeatures),
+      specifications: mapSpecifications(row.characteristicGroups),
+      media: mapMedia(row),
+      documents: mapDocuments(row.documents),
+      registrationRecords: mapRegistrations(row.registrations),
+      compatibility: [],
+      relatedProductIds: [],
+      createdAt: row.createdAt,
+      updatedAt: row.updatedAt,
+    };
   });
   const summary: CatalogSummary = {
     schemaVersion: 1,

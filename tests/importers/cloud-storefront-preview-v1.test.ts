@@ -67,7 +67,14 @@ function snapshot(): CloudPreviewCatalogSnapshot {
         createdAt: timestamp,
         updatedAt: timestamp,
         applicationAreas: [{ id: "33333333-3333-3333-3333-333333333333", name: "Реанимация" }],
-        characteristics: [{ name: "Экран", value: "10", unit: "дюйм" }],
+        characteristics: [{ name: "Категория", value: "Мониторы", unit: null }],
+        keyFeatures: [{ text: "Компактный транспортный формат", sortOrder: 10 }],
+        characteristicGroups: [{
+          key: "display",
+          title: "Экран",
+          sortOrder: 10,
+          items: [{ label: "Диагональ", value: "10", unit: "дюйм", sortOrder: 10 }],
+        }],
         media: [{ url: "https://static.tildacdn.com/product.png", role: "primary", format: "png" }],
         documents: [],
         registrations: [],
@@ -88,6 +95,8 @@ function snapshot(): CloudPreviewCatalogSnapshot {
         updatedAt: timestamp,
         applicationAreas: [],
         characteristics: [],
+        keyFeatures: [],
+        characteristicGroups: [],
         media: [],
         documents: [],
         registrations: [],
@@ -114,7 +123,15 @@ test("Cloud Preview maps draft rows to public-safe Storefront products without i
   assert.equal(mapped.products[0].manufacturerId, "mindray");
   assert.equal(mapped.products[0].categoryId, "patient-monitors");
   assert.equal(mapped.products[0].shortDescription, "Транспортный монитор");
-  assert.equal(mapped.products[0].specifications[0].value, "10");
+  assert.deepEqual(mapped.products[0].keyFeatures, ["Компактный транспортный формат"]);
+  assert.deepEqual(mapped.products[0].specifications[0], {
+    group: "Экран",
+    label: "Диагональ",
+    value: "10",
+    unit: "дюйм",
+    position: 0,
+  });
+  assert.equal(mapped.products[0].specifications.some(({ label }) => label === "Категория"), false);
   assert.equal(mapped.products[0].media[0].url, "https://static.tildacdn.com/product.png");
   assert.equal(mapped.products[1].manufacturerId, CLOUD_PREVIEW_UNKNOWN_MANUFACTURER_ID);
   assert.equal(mapped.products[1].categoryId, CLOUD_PREVIEW_UNKNOWN_CATEGORY_ID);
