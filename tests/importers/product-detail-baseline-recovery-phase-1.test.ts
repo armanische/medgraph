@@ -73,7 +73,7 @@ const category: Category = {
   updatedAt: "2026-07-23T00:00:00.000Z",
 };
 
-test("summary is sourced from public copy without invented facts or case loss", () => {
+test("summary uses only safe compact public copy without invented facts or case loss", () => {
   const experience = buildProductDetailExperience({
     product: product(),
     manufacturer,
@@ -82,10 +82,28 @@ test("summary is sourced from public copy without invented facts or case loss", 
 
   assert.equal(
     experience.summary,
-    "Транспортный аппарат ИВЛ поддерживает режим ASV. Система рассчитана на работу в пути. Данные взяты из публичной карточки. Четвёртое предложение сохраняется.",
+    product().shortDescription,
   );
   assert.match(experience.summary ?? "", /ИВЛ.*ASV/u);
-  assert.doesNotMatch(experience.summary ?? "", /основные возможности|технические сведения/iu);
+  assert.notEqual(experience.summary, "Полное описание. Скрытый пункт не становится преимуществом Вес: 6,5 кг");
+});
+
+test("summary fails closed when only a full description exists or both fields are the same", () => {
+  assert.equal(
+    buildProductDetailExperience({
+      product: product({ shortDescription: "", description: "<p>Полное описание с достаточным количеством текста для проверки fail-closed поведения summary.</p>" }),
+    }).summary,
+    null,
+  );
+  assert.equal(
+    buildProductDetailExperience({
+      product: product({
+        shortDescription: "Одинаковое описание достаточно длинное, чтобы пройти минимальную длину безопасного summary без сокращения.",
+        description: "<p>Одинаковое описание достаточно длинное, чтобы пройти минимальную длину безопасного summary без сокращения.</p>",
+      }),
+    }).summary,
+    null,
+  );
 });
 
 test("advantages are fail-closed and never inferred from description HTML", () => {
@@ -147,16 +165,27 @@ test("technical specifications use only explicit structured specifications", () 
     }),
     false,
   );
+  assert.equal(
+    isTechnicalProductSpecification({
+      group: "Маркетинг",
+      label: "Доступная цена",
+      value: "По запросу",
+      unit: null,
+      position: 4,
+    }),
+    false,
+  );
 });
 
-test("presentation contract remains server-only and preserves current Product Detail semantics", async () => {
-  const [page, experience, manufacturerSource] = await Promise.all([
+test("presentation contract keeps the server data path and delegates gallery interaction", async () => {
+  const [page, experience, manufacturerSource, gallerySource] = await Promise.all([
     readFile("app/catalog/[slug]/page.tsx", "utf8"),
     readFile("lib/storefront/product-detail-experience.ts", "utf8"),
     readFile("components/catalog/ProductManufacturer.tsx", "utf8"),
+    readFile("components/catalog/ProductGallery.tsx", "utf8"),
   ]);
 
-  assert.match(page, /<ProductGallery product=\{product\}/u);
+  assert.match(page, /<ProductGallery\s+media=\{product\.media\}/u);
   assert.match(page, /<ProductManufacturer manufacturer=\{experience\.manufacturer\}/u);
   assert.match(page, /aria-label="Ключевая информация о товаре"/u);
   assert.match(page, /<dt className="sr-only">\{label\}<\/dt>/u);
@@ -164,7 +193,14 @@ test("presentation contract remains server-only and preserves current Product De
   assert.match(page, /title="Документы и загрузки"/u);
   assert.match(page, /productService\.getRelatedProducts\(product\)/u);
   assert.doesNotMatch(page, /<h3 className="cm-label">Области применения<\/h3>/u);
+  assert.doesNotMatch(page, /presentation\.state/u);
+  assert.doesNotMatch(page, /sectionLinks/u);
   assert.doesNotMatch(page, /["']use client["']/u);
-  assert.doesNotMatch(experience, /CatalogRepository|ProductService|Supabase|cloud|review|publication/iu);
+  assert.doesNotMatch(experience, /CatalogRepository|ProductService|Supabase|cloud|review|publication|matchAll/u);
   assert.doesNotMatch(manufacturerSource, /["']use client["']/u);
+  assert.match(gallerySource, /["']use client["']/u);
+  assert.match(gallerySource, /aria-label=\{`Открыть изображение в галерее:/u);
+  assert.doesNotMatch(gallerySource, />Увеличить</u);
+  assert.match(gallerySource, /event\.key === "Escape"/u);
+  assert.match(gallerySource, /onTouchStart/u);
 });

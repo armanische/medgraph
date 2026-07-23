@@ -23,11 +23,11 @@ test("product hero contains the key commercial information", async () => {
 
   assert.match(product, /aria-label="Ключевая информация о товаре"/u);
   assert.match(product, /<dt className="sr-only">\{label\}<\/dt>/u);
-  assert.match(product, /label="Регистрационное удостоверение"/u);
+  assert.match(product, /hasRegulatoryInformation/u);
   assert.doesNotMatch(product, /label="Страна производства"/u);
   assert.doesNotMatch(product, /label="Модель \/ артикул"/u);
   assert.doesNotMatch(product, /label="Статус"/u);
-  assert.match(product, /<ProductGallery product=\{product\}/u);
+  assert.match(product, /<ProductGallery\s+media=\{product\.media\}/u);
   assert.match(product, /href="\/compare"/u);
   assert.match(experience, /`\/manufacturers\/\$\{manufacturer\.slug\}`/u);
   assert.match(manufacturer, /`\/manufacturers\/\$\{manufacturer\.slug\}`/u);

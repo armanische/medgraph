@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 
 import JsonLd from "@/components/seo/JsonLd";
+import ProductGallery from "@/components/catalog/ProductGallery";
 import ProductManufacturer from "@/components/catalog/ProductManufacturer";
 import SafeProductDescription from "@/components/catalog/SafeProductDescription";
 import { catalogRepository, productService, storefrontDataSource } from "@/lib/storefront";
@@ -14,7 +14,6 @@ import {
   PRODUCT_PRESENTATION_FALLBACKS,
 } from "@/lib/storefront/product-presentation";
 import type {
-  Product,
   ProductDocument,
   ProductDocumentKind,
   ProductSpecification,
@@ -71,13 +70,10 @@ export default async function StorefrontProductPage({
   });
   const experience = buildProductDetailExperience({ product, manufacturer, category });
   const technicalSpecifications = experience.technicalSpecifications;
-  const keySpecifications = technicalSpecifications.slice(0, 4);
   const specificationGroups = groupSpecifications(technicalSpecifications);
   const registrationDocuments = product.documents.filter(
     ({ kind }) => kind === "registration",
   );
-  const registrationDocument = registrationDocuments[0];
-  const registrationRecord = product.registrationRecords?.[0];
   const regulatoryRecords = (product.registrationRecords ?? []).filter(
     ({ number, sourceUrl }) => Boolean(number || sourceUrl),
   );
@@ -93,28 +89,6 @@ export default async function StorefrontProductPage({
   const relatedProductsById = new Map(
     relatedProducts.map((relatedProduct) => [relatedProduct.id, relatedProduct]),
   );
-  const registration = registrationDocument
-    ? {
-        href: registrationDocument.publicUrl,
-        value: registrationRecord?.number || "Открыть документ",
-      }
-    : registrationRecord?.number
-      ? { href: registrationRecord.sourceUrl, value: registrationRecord.number }
-      : null;
-  const sectionLinks = [
-    experience.description && ["description", "Описание"],
-    experience.advantages.length > 0 && ["advantages", "Преимущества"],
-    technicalSpecifications.length > 0 && ["specifications", "Характеристики"],
-    hasRegulatoryInformation && ["regulatory", "Регистрационная информация"],
-    presentation.sections.package && ["package", "Комплектация"],
-    hasDownloads && ["documents", "Документы и загрузки"],
-    ["manufacturer", "Производитель"],
-    (presentation.sections.compatibility || presentation.sections.relatedProducts) && [
-      "related-products",
-      "Связанные товары",
-    ],
-  ].filter((entry): entry is [string, string] => Boolean(entry));
-
   return (
     <main className="min-h-screen bg-cm-canvas">
       {storefrontDataSource !== "cloud_preview" && (
@@ -159,15 +133,14 @@ export default async function StorefrontProductPage({
             data-testid="product-hero"
           >
             <div className="border-b border-[var(--cm-rule)] bg-cm-surface-low/45 p-3 sm:p-4 md:border-b-0 md:border-r">
-              <ProductGallery product={product} />
+              <ProductGallery
+                media={product.media}
+                fallbackLabel={PRODUCT_PRESENTATION_FALLBACKS.media}
+                productName={product.name}
+              />
             </div>
 
             <div className="flex min-w-0 flex-col p-4 sm:p-5 lg:p-6">
-              {presentation.state === "information_incomplete" && (
-                <div className="mb-3 w-fit rounded-full border border-cm-coral/25 bg-cm-coral/8 px-3 py-1.5 text-[11px] font-semibold text-cm-ink">
-                  {presentation.statusLabel}
-                </div>
-              )}
               <h1 className="max-w-4xl break-words text-[1.65rem] font-extrabold leading-[1.12] tracking-[-0.03em] sm:text-[2rem] lg:text-[2.25rem]">
                 {product.name}
               </h1>
@@ -194,38 +167,6 @@ export default async function StorefrontProductPage({
                 </dl>
               ) : null}
 
-              {registration && (
-                <dl className="mt-4 border-y border-[var(--cm-rule)] py-3.5 text-xs">
-                  <ProductDetailLinkOrText
-                    label="Регистрационное удостоверение"
-                    value={registration.value}
-                    href={registration.href}
-                  />
-                </dl>
-              )}
-
-              {keySpecifications.length > 0 && (
-                <div id="key-specifications" className="mt-4">
-                  <p className="cm-label">Ключевые характеристики</p>
-                  <dl className="mt-2 grid gap-2 sm:grid-cols-2">
-                    {keySpecifications.map((specification) => (
-                      <div
-                        key={`${specification.label}:${specification.position}`}
-                        className="rounded-lg bg-cm-surface-low/70 px-3 py-2"
-                      >
-                        <dt className="text-[10px] font-medium leading-4 text-cm-slate">
-                          {specification.label}
-                        </dt>
-                        <dd className="mt-0.5 text-xs font-semibold leading-5 text-cm-ink">
-                          {specification.value}
-                          {specification.unit ? ` ${specification.unit}` : ""}
-                        </dd>
-                      </div>
-                    ))}
-                  </dl>
-                </div>
-              )}
-
               {presentation.canRequestQuote ? (
                 <div className="mt-4 flex flex-wrap gap-2">
                   <Link
@@ -245,19 +186,6 @@ export default async function StorefrontProductPage({
                   ) : null}
                 </div>
               ) : null}
-
-              {sectionLinks.length > 1 && (
-                <nav
-                  aria-label="Разделы карточки товара"
-                  className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-[11px] font-semibold text-cm-slate"
-                >
-                  {sectionLinks.map(([id, label]) => (
-                    <a key={id} href={`#${id}`} className="rounded-sm hover:text-cm-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cm-teal">
-                      {label}
-                    </a>
-                  ))}
-                </nav>
-              )}
             </div>
           </div>
         </div>
@@ -464,76 +392,6 @@ export default async function StorefrontProductPage({
   );
 }
 
-function ProductGallery({ product }: { product: Product }) {
-  if (product.media.length === 0) {
-    return (
-      <div className="grid aspect-[4/3] min-h-56 place-items-center rounded-xl border border-dashed border-[var(--cm-rule)] bg-white/70 px-4 text-center text-xs leading-6 text-cm-slate">
-        <div>
-        <div className="cm-empty-icon">▧</div>
-        <div className="mx-auto mt-3 max-w-sm">
-          {PRODUCT_PRESENTATION_FALLBACKS.media}.
-        </div>
-        </div>
-      </div>
-    );
-  }
-
-  const sortedMedia = [...product.media].sort(
-    (left, right) => left.position - right.position,
-  );
-  const primaryMedia = sortedMedia.find(({ type }) => type === "image") ?? sortedMedia[0];
-  const secondaryMedia = sortedMedia.filter(({ url }) => url !== primaryMedia.url);
-
-  return (
-    <div>
-      <div className="relative aspect-[4/3] min-h-56 overflow-hidden rounded-xl border border-[var(--cm-rule)] bg-white">
-        {primaryMedia.type === "image" ? (
-          <Image
-            src={primaryMedia.url}
-            alt={primaryMedia.alt}
-            fill
-            preload
-            sizes="(max-width: 1024px) 100vw, 40vw"
-            className="object-contain p-1"
-          />
-        ) : (
-          <video controls className="size-full" aria-label={primaryMedia.alt}>
-            <source src={primaryMedia.url} />
-          </video>
-        )}
-      </div>
-      {secondaryMedia.length > 0 && (
-        <div className="mt-3 grid grid-cols-4 gap-2" aria-label="Галерея товара">
-          {secondaryMedia.map((media) => (
-            <a
-              key={`${media.type}:${media.url}`}
-              href={media.url}
-              target="_blank"
-              rel="noreferrer"
-              className="relative aspect-square overflow-hidden rounded-lg border border-[var(--cm-rule)] bg-white transition hover:border-cm-teal"
-              aria-label={`Открыть: ${media.alt}`}
-            >
-              {media.type === "image" ? (
-                <Image
-                  src={media.url}
-                  alt={media.alt}
-                  fill
-                  sizes="10vw"
-                  className="object-contain p-1"
-                />
-              ) : (
-                <span className="grid size-full place-items-center text-xs text-cm-slate">
-                  Видео
-                </span>
-              )}
-            </a>
-          ))}
-        </div>
-      )}
-    </div>
-  );
-}
-
 function DocumentLink({ document }: { document: ProductDocument }) {
   return (
     <a
@@ -571,15 +429,6 @@ function documentKindLabel(kind: ProductDocumentKind) {
   return kind.replaceAll("_", " ");
 }
 
-function ProductDetail({ label, value }: { label: string; value: string }) {
-  return (
-    <div>
-      <dt className="cm-label">{label}</dt>
-      <dd className="mt-1 font-semibold">{value}</dd>
-    </div>
-  );
-}
-
 function ProductMetadataBadge({
   label,
   value,
@@ -599,54 +448,6 @@ function ProductMetadataBadge({
           </Link>
         ) : (
           value
-        )}
-      </dd>
-    </div>
-  );
-}
-
-function ProductDetailLinkOrText({
-  label,
-  value,
-  href,
-}: {
-  label: string;
-  value: string;
-  href: string | null;
-}) {
-  return href
-    ? <ProductDetailLink label={label} value={value} href={href} external />
-    : <ProductDetail label={label} value={value} />;
-}
-
-function ProductDetailLink({
-  label,
-  value,
-  href,
-  external = false,
-}: {
-  label: string;
-  value: string;
-  href: string;
-  external?: boolean;
-}) {
-  return (
-    <div>
-      <dt className="cm-label">{label}</dt>
-      <dd className="mt-1 font-semibold">
-        {external ? (
-          <a
-            href={href}
-            target="_blank"
-            rel="noreferrer"
-            className="text-cm-teal hover:underline"
-          >
-            {value} →
-          </a>
-        ) : (
-          <Link href={href} className="text-cm-teal hover:underline">
-            {value} →
-          </Link>
         )}
       </dd>
     </div>

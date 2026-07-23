@@ -40,7 +40,7 @@ test("missing Storefront Product invokes notFound", async () => {
   assert.doesNotMatch(source, /getDraftCatalogProduct|getPublishedProduct/);
 });
 
-test("specifications are grouped from ProductSpecification", async () => {
+test("technical specifications are grouped from explicit ProductSpecification rows", async () => {
   const [source, experience] = await Promise.all([
     pageSource(),
     readFile(resolve(root, "lib/storefront/product-detail-experience.ts"), "utf8"),
@@ -49,8 +49,8 @@ test("specifications are grouped from ProductSpecification", async () => {
   assert.match(source, /experience\.technicalSpecifications/);
   assert.match(experience, /product\.specifications/);
   assert.match(experience, /filter\(isTechnicalProductSpecification\)/);
-  assert.match(source, /const keySpecifications = technicalSpecifications\.slice\(0, 4\)/);
-  assert.match(source, /Ключевые характеристики/);
+  assert.doesNotMatch(source, /const keySpecifications = technicalSpecifications\.slice\(0, 4\)/);
+  assert.doesNotMatch(source, /Ключевые характеристики/);
   assert.match(source, /groupSpecifications\(technicalSpecifications\)/);
   assert.match(source, /specification\.group/);
   assert.match(source, /specification\.label/);
@@ -156,11 +156,11 @@ test("Ambu VivaSight image is catalog-ready and available to catalog and product
     pageSource(),
     readFile(resolve(root, "components/catalog/CatalogExplorer.tsx"), "utf8"),
   ]);
-  assert.match(productPage, /<ProductGallery product=\{product\}/u);
+  assert.match(productPage, /<ProductGallery\s+media=\{product\.media\}/u);
   assert.match(catalogExplorer, /product\.media\.find/u);
 });
 
-test("product hero uses a media-first 40/60 layout with catalog details", async () => {
+test("product hero uses a media-first 40/60 layout without decorative duplicates", async () => {
   const source = await pageSource();
 
   assert.match(source, /data-testid="product-hero"/);
@@ -168,14 +168,14 @@ test("product hero uses a media-first 40/60 layout with catalog details", async 
     source,
     /lg:grid-cols-\[minmax\(0,40fr\)_minmax\(0,60fr\)\]/,
   );
-  assert.match(source, /<ProductGallery product=\{product\}/);
-  assert.match(source, /label="Регистрационное удостоверение"/);
+  assert.match(source, /<ProductGallery\s+media=\{product\.media\}/);
   assert.match(source, /data-testid="product-metadata"/);
   assert.match(source, /<dt className="sr-only">\{label\}<\/dt>/);
   assert.doesNotMatch(source, /label="Страна производства"/);
   assert.doesNotMatch(source, /label="Модель \/ артикул"/);
   assert.doesNotMatch(source, /label="Статус"/);
-  assert.match(source, /presentation\.statusLabel/);
+  assert.doesNotMatch(source, /presentation\.statusLabel/);
+  assert.doesNotMatch(source, /key-specifications|sectionLinks/);
 });
 
 test("product detail exposes semantic breadcrumbs and public regulatory information", async () => {
@@ -216,19 +216,17 @@ test("product detail has one hierarchy and ordered content sections", async () =
   assert.doesNotMatch(source, /title="Основная информация"|>Product</);
 });
 
-test("product hero offers accessible quick links without a client runtime", async () => {
-  const source = await pageSource();
+test("product hero stays server-rendered while gallery interaction is isolated", async () => {
+  const [source, gallery] = await Promise.all([
+    pageSource(),
+    readFile(resolve(root, "components/catalog/ProductGallery.tsx"), "utf8"),
+  ]);
 
-  assert.match(source, /aria-label="Разделы карточки товара"/);
-  for (const anchor of [
-    "#description",
-    "#advantages",
-    "#specifications",
-    "#documents",
-    "#manufacturer",
-  ]) {
-    assert.match(source, new RegExp(`\\["${anchor.slice(1)}"`, "u"));
-  }
-  assert.match(source, /preload/);
+  assert.doesNotMatch(source, /aria-label="Разделы карточки товара"/);
   assert.doesNotMatch(source, /["']use client["']/);
+  assert.match(gallery, /["']use client["']/);
+  assert.match(gallery, /cursor-zoom-in/);
+  assert.match(gallery, /aria-label=\{`Открыть изображение в галерее:/u);
+  assert.doesNotMatch(gallery, />Увеличить</u);
+  assert.doesNotMatch(gallery, /target="_blank"/u);
 });

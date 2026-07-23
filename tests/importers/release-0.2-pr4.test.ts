@@ -62,8 +62,7 @@ test("product presentation exposes optional hero values without public fallbacks
 test("product hero is compact and does not repeat quality or missing metadata", async () => {
   const page = await source("app/catalog/[slug]/page.tsx");
   assert.match(page, /minmax\(0,40fr\)_minmax\(0,60fr\)/u);
-  assert.match(page, /presentation\.state === "information_incomplete"/u);
-  assert.equal((page.match(/\{presentation\.statusLabel\}/gu) ?? []).length, 1);
+  assert.doesNotMatch(page, /presentation\.state|presentation\.statusLabel/u);
   assert.doesNotMatch(page, /label="Статус"/u);
   assert.doesNotMatch(page, /PRODUCT_PRESENTATION_FALLBACKS\.registration/u);
   assert.match(page, /buildProductDetailExperience/u);
@@ -73,12 +72,12 @@ test("product hero is compact and does not repeat quality or missing metadata", 
   assert.doesNotMatch(page, /line-clamp-4/u);
 });
 
-test("local section navigation and optional content remain fail-closed", async () => {
+test("optional content remains fail-closed without duplicating hero navigation", async () => {
   const [page, experience] = await Promise.all([
     source("app/catalog/[slug]/page.tsx"),
     source("lib/storefront/product-detail-experience.ts"),
   ]);
-  assert.match(page, /sectionLinks\.length > 1/u);
+  assert.doesNotMatch(page, /sectionLinks\.length|aria-label="Навигация по странице"/u);
   for (const section of [
     "package",
     "documents",

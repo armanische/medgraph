@@ -250,20 +250,21 @@ export default function CatalogExplorer({
               >
                 <ProductImage product={product} />
                 <div className="flex flex-1 flex-col p-3">
-                  <div className="flex flex-wrap items-center gap-2">
+                  <div className="flex min-h-6 flex-wrap items-center gap-2">
                     <span className="rounded-md border border-[var(--cm-rule)] bg-cm-surface-low px-2 py-1 font-mono text-[9px] font-semibold text-cm-dim">
+                      <span className="sr-only">Категория: </span>
                       {presentation.categoryLabel}
                     </span>
                     <span className="font-mono text-[9px] text-cm-dim">
                       {presentation.modelLabel}
                     </span>
                   </div>
-                  <h2 className="mt-2.5 text-[15px] font-bold leading-5 tracking-[-0.015em]">
+                  <h2 className="mt-2.5 line-clamp-2 min-h-10 text-[15px] font-bold leading-5 tracking-[-0.015em]">
                     <Link href={`/catalog/${product.slug}`} className="hover:text-cm-teal">
                       {product.name}
                     </Link>
                   </h2>
-                  <div className="mt-1.5 text-xs text-cm-slate">
+                  <div className="mt-1.5 min-h-7 text-xs text-cm-slate">
                     {manufacturerEntry ? (
                       <Link
                         href={`/manufacturers/${manufacturerEntry.slug}`}
@@ -275,13 +276,16 @@ export default function CatalogExplorer({
                       presentation.manufacturerLabel
                     )}
                   </div>
-                  {presentation.shortDescription && (
-                    <p className="mt-2.5 line-clamp-2 text-[11px] leading-[1.125rem] text-cm-slate">
-                      {presentation.shortDescription}
-                    </p>
-                  )}
-                  {product.specifications.length > 0 && (
-                    <dl className="mt-2.5 grid gap-1 border-t border-[var(--cm-rule)] pt-2.5 text-[10px]">
+                  <div className="mt-2.5 min-h-9">
+                    {presentation.shortDescription && (
+                      <p className="line-clamp-2 text-[11px] leading-[1.125rem] text-cm-slate">
+                        {presentation.shortDescription}
+                      </p>
+                    )}
+                  </div>
+                  <div className="mt-2.5 min-h-[3.625rem] border-t border-[var(--cm-rule)] pt-2.5">
+                    {product.specifications.length > 0 && (
+                    <dl className="grid gap-1 text-[10px]">
                       {product.specifications.slice(0, 2).map((specification) => (
                         <div key={`${specification.label}:${specification.position}`} className="flex justify-between gap-3">
                           <dt className="text-cm-dim">{specification.label}</dt>
@@ -291,7 +295,8 @@ export default function CatalogExplorer({
                         </div>
                       ))}
                     </dl>
-                  )}
+                    )}
+                  </div>
                   <div className="mt-auto flex items-center justify-between gap-2 pt-3 text-[11px] font-semibold">
                     <Link href={`/catalog/${product.slug}`} className="text-cm-teal">
                       Открыть карточку →

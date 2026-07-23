@@ -33,6 +33,17 @@ const TECHNICAL_METADATA_LABELS = new Set([
   "тип товара",
 ]);
 
+const NON_TECHNICAL_MARKETING_LABELS = new Set([
+  "доступная цена",
+  "качество",
+  "надежность",
+  "преимущества",
+  "применение",
+  "универсальность",
+  "эффективность",
+  "цена",
+]);
+
 const NON_PUBLIC_REFERENCE_VALUES = new Set([
   "данные уточняются",
   "категория уточняется",
@@ -70,22 +81,17 @@ function truncateAtWord(value: string, maximumLength: number) {
   return `${candidate.slice(0, boundary >= maximumLength * 0.75 ? boundary : maximumLength).trim()}…`;
 }
 
-function sourceSummary(product: Product) {
-  const source = publicOptionalText(product.shortDescription)
-    ?? publicOptionalText(product.description);
+function compactSummary(product: Product) {
+  const source = publicOptionalText(product.shortDescription);
   if (!source) return null;
 
-  const normalized = plainText(source);
-  if (!normalized) return null;
+  const summary = plainText(source);
+  if (summary.length < 80) return null;
 
-  const sentences = normalized.match(/[^.!?]+[.!?]+|[^.!?]+$/gu) ?? [normalized];
-  const summary = sentences
-    .slice(0, 4)
-    .map((sentence) => sentence.trim())
-    .filter(Boolean)
-    .join(" ");
+  const fullDescription = publicOptionalText(product.description);
+  if (fullDescription && summary === plainText(fullDescription)) return null;
 
-  return truncateAtWord(summary, 640);
+  return truncateAtWord(summary, 700);
 }
 
 function explicitAdvantages(product: Product) {
@@ -118,7 +124,9 @@ function normalizeLabel(label: string) {
 export function isTechnicalProductSpecification(
   specification: ProductSpecification,
 ) {
-  return !TECHNICAL_METADATA_LABELS.has(normalizeLabel(specification.label));
+  const label = normalizeLabel(specification.label);
+  return !TECHNICAL_METADATA_LABELS.has(label) &&
+    !NON_TECHNICAL_MARKETING_LABELS.has(label);
 }
 
 export function buildProductDetailExperience({
@@ -156,7 +164,7 @@ export function buildProductDetailExperience({
   if (model) badges.push({ label: "Модель", value: model });
 
   return {
-    summary: sourceSummary(product),
+    summary: compactSummary(product),
     description: publicOptionalText(product.description)
       ?? publicOptionalText(product.shortDescription),
     advantages: explicitAdvantages(product),
