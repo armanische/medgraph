@@ -133,14 +133,36 @@ limitations desirable recovery targets.
 - It did not delete `add3064`—`a460698`; those objects were absent from its
   ancestry before work began.
 
-### Source durability risk
+### Recovery artifact status
 
-The commits `add3064`, `340ce6a` and `a460698` are available in the clean
-separate clone `/private/tmp/cybermedica-lc012`, but are not objects in the
-primary repository backing current worktrees and are not on the inspected
-GitHub branches. Before runtime recovery, their chain must be preserved as a
-verified Git bundle or protected recovery ref with recorded SHA-256. This is a
-precondition, not permission to merge or push the old branch into `main`.
+The approved baseline chain is permanently preserved on GitHub under the
+non-branch ref:
+
+```text
+refs/recovery/product-detail-baseline-v1
+  -> a460698b5d4f7c1bc45e894b095149ca276ac473
+  -> tree 454bf8c46c4e5a8646986de28e6d18d5b8a3514e
+```
+
+An independent fetch of that exact ref confirmed that `add3064`, `340ce6a`
+and `a460698` and their trees are readable without relying on the temporary
+release clone. This GitHub recovery ref is the official permanent source of
+the Product Detail baseline. It is evidence and a reconstruction source, not a
+development branch and not permission to merge the historical chain into
+`main`.
+
+A verified local Git bundle remains a secondary disaster-recovery copy only:
+
+- path:
+  `/private/tmp/cybermedica-preserve-product-detail-baseline/recovery-artifacts/product-detail/product-detail-baseline-v1.bundle`;
+- size: `746916146` bytes;
+- SHA-256:
+  `325fc3b8ed31e1640c2d52a34f58b5e983d4a7b941599089816ff9bf4ec7dcf4`.
+
+The bundle must remain local. It must not be committed to Git, tracked with Git
+LFS, or uploaded to GitHub Releases. Cleanup of `/private/tmp` may remove this
+secondary copy without changing the authoritative status of the GitHub
+recovery ref.
 
 ## Architecture Compatibility
 
@@ -314,13 +336,14 @@ findings, not copying the known defects back into `main`.
 
 ## Recovery Plan
 
-### Mandatory precondition — preserve baseline evidence
+### Completed precondition — preserve baseline evidence
 
-Before Phase 1, create and verify an immutable Git bundle containing
-`8fae7b0..a460698` from the clean release clone. Record bundle SHA-256 and prove
-that `a460698^{tree}` equals `454bf8c...`. Do not merge or push the historical
-branch into `main`. This prevents `/private/tmp` cleanup from destroying the
-only complete commit objects.
+The preservation precondition is complete. The permanent reconstruction source
+is `refs/recovery/product-detail-baseline-v1` on GitHub, which resolves to
+`a460698b5d4f7c1bc45e894b095149ca276ac473`; its verified tree is
+`454bf8c46c4e5a8646986de28e6d18d5b8a3514e`. The local bundle described above
+is backup-only and is not a publication mechanism. Do not merge or push the
+historical baseline chain into `main`.
 
 ### Phase 1 — Reconstruct the server presentation baseline
 
@@ -429,7 +452,9 @@ Product Detail MVP.
 
 **Preflight:**
 
-1. Preserve `8fae7b0..a460698` as a verified Git bundle and record SHA-256.
+1. Fetch and verify the official GitHub source
+   `refs/recovery/product-detail-baseline-v1` at `a460698`; use the local bundle
+   only if remote recovery is unavailable.
 2. Create a fresh feature worktree from the then-current `origin/main`.
 3. Confirm Product/Service/Repository hashes and no user changes.
 
