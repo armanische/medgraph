@@ -39,4 +39,4 @@ Accepted ADR не переписывается при смене решения.
 | [ADR-002](./ADR-002-storefront-repository-boundary.md) | Storefront Services и repository boundary | Accepted |
 | [ADR-003](./ADR-003-staging-acceptance-gate.md) | Staging как обязательная среда приёмки | Accepted |
 | [ADR-004](./ADR-004-main-production-branch-separation.md) | Разделение интеграционной и Production-веток | Accepted |
-| [ADR-005](./ADR-005-structured-product-detail-publication.md) | Review-gated publication structured Product Detail fields | Proposed |
+| [ADR-005](./ADR-005-structured-product-detail-publication.md) | Review-gated publication structured Product Detail fields | Accepted |

@@ -1,6 +1,6 @@
 # ADR-005 — Review-gated Structured Product Detail publication
 
-**Статус:** Proposed
+**Статус:** Accepted
 
 **Дата:** 23 июля 2026 года
 
@@ -81,8 +81,12 @@ forward-only migration. Каждая controlled publication хранит пол�
 state и mutation log. Rollback восстанавливает предыдущий batch только для
 одного товара; global destructive rollback и out-of-order rollback запрещены.
 
-ADR остаётся `Proposed` до независимого re-review corrective migration,
-revision/approval contract, RLS/grants и exact rollback tests.
+Решение принято после Independent Re-Review v2 со статусом `APPROVED` и
+controlled staging migration от 23 июля 2026 года: migration chain,
+revision/approval hash binding, RLS/grants, service-only writer, RPC,
+idempotency, legacy isolation, exact rollback и synthetic cleanup прошли.
+Hamilton-T1 publication остаётся отдельным human-review gate; принятие ADR не
+разрешает Production migration или Cloud publication.
 
 ## References
 
@@ -90,3 +94,5 @@ revision/approval contract, RLS/grants и exact rollback tests.
 - [ADR-001 — Cloud First](./ADR-001-cloud-first-source-of-truth.md)
 - [ADR-002 — Storefront repository boundary](./ADR-002-storefront-repository-boundary.md)
 - [Structured Product Detail Fields v1 report](../../reports/structured-product-detail-fields-v1.md)
+- [Independent Structured Fields Re-Review v2](../../reports/structured-fields-independent-re-review-v2.md)
+- [Controlled Staging Migration v1](../../reports/structured-fields-controlled-staging-migration-v1.md)
