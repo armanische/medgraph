@@ -31,7 +31,8 @@ test("product detail exposes a real return path, only real section links, and an
   assert.doesNotMatch(page, /href: "#documents"/u);
   assert.doesNotMatch(page, /href: "#regulatory"/u);
   assert.match(backToCatalog, /window\.history\.back\(\)/u);
-  assert.match(backToCatalog, /router\.push\("\/catalog"\)/u);
+  assert.match(backToCatalog, /router\.push\(entry\?\.source \?\? "\/catalog"\)/u);
+  assert.match(backToCatalog, /scrollY: window\.scrollY/u);
   assert.match(backToCatalog, /sessionStorage/u);
   assert.match(backToTop, /prefers-reduced-motion/u);
   assert.match(backToTop, /aria-label="Наверх"/u);
