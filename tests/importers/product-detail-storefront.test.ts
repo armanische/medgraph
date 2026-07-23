@@ -227,7 +227,7 @@ test("product hero stays server-rendered while gallery interaction is isolated",
   assert.doesNotMatch(source, /["']use client["']/);
   assert.match(gallery, /["']use client["']/);
   assert.match(gallery, /cursor-zoom-in/);
-  assert.match(gallery, /aria-label=\{`Открыть изображение в галерее:/u);
+  assert.match(gallery, /aria-label="Увеличить изображение"/u);
   assert.doesNotMatch(gallery, />Увеличить</u);
   assert.doesNotMatch(gallery, /target="_blank"/u);
 });

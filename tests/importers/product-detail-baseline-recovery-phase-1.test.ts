@@ -82,7 +82,7 @@ test("summary uses only safe compact public copy without invented facts or case 
 
   assert.equal(
     experience.summary,
-    "Транспортный аппарат ИВЛ поддерживает режим ASV. Система рассчитана на работу в пути. Данные взяты из публичной карточки. Четвёртое предложение сохраняется.",
+    "Транспортный аппарат ИВЛ поддерживает режим ASV. Система рассчитана на работу в пути. Данные взяты из публичной карточки. Четвёртое предложение сохраняется; Пятое предложение не входит.",
   );
   assert.match(experience.summary ?? "", /ИВЛ.*ASV/u);
   assert.notEqual(experience.summary, "Полное описание. Скрытый пункт не становится преимуществом Вес: 6,5 кг");
@@ -199,7 +199,7 @@ test("presentation contract keeps the server data path and delegates gallery int
   assert.doesNotMatch(experience, /CatalogRepository|ProductService|Supabase|cloud|review|publication|matchAll/u);
   assert.doesNotMatch(manufacturerSource, /["']use client["']/u);
   assert.match(gallerySource, /["']use client["']/u);
-  assert.match(gallerySource, /aria-label=\{`Открыть изображение в галерее:/u);
+  assert.match(gallerySource, /aria-label="Увеличить изображение"/u);
   assert.doesNotMatch(gallerySource, />Увеличить</u);
   assert.match(gallerySource, /event\.key === "Escape"/u);
   assert.match(gallerySource, /onTouchStart/u);

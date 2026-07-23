@@ -31,7 +31,7 @@ test("hero defaults to accessible value-only metadata and contains no decorative
 test("gallery uses a keyboard-accessible magnifier and controlled lightbox instead of links", async () => {
   const gallery = await source("components/catalog/ProductGallery.tsx");
 
-  assert.match(gallery, /aria-label=\{`Открыть изображение в галерее:/u);
+  assert.match(gallery, /aria-label="Увеличить изображение"/u);
   assert.match(gallery, /<svg/u);
   assert.match(gallery, /event\.key === "Escape"/u);
   assert.match(gallery, /event\.key === "ArrowLeft"/u);

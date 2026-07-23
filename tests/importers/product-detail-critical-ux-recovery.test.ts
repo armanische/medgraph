@@ -41,6 +41,7 @@ test("gallery has compact conditional controls and preserves keyboard and touch 
   const gallery = await source("components/catalog/ProductGallery.tsx");
 
   assert.match(gallery, /imageMedia\.length > 1/u);
+  assert.match(gallery, /aria-label="Увеличить изображение"/u);
   assert.match(gallery, /aria-label="Предыдущее изображение"/u);
   assert.match(gallery, /aria-label="Следующее изображение"/u);
   assert.match(gallery, /event\.key === "Escape"/u);

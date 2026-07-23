@@ -86,7 +86,22 @@ function leadingSentences(value: string, maximumSentences: number) {
     ?.map((sentence) => sentence.trim())
     .filter(Boolean) ?? [];
   if (sentences.length < 2) return null;
-  return sentences.slice(0, maximumSentences).join(" ");
+
+  const selected = sentences.slice(0, maximumSentences);
+  const selectedText = selected.join(" ");
+  const nextSentence = sentences[maximumSentences];
+  if (
+    selectedText.length >= 400 ||
+    !nextSentence ||
+    selectedText.length + nextSentence.length + 2 > 700
+  ) {
+    return selectedText;
+  }
+
+  const lastSentence = selected.at(-1);
+  if (!lastSentence) return selectedText;
+  selected[selected.length - 1] = `${lastSentence.replace(/[.!?]+$/u, "")}; ${nextSentence}`;
+  return selected.join(" ");
 }
 
 function compactSummary(product: Product) {

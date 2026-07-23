@@ -119,7 +119,7 @@ export default function ProductGallery({
             type="button"
             onClick={() => setLightboxOpen(true)}
             className="group relative size-full cursor-zoom-in focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-cm-teal"
-            aria-label={`Открыть изображение в галерее: ${selectedMedia.alt}`}
+            aria-label="Увеличить изображение"
           >
             <Image
               src={selectedMedia.url}
