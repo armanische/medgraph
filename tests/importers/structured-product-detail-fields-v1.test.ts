@@ -84,7 +84,8 @@ test("migration reuses review/publication entities and creates an additive rever
   assert.match(migration, /cloud\.review_decisions%rowtype/u);
   assert.match(migration, /decision\.decision <> 'approve'/u);
   assert.match(migration, /decision\.approved_value is distinct from item/u);
-  assert.match(migration, /candidate\.validation_status <> 'approved'/u);
+  assert.match(migration, /candidate\.validation_status not in \('approved', 'published'\)/u);
+  assert.match(migration, /published candidate cannot create a new publication batch/u);
   assert.match(migration, /alter policy product_characteristics_public_read[\s\S]+publication_status = 'published'/u);
   assert.match(migration, /previous_state jsonb not null/u);
   assert.match(migration, /idempotency_key text not null unique/u);

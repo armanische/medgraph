@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "structured-product-detail-review-package-manifest-v1",
+  "packageId": "product-detail-data-recovery-v1:hamilton-t1",
+  "status": "needs_manual_approval",
+  "publishable": false,
+  "sourceUid": "330695211247",
+  "sourcePayloadSha256": "92d2302078a65870a3ef1de35e510e3e206f5093c826b8cd9d19a6f3331e9ebb",
+  "sourceArtifact": {
+    "path": "data/legacy/products/330695211247.json",
+    "fileSha256": "b81ae442047ae4ed676953c2e4f119e07c0385bd7102ccd59cc01d04ff8ec89b",
+    "recoveredFromCommit": "5ca5fe24c308fd636743eaf78874f4647749dc21"
+  },
+  "counts": {
+    "keyFeatures": 6,
+    "specifications": 15,
+    "provenanceReferences": 21
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "a95c7f9b429a472559b7ca5f2cba573f7204280283b541289101521ba4d34d75"
+    },
+    {
+      "path": "current-vs-proposed.json",
+      "sha256": "87d25dfb1af4912c8ec6bd6e205aa29874eb7b7f69ff7b7c7b59cde6a08d71b9"
+    },
+    {
+      "path": "provenance.json",
+      "sha256": "d5f20f6bfa34a7e5ba1ecdccb418ab1a3f4314c2deee865f3cb0840d9e8480f9"
+    },
+    {
+      "path": "review-candidate.json",
+      "sha256": "44da2a6c9d55d4a24acb4868ac842435d8164a8f3b979ffaf337e387bbb3242a"
+    }
+  ],
+  "packageSha256": "98c6fcd295963a80bb2196b784371c22f64fdd3424a4662d31085365c5bda24a",
+  "reviewBlockers": [
+    "Every proposed field still requires an explicit human decision.",
+    "The legacy battery-runtime statement conflicts with the repository research report and must not be approved automatically.",
+    "No Cloud migration or publication has been performed."
+  ]
+}

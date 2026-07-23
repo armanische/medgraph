@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "cybermedica-migration-chain-manifest-v1",
+  "scope": "structured-product-detail-fields-v1",
+  "database": "clean local Supabase PostgreSQL",
+  "migrations": [
+    { "version": "202607020001", "file": "202607020001_fs510_vertical_slice.sql", "sha256": "7a05defd0eb69a0fab552f5c0146c1ee32d3a11b88b2c87f3c42c7b3e28bf6dd" },
+    { "version": "202607030001", "file": "202607030001_fs510_registration_claim.sql", "sha256": "55c3c7264a7ba28d68198a4a80956417f2fbacc20be0cecd2c887263e9fbdd95" },
+    { "version": "202607180001", "file": "202607180001_cloud_data_foundation_v1.sql", "sha256": "d60a8a49eb99b4a9f6fb8b0423a001571f358d36ccf5180156132f1c683f1b79" },
+    { "version": "202607200001", "file": "202607200001_shadow_read_v1.sql", "sha256": "d07a09a6bcbdd1470f0c6bf9aaadd1b36e64205b65fd90af06e56f531787195d" },
+    { "version": "202607200002", "file": "202607200002_shadow_read_schema_usage.sql", "sha256": "ddb1ae610dd75756aa8c6da7a83e89c77487fbe1804c65437c470cc84b56c7fc" },
+    { "version": "202607200003", "file": "202607200003_reference_publication_alignment_v1.sql", "sha256": "95cbb2afe71a3d09336d9e0e59e38a033402cbcb27d5edb48fc6143a47cea97d" },
+    { "version": "202607200004", "file": "202607200004_product_import_v1.sql", "sha256": "9b677c558c0cdb0a4615f698a6679cdfa9dfc3266b3858e55eb27c7037c3af26" },
+    { "version": "202607200005", "file": "202607200005_catalog_admin_v1.sql", "sha256": "3f83109dcccd514657f5b83cfdb890684fd3751e960575282f42021370097291" },
+    { "version": "202607200006", "file": "202607200006_cloud_storefront_preview_v1.sql", "sha256": "f38387b6f1af280db00e63476cf4a1197951c40236312e6ba944e1769b77995d" },
+    { "version": "202607210001", "file": "202607210001_catalog_data_quality_v1.sql", "sha256": "6a45a733cf07976e8fe2b5122d3677601c19f83f80fe33235ce9710e533c272b" },
+    { "version": "202607210002", "file": "202607210002_catalog_data_quality_editor_alignment.sql", "sha256": "b2ac244a40232e66099f4d3d44558e2a4e38e57f07f8ee29fd4c6d19e24f7da1" },
+    { "version": "202607230001", "file": "202607230001_structured_product_detail_fields_v1.sql", "sha256": "878f187b3dae8055c3e3ee434cdbb45102746787802d839de1636ef71fa21a33" },
+    { "version": "202607230002", "file": "202607230002_structured_product_detail_projection_v1.sql", "sha256": "13de262ac7e18fff7df90b29e3a67f4281126344b5e40fab1e4c58e53d57a339" }
+  ]
+}

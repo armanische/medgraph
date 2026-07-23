@@ -1,0 +1,255 @@
+{
+  "schemaVersion": "product-detail-data-recovery-review-candidate-v1",
+  "candidateId": "product-detail-data-recovery-v1:hamilton-t1",
+  "status": "needs_manual_approval_and_schema_change",
+  "createdAt": "2026-07-23T08:19:57Z",
+  "target": {
+    "cloudProductSlug": "767632362-330695211247-apparat-ivl-hamilton-t1",
+    "sourceUid": "330695211247",
+    "immutableSnapshot": {
+      "gitCommit": "5ca5fe24c308fd636743eaf78874f4647749dc21",
+      "gitRef": "recovery/main-workspace-consolidation-v1",
+      "path": "data/legacy/products/330695211247.json",
+      "schemaVersion": "immutable-source-snapshot-v1",
+      "payloadSha256": "92d2302078a65870a3ef1de35e510e3e206f5093c826b8cd9d19a6f3331e9ebb",
+      "sourceUrl": "https://cyber-medica.ru/catalog/tproduct/767632362-330695211247-apparat-ivl-hamilton-t1",
+      "sourceUrlChecksum": "74be3658e6577b47ad99772622c1005b589a17f54084dc3ccf7d9c67721237aa"
+    }
+  },
+  "approvalRequirements": [
+    "A human reviewer must confirm every legacy-derived statement against an allowed source before it becomes public Cloud data.",
+    "A schema-approved, service-only mutation path must exist before any Cloud write.",
+    "The immutable snapshot, source UID, source checksum, publication status and review decisions are out of scope for this candidate."
+  ],
+  "proposedKeyFeatures": [
+    {
+      "id": "feature-asv",
+      "value": "Адаптивная поддерживающая вентиляция (ASV)",
+      "position": 10,
+      "provenanceId": "keyFeatures[0]",
+      "reviewStatus": "needs_manual_approval"
+    },
+    {
+      "id": "feature-patient-groups",
+      "value": "Взрослые, дети и младенцы",
+      "position": 20,
+      "provenanceId": "keyFeatures[1]",
+      "reviewStatus": "needs_manual_approval"
+    },
+    {
+      "id": "feature-turbine",
+      "value": "Встроенная турбина",
+      "position": 30,
+      "provenanceId": "keyFeatures[2]",
+      "reviewStatus": "needs_manual_approval"
+    },
+    {
+      "id": "feature-niv",
+      "value": "Неинвазивная вентиляция",
+      "position": 40,
+      "provenanceId": "keyFeatures[3]",
+      "reviewStatus": "needs_manual_approval"
+    },
+    {
+      "id": "feature-hfot",
+      "value": "Высокопоточная кислородная терапия",
+      "position": 50,
+      "provenanceId": "keyFeatures[4]",
+      "reviewStatus": "needs_manual_approval"
+    },
+    {
+      "id": "feature-battery-runtime",
+      "value": "Более 9 часов работы от аккумулятора",
+      "position": 60,
+      "provenanceId": "keyFeatures[5]",
+      "reviewStatus": "needs_manual_approval",
+      "reviewNote": "The operating conditions and configuration are not stated in the legacy source; publish only if a reviewer confirms the claim and any necessary qualification."
+    }
+  ],
+  "proposedTechnicalSpecifications": [
+    {
+      "key": "ventilation-adaptive",
+      "group": "Режимы вентиляции",
+      "displayName": "Адаптивный (интеллектуальный)",
+      "rawValue": "ASV",
+      "normalizedValue": "ASV",
+      "unit": null,
+      "sortOrder": 10,
+      "provenanceId": "specifications[0]",
+      "reviewStatus": "needs_manual_approval"
+    },
+    {
+      "key": "ventilation-pressure",
+      "group": "Режимы вентиляции",
+      "displayName": "По давлению",
+      "rawValue": "PCV+, PSIMV+ с функцией (+PSync), SPONT, APRV, DuoPAP",
+      "normalizedValue": "PCV+, PSIMV+ с функцией (+PSync), SPONT, APRV, DuoPAP",
+      "unit": null,
+      "sortOrder": 20,
+      "provenanceId": "specifications[1]",
+      "reviewStatus": "needs_manual_approval"
+    },
+    {
+      "key": "ventilation-volume",
+      "group": "Режимы вентиляции",
+      "displayName": "По объёму",
+      "rawValue": "(S)CMV+/APVcmv, SIMV+/APVsimv",
+      "normalizedValue": "(S)CMV+/APVcmv, SIMV+/APVsimv",
+      "unit": null,
+      "sortOrder": 30,
+      "provenanceId": "specifications[2]",
+      "reviewStatus": "needs_manual_approval"
+    },
+    {
+      "key": "ventilation-noninvasive",
+      "group": "Режимы вентиляции",
+      "displayName": "Неинвазивный",
+      "rawValue": "NIV/NIV-C/B; nCPAP/nCPAP-PC (опция)",
+      "normalizedValue": "NIV/NIV-C/B; nCPAP/nCPAP-PC (опция)",
+      "unit": null,
+      "sortOrder": 40,
+      "provenanceId": "specifications[3]",
+      "reviewStatus": "needs_manual_approval"
+    },
+    {
+      "key": "monitoring-advanced-parameters",
+      "group": "Мониторинг",
+      "displayName": "Продвинутые параметры",
+      "rawValue": "Параметры постоянной времени выдоха (RC), податливость дыхательных путей, auto-PEEP, сопротивление",
+      "normalizedValue": "Параметры постоянной времени выдоха (RC), податливость дыхательных путей, auto-PEEP, сопротивление",
+      "unit": null,
+      "sortOrder": 50,
+      "provenanceId": "specifications[4]",
+      "reviewStatus": "needs_manual_approval"
+    },
+    {
+      "key": "monitoring-visualization",
+      "group": "Мониторинг",
+      "displayName": "Визуализация",
+      "rawValue": "Кривые, петли/тренды (опционально)",
+      "normalizedValue": "Кривые, петли/тренды (опционально)",
+      "unit": null,
+      "sortOrder": 60,
+      "provenanceId": "specifications[5]",
+      "reviewStatus": "needs_manual_approval"
+    },
+    {
+      "key": "display-touchscreen-diagonal",
+      "group": "Интерфейс",
+      "displayName": "Сенсорный дисплей",
+      "rawValue": "8,4 дюйма по диагонали",
+      "normalizedValue": "8,4",
+      "unit": "дюйма",
+      "sortOrder": 70,
+      "provenanceId": "specifications[6]",
+      "reviewStatus": "needs_manual_approval"
+    },
+    {
+      "key": "patient-height-range",
+      "group": "Диапазоны",
+      "displayName": "Рост пациента",
+      "rawValue": "30-250 см",
+      "normalizedValue": "30-250",
+      "unit": "см",
+      "sortOrder": 80,
+      "provenanceId": "specifications[7]",
+      "reviewStatus": "needs_manual_approval"
+    },
+    {
+      "key": "flow-trigger-range",
+      "group": "Диапазоны",
+      "displayName": "F-триггер",
+      "rawValue": "1 – 20 л/мин. для взрослых/детей, 0,1 – 5,0 л/мин. для младенцев",
+      "normalizedValue": "1–20 для взрослых/детей; 0,1–5,0 для младенцев",
+      "unit": "л/мин",
+      "sortOrder": 90,
+      "provenanceId": "specifications[8]",
+      "reviewStatus": "needs_manual_approval"
+    },
+    {
+      "key": "tidal-volume-range",
+      "group": "Диапазоны",
+      "displayName": "Дыхательный объём",
+      "rawValue": "20 – 2000 мл. для взрослых/детей, 2 - 300 мл. для младенцев (опция)",
+      "normalizedValue": "20–2000 для взрослых/детей; 2–300 для младенцев (опция)",
+      "unit": "мл",
+      "sortOrder": 100,
+      "provenanceId": "specifications[9]",
+      "reviewStatus": "needs_manual_approval"
+    },
+    {
+      "key": "inspiratory-expiratory-ratio",
+      "group": "Диапазоны",
+      "displayName": "I:E",
+      "rawValue": "1:9 – 4:1",
+      "normalizedValue": "1:9–4:1",
+      "unit": null,
+      "sortOrder": 110,
+      "provenanceId": "specifications[10]",
+      "reviewStatus": "needs_manual_approval"
+    },
+    {
+      "key": "peep-range",
+      "group": "Диапазоны",
+      "displayName": "ПДКВ",
+      "rawValue": "0 – 35 см H2O",
+      "normalizedValue": "0–35",
+      "unit": "см H2O",
+      "sortOrder": 120,
+      "provenanceId": "specifications[11]",
+      "reviewStatus": "needs_manual_approval"
+    },
+    {
+      "key": "respiratory-rate-range",
+      "group": "Диапазоны",
+      "displayName": "Частота",
+      "rawValue": "1-80 д/мин.",
+      "normalizedValue": "1–80",
+      "unit": "д/мин",
+      "sortOrder": 130,
+      "provenanceId": "specifications[12]",
+      "reviewStatus": "needs_manual_approval"
+    },
+    {
+      "key": "dimensions",
+      "group": "Габариты и масса",
+      "displayName": "Размеры",
+      "rawValue": "31 х 24,5 х 21 см (с тележкой 63 х 138,5 х 63 см)",
+      "normalizedValue": "31 × 24,5 × 21 (с тележкой 63 × 138,5 × 63)",
+      "unit": "см",
+      "sortOrder": 140,
+      "provenanceId": "specifications[13]",
+      "reviewStatus": "needs_manual_approval"
+    },
+    {
+      "key": "weight",
+      "group": "Габариты и масса",
+      "displayName": "Масса",
+      "rawValue": "6,5 кг (с тележкой 18,3 кг)",
+      "normalizedValue": "6,5 (с тележкой 18,3)",
+      "unit": "кг",
+      "sortOrder": 150,
+      "provenanceId": "specifications[14]",
+      "reviewStatus": "needs_manual_approval"
+    }
+  ],
+  "documents": {
+    "proposed": [],
+    "reviewStatus": "not_proposed",
+    "reason": "The immutable snapshot has no document references. No verified, distributable document is available in the repository."
+  },
+  "registrations": {
+    "proposed": [],
+    "reviewStatus": "not_proposed",
+    "reason": "The immutable snapshot has no registration references and no registry-backed record is available in the repository."
+  },
+  "cloudWriteEligibility": {
+    "eligibleNow": false,
+    "blockers": [
+      "All proposed claims have legacy evidence only and require explicit human approval.",
+      "Cloud Foundation has no structured key-features store.",
+      "Cloud Foundation has no persisted characteristic group field.",
+      "No existing service-only mutation RPC accepts reviewed product-detail fields for a single product."
+    ]
+  }
+}

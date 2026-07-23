@@ -255,13 +255,20 @@ begin
   end if;
 
   select * into candidate from cloud.publication_candidates where id = p_candidate_id for update;
-  if not found
-     or candidate.schema_version <> p_schema_version
-     or candidate.validation_status <> 'approved'
-     or candidate.approved_by is null
-     or candidate.approved_at is null
-     or candidate.target_product_id is null then
-    raise exception 'publication candidate is not approved for Structured Product Detail publication' using errcode = '22023';
+  if candidate.id is null then
+    raise exception 'publication candidate does not exist' using errcode = '22023';
+  end if;
+  if candidate.schema_version <> p_schema_version then
+    raise exception 'publication candidate schema version does not match' using errcode = '22023';
+  end if;
+  if candidate.validation_status not in ('approved', 'published') then
+    raise exception 'publication candidate validation status is not publishable' using errcode = '22023';
+  end if;
+  if candidate.approved_by is null or candidate.approved_at is null then
+    raise exception 'publication candidate has no approval identity' using errcode = '22023';
+  end if;
+  if candidate.target_product_id is null then
+    raise exception 'publication candidate has no target product' using errcode = '22023';
   end if;
 
   perform cloud.validate_structured_product_detail_candidate_v1(candidate.candidate_data);
@@ -303,6 +310,9 @@ begin
       'specificationCount', coalesce((existing_batch.result_summary ->> 'specificationCount')::integer, 0),
       'idempotent', true
     );
+  end if;
+  if candidate.validation_status <> 'approved' then
+    raise exception 'published candidate cannot create a new publication batch' using errcode = '22023';
   end if;
 
   select id into review_item_id_value

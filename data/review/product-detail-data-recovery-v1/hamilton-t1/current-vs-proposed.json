@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "product-detail-data-recovery-diff-v1",
+  "candidateId": "product-detail-data-recovery-v1:hamilton-t1",
+  "readOnlyObservation": {
+    "method": "cloud_api.cloud_storefront_preview_catalog via the existing service-only storefront request path",
+    "observedAt": "2026-07-23T08:19:57Z",
+    "cloudProductSlug": "767632362-330695211247-apparat-ivl-hamilton-t1"
+  },
+  "currentCloudProjection": {
+    "keyFeatures": [],
+    "technicalSpecificationsAfterPresentationFilter": [],
+    "characteristics": [
+      { "name": "Категория", "value": "Реанимация", "unit": null },
+      { "name": "Тип товара", "value": "Аппарат искусственной вентиляции лёгких", "unit": null },
+      { "name": "Страна производства", "value": "Швейцария", "unit": null }
+    ],
+    "documents": [],
+    "registrations": [],
+    "media": { "count": 3, "roles": ["primary", "gallery", "gallery"] }
+  },
+  "proposedReviewedState": {
+    "keyFeatures": {
+      "operation": "create 6 reviewed feature records",
+      "status": "blocked_by_schema_and_review",
+      "candidateFile": "review-candidate.json#/proposedKeyFeatures"
+    },
+    "technicalSpecifications": {
+      "operation": "append 15 reviewed characteristic records; retain the existing three metadata rows as non-technical",
+      "status": "blocked_by_review; grouping additionally blocked by schema",
+      "candidateFile": "review-candidate.json#/proposedTechnicalSpecifications"
+    },
+    "documents": {
+      "operation": "none",
+      "reason": "No verified document source exists."
+    },
+    "registrations": {
+      "operation": "none",
+      "reason": "No verified registration source exists."
+    }
+  },
+  "noChange": [
+    "products.source_uid",
+    "products.source_checksum",
+    "products.import_batch_key",
+    "products.publication_status",
+    "products.published",
+    "products.published_at",
+    "immutable snapshot payload",
+    "media references"
+  ]
+}

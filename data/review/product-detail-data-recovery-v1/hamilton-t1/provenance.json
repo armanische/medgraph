@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "product-detail-data-recovery-provenance-v1",
+  "candidateId": "product-detail-data-recovery-v1:hamilton-t1",
+  "source": {
+    "type": "reviewed_legacy_candidate",
+    "gitCommit": "5ca5fe24c308fd636743eaf78874f4647749dc21",
+    "gitRef": "recovery/main-workspace-consolidation-v1",
+    "path": "data/legacy/products/330695211247.json",
+    "payloadSha256": "92d2302078a65870a3ef1de35e510e3e206f5093c826b8cd9d19a6f3331e9ebb",
+    "sourceUrl": "https://cyber-medica.ru/catalog/tproduct/767632362-330695211247-apparat-ivl-hamilton-t1",
+    "sourceLocation": "raw.fullDescription",
+    "evidenceRepresentation": "Visible-text excerpts after markup and whitespace normalization; the immutable raw HTML remains unchanged at the source path.",
+    "confidence": "legacy",
+    "reviewStatus": "needs_manual_approval",
+    "rule": "The legacy HTML is evidence for manual review only; it is not a runtime source and is not independently confirmed."
+  },
+  "keyFeatures": [
+    {
+      "id": "keyFeatures[0]",
+      "rawEvidence": "Адаптивная поддерживающая вентиляция (ASV): Автоматически подстраивается под дыхательные усилия пациента, обеспечивая оптимальную поддержку.",
+      "candidateValue": "Адаптивная поддерживающая вентиляция (ASV)"
+    },
+    {
+      "id": "keyFeatures[1]",
+      "rawEvidence": "Взрослые, дети и младенцы: Подходит для пациентов всех возрастных групп.",
+      "candidateValue": "Взрослые, дети и младенцы"
+    },
+    {
+      "id": "keyFeatures[2]",
+      "rawEvidence": "Встроенная турбина: Обеспечивает мобильность и автономность работы.",
+      "candidateValue": "Встроенная турбина"
+    },
+    {
+      "id": "keyFeatures[3]",
+      "rawEvidence": "Неинвазивная вентиляция: С помощью маски или носового интерфейса.",
+      "candidateValue": "Неинвазивная вентиляция"
+    },
+    {
+      "id": "keyFeatures[4]",
+      "rawEvidence": "Высокопоточная кислородная терапия: Для лечения некоторых респираторных заболеваний.",
+      "candidateValue": "Высокопоточная кислородная терапия"
+    },
+    {
+      "id": "keyFeatures[5]",
+      "rawEvidence": "Более 9 часов работы от аккумулятора: Бесперебойная работа при транспортировке.",
+      "candidateValue": "Более 9 часов работы от аккумулятора",
+      "reviewNote": "The source does not identify the battery configuration, mode, patient type or operating conditions."
+    }
+  ],
+  "technicalSpecifications": [
+    {
+      "id": "specifications[0]",
+      "rawEvidence": "Адаптивный (интеллектуальный): ASV"
+    },
+    {
+      "id": "specifications[1]",
+      "rawEvidence": "По давлению: PCV+, PSIMV+ с функцией (+PSync), SPONT, APRV, DuoPAP"
+    },
+    {
+      "id": "specifications[2]",
+      "rawEvidence": "По объему: (S)CMV+/APVcmv, SIMV+/APVsimv"
+    },
+    {
+      "id": "specifications[3]",
+      "rawEvidence": "Неинвазивный: NIV/NIV-C/B; nCPAP/nCPAP-PC (опция)"
+    },
+    {
+      "id": "specifications[4]",
+      "rawEvidence": "Продвинутые параметры: Параметры постоянной времени выдоха (RC), податливость дыхательных путей, auto-PEEP, сопротивление."
+    },
+    {
+      "id": "specifications[5]",
+      "rawEvidence": "Визуализация: Кривые, петли/тренды (опционально)."
+    },
+    {
+      "id": "specifications[6]",
+      "rawEvidence": "Сенсорный дисплей: 8,4 дюйма по диагонали."
+    },
+    {
+      "id": "specifications[7]",
+      "rawEvidence": "Выбор роста: 30-250 см."
+    },
+    {
+      "id": "specifications[8]",
+      "rawEvidence": "F-триггер: 1 – 20 л/мин. для взрослых/детей, 0,1 – 5,0 л/мин. для младенцев."
+    },
+    {
+      "id": "specifications[9]",
+      "rawEvidence": "20 – 2000 мл. для взрослых/детей, 2 - 300 мл. для младенцев (опция)."
+    },
+    {
+      "id": "specifications[10]",
+      "rawEvidence": "I:E: 1:9 – 4:1."
+    },
+    {
+      "id": "specifications[11]",
+      "rawEvidence": "ПДКВ: 0 – 35 см H2O."
+    },
+    {
+      "id": "specifications[12]",
+      "rawEvidence": "Частота: 1-80 д/мин."
+    },
+    {
+      "id": "specifications[13]",
+      "rawEvidence": "Компактные размеры: 31 х 24,5 х 21 см (с тележкой 63 х 138,5 х 63 см)."
+    },
+    {
+      "id": "specifications[14]",
+      "rawEvidence": "Легкий вес: 6,5 кг (с тележкой 18,3 кг)."
+    }
+  ],
+  "negativeEvidence": {
+    "documents": "raw.documentReferences is an empty array.",
+    "registrations": "raw.registrationReferences is an empty array.",
+    "structuredKeyFeatures": "The immutable snapshot has no dedicated key-features field.",
+    "structuredTechnicalCharacteristics": "raw.characteristics contains only Category, Product type and Country of manufacture."
+  }
+}

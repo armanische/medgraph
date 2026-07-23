@@ -24,6 +24,7 @@
     "wave2:execute": "node scripts/importers/catalog/wave2-execution.ts",
     "audit:artifact-storage": "node scripts/importers/catalog/artifact-storage/index.ts audit",
     "qa:preview-smoke": "node scripts/qa/preview-smoke.ts",
+    "qa:structured-fields:local": "node scripts/qa/structured-fields-local-integration.ts",
     "supabase:health": "node scripts/qa/supabase-health.ts",
     "audit:evidence-integrity": "node scripts/importers/catalog/evidence-integrity.ts audit",
     "repair:evidence-references": "node scripts/importers/catalog/evidence-integrity.ts repair",
