@@ -66,19 +66,20 @@ test("product hero is compact and does not repeat quality or missing metadata", 
   assert.equal((page.match(/\{presentation\.statusLabel\}/gu) ?? []).length, 1);
   assert.doesNotMatch(page, /label="Статус"/u);
   assert.doesNotMatch(page, /PRODUCT_PRESENTATION_FALLBACKS\.registration/u);
-  assert.match(page, /presentation\.manufacturer/u);
-  assert.match(page, /presentation\.country/u);
-  assert.match(page, /presentation\.category/u);
-  assert.match(page, /presentation\.model/u);
-  assert.match(page, /line-clamp-4/u);
+  assert.match(page, /buildProductDetailExperience/u);
+  assert.match(page, /experience\.badges/u);
+  assert.match(page, /<dt className="sr-only">\{label\}<\/dt>/u);
+  assert.doesNotMatch(page, /presentation\.model/u);
+  assert.doesNotMatch(page, /line-clamp-4/u);
 });
 
 test("local section navigation and optional content remain fail-closed", async () => {
-  const page = await source("app/catalog/[slug]/page.tsx");
+  const [page, experience] = await Promise.all([
+    source("app/catalog/[slug]/page.tsx"),
+    source("lib/storefront/product-detail-experience.ts"),
+  ]);
   assert.match(page, /sectionLinks\.length > 1/u);
   for (const section of [
-    "description",
-    "advantages",
     "package",
     "documents",
     "compatibility",
@@ -86,11 +87,13 @@ test("local section navigation and optional content remain fail-closed", async (
   ]) {
     assert.match(page, new RegExp(`presentation\\.sections\\.${section}`, "u"));
   }
+  assert.match(page, /experience\.description/u);
+  assert.match(page, /experience\.advantages/u);
   assert.match(page, /technicalSpecifications\.length > 0/u);
-  assert.match(page, /product\.specifications/u);
-  assert.match(page, /isTechnicalSpecification/u);
-  assert.match(page, /PRODUCT_METADATA_SPECIFICATION_LABELS/u);
-  assert.match(page, /"тип товара"/u);
+  assert.match(experience, /product\.specifications/u);
+  assert.match(experience, /isTechnicalProductSpecification/u);
+  assert.match(experience, /TECHNICAL_METADATA_LABELS/u);
+  assert.match(experience, /"тип товара"/u);
   assert.match(page, /technicalSpecifications\.length > 0/u);
   assert.doesNotMatch(page, /Информация отсутствует/u);
 });

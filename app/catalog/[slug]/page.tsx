@@ -5,8 +5,10 @@ import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 
 import JsonLd from "@/components/seo/JsonLd";
+import ProductManufacturer from "@/components/catalog/ProductManufacturer";
 import SafeProductDescription from "@/components/catalog/SafeProductDescription";
 import { catalogRepository, productService, storefrontDataSource } from "@/lib/storefront";
+import { buildProductDetailExperience } from "@/lib/storefront/product-detail-experience";
 import {
   getProductPresentation,
   PRODUCT_PRESENTATION_FALLBACKS,
@@ -67,7 +69,8 @@ export default async function StorefrontProductPage({
     country: manufacturer?.country,
     manufacturerName: manufacturer?.name,
   });
-  const technicalSpecifications = product.specifications.filter(isTechnicalSpecification);
+  const experience = buildProductDetailExperience({ product, manufacturer, category });
+  const technicalSpecifications = experience.technicalSpecifications;
   const keySpecifications = technicalSpecifications.slice(0, 4);
   const specificationGroups = groupSpecifications(technicalSpecifications);
   const registrationDocuments = product.documents.filter(
@@ -99,12 +102,13 @@ export default async function StorefrontProductPage({
       ? { href: registrationRecord.sourceUrl, value: registrationRecord.number }
       : null;
   const sectionLinks = [
-    presentation.sections.description && ["description", "Описание"],
-    presentation.sections.advantages && ["advantages", "Преимущества"],
+    experience.description && ["description", "Описание"],
+    experience.advantages.length > 0 && ["advantages", "Преимущества"],
     technicalSpecifications.length > 0 && ["specifications", "Характеристики"],
     hasRegulatoryInformation && ["regulatory", "Регистрационная информация"],
     presentation.sections.package && ["package", "Комплектация"],
     hasDownloads && ["documents", "Документы и загрузки"],
+    ["manufacturer", "Производитель"],
     (presentation.sections.compatibility || presentation.sections.relatedProducts) && [
       "related-products",
       "Связанные товары",
@@ -158,46 +162,47 @@ export default async function StorefrontProductPage({
               <ProductGallery product={product} />
             </div>
 
-            <div className="flex flex-col p-4 sm:p-5 lg:p-6">
+            <div className="flex min-w-0 flex-col p-4 sm:p-5 lg:p-6">
               {presentation.state === "information_incomplete" && (
                 <div className="mb-3 w-fit rounded-full border border-cm-coral/25 bg-cm-coral/8 px-3 py-1.5 text-[11px] font-semibold text-cm-ink">
                   {presentation.statusLabel}
                 </div>
               )}
-              <h1 className="max-w-4xl text-[1.65rem] font-extrabold leading-[1.12] tracking-[-0.03em] sm:text-[2rem] lg:text-[2.25rem]">
+              <h1 className="max-w-4xl break-words text-[1.65rem] font-extrabold leading-[1.12] tracking-[-0.03em] sm:text-[2rem] lg:text-[2.25rem]">
                 {product.name}
               </h1>
-              {presentation.shortDescription && (
-                <p className="mt-3 line-clamp-4 max-w-3xl text-[13px] leading-6 text-cm-slate">
-                  {presentation.shortDescription}
+              {experience.summary && (
+                <p className="mt-3 max-w-3xl text-sm leading-6 text-cm-slate">
+                  {experience.summary}
                 </p>
               )}
 
-              <dl className="mt-4 grid gap-x-6 gap-y-3 border-y border-[var(--cm-rule)] py-3.5 text-xs sm:grid-cols-2">
-                {manufacturer && presentation.manufacturer ? (
-                  <ProductDetailLink
-                    label="Производитель"
-                    value={presentation.manufacturer}
-                    href={`/manufacturers/${manufacturer.slug}`}
-                  />
-                ) : null}
-                {presentation.model && (
-                  <ProductDetail label="Модель / артикул" value={presentation.model} />
-                )}
-                {presentation.country && (
-                  <ProductDetail label="Страна производства" value={presentation.country} />
-                )}
-                {presentation.category && (
-                  <ProductDetail label="Категория" value={presentation.category} />
-                )}
-                {registration && (
+              {experience.badges.length > 0 ? (
+                <dl
+                  className="mt-4 flex flex-wrap gap-2"
+                  aria-label="Ключевая информация о товаре"
+                  data-testid="product-metadata"
+                >
+                  {experience.badges.map((badge) => (
+                    <ProductMetadataBadge
+                      key={`${badge.label}:${badge.value}`}
+                      label={badge.label}
+                      value={badge.value}
+                      href={badge.href}
+                    />
+                  ))}
+                </dl>
+              ) : null}
+
+              {registration && (
+                <dl className="mt-4 border-y border-[var(--cm-rule)] py-3.5 text-xs">
                   <ProductDetailLinkOrText
                     label="Регистрационное удостоверение"
                     value={registration.value}
                     href={registration.href}
                   />
-                )}
-              </dl>
+                </dl>
+              )}
 
               {keySpecifications.length > 0 && (
                 <div id="key-specifications" className="mt-4">
@@ -259,34 +264,29 @@ export default async function StorefrontProductPage({
       </section>
 
       <div className="cm-container py-2 sm:py-3">
-        {presentation.sections.description && (
+        {experience.description && (
           <Section id="description" title="Описание">
-            {presentation.description && <SafeProductDescription html={presentation.description} />}
-            {product.applicationAreas.length > 0 && (
-              <div className="mt-6 max-w-[56rem] border-t border-[var(--cm-rule)] pt-4">
-                <h3 className="cm-label">Области применения</h3>
-                <ul className="mt-3 flex flex-wrap gap-2 text-xs text-cm-slate">
-                  {product.applicationAreas.map((area) => (
-                    <li
-                      key={area}
-                      className="rounded-full border border-[var(--cm-rule)] bg-cm-surface-low/55 px-3 py-1.5"
-                    >
-                      {area}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
+            <div className="max-w-[62rem] rounded-xl border border-[var(--cm-rule)] bg-cm-surface-low/25 p-4 sm:p-5">
+              <SafeProductDescription html={experience.description} />
+            </div>
           </Section>
         )}
 
-        {presentation.sections.advantages && (
+        {experience.advantages.length > 0 && (
           <Section id="advantages" title="Преимущества">
-            <ul className="grid max-w-[64rem] gap-x-8 gap-y-3 text-sm leading-6 text-cm-slate sm:grid-cols-2">
-              {product.keyFeatures.map((feature) => (
-                <li key={feature} className="flex gap-2.5">
-                  <span className="mt-2 size-1.5 shrink-0 rounded-full bg-cm-teal" aria-hidden="true" />
-                  <span>{feature}</span>
+            <ul className="grid max-w-[68rem] gap-3 text-sm sm:grid-cols-2 lg:grid-cols-3">
+              {experience.advantages.map((feature) => (
+                <li
+                  key={feature}
+                  className="flex min-h-[4.25rem] items-center gap-3 rounded-xl border border-[var(--cm-rule)] bg-[linear-gradient(135deg,#ffffff_0%,#f4fafb_100%)] p-3.5 shadow-[0_5px_18px_rgba(11,19,32,0.025)]"
+                >
+                  <span
+                    className="grid size-7 shrink-0 place-items-center rounded-full border border-cm-teal/15 bg-cm-teal-soft text-xs font-extrabold leading-none text-cm-teal"
+                    aria-hidden="true"
+                  >
+                    ✓
+                  </span>
+                  <span className="font-semibold leading-5 text-cm-ink">{feature}</span>
                 </li>
               ))}
             </ul>
@@ -374,6 +374,10 @@ export default async function StorefrontProductPage({
               </div>
           </Section>
         )}
+
+        <Section id="manufacturer" title="Производитель">
+          <ProductManufacturer manufacturer={experience.manufacturer} />
+        </Section>
 
         {(presentation.sections.compatibility || presentation.sections.relatedProducts) && (
         <Section id="related-products" title="Связанные товары">
@@ -563,24 +567,6 @@ function groupSpecifications(specifications: readonly ProductSpecification[]) {
   return [...groups.entries()];
 }
 
-const PRODUCT_METADATA_SPECIFICATION_LABELS = new Set([
-  "артикул",
-  "категория",
-  "модель",
-  "производитель",
-  "регистрационное удостоверение",
-  "страна производства",
-  "тип товара",
-]);
-
-function isTechnicalSpecification(specification: ProductSpecification) {
-  const normalizedLabel = specification.label
-    .trim()
-    .toLocaleLowerCase("ru-RU")
-    .replace(/\s+/gu, " ");
-  return !PRODUCT_METADATA_SPECIFICATION_LABELS.has(normalizedLabel);
-}
-
 function documentKindLabel(kind: ProductDocumentKind) {
   return kind.replaceAll("_", " ");
 }
@@ -590,6 +576,31 @@ function ProductDetail({ label, value }: { label: string; value: string }) {
     <div>
       <dt className="cm-label">{label}</dt>
       <dd className="mt-1 font-semibold">{value}</dd>
+    </div>
+  );
+}
+
+function ProductMetadataBadge({
+  label,
+  value,
+  href,
+}: {
+  label: string;
+  value: string;
+  href?: string;
+}) {
+  return (
+    <div className="min-w-0 max-w-full rounded-lg border border-[var(--cm-rule)] bg-white px-3 py-2 shadow-[0_3px_10px_rgba(11,19,32,0.04)]">
+      <dt className="sr-only">{label}</dt>
+      <dd className="break-words text-xs font-semibold text-cm-ink">
+        {href ? (
+          <Link href={href} className="text-cm-teal hover:underline">
+            {value}
+          </Link>
+        ) : (
+          value
+        )}
+      </dd>
     </div>
   );
 }
@@ -654,7 +665,7 @@ function Section({
   return (
     <section
       id={id}
-      className="scroll-mt-24 border-b border-[var(--cm-rule)] py-6 sm:py-8"
+      className="my-4 scroll-mt-24 rounded-2xl border border-[var(--cm-rule)] bg-white p-5 shadow-[0_10px_32px_rgba(11,19,32,0.035)] sm:my-5 sm:p-7"
     >
       <h2 className="text-lg font-bold tracking-[-0.02em] sm:text-xl">{title}</h2>
       <div className="mt-4 sm:mt-5">{children}</div>

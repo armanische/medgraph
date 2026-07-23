@@ -41,9 +41,14 @@ test("missing Storefront Product invokes notFound", async () => {
 });
 
 test("specifications are grouped from ProductSpecification", async () => {
-  const source = await pageSource();
+  const [source, experience] = await Promise.all([
+    pageSource(),
+    readFile(resolve(root, "lib/storefront/product-detail-experience.ts"), "utf8"),
+  ]);
 
-  assert.match(source, /product\.specifications\.filter\(isTechnicalSpecification\)/);
+  assert.match(source, /experience\.technicalSpecifications/);
+  assert.match(experience, /product\.specifications/);
+  assert.match(experience, /filter\(isTechnicalProductSpecification\)/);
   assert.match(source, /const keySpecifications = technicalSpecifications\.slice\(0, 4\)/);
   assert.match(source, /Ключевые характеристики/);
   assert.match(source, /groupSpecifications\(technicalSpecifications\)/);
@@ -165,8 +170,10 @@ test("product hero uses a media-first 40/60 layout with catalog details", async 
   );
   assert.match(source, /<ProductGallery product=\{product\}/);
   assert.match(source, /label="Регистрационное удостоверение"/);
-  assert.match(source, /label="Страна производства"/);
-  assert.match(source, /label="Модель \/ артикул"/);
+  assert.match(source, /data-testid="product-metadata"/);
+  assert.match(source, /<dt className="sr-only">\{label\}<\/dt>/);
+  assert.doesNotMatch(source, /label="Страна производства"/);
+  assert.doesNotMatch(source, /label="Модель \/ артикул"/);
   assert.doesNotMatch(source, /label="Статус"/);
   assert.match(source, /presentation\.statusLabel/);
 });
@@ -193,6 +200,7 @@ test("product detail has one hierarchy and ordered content sections", async () =
     'title="Регистрационная информация"',
     'title="Комплектация"',
     'title="Документы и загрузки"',
+    'title="Производитель"',
     'title="Связанные товары"',
   ];
 
@@ -217,6 +225,7 @@ test("product hero offers accessible quick links without a client runtime", asyn
     "#advantages",
     "#specifications",
     "#documents",
+    "#manufacturer",
   ]) {
     assert.match(source, new RegExp(`\\["${anchor.slice(1)}"`, "u"));
   }

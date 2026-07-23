@@ -1,0 +1,170 @@
+import { formatCountryForPublic } from "./country-presentation.ts";
+import { publicOptionalText } from "./product-presentation.ts";
+import type {
+  Category,
+  Manufacturer,
+  Product,
+  ProductSpecification,
+} from "./types.ts";
+
+export interface ProductDetailBadge {
+  label: string;
+  value: string;
+  href?: string;
+}
+
+export interface ProductDetailExperience {
+  summary: string | null;
+  description: string | null;
+  advantages: readonly string[];
+  technicalSpecifications: readonly ProductSpecification[];
+  manufacturer: Manufacturer | null;
+  category: Category | null;
+  badges: readonly ProductDetailBadge[];
+}
+
+const TECHNICAL_METADATA_LABELS = new Set([
+  "артикул",
+  "категория",
+  "модель",
+  "производитель",
+  "регистрационное удостоверение",
+  "страна производства",
+  "тип товара",
+]);
+
+const NON_PUBLIC_REFERENCE_VALUES = new Set([
+  "данные уточняются",
+  "категория уточняется",
+  "не указано",
+  "не указана",
+  "не указан",
+  "неизвестно",
+  "производитель не указан",
+]);
+
+function plainText(value: string) {
+  return value
+    .replace(/<[^>]*>/gu, " ")
+    .replace(/&nbsp;|&#160;/giu, " ")
+    .replace(/&amp;/giu, "&")
+    .replace(/&quot;/giu, '"')
+    .replace(/&#39;|&apos;/giu, "'")
+    .replace(/\s+/gu, " ")
+    .trim();
+}
+
+function publicReferenceText(value: string | null | undefined) {
+  const publicValue = publicOptionalText(value);
+  if (!publicValue) return null;
+  const normalized = plainText(publicValue).toLocaleLowerCase("ru-RU");
+  return NON_PUBLIC_REFERENCE_VALUES.has(normalized)
+    ? null
+    : plainText(publicValue);
+}
+
+function truncateAtWord(value: string, maximumLength: number) {
+  if (value.length <= maximumLength) return value;
+  const candidate = value.slice(0, maximumLength + 1);
+  const boundary = candidate.lastIndexOf(" ");
+  return `${candidate.slice(0, boundary >= maximumLength * 0.75 ? boundary : maximumLength).trim()}…`;
+}
+
+function sourceSummary(product: Product) {
+  const source = publicOptionalText(product.shortDescription)
+    ?? publicOptionalText(product.description);
+  if (!source) return null;
+
+  const normalized = plainText(source);
+  if (!normalized) return null;
+
+  const sentences = normalized.match(/[^.!?]+[.!?]+|[^.!?]+$/gu) ?? [normalized];
+  const summary = sentences
+    .slice(0, 4)
+    .map((sentence) => sentence.trim())
+    .filter(Boolean)
+    .join(" ");
+
+  return truncateAtWord(summary, 640);
+}
+
+function explicitAdvantages(product: Product) {
+  const values = product.keyFeatures
+    .map((feature) => plainText(feature).replace(/[.;]+$/gu, ""))
+    .filter((feature) => feature.length >= 6 && feature.length <= 160);
+  return [...new Set(values)].slice(0, 6);
+}
+
+function normalizeComparable(value: string) {
+  return value
+    .toLocaleLowerCase("ru-RU")
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .trim();
+}
+
+function uniqueModel(product: Product) {
+  const model = publicReferenceText(product.model);
+  if (!model) return null;
+  const normalizedModel = normalizeComparable(model);
+  const normalizedName = normalizeComparable(product.name);
+  if (!normalizedModel || normalizedName.includes(normalizedModel)) return null;
+  return model;
+}
+
+function normalizeLabel(label: string) {
+  return label.trim().toLocaleLowerCase("ru-RU").replace(/\s+/gu, " ");
+}
+
+export function isTechnicalProductSpecification(
+  specification: ProductSpecification,
+) {
+  return !TECHNICAL_METADATA_LABELS.has(normalizeLabel(specification.label));
+}
+
+export function buildProductDetailExperience({
+  product,
+  manufacturer,
+  category,
+}: {
+  product: Product;
+  manufacturer?: Manufacturer;
+  category?: Category;
+}): ProductDetailExperience {
+  const publicManufacturerName = publicReferenceText(manufacturer?.name);
+  const publicCountry = formatCountryForPublic(manufacturer?.country);
+  const publicCategoryName = publicReferenceText(category?.name);
+  const applicationAreas = product.applicationAreas
+    .map(publicReferenceText)
+    .filter((area): area is string => area !== null);
+  const model = uniqueModel(product);
+  const badges: ProductDetailBadge[] = [];
+
+  if (manufacturer && publicManufacturerName) {
+    badges.push({
+      label: "Производитель",
+      value: publicManufacturerName,
+      href: `/manufacturers/${manufacturer.slug}`,
+    });
+  }
+  if (publicCountry) badges.push({ label: "Страна", value: publicCountry });
+  if (applicationAreas.length > 0) {
+    badges.push({ label: "Применение", value: applicationAreas.join(" · ") });
+  }
+  if (publicCategoryName) {
+    badges.push({ label: "Категория", value: publicCategoryName });
+  }
+  if (model) badges.push({ label: "Модель", value: model });
+
+  return {
+    summary: sourceSummary(product),
+    description: publicOptionalText(product.description)
+      ?? publicOptionalText(product.shortDescription),
+    advantages: explicitAdvantages(product),
+    technicalSpecifications: product.specifications
+      .filter(isTechnicalProductSpecification)
+      .sort((left, right) => left.position - right.position),
+    manufacturer: manufacturer ?? null,
+    category: category ?? null,
+    badges,
+  };
+}
