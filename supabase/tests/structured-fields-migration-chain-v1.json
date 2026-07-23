@@ -15,6 +15,7 @@
     { "version": "202607210001", "file": "202607210001_catalog_data_quality_v1.sql", "sha256": "6a45a733cf07976e8fe2b5122d3677601c19f83f80fe33235ce9710e533c272b" },
     { "version": "202607210002", "file": "202607210002_catalog_data_quality_editor_alignment.sql", "sha256": "b2ac244a40232e66099f4d3d44558e2a4e38e57f07f8ee29fd4c6d19e24f7da1" },
     { "version": "202607230001", "file": "202607230001_structured_product_detail_fields_v1.sql", "sha256": "878f187b3dae8055c3e3ee434cdbb45102746787802d839de1636ef71fa21a33" },
-    { "version": "202607230002", "file": "202607230002_structured_product_detail_projection_v1.sql", "sha256": "13de262ac7e18fff7df90b29e3a67f4281126344b5e40fab1e4c58e53d57a339" }
+    { "version": "202607230002", "file": "202607230002_structured_product_detail_projection_v1.sql", "sha256": "13de262ac7e18fff7df90b29e3a67f4281126344b5e40fab1e4c58e53d57a339" },
+    { "version": "202607230003", "file": "202607230003_structured_product_detail_integrity_v1.sql", "sha256": "17198cbe4f973b1b01f12ee27a2c08add601590228298f0ae8b8db7dc526a778" }
   ]
 }

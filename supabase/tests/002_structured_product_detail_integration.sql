@@ -118,9 +118,41 @@ insert into cloud.publication_candidates (
   '2026-07-23T00:02:00Z'
 );
 
+select set_config('request.jwt.claim.role', 'service_role', true);
+
+create temporary table structured_revision_result (result jsonb not null);
+insert into structured_revision_result (result)
+select cloud_api.create_structured_product_detail_revision_v1(
+  '10000000-0000-4000-8000-000000000008',
+  '10000000-0000-4000-8000-000000000009'
+);
+
+update cloud.publication_candidates
+set validation_status = 'approved',
+    approved_by = '10000000-0000-4000-8000-000000000009',
+    approved_at = clock_timestamp(),
+    updated_at = clock_timestamp()
+where id = '10000000-0000-4000-8000-000000000008';
+
+insert into cloud.product_detail_candidate_revision_approvals (
+  id, candidate_revision_id, review_item_id, payload_checksum,
+  product_identity_checksum, decision, reviewer_id, approved_at
+)
+select
+  '10000000-0000-4000-8000-000000000012', revision.id,
+  '10000000-0000-4000-8000-000000000007', revision.payload_checksum,
+  revision.product_identity_checksum, 'approve',
+  '10000000-0000-4000-8000-000000000009', candidate.approved_at
+from cloud.product_detail_candidate_revisions revision
+join cloud.publication_candidates candidate on candidate.id = revision.candidate_id
+where revision.id = (
+  select (result ->> 'candidateRevisionId')::uuid from structured_revision_result
+);
+
 insert into cloud.review_decisions (
   id, review_item_id, decision_type, field_path, proposed_value,
-  approved_value, decision, reviewer_id, rationale, created_at
+  approved_value, decision, reviewer_id, rationale, created_at,
+  candidate_revision_id, approved_payload_checksum, product_identity_checksum
 ) values
 (
   '10000000-0000-4000-8000-000000000010',
@@ -131,7 +163,17 @@ insert into cloud.review_decisions (
   (select candidate_data -> 'keyFeatures' -> 0 from cloud.publication_candidates
     where id = '10000000-0000-4000-8000-000000000008'),
   'approve', '10000000-0000-4000-8000-000000000009',
-  'Local integration approval.', '2026-07-23T00:02:01Z'
+  'Local integration approval.',
+  (select revision.created_at + interval '1 millisecond'
+   from cloud.product_detail_candidate_revisions revision
+   where revision.id = (select (revision_result.result ->> 'candidateRevisionId')::uuid
+                        from structured_revision_result revision_result)),
+  (select (revision_result.result ->> 'candidateRevisionId')::uuid
+    from structured_revision_result revision_result),
+  (select revision_result.result ->> 'payloadChecksum'
+    from structured_revision_result revision_result),
+  (select revision_result.result ->> 'productIdentityChecksum'
+    from structured_revision_result revision_result)
 ),
 (
   '10000000-0000-4000-8000-000000000011',
@@ -142,12 +184,23 @@ insert into cloud.review_decisions (
   (select candidate_data -> 'specifications' -> 0 from cloud.publication_candidates
     where id = '10000000-0000-4000-8000-000000000008'),
   'approve', '10000000-0000-4000-8000-000000000009',
-  'Local integration approval.', '2026-07-23T00:02:02Z'
+  'Local integration approval.',
+  (select revision.created_at + interval '2 milliseconds'
+   from cloud.product_detail_candidate_revisions revision
+   where revision.id = (select (revision_result.result ->> 'candidateRevisionId')::uuid
+                        from structured_revision_result revision_result)),
+  (select (revision_result.result ->> 'candidateRevisionId')::uuid
+    from structured_revision_result revision_result),
+  (select revision_result.result ->> 'payloadChecksum'
+    from structured_revision_result revision_result),
+  (select revision_result.result ->> 'productIdentityChecksum'
+    from structured_revision_result revision_result)
 );
 
 do $$
 declare
   candidate cloud.publication_candidates%rowtype;
+  revision cloud.product_detail_candidate_revisions%rowtype;
 begin
   select * into candidate
   from cloud.publication_candidates
@@ -160,6 +213,16 @@ begin
      or candidate.target_product_id is null then
     raise exception 'integration fixture did not create an approved candidate: %',
       to_jsonb(candidate);
+  end if;
+
+  select * into revision from cloud.product_detail_candidate_revisions
+  where id = (select (revision_result.result ->> 'candidateRevisionId')::uuid
+    from structured_revision_result revision_result);
+  if not found
+     or revision.payload_checksum <> cloud.structured_product_detail_payload_checksum_v1(
+       revision.schema_version, revision.product_identity, revision.candidate_payload
+     ) then
+    raise exception 'integration fixture did not create a valid immutable revision';
   end if;
 end
 $$;
@@ -174,8 +237,9 @@ declare
 begin
   perform set_config('request.jwt.claim.role', 'service_role', true);
 
-  select cloud_api.publish_structured_product_detail_v1(
-    '10000000-0000-4000-8000-000000000008', 1,
+  select cloud_api.publish_structured_product_detail_v2(
+    (select (revision_result.result ->> 'candidateRevisionId')::uuid
+      from structured_revision_result revision_result), 1,
     'structured-fields-integration-idempotency-v1',
     '10000000-0000-4000-8000-000000000009'
   ) into result;
@@ -188,8 +252,9 @@ begin
   end if;
   batch_id := (result ->> 'publicationBatchId')::uuid;
 
-  select cloud_api.publish_structured_product_detail_v1(
-    '10000000-0000-4000-8000-000000000008', 1,
+  select cloud_api.publish_structured_product_detail_v2(
+    (select (revision_result.result ->> 'candidateRevisionId')::uuid
+      from structured_revision_result revision_result), 1,
     'structured-fields-integration-idempotency-v1',
     '10000000-0000-4000-8000-000000000009'
   ) into repeated_result;
@@ -213,7 +278,7 @@ begin
     raise exception 'writer changed immutable identity or product publication status';
   end if;
 
-  select cloud_api.rollback_structured_product_detail_v1(
+  select cloud_api.rollback_structured_product_detail_v2(
     batch_id, '10000000-0000-4000-8000-000000000009'
   ) into rollback_result;
   if rollback_result ->> 'status' <> 'rolled_back'
@@ -227,7 +292,7 @@ begin
     raise exception 'rollback left structured fields in Storefront projection: %', projection;
   end if;
 
-  select cloud_api.rollback_structured_product_detail_v1(
+  select cloud_api.rollback_structured_product_detail_v2(
     batch_id, '10000000-0000-4000-8000-000000000009'
   ) into rollback_result;
   if not (rollback_result ->> 'idempotent')::boolean then
@@ -240,19 +305,19 @@ do $$
 begin
   if has_function_privilege(
     'anon',
-    'cloud_api.publish_structured_product_detail_v1(uuid,integer,text,uuid)',
+    'cloud_api.publish_structured_product_detail_v2(uuid,integer,text,uuid)',
     'EXECUTE'
   ) or has_function_privilege(
     'authenticated',
-    'cloud_api.publish_structured_product_detail_v1(uuid,integer,text,uuid)',
+    'cloud_api.publish_structured_product_detail_v2(uuid,integer,text,uuid)',
     'EXECUTE'
   ) or has_function_privilege(
     'anon',
-    'cloud_api.rollback_structured_product_detail_v1(uuid,uuid)',
+    'cloud_api.rollback_structured_product_detail_v2(uuid,uuid)',
     'EXECUTE'
   ) or has_function_privilege(
     'authenticated',
-    'cloud_api.rollback_structured_product_detail_v1(uuid,uuid)',
+    'cloud_api.rollback_structured_product_detail_v2(uuid,uuid)',
     'EXECUTE'
   ) then
     raise exception 'public roles retain structured Product Detail write access';

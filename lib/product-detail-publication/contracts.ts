@@ -101,9 +101,14 @@ export const structuredProductDetailCandidateSchema = z.object({
 });
 
 export const publishStructuredProductDetailInputSchema = z.object({
-  candidateId: uuidSchema,
+  candidateRevisionId: uuidSchema,
   schemaVersion: z.literal(STRUCTURED_PRODUCT_DETAIL_SCHEMA_VERSION),
   idempotencyKey: z.string().trim().min(8).max(200),
+  actorId: uuidSchema,
+}).strict();
+
+export const createStructuredProductDetailRevisionInputSchema = z.object({
+  candidateId: uuidSchema,
   actorId: uuidSchema,
 }).strict();
 
@@ -115,6 +120,7 @@ export const rollbackStructuredProductDetailInputSchema = z.object({
 export const structuredProductDetailPublicationResultSchema = z.object({
   publicationBatchId: uuidSchema,
   candidateId: uuidSchema,
+  candidateRevisionId: uuidSchema,
   productId: uuidSchema,
   status: z.enum(["published", "superseded", "rolled_back"]),
   keyFeatureCount: z.number().int().nonnegative(),
@@ -122,7 +128,20 @@ export const structuredProductDetailPublicationResultSchema = z.object({
   idempotent: z.boolean(),
 }).strict();
 
+export const structuredProductDetailRevisionResultSchema = z.object({
+  candidateRevisionId: uuidSchema,
+  candidateId: uuidSchema,
+  productId: uuidSchema,
+  revisionNumber: z.number().int().positive(),
+  schemaVersion: z.literal(STRUCTURED_PRODUCT_DETAIL_SCHEMA_VERSION),
+  payloadChecksum: z.string().regex(/^[a-f0-9]{64}$/u),
+  productIdentityChecksum: z.string().regex(/^[a-f0-9]{64}$/u),
+  idempotent: z.boolean(),
+}).strict();
+
 export type StructuredProductDetailCandidate = z.infer<typeof structuredProductDetailCandidateSchema>;
+export type CreateStructuredProductDetailRevisionInput = z.infer<typeof createStructuredProductDetailRevisionInputSchema>;
 export type PublishStructuredProductDetailInput = z.infer<typeof publishStructuredProductDetailInputSchema>;
 export type RollbackStructuredProductDetailInput = z.infer<typeof rollbackStructuredProductDetailInputSchema>;
+export type StructuredProductDetailRevisionResult = z.infer<typeof structuredProductDetailRevisionResultSchema>;
 export type StructuredProductDetailPublicationResult = z.infer<typeof structuredProductDetailPublicationResultSchema>;

@@ -4,7 +4,10 @@ import test from "node:test";
 
 import {
   STRUCTURED_PRODUCT_DETAIL_SCHEMA_VERSION,
+  publishStructuredProductDetailInputSchema,
   structuredProductDetailCandidateSchema,
+  structuredProductDetailPublicationResultSchema,
+  structuredProductDetailRevisionResultSchema,
 } from "../../lib/product-detail-publication/contracts.ts";
 import {
   mapCloudPreviewSnapshot,
@@ -71,6 +74,43 @@ test("candidate contract fails closed for metadata, missing provenance and dupli
   }).success, false);
 });
 
+test("publication contracts require immutable revision identity", () => {
+  const candidateRevisionId = "bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb";
+  assert.equal(publishStructuredProductDetailInputSchema.safeParse({
+    candidateRevisionId,
+    schemaVersion: 1,
+    idempotencyKey: "structured-publication-v2",
+    actorId: productId,
+  }).success, true);
+  assert.equal(publishStructuredProductDetailInputSchema.safeParse({
+    candidateId: candidateRevisionId,
+    schemaVersion: 1,
+    idempotencyKey: "structured-publication-v2",
+    actorId: productId,
+  }).success, false);
+
+  assert.equal(structuredProductDetailRevisionResultSchema.safeParse({
+    candidateRevisionId,
+    candidateId: "cccccccc-cccc-4ccc-8ccc-cccccccccccc",
+    productId,
+    revisionNumber: 1,
+    schemaVersion: 1,
+    payloadChecksum: "a".repeat(64),
+    productIdentityChecksum: "b".repeat(64),
+    idempotent: false,
+  }).success, true);
+  assert.equal(structuredProductDetailPublicationResultSchema.safeParse({
+    publicationBatchId: "dddddddd-dddd-4ddd-8ddd-dddddddddddd",
+    candidateId: "cccccccc-cccc-4ccc-8ccc-cccccccccccc",
+    candidateRevisionId,
+    productId,
+    status: "published",
+    keyFeatureCount: 1,
+    specificationCount: 1,
+    idempotent: false,
+  }).success, true);
+});
+
 test("migration reuses review/publication entities and creates an additive reversible batch", async () => {
   const migration = await readFile(
     "supabase/migrations/202607230001_structured_product_detail_fields_v1.sql",
@@ -97,10 +137,11 @@ test("migration reuses review/publication entities and creates an additive rever
   assert.doesNotMatch(migration, /full_description|short_description/u);
 });
 
-test("writer surface is server-only, scoped to cloud_api and unavailable to public roles", async () => {
-  const [server, migration] = await Promise.all([
+test("writer surface is server-only, revision-bound and unavailable to public roles", async () => {
+  const [server, migration, correctiveMigration] = await Promise.all([
     readFile("lib/product-detail-publication/server.ts", "utf8"),
     readFile("supabase/migrations/202607230001_structured_product_detail_fields_v1.sql", "utf8"),
+    readFile("supabase/migrations/202607230003_structured_product_detail_integrity_v1.sql", "utf8"),
   ]);
 
   assert.match(server, /^import "server-only";/u);
@@ -108,19 +149,57 @@ test("writer surface is server-only, scoped to cloud_api and unavailable to publ
   assert.match(server, /"Accept-Profile": "cloud_api"/u);
   assert.match(server, /"Content-Profile": "cloud_api"/u);
   assert.match(server, /method: "POST"/u);
-  assert.match(server, /publish_structured_product_detail_v1/u);
-  assert.match(server, /rollback_structured_product_detail_v1/u);
+  assert.match(server, /create_structured_product_detail_revision_v1/u);
+  assert.match(server, /publish_structured_product_detail_v2/u);
+  assert.match(server, /rollback_structured_product_detail_v2/u);
+  assert.match(server, /p_candidate_revision_id/u);
   assert.match(migration, /revoke all on function cloud_api\.publish_structured_product_detail_v1[\s\S]+from public, anon, authenticated/u);
   assert.match(migration, /grant execute on function cloud_api\.publish_structured_product_detail_v1[\s\S]+to service_role/u);
   assert.match(migration, /revoke all on function cloud_api\.rollback_structured_product_detail_v1[\s\S]+from public, anon, authenticated/u);
   assert.match(migration, /grant execute on function cloud_api\.rollback_structured_product_detail_v1[\s\S]+to service_role/u);
+  assert.match(correctiveMigration, /revoke execute on function cloud_api\.publish_structured_product_detail_v1[\s\S]+from service_role/u);
+  assert.match(correctiveMigration, /grant execute on function cloud_api\.publish_structured_product_detail_v2[\s\S]+to service_role/u);
+  assert.match(correctiveMigration, /grant execute on function cloud_api\.rollback_structured_product_detail_v2[\s\S]+to service_role/u);
+});
+
+test("corrective migration binds approvals and isolates managed structured rows", async () => {
+  const migration = await readFile(
+    "supabase/migrations/202607230003_structured_product_detail_integrity_v1.sql",
+    "utf8",
+  );
+
+  assert.match(migration, /create table cloud\.product_detail_candidate_revisions/u);
+  assert.match(migration, /product_identity_checksum/u);
+  assert.match(migration, /candidate_payload_checksum/u);
+  assert.match(migration, /structured_product_detail_payload_checksum_v1/u);
+  assert.match(migration, /product_detail_candidate_revisions_immutable/u);
+  assert.match(migration, /candidate_revision_id uuid[\s\S]+approved_payload_checksum text/u);
+  assert.match(migration, /candidate changed after immutable revision creation/u);
+  assert.match(migration, /product identity changed after candidate review/u);
+  assert.match(migration, /candidate approval is not bound to this immutable revision/u);
+
+  const preflightEnd = migration.indexOf("select * into previous_batch");
+  const firstBatchMutation = migration.indexOf(
+    "insert into cloud.product_detail_publication_batches",
+    preflightEnd,
+  );
+  assert.ok(preflightEnd >= 0 && firstBatchMutation > preflightEnd);
+
+  assert.match(migration, /record_origin in \('legacy', 'structured_product_detail'\)/u);
+  assert.match(migration, /product_characteristics_legacy_key_uq/u);
+  assert.match(migration, /product_characteristics_structured_batch_item_uq/u);
+  assert.match(migration, /record_origin = 'structured_product_detail'[\s\S]+candidate_revision_id is not null/u);
+  assert.doesNotMatch(migration, /on conflict \(product_id, key\) do update/u);
+  assert.match(migration, /delete from cloud\.product_characteristics[\s\S]+record_origin = 'structured_product_detail'/u);
+  assert.match(migration, /created_at = \(before_row ->> 'created_at'\)::timestamptz[\s\S]+updated_at = \(before_row ->> 'updated_at'\)::timestamptz/u);
+  assert.doesNotMatch(migration, /hamilton|330695211247/iu);
 });
 
 test("projection and mapper expose only approved published structured fields in stable order", async () => {
-  const projection = await readFile(
-    "supabase/migrations/202607230002_structured_product_detail_projection_v1.sql",
-    "utf8",
-  );
+  const [projection, correctiveProjection] = await Promise.all([
+    readFile("supabase/migrations/202607230002_structured_product_detail_projection_v1.sql", "utf8"),
+    readFile("supabase/migrations/202607230003_structured_product_detail_integrity_v1.sql", "utf8"),
+  ]);
   assert.match(projection, /feature\.review_status = 'approved'/u);
   assert.match(projection, /feature\.publication_status = 'published'/u);
   assert.match(projection, /characteristic\.content_kind = 'technical_specification'/u);
@@ -130,6 +209,9 @@ test("projection and mapper expose only approved published structured fields in 
     projection,
     /feature\.(?:source_ref|source_url|approval_decision_id)|characteristic\.(?:source_reference|source_url|approval_decision_id)/u,
   );
+  assert.match(correctiveProjection, /feature\.candidate_revision_id is not null/u);
+  assert.match(correctiveProjection, /characteristic\.record_origin = 'structured_product_detail'/u);
+  assert.match(correctiveProjection, /characteristic\.candidate_revision_id is not null/u);
 
   const snapshot: CloudPreviewCatalogSnapshot = {
     generatedAt: timestamp,

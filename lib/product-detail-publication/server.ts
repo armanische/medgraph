@@ -5,12 +5,14 @@ import {
   type SupabaseServerClient,
 } from "../supabase/index.ts";
 import {
+  createStructuredProductDetailRevisionInputSchema,
   publishStructuredProductDetailInputSchema,
   rollbackStructuredProductDetailInputSchema,
   structuredProductDetailPublicationResultSchema,
+  structuredProductDetailRevisionResultSchema,
+  type CreateStructuredProductDetailRevisionInput,
   type PublishStructuredProductDetailInput,
   type RollbackStructuredProductDetailInput,
-  type StructuredProductDetailPublicationResult,
 } from "./contracts.ts";
 
 const CLOUD_API_HEADERS = {
@@ -20,10 +22,13 @@ const CLOUD_API_HEADERS = {
 } as const;
 
 async function callStructuredProductDetailRpc(
-  rpc: "publish_structured_product_detail_v1" | "rollback_structured_product_detail_v1",
+  rpc:
+    | "create_structured_product_detail_revision_v1"
+    | "publish_structured_product_detail_v2"
+    | "rollback_structured_product_detail_v2",
   body: Readonly<Record<string, unknown>>,
   client: SupabaseServerClient,
-): Promise<StructuredProductDetailPublicationResult> {
+): Promise<unknown> {
   if (client.access !== "service_role") {
     throw new Error("Structured Product Detail writes require a service-role server client.");
   }
@@ -34,7 +39,21 @@ async function callStructuredProductDetailRpc(
     body: JSON.stringify(body),
   });
 
-  return structuredProductDetailPublicationResultSchema.parse(await response.json());
+  return response.json();
+}
+
+/** Snapshots a candidate and product identity before any manual approval. */
+export async function createStructuredProductDetailRevision(
+  input: CreateStructuredProductDetailRevisionInput,
+  client: SupabaseServerClient = createSupabaseServerClient({ access: "service_role" }),
+) {
+  const parsed = createStructuredProductDetailRevisionInputSchema.parse(input);
+  const result = await callStructuredProductDetailRpc(
+    "create_structured_product_detail_revision_v1",
+    { p_candidate_id: parsed.candidateId, p_actor_id: parsed.actorId },
+    client,
+  );
+  return structuredProductDetailRevisionResultSchema.parse(result);
 }
 
 /**
@@ -46,12 +65,13 @@ export async function publishStructuredProductDetail(
   client: SupabaseServerClient = createSupabaseServerClient({ access: "service_role" }),
 ) {
   const parsed = publishStructuredProductDetailInputSchema.parse(input);
-  return callStructuredProductDetailRpc("publish_structured_product_detail_v1", {
-    p_candidate_id: parsed.candidateId,
+  const result = await callStructuredProductDetailRpc("publish_structured_product_detail_v2", {
+    p_candidate_revision_id: parsed.candidateRevisionId,
     p_schema_version: parsed.schemaVersion,
     p_idempotency_key: parsed.idempotencyKey,
     p_actor_id: parsed.actorId,
   }, client);
+  return structuredProductDetailPublicationResultSchema.parse(result);
 }
 
 /** Rolls back one publication batch; it never performs a global rollback. */
@@ -60,8 +80,9 @@ export async function rollbackStructuredProductDetail(
   client: SupabaseServerClient = createSupabaseServerClient({ access: "service_role" }),
 ) {
   const parsed = rollbackStructuredProductDetailInputSchema.parse(input);
-  return callStructuredProductDetailRpc("rollback_structured_product_detail_v1", {
+  const result = await callStructuredProductDetailRpc("rollback_structured_product_detail_v2", {
     p_publication_batch_id: parsed.publicationBatchId,
     p_actor_id: parsed.actorId,
   }, client);
+  return structuredProductDetailPublicationResultSchema.parse(result);
 }

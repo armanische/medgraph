@@ -4,6 +4,8 @@ import { readFile, readdir } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
 
+import { structuredProductDetailCandidateSchema } from "../../lib/product-detail-publication/contracts.ts";
+
 const migrationRoot = "supabase/migrations";
 const migrationManifestPath = "supabase/tests/structured-fields-migration-chain-v1.json";
 const hamiltonRoot = "data/review/product-detail-data-recovery-v1/hamilton-t1";
@@ -37,6 +39,7 @@ test("the recovered Structured Fields migration chain is complete and checksum-p
     "202607210002",
     "202607230001",
     "202607230002",
+    "202607230003",
   ]);
 
   for (const migration of manifest.migrations) {
@@ -110,30 +113,106 @@ test("the recovered Hamilton-T1 package preserves 6/15/21 review-only evidence",
     ),
     true,
   );
+
+  const provenanceById = new Map(
+    [...provenance.keyFeatures, ...provenance.technicalSpecifications]
+      .map((item: { id: string; rawEvidence: string }) => [item.id, item]),
+  );
+  const reviewOnlyRevisionPayload = {
+    schemaVersion: 1 as const,
+    product: {
+      id: "20000000-0000-4000-8000-000000000003",
+      sourceUid: manifest.sourceUid,
+    },
+    keyFeatures: candidate.proposedKeyFeatures.map((feature: {
+      id: string;
+      value: string;
+      position: number;
+      provenanceId: string;
+    }) => ({
+      key: feature.id,
+      text: feature.value,
+      sortOrder: feature.position,
+      source: {
+        type: "immutable_snapshot",
+        ref: `${manifest.sourceArtifact.path}#${feature.provenanceId}`,
+        url: candidate.target.immutableSnapshot.sourceUrl,
+      },
+    })),
+    specifications: candidate.proposedTechnicalSpecifications.map((specification: {
+      key: string;
+      group: string;
+      displayName: string;
+      normalizedValue: string;
+      unit: string | null;
+      sortOrder: number;
+      provenanceId: string;
+    }, index: number) => ({
+      key: specification.key,
+      label: specification.displayName,
+      value: specification.normalizedValue,
+      unit: specification.unit,
+      sortOrder: specification.sortOrder,
+      group: {
+        key: `review-group-${index}`,
+        title: specification.group,
+        sortOrder: specification.sortOrder,
+      },
+      source: {
+        type: "immutable_snapshot",
+        ref: `${manifest.sourceArtifact.path}#${specification.provenanceId}`,
+        url: candidate.target.immutableSnapshot.sourceUrl,
+      },
+    })),
+  };
+  assert.deepEqual(
+    structuredProductDetailCandidateSchema.parse(reviewOnlyRevisionPayload),
+    reviewOnlyRevisionPayload,
+  );
+  assert.equal(reviewOnlyRevisionPayload.keyFeatures.length, 6);
+  assert.equal(reviewOnlyRevisionPayload.specifications.length, 15);
+  assert.equal(provenanceById.size, 21);
+  assert.equal(candidate.approvalRequirements.length, 3);
+  assert.equal(
+    candidate.proposedKeyFeatures.every(
+      ({ reviewStatus }: { reviewStatus: string }) => reviewStatus === "needs_manual_approval",
+    ),
+    true,
+  );
 });
 
 test("the local integration fixture is transactional and covers the service-only chain", async () => {
-  const [migration, integration, runner, packageJson] = await Promise.all([
-    readFile("supabase/migrations/202607230001_structured_product_detail_fields_v1.sql", "utf8"),
+  const [correctiveMigration, integration, regression, runner, packageJson] = await Promise.all([
+    readFile("supabase/migrations/202607230003_structured_product_detail_integrity_v1.sql", "utf8"),
     readFile("supabase/tests/002_structured_product_detail_integration.sql", "utf8"),
+    readFile("supabase/tests/003_structured_product_detail_integrity_regression.sql", "utf8"),
     readFile("scripts/qa/structured-fields-local-integration.ts", "utf8"),
     readFile("package.json", "utf8").then(JSON.parse),
   ]);
 
-  const retryLookup = migration.indexOf("where idempotency_key = p_idempotency_key");
-  const newBatchGate = migration.indexOf(
+  const retryLookup = correctiveMigration.indexOf("where idempotency_key = p_idempotency_key");
+  const newBatchGate = correctiveMigration.indexOf(
     "published candidate cannot create a new publication batch",
   );
   assert.ok(retryLookup >= 0 && newBatchGate > retryLookup);
   assert.match(integration, /^begin;/mu);
   assert.match(integration, /^rollback;/mu);
-  assert.match(integration, /cloud_api\.publish_structured_product_detail_v1/u);
+  assert.match(integration, /cloud_api\.create_structured_product_detail_revision_v1/u);
+  assert.match(integration, /cloud_api\.publish_structured_product_detail_v2/u);
   assert.match(integration, /cloud_api\.cloud_storefront_preview_catalog/u);
-  assert.match(integration, /cloud_api\.rollback_structured_product_detail_v1/u);
+  assert.match(integration, /cloud_api\.rollback_structured_product_detail_v2/u);
   assert.match(integration, /has_function_privilege\(\s*'anon'/u);
   assert.match(integration, /idempotent retry produced a different result/u);
   assert.match(integration, /rollback left structured fields in Storefront projection/u);
   assert.doesNotMatch(integration, /hamilton|330695211247/iu);
+  assert.match(regression, /integrity-stale-candidate-payload/u);
+  assert.match(regression, /integrity-stale-provenance/u);
+  assert.match(regression, /integrity-stale-ordering/u);
+  assert.match(regression, /integrity-stale-product-identity/u);
+  assert.match(regression, /legacy and structured display keys were not isolated/u);
+  assert.match(regression, /rollback B did not restore exact state after A/u);
+  assert.doesNotMatch(regression, /adversarial/iu);
+  assert.doesNotMatch(regression, /hamilton|330695211247/iu);
   assert.equal(
     packageJson.scripts["qa:structured-fields:local"],
     "node scripts/qa/structured-fields-local-integration.ts",
@@ -142,5 +221,7 @@ test("the local integration fixture is transactional and covers the service-only
   assert.match(runner, /This QA command never pulls images automatically/u);
   assert.match(runner, /"--rm"/u);
   assert.match(runner, /remoteConnections: 0/u);
+  assert.match(runner, /migrationCount: 14/u);
+  assert.match(runner, /003_structured_product_detail_integrity_regression\.sql/u);
   assert.doesNotMatch(runner, /SUPABASE_SERVICE_ROLE_KEY|NEXT_PUBLIC_SUPABASE/u);
 });

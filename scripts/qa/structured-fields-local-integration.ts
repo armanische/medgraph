@@ -61,19 +61,20 @@ try {
   started = true;
 
   let ready = false;
-  for (let attempt = 0; attempt < 30; attempt += 1) {
-    const probe = run(
-      "docker",
-      ["exec", CONTAINER, "pg_isready", "-U", "postgres", "-d", DATABASE],
-      { allowFailure: true, quiet: true },
-    );
-    if (probe.status === 0) {
+  let consecutiveReadyProbes = 0;
+  for (let attempt = 0; attempt < 60; attempt += 1) {
+    const probe = run("docker", [
+      "exec", CONTAINER, "psql", "-U", "supabase_admin", "-d", DATABASE,
+      "-v", "ON_ERROR_STOP=1", "-Atc", "select 1",
+    ], { allowFailure: true, quiet: true });
+    consecutiveReadyProbes = probe.status === 0 ? consecutiveReadyProbes + 1 : 0;
+    if (consecutiveReadyProbes >= 2) {
       ready = true;
       break;
     }
     wait(500);
   }
-  if (!ready) throw new Error("Local PostgreSQL did not become ready within 15 seconds.");
+  if (!ready) throw new Error("Local PostgreSQL did not remain ready within 30 seconds.");
 
   run("docker", [
     "cp",
@@ -89,6 +90,11 @@ try {
     "cp",
     path.join(ROOT, "supabase/tests/002_structured_product_detail_integration.sql"),
     `${CONTAINER}:/tmp/002_structured_product_detail_integration.sql`,
+  ]);
+  run("docker", [
+    "cp",
+    path.join(ROOT, "supabase/tests/003_structured_product_detail_integrity_regression.sql"),
+    `${CONTAINER}:/tmp/003_structured_product_detail_integrity_regression.sql`,
   ]);
 
   dockerExec(
@@ -124,6 +130,17 @@ done`,
     "-f",
     "/tmp/002_structured_product_detail_integration.sql",
   );
+  dockerExec(
+    "psql",
+    "-U",
+    "supabase_admin",
+    "-d",
+    DATABASE,
+    "-v",
+    "ON_ERROR_STOP=1",
+    "-f",
+    "/tmp/003_structured_product_detail_integrity_regression.sql",
+  );
 
   const audit = run("docker", [
     "exec",
@@ -137,6 +154,8 @@ done`,
     `select jsonb_build_object(
       'products', count(*),
       'features', (select count(*) from cloud.product_key_features),
+      'revisions', (select count(*) from cloud.product_detail_candidate_revisions),
+      'revisionApprovals', (select count(*) from cloud.product_detail_candidate_revision_approvals),
       'batches', (select count(*) from cloud.product_detail_publication_batches),
       'events', (select count(*) from cloud.publication_events)
     ) from cloud.products`,
@@ -149,14 +168,21 @@ done`,
   process.stdout.write(`${JSON.stringify({
     status: "PASS",
     image: IMAGE,
-    migrationCount: 13,
+    migrationCount: 14,
     integration: [
-      "review-validation",
+      "immutable-revision",
+      "canonical-payload-hash",
+      "revision-bound-review-validation",
+      "stale-approval-rejection",
+      "product-identity-binding",
       "service-only-writer",
       "idempotent-retry",
+      "legacy-row-isolation",
       "published-only-projection",
-      "rollback",
+      "exact-rollback",
       "idempotent-rollback",
+      "unrelated-product-preserved",
+      "rls-and-grants",
     ],
     postTest,
     remoteConnections: 0,
