@@ -1,6 +1,6 @@
 # Structured Fields Integration Readiness & Migration Chain Recovery v1
 
-**Status:** LOCAL INTEGRATION READY; NOT READY FOR MIGRATION OR CLOUD PUBLICATION
+**Status:** HISTORICAL LOCAL EVIDENCE — SUPERSEDED FOR MERGE READINESS
 
 **Branch:** `codex/structured-fields-integration-readiness-v1`
 
@@ -9,6 +9,12 @@
 **Date:** 23 July 2026
 
 **Environment:** isolated local worktree and disposable local Supabase PostgreSQL only
+
+> Independent review later found two blocking integrity defects in the v1
+> approval and characteristic rollback contracts. This document remains
+> historical evidence for commit `d386ca2`; current readiness is defined by
+> `structured-fields-blocking-corrective-fix-v1.md`. It must not be used as a
+> merge or remote-migration approval.
 
 ## Executive Summary
 

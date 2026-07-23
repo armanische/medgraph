@@ -1,6 +1,6 @@
 # Structured Product Detail Fields v1
 
-**Status:** implemented locally; migration not applied; no data published
+**Status:** corrective implementation local; migrations not applied; no data published
 
 **Scope:** Cloud schema contract, manual-review gate, service-only publication/rollback, Storefront projection and mapper
 
@@ -10,13 +10,17 @@
 
 ## Executive summary
 
-The implementation adds a generic, review-gated path for Product Key Features
-and Product Technical Specifications. It does not contain product-specific
+The implementation adds a generic, revision-bound review path for Product Key
+Features and Product Technical Specifications. The forward-only integrity
+migration binds approval to an immutable candidate revision, canonical payload
+SHA-256 and product identity/version snapshot. It also separates legacy and
+structured characteristic identity and records an exact rollback mutation log.
+It does not contain product-specific
 conditions, HTML extraction, metadata promotion, data backfill or synthetic
 values. Existing Product Data, immutable inputs and the ProductService API are
 unchanged.
 
-The two migrations are code artifacts only. They have not been applied to
+The three migrations are code artifacts only. They have not been applied to
 local, staging or Production Supabase, and the publication/rollback RPCs have
 not been called.
 
@@ -39,18 +43,21 @@ therefore extended instead of duplicated. Existing review and publication
 entities are reused. No batch entity existed for a reversible structured-field
 publication, so one minimal relation is added.
 
-The base branch does not contain the earlier Cloud Foundation migration files;
-the currently versioned Preview RPC nonetheless depends on those deployed
-tables. The schema audit used the recovered local foundation migration as
-read-only evidence. Those unrelated, untracked migration files were not copied
-into this branch.
+The full prerequisite migration chain is committed and checksum-pinned by
+`supabase/tests/structured-fields-migration-chain-v1.json`. Historical
+Structured Fields migrations `202607230001` and `202607230002` remain unchanged;
+`202607230003` is the only forward corrective migration.
 
 ## Dependency graph
 
 ```text
-publication_candidates (schema v1 candidate payload)
+publication_candidates (editable schema v1 candidate payload)
         |
-        +--> review_items --> review_decisions (one exact decision per field)
+        v
+immutable candidate revision (payload + product identity SHA-256)
+        |
+        +--> revision approval
+        +--> review_items --> revision-bound review decisions
         |
         v
 service-only publication RPC
@@ -82,6 +89,12 @@ Candidate schema version 1 contains a product identity plus atomic
 `keyFeatures` and `specifications`. Every record has a stable key, ordering and
 source `{ type, ref, url? }`. Specifications may carry an optional group.
 
+Before review, a service-only boundary creates an immutable revision containing
+the canonical JSONB payload, schema version, full product identity/version
+snapshot, separate candidate/product checksums and one combined SHA-256. Arrays
+retain their order, so ordering, grouping, units and provenance are covered.
+Editing the candidate creates a new revision; it cannot mutate an existing one.
+
 Publication requires all of the following:
 
 1. `publication_candidates.validation_status = approved`;
@@ -89,16 +102,18 @@ Publication requires all of the following:
 3. candidate target and payload product IDs match;
 4. optional source UID matches the target product;
 5. payload schema and provenance validate;
-6. the latest field-level decision is `approve`;
-7. `review_decisions.approved_value` exactly equals the published field.
+6. candidate-level approval references the exact revision and both checksums;
+7. the latest field-level decision references the same revision and checksums;
+8. the decision is `approve` and its approved value exactly equals the field.
 
 The field paths are deterministic:
 
 - `structuredProductDetail.keyFeatures.{key}`;
 - `structuredProductDetail.specifications.{key}`.
 
-`pending`, `rejected`, deferred/replacement decisions and mismatched approved
-values all fail closed. The writer never creates an approval.
+`pending`, `rejected`, deferred/replacement decisions, stale revisions and
+mismatched approved values all fail closed before a publication batch is
+created. The writer never creates an approval.
 
 ## Storage and publication
 
@@ -118,34 +133,42 @@ publication status, order, approval decision and publication batch.
 | technical/metadata distinction | `content_kind` |
 | optional group | `group_key`, `group_title`, `group_sort_order` |
 | provenance type/URL | `source_type`, `source_url` |
+| managed identity | `record_origin`, `structured_item_id`, `candidate_revision_id` |
 | publication/rollback | `publication_status`, `publication_batch_id`, `archived_at` |
 
-Legacy import rows receive safe defaults: `content_kind = legacy_metadata` and
-`publication_status = unpublished`. They are not emitted as technical
-specifications.
+Legacy import rows receive safe defaults: `record_origin = legacy`,
+`content_kind = legacy_metadata` and `publication_status = unpublished`.
+Structured rows use `record_origin = structured_product_detail` plus stable
+item/revision/batch identity. Partial unique indexes allow the same display key
+in each namespace; the writer never uses a legacy row as an UPSERT target.
 
 The SQL writer executes in one transaction, takes a per-product advisory lock,
-checks an idempotency key and payload checksum, snapshots the previous published
-state, creates a publication batch, writes only approved fields and records
-publication/audit events.
+recomputes all hashes, verifies current product identity and revision-bound
+decisions, checks idempotency, snapshots every managed row before mutation,
+creates a publication batch, writes only approved fields and records a complete
+before/after mutation log plus publication/audit events. The v1 service grant is
+revoked by the corrective migration. The v2 writer does not mutate the editable
+candidate payload or its review status; publication state belongs to the
+revision-bound batch.
 
 ## Rollback
 
 Rollback is limited to the latest published batch for one product. It:
 
-- archives only fields belonging to that batch;
-- restores the immediately previous key-feature and specification state;
+- deletes only structured rows created by that batch;
+- restores every managed row changed by the batch, including exact timestamps,
+  archive state, decision, provenance, revision and batch identity;
 - restores the previous batch status;
 - preserves decisions, provenance, events and audit history;
 - returns the same result on repeated calls;
-- never deletes or truncates data.
+- never changes or deletes a legacy row.
 
 Global or out-of-order rollback is rejected.
 
 ## Projection and mapper
 
-The Preview RPC returns only approved, published and non-archived structured
-records:
+The Preview RPC returns only revision-bound, managed, approved, published and
+non-archived structured records:
 
 ```json
 {
@@ -167,21 +190,21 @@ Model required no change.
 
 ## Hamilton-T1 boundary
 
-No Hamilton-specific data or condition is part of this implementation. The
-review candidate described in the task is not present in base commit
-`502504a9106a462c4a7ade226d8a8b74d8956ee2`; consequently it was not copied,
-changed, approved or published. It may be supplied later as evidence conforming
-to the generic candidate contract and must still pass manual review.
+No Hamilton-specific data or condition is part of the runtime implementation.
+The recovered package is used only as an offline validation fixture: 6 key
+features, 15 specifications and 21 provenance references. It remains
+`needs_manual_approval`, has zero approvals and is not publishable. The claim
+“Более 9 часов работы от аккумулятора” remains ambiguous and has insufficient
+evidence; it was neither changed nor approved.
 
 ## Deployment sequence (not executed)
 
-1. Restore/version the missing prerequisite Cloud Foundation migrations in a
-   separate repository-integrity change.
-2. Review both new migrations and exercise them against an isolated local
+1. Independently re-review the immutable revision, grants and rollback contract.
+2. Review all three Structured Fields migrations and exercise them against an isolated local
    Supabase database.
 3. Apply migrations to staging under an explicit migration authorization.
-4. Load a candidate without approving it and verify publication is rejected.
-5. Record per-field manual decisions, then run an explicitly authorized
+4. Create a revision without approving it and verify publication is rejected.
+5. Record revision-bound candidate and field decisions, then run an explicitly authorized
    service-only publication.
 6. Verify RPC/mapper/Product Detail and exercise batch rollback.
 7. Run schema, RLS, baseline and public-write audits.
