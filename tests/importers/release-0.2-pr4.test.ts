@@ -72,12 +72,14 @@ test("product hero is compact and does not repeat quality or missing metadata", 
   assert.doesNotMatch(page, /line-clamp-4/u);
 });
 
-test("optional content remains fail-closed without duplicating hero navigation", async () => {
+test("optional content remains fail-closed with navigation limited to public product sections", async () => {
   const [page, experience] = await Promise.all([
     source("app/catalog/[slug]/page.tsx"),
     source("lib/storefront/product-detail-experience.ts"),
   ]);
-  assert.doesNotMatch(page, /sectionLinks\.length|aria-label="Навигация по странице"/u);
+  assert.match(page, /sectionLinks\.length/u);
+  assert.match(page, /aria-label="Навигация по странице товара"/u);
+  assert.doesNotMatch(page, /href: "#documents"/u);
   for (const section of [
     "package",
     "documents",

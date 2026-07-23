@@ -47,7 +47,7 @@ test("optional product sections are omitted when public data is absent", async (
 test("catalog cards use real Storefront fields and expose useful journeys", async () => {
   const catalog = await source("components/catalog/CatalogExplorer.tsx");
 
-  assert.match(catalog, /product\.specifications\.slice\(0, 2\)/u);
+  assert.match(catalog, /filter\(isTechnicalProductSpecification\)/u);
   assert.match(catalog, /product\.media/u);
   assert.match(catalog, /`\/catalog\/\$\{product\.slug\}`/u);
   assert.match(catalog, /`\/manufacturers\/\$\{/u);

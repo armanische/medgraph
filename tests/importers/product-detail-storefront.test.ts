@@ -175,7 +175,8 @@ test("product hero uses a media-first 40/60 layout without decorative duplicates
   assert.doesNotMatch(source, /label="Модель \/ артикул"/);
   assert.doesNotMatch(source, /label="Статус"/);
   assert.doesNotMatch(source, /presentation\.statusLabel/);
-  assert.doesNotMatch(source, /key-specifications|sectionLinks/);
+  assert.doesNotMatch(source, /key-specifications/);
+  assert.match(source, /aria-label="Навигация по странице товара"/);
 });
 
 test("product detail exposes semantic breadcrumbs and public regulatory information", async () => {
@@ -195,12 +196,12 @@ test("product detail has one hierarchy and ordered content sections", async () =
   const source = await pageSource();
   const sectionMarkers = [
     'title="Описание"',
-    'title="Преимущества"',
+    'title="Производитель"',
     'title="Технические характеристики"',
+    'title="Преимущества"',
     'title="Регистрационная информация"',
     'title="Комплектация"',
     'title="Документы и загрузки"',
-    'title="Производитель"',
     'title="Связанные товары"',
   ];
 
@@ -222,7 +223,7 @@ test("product hero stays server-rendered while gallery interaction is isolated",
     readFile(resolve(root, "components/catalog/ProductGallery.tsx"), "utf8"),
   ]);
 
-  assert.doesNotMatch(source, /aria-label="Разделы карточки товара"/);
+  assert.match(source, /aria-label="Навигация по странице товара"/);
   assert.doesNotMatch(source, /["']use client["']/);
   assert.match(gallery, /["']use client["']/);
   assert.match(gallery, /cursor-zoom-in/);

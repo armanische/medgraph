@@ -81,11 +81,20 @@ function truncateAtWord(value: string, maximumLength: number) {
   return `${candidate.slice(0, boundary >= maximumLength * 0.75 ? boundary : maximumLength).trim()}…`;
 }
 
+function leadingSentences(value: string, maximumSentences: number) {
+  const sentences = value.match(/[^.!?]+[.!?]+(?:\s+|$)|[^.!?]+$/gu)
+    ?.map((sentence) => sentence.trim())
+    .filter(Boolean) ?? [];
+  if (sentences.length < 2) return null;
+  return sentences.slice(0, maximumSentences).join(" ");
+}
+
 function compactSummary(product: Product) {
   const source = publicOptionalText(product.shortDescription);
   if (!source) return null;
 
-  const summary = plainText(source);
+  const summary = leadingSentences(plainText(source), 4);
+  if (!summary) return null;
   if (summary.length < 80) return null;
 
   const fullDescription = publicOptionalText(product.description);

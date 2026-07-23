@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 import type { ProductMedia } from "@/lib/storefront/types";
 
@@ -25,27 +25,47 @@ export default function ProductGallery({
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const touchStartX = useRef<number | null>(null);
+  const triggerRef = useRef<HTMLButtonElement | null>(null);
+  const closeButtonRef = useRef<HTMLButtonElement | null>(null);
+  const lightboxRef = useRef<HTMLDivElement | null>(null);
   const selectedMedia = orderedMedia[selectedIndex];
   const selectedImageIndex = selectedMedia
     ? imageMedia.findIndex(({ url }) => url === selectedMedia.url)
     : -1;
 
-  function selectImage(imageIndex: number) {
+  const selectImage = useCallback((imageIndex: number) => {
     const image = imageMedia[imageIndex];
     if (!image) return;
     const mediaIndex = orderedMedia.findIndex(({ url }) => url === image.url);
     setSelectedIndex(mediaIndex);
-  }
+  }, [imageMedia, orderedMedia]);
 
-  function showPreviousImage() {
+  const showPreviousImage = useCallback(() => {
     if (imageMedia.length < 2) return;
     selectImage((selectedImageIndex - 1 + imageMedia.length) % imageMedia.length);
-  }
+  }, [imageMedia.length, selectImage, selectedImageIndex]);
 
-  function showNextImage() {
+  const showNextImage = useCallback(() => {
     if (imageMedia.length < 2) return;
     selectImage((selectedImageIndex + 1) % imageMedia.length);
-  }
+  }, [imageMedia.length, selectImage, selectedImageIndex]);
+
+  useEffect(() => {
+    if (!lightboxOpen) return;
+
+    const previousOverflow = document.body.style.overflow;
+    const trigger = triggerRef.current;
+    document.body.style.overflow = "hidden";
+    const animationFrame = window.requestAnimationFrame(() => {
+      closeButtonRef.current?.focus();
+    });
+
+    return () => {
+      window.cancelAnimationFrame(animationFrame);
+      document.body.style.overflow = previousOverflow;
+      trigger?.focus();
+    };
+  }, [lightboxOpen]);
 
   useEffect(() => {
     if (!lightboxOpen) return;
@@ -54,11 +74,26 @@ export default function ProductGallery({
       if (event.key === "Escape") setLightboxOpen(false);
       if (event.key === "ArrowLeft") showPreviousImage();
       if (event.key === "ArrowRight") showNextImage();
+      if (event.key !== "Tab") return;
+
+      const focusable = lightboxRef.current?.querySelectorAll<HTMLElement>(
+        'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
+      );
+      if (!focusable || focusable.length === 0) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
     }
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  });
+  }, [lightboxOpen, showNextImage, showPreviousImage]);
 
   if (!selectedMedia) {
     return (
@@ -77,9 +112,10 @@ export default function ProductGallery({
 
   return (
     <div data-testid="product-gallery">
-      <div className="relative aspect-[4/3] min-h-56 overflow-hidden rounded-xl border border-[var(--cm-rule)] bg-white">
+      <div className="relative aspect-[4/3] min-h-56 overflow-hidden rounded-xl border border-[var(--cm-rule)] bg-white sm:aspect-[16/11]">
         {selectedMedia.type === "image" ? (
           <button
+            ref={triggerRef}
             type="button"
             onClick={() => setLightboxOpen(true)}
             className="group relative size-full cursor-zoom-in focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-cm-teal"
@@ -116,6 +152,26 @@ export default function ProductGallery({
             <source src={selectedMedia.url} />
           </video>
         )}
+        {selectedImageIndex >= 0 && imageMedia.length > 1 ? (
+          <div className="absolute bottom-3 left-3 flex gap-1.5">
+            <button
+              type="button"
+              onClick={showPreviousImage}
+              className="grid size-8 place-items-center rounded-full border border-[var(--cm-rule)] bg-white/94 text-sm font-semibold text-cm-slate shadow-[0_6px_18px_rgba(11,19,32,0.12)] backdrop-blur transition hover:border-cm-teal hover:text-cm-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cm-teal"
+              aria-label="Предыдущее изображение"
+            >
+              <span aria-hidden="true">←</span>
+            </button>
+            <button
+              type="button"
+              onClick={showNextImage}
+              className="grid size-8 place-items-center rounded-full border border-[var(--cm-rule)] bg-white/94 text-sm font-semibold text-cm-slate shadow-[0_6px_18px_rgba(11,19,32,0.12)] backdrop-blur transition hover:border-cm-teal hover:text-cm-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cm-teal"
+              aria-label="Следующее изображение"
+            >
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        ) : null}
       </div>
 
       {orderedMedia.length > 1 && (
@@ -156,10 +212,12 @@ export default function ProductGallery({
 
       {lightboxOpen && lightboxImage && (
         <div
+          ref={lightboxRef}
           className="fixed inset-0 z-[100] grid place-items-center bg-cm-ink/92 p-3 backdrop-blur-sm sm:p-8"
           role="dialog"
           aria-modal="true"
           aria-label={`Галерея: ${productName}`}
+          tabIndex={-1}
           onClick={(event) => {
             if (event.currentTarget === event.target) setLightboxOpen(false);
           }}
@@ -178,6 +236,7 @@ export default function ProductGallery({
           }}
         >
           <button
+            ref={closeButtonRef}
             type="button"
             onClick={() => setLightboxOpen(false)}
             className="absolute right-4 top-4 grid size-11 place-items-center rounded-full border border-white/30 bg-black/30 text-xl text-white transition hover:bg-black/55 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"

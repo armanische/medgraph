@@ -82,7 +82,7 @@ test("summary uses only safe compact public copy without invented facts or case 
 
   assert.equal(
     experience.summary,
-    product().shortDescription,
+    "Транспортный аппарат ИВЛ поддерживает режим ASV. Система рассчитана на работу в пути. Данные взяты из публичной карточки. Четвёртое предложение сохраняется.",
   );
   assert.match(experience.summary ?? "", /ИВЛ.*ASV/u);
   assert.notEqual(experience.summary, "Полное описание. Скрытый пункт не становится преимуществом Вес: 6,5 кг");
@@ -194,7 +194,7 @@ test("presentation contract keeps the server data path and delegates gallery int
   assert.match(page, /productService\.getRelatedProducts\(product\)/u);
   assert.doesNotMatch(page, /<h3 className="cm-label">Области применения<\/h3>/u);
   assert.doesNotMatch(page, /presentation\.state/u);
-  assert.doesNotMatch(page, /sectionLinks/u);
+  assert.match(page, /aria-label="Навигация по странице товара"/u);
   assert.doesNotMatch(page, /["']use client["']/u);
   assert.doesNotMatch(experience, /CatalogRepository|ProductService|Supabase|cloud|review|publication|matchAll/u);
   assert.doesNotMatch(manufacturerSource, /["']use client["']/u);

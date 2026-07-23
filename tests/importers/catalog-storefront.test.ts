@@ -98,5 +98,5 @@ test("catalog cards expose only storefront merchandising fields", async () => {
   assert.match(explorer, /product\.media/);
   assert.match(explorer, /product\.manufacturerId/);
   assert.match(explorer, /product\.categoryId/);
-  assert.match(explorer, /href={`\/catalog\/\$\{product\.slug\}`}/);
+  assert.match(explorer, /const productHref = `\/catalog\/\$\{product\.slug\}`/);
 });

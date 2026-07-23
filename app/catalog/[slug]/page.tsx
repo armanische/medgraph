@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 
 import JsonLd from "@/components/seo/JsonLd";
+import BackToCatalog from "@/components/catalog/BackToCatalog";
+import BackToTop from "@/components/catalog/BackToTop";
 import ProductGallery from "@/components/catalog/ProductGallery";
 import ProductManufacturer from "@/components/catalog/ProductManufacturer";
 import SafeProductDescription from "@/components/catalog/SafeProductDescription";
@@ -86,6 +88,14 @@ export default async function StorefrontProductPage({
   const hasRegulatoryInformation =
     regulatoryRecords.length > 0 || registrationDocuments.length > 0;
   const hasDownloads = presentation.sections.documents && downloadDocuments.length > 0;
+  const sectionLinks = [
+    experience.description ? { href: "#description", label: "Описание" } : null,
+    experience.manufacturer ? { href: "#manufacturer", label: "Производитель" } : null,
+    technicalSpecifications.length > 0
+      ? { href: "#specifications", label: "Технические характеристики" }
+      : null,
+    experience.advantages.length > 0 ? { href: "#advantages", label: "Преимущества" } : null,
+  ].filter((link): link is { href: string; label: string } => link !== null);
   const relatedProductsById = new Map(
     relatedProducts.map((relatedProduct) => [relatedProduct.id, relatedProduct]),
   );
@@ -96,6 +106,7 @@ export default async function StorefrontProductPage({
       )}
       <section className="border-b border-[var(--cm-rule)] bg-[linear-gradient(135deg,#ffffff_0%,#f6fafc_56%,#e8f5f7_100%)]">
         <div className="cm-container py-4 sm:py-5">
+          <BackToCatalog productSlug={product.slug} />
           <nav aria-label="Хлебные крошки">
             <ol className="flex flex-wrap items-center gap-2 text-[11px] font-semibold text-cm-slate">
               <li>
@@ -192,6 +203,26 @@ export default async function StorefrontProductPage({
       </section>
 
       <div className="cm-container py-2 sm:py-3">
+        {sectionLinks.length > 1 ? (
+          <nav
+            aria-label="Навигация по странице товара"
+            className="sticky top-2 z-20 -mx-1 overflow-x-auto rounded-xl border border-[var(--cm-rule)] bg-white/95 px-2 py-2 shadow-[0_8px_24px_rgba(11,19,32,0.06)] backdrop-blur sm:mx-0 sm:px-3"
+          >
+            <ul className="flex min-w-max items-center gap-1.5">
+              {sectionLinks.map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    className="inline-flex min-h-8 items-center rounded-md px-2.5 text-[11px] font-semibold text-cm-slate transition hover:bg-cm-teal-soft hover:text-cm-teal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cm-teal"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        ) : null}
+
         {experience.description && (
           <Section id="description" title="Описание">
             <div className="max-w-[62rem] rounded-xl border border-[var(--cm-rule)] bg-cm-surface-low/25 p-4 sm:p-5">
@@ -200,26 +231,11 @@ export default async function StorefrontProductPage({
           </Section>
         )}
 
-        {experience.advantages.length > 0 && (
-          <Section id="advantages" title="Преимущества">
-            <ul className="grid max-w-[68rem] gap-3 text-sm sm:grid-cols-2 lg:grid-cols-3">
-              {experience.advantages.map((feature) => (
-                <li
-                  key={feature}
-                  className="flex min-h-[4.25rem] items-center gap-3 rounded-xl border border-[var(--cm-rule)] bg-[linear-gradient(135deg,#ffffff_0%,#f4fafb_100%)] p-3.5 shadow-[0_5px_18px_rgba(11,19,32,0.025)]"
-                >
-                  <span
-                    className="grid size-7 shrink-0 place-items-center rounded-full border border-cm-teal/15 bg-cm-teal-soft text-xs font-extrabold leading-none text-cm-teal"
-                    aria-hidden="true"
-                  >
-                    ✓
-                  </span>
-                  <span className="font-semibold leading-5 text-cm-ink">{feature}</span>
-                </li>
-              ))}
-            </ul>
+        {experience.manufacturer ? (
+          <Section id="manufacturer" title="Производитель">
+            <ProductManufacturer manufacturer={experience.manufacturer} />
           </Section>
-        )}
+        ) : null}
 
         {technicalSpecifications.length > 0 && (
           <Section id="specifications" title="Технические характеристики">
@@ -244,6 +260,27 @@ export default async function StorefrontProductPage({
                   </div>
                 ))}
               </div>
+          </Section>
+        )}
+
+        {experience.advantages.length > 0 && (
+          <Section id="advantages" title="Преимущества">
+            <ul className="grid max-w-[68rem] gap-3 text-sm sm:grid-cols-2 lg:grid-cols-3">
+              {experience.advantages.map((feature) => (
+                <li
+                  key={feature}
+                  className="flex min-h-[4.25rem] items-center gap-3 rounded-xl border border-[var(--cm-rule)] bg-[linear-gradient(135deg,#ffffff_0%,#f4fafb_100%)] p-3.5 shadow-[0_5px_18px_rgba(11,19,32,0.025)]"
+                >
+                  <span
+                    className="grid size-7 shrink-0 place-items-center rounded-full border border-cm-teal/15 bg-cm-teal-soft text-xs font-extrabold leading-none text-cm-teal"
+                    aria-hidden="true"
+                  >
+                    ✓
+                  </span>
+                  <span className="font-semibold leading-5 text-cm-ink">{feature}</span>
+                </li>
+              ))}
+            </ul>
           </Section>
         )}
 
@@ -302,10 +339,6 @@ export default async function StorefrontProductPage({
               </div>
           </Section>
         )}
-
-        <Section id="manufacturer" title="Производитель">
-          <ProductManufacturer manufacturer={experience.manufacturer} />
-        </Section>
 
         {(presentation.sections.compatibility || presentation.sections.relatedProducts) && (
         <Section id="related-products" title="Связанные товары">
@@ -388,6 +421,7 @@ export default async function StorefrontProductPage({
         </Section>
         )}
       </div>
+      <BackToTop />
     </main>
   );
 }

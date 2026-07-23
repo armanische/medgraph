@@ -86,7 +86,7 @@ test("catalog summary is compact and product media is an accessible link", async
   assert.match(page, /sm:grid-cols-4/u);
   assert.match(page, /overflow-hidden rounded-xl border/u);
   assert.match(explorer, /aria-label=\{`Открыть карточку \$\{product\.name\}`\}/u);
-  assert.match(explorer, /href=\{`\/catalog\/\$\{product\.slug\}`\}/u);
+  assert.match(explorer, /const productHref = `\/catalog\/\$\{product\.slug\}`/u);
 });
 
 test("manufacturer directory uses localized country labels and responsive density", async () => {

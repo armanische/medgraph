@@ -23,7 +23,8 @@ test("hero defaults to accessible value-only metadata and contains no decorative
   assert.match(page, /aria-label="Ключевая информация о товаре"/u);
   assert.match(page, /<dt className="sr-only">\{label\}<\/dt>/u);
   assert.doesNotMatch(page, /Модель \/ артикул|Модель \/ SKU/u);
-  assert.doesNotMatch(page, /presentation\.statusLabel|key-specifications|sectionLinks/u);
+  assert.doesNotMatch(page, /presentation\.statusLabel|key-specifications/u);
+  assert.match(page, /aria-label="Навигация по странице товара"/u);
   assert.doesNotMatch(page, /<h3 className="cm-label">Области применения<\/h3>/u);
 });
 
