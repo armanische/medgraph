@@ -144,7 +144,7 @@ function ProductImage({ product, href }: { product: Product; href: string }) {
         href={href}
         onClick={() => rememberCatalogReturn(href)}
         aria-label={`Открыть карточку ${product.name}`}
-        className="grid aspect-[16/6.5] w-full place-items-center border-b border-[var(--cm-rule)] bg-cm-surface-low text-[11px] text-cm-dim transition hover:bg-cm-teal-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-cm-teal"
+        className="grid aspect-[16/8] w-full place-items-center border-b border-[var(--cm-rule)] bg-cm-surface-low text-[11px] text-cm-dim transition hover:bg-cm-teal-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-cm-teal"
       >
         {presentation.mediaFallbackLabel}
       </Link>
@@ -156,14 +156,14 @@ function ProductImage({ product, href }: { product: Product; href: string }) {
       href={href}
       onClick={() => rememberCatalogReturn(href)}
       aria-label={`Открыть карточку ${product.name}`}
-      className="relative block aspect-[16/6.5] w-full overflow-hidden border-b border-[var(--cm-rule)] bg-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-cm-teal"
+      className="relative block aspect-[16/8] w-full overflow-hidden border-b border-[var(--cm-rule)] bg-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-cm-teal"
     >
       <Image
         src={image.url}
         alt={image.alt}
         fill
         sizes="(max-width: 767px) 100vw, (max-width: 1535px) 33vw, 25vw"
-        className="object-contain p-2.5 transition duration-300 group-hover:scale-[1.02]"
+        className="object-contain p-2 transition duration-300 group-hover:scale-[1.02]"
       />
     </Link>
   );

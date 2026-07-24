@@ -13,7 +13,7 @@ test("catalog uses the compact responsive density contract", async () => {
   ]);
 
   assert.match(catalog, /md:grid-cols-3 2xl:grid-cols-4/u);
-  assert.match(productCard, /aspect-\[16\/6\.5\]/u);
+  assert.match(productCard, /aspect-\[16\/8\]/u);
   assert.match(catalog, /cm-field cm-field-compact/u);
   assert.match(productCard, /flex flex-1 flex-col p-3/u);
   assert.match(productCard, /bg-cm-teal-soft px-2 py-1 font-bold/u);
