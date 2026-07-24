@@ -16,7 +16,7 @@ export default function Hero({ products }: { products: readonly Product[] }) {
       className="border-b border-[var(--cm-rule)] bg-[linear-gradient(135deg,#ffffff_0%,#f6fafc_58%,#e8f5f7_100%)]"
     >
       <div className="cm-container py-10 sm:py-14 lg:py-16">
-        <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_15rem] lg:items-center lg:gap-8">
+        <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-center lg:gap-8">
           <div className="max-w-[56rem]">
             <h1
               id="homepage-title"
@@ -40,19 +40,23 @@ export default function Hero({ products }: { products: readonly Product[] }) {
           {equipmentImages.length > 0 && (
             <div
               aria-hidden="true"
-              className="grid grid-cols-2 gap-2 lg:gap-3"
+              className="relative mx-auto h-24 w-full max-w-[30rem] sm:h-32 lg:mx-0 lg:h-[12.5rem] lg:max-w-none"
             >
-              {equipmentImages.map((image) => (
+              {equipmentImages.map((image, index) => (
                 <div
                   key={image.id}
-                  className="relative h-14 overflow-hidden rounded-lg border border-[var(--cm-rule)] bg-white sm:h-20 lg:h-[10.5rem]"
+                  className={
+                    index === 0
+                      ? "absolute bottom-0 left-1/2 h-full w-[72%] -translate-x-1/2 sm:left-[7%] sm:w-[56%] sm:translate-x-0 lg:left-0 lg:w-[68%]"
+                      : "absolute bottom-[2%] right-0 hidden h-[72%] w-[52%] sm:block lg:bottom-[4%] lg:w-[58%]"
+                  }
                 >
                   <Image
                     src={image.url}
                     alt=""
                     fill
-                    sizes="(max-width: 639px) 50vw, (max-width: 1023px) 16rem, 7.5rem"
-                    className="object-contain p-2 sm:p-3"
+                    sizes="(max-width: 639px) 72vw, (max-width: 1023px) 30vw, 12rem"
+                    className="object-contain drop-shadow-[0_14px_18px_rgba(26,92,103,0.18)]"
                   />
                 </div>
               ))}
