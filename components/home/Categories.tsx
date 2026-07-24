@@ -82,7 +82,7 @@ export default function Categories({
             </div>
             <Link
               href="/catalog"
-              className="cm-button-secondary mt-4 !min-h-[44px] w-full sm:hidden"
+              className="cm-button-secondary mt-4 !min-h-[44px] w-full sm:!hidden"
             >
               Все категории
             </Link>

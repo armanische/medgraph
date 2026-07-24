@@ -85,7 +85,7 @@ export default function FeaturedManufacturers({
             </div>
             <Link
               href="/manufacturers"
-              className="cm-button-secondary mt-4 !min-h-[44px] w-full sm:hidden"
+              className="cm-button-secondary mt-4 !min-h-[44px] w-full sm:!hidden"
             >
               Все производители
             </Link>

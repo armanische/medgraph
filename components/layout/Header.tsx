@@ -94,7 +94,7 @@ export default function Header({
       <div className="cm-container flex min-h-14 items-center gap-4">
         <Link
           href="/"
-          className="flex shrink-0 items-center gap-2 transition duration-200 hover:opacity-85"
+          className="flex min-h-[44px] shrink-0 items-center gap-2 transition duration-200 hover:opacity-85"
           aria-label="Кибермедика — главная"
         >
           <Image
@@ -115,7 +115,7 @@ export default function Header({
           {navItems.map(([href, label]) => (
             <Link
               key={href}
-              className={`rounded-lg px-3.5 py-2 text-xs font-medium transition duration-200 hover:-translate-y-px hover:bg-cm-surface-low hover:text-cm-ink ${
+              className={`inline-flex min-h-[44px] items-center rounded-lg px-3.5 py-2 text-xs font-medium transition duration-200 hover:-translate-y-px hover:bg-cm-surface-low hover:text-cm-ink ${
                 isActive(href)
                   ? "bg-cm-teal-soft text-cm-teal shadow-[0_8px_22px_rgba(11,123,142,0.08)]"
                   : "text-cm-slate"
@@ -133,7 +133,7 @@ export default function Header({
           onClick={() => setSearchOpen((open) => !open)}
           aria-expanded={searchOpen}
           aria-controls="header-search-panel"
-          className="ml-auto hidden min-h-9 items-center gap-2 rounded-lg border border-[var(--cm-rule)] bg-white px-3 text-xs font-medium text-cm-slate transition duration-200 hover:-translate-y-px hover:border-cm-teal/30 hover:text-cm-ink hover:shadow-[0_10px_24px_rgba(11,19,32,0.06)] sm:inline-flex lg:ml-3"
+          className="ml-auto hidden min-h-[44px] items-center gap-2 rounded-lg border border-[var(--cm-rule)] bg-white px-3 text-xs font-medium text-cm-slate transition duration-200 hover:-translate-y-px hover:border-cm-teal/30 hover:text-cm-ink hover:shadow-[0_10px_24px_rgba(11,19,32,0.06)] sm:inline-flex lg:ml-3"
         >
           <svg viewBox="0 0 24 24" className="size-3.5" fill="none" aria-hidden="true">
             <circle cx="11" cy="11" r="6" stroke="currentColor" strokeWidth="1.8" />
@@ -142,7 +142,7 @@ export default function Header({
           Поиск
         </button>
 
-        <Link href="/request" className="cm-button-primary min-h-9 px-3.5 py-2 text-xs">
+        <Link href="/request" className="cm-button-primary !min-h-[44px] px-3.5 py-2 text-xs">
           Запросить КП
         </Link>
       </div>
@@ -213,7 +213,7 @@ export default function Header({
           <Link
             key={href}
             href={href}
-            className={`shrink-0 rounded-lg px-2 py-2 text-[11px] transition duration-200 hover:bg-cm-surface-low hover:text-cm-teal ${
+            className={`inline-flex min-h-[44px] shrink-0 items-center rounded-lg px-2 py-2 text-[11px] transition duration-200 hover:bg-cm-surface-low hover:text-cm-teal ${
               isActive(href)
                 ? "bg-cm-teal-soft text-cm-teal"
                 : "text-cm-slate"
@@ -228,7 +228,7 @@ export default function Header({
           onClick={() => setSearchOpen((open) => !open)}
           aria-expanded={searchOpen}
           aria-controls="header-search-panel"
-          className="shrink-0 rounded-lg px-2 py-2 text-[11px] text-cm-slate transition hover:bg-cm-surface-low hover:text-cm-teal"
+          className="inline-flex min-h-[44px] shrink-0 items-center rounded-lg px-2 py-2 text-[11px] text-cm-slate transition hover:bg-cm-surface-low hover:text-cm-teal"
         >
           Поиск
         </button>

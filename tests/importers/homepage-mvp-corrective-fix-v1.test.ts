@@ -106,8 +106,9 @@ test("all Homepage H2 headings use the approved responsive scale", async () => {
   }
 });
 
-test("Homepage mobile controls expose explicit 44px minimum targets", async () => {
-  const [hero, search, categories, manufacturers, cta] = await Promise.all([
+test("Homepage controls honor approved minimum and exact target heights", async () => {
+  const [header, hero, search, categories, manufacturers, cta] = await Promise.all([
+    source("components/layout/Header.tsx"),
     source("components/home/Hero.tsx"),
     source("components/home/Search.tsx"),
     source("components/home/Categories.tsx"),
@@ -115,12 +116,18 @@ test("Homepage mobile controls expose explicit 44px minimum targets", async () =
     source("components/home/CTA.tsx"),
   ]);
 
+  assert.match(header, /className="flex min-h-\[44px\] shrink-0/u);
+  assert.match(header, /className="cm-button-primary !min-h-\[44px\]/u);
+  assert.equal(
+    (header.match(/inline-flex min-h-\[44px\] shrink-0 items-center rounded-lg px-2/gu) ?? []).length,
+    2,
+  );
   assert.match(hero, /cm-button-secondary !min-h-\[44px\]/u);
   assert.match(search, /className="min-h-\[44px\][\s\S]*<\/span>/u);
-  assert.match(search, /cm-button-primary !min-h-\[44px\]/u);
-  assert.match(categories, /cm-button-secondary mt-4 !min-h-\[44px\]/u);
-  assert.match(manufacturers, /cm-button-secondary mt-4 !min-h-\[44px\]/u);
-  assert.equal((cta.match(/!min-h-\[44px\]/gu) ?? []).length, 2);
+  assert.match(search, /cm-button-primary !min-h-\[48px\]/u);
+  assert.match(categories, /cm-button-secondary mt-4 !min-h-\[44px\] w-full sm:!hidden/u);
+  assert.match(manufacturers, /cm-button-secondary mt-4 !min-h-\[44px\] w-full sm:!hidden/u);
+  assert.equal((cta.match(/!min-h-\[48px\]/gu) ?? []).length, 2);
 });
 
 test("Homepage Search reuses the established Catalog icon without changing routing", async () => {
