@@ -27,12 +27,13 @@ test("Hero communicates the catalog value and exposes only credible public actio
   const hero = await source("components/home/Hero.tsx");
 
   assert.match(hero, /<h1/u);
-  assert.match(hero, /Медицинское оборудование для клиник и медицинских организаций/u);
+  assert.match(hero, /Каталог медицинского оборудования/u);
   assert.match(hero, /<Search \/>/u);
   assert.match(hero, /href="\/catalog"/u);
-  assert.doesNotMatch(hero, /href="\/request"|href="\/manufacturers"|href="#homepage-search"/u);
+  assert.match(hero, /href="\/request"/u);
+  assert.doesNotMatch(hero, /href="\/manufacturers"|href="#homepage-search"/u);
   assert.match(hero, /<Image/u);
-  assert.match(hero, /product\.media\.find/u);
+  assert.match(hero, /heroProduct\?\.media\.find/u);
   assert.doesNotMatch(hero, /product\.image|EquipmentIcon/u);
   assert.doesNotMatch(hero, /href="\/compare"/u);
   assert.doesNotMatch(hero, /["']use client["']/u);
@@ -94,7 +95,7 @@ test("section headings and final actions are explicitly labelled", async () => {
   const combined = (await Promise.all(files.map(source))).join("\n");
 
   assert.equal((combined.match(/<h1/gu) ?? []).length, 1);
-  assert.equal((combined.match(/<h2/gu) ?? []).length, 5);
+  assert.equal((combined.match(/<h2/gu) ?? []).length, 6);
   assert.match(combined, /aria-labelledby=/u);
   assert.match(combined, /aria-label="Следующие действия"/u);
   assert.match(combined, /cm-button-primary/u);

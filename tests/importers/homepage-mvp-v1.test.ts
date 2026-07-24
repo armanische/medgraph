@@ -9,7 +9,7 @@ async function source(path: string) {
 test("Homepage evolution renders the approved equipment entry after the search-first Hero", async () => {
   const page = await source("app/page.tsx");
   const blocks = [
-    "<Hero products={catalogEquipment ?? []} />",
+    "<Hero products={products ?? []} />",
     "<Equipment",
     "<Categories",
     "<FeaturedManufacturers",
@@ -23,20 +23,23 @@ test("Homepage evolution renders the approved equipment entry after the search-f
   assert.doesNotMatch(page, /FeaturedProducts|PlatformStats|<Search/u);
 });
 
-test("Hero is search-first with public catalog equipment as visual support", async () => {
+test("Hero combines a real catalog showcase with the established Search", async () => {
   const [hero, search] = await Promise.all([
     source("components/home/Hero.tsx"),
     source("components/home/Search.tsx"),
   ]);
 
   assert.equal((hero.match(/<h1\b/gu) ?? []).length, 1);
-  assert.match(hero, /Медицинское оборудование для клиник и медицинских организаций/u);
+  assert.match(hero, /Каталог медицинского оборудования/u);
+  assert.match(hero, /ПРОФЕССИОНАЛЬНАЯ ВИТРИНА ОБОРУДОВАНИЯ/u);
+  assert.match(hero, /HERO_PRODUCT_SLUG/u);
   assert.match(hero, /<Search \/>/u);
   assert.match(hero, /href="\/catalog"/u);
+  assert.match(hero, /href="\/request"/u);
   assert.match(hero, /<Image/u);
-  assert.match(hero, /product\.media\.find/u);
+  assert.match(hero, /heroProduct\?\.media\.find/u);
   assert.match(hero, /alt=""/u);
-  assert.doesNotMatch(hero, /<svg|href="\/request"/u);
+  assert.doesNotMatch(hero, /<svg|ProductCard|href="\/compare"/u);
   assert.match(search, /Найти оборудование/u);
   assert.match(search, /name="q"/u);
   assert.match(search, /router\.push\(`\/catalog\?q=\$\{encodeURIComponent\(query\)\}`\)/u);

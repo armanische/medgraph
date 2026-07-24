@@ -83,7 +83,7 @@ export default async function Home() {
       {storefrontDataSource !== "cloud_preview" && (
         <JsonLd data={buildHomepageStructuredData(homepageDescription)} />
       )}
-      <Hero products={catalogEquipment ?? []} />
+      <Hero products={products ?? []} />
       <Equipment
         products={catalogEquipment}
         manufacturers={manufacturers ?? []}

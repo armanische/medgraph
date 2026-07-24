@@ -13,15 +13,16 @@ test("homepage uses the official brand asset and approved search-first hero", as
 
   assert.match(header, /\/brand\/cybermedica-logo\.png/u);
   assert.match(footer, /\/brand\/cybermedica-logo\.png/u);
-  assert.match(hero, /Медицинское оборудование для клиник и медицинских организаций/u);
+  assert.match(hero, /Каталог медицинского оборудования/u);
   assert.match(
     hero,
-    /Найдите оборудование по названию, модели, производителю или категории/u,
+    /Оборудование ведущих производителей для государственных и частных/u,
   );
   assert.match(hero, /<Search \/>/u);
   assert.match(hero, /Перейти в каталог/u);
   assert.match(hero, /<Image/u);
-  assert.match(hero, /product\.media\.find/u);
+  assert.match(hero, /heroProduct\?\.media\.find/u);
+  assert.match(hero, /Запросить коммерческое предложение/u);
   assert.doesNotMatch(hero, /Запросить КП|ведущих мировых/u);
 });
 
@@ -69,7 +70,6 @@ test("rendered homepage removes obsolete technical copy", async () => {
   for (const obsolete of [
     "ведущих мировых производителей",
     "Популярные товары",
-    "Модель из каталога",
     "структура каталога",
     "Производитель → Категория → Товар → Запрос КП",
   ]) {
