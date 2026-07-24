@@ -42,7 +42,7 @@ test("Homepage Search delegates the complete query to Catalog", async () => {
     source("components/home/Search.tsx"),
   ]);
 
-  assert.match(page, /<Hero \/>/u);
+  assert.match(page, /<Hero products=\{catalogEquipment \?\? \[\]\} \/>/u);
   assert.doesNotMatch(page, /products=\{products\}|manufacturers=\{manufacturers\}|categories=\{categories\}/u);
   assert.match(search, /router\.push\(`\/catalog\?q=\$\{encodeURIComponent\(query\)\}`\)/u);
   assert.match(search, /if \(!query\)/u);

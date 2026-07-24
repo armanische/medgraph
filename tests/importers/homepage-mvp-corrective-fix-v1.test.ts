@@ -90,6 +90,7 @@ test("all Homepage H2 headings use the approved responsive scale", async () => {
   const paths = [
     "components/home/Categories.tsx",
     "components/home/FeaturedManufacturers.tsx",
+    "components/home/Equipment.tsx",
     "components/home/WhyCyberMedica.tsx",
     "components/home/CTA.tsx",
   ];
@@ -107,12 +108,13 @@ test("all Homepage H2 headings use the approved responsive scale", async () => {
 });
 
 test("Homepage controls honor approved minimum and exact target heights", async () => {
-  const [header, hero, search, categories, manufacturers, cta] = await Promise.all([
+  const [header, hero, search, categories, manufacturers, equipment, cta] = await Promise.all([
     source("components/layout/Header.tsx"),
     source("components/home/Hero.tsx"),
     source("components/home/Search.tsx"),
     source("components/home/Categories.tsx"),
     source("components/home/FeaturedManufacturers.tsx"),
+    source("components/home/Equipment.tsx"),
     source("components/home/CTA.tsx"),
   ]);
 
@@ -127,6 +129,7 @@ test("Homepage controls honor approved minimum and exact target heights", async 
   assert.match(search, /cm-button-primary !min-h-\[48px\]/u);
   assert.match(categories, /cm-button-secondary mt-4 !min-h-\[44px\] w-full sm:!hidden/u);
   assert.match(manufacturers, /cm-button-secondary mt-4 !min-h-\[44px\] w-full sm:!hidden/u);
+  assert.match(equipment, /cm-button-secondary !min-h-\[44px\] w-full sm:w-auto/u);
   assert.equal((cta.match(/!min-h-\[48px\]/gu) ?? []).length, 2);
 });
 

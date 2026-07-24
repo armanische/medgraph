@@ -20,7 +20,9 @@ test("homepage uses the official brand asset and approved search-first hero", as
   );
   assert.match(hero, /<Search \/>/u);
   assert.match(hero, /Перейти в каталог/u);
-  assert.doesNotMatch(hero, /<Image|Запросить КП|ведущих мировых/u);
+  assert.match(hero, /<Image/u);
+  assert.match(hero, /product\.media\.find/u);
+  assert.doesNotMatch(hero, /Запросить КП|ведущих мировых/u);
 });
 
 test("homepage search exposes the approved prompt without duplicate discovery UI", async () => {
@@ -35,9 +37,10 @@ test("homepage search exposes the approved prompt without duplicate discovery UI
   assert.doesNotMatch(search, /popularQueries|Популярные запросы|role="listbox"/u);
 });
 
-test("category cards are text-first and Homepage does not render product cards", async () => {
+test("category cards stay text-first while Homepage reuses the canonical ProductCard", async () => {
   const categories = await source("components/home/Categories.tsx");
   const page = await source("app/page.tsx");
+  const equipment = await source("components/home/Equipment.tsx");
 
   assert.doesNotMatch(categories, /<Image|category\.image|<CategoryIcon/u);
   assert.doesNotMatch(categories, /padStart|String\(index \+ 1\)/u);
@@ -45,6 +48,10 @@ test("category cards are text-first and Homepage does not render product cards",
   assert.match(categories, /category\.productCount/u);
   assert.match(page, /categoryProductCounts/u);
   assert.doesNotMatch(page, /FeaturedProducts|getFeaturedProducts|product\.media\.find/u);
+  assert.match(page, /<Equipment/u);
+  assert.match(equipment, /import ProductCard from "@\/components\/storefront\/ProductCard"/u);
+  assert.match(equipment, /<ProductCard/u);
+  assert.doesNotMatch(equipment, /<article|HomepageProductCard|FeaturedProductCard|CatalogProductCard/u);
 });
 
 test("rendered homepage removes obsolete technical copy", async () => {
@@ -73,10 +80,10 @@ test("rendered homepage removes obsolete technical copy", async () => {
 test("final homepage CTA uses the approved commercial request", async () => {
   const cta = await source("components/home/CTA.tsx");
 
-  assert.match(cta, /Не нашли нужную модель\?/u);
+  assert.match(cta, /Нужна помощь с подбором оборудования\?/u);
   assert.match(
     cta,
-    /Перейдите в полный каталог или отправьте запрос/u,
+    /Опишите задачу, необходимые характеристики или известную модель/u,
   );
   assert.match(cta, /Перейти в каталог/u);
   assert.match(cta, /Запросить КП/u);

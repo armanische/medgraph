@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import Hero from "@/components/home/Hero";
+import Equipment from "@/components/home/Equipment";
 import FeaturedManufacturers from "@/components/home/FeaturedManufacturers";
 import Categories from "@/components/home/Categories";
 import WhyCyberMedica from "@/components/home/WhyCyberMedica";
@@ -75,13 +76,19 @@ export default async function Home() {
       left.name.localeCompare(right.name, "ru-RU"),
     )
     .slice(0, 8) : null;
+  const catalogEquipment = products?.slice(0, 4) ?? null;
 
   return (
     <main className="min-h-screen bg-cm-canvas">
       {storefrontDataSource !== "cloud_preview" && (
         <JsonLd data={buildHomepageStructuredData(homepageDescription)} />
       )}
-      <Hero />
+      <Hero products={catalogEquipment ?? []} />
+      <Equipment
+        products={catalogEquipment}
+        manufacturers={manufacturers ?? []}
+        categories={categories ?? []}
+      />
       <Categories categories={categoryEntries} />
       <FeaturedManufacturers manufacturers={manufacturerEntries} />
       <WhyCyberMedica />

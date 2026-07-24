@@ -10,6 +10,7 @@ test("homepage follows the Storefront information architecture", async () => {
   const page = await source("app/page.tsx");
   const sections = [
     "<Hero",
+    "<Equipment",
     "<Categories",
     "<FeaturedManufacturers",
     "<WhyCyberMedica",
@@ -30,7 +31,9 @@ test("Hero communicates the catalog value and exposes only credible public actio
   assert.match(hero, /<Search \/>/u);
   assert.match(hero, /href="\/catalog"/u);
   assert.doesNotMatch(hero, /href="\/request"|href="\/manufacturers"|href="#homepage-search"/u);
-  assert.doesNotMatch(hero, /<Image|product\.image|EquipmentIcon/u);
+  assert.match(hero, /<Image/u);
+  assert.match(hero, /product\.media\.find/u);
+  assert.doesNotMatch(hero, /product\.image|EquipmentIcon/u);
   assert.doesNotMatch(hero, /href="\/compare"/u);
   assert.doesNotMatch(hero, /["']use client["']/u);
 });
@@ -64,6 +67,7 @@ test("featured content is derived from existing Storefront services", async () =
 test("only the search interaction adds a homepage client boundary", async () => {
   const serverComponents = [
     "components/home/Hero.tsx",
+    "components/home/Equipment.tsx",
     "components/home/Categories.tsx",
     "components/home/FeaturedManufacturers.tsx",
     "components/home/WhyCyberMedica.tsx",
@@ -80,6 +84,7 @@ test("only the search interaction adds a homepage client boundary", async () => 
 test("section headings and final actions are explicitly labelled", async () => {
   const files = [
     "components/home/Hero.tsx",
+    "components/home/Equipment.tsx",
     "components/home/Search.tsx",
     "components/home/Categories.tsx",
     "components/home/FeaturedManufacturers.tsx",
@@ -89,7 +94,7 @@ test("section headings and final actions are explicitly labelled", async () => {
   const combined = (await Promise.all(files.map(source))).join("\n");
 
   assert.equal((combined.match(/<h1/gu) ?? []).length, 1);
-  assert.equal((combined.match(/<h2/gu) ?? []).length, 4);
+  assert.equal((combined.match(/<h2/gu) ?? []).length, 5);
   assert.match(combined, /aria-labelledby=/u);
   assert.match(combined, /aria-label="Следующие действия"/u);
   assert.match(combined, /cm-button-primary/u);

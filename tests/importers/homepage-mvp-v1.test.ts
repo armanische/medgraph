@@ -6,10 +6,11 @@ async function source(path: string) {
   return readFile(path, "utf8");
 }
 
-test("Homepage MVP renders exactly the five approved blocks in order", async () => {
+test("Homepage evolution renders the approved equipment entry after the search-first Hero", async () => {
   const page = await source("app/page.tsx");
   const blocks = [
-    "<Hero />",
+    "<Hero products={catalogEquipment ?? []} />",
+    "<Equipment",
     "<Categories",
     "<FeaturedManufacturers",
     "<WhyCyberMedica />",
@@ -22,7 +23,7 @@ test("Homepage MVP renders exactly the five approved blocks in order", async () 
   assert.doesNotMatch(page, /FeaturedProducts|PlatformStats|<Search/u);
 });
 
-test("Hero is search-first without illustration or premature request action", async () => {
+test("Hero is search-first with public catalog equipment as visual support", async () => {
   const [hero, search] = await Promise.all([
     source("components/home/Hero.tsx"),
     source("components/home/Search.tsx"),
@@ -32,7 +33,10 @@ test("Hero is search-first without illustration or premature request action", as
   assert.match(hero, /Медицинское оборудование для клиник и медицинских организаций/u);
   assert.match(hero, /<Search \/>/u);
   assert.match(hero, /href="\/catalog"/u);
-  assert.doesNotMatch(hero, /<Image|<svg|href="\/request"|product=/u);
+  assert.match(hero, /<Image/u);
+  assert.match(hero, /product\.media\.find/u);
+  assert.match(hero, /alt=""/u);
+  assert.doesNotMatch(hero, /<svg|href="\/request"/u);
   assert.match(search, /Найти оборудование/u);
   assert.match(search, /name="q"/u);
   assert.match(search, /router\.push\(`\/catalog\?q=\$\{encodeURIComponent\(query\)\}`\)/u);
@@ -86,6 +90,7 @@ test("Homepage keeps a single client boundary and no parallel data path", async 
   const serverPaths = [
     "app/page.tsx",
     "components/home/Hero.tsx",
+    "components/home/Equipment.tsx",
     "components/home/Categories.tsx",
     "components/home/FeaturedManufacturers.tsx",
     "components/home/WhyCyberMedica.tsx",

@@ -13,6 +13,7 @@ const homepageFiles = [
   "app/page.tsx",
   "components/home/Hero.tsx",
   "components/home/Search.tsx",
+  "components/home/Equipment.tsx",
   "components/home/FeaturedManufacturers.tsx",
   "components/home/Categories.tsx",
   "components/home/WhyCyberMedica.tsx",
