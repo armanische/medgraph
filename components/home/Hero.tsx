@@ -46,7 +46,7 @@ export default function Hero({ products }: { products: readonly Product[] }) {
             {heroProduct && heroImage && (
               <div className="relative min-h-[15rem] overflow-hidden rounded-2xl border border-[var(--cm-rule-strong)] bg-[linear-gradient(145deg,#f8fcfc_0%,#dff0f3_100%)] p-4 shadow-[0_20px_50px_rgba(11,19,32,0.10)] sm:min-h-[20rem] sm:p-6 lg:min-h-[25rem]">
                 <div aria-hidden="true" className="absolute -right-16 -top-16 h-44 w-44 rounded-full bg-cm-teal/10" />
-                <div className="relative h-[calc(100%-3.5rem)]">
+                <div className="absolute inset-x-4 bottom-20 top-4 sm:inset-x-6 sm:bottom-24 sm:top-6">
                   <Image
                     src={heroImage.url}
                     alt=""
