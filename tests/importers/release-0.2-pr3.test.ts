@@ -82,15 +82,15 @@ test("header search uses the existing Storefront SearchService in place", async 
 });
 
 test("catalog summary is compact and product media is an accessible link", async () => {
-  const [page, explorer] = await Promise.all([
+  const [page, productCard] = await Promise.all([
     source("app/catalog/page.tsx"),
-    source("components/catalog/CatalogExplorer.tsx"),
+    source("components/storefront/ProductCard.tsx"),
   ]);
 
   assert.match(page, /sm:grid-cols-4/u);
   assert.match(page, /overflow-hidden rounded-xl border/u);
-  assert.match(explorer, /aria-label=\{`Открыть карточку \$\{product\.name\}`\}/u);
-  assert.match(explorer, /const productHref = `\/catalog\/\$\{product\.slug\}`/u);
+  assert.match(productCard, /aria-label=\{`Открыть карточку \$\{product\.name\}`\}/u);
+  assert.match(productCard, /const productHref = `\/catalog\/\$\{product\.slug\}`/u);
 });
 
 test("manufacturer directory uses localized country labels and responsive density", async () => {

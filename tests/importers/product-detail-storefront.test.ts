@@ -152,12 +152,12 @@ test("Ambu VivaSight image is catalog-ready and available to catalog and product
   });
   await access(resolve(root, "public", image.url.slice(1)));
 
-  const [productPage, catalogExplorer] = await Promise.all([
+  const [productPage, productCard] = await Promise.all([
     pageSource(),
-    readFile(resolve(root, "components/catalog/CatalogExplorer.tsx"), "utf8"),
+    readFile(resolve(root, "components/storefront/ProductCard.tsx"), "utf8"),
   ]);
   assert.match(productPage, /<ProductGallery\s+media=\{product\.media\}/u);
-  assert.match(catalogExplorer, /product\.media\.find/u);
+  assert.match(productCard, /product\.media\.find/u);
 });
 
 test("product hero uses a media-first 40/60 layout without decorative duplicates", async () => {

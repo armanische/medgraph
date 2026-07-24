@@ -13,6 +13,7 @@ const root = process.cwd();
 const catalogFiles = [
   "app/catalog/page.tsx",
   "components/catalog/CatalogExplorer.tsx",
+  "components/storefront/ProductCard.tsx",
 ];
 
 async function source(path: string) {
@@ -78,7 +79,7 @@ test("catalog has no publication or draft catalog imports", async () => {
 });
 
 test("catalog cards expose only storefront merchandising fields", async () => {
-  const explorer = await source("components/catalog/CatalogExplorer.tsx");
+  const productCard = await source("components/storefront/ProductCard.tsx");
 
   for (const internalField of [
     "displayStatus",
@@ -91,12 +92,12 @@ test("catalog cards expose only storefront merchandising fields", async () => {
     "sourceCount",
     "coverage",
   ]) {
-    assert.doesNotMatch(explorer, new RegExp(`\\b${internalField}\\b`, "i"));
+    assert.doesNotMatch(productCard, new RegExp(`\\b${internalField}\\b`, "i"));
   }
-  assert.match(explorer, /product\.name/);
-  assert.match(explorer, /presentation\.shortDescription/);
-  assert.match(explorer, /product\.media/);
-  assert.match(explorer, /product\.manufacturerId/);
-  assert.match(explorer, /product\.categoryId/);
-  assert.match(explorer, /const productHref = `\/catalog\/\$\{product\.slug\}`/);
+  assert.match(productCard, /product\.name/);
+  assert.match(productCard, /presentation\.shortDescription/);
+  assert.match(productCard, /product\.media/);
+  assert.match(productCard, /manufacturer\?: Manufacturer/);
+  assert.match(productCard, /categoryName\?: string/);
+  assert.match(productCard, /const productHref = `\/catalog\/\$\{product\.slug\}`/);
 });

@@ -20,23 +20,24 @@ test("catalog experience keeps the Storefront service boundary", async () => {
 });
 
 test("catalog cards expose required public list fields without unsafe specifications", async () => {
-  const explorer = await source("components/catalog/CatalogExplorer.tsx");
+  const productCard = await source("components/storefront/ProductCard.tsx");
 
-  assert.match(explorer, /product\.media\.find/);
-  assert.match(explorer, /alt=\{image\.alt\}/);
-  assert.match(explorer, /product\.name/);
-  assert.match(explorer, /presentation\.shortDescription/);
-  assert.match(explorer, /manufacturerEntry\.name/);
-  assert.match(explorer, /product\.applicationAreas\.slice\(0, 2\)/);
-  assert.match(explorer, /\.filter\(isTechnicalProductSpecification\)/);
-  assert.match(explorer, /const productHref = `\/catalog\/\$\{product\.slug\}`/);
-  assert.match(explorer, /<ProductImage product=\{product\} href=\{productHref\} \/>/);
+  assert.match(productCard, /product\.media\.find/);
+  assert.match(productCard, /alt=\{image\.alt\}/);
+  assert.match(productCard, /product\.name/);
+  assert.match(productCard, /presentation\.shortDescription/);
+  assert.match(productCard, /manufacturer\.name/);
+  assert.match(productCard, /product\.applicationAreas\.slice\(0, 2\)/);
+  assert.match(productCard, /\.filter\(isTechnicalProductSpecification\)/);
+  assert.match(productCard, /const productHref = `\/catalog\/\$\{product\.slug\}`/);
+  assert.match(productCard, /<ProductImage product=\{product\} href=\{productHref\} \/>/);
 });
 
 test("catalog state and unified recovery navigation preserve the complete URL", async () => {
-  const [page, explorer, backToCatalog, productPage] = await Promise.all([
+  const [page, explorer, productCard, backToCatalog, productPage] = await Promise.all([
     source("app/catalog/page.tsx"),
     source("components/catalog/CatalogExplorer.tsx"),
+    source("components/storefront/ProductCard.tsx"),
     source("components/catalog/BackToCatalog.tsx"),
     source("app/catalog/[slug]/page.tsx"),
   ]);
@@ -58,8 +59,8 @@ test("catalog state and unified recovery navigation preserve the complete URL", 
     assert.match(explorer, new RegExp(`params,\\s*"${parameter}"`, "u"));
   }
 
-  assert.match(explorer, /rememberCatalogReturn\(productHref\)/);
-  assert.doesNotMatch(explorer, /<a\s+href=\{productHref\}/);
+  assert.match(productCard, /rememberCatalogReturn\(productHref\)/);
+  assert.doesNotMatch(productCard, /<a\s+href=\{productHref\}/);
   assert.match(backToCatalog, /window\.location\.pathname/);
   assert.match(backToCatalog, /window\.location\.search/);
   assert.match(backToCatalog, /scrollY: window\.scrollY/);

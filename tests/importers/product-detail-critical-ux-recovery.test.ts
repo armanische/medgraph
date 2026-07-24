@@ -7,7 +7,7 @@ async function source(path: string) {
 }
 
 test("catalog cards use a single category presentation and retain stable alignment", async () => {
-  const catalog = await source("components/catalog/CatalogExplorer.tsx");
+  const catalog = await source("components/storefront/ProductCard.tsx");
 
   assert.match(catalog, /<span className="sr-only">Категория: <\/span>/u);
   assert.match(catalog, /filter\(isTechnicalProductSpecification\)/u);

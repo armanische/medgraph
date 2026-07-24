@@ -7,14 +7,17 @@ async function source(path: string) {
 }
 
 test("catalog cards reserve a stable title, manufacturer, description and detail region", async () => {
-  const catalog = await source("components/catalog/CatalogExplorer.tsx");
+  const [catalog, productCard] = await Promise.all([
+    source("components/catalog/CatalogExplorer.tsx"),
+    source("components/storefront/ProductCard.tsx"),
+  ]);
 
-  assert.match(catalog, /line-clamp-2 min-h-10/u);
-  assert.match(catalog, /min-h-7 text-xs/u);
-  assert.match(catalog, /min-h-9/u);
-  assert.match(catalog, /min-h-\[3\.625rem\]/u);
+  assert.match(productCard, /line-clamp-2 min-h-10/u);
+  assert.match(productCard, /min-h-7 text-xs/u);
+  assert.match(productCard, /min-h-9/u);
+  assert.match(productCard, /min-h-\[3\.625rem\]/u);
   assert.match(catalog, /md:grid-cols-3 2xl:grid-cols-4/u);
-  assert.match(catalog, /<span className="sr-only">Категория: <\/span>/u);
+  assert.match(productCard, /<span className="sr-only">Категория: <\/span>/u);
 });
 
 test("hero defaults to accessible value-only metadata and contains no decorative model or status block", async () => {

@@ -137,7 +137,7 @@ test("public product surfaces consume the shared presentation contract", async (
   const sources = await Promise.all([
     "app/catalog/[slug]/page.tsx",
     "app/manufacturers/[slug]/page.tsx",
-    "components/catalog/CatalogExplorer.tsx",
+    "components/storefront/ProductCard.tsx",
     "components/search/SearchExperience.tsx",
   ].map((path) => readFile(path, "utf8")));
 

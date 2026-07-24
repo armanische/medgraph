@@ -7,13 +7,16 @@ async function source(path: string) {
 }
 
 test("catalog uses the compact responsive density contract", async () => {
-  const catalog = await source("components/catalog/CatalogExplorer.tsx");
+  const [catalog, productCard] = await Promise.all([
+    source("components/catalog/CatalogExplorer.tsx"),
+    source("components/storefront/ProductCard.tsx"),
+  ]);
 
   assert.match(catalog, /md:grid-cols-3 2xl:grid-cols-4/u);
-  assert.match(catalog, /aspect-\[16\/6\.5\]/u);
+  assert.match(productCard, /aspect-\[16\/6\.5\]/u);
   assert.match(catalog, /cm-field cm-field-compact/u);
-  assert.match(catalog, /flex flex-1 flex-col p-3/u);
-  assert.match(catalog, /bg-cm-teal-soft px-2 py-1 font-bold/u);
+  assert.match(productCard, /flex flex-1 flex-col p-3/u);
+  assert.match(productCard, /bg-cm-teal-soft px-2 py-1 font-bold/u);
   assert.doesNotMatch(catalog, /Категория уточняется/u);
   assert.match(catalog, /Данные уточняются/u);
 });
@@ -33,8 +36,8 @@ test("catalog summary exposes four public storefront metrics", async () => {
 });
 
 test("catalog presentation uses the shared fail-closed product contract", async () => {
-  const catalog = await source("components/catalog/CatalogExplorer.tsx");
-  assert.match(catalog, /getProductPresentation/u);
-  assert.match(catalog, /presentation\.mediaFallbackLabel/u);
-  assert.match(catalog, /presentation\.canCompare/u);
+  const productCard = await source("components/storefront/ProductCard.tsx");
+  assert.match(productCard, /getProductPresentation/u);
+  assert.match(productCard, /presentation\.mediaFallbackLabel/u);
+  assert.match(productCard, /presentation\.canCompare/u);
 });
