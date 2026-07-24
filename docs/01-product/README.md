@@ -6,11 +6,12 @@
 
 ## Ключевые документы
 
-- [Product Experience v1](../product/product-experience-v1.md)
-- [Release Plan v0.2](../product/release-plan-v0.2.md)
-- [Product Data Standard](../product-data-standard-v1.md)
+- [UI Constitution v1](../00-product/ui-constitution.md) — обязательные архитектурные инварианты интерфейса
 - [Catalog Content Standard](../catalog-content-standard.md)
 - [Product Route Strategy](../product-route-strategy.md)
+- [Launch Roadmap](../roadmap/Launch_Roadmap.md)
+- [Launch Changelog](../releases/CHANGELOG-LAUNCH.md)
+- [Product Detail recovery baseline](../releases/product-detail-baseline-recovery-phase-1.md)
 - [Release reports](../releases/)
 
-Новый product document указывает status, scope, data baseline и связь с release.
+Новый product document указывает status, scope, data baseline и связь с release. Любая UI specification, Design и Acceptance Review обязаны явно подтвердить соответствие [UI Constitution v1](../00-product/ui-constitution.md).
