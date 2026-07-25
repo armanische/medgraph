@@ -21,8 +21,12 @@ test("Homepage Hero v2 derives one real catalog showcase without a new data path
   assert.match(hero, /absolute inset-x-4 bottom-20 top-4/u);
   assert.match(hero, /МОДЕЛЬ ИЗ КАТАЛОГА/u);
   assert.match(hero, /\{heroProduct\.name\}/u);
+  assert.match(hero, /href=\{`\/catalog\/\$\{heroProduct\.slug\}`\}/u);
+  assert.match(hero, /Открыть карточку →/u);
+  assert.match(hero, /focus-visible:outline/u);
+  assert.match(hero, /group-hover:scale-\[1\.02\]/u);
   assert.match(hero, /<Search \/>/u);
   assert.match(search, /router\.push\(`\/catalog\?q=\$\{encodeURIComponent\(query\)\}`\)/u);
-  assert.doesNotMatch(hero, /ProductCard|href="\/catalog\/.+"|onClick|hover:/u);
+  assert.doesNotMatch(hero, /ProductCard|onClick|<button[\s\S]*Открыть карточку/u);
   assert.match(equipment, /import ProductCard from "@\/components\/storefront\/ProductCard"/u);
 });

@@ -44,7 +44,11 @@ export default function Hero({ products }: { products: readonly Product[] }) {
               </div>
             </div>
             {heroProduct && heroImage && (
-              <div className="relative min-h-[15rem] overflow-hidden rounded-2xl border border-[var(--cm-rule-strong)] bg-[linear-gradient(145deg,#f8fcfc_0%,#dff0f3_100%)] p-4 shadow-[0_20px_50px_rgba(11,19,32,0.10)] sm:min-h-[20rem] sm:p-6 lg:min-h-[25rem]">
+              <Link
+                href={`/catalog/${heroProduct.slug}`}
+                aria-label={`Открыть карточку товара «${heroProduct.name}»`}
+                className="group relative block min-h-[15rem] cursor-pointer overflow-hidden rounded-2xl border border-[var(--cm-rule-strong)] bg-[linear-gradient(145deg,#f8fcfc_0%,#dff0f3_100%)] p-4 shadow-[0_20px_50px_rgba(11,19,32,0.10)] transition duration-200 hover:border-cm-teal hover:shadow-[0_24px_54px_rgba(11,19,32,0.14)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cm-teal sm:min-h-[20rem] sm:p-6 lg:min-h-[25rem]"
+              >
                 <div aria-hidden="true" className="absolute -right-16 -top-16 h-44 w-44 rounded-full bg-cm-teal/10" />
                 <div className="absolute inset-x-4 bottom-20 top-4 sm:inset-x-6 sm:bottom-24 sm:top-6">
                   <Image
@@ -53,7 +57,7 @@ export default function Hero({ products }: { products: readonly Product[] }) {
                     fill
                     priority
                     sizes="(max-width: 639px) 82vw, (max-width: 1023px) 62vw, 34vw"
-                    className="object-contain drop-shadow-[0_18px_26px_rgba(11,19,32,0.20)]"
+                    className="object-contain drop-shadow-[0_18px_26px_rgba(11,19,32,0.20)] transition duration-200 group-hover:scale-[1.02]"
                   />
                 </div>
                 <div className="absolute inset-x-4 bottom-4 rounded-xl border border-white/80 bg-white/90 px-4 py-3 shadow-sm backdrop-blur sm:inset-x-6 sm:bottom-6">
@@ -63,8 +67,11 @@ export default function Hero({ products }: { products: readonly Product[] }) {
                   <p className="mt-1 text-sm font-bold text-cm-ink sm:text-base">
                     {heroProduct.name}
                   </p>
+                  <p className="mt-1 text-xs font-bold text-cm-teal transition duration-200 group-hover:text-cm-ink">
+                    Открыть карточку →
+                  </p>
                 </div>
-              </div>
+              </Link>
             )}
           </div>
         </div>
