@@ -2,8 +2,8 @@ import { spawnSync } from "node:child_process";
 import path from "node:path";
 
 const IMAGE = "public.ecr.aws/supabase/postgres:17.6.1.147";
-const DATABASE = "cybermedica_structured_fields_test";
-const CONTAINER = `cybermedica-structured-fields-${process.pid}`;
+const DATABASE = "cybermedica_product_publication_test";
+const CONTAINER = `cybermedica-product-publication-${process.pid}`;
 const ROOT = process.cwd();
 
 interface RunOptions {
@@ -53,7 +53,7 @@ try {
     "--name",
     CONTAINER,
     "-e",
-    "POSTGRES_PASSWORD=local_structured_fields_test",
+    "POSTGRES_PASSWORD=local_product_publication_test",
     "-e",
     `POSTGRES_DB=${DATABASE}`,
     IMAGE,
@@ -88,13 +88,8 @@ try {
   ]);
   run("docker", [
     "cp",
-    path.join(ROOT, "supabase/tests/002_structured_product_detail_integration.sql"),
-    `${CONTAINER}:/tmp/002_structured_product_detail_integration.sql`,
-  ]);
-  run("docker", [
-    "cp",
-    path.join(ROOT, "supabase/tests/003_structured_product_detail_integrity_regression.sql"),
-    `${CONTAINER}:/tmp/003_structured_product_detail_integrity_regression.sql`,
+    path.join(ROOT, "supabase/tests/004_product_publication_integration.sql"),
+    `${CONTAINER}:/tmp/004_product_publication_integration.sql`,
   ]);
 
   dockerExec(
@@ -128,18 +123,7 @@ done`,
     "-v",
     "ON_ERROR_STOP=1",
     "-f",
-    "/tmp/002_structured_product_detail_integration.sql",
-  );
-  dockerExec(
-    "psql",
-    "-U",
-    "supabase_admin",
-    "-d",
-    DATABASE,
-    "-v",
-    "ON_ERROR_STOP=1",
-    "-f",
-    "/tmp/003_structured_product_detail_integrity_regression.sql",
+    "/tmp/004_product_publication_integration.sql",
   );
 
   const audit = run("docker", [
@@ -153,10 +137,9 @@ done`,
     "-Atc",
     `select jsonb_build_object(
       'products', count(*),
-      'features', (select count(*) from cloud.product_key_features),
-      'revisions', (select count(*) from cloud.product_detail_candidate_revisions),
-      'revisionApprovals', (select count(*) from cloud.product_detail_candidate_revision_approvals),
-      'batches', (select count(*) from cloud.product_detail_publication_batches),
+      'revisions', (select count(*) from cloud.product_publication_revisions),
+      'approvals', (select count(*) from cloud.product_publication_approvals),
+      'batches', (select count(*) from cloud.product_publication_batches),
       'events', (select count(*) from cloud.publication_events)
     ) from cloud.products`,
   ], { quiet: true });
@@ -170,19 +153,20 @@ done`,
     image: IMAGE,
     migrationCount: 15,
     integration: [
-      "immutable-revision",
-      "canonical-payload-hash",
-      "revision-bound-review-validation",
-      "stale-approval-rejection",
-      "product-identity-binding",
-      "service-only-writer",
-      "idempotent-retry",
-      "legacy-row-isolation",
-      "published-only-projection",
-      "exact-rollback",
+      "imported-to-review-state",
+      "immutable-revision-and-checksums",
+      "verified-audit-actor",
+      "revision-bound-approval",
+      "service-only-publication",
+      "idempotent-revision-approval-publication",
+      "published-dependency-gate",
+      "atomic-failure-rollback",
+      "archive-and-exact-rollback",
       "idempotent-rollback",
-      "unrelated-product-preserved",
-      "rls-and-grants",
+      "direct-state-bypass-rejection",
+      "post-approval-content-lock",
+      "append-only-audit-history",
+      "fail-closed-rls-and-grants",
     ],
     postTest,
     remoteConnections: 0,

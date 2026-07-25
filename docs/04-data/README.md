@@ -10,5 +10,6 @@
 - [Product Import](../product-import-v1.md)
 - [Catalog Quality Model](../catalog-quality-model-v1.md)
 - [Catalog Baseline](../reports/catalog-baseline-v1.md)
+- [Product Publication Foundation v1](./product-publication-foundation-v1.md)
 
 Immutable source не редактируется. Supabase — operational Source of Truth; static fallback не является каноном.

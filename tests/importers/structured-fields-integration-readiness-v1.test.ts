@@ -40,6 +40,7 @@ test("the recovered Structured Fields migration chain is complete and checksum-p
     "202607230001",
     "202607230002",
     "202607230003",
+    "202607250001",
   ]);
 
   for (const migration of manifest.migrations) {
@@ -221,7 +222,7 @@ test("the local integration fixture is transactional and covers the service-only
   assert.match(runner, /This QA command never pulls images automatically/u);
   assert.match(runner, /"--rm"/u);
   assert.match(runner, /remoteConnections: 0/u);
-  assert.match(runner, /migrationCount: 14/u);
+  assert.match(runner, /migrationCount: 15/u);
   assert.match(runner, /003_structured_product_detail_integrity_regression\.sql/u);
   assert.doesNotMatch(runner, /SUPABASE_SERVICE_ROLE_KEY|NEXT_PUBLIC_SUPABASE/u);
 });
