@@ -168,7 +168,7 @@ done`,
   process.stdout.write(`${JSON.stringify({
     status: "PASS",
     image: IMAGE,
-    migrationCount: 18,
+    migrationCount: 19,
     integration: [
       "immutable-revision",
       "canonical-payload-hash",

@@ -178,6 +178,31 @@ test("Published Catalog corrective migration hardens public dependency clocks an
   assert.doesNotMatch(correctiveMigration, /cloud_storefront_preview_catalog\(/u);
 });
 
+test("Published Catalog corrective v2 binds Product storage and uses a private monotonic clock", async () => {
+  const migration = await readFile(
+    "supabase/migrations/202607260004_published_catalog_projection_corrective_v2.sql",
+    "utf8",
+  );
+
+  assert.equal(
+    createHash("sha256").update(migration).digest("hex"),
+    "26f7dd90e65665ade5729dc5e0934fe7b8f15979cdaaee1c92cc859d66d6162d",
+  );
+  assert.match(migration, /published_catalog_projection_state/u);
+  assert.match(migration, /payload_checksum text/u);
+  assert.match(migration, /for update/u);
+  assert.match(migration, /state\.version \+ 1/u);
+  assert.match(migration, /state\.changed_at \+ interval '1 microsecond'/u);
+  assert.match(migration, /join cloud\.product_documents ownership/u);
+  assert.match(migration, /ownership\.product_id = product\.id/u);
+  assert.match(migration, /ownership\.storage_object_id = storage\.id/u);
+  assert.match(migration, /ownership\.publication_status = 'published'/u);
+  assert.match(migration, /revoke all on table cloud\.published_catalog_projection_state/u);
+  assert.match(migration, /from public, anon, authenticated, service_role/u);
+  assert.doesNotMatch(migration, /cloud_storefront_preview_catalog\(/u);
+  assert.doesNotMatch(migration, /execute format|execute immediate/iu);
+});
+
 test("Published Catalog local QA covers visibility, determinism, leakage and cleanup", async () => {
   const [fixture, runner, packageJson] = await Promise.all([
     readFile("supabase/tests/006_published_catalog_projection.sql", "utf8"),
@@ -203,8 +228,16 @@ test("Published Catalog local QA covers visibility, determinism, leakage and cle
   assert.match(fixture, /malformed numeric child was not isolated fail-closed/u);
   assert.match(fixture, /malformed boolean child was not isolated fail-closed/u);
   assert.match(fixture, /malformed mandatory nested object was not Product-isolated/u);
-  assert.match(fixture, /invisible structured row affected payload or generatedAt/u);
-  assert.match(fixture, /valid structured row was omitted from payload or generatedAt/u);
+  assert.match(fixture, /visible structured field removal/u);
+  assert.match(fixture, /visible structured timestamp-only mutation/u);
+  assert.match(fixture, /public document deletion/u);
+  assert.match(fixture, /Product archive/u);
+  assert.match(fixture, /Product publication rollback/u);
+  assert.match(fixture, /hidden storage mutation/u);
+  assert.match(fixture, /exact retry advanced projection version/u);
+  assert.match(fixture, /rolled-back public mutation retained a projection event/u);
+  assert.match(fixture, /storage object owned by another Product leaked/u);
+  assert.match(fixture, /unbound public storage object leaked/u);
   assert.match(fixture, /for call_number in 1\.\.100/u);
   assert.doesNotMatch(fixture, /hamilton|330695211247/iu);
 
@@ -214,7 +247,9 @@ test("Published Catalog local QA covers visibility, determinism, leakage and cle
   );
   assert.match(runner, /This QA command never pulls images automatically/u);
   assert.match(runner, /parsePublishedCatalogProjection/u);
-  assert.match(runner, /migrationCount: 18/u);
+  assert.match(runner, /migrationCount: 19/u);
+  assert.match(runner, /concurrent-public-change-serialization/u);
+  assert.match(runner, /eventLoss: 0/u);
   assert.match(runner, /remoteConnections: 0/u);
   assert.match(runner, /remoteWrites: 0/u);
   assert.doesNotMatch(runner, /SUPABASE_SERVICE_ROLE_KEY|NEXT_PUBLIC_SUPABASE/u);

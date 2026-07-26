@@ -184,7 +184,7 @@ test("Local Product publication integration is transactional and exercises failu
   );
   assert.match(runner, /docker", \["image", "inspect", IMAGE\]/u);
   assert.match(runner, /This QA command never pulls images automatically/u);
-  assert.match(runner, /migrationCount: 18/u);
+  assert.match(runner, /migrationCount: 19/u);
   assert.match(runner, /Concurrent approval was not exactly idempotent/u);
   assert.match(runner, /005_product_publication_concurrent_approval\.sql/u);
   assert.match(runner, /remoteConnections: 0/u);

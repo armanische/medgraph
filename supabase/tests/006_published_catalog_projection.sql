@@ -549,6 +549,39 @@ begin
 end
 $$;
 
+create function pg_temp.assert_public_projection_changed_v2(
+  before_projection jsonb,
+  after_projection jsonb,
+  scenario text
+)
+returns void
+language plpgsql
+as $$
+begin
+  if cloud.sha256_jsonb_v1(before_projection - 'generatedAt')
+       = cloud.sha256_jsonb_v1(after_projection - 'generatedAt')
+     or (after_projection ->> 'generatedAt')::timestamptz
+       <= (before_projection ->> 'generatedAt')::timestamptz then
+    raise exception '% did not change both public payload and monotonic clock', scenario;
+  end if;
+end
+$$;
+
+create function pg_temp.assert_public_projection_unchanged_v2(
+  before_projection jsonb,
+  after_projection jsonb,
+  scenario text
+)
+returns void
+language plpgsql
+as $$
+begin
+  if before_projection is distinct from after_projection then
+    raise exception '% changed the public payload or clock', scenario;
+  end if;
+end
+$$;
+
 -- New draft child content after publication is ignored because the immutable
 -- approved revision, not Preview live rows, is the public content source.
 savepoint preview_isolation;
@@ -595,18 +628,26 @@ rollback to preview_isolation;
 -- A public document whose storage visibility is revoked disappears without
 -- leaking its URL or invalidating the independently published base Product.
 savepoint document_visibility;
-update cloud.storage_objects
-set access_status = 'private', updated_at = clock_timestamp()
-where id = '60000000-0000-4000-8000-000000000031';
 do $$
-declare product jsonb;
+declare
+  before_projection jsonb;
+  after_projection jsonb;
+  product jsonb;
 begin
+  select cloud_api.cloud_published_storefront_catalog_v1() into before_projection;
+  update cloud.storage_objects
+  set access_status = 'private', updated_at = clock_timestamp()
+  where id = '60000000-0000-4000-8000-000000000031';
+  select cloud_api.cloud_published_storefront_catalog_v1() into after_projection;
   select item into product
-  from jsonb_array_elements(cloud_api.cloud_published_storefront_catalog_v1() -> 'products') item
+  from jsonb_array_elements(after_projection -> 'products') item
   where item ->> 'slug' = 'projection-z-product';
   if jsonb_array_length(product -> 'documents') <> 0 then
     raise exception 'non-public storage object leaked through documents';
   end if;
+  perform pg_temp.assert_public_projection_changed_v2(
+    before_projection, after_projection, 'public document to private transition'
+  );
 end
 $$;
 rollback to document_visibility;
@@ -745,6 +786,306 @@ end
 $$;
 rollback to public_document_url_clock;
 
+-- Every public removal path advances the same transactional clock. Each case
+-- is isolated so the published fixture is restored before the next probe.
+savepoint document_deleted_clock;
+do $$
+declare before_projection jsonb; after_projection jsonb;
+begin
+  select cloud_api.cloud_published_storefront_catalog_v1() into before_projection;
+  update cloud.storage_objects
+  set deleted_at = clock_timestamp(), updated_at = clock_timestamp()
+  where id = '60000000-0000-4000-8000-000000000031';
+  select cloud_api.cloud_published_storefront_catalog_v1() into after_projection;
+  perform pg_temp.assert_public_projection_changed_v2(
+    before_projection, after_projection, 'public document deletion'
+  );
+end
+$$;
+rollback to document_deleted_clock;
+
+savepoint document_http_clock;
+do $$
+declare before_projection jsonb; after_projection jsonb;
+begin
+  select cloud_api.cloud_published_storefront_catalog_v1() into before_projection;
+  update cloud.storage_objects
+  set source_url = 'http://example.invalid/public-document.pdf',
+      updated_at = clock_timestamp()
+  where id = '60000000-0000-4000-8000-000000000031';
+  select cloud_api.cloud_published_storefront_catalog_v1() into after_projection;
+  perform pg_temp.assert_public_projection_changed_v2(
+    before_projection, after_projection, 'public document HTTPS to HTTP transition'
+  );
+end
+$$;
+rollback to document_http_clock;
+
+savepoint ownership_removed_clock;
+do $$
+declare before_projection jsonb; after_projection jsonb;
+begin
+  select cloud_api.cloud_published_storefront_catalog_v1() into before_projection;
+  delete from cloud.product_documents
+  where product_id = '60000000-0000-4000-8000-000000000050'
+    and storage_object_id = '60000000-0000-4000-8000-000000000031';
+  select cloud_api.cloud_published_storefront_catalog_v1() into after_projection;
+  perform pg_temp.assert_public_projection_changed_v2(
+    before_projection, after_projection, 'Product document ownership removal'
+  );
+end
+$$;
+rollback to ownership_removed_clock;
+
+savepoint blocking_error_clock;
+do $$
+declare before_projection jsonb; after_projection jsonb;
+begin
+  select cloud_api.cloud_published_storefront_catalog_v1() into before_projection;
+  insert into cloud.import_blocking_errors (
+    import_product_id, code, field_path, message
+  ) values (
+    (select id from cloud.import_products
+     where existing_product_id = '60000000-0000-4000-8000-000000000050'),
+    'projection_clock_blocker', 'product', 'Local removal clock fixture.'
+  );
+  select cloud_api.cloud_published_storefront_catalog_v1() into after_projection;
+  perform pg_temp.assert_public_projection_changed_v2(
+    before_projection, after_projection, 'public Product blocking error'
+  );
+end
+$$;
+rollback to blocking_error_clock;
+
+savepoint product_archive_clock;
+do $$
+declare
+  before_projection jsonb;
+  after_projection jsonb;
+  repeated_projection jsonb;
+begin
+  perform set_config('request.jwt.claim.role', 'service_role', true);
+  perform set_config(
+    'request.jwt.claims',
+    '{"role":"service_role","app_metadata":{"app_role":"service"}}', true
+  );
+  select cloud_api.cloud_published_storefront_catalog_v1() into before_projection;
+  perform cloud_api.archive_product_v1(
+    '60000000-0000-4000-8000-000000000050',
+    'projection-clock-archive'
+  );
+  select cloud_api.cloud_published_storefront_catalog_v1() into after_projection;
+  perform pg_temp.assert_public_projection_changed_v2(
+    before_projection, after_projection, 'Product archive'
+  );
+  perform cloud_api.archive_product_v1(
+    '60000000-0000-4000-8000-000000000050',
+    'projection-clock-archive'
+  );
+  select cloud_api.cloud_published_storefront_catalog_v1() into repeated_projection;
+  perform pg_temp.assert_public_projection_unchanged_v2(
+    after_projection, repeated_projection, 'Product archive exact retry'
+  );
+end
+$$;
+rollback to product_archive_clock;
+
+savepoint product_publication_rollback_clock;
+do $$
+declare
+  before_projection jsonb;
+  after_projection jsonb;
+  repeated_projection jsonb;
+  publish_batch_id uuid;
+begin
+  perform set_config('request.jwt.claim.role', 'service_role', true);
+  perform set_config(
+    'request.jwt.claims',
+    '{"role":"service_role","app_metadata":{"app_role":"service"}}', true
+  );
+  select active_product_publication_batch_id into publish_batch_id
+  from cloud.products
+  where id = '60000000-0000-4000-8000-000000000050';
+  select cloud_api.cloud_published_storefront_catalog_v1() into before_projection;
+  perform cloud_api.rollback_product_publication_v1(
+    publish_batch_id, 'projection-clock-publication-rollback'
+  );
+  select cloud_api.cloud_published_storefront_catalog_v1() into after_projection;
+  perform pg_temp.assert_public_projection_changed_v2(
+    before_projection, after_projection, 'Product publication rollback'
+  );
+  perform cloud_api.rollback_product_publication_v1(
+    publish_batch_id, 'projection-clock-publication-rollback'
+  );
+  select cloud_api.cloud_published_storefront_catalog_v1() into repeated_projection;
+  perform pg_temp.assert_public_projection_unchanged_v2(
+    after_projection, repeated_projection, 'Product publication rollback exact retry'
+  );
+end
+$$;
+rollback to product_publication_rollback_clock;
+
+-- Hidden content, a sequential exact retry, and a rolled-back transaction do
+-- not create a false public cache invalidation.
+savepoint hidden_storage_mutation_clock;
+do $$
+declare before_projection jsonb; after_projection jsonb;
+begin
+  select cloud_api.cloud_published_storefront_catalog_v1() into before_projection;
+  update cloud.storage_objects
+  set source_url = 'https://example.invalid/private-document-v2.pdf',
+      updated_at = clock_timestamp()
+  where id = '60000000-0000-4000-8000-000000000032';
+  select cloud_api.cloud_published_storefront_catalog_v1() into after_projection;
+  perform pg_temp.assert_public_projection_unchanged_v2(
+    before_projection, after_projection, 'hidden storage mutation'
+  );
+end
+$$;
+rollback to hidden_storage_mutation_clock;
+
+savepoint exact_retry_clock;
+do $$
+declare before_projection jsonb; after_projection jsonb; before_version bigint; after_version bigint;
+begin
+  select cloud_api.cloud_published_storefront_catalog_v1(), state.version
+  into before_projection, before_version
+  from cloud.published_catalog_projection_state state where state.singleton;
+  update cloud.storage_objects
+  set source_url = source_url, updated_at = updated_at
+  where id = '60000000-0000-4000-8000-000000000031';
+  select cloud_api.cloud_published_storefront_catalog_v1(), state.version
+  into after_projection, after_version
+  from cloud.published_catalog_projection_state state where state.singleton;
+  perform pg_temp.assert_public_projection_unchanged_v2(
+    before_projection, after_projection, 'exact retry'
+  );
+  if after_version <> before_version then
+    raise exception 'exact retry advanced projection version';
+  end if;
+end
+$$;
+rollback to exact_retry_clock;
+
+create temporary table projection_rollback_probe as
+select cloud_api.cloud_published_storefront_catalog_v1() as payload,
+       state.version
+from cloud.published_catalog_projection_state state
+where state.singleton;
+savepoint transaction_rollback_clock;
+update cloud.storage_objects
+set source_url = 'https://example.invalid/public-document-rolled-back.pdf'
+where id = '60000000-0000-4000-8000-000000000031';
+rollback to transaction_rollback_clock;
+do $$
+declare before_projection jsonb; after_projection jsonb; before_version bigint; after_version bigint;
+begin
+  select payload, version into before_projection, before_version
+  from projection_rollback_probe;
+  select cloud_api.cloud_published_storefront_catalog_v1(), state.version
+  into after_projection, after_version
+  from cloud.published_catalog_projection_state state where state.singleton;
+  perform pg_temp.assert_public_projection_unchanged_v2(
+    before_projection, after_projection, 'rolled-back public mutation'
+  );
+  if after_version <> before_version then
+    raise exception 'rolled-back public mutation retained a projection event';
+  end if;
+end
+$$;
+
+-- Ownership is exact at Product/document relation level. A public object from
+-- another Product and an otherwise valid unbound public object both fail
+-- closed even when immutable revision checksums are made self-consistent.
+savepoint other_product_storage_ownership;
+insert into cloud.storage_objects (
+  id, bucket, object_path, original_filename, mime_type, size_bytes,
+  checksum_sha256, source_type, source_url, rights_status, confidence, access_status
+) values (
+  '60000000-0000-4000-8000-000000000035', 'published',
+  'projection/other-product-document.pdf', 'other-product-document.pdf',
+  'application/pdf', 128,
+  '7777777777777777777777777777777777777777777777777777777777777777',
+  'integration_test', 'https://example.invalid/other-product-document.pdf',
+  'manufacturer_official', 'reviewed', 'public'
+);
+insert into cloud.product_documents (
+  product_id, storage_object_id, title, document_type, language, is_official,
+  publication_status
+) values (
+  '60000000-0000-4000-8000-000000000055',
+  '60000000-0000-4000-8000-000000000035',
+  'Public document', 'datasheet', 'ru', true, 'published'
+);
+set local session_replication_role = replica;
+select pg_temp.replace_projection_product_payload(
+  '60000000-0000-4000-8000-000000000050',
+  replace(
+    (select revision.candidate_payload::text
+     from cloud.product_publication_revisions revision
+     where revision.id = (
+       select current_product_publication_revision_id from cloud.products
+       where id = '60000000-0000-4000-8000-000000000050'
+     )),
+    '60000000-0000-4000-8000-000000000031',
+    '60000000-0000-4000-8000-000000000035'
+  )::jsonb
+);
+set local session_replication_role = origin;
+do $$
+declare product jsonb;
+begin
+  select item into product
+  from jsonb_array_elements(cloud_api.cloud_published_storefront_catalog_v1() -> 'products') item
+  where item ->> 'slug' = 'projection-z-product';
+  if jsonb_array_length(product -> 'documents') <> 0
+     or product::text like '%other-product-document.pdf%' then
+    raise exception 'storage object owned by another Product leaked';
+  end if;
+end
+$$;
+rollback to other_product_storage_ownership;
+
+savepoint unbound_public_storage_ownership;
+insert into cloud.storage_objects (
+  id, bucket, object_path, original_filename, mime_type, size_bytes,
+  checksum_sha256, source_type, source_url, rights_status, confidence, access_status
+) values (
+  '60000000-0000-4000-8000-000000000036', 'published',
+  'projection/unbound-document.pdf', 'unbound-document.pdf', 'application/pdf', 128,
+  '8888888888888888888888888888888888888888888888888888888888888888',
+  'integration_test', 'https://example.invalid/unbound-document.pdf',
+  'manufacturer_official', 'reviewed', 'public'
+);
+set local session_replication_role = replica;
+select pg_temp.replace_projection_product_payload(
+  '60000000-0000-4000-8000-000000000050',
+  replace(
+    (select revision.candidate_payload::text
+     from cloud.product_publication_revisions revision
+     where revision.id = (
+       select current_product_publication_revision_id from cloud.products
+       where id = '60000000-0000-4000-8000-000000000050'
+     )),
+    '60000000-0000-4000-8000-000000000031',
+    '60000000-0000-4000-8000-000000000036'
+  )::jsonb
+);
+set local session_replication_role = origin;
+do $$
+declare product jsonb;
+begin
+  select item into product
+  from jsonb_array_elements(cloud_api.cloud_published_storefront_catalog_v1() -> 'products') item
+  where item ->> 'slug' = 'projection-z-product';
+  if jsonb_array_length(product -> 'documents') <> 0
+     or product::text like '%unbound-document.pdf%' then
+    raise exception 'unbound public storage object leaked';
+  end if;
+end
+$$;
+rollback to unbound_public_storage_ownership;
+
 -- Malformed optional numeric content is excluded at child granularity. The
 -- containing Product and an unrelated Product remain visible, and the RPC
 -- never evaluates an unsafe cast.
@@ -845,56 +1186,65 @@ end
 $$;
 rollback to malformed_nested_object;
 
--- An invalid structured row must affect neither payload nor projection clock.
--- It carries a future timestamp to make an accidental clock contribution
--- unambiguous.
+-- A visible structured field that loses its valid evidence disappears and
+-- advances the public clock even though the newly-invalid row is no longer
+-- part of the projection.
 savepoint invisible_structured_clock;
-set local session_replication_role = replica;
-update cloud.product_key_features
-set approval_decision_id = '60000000-0000-4000-8000-000000000093',
-    updated_at = '2099-01-01T00:00:00Z'
-where product_id = '60000000-0000-4000-8000-000000000050'
-  and structured_item_id = 'projection-feature';
-set local session_replication_role = origin;
 do $$
 declare
+  before_projection jsonb;
   projection jsonb;
   product jsonb;
 begin
+  select cloud_api.cloud_published_storefront_catalog_v1() into before_projection;
+  set local session_replication_role = replica;
+  update cloud.product_key_features
+  set approval_decision_id = '60000000-0000-4000-8000-000000000093',
+      updated_at = '2099-01-01T00:00:00Z'
+  where product_id = '60000000-0000-4000-8000-000000000050'
+    and structured_item_id = 'projection-feature';
+  set local session_replication_role = origin;
   select cloud_api.cloud_published_storefront_catalog_v1() into projection;
   select item into product
   from jsonb_array_elements(projection -> 'products') item
   where item ->> 'slug' = 'projection-z-product';
   if jsonb_array_length(product -> 'keyFeatures') <> 0
      or (projection ->> 'generatedAt')::timestamptz >= '2099-01-01T00:00:00Z' then
-    raise exception 'invisible structured row affected payload or generatedAt';
+    raise exception 'invalid structured row was not isolated safely';
   end if;
+  perform pg_temp.assert_public_projection_changed_v2(
+    before_projection, projection, 'visible structured field removal'
+  );
 end
 $$;
 rollback to invisible_structured_clock;
 
--- A valid visible structured row remains part of the exact clock input set.
+-- Internal timestamp-only churn is not public content and therefore leaves
+-- both the JSON payload and the monotonic clock unchanged.
 savepoint visible_structured_clock;
-set local session_replication_role = replica;
-update cloud.product_key_features
-set updated_at = '2098-01-01T00:00:00Z'
-where product_id = '60000000-0000-4000-8000-000000000050'
-  and structured_item_id = 'projection-feature';
-set local session_replication_role = origin;
 do $$
 declare
+  before_projection jsonb;
   projection jsonb;
   product jsonb;
 begin
+  select cloud_api.cloud_published_storefront_catalog_v1() into before_projection;
+  set local session_replication_role = replica;
+  update cloud.product_key_features
+  set updated_at = '2098-01-01T00:00:00Z'
+  where product_id = '60000000-0000-4000-8000-000000000050'
+    and structured_item_id = 'projection-feature';
+  set local session_replication_role = origin;
   select cloud_api.cloud_published_storefront_catalog_v1() into projection;
   select item into product
   from jsonb_array_elements(projection -> 'products') item
   where item ->> 'slug' = 'projection-z-product';
-  if jsonb_array_length(product -> 'keyFeatures') <> 1
-     or (projection ->> 'generatedAt')::timestamptz
-       <> '2098-01-01T00:00:00Z'::timestamptz then
-    raise exception 'valid structured row was omitted from payload or generatedAt';
+  if jsonb_array_length(product -> 'keyFeatures') <> 1 then
+    raise exception 'valid structured row was omitted from payload';
   end if;
+  perform pg_temp.assert_public_projection_unchanged_v2(
+    before_projection, projection, 'visible structured timestamp-only mutation'
+  );
 end
 $$;
 rollback to visible_structured_clock;
@@ -965,4 +1315,8 @@ begin
 end
 $$;
 
+\if :{?keep_fixture}
+commit;
+\else
 rollback;
+\endif

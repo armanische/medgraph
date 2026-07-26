@@ -156,6 +156,28 @@ done`,
       'serviceExecute', has_function_privilege(
         'service_role', 'cloud_api.cloud_published_storefront_catalog_v1()', 'EXECUTE'
       ),
+      'serviceInternalExecute', has_function_privilege(
+        'service_role', 'cloud.capture_published_catalog_projection_v2()', 'EXECUTE'
+      ),
+      'anonStateSelect', has_table_privilege(
+        'anon', 'cloud.published_catalog_projection_state', 'SELECT'
+      ),
+      'authenticatedStateSelect', has_table_privilege(
+        'authenticated', 'cloud.published_catalog_projection_state', 'SELECT'
+      ),
+      'serviceStateSelect', has_table_privilege(
+        'service_role', 'cloud.published_catalog_projection_state', 'SELECT'
+      ),
+      'serviceStateWrite', has_table_privilege(
+        'service_role', 'cloud.published_catalog_projection_state', 'INSERT,UPDATE,DELETE'
+      ),
+      'stateRls', (select relrowsecurity from pg_class
+        where oid = 'cloud.published_catalog_projection_state'::regclass),
+      'stateOwner', (select pg_get_userbyid(relowner) from pg_class
+        where oid = 'cloud.published_catalog_projection_state'::regclass),
+      'alwaysTriggerCount', (select count(*) from pg_trigger
+        where tgname like '%\\_projection\\_%\\_v2' escape '\\'
+          and tgenabled = 'A'),
       'volatility', (select provolatile from pg_proc
         where oid = 'cloud_api.cloud_published_storefront_catalog_v1()'::regprocedure),
       'securityDefiner', (select prosecdef from pg_proc
@@ -166,21 +188,114 @@ done`,
     anonExecute: boolean;
     authenticatedExecute: boolean;
     serviceExecute: boolean;
+    serviceInternalExecute: boolean;
+    anonStateSelect: boolean;
+    authenticatedStateSelect: boolean;
+    serviceStateSelect: boolean;
+    serviceStateWrite: boolean;
+    stateRls: boolean;
+    stateOwner: string;
+    alwaysTriggerCount: number;
     volatility: string;
     securityDefiner: boolean;
   };
   if (privilegeAudit.anonExecute
       || privilegeAudit.authenticatedExecute
       || !privilegeAudit.serviceExecute
+      || privilegeAudit.serviceInternalExecute
+      || privilegeAudit.anonStateSelect
+      || privilegeAudit.authenticatedStateSelect
+      || privilegeAudit.serviceStateSelect
+      || privilegeAudit.serviceStateWrite
+      || !privilegeAudit.stateRls
+      || privilegeAudit.stateOwner !== "supabase_admin"
+      || privilegeAudit.alwaysTriggerCount !== 38
       || privilegeAudit.volatility !== "s"
       || !privilegeAudit.securityDefiner) {
     throw new Error(`Published projection privilege audit failed: ${JSON.stringify(privilegeAudit)}`);
   }
 
+  // Commit the same fully asserted local fixture in the disposable database,
+  // then prove that two concurrent public mutations serialize without losing
+  // a clock event. The container is removed in finally, so no fixture escapes.
+  dockerExec(
+    "psql", "-U", "supabase_admin", "-d", DATABASE,
+    "-v", "ON_ERROR_STOP=1", "-v", "keep_fixture=1",
+    "-f", "/tmp/006_published_catalog_projection.sql",
+  );
+
+  const projectionStateSql = `with claims as materialized (
+      select set_config('request.jwt.claim.role', 'service_role', false)
+    ), projection as materialized (
+      select cloud_api.cloud_published_storefront_catalog_v1() as payload from claims
+    )
+    select jsonb_build_object(
+      'version', state.version,
+      'generatedAt', projection.payload ->> 'generatedAt',
+      'checksumMatches', state.payload_checksum = cloud.sha256_jsonb_v1(
+        projection.payload - 'generatedAt'
+      ),
+      'manufacturerChanged', projection.payload @? '$.manufacturers[*] ? (@.description == "Concurrent manufacturer change")',
+      'categoryChanged', projection.payload @? '$.categories[*] ? (@.description == "Concurrent category change")'
+    )
+    from projection
+    cross join cloud.published_catalog_projection_state state
+    where state.singleton`;
+  const beforeConcurrencyResult = run("docker", [
+    "exec", CONTAINER, "psql", "-U", "supabase_admin", "-d", DATABASE,
+    "-v", "ON_ERROR_STOP=1", "-Atc", projectionStateSql,
+  ], { quiet: true });
+  const beforeConcurrency = JSON.parse(beforeConcurrencyResult.stdout.trim()) as {
+    version: number;
+    generatedAt: string;
+  };
+
+  dockerExec(
+    "bash", "-lc",
+    `set -euo pipefail
+psql -U supabase_admin -d ${DATABASE} -v ON_ERROR_STOP=1 -c "begin; update cloud.manufacturers set description = 'Concurrent manufacturer change' where id = '60000000-0000-4000-8000-000000000010'; select pg_sleep(0.25); commit" >/tmp/concurrent-manufacturer.out 2>&1 &
+first_pid=$!
+sleep 0.05
+psql -U supabase_admin -d ${DATABASE} -v ON_ERROR_STOP=1 -c "begin; update cloud.categories set description = 'Concurrent category change' where id = '60000000-0000-4000-8000-000000000020'; commit" >/tmp/concurrent-category.out 2>&1 &
+second_pid=$!
+wait "$first_pid" || { cat /tmp/concurrent-manufacturer.out; exit 1; }
+wait "$second_pid" || { cat /tmp/concurrent-category.out; exit 1; }`,
+  );
+
+  const afterConcurrencyResult = run("docker", [
+    "exec", CONTAINER, "psql", "-U", "supabase_admin", "-d", DATABASE,
+    "-v", "ON_ERROR_STOP=1", "-Atc", projectionStateSql,
+  ], { quiet: true });
+  const afterConcurrency = JSON.parse(afterConcurrencyResult.stdout.trim()) as {
+    version: number;
+    generatedAt: string;
+    checksumMatches: boolean;
+    manufacturerChanged: boolean;
+    categoryChanged: boolean;
+  };
+  if (afterConcurrency.version !== beforeConcurrency.version + 2
+      || Date.parse(afterConcurrency.generatedAt) <= Date.parse(beforeConcurrency.generatedAt)
+      || !afterConcurrency.checksumMatches
+      || !afterConcurrency.manufacturerChanged
+      || !afterConcurrency.categoryChanged) {
+    throw new Error(`Published projection concurrency audit failed: ${JSON.stringify({
+      beforeConcurrency,
+      afterConcurrency,
+    })}`);
+  }
+  const concurrencyAudit = {
+    status: "PASS",
+    committedPublicChanges: 2,
+    versionDelta: afterConcurrency.version - beforeConcurrency.version,
+    monotonic: Date.parse(afterConcurrency.generatedAt) > Date.parse(beforeConcurrency.generatedAt),
+    checksumMatches: afterConcurrency.checksumMatches,
+    eventLoss: 0,
+  };
+
   process.stdout.write(`${JSON.stringify({
     status: "PASS",
     image: IMAGE,
-    migrationCount: 18,
+    migrationCount: 19,
     rpc: "cloud_api.cloud_published_storefront_catalog_v1",
     integration: [
       "published-only-product-visibility",
@@ -193,6 +308,11 @@ done`,
       "deterministic-slug-ordering",
       "internal-metadata-non-disclosure",
       "public-document-dependency-clock",
+      "public-removal-monotonic-clock",
+      "hidden-and-exact-retry-clock-stability",
+      "transactional-clock-rollback",
+      "Product-storage-ownership-binding",
+      "concurrent-public-change-serialization",
       "type-safe-malformed-child-isolation",
       "exact-visible-structured-field-clock",
       "one-hundred-call-determinism",
@@ -208,6 +328,7 @@ done`,
     emptyProjection,
     fixtureAudit,
     privilegeAudit,
+    concurrencyAudit,
     disposableDatabaseRemoved: true,
     remoteConnections: 0,
     remoteWrites: 0,
