@@ -7,7 +7,7 @@
 
 **Статус:** реализовано и проверено локально; не применено к staging/Production
 
-**Версия:** 1.1 (Corrective v1)
+**Версия:** 1.2 (Corrective v2)
 
 **Дата:** 26 июля 2026 года
 
@@ -42,16 +42,25 @@ Cloud Preview RPC и его `preview_draft` semantics не используют�
   `supabase/migrations/202607260003_published_catalog_projection_corrective_v1.sql`;
 - corrective migration SHA-256:
   `6052daa0c727b8272c5071e4e414b65e8ee6e6474e9e46917ccecd079098b7cd`;
+- monotonic-clock and ownership corrective migration:
+  `supabase/migrations/202607260004_published_catalog_projection_corrective_v2.sql`;
+- Corrective v2 SHA-256:
+  `26f7dd90e65665ade5729dc5e0934fe7b8f15979cdaaee1c92cc859d66d6162d`;
 - RPC: `cloud_api.cloud_published_storefront_catalog_v1()`;
 - typed contract: `lib/published-catalog/contracts.ts`;
 - integration fixture:
   `supabase/tests/006_published_catalog_projection.sql`;
 - local gate: `npm run qa:published-catalog:local`.
 
-Обе migrations additive-only. Corrective v1 заменяет реализацию того же
+Все migrations additive-only. Corrective v1 заменяет реализацию того же
 internal read function, добавляет закрытые type-check helpers и trigger clock
 для public storage dependency. Она не содержит backfill, approval,
 publication, Product mutation или remote target.
+
+Corrective v2 сохраняет тот же public RPC/schema и добавляет закрытый
+transactional projection clock, а также exact Product → Product Document →
+Storage Object ownership check. Migration не публикует Product, не переносит
+existing rows и не инициализирует clock скрытым data backfill.
 
 ## 3. Product visibility contract
 
@@ -95,14 +104,20 @@ Base Product content читается из exact immutable `candidate_payload`, 
 Legacy characteristics, unpublished Structured Fields, private/restricted
 storage и child rows из Preview live state не выводятся.
 
-Public document URL использует минимальный independent-dependency contract:
-immutable Product revision фиксирует `storageObjectId`, а `storage_objects`
-разрешает URL только при `access_status = public`, отсутствии `deleted_at`,
-допустимом `rights_status` и HTTPS. Изменение URL, checksum, visibility, rights
-или object identity атомарно двигает `storage_objects.updated_at`; timestamp
-видимого storage object входит в тот же snapshot `generatedAt`. Поэтому URL не
-может измениться в payload как silent mutation. Потеря public contract
-fail-close исключает документ, но не независимо опубликованный Product.
+Public document URL использует минимальный entity-level ownership contract:
+
+1. immutable Product revision фиксирует `storageObjectId` и exact document
+   attributes в approved payload;
+2. текущая `product_documents` relation обязана связывать тот же Product с тем
+   же Storage Object и совпадать по title/type/language/official status;
+3. relation должна иметь `publication_status = published`;
+4. `storage_objects` разрешает URL только при `access_status = public`,
+   отсутствии `deleted_at`, допустимом `rights_status` и HTTPS.
+
+Storage Object другого Product и unbound public object исключаются fail-closed.
+Удаление ownership relation, смена visibility/rights/URL или deletion меняют
+публичный payload и тот же transactional clock. Потеря optional document
+contract исключает документ, но не независимо опубликованный Product.
 
 Malformed JSON обрабатывается единообразно до cast:
 
@@ -119,8 +134,8 @@ Malformed JSON обрабатывается единообразно до cast:
 Top-level payload содержит:
 
 - `schemaVersion`;
-- deterministic `generatedAt`, вычисленный по exact set публично видимых
-  Product, references, Structured Fields и public document storage dependencies;
+- deterministic monotonic `generatedAt`, отражающий последнее committed
+  изменение фактического public payload, включая removal transitions;
 - `products`;
 - published manufacturers;
 - published assignable categories;
@@ -131,6 +146,15 @@ Product использует только slug-based stable identifiers и publi
 `active`. Projection не возвращает внутренние UUID, review/import states,
 provenance, checksums, actor/reviewer IDs, publication/approval/batch IDs,
 internal notes или staging markers.
+
+Clock реализован как закрытая singleton state row с monotonic `version`,
+`changed_at` и checksum последнего committed public payload. Statement-level
+guards сравнивают JSON без `generatedAt`; singleton row lock сериализует
+concurrent public changes. Clock двигается только при изменившемся checksum.
+Hidden-only mutation, internal timestamp churn и exact retry оставляют clock
+неизменным. State update находится в той же transaction: rollback mutation
+откатывает version/clock. Public read получает clock за O(1) и не сканирует
+event/audit history.
 
 `lib/published-catalog/contracts.ts` выполняет strict schema validation,
 referential validation и сверку summary counts. Extra internal field или status
@@ -148,6 +172,12 @@ referential validation и сверку summary counts. Extra internal field ил
 - аргументы и dynamic SQL отсутствуют;
 - write statements и table write grants не добавляются;
 - единый PostgreSQL statement использует согласованный MVCC snapshot.
+
+`cloud.published_catalog_projection_state` имеет RLS, недоступна напрямую
+`anon`, `authenticated` и `service_role`; helper/trigger functions также не
+имеют runtime-role `EXECUTE`. Trigger functions — `SECURITY DEFINER` с
+фиксированным `search_path`; caller не передаёт timestamp, event actor или
+version.
 
 Anon/RLS вариант отклонён для v1. Существующие Product RLS predicates проверяют
 только mutable status и недостаточны для revision/approval/batch binding.
@@ -185,9 +215,9 @@ publication evidence, media/documents и Structured Fields.
 
 | Масштаб | Оценка |
 | --- | --- |
-| 79 Products | median 5.154 ms, 49 031 bytes; +10.0% к reviewed 4.686 ms baseline |
-| 1 000 Products | median 49.281 ms, 603 431 bytes; +14.9% к reviewed 42.887 ms baseline |
-| 10 000 Products | median 526.878 ms, 6 039 430 bytes; +14.8% к reviewed 459.018 ms baseline |
+| 79 Products | median 6.434 ms, 49 031 bytes; +11.1% к независимому re-review baseline 5.789 ms |
+| 1 000 Products | median 82.265 ms, 603 431 bytes; +1.8% к re-review sample 80.805 ms |
+| 10 000 Products | median 587.134 ms, 6 039 430 bytes; +9.2% к re-review sample 537.738 ms |
 
 Sample выполнен пятью последовательными full JSON reads после warm-up на
 локальном PostgreSQL 17.6.1 с checksum-pinned schema и synthetic published
@@ -201,7 +231,7 @@ memory/network capacity risk, а не Production SLO.
 
 ## 9. Local evidence
 
-Clean local Supabase PostgreSQL применяет 18 checksum-pinned migrations.
+Clean local Supabase PostgreSQL применяет 19 checksum-pinned migrations.
 Transactional fixture подтверждает:
 
 - published baseline `2 Products / 1 manufacturer / 1 category / 1 area`;
@@ -211,12 +241,18 @@ Transactional fixture подтверждает:
 - published Structured Fields отображаются, unpublished child state — нет;
 - private document и insecure media не раскрываются;
 - internal metadata отсутствует;
-- public document URL и `generatedAt` меняются вместе в одном public dependency
-  contract;
+- Product archive, publication rollback, blocking error, Structured Field
+  removal, public→private/deleted/HTTP document и ownership removal меняют
+  payload и monotonic clock вместе;
+- hidden storage mutation, timestamp-only internal churn и exact retry не
+  двигают clock;
+- rolled-back public mutation не оставляет version/clock event;
+- два concurrent committed public changes дают version delta 2, сохраняют оба
+  изменения и не теряют event;
+- correct Product storage доступен; object другого Product и unbound object не
+  раскрываются;
 - malformed integer, boolean и nested object fail-close изолированы без потери
   валидного соседнего Product;
-- невидимый unbound Structured Field с датой 2099 не двигает clock, а видимая
-  строка входит одновременно в payload и clock;
 - 100 последовательных reads возвращают идентичный JSON и read не меняет table
   counts;
 - после `ROLLBACK` disposable fixture counts равны нулю;
@@ -240,6 +276,11 @@ Transactional fixture подтверждает:
   revision v1;
 - full snapshot pagination/caching не входит в scope;
 - migration не применена удалённо;
+- initial state не backfill-ится migration. До первого реального public payload
+  change RPC сохраняет legacy deterministic source clock; первый public change
+  атомарно bootstrap-ит state на timestamp, строго больший предыдущего. Перед
+  controlled staging migration отдельный dry-run обязан подтвердить manifest,
+  current published baseline и отсутствие неожиданных ownership gaps;
 - ADR-006 остаётся `Proposed` до отдельного controlled staging migration gate.
 
 ## 11. Rollback
