@@ -25,6 +25,7 @@
     "audit:artifact-storage": "node scripts/importers/catalog/artifact-storage/index.ts audit",
     "qa:preview-smoke": "node scripts/qa/preview-smoke.ts",
     "qa:product-publication:local": "node scripts/qa/product-publication-local-integration.ts",
+    "qa:published-catalog:local": "node scripts/qa/published-catalog-projection-local-integration.ts",
     "qa:structured-fields:local": "node scripts/qa/structured-fields-local-integration.ts",
     "supabase:health": "node scripts/qa/supabase-health.ts",
     "audit:evidence-integrity": "node scripts/importers/catalog/evidence-integrity.ts audit",
