@@ -194,34 +194,18 @@ create temporary table product_publication_results (
   result jsonb not null
 );
 
--- Audit identity is fail-closed: a service request cannot invent an actor.
-do $$
-begin
-  begin
-    perform cloud_api.create_product_publication_revision_v1(
-      '40000000-0000-4000-8000-000000000050',
-      'product-publication-unknown-actor',
-      '40000000-0000-4000-8000-000000000099'
-    );
-    raise exception 'unknown publication actor unexpectedly accepted';
-  exception when insufficient_privilege then
-    null;
-  end;
-  if exists (
-    select 1 from cloud.product_publication_revisions
-    where idempotency_key = 'product-publication-unknown-actor'
-  ) or (select publication_status from cloud.products
-        where id = '40000000-0000-4000-8000-000000000050') <> 'draft' then
-    raise exception 'unknown actor rejection left partial state';
-  end if;
-end
-$$;
+select set_config('request.jwt.claim.role', 'service_role', true);
+select set_config('request.jwt.claim.sub', '', true);
+select set_config(
+  'request.jwt.claims',
+  '{"role":"service_role","app_metadata":{"app_role":"service"}}',
+  true
+);
 
 insert into product_publication_results (key, result)
 select 'revision', cloud_api.create_product_publication_revision_v1(
   '40000000-0000-4000-8000-000000000050',
-  'product-publication-revision-1',
-  '40000000-0000-4000-8000-000000000001'
+  'product-publication-revision-1'
 );
 
 do $$
@@ -237,8 +221,7 @@ begin
   end if;
   select cloud_api.create_product_publication_revision_v1(
     '40000000-0000-4000-8000-000000000050',
-    'product-publication-revision-1',
-    '40000000-0000-4000-8000-000000000001'
+    'product-publication-revision-1'
   ) into repeated;
   if not (repeated ->> 'idempotent')::boolean
      or repeated ->> 'candidateRevisionId' <> revision ->> 'candidateRevisionId' then
@@ -247,12 +230,66 @@ begin
 end
 $$;
 
+-- Authenticated identity is fail-closed: an app-role claim cannot impersonate a
+-- reviewer whose trusted profile has a different role for a real current revision.
+do $$
+begin
+  perform set_config('request.jwt.claim.role', 'authenticated', true);
+  perform set_config('request.jwt.claim.sub', '40000000-0000-4000-8000-000000000001', true);
+  perform set_config(
+    'request.jwt.claims',
+    '{"role":"authenticated","sub":"40000000-0000-4000-8000-000000000001","app_metadata":{"app_role":"reviewer"}}',
+    true
+  );
+  begin
+    perform cloud_api.record_product_publication_review_decision_v1(
+      (select (result ->> 'candidateRevisionId')::uuid
+       from product_publication_results where key = 'revision'),
+      'Spoofed reviewer attempt.'
+    );
+    raise exception 'spoofed reviewer unexpectedly accepted';
+  exception when insufficient_privilege then
+    null;
+  end;
+  if exists (
+    select 1 from cloud.review_decisions
+    where product_publication_revision_id = (
+      select (result ->> 'candidateRevisionId')::uuid
+      from product_publication_results where key = 'revision'
+    )
+  ) then
+    raise exception 'spoofed reviewer rejection left a review decision';
+  end if;
+end
+$$;
+
+select set_config('request.jwt.claim.role', 'authenticated', true);
+select set_config('request.jwt.claim.sub', '40000000-0000-4000-8000-000000000002', true);
+select set_config(
+  'request.jwt.claims',
+  '{"role":"authenticated","sub":"40000000-0000-4000-8000-000000000002","app_metadata":{"app_role":"reviewer"}}',
+  true
+);
+insert into product_publication_results (key, result)
+select 'review-decision', cloud_api.record_product_publication_review_decision_v1(
+  (select (result ->> 'candidateRevisionId')::uuid
+   from product_publication_results where key = 'revision'),
+  'Local reviewer approved the exact Product revision.'
+);
+
+select set_config('request.jwt.claim.role', 'service_role', true);
+select set_config('request.jwt.claim.sub', '', true);
+select set_config(
+  'request.jwt.claims',
+  '{"role":"service_role","app_metadata":{"app_role":"service"}}',
+  true
+);
 insert into product_publication_results (key, result)
 select 'approval', cloud_api.approve_product_publication_revision_v1(
   (select (result ->> 'candidateRevisionId')::uuid
    from product_publication_results where key = 'revision'),
-  '40000000-0000-4000-8000-000000000002',
-  'Local reviewer approved the exact Product revision.'
+  (select (result ->> 'reviewDecisionId')::uuid
+   from product_publication_results where key = 'review-decision')
 );
 
 do $$
@@ -269,8 +306,8 @@ begin
   select cloud_api.approve_product_publication_revision_v1(
     (select (result ->> 'candidateRevisionId')::uuid
      from product_publication_results where key = 'revision'),
-    '40000000-0000-4000-8000-000000000002',
-    'Local reviewer approved the exact Product revision.'
+    (select (result ->> 'reviewDecisionId')::uuid
+     from product_publication_results where key = 'review-decision')
   ) into repeated;
   if not (repeated ->> 'idempotent')::boolean
      or repeated ->> 'approvalId' <> approval ->> 'approvalId' then
@@ -283,8 +320,7 @@ insert into product_publication_results (key, result)
 select 'publish', cloud_api.publish_product_v1(
   (select (result ->> 'candidateRevisionId')::uuid
    from product_publication_results where key = 'revision'),
-  'product-publication-publish-1',
-  '40000000-0000-4000-8000-000000000001'
+  'product-publication-publish-1'
 );
 
 do $$
@@ -312,8 +348,7 @@ begin
   select cloud_api.publish_product_v1(
     (select (result ->> 'candidateRevisionId')::uuid
      from product_publication_results where key = 'revision'),
-    'product-publication-publish-1',
-    '40000000-0000-4000-8000-000000000001'
+    'product-publication-publish-1'
   ) into repeated;
   if not (repeated ->> 'idempotent')::boolean
      or repeated ->> 'publicationBatchId' <> publication ->> 'publicationBatchId' then
@@ -321,8 +356,7 @@ begin
   end if;
   select cloud_api.create_product_publication_revision_v1(
     '40000000-0000-4000-8000-000000000050',
-    'product-publication-revision-1',
-    '40000000-0000-4000-8000-000000000001'
+    'product-publication-revision-1'
   ) into repeated_revision;
   if not (repeated_revision ->> 'idempotent')::boolean
      or repeated_revision ->> 'candidateRevisionId' <>
@@ -335,19 +369,67 @@ begin
 end
 $$;
 
+-- Mandatory dependencies remain valid after publication. Reference unpublish,
+-- category de-assignment and relationship removal all fail closed.
+do $$
+begin
+  begin
+    update cloud.manufacturers set publication_status = 'archived'
+    where id = '40000000-0000-4000-8000-000000000010';
+    raise exception 'published Product manufacturer unexpectedly unpublished';
+  exception when foreign_key_violation then
+    null;
+  end;
+  begin
+    update cloud.categories set assignable = false
+    where id = '40000000-0000-4000-8000-000000000020';
+    raise exception 'published Product category unexpectedly became non-assignable';
+  exception when foreign_key_violation then
+    null;
+  end;
+  begin
+    update cloud.application_areas set archived_at = now()
+    where id = '40000000-0000-4000-8000-000000000030';
+    raise exception 'published Product application area unexpectedly archived';
+  exception when foreign_key_violation then
+    null;
+  end;
+  begin
+    delete from cloud.product_application_areas
+    where product_id = '40000000-0000-4000-8000-000000000050'
+      and application_area_id = '40000000-0000-4000-8000-000000000030';
+    raise exception 'published Product application area link unexpectedly removed';
+  exception when check_violation or object_not_in_prerequisite_state then
+    null;
+  end;
+
+  if (select publication_status from cloud.manufacturers
+      where id = '40000000-0000-4000-8000-000000000010') <> 'published'
+     or not (select assignable from cloud.categories
+             where id = '40000000-0000-4000-8000-000000000020')
+     or (select archived_at from cloud.application_areas
+         where id = '40000000-0000-4000-8000-000000000030') is not null
+     or not exists (
+       select 1 from cloud.product_application_areas
+       where product_id = '40000000-0000-4000-8000-000000000050'
+         and application_area_id = '40000000-0000-4000-8000-000000000030'
+     ) then
+    raise exception 'dependency guard did not preserve published Product contract';
+  end if;
+end
+$$;
+
 insert into product_publication_results (key, result)
 select 'archive', cloud_api.archive_product_v1(
   '40000000-0000-4000-8000-000000000050',
-  'product-publication-archive-1',
-  '40000000-0000-4000-8000-000000000001'
+  'product-publication-archive-1'
 );
 
 insert into product_publication_results (key, result)
 select 'rollback-archive', cloud_api.rollback_product_publication_v1(
   (select (result ->> 'publicationBatchId')::uuid
    from product_publication_results where key = 'archive'),
-  'product-publication-rollback-archive-1',
-  '40000000-0000-4000-8000-000000000001'
+  'product-publication-rollback-archive-1'
 );
 
 do $$
@@ -364,8 +446,7 @@ begin
   end if;
   select cloud_api.rollback_product_publication_v1(
     (archive_result ->> 'publicationBatchId')::uuid,
-    'product-publication-rollback-archive-1',
-    '40000000-0000-4000-8000-000000000001'
+    'product-publication-rollback-archive-1'
   ) into repeated;
   if not (repeated ->> 'idempotent')::boolean
      or repeated ->> 'publicationBatchId' <> rollback_result ->> 'publicationBatchId' then
@@ -378,8 +459,7 @@ insert into product_publication_results (key, result)
 select 'rollback-publish', cloud_api.rollback_product_publication_v1(
   (select (result ->> 'publicationBatchId')::uuid
    from product_publication_results where key = 'publish'),
-  'product-publication-rollback-publish-1',
-  '40000000-0000-4000-8000-000000000001'
+  'product-publication-rollback-publish-1'
 );
 
 do $$
@@ -399,8 +479,7 @@ begin
   select cloud_api.rollback_product_publication_v1(
     (select (result ->> 'publicationBatchId')::uuid
      from product_publication_results where key = 'publish'),
-    'product-publication-rollback-publish-1',
-    '40000000-0000-4000-8000-000000000001'
+    'product-publication-rollback-publish-1'
   ) into repeated;
   if not (repeated ->> 'idempotent')::boolean
      or repeated ->> 'publicationBatchId' <> rollback_result ->> 'publicationBatchId' then
@@ -415,8 +494,7 @@ begin
   begin
     perform cloud_api.create_product_publication_revision_v1(
       '40000000-0000-4000-8000-000000000051',
-      'product-publication-incomplete-revision',
-      '40000000-0000-4000-8000-000000000001'
+      'product-publication-incomplete-revision'
     );
     raise exception 'incomplete product unexpectedly entered publication review';
   exception when check_violation then
@@ -435,8 +513,7 @@ $$;
 insert into product_publication_results (key, result)
 select 'partial-revision', cloud_api.create_product_publication_revision_v1(
   '40000000-0000-4000-8000-000000000052',
-  'product-publication-partial-revision',
-  '40000000-0000-4000-8000-000000000001'
+  'product-publication-partial-revision'
 );
 
 -- Publication without approval fails closed and creates no batch.
@@ -446,8 +523,7 @@ begin
     perform cloud_api.publish_product_v1(
       (select (result ->> 'candidateRevisionId')::uuid
        from product_publication_results where key = 'partial-revision'),
-      'product-publication-unapproved',
-      '40000000-0000-4000-8000-000000000001'
+      'product-publication-unapproved'
     );
     raise exception 'unapproved product unexpectedly published';
   exception when object_not_in_prerequisite_state then
@@ -463,13 +539,104 @@ begin
 end
 $$;
 
+select set_config('request.jwt.claim.role', 'authenticated', true);
+select set_config('request.jwt.claim.sub', '40000000-0000-4000-8000-000000000002', true);
+select set_config(
+  'request.jwt.claims',
+  '{"role":"authenticated","sub":"40000000-0000-4000-8000-000000000002","app_metadata":{"app_role":"reviewer"}}',
+  true
+);
+insert into product_publication_results (key, result)
+select 'partial-review-decision', cloud_api.record_product_publication_review_decision_v1(
+  (select (result ->> 'candidateRevisionId')::uuid
+   from product_publication_results where key = 'partial-revision'),
+  'Local atomicity revision approval.'
+);
+
+select set_config('request.jwt.claim.role', 'service_role', true);
+select set_config('request.jwt.claim.sub', '', true);
+select set_config(
+  'request.jwt.claims',
+  '{"role":"service_role","app_metadata":{"app_role":"service"}}',
+  true
+);
 insert into product_publication_results (key, result)
 select 'partial-approval', cloud_api.approve_product_publication_revision_v1(
   (select (result ->> 'candidateRevisionId')::uuid
    from product_publication_results where key = 'partial-revision'),
-  '40000000-0000-4000-8000-000000000002',
-  'Local atomicity revision approval.'
+  (select (result ->> 'reviewDecisionId')::uuid
+   from product_publication_results where key = 'partial-review-decision')
 );
+
+-- A new revision supersedes the previous approval and resets the review item.
+insert into product_publication_results (key, result)
+select 'partial-revision-current', cloud_api.create_product_publication_revision_v1(
+  '40000000-0000-4000-8000-000000000052',
+  'product-publication-partial-revision-current'
+);
+do $$
+begin
+  if (select publication_status from cloud.products
+      where id = '40000000-0000-4000-8000-000000000052') <> 'in_review'
+     or (select status from cloud.review_items
+         where import_product_id = '40000000-0000-4000-8000-000000000062') <> 'in_review'
+     or (select current_product_publication_approval_id from cloud.products
+         where id = '40000000-0000-4000-8000-000000000052') is not null then
+    raise exception 'new revision did not supersede approval and reset review lifecycle';
+  end if;
+end
+$$;
+
+select set_config('request.jwt.claim.role', 'authenticated', true);
+select set_config('request.jwt.claim.sub', '40000000-0000-4000-8000-000000000002', true);
+select set_config(
+  'request.jwt.claims',
+  '{"role":"authenticated","sub":"40000000-0000-4000-8000-000000000002","app_metadata":{"app_role":"reviewer"}}',
+  true
+);
+insert into product_publication_results (key, result)
+select 'partial-review-decision-current', cloud_api.record_product_publication_review_decision_v1(
+  (select (result ->> 'candidateRevisionId')::uuid
+   from product_publication_results where key = 'partial-revision-current'),
+  'Local reviewer approved the current atomicity revision.'
+);
+
+select set_config('request.jwt.claim.role', 'service_role', true);
+select set_config('request.jwt.claim.sub', '', true);
+select set_config(
+  'request.jwt.claims',
+  '{"role":"service_role","app_metadata":{"app_role":"service"}}',
+  true
+);
+insert into product_publication_results (key, result)
+select 'partial-approval-current', cloud_api.approve_product_publication_revision_v1(
+  (select (result ->> 'candidateRevisionId')::uuid
+   from product_publication_results where key = 'partial-revision-current'),
+  (select (result ->> 'reviewDecisionId')::uuid
+   from product_publication_results where key = 'partial-review-decision-current')
+);
+
+-- An older approved revision cannot be replayed after a newer approval exists.
+do $$
+begin
+  begin
+    perform cloud_api.publish_product_v1(
+      (select (result ->> 'candidateRevisionId')::uuid
+       from product_publication_results where key = 'partial-revision'),
+      'product-publication-stale-revision-replay'
+    );
+    raise exception 'stale approved revision unexpectedly published';
+  exception when object_not_in_prerequisite_state then
+    null;
+  end;
+  if exists (
+    select 1 from cloud.product_publication_batches
+    where idempotency_key = 'product-publication-stale-revision-replay'
+  ) then
+    raise exception 'stale revision replay left a publication batch';
+  end if;
+end
+$$;
 
 -- A dependency changed after approval invalidates the immutable revision.
 update cloud.categories set publication_status = 'archived'
@@ -479,9 +646,8 @@ begin
   begin
     perform cloud_api.publish_product_v1(
       (select (result ->> 'candidateRevisionId')::uuid
-       from product_publication_results where key = 'partial-revision'),
-      'product-publication-stale-dependency',
-      '40000000-0000-4000-8000-000000000001'
+       from product_publication_results where key = 'partial-revision-current'),
+      'product-publication-stale-dependency'
     );
     raise exception 'product with unpublished dependency unexpectedly published';
   exception when check_violation then
@@ -518,9 +684,8 @@ begin
   begin
     perform cloud_api.publish_product_v1(
       (select (result ->> 'candidateRevisionId')::uuid
-       from product_publication_results where key = 'partial-revision'),
-      'product-publication-partial-failure',
-      '40000000-0000-4000-8000-000000000001'
+       from product_publication_results where key = 'partial-revision-current'),
+      'product-publication-partial-failure'
     );
     raise exception 'synthetic partial failure did not fire';
   exception when raise_exception then
@@ -545,7 +710,7 @@ begin
     set publication_status = 'published', published_at = now()
     where id = '40000000-0000-4000-8000-000000000052';
     raise exception 'direct publication bypass unexpectedly succeeded';
-  exception when object_not_in_prerequisite_state then
+  exception when check_violation or object_not_in_prerequisite_state then
     null;
   end;
   begin
@@ -561,12 +726,23 @@ $$;
 do $$
 begin
   if has_function_privilege(
-    'anon', 'cloud_api.publish_product_v1(uuid,text,uuid)', 'EXECUTE'
+    'anon', 'cloud_api.publish_product_v1(uuid,text)', 'EXECUTE'
   ) or has_function_privilege(
-    'authenticated', 'cloud_api.publish_product_v1(uuid,text,uuid)', 'EXECUTE'
+    'authenticated', 'cloud_api.publish_product_v1(uuid,text)', 'EXECUTE'
   ) or not has_function_privilege(
-    'service_role', 'cloud_api.publish_product_v1(uuid,text,uuid)', 'EXECUTE'
-  ) then
+    'service_role', 'cloud_api.publish_product_v1(uuid,text)', 'EXECUTE'
+  ) or has_function_privilege(
+    'service_role', 'cloud_api.record_product_publication_review_decision_v1(uuid,text)', 'EXECUTE'
+  ) or not has_function_privilege(
+    'authenticated', 'cloud_api.record_product_publication_review_decision_v1(uuid,text)', 'EXECUTE'
+  ) or has_function_privilege(
+    'service_role', 'cloud.approve_product_publication_revision_v1(uuid,uuid,text)', 'EXECUTE'
+  ) or to_regprocedure('cloud_api.create_product_publication_revision_v1(uuid,text,uuid)') is not null
+     or to_regprocedure('cloud_api.approve_product_publication_revision_v1(uuid,uuid,text)') is not null
+     or to_regprocedure('cloud_api.publish_product_v1(uuid,text,uuid)') is not null
+     or to_regprocedure('cloud_api.archive_product_v1(uuid,text,uuid)') is not null
+     or to_regprocedure('cloud_api.rollback_product_publication_v1(uuid,text,uuid)') is not null
+  then
     raise exception 'product publication RPC grants are unsafe';
   end if;
   if not exists (
@@ -577,8 +753,8 @@ begin
   ) then
     raise exception 'public Product RLS is not fail-closed';
   end if;
-  if (select count(*) from cloud.product_publication_revisions) <> 2
-     or (select count(*) from cloud.product_publication_approvals) <> 2
+  if (select count(*) from cloud.product_publication_revisions) <> 3
+     or (select count(*) from cloud.product_publication_approvals) <> 3
      or (select count(*) from cloud.product_publication_batches
          where product_id = '40000000-0000-4000-8000-000000000050') <> 4
      or (select count(*) from cloud.publication_events

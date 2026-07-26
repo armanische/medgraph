@@ -9,31 +9,26 @@ const idempotencyKeySchema = z.string().trim().min(8).max(200);
 export const createProductPublicationRevisionInputSchema = z.object({
   productId: uuidSchema,
   idempotencyKey: idempotencyKeySchema,
-  actorId: uuidSchema,
 }).strict();
 
 export const approveProductPublicationRevisionInputSchema = z.object({
   candidateRevisionId: uuidSchema,
-  reviewerId: uuidSchema,
-  rationale: z.string().trim().min(1).max(2_000),
+  reviewDecisionId: uuidSchema,
 }).strict();
 
 export const publishProductInputSchema = z.object({
   candidateRevisionId: uuidSchema,
   idempotencyKey: idempotencyKeySchema,
-  actorId: uuidSchema,
 }).strict();
 
 export const archiveProductInputSchema = z.object({
   productId: uuidSchema,
   idempotencyKey: idempotencyKeySchema,
-  actorId: uuidSchema,
 }).strict();
 
 export const rollbackProductPublicationInputSchema = z.object({
   publicationBatchId: uuidSchema,
   idempotencyKey: idempotencyKeySchema,
-  actorId: uuidSchema,
 }).strict();
 
 export const productPublicationRevisionResultSchema = z.object({

@@ -13,10 +13,9 @@ import {
   rollbackProductPublicationInputSchema,
 } from "../../lib/product-publication/contracts.ts";
 
-const actorId = "40000000-0000-4000-8000-000000000001";
-const reviewerId = "40000000-0000-4000-8000-000000000002";
 const productId = "40000000-0000-4000-8000-000000000050";
 const revisionId = "40000000-0000-4000-8000-000000000070";
+const reviewDecisionId = "40000000-0000-4000-8000-000000000074";
 const approvalId = "40000000-0000-4000-8000-000000000071";
 const batchId = "40000000-0000-4000-8000-000000000072";
 
@@ -24,38 +23,37 @@ test("Product publication contracts are strict, revision-bound and typed", () =>
   assert.equal(createProductPublicationRevisionInputSchema.safeParse({
     productId,
     idempotencyKey: "revision-key-v1",
-    actorId,
   }).success, true);
   assert.equal(approveProductPublicationRevisionInputSchema.safeParse({
     candidateRevisionId: revisionId,
-    reviewerId,
-    rationale: "Reviewed exact immutable revision.",
+    reviewDecisionId,
   }).success, true);
   assert.equal(publishProductInputSchema.safeParse({
     candidateRevisionId: revisionId,
     idempotencyKey: "publication-key-v1",
-    actorId,
   }).success, true);
   assert.equal(archiveProductInputSchema.safeParse({
     productId,
     idempotencyKey: "archive-key-v1",
-    actorId,
   }).success, true);
   assert.equal(rollbackProductPublicationInputSchema.safeParse({
     publicationBatchId: batchId,
     idempotencyKey: "rollback-key-v1",
-    actorId,
   }).success, true);
 
   assert.equal(publishProductInputSchema.safeParse({
     productId,
     idempotencyKey: "publication-key-v1",
-    actorId,
   }).success, false);
   assert.equal(createProductPublicationRevisionInputSchema.safeParse({
     productId,
     idempotencyKey: "short",
-    actorId,
+  }).success, false);
+
+  assert.equal(approveProductPublicationRevisionInputSchema.safeParse({
+    candidateRevisionId: revisionId,
+    reviewerId: reviewDecisionId,
+    rationale: "Caller-asserted reviewer identity must not be accepted.",
   }).success, false);
 
   assert.equal(productPublicationRevisionResultSchema.safeParse({
@@ -89,10 +87,10 @@ test("Product publication contracts are strict, revision-bound and typed", () =>
 });
 
 test("Product publication migration defines immutable approval and append-only actions", async () => {
-  const migration = await readFile(
-    "supabase/migrations/202607250001_product_publication_foundation_v1.sql",
-    "utf8",
-  );
+  const [migration, corrective] = await Promise.all([
+    readFile("supabase/migrations/202607250001_product_publication_foundation_v1.sql", "utf8"),
+    readFile("supabase/migrations/202607260001_product_publication_foundation_corrective_v1.sql", "utf8"),
+  ]);
 
   assert.match(migration, /create table cloud\.product_publication_revisions/u);
   assert.match(migration, /create table cloud\.product_publication_approvals/u);
@@ -120,6 +118,21 @@ test("Product publication migration defines immutable approval and append-only a
   assert.match(migration, /revoke all on function cloud_api\.publish_product_v1[\s\S]+from public, anon, authenticated/u);
   assert.doesNotMatch(migration, /cloud_storefront_preview_catalog|CatalogRepository|ProductService/u);
   assert.doesNotMatch(migration, /hamilton|330695211247/iu);
+
+  assert.match(corrective, /trusted_product_publication_service_actor_v1/u);
+  assert.match(corrective, /auth\.uid\(\)/u);
+  assert.match(corrective, /record_product_publication_review_decision_v1/u);
+  assert.match(corrective, /current_product_publication_revision_id/u);
+  assert.match(corrective, /only the current approved Product revision can be published/u);
+  assert.match(corrective, /for share of product_area, area/u);
+  assert.match(corrective, /published Product depends on manufacturer/u);
+  assert.match(corrective, /published Product application areas are immutable/u);
+  assert.match(corrective, /lookup occurs after both advisory and Product row locks/u);
+  assert.doesNotMatch(
+    corrective,
+    /grant execute on function cloud_api\.publish_product_v1\(uuid, text, uuid\)/u,
+  );
+  assert.doesNotMatch(corrective, /hamilton|330695211247/iu);
 });
 
 test("Product publication server adapter is service-only and not a Storefront API", async () => {
@@ -154,7 +167,10 @@ test("Local Product publication integration is transactional and exercises failu
   assert.match(fixture, /revision retry changed an advanced Product state/u);
   assert.match(fixture, /publication retry is not idempotent/u);
   assert.match(fixture, /unapproved product unexpectedly published/u);
-  assert.match(fixture, /unknown publication actor unexpectedly accepted/u);
+  assert.match(fixture, /spoofed reviewer unexpectedly accepted/u);
+  assert.match(fixture, /stale approved revision unexpectedly published/u);
+  assert.match(fixture, /dependency guard did not preserve published Product contract/u);
+  assert.match(fixture, /new revision did not supersede approval and reset review lifecycle/u);
   assert.match(fixture, /product with unpublished dependency unexpectedly published/u);
   assert.match(fixture, /failed publication was not rolled back atomically/u);
   assert.match(fixture, /direct publication bypass unexpectedly succeeded/u);
@@ -168,7 +184,9 @@ test("Local Product publication integration is transactional and exercises failu
   );
   assert.match(runner, /docker", \["image", "inspect", IMAGE\]/u);
   assert.match(runner, /This QA command never pulls images automatically/u);
-  assert.match(runner, /migrationCount: 15/u);
+  assert.match(runner, /migrationCount: 16/u);
+  assert.match(runner, /Concurrent approval was not exactly idempotent/u);
+  assert.match(runner, /005_product_publication_concurrent_approval\.sql/u);
   assert.match(runner, /remoteConnections: 0/u);
   assert.doesNotMatch(runner, /SUPABASE_SERVICE_ROLE_KEY|NEXT_PUBLIC_SUPABASE/u);
 });

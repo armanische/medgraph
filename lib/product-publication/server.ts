@@ -59,7 +59,6 @@ export async function createProductPublicationRevision(
     {
       p_product_id: parsed.productId,
       p_idempotency_key: parsed.idempotencyKey,
-      p_actor_id: parsed.actorId,
     },
     client,
   );
@@ -75,8 +74,7 @@ export async function approveProductPublicationRevision(
     "approve_product_publication_revision_v1",
     {
       p_candidate_revision_id: parsed.candidateRevisionId,
-      p_reviewer_id: parsed.reviewerId,
-      p_rationale: parsed.rationale,
+      p_review_decision_id: parsed.reviewDecisionId,
     },
     client,
   );
@@ -91,7 +89,6 @@ export async function publishProduct(
   const result = await callProductPublicationRpc("publish_product_v1", {
     p_candidate_revision_id: parsed.candidateRevisionId,
     p_idempotency_key: parsed.idempotencyKey,
-    p_actor_id: parsed.actorId,
   }, client);
   return productPublicationActionResultSchema.parse(result);
 }
@@ -104,7 +101,6 @@ export async function archiveProduct(
   const result = await callProductPublicationRpc("archive_product_v1", {
     p_product_id: parsed.productId,
     p_idempotency_key: parsed.idempotencyKey,
-    p_actor_id: parsed.actorId,
   }, client);
   return productPublicationActionResultSchema.parse(result);
 }
@@ -117,7 +113,6 @@ export async function rollbackProductPublication(
   const result = await callProductPublicationRpc("rollback_product_publication_v1", {
     p_publication_batch_id: parsed.publicationBatchId,
     p_idempotency_key: parsed.idempotencyKey,
-    p_actor_id: parsed.actorId,
   }, client);
   return productPublicationActionResultSchema.parse(result);
 }

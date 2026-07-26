@@ -28,16 +28,19 @@ review Product и будущей published-only Storefront projection.
 - Создавать immutable `product_publication_revision` до approval. Revision
   фиксирует schema version, Product identity, канонический candidate payload и
   SHA-256 checksums.
-- Привязывать approval к точной revision, payload checksum, identity checksum,
-  reviewer identity и существующему review item. Изменённый Product требует
-  новой revision и нового approval.
+- Привязывать approval к точной current revision, payload checksum, identity
+  checksum, authenticated reviewer identity и существующему immutable review
+  decision. Reviewer определяется через `auth.uid()`; service consumer не
+  передаёт reviewer UUID или rationale. Изменённый Product требует новой
+  revision и нового approval, а previous evidence superseded current pointers.
 - Разрешать publication только для `approved` Product при опубликованных
   manufacturer, assignable category и application areas, статусе качества
   `READY`, заполненной модели и отсутствии unresolved import blocking errors.
-- Выполнять create revision, approve, publish, archive и rollback только через
-  service-role RPC. Audit actor обязан существовать в `user_profiles`;
-  publish/archive/rollback разрешены actor роли `admin` или `service`.
-  Browser/client write surface не создаётся.
+- Создавать human review decision через authenticated RPC для reviewer/admin.
+  Выполнять create revision, approval consumption, publish, archive и rollback
+  только через service-role RPC. Service actor выводится database из единственного
+  trusted `service` profile и не принимается от caller. Browser Storefront write
+  surface не создаётся.
 - Сериализовать действия per Product advisory lock и row lock. Каждое действие
   является одной PostgreSQL transaction/statement: либо сохраняются Product,
   batch и audit trail, либо не сохраняется ничего.
@@ -48,6 +51,9 @@ review Product и будущей published-only Storefront projection.
   полный before/after Product state; rollback создаёт новый batch и точно
   восстанавливает предыдущее состояние без удаления import, review или audit
   history.
+- Блокировать mandatory reference rows в deterministic order во время
+  publication и запрещать unpublish/archive reference либо изменение application
+  area links, пока от них зависит published Product.
 - Считать Published только Product, у которого статус `published` связан с
   активным publication batch. Неизвестное или неконсистентное состояние
   трактуется как unpublished.
@@ -77,11 +83,12 @@ review Product и будущей published-only Storefront projection.
   не меняя `CatalogRepository` или `ProductService` contract.
 - Применение migration само по себе ничего не публикует и не изменяет Product
   Data; существующие товары остаются в прежнем состоянии.
-- Approval API является внутренним service-only boundary. Слой orchestration
-  обязан передать identity reviewer из авторизованного review workflow; публичный
-  HTTP endpoint этим решением не создаётся.
-- Связанные сущности проверяются перед revision/approval/publication. Их
-  независимые publication workflows остаются источником их published state.
+- Review decision API является authenticated internal boundary, а approval API
+  service-only потребляет его immutable ID. Caller-asserted human identity не
+  существует; публичный HTTP endpoint этим решением не создаётся.
+- Связанные сущности проверяются и блокируются перед revision/approval/publication.
+  Их independent publication workflows остаются источником published state, но
+  persistent dependency guards не позволяют нарушить contract published Product.
 - Изменения дочерних Product rows после базовой публикации должны проходить через
   соответствующий publication owner. В этой задаче не создаётся общий writer
   для Structured Fields или Reference Data.
@@ -96,13 +103,16 @@ review Product и будущей published-only Storefront projection.
   `published`; дополнительный state constraint требует active batch.
 - Checksums рассчитываются на database boundary. Approval проверяется повторно
   непосредственно перед publication.
+- Product хранит canonical current revision/current approval pointers; publish
+  batch обязан совпадать с обоими pointers и Product identity.
 - Migration не содержит backfill, approval, publication, Product enrichment,
   remote connection или environment-specific values.
 
 ## Migration and rollback
 
 Forward-only migration:
-`202607250001_product_publication_foundation_v1.sql`.
+`202607250001_product_publication_foundation_v1.sql`, hardening:
+`202607260001_product_publication_foundation_corrective_v1.sql`.
 
 Она создаёт immutable evidence tables, state guards и service-only RPC. До
 отдельного независимого review и controlled staging migration ADR остаётся

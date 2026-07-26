@@ -1,6 +1,6 @@
 # Product Publication Foundation v1
 
-**Дата:** 25 июля 2026 года
+**Дата:** 26 июля 2026 года
 
 **Scope:** базовая Cloud Product publication; без Storefront, UI и remote apply
 
@@ -15,7 +15,8 @@ Publication Foundation закрывает разрыв между импорти
 Import record
   -> Product (draft / Imported)
   -> immutable Product publication revision
-  -> Review item + exact revision-bound approval
+  -> authenticated immutable Review decision
+  -> service consumption + exact revision-bound approval
   -> service-only transactional publication
   -> Product (published + active batch)
   -> future published-only repository
@@ -32,24 +33,31 @@ ADR-005 и не публикуются базовым Product writer.
 | `product_publication_revisions` | immutable candidate, identity и checksums |
 | `product_publication_approvals` | exact revision-bound approval |
 | `product_publication_batches` | append-only publish/archive/rollback journal |
+| Product current evidence pointers | canonical current revision и approval |
 | Product state guard | разрешённые transitions и content lock |
-| `cloud_api.*_v1` | единственный service-only mutation boundary |
+| dependency guards | persistent reference integrity после publication |
+| `cloud_api.*_v1` | authenticated review + service-only mutation boundary |
 | `lib/product-publication` | строгий server-only typed adapter |
 
 ## 2. Publication Workflow
 
 1. Import создаёт или обновляет Product в существующем `draft` state и сохраняет
    `import_products.existing_product_id`.
-2. Service создаёт publication revision с idempotency key. Database проверяет
+2. Service создаёт publication revision с idempotency key. Actor выводится из
+   trusted service context; caller не передаёт UUID. Database проверяет
    quality/dependencies, фиксирует identity и payload и переводит Product в
    `in_review`.
-3. Reviewer/Admin approval через service boundary повторно сверяет текущий
-   Product с immutable revision и записывает точное решение.
-4. Publish writer снова проверяет Product, approval, hashes и dependencies,
+3. Authenticated Reviewer/Admin записывает immutable review decision. Reviewer
+   определяется только через `auth.uid()` и доверенный `user_profiles` role.
+4. Service approval consumption принимает ID существующего decision, повторно
+   сверяет текущий Product с immutable revision и создаёт approval. Reviewer UUID
+   и rationale не принимаются от service caller.
+5. Publish writer снова проверяет canonical current revision/current approval,
+   hashes и dependencies,
    создаёт batch и атомарно переводит Product в `published`.
-5. Archive создаёт отдельный batch и переводит текущий published Product в
+6. Archive создаёт отдельный batch и переводит текущий published Product в
    `archived`.
-6. Rollback допускается только для текущего action, создаёт новый audit batch и
+7. Rollback допускается только для текущего action, создаёт новый audit batch и
    восстанавливает exact `previous_state`.
 
 Ни один шаг не выполняется migration, build или deploy автоматически.
@@ -80,8 +88,11 @@ ADR-005 и не публикуются базовым Product writer.
 - существует хотя бы одна application area, все связанные области опубликованы;
 - отсутствуют unresolved `import_blocking_errors`;
 - review item не blocked/rejected/archived;
-- audit actor существует; publication actions разрешены только `admin`/`service`;
+- существует ровно один trusted Product publication service principal;
+- authenticated reviewer identity соответствует `auth.uid()` и profile role;
+- approval потребляет существующий immutable review decision;
 - approval относится к точной immutable revision и checksum;
+- revision и approval совпадают с current evidence pointers Product;
 - current identity/payload byte-for-byte совпадают с approved revision.
 
 Нарушение любого условия останавливает statement. Partial Product state, batch
@@ -93,12 +104,19 @@ ADR-005 и не публикуются базовым Product writer.
 
 - `pg_advisory_xact_lock` по Product;
 - `SELECT ... FOR UPDATE` для актуального Product/action;
+- deterministic `FOR SHARE` locks для manufacturer, category, application areas
+  и связей Product;
 - unique idempotency key;
 - immutable candidate и approval hashes;
 - database trigger, разрешающий state transition только текущему writer action;
 - append-only batch и `audit_log` в той же transaction.
 
-Exact retry возвращает исходный batch/revision/approval. Повтор revision после
+Reference guards запрещают unpublish/archive mandatory reference и изменение
+Product/application-area link, пока зависимый Product опубликован. Поэтому
+publication contract сохраняется не только в момент writer transaction.
+
+Exact retry возвращает исходный batch/revision/approval. Concurrent exact
+approval сериализуется до lookup и возвращает один approval. Повтор revision после
 того, как Product перешёл дальше по lifecycle, не откатывает его state.
 
 ## 6. Publication Audit Design
@@ -111,7 +129,8 @@ Revision сохраняет:
 - identity, candidate и combined checksums;
 - actor и время создания.
 
-Approval сохраняет reviewer, rationale, review decision, revision и checksums.
+Approval сохраняет trusted reviewer, rationale, pre-existing review decision,
+revision и checksums.
 Каждый action batch сохраняет actor, source, idempotency key, previous/result
 state, revision/approval link и время. `audit_log` дополняет evidence; revision,
 approval и batch запрещено изменять или удалять.
@@ -145,12 +164,21 @@ Adapter принимает только существующий `SupabaseServer
 `access = service_role`, валидирует input/output Zod-схемами и не экспортируется
 из Storefront. Публичный API route не создан.
 
+Service adapter не принимает `actorId`, `reviewerId` или approval rationale.
+`approveProductPublicationRevision` принимает только current revision и immutable
+`reviewDecisionId`. Authenticated decision RPC не является Storefront API.
+
 ## 9. Automated Validation
 
 Disposable local PostgreSQL/Supabase fixture применяет полный forward migration
 chain и проверяет:
 
 - successful review/approval/publication lifecycle;
+- spoofed reviewer rejection и trusted audit identity;
+- stale approved revision replay rejection;
+- persistent dependency guards после publication;
+- current revision supersession и review lifecycle reset;
+- two-session concurrent approval idempotency;
 - exact retry revision, approval, publish и rollback;
 - unapproved Product rejection;
 - missing/unpublished dependencies;
@@ -165,7 +193,21 @@ chain и проверяет:
 Команда: `npm run qa:product-publication:local`. Она использует только локальный
 Docker image и не читает Supabase credentials.
 
-## 10. Boundaries and next gates
+## 10. Independent Review Corrective Findings
+
+| Finding | Corrective invariant |
+| --- | --- |
+| H1 Trusted Approval Identity | Human decision создаётся authenticated RPC с `auth.uid()`; service consumption не принимает identity; service actions используют database-resolved service principal. |
+| H2 Persistent Dependency Integrity | Publish блокирует mandatory reference rows; reference/link guards запрещают последующий contract drift для published Product. |
+| H3 Current Approved Revision | Product current revision/current approval pointers supersede старое evidence; batch trigger разрешает publish только current pair. |
+| M1 Relational integrity | Product, current evidence и active publish batch проверяются database triggers. |
+| M2 Concurrent approval | Advisory/Product locks берутся до approval lookup; exact concurrent retry возвращает один approval. |
+| M3 Review lifecycle | Новая immutable revision всегда переводит shared review item в `in_review` и очищает `reviewed_at`. |
+
+Forward-only corrective migration:
+`202607260001_product_publication_foundation_corrective_v1.sql`.
+
+## 11. Boundaries and next gates
 
 - Migration не применена к staging или Production.
 - Ни один существующий Product не approved/published этой задачей.

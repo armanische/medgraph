@@ -1,4 +1,4 @@
-import { spawnSync } from "node:child_process";
+import { spawn, spawnSync } from "node:child_process";
 import path from "node:path";
 
 const IMAGE = "public.ecr.aws/supabase/postgres:17.6.1.147";
@@ -24,6 +24,24 @@ function run(command: string, args: string[], options: RunOptions = {}) {
     throw new Error(`${command} ${args.join(" ")} failed with status ${result.status}`);
   }
   return result;
+}
+
+function runAsync(command: string, args: string[]) {
+  return new Promise<{ stdout: string; stderr: string }>((resolve, reject) => {
+    const child = spawn(command, args, { cwd: ROOT, stdio: ["ignore", "pipe", "pipe"] });
+    let stdout = "";
+    let stderr = "";
+    child.stdout.setEncoding("utf8").on("data", (value: string) => { stdout += value; });
+    child.stderr.setEncoding("utf8").on("data", (value: string) => { stderr += value; });
+    child.on("error", reject);
+    child.on("close", (status) => {
+      if (status !== 0) {
+        reject(new Error(`${command} ${args.join(" ")} failed with status ${status}: ${stderr}`));
+        return;
+      }
+      resolve({ stdout, stderr });
+    });
+  });
 }
 
 function wait(milliseconds: number) {
@@ -91,6 +109,11 @@ try {
     path.join(ROOT, "supabase/tests/004_product_publication_integration.sql"),
     `${CONTAINER}:/tmp/004_product_publication_integration.sql`,
   ]);
+  run("docker", [
+    "cp",
+    path.join(ROOT, "supabase/tests/005_product_publication_concurrent_approval.sql"),
+    `${CONTAINER}:/tmp/005_product_publication_concurrent_approval.sql`,
+  ]);
 
   dockerExec(
     "psql",
@@ -148,18 +171,97 @@ done`,
     throw new Error(`Transactional fixture left local rows behind: ${JSON.stringify(postTest)}`);
   }
 
+  dockerExec(
+    "psql",
+    "-U",
+    "supabase_admin",
+    "-d",
+    DATABASE,
+    "-v",
+    "ON_ERROR_STOP=1",
+    "-f",
+    "/tmp/005_product_publication_concurrent_approval.sql",
+  );
+
+  const concurrentApprovalSql = `with claims as materialized (
+    select
+      set_config('request.jwt.claim.role', 'service_role', false),
+      set_config('request.jwt.claim.sub', '', false),
+      set_config(
+        'request.jwt.claims',
+        '{"role":"service_role","app_metadata":{"app_role":"service"}}',
+        false
+      )
+  )
+  select cloud_api.approve_product_publication_revision_v1(
+    (select id from cloud.product_publication_revisions
+     where idempotency_key = 'product-publication-concurrent-revision'),
+    (select id from cloud.review_decisions
+     where product_publication_revision_id = (
+       select id from cloud.product_publication_revisions
+       where idempotency_key = 'product-publication-concurrent-revision'
+     ))
+  ) from claims`;
+  const concurrentCommand = [
+    "exec", CONTAINER, "psql", "-U", "supabase_admin", "-d", DATABASE,
+    "-v", "ON_ERROR_STOP=1", "-Atc", concurrentApprovalSql,
+  ];
+  const concurrentRuns = await Promise.all([
+    runAsync("docker", concurrentCommand),
+    runAsync("docker", concurrentCommand),
+  ]);
+  const concurrentResults = concurrentRuns.map(({ stdout }) => JSON.parse(stdout.trim()) as {
+    approvalId: string;
+    idempotent: boolean;
+  });
+  if (new Set(concurrentResults.map(({ approvalId }) => approvalId)).size !== 1
+      || concurrentResults.filter(({ idempotent }) => idempotent).length !== 1) {
+    throw new Error(`Concurrent approval was not exactly idempotent: ${JSON.stringify(concurrentResults)}`);
+  }
+
+  const concurrencyAuditResult = run("docker", [
+    "exec", CONTAINER, "psql", "-U", "supabase_admin", "-d", DATABASE, "-Atc",
+    `select jsonb_build_object(
+      'approvalCount', (select count(*) from cloud.product_publication_approvals),
+      'productState', (select publication_status from cloud.products
+        where id = '50000000-0000-4000-8000-000000000050'),
+      'reviewItemState', (select status from cloud.review_items
+        where import_product_id = '50000000-0000-4000-8000-000000000060'),
+      'approvalAuditCount', (select count(*) from cloud.audit_log
+        where action = 'approve' and entity_type = 'product_publication_revision'),
+      'auditReviewerId', (select actor_id from cloud.audit_log
+        where action = 'approve' and entity_type = 'product_publication_revision' limit 1)
+    )`,
+  ], { quiet: true });
+  const concurrencyAudit = JSON.parse(concurrencyAuditResult.stdout.trim()) as {
+    approvalCount: number;
+    productState: string;
+    reviewItemState: string;
+    approvalAuditCount: number;
+    auditReviewerId: string;
+  };
+  if (concurrencyAudit.approvalCount !== 1
+      || concurrencyAudit.productState !== "approved"
+      || concurrencyAudit.reviewItemState !== "approved"
+      || concurrencyAudit.approvalAuditCount !== 1
+      || concurrencyAudit.auditReviewerId !== "50000000-0000-4000-8000-000000000002") {
+    throw new Error(`Concurrent approval audit failed: ${JSON.stringify(concurrencyAudit)}`);
+  }
+
   process.stdout.write(`${JSON.stringify({
     status: "PASS",
     image: IMAGE,
-    migrationCount: 15,
+    migrationCount: 16,
     integration: [
       "imported-to-review-state",
       "immutable-revision-and-checksums",
-      "verified-audit-actor",
+      "trusted-authenticated-reviewer-and-service-actor",
       "revision-bound-approval",
+      "current-approved-revision-only",
       "service-only-publication",
       "idempotent-revision-approval-publication",
-      "published-dependency-gate",
+      "concurrent-idempotent-approval",
+      "persistent-published-dependency-guards",
       "atomic-failure-rollback",
       "archive-and-exact-rollback",
       "idempotent-rollback",
@@ -169,6 +271,9 @@ done`,
       "fail-closed-rls-and-grants",
     ],
     postTest,
+    concurrencyAudit,
+    concurrentResults,
+    disposableDatabaseRemoved: true,
     remoteConnections: 0,
   }, null, 2)}\n`);
 } finally {
