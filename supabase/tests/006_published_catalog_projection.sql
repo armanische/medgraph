@@ -314,6 +314,59 @@ begin
 end
 $$;
 
+-- Local corruption helper. Tests use replica mode to simulate a
+-- checksum-consistent but malformed immutable publication artifact without
+-- weakening production triggers or grants.
+create function pg_temp.replace_projection_product_payload(
+  product_id_value uuid,
+  replacement_payload jsonb
+)
+returns void
+language plpgsql
+as $$
+declare
+  revision_id_value uuid;
+  candidate_checksum_value text;
+  payload_checksum_value text;
+begin
+  select product.current_product_publication_revision_id
+  into revision_id_value
+  from cloud.products product
+  where product.id = product_id_value;
+
+  candidate_checksum_value := cloud.sha256_jsonb_v1(replacement_payload);
+  select cloud.product_publication_payload_checksum_v1(
+    revision.schema_version,
+    revision.product_identity,
+    replacement_payload
+  )
+  into payload_checksum_value
+  from cloud.product_publication_revisions revision
+  where revision.id = revision_id_value;
+
+  update cloud.product_publication_revisions revision
+  set candidate_payload = replacement_payload,
+      candidate_payload_checksum = candidate_checksum_value,
+      payload_checksum = payload_checksum_value
+  where revision.id = revision_id_value;
+
+  update cloud.review_decisions decision
+  set proposed_value = replacement_payload,
+      approved_value = replacement_payload,
+      approved_payload_checksum = payload_checksum_value
+  where decision.product_publication_revision_id = revision_id_value;
+
+  update cloud.product_publication_approvals approval
+  set payload_checksum = payload_checksum_value
+  where approval.candidate_revision_id = revision_id_value;
+
+  update cloud.product_publication_batches batch
+  set payload_checksum = payload_checksum_value
+  where batch.candidate_revision_id = revision_id_value
+    and batch.action = 'publish';
+end
+$$;
+
 select pg_temp.advance_projection_product(
   '60000000-0000-4000-8000-000000000050', 'projection-z', 'published'
 );
@@ -661,6 +714,208 @@ do $$ begin
   end if;
 end $$;
 rollback to unresolved_blocker;
+
+-- A public document URL is an independently mutable public dependency. Its
+-- trigger-maintained clock must advance generatedAt in the same snapshot as
+-- the changed URL.
+savepoint public_document_url_clock;
+do $$
+declare
+  before_projection jsonb;
+  after_projection jsonb;
+  product jsonb;
+begin
+  select cloud_api.cloud_published_storefront_catalog_v1() into before_projection;
+  perform pg_sleep(0.01);
+  update cloud.storage_objects
+  set source_url = 'https://example.invalid/public-document-v2.pdf'
+  where id = '60000000-0000-4000-8000-000000000031';
+  select cloud_api.cloud_published_storefront_catalog_v1() into after_projection;
+  select item into product
+  from jsonb_array_elements(after_projection -> 'products') item
+  where item ->> 'slug' = 'projection-z-product';
+
+  if product #>> '{documents,0,publicUrl}'
+       <> 'https://example.invalid/public-document-v2.pdf'
+     or (after_projection ->> 'generatedAt')::timestamptz
+       <= (before_projection ->> 'generatedAt')::timestamptz then
+    raise exception 'public document URL changed without an advancing projection clock';
+  end if;
+end
+$$;
+rollback to public_document_url_clock;
+
+-- Malformed optional numeric content is excluded at child granularity. The
+-- containing Product and an unrelated Product remain visible, and the RPC
+-- never evaluates an unsafe cast.
+savepoint malformed_numeric_child;
+set local session_replication_role = replica;
+select pg_temp.replace_projection_product_payload(
+  '60000000-0000-4000-8000-000000000050',
+  jsonb_set(
+    (select revision.candidate_payload
+     from cloud.product_publication_revisions revision
+     where revision.id = (
+       select current_product_publication_revision_id from cloud.products
+       where id = '60000000-0000-4000-8000-000000000050'
+     )),
+    '{media,0,sortOrder}', '"malformed"'::jsonb, false
+  )
+);
+set local session_replication_role = origin;
+do $$
+declare
+  projection jsonb;
+  product jsonb;
+begin
+  select cloud_api.cloud_published_storefront_catalog_v1() into projection;
+  select item into product
+  from jsonb_array_elements(projection -> 'products') item
+  where item ->> 'slug' = 'projection-z-product';
+  if product is null
+     or jsonb_array_length(product -> 'media') <> 0
+     or not projection @? '$.products[*] ? (@.slug == "projection-a-product")' then
+    raise exception 'malformed numeric child was not isolated fail-closed';
+  end if;
+end
+$$;
+rollback to malformed_numeric_child;
+
+-- Malformed booleans are excluded rather than cast. The Product and its
+-- valid neighbor remain available.
+savepoint malformed_boolean_child;
+set local session_replication_role = replica;
+select pg_temp.replace_projection_product_payload(
+  '60000000-0000-4000-8000-000000000050',
+  jsonb_set(
+    (select revision.candidate_payload
+     from cloud.product_publication_revisions revision
+     where revision.id = (
+       select current_product_publication_revision_id from cloud.products
+       where id = '60000000-0000-4000-8000-000000000050'
+     )),
+    '{documents,1,isOfficial}', '"not-a-boolean"'::jsonb, false
+  )
+);
+set local session_replication_role = origin;
+do $$
+declare
+  projection jsonb;
+  product jsonb;
+begin
+  select cloud_api.cloud_published_storefront_catalog_v1() into projection;
+  select item into product
+  from jsonb_array_elements(projection -> 'products') item
+  where item ->> 'slug' = 'projection-z-product';
+  if product is null
+     or jsonb_array_length(product -> 'documents') <> 0
+     or not projection @? '$.products[*] ? (@.slug == "projection-a-product")' then
+    raise exception 'malformed boolean child was not isolated fail-closed';
+  end if;
+end
+$$;
+rollback to malformed_boolean_child;
+
+-- A malformed mandatory nested application-area object excludes only its
+-- Product. A valid neighboring Product remains visible.
+savepoint malformed_nested_object;
+set local session_replication_role = replica;
+select pg_temp.replace_projection_product_payload(
+  '60000000-0000-4000-8000-000000000050',
+  jsonb_set(
+    (select revision.candidate_payload
+     from cloud.product_publication_revisions revision
+     where revision.id = (
+       select current_product_publication_revision_id from cloud.products
+       where id = '60000000-0000-4000-8000-000000000050'
+     )),
+    '{applicationAreas,0}', '"malformed"'::jsonb, false
+  )
+);
+set local session_replication_role = origin;
+do $$
+declare projection jsonb;
+begin
+  select cloud_api.cloud_published_storefront_catalog_v1() into projection;
+  if projection @? '$.products[*] ? (@.slug == "projection-z-product")'
+     or not projection @? '$.products[*] ? (@.slug == "projection-a-product")' then
+    raise exception 'malformed mandatory nested object was not Product-isolated';
+  end if;
+end
+$$;
+rollback to malformed_nested_object;
+
+-- An invalid structured row must affect neither payload nor projection clock.
+-- It carries a future timestamp to make an accidental clock contribution
+-- unambiguous.
+savepoint invisible_structured_clock;
+set local session_replication_role = replica;
+update cloud.product_key_features
+set approval_decision_id = '60000000-0000-4000-8000-000000000093',
+    updated_at = '2099-01-01T00:00:00Z'
+where product_id = '60000000-0000-4000-8000-000000000050'
+  and structured_item_id = 'projection-feature';
+set local session_replication_role = origin;
+do $$
+declare
+  projection jsonb;
+  product jsonb;
+begin
+  select cloud_api.cloud_published_storefront_catalog_v1() into projection;
+  select item into product
+  from jsonb_array_elements(projection -> 'products') item
+  where item ->> 'slug' = 'projection-z-product';
+  if jsonb_array_length(product -> 'keyFeatures') <> 0
+     or (projection ->> 'generatedAt')::timestamptz >= '2099-01-01T00:00:00Z' then
+    raise exception 'invisible structured row affected payload or generatedAt';
+  end if;
+end
+$$;
+rollback to invisible_structured_clock;
+
+-- A valid visible structured row remains part of the exact clock input set.
+savepoint visible_structured_clock;
+set local session_replication_role = replica;
+update cloud.product_key_features
+set updated_at = '2098-01-01T00:00:00Z'
+where product_id = '60000000-0000-4000-8000-000000000050'
+  and structured_item_id = 'projection-feature';
+set local session_replication_role = origin;
+do $$
+declare
+  projection jsonb;
+  product jsonb;
+begin
+  select cloud_api.cloud_published_storefront_catalog_v1() into projection;
+  select item into product
+  from jsonb_array_elements(projection -> 'products') item
+  where item ->> 'slug' = 'projection-z-product';
+  if jsonb_array_length(product -> 'keyFeatures') <> 1
+     or (projection ->> 'generatedAt')::timestamptz
+       <> '2098-01-01T00:00:00Z'::timestamptz then
+    raise exception 'valid structured row was omitted from payload or generatedAt';
+  end if;
+end
+$$;
+rollback to visible_structured_clock;
+
+-- Determinism is asserted over a longer consecutive sample, not merely a
+-- single repeated call.
+do $$
+declare
+  expected_projection jsonb;
+  repeated_projection jsonb;
+  call_number integer;
+begin
+  select cloud_api.cloud_published_storefront_catalog_v1() into expected_projection;
+  for call_number in 1..100 loop
+    select cloud_api.cloud_published_storefront_catalog_v1() into repeated_projection;
+    if repeated_projection is distinct from expected_projection then
+      raise exception 'published projection changed on deterministic call %', call_number;
+    end if;
+  end loop;
+end
+$$;
 
 do $$
 declare
