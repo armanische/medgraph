@@ -4,9 +4,9 @@
 > [ADR-002](../00-project/ADR/ADR-002-storefront-repository-boundary.md) и
 > [ADR-006](../00-project/ADR/ADR-006-product-publication-foundation.md).
 
-**Статус:** corrective v2 реализован и проверен локально; ожидает Independent Adapter Re-Review v3
+**Статус:** corrective v3 реализован и проверен локально; ожидает targeted Independent Adapter Re-Review v4
 
-**Версия:** 1.2
+**Версия:** 1.3
 
 **Дата:** 27 июля 2026 года
 
@@ -53,8 +53,8 @@ fallback внутри request.
 | `SUPABASE_SERVICE_ROLE_KEY` | да, только runtime | строго server-only | execute approved service-only read RPC после binding validation |
 | `NEXT_PUBLIC_SUPABASE_URL` | нет | browser-safe/public path | используется другими явно выбранными Supabase paths; Published adapter игнорирует |
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | нет | browser-safe public credential | Published adapter игнорирует |
-| `VERCEL_ENV` | предоставляется Vercel | server configuration | запрещает cloud_preview в Production |
-| `CYBERMEDICA_ALLOW_LOCAL_SUPABASE_ORIGIN=1` | только synthetic local QA | server-only test flag | разрешает HTTP loopback, но только вне Vercel |
+| `VERCEL_ENV` | да в Vercel; `production`, `preview` или local `development` | server configuration | выбирает один compiled approved project ref; неизвестное/отсутствующее Vercel-значение отклоняется |
+| `CYBERMEDICA_ALLOW_LOCAL_SUPABASE_ORIGIN=1` | только synthetic local QA с `NODE_ENV=test` | server-only test flag | разрешает fixed HTTP loopback ref строго вне Vercel |
 
 Выбран **Option A — runtime-only server configuration**. Build не требует и не
 читает три server-only Published variables. Runtime получает URL, project ref
@@ -62,30 +62,42 @@ fallback внутри request.
 authoritative origin и может относиться к другому browser-safe path. Build
 artifact не связывается с build-time project origin.
 
-Перед созданием transport URL и explicit ref проверяются совместно. Для Cloud
-допустим только exact origin
-`https://<CYBERMEDICA_SUPABASE_PROJECT_REF>.supabase.co`: HTTPS, без
-credentials, port, path, query и hash. Ref должен состоять ровно из 20 lowercase
-ASCII letters/digits. Arbitrary/custom host, другой корректно выглядящий
-Supabase project, suffix/prefix confusion, trailing dot, percent encoding и
-несовпадающая пара отклоняются до `fetch`. Ошибка имеет только safe code
+Перед созданием transport URL выполняются две независимые проверки:
+
+1. compiled server-only allowlist выбирает единственный ref для фактической
+   deployment environment;
+2. configured URL обязан точно соответствовать выбранному и configured ref.
+
+Для Cloud допустим только exact origin
+`https://<approved-project-ref>.supabase.co`: HTTPS, без credentials, port,
+path, query и hash. Ref должен состоять ровно из 20 lowercase ASCII
+letters/digits. Совпадающая URL/ref-пара произвольного третьего Supabase
+проекта, custom host, suffix/prefix confusion, trailing dot, percent encoding
+и mismatch отклоняются до `fetch`. Ошибка имеет только safe code
 `configuration`; URL, ref, key и headers в неё не включаются.
 
 Service-role token не используется как источник project identity: контракт не
-опирается на недокументированные JWT claims. Binding обеспечивается двумя
-server-only ENV, exact validation до transport creation и deployment policy,
-которая обновляет URL/ref/key как одну конфигурационную единицу.
+опирается на недокументированные JWT claims. Один уровень identity закреплён в
+server code и не принимается из ENV, request, query, cookie, header или
+`NEXT_PUBLIC_*`. Binding обеспечивается compiled allowlist, exact URL/ref
+validation до transport creation и deployment policy, которая обновляет
+URL/ref/key как одну конфигурационную единицу.
 
 Approved deployment values без credentials:
 
-| Environment | `CYBERMEDICA_SUPABASE_URL` | `CYBERMEDICA_SUPABASE_PROJECT_REF` |
+| Deployment environment | Compiled approved ref | Required configured origin |
 | --- | --- | --- |
-| staging | `https://gjlpkqdhlzbfnzzoxlsk.supabase.co` | `gjlpkqdhlzbfnzzoxlsk` |
-| Production | `https://clbzibuusyuajsylcbvl.supabase.co` | `clbzibuusyuajsylcbvl` |
+| `VERCEL_ENV=preview` | `gjlpkqdhlzbfnzzoxlsk` | `https://gjlpkqdhlzbfnzzoxlsk.supabase.co` |
+| `VERCEL_ENV=production` | `clbzibuusyuajsylcbvl` | `https://clbzibuusyuajsylcbvl.supabase.co` |
+| local `NODE_ENV=development\|test` или `VERCEL_ENV=development` | `gjlpkqdhlzbfnzzoxlsk` | `https://gjlpkqdhlzbfnzzoxlsk.supabase.co` |
 
 Эта таблица является specification, а не разрешением менять Vercel ENV или
-выполнять deployment. Local loopback доступен только с test flag, fixed ref
-`localdevelopment0001` и вне любого Vercel environment.
+выполнять deployment. Local loopback доступен только при одновременных
+`NODE_ENV=test`, test flag, fixed ref `localdevelopment0001` и отсутствии
+`VERCEL_ENV`/Vercel runtime. Flag не работает в Preview или Production.
+Отсутствующий `VERCEL_ENV` принимается только в явном local process с
+`NODE_ENV=development|test`; при `VERCEL=1`, unknown environment или
+`NODE_ENV=production` конфигурация fail-closed.
 
 ## 4. Transport и validation
 
@@ -125,19 +137,27 @@ HTTPS host отклоняется до `next/image`.
 
 `lib/storefront/catalog-repository-factory.server.ts` является server-only
 factory. Он выполняет ровно один source-specific dynamic import после строгого
-`getStorefrontDataSource()`:
+`getStorefrontDataSource()`. `app/sitemap.ts` также определяет source прежде,
+чем динамически загружает Published sitemap helper только в ветке
+`cloud_published`:
 
 - `cloud_published` загружает только `CloudPublishedCatalogRepository`;
 - `cloud_preview` загружает только `CloudPreviewCatalogRepository`;
 - `static` загружает только `FilesystemCatalogRepository`.
 
-Неизвестный source отклоняется, `catch` и fallback отсутствуют. Общий
+Неизвестный source и ошибка dynamic import отклоняются, `catch` и fallback
+отсутствуют. Общий
 `CatalogRepository`, `ProductService` и Storefront Domain Model не знают о
-конкретной реализации. Next может выпустить отдельные lazy chunks для других
-source в artifact, но Published execution path их не загружает: Published RPC
-chunk не содержит Preview RPC, `preview_draft`, Preview repository или
-filesystem repository; runtime trace подтверждает отсутствие загрузки Preview
-и filesystem implementation chunks.
+конкретной реализации. Operational boundary требует, чтобы selected execution
+trace не загружал concrete opposite adapter и не вызывал opposite RPC:
+Published не загружает Preview/filesystem implementation, Preview не загружает
+Published/filesystem implementation, static не загружает Cloud implementation.
+
+Next может выпустить неисполняемые lazy chunks других source в полном artifact,
+а unrelated shared layout/framework chunks могут содержать harmless Preview
+literals. Их полное отсутствие не является security boundary. Документ не
+утверждает complete artifact absence; проверяется конкретный загруженный trace,
+RPC matrix, отсутствие fallback и отсутствие draft leakage.
 
 ## 5. Mapping
 
@@ -241,8 +261,9 @@ Storefront catalog.
 - cross-request cache отсутствует: один отдельный HTTP request может выполнить
   один полный snapshot RPC;
 - deployment policy обязана атомарно задавать согласованные server-only
-  URL/project-ref/service-key; cryptographic project binding внутри token не
+  URL/project-ref/service-key, а compiled environment allowlist независимо
+  ограничивает project identity; cryptographic project binding внутри token не
   предполагается;
 - Production ENV и Production Catalog publication настраиваются отдельным gate;
-- runtime artifact не готов к merge до Independent Adapter Re-Review v3 и
+- runtime artifact не готов к merge до targeted Independent Adapter Re-Review v4 и
   отдельно разрешённого staging Preview.
