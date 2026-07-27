@@ -40,4 +40,4 @@ Accepted ADR не переписывается при смене решения.
 | [ADR-003](./ADR-003-staging-acceptance-gate.md) | Staging как обязательная среда приёмки | Accepted |
 | [ADR-004](./ADR-004-main-production-branch-separation.md) | Разделение интеграционной и Production-веток | Accepted |
 | [ADR-005](./ADR-005-structured-product-detail-publication.md) | Review-gated publication structured Product Detail fields | Accepted |
-| [ADR-006](./ADR-006-product-publication-foundation.md) | Review-gated publication основной Product-сущности | Proposed |
+| [ADR-006](./ADR-006-product-publication-foundation.md) | Review-gated publication основной Product-сущности | Accepted |

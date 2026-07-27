@@ -1,8 +1,10 @@
 # ADR-006 — Review-gated Product publication foundation
 
-**Статус:** Proposed
+**Статус:** Accepted
 
 **Дата:** 25 июля 2026 года
+
+**Принято:** 27 июля 2026 года после independent review и controlled staging migration
 
 **Владельцы:** владелец продукта и технический руководитель CyberMedica
 
@@ -114,9 +116,10 @@ Forward-only migration:
 `202607250001_product_publication_foundation_v1.sql`, hardening:
 `202607260001_product_publication_foundation_corrective_v1.sql`.
 
-Она создаёт immutable evidence tables, state guards и service-only RPC. До
-отдельного независимого review и controlled staging migration ADR остаётся
-`Proposed`. Schema rollback выполняется только отдельной forward migration;
+Она создаёт immutable evidence tables, state guards и service-only RPC.
+Independent review и controlled staging migration завершены успешно; решение
+принято без автоматической публикации Product Data. Schema rollback выполняется
+только отдельной forward migration;
 операционный rollback отдельной публикации выполняется
 `rollback_product_publication_v1` и не удаляет историю.
 
