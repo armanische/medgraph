@@ -1,6 +1,7 @@
 import "server-only";
 
 import { CategoryService } from "./category-service.ts";
+import { CloudPublishedCatalogRepository } from "./cloud-published-catalog-repository.ts";
 import { CloudPreviewCatalogRepository } from "./cloud-preview-catalog-repository.ts";
 import { CompareService } from "./compare-service.ts";
 import { getStorefrontDataSource } from "./data-source.ts";
@@ -12,10 +13,12 @@ import { PUBLIC_PRODUCT_STATUSES } from "./types.ts";
 
 export type { CatalogRepository } from "./catalog-repository.ts";
 export { CategoryService } from "./category-service.ts";
+export { CloudPublishedCatalogRepository } from "./cloud-published-catalog-repository.ts";
 export { CloudPreviewCatalogRepository } from "./cloud-preview-catalog-repository.ts";
 export { CompareService } from "./compare-service.ts";
 export {
   getStorefrontDataSource,
+  isCloudPublishedCatalog,
   isCloudPreviewCatalog,
   type StorefrontDataSource,
 } from "./data-source.ts";
@@ -40,7 +43,9 @@ export const storefrontDataSource = getStorefrontDataSource();
 const staticCatalogRepository = new FilesystemCatalogRepository();
 export const catalogRepository = storefrontDataSource === "cloud_preview"
   ? new CloudPreviewCatalogRepository()
-  : staticCatalogRepository;
+  : storefrontDataSource === "cloud_published"
+    ? new CloudPublishedCatalogRepository()
+    : staticCatalogRepository;
 const visibleProductStatuses = storefrontDataSource === "cloud_preview"
   ? new Set([...PUBLIC_PRODUCT_STATUSES, "preview_draft"] as const)
   : PUBLIC_PRODUCT_STATUSES;

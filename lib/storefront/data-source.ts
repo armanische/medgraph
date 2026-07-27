@@ -1,10 +1,10 @@
-export type StorefrontDataSource = "static" | "cloud_preview";
+export type StorefrontDataSource = "static" | "cloud_preview" | "cloud_published";
 
 export function getStorefrontDataSource(
   environment: Readonly<Record<string, string | undefined>> = process.env,
 ): StorefrontDataSource {
   const value = environment.CATALOG_DATA_SOURCE?.trim() || "static";
-  if (value !== "static" && value !== "cloud_preview") {
+  if (value !== "static" && value !== "cloud_preview" && value !== "cloud_published") {
     throw new Error(`Unsupported Storefront CATALOG_DATA_SOURCE: ${value}`);
   }
   if (value === "cloud_preview" && environment.VERCEL_ENV === "production") {
@@ -17,4 +17,10 @@ export function isCloudPreviewCatalog(
   environment: Readonly<Record<string, string | undefined>> = process.env,
 ) {
   return getStorefrontDataSource(environment) === "cloud_preview";
+}
+
+export function isCloudPublishedCatalog(
+  environment: Readonly<Record<string, string | undefined>> = process.env,
+) {
+  return getStorefrontDataSource(environment) === "cloud_published";
 }
