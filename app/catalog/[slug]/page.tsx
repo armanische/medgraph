@@ -23,7 +23,11 @@ import type {
 import { buildStorefrontMetadata } from "@/lib/storefront/seo";
 import { buildProductStructuredData } from "@/lib/storefront/structured-data";
 
+// Published slugs are runtime data and must not require an application rebuild.
+export const dynamic = "force-dynamic";
+
 export async function generateStaticParams() {
+  if (storefrontDataSource === "cloud_published") return [];
   const products = await productService.getActiveProducts();
   return products.map(({ slug }) => ({ slug }));
 }

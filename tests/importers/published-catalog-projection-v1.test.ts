@@ -33,7 +33,7 @@ function validProjection() {
         items: [{ label: "Flow", value: "42", unit: "L/min", sortOrder: 1 }],
       }],
       media: [{
-        url: "https://example.invalid/equipment.webp",
+        url: "https://static.tildacdn.com/equipment.webp",
         role: "primary" as const,
         format: "image/webp",
         sortOrder: 0,

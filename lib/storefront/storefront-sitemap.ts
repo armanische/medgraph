@@ -4,6 +4,7 @@ import type { CategoryService } from "./category-service.ts";
 import type { ManufacturerService } from "./manufacturer-service.ts";
 import type { ProductService } from "./product-service.ts";
 import { STOREFRONT_SITE_URL } from "./seo.ts";
+import type { Category, Manufacturer, Product } from "./types.ts";
 
 export { STOREFRONT_SITE_URL } from "./seo.ts";
 
@@ -33,6 +34,23 @@ export async function buildStorefrontSitemap(
     sources.manufacturerService.getManufacturers(),
     sources.categoryService.getCategories(),
   ]);
+  return buildStorefrontSitemapFromCatalog(
+    { products, manufacturers, categories },
+    siteUrl,
+  );
+}
+
+interface StorefrontSitemapCatalog {
+  products: readonly Product[];
+  manufacturers: readonly Manufacturer[];
+  categories: readonly Category[];
+}
+
+/** Builds every sitemap route from one coherent Storefront snapshot. */
+export function buildStorefrontSitemapFromCatalog(
+  { products, manufacturers, categories }: StorefrontSitemapCatalog,
+  siteUrl = STOREFRONT_SITE_URL,
+): MetadataRoute.Sitemap {
   const activeCategoryIds = new Set(categories.map(({ id }) => id));
   const sitemapProducts = products.filter(({ categoryId }) =>
     activeCategoryIds.has(categoryId),

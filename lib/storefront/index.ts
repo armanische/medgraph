@@ -13,7 +13,10 @@ import { PUBLIC_PRODUCT_STATUSES } from "./types.ts";
 
 export type { CatalogRepository } from "./catalog-repository.ts";
 export { CategoryService } from "./category-service.ts";
-export { CloudPublishedCatalogRepository } from "./cloud-published-catalog-repository.ts";
+export {
+  CloudPublishedCatalogRepository,
+  loadCloudPublishedCatalog,
+} from "./cloud-published-catalog-repository.ts";
 export { CloudPreviewCatalogRepository } from "./cloud-preview-catalog-repository.ts";
 export { CompareService } from "./compare-service.ts";
 export {
@@ -28,6 +31,7 @@ export { ProductService } from "./product-service.ts";
 export { SearchService } from "./search-service.ts";
 export {
   buildStorefrontSitemap,
+  buildStorefrontSitemapFromCatalog,
   STOREFRONT_SITE_URL,
 } from "./storefront-sitemap.ts";
 export * from "./schemas.ts";

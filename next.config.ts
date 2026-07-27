@@ -1,8 +1,12 @@
 import type { NextConfig } from "next";
 
+import { APPROVED_PUBLIC_MEDIA_HOSTS } from "./lib/public-media-policy.ts";
+
 const isDevelopment = process.env.NODE_ENV === "development";
 const isCloudPreview = process.env.CATALOG_DATA_SOURCE === "cloud_preview";
-const cloudMediaOrigin = "https://static.tildacdn.com";
+const cloudMediaOrigins = APPROVED_PUBLIC_MEDIA_HOSTS
+  .map((hostname) => `https://${hostname}`)
+  .join(" ");
 
 export const runtimeResearchDatasetExcludes = [
   "./data/research/**/*",
@@ -12,10 +16,10 @@ export const contentSecurityPolicy = [
   "default-src 'self'",
   `script-src 'self' 'unsafe-inline'${isDevelopment ? " 'unsafe-eval'" : ""}`,
   "style-src 'self' 'unsafe-inline'",
-  `img-src 'self' data: blob: ${cloudMediaOrigin}`,
+  `img-src 'self' data: blob: ${cloudMediaOrigins}`,
   "font-src 'self' data:",
   `connect-src 'self'${isDevelopment ? " ws: wss:" : ""}`,
-  `media-src 'self' ${cloudMediaOrigin}`,
+  `media-src 'self' ${cloudMediaOrigins}`,
   "worker-src 'self' blob:",
   "manifest-src 'self'",
   "object-src 'none'",
@@ -66,7 +70,10 @@ const nextConfig: NextConfig = {
     // Image configuration is compiled into the deployment artifact. Keep the
     // trusted Cloud media host available even when that artifact was built
     // with the static Storefront source and is later used by Preview.
-    remotePatterns: [{ protocol: "https", hostname: "static.tildacdn.com" }],
+    remotePatterns: APPROVED_PUBLIC_MEDIA_HOSTS.map((hostname) => ({
+      protocol: "https" as const,
+      hostname,
+    })),
   },
   async headers() {
     const previewHeaders = isCloudPreview

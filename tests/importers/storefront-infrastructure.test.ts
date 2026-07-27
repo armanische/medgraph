@@ -9,6 +9,7 @@ import { ManufacturerService } from "../../lib/storefront/manufacturer-service.t
 import { ProductService } from "../../lib/storefront/product-service.ts";
 import {
   buildStorefrontSitemap,
+  buildStorefrontSitemapFromCatalog,
   STOREFRONT_SITE_URL,
 } from "../../lib/storefront/storefront-sitemap.ts";
 
@@ -55,6 +56,25 @@ test("Storefront sitemap excludes products in inactive categories", async () => 
   );
 });
 
+test("Storefront sitemap can render a single coherent catalog snapshot", async () => {
+  const repository = new FilesystemCatalogRepository(
+    resolve(root, "data/storefront"),
+  );
+  const [products, manufacturers, categories] = await Promise.all([
+    repository.getProducts(),
+    repository.getManufacturers(),
+    repository.getCategories(),
+  ]);
+  const sitemap = buildStorefrontSitemapFromCatalog({
+    products,
+    manufacturers,
+    categories,
+  });
+
+  assert.ok(sitemap.some(({ url }) => url.endsWith("/catalog/fs510")));
+  assert.ok(sitemap.some(({ url }) => url.endsWith("/manufacturers/ambu")));
+});
+
 test("sitemap infrastructure has no publication or draft imports", async () => {
   const combined = (
     await Promise.all([
@@ -96,9 +116,14 @@ test("Storefront dynamic routes generate static params through services", async 
     source("app/manufacturers/[slug]/page.tsx"),
   ]);
 
+  assert.match(productPage, /storefrontDataSource === "cloud_published"\) return \[\]/);
   assert.match(productPage, /productService\.getActiveProducts\(\)/);
   assert.match(
     manufacturerPage,
     /manufacturerService\.getManufacturers\(\)/,
+  );
+  assert.match(
+    manufacturerPage,
+    /storefrontDataSource === "cloud_published"\) return \[\]/,
   );
 });

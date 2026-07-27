@@ -1,6 +1,11 @@
 import "server-only";
 
-export { SupabaseEnvironmentError } from "./env.ts";
+export {
+  LOCAL_SUPABASE_ORIGIN_OPT_IN,
+  SupabaseEnvironmentError,
+  validateSupabaseProjectOrigin,
+  type ValidateSupabaseProjectOriginOptions,
+} from "./env.ts";
 export {
   createSupabaseServerClient,
   SupabaseConnectionError,

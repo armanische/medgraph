@@ -16,6 +16,7 @@ import {
 import { buildStorefrontSitemap } from "../../lib/storefront/storefront-sitemap.ts";
 
 const timestamp = "2026-07-27T00:00:00.000Z";
+const responseOptions = { rethrowFrameworkError: () => undefined };
 
 function projection(): PublishedCatalogProjection {
   return {
@@ -40,7 +41,7 @@ function projection(): PublishedCatalogProjection {
         items: [{ label: "Flow", value: "42", unit: "L/min", sortOrder: 10 }],
       }],
       media: [{
-        url: "https://example.invalid/equipment.webp",
+        url: "https://static.tildacdn.com/equipment.webp",
         role: "primary",
         format: "image/webp",
         sortOrder: 10,
@@ -125,6 +126,7 @@ test("cloud_published is explicit, Production-safe and never relaxes cloud_previ
 test("mocked published RPC is strictly validated before mapping", async () => {
   const validated = await loadValidatedPublishedCatalogProjection(
     async () => responseFor(projection()),
+    responseOptions,
   );
   const mapped = mapCloudPublishedCatalogProjection(validated);
 
@@ -148,6 +150,7 @@ test("valid empty published catalog remains empty without static or draft fallba
   empty.summary.productCount = 0;
   const validated = await loadValidatedPublishedCatalogProjection(
     async () => responseFor(empty),
+    responseOptions,
   );
   const mapped = mapCloudPublishedCatalogProjection(validated);
 
@@ -182,7 +185,10 @@ test("schema mismatch, malformed products and nested children fail closed", asyn
 
   for (const payload of invalidPayloads) {
     await assert.rejects(
-      () => loadValidatedPublishedCatalogProjection(async () => responseFor(payload)),
+      () => loadValidatedPublishedCatalogProjection(
+        async () => responseFor(payload),
+        responseOptions,
+      ),
       (error: unknown) => error instanceof CloudPublishedCatalogRepositoryError
         && error.code === "invalid_payload"
         && error.message === "Published catalog is unavailable.",
@@ -197,7 +203,7 @@ test("transport and raw upstream failures are sanitized", async () => {
     async () => responseFor({ message: secretMarker }, 500),
   ]) {
     await assert.rejects(
-      () => loadValidatedPublishedCatalogProjection(request),
+      () => loadValidatedPublishedCatalogProjection(request, responseOptions),
       (error: unknown) => error instanceof CloudPublishedCatalogRepositoryError
         && error.code === "transport"
         && !error.message.includes(secretMarker),
@@ -213,7 +219,7 @@ test("published repository is server-only, read-only, isolated from Preview and 
     readFile("lib/storefront/index.ts", "utf8"),
     readFile("components/catalog/CatalogExplorer.tsx", "utf8"),
     readFile("app/page.tsx", "utf8"),
-    readFile("lib/storefront/storefront-sitemap.ts", "utf8"),
+    readFile("app/sitemap.ts", "utf8"),
   ]);
   const publishedPath = `${repository}\n${mapper}\n${response}`;
 
@@ -231,7 +237,8 @@ test("published repository is server-only, read-only, isolated from Preview and 
   assert.doesNotMatch(repository, /\b(?:PATCH|PUT|DELETE)\b|insert into|update cloud\./iu);
   assert.match(catalog, /products\.length === 0/u);
   assert.match(homepage, /products\?\.slice\(0, 4\) \?\? null/u);
-  assert.match(sitemap, /productService\.getActiveProducts/u);
+  assert.match(sitemap, /loadCloudPublishedCatalog/u);
+  assert.match(sitemap, /buildStorefrontSitemapFromCatalog/u);
 });
 
 test("published adapter does not change protected Storefront contracts", async () => {

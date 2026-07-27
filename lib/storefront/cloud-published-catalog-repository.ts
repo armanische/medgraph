@@ -1,8 +1,13 @@
 import "server-only";
 
+import { unstable_rethrow } from "next/navigation";
 import { cache } from "react";
 
-import { createSupabaseServerClient } from "../supabase/index.ts";
+import {
+  createSupabaseServerClient,
+  LOCAL_SUPABASE_ORIGIN_OPT_IN,
+  validateSupabaseProjectOrigin,
+} from "../supabase/index.ts";
 import type { CatalogRepository } from "./catalog-repository.ts";
 import { mapCloudPublishedCatalogProjection } from "./cloud-published-mapper.ts";
 import {
@@ -17,24 +22,40 @@ type CatalogLoader = () => Promise<StorefrontCatalog>;
 async function requestCloudPublishedCatalog(): Promise<StorefrontCatalog> {
   let client;
   try {
-    client = createSupabaseServerClient({ access: "service_role" });
+    const allowLocalDevelopment = process.env[LOCAL_SUPABASE_ORIGIN_OPT_IN] === "1"
+      && process.env.VERCEL_ENV === undefined
+      && process.env.VERCEL !== "1";
+    const approvedOrigin = validateSupabaseProjectOrigin(
+      process.env.NEXT_PUBLIC_SUPABASE_URL ?? "",
+      { allowLocalDevelopment },
+    );
+    client = createSupabaseServerClient({
+      access: "service_role",
+      environment: {
+        ...process.env,
+        NEXT_PUBLIC_SUPABASE_URL: approvedOrigin,
+      },
+    });
   } catch {
     throw new CloudPublishedCatalogRepositoryError("configuration");
   }
 
-  const projection = await loadValidatedPublishedCatalogProjection(() => client.request(
-    "/rest/v1/rpc/cloud_published_storefront_catalog_v1",
-    {
-      method: "POST",
-      headers: {
-        "Accept-Profile": "cloud_api",
-        "Content-Profile": "cloud_api",
-        "Content-Type": "application/json",
+  const projection = await loadValidatedPublishedCatalogProjection(
+    () => client.request(
+      "/rest/v1/rpc/cloud_published_storefront_catalog_v1",
+      {
+        method: "POST",
+        headers: {
+          "Accept-Profile": "cloud_api",
+          "Content-Profile": "cloud_api",
+          "Content-Type": "application/json",
+        },
+        body: "{}",
+        signal: AbortSignal.timeout(10_000),
       },
-      body: "{}",
-      signal: AbortSignal.timeout(10_000),
-    },
-  ));
+    ),
+    { rethrowFrameworkError: unstable_rethrow },
+  );
   return mapCloudPublishedCatalogProjection(projection);
 }
 

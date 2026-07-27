@@ -1,5 +1,7 @@
 import { z } from "zod";
 
+import { isApprovedPublicMediaUrl } from "../public-media-policy.ts";
+
 const publicIdentifierSchema = z.string().trim().min(1).regex(
   /^[a-z0-9]+(?:-[a-z0-9]+)*$/,
   "Public identifiers must be stable slugs",
@@ -10,6 +12,10 @@ const timestampSchema = z.iso.datetime({ offset: true });
 const httpsUrlSchema = z.url().refine(
   (value) => new URL(value).protocol === "https:",
   "Public external URLs must use HTTPS",
+);
+const approvedPublicMediaUrlSchema = httpsUrlSchema.refine(
+  isApprovedPublicMediaUrl,
+  "Public media URL must use an approved HTTPS origin",
 );
 
 const publishedReferenceSchema = z.object({
@@ -62,7 +68,7 @@ export const publishedProductSchema = z.object({
     }).strict()),
   }).strict()),
   media: z.array(z.object({
-    url: httpsUrlSchema,
+    url: approvedPublicMediaUrlSchema,
     role: z.enum(["primary", "gallery"]),
     format: nullablePublicTextSchema,
     sortOrder: z.number().int().nonnegative(),
@@ -122,9 +128,38 @@ export const publishedCatalogProjectionSchema = z.object({
     applicationAreaCount: z.number().int().nonnegative(),
   }).strict(),
 }).strict().superRefine((catalog, context) => {
+  function requireUnique(
+    values: readonly string[],
+    path: "products" | "manufacturers" | "categories" | "applicationAreas",
+    field: "id" | "slug",
+  ) {
+    const seen = new Set<string>();
+    values.forEach((value, index) => {
+      if (seen.has(value)) {
+        context.addIssue({
+          code: "custom",
+          message: `Published catalog contains a duplicate ${path} ${field}`,
+          path: [path, index, field],
+        });
+      }
+      seen.add(value);
+    });
+  }
+
+  requireUnique(catalog.products.map(({ id }) => id), "products", "id");
+  requireUnique(catalog.products.map(({ slug }) => slug), "products", "slug");
+  requireUnique(catalog.manufacturers.map(({ id }) => id), "manufacturers", "id");
+  requireUnique(catalog.manufacturers.map(({ slug }) => slug), "manufacturers", "slug");
+  requireUnique(catalog.categories.map(({ id }) => id), "categories", "id");
+  requireUnique(catalog.categories.map(({ slug }) => slug), "categories", "slug");
+  requireUnique(catalog.applicationAreas.map(({ id }) => id), "applicationAreas", "id");
+  requireUnique(catalog.applicationAreas.map(({ slug }) => slug), "applicationAreas", "slug");
+
   const manufacturerIds = new Set(catalog.manufacturers.map(({ id }) => id));
   const categoryIds = new Set(catalog.categories.map(({ id }) => id));
-  const applicationAreaIds = new Set(catalog.applicationAreas.map(({ id }) => id));
+  const applicationAreasById = new Map(
+    catalog.applicationAreas.map(({ id, name }) => [id, name]),
+  );
 
   if (catalog.summary.productCount !== catalog.products.length
       || catalog.summary.manufacturerCount !== catalog.manufacturers.length
@@ -148,14 +183,31 @@ export const publishedCatalogProjectionSchema = z.object({
         path: ["products", index, "categoryId"],
       });
     }
+    const productApplicationAreaIds = new Set<string>();
     product.applicationAreas.forEach((area, areaIndex) => {
-      if (!applicationAreaIds.has(area.id)) {
+      const canonicalName = applicationAreasById.get(area.id);
+      if (canonicalName === undefined) {
         context.addIssue({
           code: "custom",
           message: "Published Product references a missing application area",
           path: ["products", index, "applicationAreas", areaIndex, "id"],
         });
       }
+      if (canonicalName !== undefined && canonicalName !== area.name) {
+        context.addIssue({
+          code: "custom",
+          message: "Published Product application area name conflicts with its canonical reference",
+          path: ["products", index, "applicationAreas", areaIndex, "name"],
+        });
+      }
+      if (productApplicationAreaIds.has(area.id)) {
+        context.addIssue({
+          code: "custom",
+          message: "Published Product contains a duplicate application area reference",
+          path: ["products", index, "applicationAreas", areaIndex, "id"],
+        });
+      }
+      productApplicationAreaIds.add(area.id);
     });
   });
 });

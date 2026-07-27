@@ -20,7 +20,11 @@ interface ManufacturerPageProps {
   params: Promise<{ slug: string }>;
 }
 
+// Published slugs are runtime data and must not require an application rebuild.
+export const dynamic = "force-dynamic";
+
 export async function generateStaticParams() {
+  if (storefrontDataSource === "cloud_published") return [];
   const manufacturers = await manufacturerService.getManufacturers();
   return manufacturers.map(({ slug }) => ({ slug }));
 }

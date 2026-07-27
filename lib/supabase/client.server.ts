@@ -53,9 +53,16 @@ export function createSupabaseServerClient(
     access,
     url: credentials.url,
     async request(pathname, init = {}) {
-      const response = await fetchImplementation(new URL(pathname, `${credentials.url}/`), {
+      const requestUrl = new URL(pathname, `${credentials.url}/`);
+      if (requestUrl.origin !== new URL(credentials.url).origin) {
+        throw new SupabaseConnectionError(
+          "Supabase request target must use the configured origin.",
+        );
+      }
+      const response = await fetchImplementation(requestUrl, {
         ...init,
         cache: "no-store",
+        redirect: "error",
         headers: {
           Accept: "application/json",
           apikey: credentials.key,

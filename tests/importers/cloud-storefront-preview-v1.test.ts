@@ -229,8 +229,9 @@ test("Cloud media and the approved brand asset survive build-time source selecti
     readFile("components/home/Footer.tsx", "utf8"),
   ]);
 
-  assert.match(config, /remotePatterns: \[\{ protocol: "https", hostname: "static\.tildacdn\.com" \}\]/u);
-  assert.match(config, /img-src 'self' data: blob: \$\{cloudMediaOrigin\}/u);
+  assert.match(config, /APPROVED_PUBLIC_MEDIA_HOSTS/u);
+  assert.match(config, /remotePatterns: APPROVED_PUBLIC_MEDIA_HOSTS\.map/u);
+  assert.match(config, /img-src 'self' data: blob: \$\{cloudMediaOrigins\}/u);
   assert.match(header, /\/brand\/cybermedica-logo\.png/u);
   assert.match(footer, /\/brand\/cybermedica-logo\.png/u);
 });
