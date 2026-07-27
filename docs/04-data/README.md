@@ -10,6 +10,7 @@
 - [Product Import](../product-import-v1.md)
 - [Catalog Quality Model](../catalog-quality-model-v1.md)
 - [Catalog Baseline](../reports/catalog-baseline-v1.md)
+- [Publication Policy v2 — Editorial Diagnostics](./publication-policy-v2.md)
 - [Product Publication Foundation v1](./product-publication-foundation-v1.md)
 - [Published Catalog Projection v1](./published-catalog-projection-v1.md)
 
