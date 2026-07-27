@@ -4,9 +4,9 @@
 > [ADR-002](../00-project/ADR/ADR-002-storefront-repository-boundary.md) и
 > [ADR-006](../00-project/ADR/ADR-006-product-publication-foundation.md).
 
-**Статус:** corrective v1 реализован и проверен локально; ожидает Independent Adapter Re-Review v2
+**Статус:** corrective v2 реализован и проверен локально; ожидает Independent Adapter Re-Review v3
 
-**Версия:** 1.1
+**Версия:** 1.2
 
 **Дата:** 27 июля 2026 года
 
@@ -48,24 +48,44 @@ fallback внутри request.
 | Variable | Required for `cloud_published` | Exposure | Purpose |
 | --- | --- | --- | --- |
 | `CATALOG_DATA_SOURCE=cloud_published` | да | server configuration | explicit source selection |
-| `NEXT_PUBLIC_SUPABASE_URL` | да | public-name variable, читается server adapter | Supabase origin |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | да для текущего shared server env validator | public Supabase credential | validator compatibility; не используется вместо service role |
-| `SUPABASE_SERVICE_ROLE_KEY` | да | строго server-only | execute approved service-only read RPC |
+| `CYBERMEDICA_SUPABASE_URL` | да, только runtime | строго server-only | exact Supabase project origin для Published transport |
+| `CYBERMEDICA_SUPABASE_PROJECT_REF` | да, только runtime | строго server-only | explicit approved 20-character project identity |
+| `SUPABASE_SERVICE_ROLE_KEY` | да, только runtime | строго server-only | execute approved service-only read RPC после binding validation |
+| `NEXT_PUBLIC_SUPABASE_URL` | нет | browser-safe/public path | используется другими явно выбранными Supabase paths; Published adapter игнорирует |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | нет | browser-safe public credential | Published adapter игнорирует |
 | `VERCEL_ENV` | предоставляется Vercel | server configuration | запрещает cloud_preview в Production |
 | `CYBERMEDICA_ALLOW_LOCAL_SUPABASE_ORIGIN=1` | только synthetic local QA | server-only test flag | разрешает HTTP loopback, но только вне Vercel |
 
-Service key не передаётся в Client Components, payload, errors или logs. Он
-используется только общим `createSupabaseServerClient` для одного RPC.
-`NEXT_PUBLIC_SUPABASE_URL` для Next artifact задаётся во время build и должен
-совпадать с разрешённым runtime origin. Published RPC во время build не
-вызывается: sitemap и dynamic slug routes читают snapshot только в runtime.
+Выбран **Option A — runtime-only server configuration**. Build не требует и не
+читает три server-only Published variables. Runtime получает URL, project ref
+и service key из `process.env`; `NEXT_PUBLIC_SUPABASE_URL` не является
+authoritative origin и может относиться к другому browser-safe path. Build
+artifact не связывается с build-time project origin.
 
-Для `cloud_published` принимается только canonical origin
-`https://<20-char-project-ref>.supabase.co`: HTTPS, без credentials, port,
-path, query и hash. Arbitrary/custom hosts, localhost, loopback, private IP,
-suffix-confusion, trailing-dot, punycode и encoded host отклоняются. Local
-loopback доступен только через test flag выше и всегда запрещён при
-`VERCEL=1` или заданном `VERCEL_ENV`.
+Перед созданием transport URL и explicit ref проверяются совместно. Для Cloud
+допустим только exact origin
+`https://<CYBERMEDICA_SUPABASE_PROJECT_REF>.supabase.co`: HTTPS, без
+credentials, port, path, query и hash. Ref должен состоять ровно из 20 lowercase
+ASCII letters/digits. Arbitrary/custom host, другой корректно выглядящий
+Supabase project, suffix/prefix confusion, trailing dot, percent encoding и
+несовпадающая пара отклоняются до `fetch`. Ошибка имеет только safe code
+`configuration`; URL, ref, key и headers в неё не включаются.
+
+Service-role token не используется как источник project identity: контракт не
+опирается на недокументированные JWT claims. Binding обеспечивается двумя
+server-only ENV, exact validation до transport creation и deployment policy,
+которая обновляет URL/ref/key как одну конфигурационную единицу.
+
+Approved deployment values без credentials:
+
+| Environment | `CYBERMEDICA_SUPABASE_URL` | `CYBERMEDICA_SUPABASE_PROJECT_REF` |
+| --- | --- | --- |
+| staging | `https://gjlpkqdhlzbfnzzoxlsk.supabase.co` | `gjlpkqdhlzbfnzzoxlsk` |
+| Production | `https://clbzibuusyuajsylcbvl.supabase.co` | `clbzibuusyuajsylcbvl` |
+
+Эта таблица является specification, а не разрешением менять Vercel ENV или
+выполнять deployment. Local loopback доступен только с test flag, fixed ref
+`localdevelopment0001` и вне любого Vercel environment.
 
 ## 4. Transport и validation
 
@@ -100,6 +120,24 @@ Media URL проходит единый allowlist из `lib/public-media-policy.
 список компилируется в Next `images.remotePatterns` и CSP. На Launch разрешён
 только `https://static.tildacdn.com` без credentials и custom port. Unknown
 HTTPS host отклоняется до `next/image`.
+
+## 4.1 Source-specific adapter isolation
+
+`lib/storefront/catalog-repository-factory.server.ts` является server-only
+factory. Он выполняет ровно один source-specific dynamic import после строгого
+`getStorefrontDataSource()`:
+
+- `cloud_published` загружает только `CloudPublishedCatalogRepository`;
+- `cloud_preview` загружает только `CloudPreviewCatalogRepository`;
+- `static` загружает только `FilesystemCatalogRepository`.
+
+Неизвестный source отклоняется, `catch` и fallback отсутствуют. Общий
+`CatalogRepository`, `ProductService` и Storefront Domain Model не знают о
+конкретной реализации. Next может выпустить отдельные lazy chunks для других
+source в artifact, но Published execution path их не загружает: Published RPC
+chunk не содержит Preview RPC, `preview_draft`, Preview repository или
+filesystem repository; runtime trace подтверждает отсутствие загрузки Preview
+и filesystem implementation chunks.
 
 ## 5. Mapping
 
@@ -179,7 +217,8 @@ Storefront catalog.
 ## 10. Staging verification
 
 После отдельного разрешения controlled Preview использует staging project
-`gjlpkqdhlzbfnzzoxlsk` и `CATALOG_DATA_SOURCE=cloud_published`.
+`gjlpkqdhlzbfnzzoxlsk`, exact staging URL/ref pair и
+`CATALOG_DATA_SOURCE=cloud_published`.
 
 Порядок проверки:
 
@@ -201,7 +240,9 @@ Storefront catalog.
 - 8 MiB является hard launch boundary, а не pagination mechanism;
 - cross-request cache отсутствует: один отдельный HTTP request может выполнить
   один полный snapshot RPC;
-- `NEXT_PUBLIC_SUPABASE_URL` является build-time частью Next artifact;
+- deployment policy обязана атомарно задавать согласованные server-only
+  URL/project-ref/service-key; cryptographic project binding внутри token не
+  предполагается;
 - Production ENV и Production Catalog publication настраиваются отдельным gate;
-- runtime artifact не готов к merge до Independent Adapter Re-Review v2 и
+- runtime artifact не готов к merge до Independent Adapter Re-Review v3 и
   отдельно разрешённого staging Preview.
