@@ -23,18 +23,55 @@ export interface SupabaseProjectBoundServiceEnvironment {
 export const LOCAL_SUPABASE_ORIGIN_OPT_IN = "CYBERMEDICA_ALLOW_LOCAL_SUPABASE_ORIGIN";
 export const PROJECT_BOUND_SUPABASE_URL_ENV = "CYBERMEDICA_SUPABASE_URL";
 export const PROJECT_BOUND_SUPABASE_REF_ENV = "CYBERMEDICA_SUPABASE_PROJECT_REF";
+export const STAGING_SUPABASE_PROJECT_REF = "gjlpkqdhlzbfnzzoxlsk";
+export const PRODUCTION_SUPABASE_PROJECT_REF = "clbzibuusyuajsylcbvl";
 export const LOCAL_SUPABASE_PROJECT_REF = "localdevelopment0001";
 
 const supabaseProjectHostname = /^[a-z0-9]{20}\.supabase\.co$/u;
 const supabaseProjectRef = /^[a-z0-9]{20}$/u;
 const localSupabaseHostnames = new Set(["localhost", "127.0.0.1", "[::1]"]);
 
+export type SupabaseDeploymentEnvironment = "production" | "preview" | "local";
+
+const approvedProjectRefByEnvironment: Readonly<
+  Record<SupabaseDeploymentEnvironment, string>
+> = Object.freeze({
+  production: PRODUCTION_SUPABASE_PROJECT_REF,
+  preview: STAGING_SUPABASE_PROJECT_REF,
+  local: STAGING_SUPABASE_PROJECT_REF,
+});
+
 export interface ValidateSupabaseProjectOriginOptions {
   allowLocalDevelopment?: boolean;
 }
 
 export interface ValidateSupabaseProjectBindingOptions {
-  allowLocalDevelopment?: boolean;
+  deploymentEnvironment: SupabaseDeploymentEnvironment;
+  allowLocalQa?: boolean;
+}
+
+function resolveSupabaseDeploymentEnvironment(
+  environment: Readonly<Record<string, string | undefined>>,
+): SupabaseDeploymentEnvironment {
+  const vercelEnvironment = environment.VERCEL_ENV?.trim();
+  if (vercelEnvironment === "production" || vercelEnvironment === "preview") {
+    return vercelEnvironment;
+  }
+  if (vercelEnvironment === "development") return "local";
+  if (vercelEnvironment !== undefined && vercelEnvironment !== "") {
+    throw new SupabaseEnvironmentError("Supabase deployment environment is unsupported.");
+  }
+
+  if (environment.VERCEL === "1") {
+    throw new SupabaseEnvironmentError("Supabase deployment environment is required.");
+  }
+
+  const nodeEnvironment = environment.NODE_ENV?.trim();
+  if (nodeEnvironment === "development" || nodeEnvironment === "test") {
+    return "local";
+  }
+
+  throw new SupabaseEnvironmentError("Supabase deployment environment is required.");
 }
 
 function requireValue(
@@ -110,7 +147,7 @@ export function validateSupabaseProjectOrigin(
 export function validateSupabaseProjectBinding(
   value: string,
   projectRefValue: string,
-  options: ValidateSupabaseProjectBindingOptions = {},
+  options: ValidateSupabaseProjectBindingOptions,
 ): string {
   const projectRef = projectRefValue.trim();
   if (projectRefValue !== projectRef || !supabaseProjectRef.test(projectRef)) {
@@ -135,10 +172,13 @@ export function validateSupabaseProjectBinding(
     || url.pathname !== "/"
     || url.search !== ""
     || url.hash !== "";
-  const approvedCloudOrigin = url.protocol === "https:"
+  const approvedProjectRef = approvedProjectRefByEnvironment[options.deploymentEnvironment];
+  const approvedCloudOrigin = projectRef === approvedProjectRef
+    && url.protocol === "https:"
     && url.port === ""
     && url.hostname === `${projectRef}.supabase.co`;
-  const approvedLocalOrigin = options.allowLocalDevelopment === true
+  const approvedLocalOrigin = options.deploymentEnvironment === "local"
+    && options.allowLocalQa === true
     && projectRef === LOCAL_SUPABASE_PROJECT_REF
     && url.protocol === "http:"
     && localSupabaseHostnames.has(url.hostname);
@@ -172,14 +212,22 @@ export function getSupabaseServiceEnvironment(
 
 export function getProjectBoundSupabaseServiceEnvironment(
   environment: Readonly<Record<string, string | undefined>> = process.env,
-  options: ValidateSupabaseProjectBindingOptions = {},
+  options: { allowLocalDevelopment?: boolean } = {},
 ): SupabaseProjectBoundServiceEnvironment {
+  const deploymentEnvironment = resolveSupabaseDeploymentEnvironment(environment);
   const projectRef = requireValue(environment, PROJECT_BOUND_SUPABASE_REF_ENV);
   return {
     url: validateSupabaseProjectBinding(
       requireValue(environment, PROJECT_BOUND_SUPABASE_URL_ENV),
       projectRef,
-      options,
+      {
+        deploymentEnvironment,
+        allowLocalQa: options.allowLocalDevelopment === true
+          && deploymentEnvironment === "local"
+          && environment.NODE_ENV === "test"
+          && environment.VERCEL_ENV === undefined
+          && environment.VERCEL !== "1",
+      },
     ),
     projectRef,
     serviceRoleKey: requireValue(environment, "SUPABASE_SERVICE_ROLE_KEY"),

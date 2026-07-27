@@ -5,7 +5,6 @@ import {
   getSupabasePublicEnvironment,
   getSupabaseServiceEnvironment,
   type SupabasePublicEnvironment,
-  type ValidateSupabaseProjectBindingOptions,
 } from "./env.ts";
 
 export type SupabaseServerAccess = "anon" | "service_role";
@@ -32,8 +31,8 @@ export interface CreateSupabaseServerClientOptions {
   fetchImplementation?: typeof fetch;
 }
 
-export interface CreateProjectBoundSupabaseServerClientOptions
-  extends ValidateSupabaseProjectBindingOptions {
+export interface CreateProjectBoundSupabaseServerClientOptions {
+  allowLocalDevelopment?: boolean;
   environment?: Readonly<Record<string, string | undefined>>;
   fetchImplementation?: typeof fetch;
 }

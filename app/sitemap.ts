@@ -6,7 +6,6 @@ import {
   productService,
   storefrontDataSource,
 } from "@/lib/storefront";
-import { loadCloudPublishedCatalog } from "@/lib/storefront/cloud-published-catalog-repository";
 import {
   buildStorefrontSitemap,
   buildStorefrontSitemapFromCatalog,
@@ -17,13 +16,21 @@ export const dynamic = "force-dynamic";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   if (storefrontDataSource === "cloud_preview") return [];
-  const storefrontSitemap = storefrontDataSource === "cloud_published"
-    ? buildStorefrontSitemapFromCatalog(await loadCloudPublishedCatalog())
-    : await buildStorefrontSitemap({
+  let storefrontSitemap: MetadataRoute.Sitemap;
+  if (storefrontDataSource === "cloud_published") {
+    const { loadCloudPublishedCatalog } = await import(
+      "@/lib/storefront/cloud-published-catalog-repository"
+    );
+    storefrontSitemap = buildStorefrontSitemapFromCatalog(
+      await loadCloudPublishedCatalog(),
+    );
+  } else {
+    storefrontSitemap = await buildStorefrontSitemap({
       productService,
       manufacturerService,
       categoryService,
     });
+  }
   const lastModified = storefrontSitemap[0]?.lastModified ?? new Date(0);
 
   return [...storefrontSitemap, ...buildFs510Sitemap(lastModified)];

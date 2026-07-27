@@ -21,6 +21,7 @@ function boundEnvironment(
   overrides: Readonly<Record<string, string | undefined>> = {},
 ) {
   return {
+    NODE_ENV: "test",
     [PROJECT_BOUND_SUPABASE_URL_ENV]: stagingUrl,
     [PROJECT_BOUND_SUPABASE_REF_ENV]: stagingRef,
     SUPABASE_SERVICE_ROLE_KEY: "synthetic-service-role-key",
@@ -29,11 +30,13 @@ function boundEnvironment(
 }
 
 test("published service binding accepts only the exact configured Supabase project", () => {
-  assert.equal(validateSupabaseProjectBinding(stagingUrl, stagingRef), stagingUrl);
+  const options = { deploymentEnvironment: "local" as const };
+  assert.equal(validateSupabaseProjectBinding(stagingUrl, stagingRef, options), stagingUrl);
   assert.equal(
     validateSupabaseProjectBinding(
       `https://${stagingRef.toUpperCase()}.SUPABASE.CO/`,
       stagingRef,
+      options,
     ),
     stagingUrl,
   );
@@ -58,7 +61,7 @@ test("published service binding accepts only the exact configured Supabase proje
 
   rejected.forEach(([url, projectRef]) => {
     assert.throws(
-      () => validateSupabaseProjectBinding(url, projectRef),
+      () => validateSupabaseProjectBinding(url, projectRef, options),
       (error: unknown) => error instanceof SupabaseEnvironmentError
         && !error.message.includes(url)
         && !error.message.includes("synthetic-service-role-key"),
@@ -96,13 +99,19 @@ test("local project binding is fixed, explicit and unavailable without the local
   const localUrl = "http://127.0.0.1:54321";
   assert.equal(
     validateSupabaseProjectBinding(localUrl, LOCAL_SUPABASE_PROJECT_REF, {
-      allowLocalDevelopment: true,
+      deploymentEnvironment: "local",
+      allowLocalQa: true,
     }),
     localUrl,
   );
-  assert.throws(() => validateSupabaseProjectBinding(localUrl, LOCAL_SUPABASE_PROJECT_REF));
+  assert.throws(() => validateSupabaseProjectBinding(
+    localUrl,
+    LOCAL_SUPABASE_PROJECT_REF,
+    { deploymentEnvironment: "local" },
+  ));
   assert.throws(() => validateSupabaseProjectBinding(localUrl, stagingRef, {
-    allowLocalDevelopment: true,
+    deploymentEnvironment: "local",
+    allowLocalQa: true,
   }));
 });
 
@@ -141,6 +150,7 @@ test("project mismatch creates zero requests and matching binding owns the crede
     );
     let requests = 0;
     const base = {
+      NODE_ENV: "test",
       CYBERMEDICA_SUPABASE_PROJECT_REF: "${stagingRef}",
       SUPABASE_SERVICE_ROLE_KEY: "synthetic-bound-key",
     };
