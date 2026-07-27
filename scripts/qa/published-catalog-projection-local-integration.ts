@@ -93,6 +93,16 @@ try {
     path.join(ROOT, "supabase/tests/006_published_catalog_projection.sql"),
     `${CONTAINER}:/tmp/006_published_catalog_projection.sql`,
   ]);
+  run("docker", [
+    "cp",
+    path.join(ROOT, "supabase/tests/007_published_catalog_projection_clock_v3.sql"),
+    `${CONTAINER}:/tmp/007_published_catalog_projection_clock_v3.sql`,
+  ]);
+  run("docker", [
+    "cp",
+    path.join(ROOT, "supabase/tests/008_published_catalog_projection_terminal_v4.sql"),
+    `${CONTAINER}:/tmp/008_published_catalog_projection_terminal_v4.sql`,
+  ]);
 
   dockerExec(
     "psql", "-U", "supabase_admin", "-d", DATABASE,
@@ -125,6 +135,126 @@ done`,
   const emptyProjection = parsePublishedCatalogProjection(
     JSON.parse(emptyProjectionResult.stdout.trim()),
   );
+
+  const initializationFirstResult = run("docker", [
+    "exec", CONTAINER, "psql", "-U", "supabase_admin", "-d", DATABASE, "-Atc",
+    `select cloud.initialize_published_catalog_projection_v4(
+      (select payload_checksum from cloud.published_catalog_projection_state
+       where singleton)
+    )`,
+  ], { quiet: true });
+  const initializationRetryResult = run("docker", [
+    "exec", CONTAINER, "psql", "-U", "supabase_admin", "-d", DATABASE, "-Atc",
+    `select cloud.initialize_published_catalog_projection_v4(
+      (select payload_checksum from cloud.published_catalog_projection_state
+       where singleton)
+    )`,
+  ], { quiet: true });
+  const initializationResult = run("docker", [
+    "exec", CONTAINER, "psql", "-U", "supabase_admin", "-d", DATABASE, "-Atc",
+    `select jsonb_build_object(
+      'evidenceRows', (select count(*)
+        from cloud.published_catalog_projection_initialization_v4),
+      'initializedState', (select initialized
+        from cloud.published_catalog_projection_initialization_state_v4
+        where singleton)
+    )`,
+  ], { quiet: true });
+  const initializationState = JSON.parse(initializationResult.stdout.trim()) as {
+    evidenceRows: number;
+    initializedState: boolean;
+  };
+  const firstInitialization = JSON.parse(initializationFirstResult.stdout.trim()) as
+    Record<string, unknown>;
+  const exactInitializationRetry = JSON.parse(initializationRetryResult.stdout.trim()) as
+    Record<string, unknown>;
+  const initializationAudit = JSON.parse(initializationResult.stdout.trim()) as {
+    evidenceRows: number;
+    initializedState: boolean;
+  } & {
+    sameResult?: boolean;
+    result?: Record<string, unknown>;
+  };
+  Object.assign(initializationAudit, {
+    sameResult: JSON.stringify(firstInitialization) === JSON.stringify(exactInitializationRetry),
+    result: exactInitializationRetry,
+  });
+  if (!initializationAudit.sameResult
+      || initializationState.evidenceRows !== 1
+      || !initializationState.initializedState) {
+    throw new Error(
+      `Published projection initialization retry failed: ${JSON.stringify(initializationAudit)}`,
+    );
+  }
+
+  const bootstrapAuditResult = run("docker", [
+    "exec", CONTAINER, "psql", "-U", "supabase_admin", "-d", DATABASE, "-Atc",
+    `with claims as materialized (
+      select set_config('request.jwt.claim.role', 'service_role', false)
+    ), projection as materialized (
+      select cloud_api.cloud_published_storefront_catalog_v1() as payload from claims
+    )
+    select jsonb_build_object(
+      'initialized', state.initialized,
+      'version', state.version,
+      'checksumMatches', state.payload_checksum = cloud.sha256_jsonb_v1(
+        projection.payload - 'generatedAt'
+      ),
+      'initializationRows', (select count(*)
+        from cloud.published_catalog_projection_initialization_v3),
+      'initializationMode', (select initialization_mode
+        from cloud.published_catalog_projection_initialization_v3),
+      'v4InitializationRows', (select count(*)
+        from cloud.published_catalog_projection_initialization_v4),
+      'closedTransactions', (select count(*)
+        from cloud.published_catalog_projection_transactions_v4),
+      'pendingEvents', (select count(*)
+        from cloud.published_catalog_projection_events_v4)
+    )
+    from projection
+    cross join cloud.published_catalog_projection_state state
+    where state.singleton`,
+  ], { quiet: true });
+  const bootstrapAudit = JSON.parse(bootstrapAuditResult.stdout.trim()) as {
+    initialized: boolean;
+    version: number;
+    checksumMatches: boolean;
+    initializationRows: number;
+    initializationMode: string;
+    v4InitializationRows: number;
+    closedTransactions: number;
+    pendingEvents: number;
+  };
+  if (!bootstrapAudit.initialized
+      || bootstrapAudit.version !== 0
+      || !bootstrapAudit.checksumMatches
+      || bootstrapAudit.initializationRows !== 1
+      || bootstrapAudit.initializationMode !== "initialized_existing_baseline"
+      || bootstrapAudit.v4InitializationRows !== 1
+      || bootstrapAudit.closedTransactions !== 0
+      || bootstrapAudit.pendingEvents !== 0) {
+    throw new Error(`Published projection bootstrap audit failed: ${JSON.stringify(bootstrapAudit)}`);
+  }
+
+  dockerExec(
+    "bash", "-lc",
+    `set -euo pipefail
+checksum=$(psql -U supabase_admin -d ${DATABASE} -Atc "select payload_checksum from cloud.published_catalog_projection_state where singleton")
+psql -U supabase_admin -d ${DATABASE} -v ON_ERROR_STOP=1 -Atc "select cloud.initialize_published_catalog_projection_v4('$checksum')" >/tmp/initialize-v4-first.out 2>&1 &
+first_pid=$!
+psql -U supabase_admin -d ${DATABASE} -v ON_ERROR_STOP=1 -Atc "select cloud.initialize_published_catalog_projection_v4('$checksum')" >/tmp/initialize-v4-second.out 2>&1 &
+second_pid=$!
+wait "$first_pid" || { cat /tmp/initialize-v4-first.out; exit 1; }
+wait "$second_pid" || { cat /tmp/initialize-v4-second.out; exit 1; }
+cmp /tmp/initialize-v4-first.out /tmp/initialize-v4-second.out
+test "$(psql -U supabase_admin -d ${DATABASE} -Atc 'select count(*) from cloud.published_catalog_projection_initialization_v4')" = "1"`,
+  );
+  const concurrentInitializationAudit = {
+    status: "PASS",
+    callers: 2,
+    evidenceRows: 1,
+    sameLogicalResult: true,
+  };
 
   const fixtureAuditResult = run("docker", [
     "exec", CONTAINER, "psql", "-U", "supabase_admin", "-d", DATABASE, "-Atc",
@@ -159,6 +289,15 @@ done`,
       'serviceInternalExecute', has_function_privilege(
         'service_role', 'cloud.capture_published_catalog_projection_v2()', 'EXECUTE'
       ),
+      'serviceEnqueueExecute', has_function_privilege(
+        'service_role', 'cloud.enqueue_published_catalog_projection_v4()', 'EXECUTE'
+      ),
+      'serviceFinalizeExecute', has_function_privilege(
+        'service_role', 'cloud.finalize_published_catalog_projection_v4()', 'EXECUTE'
+      ),
+      'serviceInitializeExecute', has_function_privilege(
+        'service_role', 'cloud.initialize_published_catalog_projection_v4(text)', 'EXECUTE'
+      ),
       'anonStateSelect', has_table_privilege(
         'anon', 'cloud.published_catalog_projection_state', 'SELECT'
       ),
@@ -171,13 +310,36 @@ done`,
       'serviceStateWrite', has_table_privilege(
         'service_role', 'cloud.published_catalog_projection_state', 'INSERT,UPDATE,DELETE'
       ),
+      'serviceQueueWrite', has_table_privilege(
+        'service_role', 'cloud.published_catalog_projection_transactions_v4', 'INSERT,UPDATE,DELETE'
+      ),
+      'serviceEventWrite', has_table_privilege(
+        'service_role', 'cloud.published_catalog_projection_events_v4', 'INSERT,UPDATE,DELETE'
+      ),
+      'serviceInitializationSelect', has_table_privilege(
+        'service_role', 'cloud.published_catalog_projection_initialization_v4', 'SELECT'
+      ),
+      'serviceInitializationStateWrite', has_table_privilege(
+        'service_role', 'cloud.published_catalog_projection_initialization_state_v4', 'INSERT,UPDATE,DELETE'
+      ),
       'stateRls', (select relrowsecurity from pg_class
         where oid = 'cloud.published_catalog_projection_state'::regclass),
       'stateOwner', (select pg_get_userbyid(relowner) from pg_class
         where oid = 'cloud.published_catalog_projection_state'::regclass),
-      'alwaysTriggerCount', (select count(*) from pg_trigger
+      'v2TriggerCount', (select count(*) from pg_trigger
         where tgname like '%\\_projection\\_%\\_v2' escape '\\'
-          and tgenabled = 'A'),
+          and not tgisinternal),
+      'v3TriggerCount', (select count(*) from pg_trigger
+        where (tgname ~ '_projection_(before|after)_v3'
+          or tgname = 'published_projection_transaction_finalize_v3')
+          and not tgisinternal),
+      'trackedV4TriggerCount', (select count(*) from pg_trigger
+        where tgname ~ '_projection_(before|after)_v4'
+          and tgenabled = 'A' and not tgisinternal),
+      'finalizerAlways', (select tgenabled = 'A' from pg_trigger
+        where tgname = 'published_projection_transaction_finalize_v4'),
+      'initializationGuardAlways', (select tgenabled = 'A' from pg_trigger
+        where tgname = 'published_projection_initialization_immutable_v4'),
       'volatility', (select provolatile from pg_proc
         where oid = 'cloud_api.cloud_published_storefront_catalog_v1()'::regprocedure),
       'securityDefiner', (select prosecdef from pg_proc
@@ -189,13 +351,24 @@ done`,
     authenticatedExecute: boolean;
     serviceExecute: boolean;
     serviceInternalExecute: boolean;
+    serviceEnqueueExecute: boolean;
+    serviceFinalizeExecute: boolean;
+    serviceInitializeExecute: boolean;
     anonStateSelect: boolean;
     authenticatedStateSelect: boolean;
     serviceStateSelect: boolean;
     serviceStateWrite: boolean;
+    serviceQueueWrite: boolean;
+    serviceEventWrite: boolean;
+    serviceInitializationSelect: boolean;
+    serviceInitializationStateWrite: boolean;
     stateRls: boolean;
     stateOwner: string;
-    alwaysTriggerCount: number;
+    v2TriggerCount: number;
+    v3TriggerCount: number;
+    trackedV4TriggerCount: number;
+    finalizerAlways: boolean;
+    initializationGuardAlways: boolean;
     volatility: string;
     securityDefiner: boolean;
   };
@@ -203,13 +376,24 @@ done`,
       || privilegeAudit.authenticatedExecute
       || !privilegeAudit.serviceExecute
       || privilegeAudit.serviceInternalExecute
+      || privilegeAudit.serviceEnqueueExecute
+      || privilegeAudit.serviceFinalizeExecute
+      || privilegeAudit.serviceInitializeExecute
       || privilegeAudit.anonStateSelect
       || privilegeAudit.authenticatedStateSelect
       || privilegeAudit.serviceStateSelect
       || privilegeAudit.serviceStateWrite
+      || privilegeAudit.serviceQueueWrite
+      || privilegeAudit.serviceEventWrite
+      || privilegeAudit.serviceInitializationSelect
+      || privilegeAudit.serviceInitializationStateWrite
       || !privilegeAudit.stateRls
       || privilegeAudit.stateOwner !== "supabase_admin"
-      || privilegeAudit.alwaysTriggerCount !== 38
+      || privilegeAudit.v2TriggerCount !== 0
+      || privilegeAudit.v3TriggerCount !== 0
+      || privilegeAudit.trackedV4TriggerCount !== 38
+      || !privilegeAudit.finalizerAlways
+      || !privilegeAudit.initializationGuardAlways
       || privilegeAudit.volatility !== "s"
       || !privilegeAudit.securityDefiner) {
     throw new Error(`Published projection privilege audit failed: ${JSON.stringify(privilegeAudit)}`);
@@ -222,6 +406,16 @@ done`,
     "psql", "-U", "supabase_admin", "-d", DATABASE,
     "-v", "ON_ERROR_STOP=1", "-v", "keep_fixture=1",
     "-f", "/tmp/006_published_catalog_projection.sql",
+  );
+  dockerExec(
+    "psql", "-U", "supabase_admin", "-d", DATABASE,
+    "-v", "ON_ERROR_STOP=1",
+    "-f", "/tmp/007_published_catalog_projection_clock_v3.sql",
+  );
+  dockerExec(
+    "psql", "-U", "supabase_admin", "-d", DATABASE,
+    "-v", "ON_ERROR_STOP=1",
+    "-f", "/tmp/008_published_catalog_projection_terminal_v4.sql",
   );
 
   const projectionStateSql = `with claims as materialized (
@@ -283,7 +477,7 @@ wait "$second_pid" || { cat /tmp/concurrent-category.out; exit 1; }`,
       afterConcurrency,
     })}`);
   }
-  const concurrencyAudit = {
+  const distinctConcurrencyAudit = {
     status: "PASS",
     committedPublicChanges: 2,
     versionDelta: afterConcurrency.version - beforeConcurrency.version,
@@ -292,10 +486,84 @@ wait "$second_pid" || { cat /tmp/concurrent-category.out; exit 1; }`,
     eventLoss: 0,
   };
 
+  const beforeIdenticalResult = run("docker", [
+    "exec", CONTAINER, "psql", "-U", "supabase_admin", "-d", DATABASE,
+    "-v", "ON_ERROR_STOP=1", "-Atc", projectionStateSql,
+  ], { quiet: true });
+  const beforeIdentical = JSON.parse(beforeIdenticalResult.stdout.trim()) as {
+    version: number;
+    generatedAt: string;
+  };
+
+  dockerExec(
+    "bash", "-lc",
+    `set -euo pipefail
+psql -U supabase_admin -d ${DATABASE} -v ON_ERROR_STOP=1 -c "begin; update cloud.application_areas set description = 'Concurrent identical change' where id = '60000000-0000-4000-8000-000000000030'; select pg_sleep(0.25); commit" >/tmp/identical-first.out 2>&1 &
+first_pid=$!
+sleep 0.05
+psql -U supabase_admin -d ${DATABASE} -v ON_ERROR_STOP=1 -c "begin; update cloud.application_areas set description = 'Concurrent identical change' where id = '60000000-0000-4000-8000-000000000030'; commit" >/tmp/identical-second.out 2>&1 &
+second_pid=$!
+wait "$first_pid" || { cat /tmp/identical-first.out; exit 1; }
+wait "$second_pid" || { cat /tmp/identical-second.out; exit 1; }`,
+  );
+
+  const afterIdenticalResult = run("docker", [
+    "exec", CONTAINER, "psql", "-U", "supabase_admin", "-d", DATABASE,
+    "-v", "ON_ERROR_STOP=1", "-Atc",
+    `with claims as materialized (
+      select set_config('request.jwt.claim.role', 'service_role', false)
+    ), projection as materialized (
+      select cloud_api.cloud_published_storefront_catalog_v1() as payload from claims
+    )
+    select jsonb_build_object(
+      'version', state.version,
+      'generatedAt', projection.payload ->> 'generatedAt',
+      'checksumMatches', state.payload_checksum = cloud.sha256_jsonb_v1(
+        projection.payload - 'generatedAt'
+      ),
+      'areaChanged', projection.payload @? '$.applicationAreas[*] ? (@.description == "Concurrent identical change")',
+      'queuedTransactions', (select count(*)
+        from cloud.published_catalog_projection_events_v4)
+    )
+    from projection
+    cross join cloud.published_catalog_projection_state state
+    where state.singleton`,
+  ], { quiet: true });
+  const afterIdentical = JSON.parse(afterIdenticalResult.stdout.trim()) as {
+    version: number;
+    generatedAt: string;
+    checksumMatches: boolean;
+    areaChanged: boolean;
+    queuedTransactions: number;
+  };
+  if (afterIdentical.version !== beforeIdentical.version + 1
+      || Date.parse(afterIdentical.generatedAt) <= Date.parse(beforeIdentical.generatedAt)
+      || !afterIdentical.checksumMatches
+      || !afterIdentical.areaChanged
+      || afterIdentical.queuedTransactions !== 0) {
+    throw new Error(`Published projection identical concurrency audit failed: ${JSON.stringify({
+      beforeIdentical,
+      afterIdentical,
+    })}`);
+  }
+
+  const concurrencyAudit = {
+    distinct: distinctConcurrencyAudit,
+    identical: {
+      status: "PASS",
+      committedPublicChanges: 2,
+      versionDelta: afterIdentical.version - beforeIdentical.version,
+      checksumMatches: afterIdentical.checksumMatches,
+    },
+    callerResettableGucExploit: "closed-single-advancement",
+    forcedConstraintEvaluation: "closed-single-advancement",
+    repeatedFinalizer: "idempotent-no-second-version",
+  };
+
   process.stdout.write(`${JSON.stringify({
     status: "PASS",
     image: IMAGE,
-    migrationCount: 19,
+    migrationCount: 21,
     rpc: "cloud_api.cloud_published_storefront_catalog_v1",
     integration: [
       "published-only-product-visibility",
@@ -313,6 +581,15 @@ wait "$second_pid" || { cat /tmp/concurrent-category.out; exit 1; }`,
       "transactional-clock-rollback",
       "Product-storage-ownership-binding",
       "concurrent-public-change-serialization",
+      "transaction-final-net-zero-coalescing",
+      "multi-statement-single-clock-advancement",
+      "concurrent-identical-change-coalescing",
+      "controlled-baseline-initialization",
+      "initialization-exact-retry",
+      "concurrent-initialization-single-evidence",
+      "caller-resettable-guc-exploit-closed",
+      "constraint-immediate-deferred-single-advancement",
+      "repeated-finalizer-idempotency",
       "type-safe-malformed-child-isolation",
       "exact-visible-structured-field-clock",
       "one-hundred-call-determinism",
@@ -326,6 +603,9 @@ wait "$second_pid" || { cat /tmp/concurrent-category.out; exit 1; }`,
       applicationAreas: 1,
     },
     emptyProjection,
+    initializationAudit,
+    concurrentInitializationAudit,
+    bootstrapAudit,
     fixtureAudit,
     privilegeAudit,
     concurrencyAudit,

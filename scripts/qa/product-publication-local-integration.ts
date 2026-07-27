@@ -251,7 +251,7 @@ done`,
   process.stdout.write(`${JSON.stringify({
     status: "PASS",
     image: IMAGE,
-    migrationCount: 19,
+    migrationCount: 21,
     integration: [
       "imported-to-review-state",
       "immutable-revision-and-checksums",

@@ -203,9 +203,68 @@ test("Published Catalog corrective v2 binds Product storage and uses a private m
   assert.doesNotMatch(migration, /execute format|execute immediate/iu);
 });
 
+test("Published Catalog corrective v3 finalizes one clock state per transaction", async () => {
+  const migration = await readFile(
+    "supabase/migrations/202607270001_published_catalog_projection_corrective_v3.sql",
+    "utf8",
+  );
+
+  assert.equal(
+    createHash("sha256").update(migration).digest("hex"),
+    "0838fd15d9e484ac76dde4417ce528a1dbae6f40b0ca4d023a777c97aed0b79d",
+  );
+  assert.match(migration, /published_catalog_projection_initialization_v3/u);
+  assert.match(migration, /initialized_existing_baseline/u);
+  assert.match(migration, /published_catalog_projection_transactions_v3/u);
+  assert.match(migration, /pg_current_xact_id\(\)/u);
+  assert.match(migration, /deferrable initially deferred/u);
+  assert.match(migration, /mutation_statement_count/u);
+  assert.match(migration, /queued_checksum is distinct from final_checksum/u);
+  assert.match(migration, /published projection finalizer ran before a tracked mutation completed/u);
+  assert.match(migration, /drop trigger products_projection_before_v2/u);
+  assert.match(migration, /enable always trigger products_projection_before_v3/u);
+  assert.match(migration, /revoke all on table cloud\.published_catalog_projection_transactions_v3/u);
+  assert.doesNotMatch(migration, /join cloud\.product_documents ownership/u);
+  assert.doesNotMatch(migration, /cloud_storefront_preview_catalog\(/u);
+  assert.doesNotMatch(migration, /execute format|execute immediate/iu);
+});
+
+test("Published Catalog corrective v4 closes one caller-proof clock slot", async () => {
+  const migration = await readFile(
+    "supabase/migrations/202607270002_published_catalog_projection_corrective_v4.sql",
+    "utf8",
+  );
+
+  assert.equal(
+    createHash("sha256").update(migration).digest("hex"),
+    "aae4a78dfe6f353f994e02bf1e2781a581ec97bf09fd391278ec51bd6c5637f2",
+  );
+  assert.match(migration, /published_catalog_projection_initialization_state_v4/u);
+  assert.match(migration, /published_catalog_projection_initialization_v4/u);
+  assert.match(migration, /initialize_published_catalog_projection_v4/u);
+  assert.match(migration, /published_catalog_projection_transactions_v4/u);
+  assert.match(migration, /published_catalog_projection_events_v4/u);
+  assert.match(migration, /transaction_id xid8 primary key/u);
+  assert.match(migration, /terminal_finalized boolean/u);
+  assert.match(migration, /clock_slot_reserved boolean/u);
+  assert.match(migration, /reconciled_generation/u);
+  assert.match(migration, /target_version := transaction_state\.entry_version \+ 1/u);
+  assert.match(migration, /drop trigger published_projection_transaction_finalize_v3/u);
+  assert.match(migration, /enable always trigger products_projection_before_v4/u);
+  assert.match(migration, /revoke all on table cloud\.published_catalog_projection_transactions_v4/u);
+  assert.doesNotMatch(
+    migration,
+    /current_setting\('cybermedica\.published_projection_finalized_v3'/u,
+  );
+  assert.doesNotMatch(migration, /cloud_storefront_preview_catalog\(/u);
+  assert.doesNotMatch(migration, /execute format|execute immediate/iu);
+});
+
 test("Published Catalog local QA covers visibility, determinism, leakage and cleanup", async () => {
-  const [fixture, runner, packageJson] = await Promise.all([
+  const [fixture, clockFixture, terminalFixture, runner, packageJson] = await Promise.all([
     readFile("supabase/tests/006_published_catalog_projection.sql", "utf8"),
+    readFile("supabase/tests/007_published_catalog_projection_clock_v3.sql", "utf8"),
+    readFile("supabase/tests/008_published_catalog_projection_terminal_v4.sql", "utf8"),
     readFile("scripts/qa/published-catalog-projection-local-integration.ts", "utf8"),
     readFile("package.json", "utf8").then(JSON.parse),
   ]);
@@ -224,7 +283,7 @@ test("Published Catalog local QA covers visibility, determinism, leakage and cle
   assert.match(fixture, /Preview-only child content leaked/u);
   assert.match(fixture, /internal publication or Preview metadata leaked/u);
   assert.match(fixture, /read-only projection mutated operational data/u);
-  assert.match(fixture, /public document URL changed without an advancing projection clock/u);
+  assert.match(fixture, /public document URL did not change inside the writer transaction/u);
   assert.match(fixture, /malformed numeric child was not isolated fail-closed/u);
   assert.match(fixture, /malformed boolean child was not isolated fail-closed/u);
   assert.match(fixture, /malformed mandatory nested object was not Product-isolated/u);
@@ -240,6 +299,21 @@ test("Published Catalog local QA covers visibility, determinism, leakage and cle
   assert.match(fixture, /unbound public storage object leaked/u);
   assert.match(fixture, /for call_number in 1\.\.100/u);
   assert.doesNotMatch(fixture, /hamilton|330695211247/iu);
+  assert.match(clockFixture, /net-zero committed transaction advanced projection clock/u);
+  assert.match(clockFixture, /multi-statement public transaction did not advance exactly once/u);
+  assert.match(clockFixture, /session_replication_role = replica/u);
+  assert.match(clockFixture, /initialization evidence TRUNCATE unexpectedly succeeded/u);
+  assert.match(clockFixture, /exact committed retry advanced projection clock/u);
+  assert.match(clockFixture, /hidden-only committed transaction advanced projection clock/u);
+  assert.match(clockFixture, /rolled-back transaction retained projection state/u);
+  assert.doesNotMatch(clockFixture, /hamilton|330695211247/iu);
+  assert.match(terminalFixture, /caller-resettable GUC exploit advanced or finalized clock incorrectly/u);
+  assert.match(terminalFixture, /net-zero transaction after early finalization changed public clock/u);
+  assert.match(terminalFixture, /repeated finalizer events did not coalesce three writers/u);
+  assert.match(terminalFixture, /savepoint rollback was not reflected in final projection state/u);
+  assert.match(terminalFixture, /full rollback retained transaction state or changed projection clock/u);
+  assert.match(terminalFixture, /missing initialization evidence was silently recreated/u);
+  assert.doesNotMatch(terminalFixture, /hamilton|330695211247/iu);
 
   assert.equal(
     packageJson.scripts["qa:published-catalog:local"],
@@ -247,8 +321,12 @@ test("Published Catalog local QA covers visibility, determinism, leakage and cle
   );
   assert.match(runner, /This QA command never pulls images automatically/u);
   assert.match(runner, /parsePublishedCatalogProjection/u);
-  assert.match(runner, /migrationCount: 19/u);
+  assert.match(runner, /migrationCount: 21/u);
   assert.match(runner, /concurrent-public-change-serialization/u);
+  assert.match(runner, /concurrent-identical-change-coalescing/u);
+  assert.match(runner, /controlled-baseline-initialization/u);
+  assert.match(runner, /caller-resettable-guc-exploit-closed/u);
+  assert.match(runner, /concurrent-initialization-single-evidence/u);
   assert.match(runner, /eventLoss: 0/u);
   assert.match(runner, /remoteConnections: 0/u);
   assert.match(runner, /remoteWrites: 0/u);
