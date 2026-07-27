@@ -8,6 +8,7 @@
 - [Cloud Foundation Migration](../cloud-foundation-migration-v1.md)
 - [Supabase Integration](../supabase-integration-v1.md)
 - [Catalog Admin](../catalog-admin-v1.md)
+- [Cloud Published Catalog Repository](./cloud-published-catalog-repository-v1.md)
 - [Architecture library](../architecture/)
 
 Backend change не должен ослаблять RLS, server-only secrets, RPC grants или public/internal boundary.
