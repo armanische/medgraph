@@ -2,11 +2,11 @@ import type { MetadataRoute } from "next";
 
 import {
   categoryService,
-  loadCloudPublishedCatalog,
   manufacturerService,
   productService,
   storefrontDataSource,
 } from "@/lib/storefront";
+import { loadCloudPublishedCatalog } from "@/lib/storefront/cloud-published-catalog-repository";
 import {
   buildStorefrontSitemap,
   buildStorefrontSitemapFromCatalog,

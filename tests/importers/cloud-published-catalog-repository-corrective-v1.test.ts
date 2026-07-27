@@ -173,7 +173,7 @@ async function closeServer(server: Server) {
   }));
 }
 
-test("redirect:error rejects 301/302/307/308 without forwarding service headers", async () => {
+test("redirect:error rejects 301/302/303/307/308 without forwarding service headers", async () => {
   const leakedHeaders: Array<{ apikey?: string; authorization?: string }> = [];
   const target = createServer((request, response) => {
     leakedHeaders.push({
@@ -207,7 +207,7 @@ test("redirect:error rejects 301/302/307/308 without forwarding service headers"
   assert.ok(originAddress && typeof originAddress !== "string");
 
   try {
-    for (const redirectStatus of [301, 302, 307, 308]) {
+    for (const redirectStatus of [301, 302, 303, 307, 308]) {
       status = redirectStatus;
       for (const targetLocation of [
         `http://127.0.0.1:${targetAddress.port}/target`,
@@ -237,7 +237,7 @@ test("server client locks target origin and forces redirect:error after caller o
   const source = await readFile("lib/supabase/client.server.ts", "utf8");
   const spreadIndex = source.indexOf("...init,");
   const redirectIndex = source.indexOf('redirect: "error"');
-  assert.match(source, /requestUrl\.origin !== new URL\(credentials\.url\)\.origin/u);
+  assert.match(source, /requestUrl\.origin !== new URL\(url\)\.origin/u);
   assert.ok(spreadIndex >= 0 && redirectIndex > spreadIndex);
   assert.doesNotMatch(source, /console\.(?:log|warn|error)/u);
 });

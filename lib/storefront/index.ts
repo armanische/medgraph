@@ -1,11 +1,9 @@
 import "server-only";
 
 import { CategoryService } from "./category-service.ts";
-import { CloudPublishedCatalogRepository } from "./cloud-published-catalog-repository.ts";
-import { CloudPreviewCatalogRepository } from "./cloud-preview-catalog-repository.ts";
+import { createCatalogRepositoryForSource } from "./catalog-repository-factory.server.ts";
 import { CompareService } from "./compare-service.ts";
 import { getStorefrontDataSource } from "./data-source.ts";
-import { FilesystemCatalogRepository } from "./filesystem-catalog-repository.ts";
 import { ManufacturerService } from "./manufacturer-service.ts";
 import { ProductService } from "./product-service.ts";
 import { SearchService } from "./search-service.ts";
@@ -13,11 +11,6 @@ import { PUBLIC_PRODUCT_STATUSES } from "./types.ts";
 
 export type { CatalogRepository } from "./catalog-repository.ts";
 export { CategoryService } from "./category-service.ts";
-export {
-  CloudPublishedCatalogRepository,
-  loadCloudPublishedCatalog,
-} from "./cloud-published-catalog-repository.ts";
-export { CloudPreviewCatalogRepository } from "./cloud-preview-catalog-repository.ts";
 export { CompareService } from "./compare-service.ts";
 export {
   getStorefrontDataSource,
@@ -25,7 +18,6 @@ export {
   isCloudPreviewCatalog,
   type StorefrontDataSource,
 } from "./data-source.ts";
-export { FilesystemCatalogRepository } from "./filesystem-catalog-repository.ts";
 export { ManufacturerService } from "./manufacturer-service.ts";
 export { ProductService } from "./product-service.ts";
 export { SearchService } from "./search-service.ts";
@@ -44,12 +36,7 @@ export type {
 } from "./compare-service.ts";
 
 export const storefrontDataSource = getStorefrontDataSource();
-const staticCatalogRepository = new FilesystemCatalogRepository();
-export const catalogRepository = storefrontDataSource === "cloud_preview"
-  ? new CloudPreviewCatalogRepository()
-  : storefrontDataSource === "cloud_published"
-    ? new CloudPublishedCatalogRepository()
-    : staticCatalogRepository;
+export const catalogRepository = await createCatalogRepositoryForSource(storefrontDataSource);
 const visibleProductStatuses = storefrontDataSource === "cloud_preview"
   ? new Set([...PUBLIC_PRODUCT_STATUSES, "preview_draft"] as const)
   : PUBLIC_PRODUCT_STATUSES;

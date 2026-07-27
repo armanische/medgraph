@@ -224,16 +224,23 @@ test("published repository is server-only, read-only, isolated from Preview and 
   const publishedPath = `${repository}\n${mapper}\n${response}`;
 
   assert.match(repository, /^import "server-only";/u);
-  assert.match(repository, /access: "service_role"/u);
+  assert.match(repository, /createProjectBoundSupabaseServerClient/u);
   assert.match(repository, /cloud_published_storefront_catalog_v1/u);
   assert.match(repository, /"Accept-Profile": "cloud_api"/u);
   assert.match(repository, /"Content-Profile": "cloud_api"/u);
   assert.match(repository, /AbortSignal\.timeout\(10_000\)/u);
   assert.match(repository, /cache\(requestCloudPublishedCatalog\)/u);
-  assert.match(index, /new CloudPublishedCatalogRepository\(\)/u);
+  assert.match(index, /createCatalogRepositoryForSource\(storefrontDataSource\)/u);
+  assert.doesNotMatch(
+    index,
+    /CloudPublishedCatalogRepository|CloudPreviewCatalogRepository|FilesystemCatalogRepository/u,
+  );
   assert.doesNotMatch(publishedPath, /cloud_storefront_preview_catalog|CloudPreviewCatalogRepository|cloud-preview-mapper/u);
   assert.doesNotMatch(publishedPath, /preview_draft/u);
-  assert.doesNotMatch(repository, /SUPABASE_SERVICE_ROLE_KEY|NEXT_PUBLIC_SUPABASE_ANON_KEY/u);
+  assert.doesNotMatch(
+    repository,
+    /SUPABASE_SERVICE_ROLE_KEY|NEXT_PUBLIC_SUPABASE_(?:URL|ANON_KEY)/u,
+  );
   assert.doesNotMatch(repository, /\b(?:PATCH|PUT|DELETE)\b|insert into|update cloud\./iu);
   assert.match(catalog, /products\.length === 0/u);
   assert.match(homepage, /products\?\.slice\(0, 4\) \?\? null/u);

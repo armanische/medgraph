@@ -1,9 +1,11 @@
 import "server-only";
 
 import {
+  getProjectBoundSupabaseServiceEnvironment,
   getSupabasePublicEnvironment,
   getSupabaseServiceEnvironment,
   type SupabasePublicEnvironment,
+  type ValidateSupabaseProjectBindingOptions,
 } from "./env.ts";
 
 export type SupabaseServerAccess = "anon" | "service_role";
@@ -30,6 +32,12 @@ export interface CreateSupabaseServerClientOptions {
   fetchImplementation?: typeof fetch;
 }
 
+export interface CreateProjectBoundSupabaseServerClientOptions
+  extends ValidateSupabaseProjectBindingOptions {
+  environment?: Readonly<Record<string, string | undefined>>;
+  fetchImplementation?: typeof fetch;
+}
+
 function resolveCredentials(
   access: SupabaseServerAccess,
   environment: Readonly<Record<string, string | undefined>>,
@@ -49,12 +57,36 @@ export function createSupabaseServerClient(
   const credentials = resolveCredentials(access, options.environment ?? process.env);
   const fetchImplementation = options.fetchImplementation ?? fetch;
 
+  return createClient(access, credentials.url, credentials.key, fetchImplementation);
+}
+
+export function createProjectBoundSupabaseServerClient(
+  options: CreateProjectBoundSupabaseServerClientOptions = {},
+): SupabaseServerClient {
+  const credentials = getProjectBoundSupabaseServiceEnvironment(
+    options.environment ?? process.env,
+    { allowLocalDevelopment: options.allowLocalDevelopment },
+  );
+  return createClient(
+    "service_role",
+    credentials.url,
+    credentials.serviceRoleKey,
+    options.fetchImplementation ?? fetch,
+  );
+}
+
+function createClient(
+  access: SupabaseServerAccess,
+  url: string,
+  key: string,
+  fetchImplementation: typeof fetch,
+): SupabaseServerClient {
   return {
     access,
-    url: credentials.url,
+    url,
     async request(pathname, init = {}) {
-      const requestUrl = new URL(pathname, `${credentials.url}/`);
-      if (requestUrl.origin !== new URL(credentials.url).origin) {
+      const requestUrl = new URL(pathname, `${url}/`);
+      if (requestUrl.origin !== new URL(url).origin) {
         throw new SupabaseConnectionError(
           "Supabase request target must use the configured origin.",
         );
@@ -65,8 +97,8 @@ export function createSupabaseServerClient(
         redirect: "error",
         headers: {
           Accept: "application/json",
-          apikey: credentials.key,
-          Authorization: `Bearer ${credentials.key}`,
+          apikey: key,
+          Authorization: `Bearer ${key}`,
           ...init.headers,
         },
       });

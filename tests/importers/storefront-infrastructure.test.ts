@@ -86,7 +86,7 @@ test("sitemap infrastructure has no publication or draft imports", async () => {
   assert.match(combined, /ProductService/);
   assert.match(combined, /ManufacturerService/);
   assert.match(combined, /CategoryService/);
-  assert.doesNotMatch(combined, /published-catalog/);
+  assert.doesNotMatch(combined, /product-publication|published-catalog\/contracts/);
   assert.doesNotMatch(combined, /catalog-drafts/);
   assert.doesNotMatch(combined, /data\/public|data\/research/);
 });

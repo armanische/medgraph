@@ -4,9 +4,8 @@ import { unstable_rethrow } from "next/navigation";
 import { cache } from "react";
 
 import {
-  createSupabaseServerClient,
+  createProjectBoundSupabaseServerClient,
   LOCAL_SUPABASE_ORIGIN_OPT_IN,
-  validateSupabaseProjectOrigin,
 } from "../supabase/index.ts";
 import type { CatalogRepository } from "./catalog-repository.ts";
 import { mapCloudPublishedCatalogProjection } from "./cloud-published-mapper.ts";
@@ -25,16 +24,9 @@ async function requestCloudPublishedCatalog(): Promise<StorefrontCatalog> {
     const allowLocalDevelopment = process.env[LOCAL_SUPABASE_ORIGIN_OPT_IN] === "1"
       && process.env.VERCEL_ENV === undefined
       && process.env.VERCEL !== "1";
-    const approvedOrigin = validateSupabaseProjectOrigin(
-      process.env.NEXT_PUBLIC_SUPABASE_URL ?? "",
-      { allowLocalDevelopment },
-    );
-    client = createSupabaseServerClient({
-      access: "service_role",
-      environment: {
-        ...process.env,
-        NEXT_PUBLIC_SUPABASE_URL: approvedOrigin,
-      },
+    client = createProjectBoundSupabaseServerClient({
+      environment: process.env,
+      allowLocalDevelopment,
     });
   } catch {
     throw new CloudPublishedCatalogRepositoryError("configuration");
