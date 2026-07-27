@@ -4,9 +4,9 @@
 > [ADR-002](../00-project/ADR/ADR-002-storefront-repository-boundary.md) и
 > [ADR-006](../00-project/ADR/ADR-006-product-publication-foundation.md).
 
-**Статус:** реализовано и проверено локально; ожидает independent review и Preview
+**Статус:** corrective v1 реализован и проверен локально; ожидает Independent Adapter Re-Review v2
 
-**Версия:** 1.0
+**Версия:** 1.1
 
 **Дата:** 27 июля 2026 года
 
@@ -52,11 +52,20 @@ fallback внутри request.
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | да для текущего shared server env validator | public Supabase credential | validator compatibility; не используется вместо service role |
 | `SUPABASE_SERVICE_ROLE_KEY` | да | строго server-only | execute approved service-only read RPC |
 | `VERCEL_ENV` | предоставляется Vercel | server configuration | запрещает cloud_preview в Production |
+| `CYBERMEDICA_ALLOW_LOCAL_SUPABASE_ORIGIN=1` | только synthetic local QA | server-only test flag | разрешает HTTP loopback, но только вне Vercel |
 
 Service key не передаётся в Client Components, payload, errors или logs. Он
-используется только общим `createSupabaseServerClient` для одного RPC. Из-за
-существующих `generateStaticParams` Supabase ENV и published RPC должны быть
-доступны как во время Vercel build, так и в runtime.
+используется только общим `createSupabaseServerClient` для одного RPC.
+`NEXT_PUBLIC_SUPABASE_URL` для Next artifact задаётся во время build и должен
+совпадать с разрешённым runtime origin. Published RPC во время build не
+вызывается: sitemap и dynamic slug routes читают snapshot только в runtime.
+
+Для `cloud_published` принимается только canonical origin
+`https://<20-char-project-ref>.supabase.co`: HTTPS, без credentials, port,
+path, query и hash. Arbitrary/custom hosts, localhost, loopback, private IP,
+suffix-confusion, trailing-dot, punycode и encoded host отклоняются. Local
+loopback доступен только через test flag выше и всегда запрещён при
+`VERCEL=1` или заданном `VERCEL_ENV`.
 
 ## 4. Transport и validation
 
@@ -66,16 +75,31 @@ Repository выполняет один `POST` без аргументов:
     Accept-Profile: cloud_api
     Content-Profile: cloud_api
 
-Request имеет timeout 10 секунд и `cache: no-store` через общий Supabase
-server client. Table reads, Preview RPC и write operations отсутствуют.
+Request имеет timeout 10 секунд, `cache: no-store` и `redirect: error` через
+общий Supabase server client. Target URL повторно проверяется на same-origin.
+301/302/307/308 не follow-ятся, поэтому `Authorization` и `apikey` не могут
+попасть на redirect target. Table reads, Preview RPC и write operations
+отсутствуют.
+
+Response body читается streaming reader-ом с hard limit 8 MiB decoded bytes.
+`Content-Length` используется для раннего fail-closed отказа, но фактический
+счётчик байтов применяется всегда. JSON parse и mapping начинаются только после
+успешного bounded read; partial или oversized payload не достигает mapper.
 
 До mapping payload проходит
 `parsePublishedCatalogProjection()` из `lib/published-catalog/contracts.ts`.
 Strict Zod contract проверяет top-level schema, `schemaVersion`, `generatedAt`,
 summary counts, public identifiers, references, Products, media, documents,
-registrations, Structured Fields, enum и nullable values. Extra internal field
-отклоняет snapshot целиком. Internal clock `version` намеренно не входит в
-public RPC; public clock представлен deterministic `generatedAt`.
+registrations, Structured Fields, enum и nullable values. Snapshot-level pass
+дополнительно запрещает duplicate id/slug для Product, Manufacturer, Category
+и Application Area, broken/duplicate references и несовпадающее embedded
+Application Area name. Slug schema остаётся lowercase, поэтому case-collision
+не проходит routing contract. Extra internal field отклоняет snapshot целиком.
+
+Media URL проходит единый allowlist из `lib/public-media-policy.ts`; этот же
+список компилируется в Next `images.remotePatterns` и CSP. На Launch разрешён
+только `https://static.tildacdn.com` без credentials и custom port. Unknown
+HTTPS host отклоняется до `next/image`.
 
 ## 5. Mapping
 
@@ -86,7 +110,8 @@ Mapper создаёт только существующие Storefront `Product`
   explicitly published Product;
 - manufacturer/category internal reference IDs заменяются public slug IDs;
 - key features и specifications сохраняют утверждённый порядок;
-- media и documents используют только HTTPS values, прошедшие validation;
+- media использует только approved renderable origin, documents — validated
+  public HTTPS URLs;
 - `preview_draft`, review metadata, approval/batch IDs и staging markers
   отсутствуют;
 - featured, compatibility и related products остаются fail-closed, пока этих
@@ -114,21 +139,44 @@ v1 использует conservative cache policy:
 - cross-request TTL отсутствует, поэтому archive/removal не удерживается stale
   application cache.
 
+Sitemap является runtime-dynamic и сначала получает один
+`loadCloudPublishedCatalog()` snapshot, затем строит Product, Manufacturer и
+static routes из него. Он не выполняет три service/RPC reads. Отдельные HTTP
+requests по-прежнему независимы и могут читать новый snapshot; persistent cache
+или ISR не добавлены.
+
 Это осознанный performance trade-off до появления измеренного Production
 traffic. Pagination и новый invalidation layer в v1 не вводятся.
 
 ## 8. Error contract
 
 Fail-closed error boundary различает только server-side codes:
-`configuration`, `transport`, `invalid_payload`. Public message одинаков:
+`configuration`, `transport`, `invalid_payload`, `payload_too_large`. Public message одинаков:
 `Published catalog is unavailable.`
+
+Production repository обязательно передаёт официальный Next.js
+`unstable_rethrow` в response boundary до любой классификации ошибки. Поэтому
+Next control-flow exceptions сохраняются без string matching, а реальные
+transport/payload failures остаются санитизированными.
 
 В ошибку не включаются URL, Authorization headers, credential values, raw RPC
 body, SQL и internal publication metadata. Timeout, permission failure,
 malformed JSON, schema mismatch и invalid nested child не возвращают частичный
 Storefront catalog.
 
-## 9. Staging verification
+## 9. Rendering contract
+
+- sitemap: `force-dynamic`, один runtime snapshot, zero Product URLs при empty;
+- Product и Manufacturer slug routes: runtime dynamic; `generateStaticParams`
+  возвращает `[]` для `cloud_published`, поэтому новые published slugs не
+  требуют rebuild;
+- route metadata и page body используют request-level memoized loader;
+- static и cloud_preview source behavior не смешивается с Published loader;
+- build с `cloud_published` выполняет zero RPC и не требует доступности RPC;
+- temporary runtime RPC failure fail-closed возвращает safe error UI/response и
+  не классифицируется как Next control-flow error.
+
+## 10. Staging verification
 
 После отдельного разрешения controlled Preview использует staging project
 `gjlpkqdhlzbfnzzoxlsk` и `CATALOG_DATA_SOURCE=cloud_published`.
@@ -144,11 +192,16 @@ Storefront catalog.
 
 Проверка не публикует Products и не выполняет Supabase writes/migrations.
 
-## 10. Ограничения
+## 11. Ограничения
 
 - v1 не добавляет cross-request cache или pagination;
 - public projection пока не содержит related/compatibility/featured contract;
-- image hostname должен оставаться совместимым с утверждённым Next.js media
-  allowlist;
+- Launch media allowlist содержит один явно утверждённый host; расширение
+  требует изменения единого policy и отдельного review;
+- 8 MiB является hard launch boundary, а не pagination mechanism;
+- cross-request cache отсутствует: один отдельный HTTP request может выполнить
+  один полный snapshot RPC;
+- `NEXT_PUBLIC_SUPABASE_URL` является build-time частью Next artifact;
 - Production ENV и Production Catalog publication настраиваются отдельным gate;
-- runtime artifact не готов к merge до independent review и staging Preview.
+- runtime artifact не готов к merge до Independent Adapter Re-Review v2 и
+  отдельно разрешённого staging Preview.
