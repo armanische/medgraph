@@ -48,6 +48,7 @@ test("the recovered Structured Fields migration chain is complete and checksum-p
     "202607270001",
     "202607270002",
     "202607280001",
+    "202607280002",
   ]);
 
   for (const migration of manifest.migrations) {

@@ -14,7 +14,7 @@ begin
       ('cloud.apply_product_import_v1(jsonb,text)', '97c71d5276749a82ccc193f68d2893ad', true, false, false),
       ('cloud.apply_reference_import(jsonb,text)', '37cf7cb673bbea95e1750ae5f149eb60', true, false, false),
       ('cloud.apply_reference_publication(jsonb,text)', 'bc94bab9322dd01ba718d7a54d80b232', true, false, false),
-      ('cloud.catalog_admin_patch_product(uuid,jsonb,text)', 'f9caeda28719395076326cb5502c98d7', true, false, false),
+      ('cloud.catalog_admin_patch_product(uuid,jsonb,text)', 'bf7e15acc39049fc6c60abd59be70bd3', true, false, false),
       ('cloud.catalog_admin_product(uuid)', 'fc46210957a45964ffd9aa834e647b24', true, false, false),
       ('cloud.catalog_admin_products(text,text,text)', '1be61b279fcbb7e714d0b9de15aeb2ff', true, false, false),
       ('cloud.catalog_admin_references(text)', 'bfd6db5dc3d3ef96466d5ecb1f1e0fe5', true, false, false),
