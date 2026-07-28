@@ -216,3 +216,19 @@ Forward-only corrective migration:
   отдельное разрешение на controlled staging migration и synthetic test.
 - После принятия ADR и staging gate можно проектировать published-only read
   source без изменения `CatalogRepository` или `ProductService` contracts.
+
+## 12. Candidate payload completeness corrective
+
+Additive migration
+`202607290001_publication_candidate_payload_completeness_corrective_v1.sql`
+extends the existing immutable v1 candidate with canonical Product SEO and the
+complete active publishable characteristic array. It does not change the hash
+algorithm, lifecycle RPCs, revision schema or Storefront projection.
+
+The characteristic contract uses namespaced natural identities (`legacy:key`
+or `structured:structured_item_id`) and deterministic presentation ordering;
+environment-local characteristic UUIDs and volatile/internal provenance are
+excluded. Existing review, approval and publication stale checks automatically
+consume the expanded checksum because they all recompute the same canonical
+helper. The full contract is documented in
+`product-publication-candidate-payload-v1.md`.

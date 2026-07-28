@@ -11,6 +11,7 @@
 - [Catalog Quality Model](../catalog-quality-model-v1.md)
 - [Catalog Baseline](../reports/catalog-baseline-v1.md)
 - [Product Publication Foundation v1](./product-publication-foundation-v1.md)
+- [Product Publication Candidate Payload v1](./product-publication-candidate-payload-v1.md)
 - [Published Catalog Projection v1](./published-catalog-projection-v1.md)
 
 Immutable source не редактируется. Supabase — operational Source of Truth; static fallback не является каноном.

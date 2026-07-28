@@ -1,4 +1,5 @@
 import { spawnSync } from "node:child_process";
+import { readdirSync } from "node:fs";
 import path from "node:path";
 
 import { parsePublishedCatalogProjection } from "../../lib/published-catalog/contracts.ts";
@@ -7,6 +8,9 @@ const IMAGE = "public.ecr.aws/supabase/postgres:17.6.1.147";
 const DATABASE = "cybermedica_published_projection_test";
 const CONTAINER = `cybermedica-published-projection-${process.pid}`;
 const ROOT = process.cwd();
+const MIGRATION_COUNT = readdirSync(path.join(ROOT, "supabase/migrations"))
+  .filter((file) => file.endsWith(".sql"))
+  .length;
 
 interface RunOptions {
   allowFailure?: boolean;
@@ -563,7 +567,7 @@ wait "$second_pid" || { cat /tmp/identical-second.out; exit 1; }`,
   process.stdout.write(`${JSON.stringify({
     status: "PASS",
     image: IMAGE,
-    migrationCount: 22,
+    migrationCount: MIGRATION_COUNT,
     rpc: "cloud_api.cloud_published_storefront_catalog_v1",
     integration: [
       "published-only-product-visibility",

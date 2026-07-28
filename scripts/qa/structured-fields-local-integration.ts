@@ -1,10 +1,14 @@
 import { spawnSync } from "node:child_process";
+import { readdirSync } from "node:fs";
 import path from "node:path";
 
 const IMAGE = "public.ecr.aws/supabase/postgres:17.6.1.147";
 const DATABASE = "cybermedica_structured_fields_test";
 const CONTAINER = `cybermedica-structured-fields-${process.pid}`;
 const ROOT = process.cwd();
+const MIGRATION_COUNT = readdirSync(path.join(ROOT, "supabase/migrations"))
+  .filter((file) => file.endsWith(".sql"))
+  .length;
 
 interface RunOptions {
   allowFailure?: boolean;
@@ -168,7 +172,7 @@ done`,
   process.stdout.write(`${JSON.stringify({
     status: "PASS",
     image: IMAGE,
-    migrationCount: 22,
+    migrationCount: MIGRATION_COUNT,
     integration: [
       "immutable-revision",
       "canonical-payload-hash",

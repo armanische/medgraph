@@ -321,7 +321,7 @@ test("Published Catalog local QA covers visibility, determinism, leakage and cle
   );
   assert.match(runner, /This QA command never pulls images automatically/u);
   assert.match(runner, /parsePublishedCatalogProjection/u);
-  assert.match(runner, /migrationCount: 22/u);
+  assert.match(runner, /migrationCount: MIGRATION_COUNT/u);
   assert.match(runner, /concurrent-public-change-serialization/u);
   assert.match(runner, /concurrent-identical-change-coalescing/u);
   assert.match(runner, /controlled-baseline-initialization/u);

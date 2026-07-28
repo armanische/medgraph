@@ -163,11 +163,13 @@ do $$
 declare
   hamilton_id uuid;
   revision cloud.product_publication_revisions%rowtype;
+  repeated_payload jsonb;
 begin
   select id into hamilton_id from cloud.products where source_uid = '330695211247';
   select * into revision
   from cloud.product_publication_revisions
   where product_id = hamilton_id;
+  repeated_payload := cloud.product_publication_candidate_payload_v1(hamilton_id);
 
   if not found or revision.revision_number <> 1
      or revision.candidate_payload::text ilike '%более 9 часов%'
@@ -182,6 +184,21 @@ begin
         ) then
     raise exception 'Hamilton revision does not match the corrected canonical active state';
   end if;
+  if revision.candidate_payload #>> '{product,seoTitle}'
+       <> 'Аппарат ИВЛ Hamilton-T1 — Hamilton Medical'
+     or revision.candidate_payload #>> '{product,seoDescription}'
+       <> 'Аппарат ИВЛ Hamilton-T1 от Hamilton Medical. До 8 часов автономной работы при использовании двух встроенных аккумуляторов.'
+     or jsonb_array_length(revision.candidate_payload -> 'characteristics') <> 3
+     or revision.candidate_payload -> 'characteristics' is distinct from repeated_payload -> 'characteristics'
+     or (select array_agg(item ->> 'key' order by ordinality)
+         from jsonb_array_elements(revision.candidate_payload -> 'characteristics')
+           with ordinality as characteristic(item, ordinality))
+       <> array['legacy:raw-001', 'legacy:raw-002', 'legacy:raw-003']
+     or revision.candidate_payload -> 'characteristics' @? '$[*].id'
+     or revision.candidate_payload -> 'characteristics' @? '$[*].sourceReference'
+     or revision.candidate_payload -> 'characteristics' @? '$[*].updatedAt' then
+    raise exception 'Hamilton revision does not cover canonical SEO and three stable-key characteristics';
+  end if;
   if (select count(*) from cloud.product_publication_revisions) <> 1
      or (select count(*) from cloud.review_decisions) <> 0
      or (select count(*) from cloud.product_publication_approvals) <> 0
@@ -191,5 +208,45 @@ begin
   end if;
 end
 $$;
+
+select jsonb_pretty(jsonb_build_object(
+  'status', 'PASS',
+  'fixture', 'Hamilton-T1 approved 79-product baseline',
+  'activeCharacteristics', (
+    select count(*)
+    from cloud.product_characteristics characteristic
+    join cloud.products product on product.id = characteristic.product_id
+    where product.source_uid = '330695211247'
+      and characteristic.archived_at is null
+  ),
+  'candidateCharacteristics', (
+    select jsonb_array_length(
+      cloud.product_publication_candidate_payload_v1(product.id) -> 'characteristics'
+    )
+    from cloud.products product
+    where product.source_uid = '330695211247'
+  ),
+  'candidateMedia', (
+    select jsonb_array_length(
+      cloud.product_publication_candidate_payload_v1(product.id) -> 'media'
+    )
+    from cloud.products product
+    where product.source_uid = '330695211247'
+  ),
+  'candidateChecksum', (
+    select cloud.sha256_jsonb_v1(
+      cloud.product_publication_candidate_payload_v1(product.id)
+    )
+    from cloud.products product
+    where product.source_uid = '330695211247'
+  ),
+  'oldClaimPresent', false,
+  'reviewDecisions', (select count(*) from cloud.review_decisions),
+  'approvals', (select count(*) from cloud.product_publication_approvals),
+  'publicationBatches', (select count(*) from cloud.product_publication_batches),
+  'publishedProducts', (
+    select count(*) from cloud.products where publication_status = 'published'
+  )
+));
 
 rollback;

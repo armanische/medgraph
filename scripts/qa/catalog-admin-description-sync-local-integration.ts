@@ -144,6 +144,7 @@ try {
     "supabase/tests/010_catalog_admin_product_description_sync.sql",
     "supabase/tests/011_catalog_admin_product_description_concurrency.sql",
     "supabase/tests/012_catalog_admin_hamilton_79_regression.sql",
+    "supabase/tests/013_publication_candidate_payload_completeness.sql",
   ]) {
     run("docker", ["cp", path.join(ROOT, file), `${CONTAINER}:/tmp/${path.basename(file)}`]);
   }
@@ -175,9 +176,13 @@ done`,
     "psql", "-U", "supabase_admin", "-d", DATABASE,
     "-v", "ON_ERROR_STOP=1", "-f", "/tmp/010_catalog_admin_product_description_sync.sql",
   );
-  dockerExecQuiet(
+  dockerExec(
     "psql", "-U", "supabase_admin", "-d", DATABASE,
     "-v", "ON_ERROR_STOP=1", "-f", "/tmp/012_catalog_admin_hamilton_79_regression.sql",
+  );
+  dockerExec(
+    "psql", "-U", "supabase_admin", "-d", DATABASE,
+    "-v", "ON_ERROR_STOP=1", "-f", "/tmp/013_publication_candidate_payload_completeness.sql",
   );
   const definitionMd5 = run("docker", [
     "exec", CONTAINER, "psql", "-U", "supabase_admin", "-d", DATABASE, "-Atc",
@@ -256,6 +261,7 @@ commit;`,
     migrationFiles,
     functionSignature: signature,
     concurrency: "PASS",
+    publicationCandidatePayloadCompleteness: "PASS",
   })}\n`);
 } finally {
   if (started) run("docker", ["rm", "-f", CONTAINER], { allowFailure: true, quiet: true });
