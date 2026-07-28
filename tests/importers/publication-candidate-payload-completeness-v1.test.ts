@@ -1,12 +1,53 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 const migration =
   "supabase/migrations/202607290001_publication_candidate_payload_completeness_corrective_v1.sql";
+const ownerMigration =
+  "supabase/migrations/202607290002_publication_candidate_function_owner_alignment_v1.sql";
 const integration = "supabase/tests/013_publication_candidate_payload_completeness.sql";
 const hamiltonRegression = "supabase/tests/012_catalog_admin_hamilton_79_regression.sql";
 const runner = "scripts/qa/catalog-admin-description-sync-local-integration.ts";
+const ownerRunner = "scripts/qa/publication-candidate-owner-alignment-local.ts";
+
+function sha256(value: string) {
+  return createHash("sha256").update(value).digest("hex");
+}
+
+test("candidate owner contract is explicit without mutating the approved payload migration", async () => {
+  const [approvedSource, alignmentSource, fixture, localRunner, packageJson] = await Promise.all([
+    readFile(migration, "utf8"),
+    readFile(ownerMigration, "utf8"),
+    readFile(integration, "utf8"),
+    readFile(ownerRunner, "utf8"),
+    readFile("package.json", "utf8").then(JSON.parse),
+  ]);
+
+  assert.equal(
+    sha256(approvedSource),
+    "38f3f9c0180960675eade1dded1b705f55e9bfa390ee12af0eaded34350fc309",
+  );
+  assert.match(
+    alignmentSource,
+    /alter function cloud\.product_publication_candidate_payload_v1\(uuid\)\s+owner to postgres;/u,
+  );
+  assert.doesNotMatch(
+    alignmentSource,
+    /create or replace function|grant|revoke|security definer|alter table|insert|update|delete|truncate/iu,
+  );
+  assert.match(fixture, /fresh migration chain did not normalize candidate helper owner to postgres/u);
+  assert.match(fixture, /divergent local owner fixture was not established/u);
+  assert.match(fixture, /owner alignment changed candidate body, payload, checksum, metadata, or runtime ACL/u);
+  assert.match(localRunner, /owner_production_shape/u);
+  assert.match(localRunner, /owner_divergent_local/u);
+  assert.match(localRunner, /candidatePayloadAndChecksumBeforeAfterOwnerAlignment: "PASS"/u);
+  assert.equal(
+    packageJson.scripts["qa:publication-candidate-owner:local"],
+    "node scripts/qa/publication-candidate-owner-alignment-local.ts",
+  );
+});
 
 test("candidate payload additively covers canonical Product SEO", async () => {
   const source = await readFile(migration, "utf8");

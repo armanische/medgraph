@@ -194,6 +194,134 @@ select
   cloud.product_publication_candidate_payload_v1('a4000000-0000-4000-8000-000000000050') payload,
   cloud.sha256_jsonb_v1(cloud.product_publication_candidate_payload_v1('a4000000-0000-4000-8000-000000000050')) checksum;
 
+create temporary table candidate_owner_alignment_baseline on commit drop as
+select
+  md5(pg_get_functiondef(proc.oid)) definition_checksum,
+  pg_get_function_identity_arguments(proc.oid) identity_arguments,
+  pg_get_function_result(proc.oid) result_type,
+  proc.prosecdef security_definer,
+  proc.provolatile volatility,
+  proc.proconfig settings,
+  cloud.product_publication_candidate_payload_v1('a4000000-0000-4000-8000-000000000050') payload,
+  cloud.sha256_jsonb_v1(
+    cloud.product_publication_candidate_payload_v1('a4000000-0000-4000-8000-000000000050')
+  ) candidate_checksum,
+  jsonb_build_object(
+    'public', has_function_privilege(
+      'public', 'cloud.product_publication_candidate_payload_v1(uuid)', 'execute'
+    ),
+    'anon', has_function_privilege(
+      'anon', 'cloud.product_publication_candidate_payload_v1(uuid)', 'execute'
+    ),
+    'authenticated', has_function_privilege(
+      'authenticated', 'cloud.product_publication_candidate_payload_v1(uuid)', 'execute'
+    ),
+    'serviceRole', has_function_privilege(
+      'service_role', 'cloud.product_publication_candidate_payload_v1(uuid)', 'execute'
+    )
+  ) runtime_acl
+from pg_proc proc
+where proc.oid = 'cloud.product_publication_candidate_payload_v1(uuid)'::regprocedure;
+
+do $$
+begin
+  if (select pg_get_userbyid(proc.proowner)
+      from pg_proc proc
+      where proc.oid = 'cloud.product_publication_candidate_payload_v1(uuid)'::regprocedure)
+       <> 'postgres' then
+    raise exception 'fresh migration chain did not normalize candidate helper owner to postgres';
+  end if;
+end
+$$;
+
+-- Reproduce the divergent historical local owner, then run the exact alignment
+-- operation and prove that only ownership changes. The surrounding transaction
+-- keeps this verification disposable.
+alter function cloud.product_publication_candidate_payload_v1(uuid)
+  owner to supabase_admin;
+
+do $$
+begin
+  if (select pg_get_userbyid(proc.proowner)
+      from pg_proc proc
+      where proc.oid = 'cloud.product_publication_candidate_payload_v1(uuid)'::regprocedure)
+       <> 'supabase_admin' then
+    raise exception 'divergent local owner fixture was not established';
+  end if;
+end
+$$;
+
+alter function cloud.product_publication_candidate_payload_v1(uuid)
+  owner to postgres;
+
+do $$
+declare
+  baseline candidate_owner_alignment_baseline%rowtype;
+  current_acl jsonb;
+  current_owner text;
+  current_definition_checksum text;
+  current_identity_arguments text;
+  current_result_type text;
+  current_security_definer boolean;
+  current_volatility "char";
+  current_settings text[];
+begin
+  select * into baseline from candidate_owner_alignment_baseline;
+  select
+    pg_get_userbyid(proc.proowner),
+    md5(pg_get_functiondef(proc.oid)),
+    pg_get_function_identity_arguments(proc.oid),
+    pg_get_function_result(proc.oid),
+    proc.prosecdef,
+    proc.provolatile,
+    proc.proconfig
+  into
+    current_owner,
+    current_definition_checksum,
+    current_identity_arguments,
+    current_result_type,
+    current_security_definer,
+    current_volatility,
+    current_settings
+  from pg_proc proc
+  where proc.oid = 'cloud.product_publication_candidate_payload_v1(uuid)'::regprocedure;
+
+  current_acl := jsonb_build_object(
+    'public', has_function_privilege(
+      'public', 'cloud.product_publication_candidate_payload_v1(uuid)', 'execute'
+    ),
+    'anon', has_function_privilege(
+      'anon', 'cloud.product_publication_candidate_payload_v1(uuid)', 'execute'
+    ),
+    'authenticated', has_function_privilege(
+      'authenticated', 'cloud.product_publication_candidate_payload_v1(uuid)', 'execute'
+    ),
+    'serviceRole', has_function_privilege(
+      'service_role', 'cloud.product_publication_candidate_payload_v1(uuid)', 'execute'
+    )
+  );
+
+  if current_owner <> 'postgres'
+     or current_definition_checksum <> baseline.definition_checksum
+     or current_identity_arguments <> baseline.identity_arguments
+     or current_result_type <> baseline.result_type
+     or current_security_definer is distinct from baseline.security_definer
+     or current_volatility is distinct from baseline.volatility
+     or current_settings is distinct from baseline.settings
+     or cloud.product_publication_candidate_payload_v1(
+          'a4000000-0000-4000-8000-000000000050'
+        ) is distinct from baseline.payload
+     or cloud.sha256_jsonb_v1(
+          cloud.product_publication_candidate_payload_v1(
+            'a4000000-0000-4000-8000-000000000050'
+          )
+        ) <> baseline.candidate_checksum
+     or current_acl is distinct from baseline.runtime_acl then
+    raise exception 'owner alignment changed candidate body, payload, checksum, metadata, or runtime ACL';
+  end if;
+end
+$$;
+
 do $$
 declare
   baseline candidate_payload_baseline%rowtype;
@@ -443,6 +571,13 @@ begin
      or (select count(*) from cloud.product_publication_batches) <> 0
      or (select count(*) from cloud.products where publication_status = 'published') <> 0 then
     raise exception 'revision invalidation fixture left inconsistent evidence or publication state';
+  end if;
+
+  if (select pg_get_userbyid(proc.proowner)
+      from pg_proc proc
+      where proc.oid = 'cloud.product_publication_candidate_payload_v1(uuid)'::regprocedure)
+       <> 'postgres' then
+    raise exception 'candidate payload helper owner is not the authoritative postgres role';
   end if;
 
   if has_function_privilege('anon', 'cloud.product_publication_candidate_payload_v1(uuid)', 'execute')

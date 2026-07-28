@@ -232,3 +232,10 @@ excluded. Existing review, approval and publication stale checks automatically
 consume the expanded checksum because they all recompute the same canonical
 helper. The full contract is documented in
 `product-publication-candidate-payload-v1.md`.
+
+Additive migration
+`202607290002_publication_candidate_function_owner_alignment_v1.sql`
+explicitly normalizes the internal candidate helper owner to the authoritative
+`postgres` role. It changes ownership only; the security-invoker mode, fixed
+search path, function body, candidate checksum and closed runtime ACL remain
+unchanged.

@@ -154,8 +154,10 @@ fixture.
 
 - Migration: `202607290001_publication_candidate_payload_completeness_corrective_v1.sql`.
 - SHA-256: `38f3f9c0180960675eade1dded1b705f55e9bfa390ee12af0eaded34350fc309`.
-- Migration chain: `24/24`, checksum-pinned and clean-applied from zero.
-- Function owner: `supabase_admin` (preserved).
+- Migration chain: `25/25`, checksum-pinned and clean-applied from zero,
+  including the subsequent owner-contract alignment migration.
+- Function owner: `postgres`, explicitly normalized by
+  `202607290002_publication_candidate_function_owner_alignment_v1.sql`.
 - Function mode: security invoker (`securityDefiner=false`), `STABLE`.
 - Fixed setting: `search_path=pg_catalog, cloud`.
 - Direct execute: `PUBLIC=false`, `anon=false`, `authenticated=false`,
@@ -170,16 +172,17 @@ fixture.
 
 | Check | Result |
 | --- | --- |
-| `npm test` | PASS — 487/487 |
+| `npm test` | PASS — 488/488 |
 | `npm run lint` | PASS |
 | `npx tsc --noEmit --pretty false` | PASS |
 | `npm run build` | PASS — Next 16.2.9 Turbopack |
 | `npm run build -- --webpack` | PASS — Next 16.2.9 Webpack |
-| `npm run qa:catalog-admin-description-sync:local` | PASS — 24 migrations; Hamilton + candidate completeness |
+| `npm run qa:catalog-admin-description-sync:local` | PASS — 25 migrations; Hamilton + candidate completeness |
+| `npm run qa:publication-candidate-owner:local` | PASS — Production-shaped and divergent-owner upgrade paths |
 | `npm run qa:product-publication:local` | PASS — publication lifecycle/concurrency/cleanup |
 | `npm run qa:published-catalog:local` | PASS — projection/security/cleanup |
 | `npm run qa:structured-fields:local` | PASS — structured writer/projection/rollback compatibility |
-| migration manifest validation | PASS — 24/24 SHA-256 |
+| migration manifest validation | PASS — 25/25 SHA-256 |
 | `git diff --check` | PASS |
 
 All database suites used disposable local PostgreSQL containers. Their fixtures

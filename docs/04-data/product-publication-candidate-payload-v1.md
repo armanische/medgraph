@@ -134,6 +134,14 @@ The helper remains a `STABLE`, security-invoker SQL function with fixed
 `anon`, `authenticated` and `service_role`. Approved `cloud_api` SECURITY
 DEFINER publication wrappers remain the only runtime entry points.
 
+The authoritative owner of
+`cloud.product_publication_candidate_payload_v1(uuid)` is `postgres`.
+Migration
+`202607290002_publication_candidate_function_owner_alignment_v1.sql`
+normalizes this explicitly so ownership does not depend on the migration
+executor. Ownership is not a substitute for runtime authorization: the closed
+direct-execute ACL above remains the independently enforced access boundary.
+
 The migration performs no data mutation, backfill, revision creation, review,
 approval, publication or projection change.
 
@@ -154,3 +162,8 @@ revision rejection and ACL invariance in a disposable transaction.
 approved immutable 79-Product fixture and proves that Hamilton-T1 candidate
 state contains canonical SEO, three active characteristics, three media rows,
 current descriptions, and no historical unsupported claim.
+
+`scripts/qa/publication-candidate-owner-alignment-local.ts` proves both the
+Production-shaped `postgres -> postgres` upgrade path and normalization of a
+divergent local `supabase_admin -> postgres` owner. The function definition,
+candidate JSON/checksum, metadata and effective runtime ACL remain unchanged.
