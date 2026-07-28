@@ -9,6 +9,10 @@ import {
   STOREFRONT_SITE_URL,
 } from "../../lib/storefront/seo.ts";
 
+test("Storefront uses the approved canonical apex domain", () => {
+  assert.equal(STOREFRONT_SITE_URL, "https://cyber-medica.ru");
+});
+
 test("Storefront metadata helper builds canonical social and robots fields", () => {
   const previous = process.env.CYBERMEDICA_ALLOW_INDEXING;
   process.env.CYBERMEDICA_ALLOW_INDEXING = "1";

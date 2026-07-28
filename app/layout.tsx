@@ -14,7 +14,7 @@ import {
 
 const allowIndexing =
   process.env.CYBERMEDICA_ALLOW_INDEXING === "1" && !isCloudPreviewCatalog();
-const siteUrl = "https://cybermedica.ru";
+const siteUrl = "https://cyber-medica.ru";
 const siteTitle = "CyberMedica — экспертная база медицинских изделий";
 const siteDescription =
   "CyberMedica помогает врачам, инженерам и закупщикам проверять медицинские изделия: регистрационные документы, характеристики, совместимость, аналоги и источники данных.";

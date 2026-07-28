@@ -38,6 +38,20 @@ test("security headers are applied globally with only the approved Cloud media o
   assert.ok(securityHeaders.length >= 6);
 });
 
+test("www permanently redirects to the canonical apex domain", async () => {
+  assert.equal(typeof nextConfig.redirects, "function");
+  const redirects = await nextConfig.redirects!();
+
+  assert.deepEqual(redirects, [
+    {
+      source: "/:path*",
+      has: [{ type: "host", value: "www.cyber-medica.ru" }],
+      destination: "https://cyber-medica.ru/:path*",
+      permanent: true,
+    },
+  ]);
+});
+
 test("request API receives an explicit no-store header rule", async () => {
   const rules = await nextConfig.headers!();
   const api = rules.find((rule) => rule.source === "/api/request");

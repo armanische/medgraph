@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const STOREFRONT_SITE_URL = "https://cybermedica.ru";
+export const STOREFRONT_SITE_URL = "https://cyber-medica.ru";
 export const STOREFRONT_SITE_NAME = "CyberMedica";
 
 interface StorefrontSeoImage {
