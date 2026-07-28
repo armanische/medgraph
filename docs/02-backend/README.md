@@ -9,6 +9,7 @@
 - [Supabase Integration](../supabase-integration-v1.md)
 - [Catalog Admin](../catalog-admin-v1.md)
 - [Cloud Published Catalog Repository](./cloud-published-catalog-repository-v1.md)
+- [Internal RBAC Read Contract v1](./internal-rbac-read-contract-v1.md)
 - [Architecture library](../architecture/)
 
 Backend change не должен ослаблять RLS, server-only secrets, RPC grants или public/internal boundary.
