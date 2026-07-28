@@ -22,6 +22,7 @@ import type {
 } from "@/lib/storefront/types";
 import { buildStorefrontMetadata } from "@/lib/storefront/seo";
 import { buildProductStructuredData } from "@/lib/storefront/structured-data";
+import { buildProductRequestHref } from "@/lib/request/product-context";
 
 // Published slugs are runtime data and must not require an application rebuild.
 export const dynamic = "force-dynamic";
@@ -185,7 +186,7 @@ export default async function StorefrontProductPage({
               {presentation.canRequestQuote ? (
                 <div className="mt-4 flex flex-wrap gap-2">
                   <Link
-                    href={`/request?product=${encodeURIComponent(product.name)}`}
+                    href={buildProductRequestHref(product)}
                     className="cm-button-primary shadow-[0_12px_30px_rgba(11,19,32,0.16)]"
                   >
                     Запросить КП

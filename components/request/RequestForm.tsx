@@ -2,13 +2,16 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import type { RequestProductContext } from "@/lib/request/product-context";
 
 interface RequestFormProps {
   initialMessage?: string;
+  productContext?: RequestProductContext;
 }
 
 export default function RequestForm({
   initialMessage = "",
+  productContext,
 }: RequestFormProps) {
   const router = useRouter();
   const [error, setError] = useState("");
@@ -50,6 +53,33 @@ export default function RequestForm({
 
   return (
     <form className="mt-6 space-y-5" onSubmit={handleSubmit}>
+      {productContext ? (
+        <div
+          className="rounded-md border border-[var(--cm-rule)] bg-cm-surface-low/70 p-4"
+          data-testid="request-product-context"
+        >
+          <span className="cm-label block text-cm-dim">Выбранное оборудование</span>
+          <strong className="mt-1 block text-sm text-cm-ink">
+            {productContext.title}
+          </strong>
+          {productContext.manufacturer ? (
+            <span className="mt-1 block text-xs text-cm-slate">
+              {productContext.manufacturer}
+            </span>
+          ) : null}
+          <input type="hidden" name="productId" value={productContext.id} />
+          <input type="hidden" name="productSlug" value={productContext.slug} />
+          <input type="hidden" name="productTitle" value={productContext.title} />
+          {productContext.manufacturer ? (
+            <input
+              type="hidden"
+              name="productManufacturer"
+              value={productContext.manufacturer}
+            />
+          ) : null}
+        </div>
+      ) : null}
+
       <label className="block">
         <span className="cm-label mb-2 block">
           Организация <span className="text-cm-danger">*</span>

@@ -1,5 +1,8 @@
 import { NextResponse } from "next/server";
 
+import { resolveRequestProductContext } from "@/lib/request/product-context";
+import { catalogRepository, productService } from "@/lib/storefront";
+
 const RATE_LIMIT_WINDOW_MS = 15 * 60 * 1000;
 const RATE_LIMIT_MAX_REQUESTS = 5;
 const RATE_LIMIT_STORE_MAX_ENTRIES = 5_000;
@@ -21,6 +24,11 @@ function readField(formData: FormData, field: keyof typeof limits) {
   return String(formData.get(field) || "")
     .trim()
     .slice(0, limits[field]);
+}
+
+function readProductSelectionField(formData: FormData, field: "productId" | "productSlug") {
+  const limit = field === "productId" ? 200 : 240;
+  return String(formData.get(field) || "").trim().slice(0, limit);
 }
 
 function getClientIp(request: Request) {
@@ -179,6 +187,26 @@ export async function POST(request: Request) {
     );
   }
 
+  const submittedProductId = readProductSelectionField(formData, "productId");
+  const submittedProductSlug = readProductSelectionField(formData, "productSlug");
+  const hasSubmittedProductContext = Boolean(submittedProductId || submittedProductSlug);
+  const productContext = hasSubmittedProductContext
+    ? await resolveRequestProductContext(
+        { id: submittedProductId, slug: submittedProductSlug },
+        { catalogRepository, productService },
+      )
+    : null;
+
+  if (hasSubmittedProductContext && !productContext) {
+    return NextResponse.json(
+      {
+        ok: false,
+        error: "Выбранное оборудование недоступно. Обновите страницу и попробуйте снова.",
+      },
+      { status: 400 },
+    );
+  }
+
   const webhookUrl = process.env.CYBERMEDICA_LEADS_WEBHOOK_URL;
 
   if (!webhookUrl) {
@@ -203,7 +231,10 @@ export async function POST(request: Request) {
             }
           : {}),
       },
-      body: JSON.stringify(lead),
+      body: JSON.stringify({
+        ...lead,
+        ...(productContext ? { product: productContext } : {}),
+      }),
       signal: AbortSignal.timeout(10_000),
     });
 
@@ -216,7 +247,7 @@ export async function POST(request: Request) {
         ok: false,
         error: "Сервис заявок временно недоступен. Попробуйте немного позже.",
       },
-      { status: 502 }
+      { status: 503 }
     );
   }
 

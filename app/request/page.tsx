@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 
 import RequestForm from "@/components/request/RequestForm";
-import { getProduct } from "@/lib/products";
+import { resolveRequestProductContext } from "@/lib/request/product-context";
+import { catalogRepository, productService } from "@/lib/storefront";
 
 export const metadata: Metadata = {
   title: "Запросить коммерческое предложение",
@@ -15,14 +16,24 @@ export const metadata: Metadata = {
 export default async function RequestPage({
   searchParams,
 }: {
-  searchParams: Promise<{ product?: string; query?: string }>;
+  searchParams: Promise<{
+    product?: string | string[];
+    productId?: string | string[];
+    query?: string | string[];
+  }>;
 }) {
-  const { product: productSlug, query } = await searchParams;
-  const product = productSlug ? getProduct(productSlug) : undefined;
-  const initialMessage = product
-    ? `Нужно коммерческое предложение на «${product.name}». Количество: `
-    : query
-      ? `Необходимо подобрать: ${query}`
+  const { product, productId, query } = await searchParams;
+  const productContext = await resolveRequestProductContext(
+    {
+      id: firstSearchParam(productId),
+      slug: firstSearchParam(product),
+    },
+    { catalogRepository, productService },
+  );
+  const initialMessage = productContext
+    ? `Нужно коммерческое предложение на «${productContext.title}». Количество: `
+    : firstSearchParam(query)
+      ? `Необходимо подобрать: ${firstSearchParam(query)}`
       : "";
 
   return (
@@ -71,9 +82,16 @@ export default async function RequestPage({
             <span className="cm-label !text-cm-teal">Заявка</span>
             <span className="font-mono text-[9px] text-cm-dim">152-ФЗ</span>
           </div>
-          <RequestForm initialMessage={initialMessage} />
+          <RequestForm
+            initialMessage={initialMessage}
+            productContext={productContext ?? undefined}
+          />
         </div>
       </section>
     </main>
   );
+}
+
+function firstSearchParam(value: string | string[] | undefined) {
+  return Array.isArray(value) ? value[0] : value;
 }
