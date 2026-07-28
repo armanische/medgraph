@@ -1,6 +1,6 @@
 {
   "schemaVersion": "cybermedica-migration-chain-manifest-v1",
-  "scope": "cloud-catalog-through-published-catalog-projection-corrective-v4",
+  "scope": "cloud-catalog-through-internal-rbac-read-contract-v1",
   "database": "clean local Supabase PostgreSQL",
   "migrations": [
     { "version": "202607020001", "file": "202607020001_fs510_vertical_slice.sql", "sha256": "7a05defd0eb69a0fab552f5c0146c1ee32d3a11b88b2c87f3c42c7b3e28bf6dd" },
@@ -23,6 +23,7 @@
     { "version": "202607260003", "file": "202607260003_published_catalog_projection_corrective_v1.sql", "sha256": "6052daa0c727b8272c5071e4e414b65e8ee6e6474e9e46917ccecd079098b7cd" },
     { "version": "202607260004", "file": "202607260004_published_catalog_projection_corrective_v2.sql", "sha256": "26f7dd90e65665ade5729dc5e0934fe7b8f15979cdaaee1c92cc859d66d6162d" },
     { "version": "202607270001", "file": "202607270001_published_catalog_projection_corrective_v3.sql", "sha256": "0838fd15d9e484ac76dde4417ce528a1dbae6f40b0ca4d023a777c97aed0b79d" },
-    { "version": "202607270002", "file": "202607270002_published_catalog_projection_corrective_v4.sql", "sha256": "aae4a78dfe6f353f994e02bf1e2781a581ec97bf09fd391278ec51bd6c5637f2" }
+    { "version": "202607270002", "file": "202607270002_published_catalog_projection_corrective_v4.sql", "sha256": "aae4a78dfe6f353f994e02bf1e2781a581ec97bf09fd391278ec51bd6c5637f2" },
+    { "version": "202607280001", "file": "202607280001_internal_rbac_read_contract_v1.sql", "sha256": "3c985b721da5da6b180fa7fe4181e753ece55927883bbe290d5f5007e806d686" }
   ]
 }

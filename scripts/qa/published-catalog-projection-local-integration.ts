@@ -563,7 +563,7 @@ wait "$second_pid" || { cat /tmp/identical-second.out; exit 1; }`,
   process.stdout.write(`${JSON.stringify({
     status: "PASS",
     image: IMAGE,
-    migrationCount: 21,
+    migrationCount: 22,
     rpc: "cloud_api.cloud_published_storefront_catalog_v1",
     integration: [
       "published-only-product-visibility",
