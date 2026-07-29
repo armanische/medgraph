@@ -6,7 +6,7 @@ import {
 
 const productionOrigins = new Set([
   "https://cyber-medica.ru",
-  "https://medgraph.vercel.app",
+  "https://medgraph-medgraph.vercel.app",
 ]);
 
 export function normalizeEmail(value: string) {

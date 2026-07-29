@@ -18,18 +18,18 @@ import {
 } from "../../lib/internal-auth/policy.ts";
 
 const productionEnvironment = Object.freeze({
-  CYBERMEDICA_INTERNAL_AUTH_ORIGIN: "https://medgraph.vercel.app",
+  CYBERMEDICA_INTERNAL_AUTH_ORIGIN: "https://medgraph-medgraph.vercel.app",
   VERCEL_ENV: "production",
 });
 
 test("launch auth accepts only the approved Production origin and fixed destination", () => {
   assert.equal(
     resolveInternalAuthOrigin(productionEnvironment),
-    "https://medgraph.vercel.app",
+    "https://medgraph-medgraph.vercel.app",
   );
   assert.equal(
     approvedCallbackUrl(productionEnvironment),
-    "https://medgraph.vercel.app/auth/callback",
+    "https://medgraph-medgraph.vercel.app/auth/callback",
   );
   assert.equal(safeInternalDestination(), HAMILTON_REVIEW_PATH);
 
@@ -41,7 +41,7 @@ test("launch auth accepts only the approved Production origin and fixed destinat
   );
   assert.throws(() =>
     resolveInternalAuthOrigin({
-      CYBERMEDICA_INTERNAL_AUTH_ORIGIN: "https://medgraph.vercel.app/other",
+      CYBERMEDICA_INTERNAL_AUTH_ORIGIN: "https://medgraph-medgraph.vercel.app/other",
       VERCEL_ENV: "production",
     }),
   );
@@ -50,17 +50,17 @@ test("launch auth accepts only the approved Production origin and fixed destinat
 test("callback accepts one authorization code and rejects token or redirect input", () => {
   assert.equal(
     isSafeCallbackRequest(
-      new URL("https://medgraph.vercel.app/auth/callback?code=12345678"),
+      new URL("https://medgraph-medgraph.vercel.app/auth/callback?code=12345678"),
       productionEnvironment,
     ),
     true,
   );
   for (const url of [
-    "https://medgraph.vercel.app/auth/callback",
-    "https://medgraph.vercel.app/auth/callback?code=12345678&code=abcdefgh",
-    "https://medgraph.vercel.app/auth/callback?code=12345678&next=https://attacker.example",
-    "https://medgraph.vercel.app/auth/callback?access_token=secret",
-    "https://medgraph.vercel.app/auth/callback?code=12345678#refresh_token=secret",
+    "https://medgraph-medgraph.vercel.app/auth/callback",
+    "https://medgraph-medgraph.vercel.app/auth/callback?code=12345678&code=abcdefgh",
+    "https://medgraph-medgraph.vercel.app/auth/callback?code=12345678&next=https://attacker.example",
+    "https://medgraph-medgraph.vercel.app/auth/callback?access_token=secret",
+    "https://medgraph-medgraph.vercel.app/auth/callback?code=12345678#refresh_token=secret",
     "https://attacker.example/auth/callback?code=12345678",
   ]) {
     assert.equal(isSafeCallbackRequest(new URL(url), productionEnvironment), false, url);
