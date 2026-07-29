@@ -199,7 +199,8 @@ test("Preview routes expose banner, noindex/no-store and disable Compare", async
   assert.doesNotMatch(product, /PRODUCT_PRESENTATION_FALLBACKS\.registration/u);
   assert.match(product, /hasRegulatoryInformation/u);
   assert.match(product, /SafeProductDescription/u);
-  assert.match(robots, /isCloudPreviewCatalog/u);
+  assert.match(robots, /isProductionIndexingEnvironment/u);
+  assert.match(robots, /disallow: "\/"/u);
   assert.match(sitemap, /storefrontDataSource === "cloud_preview"/u);
 });
 

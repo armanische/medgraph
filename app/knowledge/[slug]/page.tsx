@@ -37,6 +37,10 @@ export async function generateMetadata({
     alternates: {
       canonical: `/knowledge/${product.slug}`,
     },
+    robots: {
+      index: false,
+      follow: false,
+    },
   };
 }
 

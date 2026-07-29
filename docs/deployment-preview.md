@@ -75,7 +75,7 @@ Values are configured only in Vercel and are never committed.
 | --- | --- |
 | `CYBERMEDICA_LEADS_WEBHOOK_URL` | Required only for a working lead form |
 | `CYBERMEDICA_LEADS_WEBHOOK_TOKEN` | Optional server-only webhook token |
-| `CYBERMEDICA_ALLOW_INDEXING` | Leave unset for Preview |
+| `CYBERMEDICA_ALLOW_INDEXING` | Deprecated; do not set. Preview is fail-closed by exact environment binding |
 | `CYBERMEDICA_ENABLE_ADMIN` | Leave unset unless protected internal review is approved |
 | `CYBERMEDICA_ENABLE_INTERNAL_REVIEW` | Leave unset unless protected internal review is approved |
 | `CYBERMEDICA_ENABLE_IMPORT_CENTER` | Leave unset for public Preview |

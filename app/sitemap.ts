@@ -31,7 +31,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       categoryService,
     });
   }
-  const lastModified = storefrontSitemap[0]?.lastModified ?? new Date(0);
+  if (storefrontDataSource === "cloud_published") return storefrontSitemap;
 
+  const lastModified = storefrontSitemap[0]?.lastModified ?? new Date(0);
   return [...storefrontSitemap, ...buildFs510Sitemap(lastModified)];
 }

@@ -8,14 +8,38 @@ import {
   serializeStorefrontJsonLd,
   STOREFRONT_SITE_URL,
 } from "../../lib/storefront/seo.ts";
+import { isProductionIndexingEnvironment } from "../../lib/storefront/indexing.ts";
+import { buildRobots } from "../../app/robots.ts";
+
+const productionIndexingEnvironment = {
+  VERCEL_ENV: "production",
+  CATALOG_DATA_SOURCE: "cloud_published",
+  CYBERMEDICA_SUPABASE_PROJECT_REF: "clbzibuusyuajsylcbvl",
+  CYBERMEDICA_SUPABASE_URL: "https://clbzibuusyuajsylcbvl.supabase.co",
+  NEXT_PUBLIC_SUPABASE_URL: "https://clbzibuusyuajsylcbvl.supabase.co",
+};
+
+function setEnvironment(values: Record<string, string | undefined>) {
+  const previous = new Map<string, string | undefined>();
+  for (const [key, value] of Object.entries(values)) {
+    previous.set(key, process.env[key]);
+    if (value === undefined) delete process.env[key];
+    else process.env[key] = value;
+  }
+  return () => {
+    for (const [key, value] of previous) {
+      if (value === undefined) delete process.env[key];
+      else process.env[key] = value;
+    }
+  };
+}
 
 test("Storefront uses the approved canonical apex domain", () => {
   assert.equal(STOREFRONT_SITE_URL, "https://cyber-medica.ru");
 });
 
 test("Storefront metadata helper builds canonical social and robots fields", () => {
-  const previous = process.env.CYBERMEDICA_ALLOW_INDEXING;
-  process.env.CYBERMEDICA_ALLOW_INDEXING = "1";
+  const restore = setEnvironment(productionIndexingEnvironment);
   try {
     const metadata = buildStorefrontMetadata({
       title: "Test product",
@@ -37,12 +61,59 @@ test("Storefront metadata helper builds canonical social and robots fields", () 
     assert.equal(twitter?.card, "summary_large_image");
     assert.deepEqual(twitter?.images, ["/test-product.jpg"]);
   } finally {
-    if (previous === undefined) {
-      delete process.env.CYBERMEDICA_ALLOW_INDEXING;
-    } else {
-      process.env.CYBERMEDICA_ALLOW_INDEXING = previous;
-    }
+    restore();
   }
+});
+
+test("Production indexing requires the exact published Production binding", () => {
+  assert.equal(isProductionIndexingEnvironment(productionIndexingEnvironment), true);
+  assert.equal(
+    isProductionIndexingEnvironment({
+      ...productionIndexingEnvironment,
+      VERCEL_ENV: "preview",
+    }),
+    false,
+  );
+  assert.equal(
+    isProductionIndexingEnvironment({
+      ...productionIndexingEnvironment,
+      CYBERMEDICA_SUPABASE_PROJECT_REF: "gjlpkqdhlzbfnzzoxlsk",
+      CYBERMEDICA_SUPABASE_URL: "https://gjlpkqdhlzbfnzzoxlsk.supabase.co",
+      NEXT_PUBLIC_SUPABASE_URL: "https://gjlpkqdhlzbfnzzoxlsk.supabase.co",
+    }),
+    false,
+  );
+});
+
+test("Production robots allow public crawling and disallow private surfaces", () => {
+  const rulesValue = buildRobots(productionIndexingEnvironment).rules;
+  const rules = Array.isArray(rulesValue) ? rulesValue[0] : rulesValue;
+  assert.equal(rules?.userAgent, "*");
+  assert.equal(rules?.allow, "/");
+  assert.deepEqual(rules?.disallow, [
+    "/internal/",
+    "/auth/",
+    "/api/",
+    "/admin/",
+    "/workspace/",
+    "/tender/",
+    "/knowledge/",
+    "/thanks",
+  ]);
+});
+
+test("Preview robots remain globally disallowed", () => {
+  const rulesValue = buildRobots({
+    ...productionIndexingEnvironment,
+    VERCEL_ENV: "preview",
+    CATALOG_DATA_SOURCE: "cloud_preview",
+    CYBERMEDICA_SUPABASE_PROJECT_REF: "gjlpkqdhlzbfnzzoxlsk",
+    CYBERMEDICA_SUPABASE_URL: "https://gjlpkqdhlzbfnzzoxlsk.supabase.co",
+    NEXT_PUBLIC_SUPABASE_URL: "https://gjlpkqdhlzbfnzzoxlsk.supabase.co",
+  }).rules;
+  const rules = Array.isArray(rulesValue) ? rulesValue[0] : rulesValue;
+  assert.equal(rules?.allow, undefined);
+  assert.equal(rules?.disallow, "/");
 });
 
 test("Storefront routes use the unified SEO helper", async () => {
@@ -93,8 +164,7 @@ test("breadcrumb JSON-LD is absolute deterministic and safely serialized", () =>
 });
 
 test("query metadata can be noindex-follow without weakening the environment gate", () => {
-  const previous = process.env.CYBERMEDICA_ALLOW_INDEXING;
-  process.env.CYBERMEDICA_ALLOW_INDEXING = "1";
+  const restore = setEnvironment(productionIndexingEnvironment);
   try {
     const metadata = buildStorefrontMetadata({
       title: "Search",
@@ -105,11 +175,7 @@ test("query metadata can be noindex-follow without weakening the environment gat
 
     assert.deepEqual(metadata.robots, { index: false, follow: true });
   } finally {
-    if (previous === undefined) {
-      delete process.env.CYBERMEDICA_ALLOW_INDEXING;
-    } else {
-      process.env.CYBERMEDICA_ALLOW_INDEXING = previous;
-    }
+    restore();
   }
 });
 

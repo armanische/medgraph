@@ -91,6 +91,17 @@ test("sitemap infrastructure has no publication or draft imports", async () => {
   assert.doesNotMatch(combined, /data\/public|data\/research/);
 });
 
+test("published sitemap excludes legacy and unpublished vertical routes", async () => {
+  const appSource = await readFile("app/sitemap.ts", "utf8");
+  const publishedReturn = appSource.indexOf(
+    'if (storefrontDataSource === "cloud_published") return storefrontSitemap',
+  );
+  const legacyAppend = appSource.indexOf("...buildFs510Sitemap");
+
+  assert.ok(publishedReturn >= 0);
+  assert.ok(legacyAppend > publishedReturn);
+});
+
 test("sitemap URLs and route canonicals use the same public paths", async () => {
   const sitemap = await buildStorefrontSitemap(services());
   const urls = new Set(sitemap.map(({ url }) => new URL(url).pathname));

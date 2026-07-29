@@ -11,9 +11,9 @@ import {
   manufacturerService,
   productService,
 } from "@/lib/storefront";
+import { isProductionIndexingEnvironment } from "@/lib/storefront/indexing";
 
-const allowIndexing =
-  process.env.CYBERMEDICA_ALLOW_INDEXING === "1" && !isCloudPreviewCatalog();
+const allowIndexing = isProductionIndexingEnvironment();
 const siteUrl = "https://cyber-medica.ru";
 const siteTitle = "CyberMedica — экспертная база медицинских изделий";
 const siteDescription =

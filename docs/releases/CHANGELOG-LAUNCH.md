@@ -27,9 +27,12 @@
 - The local publication-candidate QA runner now derives the terminal migration
   dynamically and recognizes `202607290003` without weakening its contract
   checks.
-- Indexing remains intentionally disabled (`robots.txt` Disallow `/` and
-  `noindex, nofollow`) pending a separate indexing gate.
+- Controlled indexing activation (2026-07-30): Production robots now allows
+  public crawling while disallowing internal, Auth, API, admin, diagnostic and
+  legacy knowledge surfaces. Sitemap is generated from the published
+  projection only; Hamilton-T1 is the sole Product URL.
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).
 See [Post-Launch Operational Baseline](../reports/post-launch-operational-baseline-2026-07-30.md).
+See [Controlled Indexing Activation](../reports/controlled-indexing-activation-2026-07-30.md).

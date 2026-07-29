@@ -153,10 +153,11 @@ structured-data URLs share `https://cybermedica.ru`. Product and manufacturer
 static params are generated through Storefront services. Sitemap Storefront
 entries use the same canonical route family.
 
-`CYBERMEDICA_ALLOW_INDEXING` is fail-closed: only the exact value `1` permits
-indexing; Preview and unconfigured environments remain noindex. The production
-release owner must verify the flag after deployment rather than assume it from
-build success.
+Production indexing is fail-closed on the exact deployment contract: Vercel
+Production, `CATALOG_DATA_SOURCE=cloud_published`, the approved Production
+Supabase project ref and matching server/public Supabase origins. Preview,
+local, static and mismatched-project deployments remain noindex. No mutable
+indexing flag is used.
 
 ### 5.2 FS510 product identity resolution
 
@@ -302,7 +303,8 @@ Legend: `[x]` complete, `[!]` release condition, `[ ]` external/manual step.
 - [x] `/products/fs510` is noindex-follow and absent from sitemap.
 - [ ] Validate deployed robots and sitemap responses.
 - [ ] Validate representative product/manufacturer JSON-LD with external tools.
-- [ ] Set `CYBERMEDICA_ALLOW_INDEXING=1` only after every blocking item passes.
+- [x] Activate the exact Production-bound indexing contract only after the
+  published baseline, sitemap and smoke gates pass.
 
 ### Content
 

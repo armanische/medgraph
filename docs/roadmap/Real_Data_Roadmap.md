@@ -33,7 +33,7 @@ has an explicit launch-blocking flag.
 | DNS/TLS cutover | completed | Нет |
 | Public launch | completed — Hamilton-T1 scope | Нет |
 | Fresh post-launch backup after `202607290003` | completed — verified restore | Нет |
-| Search-engine indexing setup | next | Нет |
+| Search-engine indexing setup | completed — controlled Production contract | Нет |
 | Production monitoring and error review | completed — baseline recorded | Нет |
 | RFQ POST verification on canonical domain | completed — test-only | Нет |
 | Mail delivery confirmation after DNS cutover | completed in pre-launch downstream gate | Нет |

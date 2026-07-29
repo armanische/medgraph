@@ -312,3 +312,12 @@ Base visibility and general responsive/UI polish.
 - [UI Constitution](../00-product/ui-constitution.md)
 - [ADR-006](../00-project/ADR/ADR-006-product-publication-foundation.md)
 - [Published Catalog Projection](../04-data/published-catalog-projection-v1.md)
+
+## 15. Post-launch closure
+
+The follow-up operational baseline, canonical release reconciliation and
+controlled Production indexing activation are recorded in the dated reports
+below. This additive section does not rewrite the historical launch evidence.
+
+- [Post-launch operational baseline](./post-launch-operational-baseline-2026-07-30.md)
+- [Controlled indexing activation](./controlled-indexing-activation-2026-07-30.md)

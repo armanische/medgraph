@@ -101,7 +101,6 @@ test("all internal pages retain production gates and access-boundary copy", asyn
 test("env example documents every required flag without values", async () => {
   const source = await readFile(".env.example", "utf8");
   const variables = [
-    "CYBERMEDICA_ALLOW_INDEXING",
     "CYBERMEDICA_ENABLE_ADMIN",
     "CYBERMEDICA_ENABLE_INTERNAL_REVIEW",
     "CYBERMEDICA_ENABLE_IMPORT_CENTER",
@@ -121,7 +120,7 @@ test("env example documents every required flag without values", async () => {
   assert.match(source, /SERVER-ONLY/);
   assert.match(source, /INTERNAL-ONLY/);
   assert.match(source, /IMPORT-ONLY/);
-  assert.match(source, /SAFE FOR BROWSER/);
+  assert.match(source, /BROWSER-SAFE/);
   assert.match(source, /FORBIDDEN IN BROWSER/);
   assert.doesNotMatch(source, /^[A-Z][A-Z0-9_]+=.+$/m);
 });

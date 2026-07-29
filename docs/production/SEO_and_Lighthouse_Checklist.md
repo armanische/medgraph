@@ -29,8 +29,9 @@ tables, catalog cards and CTA blocks do not create horizontal overflow.
   procurement specialists.
 - OpenGraph and Twitter previews render without broken image URLs.
 - Canonical URL points to the final public path.
-- `/sitemap.xml` includes the public landing, catalog, knowledge, product,
-  manufacturer and request pages.
+- `/sitemap.xml` contains only routes exposed by the active catalog source. In
+  Production this is the published projection: public landing, catalog,
+  manufacturer/reference routes, request entry point, and published Products.
 
 ## Robots strategy
 
@@ -41,20 +42,28 @@ User-Agent: *
 Disallow: /
 ```
 
-Public indexing is enabled only when `CYBERMEDICA_ALLOW_INDEXING=1`.
-With the flag enabled, `robots.txt` allows crawling and exposes:
+Production indexing is enabled only for the exact Vercel Production
+deployment bound to `cloud_published` and the approved Production Supabase
+project (`clbzibuusyuajsylcbvl`). Preview and local environments remain
+globally disallowed. Production `robots.txt` allows public crawling and
+disallows internal, auth, API, diagnostic, legacy and completion routes; it
+exposes:
 
 - `Host: https://cybermedica.ru`
 - `Sitemap: https://cybermedica.ru/sitemap.xml`
 
-The root metadata follows the same flag: preview pages receive `noindex`,
-while public builds can be indexed.
+Root and public Storefront metadata follow the same exact binding: Preview and
+local pages receive `noindex`, while the approved Production public pages can
+be indexed.
 
 ## Before public beta
 
-- Set `CYBERMEDICA_ALLOW_INDEXING=1` only for the public production domain.
-- Verify that `https://cybermedica.ru/robots.txt` allows `/`.
-- Verify that `https://cybermedica.ru/sitemap.xml` returns all expected URLs.
+- Verify the Production Vercel environment is `cloud_published` and bound to
+  the approved Production Supabase project; no mutable indexing flag is used.
+- Verify that `https://cyber-medica.ru/robots.txt` allows `/` and disallows
+  private/legacy surfaces.
+- Verify that `https://cyber-medica.ru/sitemap.xml` contains only published
+  projection URLs and no draft/static Product routes.
 - Add a dedicated OpenGraph image before external announcements.
 - Run Lighthouse on the public build, not only local preview.
 - Check Google Search Console after the production domain is connected.

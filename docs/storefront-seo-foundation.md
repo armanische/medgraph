@@ -117,15 +117,18 @@ manufacturer data are local filesystem repository reads, not remote fetches.
 
 ### Robots
 
-The helper mirrors the existing global policy:
+The helper uses an exact deployment binding rather than a mutable opt-in flag:
 
 ```text
-CYBERMEDICA_ALLOW_INDEXING=1 -> index, follow
-otherwise                    -> noindex, nofollow
+Vercel Production + cloud_published + approved Production Supabase binding
+  -> index, follow
+Preview/local/mismatched binding
+  -> noindex, nofollow
 ```
 
-This does not change the indexing gate; it makes the policy explicit and
-consistent in every audited route's resolved metadata.
+This keeps the policy explicit and consistent in every audited route's
+resolved metadata while ensuring an untrusted or misbound deployment cannot
+become indexable.
 
 ### Alternates
 

@@ -9,10 +9,10 @@ created and independently restored in an isolated PostgreSQL environment. A
 single owner-approved test RFQ was submitted through the public form and was
 accepted by the Production API after the configured webhook returned success.
 
-The current public indexing control remains intentionally closed: both
-`robots.txt` and HTML metadata return `Disallow: /` and `noindex, nofollow`.
-Therefore the operational baseline is ready, but the site is **not ready for
-search-engine indexing** until a separate, explicitly approved indexing gate.
+The baseline was captured while public indexing was intentionally closed. The
+separate controlled indexing activation is recorded in
+`controlled-indexing-activation-2026-07-30.md`; this operational report keeps
+the pre-activation state immutable.
 
 ## Reviewed Production baseline
 
@@ -119,15 +119,11 @@ audit rows in the last 24 hours. Product and projection counts remained 79 and
 1. These counters are a baseline, not an SLO claim; alert thresholds are
 defined below.
 
-### Indexing control
+### Indexing control at baseline capture
 
-The current state is intentionally closed:
-
-- `robots.txt`: `Disallow: /`;
-- homepage and Hamilton HTML: `noindex, nofollow`;
-- canonical links use `https://cyber-medica.ru`.
-
-No indexing switch was changed in this task.
+At the time of this report, before the separate indexing activation,
+`robots.txt` returned `Disallow: /` and public HTML returned `noindex,
+nofollow`. The activation report is the authoritative post-change evidence.
 
 ## QA correction
 
