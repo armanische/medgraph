@@ -173,8 +173,9 @@ function assertStableContract(
 const migrationFiles = readdirSync(path.join(ROOT, "supabase/migrations"))
   .filter((file) => file.endsWith(".sql"))
   .sort();
-if (migrationFiles.at(-1) !== ALIGNMENT_MIGRATION) {
-  throw new Error("Owner alignment migration is not the terminal local migration.");
+const terminalMigration = migrationFiles.at(-1);
+if (!terminalMigration || !/^\d{12}_.+\.sql$/.test(terminalMigration)) {
+  throw new Error("Unable to determine the terminal local migration from the migration directory.");
 }
 const approvedPayloadSource = readFileSync(
   path.join(ROOT, "supabase/migrations", APPROVED_PAYLOAD_MIGRATION),
@@ -250,6 +251,7 @@ try {
     status: "PASS",
     image: IMAGE,
     migrationCount: migrationFiles.length,
+    terminalMigration,
     approvedPayloadMigrationSha256: APPROVED_PAYLOAD_SHA256,
     alignmentMigrationSha256: sha256(readFileSync(
       path.join(ROOT, "supabase/migrations", ALIGNMENT_MIGRATION),

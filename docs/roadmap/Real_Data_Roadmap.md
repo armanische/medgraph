@@ -32,12 +32,12 @@ has an explicit launch-blocking flag.
 | Production deployment | completed | Нет |
 | DNS/TLS cutover | completed | Нет |
 | Public launch | completed — Hamilton-T1 scope | Нет |
-| Fresh post-launch backup after `202607290003` | next | Нет |
+| Fresh post-launch backup after `202607290003` | completed — verified restore | Нет |
 | Search-engine indexing setup | next | Нет |
-| Production monitoring and error review | next | Нет |
-| RFQ POST verification on canonical domain | next | Нет |
-| Mail delivery confirmation after DNS cutover | next | Нет |
-| Merge/reconcile deployed launch commits into canonical branch | next | Нет |
+| Production monitoring and error review | completed — baseline recorded | Нет |
+| RFQ POST verification on canonical domain | completed — test-only | Нет |
+| Mail delivery confirmation after DNS cutover | completed in pre-launch downstream gate | Нет |
+| Merge/reconcile deployed launch commits into canonical branch | completed — fast-forward | Нет |
 | Internal Auth/RBAC corrective | backlog | Нет |
 | Review Workspace | backlog | Нет |
 | Catalog Admin evolution | backlog | Нет |

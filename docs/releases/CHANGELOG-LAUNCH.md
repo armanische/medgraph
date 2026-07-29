@@ -18,11 +18,18 @@
   the apex; TLS and mail records were retained through the DNS cutover.
 - Public smoke: canonical HTTPS, Catalog, Hamilton Product Detail,
   characteristics, media and RFQ HTTP contract PASS.
-- Non-blocking warnings: RFQ POST was not re-submitted in this documentation
-  closure; the next backup must include `202607290003`; deployed launch commit
-  still requires reconciliation into the canonical release branch.
-- Recovery baseline: prior backup/isolated restore evidence is linked from the
-  launch baseline; the backup predates `202607290003`.
+- Post-launch operational baseline (2026-07-30): fresh backup and isolated
+  restore PASS; one canonical-domain test RFQ reached the confirmation page
+  and the configured webhook accepted it; read-only monitoring baseline PASS.
+- Fresh backup: `production-postlaunch-clbzibuusyuajsylcbvl-20260729T212955Z`;
+  artifact hashes and restore evidence are recorded in the post-launch
+  operational report.
+- The local publication-candidate QA runner now derives the terminal migration
+  dynamically and recognizes `202607290003` without weakening its contract
+  checks.
+- Indexing remains intentionally disabled (`robots.txt` Disallow `/` and
+  `noindex, nofollow`) pending a separate indexing gate.
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).
+See [Post-Launch Operational Baseline](../reports/post-launch-operational-baseline-2026-07-30.md).

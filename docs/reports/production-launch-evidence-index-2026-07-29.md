@@ -13,7 +13,7 @@ canonical reconciliation point.
 | ACL and Admin corrections | `docs/reports/catalog-admin-product-description-synchronization-corrective-v1.md` and the `202607280001`/`202607280002` migrations | historical apply evidence |
 | Candidate payload corrections | `docs/reports/publication-candidate-payload-completeness-corrective-v1.md` and `docs/reports/publication-candidate-function-owner-contract-alignment-v1.md` | historical evidence |
 | Hamilton projection completeness | `202607290003_hamilton_storefront_projection_completeness_v1.sql` | latest launch-critical migration |
-| Backup | Current post-launch backup ID and hashes in the launch baseline | isolated restore PASS; current point includes `202607290003` |
+| Backup | [`post-launch-operational-baseline-2026-07-30.md`](./post-launch-operational-baseline-2026-07-30.md) | fresh backup `production-postlaunch-clbzibuusyuajsylcbvl-20260729T212955Z`; isolated restore PASS; current point includes `202607290003` |
 | Canonical release reconciliation | [`canonical-release-reconciliation-2026-07-29.md`](./canonical-release-reconciliation-2026-07-29.md) | fast-forward graph; ready for reviewed branch merge |
 | Immutable revision | Revision ID in the launch baseline | prior controlled evidence |
 | Human Review | Review Item and Decision IDs in the launch baseline | prior controlled evidence |
@@ -22,7 +22,7 @@ canonical reconciliation point.
 | Projection | `cloud_published` public source and version 3 | prior controlled evidence; public HTTP smoke independently checked |
 | ENV | Vercel Production ENV contract | names/scope recorded; secret values intentionally omitted |
 | DNS/TLS | REG.RU/Vercel records in the launch baseline | independently verified at closure |
-| Public smoke | Canonical domain and generated deployment checks | HTTP/TLS checks PASS; RFQ POST not re-submitted |
+| Public smoke | Canonical domain and generated deployment checks | HTTP/TLS checks PASS; one test-only RFQ accepted by API/webhook |
 
 ## Historical-report policy
 
@@ -46,3 +46,7 @@ for exact IDs, hashes, counts and caveats.
 See [the canonical release reconciliation report](./canonical-release-reconciliation-2026-07-29.md)
 for the exact deployed SHA, commit inventory, validation results and proposed
 branch merge sequence.
+
+See [the post-launch operational baseline](./post-launch-operational-baseline-2026-07-30.md)
+for the fresh backup hashes, isolated restore evidence, RFQ boundary and
+monitoring thresholds.
