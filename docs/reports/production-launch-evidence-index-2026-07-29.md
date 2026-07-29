@@ -14,6 +14,7 @@ canonical reconciliation point.
 | Candidate payload corrections | `docs/reports/publication-candidate-payload-completeness-corrective-v1.md` and `docs/reports/publication-candidate-function-owner-contract-alignment-v1.md` | historical evidence |
 | Hamilton projection completeness | `202607290003_hamilton_storefront_projection_completeness_v1.sql` | latest launch-critical migration |
 | Backup | Current post-launch backup ID and hashes in the launch baseline | isolated restore PASS; current point includes `202607290003` |
+| Canonical release reconciliation | [`canonical-release-reconciliation-2026-07-29.md`](./canonical-release-reconciliation-2026-07-29.md) | fast-forward graph; ready for reviewed branch merge |
 | Immutable revision | Revision ID in the launch baseline | prior controlled evidence |
 | Human Review | Review Item and Decision IDs in the launch baseline | prior controlled evidence |
 | Approval | Approval ID in the launch baseline | prior controlled evidence |
@@ -41,3 +42,7 @@ PostgreSQL environment. No Production write was performed.
 
 See [the canonical launch baseline](./production-launch-baseline-2026-07-29.md)
 for exact IDs, hashes, counts and caveats.
+
+See [the canonical release reconciliation report](./canonical-release-reconciliation-2026-07-29.md)
+for the exact deployed SHA, commit inventory, validation results and proposed
+branch merge sequence.
