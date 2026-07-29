@@ -45,6 +45,8 @@ export const publishedProductSchema = z.object({
   model: publicTextSchema,
   shortDescription: nullablePublicTextSchema,
   description: nullablePublicTextSchema,
+  seoTitle: nullablePublicTextSchema.optional(),
+  seoDescription: nullablePublicTextSchema.optional(),
   manufacturerId: publicIdentifierSchema,
   categoryId: publicIdentifierSchema,
   status: z.literal("active"),
@@ -61,6 +63,9 @@ export const publishedProductSchema = z.object({
     title: publicTextSchema,
     sortOrder: z.number().int().nonnegative(),
     items: z.array(z.object({
+      key: publicTextSchema.optional(),
+      contentKind: z.enum(["legacy_metadata", "technical_specification"]).optional(),
+      recordOrigin: z.enum(["legacy", "structured_product_detail"]).optional(),
       label: publicTextSchema,
       value: publicTextSchema,
       unit: nullablePublicTextSchema,

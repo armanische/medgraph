@@ -149,6 +149,35 @@ select id, '60000000-0000-4000-8000-000000000030'::uuid
 from cloud.products
 where id::text like '60000000-0000-4000-8000-00000000005%';
 
+-- Product A proves that SEO and legacy technical characteristics come from
+-- the immutable Product revision, without requiring a separate structured
+-- publication lifecycle.
+update cloud.products
+set seo_title = 'Projection A approved SEO title',
+    seo_description = 'Projection A approved SEO description.'
+where id = '60000000-0000-4000-8000-000000000055';
+
+insert into cloud.product_characteristics (
+  product_id, key, display_name, raw_value, normalized_value, unit,
+  sort_order, confidence, source_reference, reviewer_status,
+  group_key, group_title, group_sort_order
+) values
+  (
+    '60000000-0000-4000-8000-000000000055', 'flow', 'Flow', '42', '42',
+    'L/min', 10, 'reviewed', 'local:flow', 'approved',
+    'technical', 'Technical', 10
+  ),
+  (
+    '60000000-0000-4000-8000-000000000055', 'pressure', 'Pressure', '20', '20',
+    'cmH2O', 20, 'reviewed', 'local:pressure', 'approved',
+    'technical', 'Technical', 10
+  ),
+  (
+    '60000000-0000-4000-8000-000000000055', 'weight', 'Weight', '5', '5',
+    'kg', 30, 'reviewed', 'local:weight', 'approved',
+    'dimensions', 'Dimensions', 20
+  );
+
 insert into cloud.product_media (
   product_id, source_url, role, media_format, sort_order, import_batch_key
 ) values
@@ -546,8 +575,94 @@ begin
       raise exception 'internal metadata key % leaked', forbidden_key;
     end if;
   end loop;
+
+  select item into product
+  from jsonb_array_elements(projection -> 'products') item
+  where item ->> 'slug' = 'projection-a-product';
+  if product ->> 'seoTitle' <> 'Projection A approved SEO title'
+     or product ->> 'seoDescription' <> 'Projection A approved SEO description.'
+     or jsonb_array_length(product -> 'characteristicGroups') <> 2
+     or (
+       select count(*)
+       from jsonb_array_elements(product -> 'characteristicGroups') grouped,
+            jsonb_array_elements(grouped -> 'items') characteristic
+     ) <> 3
+     or product #>> '{characteristicGroups,0,items,0,key}' <> 'legacy:flow'
+     or product #>> '{characteristicGroups,0,items,0,contentKind}' <> 'legacy_metadata'
+     or product #>> '{characteristicGroups,0,items,0,recordOrigin}' <> 'legacy' then
+    raise exception 'immutable Product SEO/characteristic projection is incomplete: %', product;
+  end if;
 end
 $$;
+
+savepoint targeted_completeness_refresh;
+do $$
+declare
+  projection jsonb;
+  old_source jsonb;
+  old_target jsonb;
+  reconstructed_products jsonb;
+  refresh_result jsonb;
+  retry_result jsonb;
+  before_version bigint;
+  after_version bigint;
+begin
+  perform set_config('request.jwt.claim.role', 'service_role', true);
+  select cloud_api.cloud_published_storefront_catalog_v1(), state.version
+  into projection, before_version
+  from cloud.published_catalog_projection_state state
+  where state.singleton;
+  old_source := cloud.cloud_published_storefront_catalog_source_pre_completeness_v1();
+  select item into old_target
+  from jsonb_array_elements(old_source -> 'products') item
+  where item ->> 'slug' = 'projection-a-product';
+  select jsonb_agg(
+    case
+      when item ->> 'slug' = 'projection-a-product' then
+        jsonb_set(
+          item - 'seoTitle' - 'seoDescription',
+          '{characteristicGroups}',
+          old_target -> 'characteristicGroups',
+          true
+        )
+      else item
+    end
+    order by item ->> 'slug'
+  )
+  into reconstructed_products
+  from jsonb_array_elements(projection -> 'products') item;
+
+  update cloud.published_catalog_projection_state
+  set payload_checksum = cloud.sha256_jsonb_v1(
+    jsonb_set(projection, '{products}', reconstructed_products, false)
+      - 'generatedAt'
+  )
+  where singleton;
+
+  refresh_result := cloud_api.refresh_published_product_projection_completeness_v1(
+    '60000000-0000-4000-8000-000000000055'
+  );
+  select version into after_version
+  from cloud.published_catalog_projection_state where singleton;
+  retry_result := cloud_api.refresh_published_product_projection_completeness_v1(
+    '60000000-0000-4000-8000-000000000055'
+  );
+
+  if refresh_result ->> 'idempotent' <> 'false'
+     or retry_result ->> 'idempotent' <> 'true'
+     or after_version <> before_version + 1
+     or (select version from cloud.published_catalog_projection_state where singleton)
+       <> after_version
+     or (select payload_checksum from cloud.published_catalog_projection_state where singleton)
+       <> cloud.sha256_jsonb_v1(
+         cloud_api.cloud_published_storefront_catalog_v1() - 'generatedAt'
+       ) then
+    raise exception 'targeted completeness refresh or exact retry failed: %, %',
+      refresh_result, retry_result;
+  end if;
+end
+$$;
+rollback to targeted_completeness_refresh;
 
 create function pg_temp.assert_public_projection_content_changed_v3(
   before_projection jsonb,

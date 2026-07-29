@@ -111,6 +111,8 @@ export interface Product {
   model: string;
   shortDescription: string;
   description: string;
+  seoTitle?: string | null;
+  seoDescription?: string | null;
   status: ProductStatus;
   catalogQualityStatus?: CatalogQualityStatus;
   featured: boolean;

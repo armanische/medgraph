@@ -45,8 +45,10 @@ export async function generateMetadata({
   const image = product.media.find(({ type }) => type === "image");
   const presentation = getProductPresentation(product);
   return buildStorefrontMetadata({
-    title: `${product.name} — медицинское оборудование`,
-    description: presentation.shortDescription ?? `${product.name} в каталоге медицинского оборудования CyberMedica.`,
+    title: product.seoTitle ?? `${product.name} — медицинское оборудование`,
+    description: product.seoDescription
+      ?? presentation.shortDescription
+      ?? `${product.name} в каталоге медицинского оборудования CyberMedica.`,
     canonical: `/catalog/${product.slug}`,
     image: image ? { url: image.url, alt: image.alt } : undefined,
   });

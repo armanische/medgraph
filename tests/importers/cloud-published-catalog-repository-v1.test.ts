@@ -29,6 +29,8 @@ function projection(): PublishedCatalogProjection {
       model: "PP-1",
       shortDescription: "<strong>Public summary</strong>",
       description: "<p>Public description.</p>",
+      seoTitle: "Approved SEO title",
+      seoDescription: "Approved SEO description",
       manufacturerId: "manufacturer-public-id",
       categoryId: "category-public-id",
       status: "active",
@@ -38,7 +40,15 @@ function projection(): PublishedCatalogProjection {
         key: "technical",
         title: "Technical",
         sortOrder: 10,
-        items: [{ label: "Flow", value: "42", unit: "L/min", sortOrder: 10 }],
+        items: [{
+          key: "legacy:flow",
+          contentKind: "legacy_metadata",
+          recordOrigin: "legacy",
+          label: "Flow",
+          value: "42",
+          unit: "L/min",
+          sortOrder: 10,
+        }],
       }],
       media: [{
         url: "https://static.tildacdn.com/equipment.webp",
@@ -135,6 +145,8 @@ test("mocked published RPC is strictly validated before mapping", async () => {
   assert.equal(mapped.products[0].manufacturerId, "published-manufacturer");
   assert.equal(mapped.products[0].categoryId, "published-category");
   assert.equal(mapped.products[0].shortDescription, "Public summary");
+  assert.equal(mapped.products[0].seoTitle, "Approved SEO title");
+  assert.equal(mapped.products[0].seoDescription, "Approved SEO description");
   assert.equal(mapped.products[0].keyFeatures[0], "Approved feature");
   assert.equal(mapped.products[0].specifications[0].group, "Technical");
   assert.equal(mapped.products[0].media[0].type, "image");

@@ -75,6 +75,8 @@ export function mapCloudPublishedCatalogProjection(
     model: row.model,
     shortDescription: plainText(row.shortDescription),
     description: row.description ?? row.shortDescription ?? "",
+    seoTitle: row.seoTitle ?? null,
+    seoDescription: row.seoDescription ?? null,
     status: "active",
     featured: false,
     applicationAreas: row.applicationAreas.map(({ name }) => name),

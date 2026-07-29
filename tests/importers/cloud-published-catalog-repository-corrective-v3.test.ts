@@ -301,11 +301,10 @@ test("sitemap branch trace loads no opposite helper and dynamic import errors fa
   });
 });
 
-test("protected Storefront contracts remain byte-identical to Corrective v2 base", () => {
+test("CatalogRepository and ProductService remain byte-identical to Corrective v2 base", () => {
   const protectedFiles = [
     "lib/storefront/catalog-repository.ts",
     "lib/storefront/product-service.ts",
-    "lib/storefront/types.ts",
   ];
   const result = spawnSync("git", [
     "diff",

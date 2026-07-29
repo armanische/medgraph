@@ -129,8 +129,9 @@ test("product detail has no publication or draft catalog imports", async () => {
 test("metadata is generated from Storefront Product", async () => {
   const source = await pageSource();
 
-  assert.match(source, /title: `\$\{product\.name\}/);
-  assert.match(source, /description: presentation\.shortDescription/);
+  assert.match(source, /title: product\.seoTitle \?\?/);
+  assert.match(source, /description: product\.seoDescription/);
+  assert.match(source, /\?\? presentation\.shortDescription/);
   assert.match(source, /canonical: `\/catalog\/\$\{product\.slug\}`/);
   assert.match(source, /product\.media\.find\(\(\{ type \}\) => type === "image"\)/);
   assert.match(source, /image: image \? \{ url: image\.url, alt: image\.alt \} : undefined/);

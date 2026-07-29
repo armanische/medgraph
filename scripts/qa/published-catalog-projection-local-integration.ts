@@ -572,6 +572,8 @@ wait "$second_pid" || { cat /tmp/identical-second.out; exit 1; }`,
     integration: [
       "published-only-product-visibility",
       "immutable-revision-approval-batch-binding",
+      "immutable-product-revision-seo-characteristics",
+      "targeted-projection-completeness-refresh-exact-retry",
       "mandatory-reference-visibility",
       "unresolved-blocker-exclusion",
       "independently-published-structured-fields",
