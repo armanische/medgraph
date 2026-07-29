@@ -26,11 +26,6 @@ interface ReviewDecisionResult {
   idempotent?: boolean;
 }
 
-export const initialHamiltonReviewActionState: HamiltonReviewActionState = {
-  status: "idle",
-  message: "",
-};
-
 export async function submitHamiltonHumanReview(
   previousState: HamiltonReviewActionState,
 ): Promise<HamiltonReviewActionState> {

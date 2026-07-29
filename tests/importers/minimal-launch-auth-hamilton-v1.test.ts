@@ -130,6 +130,7 @@ test("Hamilton action is the only write and is pinned to the immutable revision"
 
   const rpcCalls = [...action.matchAll(/\.rpc\("([^"]+)"/gu)].map((match) => match[1]);
   assert.deepEqual(rpcCalls, ["record_product_publication_review_decision_v1"]);
+  assert.doesNotMatch(action, /export const/u);
   assert.match(action, /p_candidate_revision_id:\s*HAMILTON_REVIEW\.revisionId/u);
   assert.match(action, /p_rationale:\s*HAMILTON_REVIEW\.rationale/u);
   assert.match(action, /result\.productId !== HAMILTON_REVIEW\.productId/u);

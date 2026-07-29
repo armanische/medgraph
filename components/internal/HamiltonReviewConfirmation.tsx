@@ -3,9 +3,14 @@
 import { useActionState } from "react";
 
 import {
-  initialHamiltonReviewActionState,
   submitHamiltonHumanReview,
 } from "@/app/internal/review/hamilton-t1/actions";
+import type { HamiltonReviewActionState } from "@/app/internal/review/hamilton-t1/actions";
+
+const initialHamiltonReviewActionState: HamiltonReviewActionState = {
+  status: "idle",
+  message: "",
+};
 
 export default function HamiltonReviewConfirmation() {
   const [state, action, pending] = useActionState(
