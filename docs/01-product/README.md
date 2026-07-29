@@ -12,5 +12,8 @@
 - [Catalog Content Standard](../catalog-content-standard.md)
 - [Product Route Strategy](../product-route-strategy.md)
 - [Release reports](../releases/)
+- [Production launch baseline — 2026-07-29](../reports/production-launch-baseline-2026-07-29.md)
+- [Production launch evidence index](../reports/production-launch-evidence-index-2026-07-29.md)
+- [UI Constitution](../00-product/ui-constitution.md)
 
 Новый product document указывает status, scope, data baseline и связь с release.

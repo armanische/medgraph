@@ -12,6 +12,45 @@ to become public truth.
 The numbers below are planning targets. Each wave depends on review capacity,
 document quality and safety checks.
 
+## Production Launch Status — 2026-07-29
+
+The first public launch is complete for the approved one-Product scope. The
+roadmap below separates completed launch work from post-launch work. Every item
+has an explicit launch-blocking flag.
+
+| Roadmap item | Status | Блокирует запуск |
+| --- | --- | --- |
+| Supabase Production foundation | completed | Нет |
+| ACL hardening | completed | Нет |
+| RFQ foundation | completed | Нет |
+| Catalog Admin concurrency | completed | Нет |
+| Import baseline — 79 Products | completed | Нет |
+| Hamilton-T1 curated content | completed | Нет |
+| Revision / Human Review / Approval / Publication | completed for Hamilton-T1 | Нет |
+| Published storefront projection | completed | Нет |
+| Production ENV binding | completed | Нет |
+| Production deployment | completed | Нет |
+| DNS/TLS cutover | completed | Нет |
+| Public launch | completed — Hamilton-T1 scope | Нет |
+| Fresh post-launch backup after `202607290003` | next | Нет |
+| Search-engine indexing setup | next | Нет |
+| Production monitoring and error review | next | Нет |
+| RFQ POST verification on canonical domain | next | Нет |
+| Mail delivery confirmation after DNS cutover | next | Нет |
+| Merge/reconcile deployed launch commits into canonical branch | next | Нет |
+| Internal Auth/RBAC corrective | backlog | Нет |
+| Review Workspace | backlog | Нет |
+| Catalog Admin evolution | backlog | Нет |
+| Targeted Product Import Contract | backlog | Нет |
+| Publication of remaining 78 Products | backlog | Нет |
+| Richer technical characteristics | backlog | Нет |
+| Thank You Page polish | backlog | Нет |
+| Hide Knowledge Base | backlog | Нет |
+| General responsive/UI polish | backlog | Нет |
+
+The `Блокирует запуск` value describes the already-completed 2026-07-29 launch;
+post-launch work must not be retroactively treated as a launch blocker.
+
 ## Wave 1: 50 Products
 
 Goal: prove the enrichment pipeline on high-value categories.

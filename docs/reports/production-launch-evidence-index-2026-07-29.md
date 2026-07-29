@@ -1,0 +1,42 @@
+# Production Launch Evidence Index — 2026-07-29
+
+This index preserves the audit trail without rewriting historical reports. Old
+reports retain their original verdicts and evidence; the launch baseline is the
+canonical reconciliation point.
+
+## Evidence chain
+
+| Stage | Canonical evidence | Status at launch |
+| --- | --- | --- |
+| Corrective architecture | `docs/reports/published-catalog-projection-corrective-fix-v4.md` | historical corrective evidence |
+| Projection migration | `supabase/migrations/202607260002` through `202607270002` | 20/21 local projection chain evidence; Production ledger from prior controlled run |
+| ACL and Admin corrections | `docs/reports/catalog-admin-product-description-synchronization-corrective-v1.md` and the `202607280001`/`202607280002` migrations | historical apply evidence |
+| Candidate payload corrections | `docs/reports/publication-candidate-payload-completeness-corrective-v1.md` and `docs/reports/publication-candidate-function-owner-contract-alignment-v1.md` | historical evidence |
+| Hamilton projection completeness | `202607290003_hamilton_storefront_projection_completeness_v1.sql` | latest launch-critical migration |
+| Backup | Backup ID and hashes in the launch baseline | prior isolated restore PASS; backup predates `202607290003` |
+| Immutable revision | Revision ID in the launch baseline | prior controlled evidence |
+| Human Review | Review Item and Decision IDs in the launch baseline | prior controlled evidence |
+| Approval | Approval ID in the launch baseline | prior controlled evidence |
+| Publication | Batch ID and Product count in the launch baseline | prior controlled evidence |
+| Projection | `cloud_published` public source and version 3 | prior controlled evidence; public HTTP smoke independently checked |
+| ENV | Vercel Production ENV contract | names/scope recorded; secret values intentionally omitted |
+| DNS/TLS | REG.RU/Vercel records in the launch baseline | independently verified at closure |
+| Public smoke | Canonical domain and generated deployment checks | HTTP/TLS checks PASS; RFQ POST not re-submitted |
+
+## Historical-report policy
+
+Reports with earlier `BLOCKED`, `PARTIAL` or `PROPOSED` statuses remain historical
+records. They are not rewritten into a false retrospective PASS. The final
+launch baseline supersedes their release decision only for the 2026-07-29
+public-launch scope.
+
+## Independent verification boundary
+
+Vercel deployment metadata, Git migration files/hashes, DNS, TLS and public HTTP
+smoke were checked during this closure. Production database rows, migration
+ledger, publication evidence rows and the backup archives were not queried or
+recreated during this documentation-only task and are explicitly labelled as
+prior controlled evidence.
+
+See [the canonical launch baseline](./production-launch-baseline-2026-07-29.md)
+for exact IDs, hashes, counts and caveats.
