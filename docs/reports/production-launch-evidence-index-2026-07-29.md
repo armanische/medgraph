@@ -13,7 +13,7 @@ canonical reconciliation point.
 | ACL and Admin corrections | `docs/reports/catalog-admin-product-description-synchronization-corrective-v1.md` and the `202607280001`/`202607280002` migrations | historical apply evidence |
 | Candidate payload corrections | `docs/reports/publication-candidate-payload-completeness-corrective-v1.md` and `docs/reports/publication-candidate-function-owner-contract-alignment-v1.md` | historical evidence |
 | Hamilton projection completeness | `202607290003_hamilton_storefront_projection_completeness_v1.sql` | latest launch-critical migration |
-| Backup | Backup ID and hashes in the launch baseline | prior isolated restore PASS; backup predates `202607290003` |
+| Backup | Current post-launch backup ID and hashes in the launch baseline | isolated restore PASS; current point includes `202607290003` |
 | Immutable revision | Revision ID in the launch baseline | prior controlled evidence |
 | Human Review | Review Item and Decision IDs in the launch baseline | prior controlled evidence |
 | Approval | Approval ID in the launch baseline | prior controlled evidence |
@@ -33,10 +33,11 @@ public-launch scope.
 ## Independent verification boundary
 
 Vercel deployment metadata, Git migration files/hashes, DNS, TLS and public HTTP
-smoke were checked during this closure. Production database rows, migration
-ledger, publication evidence rows and the backup archives were not queried or
-recreated during this documentation-only task and are explicitly labelled as
-prior controlled evidence.
+smoke were checked during the launch closure. For the post-launch backup,
+Production migration ledger, catalog counts, publication evidence rows and
+projection state were independently queried read-only; the new database and
+roles archives were independently restored in a disposable network-none
+PostgreSQL environment. No Production write was performed.
 
 See [the canonical launch baseline](./production-launch-baseline-2026-07-29.md)
 for exact IDs, hashes, counts and caveats.

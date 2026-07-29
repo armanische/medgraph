@@ -14,9 +14,9 @@ this document.
 | --- | --- | --- |
 | Deployed application commit and deployment | Vercel Production API, project `medgraph` | Independently verified: `201845a3fe5caab23ab72d31ac70d5704c53e1e4`, `dpl_HVumG217appC2rJDbzoH4J5uJ43u`, `READY/PROMOTED` |
 | Repository migration chain | Git tree and `supabase/tests/structured-fields-migration-chain-v1.json` | Independently verified: 26 files and pinned hashes |
-| Production migration ledger and live business counts | Prior controlled release evidence | Recorded below; not independently queried during this documentation closure |
-| Publication lifecycle evidence | Prior controlled release evidence and repository constants | IDs recorded below; live rows not independently queried during this closure |
-| Backup and restore | Prior backup manifest/restore evidence | Recorded below; backup artifact is not in this repository and was not recreated |
+| Production migration ledger and live business counts | Read-only Production preflight for post-launch backup | Independently verified: 26/26, latest `202607290003`, Products 79, Published 1, Unpublished 78 |
+| Publication lifecycle evidence | Read-only Production preflight for post-launch backup | Independently verified and bound to Hamilton-T1 exact Product/revision |
+| Backup and restore | Post-launch backup manifest and disposable restore | Independently verified: current backup and restore PASS; prior backup retained as historical baseline |
 | Vercel domain binding | Vercel Domain Config API | Independently verified: apex and `www` verified; `www` redirect is 301 |
 | Public DNS and TLS | REG.RU/authoritative DNS and HTTPS read-only checks | Independently verified at closure |
 | Existing reports and constitutional documents | Git history and tracked `docs/` | Historical evidence retained; index below reconciles the chain |
@@ -53,9 +53,9 @@ release ref. No merge, rebase or ref update was performed by this closure.
 
 ## 3. Production database baseline
 
-The following values are the approved launch baseline from the controlled
-Production run. This documentation branch did not connect to Production; live
-database values therefore remain **NOT INDEPENDENTLY VERIFIED in this pass**.
+The following values were re-verified read-only against Production while
+creating the current post-launch recovery point. No Production write operation
+other than the approved read-only backup workflow was performed.
 
 | Property | Launch baseline |
 | --- | --- |
@@ -95,7 +95,8 @@ approved stable/natural keys such as source UID, slug and source checksum.
 ## 5. Publication lifecycle evidence
 
 These IDs are the controlled launch evidence supplied by the publication run;
-live Production rows were not queried during this documentation closure.
+the exact bindings were independently queried read-only in Production during
+the post-launch backup preflight.
 
 - Revision: `8d48a2b5-0842-4796-803f-4e4daf6f6e17`.
 - Review Item: `68926883-2923-4dce-acea-cdb13ea08ded`.
@@ -160,23 +161,53 @@ block the approved first-product launch.
 
 ## 8. Backup and recovery
 
-The following values are the prior controlled backup/restore evidence. The
-archives are not part of this Git branch and were not recreated here.
+### Current preferred post-launch recovery point
+
+- Backup ID: `production-postlaunch-clbzibuusyuajsylcbvl-20260729T201629Z`.
+- Created: `2026-07-29T20:16:29Z`; completed: `2026-07-29T20:40:48Z`.
+- Manifest SHA-256: `7a7210a30ca4917509cae8afc419ca54b42edde427561b4630ec359df9301faa`.
+- Database archive SHA-256: `0f1790524f4c0d08c8f114a9752b723e6962c05415cf0f9213844d617eb7d924`.
+- Roles archive SHA-256: `3749edf4ed6c59c3aac37a4d210a8be4194c8a723ba920f277008298a6579bb4`.
+- Artifact permissions: `0600` for archive, roles, manifest and checksum file.
+- Tooling: `postgres:17-alpine`, `pg_dump 17.10`; Production server PostgreSQL 17.6.
+- Archive scope: application and Supabase auth/storage schemas required for
+  faithful restore; DNS, Vercel, ENV and credentials are intentionally
+  excluded from the database archive.
+- Production preflight: migration ledger 26/26, latest `202607290003`,
+  Products 79, Published 1, Unpublished 78, Hamilton-T1 only.
+- Lifecycle evidence: revision `8d48a2b5-0842-4796-803f-4e4daf6f6e17`,
+  decision `7d23140c-a67e-4886-af63-31e8bc85864d`, approval
+  `74b44936-a403-4b92-9fd6-ea125a34553a`, batch
+  `16c78699-6041-45d8-9c18-2da57c72159d`; exact Product/revision bindings
+  verified.
+- Projection: version 3; Published RPC summary 1 product, 25 manufacturers,
+  19 categories and 7 application areas; SEO title/description present;
+  3 characteristics; 3 media; old claim occurrences 0.
+- Checksum triad restored exactly: candidate
+  `70bca4a6707b0b3f52e5bd9535075ca68a31257514e1bf34535e04510a18b562`, payload
+  `f391551c5eede060365d23440f79dce518d41e7197cee01511a63587da97c2bf`, identity
+  `495e2a41c1527df3748e6ac0cc770bc4321d8044f121416e6792b2597fc3aea2`.
+- Independent restore: PASS in disposable PostgreSQL 17.10 with Docker
+  network mode `none`; `pg_restore` exit code 0. Restored migration and
+  catalog/lifecycle/projection checks all matched the Production preflight.
+- Security baseline: restored `cloud_api`/`cloud` schema boundary,
+  publication evidence triggers/constraints and ACL metadata matched the
+  read-only Production checks. No credentials were present in the manifest or
+  operational report.
+- Restore warnings: only expected non-fatal conflicts from replaying built-in
+  role/grant statements in the disposable role archive; database archive
+  restore itself completed without fatal errors.
+
+### Historical recovery point
+
+The previous backup remains valid and unchanged as a historical baseline:
 
 - Backup ID: `production-postmigration-clbzibuusyuajsylcbvl-20260729T085925Z`.
 - Manifest SHA-256: `37b05232bd4472e1362baa52ef6c88b9f280ff749e2a0b34f0c161b376e08a80`.
 - Database archive SHA-256: `d7fe4af532cd2e18ee8bd99ee73293d926aa1a101dec81a752e0d98b037bffe8`.
 - Roles archive SHA-256: `a165e347fef4862122328f44449b30e42dcd939f8d574176191a79a0d4471959`.
-- Isolated restore: PASS in the prior controlled run.
-- PostgreSQL: 17.6.
-- Network mode: `none`.
-- Restored migrations: 25/25.
-- Restored latest: `202607290002`.
-- Restored Products: 79.
-
-The backup predates migration `202607290003`. The next scheduled backup must
-include migration `202607290003`, projection version 3 and published
-Hamilton-T1 evidence. This documentation task does not create that backup.
+- Scope: migrations through `202607290002`; retained for historical recovery,
+  not the preferred current restore point.
 
 ## 9. Vercel ENV contract
 
