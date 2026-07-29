@@ -78,8 +78,14 @@ export default async function StorefrontProductPage({
     manufacturerName: manufacturer?.name,
   });
   const experience = buildProductDetailExperience({ product, manufacturer, category });
+  const generalSpecifications = experience.generalSpecifications;
   const technicalSpecifications = experience.technicalSpecifications;
   const specificationGroups = groupSpecifications(technicalSpecifications);
+  if (generalSpecifications.length > 0) {
+    specificationGroups.unshift(["Основные сведения", [...generalSpecifications]]);
+  }
+  const hasCharacteristics = generalSpecifications.length > 0 ||
+    technicalSpecifications.length > 0;
   const registrationDocuments = product.documents.filter(
     ({ kind }) => kind === "registration",
   );
@@ -98,8 +104,8 @@ export default async function StorefrontProductPage({
   const sectionLinks = [
     experience.description ? { href: "#description", label: "Описание" } : null,
     experience.manufacturer ? { href: "#manufacturer", label: "Производитель" } : null,
-    technicalSpecifications.length > 0
-      ? { href: "#specifications", label: "Технические характеристики" }
+    hasCharacteristics
+      ? { href: "#specifications", label: "Характеристики" }
       : null,
     experience.advantages.length > 0 ? { href: "#advantages", label: "Преимущества" } : null,
   ].filter((link): link is { href: string; label: string } => link !== null);
@@ -244,8 +250,8 @@ export default async function StorefrontProductPage({
           </Section>
         ) : null}
 
-        {technicalSpecifications.length > 0 && (
-          <Section id="specifications" title="Технические характеристики">
+        {hasCharacteristics && (
+          <Section id="specifications" title="Характеристики">
               <div className="max-w-[64rem] overflow-hidden rounded-lg border border-[var(--cm-rule)] bg-white">
                 {specificationGroups.map(([group, specifications]) => (
                   <div key={group}>
@@ -255,6 +261,7 @@ export default async function StorefrontProductPage({
                     {specifications.map((specification) => (
                       <div
                         key={`${specification.label}:${specification.position}`}
+                        data-testid="product-characteristic-row"
                         className="grid gap-1 border-b border-[var(--cm-rule)] px-4 py-2.5 last:border-b-0 sm:grid-cols-[minmax(12rem,0.8fr)_1.2fr] sm:items-center"
                       >
                         <div className="text-xs text-cm-slate">{specification.label}</div>

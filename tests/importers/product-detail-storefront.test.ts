@@ -40,18 +40,22 @@ test("missing Storefront Product invokes notFound", async () => {
   assert.doesNotMatch(source, /getDraftCatalogProduct|getPublishedProduct/);
 });
 
-test("technical specifications are grouped from explicit ProductSpecification rows", async () => {
+test("approved characteristics are grouped from explicit ProductSpecification rows", async () => {
   const [source, experience] = await Promise.all([
     pageSource(),
     readFile(resolve(root, "lib/storefront/product-detail-experience.ts"), "utf8"),
   ]);
 
   assert.match(source, /experience\.technicalSpecifications/);
+  assert.match(source, /experience\.generalSpecifications/);
   assert.match(experience, /product\.specifications/);
   assert.match(experience, /filter\(isTechnicalProductSpecification\)/);
+  assert.match(experience, /filter\(isGeneralProductSpecification\)/);
   assert.doesNotMatch(source, /const keySpecifications = technicalSpecifications\.slice\(0, 4\)/);
   assert.doesNotMatch(source, /Ключевые характеристики/);
   assert.match(source, /groupSpecifications\(technicalSpecifications\)/);
+  assert.match(source, /specificationGroups\.unshift\(\["Основные сведения"/);
+  assert.match(source, /data-testid="product-characteristic-row"/);
   assert.match(source, /specification\.group/);
   assert.match(source, /specification\.label/);
   assert.match(source, /specification\.value/);
@@ -198,7 +202,7 @@ test("product detail has one hierarchy and ordered content sections", async () =
   const sectionMarkers = [
     'title="Описание"',
     'title="Производитель"',
-    'title="Технические характеристики"',
+    'title="Характеристики"',
     'title="Преимущества"',
     'title="Регистрационная информация"',
     'title="Комплектация"',

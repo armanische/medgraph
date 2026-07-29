@@ -4,6 +4,7 @@ import test from "node:test";
 
 import {
   buildProductDetailExperience,
+  isGeneralProductSpecification,
   isTechnicalProductSpecification,
 } from "../../lib/storefront/product-detail-experience.ts";
 import type {
@@ -174,6 +175,96 @@ test("technical specifications use only explicit structured specifications", () 
       position: 4,
     }),
     false,
+  );
+});
+
+test("approved projected metadata remains public as deterministic general characteristics", () => {
+  const experience = buildProductDetailExperience({
+    product: product({
+      specifications: [
+        {
+          group: "Характеристики",
+          label: "Страна производства",
+          value: "Швейцария",
+          unit: null,
+          position: 2,
+          contentKind: "legacy_metadata",
+          recordOrigin: "legacy",
+        },
+        {
+          group: "Характеристики",
+          label: "Категория",
+          value: "Реанимация",
+          unit: null,
+          position: 0,
+          contentKind: "legacy_metadata",
+          recordOrigin: "legacy",
+        },
+        {
+          group: "Характеристики",
+          label: "Тип товара",
+          value: "Аппарат искусственной вентиляции лёгких",
+          unit: null,
+          position: 1,
+          contentKind: "legacy_metadata",
+          recordOrigin: "legacy",
+        },
+      ],
+    }),
+  });
+
+  assert.deepEqual(
+    experience.generalSpecifications.map(({ label, value }) => ({ label, value })),
+    [
+      { label: "Категория", value: "Реанимация" },
+      { label: "Тип товара", value: "Аппарат искусственной вентиляции лёгких" },
+      { label: "Страна производства", value: "Швейцария" },
+    ],
+  );
+  assert.deepEqual(experience.technicalSpecifications, []);
+});
+
+test("projected characteristics fail closed for malformed or internal-only records", () => {
+  const internal = {
+    group: "Внутренние данные",
+    label: "Internal score",
+    value: "99",
+    unit: null,
+    position: 0,
+    contentKind: "legacy_metadata",
+    recordOrigin: "internal",
+  } as unknown as Product["specifications"][number];
+  const malformed = {
+    group: "Характеристики",
+    label: " ",
+    value: "Значение",
+    unit: null,
+    position: 1,
+    contentKind: "legacy_metadata",
+    recordOrigin: "legacy",
+  } satisfies Product["specifications"][number];
+  const technical = {
+    group: "Вентиляция",
+    label: "PEEP",
+    value: "0–35",
+    unit: "см H2O",
+    position: 2,
+    contentKind: "technical_specification",
+    recordOrigin: "structured_product_detail",
+  } satisfies Product["specifications"][number];
+
+  assert.equal(isGeneralProductSpecification(internal), false);
+  assert.equal(isGeneralProductSpecification(malformed), false);
+  assert.equal(isTechnicalProductSpecification(internal), false);
+  assert.equal(isTechnicalProductSpecification(technical), true);
+
+  const experience = buildProductDetailExperience({
+    product: product({ specifications: [internal, malformed, technical] }),
+  });
+  assert.deepEqual(experience.generalSpecifications, []);
+  assert.deepEqual(
+    experience.technicalSpecifications.map(({ label }) => label),
+    ["PEEP"],
   );
 });
 

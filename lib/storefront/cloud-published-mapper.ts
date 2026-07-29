@@ -93,6 +93,8 @@ export function mapCloudPublishedCatalogProjection(
           value: item.value,
           unit: item.unit,
           position: 0,
+          ...(item.contentKind ? { contentKind: item.contentKind } : {}),
+          ...(item.recordOrigin ? { recordOrigin: item.recordOrigin } : {}),
         })))
       .map((specification, position) => ({ ...specification, position })),
     media: [...row.media]

@@ -17,6 +17,7 @@ export interface ProductDetailExperience {
   summary: string | null;
   description: string | null;
   advantages: readonly string[];
+  generalSpecifications: readonly ProductSpecification[];
   technicalSpecifications: readonly ProductSpecification[];
   manufacturer: Manufacturer | null;
   category: Category | null;
@@ -145,11 +146,38 @@ function normalizeLabel(label: string) {
   return label.trim().toLocaleLowerCase("ru-RU").replace(/\s+/gu, " ");
 }
 
+function hasPublicSpecificationContent(specification: ProductSpecification) {
+  return Boolean(
+    publicOptionalText(specification.label) &&
+    publicOptionalText(specification.value),
+  );
+}
+
+function hasApprovedProjectionOrigin(specification: ProductSpecification) {
+  return specification.recordOrigin === "legacy" ||
+    specification.recordOrigin === "structured_product_detail";
+}
+
+export function isGeneralProductSpecification(
+  specification: ProductSpecification,
+) {
+  return hasPublicSpecificationContent(specification) &&
+    specification.contentKind === "legacy_metadata" &&
+    hasApprovedProjectionOrigin(specification);
+}
+
 export function isTechnicalProductSpecification(
   specification: ProductSpecification,
 ) {
+  if (specification.contentKind || specification.recordOrigin) {
+    return hasPublicSpecificationContent(specification) &&
+      specification.contentKind === "technical_specification" &&
+      hasApprovedProjectionOrigin(specification);
+  }
+
   const label = normalizeLabel(specification.label);
-  return !TECHNICAL_METADATA_LABELS.has(label) &&
+  return hasPublicSpecificationContent(specification) &&
+    !TECHNICAL_METADATA_LABELS.has(label) &&
     !NON_TECHNICAL_MARKETING_LABELS.has(label);
 }
 
@@ -192,6 +220,9 @@ export function buildProductDetailExperience({
     description: publicOptionalText(product.description)
       ?? publicOptionalText(product.shortDescription),
     advantages: explicitAdvantages(product),
+    generalSpecifications: product.specifications
+      .filter(isGeneralProductSpecification)
+      .sort((left, right) => left.position - right.position),
     technicalSpecifications: product.specifications
       .filter(isTechnicalProductSpecification)
       .sort((left, right) => left.position - right.position),

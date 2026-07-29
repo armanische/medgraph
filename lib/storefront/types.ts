@@ -73,6 +73,8 @@ export interface ProductSpecification {
   value: string;
   unit: string | null;
   position: number;
+  contentKind?: "legacy_metadata" | "technical_specification";
+  recordOrigin?: "legacy" | "structured_product_detail";
 }
 
 export interface ProductMedia {
