@@ -35,6 +35,8 @@
     "test": "node --test tests/importers/*.test.ts"
   },
   "dependencies": {
+    "@supabase/ssr": "0.12.4",
+    "@supabase/supabase-js": "2.111.0",
     "next": "16.2.9",
     "react": "19.2.4",
     "react-dom": "19.2.4",

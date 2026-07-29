@@ -57,6 +57,16 @@ export const securityHeaders = [
   },
 ] as const;
 
+export const internalAuthHeaders = [
+  {
+    key: "Cache-Control",
+    value: "private, no-store, max-age=0, must-revalidate",
+  },
+  { key: "Pragma", value: "no-cache" },
+  { key: "Referrer-Policy", value: "no-referrer" },
+  { key: "X-Robots-Tag", value: "noindex, nofollow" },
+] as const;
+
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   async redirects() {
@@ -118,6 +128,11 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      ...[
+        "/auth/callback",
+        "/internal/login",
+        "/internal/review/hamilton-t1",
+      ].map((source) => ({ source, headers: [...internalAuthHeaders] })),
       ...previewHeaders,
     ];
   },
