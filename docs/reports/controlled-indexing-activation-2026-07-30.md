@@ -71,7 +71,7 @@ was changed.
 | `npm run build` (Turbopack) | PASS |
 | `npm run build -- --webpack` | PASS |
 | `git diff --check` | PASS |
-| Secret scan | Pending final pre-commit scan |
+| Secret scan | PASS — no credential values, tokens, cookies or connection strings in changed files |
 
 Known package-audit findings are pre-existing dependency advisories from the
 approved lockfile; no audit remediation or dependency change is included here.
@@ -83,17 +83,44 @@ read-only smoke performed after the implementation commit:
 
 | Evidence | Result |
 | --- | --- |
-| Implementation commit | To be recorded at commit time |
-| Deployment ID | To be recorded from Vercel Production result |
-| Deployment URL/status/time | To be recorded from Vercel Production result |
-| `/robots.txt` | Expected: HTTP 200, public allow, private disallow |
-| `/sitemap.xml` | Expected: HTTP 200, published projection only |
-| Public metadata | Expected: index/follow, apex canonical |
-| Internal/auth/API metadata | Expected: noindex and/or robots disallow |
-| Hamilton-T1 URL | Expected: present exactly once |
-| Unpublished/static Product URLs | Expected: absent |
-| RFQ route/API contract | Expected: `/request` 200, GET `/api/request` 405 |
-| Production database writes | None |
+| Implementation commit | `a6dcf375de913e1d0a84433249166272a4ad1dcf` |
+| Deployment ID | `dpl_H9TfiUxWyWDeDkZCFnBMkvfofvmm` |
+| Deployment URL/status/time | `https://medgraph-8bz9i4b36-medgraph.vercel.app`, READY/Production, `2026-07-29T22:28:11Z` |
+| Canonical alias | `https://cyber-medica.ru` |
+| `/robots.txt` | PASS — HTTP 200, public allow, private/legacy disallow, apex sitemap |
+| `/sitemap.xml` | PASS — HTTP 200, valid XML, 32 routes, published projection only |
+| Public metadata | PASS — homepage/catalog/Hamilton `index, follow`, apex canonical |
+| Internal/auth/API metadata | PASS — internal response `noindex, nofollow`; robots disallow `/internal/`, `/auth/`, `/api/` |
+| Hamilton-T1 URL | PASS — present exactly once at the approved slug |
+| Unpublished/static Product URLs | PASS — 78 unpublished Products, legacy knowledge and FS510 routes absent |
+| RFQ route/API contract | PASS — `/request` 200, GET `/api/request` 405 |
+| Production database writes | None — deployment and smoke were read-only |
+
+The deployment was executed from the clean worktree at the implementation
+commit above; Vercel inspection returned `target=production` and
+`readyState=READY`. The Vercel generated URL is retained as deployment
+evidence only; public canonical metadata and sitemap use the apex domain.
+
+## Production smoke details
+
+The canonical smoke returned HTTP 200 for `/`, `/catalog`, Hamilton-T1,
+`/manufacturers`, `/request`, `/robots.txt` and `/sitemap.xml`. The public
+`robots.txt` contained `Allow: /`, the three mandatory private disallows, and
+the apex sitemap. The sitemap contained 32 apex HTTPS URLs: 1 published
+Hamilton-T1 Product, 25 manufacturer reference pages and the six approved
+Storefront entry routes; it contained no `www`, Vercel, query, internal, auth,
+API, knowledge, static FS510 or other Product URL. Hamilton-T1 rendered three
+characteristic rows, six image tags for its three media assets, the approved
+autonomy claim, and zero occurrences of the retired `более 9 часов` claim.
+
+The internal review route redirected unauthenticated access to the internal
+login flow and returned `x-robots-tag: noindex, nofollow`; no internal content
+was exposed. `www.cyber-medica.ru` returned HTTP 301 to the apex and HTTP on
+the apex returned the expected permanent HTTPS redirect.
+
+Preview/default-deny behavior is covered by the exact-environment unit tests:
+Preview, local and mismatched-project bindings return global `Disallow: /` and
+`noindex`; no Preview deployment or Preview ENV was changed in this task.
 
 ## External webmaster registration
 
