@@ -10,9 +10,11 @@ and canonical Russian description were updated atomically, the model was set,
 SEO was added, and unsupported promotional source copy was removed from active
 content.
 
-No immutable revision, Human Review, Approval, Publication, migration,
-deployment, ENV, DNS or Storefront change was performed. Agilia SP MC remains
-draft/unpublished and is absent from the public sitemap.
+One immutable revision was subsequently created through the approved
+service-only publication RPC. Human Review, Approval and Publication remain
+pending; no migration, deployment, ENV, DNS or Storefront change was
+performed. Agilia SP MC remains unpublished and is absent from the public
+sitemap.
 
 ## Scope and stable identity
 
@@ -136,10 +138,11 @@ Only the approved active Product/SEO/description fields changed. The immutable
 source snapshot, source checksum, media, characteristics, category,
 manufacturer and application-area relation did not change.
 
-## Revision readiness preflight
+## Revision readiness preflight and revision evidence
 
-The dependency predicate was executed in a transaction that was explicitly
-rolled back. The revision writer was not called.
+The dependency predicate and ten deterministic candidate reads passed before
+the controlled write. The revision writer was called exactly once with the
+approved idempotency key `agilia-sp-mc-initial-production-revision-v1`.
 
 | Check | Result |
 | --- | --- |
@@ -159,7 +162,30 @@ rolled back. The revision writer was not called.
 | Immutable payload fingerprint | `3a00677a295110252d1f963c4296b099de78c36af4ea152d6e655944dedf0472` |
 | Product identity checksum | `7e17a8f60997dc9fae5843ef4857e6e634fbd6741baa6ff5e034842c956a9d7e` |
 | Deterministic candidate reads | 10/10; one distinct checksum |
-| Agilia revision/decision/approval/batch | 0/0/0/0 |
+| Agilia revision/decision/approval/batch before | 0/0/0/0 |
+| Agilia revision/decision/approval/batch after | 1/0/0/0 |
+
+Durable revision evidence:
+
+| Field | Value |
+| --- | --- |
+| Revision ID | `e09f69c9-fbc5-4f6e-a240-05372e959510` |
+| Review Item ID | `a656c3aa-47e8-4985-8d3a-c3af0478829c` |
+| Revision number | `1` |
+| Revision state | `in_review` |
+| Revision created at | `2026-07-30T17:45:25.635339+00:00` |
+| Response idempotent | `false` |
+| Current revision pointer | matches the Revision ID above |
+| Current approval pointer | `null` |
+| Candidate checksum | unchanged; `d14d6199641cec398e2d9ab48e86583fcab1575bd904e03d4fa4d7c0d8060747` |
+| Immutable payload checksum | `3a00677a295110252d1f963c4296b099de78c36af4ea152d6e655944dedf0472` |
+| Product identity checksum | `7e17a8f60997dc9fae5843ef4857e6e634fbd6741baa6ff5e034842c956a9d7e` |
+| Review Item state | `in_review` |
+
+The revision snapshot contains the Agilia SP MC Product identity, SEO title
+and description, one canonical `ru` description, 3 characteristics, 2 media,
+zero documents and zero registrations. No second locale or unrelated Agilia
+modification is present.
 
 Editorial warnings remain `missing_registration` and `missing_documents`.
 Under Publication Policy v2 they do not weaken structural integrity and do not
@@ -170,7 +196,8 @@ invent one.
 ## Production invariance
 
 - Products: 79; Published: 2; Unpublished: 77;
-- total revisions/decisions/approvals/batches: 2/2/2/2;
+- total revisions/decisions/approvals/batches: 3/2/2/2;
+- Agilia lifecycle: 1 revision, 1 Review Item, 0 decisions, 0 approvals, 0 batches;
 - Hamilton-T1 fingerprint remained
   `a6fdf82892c015b59e04badd0890aeb5bc209f7baaf78f1a42aba30e6a07d9f8`;
 - Mindray SV300 fingerprint remained
@@ -194,7 +221,6 @@ invent one.
 
 ## Next operation
 
-The next separately authorized task may create one immutable Product
-Publication revision from the recorded candidate checksum and then stop for
-Human Review. This report does not authorize or perform that operation.
-
+The next separately authorized operation is Human Review of Revision
+`e09f69c9-fbc5-4f6e-a240-05372e959510`. Approval and Publication remain
+forbidden until that review is completed through the approved workflow.
