@@ -1,4 +1,5 @@
 import {
+  AGILIA_REVIEW_PATH,
   APPROVED_REVIEWER,
   HAMILTON_REVIEW_PATH,
   MINDRAY_REVIEW_PATH,
@@ -8,6 +9,12 @@ import {
 const productionOrigins = new Set([
   "https://cyber-medica.ru",
   "https://medgraph-medgraph.vercel.app",
+]);
+
+const approvedReviewDestinations = new Set([
+  HAMILTON_REVIEW_PATH,
+  MINDRAY_REVIEW_PATH,
+  AGILIA_REVIEW_PATH,
 ]);
 
 export function normalizeEmail(value: string) {
@@ -81,7 +88,7 @@ export function approvedCallbackUrl(
     ? environment
     : destinationOrEnvironment;
   const callback = new URL(`${resolveInternalAuthOrigin(runtimeEnvironment)}/auth/callback`);
-  if (destination !== HAMILTON_REVIEW_PATH && destination !== MINDRAY_REVIEW_PATH) {
+  if (!approvedReviewDestinations.has(destination)) {
     throw new Error("Internal Auth destination is not approved.");
   }
   if (destination !== HAMILTON_REVIEW_PATH) callback.searchParams.set("next", destination);
@@ -103,7 +110,7 @@ export function isSafeCallbackRequest(
 
   const destinations = requestUrl.searchParams.getAll("next");
   if (destinations.length > 1) return false;
-  if (destinations.length === 1 && ![HAMILTON_REVIEW_PATH, MINDRAY_REVIEW_PATH].includes(destinations[0])) {
+  if (destinations.length === 1 && !approvedReviewDestinations.has(destinations[0])) {
     return false;
   }
 
@@ -116,7 +123,7 @@ export function safeInternalDestination() {
 }
 
 export function resolveInternalReviewDestination(value?: string | null) {
-  return value === MINDRAY_REVIEW_PATH ? MINDRAY_REVIEW_PATH : HAMILTON_REVIEW_PATH;
+  return value && approvedReviewDestinations.has(value) ? value : HAMILTON_REVIEW_PATH;
 }
 
 export function callbackDestination(requestUrl: URL) {

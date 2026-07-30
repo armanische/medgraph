@@ -3,6 +3,8 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 import {
+  AGILIA_REVIEW,
+  AGILIA_REVIEW_PATH,
   APPROVED_REVIEWER,
   HAMILTON_REVIEW,
   HAMILTON_REVIEW_PATH,
@@ -36,6 +38,10 @@ test("launch auth accepts only the approved Production origin and fixed destinat
   assert.equal(
     approvedCallbackUrl(MINDRAY_REVIEW_PATH, productionEnvironment),
     "https://medgraph-medgraph.vercel.app/auth/callback?next=%2Finternal%2Freview%2Fmindray-sv300",
+  );
+  assert.equal(
+    approvedCallbackUrl(AGILIA_REVIEW_PATH, productionEnvironment),
+    "https://medgraph-medgraph.vercel.app/auth/callback?next=%2Finternal%2Freview%2Fagilia-sp-mc",
   );
 
   assert.throws(() =>
@@ -73,6 +79,13 @@ test("callback accepts one authorization code and rejects token or redirect inpu
   assert.equal(
     isSafeCallbackRequest(
       new URL(`https://medgraph-medgraph.vercel.app/auth/callback?code=12345678&next=${encodeURIComponent(MINDRAY_REVIEW_PATH)}`),
+      productionEnvironment,
+    ),
+    true,
+  );
+  assert.equal(
+    isSafeCallbackRequest(
+      new URL(`https://medgraph-medgraph.vercel.app/auth/callback?code=12345678&next=${encodeURIComponent(AGILIA_REVIEW_PATH)}`),
       productionEnvironment,
     ),
     true,
@@ -117,7 +130,7 @@ test("server routes implement PKCE exchange, exact guard, clean redirect and har
   assert.match(callback, /signOut\(\{ scope: "local" \}\)/u);
   assert.match(callback, /cleanRedirect\(callbackDestination\(requestUrl\)\)/u);
   assert.doesNotMatch(callback, /access_token|refresh_token|token_hash/iu);
-  assert.match(proxy, /matcher:[\s\S]*\/internal\/review\/hamilton-t1[\s\S]*\/internal\/review\/mindray-sv300/u);
+  assert.match(proxy, /matcher:[\s\S]*\/internal\/review\/hamilton-t1[\s\S]*\/internal\/review\/mindray-sv300[\s\S]*\/internal\/review\/agilia-sp-mc/u);
   assert.match(proxy, /client\.auth\.getUser\(\)/u);
   assert.match(cookies, /path:\s*"\/"/u);
   assert.match(cookies, /sameSite:\s*"lax"/u);
@@ -127,6 +140,36 @@ test("server routes implement PKCE exchange, exact guard, clean redirect and har
   assert.match(config, /no-referrer/u);
   assert.match(config, /noindex, nofollow/u);
   assert.doesNotMatch(`${login}\n${callback}\n${proxy}`, /localStorage|sessionStorage/u);
+});
+
+test("Agilia review route is pinned to the current immutable revision", async () => {
+  const [action, page, component] = await Promise.all([
+    readFile("app/internal/review/agilia-sp-mc/actions.ts", "utf8"),
+    readFile("app/internal/review/agilia-sp-mc/page.tsx", "utf8"),
+    readFile("components/internal/AgiliaReviewConfirmation.tsx", "utf8"),
+  ]);
+
+  assert.match(page, /AGILIA_REVIEW\.revisionId/u);
+  assert.match(page, /AGILIA_REVIEW\.reviewItemId/u);
+  assert.match(page, /catalog_admin_product/u);
+  assert.match(page, /Accept-Profile.*cloud_api/u);
+  assert.match(page, /candidatePayloadChecksum/u);
+  assert.match(page, /candidateCharacteristics\.length !== 3/u);
+  assert.match(page, /candidateMedia\.length !== 2/u);
+  assert.doesNotMatch(page, /Accept-Profile.*cloud["']/u);
+  assert.doesNotMatch(page, /rest\/v1\/products\?/u);
+  assert.match(action, /AGILIA_REVIEW\.revisionId/u);
+  assert.match(action, /AGILIA_REVIEW\.payloadChecksum/u);
+  assert.match(action, /record_product_publication_review_decision_v1/u);
+  assert.doesNotMatch(action, /approve_product|publish_product|create_product_publication_revision/iu);
+  assert.equal((component.match(/<button/gu) ?? []).length, 1);
+  assert.match(component, /Подтвердить Human Review/u);
+  assert.equal(AGILIA_REVIEW.productId, "b7f07e3e-5cdd-4988-b2a4-423bed321f46");
+  assert.equal(AGILIA_REVIEW.revisionId, "e09f69c9-fbc5-4f6e-a240-05372e959510");
+  assert.equal(
+    AGILIA_REVIEW.candidatePayloadChecksum,
+    "d14d6199641cec398e2d9ab48e86583fcab1575bd904e03d4fa4d7c0d8060747",
+  );
 });
 
 test("Mindray review route is pinned to the current immutable revision", async () => {

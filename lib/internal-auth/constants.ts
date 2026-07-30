@@ -1,6 +1,7 @@
 export const INTERNAL_AUTH_CALLBACK_PATH = "/auth/callback";
 export const HAMILTON_REVIEW_PATH = "/internal/review/hamilton-t1";
 export const MINDRAY_REVIEW_PATH = "/internal/review/mindray-sv300";
+export const AGILIA_REVIEW_PATH = "/internal/review/agilia-sp-mc";
 export const INTERNAL_LOGIN_PATH = "/internal/login";
 
 export const APPROVED_REVIEWER = Object.freeze({
@@ -37,6 +38,22 @@ export const MINDRAY_REVIEW = Object.freeze({
     "bd7b23d845cf0dd2a5a5f53e9a5f2165b3c13af12e1adb0e93a39b34ab537cc8",
   rationale:
     "Reviewed immutable Mindray SV300 revision 1. Product identity, canonical Russian content, SEO, characteristics, media and source-grounded claims match the current publication candidate. Warnings missing_registration and missing_documents are acknowledged as non-blocking for this lifecycle stage.",
+});
+
+export const AGILIA_REVIEW = Object.freeze({
+  productId: "b7f07e3e-5cdd-4988-b2a4-423bed321f46",
+  productName: "Fresenius Kabi Agilia SP MC",
+  revisionId: "e09f69c9-fbc5-4f6e-a240-05372e959510",
+  reviewItemId: "a656c3aa-47e8-4985-8d3a-c3af0478829c",
+  revisionNumber: 1,
+  candidatePayloadChecksum:
+    "d14d6199641cec398e2d9ab48e86583fcab1575bd904e03d4fa4d7c0d8060747",
+  payloadChecksum:
+    "3a00677a295110252d1f963c4296b099de78c36af4ea152d6e655944dedf0472",
+  productIdentityChecksum:
+    "7e17a8f60997dc9fae5843ef4857e6e634fbd6741baa6ff5e034842c956a9d7e",
+  rationale:
+    "Reviewed immutable Fresenius Kabi Agilia SP MC revision 1. Product identity, canonical Russian content, SEO, characteristics, media and source-grounded claims match the current publication candidate. Warnings missing_registration and missing_documents are acknowledged as non-blocking for this lifecycle stage.",
 });
 
 export const AUTH_ERROR_CODES = Object.freeze({

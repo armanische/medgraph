@@ -4,8 +4,8 @@ import { redirect } from "next/navigation";
 
 import {
   AUTH_ERROR_CODES,
+  HAMILTON_REVIEW_PATH,
   INTERNAL_LOGIN_PATH,
-  MINDRAY_REVIEW_PATH,
 } from "@/lib/internal-auth/constants";
 import {
   approvedCallbackUrl,
@@ -22,9 +22,9 @@ function formField(formData: FormData, name: string) {
 export async function requestInternalMagicLink(formData: FormData) {
   const email = formField(formData, "email");
   const destination = resolveInternalReviewDestination(formField(formData, "next"));
-  const destinationQuery = destination === MINDRAY_REVIEW_PATH
-    ? `&next=${encodeURIComponent(destination)}`
-    : "";
+  const destinationQuery = destination === HAMILTON_REVIEW_PATH
+    ? ""
+    : `&next=${encodeURIComponent(destination)}`;
   if (!isApprovedLoginEmail(email)) {
     redirect(`${INTERNAL_LOGIN_PATH}?status=sent${destinationQuery}`);
   }
@@ -35,7 +35,7 @@ export async function requestInternalMagicLink(formData: FormData) {
       email,
       options: {
         shouldCreateUser: false,
-        emailRedirectTo: destination === "/internal/review/hamilton-t1"
+        emailRedirectTo: destination === HAMILTON_REVIEW_PATH
           ? approvedCallbackUrl()
           : approvedCallbackUrl(destination),
       },
