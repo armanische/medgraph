@@ -82,6 +82,16 @@
   remain open. Final A1 is 0; no patch, revision, review, approval or
   publication write was performed. See [Group A Batch Content
   Preparation](../reports/group-a-batch-content-preparation-2026-07-31.md).
+- Group A revised batch execution (2026-07-31): Product Owner policy accepted
+  media without explicit contradiction, removed uncertain imported claims and
+  treated missing registration as a warning. All 33 High-confidence Products
+  received atomic Catalog Admin patches and immutable revision 1. No Human
+  Review, Approval or Publication was performed. See [batch execution](../reports/group-a-minimal-batch-execution-2026-07-31.md)
+  and [revision run](../reports/group-a-minimal-revision-run-2026-07-31.md).
+- Generic Publication Review Queue (2026-07-31): added generic
+  `/internal/review` and `/internal/review/[revisionId]` routes with existing
+  authenticated access and cloud_api reads. Runtime deployment is pending
+  separate approval.
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).

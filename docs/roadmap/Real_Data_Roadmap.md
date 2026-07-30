@@ -48,6 +48,9 @@ has an explicit launch-blocking flag.
 | Catalog Publication Wave 1 | not executed — Group A has 33 model-resolved candidates; content/media preparation pending | Нет |
 | Authoritative model resolution — remaining 76 Products | completed — 33 High, 7 Product Owner decisions, 36 unresolved; content preparation next | Нет |
 | Group A media/claims validation | in progress — 33 candidates require visual media and claim review; no patches | Нет |
+| Group A revised minimal content batch | completed — 33 canonical patches and 33 immutable revisions; no Human Review or Publication | Нет |
+| Generic Publication Review Queue | implemented — `/internal/review` and `/internal/review/[revisionId]`; deployment pending | Нет |
+| Group A Human Review | ready — Product Owner decision required; no automatic Review | Нет |
 | Internal Auth/RBAC corrective | backlog | Нет |
 | Review Workspace | backlog | Нет |
 | Catalog Admin evolution | backlog | Нет |

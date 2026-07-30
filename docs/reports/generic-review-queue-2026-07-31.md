@@ -2,11 +2,17 @@
 
 ## Status
 
-**NOT IMPLEMENTED.** There are no current `in_review` revisions to display.
-Implementing and deploying a queue in this task would add runtime scope before
-the content and media gates pass.
+**IMPLEMENTED (not deployed).** The generic routes are now present:
 
-The next runtime task, after a non-empty A1 revision set exists, should provide
-the generic routes `/internal/review` and `/internal/review/[revisionId]` using
-the existing authenticated PKCE/SSR and `cloud_api` boundary. No hardcoded
-Product route or direct `cloud` schema access is authorized.
+- `/internal/review`
+- `/internal/review/[revisionId]`
+
+They use the existing authenticated PKCE/SSR session and the service-only
+`cloud_api.catalog_admin_product` / `cloud_api.catalog_admin_references`
+readers. The revision manifest is data for the 33 controlled revision results,
+not a Product-specific route. Unknown ids and any Product state drift return a
+safe empty queue or 404. No direct `cloud` schema access, new RPC, migration or
+automatic Human Review is present.
+
+The Human Review action is available only after the reviewer explicitly submits
+the detail form; this task did not submit any decision.
