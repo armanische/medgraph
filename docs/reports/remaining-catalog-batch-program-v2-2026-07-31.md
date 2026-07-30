@@ -1,0 +1,54 @@
+# Remaining Catalog Batch Program v2 — 2026-07-31
+
+## Scope
+
+This report records the revised policy execution for the 33 High-confidence
+Products from the authoritative model-resolution artifact. The initial
+validation report remains historical; its visual exact-match and exact-RU
+requirements were superseded by the Product Owner rule that only explicit
+media contradiction is a blocker and missing registration is a warning.
+
+## Final execution state
+
+| Area | Result |
+| --- | ---: |
+| Initial Group A | 33 |
+| Eligible under revised policy | 33 |
+| Excluded | 0 |
+| Catalog patches | 33/33 |
+| Revision preflight | 33/33 |
+| Revisions created | 33 |
+| Human Review decisions | 0 |
+| Approvals | 0 |
+| Publications | 0 |
+| Generic Review Queue | implemented, not deployed |
+
+All 33 records are now ready for the Product Owner's Human Review. The queue
+is generic and uses `/internal/review` plus `/internal/review/[revisionId]`;
+there are no per-Product routes.
+
+## Wave 1 proposal
+
+The following ten are proposed for the first manual review order based on
+commercial relevance and existing media completeness. This is a proposal only;
+no Review or Approval was performed.
+
+1. BeneVision N1 — revision `df13433f-7461-40fd-9c9c-e026254f9ec4`
+2. Instilar 1428 — revision `0fcedfbd-bc41-41e2-b6c5-fadae6ef4918`
+3. BeneVision N17/N15/N12 — revision `3a510da7-13b9-40ae-9791-2d7475577dd3`
+4. Hamilton-C1 — revision `45f10d39-7204-4cef-bee4-a6e644671a08`
+5. Hamilton-C3 — revision `cdce4e6c-3788-4e43-b73a-d61c870bdd71`
+6. BeneHeart D3 — revision `c811034f-cb9d-44ac-8cf7-b2f6cb223c1e`
+7. Vacus 7308 — revision `d96aade7-9733-41ad-965f-b60ddcd9187e`
+8. Bionet BM3 — revision `6c61405f-2765-484d-8dbb-27581e12397e`
+9. Storm 5800 — revision `f150f4bc-c8d7-4069-ab45-c73c15d091dc`
+10. GE Versana Essential — revision `a84e9afe-0245-429a-ba4a-acc9926d49d0`
+
+All proposed entries retain the same warnings:
+`missing_registration`, `missing_documents`.
+
+## Next manual action
+
+Product Owner opens `/internal/review`, reviews evidence, and explicitly
+submits Human Review one revision at a time. Approval and Publication remain
+separate operations and are not enabled by this batch.
