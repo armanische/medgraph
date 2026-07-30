@@ -2,11 +2,11 @@ import { type NextRequest, NextResponse } from "next/server";
 
 import {
   AUTH_ERROR_CODES,
-  HAMILTON_REVIEW_PATH,
   INTERNAL_LOGIN_PATH,
 } from "@/lib/internal-auth/constants";
 import {
   isApprovedReviewer,
+  callbackDestination,
   isSafeCallbackRequest,
   resolveInternalAuthOrigin,
 } from "@/lib/internal-auth/policy";
@@ -57,7 +57,7 @@ export async function GET(request: NextRequest) {
   }
 
   return applyInternalAuthCookies(
-    cleanRedirect(HAMILTON_REVIEW_PATH),
+    cleanRedirect(callbackDestination(requestUrl)),
     pendingCookies,
     pendingHeaders,
   );

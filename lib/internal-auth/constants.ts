@@ -1,5 +1,6 @@
 export const INTERNAL_AUTH_CALLBACK_PATH = "/auth/callback";
 export const HAMILTON_REVIEW_PATH = "/internal/review/hamilton-t1";
+export const MINDRAY_REVIEW_PATH = "/internal/review/mindray-sv300";
 export const INTERNAL_LOGIN_PATH = "/internal/login";
 
 export const APPROVED_REVIEWER = Object.freeze({
@@ -22,6 +23,20 @@ export const HAMILTON_REVIEW = Object.freeze({
     "495e2a41c1527df3748e6ac0cc770bc4321d8044f121416e6792b2597fc3aea2",
   rationale:
     "Reviewed immutable Hamilton-T1 revision 1. Product identity, canonical Russian content, SEO, characteristics, media and approved claims match the current publication candidate. Warnings missing_documents and missing_registration are acknowledged as non-blocking for this lifecycle stage.",
+});
+
+export const MINDRAY_REVIEW = Object.freeze({
+  productId: "00e3f62b-797b-40ff-bf9f-9d1750828ca4",
+  productName: "Mindray SV300",
+  revisionId: "8088bdda-cad1-4341-8780-528ba2338565",
+  reviewItemId: "28dc7e10-46b8-4202-928f-979a647aeb78",
+  revisionNumber: 1,
+  candidatePayloadChecksum:
+    "2f95e154efaecf4daf3a9a475572059e5440db58bd8c0a13b0de5eff13fc5d4c",
+  payloadChecksum:
+    "bd7b23d845cf0dd2a5a5f53e9a5f2165b3c13af12e1adb0e93a39b34ab537cc8",
+  rationale:
+    "Reviewed immutable Mindray SV300 revision 1. Product identity, canonical Russian content, SEO, characteristics, media and source-grounded claims match the current publication candidate. Warnings missing_registration and missing_documents are acknowledged as non-blocking for this lifecycle stage.",
 });
 
 export const AUTH_ERROR_CODES = Object.freeze({

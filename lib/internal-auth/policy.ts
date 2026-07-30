@@ -1,6 +1,7 @@
 import {
   APPROVED_REVIEWER,
   HAMILTON_REVIEW_PATH,
+  MINDRAY_REVIEW_PATH,
   SENSITIVE_AUTH_PARAMETERS,
 } from "./constants.ts";
 
@@ -68,9 +69,23 @@ export function resolveInternalAuthOrigin(
 }
 
 export function approvedCallbackUrl(
+  destinationOrEnvironment:
+    | string
+    | Readonly<Record<string, string | undefined>> = HAMILTON_REVIEW_PATH,
   environment: Readonly<Record<string, string | undefined>> = process.env,
 ) {
-  return `${resolveInternalAuthOrigin(environment)}/auth/callback`;
+  const destination = typeof destinationOrEnvironment === "string"
+    ? destinationOrEnvironment
+    : HAMILTON_REVIEW_PATH;
+  const runtimeEnvironment = typeof destinationOrEnvironment === "string"
+    ? environment
+    : destinationOrEnvironment;
+  const callback = new URL(`${resolveInternalAuthOrigin(runtimeEnvironment)}/auth/callback`);
+  if (destination !== HAMILTON_REVIEW_PATH && destination !== MINDRAY_REVIEW_PATH) {
+    throw new Error("Internal Auth destination is not approved.");
+  }
+  if (destination !== HAMILTON_REVIEW_PATH) callback.searchParams.set("next", destination);
+  return callback.toString();
 }
 
 export function isSafeCallbackRequest(
@@ -81,8 +96,14 @@ export function isSafeCallbackRequest(
   if (requestUrl.hash) return false;
 
   const keys = [...requestUrl.searchParams.keys()].map((key) => key.toLowerCase());
-  if (keys.some((key) => key !== "code")) return false;
+  if (keys.some((key) => key !== "code" && key !== "next")) return false;
   if (requestUrl.searchParams.getAll("code").length !== 1) {
+    return false;
+  }
+
+  const destinations = requestUrl.searchParams.getAll("next");
+  if (destinations.length > 1) return false;
+  if (destinations.length === 1 && ![HAMILTON_REVIEW_PATH, MINDRAY_REVIEW_PATH].includes(destinations[0])) {
     return false;
   }
 
@@ -92,6 +113,14 @@ export function isSafeCallbackRequest(
 
 export function safeInternalDestination() {
   return HAMILTON_REVIEW_PATH;
+}
+
+export function resolveInternalReviewDestination(value?: string | null) {
+  return value === MINDRAY_REVIEW_PATH ? MINDRAY_REVIEW_PATH : HAMILTON_REVIEW_PATH;
+}
+
+export function callbackDestination(requestUrl: URL) {
+  return resolveInternalReviewDestination(requestUrl.searchParams.get("next"));
 }
 
 export function redactAuthText(value: string) {

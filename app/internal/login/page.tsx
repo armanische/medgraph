@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { connection } from "next/server";
 
 import { requestInternalMagicLink } from "./actions";
+import { resolveInternalReviewDestination } from "@/lib/internal-auth/policy";
 
 export const dynamic = "force-dynamic";
 
@@ -19,6 +20,9 @@ export default async function InternalLoginPage({ searchParams }: LoginPageProps
   const parameters = await searchParams;
   const sent = parameters.status === "sent";
   const denied = typeof parameters.error === "string";
+  const destination = resolveInternalReviewDestination(
+    typeof parameters.next === "string" ? parameters.next : null,
+  );
 
   return (
     <main className="min-h-[70vh] bg-slate-50">
@@ -47,6 +51,7 @@ export default async function InternalLoginPage({ searchParams }: LoginPageProps
           ) : null}
 
           <form action={requestInternalMagicLink} className="mt-6 space-y-4">
+            <input type="hidden" name="next" value={destination} />
             <label className="block text-sm font-medium text-slate-800" htmlFor="internal-email">
               Email
             </label>
