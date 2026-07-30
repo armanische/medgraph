@@ -74,6 +74,36 @@ test("thanks page is noindex with an explicit canonical and absent from sitemap"
   assert.doesNotMatch(sitemap, /url\(["']\/thanks["']\)/);
 });
 
+test("thanks page keeps a private single-action confirmation contract", async () => {
+  const [thanks, requestForm, requestRoute] = await Promise.all([
+    readFile("app/thanks/page.tsx", "utf8"),
+    readFile("components/request/RequestForm.tsx", "utf8"),
+    readFile("app/api/request/route.ts", "utf8"),
+  ]);
+
+  assert.match(thanks, /<h1[^>]*>[\s\S]*Заявка отправлена[\s\S]*<\/h1>/u);
+  assert.match(thanks, /role="status"/u);
+  assert.match(thanks, /aria-live="polite"/u);
+  assert.match(thanks, /aria-hidden="true"/u);
+  assert.match(thanks, /href="\/catalog"/u);
+  assert.match(thanks, /Вернуться в каталог/u);
+  assert.doesNotMatch(
+    thanks,
+    /База знаний|Knowledge Base|knowledge-base|knowledgeBase/iu,
+  );
+  assert.doesNotMatch(thanks, /href="\/knowledge\//u);
+  assert.doesNotMatch(
+    thanks,
+    /requestId|searchParams|email клиента|телефон|organization|RFQ payload/iu,
+  );
+  assert.match(thanks, /w-full sm:w-auto/u);
+  assert.match(thanks, /!min-h-\[44px\]/u);
+  assert.match(thanks, /max-w-xl/u);
+  assert.match(thanks, /lg:min-h-\[calc\(100svh-14\.875rem\)\]/u);
+  assert.match(requestForm, /router\.push\("\/thanks"\)/u);
+  assert.doesNotMatch(requestRoute, /export async function GET/u);
+});
+
 test("disabled internal metadata reveals no route title and remains noindex", () => {
   const metadata = internalRouteMetadata(false, "Sensitive Internal Workspace");
   assert.equal(metadata.title, "Страница не найдена");

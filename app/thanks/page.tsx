@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Заявка принята",
+  title: "Заявка отправлена",
   description:
-    "CyberMedica получила заявку и подготовит ответ по изделию, документам или коммерческому предложению.",
+    "CyberMedica получила заявку и свяжется с клиентом, чтобы уточнить детали и подготовить предложение.",
   alternates: {
     canonical: "/thanks",
   },
@@ -16,41 +16,40 @@ export const metadata: Metadata = {
 
 export default function ThanksPage() {
   return (
-    <main className="min-h-[70vh] bg-cm-canvas">
-      <section className="cm-container py-16">
-        <div className="mx-auto max-w-2xl cm-card p-8 text-center sm:p-10">
-          <div className="mx-auto flex size-10 items-center justify-center rounded-full border border-[var(--cm-verified-border)] bg-cm-verified-soft text-cm-verified">
-            ✓
-          </div>
-          <div className="cm-label mt-5 !text-cm-verified">Заявка зарегистрирована</div>
-          <h1 className="mt-2 text-2xl font-extrabold tracking-[-0.025em]">
-            Спасибо, заявка принята
-          </h1>
-
-          <p className="mx-auto mt-3 max-w-lg text-[13px] leading-7 text-cm-slate">
-            Мы получили запрос. Специалист уточнит задачу, проверит документы и
-            подготовит ответ по изделию, аналогам или коммерческому предложению.
-          </p>
-
-          <div className="mx-auto mt-7 grid max-w-lg gap-2 text-left text-xs text-cm-slate sm:grid-cols-3">
-            {["Проверим параметры", "Сопоставим документы", "Вернёмся с ответом"].map((item) => (
-              <div key={item} className="rounded-md border border-[var(--cm-rule)] bg-cm-surface-low/70 p-3">
-                {item}
-              </div>
-            ))}
+    <main className="bg-cm-canvas">
+      <section className="cm-container grid min-h-[58svh] place-items-center py-10 sm:min-h-[60svh] sm:py-14 lg:min-h-[calc(100svh-14.875rem)] lg:py-16">
+        <div className="cm-card w-full max-w-xl px-6 py-10 text-center sm:px-10 sm:py-12">
+          <div
+            aria-hidden="true"
+            className="mx-auto flex size-14 items-center justify-center rounded-full border border-[var(--cm-verified-border)] bg-cm-verified-soft text-cm-verified"
+          >
+            <svg viewBox="0 0 24 24" fill="none" className="size-7">
+              <path
+                d="m7 12 3.2 3.2L17.5 8"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
           </div>
 
-          <div className="mt-8 flex flex-wrap justify-center gap-2">
-            <Link href="/catalog" className="cm-button-secondary">
-              Каталог
-            </Link>
-            <Link href="/knowledge/fs510" className="cm-button-secondary">
-              База знаний
-            </Link>
-            <Link href="/" className="cm-button-primary">
-              Главная
-            </Link>
+          <div className="mt-6" role="status" aria-live="polite">
+            <h1 className="cm-balanced text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] sm:text-3xl">
+              Заявка отправлена
+            </h1>
+            <p className="mx-auto mt-4 max-w-md text-sm leading-7 text-cm-slate">
+              Спасибо! Мы получили вашу заявку. Специалист CyberMedica свяжется
+              с вами, чтобы уточнить детали и подготовить предложение.
+            </p>
           </div>
+
+          <Link
+            href="/catalog"
+            className="cm-button-primary mt-8 !min-h-[44px] w-full sm:w-auto sm:min-w-52"
+          >
+            Вернуться в каталог
+          </Link>
         </div>
       </section>
     </main>

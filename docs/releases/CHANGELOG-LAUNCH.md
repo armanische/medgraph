@@ -31,6 +31,10 @@
   public crawling while disallowing internal, Auth, API, admin, diagnostic and
   legacy knowledge surfaces. Sitemap is generated from the published
   projection only; Hamilton-T1 is the sole Product URL.
+- RFQ confirmation polish (2026-07-30): `/thanks` now uses one compact,
+  accessible confirmation state and one primary return-to-catalog action. The
+  obsolete Knowledge Base action was removed from this page only; the RFQ API,
+  Product binding and indexing contract remain unchanged.
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).

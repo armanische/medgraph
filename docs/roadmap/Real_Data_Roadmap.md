@@ -44,8 +44,8 @@ has an explicit launch-blocking flag.
 | Targeted Product Import Contract | backlog | Нет |
 | Publication of remaining 78 Products | backlog | Нет |
 | Richer technical characteristics | backlog | Нет |
-| Thank You Page polish | backlog | Нет |
-| Hide Knowledge Base | backlog | Нет |
+| Thank You Page polish | completed — compact accessible confirmation | Нет |
+| Hide Knowledge Base | completed on RFQ confirmation only | Нет |
 | General responsive/UI polish | backlog | Нет |
 
 The `Блокирует запуск` value describes the already-completed 2026-07-29 launch;
