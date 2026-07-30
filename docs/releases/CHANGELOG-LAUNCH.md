@@ -35,6 +35,12 @@
   accessible confirmation state and one primary return-to-catalog action. The
   obsolete Knowledge Base action was removed from this page only; the RFQ API,
   Product binding and indexing contract remain unchanged.
+- Canonical Thank You reconciliation (2026-07-30): the already-deployed
+  `a697473e057a8ffe945c22fc364ca922bd1e13bb` was fast-forwarded into both
+  `main` and `production`; no new deployment or database write was performed.
+- Second-product curation (2026-07-30): all 78 unpublished Production
+  Products were audited read-only. No Product was published; Mindray SV300 was
+  selected for the next content-preparation pass.
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).

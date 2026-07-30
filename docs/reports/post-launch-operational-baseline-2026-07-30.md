@@ -158,6 +158,24 @@ Hamilton missing from the projection, a second published Product, or any
 unexpected database write outside the RFQ integration path. Re-run this
 read-only baseline after the first 24 hours and before enabling indexing.
 
+## Post-launch curation backlog — 2026-07-30
+
+The complete read-only audit of the 78 unpublished Production Products is
+recorded in [Second Product Selection](second-product-selection-2026-07-30.md).
+No Product data, review, approval or publication state was changed.
+
+Next operational content task, after Product Owner approval, is **Mindray
+SV300** (`source_uid 401374530532`). The task must verify the model against an
+official source, remove or substantiate promotional claims, generate SEO from
+confirmed facts, and then use the existing immutable Revision → Human Review →
+Approval → Publication workflow. Registration and document gaps remain
+warnings under Publication Policy v2; they must not be filled with guesses.
+
+The remaining four shortlist candidates are B. Braun Dialog+, Olympus CV-190
+PLUS EVIS EXERA III, Canon Aplio i700 and Comen Star5000. Their preparation is
+backlog work and no automatic or batch publication is authorized by this
+report.
+
 ## Release decision
 
 Backup and restore: PASS. Public RFQ intake and webhook acceptance: PASS with

@@ -38,6 +38,9 @@ has an explicit launch-blocking flag.
 | RFQ POST verification on canonical domain | completed — test-only | Нет |
 | Mail delivery confirmation after DNS cutover | completed in pre-launch downstream gate | Нет |
 | Merge/reconcile deployed launch commits into canonical branch | completed — fast-forward | Нет |
+| Canonical Thank You reconciliation | completed — `main` and `production` aligned at `a697473e` | Нет |
+| Read-only audit of remaining 78 Products | completed — closed shortlist recorded | Нет |
+| Second Product content preparation — Mindray SV300 | next — Product Owner approval required | Нет |
 | Internal Auth/RBAC corrective | backlog | Нет |
 | Review Workspace | backlog | Нет |
 | Catalog Admin evolution | backlog | Нет |
