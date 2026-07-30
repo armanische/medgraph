@@ -77,6 +77,11 @@
   short Product Owner decision queue and left 36 unresolved. No Product or
   lifecycle write was performed. See [Authoritative Model
   Resolution](../reports/remaining-catalog-authoritative-model-resolution-2026-07-31.md).
+- Group A validation (2026-07-31): all 33 model-resolved candidates passed
+  automated image URL checks, but exact visual model matching and claims review
+  remain open. Final A1 is 0; no patch, revision, review, approval or
+  publication write was performed. See [Group A Batch Content
+  Preparation](../reports/group-a-batch-content-preparation-2026-07-31.md).
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).

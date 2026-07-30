@@ -105,6 +105,10 @@ Owner questions; unresolved or contaminated cases remain Group C. After a
 non-empty Group A is established, prepare a consolidated patch preview before
 any write.
 
+The 2026-07-31 authoritative resolution found 33 model-high candidates. The
+follow-up media/claims gate kept A1 at zero because all 33 require visual media
+review; see [Group A Batch Content Preparation](./group-a-batch-content-preparation-2026-07-31.md).
+
 ## Production invariance
 
 The final read-only check remained 79 Products, 3 Published and 76 Unpublished;

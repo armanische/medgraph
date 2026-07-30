@@ -27,6 +27,7 @@ canonical reconciliation point.
 | Remaining catalog batch audit | [`remaining-catalog-batch-preparation-2026-07-30.md`](./remaining-catalog-batch-preparation-2026-07-30.md) | 76 unpublished Products inventoried read-only; Group A 0, Group B 0, Group C 76; no lifecycle writes |
 | Catalog Publication Wave 1 | [`catalog-publication-wave-1-2026-07-30.md`](./catalog-publication-wave-1-2026-07-30.md) | not executed; no Group A targets |
 | Authoritative model resolution | [`remaining-catalog-authoritative-model-resolution-2026-07-31.md`](./remaining-catalog-authoritative-model-resolution-2026-07-31.md) | 33 High-confidence, 7 Product Owner decisions, 36 unresolved; no lifecycle writes |
+| Group A validation | [`group-a-batch-content-preparation-2026-07-31.md`](./group-a-batch-content-preparation-2026-07-31.md) | 33 model-resolved candidates; media visual review pending; A1 0; no patches or revisions |
 | ENV | Vercel Production ENV contract | names/scope recorded; secret values intentionally omitted |
 | DNS/TLS | REG.RU/Vercel records in the launch baseline | independently verified at closure |
 | Public smoke | Canonical domain and generated deployment checks | HTTP/TLS checks PASS; one test-only RFQ accepted by API/webhook |

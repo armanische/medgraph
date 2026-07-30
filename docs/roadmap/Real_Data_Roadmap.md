@@ -47,6 +47,7 @@ has an explicit launch-blocking flag.
 | Remaining catalog batch audit | completed — 76 Products inventoried; model evidence pending; no lifecycle writes | Нет |
 | Catalog Publication Wave 1 | not executed — Group A has 33 model-resolved candidates; content/media preparation pending | Нет |
 | Authoritative model resolution — remaining 76 Products | completed — 33 High, 7 Product Owner decisions, 36 unresolved; content preparation next | Нет |
+| Group A media/claims validation | in progress — 33 candidates require visual media and claim review; no patches | Нет |
 | Internal Auth/RBAC corrective | backlog | Нет |
 | Review Workspace | backlog | Нет |
 | Catalog Admin evolution | backlog | Нет |
