@@ -40,7 +40,8 @@ has an explicit launch-blocking flag.
 | Merge/reconcile deployed launch commits into canonical branch | completed — fast-forward | Нет |
 | Canonical Thank You reconciliation | completed — `main` and `production` aligned at `a697473e` | Нет |
 | Read-only audit of remaining 78 Products | completed — closed shortlist recorded | Нет |
-| Second Product content preparation — Mindray SV300 | next — Product Owner approval required | Нет |
+| Second Product content preparation — Mindray SV300 | completed — source-grounded content patch; revision/review pending | Нет |
+| Mindray SV300 immutable revision and Human Review | next — separate controlled workflow | Нет |
 | Internal Auth/RBAC corrective | backlog | Нет |
 | Review Workspace | backlog | Нет |
 | Catalog Admin evolution | backlog | Нет |

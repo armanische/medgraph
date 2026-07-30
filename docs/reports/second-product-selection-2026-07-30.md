@@ -202,21 +202,34 @@ Shortlist покрывает пять разных категорий и про�
   следующий human pass ограничивается проверкой модели, claims, SEO и
   обязательным review lifecycle.
 
+### Content-preparation result — 2026-07-30
+
+The authorized Catalog Admin content patch was completed in Production through
+the existing atomic Product/`ru` description contract. The Product now has
+`model = SV300`, source-grounded Russian content, SEO title/description and a
+read-only candidate payload with 3 characteristics and 3 media. The candidate
+checksum was stable across 10/10 reads.
+
+The Product remains draft/unpublished. No revision, Review, Approval or
+Publication was executed. The detailed evidence is in
+[Mindray SV300 Content Preparation](./mindray-sv300-content-preparation-2026-07-30.md).
+
 ### Remaining blockers and preparation plan
 
 | Finding | Classification | Planned human action |
 | --- | --- | --- |
-| Empty `products.model` | Structural blocker | подтвердить модель по официальному источнику; не выводить её из title автоматически |
+| Empty `products.model` | **Closed** | `model = SV300` written through the approved concurrency-safe Catalog Admin patch |
 | No Human Review / revision | Workflow blocker | создать immutable revision и пройти штатный Human Review после Product Owner approval |
 | No Approval | Workflow blocker | выполнить только после положительного Human Review |
 | Missing registration | Warning | зафиксировать как warning; не добавлять значение без evidence |
 | Missing documents | Warning | зафиксировать как warning; найти официальный документ или оставить warning |
-| SEO отсутствует | Editorial gap | сформировать title/description только по подтверждённым характеристикам |
-| Promotional claims in draft text | Editorial risk | проверить по официальным источникам и удалить неподтверждённые claims |
+| SEO отсутствует | **Closed** | source-grounded title and description written by the approved patch |
+| Promotional claims in draft text | **Closed** | unsupported active claims removed; no battery, autonomy, dimensions or compatibility claims added |
 
-**Не выполнялось:** ни один из перечисленных шагов, Review, Approval или
-Publication. Следующая допустимая задача — content preparation Mindray SV300
-после Product Owner approval; затем штатный Human Review.
+**После подготовки:** structural content blockers = 0; editorial warnings
+`missing_registration` and `missing_documents` remain visible. Review,
+Approval и Publication не выполнялись. Следующая допустимая задача — создание
+одной immutable revision для Mindray SV300, затем штатный Human Review.
 
 ## No-write and scope confirmation
 

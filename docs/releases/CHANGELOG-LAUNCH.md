@@ -41,6 +41,12 @@
 - Second-product curation (2026-07-30): all 78 unpublished Production
   Products were audited read-only. No Product was published; Mindray SV300 was
   selected for the next content-preparation pass.
+- Mindray SV300 content preparation (2026-07-30): one authorized atomic
+  Catalog Admin patch synchronized the Product and canonical Russian
+  description, set the confirmed model, added source-grounded SEO, and removed
+  unsupported active claims. The Product remains draft/unpublished; no
+  revision, Review, Approval or Publication was executed. See [Mindray SV300
+  Content Preparation](../reports/mindray-sv300-content-preparation-2026-07-30.md).
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).
