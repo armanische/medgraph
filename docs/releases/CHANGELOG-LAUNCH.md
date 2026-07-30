@@ -72,6 +72,11 @@
   evidence, so all remain Group C pending identity resolution; no patch,
   revision, review, approval or publication write was performed. See
   [Remaining Catalog Batch Preparation](../reports/remaining-catalog-batch-preparation-2026-07-30.md).
+- Authoritative model resolution (2026-07-31): official manufacturer and
+  documentation checks resolved 33 Products to High confidence, placed 7 in a
+  short Product Owner decision queue and left 36 unresolved. No Product or
+  lifecycle write was performed. See [Authoritative Model
+  Resolution](../reports/remaining-catalog-authoritative-model-resolution-2026-07-31.md).
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).
