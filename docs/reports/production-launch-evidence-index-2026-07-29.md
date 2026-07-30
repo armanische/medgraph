@@ -24,6 +24,8 @@ canonical reconciliation point.
 | Third-product audit | [`third-product-selection-2026-07-30.md`](./third-product-selection-2026-07-30.md) | 77 unpublished Products audited read-only; Agilia SP MC selected for a separate controlled preparation task |
 | Agilia SP MC content preparation | [`agilia-sp-mc-content-preparation-2026-07-30.md`](./agilia-sp-mc-content-preparation-2026-07-30.md) | exact model resolution, one controlled Catalog Admin patch and revision-readiness preflight; no lifecycle write |
 | Agilia SP MC publication | [`agilia-sp-mc-publication-2026-07-30.md`](./agilia-sp-mc-publication-2026-07-30.md) | exact authenticated Decision, Approval and one-Product batch; projection version 5; Published 3 |
+| Remaining catalog batch audit | [`remaining-catalog-batch-preparation-2026-07-30.md`](./remaining-catalog-batch-preparation-2026-07-30.md) | 76 unpublished Products inventoried read-only; Group A 0, Group B 0, Group C 76; no lifecycle writes |
+| Catalog Publication Wave 1 | [`catalog-publication-wave-1-2026-07-30.md`](./catalog-publication-wave-1-2026-07-30.md) | not executed; no Group A targets |
 | ENV | Vercel Production ENV contract | names/scope recorded; secret values intentionally omitted |
 | DNS/TLS | REG.RU/Vercel records in the launch baseline | independently verified at closure |
 | Public smoke | Canonical domain and generated deployment checks | HTTP/TLS checks PASS; one test-only RFQ accepted by API/webhook |

@@ -67,6 +67,11 @@
   Production now has 3 published Products and 76 unpublished Products; the
   public projection and sitemap contain only Hamilton-T1, Mindray SV300 and
   Agilia SP MC. See [Agilia SP MC Publication](../reports/agilia-sp-mc-publication-2026-07-30.md).
+- Remaining catalog batch audit (2026-07-30): all 76 unpublished Products were
+  inventoried read-only. No model was accepted without authoritative source
+  evidence, so all remain Group C pending identity resolution; no patch,
+  revision, review, approval or publication write was performed. See
+  [Remaining Catalog Batch Preparation](../reports/remaining-catalog-batch-preparation-2026-07-30.md).
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).
