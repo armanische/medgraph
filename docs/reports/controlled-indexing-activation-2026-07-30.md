@@ -124,11 +124,16 @@ Preview, local and mismatched-project bindings return global `Disallow: /` and
 
 ## External webmaster registration
 
-Yandex Webmaster and Google Search Console ownership/registration are
-account-level operations. If an authenticated account is not already available
-in the browser, this technical gate remains complete while those two statuses
-are reported as `PENDING USER INTERACTION`; no password, cookie or token is
-requested or recorded by this task.
+The corporate Yandex Webmaster owner is preserved through the existing DNS
+verification for `info@cyber-medica.ru`; the canonical sitemap remains
+submitted. The obsolete HTML verification artifact associated with a previous
+personal Yandex account was removed from the current repository and Production
+baseline without changing DNS or sitemap state. Revocation of that account's
+Webmaster access remains a manual action for the corporate owner.
+
+Google Search Console ownership/registration remains an account-level
+operation. No password, cookie, verification token or DNS value is recorded in
+this report.
 
 ## Rollback
 
