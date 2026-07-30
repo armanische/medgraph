@@ -20,6 +20,8 @@ canonical reconciliation point.
 | Approval | Approval ID in the launch baseline | prior controlled evidence |
 | Publication | Batch ID and Product count in the launch baseline | prior controlled evidence |
 | Projection | `cloud_published` public source and version 3 | prior controlled evidence; public HTTP smoke independently checked |
+| Mindray publication | [`mindray-sv300-publication-2026-07-30.md`](./mindray-sv300-publication-2026-07-30.md) | exact revision, Decision, Approval and one-Product batch; projection version 4 |
+| Third-product audit | [`third-product-selection-2026-07-30.md`](./third-product-selection-2026-07-30.md) | 77 unpublished Products audited read-only; no third Product selected |
 | ENV | Vercel Production ENV contract | names/scope recorded; secret values intentionally omitted |
 | DNS/TLS | REG.RU/Vercel records in the launch baseline | independently verified at closure |
 | Public smoke | Canonical domain and generated deployment checks | HTTP/TLS checks PASS; one test-only RFQ accepted by API/webhook |

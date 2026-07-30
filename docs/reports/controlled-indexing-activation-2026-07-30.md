@@ -88,11 +88,11 @@ read-only smoke performed after the implementation commit:
 | Deployment URL/status/time | `https://medgraph-8bz9i4b36-medgraph.vercel.app`, READY/Production, `2026-07-29T22:28:11Z` |
 | Canonical alias | `https://cyber-medica.ru` |
 | `/robots.txt` | PASS — HTTP 200, public allow, private/legacy disallow, apex sitemap |
-| `/sitemap.xml` | PASS — HTTP 200, valid XML, 32 routes, published projection only |
+| `/sitemap.xml` | PASS — HTTP 200, 2 Product URLs, published projection only |
 | Public metadata | PASS — homepage/catalog/Hamilton `index, follow`, apex canonical |
 | Internal/auth/API metadata | PASS — internal response `noindex, nofollow`; robots disallow `/internal/`, `/auth/`, `/api/` |
 | Hamilton-T1 URL | PASS — present exactly once at the approved slug |
-| Unpublished/static Product URLs | PASS — 78 unpublished Products, legacy knowledge and FS510 routes absent |
+| Unpublished/static Product URLs | PASS — 77 unpublished Products, legacy knowledge and FS510 routes absent |
 | RFQ route/API contract | PASS — `/request` 200, GET `/api/request` 405 |
 | Production database writes | None — deployment and smoke were read-only |
 
@@ -106,10 +106,12 @@ evidence only; public canonical metadata and sitemap use the apex domain.
 The canonical smoke returned HTTP 200 for `/`, `/catalog`, Hamilton-T1,
 `/manufacturers`, `/request`, `/robots.txt` and `/sitemap.xml`. The public
 `robots.txt` contained `Allow: /`, the three mandatory private disallows, and
-the apex sitemap. The sitemap contained 32 apex HTTPS URLs: 1 published
-Hamilton-T1 Product, 25 manufacturer reference pages and the six approved
-Storefront entry routes; it contained no `www`, Vercel, query, internal, auth,
-API, knowledge, static FS510 or other Product URL. Hamilton-T1 rendered three
+the apex sitemap. The sitemap now contains 2 apex HTTPS Product URLs: the
+published Hamilton-T1 and Mindray SV300 Products, plus 25 manufacturer
+reference pages and the six approved Storefront entry routes; it contains no
+`www`, Vercel, query, internal, auth, API, knowledge, static FS510 or other
+Product URL. Hamilton-T1 and Mindray render their approved projection data;
+Hamilton-T1 rendered three
 characteristic rows, six image tags for its three media assets, the approved
 autonomy claim, and zero occurrences of the retired `более 9 часов` claim.
 

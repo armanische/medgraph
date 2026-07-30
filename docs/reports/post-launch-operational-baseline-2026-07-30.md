@@ -23,7 +23,7 @@ the pre-activation state immutable.
 | Deployed commit | `201845a3fe5caab23ab72d31ac70d5704c53e1e4` |
 | Vercel deployment | `dpl_HVumG217appC2rJDbzoH4J5uJ43u` (`READY / PROMOTED`) |
 | Migration ledger | 26/26; latest `202607290003`; pending 0 |
-| Product state | 79 total; 1 published; 78 unpublished |
+| Product state at baseline capture | 79 total; 1 published; 78 unpublished |
 | Published Product | Hamilton-T1 only |
 | Projection | version 3; 3 characteristics; 3 media; SEO present; old claim 0 |
 
@@ -64,7 +64,8 @@ error remained.
 Restored checks:
 
 - migrations 26/26, latest `202607290003`;
-- Products 79, Published 1, Unpublished 78;
+- Products 79, Published 1, Unpublished 78 at the original baseline capture;
+  the current post-Mindray state is 79/2/77 in the linked publication report.
 - Hamilton-T1 revision, decision, approval and publication batch each present
   and bound to the expected Product/revision;
 - projection version 3, SEO present, 3 characteristics, 3 media, old claim 0;
@@ -153,28 +154,25 @@ migration/integration checks (see the reconciliation report).
 
 For the next 24-hour observation window, treat any of the following as an
 incident requiring review: repeated public 5xx responses, a non-2xx RFQ
-webhook response, a Product count other than 79, Published count other than 1,
-Hamilton missing from the projection, a second published Product, or any
+webhook response, a Product count other than 79, Published count other than 2,
+Hamilton or Mindray missing from the projection, a third published Product, or any
 unexpected database write outside the RFQ integration path. Re-run this
 read-only baseline after the first 24 hours and before enabling indexing.
 
 ## Post-launch curation backlog — 2026-07-30
 
-The complete read-only audit of the 78 unpublished Production Products is
-recorded in [Second Product Selection](second-product-selection-2026-07-30.md).
-No Product data, review, approval or publication state was changed.
+The complete read-only audit of the 77 unpublished Production Products is
+recorded in [Third Product Selection](third-product-selection-2026-07-30.md).
+Mindray SV300 is now published; no Product data, review, approval or
+publication state for the remaining Products was changed by the audit.
 
-Next operational content task, after Product Owner approval, is **Mindray
-SV300** (`source_uid 401374530532`). The task must verify the model against an
-official source, remove or substantiate promotional claims, generate SEO from
-confirmed facts, and then use the existing immutable Revision → Human Review →
-Approval → Publication workflow. Registration and document gaps remain
-warnings under Publication Policy v2; they must not be filled with guesses.
-
-The remaining four shortlist candidates are B. Braun Dialog+, Olympus CV-190
-PLUS EVIS EXERA III, Canon Aplio i700 and Comen Star5000. Their preparation is
-backlog work and no automatic or batch publication is authorized by this
-report.
+The shortlist contains BeneVision N1, Fresenius Kabi Agilia SP MC, Olympus
+CV-190 PLUS EVIS EXERA III, Logiq E9 GE and Canon Aplio i700. All five retain
+the structural `missing_model` blocker, so no third Product was selected. A
+future content task must resolve that field from an authoritative source before
+the existing immutable Revision → Human Review → Approval → Publication
+workflow can begin. Registration and document gaps remain warnings under
+Publication Policy v2; they must not be filled with guesses.
 
 ## Release decision
 

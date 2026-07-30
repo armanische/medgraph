@@ -221,6 +221,17 @@ Every wave must preserve these gates:
 If a wave cannot maintain these gates, the wave should stop before adding more
 products.
 
+## Post-launch execution queue — 2026-07-30
+
+| Task | Блокирует запуск |
+| --- | --- |
+| Resolve `missing_model` for one shortlisted Product from an authoritative source | Нет |
+| Generate SEO for the selected Product from confirmed facts | Нет |
+| Human Review, Approval and Publication of a third Product | Нет |
+
+These tasks are post-launch work. They do not weaken structural invariants or
+authorize automatic lifecycle writes.
+
 ## Never Automatic
 
 CyberMedica must never automatically:

@@ -47,6 +47,15 @@
   unsupported active claims. The Product remains draft/unpublished; no
   revision, Review, Approval or Publication was executed. See [Mindray SV300
   Content Preparation](../reports/mindray-sv300-content-preparation-2026-07-30.md).
+- Mindray SV300 publication (2026-07-30): one exact immutable revision passed
+  Human Review, Approval and single-Product Publication. Production now has 2
+  published Products and 77 unpublished Products; Hamilton-T1 and Mindray
+  SV300 are the only public Products. See [Mindray SV300 Publication](../reports/mindray-sv300-publication-2026-07-30.md).
+- Third-product selection (2026-07-30): all 77 unpublished Products were
+  audited read-only. A five-Product shortlist was prepared, but every Product
+  retains the structural `missing_model` blocker, so no third Product was
+  selected and no lifecycle write was performed. See [Third Product
+  Selection](../reports/third-product-selection-2026-07-30.md).
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).
