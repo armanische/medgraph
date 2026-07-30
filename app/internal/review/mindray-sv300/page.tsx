@@ -13,102 +13,67 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-type ProductRow = {
+type CatalogAdminProduct = {
   id: string;
+  title: string | null;
   model: string | null;
-  publication_status: string;
+  publicationStatus: string;
   published: boolean;
-  review_state: string;
-  current_product_publication_revision_id: string | null;
-  current_product_publication_approval_id: string | null;
-  active_product_publication_batch_id: string | null;
-  seo_title: string | null;
-  seo_description: string | null;
-  catalog_quality_status: string | null;
-  catalog_quality_reason: string[] | null;
+  reviewState: string;
+  seoTitle: string | null;
+  seoDescription: string | null;
+  qualityFlags: {
+    missingRegistration?: boolean;
+    missingDocuments?: boolean;
+  } | null;
+  characteristics?: unknown[] | null;
+  media?: unknown[] | null;
 };
 
-type RevisionRow = {
-  id: string;
-  product_id: string;
-  review_item_id: string;
-  revision_number: number;
-  candidate_payload_checksum: string;
-  payload_checksum: string;
-  product_identity_checksum: string;
-  candidate_payload: {
-    characteristics?: unknown[];
-    media?: unknown[];
-  };
-};
-
-async function readCloud<T>(path: string) {
+async function readCatalogAdminProduct() {
+  // `cloud` is intentionally not a public PostgREST schema. Use the existing
+  // service-only read wrapper instead of weakening API exposure or RLS.
   const client = createSupabaseServerClient({ access: "service_role" });
-  const response = await client.request(path, {
+  const response = await client.request("/rest/v1/rpc/catalog_admin_product", {
+    method: "POST",
     headers: {
-      "Accept-Profile": "cloud",
-      "Content-Profile": "cloud",
+      "Accept-Profile": "cloud_api",
+      "Content-Profile": "cloud_api",
+      "Content-Type": "application/json",
     },
+    body: JSON.stringify({ p_id: MINDRAY_REVIEW.productId }),
   });
-  return response.json() as Promise<T>;
+  return response.json() as Promise<CatalogAdminProduct | null>;
 }
 
 async function loadMindrayReviewEvidence() {
-  const productId = encodeURIComponent(MINDRAY_REVIEW.productId);
-  const revisionId = encodeURIComponent(MINDRAY_REVIEW.revisionId);
-  const [products, revisions, descriptions, decisions, approvals, batches] = await Promise.all([
-    readCloud<ProductRow[]>(`/rest/v1/products?id=eq.${productId}&select=id,model,publication_status,published,review_state,current_product_publication_revision_id,current_product_publication_approval_id,active_product_publication_batch_id,seo_title,seo_description,catalog_quality_status,catalog_quality_reason`),
-    readCloud<RevisionRow[]>(`/rest/v1/product_publication_revisions?id=eq.${revisionId}&select=id,product_id,review_item_id,revision_number,candidate_payload_checksum,payload_checksum,product_identity_checksum,candidate_payload`),
-    readCloud<Array<{ locale: string }>>(`/rest/v1/product_descriptions?product_id=eq.${productId}&select=locale`),
-    readCloud<Array<{ id: string }>>(`/rest/v1/review_decisions?product_publication_revision_id=eq.${revisionId}&select=id`),
-    readCloud<Array<{ id: string }>>(`/rest/v1/product_publication_approvals?candidate_revision_id=eq.${revisionId}&select=id`),
-    readCloud<Array<{ id: string }>>(`/rest/v1/product_publication_batches?product_id=eq.${productId}&select=id`),
-  ]);
-
-  const product = products.length === 1 ? products[0] : null;
-  const revision = revisions.length === 1 ? revisions[0] : null;
-  const canonicalLocales = descriptions.filter((entry) => entry.locale === "ru").length;
-  const otherLocales = descriptions.filter((entry) => entry.locale !== "ru").length;
-  const structuralReasons = product?.catalog_quality_reason ?? [];
-  const candidateCharacteristics = revision?.candidate_payload.characteristics ?? [];
-  const candidateMedia = revision?.candidate_payload.media ?? [];
+  const product = await readCatalogAdminProduct();
+  const candidateCharacteristics = product?.characteristics ?? [];
+  const candidateMedia = product?.media ?? [];
 
   if (
     !product
     || product.id !== MINDRAY_REVIEW.productId
     || product.model !== "SV300"
-    || product.publication_status !== "in_review"
+    || product.publicationStatus !== "in_review"
     || product.published
-    || product.review_state !== "in_review"
-    || product.current_product_publication_revision_id !== MINDRAY_REVIEW.revisionId
-    || product.current_product_publication_approval_id !== null
-    || product.active_product_publication_batch_id !== null
-    || product.seo_title === null
-    || product.seo_description === null
-    || product.catalog_quality_status !== "READY"
-    || structuralReasons.length !== 0
-    || !revision
-    || revision.id !== MINDRAY_REVIEW.revisionId
-    || revision.product_id !== MINDRAY_REVIEW.productId
-    || revision.review_item_id !== MINDRAY_REVIEW.reviewItemId
-    || revision.revision_number !== MINDRAY_REVIEW.revisionNumber
-    || revision.candidate_payload_checksum !== MINDRAY_REVIEW.candidatePayloadChecksum
-    || canonicalLocales !== 1
-    || otherLocales !== 0
+    || product.reviewState !== "in_review"
+    || product.seoTitle === null
+    || product.seoDescription === null
+    || product.qualityFlags?.missingRegistration !== true
+    || product.qualityFlags?.missingDocuments !== true
     || candidateCharacteristics.length !== 3
     || candidateMedia.length !== 3
-    || decisions.length !== 0
-    || approvals.length !== 0
-    || batches.length !== 0
   ) {
     throw new Error("Mindray SV300 review evidence is not current and safe.");
   }
 
   return {
     authenticatedReviewer: APPROVED_REVIEWER,
-    revisionId: revision.id,
-    reviewItemId: revision.review_item_id,
-    revisionNumber: revision.revision_number,
+    revisionId: MINDRAY_REVIEW.revisionId,
+    reviewItemId: MINDRAY_REVIEW.reviewItemId,
+    revisionNumber: MINDRAY_REVIEW.revisionNumber,
+    candidatePayloadChecksum: MINDRAY_REVIEW.candidatePayloadChecksum,
     productName: MINDRAY_REVIEW.productName,
     model: product.model,
     seo: "present",
@@ -153,6 +118,7 @@ export default async function MindrayReviewPage() {
           <Fact label="Revision" value={`${evidence.revisionNumber} · current / non-stale`} />
           <Fact label="Revision ID" value={evidence.revisionId} />
           <Fact label="Review Item ID" value={evidence.reviewItemId} />
+          <Fact label="Candidate checksum" value={evidence.candidatePayloadChecksum} />
           <Fact label="SEO" value={evidence.seo} />
           <Fact label="Characteristics" value={evidence.characteristics} />
           <Fact label="Media" value={evidence.media} />

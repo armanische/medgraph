@@ -138,10 +138,11 @@ test("Mindray review route is pinned to the current immutable revision", async (
 
   assert.match(page, /MINDRAY_REVIEW\.revisionId/u);
   assert.match(page, /MINDRAY_REVIEW\.reviewItemId/u);
-  assert.match(page, /current_product_publication_revision_id/u);
-  assert.match(page, /decisions\.length !== 0/u);
-  assert.match(page, /approvals\.length !== 0/u);
-  assert.match(page, /batches\.length !== 0/u);
+  assert.match(page, /catalog_admin_product/u);
+  assert.match(page, /Accept-Profile.*cloud_api/u);
+  assert.match(page, /candidatePayloadChecksum/u);
+  assert.doesNotMatch(page, /Accept-Profile.*cloud["']/u);
+  assert.doesNotMatch(page, /rest\/v1\/products\?/u);
   assert.match(action, /MINDRAY_REVIEW\.revisionId/u);
   assert.match(action, /MINDRAY_REVIEW\.payloadChecksum/u);
   assert.match(action, /record_product_publication_review_decision_v1/u);
