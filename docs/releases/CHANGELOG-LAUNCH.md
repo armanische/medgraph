@@ -56,6 +56,12 @@
   retains the structural `missing_model` blocker, so no third Product was
   selected and no lifecycle write was performed. See [Third Product
   Selection](../reports/third-product-selection-2026-07-30.md).
+- Agilia SP MC content preparation (2026-07-30): Product Owner selected
+  Fresenius Kabi Agilia SP MC as the third Product. One approved atomic Catalog
+  Admin patch set the exact model, synchronized canonical Russian content and
+  added source-grounded SEO. The Product remains draft/unpublished; no revision,
+  Human Review, Approval or Publication was executed. See [Agilia SP MC Content
+  Preparation](../reports/agilia-sp-mc-content-preparation-2026-07-30.md).
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).

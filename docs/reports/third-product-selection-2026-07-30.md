@@ -2,11 +2,15 @@
 
 ## Decision
 
-The read-only Production audit covered all 77 unpublished Products. No Product
-is currently safe to select for the third publication under the approved hard
-exclusions: every one has the structural `missing_model` flag. Therefore no
-third Product is selected and no revision, review, approval or publication is
-authorized by this report.
+The read-only Production audit originally found `missing_model` on all 77
+unpublished Products. Product Owner subsequently selected **Fresenius Kabi
+Agilia SP MC** for the third-product preparation pass. The approved content
+task resolved its model from official Fresenius Kabi evidence and completed one
+controlled Catalog Admin patch. See [Agilia SP MC Content
+Preparation](./agilia-sp-mc-content-preparation-2026-07-30.md).
+
+This selection does not authorize an immutable revision, Human Review,
+Approval or Publication.
 
 ## Production audit summary
 
@@ -37,12 +41,12 @@ receives 15 points for at least two media items and 10 for one item. SEO receive
 on launch-category diversity and recognizable equipment, not a verified Product
 fact.
 
-## Shortlist of five blocked candidates
+## Shortlist of five candidates
 
 | Product | Model | Manufacturer | Production Product ID | Source UID | Slug | Source checksum | Canonical ru | SEO | Media | Characteristics | Structural blockers | Warnings | Score | Effort | Commercial priority |
 | --- | --- | --- | --- | --- | --- | --- | ---: | --- | ---: | ---: | --- | --- | ---: | --- | --- |
 | Портативный монитор пациента BeneVision N1 | — | Mindray | `f61a0496-0434-41ab-8ca3-0f79c19ab0aa` | `159912360691` | `767632362-159912360691-portativnii-monitor-patsienta-benevision` | `191a5ecdae83c75852f637378b4b2a7bab9bb200b261d37079c17048db5bc73c` | 1 | absent | 4 | 3 | `missing_model` | `missing_registration`, `missing_documents` | 75 | S* | High |
-| Шприцевой насос Fresenius Kabi Agilia SP MC | — | Fresenius Kabi | `b7f07e3e-5cdd-4988-b2a4-423bed321f46` | `865619140091` | `767632362-865619140091-shpritsevoi-nasos-fresenius-kabi-agilia` | `521684120f9b21884e5cc05d11ae84de5d3692695ac2b228c8cc044f5b07ec19` | 1 | absent | 2 | 3 | `missing_model` | `missing_registration`, `missing_documents` | 75 | S* | High |
+| Шприцевой инфузионный насос Fresenius Kabi Agilia SP MC | Agilia SP MC | Fresenius Kabi | `b7f07e3e-5cdd-4988-b2a4-423bed321f46` | `865619140091` | `767632362-865619140091-shpritsevoi-nasos-fresenius-kabi-agilia` | `521684120f9b21884e5cc05d11ae84de5d3692695ac2b228c8cc044f5b07ec19` | 1 | present | 2 | 3 | none after controlled patch | `missing_registration`, `missing_documents` | 100 | XS | High |
 | Видеоэндоскопическая система Olympus CV-190 PLUS EVIS EXERA III | — | Olympus | `4e1a370b-4e53-4ee6-b590-823d1ad0e087` | `304432044232` | `767632362-304432044232-videoendoskopicheskaya-sistema-olympus-c` | `bb2cbbdc8e43fd472e59086f2d53f4c65b86d5943796f8bd972af4a373144eb1` | 1 | absent | 2 | 3 | `missing_model` | `missing_registration`, `missing_documents` | 75 | S* | High |
 | Экспертный узи-аппарат Logiq E9 GE | — | GE HealthCare | `c8e51a0f-e969-4740-9f21-4af1110d2a46` | `975456539101` | `767632362-975456539101-ekspertnii-uzi-apparat-logiq-e9-ge` | `1e2e927e501576715462b7911ae794912513c67014260f17501cc8955be9d104` | 1 | absent | 1 | 3 | `missing_model` | `missing_registration`, `missing_documents` | 70 | S* | High |
 | Узи-аппарат Canon Aplio i700 | — | Canon Medical | `66b45c69-47b9-4371-ae81-8aff1f3e5685` | `730259716752` | `767632362-730259716752-uzi-apparat-canon-aplio-i700` | `8b2f9025d986bd0e9729b70f7ed2f4ae9483de436a50339e0abf344689c3fe14` | 1 | absent | 1 | 3 | `missing_model` | `missing_registration`, `missing_documents` | 70 | S* | High |
@@ -52,18 +56,19 @@ the current blocker makes the item ineligible for immediate review/publication.
 
 ## Third Product for Publication
 
-**Not selected.** Selecting any of the five would violate the hard exclusion
-against a structural blocker. The first safe next step is a normal content
-preparation task that resolves `missing_model` for one chosen candidate from an
-authoritative source, then regenerates SEO from confirmed facts. Only after that
-can the abbreviated lifecycle be run:
+**Selected for preparation: Fresenius Kabi Agilia SP MC.** Its exact stable
+identity is source UID `865619140091`, Product ID
+`b7f07e3e-5cdd-4988-b2a4-423bed321f46`, slug
+`767632362-865619140091-shpritsevoi-nasos-fresenius-kabi-agilia`, and source
+checksum `521684120f9b21884e5cc05d11ae84de5d3692695ac2b228c8cc044f5b07ec19`.
+The model/content/SEO patch is complete; the remaining lifecycle is:
 
 ```text
-model/content patch → immutable revision → Human Review → Approval → Publication
+immutable revision → Human Review → Approval → Publication
 ```
 
-No source research, media substitution, regulatory interpretation, revision,
-review, approval or publication was executed in this audit.
+No immutable revision, Human Review, Approval or Publication was executed by
+the selection report or the linked preparation task.
 
 ## Invariance
 

@@ -40,8 +40,10 @@ has an explicit launch-blocking flag.
 | Merge/reconcile deployed launch commits into canonical branch | completed — fast-forward | Нет |
 | Canonical Thank You reconciliation | completed — `main` and `production` aligned at `a697473e` | Нет |
 | Read-only audit of remaining 78 Products | completed — closed shortlist recorded | Нет |
-| Second Product content preparation — Mindray SV300 | completed — source-grounded content patch; revision/review pending | Нет |
-| Mindray SV300 immutable revision and Human Review | next — separate controlled workflow | Нет |
+| Second Product content preparation — Mindray SV300 | completed | Нет |
+| Mindray SV300 immutable revision, Human Review, Approval and Publication | completed — Production Published count 2 | Нет |
+| Third Product content preparation — Fresenius Kabi Agilia SP MC | completed — model/content/SEO patch; revision pending | Нет |
+| Agilia SP MC immutable revision and Human Review | next — separate controlled workflow | Нет |
 | Internal Auth/RBAC corrective | backlog | Нет |
 | Review Workspace | backlog | Нет |
 | Catalog Admin evolution | backlog | Нет |
@@ -225,9 +227,10 @@ products.
 
 | Task | Блокирует запуск |
 | --- | --- |
-| Resolve `missing_model` for one shortlisted Product from an authoritative source | Нет |
-| Generate SEO for the selected Product from confirmed facts | Нет |
-| Human Review, Approval and Publication of a third Product | Нет |
+| Resolve `missing_model` for Agilia SP MC from an authoritative source | Нет |
+| Generate Agilia SP MC SEO from confirmed facts | Нет |
+| Create the Agilia SP MC immutable revision | Нет |
+| Human Review, Approval and Publication of Agilia SP MC | Нет |
 
 These tasks are post-launch work. They do not weaken structural invariants or
 authorize automatic lifecycle writes.
