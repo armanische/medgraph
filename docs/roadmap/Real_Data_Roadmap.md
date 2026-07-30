@@ -42,8 +42,8 @@ has an explicit launch-blocking flag.
 | Read-only audit of remaining 78 Products | completed — closed shortlist recorded | Нет |
 | Second Product content preparation — Mindray SV300 | completed | Нет |
 | Mindray SV300 immutable revision, Human Review, Approval and Publication | completed — Production Published count 2 | Нет |
-| Third Product content preparation — Fresenius Kabi Agilia SP MC | completed — model/content/SEO patch; revision pending | Нет |
-| Agilia SP MC immutable revision and Human Review | next — separate controlled workflow | Нет |
+| Third Product content preparation — Fresenius Kabi Agilia SP MC | completed — model/content/SEO patch | Нет |
+| Agilia SP MC immutable revision, Human Review, Approval and Publication | completed — Production Published count 3 | Нет |
 | Internal Auth/RBAC corrective | backlog | Нет |
 | Review Workspace | backlog | Нет |
 | Catalog Admin evolution | backlog | Нет |

@@ -137,6 +137,14 @@ Google Search Console ownership/registration remains an account-level
 operation. No password, cookie, verification token or DNS value is recorded in
 this report.
 
+## Published catalog addendum — 2026-07-30
+
+After the controlled Agilia SP MC lifecycle, the same projection-only indexing
+contract exposes exactly three Product URLs: Hamilton-T1, Mindray SV300 and
+Agilia SP MC. Production remains at 79 Products, now 3 Published and 76
+Unpublished. Projection version is 5. The Agilia Product Detail and sitemap
+returned HTTP 200; no unpublished Product URL or internal evidence was exposed.
+
 ## Rollback
 
 Rollback is a Vercel deployment rollback to the prior approved Production

@@ -62,6 +62,11 @@
   added source-grounded SEO. The Product remains draft/unpublished; no revision,
   Human Review, Approval or Publication was executed. See [Agilia SP MC Content
   Preparation](../reports/agilia-sp-mc-content-preparation-2026-07-30.md).
+- Agilia SP MC publication (2026-07-30): exact immutable revision 1 passed one
+  authenticated Human Review, Approval and single-Product Publication.
+  Production now has 3 published Products and 76 unpublished Products; the
+  public projection and sitemap contain only Hamilton-T1, Mindray SV300 and
+  Agilia SP MC. See [Agilia SP MC Publication](../reports/agilia-sp-mc-publication-2026-07-30.md).
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).

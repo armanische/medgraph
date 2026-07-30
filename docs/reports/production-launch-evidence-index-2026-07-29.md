@@ -23,6 +23,7 @@ canonical reconciliation point.
 | Mindray publication | [`mindray-sv300-publication-2026-07-30.md`](./mindray-sv300-publication-2026-07-30.md) | exact revision, Decision, Approval and one-Product batch; projection version 4 |
 | Third-product audit | [`third-product-selection-2026-07-30.md`](./third-product-selection-2026-07-30.md) | 77 unpublished Products audited read-only; Agilia SP MC selected for a separate controlled preparation task |
 | Agilia SP MC content preparation | [`agilia-sp-mc-content-preparation-2026-07-30.md`](./agilia-sp-mc-content-preparation-2026-07-30.md) | exact model resolution, one controlled Catalog Admin patch and revision-readiness preflight; no lifecycle write |
+| Agilia SP MC publication | [`agilia-sp-mc-publication-2026-07-30.md`](./agilia-sp-mc-publication-2026-07-30.md) | exact authenticated Decision, Approval and one-Product batch; projection version 5; Published 3 |
 | ENV | Vercel Production ENV contract | names/scope recorded; secret values intentionally omitted |
 | DNS/TLS | REG.RU/Vercel records in the launch baseline | independently verified at closure |
 | Public smoke | Canonical domain and generated deployment checks | HTTP/TLS checks PASS; one test-only RFQ accepted by API/webhook |

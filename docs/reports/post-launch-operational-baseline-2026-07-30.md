@@ -154,10 +154,10 @@ migration/integration checks (see the reconciliation report).
 
 For the next 24-hour observation window, treat any of the following as an
 incident requiring review: repeated public 5xx responses, a non-2xx RFQ
-webhook response, a Product count other than 79, Published count other than 2,
-Hamilton or Mindray missing from the projection, a third published Product, or any
-unexpected database write outside the RFQ integration path. Re-run this
-read-only baseline after the first 24 hours and before enabling indexing.
+webhook response, a Product count other than 79, Published count other than 3,
+Hamilton, Mindray or Agilia missing from the projection, any fourth published
+Product, or any unexpected database write outside the RFQ integration path.
+Re-run this read-only baseline after the first 24 hours.
 
 ## Post-launch curation backlog — 2026-07-30
 
@@ -166,12 +166,12 @@ recorded in [Third Product Selection](third-product-selection-2026-07-30.md).
 Mindray SV300 is now published; no Product data, review, approval or
 publication state for the remaining Products was changed by the audit.
 
-The shortlist contains BeneVision N1, Fresenius Kabi Agilia SP MC, Olympus
-CV-190 PLUS EVIS EXERA III, Logiq E9 GE and Canon Aplio i700. All five retain
-the structural `missing_model` blocker, so no third Product was selected. A
-future content task must resolve that field from an authoritative source before
-the existing immutable Revision → Human Review → Approval → Publication
-workflow can begin. Registration and document gaps remain warnings under
+The shortlist contained BeneVision N1, Fresenius Kabi Agilia SP MC, Olympus
+CV-190 PLUS EVIS EXERA III, Logiq E9 GE and Canon Aplio i700. Product Owner
+selected Agilia SP MC; its model and canonical content were resolved through an
+atomic Catalog Admin patch, then the existing immutable Revision → Human Review
+→ Approval → Publication workflow completed. Production now has 3 Published and
+76 Unpublished Products. Registration and document gaps remain warnings under
 Publication Policy v2; they must not be filled with guesses.
 
 ## Release decision

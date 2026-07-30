@@ -87,6 +87,10 @@ The immutable source metadata and source checksum were unchanged.
 
 ## Next operation
 
-The next separately authorized action is one Human Review of Revision
-`e09f69c9-fbc5-4f6e-a240-05372e959510` by an authenticated reviewer. Approval
-and Publication must remain pending until that review is completed.
+The authorized lifecycle completed on 2026-07-30. Revision
+`e09f69c9-fbc5-4f6e-a240-05372e959510` received authenticated Decision
+`cf368fda-42db-4504-8107-0c67bd14caa7`, Approval
+`be59cc6f-8c2e-4227-a221-b1f6e6913b3b` and single-Product publication batch
+`25f14744-dc76-40fc-ae64-678f516a7826`. See
+[Agilia SP MC Publication](./agilia-sp-mc-publication-2026-07-30.md) for the
+post-publication projection, sitemap and invariance evidence.
