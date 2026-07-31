@@ -104,6 +104,12 @@
   Unpublished Products; projection version and sitemap Product count are 30
   and 28. Replay returned already complete without duplicate writes. See
   [Wave 2 closure](../reports/catalog-publication-wave-2-2026-07-31.md).
+- Catalog Publication Wave 3 (2026-07-31): the final eight reviewed Group A
+  revisions were approved and published through a separate immutable manifest
+  and narrow server-only runner. Production now contains 36 Published and 43
+  Unpublished Products; projection version and sitemap Product count are both
+  38 and 36 respectively. Replay returned already complete. See
+  [Wave 3 closure](../reports/catalog-publication-wave-3-2026-07-31.md).
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).

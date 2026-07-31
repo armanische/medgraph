@@ -46,12 +46,14 @@ exact server-only Wave 1 manifest:
 All entries retain the same non-blocking warnings:
 `missing_registration`, `missing_documents`.
 
-Production now contains 13 Published and 66 Unpublished Products. The other 23
-Group A revisions retain a positive Decision but have zero Approval and zero
-Publication Batch. See [Wave 1 closure](./catalog-publication-wave-1-2026-07-30.md)
-and [Wave 2 queue](./catalog-publication-wave-2-queue-2026-07-31.md).
+All 33 Group A revisions are now Published across three controlled waves.
+Production contains 36 Published and 43 Unpublished Products; the Group A
+reviewed/unpublished queue is empty. See [Wave 1 closure](./catalog-publication-wave-1-2026-07-30.md),
+[Wave 2 closure](./catalog-publication-wave-2-2026-07-31.md) and
+[reviewed batch closure](./catalog-publication-reviewed-batch-closure-2026-07-31.md).
 
 ## Next controlled action
 
-Create a fresh immutable Wave 2 manifest for an approved subset of the remaining
-23 reviewed revisions. The completed Wave 1 key cannot be reused.
+Resolve the seven concrete Group B identity/media questions recorded in the
+[Product Owner decision queue](./group-b-product-owner-decision-queue-2026-07-31.md).
+Completed Wave operation keys must not be reused.

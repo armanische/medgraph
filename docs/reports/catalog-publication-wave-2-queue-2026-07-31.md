@@ -2,10 +2,9 @@
 
 ## Status
 
-Wave 2 is complete. The first fifteen revisions below were published through
-the exact immutable Wave 2 manifest. The final eight remain current,
-reviewed/unpublished and have zero Approval and zero Publication Batch; they
-form the proposed Wave 3 scope.
+Wave 2 and Wave 3 are complete. The first fifteen revisions below were
+published through the exact immutable Wave 2 manifest; the final eight were
+published through the separate immutable Wave 3 manifest.
 
 ## Reviewed queue
 
@@ -36,6 +35,6 @@ form the proposed Wave 3 scope.
 ## Wave assignment
 
 - Wave 2: entries 1–15 — PASS; Published.
-- Wave 3: entries 16–23 — pending controlled manifest and fresh preflight.
+- Wave 3: entries 16–23 — PASS; Published.
 
-Do not reuse either completed Wave 1 or Wave 2 operation key.
+Do not reuse any completed Wave 1, Wave 2 or Wave 3 operation key.
