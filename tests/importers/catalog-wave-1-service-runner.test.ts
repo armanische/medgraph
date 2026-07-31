@@ -102,9 +102,26 @@ test("execution page submits only the immutable Wave 1 manifest", async () => {
     "app/internal/operations/catalog-publication-wave/execute/page.tsx",
     "utf8",
   );
-  assert.match(page, /CATALOG_WAVE_1_OPERATION_KEY/u);
-  assert.match(page, /CATALOG_WAVE_1_MANIFEST_SHA256/u);
-  assert.match(page, /action="\/internal\/operations\/catalog-publication-wave"/u);
-  assert.match(page, /method="post"/u);
+  assert.match(page, /CatalogWave1ExecutionAction/u);
   assert.doesNotMatch(page, /productId|revisionId|decisionId|serviceRole/u);
+});
+
+test("execution Server Action re-authorizes the exact Production admin", async () => {
+  const action = await readFile(
+    "app/internal/operations/catalog-publication-wave/execute/actions.ts",
+    "utf8",
+  );
+  const component = await readFile(
+    "components/internal/CatalogWave1ExecutionAction.tsx",
+    "utf8",
+  );
+  assert.match(action, /^"use server";/u);
+  assert.match(action, /process\.env\.VERCEL_ENV !== "production"/u);
+  assert.match(action, /requireTrustedReviewer\(\)/u);
+  assert.match(action, /current_internal_access_v1/u);
+  assert.match(action, /access\.role !== "admin"/u);
+  assert.match(action, /executeProductionCatalogWave1\(\)/u);
+  assert.match(component, /useActionState/u);
+  assert.match(component, /executeCatalogWave1Action/u);
+  assert.doesNotMatch(component, /productId|revisionId|decisionId|serviceRole/u);
 });
