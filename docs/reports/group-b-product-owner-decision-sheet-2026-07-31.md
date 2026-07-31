@@ -11,6 +11,15 @@ This was a read-only analysis. No Product content, revision, Review Decision,
 Approval, Publication Batch, migration, ENV, DNS, or deployment state was
 changed.
 
+## Product Owner resolution and execution checkpoint
+
+The Product Owner accepted option A for all seven questions. Six Products moved
+to controlled content preparation and now have one current immutable revision
+each. Instilar 1438 moved to the Group C dedup backlog and received no write or
+lifecycle record. Human Review, Approval and Publication remain pending. See
+[Resolved Group B Six](./group-b-six-content-preparation-2026-07-31.md) and
+[Instilar 1438 Dedup Backlog](./instilar-1438-dedup-backlog-2026-07-31.md).
+
 ## Verified scope
 
 The exact scope is seven unpublished Products. Every Product has one canonical

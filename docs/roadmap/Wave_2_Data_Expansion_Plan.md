@@ -9,8 +9,8 @@ Status: planning pack for MVP-034
 | Publication Wave 1 | PASS — 10 new Products, Published total 13 | Нет |
 | Publication Wave 2 | PASS — 15 new Products, Published total 28 | Нет |
 | Publication Wave 3 | PASS — 8 new Products, Published total 36 | Нет |
-| Group B Product Owner resolution | 7 Products | Нет |
-| Group C source resolution | 36 Products | Нет |
+| Group B Product Owner resolution | PASS — 6 revisions awaiting Human Review; Instilar 1438 excluded | Нет |
+| Group C source/dedup resolution | 37 Products | Нет |
 
 ## Goal
 

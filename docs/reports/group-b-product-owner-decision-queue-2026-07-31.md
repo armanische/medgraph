@@ -21,6 +21,7 @@ Recommended compact response:
 7 — A
 ```
 
-Accepting the recommendations moves six Products to Group A content
-preparation and sends the unsupported Instilar 1438 identity to Group C/dedup
-backlog. No Product or lifecycle write is authorized by the decision itself.
+The Product Owner accepted all seven recommended A choices. Six Products have
+completed controlled content patches and immutable revision creation and now
+await manual Human Review in the generic queue. Instilar 1438 is in the Group C
+dedup backlog with lifecycle `0/0/0/0`.

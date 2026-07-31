@@ -92,6 +92,11 @@
   `/internal/review` and `/internal/review/[revisionId]` routes with existing
   authenticated access and cloud_api reads. The queue was deployed and used for
   the exact Group A Human Review decisions recorded by the lifecycle evidence.
+- Resolved Group B six (2026-07-31): Product Owner accepted all seven closed
+  decisions. Six exact Products received atomic canonical-content patches and
+  immutable revision 1; all six await manual Human Review. Instilar 1438 was
+  excluded as a likely duplicate of Instilar 1428 and remains lifecycle
+  `0/0/0/0`. Published remains 36.
 - Catalog Publication Wave 1 (2026-07-31): ten exact reviewed revisions were
   approved and published through a narrow server-only, service-role runner.
   Production now contains 13 Published and 66 Unpublished Products; projection
