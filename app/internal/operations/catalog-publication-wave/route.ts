@@ -77,7 +77,6 @@ export async function POST(request: NextRequest) {
     request.nextUrl.origin !== canonicalOrigin
     || request.headers.get("origin") !== canonicalOrigin
     || request.headers.get("sec-fetch-site") !== "same-origin"
-    || request.headers.get("content-type")?.split(";", 1)[0] !== "application/json"
   ) {
     return safeJson({ status: "blocked", code: "same_origin_required" }, 403, auth);
   }
@@ -97,11 +96,19 @@ export async function POST(request: NextRequest) {
   if (rawBody.length > 512) {
     return safeJson({ status: "blocked", code: "invalid_operation_manifest" }, 400, auth);
   }
+  const contentType = request.headers.get("content-type")?.split(";", 1)[0];
   let body: unknown;
-  try {
-    body = JSON.parse(rawBody);
-  } catch {
-    return safeJson({ status: "blocked", code: "invalid_operation_manifest" }, 400, auth);
+  if (contentType === "application/json") {
+    try {
+      body = JSON.parse(rawBody);
+    } catch {
+      return safeJson({ status: "blocked", code: "invalid_operation_manifest" }, 400, auth);
+    }
+  } else if (contentType === "application/x-www-form-urlencoded") {
+    const form = new URLSearchParams(rawBody);
+    body = Object.fromEntries(form.entries());
+  } else {
+    return safeJson({ status: "blocked", code: "same_origin_required" }, 403, auth);
   }
   if (!validateCatalogWave1OperationRequest(body)) {
     return safeJson({ status: "blocked", code: "invalid_operation_manifest" }, 400, auth);

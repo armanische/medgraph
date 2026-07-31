@@ -91,6 +91,20 @@ test("POST route re-authorizes exact admin and never exposes a generic publicati
   assert.match(route, /validateCatalogWave1OperationRequest/u);
   assert.match(route, /service_configuration_missing/u);
   assert.match(route, /rawBody\.length > 512/u);
+  assert.match(route, /application\/x-www-form-urlencoded/u);
+  assert.match(route, /Object\.fromEntries\(form\.entries\(\)\)/u);
   assert.doesNotMatch(route, /productId|revisionId|decisionId/u);
   assert.doesNotMatch(route, /serviceRoleKey|SUPABASE_SERVICE_ROLE_KEY[^?]/u);
+});
+
+test("execution page submits only the immutable Wave 1 manifest", async () => {
+  const page = await readFile(
+    "app/internal/operations/catalog-publication-wave/execute/page.tsx",
+    "utf8",
+  );
+  assert.match(page, /CATALOG_WAVE_1_OPERATION_KEY/u);
+  assert.match(page, /CATALOG_WAVE_1_MANIFEST_SHA256/u);
+  assert.match(page, /action="\/internal\/operations\/catalog-publication-wave"/u);
+  assert.match(page, /method="post"/u);
+  assert.doesNotMatch(page, /productId|revisionId|decisionId|serviceRole/u);
 });
