@@ -54,6 +54,13 @@ reviewed/unpublished queue is empty. See [Wave 1 closure](./catalog-publication-
 
 ## Next controlled action
 
-Resolve the seven concrete Group B identity/media questions recorded in the
-[Product Owner decision queue](./group-b-product-owner-decision-queue-2026-07-31.md).
-Completed Wave operation keys must not be reused.
+The seven Group B decisions were resolved. Six exact Products completed manual
+Human Review, Approval and Publication through
+[`group-b-six-publication-v1`](./group-b-six-publication-2026-07-31.md).
+Production now contains 42 Published and 37 Unpublished Products; projection
+version is 44 and the sitemap contains 42 Product URLs. Instilar 1438 remains
+excluded with lifecycle `0/0/0/0`.
+
+The next controlled action is the read-only
+[Group C remediation queue](./group-c-remediation-queue-2026-07-31.md).
+Completed operation keys must not be reused.

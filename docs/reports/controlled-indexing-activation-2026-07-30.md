@@ -175,3 +175,11 @@ Sitemap contains exactly 36 unique Product URLs; Production is 79 Products, 36
 Published and 43 Unpublished, and projection version is 38. All eight Wave 3
 Product Detail routes return HTTP 200 with canonical metadata. No internal,
 Auth, API or unpublished Product URL was introduced.
+
+## Published catalog addendum — Resolved Group B six
+
+The resolved Group B publication preserved the same projection-only indexing
+contract. Sitemap contains exactly 42 unique Product URLs; Production is 79
+Products, 42 Published and 37 Unpublished, and projection version is 44. All
+six new Product Detail routes return HTTP 200. No internal, Auth, API or
+unpublished Product URL was introduced.

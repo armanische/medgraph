@@ -115,6 +115,13 @@
   Unpublished Products; projection version and sitemap Product count are both
   38 and 36 respectively. Replay returned already complete. See
   [Wave 3 closure](../reports/catalog-publication-wave-3-2026-07-31.md).
+- Resolved Group B publication (2026-07-31): six Product Owner-resolved
+  Products completed manual Human Review and were approved and published through
+  the immutable `group-b-six-publication-v1` manifest and narrow server-only
+  runner. Production now contains 42 Published and 37 Unpublished Products;
+  projection version and sitemap Product count are 44 and 42. Replay returned
+  already complete. Instilar 1438 remains draft with lifecycle `0/0/0/0`. See
+  [publication closure](../reports/group-b-six-publication-2026-07-31.md).
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).

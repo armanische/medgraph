@@ -242,6 +242,19 @@ products.
 These tasks are post-launch work. They do not weaken structural invariants or
 authorize automatic lifecycle writes.
 
+## Post-launch catalog closure — 2026-07-31
+
+| Task | Status | Блокирует запуск |
+| --- | --- | --- |
+| Publish 33 High-confidence Group A Products | Завершено | Нет |
+| Resolve and publish six Product Owner-approved Group B Products | Завершено | Нет |
+| Keep Instilar 1438 outside lifecycle pending dedup policy | В backlog | Нет |
+| Remediate the remaining 36 unresolved identities | Следующая batch-задача | Нет |
+
+Production contains 42 Published and 37 Unpublished Products. Further catalog
+work follows the [Group C remediation queue](../reports/group-c-remediation-queue-2026-07-31.md)
+and remains post-launch.
+
 ## Never Automatic
 
 CyberMedica must never automatically:

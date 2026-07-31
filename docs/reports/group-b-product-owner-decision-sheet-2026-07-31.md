@@ -16,8 +16,10 @@ changed.
 The Product Owner accepted option A for all seven questions. Six Products moved
 to controlled content preparation and now have one current immutable revision
 each. Instilar 1438 moved to the Group C dedup backlog and received no write or
-lifecycle record. Human Review, Approval and Publication remain pending. See
-[Resolved Group B Six](./group-b-six-content-preparation-2026-07-31.md) and
+lifecycle record. The six resolved Products subsequently completed manual Human
+Review, Approval and Publication. See
+[Resolved Group B Six](./group-b-six-content-preparation-2026-07-31.md),
+[Publication Closure](./group-b-six-publication-2026-07-31.md) and
 [Instilar 1438 Dedup Backlog](./instilar-1438-dedup-backlog-2026-07-31.md).
 
 ## Verified scope
@@ -165,3 +167,10 @@ The final read-only Production verification returned Products 79, Published
 36/36/36/36. Sitemap Product URLs remain 36. Product writes and lifecycle
 writes were zero. Product content, migrations, ENV, DNS, and Vercel deployment
 settings were not changed; `gitForkProtection` remains enabled.
+
+## Publication closure
+
+The six Product Owner-approved resolutions are now Published. Production is 79
+Products, 42 Published and 37 Unpublished, with lifecycle totals
+`42/42/42/42`, projection version 44 and 42 sitemap Product URLs. Instilar 1438
+remains excluded and unchanged.

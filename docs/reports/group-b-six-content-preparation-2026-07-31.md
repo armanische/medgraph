@@ -65,3 +65,11 @@ unchanged. The hash of the existing 36 Published Product rows remains
 
 Warnings `missing_registration` and `missing_documents` remain non-blocking.
 No Decision, Approval or Publication Batch exists for the six new revisions.
+
+## Publication closure
+
+The six revisions subsequently received manual Product Owner Decisions and were
+approved and published through the exact immutable manifest recorded in the
+[publication closure](./group-b-six-publication-2026-07-31.md). Production is
+now 79 Products, 42 Published and 37 Unpublished. Instilar 1438 remains outside
+the lifecycle with `0/0/0/0`.

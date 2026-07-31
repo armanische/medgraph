@@ -25,3 +25,8 @@ so no automatic correction is permitted.
 | Блокирует запуск | Нет |
 
 No Production Product content or lifecycle record was changed for this Product.
+
+The resolved Group B six publication independently reconfirmed this state after
+Production reached 42 Published Products. Instilar 1438 remains absent from the
+42-URL sitemap and is now included in the
+[Group C remediation queue](./group-c-remediation-queue-2026-07-31.md).

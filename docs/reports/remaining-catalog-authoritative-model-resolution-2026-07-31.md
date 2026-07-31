@@ -127,3 +127,12 @@ Group A content packages + media audit
 → controlled Catalog Admin patches
 → revision readiness preflight
 ```
+
+## Post-resolution execution addendum
+
+The 33 High-confidence Products and six Product Owner-resolved Group B Products
+subsequently completed the approved content/revision/review/publication flow.
+Production now contains 42 Published and 37 Unpublished Products. The original
+36 unresolved Products remain unchanged; Instilar 1438 joins them only as a
+dedup-policy backlog item. See the
+[Group C remediation queue](./group-c-remediation-queue-2026-07-31.md).
