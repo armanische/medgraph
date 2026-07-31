@@ -52,10 +52,20 @@ function productionEnvironmentPresent() {
 }
 
 export async function POST(request: NextRequest) {
-  const auth = createInternalAuthRouteClient(request);
   if (process.env.VERCEL_ENV !== "production") {
-    return safeJson({ status: "blocked", code: "production_only" }, 403, auth);
+    return NextResponse.json(
+      { status: "blocked", code: "production_only" },
+      {
+        status: 403,
+        headers: {
+          "Cache-Control": "private, no-store, max-age=0",
+          "Referrer-Policy": "no-referrer",
+          "X-Robots-Tag": "noindex, nofollow",
+        },
+      },
+    );
   }
+  const auth = createInternalAuthRouteClient(request);
 
   let canonicalOrigin: string;
   try {
