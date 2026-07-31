@@ -6,8 +6,8 @@ import {
   AGILIA_REVIEW,
   AGILIA_REVIEW_PATH,
   APPROVED_REVIEWER,
+  GENERIC_REVIEW_QUEUE_PATH,
   HAMILTON_REVIEW,
-  HAMILTON_REVIEW_PATH,
   MINDRAY_REVIEW_PATH,
 } from "../../lib/internal-auth/constants.ts";
 import {
@@ -34,7 +34,7 @@ test("launch auth accepts only the approved Production origin and fixed destinat
     approvedCallbackUrl(productionEnvironment),
     "https://medgraph-medgraph.vercel.app/auth/callback",
   );
-  assert.equal(safeInternalDestination(), HAMILTON_REVIEW_PATH);
+  assert.equal(safeInternalDestination(), GENERIC_REVIEW_QUEUE_PATH);
   assert.equal(
     approvedCallbackUrl(MINDRAY_REVIEW_PATH, productionEnvironment),
     "https://medgraph-medgraph.vercel.app/auth/callback?next=%2Finternal%2Freview%2Fmindray-sv300",
@@ -130,7 +130,7 @@ test("server routes implement PKCE exchange, exact guard, clean redirect and har
   assert.match(callback, /signOut\(\{ scope: "local" \}\)/u);
   assert.match(callback, /cleanRedirect\(callbackDestination\(requestUrl\)\)/u);
   assert.doesNotMatch(callback, /access_token|refresh_token|token_hash/iu);
-  assert.match(proxy, /matcher:[\s\S]*\/internal\/review\/hamilton-t1[\s\S]*\/internal\/review\/mindray-sv300[\s\S]*\/internal\/review\/agilia-sp-mc/u);
+  assert.match(proxy, /matcher:[\s\S]*\/internal\/review\/:path\*/u);
   assert.match(proxy, /client\.auth\.getUser\(\)/u);
   assert.match(cookies, /path:\s*"\/"/u);
   assert.match(cookies, /sameSite:\s*"lax"/u);
@@ -194,7 +194,7 @@ test("Mindray review route is pinned to the current immutable revision", async (
   assert.match(component, /Подтвердить Human Review/u);
 });
 
-test("Hamilton action is the only write and is pinned to the immutable revision", async () => {
+test("legacy Hamilton route is read-only and cannot create a new decision", async () => {
   const [action, page, component, foundation] = await Promise.all([
     readFile("app/internal/review/hamilton-t1/actions.ts", "utf8"),
     readFile("app/internal/review/hamilton-t1/page.tsx", "utf8"),
@@ -205,17 +205,11 @@ test("Hamilton action is the only write and is pinned to the immutable revision"
     ),
   ]);
 
-  const rpcCalls = [...action.matchAll(/\.rpc\("([^"]+)"/gu)].map((match) => match[1]);
-  assert.deepEqual(rpcCalls, ["record_product_publication_review_decision_v1"]);
-  assert.doesNotMatch(action, /export const/u);
-  assert.match(action, /p_candidate_revision_id:\s*HAMILTON_REVIEW\.revisionId/u);
-  assert.match(action, /p_rationale:\s*HAMILTON_REVIEW\.rationale/u);
-  assert.match(action, /result\.productId !== HAMILTON_REVIEW\.productId/u);
-  assert.match(action, /result\.payloadChecksum !== HAMILTON_REVIEW\.payloadChecksum/u);
-  assert.doesNotMatch(action, /approve_product|publish_product|create_product_publication_revision/iu);
-  assert.doesNotMatch(page, /\.rpc\(|approve_product|publish_product/iu);
+  assert.doesNotMatch(action, /\.rpc\(/u);
+  assert.match(action, /уже опубликован/u);
+  assert.match(page, /redirect\(GENERIC_REVIEW_QUEUE_PATH\)/u);
+  assert.doesNotMatch(page, /HamiltonReviewConfirmation|HAMILTON_REVIEW/u);
   assert.equal((component.match(/<button/gu) ?? []).length, 1);
-  assert.match(component, /Подтвердить Human Review/u);
 
   assert.match(foundation, /current in-review Product revision/u);
   assert.match(foundation, /reviewer already recorded a different decision for this revision/u);

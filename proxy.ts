@@ -31,8 +31,6 @@ export async function proxy(request: NextRequest) {
 
 export const config = {
   matcher: [
-    "/internal/review/hamilton-t1",
-    "/internal/review/mindray-sv300",
-    "/internal/review/agilia-sp-mc",
+    "/internal/review/:path*",
   ],
 };

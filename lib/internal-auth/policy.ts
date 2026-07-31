@@ -1,6 +1,7 @@
 import {
   AGILIA_REVIEW_PATH,
   APPROVED_REVIEWER,
+  GENERIC_REVIEW_QUEUE_PATH,
   HAMILTON_REVIEW_PATH,
   MINDRAY_REVIEW_PATH,
   SENSITIVE_AUTH_PARAMETERS,
@@ -12,6 +13,7 @@ const productionOrigins = new Set([
 ]);
 
 const approvedReviewDestinations = new Set([
+  GENERIC_REVIEW_QUEUE_PATH,
   HAMILTON_REVIEW_PATH,
   MINDRAY_REVIEW_PATH,
   AGILIA_REVIEW_PATH,
@@ -78,12 +80,12 @@ export function resolveInternalAuthOrigin(
 export function approvedCallbackUrl(
   destinationOrEnvironment:
     | string
-    | Readonly<Record<string, string | undefined>> = HAMILTON_REVIEW_PATH,
+    | Readonly<Record<string, string | undefined>> = GENERIC_REVIEW_QUEUE_PATH,
   environment: Readonly<Record<string, string | undefined>> = process.env,
 ) {
   const destination = typeof destinationOrEnvironment === "string"
     ? destinationOrEnvironment
-    : HAMILTON_REVIEW_PATH;
+    : GENERIC_REVIEW_QUEUE_PATH;
   const runtimeEnvironment = typeof destinationOrEnvironment === "string"
     ? environment
     : destinationOrEnvironment;
@@ -91,7 +93,7 @@ export function approvedCallbackUrl(
   if (!approvedReviewDestinations.has(destination)) {
     throw new Error("Internal Auth destination is not approved.");
   }
-  if (destination !== HAMILTON_REVIEW_PATH) callback.searchParams.set("next", destination);
+  if (destination !== GENERIC_REVIEW_QUEUE_PATH) callback.searchParams.set("next", destination);
   return callback.toString();
 }
 
@@ -119,11 +121,11 @@ export function isSafeCallbackRequest(
 }
 
 export function safeInternalDestination() {
-  return HAMILTON_REVIEW_PATH;
+  return GENERIC_REVIEW_QUEUE_PATH;
 }
 
 export function resolveInternalReviewDestination(value?: string | null) {
-  return value && approvedReviewDestinations.has(value) ? value : HAMILTON_REVIEW_PATH;
+  return value && approvedReviewDestinations.has(value) ? value : GENERIC_REVIEW_QUEUE_PATH;
 }
 
 export function callbackDestination(requestUrl: URL) {

@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 
 import {
   AUTH_ERROR_CODES,
-  HAMILTON_REVIEW_PATH,
+  GENERIC_REVIEW_QUEUE_PATH,
   INTERNAL_LOGIN_PATH,
 } from "@/lib/internal-auth/constants";
 import {
@@ -22,7 +22,7 @@ function formField(formData: FormData, name: string) {
 export async function requestInternalMagicLink(formData: FormData) {
   const email = formField(formData, "email");
   const destination = resolveInternalReviewDestination(formField(formData, "next"));
-  const destinationQuery = destination === HAMILTON_REVIEW_PATH
+  const destinationQuery = destination === GENERIC_REVIEW_QUEUE_PATH
     ? ""
     : `&next=${encodeURIComponent(destination)}`;
   if (!isApprovedLoginEmail(email)) {
@@ -35,7 +35,7 @@ export async function requestInternalMagicLink(formData: FormData) {
       email,
       options: {
         shouldCreateUser: false,
-        emailRedirectTo: destination === HAMILTON_REVIEW_PATH
+        emailRedirectTo: destination === GENERIC_REVIEW_QUEUE_PATH
           ? approvedCallbackUrl()
           : approvedCallbackUrl(destination),
       },

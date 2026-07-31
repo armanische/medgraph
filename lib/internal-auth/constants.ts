@@ -1,4 +1,5 @@
 export const INTERNAL_AUTH_CALLBACK_PATH = "/auth/callback";
+export const GENERIC_REVIEW_QUEUE_PATH = "/internal/review";
 export const HAMILTON_REVIEW_PATH = "/internal/review/hamilton-t1";
 export const MINDRAY_REVIEW_PATH = "/internal/review/mindray-sv300";
 export const AGILIA_REVIEW_PATH = "/internal/review/agilia-sp-mc";
