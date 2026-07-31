@@ -19,6 +19,25 @@ function formField(formData: FormData, name: string) {
   return typeof value === "string" ? value : "";
 }
 
+function classifyAuthError(error: unknown) {
+  const candidate = error && typeof error === "object" ? error as Record<string, unknown> : {};
+  const status = typeof candidate.status === "number" ? candidate.status : undefined;
+  const text = [candidate.code, candidate.name, candidate.message]
+    .filter((value): value is string => typeof value === "string")
+    .join(" ")
+    .toLowerCase();
+  if (status === 429 || /rate.?limit|too many|email rate/u.test(text)) {
+    return AUTH_ERROR_CODES.emailRateLimited;
+  }
+  if (/invalid.*email|email.*not allowed|user.*not found|signup.*disabled/u.test(text)) {
+    return AUTH_ERROR_CODES.emailNotAllowed;
+  }
+  if (/environment|configuration|origin|supabase.*url|anon.*key|not configured/u.test(text)) {
+    return AUTH_ERROR_CODES.authConfigurationError;
+  }
+  return AUTH_ERROR_CODES.authProviderError;
+}
+
 export async function requestInternalMagicLink(formData: FormData) {
   const email = formField(formData, "email");
   const destination = resolveInternalReviewDestination(formField(formData, "next"));
@@ -29,6 +48,7 @@ export async function requestInternalMagicLink(formData: FormData) {
     redirect(`${INTERNAL_LOGIN_PATH}?status=sent${destinationQuery}`);
   }
 
+  let errorCode: string | undefined;
   try {
     const supabase = await createInternalAuthServerClient();
     const { error } = await supabase.auth.signInWithOtp({
@@ -40,11 +60,13 @@ export async function requestInternalMagicLink(formData: FormData) {
           : approvedCallbackUrl(destination),
       },
     });
-    if (error) {
-      redirect(`${INTERNAL_LOGIN_PATH}?error=${AUTH_ERROR_CODES.loginUnavailable}${destinationQuery}`);
-    }
+    if (error) errorCode = classifyAuthError(error);
   } catch {
-    redirect(`${INTERNAL_LOGIN_PATH}?error=${AUTH_ERROR_CODES.loginUnavailable}${destinationQuery}`);
+    errorCode = AUTH_ERROR_CODES.authConfigurationError;
+  }
+
+  if (errorCode) {
+    redirect(`${INTERNAL_LOGIN_PATH}?error=${errorCode}${destinationQuery}`);
   }
 
   redirect(`${INTERNAL_LOGIN_PATH}?status=sent${destinationQuery}`);

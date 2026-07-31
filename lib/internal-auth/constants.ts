@@ -11,6 +11,8 @@ export const APPROVED_REVIEWER = Object.freeze({
   role: "admin",
 });
 
+export const FUTURE_CORPORATE_REVIEWER_EMAIL = "cybermedicaooo@gmail.com";
+
 export const HAMILTON_REVIEW = Object.freeze({
   productId: "e66a1165-030b-4aa4-a400-959f1ac70fe3",
   productName: "Hamilton-T1",
@@ -63,6 +65,10 @@ export const AUTH_ERROR_CODES = Object.freeze({
   notAuthorized: "AUTH_PROFILE_NOT_AUTHORIZED",
   sessionRequired: "AUTH_SESSION_REQUIRED",
   loginUnavailable: "AUTH_LOGIN_UNAVAILABLE",
+  emailRateLimited: "EMAIL_RATE_LIMITED",
+  emailNotAllowed: "EMAIL_NOT_ALLOWED",
+  authConfigurationError: "AUTH_CONFIGURATION_ERROR",
+  authProviderError: "AUTH_PROVIDER_ERROR",
 });
 
 export const SENSITIVE_AUTH_PARAMETERS = new Set([

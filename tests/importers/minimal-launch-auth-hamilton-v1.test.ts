@@ -26,22 +26,19 @@ const productionEnvironment = Object.freeze({
 });
 
 test("launch auth accepts only the approved Production origin and fixed destination", () => {
-  assert.equal(
-    resolveInternalAuthOrigin(productionEnvironment),
-    "https://medgraph-medgraph.vercel.app",
-  );
+  assert.equal(resolveInternalAuthOrigin(productionEnvironment), "https://cyber-medica.ru");
   assert.equal(
     approvedCallbackUrl(productionEnvironment),
-    "https://medgraph-medgraph.vercel.app/auth/callback",
+    "https://cyber-medica.ru/auth/callback",
   );
   assert.equal(safeInternalDestination(), GENERIC_REVIEW_QUEUE_PATH);
   assert.equal(
     approvedCallbackUrl(MINDRAY_REVIEW_PATH, productionEnvironment),
-    "https://medgraph-medgraph.vercel.app/auth/callback?next=%2Finternal%2Freview%2Fmindray-sv300",
+    "https://cyber-medica.ru/auth/callback?next=%2Finternal%2Freview%2Fmindray-sv300",
   );
   assert.equal(
     approvedCallbackUrl(AGILIA_REVIEW_PATH, productionEnvironment),
-    "https://medgraph-medgraph.vercel.app/auth/callback?next=%2Finternal%2Freview%2Fagilia-sp-mc",
+    "https://cyber-medica.ru/auth/callback?next=%2Finternal%2Freview%2Fagilia-sp-mc",
   );
 
   assert.throws(() =>
@@ -61,31 +58,31 @@ test("launch auth accepts only the approved Production origin and fixed destinat
 test("callback accepts one authorization code and rejects token or redirect input", () => {
   assert.equal(
     isSafeCallbackRequest(
-      new URL("https://medgraph-medgraph.vercel.app/auth/callback?code=12345678"),
+      new URL("https://cyber-medica.ru/auth/callback?code=12345678"),
       productionEnvironment,
     ),
     true,
   );
   for (const url of [
-    "https://medgraph-medgraph.vercel.app/auth/callback",
-    "https://medgraph-medgraph.vercel.app/auth/callback?code=12345678&code=abcdefgh",
-    "https://medgraph-medgraph.vercel.app/auth/callback?code=12345678&next=https://attacker.example",
-    "https://medgraph-medgraph.vercel.app/auth/callback?access_token=secret",
-    "https://medgraph-medgraph.vercel.app/auth/callback?code=12345678#refresh_token=secret",
+    "https://cyber-medica.ru/auth/callback",
+    "https://cyber-medica.ru/auth/callback?code=12345678&code=abcdefgh",
+    "https://cyber-medica.ru/auth/callback?code=12345678&next=https://attacker.example",
+    "https://cyber-medica.ru/auth/callback?access_token=secret",
+    "https://cyber-medica.ru/auth/callback?code=12345678#refresh_token=secret",
     "https://attacker.example/auth/callback?code=12345678",
   ]) {
     assert.equal(isSafeCallbackRequest(new URL(url), productionEnvironment), false, url);
   }
   assert.equal(
     isSafeCallbackRequest(
-      new URL(`https://medgraph-medgraph.vercel.app/auth/callback?code=12345678&next=${encodeURIComponent(MINDRAY_REVIEW_PATH)}`),
+      new URL(`https://cyber-medica.ru/auth/callback?code=12345678&next=${encodeURIComponent(MINDRAY_REVIEW_PATH)}`),
       productionEnvironment,
     ),
     true,
   );
   assert.equal(
     isSafeCallbackRequest(
-      new URL(`https://medgraph-medgraph.vercel.app/auth/callback?code=12345678&next=${encodeURIComponent(AGILIA_REVIEW_PATH)}`),
+      new URL(`https://cyber-medica.ru/auth/callback?code=12345678&next=${encodeURIComponent(AGILIA_REVIEW_PATH)}`),
       productionEnvironment,
     ),
     true,
@@ -100,6 +97,7 @@ test("only the exact confirmed Production reviewer identity is accepted", () => 
   };
   assert.equal(isApprovedReviewer(approved), true);
   assert.equal(isApprovedLoginEmail(`  ${APPROVED_REVIEWER.email.toUpperCase()} `), true);
+  assert.equal(isApprovedLoginEmail("cybermedicaooo@gmail.com"), true);
   assert.equal(isApprovedReviewer({ ...approved, id: crypto.randomUUID() }), false);
   assert.equal(isApprovedReviewer({ ...approved, email: "other@example.com" }), false);
   assert.equal(isApprovedReviewer({ ...approved, email_confirmed_at: null }), false);
@@ -114,16 +112,22 @@ test("auth diagnostics redact URL credentials and authorization material", () =>
 });
 
 test("server routes implement PKCE exchange, exact guard, clean redirect and hardened cookies", async () => {
-  const [login, callback, proxy, cookies, config] = await Promise.all([
+  const [login, callback, proxy, cookies, config, constants] = await Promise.all([
     readFile("app/internal/login/actions.ts", "utf8"),
     readFile("app/auth/callback/route.ts", "utf8"),
     readFile("proxy.ts", "utf8"),
     readFile("lib/internal-auth/supabase.server.ts", "utf8"),
     readFile("next.config.ts", "utf8"),
+    readFile("lib/internal-auth/constants.ts", "utf8"),
   ]);
 
   assert.match(login, /signInWithOtp/u);
   assert.match(login, /shouldCreateUser:\s*false/u);
+  assert.match(constants, /emailRateLimited:\s*"EMAIL_RATE_LIMITED"/u);
+  assert.match(constants, /emailNotAllowed:\s*"EMAIL_NOT_ALLOWED"/u);
+  assert.match(constants, /authConfigurationError:\s*"AUTH_CONFIGURATION_ERROR"/u);
+  assert.match(constants, /authProviderError:\s*"AUTH_PROVIDER_ERROR"/u);
+  assert.doesNotMatch(login, /redirect\([^)]*AUTH_LOGIN_UNAVAILABLE[^)]*\)[\s\S]*catch/u);
   assert.match(login, /emailRedirectTo:[\s\S]*approvedCallbackUrl\(\)/u);
   assert.match(callback, /exchangeCodeForSession\(code\)/u);
   assert.match(callback, /isApprovedReviewer\(data\.user\)/u);

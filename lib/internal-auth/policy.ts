@@ -1,6 +1,7 @@
 import {
   AGILIA_REVIEW_PATH,
   APPROVED_REVIEWER,
+  FUTURE_CORPORATE_REVIEWER_EMAIL,
   GENERIC_REVIEW_QUEUE_PATH,
   HAMILTON_REVIEW_PATH,
   MINDRAY_REVIEW_PATH,
@@ -11,6 +12,7 @@ const productionOrigins = new Set([
   "https://cyber-medica.ru",
   "https://medgraph-medgraph.vercel.app",
 ]);
+const canonicalProductionOrigin = "https://cyber-medica.ru";
 
 const approvedReviewDestinations = new Set([
   GENERIC_REVIEW_QUEUE_PATH,
@@ -34,7 +36,9 @@ export function isApprovedReviewer(user: {
 }
 
 export function isApprovedLoginEmail(value: string) {
-  return normalizeEmail(value) === APPROVED_REVIEWER.email;
+  const normalized = normalizeEmail(value);
+  return normalized === APPROVED_REVIEWER.email
+    || normalized === FUTURE_CORPORATE_REVIEWER_EMAIL;
 }
 
 export function resolveInternalAuthOrigin(
@@ -64,7 +68,7 @@ export function resolveInternalAuthOrigin(
     if (!productionOrigins.has(origin)) {
       throw new Error("Internal Auth Production origin is not approved.");
     }
-    return origin;
+    return canonicalProductionOrigin;
   }
 
   if (

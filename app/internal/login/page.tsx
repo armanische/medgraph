@@ -19,7 +19,7 @@ export default async function InternalLoginPage({ searchParams }: LoginPageProps
   await connection();
   const parameters = await searchParams;
   const sent = parameters.status === "sent";
-  const denied = typeof parameters.error === "string";
+  const errorCode = typeof parameters.error === "string" ? parameters.error : null;
   const destination = resolveInternalReviewDestination(
     typeof parameters.next === "string" ? parameters.next : null,
   );
@@ -44,13 +44,28 @@ export default async function InternalLoginPage({ searchParams }: LoginPageProps
               Если доступ разрешён, одноразовая ссылка отправлена на указанный адрес.
             </p>
           ) : null}
-          {denied ? (
+          {errorCode === "EMAIL_RATE_LIMITED" ? (
             <p className="mt-5 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-950">
-              Вход не завершён. Запросите новую одноразовую ссылку.
+              Сервис временно ограничил отправку писем. Подождите немного и повторите попытку.
+            </p>
+          ) : null}
+          {errorCode === "EMAIL_NOT_ALLOWED" ? (
+            <p className="mt-5 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-950">
+              Этот адрес сейчас не разрешён для внутреннего входа.
+            </p>
+          ) : null}
+          {errorCode === "AUTH_CONFIGURATION_ERROR" ? (
+            <p className="mt-5 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-950">
+              Внутренняя конфигурация Auth недоступна. Повторите попытку позже.
+            </p>
+          ) : null}
+          {errorCode === "AUTH_PROVIDER_ERROR" || errorCode === "AUTH_LOGIN_UNAVAILABLE" ? (
+            <p className="mt-5 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-950">
+              Supabase Auth временно недоступен. Повторите попытку позже.
             </p>
           ) : null}
 
-          <form action={requestInternalMagicLink} className="mt-6 space-y-4">
+          <form action={requestInternalMagicLink} method="post" className="mt-6 space-y-4">
             <input type="hidden" name="next" value={destination} />
             <label className="block text-sm font-medium text-slate-800" htmlFor="internal-email">
               Email
