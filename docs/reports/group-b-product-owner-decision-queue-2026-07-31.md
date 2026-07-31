@@ -1,18 +1,26 @@
 # Group B Product Owner Decision Queue — 2026-07-31
 
-Group A Publication is closed. The following seven unpublished Products remain
-outside every publication manifest and require one concrete Product Owner
-identity/media decision each:
+Group A Publication is closed. Exactly seven unpublished Products remain
+outside every publication manifest and require one closed Product Owner
+identity/media decision each. Production evidence was rechecked read-only;
+none of the seven has a revision, Approval, or Publication Batch.
 
-1. **Olympus CV-170 OPTERA** — confirm the exact CV-170 OPTERA source and media.
-2. **Olympus CV-190 PLUS EVIS EXERA III** — confirm the PLUS execution and media against the official CV-190 source.
-3. **Bionet BM 5** — confirm medical BM5 versus BM5Vet execution.
-4. **Mindray BeneFusion SP 5** — confirm the exact SP 5 IFU/datasheet and separate it from BeneFusion e/VP.
-5. **DIXION Instilar 1438** — confirm that the item is 1438, not 1428.
-6. **Comen Star5000** — confirm the exact Star5000 variant and media.
-7. **Comen Star5000C** — confirm the exact Star5000C variant and media.
+The complete evidence, A/B/BLOCK questions, recommended answers, deterministic
+resolution mapping, and batch forecast are recorded in the
+[Group B Product Owner Decision Sheet](./group-b-product-owner-decision-sheet-2026-07-31.md).
 
-These seven items remain unpublished and were not modified by Publication
-Waves 1–3. The next safe task is Product Owner resolution of these seven
-questions, followed by a separate content/readiness gate for confirmed items.
+Recommended compact response:
 
+```text
+1 — A
+2 — A
+3 — A
+4 — A
+5 — A
+6 — A
+7 — A
+```
+
+Accepting the recommendations moves six Products to Group A content
+preparation and sends the unsupported Instilar 1438 identity to Group C/dedup
+backlog. No Product or lifecycle write is authorized by the decision itself.
