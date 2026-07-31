@@ -7,7 +7,8 @@ Status: planning pack for MVP-034
 | Task | State | Блокирует запуск |
 | --- | --- | --- |
 | Publication Wave 1 | PASS — 10 new Products, Published total 13 | Нет |
-| Wave 2 reviewed queue | 23 current revisions; Approval/Publication pending | Нет |
+| Publication Wave 2 | PASS — 15 new Products, Published total 28 | Нет |
+| Wave 3 reviewed queue | 8 current revisions; Approval/Publication pending | Нет |
 | Group B Product Owner resolution | 7 Products | Нет |
 | Group C source resolution | 36 Products | Нет |
 

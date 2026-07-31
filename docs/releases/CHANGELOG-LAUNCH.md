@@ -98,6 +98,12 @@
   version is 15 and sitemap contains exactly 13 Product URLs. The remaining 23
   reviewed revisions retain zero Approval and zero Publication Batch. See
   [Wave 1 closure](../reports/catalog-publication-wave-1-2026-07-30.md).
+- Catalog Publication Wave 2 (2026-07-31): fifteen additional reviewed
+  revisions were approved and published through a new immutable manifest and
+  narrow server-only runner. Production now contains 28 Published and 51
+  Unpublished Products; projection version and sitemap Product count are 30
+  and 28. Replay returned already complete without duplicate writes. See
+  [Wave 2 closure](../reports/catalog-publication-wave-2-2026-07-31.md).
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).

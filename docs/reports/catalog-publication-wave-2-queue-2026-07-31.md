@@ -2,10 +2,10 @@
 
 ## Status
 
-The remaining 23 Group A revisions have a current positive Human Review
-Decision and remain unpublished with zero Approval and zero Publication Batch.
-They are excluded from Wave 1 and require a new exact immutable operation
-manifest before any write.
+Wave 2 is complete. The first fifteen revisions below were published through
+the exact immutable Wave 2 manifest. The final eight remain current,
+reviewed/unpublished and have zero Approval and zero Publication Batch; they
+form the proposed Wave 3 scope.
 
 ## Reviewed queue
 
@@ -33,9 +33,9 @@ manifest before any write.
 22. Bionet CardioCare 2000
 23. Bionet CardioTouch 3000
 
-## Recommendation
+## Wave assignment
 
-Create a Wave 2 manifest from fresh durable state, split the scope into a first
-controlled batch of at most 15–20 Products, and repeat exact preflight,
-idempotent Approval, Publication and public smoke. Do not reuse the completed
-Wave 1 operation key.
+- Wave 2: entries 1–15 — PASS; Published.
+- Wave 3: entries 16–23 — pending controlled manifest and fresh preflight.
+
+Do not reuse either completed Wave 1 or Wave 2 operation key.
