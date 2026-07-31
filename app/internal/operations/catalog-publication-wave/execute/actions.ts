@@ -1,11 +1,12 @@
 "use server";
 
 import { requireTrustedReviewer } from "@/lib/internal-auth/session";
-import { createInternalAuthServerClient } from "@/lib/internal-auth/supabase.server";
+import { hasExactCatalogWave1AdminProfile } from "@/lib/operations/catalog-wave-1-admin";
 import {
   CatalogWave1RunnerError,
   executeProductionCatalogWave1,
 } from "@/lib/operations/catalog-wave-1-runner";
+import { createProjectBoundSupabaseServerClient } from "@/lib/supabase/client.server";
 
 const EXPECTED_ADMIN_ID = "0a5270ac-66f2-4711-9701-e0557fcff73a";
 
@@ -16,12 +17,6 @@ export type CatalogWave1ActionState = {
   approvals?: number;
   publicationBatches?: number;
   remainingReviewedUnpublished?: number;
-};
-
-type InternalAccessResult = {
-  userId?: unknown;
-  role?: unknown;
-  allowed?: unknown;
 };
 
 function productionEnvironmentPresent() {
@@ -41,17 +36,8 @@ export async function executeCatalogWave1Action(): Promise<CatalogWave1ActionSta
     return { status: "blocked", message: "Operation authorization failed closed." };
   }
 
-  const supabase = await createInternalAuthServerClient();
-  const { data, error } = await supabase
-    .schema("cloud_api")
-    .rpc("current_internal_access_v1");
-  const access = data as InternalAccessResult | null;
-  if (
-    error
-    || access?.userId !== user.id
-    || access.role !== "admin"
-    || access.allowed !== true
-  ) {
+  const serviceClient = createProjectBoundSupabaseServerClient();
+  if (!await hasExactCatalogWave1AdminProfile(serviceClient, user.id)) {
     return { status: "blocked", message: "Operation authorization failed closed." };
   }
 

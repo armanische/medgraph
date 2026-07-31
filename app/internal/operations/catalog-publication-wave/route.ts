@@ -9,30 +9,18 @@ import {
   CATALOG_WAVE_1_MANIFEST_SHA256,
   validateCatalogWave1OperationRequest,
 } from "@/lib/operations/catalog-wave-1-manifest";
+import { hasExactCatalogWave1AdminProfile } from "@/lib/operations/catalog-wave-1-admin";
 import {
   CatalogWave1RunnerError,
   executeProductionCatalogWave1,
 } from "@/lib/operations/catalog-wave-1-runner";
+import { createProjectBoundSupabaseServerClient } from "@/lib/supabase/client.server";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 export const maxDuration = 60;
 
 const EXPECTED_ADMIN_ID = "0a5270ac-66f2-4711-9701-e0557fcff73a";
-
-type InternalAccessResult = {
-  userId?: unknown;
-  role?: unknown;
-  allowed?: unknown;
-};
-
-function isExactAdminAccess(value: unknown): value is InternalAccessResult {
-  if (!value || typeof value !== "object" || Array.isArray(value)) return false;
-  const access = value as InternalAccessResult;
-  return access.userId === EXPECTED_ADMIN_ID
-    && access.role === "admin"
-    && access.allowed === true;
-}
 
 function safeJson(
   body: Readonly<Record<string, unknown>>,
@@ -85,10 +73,14 @@ export async function POST(request: NextRequest) {
   if (authError || !authData.user || !isApprovedReviewer(authData.user)) {
     return safeJson({ status: "blocked", code: "authentication_required" }, 401, auth);
   }
-  const { data: accessData, error: accessError } = await auth.client
-    .schema("cloud_api")
-    .rpc("current_internal_access_v1");
-  if (accessError || !isExactAdminAccess(accessData) || accessData.userId !== authData.user.id) {
+  if (!productionEnvironmentPresent()) {
+    return safeJson({ status: "blocked", code: "service_configuration_missing" }, 503, auth);
+  }
+  const serviceClient = createProjectBoundSupabaseServerClient();
+  if (
+    authData.user.id !== EXPECTED_ADMIN_ID
+    || !await hasExactCatalogWave1AdminProfile(serviceClient, authData.user.id)
+  ) {
     return safeJson({ status: "blocked", code: "admin_required" }, 403, auth);
   }
 
@@ -113,10 +105,6 @@ export async function POST(request: NextRequest) {
   if (!validateCatalogWave1OperationRequest(body)) {
     return safeJson({ status: "blocked", code: "invalid_operation_manifest" }, 400, auth);
   }
-  if (!productionEnvironmentPresent()) {
-    return safeJson({ status: "blocked", code: "service_configuration_missing" }, 503, auth);
-  }
-
   try {
     const result = await executeProductionCatalogWave1();
     return safeJson({

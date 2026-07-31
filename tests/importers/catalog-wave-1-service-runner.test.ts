@@ -86,8 +86,7 @@ test("POST route re-authorizes exact admin and never exposes a generic publicati
   assert.match(route, /sec-fetch-site/u);
   assert.match(route, /same-origin/u);
   assert.match(route, /auth\.client\.auth\.getUser\(\)/u);
-  assert.match(route, /current_internal_access_v1/u);
-  assert.match(route, /access\.role === "admin"/u);
+  assert.match(route, /hasExactCatalogWave1AdminProfile/u);
   assert.match(route, /validateCatalogWave1OperationRequest/u);
   assert.match(route, /service_configuration_missing/u);
   assert.match(route, /rawBody\.length > 512/u);
@@ -118,10 +117,23 @@ test("execution Server Action re-authorizes the exact Production admin", async (
   assert.match(action, /^"use server";/u);
   assert.match(action, /process\.env\.VERCEL_ENV !== "production"/u);
   assert.match(action, /requireTrustedReviewer\(\)/u);
-  assert.match(action, /current_internal_access_v1/u);
-  assert.match(action, /access\.role !== "admin"/u);
+  assert.match(action, /hasExactCatalogWave1AdminProfile/u);
   assert.match(action, /executeProductionCatalogWave1\(\)/u);
   assert.match(component, /useActionState/u);
   assert.match(component, /executeCatalogWave1Action/u);
   assert.doesNotMatch(component, /productId|revisionId|decisionId|serviceRole/u);
+});
+
+test("admin profile check is server-only, exact and read-only", async () => {
+  const helper = await readFile(
+    "lib/operations/catalog-wave-1-admin.ts",
+    "utf8",
+  );
+  assert.match(helper, /^import "server-only";/u);
+  assert.match(helper, /client\.access !== "service_role"/u);
+  assert.match(helper, /select: "id,role"/u);
+  assert.match(helper, /value\.length !== 1/u);
+  assert.match(helper, /profile\.id === userId && profile\.role === "admin"/u);
+  assert.doesNotMatch(helper, /insert|update|delete/iu);
+  assert.doesNotMatch(helper, /SUPABASE_SERVICE_ROLE_KEY|Authorization|Bearer/u);
 });
