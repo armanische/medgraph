@@ -90,8 +90,14 @@
   and [revision run](../reports/group-a-minimal-revision-run-2026-07-31.md).
 - Generic Publication Review Queue (2026-07-31): added generic
   `/internal/review` and `/internal/review/[revisionId]` routes with existing
-  authenticated access and cloud_api reads. Runtime deployment is pending
-  separate approval.
+  authenticated access and cloud_api reads. The queue was deployed and used for
+  the exact Group A Human Review decisions recorded by the lifecycle evidence.
+- Catalog Publication Wave 1 (2026-07-31): ten exact reviewed revisions were
+  approved and published through a narrow server-only, service-role runner.
+  Production now contains 13 Published and 66 Unpublished Products; projection
+  version is 15 and sitemap contains exactly 13 Product URLs. The remaining 23
+  reviewed revisions retain zero Approval and zero Publication Batch. See
+  [Wave 1 closure](../reports/catalog-publication-wave-1-2026-07-30.md).
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).

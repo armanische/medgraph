@@ -8,7 +8,7 @@ validation report remains historical; its visual exact-match and exact-RU
 requirements were superseded by the Product Owner rule that only explicit
 media contradiction is a blocker and missing registration is a warning.
 
-## Final execution state
+## Initial execution state
 
 | Area | Result |
 | --- | ---: |
@@ -23,15 +23,14 @@ media contradiction is a blocker and missing registration is a warning.
 | Publications | 0 |
 | Generic Review Queue | implemented, not deployed |
 
-All 33 records are now ready for the Product Owner's Human Review. The queue
+All 33 records were prepared for the Product Owner's Human Review. The queue
 is generic and uses `/internal/review` plus `/internal/review/[revisionId]`;
 there are no per-Product routes.
 
-## Wave 1 proposal
+## Wave 1 completed state
 
-The following ten are proposed for the first manual review order based on
-commercial relevance and existing media completeness. This is a proposal only;
-no Review or Approval was performed.
+The following ten completed Human Review, Approval and Publication through the
+exact server-only Wave 1 manifest:
 
 1. BeneVision N1 — revision `df13433f-7461-40fd-9c9c-e026254f9ec4`
 2. Instilar 1428 — revision `0fcedfbd-bc41-41e2-b6c5-fadae6ef4918`
@@ -44,11 +43,15 @@ no Review or Approval was performed.
 9. Storm 5800 — revision `f150f4bc-c8d7-4069-ab45-c73c15d091dc`
 10. GE Versana Essential — revision `a84e9afe-0245-429a-ba4a-acc9926d49d0`
 
-All proposed entries retain the same warnings:
+All entries retain the same non-blocking warnings:
 `missing_registration`, `missing_documents`.
 
-## Next manual action
+Production now contains 13 Published and 66 Unpublished Products. The other 23
+Group A revisions retain a positive Decision but have zero Approval and zero
+Publication Batch. See [Wave 1 closure](./catalog-publication-wave-1-2026-07-30.md)
+and [Wave 2 queue](./catalog-publication-wave-2-queue-2026-07-31.md).
 
-Product Owner opens `/internal/review`, reviews evidence, and explicitly
-submits Human Review one revision at a time. Approval and Publication remain
-separate operations and are not enabled by this batch.
+## Next controlled action
+
+Create a fresh immutable Wave 2 manifest for an approved subset of the remaining
+23 reviewed revisions. The completed Wave 1 key cannot be reused.

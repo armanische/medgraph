@@ -2,6 +2,15 @@
 
 Status: planning pack for MVP-034
 
+## Current publication queue — 2026-07-31
+
+| Task | State | Блокирует запуск |
+| --- | --- | --- |
+| Publication Wave 1 | PASS — 10 new Products, Published total 13 | Нет |
+| Wave 2 reviewed queue | 23 current revisions; Approval/Publication pending | Нет |
+| Group B Product Owner resolution | 7 Products | Нет |
+| Group C source resolution | 36 Products | Нет |
+
 ## Goal
 
 Wave 2 expands CyberMedica from pilot/golden products to a structured backlog of 250-300 real medical devices. This is not mass import and not publication. The goal is to prepare manufacturer/category packs that make source discovery, document collection and review predictable.

@@ -152,3 +152,10 @@ deployment. It does not modify Supabase data or publication state. If the
 deployed robots contract remains globally disallowed, exposes a non-published
 URL, emits `noindex` for the public Hamilton page, or leaks an internal/API
 route, stop indexing activation and roll back before any webmaster submission.
+
+## Published catalog addendum — 2026-07-31
+
+Publication Wave 1 preserved the projection-only indexing contract. Sitemap now
+contains exactly 13 Product URLs: the prior three and ten Wave 1 Products.
+Production is 79 Products, 13 Published and 66 Unpublished; projection version
+is 15. No internal, Auth, API or unpublished Product URL was introduced.
