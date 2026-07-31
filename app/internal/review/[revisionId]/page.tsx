@@ -52,7 +52,8 @@ export default async function PublicationReviewDetailPage({
           <Fact label="Revision" value={`${manifest.revisionNumber} · current / non-stale`} />
           <Fact label="Revision ID" value={manifest.revisionId} />
           <Fact label="Review Item ID" value={manifest.reviewItemId} />
-          <Fact label="Candidate payload checksum" value={manifest.payloadChecksum} />
+          <Fact label="Candidate payload checksum" value={manifest.candidatePayloadChecksum ?? manifest.payloadChecksum} />
+          <Fact label="Immutable payload checksum" value={manifest.payloadChecksum} />
           <Fact label="Product identity checksum" value={manifest.productIdentityChecksum} />
           <Fact label="SEO" value={product.seoTitle && product.seoDescription ? "present" : "missing"} />
           <Fact label="Characteristics" value={evidence.characteristics} />
