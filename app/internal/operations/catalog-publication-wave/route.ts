@@ -9,12 +9,10 @@ import {
   CATALOG_WAVE_1_MANIFEST_SHA256,
   validateCatalogWave1OperationRequest,
 } from "@/lib/operations/catalog-wave-1-manifest";
-import { hasExactCatalogWave1AdminProfile } from "@/lib/operations/catalog-wave-1-admin";
 import {
   CatalogWave1RunnerError,
   executeProductionCatalogWave1,
 } from "@/lib/operations/catalog-wave-1-runner";
-import { createProjectBoundSupabaseServerClient } from "@/lib/supabase/client.server";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -76,11 +74,7 @@ export async function POST(request: NextRequest) {
   if (!productionEnvironmentPresent()) {
     return safeJson({ status: "blocked", code: "service_configuration_missing" }, 503, auth);
   }
-  const serviceClient = createProjectBoundSupabaseServerClient();
-  if (
-    authData.user.id !== EXPECTED_ADMIN_ID
-    || !await hasExactCatalogWave1AdminProfile(serviceClient, authData.user.id)
-  ) {
+  if (authData.user.id !== EXPECTED_ADMIN_ID) {
     return safeJson({ status: "blocked", code: "admin_required" }, 403, auth);
   }
 

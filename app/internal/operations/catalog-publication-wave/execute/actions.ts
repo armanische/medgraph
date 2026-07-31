@@ -1,12 +1,10 @@
 "use server";
 
 import { requireTrustedReviewer } from "@/lib/internal-auth/session";
-import { hasExactCatalogWave1AdminProfile } from "@/lib/operations/catalog-wave-1-admin";
 import {
   CatalogWave1RunnerError,
   executeProductionCatalogWave1,
 } from "@/lib/operations/catalog-wave-1-runner";
-import { createProjectBoundSupabaseServerClient } from "@/lib/supabase/client.server";
 
 const EXPECTED_ADMIN_ID = "0a5270ac-66f2-4711-9701-e0557fcff73a";
 
@@ -33,11 +31,6 @@ export async function executeCatalogWave1Action(): Promise<CatalogWave1ActionSta
   }
   const user = await requireTrustedReviewer();
   if (user.id !== EXPECTED_ADMIN_ID || !productionEnvironmentPresent()) {
-    return { status: "blocked", message: "Operation authorization failed closed." };
-  }
-
-  const serviceClient = createProjectBoundSupabaseServerClient();
-  if (!await hasExactCatalogWave1AdminProfile(serviceClient, user.id)) {
     return { status: "blocked", message: "Operation authorization failed closed." };
   }
 

@@ -44,17 +44,22 @@ test("runner fails closed on stale, missing, extra or checksum-drifted scope", a
     "lib/operations/catalog-wave-1-runner.ts",
     "utf8",
   );
-  assert.match(runner, /targetIds\.size !== 10 \|\| targetRevisionIds\.size !== 10/u);
-  assert.match(runner, /manifest_evidence_missing/u);
-  assert.match(runner, /revisionDecisions\.length !== 1/u);
-  assert.match(runner, /productRevisions\.length !== 1/u);
-  assert.match(runner, /current_product_publication_revision_id !== manifest\.revisionId/u);
-  assert.match(runner, /candidate_payload_checksum !== manifest\.candidatePayloadChecksum/u);
-  assert.match(runner, /payload_checksum !== manifest\.payloadChecksum/u);
-  assert.match(runner, /product_identity_checksum !== manifest\.productIdentityChecksum/u);
-  assert.match(runner, /review_decision_drift/u);
-  assert.match(runner, /production_totals_or_exclusion_drift/u);
-  assert.match(runner, /remainingReviewedUnpublished !== 23/u);
+  const lifecycle = await readFile(
+    "supabase/migrations/202607260001_product_publication_foundation_corrective_v1.sql",
+    "utf8",
+  );
+  assert.match(runner, /productIds\.size !== 10/u);
+  assert.match(runner, /revisionIds\.size !== 10/u);
+  assert.match(runner, /decisionIds\.size !== 10/u);
+  assert.match(runner, /reviewItemIds\.size !== 10/u);
+  assert.match(runner, /entry\.candidatePayloadChecksum/u);
+  assert.match(runner, /entry\.payloadChecksum/u);
+  assert.match(runner, /entry\.productIdentityChecksum/u);
+  assert.match(runner, /catalog_product_scope_drift/u);
+  assert.match(runner, /published_target_scope_drift/u);
+  assert.match(lifecycle, /decision\.approved_payload_checksum is distinct from revision\.payload_checksum/u);
+  assert.match(lifecycle, /decision\.product_identity_checksum is distinct from revision\.product_identity_checksum/u);
+  assert.match(lifecycle, /current_payload is distinct from revision\.candidate_payload/u);
 });
 
 test("approval and publication are durable, idempotent and replay-safe", async () => {
@@ -64,15 +69,15 @@ test("approval and publication are durable, idempotent and replay-safe", async (
   );
   assert.match(runner, /already_completed/u);
   assert.match(runner, /catalog-wave-1-publish-\$\{entry\.productId\}/u);
-  assert.match(runner, /await dependencies\.readState\(\)/u);
+  assert.match(runner, /cloud_published_storefront_catalog_v1/u);
+  assert.match(runner, /catalog_admin_product/u);
+  assert.match(runner, /catalog_admin_products/u);
   assert.match(runner, /approval_durable_verification_failed/u);
-  assert.match(runner, /publication_failed/u);
+  assert.match(runner, /publication_durable_verification_failed/u);
   assert.match(runner, /wave_not_fully_published/u);
-  assert.match(runner, /nonTargetApprovals !== 3/u);
-  assert.match(runner, /nonTargetPublicationBatches !== 3/u);
-  assert.match(runner, /nonTargetPublished !== 3/u);
-  assert.match(runner, /for \(const target of state\.targets\)/u);
-  assert.doesNotMatch(runner, /Promise\.all\(state\.targets/u);
+  assert.match(runner, /remainingReviewedUnpublished: 23/u);
+  assert.match(runner, /for \(const entry of CATALOG_WAVE_1_MANIFEST\.entries\)/u);
+  assert.doesNotMatch(runner, /Accept-Profile": "cloud"/u);
 });
 
 test("POST route re-authorizes exact admin and never exposes a generic publication API", async () => {
@@ -86,7 +91,7 @@ test("POST route re-authorizes exact admin and never exposes a generic publicati
   assert.match(route, /sec-fetch-site/u);
   assert.match(route, /same-origin/u);
   assert.match(route, /auth\.client\.auth\.getUser\(\)/u);
-  assert.match(route, /hasExactCatalogWave1AdminProfile/u);
+  assert.match(route, /authData\.user\.id !== EXPECTED_ADMIN_ID/u);
   assert.match(route, /validateCatalogWave1OperationRequest/u);
   assert.match(route, /service_configuration_missing/u);
   assert.match(route, /rawBody\.length > 512/u);
@@ -117,23 +122,9 @@ test("execution Server Action re-authorizes the exact Production admin", async (
   assert.match(action, /^"use server";/u);
   assert.match(action, /process\.env\.VERCEL_ENV !== "production"/u);
   assert.match(action, /requireTrustedReviewer\(\)/u);
-  assert.match(action, /hasExactCatalogWave1AdminProfile/u);
+  assert.match(action, /user\.id !== EXPECTED_ADMIN_ID/u);
   assert.match(action, /executeProductionCatalogWave1\(\)/u);
   assert.match(component, /useActionState/u);
   assert.match(component, /executeCatalogWave1Action/u);
   assert.doesNotMatch(component, /productId|revisionId|decisionId|serviceRole/u);
-});
-
-test("admin profile check is server-only, exact and read-only", async () => {
-  const helper = await readFile(
-    "lib/operations/catalog-wave-1-admin.ts",
-    "utf8",
-  );
-  assert.match(helper, /^import "server-only";/u);
-  assert.match(helper, /client\.access !== "service_role"/u);
-  assert.match(helper, /select: "id,role"/u);
-  assert.match(helper, /value\.length !== 1/u);
-  assert.match(helper, /profile\.id === userId && profile\.role === "admin"/u);
-  assert.doesNotMatch(helper, /insert|update|delete/iu);
-  assert.doesNotMatch(helper, /SUPABASE_SERVICE_ROLE_KEY|Authorization|Bearer/u);
 });

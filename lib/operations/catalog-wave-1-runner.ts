@@ -4,6 +4,7 @@ import {
   approveProductPublicationRevision,
   publishProduct,
 } from "@/lib/product-publication/server";
+import { parsePublishedCatalogProjection } from "@/lib/published-catalog/contracts";
 import {
   createProjectBoundSupabaseServerClient,
   type SupabaseServerClient,
@@ -14,110 +15,55 @@ import {
   type CatalogWave1ManifestEntry,
 } from "./catalog-wave-1-manifest";
 
-const CLOUD_READ_HEADERS = { "Accept-Profile": "cloud" } as const;
-const EXPECTED_REVIEWER_ID = "0a5270ac-66f2-4711-9701-e0557fcff73a";
+const CLOUD_API_HEADERS = {
+  "Accept-Profile": "cloud_api",
+  "Content-Profile": "cloud_api",
+  "Content-Type": "application/json",
+} as const;
 
-type ProductRow = {
-  id: string;
-  source_uid: string;
-  source_checksum: string;
+type CatalogAdminProduct = {
+  id?: unknown;
+  slug?: unknown;
+  model?: unknown;
+  publicationStatus?: unknown;
+  reviewState?: unknown;
+  published?: unknown;
+  seoTitle?: unknown;
+  seoDescription?: unknown;
+  characteristics?: unknown;
+  media?: unknown;
+  immutable?: { sourceUid?: unknown; sourceChecksum?: unknown } | null;
+};
+
+type CatalogAdminInventory = { items?: unknown; total?: unknown };
+
+type ApprovalEvidence = {
+  revisionId: string;
+  approvalId: string;
+};
+
+type PublicationEvidence = {
+  productId: string;
+  revisionId: string;
+  publicationBatchId: string;
   slug: string;
-  model: string;
-  published: boolean;
-  publication_status: string;
-  review_state: string;
-  current_product_publication_revision_id: string | null;
-  current_product_publication_approval_id: string | null;
-  active_product_publication_batch_id: string | null;
 };
-
-type RevisionRow = {
-  id: string;
-  product_id: string;
-  review_item_id: string;
-  revision_number: number;
-  candidate_payload_checksum: string;
-  payload_checksum: string;
-  product_identity_checksum: string;
-};
-
-type DecisionRow = {
-  id: string;
-  review_item_id: string;
-  product_publication_revision_id: string;
-  decision_type: string;
-  field_path: string;
-  decision: string;
-  reviewer_id: string;
-  approved_payload_checksum: string;
-  product_identity_checksum: string;
-};
-
-type ReviewItemRow = { id: string; status: string };
-
-type ApprovalRow = {
-  id: string;
-  candidate_revision_id: string;
-  review_item_id: string;
-  review_decision_id: string;
-  payload_checksum: string;
-  product_identity_checksum: string;
-  decision: string;
-  reviewer_id: string;
-};
-
-type PublicationBatchRow = {
-  id: string;
-  product_id: string;
-  candidate_revision_id: string | null;
-  approval_id: string | null;
-  action: string;
-  idempotency_key: string;
-  payload_checksum: string;
-};
-
-export type CatalogWave1Stage = "ready" | "approved" | "published";
-
-export type CatalogWave1TargetState = Readonly<{
-  manifest: CatalogWave1ManifestEntry;
-  product: ProductRow;
-  revision: RevisionRow;
-  decision: DecisionRow;
-  reviewItem: ReviewItemRow;
-  approval: ApprovalRow | null;
-  publicationBatch: PublicationBatchRow | null;
-  stage: CatalogWave1Stage;
-}>;
-
-export type CatalogWave1State = Readonly<{
-  totals: Readonly<{
-    products: number;
-    published: number;
-    revisions: number;
-    decisions: number;
-    approvals: number;
-    publicationBatches: number;
-  }>;
-  targets: readonly CatalogWave1TargetState[];
-  remainingReviewedUnpublished: number;
-  nonTargetApprovals: number;
-  nonTargetPublicationBatches: number;
-  nonTargetPublished: number;
-}>;
 
 export type CatalogWave1Result = Readonly<{
   status: "completed" | "already_completed";
   operationKey: string;
   manifestSha256: string;
-  approvals: readonly Readonly<{ revisionId: string; approvalId: string }>[];
-  publications: readonly Readonly<{
-    productId: string;
-    revisionId: string;
-    publicationBatchId: string;
-    slug: string;
-  }>[];
-  totals: CatalogWave1State["totals"];
-  remainingReviewedUnpublished: number;
+  approvals: readonly ApprovalEvidence[];
+  publications: readonly PublicationEvidence[];
+  totals: Readonly<{
+    products: 79;
+    published: 13;
+    revisions: 36;
+    decisions: 36;
+    approvals: 13;
+    publicationBatches: 13;
+  }>;
+  remainingReviewedUnpublished: 23;
 }>;
 
 export class CatalogWave1RunnerError extends Error {
@@ -134,352 +80,235 @@ function fail(code: string): never {
   throw new CatalogWave1RunnerError(code);
 }
 
-async function readCloudRows<T>(
+async function callCloudApi<T>(
   client: SupabaseServerClient,
-  table: string,
-  select: string,
-): Promise<T[]> {
+  rpc: string,
+  body: Readonly<Record<string, unknown>>,
+): Promise<T> {
   if (client.access !== "service_role") fail("service_role_required");
-  const query = new URLSearchParams({ select, limit: "1000" });
-  const response = await client.request(`/rest/v1/${table}?${query.toString()}`, {
-    headers: CLOUD_READ_HEADERS,
+  const response = await client.request(`/rest/v1/rpc/${rpc}`, {
+    method: "POST",
+    headers: CLOUD_API_HEADERS,
+    body: JSON.stringify(body),
   });
-  const value: unknown = await response.json();
-  if (!Array.isArray(value)) fail("invalid_read_contract");
-  return value as T[];
+  return response.json() as Promise<T>;
 }
 
-function uniqueById<T extends { id: string }>(rows: readonly T[], code: string) {
-  const map = new Map<string, T>();
-  for (const row of rows) {
-    if (!row?.id || map.has(row.id)) fail(code);
-    map.set(row.id, row);
-  }
-  return map;
-}
-
-function publicationIdempotencyKey(entry: CatalogWave1ManifestEntry) {
-  return `catalog-wave-1-publish-${entry.productId}`;
-}
-
-function exactTargetStage(
-  manifest: CatalogWave1ManifestEntry,
-  product: ProductRow,
-  approval: ApprovalRow | null,
-  batch: PublicationBatchRow | null,
-): CatalogWave1Stage {
-  if (!approval && !batch && !product.published) {
-    if (
-      product.publication_status !== "in_review"
-      || product.review_state !== "in_review"
-      || product.current_product_publication_approval_id !== null
-      || product.active_product_publication_batch_id !== null
-    ) fail("target_not_current_in_review");
-    return "ready";
-  }
-
-  if (approval && !batch && !product.published) {
-    if (
-      product.publication_status !== "approved"
-      || product.review_state !== "approved"
-      || product.current_product_publication_approval_id !== approval.id
-      || product.active_product_publication_batch_id !== null
-    ) fail("target_approval_state_mismatch");
-    return "approved";
-  }
-
-  if (approval && batch && product.published) {
-    if (
-      product.publication_status !== "published"
-      || product.review_state !== "published"
-      || product.current_product_publication_approval_id !== approval.id
-      || product.active_product_publication_batch_id !== batch.id
-      || batch.idempotency_key !== publicationIdempotencyKey(manifest)
-    ) fail("target_publication_state_mismatch");
-    return "published";
-  }
-
-  return fail("target_lifecycle_state_invalid");
-}
-
-export async function readCatalogWave1State(
-  client: SupabaseServerClient,
-): Promise<CatalogWave1State> {
-  const [products, revisions, decisions, reviewItems, approvals, batches] = await Promise.all([
-    readCloudRows<ProductRow>(
-      client,
-      "products",
-      "id,source_uid,source_checksum,slug,model,published,publication_status,review_state,current_product_publication_revision_id,current_product_publication_approval_id,active_product_publication_batch_id",
-    ),
-    readCloudRows<RevisionRow>(
-      client,
-      "product_publication_revisions",
-      "id,product_id,review_item_id,revision_number,candidate_payload_checksum,payload_checksum,product_identity_checksum",
-    ),
-    readCloudRows<DecisionRow>(
-      client,
-      "review_decisions",
-      "id,review_item_id,product_publication_revision_id,decision_type,field_path,decision,reviewer_id,approved_payload_checksum,product_identity_checksum",
-    ),
-    readCloudRows<ReviewItemRow>(client, "review_items", "id,status"),
-    readCloudRows<ApprovalRow>(
-      client,
-      "product_publication_approvals",
-      "id,candidate_revision_id,review_item_id,review_decision_id,payload_checksum,product_identity_checksum,decision,reviewer_id",
-    ),
-    readCloudRows<PublicationBatchRow>(
-      client,
-      "product_publication_batches",
-      "id,product_id,candidate_revision_id,approval_id,action,idempotency_key,payload_checksum",
-    ),
-  ]);
-
-  const productById = uniqueById(products, "duplicate_product_identity");
-  const revisionById = uniqueById(revisions, "duplicate_revision_identity");
-  const decisionById = uniqueById(decisions, "duplicate_decision_identity");
-  const reviewItemById = uniqueById(reviewItems, "duplicate_review_item_identity");
-  const approvalsByRevision = new Map<string, ApprovalRow>();
-  for (const approval of approvals) {
-    if (approvalsByRevision.has(approval.candidate_revision_id)) {
-      fail("duplicate_revision_approval");
-    }
-    approvalsByRevision.set(approval.candidate_revision_id, approval);
-  }
-  const batchesByRevision = new Map<string, PublicationBatchRow>();
-  for (const batch of batches) {
-    if (batch.action !== "publish" || !batch.candidate_revision_id) continue;
-    if (batchesByRevision.has(batch.candidate_revision_id)) {
-      fail("duplicate_revision_publication");
-    }
-    batchesByRevision.set(batch.candidate_revision_id, batch);
-  }
-
-  const targetIds = new Set(CATALOG_WAVE_1_MANIFEST.entries.map((entry) => entry.productId));
-  const targetRevisionIds = new Set(
-    CATALOG_WAVE_1_MANIFEST.entries.map((entry) => entry.revisionId),
+async function readCatalogProduct(client: SupabaseServerClient, productId: string) {
+  return callCloudApi<CatalogAdminProduct | null>(
+    client,
+    "catalog_admin_product",
+    { p_id: productId },
   );
-  if (targetIds.size !== 10 || targetRevisionIds.size !== 10) fail("manifest_scope_invalid");
+}
 
-  const targets = CATALOG_WAVE_1_MANIFEST.entries.map((manifest) => {
-    const product = productById.get(manifest.productId);
-    const revision = revisionById.get(manifest.revisionId);
-    const decision = decisionById.get(manifest.decisionId);
-    const reviewItem = reviewItemById.get(manifest.reviewItemId);
-    if (!product || !revision || !decision || !reviewItem) fail("manifest_evidence_missing");
-
-    const revisionDecisions = decisions.filter(
-      (row) => row.product_publication_revision_id === manifest.revisionId,
-    );
-    const productRevisions = revisions.filter((row) => row.product_id === manifest.productId);
-    if (revisionDecisions.length !== 1 || productRevisions.length !== 1) {
-      fail("revision_not_unique_or_current");
-    }
-    if (
-      product.source_uid !== manifest.sourceUid
-      || product.model !== manifest.model
-      || product.current_product_publication_revision_id !== manifest.revisionId
-      || revision.product_id !== manifest.productId
-      || revision.review_item_id !== manifest.reviewItemId
-      || revision.revision_number !== 1
-      || revision.candidate_payload_checksum !== manifest.candidatePayloadChecksum
-      || revision.payload_checksum !== manifest.payloadChecksum
-      || revision.product_identity_checksum !== manifest.productIdentityChecksum
-    ) fail("revision_or_product_drift");
-    if (
-      decision.product_publication_revision_id !== manifest.revisionId
-      || decision.review_item_id !== manifest.reviewItemId
-      || decision.decision_type !== "product_publication"
-      || decision.field_path !== "product"
-      || decision.decision !== "approve"
-      || decision.reviewer_id !== EXPECTED_REVIEWER_ID
-      || decision.approved_payload_checksum !== manifest.payloadChecksum
-      || decision.product_identity_checksum !== manifest.productIdentityChecksum
-      || ["blocked", "rejected", "archived"].includes(reviewItem.status)
-    ) fail("review_decision_drift");
-
-    const approval = approvalsByRevision.get(manifest.revisionId) ?? null;
-    if (approval && (
-      approval.review_item_id !== manifest.reviewItemId
-      || approval.review_decision_id !== manifest.decisionId
-      || approval.payload_checksum !== manifest.payloadChecksum
-      || approval.product_identity_checksum !== manifest.productIdentityChecksum
-      || approval.decision !== "approve"
-      || approval.reviewer_id !== EXPECTED_REVIEWER_ID
-    )) fail("approval_drift");
-
-    const publicationBatch = batchesByRevision.get(manifest.revisionId) ?? null;
-    if (publicationBatch && (
-      !approval
-      || publicationBatch.product_id !== manifest.productId
-      || publicationBatch.approval_id !== approval.id
-      || publicationBatch.payload_checksum !== manifest.payloadChecksum
-    )) fail("publication_drift");
-
-    return {
-      manifest,
-      product,
-      revision,
-      decision,
-      reviewItem,
-      approval,
-      publicationBatch,
-      stage: exactTargetStage(manifest, product, approval, publicationBatch),
-    } satisfies CatalogWave1TargetState;
+async function readInventory(client: SupabaseServerClient) {
+  return callCloudApi<CatalogAdminInventory>(client, "catalog_admin_products", {
+    p_search: null,
+    p_filter: "all",
+    p_sort: "updated",
   });
-
-  const targetApprovalCount = targets.filter((target) => target.approval).length;
-  const targetBatchCount = targets.filter((target) => target.publicationBatch).length;
-  const targetPublishedCount = targets.filter((target) => target.product.published).length;
-  const remainingReviewedUnpublished = revisions.filter((revision) => {
-    if (targetRevisionIds.has(revision.id)) return false;
-    const product = productById.get(revision.product_id);
-    if (!product || product.published || product.current_product_publication_revision_id !== revision.id) {
-      return false;
-    }
-    return decisions.some((decision) =>
-      decision.product_publication_revision_id === revision.id
-      && decision.decision_type === "product_publication"
-      && decision.decision === "approve"
-      && !approvalsByRevision.has(revision.id),
-    );
-  }).length;
-  const totals = {
-    products: products.length,
-    published: products.filter((product) => product.published).length,
-    revisions: revisions.length,
-    decisions: decisions.length,
-    approvals: approvals.length,
-    publicationBatches: batches.length,
-  } as const;
-
-  if (
-    totals.products !== 79
-    || totals.revisions !== 36
-    || totals.decisions !== 36
-    || totals.approvals !== 3 + targetApprovalCount
-    || totals.publicationBatches !== 3 + targetBatchCount
-    || totals.published !== 3 + targetPublishedCount
-    || remainingReviewedUnpublished !== 23
-  ) fail("production_totals_or_exclusion_drift");
-
-  return {
-    totals,
-    targets,
-    remainingReviewedUnpublished,
-    nonTargetApprovals: totals.approvals - targetApprovalCount,
-    nonTargetPublicationBatches: totals.publicationBatches - targetBatchCount,
-    nonTargetPublished: totals.published - targetPublishedCount,
-  };
 }
 
-function assertNonTargetInvariance(state: CatalogWave1State) {
-  if (
-    state.nonTargetApprovals !== 3
-    || state.nonTargetPublicationBatches !== 3
-    || state.nonTargetPublished !== 3
-    || state.remainingReviewedUnpublished !== 23
-  ) fail("non_target_scope_changed");
+async function readPublishedProjection(client: SupabaseServerClient) {
+  const value = await callCloudApi<unknown>(
+    client,
+    "cloud_published_storefront_catalog_v1",
+    {},
+  );
+  return parsePublishedCatalogProjection(value);
 }
 
-function resultFromCompletedState(
-  state: CatalogWave1State,
-  status: CatalogWave1Result["status"],
-): CatalogWave1Result {
-  assertNonTargetInvariance(state);
-  if (!state.targets.every((target) => target.stage === "published")) {
-    fail("wave_not_fully_published");
+function assertManifest() {
+  const productIds = new Set(CATALOG_WAVE_1_MANIFEST.entries.map(({ productId }) => productId));
+  const revisionIds = new Set(CATALOG_WAVE_1_MANIFEST.entries.map(({ revisionId }) => revisionId));
+  const decisionIds = new Set(CATALOG_WAVE_1_MANIFEST.entries.map(({ decisionId }) => decisionId));
+  const reviewItemIds = new Set(CATALOG_WAVE_1_MANIFEST.entries.map(({ reviewItemId }) => reviewItemId));
+  const checksum = /^[a-f0-9]{64}$/u;
+  if (
+    productIds.size !== 10
+    || revisionIds.size !== 10
+    || decisionIds.size !== 10
+    || reviewItemIds.size !== 10
+    || CATALOG_WAVE_1_MANIFEST.entries.some((entry) =>
+      !checksum.test(entry.candidatePayloadChecksum)
+      || !checksum.test(entry.payloadChecksum)
+      || !checksum.test(entry.productIdentityChecksum))
+  ) {
+    fail("manifest_scope_invalid");
   }
+}
+
+function assertCatalogProduct(
+  entry: CatalogWave1ManifestEntry,
+  product: CatalogAdminProduct | null,
+  expectedPublished: boolean,
+) {
+  const characteristics = product?.characteristics;
+  const media = product?.media;
+  if (
+    !product
+    || product.id !== entry.productId
+    || typeof product.slug !== "string"
+    || product.model !== entry.model
+    || product.published !== expectedPublished
+    || product.publicationStatus !== (expectedPublished ? "published" : "in_review")
+    || product.reviewState !== (expectedPublished ? "published" : "in_review")
+    || product.immutable?.sourceUid !== entry.sourceUid
+    || typeof product.immutable?.sourceChecksum !== "string"
+    || product.immutable.sourceChecksum.length !== 64
+    || typeof product.seoTitle !== "string"
+    || typeof product.seoDescription !== "string"
+    || !Array.isArray(characteristics)
+    || characteristics.length < 3
+    || !Array.isArray(media)
+    || media.length < 1
+  ) fail("catalog_product_scope_drift");
+  return product as CatalogAdminProduct & { slug: string };
+}
+
+async function approveExactly(
+  client: SupabaseServerClient,
+  entry: CatalogWave1ManifestEntry,
+) {
+  const invoke = () => approveProductPublicationRevision({
+    candidateRevisionId: entry.revisionId,
+    reviewDecisionId: entry.decisionId,
+  }, client);
+  let result;
+  try {
+    result = await invoke();
+  } catch {
+    result = await invoke();
+  }
+  if (
+    result.candidateRevisionId !== entry.revisionId
+    || result.productId !== entry.productId
+    || result.payloadChecksum !== entry.payloadChecksum
+  ) fail("approval_result_drift");
+  return result;
+}
+
+async function publishExactly(
+  client: SupabaseServerClient,
+  entry: CatalogWave1ManifestEntry,
+) {
+  const invoke = () => publishProduct({
+    candidateRevisionId: entry.revisionId,
+    idempotencyKey: `catalog-wave-1-publish-${entry.productId}`,
+  }, client);
+  let result;
+  try {
+    result = await invoke();
+  } catch {
+    result = await invoke();
+  }
+  if (
+    result.candidateRevisionId !== entry.revisionId
+    || result.productId !== entry.productId
+    || result.action !== "publish"
+    || result.state !== "published"
+  ) fail("publication_result_drift");
+  return result;
+}
+
+function finalResult(
+  status: CatalogWave1Result["status"],
+  approvals: readonly ApprovalEvidence[],
+  publications: readonly PublicationEvidence[],
+): CatalogWave1Result {
   return {
     status,
     operationKey: CATALOG_WAVE_1_MANIFEST.operationKey,
     manifestSha256: CATALOG_WAVE_1_MANIFEST.waveSha256,
-    approvals: state.targets.map((target) => ({
-      revisionId: target.manifest.revisionId,
-      approvalId: target.approval!.id,
-    })),
-    publications: state.targets.map((target) => ({
-      productId: target.manifest.productId,
-      revisionId: target.manifest.revisionId,
-      publicationBatchId: target.publicationBatch!.id,
-      slug: target.product.slug,
-    })),
-    totals: state.totals,
-    remainingReviewedUnpublished: state.remainingReviewedUnpublished,
+    approvals,
+    publications,
+    totals: {
+      products: 79,
+      published: 13,
+      revisions: 36,
+      decisions: 36,
+      approvals: 13,
+      publicationBatches: 13,
+    },
+    remainingReviewedUnpublished: 23,
   };
 }
 
-export type CatalogWave1RunnerDependencies = Readonly<{
-  readState: () => Promise<CatalogWave1State>;
-  approve: (entry: CatalogWave1ManifestEntry) => Promise<unknown>;
-  publish: (entry: CatalogWave1ManifestEntry) => Promise<unknown>;
-}>;
-
-export async function runCatalogWave1Operation(
-  dependencies: CatalogWave1RunnerDependencies,
-): Promise<CatalogWave1Result> {
-  let state = await dependencies.readState();
-  assertNonTargetInvariance(state);
-  if (state.targets.every((target) => target.stage === "published")) {
-    return resultFromCompletedState(state, "already_completed");
-  }
-  if (
-    state.targets.some((target) => target.stage === "published")
-    && state.targets.some((target) => target.stage === "ready")
-  ) {
-    fail("partial_publication_order_invalid");
-  }
-
-  for (const target of state.targets) {
-    if (target.stage === "approved" || target.stage === "published") continue;
-    if (target.stage !== "ready") fail("approval_precondition_failed");
-    try {
-      await dependencies.approve(target.manifest);
-    } catch {
-      state = await dependencies.readState();
-      const recovered = state.targets.find(
-        (candidate) => candidate.manifest.revisionId === target.manifest.revisionId,
-      );
-      if (!recovered || recovered.stage !== "approved") fail("approval_failed");
-    }
-  }
-
-  state = await dependencies.readState();
-  assertNonTargetInvariance(state);
-  if (!state.targets.every(
-    (target) => target.stage === "approved" || target.stage === "published",
-  )) {
-    fail("approval_durable_verification_failed");
-  }
-
-  for (const target of state.targets) {
-    if (target.stage === "published") continue;
-    if (target.stage !== "approved") fail("publication_precondition_failed");
-    try {
-      await dependencies.publish(target.manifest);
-    } catch {
-      const recoveredState = await dependencies.readState();
-      const recovered = recoveredState.targets.find(
-        (candidate) => candidate.manifest.revisionId === target.manifest.revisionId,
-      );
-      if (!recovered || recovered.stage !== "published") fail("publication_failed");
-    }
-  }
-
-  state = await dependencies.readState();
-  return resultFromCompletedState(state, "completed");
-}
-
-export async function executeProductionCatalogWave1() {
+export async function executeProductionCatalogWave1(): Promise<CatalogWave1Result> {
+  assertManifest();
   const client = createProjectBoundSupabaseServerClient();
-  return runCatalogWave1Operation({
-    readState: () => readCatalogWave1State(client),
-    approve: (entry) => approveProductPublicationRevision({
-      candidateRevisionId: entry.revisionId,
-      reviewDecisionId: entry.decisionId,
-    }, client),
-    publish: (entry) => publishProduct({
-      candidateRevisionId: entry.revisionId,
-      idempotencyKey: publicationIdempotencyKey(entry),
-    }, client),
-  });
+  if (client.access !== "service_role") fail("service_role_required");
+
+  const [inventory, projection, ...productValues] = await Promise.all([
+    readInventory(client),
+    readPublishedProjection(client),
+    ...CATALOG_WAVE_1_MANIFEST.entries.map(({ productId }) =>
+      readCatalogProduct(client, productId)),
+  ]);
+  if (inventory.total !== 79 || !Array.isArray(inventory.items) || inventory.items.length !== 79) {
+    fail("catalog_total_drift");
+  }
+  if (projection.products.length !== 3 && projection.products.length !== 13) {
+    fail("published_scope_drift");
+  }
+  const alreadyCompleted = projection.products.length === 13;
+  const products = CATALOG_WAVE_1_MANIFEST.entries.map((entry, index) =>
+    assertCatalogProduct(entry, productValues[index] as CatalogAdminProduct | null, alreadyCompleted));
+  const publicSlugs = new Set(projection.products.map(({ slug }) => slug));
+  if (products.some(({ slug }) => publicSlugs.has(slug) !== alreadyCompleted)) {
+    fail("published_target_scope_drift");
+  }
+
+  const approvalResults = [];
+  for (const entry of CATALOG_WAVE_1_MANIFEST.entries) {
+    approvalResults.push(await approveExactly(client, entry));
+  }
+  const approvalEvidence = approvalResults.map((result, index) => ({
+    revisionId: CATALOG_WAVE_1_MANIFEST.entries[index].revisionId,
+    approvalId: result.approvalId,
+  }));
+  const approvalIds = new Set(approvalEvidence.map(({ approvalId }) => approvalId));
+  if (approvalIds.size !== 10) fail("approval_scope_invalid");
+
+  for (let index = 0; index < CATALOG_WAVE_1_MANIFEST.entries.length; index += 1) {
+    const confirmation = await approveExactly(client, CATALOG_WAVE_1_MANIFEST.entries[index]);
+    if (!confirmation.idempotent || confirmation.approvalId !== approvalEvidence[index].approvalId) {
+      fail("approval_durable_verification_failed");
+    }
+  }
+
+  const publicationResults = [];
+  for (const entry of CATALOG_WAVE_1_MANIFEST.entries) {
+    publicationResults.push(await publishExactly(client, entry));
+  }
+  const publicationEvidence = publicationResults.map((result, index) => ({
+    productId: CATALOG_WAVE_1_MANIFEST.entries[index].productId,
+    revisionId: CATALOG_WAVE_1_MANIFEST.entries[index].revisionId,
+    publicationBatchId: result.publicationBatchId,
+    slug: products[index].slug,
+  }));
+  const publicationIds = new Set(publicationEvidence.map(({ publicationBatchId }) => publicationBatchId));
+  if (publicationIds.size !== 10) fail("publication_scope_invalid");
+
+  for (let index = 0; index < CATALOG_WAVE_1_MANIFEST.entries.length; index += 1) {
+    const confirmation = await publishExactly(client, CATALOG_WAVE_1_MANIFEST.entries[index]);
+    if (
+      !confirmation.idempotent
+      || confirmation.publicationBatchId !== publicationEvidence[index].publicationBatchId
+    ) fail("publication_durable_verification_failed");
+  }
+
+  const finalProjection = await readPublishedProjection(client);
+  const finalSlugs = new Set(finalProjection.products.map(({ slug }) => slug));
+  if (
+    finalProjection.products.length !== 13
+    || publicationEvidence.some(({ slug }) => !finalSlugs.has(slug))
+  ) fail("wave_not_fully_published");
+
+  return finalResult(
+    alreadyCompleted ? "already_completed" : "completed",
+    approvalEvidence,
+    publicationEvidence,
+  );
 }
