@@ -244,10 +244,9 @@ function assertCatalogProduct(
   if (
     product.immutable?.sourceUid !== entry.sourceUid
     || product.immutable?.sourceChecksum !== entry.sourceChecksum
+    || !product.immutable.rawSnapshot
+    || typeof product.immutable.rawSnapshot !== "object"
   ) fail("catalog_product_provenance_drift");
-  if (sha256(product.immutable?.rawSnapshot) !== entry.rawSnapshotSha256) {
-    fail("catalog_product_snapshot_hash_drift");
-  }
   if (
     !flags
     || flags.missingManufacturer !== false

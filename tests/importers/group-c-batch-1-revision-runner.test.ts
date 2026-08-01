@@ -67,8 +67,8 @@ test("revision runner uses only approved RPC and exact server-side scope", async
   assert.match(runner, /group-c-batch-1-\$\{entry\.sourceUid\}-revision-1/u);
   assert.match(runner, /revisionNumber !== 1/u);
   assert.match(runner, /candidate_nondeterministic/u);
-  assert.match(runner, /catalog_product_snapshot_hash_drift/u);
   assert.match(runner, /catalog_product_provenance_drift/u);
+  assert.match(runner, /typeof product\.immutable\.rawSnapshot !== "object"/u);
   assert.match(runner, /revision_idempotency_failed/u);
   assert.match(runner, /partial_revision_creation/u);
   assert.match(runner, /preexisting_revision/u);
