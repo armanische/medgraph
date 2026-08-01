@@ -126,6 +126,13 @@ function sha256(value: unknown) {
   return createHash("sha256").update(stableJson(value)).digest("hex");
 }
 
+function sameTimestamp(value: unknown, expected: string) {
+  if (typeof value !== "string") return false;
+  const actualMs = Date.parse(value);
+  const expectedMs = Date.parse(expected);
+  return Number.isFinite(actualMs) && actualMs === expectedMs;
+}
+
 async function callCloudApi<T>(
   client: SupabaseServerClient,
   rpc: string,
@@ -230,7 +237,7 @@ function assertCatalogProduct(
       : product.publicationStatus !== entry.expectedPublicationStatus
         || product.reviewState !== entry.expectedReviewState
   ) fail("catalog_product_lifecycle_state_drift");
-  if (!allowCreatedState && product.updatedAt !== entry.expectedUpdatedAt) {
+  if (!allowCreatedState && !sameTimestamp(product.updatedAt, entry.expectedUpdatedAt)) {
     fail("catalog_product_version_drift");
   }
   if (!expectedState) fail("catalog_product_state_drift");
