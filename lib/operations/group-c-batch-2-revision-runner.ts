@@ -126,6 +126,10 @@ function sha256(value: unknown) {
   return createHash("sha256").update(stableJson(value)).digest("hex");
 }
 
+function transportJsonSha256(value: unknown) {
+  return createHash("sha256").update(JSON.stringify(value)).digest("hex");
+}
+
 function sameTimestamp(value: unknown, expected: string) {
   if (typeof value !== "string") return false;
   const actualMs = Date.parse(value);
@@ -257,7 +261,10 @@ function assertCatalogProduct(
     || product.immutable?.sourceChecksum !== entry.sourceChecksum
     || !product.immutable.rawSnapshot
     || typeof product.immutable.rawSnapshot !== "object"
-    || sha256(product.immutable.rawSnapshot) !== entry.rawSnapshotSha256
+    // The patch-preview hash was calculated from the exact JSON transport
+    // representation returned by catalog_admin_product. Preserve that contract
+    // here; stableJson remains reserved for repeated-read determinism below.
+    || transportJsonSha256(product.immutable.rawSnapshot) !== entry.rawSnapshotSha256
   ) fail("catalog_product_provenance_drift");
   if (
     !flags
