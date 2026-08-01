@@ -126,8 +126,18 @@ function sha256(value: unknown) {
   return createHash("sha256").update(stableJson(value)).digest("hex");
 }
 
-function transportJsonSha256(value: unknown) {
-  return createHash("sha256").update(JSON.stringify(value)).digest("hex");
+function postgresJsonbText(value: unknown): string {
+  if (Array.isArray(value)) return `[${value.map(postgresJsonbText).join(", ")}]`;
+  if (value && typeof value === "object") {
+    const record = value as Record<string, unknown>;
+    return `{${Object.keys(record).map((key) =>
+      `${JSON.stringify(key)}: ${postgresJsonbText(record[key])}`).join(", ")}}`;
+  }
+  return JSON.stringify(value) ?? "null";
+}
+
+function postgresJsonbSha256(value: unknown) {
+  return createHash("sha256").update(postgresJsonbText(value)).digest("hex");
 }
 
 function sameTimestamp(value: unknown, expected: string) {
@@ -265,10 +275,10 @@ function assertCatalogProduct(
   if (!product.immutable.rawSnapshot || typeof product.immutable.rawSnapshot !== "object") {
     fail("catalog_product_raw_snapshot_missing");
   }
-  // The patch-preview hash was calculated from the exact JSON transport
-  // representation returned by catalog_admin_product. Preserve that contract
-  // here; stableJson remains reserved for repeated-read determinism below.
-  if (transportJsonSha256(product.immutable.rawSnapshot) !== entry.rawSnapshotSha256) {
+  // The patch-preview hash was calculated by PostgreSQL from snapshot::text.
+  // Preserve jsonb's compact separators and server-provided key order here;
+  // stableJson remains reserved for repeated-read determinism below.
+  if (postgresJsonbSha256(product.immutable.rawSnapshot) !== entry.rawSnapshotSha256) {
     fail("catalog_product_raw_snapshot_hash_drift");
   }
   if (
