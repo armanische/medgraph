@@ -251,6 +251,9 @@ authorize automatic lifecycle writes.
 | Keep Instilar 1438 outside lifecycle pending dedup policy | В backlog | Нет |
 | Remediate the remaining unresolved identities | Batch 1 published; Batch 2 selection next | Нет |
 | Complete corporate Human Review and publication for eight Group C Batch 1 revisions | Завершено — Production Published count 50 | Нет |
+| Create 13 Group C Batch 2 immutable revisions | Завершено — corporate Review Queue pending | Нет |
+| Complete corporate Human Review for Group C Batch 2 | Ожидает ручного reviewer action | Нет |
+| Correct swapped Гемос / Гемос-ПФ type characteristics | Backlog, narrow data corrective required | Нет |
 
 Production contains 50 Published and 29 Unpublished Products. Further catalog
 work follows the [Group C remediation queue](../reports/group-c-remediation-queue-2026-07-31.md)

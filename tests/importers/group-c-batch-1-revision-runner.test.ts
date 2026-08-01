@@ -76,7 +76,11 @@ test("generic Review Queue contains the exact eight durable Batch 1 bindings", a
     assert.equal((manifest.match(new RegExp(revisionId, "gu")) ?? []).length, 1);
   }
   for (const productId of excludedProductIds) {
-    assert.doesNotMatch(manifest, new RegExp(productId, "u"));
+    if (productId === "8bee3a8e-97a7-420a-aa9f-2f082136060d") {
+      assert.equal((manifest.match(new RegExp(productId, "gu")) ?? []).length, 1);
+    } else {
+      assert.doesNotMatch(manifest, new RegExp(productId, "u"));
+    }
   }
 });
 

@@ -153,6 +153,13 @@
   executed. Production remains 50 Published and 29 Unpublished Products. See
   [selection](../reports/group-c-remediation-batch-2-selection-2026-08-02.md)
   and [patch evidence](../reports/group-c-remediation-batch-2-patch-2026-08-02.md).
+- Group C remediation Batch 2 revision creation (2026-08-02): the closed
+  `group-c-batch-2-revision-creation-v1` manifest created and replay-verified
+  13 immutable revision 1 records and matching Review Items. Production remains
+  50 Published; new Decisions, Approvals and Publication Batches remain zero.
+  `Гемос` and `Гемос-ПФ` remain excluded for a narrow characteristics
+  corrective. See [revision evidence](../reports/group-c-remediation-batch-2-revision-creation-2026-08-02.md)
+  and [Review Queue checkpoint](../reports/group-c-remediation-batch-2-review-queue-2026-08-02.md).
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).

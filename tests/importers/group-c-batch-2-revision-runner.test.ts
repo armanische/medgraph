@@ -21,7 +21,7 @@ test("Group C Batch 2 revision manifest is exact and digest-bound", async () => 
   assert.match(source, /^import "server-only";/u);
   assert.match(source, new RegExp(expectedManifestSha, "u"));
   assert.match(source, /group-c-batch-2-revision-creation-v1/u);
-  assert.equal((source.match(/productId: "/gu) ?? []).length, 13);
+  assert.equal((source.match(/productId: "/gu) ?? []).length, 26);
   assert.equal((source.match(/sourceUid: "/gu) ?? []).length, 13);
   assert.equal((source.match(/candidatePayloadChecksum:/gu) ?? []).length, 14);
   assert.equal((source.match(/payloadChecksum:/gu) ?? []).length, 14);
@@ -30,6 +30,8 @@ test("Group C Batch 2 revision manifest is exact and digest-bound", async () => 
   assert.equal((source.match(/expectedUpdatedAt:/gu) ?? []).length, 14);
   assert.match(source, /Object\.keys\(record\)\.length === 2/u);
   assert.doesNotMatch(source, /SUPABASE_SERVICE_ROLE_KEY|Authorization|Bearer/u);
+  assert.equal((source.match(/revisionId: "/gu) ?? []).length, 13);
+  assert.equal((source.match(/reviewItemId: "/gu) ?? []).length, 13);
 
   const runnable = ts.transpileModule(
     source.replace(/^import "server-only";\n\n/u, ""),

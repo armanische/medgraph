@@ -7,3 +7,13 @@
 
 Both Products remain draft and lifecycle `0/0/0/0`. Batch 2 did not mutate
 their content, source provenance or media.
+
+## Batch 2 characteristics corrective additions
+
+| Product | Source UID | Current blocker | Required action | Блокирует запуск |
+| --- | --- | --- | --- | --- |
+| Гемос-ПФ | `576228046022` | Base type characteristic identifies the neighbouring Гемос configuration | Narrow controlled characteristics corrective before content patch | Нет |
+| Гемос | `757604699272` | Base type characteristic identifies the neighbouring Гемос-ПФ configuration | Narrow controlled characteristics corrective before content patch | Нет |
+
+Both remain unchanged, unpublished and lifecycle `0/0/0/0`. Neither appears in
+the Batch 2 revision manifest or Review Queue.

@@ -64,7 +64,21 @@ export const GROUP_C_BATCH_2_REVISION_MANIFEST = Object.freeze({
 
 /** Populated after first durable Production execution; excluded from digest. */
 export const GROUP_C_BATCH_2_REVISION_COMPLETION_EVIDENCE:
-readonly GroupCBatch2RevisionCompletionEvidence[] = Object.freeze([]);
+readonly GroupCBatch2RevisionCompletionEvidence[] = Object.freeze([
+  { productId: "050240d2-c1b5-472e-b202-39ab3bb35289", revisionId: "08b210a6-2217-4a02-a6ea-ed7c5a847334", reviewItemId: "4351a2f4-9033-40a8-9e60-05b770e2765f" },
+  { productId: "2eb7fd5b-63b9-4eb6-a12f-00001f2f4a4c", revisionId: "882e2a25-bedb-4e6d-b72b-7fc91951a0d7", reviewItemId: "d0849892-ebf1-4089-9539-c7cd2ef1f40a" },
+  { productId: "c8ba4609-de12-4109-abf6-07d750f5c14b", revisionId: "8b13c3d0-ae6b-487e-83e5-7b56dbed31a7", reviewItemId: "f254793b-b993-4e56-a972-c09929a3ce41" },
+  { productId: "107e911f-5d55-470a-87de-cf9e8be0cdbc", revisionId: "c0731b0f-cf49-4acf-a227-694e78dca3ab", reviewItemId: "144366fb-f9fa-481d-ab66-1d659234bd40" },
+  { productId: "1014ca16-3996-4f17-98b3-057b67cab362", revisionId: "4c3b1418-d6d4-43f8-b8c9-269c8af64c5d", reviewItemId: "3a4963b0-30c8-44d5-a49f-48be44b81e73" },
+  { productId: "5143084e-5fe7-4094-bf8c-6cd8197b741e", revisionId: "70ffc7e1-3953-4c8b-a247-d961c5af23d2", reviewItemId: "3c0d1e94-6c63-4986-9997-962bbdd12f85" },
+  { productId: "37853370-f39c-45ac-9fc5-ecc093cba831", revisionId: "cd8abd72-ebb3-4b63-8eaa-a4edf7a933d6", reviewItemId: "43e5460d-c89b-4b26-bef4-d0cadd7e0fa0" },
+  { productId: "946b74d5-0163-43b1-b1c8-eb3c488776ae", revisionId: "e9adfcee-3294-4eb1-b33b-bc961f54b8d2", reviewItemId: "5c928d3a-b776-4b7b-8001-c620dbc5b369" },
+  { productId: "3a33254d-4088-4bf1-bab6-65c28fe9f5e5", revisionId: "66e2dd8f-9913-4768-8869-306a9cf81789", reviewItemId: "ebc0589c-3e94-4c1b-a264-c41fe7373a4c" },
+  { productId: "79b6082c-b63e-4c8e-9769-36383747b57b", revisionId: "12cd2d90-98ad-4cce-a8b8-350f3a0ee4e2", reviewItemId: "2dcd9ee0-377b-4830-84f2-5297eaf1f82e" },
+  { productId: "8bee3a8e-97a7-420a-aa9f-2f082136060d", revisionId: "dea0e398-4336-4b6e-a2bd-7ba969fa4ef6", reviewItemId: "d413992f-af52-4e0e-918c-61c14dfef427" },
+  { productId: "54cac861-bc82-4142-a4c4-bb014f21e68e", revisionId: "d67a05d2-09d6-4176-910d-8607e6945a9c", reviewItemId: "841a4ae7-dced-469a-8590-ee148c17387f" },
+  { productId: "eee213c1-3906-474d-8a28-37aa7ea8dc51", revisionId: "b3374a31-8103-49d7-adca-dce0740002cb", reviewItemId: "acaa94df-9c4c-4464-8a80-4710ca44f1e5" },
+]);
 
 export function groupCBatch2RevisionManifestDigestInput() {
   return {

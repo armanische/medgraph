@@ -19,3 +19,7 @@ content/manufacturer/suffix cleanup than the Low-risk Batch 2 scope.
 
 No Product URL in this queue is included in the public projection or sitemap.
 Batch 3 must begin with a fresh read-only identity and `updatedAt` guard.
+
+Batch 2 revision creation did not change this queue. All ten Products remain
+draft with lifecycle `0/0/0/0`; they are not visible in the Batch 2 corporate
+Review Queue.

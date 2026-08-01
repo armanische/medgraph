@@ -41,3 +41,10 @@ No password, token, magic link, PKCE verifier, cookie, service key or connection
 string is recorded. Corporate user/profile provisioning did not modify Product
 data or historical lifecycle records. Deployment and migration evidence is
 recorded only after the controlled Production gate completes.
+
+## Group C Batch 2 revision operation
+
+The Batch 2 runner revalidated the exact corporate email, UUID and `admin` role
+before execution. It created only immutable revision and Review Item records;
+no Human Review action was automated. All 13 pending records are reserved for
+future decisions by the corporate identity through the generic Review Queue.

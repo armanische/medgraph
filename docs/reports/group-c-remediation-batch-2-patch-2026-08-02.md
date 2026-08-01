@@ -66,3 +66,12 @@ Revision RPCs were not called.
 their original `updatedAt`, draft status and zero lifecycle records. The next
 safe lifecycle operation is immutable revision creation for the 13 ready
 Products only, after a new exact operation manifest is approved.
+
+## Revision operation result — 2026-08-02
+
+The approved exact manifest subsequently created 13/13 immutable revisions and
+13/13 Review Items. Immediate full replay returned the same durable bindings
+without duplicates. Production remains at 50 Published Products; the 13 targets
+are now `in_review`, with Decisions/Approvals/Publication Batches still
+`0/0/0`. The next operation is manual corporate Human Review through the
+[generic queue](./group-c-remediation-batch-2-review-queue-2026-08-02.md).

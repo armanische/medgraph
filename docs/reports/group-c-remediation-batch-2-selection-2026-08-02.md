@@ -60,3 +60,12 @@ contamination reset. Their exact identities are recorded in
 
 No revision, Review Decision, Approval or Publication was created in this
 selection and patch-preparation operation.
+
+## Revision creation closure — 2026-08-02
+
+The 13 eligible patched Products advanced through the exact immutable
+`group-c-batch-2-revision-creation-v1` manifest. Production durable verification
+found 13 unique current/non-stale revision 1 records and 13 matching Review
+Items. New Decisions, Approvals and Publication Batches remain `0/0/0`.
+`Гемос` and `Гемос-ПФ` remain excluded pending the narrow characteristics
+corrective. See the [revision creation report](./group-c-remediation-batch-2-revision-creation-2026-08-02.md).
