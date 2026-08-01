@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-import { isApprovedReviewer, resolveInternalAuthOrigin } from "@/lib/internal-auth/policy";
+import { isApprovedInternalAccess, resolveInternalAuthOrigin } from "@/lib/internal-auth/policy";
 import {
   applyInternalAuthCookies,
   createInternalAuthRouteClient,
@@ -18,7 +18,7 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 export const maxDuration = 60;
 
-const EXPECTED_ADMIN_ID = "0a5270ac-66f2-4711-9701-e0557fcff73a";
+const EXPECTED_ADMIN_ID = "7e90a993-8b30-4e0d-aff4-a257d5a4a179";
 
 function safeJson(
   body: Readonly<Record<string, unknown>>,
@@ -68,7 +68,15 @@ export async function POST(request: NextRequest) {
   }
 
   const { data: authData, error: authError } = await auth.client.auth.getUser();
-  if (authError || !authData.user || !isApprovedReviewer(authData.user)) {
+  const { data: access, error: accessError } = await auth.client
+    .schema("cloud_api")
+    .rpc("current_internal_access_v1");
+  if (
+    authError
+    || accessError
+    || !authData.user
+    || !isApprovedInternalAccess(authData.user, access)
+  ) {
     return safeJson({ status: "blocked", code: "authentication_required" }, 401, auth);
   }
   if (!productionEnvironmentPresent()) {

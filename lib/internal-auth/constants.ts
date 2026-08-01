@@ -6,12 +6,10 @@ export const AGILIA_REVIEW_PATH = "/internal/review/agilia-sp-mc";
 export const INTERNAL_LOGIN_PATH = "/internal/login";
 
 export const APPROVED_REVIEWER = Object.freeze({
-  userId: "0a5270ac-66f2-4711-9701-e0557fcff73a",
-  email: "armansmarkosyan@gmail.com",
+  userId: "7e90a993-8b30-4e0d-aff4-a257d5a4a179",
+  email: "cybermedicaooo@gmail.com",
   role: "admin",
 });
-
-export const FUTURE_CORPORATE_REVIEWER_EMAIL = "cybermedicaooo@gmail.com";
 
 export const HAMILTON_REVIEW = Object.freeze({
   productId: "e66a1165-030b-4aa4-a400-959f1ac70fe3",

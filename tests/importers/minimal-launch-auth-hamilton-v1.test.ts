@@ -12,6 +12,7 @@ import {
 } from "../../lib/internal-auth/constants.ts";
 import {
   approvedCallbackUrl,
+  isApprovedInternalAccess,
   isApprovedLoginEmail,
   isApprovedReviewer,
   isSafeCallbackRequest,
@@ -97,10 +98,34 @@ test("only the exact confirmed Production reviewer identity is accepted", () => 
   };
   assert.equal(isApprovedReviewer(approved), true);
   assert.equal(isApprovedLoginEmail(`  ${APPROVED_REVIEWER.email.toUpperCase()} `), true);
-  assert.equal(isApprovedLoginEmail("cybermedicaooo@gmail.com"), true);
+  assert.equal(isApprovedLoginEmail("armansmarkosyan@gmail.com"), false);
   assert.equal(isApprovedReviewer({ ...approved, id: crypto.randomUUID() }), false);
   assert.equal(isApprovedReviewer({ ...approved, email: "other@example.com" }), false);
   assert.equal(isApprovedReviewer({ ...approved, email_confirmed_at: null }), false);
+
+  assert.equal(isApprovedInternalAccess(approved, {
+    userId: approved.id,
+    role: "admin",
+    displayName: "CyberMedica",
+    allowed: true,
+  }), true);
+  assert.equal(isApprovedInternalAccess(approved, {
+    userId: approved.id,
+    role: "reviewer",
+    displayName: "CyberMedica",
+    allowed: true,
+  }), true);
+  assert.equal(isApprovedInternalAccess(approved, {
+    userId: approved.id,
+    role: "editor",
+    allowed: false,
+  }), false);
+  assert.equal(isApprovedInternalAccess(approved, null), false);
+  assert.equal(isApprovedInternalAccess(approved, {
+    userId: crypto.randomUUID(),
+    role: "admin",
+    allowed: true,
+  }), false);
 });
 
 test("auth diagnostics redact URL credentials and authorization material", () => {
@@ -130,7 +155,8 @@ test("server routes implement PKCE exchange, exact guard, clean redirect and har
   assert.doesNotMatch(login, /redirect\([^)]*AUTH_LOGIN_UNAVAILABLE[^)]*\)[\s\S]*catch/u);
   assert.match(login, /emailRedirectTo:[\s\S]*approvedCallbackUrl\(\)/u);
   assert.match(callback, /exchangeCodeForSession\(code\)/u);
-  assert.match(callback, /isApprovedReviewer\(data\.user\)/u);
+  assert.match(callback, /current_internal_access_v1/u);
+  assert.match(callback, /isApprovedInternalAccess\(data\.user, access\)/u);
   assert.match(callback, /signOut\(\{ scope: "local" \}\)/u);
   assert.match(callback, /cleanRedirect\(callbackDestination\(requestUrl\)\)/u);
   assert.doesNotMatch(callback, /access_token|refresh_token|token_hash/iu);
@@ -146,28 +172,16 @@ test("server routes implement PKCE exchange, exact guard, clean redirect and har
   assert.doesNotMatch(`${login}\n${callback}\n${proxy}`, /localStorage|sessionStorage/u);
 });
 
-test("Agilia review route is pinned to the current immutable revision", async () => {
-  const [action, page, component] = await Promise.all([
+test("legacy Agilia route is read-only and cannot create a new decision", async () => {
+  const [action, page] = await Promise.all([
     readFile("app/internal/review/agilia-sp-mc/actions.ts", "utf8"),
     readFile("app/internal/review/agilia-sp-mc/page.tsx", "utf8"),
-    readFile("components/internal/AgiliaReviewConfirmation.tsx", "utf8"),
   ]);
 
-  assert.match(page, /AGILIA_REVIEW\.revisionId/u);
-  assert.match(page, /AGILIA_REVIEW\.reviewItemId/u);
-  assert.match(page, /catalog_admin_product/u);
-  assert.match(page, /Accept-Profile.*cloud_api/u);
-  assert.match(page, /candidatePayloadChecksum/u);
-  assert.match(page, /candidateCharacteristics\.length !== 3/u);
-  assert.match(page, /candidateMedia\.length !== 2/u);
-  assert.doesNotMatch(page, /Accept-Profile.*cloud["']/u);
-  assert.doesNotMatch(page, /rest\/v1\/products\?/u);
-  assert.match(action, /AGILIA_REVIEW\.revisionId/u);
-  assert.match(action, /AGILIA_REVIEW\.payloadChecksum/u);
-  assert.match(action, /record_product_publication_review_decision_v1/u);
-  assert.doesNotMatch(action, /approve_product|publish_product|create_product_publication_revision/iu);
-  assert.equal((component.match(/<button/gu) ?? []).length, 1);
-  assert.match(component, /Подтвердить Human Review/u);
+  assert.match(page, /redirect\(GENERIC_REVIEW_QUEUE_PATH\)/u);
+  assert.doesNotMatch(page, /AgiliaReviewConfirmation|AGILIA_REVIEW/u);
+  assert.doesNotMatch(action, /\.rpc\(/u);
+  assert.match(action, /уже опубликован/u);
   assert.equal(AGILIA_REVIEW.productId, "b7f07e3e-5cdd-4988-b2a4-423bed321f46");
   assert.equal(AGILIA_REVIEW.revisionId, "e09f69c9-fbc5-4f6e-a240-05372e959510");
   assert.equal(
@@ -176,26 +190,16 @@ test("Agilia review route is pinned to the current immutable revision", async ()
   );
 });
 
-test("Mindray review route is pinned to the current immutable revision", async () => {
-  const [action, page, component] = await Promise.all([
+test("legacy Mindray route is read-only and cannot create a new decision", async () => {
+  const [action, page] = await Promise.all([
     readFile("app/internal/review/mindray-sv300/actions.ts", "utf8"),
     readFile("app/internal/review/mindray-sv300/page.tsx", "utf8"),
-    readFile("components/internal/MindrayReviewConfirmation.tsx", "utf8"),
   ]);
 
-  assert.match(page, /MINDRAY_REVIEW\.revisionId/u);
-  assert.match(page, /MINDRAY_REVIEW\.reviewItemId/u);
-  assert.match(page, /catalog_admin_product/u);
-  assert.match(page, /Accept-Profile.*cloud_api/u);
-  assert.match(page, /candidatePayloadChecksum/u);
-  assert.doesNotMatch(page, /Accept-Profile.*cloud["']/u);
-  assert.doesNotMatch(page, /rest\/v1\/products\?/u);
-  assert.match(action, /MINDRAY_REVIEW\.revisionId/u);
-  assert.match(action, /MINDRAY_REVIEW\.payloadChecksum/u);
-  assert.match(action, /record_product_publication_review_decision_v1/u);
-  assert.doesNotMatch(action, /approve_product|publish_product|create_product_publication_revision/iu);
-  assert.equal((component.match(/<button/gu) ?? []).length, 1);
-  assert.match(component, /Подтвердить Human Review/u);
+  assert.match(page, /redirect\(GENERIC_REVIEW_QUEUE_PATH\)/u);
+  assert.doesNotMatch(page, /MindrayReviewConfirmation|MINDRAY_REVIEW/u);
+  assert.doesNotMatch(action, /\.rpc\(/u);
+  assert.match(action, /уже опубликован/u);
 });
 
 test("legacy Hamilton route is read-only and cannot create a new decision", async () => {

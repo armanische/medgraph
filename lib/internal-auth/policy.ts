@@ -1,7 +1,6 @@
 import {
   AGILIA_REVIEW_PATH,
   APPROVED_REVIEWER,
-  FUTURE_CORPORATE_REVIEWER_EMAIL,
   GENERIC_REVIEW_QUEUE_PATH,
   HAMILTON_REVIEW_PATH,
   MINDRAY_REVIEW_PATH,
@@ -36,9 +35,25 @@ export function isApprovedReviewer(user: {
 }
 
 export function isApprovedLoginEmail(value: string) {
-  const normalized = normalizeEmail(value);
-  return normalized === APPROVED_REVIEWER.email
-    || normalized === FUTURE_CORPORATE_REVIEWER_EMAIL;
+  return normalizeEmail(value) === APPROVED_REVIEWER.email;
+}
+
+export interface InternalAccessDecision {
+  userId?: string | null;
+  role?: string | null;
+  displayName?: string | null;
+  allowed?: boolean | null;
+}
+
+export function isApprovedInternalAccess(
+  user: Parameters<typeof isApprovedReviewer>[0],
+  decision: InternalAccessDecision | null | undefined,
+) {
+  return isApprovedReviewer(user)
+    && decision?.allowed === true
+    && decision.userId === user.id
+    && decision.userId === APPROVED_REVIEWER.userId
+    && (decision.role === "admin" || decision.role === "reviewer");
 }
 
 export function resolveInternalAuthOrigin(

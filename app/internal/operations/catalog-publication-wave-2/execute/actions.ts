@@ -6,7 +6,7 @@ import {
   executeProductionCatalogWave2,
 } from "@/lib/operations/catalog-wave-2-runner";
 
-const EXPECTED_ADMIN_ID = "0a5270ac-66f2-4711-9701-e0557fcff73a";
+const EXPECTED_ADMIN_ID = "7e90a993-8b30-4e0d-aff4-a257d5a4a179";
 
 export type CatalogWave2ActionState = {
   status: "idle" | "completed" | "already_completed" | "blocked";

@@ -100,6 +100,11 @@ try {
     path.join(ROOT, "supabase/tests/003_structured_product_detail_integrity_regression.sql"),
     `${CONTAINER}:/tmp/003_structured_product_detail_integrity_regression.sql`,
   ]);
+  run("docker", [
+    "cp",
+    path.join(ROOT, "supabase/tests/009_internal_rbac_read_contract.sql"),
+    `${CONTAINER}:/tmp/009_internal_rbac_read_contract.sql`,
+  ]);
 
   dockerExec(
     "psql",
@@ -145,6 +150,17 @@ done`,
     "-f",
     "/tmp/003_structured_product_detail_integrity_regression.sql",
   );
+  dockerExec(
+    "psql",
+    "-U",
+    "supabase_admin",
+    "-d",
+    DATABASE,
+    "-v",
+    "ON_ERROR_STOP=1",
+    "-f",
+    "/tmp/009_internal_rbac_read_contract.sql",
+  );
 
   const audit = run("docker", [
     "exec",
@@ -187,6 +203,9 @@ done`,
       "idempotent-rollback",
       "unrelated-product-preserved",
       "rls-and-grants",
+      "authenticated-self-rbac-read",
+      "anonymous-rpc-denied",
+      "direct-profile-read-denied",
     ],
     postTest,
     remoteConnections: 0,
