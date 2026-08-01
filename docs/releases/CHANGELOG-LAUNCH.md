@@ -138,6 +138,12 @@
   Published remains 42 and no Review, Approval or Publication was performed.
   See [revision creation](../reports/group-c-remediation-batch-1-revision-creation-2026-08-01.md)
   and [queue checkpoint](../reports/group-c-remediation-batch-1-review-queue-2026-08-01.md).
+- Group C remediation Batch 1 publication (2026-08-01): all eight exact
+  revisions completed corporate Human Review, Approval and Publication through
+  the immutable `group-c-batch-1-publication-v1` manifest. Production now has
+  50 Published and 29 Unpublished Products; projection version and sitemap
+  Product count are 52 and 50. Replay returned already complete and excluded
+  Products remain unchanged. See [publication closure](../reports/group-c-remediation-batch-1-publication-2026-08-01.md).
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).

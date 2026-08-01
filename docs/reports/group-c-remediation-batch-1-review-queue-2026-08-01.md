@@ -25,3 +25,11 @@ the internal login. New Review actions require the corporate email, UUID and
 live `admin` profile; historical reviewer identities remain audit-only.
 
 No Human Review action was performed during creation or queue verification.
+
+## Queue closure
+
+The corporate Product Owner later completed all eight Review actions. Durable
+verification found exactly one positive Decision per revision, all bound to the
+corporate admin identity; the queue is closed. Approval and Publication evidence
+is recorded in the
+[Batch 1 publication report](./group-c-remediation-batch-1-publication-2026-08-01.md).

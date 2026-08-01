@@ -29,18 +29,18 @@ remain blocking.
 
 ## Batch 1 progress — 2026-08-01
 
-Eight remediated Products now have exact immutable revision 1 and one pending
-Review Item each. They moved from remediation preparation into the corporate
-generic Review Queue; Human Review has not started. VME-5B and EPK-i7010 remain
-blocked by their media corrective, UNIKOS remains blocked by identity evidence,
-and Instilar 1438 remains a separate unpublished Product with lifecycle
-`0/0/0/0`.
+Eight remediated Products completed corporate Review, Approval and Publication
+through the immutable Batch 1 manifest. VME-5B and EPK-i7010 remain blocked by
+their media corrective, UNIKOS remains blocked by identity evidence, and
+Instilar 1438 remains a separate unpublished Product with lifecycle `0/0/0/0`.
+The next operation is a read-only selection of a safe Batch 2 from the remaining
+29 Products.
 
 ## Production baseline
 
 - Products: 79
-- Published: 42
-- Unpublished / Group C remediation scope: 37
-- Revisions / Decisions / Approvals / Batches: `42 / 42 / 42 / 42`
-- Sitemap Product URLs: 42
-- Product and lifecycle writes performed by this queue update: 0
+- Published: 50
+- Unpublished / Group C remediation scope: 29
+- Revisions / Decisions / Approvals / Batches: `50 / 50 / 50 / 50`
+- Projection version: 52
+- Sitemap Product URLs: 50

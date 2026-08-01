@@ -249,10 +249,10 @@ authorize automatic lifecycle writes.
 | Publish 33 High-confidence Group A Products | Завершено | Нет |
 | Resolve and publish six Product Owner-approved Group B Products | Завершено | Нет |
 | Keep Instilar 1438 outside lifecycle pending dedup policy | В backlog | Нет |
-| Remediate the remaining 36 unresolved identities | Следующая batch-задача | Нет |
-| Complete corporate Human Review for eight Group C Batch 1 revisions | Ожидает ручного Review | Нет |
+| Remediate the remaining unresolved identities | Batch 1 published; Batch 2 selection next | Нет |
+| Complete corporate Human Review and publication for eight Group C Batch 1 revisions | Завершено — Production Published count 50 | Нет |
 
-Production contains 42 Published and 37 Unpublished Products. Further catalog
+Production contains 50 Published and 29 Unpublished Products. Further catalog
 work follows the [Group C remediation queue](../reports/group-c-remediation-queue-2026-07-31.md)
 and remains post-launch.
 

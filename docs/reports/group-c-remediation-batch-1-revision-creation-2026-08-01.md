@@ -31,3 +31,10 @@ Publication Batch at this checkpoint.
 VME-5B, EPK-i7010, both blocked UNIKOS records and Instilar 1438 were outside
 the manifest and received no lifecycle record. Product content, raw source
 snapshots and source checksums were not changed.
+
+## Publication closure
+
+All eight revisions subsequently received one corporate positive Decision and
+completed Approval and Publication. Durable IDs, projection evidence and replay
+verification are recorded in the
+[Batch 1 publication report](./group-c-remediation-batch-1-publication-2026-08-01.md).

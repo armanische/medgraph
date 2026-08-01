@@ -24,6 +24,11 @@ The database read boundary is additive, authenticated-only and derives identity
 from `auth.uid()`. It does not expose direct profile table reads and does not use
 service-role in the normal access check.
 
+The Group C Batch 1 lifecycle closure verified the policy in Production: all
+eight new Decisions were created by the corporate admin UUID, and the closed
+Approval/Publication runner required the same live corporate session. No new
+lifecycle record is bound to the legacy reviewer identity.
+
 ## Historical references retained
 
 Historical Production launch, Auth incident, reviewer/session and publication

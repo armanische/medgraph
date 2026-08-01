@@ -183,3 +183,11 @@ contract. Sitemap contains exactly 42 unique Product URLs; Production is 79
 Products, 42 Published and 37 Unpublished, and projection version is 44. All
 six new Product Detail routes return HTTP 200. No internal, Auth, API or
 unpublished Product URL was introduced.
+
+## Published catalog addendum — Group C remediation Batch 1
+
+Eight exact corporate-reviewed Group C Products completed controlled Approval
+and Publication. Sitemap contains exactly 50 unique Product URLs; Production is
+79 Products, 50 Published and 29 Unpublished, and projection version is 52. All
+eight new Product Detail routes return HTTP 200. No internal, Auth, API or
+unpublished Product URL was introduced.
