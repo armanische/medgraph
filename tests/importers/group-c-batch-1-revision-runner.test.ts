@@ -92,6 +92,11 @@ test("route requires corporate same-origin Production session and exact request"
     "utf8",
   );
   assert.match(route, /process\.env\.VERCEL_ENV !== "production"/u);
+  assert.ok(
+    route.indexOf('process.env.VERCEL_ENV !== "production"')
+      < route.indexOf("createInternalAuthRouteClient(request)"),
+    "Preview must fail closed before constructing an Auth client",
+  );
   assert.match(route, /readActiveTrustedReviewer/u);
   assert.match(route, /APPROVED_REVIEWER\.userId/u);
   assert.match(route, /APPROVED_REVIEWER\.email/u);
