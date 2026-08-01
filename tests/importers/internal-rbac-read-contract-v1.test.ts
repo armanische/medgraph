@@ -58,7 +58,9 @@ test("internal routes require both corporate identity and live profile access", 
   assert.doesNotMatch(constants, /armansmarkosyan@gmail\.com/u);
   assert.match(session, /current_internal_access_v1/u);
   assert.match(session, /isApprovedInternalAccess/u);
-  assert.match(callback, /current_internal_access_v1/u);
+  assert.match(session, /getClaims\(\)/u);
+  assert.match(session, /session_id/u);
+  assert.match(callback, /readActiveTrustedReviewer/u);
   assert.match(callback, /signOut\(\{ scope: "local" \}\)/u);
   assert.doesNotMatch(`${session}\n${callback}`, /service_role|SUPABASE_SERVICE_ROLE_KEY/u);
 });

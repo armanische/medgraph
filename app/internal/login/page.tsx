@@ -19,6 +19,7 @@ export default async function InternalLoginPage({ searchParams }: LoginPageProps
   await connection();
   const parameters = await searchParams;
   const sent = parameters.status === "sent";
+  const signedOutAll = parameters.status === "SIGNED_OUT_ALL";
   const errorCode = typeof parameters.error === "string" ? parameters.error : null;
   const destination = resolveInternalReviewDestination(
     typeof parameters.next === "string" ? parameters.next : null,
@@ -42,6 +43,16 @@ export default async function InternalLoginPage({ searchParams }: LoginPageProps
           {sent ? (
             <p className="mt-5 rounded-lg border border-teal-200 bg-teal-50 p-4 text-sm text-teal-950">
               Если доступ разрешён, одноразовая ссылка отправлена на указанный адрес.
+            </p>
+          ) : null}
+          {signedOutAll ? (
+            <p className="mt-5 rounded-lg border border-teal-200 bg-teal-50 p-4 text-sm text-teal-950">
+              Все корпоративные сеансы завершены. Для продолжения запросите новую одноразовую ссылку.
+            </p>
+          ) : null}
+          {errorCode === "CORPORATE_LOGOUT_BLOCKED" ? (
+            <p className="mt-5 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-950">
+              Завершение корпоративных сеансов отклонено fail-closed.
             </p>
           ) : null}
           {errorCode === "EMAIL_RATE_LIMITED" ? (

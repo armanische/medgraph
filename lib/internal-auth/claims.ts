@@ -1,0 +1,38 @@
+import { APPROVED_REVIEWER } from "./constants.ts";
+import { normalizeEmail } from "./policy.ts";
+
+export interface InternalSessionClaims {
+  sub?: unknown;
+  email?: unknown;
+  session_id?: unknown;
+  exp?: unknown;
+}
+
+function decodeBase64Url(value: string) {
+  const normalized = value.replace(/-/gu, "+").replace(/_/gu, "/");
+  const padded = normalized.padEnd(Math.ceil(normalized.length / 4) * 4, "=");
+  return Buffer.from(padded, "base64").toString("utf8");
+}
+
+export function decodeInternalSessionClaims(jwt: string): InternalSessionClaims | null {
+  const segments = jwt.split(".");
+  if (segments.length !== 3 || segments[1].length === 0) return null;
+  try {
+    const value = JSON.parse(decodeBase64Url(segments[1])) as unknown;
+    return value && typeof value === "object" ? value as InternalSessionClaims : null;
+  } catch {
+    return null;
+  }
+}
+
+export function isApprovedCorporateSessionClaims(
+  claims: InternalSessionClaims | null | undefined,
+) {
+  return claims?.sub === APPROVED_REVIEWER.userId
+    && typeof claims.email === "string"
+    && normalizeEmail(claims.email) === APPROVED_REVIEWER.email
+    && typeof claims.session_id === "string"
+    && /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/iu.test(
+      claims.session_id,
+    );
+}

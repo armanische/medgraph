@@ -114,7 +114,7 @@ test("only the exact confirmed Production reviewer identity is accepted", () => 
     role: "reviewer",
     displayName: "CyberMedica",
     allowed: true,
-  }), true);
+  }), false);
   assert.equal(isApprovedInternalAccess(approved, {
     userId: approved.id,
     role: "editor",
@@ -155,13 +155,13 @@ test("server routes implement PKCE exchange, exact guard, clean redirect and har
   assert.doesNotMatch(login, /redirect\([^)]*AUTH_LOGIN_UNAVAILABLE[^)]*\)[\s\S]*catch/u);
   assert.match(login, /emailRedirectTo:[\s\S]*approvedCallbackUrl\(\)/u);
   assert.match(callback, /exchangeCodeForSession\(code\)/u);
-  assert.match(callback, /current_internal_access_v1/u);
-  assert.match(callback, /isApprovedInternalAccess\(data\.user, access\)/u);
+  assert.match(callback, /readActiveTrustedReviewer\(client\)/u);
   assert.match(callback, /signOut\(\{ scope: "local" \}\)/u);
   assert.match(callback, /cleanRedirect\(callbackDestination\(requestUrl\)\)/u);
   assert.doesNotMatch(callback, /access_token|refresh_token|token_hash/iu);
   assert.match(proxy, /matcher:[\s\S]*\/internal\/review\/:path\*/u);
-  assert.match(proxy, /client\.auth\.getUser\(\)/u);
+  assert.match(proxy, /readActiveTrustedReviewer\(client\)/u);
+  assert.match(proxy, /\/internal\/operations\/:path\*/u);
   assert.match(cookies, /path:\s*"\/"/u);
   assert.match(cookies, /sameSite:\s*"lax"/u);
   assert.match(cookies, /httpOnly:\s*true/u);

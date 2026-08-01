@@ -5,11 +5,11 @@ import {
   INTERNAL_LOGIN_PATH,
 } from "@/lib/internal-auth/constants";
 import {
-  isApprovedInternalAccess,
   callbackDestination,
   isSafeCallbackRequest,
   resolveInternalAuthOrigin,
 } from "@/lib/internal-auth/policy";
+import { readActiveTrustedReviewer } from "@/lib/internal-auth/session";
 import {
   applyInternalAuthCookies,
   createInternalAuthRouteClient,
@@ -46,16 +46,8 @@ export async function GET(request: NextRequest) {
     );
   }
 
-  const { data, error: userError } = await client.auth.getUser();
-  const { data: access, error: accessError } = await client
-    .schema("cloud_api")
-    .rpc("current_internal_access_v1");
-  if (
-    userError
-    || accessError
-    || !data.user
-    || !isApprovedInternalAccess(data.user, access)
-  ) {
+  const active = await readActiveTrustedReviewer(client);
+  if (!active) {
     await client.auth.signOut({ scope: "local" });
     return applyInternalAuthCookies(
       cleanRedirect(INTERNAL_LOGIN_PATH, AUTH_ERROR_CODES.notAuthorized),

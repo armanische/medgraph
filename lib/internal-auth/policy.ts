@@ -53,7 +53,7 @@ export function isApprovedInternalAccess(
     && decision?.allowed === true
     && decision.userId === user.id
     && decision.userId === APPROVED_REVIEWER.userId
-    && (decision.role === "admin" || decision.role === "reviewer");
+    && decision.role === APPROVED_REVIEWER.role;
 }
 
 export function resolveInternalAuthOrigin(

@@ -90,8 +90,8 @@ test("POST route re-authorizes exact admin and never exposes a generic publicati
   assert.match(route, /process\.env\.VERCEL_ENV !== "production"/u);
   assert.match(route, /sec-fetch-site/u);
   assert.match(route, /same-origin/u);
-  assert.match(route, /auth\.client\.auth\.getUser\(\)/u);
-  assert.match(route, /authData\.user\.id !== EXPECTED_ADMIN_ID/u);
+  assert.match(route, /readActiveTrustedReviewer\(auth\.client\)/u);
+  assert.match(route, /active\.user\.id !== EXPECTED_ADMIN_ID/u);
   assert.match(route, /validateCatalogWave1OperationRequest/u);
   assert.match(route, /service_configuration_missing/u);
   assert.match(route, /rawBody\.length > 512/u);

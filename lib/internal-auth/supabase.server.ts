@@ -42,6 +42,18 @@ export async function createInternalAuthServerClient() {
   });
 }
 
+export async function clearInternalAuthCookies() {
+  const cookieStore = await cookies();
+  const environment = getInternalAuthEnvironment();
+  const projectRef = new URL(environment.url).hostname.split(".", 1)[0];
+  const authCookieName = `sb-${projectRef}-auth-token`;
+  for (const cookie of cookieStore.getAll()) {
+    if (cookie.name === authCookieName || cookie.name.startsWith(`${authCookieName}.`)) {
+      cookieStore.delete(cookie.name);
+    }
+  }
+}
+
 export function createInternalAuthRouteClient(request: NextRequest) {
   const environment = getInternalAuthEnvironment();
   const pendingCookies: CookieToSet[] = [];

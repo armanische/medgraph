@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
-import { isApprovedInternalAccess, resolveInternalAuthOrigin } from "@/lib/internal-auth/policy";
+import { resolveInternalAuthOrigin } from "@/lib/internal-auth/policy";
+import { readActiveTrustedReviewer } from "@/lib/internal-auth/session";
 import {
   applyInternalAuthCookies,
   createInternalAuthRouteClient,
@@ -67,22 +68,14 @@ export async function POST(request: NextRequest) {
     return safeJson({ status: "blocked", code: "same_origin_required" }, 403, auth);
   }
 
-  const { data: authData, error: authError } = await auth.client.auth.getUser();
-  const { data: access, error: accessError } = await auth.client
-    .schema("cloud_api")
-    .rpc("current_internal_access_v1");
-  if (
-    authError
-    || accessError
-    || !authData.user
-    || !isApprovedInternalAccess(authData.user, access)
-  ) {
+  const active = await readActiveTrustedReviewer(auth.client);
+  if (!active) {
     return safeJson({ status: "blocked", code: "authentication_required" }, 401, auth);
   }
   if (!productionEnvironmentPresent()) {
     return safeJson({ status: "blocked", code: "service_configuration_missing" }, 503, auth);
   }
-  if (authData.user.id !== EXPECTED_ADMIN_ID) {
+  if (active.user.id !== EXPECTED_ADMIN_ID) {
     return safeJson({ status: "blocked", code: "admin_required" }, 403, auth);
   }
 

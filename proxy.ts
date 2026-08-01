@@ -1,7 +1,8 @@
 import { type NextRequest, NextResponse } from "next/server";
 
 import { AUTH_ERROR_CODES, INTERNAL_LOGIN_PATH } from "@/lib/internal-auth/constants";
-import { isApprovedReviewer, resolveInternalAuthOrigin } from "@/lib/internal-auth/policy";
+import { resolveInternalAuthOrigin } from "@/lib/internal-auth/policy";
+import { readActiveTrustedReviewer } from "@/lib/internal-auth/session";
 import {
   applyInternalAuthCookies,
   createInternalAuthRouteClient,
@@ -10,9 +11,9 @@ import {
 export async function proxy(request: NextRequest) {
   const { client, pendingCookies, pendingHeaders } =
     createInternalAuthRouteClient(request);
-  const { data, error } = await client.auth.getUser();
-  if (error || !data.user || !isApprovedReviewer(data.user)) {
-    if (data.user) await client.auth.signOut({ scope: "local" });
+  const active = await readActiveTrustedReviewer(client);
+  if (!active) {
+    await client.auth.signOut({ scope: "local" });
     const login = new URL(INTERNAL_LOGIN_PATH, resolveInternalAuthOrigin());
     login.searchParams.set("error", AUTH_ERROR_CODES.sessionRequired);
     return applyInternalAuthCookies(
@@ -32,5 +33,6 @@ export async function proxy(request: NextRequest) {
 export const config = {
   matcher: [
     "/internal/review/:path*",
+    "/internal/operations/:path*",
   ],
 };
