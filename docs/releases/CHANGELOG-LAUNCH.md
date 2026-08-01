@@ -144,6 +144,15 @@
   50 Published and 29 Unpublished Products; projection version and sitemap
   Product count are 52 and 50. Replay returned already complete and excluded
   Products remain unchanged. See [publication closure](../reports/group-c-remediation-batch-1-publication-2026-08-01.md).
+- Group C remediation Batch 2 content preparation (2026-08-02): selected 15
+  Low-risk, High-confidence Products and applied 13 exact atomic Catalog Admin
+  patches. `Гемос` and `Гемос-ПФ` were stopped before write because their base
+  type characteristics are cross-contaminated outside the approved patch
+  contract. The 13 patched Products passed dependency and deterministic
+  candidate preflight; no revision, Review, Approval or Publication was
+  executed. Production remains 50 Published and 29 Unpublished Products. See
+  [selection](../reports/group-c-remediation-batch-2-selection-2026-08-02.md)
+  and [patch evidence](../reports/group-c-remediation-batch-2-patch-2026-08-02.md).
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).

@@ -11,6 +11,10 @@ Canonical Production inventory after Group C remediation Batch 1 publication:
 | Reviewed and ready for controlled Approval | 0 |
 | Group B pending Product Owner resolution | 0 |
 | Group C remaining | 29 |
+| Group C Batch 2 revision-ready | 13 |
+| Group C Batch 2 characteristic corrective | 2 |
+| Group C Batch 3 queued | 10 |
+| Group C special exclusions | 4 |
 | Projection version | 52 |
 | Sitemap Product URLs | 50 |
 
@@ -28,3 +32,7 @@ The reviewed Group A and resolved Group B queues are closed. Instilar 1438 is
 excluded in the [dedup backlog](./instilar-1438-dedup-backlog-2026-07-31.md).
 The remaining 29 Products are tracked in the
 [Group C remediation queue](./group-c-remediation-queue-2026-07-31.md).
+
+Batch 2 content preparation changed no publication lifecycle state. Thirteen
+Products are content-ready for a separately authorized immutable revision run;
+the public inventory and 50-URL sitemap remain unchanged.

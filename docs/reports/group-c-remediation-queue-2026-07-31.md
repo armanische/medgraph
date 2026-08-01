@@ -44,3 +44,18 @@ The next operation is a read-only selection of a safe Batch 2 from the remaining
 - Revisions / Decisions / Approvals / Batches: `50 / 50 / 50 / 50`
 - Projection version: 52
 - Sitemap Product URLs: 50
+
+## Batch 2 content checkpoint — 2026-08-02
+
+The remaining 29 Products are now split into controlled streams:
+
+| Stream | Count | State | Next action | Блокирует запуск |
+| --- | ---: | --- | --- | --- |
+| Batch 2 revision-ready | 13 | Patched, draft, lifecycle `0/0/0/0` | Exact immutable revision manifest | Нет |
+| Batch 2 technical corrective | 2 | Гемос/Гемос-ПФ type characteristics cross-contaminated | Narrow characteristic corrective | Нет |
+| Batch 3 queue | 10 | High-confidence, Medium-risk, unchanged | Content preparation | Нет |
+| Special exclusions | 4 | Unchanged | Separate media/identity decisions | Нет |
+
+The 13 safe patches are recorded in the
+[Batch 2 patch report](./group-c-remediation-batch-2-patch-2026-08-02.md).
+Production remains `79 / 50 / 29`; lifecycle totals remain `50/50/50/50`.
