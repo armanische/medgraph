@@ -49,3 +49,11 @@ The immutable patch preview is
 `/tmp/group-c-remediation-batch-2-patch-preview-2026-08-02.json` with SHA-256
 `a551cb866c522ddc473bda86019d25f4af8b82d9dae9d547eb3744373e79b044`
 and permissions `0600`.
+
+## Immutable revision follow-up
+
+The controlled Batch 2 revision operation later created and replay-verified
+one immutable revision and one Review Item for each of these 13 packages. Their
+checksum triads remained unchanged. No Review Decision, Approval or Publication
+record was created. See the
+[revision creation report](./group-c-remediation-batch-2-revision-creation-2026-08-02.md).
