@@ -11,6 +11,7 @@ import {
   manufacturerService,
   productService,
 } from "@/lib/storefront";
+import { loadHomepageOverviewSources } from "@/lib/storefront/homepage-overview";
 import { isProductionIndexingEnvironment } from "@/lib/storefront/indexing";
 
 const allowIndexing = isProductionIndexingEnvironment();
@@ -72,19 +73,23 @@ export default async function RootLayout({
   // prerendering cannot bake one environment's catalog into another.
   await connection();
   const cloudPreview = isCloudPreviewCatalog();
-  const [products, manufacturers, categories] = await Promise.all([
-    productService.getActiveProducts(),
-    manufacturerService.getManufacturers(),
-    categoryService.getCategories(),
-  ]);
+  // Navigation enrichment must never take down the document shell. The same
+  // catalog is loaded again by route-level boundaries that can show a focused
+  // retry state, while the header remains useful during a transient upstream
+  // outage.
+  const { products, manufacturers, categories } = await loadHomepageOverviewSources({
+    products: () => productService.getActiveProducts(),
+    manufacturers: () => manufacturerService.getManufacturers(),
+    categories: () => categoryService.getCategories(),
+  });
 
   return (
     <html lang="ru">
       <body className="bg-cm-canvas text-cm-ink antialiased">
         <Header
-          products={products}
-          manufacturers={manufacturers}
-          categories={categories}
+          products={products ?? []}
+          manufacturers={manufacturers ?? []}
+          categories={categories ?? []}
         />
         <CloudCatalogPreviewBanner enabled={cloudPreview} />
         {children}
