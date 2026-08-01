@@ -34,6 +34,10 @@ Snapshot канонически хеширует значение и product ide
 
 Reviewer ID берётся только из server-only `CYBERMEDICA_REVIEWER_ID`. В production fallback отсутствует. В development разрешён документированный `development-reviewer`. Client не передаёт reviewer ID и не управляет путями файлов.
 
+Для новых Production/Preview reviewer operations канонический account email —
+`cybermedicaooo@gmail.com`. Auth identity проверяется вместе с live RBAC role по
+[Corporate Identity and Access Policy](../00-project/CORPORATE_IDENTITY_AND_ACCESS.md).
+
 Локальный filesystem подходит для пилота и single-writer development, но не является production persistence на ephemeral/multi-instance Vercel runtime. До production writes store необходимо заменить устойчивым backend через существующий interface; будущий вариант — Supabase с append-only policy, транзакционной idempotency и optimistic concurrency.
 
 ## Publication policy
@@ -45,4 +49,3 @@ Publication читает последние реальные decisions, пров
 ## Security и rollback
 
 Writes доступны только из Server Action после internal gate, allowlist decision/status, server identity, throttle, stale check, path validation и append-only write. Browser direct filesystem write и публичный write API отсутствуют. Для rollback решение не удаляется: reviewer отмечает conflict или создаёт последующий допустимый decision, затем publication build пересобирает публичную проекцию. История остаётся полной.
-

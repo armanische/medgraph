@@ -9,6 +9,8 @@
 - [Monitoring and Logging Policy](../production/Monitoring_and_Logging_Policy.md)
 - [SEO and Lighthouse Checklist](../production/SEO_and_Lighthouse_Checklist.md)
 - [Reviewer Operating Procedure](../operations/Reviewer_Operating_Procedure.md)
+- [Corporate Identity and Access Policy](../00-project/CORPORATE_IDENTITY_AND_ACCESS.md)
 - [Runtime Bundle Cleanup](../reports/runtime-bundle-cleanup-v1.md)
 
-Операционная процедура обязана указывать environment, credentials boundary, rollback и verification.
+Операционная процедура обязана указывать environment, corporate identity
+preflight, credentials boundary, rollback и verification.

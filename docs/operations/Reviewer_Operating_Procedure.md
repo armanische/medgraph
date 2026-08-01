@@ -2,11 +2,13 @@
 
 ## Перед началом
 
-1. Работать только в защищённой локальной/Preview среде. Для Preview включить Vercel Deployment Protection.
-2. Server-side задать `CYBERMEDICA_ENABLE_INTERNAL_REVIEW=1` и уникальный `CYBERMEDICA_REVIEWER_ID`.
-3. Убедиться, что fixture flag выключен.
-4. Выполнить `npm run review:audit`; результат должен быть valid.
-5. Проверить выбранный продукт и readiness непосредственно в защищённом `/internal/reviewer`.
+1. Подтвердить reviewer email `cybermedicaooo@gmail.com` и связанный
+   корпоративный account; иначе результат `CORPORATE IDENTITY POLICY BLOCKED`.
+2. Работать только в защищённой локальной/Preview среде. Для Preview включить Vercel Deployment Protection.
+3. Server-side задать `CYBERMEDICA_ENABLE_INTERNAL_REVIEW=1` и уникальный `CYBERMEDICA_REVIEWER_ID`.
+4. Убедиться, что fixture flag выключен.
+5. Выполнить `npm run review:audit`; результат должен быть valid.
+6. Проверить выбранный продукт и readiness непосредственно в защищённом `/internal/reviewer`.
 
 ## Проверка и решение
 
@@ -30,6 +32,9 @@
    процессом; Human Review сам ничего не публикует.
 
 Reviewer UI не меняет Storefront и не запускает publication/build процессы.
+
+OTP, PKCE и magic-link отправляются только на `cybermedicaooo@gmail.com`.
+Legacy reviewer records остаются историческими и не перепривязываются.
 
 ## Rollback и инциденты
 

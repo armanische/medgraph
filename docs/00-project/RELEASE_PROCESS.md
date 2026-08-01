@@ -57,6 +57,11 @@
 - rollback owner и previous deployment;
 - smoke checklist;
 - явное разрешение deploy.
+- Vercel/Git deployment identity и team прошли corporate identity preflight;
+  каноническая identity — `cybermedicaooo@gmail.com`.
+
+Несовпадение deployment identity блокирует promotion с результатом
+`CORPORATE IDENTITY POLICY BLOCKED`.
 
 ## 3. Data release
 

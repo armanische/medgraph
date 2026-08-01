@@ -1,8 +1,8 @@
 # CyberMedica — руководство проекта
 
 **Статус:** нормативный документ  
-**Версия:** 1.0  
-**Дата вступления в силу:** 21 июля 2026 года  
+**Версия:** 1.1
+**Дата вступления в силу:** 1 августа 2026 года
 **Владелец:** владелец продукта и технический руководитель CyberMedica  
 **Область действия:** репозиторий, облачная инфраструктура, разработка, данные и релизы
 
@@ -38,8 +38,9 @@ PROJECT_GUIDE является конституцией CyberMedica и глав�
 12. [ADR](#12-архитектурные-решения-adr)
 13. [Документация](#13-правила-документации)
 14. [ИИ-ассистенты](#14-правила-работы-ии)
-15. [История проекта](#15-история-проекта)
-16. [Обновление руководства](#16-порядок-обновления-документа)
+15. [Corporate Identity and Account Policy](#15-corporate-identity-and-account-policy)
+16. [История проекта](#16-история-проекта)
+17. [Обновление руководства](#17-порядок-обновления-документа)
 
 ---
 
@@ -447,7 +448,30 @@ ADR обязателен при изменении Source of Truth, infrastructu
 
 ---
 
-## 15. История проекта
+## 15. Corporate Identity and Account Policy
+
+Канонической корпоративной identity CyberMedica является
+`cybermedicaooo@gmail.com`. Все новые Auth, Review, Git, deployment и
+external-service операции выполняются только через неё или напрямую связанный
+корпоративный account. Другая identity требует отдельного явного разрешения
+Product Owner на exact операцию; существующая session или ранее выданное
+исключение не являются постоянным разрешением.
+
+Перед write, OTP/PKCE, account creation и deployment обязателен identity
+preflight. Несовпадение завершается fail-closed:
+`CORPORATE IDENTITY POLICY BLOCKED`. Секреты и session credentials не
+сохраняются в документации или Git.
+
+`armansmarkosyan@gmail.com` является legacy identity и запрещена для новых
+операций. Исторические Review Decisions и audit records сохраняются с исходной
+identity и не переписываются. Отзыв или удаление legacy account требует
+отдельной controlled задачи.
+
+Подробности: [Corporate Identity and Access Policy](./CORPORATE_IDENTITY_AND_ACCESS.md).
+
+---
+
+## 16. История проекта
 
 | Период | Этап | Значение | Ссылка |
 | --- | --- | --- | --- |
@@ -461,7 +485,7 @@ ADR обязателен при изменении Source of Truth, infrastructu
 
 ---
 
-## 16. Порядок обновления документа
+## 17. Порядок обновления документа
 
 PROJECT_GUIDE обновляется при изменении product boundary, Source of Truth, architecture, environments, development/release process, Definition of Done, security boundary, repository structure, data workflows или правил ИИ.
 
@@ -482,6 +506,7 @@ PROJECT_GUIDE обновляется при изменении product boundary,
 - [Архитектура](./ARCHITECTURE.md)
 - [Процесс разработки](./DEVELOPMENT.md)
 - [Процесс релизов](./RELEASE_PROCESS.md)
+- [Corporate Identity and Access Policy](./CORPORATE_IDENTITY_AND_ACCESS.md)
 - [Реестр ADR](./ADR/README.md)
 - [Product index](../01-product/README.md)
 - [Backend index](../02-backend/README.md)

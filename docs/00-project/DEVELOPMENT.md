@@ -14,7 +14,9 @@
 3. определить environment, release и data source;
 4. прочитать применимые ADR и domain docs;
 5. зафиксировать scope, forbidden changes и acceptance criteria;
-6. определить необходимость staging, Cloud write и ADR.
+6. определить необходимость staging, Cloud write и ADR;
+7. для Git, Auth, deployment и external-service операций выполнить identity
+   preflight по [Corporate Identity and Access Policy](./CORPORATE_IDENTITY_AND_ACCESS.md).
 
 ## 2. Реализация
 
@@ -41,6 +43,9 @@ Domain gates добавляются по scope: baseline audit, schema audit, he
 
 ## 4. Работа с Git
 
+- Git author и committer по умолчанию: `cybermedica <cybermedicaooo@gmail.com>`.
+- Другой account или email требует явного разрешения Product Owner на exact
+  операцию.
 - Не использовать reset, restore, clean или stash без разрешения.
 - Не создавать commit из смешанного рабочего дерева.
 - Не включать пользовательские staged files в чужой PR.

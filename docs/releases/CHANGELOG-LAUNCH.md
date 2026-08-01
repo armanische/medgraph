@@ -1,5 +1,15 @@
 # CyberMedica Launch Changelog
 
+## Corporate Auth/RBAC — 2026-08-01
+
+- `cybermedicaooo@gmail.com` закреплена как единственная default identity для
+  новых Auth, Review, Git и deployment operations.
+- Corporate Auth UUID получил exact Production profile role `admin`.
+- Runtime login/SSR callback теперь fail-closed требует corporate identity и
+  live `admin`/`reviewer` profile через `auth.uid()` read contract.
+- Legacy Product-specific review routes больше не могут создавать Decisions;
+  исторические lifecycle records сохранены без перепривязки.
+
 ## CyberMedica Production Launch — 2026-07-29
 
 - Launch scope: public Storefront with Hamilton-T1 as the only published Product.
