@@ -223,7 +223,17 @@ function assertCatalogProduct(
   const flags = product?.qualityFlags;
   if (!product || product.id !== entry.productId) fail("catalog_product_binding_drift");
   if (product.model !== entry.model) fail("catalog_product_model_drift");
-  if (product.published !== false || !expectedState) fail("catalog_product_state_drift");
+  if (product.published !== false) fail("catalog_product_published_drift");
+  if (
+    allowCreatedState
+      ? product.publicationStatus !== "in_review" || product.reviewState !== "in_review"
+      : product.publicationStatus !== entry.expectedPublicationStatus
+        || product.reviewState !== entry.expectedReviewState
+  ) fail("catalog_product_lifecycle_state_drift");
+  if (!allowCreatedState && product.updatedAt !== entry.expectedUpdatedAt) {
+    fail("catalog_product_version_drift");
+  }
+  if (!expectedState) fail("catalog_product_state_drift");
   if (product.catalogQualityStatus !== "READY") fail("catalog_product_quality_drift");
   if (
     typeof product.shortDescription !== "string"
