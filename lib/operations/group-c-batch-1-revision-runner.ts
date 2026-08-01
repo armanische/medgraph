@@ -221,14 +221,12 @@ function assertCatalogProduct(
       && product?.reviewState === entry.expectedReviewState
       && product?.updatedAt === entry.expectedUpdatedAt;
   const flags = product?.qualityFlags;
+  if (!product || product.id !== entry.productId) fail("catalog_product_binding_drift");
+  if (product.model !== entry.model) fail("catalog_product_model_drift");
+  if (product.published !== false || !expectedState) fail("catalog_product_state_drift");
+  if (product.catalogQualityStatus !== "READY") fail("catalog_product_quality_drift");
   if (
-    !product
-    || product.id !== entry.productId
-    || product.model !== entry.model
-    || product.published !== false
-    || !expectedState
-    || product.catalogQualityStatus !== "READY"
-    || typeof product.shortDescription !== "string"
+    typeof product.shortDescription !== "string"
     || product.shortDescription.trim().length === 0
     || typeof product.description !== "string"
     || product.description.trim().length === 0
@@ -236,14 +234,22 @@ function assertCatalogProduct(
     || product.seoTitle.trim().length === 0
     || typeof product.seoDescription !== "string"
     || product.seoDescription.trim().length === 0
-    || !Array.isArray(product.characteristics)
+  ) fail("catalog_product_content_drift");
+  if (
+    !Array.isArray(product.characteristics)
     || product.characteristics.length !== entry.characteristics
     || !Array.isArray(product.media)
     || product.media.length !== entry.media
-    || product.immutable?.sourceUid !== entry.sourceUid
+  ) fail("catalog_product_children_drift");
+  if (
+    product.immutable?.sourceUid !== entry.sourceUid
     || product.immutable?.sourceChecksum !== entry.sourceChecksum
-    || sha256(product.immutable?.rawSnapshot) !== entry.rawSnapshotSha256
-    || !flags
+  ) fail("catalog_product_provenance_drift");
+  if (sha256(product.immutable?.rawSnapshot) !== entry.rawSnapshotSha256) {
+    fail("catalog_product_snapshot_hash_drift");
+  }
+  if (
+    !flags
     || flags.missingManufacturer !== false
     || flags.missingCategory !== false
     || flags.missingModel !== false
@@ -252,7 +258,7 @@ function assertCatalogProduct(
     || flags.missingMedia !== false
     || flags.missingRegistration !== true
     || flags.missingDocuments !== true
-  ) fail("catalog_product_scope_drift");
+  ) fail("catalog_product_flags_drift");
   return product;
 }
 
