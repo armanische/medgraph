@@ -256,16 +256,21 @@ function assertCatalogProduct(
     || !Array.isArray(product.media)
     || product.media.length !== entry.media
   ) fail("catalog_product_children_drift");
-  if (
-    product.immutable?.sourceUid !== entry.sourceUid
-    || product.immutable?.sourceChecksum !== entry.sourceChecksum
-    || !product.immutable.rawSnapshot
-    || typeof product.immutable.rawSnapshot !== "object"
-    // The patch-preview hash was calculated from the exact JSON transport
-    // representation returned by catalog_admin_product. Preserve that contract
-    // here; stableJson remains reserved for repeated-read determinism below.
-    || transportJsonSha256(product.immutable.rawSnapshot) !== entry.rawSnapshotSha256
-  ) fail("catalog_product_provenance_drift");
+  if (product.immutable?.sourceUid !== entry.sourceUid) {
+    fail("catalog_product_source_uid_drift");
+  }
+  if (product.immutable.sourceChecksum !== entry.sourceChecksum) {
+    fail("catalog_product_source_checksum_drift");
+  }
+  if (!product.immutable.rawSnapshot || typeof product.immutable.rawSnapshot !== "object") {
+    fail("catalog_product_raw_snapshot_missing");
+  }
+  // The patch-preview hash was calculated from the exact JSON transport
+  // representation returned by catalog_admin_product. Preserve that contract
+  // here; stableJson remains reserved for repeated-read determinism below.
+  if (transportJsonSha256(product.immutable.rawSnapshot) !== entry.rawSnapshotSha256) {
+    fail("catalog_product_raw_snapshot_hash_drift");
+  }
   if (
     !flags
     || flags.missingManufacturer !== false
