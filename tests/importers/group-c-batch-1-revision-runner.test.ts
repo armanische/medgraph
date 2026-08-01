@@ -23,7 +23,7 @@ test("Group C Batch 1 revision manifest is exact and digest-bound", async () => 
   assert.match(source, /^import "server-only";/u);
   assert.match(source, new RegExp(expectedManifestSha, "u"));
   assert.match(source, /group-c-batch-1-revision-creation-v1/u);
-  assert.equal((source.match(/productId: "/gu) ?? []).length, 8);
+  assert.equal((source.match(/productId: "/gu) ?? []).length, 16);
   assert.equal((source.match(/sourceUid: "/gu) ?? []).length, 8);
   assert.equal((source.match(/candidatePayloadChecksum:/gu) ?? []).length, 9);
   assert.equal((source.match(/payloadChecksum:/gu) ?? []).length, 9);
@@ -32,6 +32,8 @@ test("Group C Batch 1 revision manifest is exact and digest-bound", async () => 
   assert.equal((source.match(/expectedUpdatedAt:/gu) ?? []).length, 9);
   assert.match(source, /Object\.keys\(record\)\.length === 2/u);
   assert.doesNotMatch(source, /SUPABASE_SERVICE_ROLE_KEY|Authorization|Bearer/u);
+  assert.equal((source.match(/revisionId: "/gu) ?? []).length, 8);
+  assert.equal((source.match(/reviewItemId: "/gu) ?? []).length, 8);
 
   const runnable = ts.transpileModule(
     source.replace(/^import "server-only";\n\n/u, ""),
@@ -53,6 +55,29 @@ test("Group C Batch 1 revision manifest is exact and digest-bound", async () => 
     createHash("sha256").update(JSON.stringify(input)).digest("hex"),
     expectedManifestSha,
   );
+});
+
+test("generic Review Queue contains the exact eight durable Batch 1 bindings", async () => {
+  const manifest = await readFile(
+    "lib/review/publication-revision-manifest.ts",
+    "utf8",
+  );
+  const expectedRevisionIds = [
+    "685637b7-471a-4b8e-bd85-95633f6caf03",
+    "e87cbd30-ccd5-4418-93ac-2c3817a842c9",
+    "650e6150-fada-41ee-a3a3-f8ea2da5b65c",
+    "acae1207-9d59-4ad9-94d8-1716a6655812",
+    "c4c4cc16-1631-4289-9437-7a908c4b53ed",
+    "a7fef268-87c8-44b4-bb38-265befedaed1",
+    "8f68bcc0-0822-4a14-ae1f-09b3804a2d6a",
+    "181da0a6-fad3-4c2c-aed9-fec7ca06634f",
+  ];
+  for (const revisionId of expectedRevisionIds) {
+    assert.equal((manifest.match(new RegExp(revisionId, "gu")) ?? []).length, 1);
+  }
+  for (const productId of excludedProductIds) {
+    assert.doesNotMatch(manifest, new RegExp(productId, "u"));
+  }
 });
 
 test("revision runner uses only approved RPC and exact server-side scope", async () => {

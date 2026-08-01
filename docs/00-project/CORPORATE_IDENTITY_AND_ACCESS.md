@@ -40,6 +40,10 @@ account. При несовпадении write, письмо, account creation �
   profile закрывает доступ.
 - Browser и штатный SSR check не используют service-role и не читают
   `cloud.user_profiles` напрямую.
+- Controlled lifecycle runners may use the Production service role only in the
+  server runtime after an exact corporate UUID/email/role session check. Their
+  browser contract is limited to a tracked operation key and immutable digest;
+  Product scope is never accepted from the browser.
 
 ## Legacy identity
 

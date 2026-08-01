@@ -132,6 +132,12 @@
   projection version and sitemap Product count are 44 and 42. Replay returned
   already complete. Instilar 1438 remains draft with lifecycle `0/0/0/0`. See
   [publication closure](../reports/group-b-six-publication-2026-07-31.md).
+- Group C remediation Batch 1 revisions (2026-08-01): a narrow Production-only
+  runner created and idempotency-verified immutable revision 1 for eight exact
+  Products. The corporate Review Queue now contains eight pending items;
+  Published remains 42 and no Review, Approval or Publication was performed.
+  See [revision creation](../reports/group-c-remediation-batch-1-revision-creation-2026-08-01.md)
+  and [queue checkpoint](../reports/group-c-remediation-batch-1-review-queue-2026-08-01.md).
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).

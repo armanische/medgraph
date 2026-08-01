@@ -27,6 +27,15 @@ identity is resolved. Missing registration or documents alone remains a
 warning, but identity ambiguity, duplicate identity and explicit media mismatch
 remain blocking.
 
+## Batch 1 progress — 2026-08-01
+
+Eight remediated Products now have exact immutable revision 1 and one pending
+Review Item each. They moved from remediation preparation into the corporate
+generic Review Queue; Human Review has not started. VME-5B and EPK-i7010 remain
+blocked by their media corrective, UNIKOS remains blocked by identity evidence,
+and Instilar 1438 remains a separate unpublished Product with lifecycle
+`0/0/0/0`.
+
 ## Production baseline
 
 - Products: 79

@@ -250,6 +250,7 @@ authorize automatic lifecycle writes.
 | Resolve and publish six Product Owner-approved Group B Products | Завершено | Нет |
 | Keep Instilar 1438 outside lifecycle pending dedup policy | В backlog | Нет |
 | Remediate the remaining 36 unresolved identities | Следующая batch-задача | Нет |
+| Complete corporate Human Review for eight Group C Batch 1 revisions | Ожидает ручного Review | Нет |
 
 Production contains 42 Published and 37 Unpublished Products. Further catalog
 work follows the [Group C remediation queue](../reports/group-c-remediation-queue-2026-07-31.md)

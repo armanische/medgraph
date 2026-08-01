@@ -226,7 +226,16 @@ export const GROUP_C_BATCH_1_REVISION_MANIFEST = Object.freeze({
  * never treated as this operation's result.
  */
 export const GROUP_C_BATCH_1_REVISION_COMPLETION_EVIDENCE:
-readonly GroupCBatch1RevisionCompletionEvidence[] = Object.freeze([]);
+readonly GroupCBatch1RevisionCompletionEvidence[] = Object.freeze([
+  { productId: "48f7d071-c8e4-4bc9-96c4-fc12672ca183", revisionId: "685637b7-471a-4b8e-bd85-95633f6caf03", reviewItemId: "b9de9b94-06d5-4dd2-8eca-be70842521e5" },
+  { productId: "721a2244-75a6-42b3-9370-7df148d8a51e", revisionId: "e87cbd30-ccd5-4418-93ac-2c3817a842c9", reviewItemId: "376c2abb-3a5c-4332-8102-87c830380cbe" },
+  { productId: "831f5d47-a765-4bc2-8d18-65691cae76e9", revisionId: "650e6150-fada-41ee-a3a3-f8ea2da5b65c", reviewItemId: "000ca5ac-040e-4043-bc79-4217861afaee" },
+  { productId: "ae1e448d-f266-4d5d-9d42-e2c22a2d54c8", revisionId: "acae1207-9d59-4ad9-94d8-1716a6655812", reviewItemId: "f29dc1b9-46bd-416d-b3ce-43cee09438d6" },
+  { productId: "760b9466-dcb6-4fd5-a821-eb4bf8203e77", revisionId: "c4c4cc16-1631-4289-9437-7a908c4b53ed", reviewItemId: "31a9eadd-79bd-4773-8ed4-297d9ed7e4e5" },
+  { productId: "7866179e-e753-411b-8e9e-409b109b66d2", revisionId: "a7fef268-87c8-44b4-bb38-265befedaed1", reviewItemId: "8871eedd-311c-403d-a79a-098ed6b0d4e2" },
+  { productId: "6041f5e8-1560-4a54-99eb-81bf91c18fbe", revisionId: "8f68bcc0-0822-4a14-ae1f-09b3804a2d6a", reviewItemId: "b0df7213-03c1-4419-aace-4f88ef481c4d" },
+  { productId: "30f623b9-764f-4fc3-9b2d-c0598b50015c", revisionId: "181da0a6-fad3-4c2c-aed9-fec7ca06634f", reviewItemId: "7811faa4-45c5-4a2a-b169-4b02f3d9e3d2" },
+]);
 
 export function groupCBatch1RevisionManifestDigestInput() {
   return {
