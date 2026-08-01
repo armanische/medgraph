@@ -27,24 +27,12 @@ test("internal access RPC is auth.uid-only, argument-free and read-only", async 
   assert.doesNotMatch(migration, /email|token|metadata/iu);
 });
 
-test("internal access owner, grants and RLS remain least-privilege", async () => {
+test("internal access owner and grants remain inside the approved Supabase boundary", async () => {
   const migration = await readFile(migrationPath, "utf8");
 
   assert.match(
     migration,
-    /create role cybermedica_internal_access_reader[\s\S]+nologin[\s\S]+noinherit[\s\S]+nobypassrls/u,
-  );
-  assert.match(
-    migration,
-    /grant select \(id, role, display_name\) on table cloud\.user_profiles/u,
-  );
-  assert.match(
-    migration,
-    /create policy user_profiles_internal_access_reader_self_v1[\s\S]+using \(id = auth\.uid\(\)\)/u,
-  );
-  assert.match(
-    migration,
-    /alter function cloud_api\.current_internal_access_v1\(\)[\s\S]+owner to cybermedica_internal_access_reader/u,
+    /alter function cloud_api\.current_internal_access_v1\(\)[\s\S]+owner to postgres/u,
   );
   assert.match(
     migration,
@@ -55,6 +43,7 @@ test("internal access owner, grants and RLS remain least-privilege", async () =>
     /grant execute on function cloud_api\.current_internal_access_v1\(\)[\s\S]+to authenticated/u,
   );
   assert.doesNotMatch(migration, /grant select on (table )?cloud\.user_profiles to authenticated/u);
+  assert.doesNotMatch(migration, /create policy[\s\S]+to authenticated/u);
 });
 
 test("internal routes require both corporate identity and live profile access", async () => {

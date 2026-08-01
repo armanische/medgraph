@@ -3,19 +3,7 @@
 do $contract$
 declare
   function_oid oid := 'cloud_api.current_internal_access_v1()'::regprocedure::oid;
-  reader pg_roles%rowtype;
 begin
-  select * into reader from pg_roles
-  where rolname = 'cybermedica_internal_access_reader';
-
-  if reader.rolname is null
-     or reader.rolcanlogin
-     or reader.rolinherit
-     or reader.rolbypassrls
-     or reader.rolsuper then
-    raise exception 'internal access reader role is missing or over-privileged';
-  end if;
-
   if not exists (
     select 1
     from pg_proc function
@@ -25,7 +13,7 @@ begin
       and function.prosecdef
       and function.provolatile = 's'
       and function.proconfig = array['search_path=pg_catalog, auth, cloud']
-      and owner.rolname = 'cybermedica_internal_access_reader'
+      and owner.rolname = 'postgres'
   ) then
     raise exception 'internal access RPC metadata is unsafe';
   end if;

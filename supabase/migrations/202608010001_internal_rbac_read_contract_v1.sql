@@ -3,52 +3,8 @@
 
 begin;
 
-do $roles$
-declare
-  reader_role pg_roles%rowtype;
-begin
-  select * into reader_role
-  from pg_roles
-  where rolname = 'cybermedica_internal_access_reader';
-
-  if not found then
-    create role cybermedica_internal_access_reader
-      nologin
-      noinherit
-      nobypassrls;
-  elsif reader_role.rolcanlogin
-     or reader_role.rolinherit
-     or reader_role.rolbypassrls
-     or reader_role.rolsuper
-     or reader_role.rolcreaterole
-     or reader_role.rolcreatedb
-     or reader_role.rolreplication then
-    raise exception
-      'cybermedica_internal_access_reader exists with unsafe attributes';
-  end if;
-end
-$roles$;
-
-grant usage on schema auth, cloud, cloud_api
-  to cybermedica_internal_access_reader;
 grant usage on schema cloud_api
   to authenticated;
-grant execute on function auth.uid()
-  to cybermedica_internal_access_reader;
-
-revoke all on table cloud.user_profiles
-  from cybermedica_internal_access_reader;
-grant select (id, role, display_name) on table cloud.user_profiles
-  to cybermedica_internal_access_reader;
-
-create policy user_profiles_internal_access_reader_self_v1
-on cloud.user_profiles
-for select
-to cybermedica_internal_access_reader
-using (id = auth.uid());
-
-grant create on schema cloud_api
-  to cybermedica_internal_access_reader;
 
 create function cloud_api.current_internal_access_v1()
 returns jsonb
@@ -80,10 +36,7 @@ as $function$
 $function$;
 
 alter function cloud_api.current_internal_access_v1()
-  owner to cybermedica_internal_access_reader;
-
-revoke create on schema cloud_api
-  from cybermedica_internal_access_reader;
+  owner to postgres;
 
 revoke all on function cloud_api.current_internal_access_v1()
   from public, anon, service_role;
