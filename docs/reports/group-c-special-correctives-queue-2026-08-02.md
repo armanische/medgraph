@@ -8,7 +8,7 @@
 | Гемос | `757604699272` | Correct swapped base type characteristic | Draft, `0/0/0/0` | Нет |
 | Combined УНИКОС-02/03 | `412668785772` | Product Owner exact-execution decision after primary evidence | Draft, `0/0/0/0` | Нет |
 | Instilar 1438 | `532456144899` | KEEP; obtain separate official model evidence | Draft, `0/0/0/0` | Нет |
-| ИДН-03 | `363181290312` | Exact identity resolved from Rostec/Shvabe/UOMZ evidence; create a separate immutable revision only after authorization | Patched, draft, revision-ready, `0/0/0/0` | Нет |
+| ИДН-03 | `363181290312` | Complete one corporate Human Review of the exact immutable revision | Unpublished, in review, `1/0/0/0` | Нет |
 | HUGER FB-53A | `632825146024` | Remove conflicting rigid-instrument asset and confirm primary model evidence | Draft, `0/0/0/0` | Нет |
 | PRIMEDIC Defi-B | `754023648801` | Add/resolve PRIMEDIC/Metrax manufacturer reference through an approved corrective | Draft, `0/0/0/0` | Нет |
 
@@ -27,3 +27,7 @@ Revision or Review Item; their lifecycle remains `0/0/0/0`.
 The subsequent Batch 3 publication operation reconfirmed the same state after
 Production reached 70 Published Products. These nine rows are the complete
 remaining unpublished catalog and are the recommended final corrective scope.
+
+The later one-Product operation created exactly one ИДН-03 revision and Review
+Item. The other eight rows remain draft with lifecycle `0/0/0/0`; Published and
+sitemap counts remain 70.

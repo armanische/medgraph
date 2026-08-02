@@ -197,6 +197,12 @@
   deterministic revision preflight PASS. No other Product, media,
   characteristic, lifecycle record or public projection changed. See the
   [corrective audit](../reports/final-nine-special-correctives-2026-08-02.md).
+- ИДН-03 immutable revision (2026-08-02): the corporate-only, digest-bound
+  runner created and replay-verified revision
+  `5801cde4-9341-4fe9-9e35-da47627754f9` and Review Item
+  `a0654fd4-d65f-450d-b8ed-2270408fdcbe`. Production remains 70 Published;
+  no Human Review, Approval or Publication was performed. See the
+  [revision report](../reports/idn-03-revision-creation-2026-08-02.md).
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).

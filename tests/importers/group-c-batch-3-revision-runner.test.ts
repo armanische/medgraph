@@ -18,6 +18,7 @@ const excludedProductIds = [
   "7efe1eb2-6551-4f0b-9310-c898cbcfdf7a",
   "e7a54ec6-986d-422a-aca8-862d4d00a421",
 ];
+const reviewQueueExcludedProductIds = excludedProductIds.slice(1);
 
 test("Group C Batch 3 revision manifest is exact and digest-bound", async () => {
   const source = await readFile("lib/operations/group-c-batch-3-revision-manifest.ts", "utf8");
@@ -69,7 +70,7 @@ test("generic Review Queue contains the exact seven durable Batch 3 bindings", a
     assert.equal((manifest.match(new RegExp(revisionId, "gu")) ?? []).length, 1);
     assert.equal((manifest.match(new RegExp(reviewItemId, "gu")) ?? []).length, 1);
   }
-  for (const productId of excludedProductIds) {
+  for (const productId of reviewQueueExcludedProductIds) {
     assert.doesNotMatch(
       manifest.slice(manifest.indexOf('revisionId: "075ff1ca-ecdd-4f78-a2cf-904d9a28a6bf"')),
       new RegExp(productId, "u"),

@@ -25,10 +25,12 @@ test("IDN-03 revision manifest is exact and digest-bound", async () => {
   assert.match(source, new RegExp(expectedManifestSha, "u"));
   assert.match(source, /idn-03-revision-creation-v1/u);
   assert.match(source, /idn-03-initial-revision-v1|sourceArtifacts/u);
-  assert.equal((source.match(/productId: "/gu) ?? []).length, 1);
+  assert.equal((source.match(/productId: "/gu) ?? []).length, 2);
   assert.equal((source.match(/sourceUid: "/gu) ?? []).length, 1);
   assert.match(source, new RegExp(targetProductId, "u"));
   assert.match(source, /productCount: 1/u);
+  assert.match(source, /5801cde4-9341-4fe9-9e35-da47627754f9/u);
+  assert.match(source, /a0654fd4-d65f-450d-b8ed-2270408fdcbe/u);
   assert.match(source, /Object\.keys\(record\)\.length === 2/u);
   assert.doesNotMatch(source, /SUPABASE_SERVICE_ROLE_KEY|Authorization|Bearer/u);
 
@@ -100,4 +102,19 @@ test("IDN-03 execution page stops before Human Review", async () => {
   assert.match(page, /Approval/u);
   assert.match(page, /Publication/u);
   assert.doesNotMatch(page, /reviewDecision|approveProduct|publishProduct/u);
+});
+
+test("generic Review Queue contains the exact durable IDN-03 binding", async () => {
+  const manifest = await readFile("lib/review/publication-revision-manifest.ts", "utf8");
+  for (const value of [
+    targetProductId,
+    "363181290312",
+    "5801cde4-9341-4fe9-9e35-da47627754f9",
+    "a0654fd4-d65f-450d-b8ed-2270408fdcbe",
+    "85dda33600089199c2075edf08cd75f77b474e9bcee424de254f3431b3347540",
+    "de5abe9eff70f515ab3d2908ff91f02888b46e60c0667c3b96c83fffe09a4b80",
+    "855dff5fab9e9531e2063550b4bf9641f0ef12efac50d26adb743dd902faa561",
+  ]) {
+    assert.equal((manifest.match(new RegExp(value, "gu")) ?? []).length, 1);
+  }
 });

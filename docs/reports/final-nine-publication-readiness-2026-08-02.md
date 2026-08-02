@@ -4,7 +4,7 @@
 
 | Product | State | Residual blocker | Next safe operation | Блокирует запуск |
 | --- | --- | --- | --- | --- |
-| ИДН-03 | Ready for revision | None; registration/documents remain warnings | Separate one-Product immutable revision task | Нет |
+| ИДН-03 | In corporate Human Review | None; registration/documents remain warnings | Product Owner reviews exact immutable revision `5801cde4-9341-4fe9-9e35-da47627754f9` | Нет |
 | Combined УНИКОС-02/03 | Product Owner decision | Exact execution is not established | Choose УНИКОС-02, УНИКОС-03 or BLOCK | Нет |
 | AOHUA VME-5B | Remain blocked | Two explicit SupFire gallery assets; no approved media-removal boundary | Narrow controlled media corrective | Нет |
 | PENTAX EPK-i7010 | Remain blocked | Primary asset explicitly says EPK-i7000 | Narrow controlled media corrective | Нет |
@@ -30,7 +30,8 @@
   `de5abe9eff70f515ab3d2908ff91f02888b46e60c0667c3b96c83fffe09a4b80`;
 - Product identity checksum:
   `855dff5fab9e9531e2063550b4bf9641f0ef12efac50d26adb743dd902faa561`;
-- lifecycle remains `0/0/0/0`; revision RPC was not called.
+- lifecycle is now `1/0/0/0`; the exact revision and Review Item are recorded in
+  the [revision creation report](./idn-03-revision-creation-2026-08-02.md).
 
 ## Product Owner question
 
@@ -46,7 +47,7 @@ executions but does not authorize converting a combined source row into either.
 
 ## Totals
 
-- ready for revision: `1`;
+- awaiting corporate Human Review: `1`;
 - Product Owner decisions required: `1`;
 - remain blocked: `6`;
 - keep unpublished by policy: `1`.

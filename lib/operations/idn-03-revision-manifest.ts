@@ -64,7 +64,13 @@ export const IDN_03_REVISION_MANIFEST = Object.freeze({
 
 /** Populated after the first durable Production execution; excluded from digest. */
 export const IDN_03_REVISION_COMPLETION_EVIDENCE:
-readonly Idn03RevisionCompletionEvidence[] = Object.freeze([]);
+readonly Idn03RevisionCompletionEvidence[] = Object.freeze([
+  {
+    productId: "24ac72fc-5c64-4f4e-9f92-cd4eca58e426",
+    revisionId: "5801cde4-9341-4fe9-9e35-da47627754f9",
+    reviewItemId: "a0654fd4-d65f-450d-b8ed-2270408fdcbe",
+  },
+]);
 
 export function idn03RevisionManifestDigestInput() {
   return {

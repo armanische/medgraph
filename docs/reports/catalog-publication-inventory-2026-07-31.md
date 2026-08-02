@@ -15,7 +15,7 @@ Canonical Production inventory after Group C remediation Batch 3 publication:
 | Group C Batch 2 characteristic corrective | 2 |
 | Group C Batch 3 published | 7 |
 | Group C special correctives unresolved | 8 |
-| Final-nine revision-ready | 1 |
+| Final-nine pending corporate Review | 1 |
 | Projection version | 72 |
 | Sitemap Product URLs | 70 |
 
@@ -40,6 +40,6 @@ The remaining nine Products are tracked in the
 
 Batch 3 closed with seven corporate-reviewed Products published. The final-nine
 corrective pass subsequently patched ИДН-03 through the approved Catalog Admin
-boundary; it remains draft and revision-ready. Eight rows remain in controlled
-technical/owner/policy queues. All nine remain lifecycle `0/0/0/0`, and none is
-exposed by the 70-URL sitemap.
+boundary. Its exact immutable revision is now in corporate Human Review with
+lifecycle `1/0/0/0`; eight rows remain in controlled technical/owner/policy
+queues with lifecycle `0/0/0/0`. None is exposed by the 70-URL sitemap.

@@ -90,3 +90,11 @@ Decision, Approval, Publication Batch, migration, ENV or DNS change occurred.
 - credential/privacy scan: PASS.
 - unpublished canonical URL leak scan: PASS.
 - Application build: not required because runtime code did not change.
+
+## Subsequent lifecycle checkpoint
+
+The separately authorized corporate operation created immutable revision
+`5801cde4-9341-4fe9-9e35-da47627754f9` and Review Item
+`a0654fd4-d65f-450d-b8ed-2270408fdcbe` for ИДН-03. It stopped before Human
+Review; Decisions/Approvals/Publication Batches remain `0/0/0` for this Product.
+See the [revision evidence](./idn-03-revision-creation-2026-08-02.md).

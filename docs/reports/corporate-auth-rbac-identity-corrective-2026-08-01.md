@@ -44,3 +44,10 @@ After the exact profile authorization:
 
 Production migration and deployment are not performed by the local preparation
 commit. They require the controlled apply/deployment gate and post-apply smoke.
+
+## ИДН-03 corporate lifecycle checkpoint — 2026-08-02
+
+The exact corporate email, UUID and admin profile authorized the digest-bound
+ИДН-03 revision runner. It created one immutable revision and one Review Item,
+then stopped before Human Review. No legacy identity was used and all new
+Decision/Approval/Publication counts for this Product remain zero.
