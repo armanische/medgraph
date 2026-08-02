@@ -1,0 +1,37 @@
+name: Catalog reliability gate
+
+on:
+  pull_request:
+  push:
+    branches: [main, production]
+
+permissions:
+  contents: read
+
+jobs:
+  fault-injection:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npx playwright install --with-deps webkit
+      - run: npm run qa:catalog-reliability-gate
+      - run: npm run build
+      - run: |
+          CYBERMEDICA_CATALOG_FAULT_INJECTION=all npm start &
+          server_pid=$!
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:3000/catalog >/dev/null; then
+              WEBKIT_SMOKE_PRODUCT_PATH=/catalog/catalog-resilience-seed npm run qa:ios-webkit-smoke
+              kill "$server_pid"
+              exit 0
+            fi
+            sleep 1
+          done
+          kill "$server_pid" || true
+          exit 1

@@ -240,7 +240,8 @@ test("published repository is server-only, read-only, isolated from Preview and 
   assert.match(repository, /cloud_published_storefront_catalog_v1/u);
   assert.match(repository, /"Accept-Profile": "cloud_api"/u);
   assert.match(repository, /"Content-Profile": "cloud_api"/u);
-  assert.match(repository, /AbortSignal\.timeout\(10_000\)/u);
+  assert.match(repository, /AbortSignal\.timeout\(timeoutMs\)/u);
+  assert.match(repository, /loadResilientPublishedCatalogProjection/u);
   assert.match(repository, /cache\(requestCloudPublishedCatalog\)/u);
   assert.match(index, /createCatalogRepositoryForSource\(storefrontDataSource\)/u);
   assert.doesNotMatch(

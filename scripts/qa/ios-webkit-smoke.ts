@@ -2,8 +2,8 @@ import assert from "node:assert/strict";
 
 import { webkit } from "playwright-core";
 
-const defaultProductPath =
-  "/catalog/767632362-330695211247-apparat-ivl-hamilton-t1";
+const defaultProductPath = process.env.WEBKIT_SMOKE_PRODUCT_PATH
+  ?? "/catalog/767632362-330695211247-apparat-ivl-hamilton-t1";
 const origin = process.env.WEBKIT_SMOKE_ORIGIN ?? "http://127.0.0.1:3000";
 const parsedOrigin = new URL(origin);
 const approvedOrigin =
