@@ -183,6 +183,13 @@
   Review Queue contains the exact seven pending records. See
   [revision evidence](../reports/group-c-remediation-batch-3-revision-creation-2026-08-02.md)
   and [queue checkpoint](../reports/group-c-remediation-batch-3-review-queue-2026-08-02.md).
+- Group C remediation Batch 3 publication (2026-08-02): all seven exact
+  revisions completed corporate Human Review, Approval and Publication through
+  the immutable `group-c-batch-3-publication-v1` manifest. Production now has
+  70 Published and 9 Unpublished Products; projection version and sitemap
+  Product count are 72 and 70. Replay returned `already_complete`; the nine
+  special corrective Products remain draft with lifecycle `0/0/0/0`. See
+  [publication closure](../reports/group-c-remediation-batch-3-publication-2026-08-02.md).
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).

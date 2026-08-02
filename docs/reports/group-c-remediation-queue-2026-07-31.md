@@ -85,3 +85,19 @@ See the [Batch 2 publication closure](./group-c-remediation-batch-2-publication-
 | Prior special exclusions | 6 | Unchanged | Separate narrow correctives/decisions | Нет |
 
 Production remains `79/63/16`; lifecycle remains `63/63/63/63`.
+
+## Batch 3 publication closure — 2026-08-02
+
+Seven exact Batch 3 Products completed corporate Human Review, Approval and
+Publication through `group-c-batch-3-publication-v1`. Production is now
+`79/70/9`; lifecycle totals are `70/70/70/70`, projection version is 72 and the
+sitemap contains 70 unique Product URLs. Replay returned `already_complete`.
+
+| Remaining stream | Count | State | Next action | Блокирует запуск |
+| --- | ---: | --- | --- | --- |
+| Media correctives | 3 | VME-5B, EPK-i7010, HUGER FB-53A draft `0/0/0/0` | Exact media remediation | Нет |
+| Identity/manufacturer decisions | 3 | ИДН-03, combined УНИКОС, PRIMEDIC Defi-B draft `0/0/0/0` | Primary evidence and controlled corrective | Нет |
+| Data-characteristic correctives | 2 | Гемос/Гемос-ПФ draft `0/0/0/0` | Narrow type-characteristic corrective | Нет |
+| Separate evidence | 1 | Instilar 1438 KEEP, draft `0/0/0/0` | Obtain exact official evidence | Нет |
+
+See the [Batch 3 publication closure](./group-c-remediation-batch-3-publication-2026-08-02.md).

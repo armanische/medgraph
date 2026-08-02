@@ -249,15 +249,16 @@ authorize automatic lifecycle writes.
 | Publish 33 High-confidence Group A Products | Завершено | Нет |
 | Resolve and publish six Product Owner-approved Group B Products | Завершено | Нет |
 | Keep Instilar 1438 outside lifecycle pending dedup policy | В backlog | Нет |
-| Remediate the remaining unresolved identities | Batch 1 and Batch 2 published; Batch 3 next | Нет |
+| Remediate the remaining unresolved identities | Batches 1–3 published; nine special correctives remain | Нет |
 | Complete corporate Human Review and publication for eight Group C Batch 1 revisions | Завершено — Production Published count 50 | Нет |
 | Create 13 Group C Batch 2 immutable revisions | Завершено | Нет |
 | Complete corporate Human Review and publication for Group C Batch 2 | Завершено — Production Published count 63 | Нет |
 | Correct swapped Гемос / Гемос-ПФ type characteristics | Backlog, narrow data corrective required | Нет |
-| Complete corporate Human Review for seven Group C Batch 3 revisions | Ready — queue contains exact seven | Нет |
+| Complete corporate Human Review and publication for seven Group C Batch 3 revisions | Завершено — Production Published count 70 | Нет |
 
-Production contains 63 Published and 16 Unpublished Products. Further catalog
-work follows the [Group C remediation queue](../reports/group-c-remediation-queue-2026-07-31.md)
+Production contains 70 Published and 9 Unpublished Products. Further catalog
+work is limited to the
+[special correctives queue](../reports/group-c-special-correctives-queue-2026-08-02.md)
 and remains post-launch.
 
 ## Never Automatic

@@ -31,3 +31,9 @@ the 63-Product sitemap.
 | HUGER FB-53A | `632825146024` | Second asset depicts a different rigid instrument | Remove the conflicting asset through a controlled media corrective | Нет |
 | ИДН-03 claim | `363181290312` | Official evidence found only for IDН-02 | Exact identity evidence before media/content approval | Нет |
 | PRIMEDIC Defi-B | `754023648801` | Images pass, but manufacturer is bound to Mindray | Resolve PRIMEDIC/Metrax reference before content patch | Нет |
+
+## Batch 3 publication checkpoint
+
+Production now contains 70 Published Products and a 70-Product sitemap. All
+nine entries in the special correctives queue remain draft with lifecycle
+`0/0/0/0`; none is publicly indexed.

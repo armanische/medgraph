@@ -39,3 +39,10 @@ Canonical `ru`, SEO, characteristics and media are included. Warnings remain
 No Human Review, Approval or Publication was performed. Published Products,
 all explicitly excluded Products, raw snapshots, source checksums, migrations,
 ENV and DNS were unchanged.
+
+## Publication handoff
+
+The seven revisions subsequently completed corporate Human Review, Approval
+and Publication through the immutable `group-c-batch-3-publication-v1`
+operation. Production reached 70 Published Products. See the
+[Batch 3 publication closure](./group-c-remediation-batch-3-publication-2026-08-02.md).

@@ -43,3 +43,11 @@ The seven revision-ready rows received exact immutable revision 1 and Review
 Item records through the closed corporate runner. The three Product-specific
 exclusions remain unchanged with lifecycle `0/0/0/0`. See the
 [revision creation evidence](./group-c-remediation-batch-3-revision-creation-2026-08-02.md).
+
+## Publication closure
+
+All seven revisions completed corporate Human Review, Approval and Publication.
+Production is now `79 / 70 / 9`, lifecycle totals are `70/70/70/70`, projection
+version is 72 and the sitemap contains 70 unique Product URLs. The nine
+remaining corrective Products are unchanged. See the
+[publication evidence](./group-c-remediation-batch-3-publication-2026-08-02.md).

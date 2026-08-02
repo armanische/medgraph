@@ -12,8 +12,12 @@
 | HUGER FB-53A | `632825146024` | Remove conflicting rigid-instrument asset and confirm primary model evidence | Draft, `0/0/0/0` | Нет |
 | PRIMEDIC Defi-B | `754023648801` | Add/resolve PRIMEDIC/Metrax manufacturer reference through an approved corrective | Draft, `0/0/0/0` | Нет |
 
-All nine rows are outside the seven-Product revision-ready scope. No Product
-URL is present in the 63-Product sitemap.
+All nine rows are outside the seven-Product publication scope. No Product URL
+is present in the 70-Product sitemap.
 
 The Batch 3 revision operation reconfirmed all nine exclusions. None received a
 Revision or Review Item; their lifecycle remains `0/0/0/0`.
+
+The subsequent Batch 3 publication operation reconfirmed the same state after
+Production reached 70 Published Products. These nine rows are the complete
+remaining unpublished catalog and are the recommended final corrective scope.
