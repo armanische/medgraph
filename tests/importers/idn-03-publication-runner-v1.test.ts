@@ -53,10 +53,22 @@ test("IDN-03 runner is narrow, replay-safe and service-only", async () => {
 
 test("IDN-03 operation route re-authorizes corporate admin and exact body", async () => {
   const route = await readFile("app/internal/operations/idn-03-publication/route.ts", "utf8");
+  const page = await readFile(
+    "app/internal/operations/idn-03-publication/execute/page.tsx",
+    "utf8",
+  );
+  const component = await readFile(
+    "components/internal/Idn03PublicationExecution.tsx",
+    "utf8",
+  );
   assert.match(route, /process\.env\.VERCEL_ENV !== "production"/u);
   assert.match(route, /readActiveTrustedReviewer/u);
   assert.match(route, /APPROVED_REVIEWER\.userId/u);
   assert.match(route, /APPROVED_REVIEWER\.email/u);
   assert.match(route, /same_origin_required/u);
   assert.match(route, /validateIdn03PublicationOperationRequest/u);
+  assert.match(page, /requireTrustedReviewer/u);
+  assert.match(component, /operationKey: OPERATION_KEY/u);
+  assert.match(component, /manifestSha256: MANIFEST_SHA256/u);
+  assert.doesNotMatch(component, /24ac72fc|5801cde4|serviceRole/u);
 });
