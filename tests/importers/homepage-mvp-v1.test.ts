@@ -20,7 +20,7 @@ test("Homepage evolution renders the approved equipment entry after the search-f
 
   assert.ok(positions.every((position) => position >= 0));
   assert.deepEqual(positions, [...positions].sort((left, right) => left - right));
-  assert.doesNotMatch(page, /FeaturedProducts|PlatformStats|<Search/u);
+  assert.doesNotMatch(page, /<PlatformStats|<Search/u);
 });
 
 test("Hero combines a real catalog showcase with the established Search", async () => {

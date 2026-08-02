@@ -6,24 +6,22 @@ async function source(path: string) {
   return readFile(path, "utf8");
 }
 
-test("Homepage Evolution selects exactly four public products without merchandising logic", async () => {
+test("Homepage selects the approved public products through a fail-closed selector", async () => {
   const page = await source("app/page.tsx");
   const equipment = await source("components/home/Equipment.tsx");
 
-  assert.match(page, /const catalogEquipment = products\?\.slice\(0, 4\) \?\? null/u);
-  assert.match(equipment, /if \(!products \|\| products\.length < 4\) return null/u);
-  assert.equal((equipment.match(/products\.slice\(0, 4\)/gu) ?? []).length, 1);
+  assert.match(page, /selectPublishedFeaturedProducts\(products\)/u);
+  assert.match(equipment, /if \(!products\) return null/u);
   assert.doesNotMatch(`${page}\n${equipment}`, /getFeaturedProducts|popularProducts|recommendedProducts|newestProducts/iu);
 });
 
-test("Equipment section reuses the canonical ProductCard without changing its API", async () => {
+test("Equipment section maps public presentation data into the interactive carousel", async () => {
   const equipment = await source("components/home/Equipment.tsx");
-  const card = await source("components/storefront/ProductCard.tsx");
+  const carousel = await source("components/home/FeaturedProductsCarousel.tsx");
 
-  assert.match(equipment, /import ProductCard from "@\/components\/storefront\/ProductCard"/u);
-  assert.match(equipment, /<ProductCard[\s\S]*product=\{product\}/u);
-  assert.doesNotMatch(equipment, /HomepageProductCard|FeaturedProductCard|CatalogProductCard|<article/u);
-  assert.doesNotMatch(card, /homepage|featured|recommended|exclusive|marketing/iu);
+  assert.match(equipment, /<FeaturedProductsCarousel/u);
+  assert.match(carousel, /href=\{`\/catalog\/\$\{product\.slug\}`\}/u);
+  assert.doesNotMatch(carousel, /lifecycle|sourceChecksum|rawSnapshot/u);
 });
 
 test("Hero images and final CTA use only the approved public content", async () => {

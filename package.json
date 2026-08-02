@@ -31,6 +31,7 @@
     "qa:publication-candidate-owner:local": "node scripts/qa/publication-candidate-owner-alignment-local.ts",
     "qa:structured-fields:local": "node scripts/qa/structured-fields-local-integration.ts",
     "qa:ios-webkit-smoke": "node scripts/qa/ios-webkit-smoke.ts",
+    "qa:featured-carousel": "node scripts/qa/featured-carousel-smoke.ts",
     "qa:catalog-reliability-gate": "node --test tests/importers/published-catalog-transport-resilience-v1.test.ts",
     "qa:catalog-production-synthetic": "node scripts/qa/catalog-production-synthetic.ts",
     "supabase:health": "node scripts/qa/supabase-health.ts",

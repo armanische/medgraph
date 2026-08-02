@@ -38,7 +38,7 @@ test("homepage search exposes the approved prompt without duplicate discovery UI
   assert.doesNotMatch(search, /popularQueries|Популярные запросы|role="listbox"/u);
 });
 
-test("category cards stay text-first while Homepage reuses the canonical ProductCard", async () => {
+test("category cards stay text-first while Homepage uses the approved featured carousel", async () => {
   const categories = await source("components/home/Categories.tsx");
   const page = await source("app/page.tsx");
   const equipment = await source("components/home/Equipment.tsx");
@@ -48,11 +48,11 @@ test("category cards stay text-first while Homepage reuses the canonical Product
   assert.match(categories, /category\.shortDescription/u);
   assert.match(categories, /category\.productCount/u);
   assert.match(page, /categoryProductCounts/u);
-  assert.doesNotMatch(page, /FeaturedProducts|getFeaturedProducts|product\.media\.find/u);
+  assert.match(page, /selectPublishedFeaturedProducts/u);
+  assert.doesNotMatch(page, /getFeaturedProducts|product\.media\.find/u);
   assert.match(page, /<Equipment/u);
-  assert.match(equipment, /import ProductCard from "@\/components\/storefront\/ProductCard"/u);
-  assert.match(equipment, /<ProductCard/u);
-  assert.doesNotMatch(equipment, /<article|HomepageProductCard|FeaturedProductCard|CatalogProductCard/u);
+  assert.match(equipment, /import FeaturedProductsCarousel/u);
+  assert.match(equipment, /<FeaturedProductsCarousel/u);
 });
 
 test("rendered homepage removes obsolete technical copy", async () => {

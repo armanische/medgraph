@@ -1,0 +1,99 @@
+import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
+import test from "node:test";
+
+import {
+  FEATURED_PRODUCT_IDS,
+  selectPublishedFeaturedProducts,
+} from "../../lib/storefront/featured-products.ts";
+import type { Product } from "../../lib/storefront/types.ts";
+
+async function source(path: string) {
+  return readFile(path, "utf8");
+}
+
+function product(id: string, status: Product["status"] = "active"): Product {
+  return {
+    id,
+    slug: `product-${id}`,
+    manufacturerId: "manufacturer",
+    categoryId: "category",
+    name: id,
+    model: id,
+    shortDescription: "Описание",
+    description: "Описание",
+    status,
+    featured: false,
+    applicationAreas: [],
+    keyFeatures: [],
+    specifications: [],
+    media: [],
+    documents: [],
+    compatibility: [],
+    relatedProductIds: [],
+    createdAt: "2026-08-02T00:00:00.000Z",
+    updatedAt: "2026-08-02T00:00:00.000Z",
+  };
+}
+
+test("featured selection is exact, ordered, public-only and fail-closed", () => {
+  assert.equal(FEATURED_PRODUCT_IDS.length, 8);
+  assert.equal(new Set(FEATURED_PRODUCT_IDS).size, 8);
+
+  const reversed = [...FEATURED_PRODUCT_IDS].reverse().map((id) => product(id));
+  const selected = selectPublishedFeaturedProducts([
+    product("unapproved-public-product"),
+    ...reversed,
+  ]);
+  assert.deepEqual(selected.map(({ id }) => id), [...FEATURED_PRODUCT_IDS]);
+
+  const hidden = product(FEATURED_PRODUCT_IDS[2], "hidden");
+  const withoutHidden = selectPublishedFeaturedProducts([
+    ...reversed.filter(({ id }) => id !== hidden.id),
+    hidden,
+  ]);
+  assert.equal(withoutHidden.some(({ id }) => id === hidden.id), false);
+  assert.equal(withoutHidden.some(({ id }) => id === "unapproved-public-product"), false);
+});
+
+test("carousel cards use canonical Product URLs and expose no internal metadata", async () => {
+  const [page, equipment, carousel] = await Promise.all([
+    source("app/page.tsx"),
+    source("components/home/Equipment.tsx"),
+    source("components/home/FeaturedProductsCarousel.tsx"),
+  ]);
+
+  assert.match(page, /selectPublishedFeaturedProducts\(products\)/u);
+  assert.match(equipment, /products\.map/u);
+  assert.match(carousel, /href=\{`\/catalog\/\$\{product\.slug\}`\}/u);
+  assert.match(carousel, /Подробнее/u);
+  assert.doesNotMatch(carousel, /medvist\.ru|https?:\/\/|sourceChecksum|rawSnapshot|lifecycle/iu);
+});
+
+test("carousel supports native swipe, controls, keyboard and reduced motion", async () => {
+  const carousel = await source("components/home/FeaturedProductsCarousel.tsx");
+
+  assert.match(carousel, /snap-x snap-mandatory/u);
+  assert.match(carousel, /overflow-x-auto/u);
+  assert.match(carousel, /overscroll-x-contain/u);
+  assert.match(carousel, /basis-\[88%\]/u);
+  assert.match(carousel, /sm:basis-\[calc/u);
+  assert.match(carousel, /xl:basis-\[calc/u);
+  assert.match(carousel, /ArrowLeft/u);
+  assert.match(carousel, /ArrowRight/u);
+  assert.match(carousel, /scrollBy/u);
+  assert.match(carousel, /prefers-reduced-motion/u);
+  assert.match(carousel, /aria-label="Предыдущие товары"/u);
+  assert.match(carousel, /aria-label="Следующие товары"/u);
+  assert.equal((carousel.match(/size-11/gu) ?? []).length, 2);
+});
+
+test("carousel has stable media layout and a missing-image fallback", async () => {
+  const carousel = await source("components/home/FeaturedProductsCarousel.tsx");
+
+  assert.match(carousel, /aspect-\[16\/10\]/u);
+  assert.match(carousel, /loading=\{index === 0 \? "eager" : "lazy"\}/u);
+  assert.match(carousel, /Изображение готовится/u);
+  assert.match(carousel, /alt=\{product\.image\.alt \|\| product\.name\}/u);
+  assert.doesNotMatch(carousel, /useEffect|fetch\(|setInterval|setTimeout/u);
+});

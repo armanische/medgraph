@@ -256,7 +256,7 @@ test("published repository is server-only, read-only, isolated from Preview and 
   );
   assert.doesNotMatch(repository, /\b(?:PATCH|PUT|DELETE)\b|insert into|update cloud\./iu);
   assert.match(catalog, /products\.length === 0/u);
-  assert.match(homepage, /products\?\.slice\(0, 4\) \?\? null/u);
+  assert.match(homepage, /selectPublishedFeaturedProducts\(products\)/u);
   assert.match(sitemap, /loadCloudPublishedCatalog/u);
   assert.match(sitemap, /buildStorefrontSitemapFromCatalog/u);
 });

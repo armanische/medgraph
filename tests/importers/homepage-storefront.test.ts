@@ -33,7 +33,8 @@ test("homepage loads data through storefront services", async () => {
   assert.match(page, /productService\.getActiveProducts\(\)/);
   assert.match(page, /manufacturerService\.getManufacturers\(\)/);
   assert.match(page, /categoryService\.getCategories\(\)/);
-  assert.doesNotMatch(page, /getFeaturedProducts|FeaturedProducts/u);
+  assert.match(page, /selectPublishedFeaturedProducts/u);
+  assert.doesNotMatch(page, /getFeaturedProducts/u);
 });
 
 test("homepage does not import legacy catalog sources", async () => {

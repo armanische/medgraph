@@ -20,7 +20,7 @@ test("homepage follows the Storefront information architecture", async () => {
 
   assert.ok(positions.every((position) => position >= 0));
   assert.deepEqual(positions, [...positions].sort((a, b) => a - b));
-  assert.doesNotMatch(page, /<PlatformStats|<FeaturedProducts|<Search/u);
+  assert.doesNotMatch(page, /<PlatformStats|<Search/u);
 });
 
 test("Hero communicates the catalog value and exposes only credible public actions", async () => {
@@ -61,11 +61,12 @@ test("featured content is derived from existing Storefront services", async () =
   assert.match(page, /manufacturerProductCounts/u);
   assert.match(page, /const manufacturerEntries = products && manufacturers \? manufacturers\s+\.map/u);
   assert.match(page, /const categoryEntries = products && categories \? categories\s+\.map/u);
-  assert.doesNotMatch(page, /getFeaturedProducts|featuredProducts|popularProducts/u);
+  assert.match(page, /selectPublishedFeaturedProducts\(products\)/u);
+  assert.doesNotMatch(page, /getFeaturedProducts|popularProducts/u);
   assert.doesNotMatch(page, /data\/public|data\/research|published-catalog/iu);
 });
 
-test("only the search interaction adds a homepage client boundary", async () => {
+test("homepage keeps data selection server-side and limits client code to interactions", async () => {
   const serverComponents = [
     "components/home/Hero.tsx",
     "components/home/Equipment.tsx",
@@ -80,6 +81,7 @@ test("only the search interaction adds a homepage client boundary", async () => 
     assert.doesNotMatch(component, /["']use client["']/u);
   }
   assert.match(await source("components/home/Search.tsx"), /^"use client";/u);
+  assert.match(await source("components/home/FeaturedProductsCarousel.tsx"), /^"use client";/u);
 });
 
 test("section headings and final actions are explicitly labelled", async () => {

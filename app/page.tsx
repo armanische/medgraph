@@ -16,6 +16,7 @@ import {
 import { buildStorefrontMetadata } from "@/lib/storefront/seo";
 import { buildHomepageStructuredData } from "@/lib/storefront/structured-data";
 import { formatCountryForPublic } from "@/lib/storefront/country-presentation";
+import { selectPublishedFeaturedProducts } from "@/lib/storefront/featured-products";
 import { loadHomepageOverviewSources } from "@/lib/storefront/homepage-overview";
 
 const homepageDescription =
@@ -76,7 +77,7 @@ export default async function Home() {
       left.name.localeCompare(right.name, "ru-RU"),
     )
     .slice(0, 8) : null;
-  const catalogEquipment = products?.slice(0, 4) ?? null;
+  const catalogEquipment = products ? selectPublishedFeaturedProducts(products) : null;
 
   return (
     <main className="min-h-screen bg-cm-canvas">

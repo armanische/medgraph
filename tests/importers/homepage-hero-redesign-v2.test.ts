@@ -28,5 +28,5 @@ test("Homepage Hero v2 derives one real catalog showcase without a new data path
   assert.match(hero, /<Search \/>/u);
   assert.match(search, /router\.push\(`\/catalog\?q=\$\{encodeURIComponent\(query\)\}`\)/u);
   assert.doesNotMatch(hero, /ProductCard|onClick|<button[\s\S]*Открыть карточку/u);
-  assert.match(equipment, /import ProductCard from "@\/components\/storefront\/ProductCard"/u);
+  assert.match(equipment, /import FeaturedProductsCarousel/u);
 });

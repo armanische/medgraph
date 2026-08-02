@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import ProductCard from "@/components/storefront/ProductCard";
+import FeaturedProductsCarousel from "@/components/home/FeaturedProductsCarousel";
 import type { Category, Manufacturer, Product } from "@/lib/storefront/types";
 
 export default function Equipment({
@@ -12,7 +12,7 @@ export default function Equipment({
   manufacturers: readonly Manufacturer[];
   categories: readonly Category[];
 }) {
-  if (!products || products.length < 4) return null;
+  if (!products) return null;
 
   const manufacturersById = new Map(
     manufacturers.map((manufacturer) => [manufacturer.id, manufacturer]),
@@ -31,26 +31,39 @@ export default function Equipment({
               id="homepage-equipment-title"
               className="text-2xl font-extrabold leading-[1.2] tracking-[-0.025em] sm:text-[26px] lg:text-[30px]"
             >
-              Оборудование в каталоге
+              Популярное медицинское оборудование
             </h2>
             <p className="mt-2 max-w-[42rem] text-sm leading-6 text-cm-slate">
-              Изучите реальные модели медицинского оборудования, представленные в CyberMedica.
+              Избранные решения для оснащения медицинских учреждений
             </p>
           </div>
           <Link href="/catalog" className="cm-button-secondary !min-h-[44px] w-full sm:w-auto">
-            Перейти в каталог
+            Смотреть весь каталог
           </Link>
         </div>
-        <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {products.slice(0, 4).map((product) => (
-            <ProductCard
-              key={product.id}
-              product={product}
-              manufacturer={manufacturersById.get(product.manufacturerId)}
-              categoryName={categoryNamesById.get(product.categoryId)}
-            />
-          ))}
-        </div>
+        {products.length > 0 ? (
+          <FeaturedProductsCarousel
+            products={products.map((product) => ({
+              id: product.id,
+              slug: product.slug,
+              name: product.name,
+              model: product.model,
+              manufacturer: manufacturersById.get(product.manufacturerId)?.name ?? "Производитель уточняется",
+              summary:
+                product.shortDescription ||
+                categoryNamesById.get(product.categoryId) ||
+                "Медицинское оборудование для оснащения учреждений.",
+              image: (() => {
+                const media = product.media.find(({ type }) => type === "image");
+                return media ? { url: media.url, alt: media.alt } : null;
+              })(),
+            }))}
+          />
+        ) : (
+          <div className="mt-6 rounded-xl border border-[var(--cm-rule)] bg-cm-surface-low px-5 py-8 text-sm leading-6 text-cm-slate">
+            Избранные товары временно недоступны. Весь каталог и форма запроса остаются доступны.
+          </div>
+        )}
       </div>
     </section>
   );
