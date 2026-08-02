@@ -23,3 +23,10 @@ Batch 3 must begin with a fresh read-only identity and `updatedAt` guard.
 Batch 2 revision creation did not change this queue. All ten Products remain
 draft with lifecycle `0/0/0/0`; they are not visible in the Batch 2 corporate
 Review Queue.
+
+## Batch 2 closure checkpoint
+
+Batch 2 publication completed 13/13 and increased the public inventory from 50
+to 63 Products. This exact ten-Product Batch 3 queue remains unchanged, draft,
+lifecycle `0/0/0/0` and absent from the 63-Product sitemap. It is the next
+recommended controlled content-preparation scope.

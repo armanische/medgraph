@@ -38,3 +38,10 @@ approved media and warnings `missing_documents` / `missing_registration`.
 - Гемос and Гемос-ПФ: draft, lifecycle `0/0/0/0`;
 - Human Review, Approval and Publication performed by this operation: none.
 
+## Publication closure — 2026-08-02
+
+The thirteen revisions later completed corporate Human Review, Approval and
+Publication through the separate immutable
+`group-c-batch-2-publication-v1` operation. Durable Production totals are
+`63/63/63/63` for Revisions/Decisions/Approvals/Batches. See the
+[Batch 2 publication report](./group-c-remediation-batch-2-publication-2026-08-02.md).
