@@ -202,7 +202,6 @@ export async function loadResilientPublishedCatalogProjection(input: Readonly<{
       runtime.snapshot = {
         ...liveBaseline,
         capturedAt: new Date((input.now ?? Date.now)()).toISOString(),
-        projectionChecksum: documentChecksum,
         projectionDocumentChecksum: documentChecksum,
         projection,
       };

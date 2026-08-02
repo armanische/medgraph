@@ -62,20 +62,28 @@ async function captureProductionSnapshot() {
     throw new Error("Production snapshot is unexpectedly incomplete.");
   }
   const checksumInput = { ...projection, generatedAt: undefined };
-  const projectionChecksum = createHash("sha256")
+  const projectionDocumentChecksum = createHash("sha256")
     .update(canonicalJson(checksumInput))
     .digest("hex");
   const existing = JSON.parse(await readFile(outputPath, "utf8")) as {
     projectionVersion?: unknown;
+    projectionChecksum?: unknown;
   };
   const projectionVersion = Number.isSafeInteger(existing.projectionVersion)
     ? Number(existing.projectionVersion)
     : 1;
+  const projectionChecksum = typeof existing.projectionChecksum === "string"
+    && /^[a-f0-9]{64}$/u.test(existing.projectionChecksum)
+    ? existing.projectionChecksum
+    : null;
+  if (!projectionChecksum) {
+    throw new Error("Authoritative Production projection checksum is missing.");
+  }
   const envelope = {
     schemaVersion: 1,
     projectionVersion,
     projectionChecksum,
-    projectionDocumentChecksum: projectionChecksum,
+    projectionDocumentChecksum,
     capturedAt: new Date().toISOString(),
     projection,
   };
@@ -83,7 +91,8 @@ async function captureProductionSnapshot() {
   console.info(JSON.stringify({
     event: "published_catalog_lkg_captured",
     productCount: projection.products.length,
-    checksumPrefix: projectionChecksum.slice(0, 12),
+    projectionChecksumPrefix: projectionChecksum.slice(0, 12),
+    documentChecksumPrefix: projectionDocumentChecksum.slice(0, 12),
   }));
 }
 

@@ -8,6 +8,7 @@ import {
   loadResilientPublishedCatalogProjection,
   PUBLISHED_CATALOG_ATTEMPTS,
   PUBLISHED_CATALOG_ATTEMPT_TIMEOUT_MS,
+  readPublishedCatalogHealth,
 } from "../../lib/storefront/published-catalog-resilience.ts";
 
 function liveProjection(): PublishedCatalogProjection {
@@ -38,6 +39,14 @@ test("first transient failure retries once and returns live catalog", async () =
   assert.equal(
     projection.summary.productCount,
     BUNDLED_PUBLISHED_CATALOG_SNAPSHOT.projection.summary.productCount,
+  );
+  assert.equal(
+    readPublishedCatalogHealth().projectionChecksumPrefix,
+    BUNDLED_PUBLISHED_CATALOG_SNAPSHOT.projectionChecksum.slice(0, 12),
+  );
+  assert.notEqual(
+    BUNDLED_PUBLISHED_CATALOG_SNAPSHOT.projectionChecksum,
+    BUNDLED_PUBLISHED_CATALOG_SNAPSHOT.projectionDocumentChecksum,
   );
 });
 
