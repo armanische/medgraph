@@ -54,6 +54,17 @@ and completed with `ROLLBACK`. Durable totals are Products `79`, Published
 `71`, Unpublished `8`, and Revisions/Decisions/Approvals/Publication Batches
 `71/71/71/71`. Projection version is `73`, checksum is
 `23f7f2b73d7c694584e85f0e910298930d555194bab26164f2988d9b74895898`.
-All eight remaining Products are still draft. The final Production deployment
-ID and canonical Git SHA are recorded after the 71-Product LKG deployment and
-smoke pass.
+All eight remaining Products are still draft.
+
+## Production deployment evidence
+
+- validated runtime SHA: `8c3f204bd2946d71b71b7bd3eb0cee39c56d2b30`;
+- validated deployment: `dpl_C4UawMYTULC3BGcEVXd9vvUyvPpD` (`READY`);
+- Production build LKG: 71 Products, projection version `73`;
+- authoritative projection checksum prefix: `23f7f2b73d7c`;
+- independent document checksum prefix: `bb8b94a5270b`;
+- canonical synthetic: PASS, sitemap Product URLs `71`;
+- health probe: `healthy`, live transport healthy, fallback inactive,
+  snapshot Products `71`;
+- canonical WebKit smoke: 3 profiles × 5 routes PASS;
+- `www` redirect and IDN-03 Product Detail: PASS.
