@@ -30,4 +30,3 @@ serialization byte-for-byte; no Product or provenance correction was made.
 - lint, TypeScript, Turbopack and Webpack: PASS;
 - secret/privacy scan and `git diff --check`: PASS;
 - `gitForkProtection`: remained enabled.
-
