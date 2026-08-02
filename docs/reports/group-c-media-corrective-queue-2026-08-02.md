@@ -17,3 +17,9 @@ their content, source provenance or media.
 
 Both remain unchanged, unpublished and lifecycle `0/0/0/0`. Neither appears in
 the Batch 2 revision manifest or Review Queue.
+
+## Publication invariance
+
+Batch 2 publication preserved all four corrective records. Гемос, Гемос-ПФ,
+VME-5B and EPK-i7010 remain draft with lifecycle `0/0/0/0` and are absent from
+the 63-Product sitemap.

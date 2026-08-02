@@ -160,6 +160,13 @@
   `Гемос` and `Гемос-ПФ` remain excluded for a narrow characteristics
   corrective. See [revision evidence](../reports/group-c-remediation-batch-2-revision-creation-2026-08-02.md)
   and [Review Queue checkpoint](../reports/group-c-remediation-batch-2-review-queue-2026-08-02.md).
+- Group C remediation Batch 2 publication (2026-08-02): all thirteen exact
+  revisions completed corporate Human Review, Approval and Publication through
+  the immutable `group-c-batch-2-publication-v1` manifest. Production now has
+  63 Published and 16 Unpublished Products; projection version and sitemap
+  Product count are 65 and 63. Replay returned `already_complete`; excluded
+  corrective Products remain draft with lifecycle `0/0/0/0`. See
+  [publication closure](../reports/group-c-remediation-batch-2-publication-2026-08-02.md).
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).

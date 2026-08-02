@@ -20,3 +20,10 @@ No Human Review action was executed during queue preparation or smoke.
 | Гемос / Гемос-ПФ cards | 0 |
 | Historical completed revisions | 0 |
 
+## Durable closure
+
+All 13 cards subsequently received exactly one positive Decision from the
+corporate admin UUID. Exact bindings and checksum triads were independently
+revalidated before Approval. Approval and Publication completed 13/13, and the
+generic queue no longer contains these revisions. See the
+[Batch 2 publication closure](./group-c-remediation-batch-2-publication-2026-08-02.md).

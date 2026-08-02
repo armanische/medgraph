@@ -59,3 +59,19 @@ The remaining 29 Products are now split into controlled streams:
 The 13 safe patches are recorded in the
 [Batch 2 patch report](./group-c-remediation-batch-2-patch-2026-08-02.md).
 Production remains `79 / 50 / 29`; lifecycle totals remain `50/50/50/50`.
+
+## Batch 2 publication closure — 2026-08-02
+
+The thirteen revision-ready Products completed corporate Review, Approval and
+Publication through the immutable `group-c-batch-2-publication-v1` manifest.
+Production is now `79 / 63 / 16`; lifecycle totals are `63/63/63/63`,
+projection version is 65 and sitemap contains 63 unique Product URLs. Replay
+returned `already_complete` without duplicate writes.
+
+| Remaining stream | Count | State | Next action | Блокирует запуск |
+| --- | ---: | --- | --- | --- |
+| Technical corrective | 2 | Гемос/Гемос-ПФ remain draft `0/0/0/0` | Narrow characteristic corrective | Нет |
+| Batch 3 queue | 10 | High-confidence, unchanged | Controlled content preparation | Нет |
+| Special exclusions | 4 | Unchanged and unpublished | Separate media/identity decisions | Нет |
+
+See the [Batch 2 publication closure](./group-c-remediation-batch-2-publication-2026-08-02.md).

@@ -48,3 +48,10 @@ The Batch 2 runner revalidated the exact corporate email, UUID and `admin` role
 before execution. It created only immutable revision and Review Item records;
 no Human Review action was automated. All 13 pending records are reserved for
 future decisions by the corporate identity through the generic Review Queue.
+
+## Group C Batch 2 publication closure
+
+All 13 Batch 2 Decisions and Approvals were independently verified against the
+corporate admin UUID `7e90a993-8b30-4e0d-aff4-a257d5a4a179`. The closed
+publication runner required the same active corporate session. No new Decision
+or Approval used the legacy identity; historical bindings were unchanged.
