@@ -208,3 +208,11 @@ See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-2
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).
 See [Post-Launch Operational Baseline](../reports/post-launch-operational-baseline-2026-07-30.md).
 See [Controlled Indexing Activation](../reports/controlled-indexing-activation-2026-07-30.md).
+# 2026-08-02 — Published Catalog transport resilience
+
+- Added bounded Published Catalog retry/timeout and validated LKG fallback.
+- Added sanitized catalog health diagnostics and correlation logging.
+- Added WebKit/iPhone transport-failure regression and Production synthetic
+  monitoring under the corporate CyberMedica identity.
+- Added exact corporate-only IDN-03 Approval/Publication runner; durable
+  publication evidence is recorded after Production PASS.

@@ -128,3 +128,12 @@
 ## Release gate
 
 Текущий кодовый verdict: **READY WITH CONDITIONS — 8.8/10**. Build/test blocker не найден. Public production остаётся условным до external Preview smoke, env validation, advisory disposition, platform-header verification и operational monitoring integration.
+# Published Catalog reliability gate
+
+- [ ] Production build captured a complete validated LKG from the exact project.
+- [ ] Retry, exhausted transport, empty/malformed, checksum drift, no-snapshot
+  and recovery fault cases pass.
+- [ ] Chromium and WebKit/iPhone public-route smoke pass without a blank shell.
+- [ ] Catalog and sitemap Product counts match; no unpublished Product leaks.
+- [ ] `/internal/health/catalog` is sanitized and the corporate synthetic check
+  is healthy.

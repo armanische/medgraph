@@ -85,3 +85,11 @@ Rollback определяет:
 ## 5. Release report
 
 Отчёт фиксирует scope, changed files, QA, staging URL, data/environment state, known limitations, rollback и итоговый статус. Release report не заменяет ADR или PROJECT_GUIDE.
+# Mandatory Published Catalog reliability gate
+
+Before Production reconciliation, every deployment must pass the transport
+fault suite, Turbopack and Webpack builds, canonical Chromium smoke, and WebKit
+iPhone cold/reload/navigation/Product/RFQ smoke. The deployment is blocked when
+LKG validation fails, an empty/partial response can replace LKG, any public
+route is blank, catalog/sitemap counts diverge, or the corporate synthetic
+monitor is unavailable.
