@@ -41,3 +41,15 @@ patch atomic and stale-protected. For each new characteristic require:
 Expected workload: three XS and twelve S packages. Expected new technical rows:
 approximately 105–115, subject to exact source/configuration review. The public
 UI contract is sufficient; no runtime change is in scope.
+
+## Preparation checkpoint — 2026-08-03
+
+All 15 authoritative packages are prepared: seven new rows per Product, 105 in
+total, with zero duplicate keys and explicit optional/configuration qualifiers.
+Hamilton-T1 corrective copy is ready. The consolidated preview SHA-256 is
+`1a46847aaa4859ede519070af5b890190f9d6ba4eaed77de04e14f57248d9978`.
+
+Production execution stopped before writes because the approved Catalog Admin
+RPC does not support characteristics. Status: **prepared / awaiting a separate
+narrow characteristics patch boundary**. This remains post-launch work and
+`Блокирует запуск: Нет`.

@@ -290,3 +290,16 @@ CyberMedica must never automatically:
 - hide missing critical fields;
 - write enrichment output into public projections;
 - bypass Verification or Publication.
+
+## Published characteristics Wave 1 — 2026-08-03
+
+| Task | Status | Блокирует запуск |
+| --- | --- | --- |
+| Prepare 105 authoritative characteristics for exact 15 Published Products | Завершено | Нет |
+| Prepare Hamilton-T1 neutral content corrective | Завершено | Нет |
+| Add a narrow stale-protected characteristics patch boundary | Требует отдельного approval | Нет |
+| Apply Wave 1 Product patches | Не выполнено до появления approved boundary | Нет |
+| Create replacement revisions and republish | Не начато | Нет |
+| Final eight unpublished special correctives | Отложено | Нет |
+
+Current public projection remains version 73 with 71 Published Products.

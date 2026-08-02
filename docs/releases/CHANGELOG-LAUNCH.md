@@ -259,3 +259,15 @@ See [Controlled Indexing Activation](../reports/controlled-indexing-activation-2
   exact 15-Product, official-source Characteristics Wave 1 queue.
 - Recorded one urgent content corrective (Hamilton-T1), 32 non-blocking media
   improvements and zero media FAIL items.
+
+# 2026-08-03 — Published characteristics Wave 1 preparation
+
+- Prepared 105 authoritative, configuration-aware characteristic rows for the
+  exact 15-Product Wave 1 scope.
+- Prepared neutral Hamilton-T1 replacement copy and removed promotional or
+  unqualified claims from the proposed version.
+- Stopped before Production writes after proving that the approved Catalog
+  Admin RPC does not accept characteristics and the only structured writer
+  would create a prohibited revision.
+- Preserved 71 Published Products, projection version 73, 71 sitemap Product
+  URLs and lifecycle totals `71/71/71/71`.

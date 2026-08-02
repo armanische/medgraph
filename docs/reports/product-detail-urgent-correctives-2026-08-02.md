@@ -20,3 +20,14 @@ Detail routes, no blank WebKit pages and no media `FAIL` item.
 `IMPROVE` is not a reason to unpublish a Product. Additional official media can
 be handled after the characteristic packages, without seller-only assets and
 without changing the eight deferred draft Products.
+
+## Characteristics preparation checkpoint — 2026-08-03
+
+Hamilton-T1 neutral replacement copy and seven evidence-grounded structured
+rows are prepared. The corrective remains unapplied because the approved
+Catalog Admin RPC cannot mutate characteristics atomically. The public page is
+still HTTP 200 and unchanged; `Блокирует запуск: Нет`.
+
+All media remained read-only. OEC 9900 Elite remains `IMPROVE` because it has a
+single usable image; the other selected Wave 1 Products remain `PASS`. No media
+replacement, ordering change or alt-text write occurred.
