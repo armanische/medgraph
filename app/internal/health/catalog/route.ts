@@ -4,11 +4,15 @@ import {
   isPublishedCatalogSnapshotStale,
   readPublishedCatalogHealth,
 } from "@/lib/storefront/published-catalog-resilience";
+import { loadCloudPublishedCatalog } from "@/lib/storefront/cloud-published-catalog-repository";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 export async function GET() {
+  // A health invocation can run in a fresh server isolate. Exercise the same
+  // resilient loader as public routes before reporting its sanitized state.
+  await loadCloudPublishedCatalog().catch(() => undefined);
   const health = readPublishedCatalogHealth();
   const status = health.liveTransport === "healthy"
     ? "healthy"

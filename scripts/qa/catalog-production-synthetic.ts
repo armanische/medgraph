@@ -36,7 +36,7 @@ assert.equal(new Set(productUrls).size, productUrls.length, "sitemap contains du
 const detail = await read(new URL(productUrls[0]).pathname);
 assert.ok(detail.text.trim().length > 500, "stable Product Detail returned near-empty HTML");
 const api = await read("/api/request", 405);
-assert.ok(api.response.headers.get("content-type")?.includes("application/json"));
+assert.equal(api.text, "", "GET /api/request must not return a body");
 
 const healthValue = JSON.parse(health.text) as {
   status?: unknown;
