@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const OPERATION_KEY = "group-c-batch-3-revision-creation-v1";
 const MANIFEST_SHA256 =
-  "3ae7326ec5a5065f775ee079c1ab75b5a269416d6c0d2ae809cb5465ceedb06f";
+  "38542b94baaf6593ac80e03d8c9227c9e6f051e91993bb27806a6a48306ca934";
 
 type RevisionEvidence = {
   productId: string;

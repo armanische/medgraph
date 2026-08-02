@@ -6,7 +6,7 @@ import ts from "typescript";
 import vm from "node:vm";
 
 const expectedManifestSha =
-  "3ae7326ec5a5065f775ee079c1ab75b5a269416d6c0d2ae809cb5465ceedb06f";
+  "38542b94baaf6593ac80e03d8c9227c9e6f051e91993bb27806a6a48306ca934";
 const excludedProductIds = [
   "24ac72fc-5c64-4f4e-9f92-cd4eca58e426",
   "db6da513-24dc-45e3-8e18-c6033825adce",
