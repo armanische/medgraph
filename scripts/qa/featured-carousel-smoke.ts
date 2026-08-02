@@ -25,9 +25,9 @@ const expectedPaths = [
 ] as const;
 
 const profiles = [
-  { name: "iPhone portrait", viewport: { width: 390, height: 844 }, expectedVisibleCards: 2 },
-  { name: "tablet", viewport: { width: 820, height: 1180 }, expectedVisibleCards: 2 },
-  { name: "desktop", viewport: { width: 1440, height: 900 }, expectedVisibleCards: 4 },
+  { name: "iPhone portrait", viewport: { width: 390, height: 844 }, expectedFullCards: 1, expectsPreview: true },
+  { name: "tablet", viewport: { width: 820, height: 1180 }, expectedFullCards: 2, expectsPreview: false },
+  { name: "desktop", viewport: { width: 1440, height: 900 }, expectedFullCards: 4, expectsPreview: false },
 ] as const;
 
 const browser = await webkit.launch({ headless: true });
@@ -55,13 +55,22 @@ try {
     );
     assert.deepEqual(paths, [...expectedPaths], `${profile.name}: canonical paths must match.`);
 
-    const visibleCards = await cards.evaluateAll((items) => items.filter((item) => {
-      const rect = item.getBoundingClientRect();
-      return rect.left >= 0 && rect.left < window.innerWidth;
-    }).length);
-    assert.equal(visibleCards, profile.expectedVisibleCards, `${profile.name}: visible card count drifted.`);
-
     const track = page.locator('[aria-label="Избранные опубликованные товары"]');
+    const visibility = await cards.evaluateAll((items) => {
+      const trackRect = items[0]?.parentElement?.getBoundingClientRect();
+      if (!trackRect) return { full: 0, partial: 0 };
+      return items.reduce((result, item) => {
+        const rect = item.getBoundingClientRect();
+        if (rect.left >= trackRect.left && rect.right <= trackRect.right) result.full += 1;
+        else if (rect.left < trackRect.right && rect.right > trackRect.left) result.partial += 1;
+        return result;
+      }, { full: 0, partial: 0 });
+    });
+    assert.equal(visibility.full, profile.expectedFullCards, `${profile.name}: full card count drifted.`);
+    if (profile.expectsPreview) {
+      assert.ok(visibility.partial >= 1, `${profile.name}: next-card preview must remain visible.`);
+    }
+
     const before = await track.evaluate((element) => element.scrollLeft);
     await page.getByRole("button", { name: "Следующие товары" }).click();
     await page.waitForTimeout(500);
