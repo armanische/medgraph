@@ -16,5 +16,7 @@ test("responsive WebKit carousel smoke is exact and public-only", async () => {
   assert.match(script, /desktop/u);
   assert.match(script, /documentElement\.scrollWidth <= document\.documentElement\.clientWidth/u);
   assert.match(script, /ArrowLeft/u);
+  assert.match(script, /FEATURED_CAROUSEL_SCREENSHOTS/u);
+  assert.match(script, /featured-products-after-/u);
   assert.doesNotMatch(script, /unpublished|service.role|credential|token/iu);
 });

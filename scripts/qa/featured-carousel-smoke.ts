@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { mkdir } from "node:fs/promises";
 
 import { webkit } from "playwright-core";
 
@@ -31,6 +32,8 @@ const profiles = [
 ] as const;
 
 const browser = await webkit.launch({ headless: true });
+const captureScreenshots = process.env.FEATURED_CAROUSEL_SCREENSHOTS === "1";
+if (captureScreenshots) await mkdir("docs/screenshots", { recursive: true });
 try {
   for (const profile of profiles) {
     const context = await browser.newContext({ viewport: profile.viewport });
@@ -89,9 +92,30 @@ try {
       `${profile.name}: page must not have horizontal overflow.`,
     );
     assert.deepEqual(runtimeErrors, [], `${profile.name}: WebKit runtime errors detected.`);
+    if (captureScreenshots) {
+      await track.evaluate((element) => {
+        element.scrollTo({ left: 0, behavior: "auto" });
+        element.blur();
+      });
+      await page.evaluate(() => window.scrollBy(0, -96));
+      const filename = profile.name.startsWith("iPhone")
+        ? "mobile"
+        : profile.name;
+      await section.screenshot({
+        path: `docs/screenshots/featured-products-after-${filename}-2026-08-02.png`,
+      });
+    }
     await context.close();
   }
   console.info(`Featured carousel smoke passed for ${profiles.length} responsive WebKit profiles.`);
 } finally {
   await browser.close();
+}
+
+for (const path of expectedPaths) {
+  const response = await fetch(new URL(path, origin), {
+    redirect: "follow",
+    signal: AbortSignal.timeout(12_000),
+  });
+  assert.equal(response.status, 200, `${path}: Product Detail must return 200.`);
 }
