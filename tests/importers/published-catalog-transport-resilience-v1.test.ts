@@ -35,7 +35,10 @@ test("first transient failure retries once and returns live catalog", async () =
   });
   assert.equal(calls, 2);
   assert.deepEqual(delays, [200]);
-  assert.equal(projection.summary.productCount, 1);
+  assert.equal(
+    projection.summary.productCount,
+    BUNDLED_PUBLISHED_CATALOG_SNAPSHOT.projection.summary.productCount,
+  );
 });
 
 test("exhausted transient transport uses validated last-known-good", async () => {
