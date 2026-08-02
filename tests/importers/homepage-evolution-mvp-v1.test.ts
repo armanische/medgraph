@@ -33,6 +33,6 @@ test("Hero images and final CTA use only the approved public content", async () 
   assert.match(hero, /heroProduct\?\.media\.find\(\(\{ type \}\) => type === "image"\)/u);
   assert.match(hero, /<Image/u);
   assert.doesNotMatch(hero, /stock|doctor|hospital|https:\/\//iu);
-  assert.match(cta, /Нужна помощь с подбором оборудования\?/u);
-  assert.match(cta, /Опишите задачу, необходимые характеристики или известную модель/u);
+  assert.match(cta, /Не нашли нужное оборудование\?/u);
+  assert.match(cta, /Отправьте наименование, модель или техническое задание/u);
 });

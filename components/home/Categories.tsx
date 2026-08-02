@@ -23,12 +23,17 @@ export default function Categories({
     >
       <div className="cm-container">
         <div className="flex items-end justify-between gap-5">
-          <h2
-            id="featured-categories-title"
-            className="text-2xl font-extrabold leading-[1.2] tracking-[-0.025em] sm:text-[26px] lg:text-[30px]"
-          >
-            Категории оборудования
-          </h2>
+          <div>
+            <h2
+              id="featured-categories-title"
+              className="text-2xl font-extrabold leading-[1.2] tracking-[-0.025em] sm:text-[26px] lg:text-[30px]"
+            >
+              Основные категории оборудования
+            </h2>
+            <p className="mt-2 max-w-[38rem] text-sm leading-6 text-cm-slate">
+              Выберите направление, чтобы открыть опубликованные модели в каталоге.
+            </p>
+          </div>
           {!unavailable && (
             <Link
               href="/catalog"
@@ -54,12 +59,12 @@ export default function Categories({
           </div>
         ) : (
           <>
-            <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
               {categories.map((category) => (
                 <Link
                   href={`/catalog?category=${encodeURIComponent(category.slug)}`}
                   key={category.id}
-                  className="cm-card group flex min-h-[7.75rem] flex-col p-4 sm:min-h-36 sm:p-5"
+                  className="cm-card group flex min-h-[8.5rem] flex-col p-4 sm:min-h-36"
                 >
                   <h3 className="text-[15px] font-bold leading-5 tracking-[-0.01em]">
                     {category.name}

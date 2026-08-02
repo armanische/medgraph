@@ -1,25 +1,74 @@
 const items = [
   [
-    "01",
-    "Подбор под задачу",
-    "Поиск по каталогу и навигация по категории и производителю помогают сузить выбор оборудования.",
+    "manufacturers",
+    "Оборудование ведущих производителей",
+    "В каталоге представлены опубликованные модели из разных категорий медицинской техники.",
   ],
   [
-    "02",
-    "Помощь с поиском аналогов",
-    "Если нужная модель не найдена, отправьте запрос и опишите требования.",
+    "specification",
+    "Подбор под техническое задание",
+    "Уточняем класс, модель и требования, чтобы подготовить релевантные варианты.",
   ],
   [
-    "03",
-    "Доступные характеристики и документы",
-    "Карточка показывает имеющиеся публичные характеристики, регистрационные сведения и файлы.",
+    "organizations",
+    "Работа с государственными и частными заказчиками",
+    "Принимаем запросы от государственных и частных медицинских организаций.",
   ],
   [
-    "04",
-    "Сопровождение запроса",
-    "Специалист помогает уточнить модель, комплектацию и исходные требования к запросу.",
+    "documents",
+    "Сопровождение поставки и документации",
+    "Помогаем согласовать комплект поставки и доступный набор сопроводительных материалов.",
   ],
 ] as const;
+
+type TrustIconKind = (typeof items)[number][0];
+
+function TrustIcon({ kind }: { kind: TrustIconKind }) {
+  const paths = {
+    manufacturers: (
+      <>
+        <path d="M4.5 20V8.5L12 4l7.5 4.5V20" />
+        <path d="M8.5 20v-5h7v5M8 10.5h1m3 0h1m3 0h1" />
+      </>
+    ),
+    specification: (
+      <>
+        <path d="M7 4.5h7l3 3V20H7z" />
+        <path d="M14 4.5V8h3M10 12h4m-4 3h4" />
+      </>
+    ),
+    organizations: (
+      <>
+        <path d="M5 20v-9h14v9M9 11V6h6v5" />
+        <path d="M9 15h2m2 0h2m-4 5v-2h2v2" />
+      </>
+    ),
+    documents: (
+      <>
+        <path d="M5.5 6.5h8l3 3v10h-11z" />
+        <path d="M13.5 6.5v3h3M9 13h4m-4 3h4M9 3.5h8l2 2v10" />
+      </>
+    ),
+  } as const;
+
+  return (
+    <span
+      aria-hidden="true"
+      className="grid size-11 shrink-0 place-items-center rounded-xl border border-[var(--cm-rule)] bg-cm-teal-soft text-cm-teal"
+    >
+      <svg viewBox="0 0 24 24" className="size-5" fill="none">
+        <g
+          stroke="currentColor"
+          strokeWidth="1.6"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          {paths[kind]}
+        </g>
+      </svg>
+    </span>
+  );
+}
 
 export default function WhyCyberMedica() {
   return (
@@ -32,20 +81,19 @@ export default function WhyCyberMedica() {
           id="platform-benefits-title"
           className="text-2xl font-extrabold leading-[1.2] tracking-[-0.025em] sm:text-[26px] lg:text-[30px]"
         >
-          Как CyberMedica помогает с выбором
+          Подбор и сопровождение поставки
         </h2>
+        <p className="mt-2 max-w-[42rem] text-sm leading-6 text-cm-slate">
+          Практическая поддержка на пути от технической задачи до согласования комплектации.
+        </p>
         <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {items.map(([number, title, text]) => (
+          {items.map(([kind, title, text]) => (
             <div
               key={title}
-              className="cm-card min-h-[8.25rem] p-4 sm:p-5 lg:min-h-36"
+              className="cm-card min-h-[9.5rem] p-4 sm:p-5"
             >
-              <div className="font-mono text-[10px] font-semibold text-cm-teal">
-                {number}
-              </div>
-              <h3 className="mt-3 text-[15px] font-bold leading-5 tracking-[-0.01em]">
-                {title}
-              </h3>
+              <TrustIcon kind={kind} />
+              <h3 className="mt-4 text-[15px] font-bold leading-5 tracking-[-0.01em]">{title}</h3>
               <p className="mt-2 text-xs leading-5 text-cm-slate">{text}</p>
             </div>
           ))}

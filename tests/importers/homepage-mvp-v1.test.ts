@@ -14,6 +14,7 @@ test("Homepage evolution renders the approved equipment entry after the search-f
     "<Categories",
     "<FeaturedManufacturers",
     "<WhyCyberMedica />",
+    "<CompanyCredibility />",
     "<CTA />",
   ];
   const positions = blocks.map((block) => page.indexOf(block));
@@ -30,8 +31,8 @@ test("Hero combines a real catalog showcase with the established Search", async 
   ]);
 
   assert.equal((hero.match(/<h1\b/gu) ?? []).length, 1);
-  assert.match(hero, /Каталог медицинского оборудования/u);
-  assert.match(hero, /ПРОФЕССИОНАЛЬНАЯ ВИТРИНА ОБОРУДОВАНИЯ/u);
+  assert.match(hero, /Медицинское оборудование для клиник и медицинских учреждений/u);
+  assert.match(hero, /ПОДБОР И ПОСТАВКА ОБОРУДОВАНИЯ/u);
   assert.match(hero, /HERO_PRODUCT_SLUG/u);
   assert.match(hero, /<Search \/>/u);
   assert.match(hero, /href="\/catalog"/u);
@@ -57,9 +58,9 @@ test("categories and manufacturers follow the approved deterministic grids", asy
   assert.match(page, /productService\.getActiveProducts\(\)/u);
   assert.match(page, /categoryProductCounts/u);
   assert.match(page, /manufacturerProductCounts/u);
-  assert.match(page, /\.slice\(0, 6\)/u);
-  assert.match(page, /\.slice\(0, 8\)/u);
-  assert.match(categories, /sm:grid-cols-2 lg:grid-cols-3/u);
+  assert.equal((page.match(/\.slice\(0, 8\)/gu) ?? []).length, 2);
+  assert.match(page, /HOMEPAGE_CATEGORY_SLUGS/u);
+  assert.match(categories, /sm:grid-cols-2 lg:grid-cols-4/u);
   assert.match(manufacturers, /sm:grid-cols-2 lg:grid-cols-4/u);
   assert.match(categories, /if \(categories\?\.length === 0\) return null/u);
   assert.match(manufacturers, /if \(manufacturers\?\.length === 0\) return null/u);
@@ -74,18 +75,17 @@ test("advantages and Final CTA keep the approved visual hierarchy", async () => 
   ]);
 
   for (const value of [
-    "Подбор под задачу",
-    "Помощь с поиском аналогов",
-    "Доступные характеристики и документы",
-    "Сопровождение запроса",
+    "Оборудование ведущих производителей",
+    "Подбор под техническое задание",
+    "Работа с государственными и частными заказчиками",
+    "Сопровождение поставки и документации",
   ]) {
     assert.match(advantages, new RegExp(value, "u"));
   }
   assert.match(advantages, /sm:grid-cols-2 lg:grid-cols-4/u);
-  assert.doesNotMatch(advantages, /<svg|BenefitIcon/u);
-  assert.ok(cta.indexOf("Перейти в каталог") < cta.indexOf("Запросить КП"));
-  assert.match(cta, /href="\/catalog" className="cm-button-primary/u);
-  assert.match(cta, /href="\/request" className="cm-button-secondary/u);
+  assert.match(advantages, /<svg/u);
+  assert.match(cta, /href="\/request" className="cm-button-primary/u);
+  assert.doesNotMatch(cta, /href="\/catalog"/u);
   assert.doesNotMatch(cta, /bg-cm-ink|bg-cm-coral|blur-3xl/u);
 });
 
@@ -97,6 +97,7 @@ test("Homepage keeps a single client boundary and no parallel data path", async 
     "components/home/Categories.tsx",
     "components/home/FeaturedManufacturers.tsx",
     "components/home/WhyCyberMedica.tsx",
+    "components/home/CompanyCredibility.tsx",
     "components/home/CTA.tsx",
   ];
   const serverSources = await Promise.all(serverPaths.map(source));

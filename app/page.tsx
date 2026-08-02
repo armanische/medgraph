@@ -5,6 +5,7 @@ import Equipment from "@/components/home/Equipment";
 import FeaturedManufacturers from "@/components/home/FeaturedManufacturers";
 import Categories from "@/components/home/Categories";
 import WhyCyberMedica from "@/components/home/WhyCyberMedica";
+import CompanyCredibility from "@/components/home/CompanyCredibility";
 import CTA from "@/components/home/CTA";
 import JsonLd from "@/components/seo/JsonLd";
 import {
@@ -20,10 +21,25 @@ import { selectPublishedFeaturedProducts } from "@/lib/storefront/featured-produ
 import { loadHomepageOverviewSources } from "@/lib/storefront/homepage-overview";
 
 const homepageDescription =
-  "Каталог медицинского оборудования для клиник, медицинских организаций и специалистов по закупкам.";
+  "Поставка и подбор профессионального медицинского оборудования для государственных и частных медицинских организаций.";
+
+const HOMEPAGE_CATEGORY_SLUGS = [
+  "ventilators",
+  "patient-monitors",
+  "syringe-pumps",
+  "ultrasound-systems",
+  "endoscopy-systems",
+  "x-ray-systems",
+  "defibrillator-monitors",
+  "respiratory-support-devices",
+] as const;
+
+const homepageCategoryOrder = new Map<string, number>(
+  HOMEPAGE_CATEGORY_SLUGS.map((slug, index) => [slug, index]),
+);
 
 export const metadata: Metadata = buildStorefrontMetadata({
-  title: "Каталог медицинского оборудования",
+  title: "CyberMedica — медицинское оборудование для клиник и учреждений",
   description: homepageDescription,
   canonical: "/",
 });
@@ -57,11 +73,15 @@ export default async function Home() {
       productCount: categoryProductCounts.get(category.id) ?? 0,
     }))
     .filter(({ productCount }) => productCount > 0)
-    .sort((left, right) =>
-      right.productCount - left.productCount ||
-      left.name.localeCompare(right.name, "ru-RU"),
-    )
-    .slice(0, 6) : null;
+    .sort((left, right) => {
+      const preferredOrder =
+        (homepageCategoryOrder.get(left.slug) ?? Number.MAX_SAFE_INTEGER)
+        - (homepageCategoryOrder.get(right.slug) ?? Number.MAX_SAFE_INTEGER);
+      return preferredOrder
+        || right.productCount - left.productCount
+        || left.name.localeCompare(right.name, "ru-RU");
+    })
+    .slice(0, 8) : null;
   const manufacturerEntries = products && manufacturers ? manufacturers
     .map((manufacturer) => ({
       id: manufacturer.id,
@@ -93,6 +113,7 @@ export default async function Home() {
       <Categories categories={categoryEntries} />
       <FeaturedManufacturers manufacturers={manufacturerEntries} />
       <WhyCyberMedica />
+      <CompanyCredibility />
       <CTA />
     </main>
   );

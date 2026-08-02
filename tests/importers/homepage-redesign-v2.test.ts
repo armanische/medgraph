@@ -13,16 +13,16 @@ test("homepage uses the official brand asset and approved search-first hero", as
 
   assert.match(header, /\/brand\/cybermedica-logo\.png/u);
   assert.match(footer, /\/brand\/cybermedica-logo\.png/u);
-  assert.match(hero, /Каталог медицинского оборудования/u);
+  assert.match(hero, /Медицинское оборудование для клиник и медицинских учреждений/u);
   assert.match(
     hero,
-    /Оборудование ведущих производителей для государственных и частных/u,
+    /Подбор, поставка и сопровождение профессионального медицинского/u,
   );
   assert.match(hero, /<Search \/>/u);
   assert.match(hero, /Перейти в каталог/u);
   assert.match(hero, /<Image/u);
   assert.match(hero, /heroProduct\?\.media\.find/u);
-  assert.match(hero, /Запросить коммерческое предложение/u);
+  assert.match(hero, /Отправить запрос/u);
   assert.doesNotMatch(hero, /Запросить КП|ведущих мировых/u);
 });
 
@@ -80,12 +80,11 @@ test("rendered homepage removes obsolete technical copy", async () => {
 test("final homepage CTA uses the approved commercial request", async () => {
   const cta = await source("components/home/CTA.tsx");
 
-  assert.match(cta, /Нужна помощь с подбором оборудования\?/u);
+  assert.match(cta, /Не нашли нужное оборудование\?/u);
   assert.match(
     cta,
-    /Опишите задачу, необходимые характеристики или известную модель/u,
+    /Отправьте наименование, модель или техническое задание/u,
   );
-  assert.match(cta, /Перейти в каталог/u);
-  assert.match(cta, /Запросить КП/u);
-  assert.ok(cta.indexOf("Перейти в каталог") < cta.indexOf("Запросить КП"));
+  assert.match(cta, /Отправить запрос/u);
+  assert.doesNotMatch(cta, /Перейти в каталог|Запросить КП/u);
 });

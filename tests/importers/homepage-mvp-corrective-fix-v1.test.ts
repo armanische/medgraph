@@ -92,6 +92,7 @@ test("all Homepage H2 headings use the approved responsive scale", async () => {
     "components/home/FeaturedManufacturers.tsx",
     "components/home/Equipment.tsx",
     "components/home/WhyCyberMedica.tsx",
+    "components/home/CompanyCredibility.tsx",
     "components/home/CTA.tsx",
   ];
   const sources = await Promise.all(paths.map(source));
@@ -130,7 +131,7 @@ test("Homepage controls honor approved minimum and exact target heights", async 
   assert.match(categories, /cm-button-secondary mt-4 !min-h-\[44px\] w-full sm:!hidden/u);
   assert.match(manufacturers, /cm-button-secondary mt-4 !min-h-\[44px\] w-full sm:!hidden/u);
   assert.match(equipment, /cm-button-secondary !min-h-\[44px\] w-full sm:w-auto/u);
-  assert.equal((cta.match(/!min-h-\[48px\]/gu) ?? []).length, 2);
+  assert.equal((cta.match(/!min-h-\[48px\]/gu) ?? []).length, 1);
 });
 
 test("Homepage Search reuses the established Catalog icon without changing routing", async () => {

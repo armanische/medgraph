@@ -41,10 +41,9 @@ test("homepage ranks and limits active categories and manufacturers", async () =
   assert.match(homepage, /productService\.getActiveProducts\(\)/u);
   assert.match(homepage, /categoryProductCounts/u);
   assert.match(homepage, /manufacturerProductCounts/u);
-  assert.equal((homepage.match(/\.slice\(0, 6\)/gu) ?? []).length, 1);
-  assert.equal((homepage.match(/\.slice\(0, 8\)/gu) ?? []).length, 1);
+  assert.equal((homepage.match(/\.slice\(0,\s*8\)/gu) ?? []).length, 2);
   assert.match(homepage, /right\.productCount - left\.productCount/u);
-  assert.match(categories, /Категории оборудования/u);
+  assert.match(categories, /Основные категории оборудования/u);
   assert.match(categories, /Все категории/u);
   assert.doesNotMatch(categories, /Популярные категории/u);
   assert.doesNotMatch(categories, /function CategoryIcon/u);
@@ -62,10 +61,10 @@ test("unsupported comparison claims are absent from shared public navigation", a
     assert.doesNotMatch(publicComponent, /href="\/compare"/u);
   }
   assert.doesNotMatch(hero, /productCount|manufacturerCount|categoryCount/u);
-  assert.match(capabilities, /Подбор под задачу/u);
-  assert.match(capabilities, /Помощь с поиском аналогов/u);
-  assert.match(capabilities, /Доступные характеристики и документы/u);
-  assert.match(capabilities, /Сопровождение запроса/u);
+  assert.match(capabilities, /Подбор под техническое задание/u);
+  assert.match(capabilities, /Оборудование ведущих производителей/u);
+  assert.match(capabilities, /Работа с государственными и частными заказчиками/u);
+  assert.match(capabilities, /Сопровождение поставки и документации/u);
   assert.doesNotMatch(capabilities, /Совместимость|Тендерная аналитика/u);
 });
 

@@ -14,6 +14,7 @@ test("homepage follows the Storefront information architecture", async () => {
     "<Categories",
     "<FeaturedManufacturers",
     "<WhyCyberMedica",
+    "<CompanyCredibility",
     "<CTA",
   ];
   const positions = sections.map((section) => page.indexOf(section));
@@ -27,7 +28,7 @@ test("Hero communicates the catalog value and exposes only credible public actio
   const hero = await source("components/home/Hero.tsx");
 
   assert.match(hero, /<h1/u);
-  assert.match(hero, /Каталог медицинского оборудования/u);
+  assert.match(hero, /Медицинское оборудование для клиник и медицинских учреждений/u);
   assert.match(hero, /<Search \/>/u);
   assert.match(hero, /href="\/catalog"/u);
   assert.match(hero, /href="\/request"/u);
@@ -73,6 +74,7 @@ test("homepage keeps data selection server-side and limits client code to intera
     "components/home/Categories.tsx",
     "components/home/FeaturedManufacturers.tsx",
     "components/home/WhyCyberMedica.tsx",
+    "components/home/CompanyCredibility.tsx",
     "components/home/CTA.tsx",
   ];
   const sources = await Promise.all(serverComponents.map(source));
@@ -92,13 +94,14 @@ test("section headings and final actions are explicitly labelled", async () => {
     "components/home/Categories.tsx",
     "components/home/FeaturedManufacturers.tsx",
     "components/home/WhyCyberMedica.tsx",
+    "components/home/CompanyCredibility.tsx",
     "components/home/CTA.tsx",
   ];
   const combined = (await Promise.all(files.map(source))).join("\n");
 
   assert.equal((combined.match(/<h1/gu) ?? []).length, 1);
-  assert.equal((combined.match(/<h2/gu) ?? []).length, 6);
+  assert.equal((combined.match(/<h2/gu) ?? []).length, 7);
   assert.match(combined, /aria-labelledby=/u);
-  assert.match(combined, /aria-label="Следующие действия"/u);
+  assert.match(combined, /aria-label="Отправить запрос на оборудование"/u);
   assert.match(combined, /cm-button-primary/u);
 });

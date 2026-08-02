@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-cm-ink text-white">
       <div className="cm-container grid gap-5 py-6 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr] lg:gap-8">
         <div>
-          <span className="inline-flex">
+          <Link href="/" aria-label="Кибермедика — главная" className="inline-flex min-h-[44px] items-center">
             <Image
               src="/brand/cybermedica-logo.png"
               alt="Кибермедика"
@@ -14,9 +14,9 @@ export default function Footer() {
               height={293}
               className="h-auto w-40"
             />
-          </span>
+          </Link>
           <p className="mt-2 max-w-xs text-[11px] leading-5 text-white/70">
-            Профессиональный каталог медицинского оборудования для государственных и частных организаций.
+            Подбор и поставка медицинского оборудования для государственных и частных организаций.
           </p>
         </div>
 
@@ -29,7 +29,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <div className="cm-label !text-white/65">Коммерческое предложение</div>
+          <div className="cm-label !text-white/65">Запрос на оборудование</div>
           <div className="mt-3 flex flex-col gap-2 text-[11px] text-white/75">
             <Link href="/request" className="transition duration-200 hover:text-white">Запросить КП</Link>
             <Link href="/search" className="transition duration-200 hover:text-white">Найти модель</Link>

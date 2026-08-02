@@ -7,28 +7,25 @@ export default function CTA() {
       className="cm-section bg-cm-canvas"
     >
       <div className="cm-container">
-        <div className="cm-card grid gap-5 bg-[linear-gradient(135deg,#ffffff_0%,#f4fafb_100%)] p-5 sm:p-6 lg:grid-cols-[minmax(0,3fr)_minmax(20rem,2fr)] lg:items-center lg:gap-8 lg:p-8">
+        <div className="cm-card grid gap-5 overflow-hidden bg-[linear-gradient(135deg,#ffffff_0%,#f4fafb_100%)] p-5 sm:p-6 lg:grid-cols-[minmax(0,3fr)_minmax(15rem,1fr)] lg:items-center lg:gap-8 lg:p-8">
           <div className="max-w-[38rem]">
             <h2
               id="homepage-cta-title"
               className="text-2xl font-extrabold leading-[1.2] tracking-[-0.025em] sm:text-[26px] lg:text-[30px]"
             >
-              Нужна помощь с подбором оборудования?
+              Не нашли нужное оборудование?
             </h2>
             <p className="mt-3 text-[14px] leading-7 text-cm-slate">
-              Опишите задачу, необходимые характеристики или известную модель — поможем
-              подобрать подходящее оборудование.
+              Отправьте наименование, модель или техническое задание — мы рассмотрим
+              запрос и подберём подходящие варианты.
             </p>
           </div>
           <nav
-            aria-label="Следующие действия"
-            className="flex flex-col gap-2 sm:flex-row sm:items-center lg:justify-end lg:gap-3"
+            aria-label="Отправить запрос на оборудование"
+            className="flex flex-col gap-2 sm:flex-row sm:items-center lg:justify-end"
           >
-            <Link href="/catalog" className="cm-button-primary !min-h-[48px] w-full sm:w-auto">
-              Перейти в каталог
-            </Link>
-            <Link href="/request" className="cm-button-secondary !min-h-[48px] w-full sm:w-auto">
-              Запросить КП
+            <Link href="/request" className="cm-button-primary !min-h-[48px] w-full sm:w-auto">
+              Отправить запрос
             </Link>
           </nav>
         </div>

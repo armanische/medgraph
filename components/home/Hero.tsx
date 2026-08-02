@@ -17,29 +17,29 @@ export default function Hero({ products }: { products: readonly Product[] }) {
         aria-labelledby="homepage-title"
         className="border-b border-[var(--cm-rule)] bg-[linear-gradient(135deg,#ffffff_0%,#f6fafc_58%,#e8f5f7_100%)]"
       >
-        <div className="cm-container py-8 sm:py-10 lg:py-12">
-          <div className="grid gap-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:items-center lg:gap-10">
+        <div className="cm-container py-7 sm:py-9 lg:py-10">
+          <div className="grid gap-7 lg:grid-cols-[minmax(0,1.12fr)_minmax(23rem,0.88fr)] lg:items-center lg:gap-10">
             <div className="max-w-[42rem]">
               <p className="text-xs font-bold tracking-[0.16em] text-cm-teal">
-                ПРОФЕССИОНАЛЬНАЯ ВИТРИНА ОБОРУДОВАНИЯ
+                ПОДБОР И ПОСТАВКА ОБОРУДОВАНИЯ
               </p>
-            <h1
-              id="homepage-title"
-              className="cm-balanced mt-4 max-w-[40rem] text-[2.125rem] font-extrabold leading-[1.08] tracking-[-0.035em] text-cm-ink sm:text-[2.5rem] lg:text-5xl"
-            >
-              Каталог медицинского оборудования
-            </h1>
-            <p className="mt-4 max-w-[44rem] text-[15px] leading-6 text-cm-slate sm:text-base sm:leading-7">
-              Оборудование ведущих производителей для государственных и частных
-              медицинских организаций.
-            </p>
+              <h1
+                id="homepage-title"
+                className="cm-balanced mt-3 max-w-[43rem] text-[2.125rem] font-extrabold leading-[1.08] tracking-[-0.035em] text-cm-ink sm:text-[2.5rem] lg:text-[2.75rem]"
+              >
+                Медицинское оборудование для клиник и медицинских учреждений
+              </h1>
+              <p className="mt-4 max-w-[44rem] text-[15px] leading-6 text-cm-slate sm:text-base sm:leading-7">
+                Подбор, поставка и сопровождение профессионального медицинского
+                оборудования для государственных и частных заказчиков.
+              </p>
 
               <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                 <Link href="/catalog" className="cm-button-primary !min-h-[48px] w-full sm:w-auto">
                   Перейти в каталог
                 </Link>
                 <Link href="/request" className="cm-button-secondary !min-h-[44px] w-full sm:w-auto">
-                  Запросить коммерческое предложение
+                  Отправить запрос
                 </Link>
               </div>
             </div>
@@ -47,7 +47,7 @@ export default function Hero({ products }: { products: readonly Product[] }) {
               <Link
                 href={`/catalog/${heroProduct.slug}`}
                 aria-label={`Открыть карточку товара «${heroProduct.name}»`}
-                className="group relative block min-h-[15rem] cursor-pointer overflow-hidden rounded-2xl border border-[var(--cm-rule-strong)] bg-[linear-gradient(145deg,#f8fcfc_0%,#dff0f3_100%)] p-4 shadow-[0_20px_50px_rgba(11,19,32,0.10)] transition duration-200 hover:border-cm-teal hover:shadow-[0_24px_54px_rgba(11,19,32,0.14)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cm-teal sm:min-h-[20rem] sm:p-6 lg:min-h-[25rem]"
+                className="group relative block min-h-[14rem] cursor-pointer overflow-hidden rounded-2xl border border-[var(--cm-rule-strong)] bg-[linear-gradient(145deg,#f8fcfc_0%,#dff0f3_100%)] p-4 shadow-[0_20px_50px_rgba(11,19,32,0.10)] transition duration-200 hover:border-cm-teal hover:shadow-[0_24px_54px_rgba(11,19,32,0.14)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cm-teal sm:min-h-[18rem] sm:p-6 lg:min-h-[22rem]"
               >
                 <div aria-hidden="true" className="absolute -right-16 -top-16 h-44 w-44 rounded-full bg-cm-teal/10" />
                 <div className="absolute inset-x-4 bottom-20 top-4 sm:inset-x-6 sm:bottom-24 sm:top-6">
@@ -78,7 +78,7 @@ export default function Hero({ products }: { products: readonly Product[] }) {
       </section>
 
       <section aria-labelledby="homepage-search-title" className="bg-cm-ink text-white">
-        <div className="cm-container grid gap-6 py-7 sm:py-8 lg:grid-cols-[minmax(0,0.7fr)_minmax(0,1.3fr)] lg:items-center lg:gap-10">
+        <div className="cm-container grid gap-5 py-6 sm:py-7 lg:grid-cols-[minmax(0,0.7fr)_minmax(0,1.3fr)] lg:items-center lg:gap-10">
           <div>
             <p className="text-xs font-bold tracking-[0.16em] text-cm-teal-soft">
               ПОИСК ПО КАТАЛОГУ
