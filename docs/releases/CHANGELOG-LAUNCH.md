@@ -203,6 +203,15 @@
   `a0654fd4-d65f-450d-b8ed-2270408fdcbe`. Production remains 70 Published;
   no Human Review, Approval or Publication was performed. See the
   [revision report](../reports/idn-03-revision-creation-2026-08-02.md).
+- ИДН-03 publication and transport resilience (2026-08-02): exact corporate
+  Decision `9b06ac1b-2108-40fa-96ac-ed7a8fc64fdb` was durably verified; the
+  one-Product runner created Approval `bc04a144-b3e8-4eae-a7d8-b4281ec35bd2`
+  and Publication Batch `99664f26-515b-40bc-90f0-f8d439fb33c4`. Production
+  now has 71 Published and 8 Unpublished Products, projection version 73 and
+  71 sitemap Product URLs. Public catalog reads now use bounded retry,
+  validated last-known-good fallback, sanitized health diagnostics, corporate
+  synthetic monitoring and mandatory WebKit fault-injection gates. See the
+  [resilience and publication report](../reports/published-catalog-transport-resilience-2026-08-02.md).
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).

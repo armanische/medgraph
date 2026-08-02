@@ -5,19 +5,19 @@ Canonical Production inventory after Group C remediation Batch 3 publication:
 | Metric | Value |
 | --- | ---: |
 | Products | 79 |
-| Published | 70 |
-| Unpublished | 9 |
+| Published | 71 |
+| Unpublished | 8 |
 | In Review — resolved Group B six | 0 |
 | Reviewed and ready for controlled Approval | 0 |
 | Group B pending Product Owner resolution | 0 |
-| Group C remaining | 9 |
+| Group C remaining | 8 |
 | Group C Batch 2 published | 13 |
 | Group C Batch 2 characteristic corrective | 2 |
 | Group C Batch 3 published | 7 |
 | Group C special correctives unresolved | 8 |
-| Final-nine pending corporate Review | 1 |
-| Projection version | 72 |
-| Sitemap Product URLs | 70 |
+| Final-nine pending corporate Review | 0 |
+| Projection version | 73 |
+| Sitemap Product URLs | 71 |
 
 The published set consists of Hamilton-T1, Mindray SV300, Agilia SP MC, the ten
 Products recorded in [Catalog Publication Wave 1](./catalog-publication-wave-1-2026-07-30.md),
@@ -40,6 +40,7 @@ The remaining nine Products are tracked in the
 
 Batch 3 closed with seven corporate-reviewed Products published. The final-nine
 corrective pass subsequently patched ИДН-03 through the approved Catalog Admin
-boundary. Its exact immutable revision is now in corporate Human Review with
-lifecycle `1/0/0/0`; eight rows remain in controlled technical/owner/policy
-queues with lifecycle `0/0/0/0`. None is exposed by the 70-URL sitemap.
+boundary. Its exact immutable revision completed corporate Human Review,
+Approval and Publication with lifecycle `1/1/1/1`; eight rows remain in
+controlled technical/owner/policy queues with lifecycle `0/0/0/0`. None is
+exposed by the 71-URL sitemap.

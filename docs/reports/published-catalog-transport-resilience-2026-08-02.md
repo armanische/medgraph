@@ -42,6 +42,18 @@ Durable corporate Review verification passed for revision
 present, the revision is current/non-stale, the checksum triad is exact, and
 Approval/Publication Batch were zero before the controlled operation.
 
-Production Approval/Publication identifiers, final projection metadata,
-deployment ID and Git reconciliation SHA are appended only after the exact
-operation and canonical smoke pass.
+The corporate-only exact-manifest runner created Approval
+`bc04a144-b3e8-4eae-a7d8-b4281ec35bd2` and Publication Batch
+`99664f26-515b-40bc-90f0-f8d439fb33c4`. Replay returned
+`already_complete` with the same identifiers and no duplicate lifecycle rows.
+The canonical Product URL is
+`/catalog/767632362-363181290312-inkubator-intensivnoi-terapii-novorozhde`.
+
+The post-operation read-only transaction reported `transaction_read_only=on`
+and completed with `ROLLBACK`. Durable totals are Products `79`, Published
+`71`, Unpublished `8`, and Revisions/Decisions/Approvals/Publication Batches
+`71/71/71/71`. Projection version is `73`, checksum is
+`23f7f2b73d7c694584e85f0e910298930d555194bab26164f2988d9b74895898`.
+All eight remaining Products are still draft. The final Production deployment
+ID and canonical Git SHA are recorded after the 71-Product LKG deployment and
+smoke pass.

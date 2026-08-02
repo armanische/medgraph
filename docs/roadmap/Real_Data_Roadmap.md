@@ -256,19 +256,19 @@ authorize automatic lifecycle writes.
 | Complete corporate Human Review and publication for Group C Batch 2 | Завершено — Production Published count 63 | Нет |
 | Correct swapped Гемос / Гемос-ПФ type characteristics | Backlog, narrow data corrective required | Нет |
 | Complete corporate Human Review and publication for seven Group C Batch 3 revisions | Завершено — Production Published count 70 | Нет |
-| Complete corporate Human Review and later lifecycle for ИДН-03 | Revision created; awaiting one manual corporate Review | Нет |
+| Complete corporate Human Review and later lifecycle for ИДН-03 | Завершено — Production Published count 71 | Нет |
 | Resolve combined УНИКОС-02/03 execution | Product Owner decision required | Нет |
 | Add narrow media/characteristic/reference correctives for six blocked rows | Backlog | Нет |
 | Resolve Instilar 1438 regulatory mapping | Keep unpublished by policy | Нет |
 
-Production contains 70 Published and 9 Unpublished Products. Further catalog
+Production contains 71 Published and 8 Unpublished Products. Further catalog
 work is limited to the
 [special correctives queue](../reports/group-c-special-correctives-queue-2026-08-02.md)
 and remains post-launch.
 
-The final-nine corrective pass made ИДН-03 revision-ready. A subsequent exact
-one-Product operation created revision 1 and stopped before Human Review. The
-remaining closure sequence is recorded in the
+The final-nine corrective pass made ИДН-03 revision-ready. Its subsequent exact
+one-Product lifecycle completed corporate Human Review, Approval and
+Publication. The remaining closure sequence is recorded in the
 [final catalog closure plan](../reports/final-catalog-closure-plan-2026-08-02.md).
 
 ## Never Automatic
