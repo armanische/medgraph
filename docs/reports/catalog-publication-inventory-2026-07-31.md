@@ -33,9 +33,16 @@ and the seven Products recorded in the
 [Group C Batch 3 publication closure](./group-c-remediation-batch-3-publication-2026-08-02.md).
 No unpublished Product is present in the public projection or sitemap.
 
+The 2026-08-02 read-only
+[Published Product Detail audit](./published-product-detail-audit-2026-08-02.md)
+confirmed all 71 Product pages at HTTP 200 with no unpublished leakage. Every
+published Product currently has exactly three base characteristics. The first
+15-Product enrichment queue is documented separately; no Product or lifecycle
+write occurred during the audit.
+
 The reviewed Group A and resolved Group B queues are closed. Instilar 1438 is
 excluded in the [dedup backlog](./instilar-1438-dedup-backlog-2026-07-31.md).
-The remaining nine Products are tracked in the
+The remaining eight Products are tracked in the
 [special correctives queue](./group-c-special-correctives-queue-2026-08-02.md).
 
 Batch 3 closed with seven corporate-reviewed Products published. The final-nine

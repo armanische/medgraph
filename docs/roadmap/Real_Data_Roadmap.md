@@ -38,6 +38,8 @@ has an explicit launch-blocking flag.
 | Published Catalog LKG, WebKit gate and synthetic monitoring | completed — 2026-08-02 | Нет |
 | Clickable featured Products carousel | completed — 8 Published Products, responsive WebKit PASS | Нет |
 | Homepage visual and conversion polish | completed — responsive WebKit, category and RFQ flow PASS | Нет |
+| Published Product Detail quality audit | completed — 71/71 HTTP 200 and WebKit PASS; writes 0 | Нет |
+| Characteristics Wave 1 | ready — 15 exact Published Products, preview-first content operation | Нет |
 | Final eight Product correctives | отложено по решению Product Owner | Нет |
 | RFQ POST verification on canonical domain | completed — test-only | Нет |
 | Mail delivery confirmation after DNS cutover | completed in pre-launch downstream gate | Нет |
