@@ -32,3 +32,7 @@ The immutable preview is
 `/tmp/group-c-remediation-batch-3-patch-preview-2026-08-02.json`, SHA-256
 `cf90e9cf9068e27bf15dabf0b33c2e1b82a5b658c594dd3747556c3fc0bce035`,
 permissions `0600`.
+
+All seven eligible packages were later captured in immutable revision 1 with
+the exact checksum triads above. Content was not mutated between patch and
+revision creation. Human Review remains a separate corporate manual step.

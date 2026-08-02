@@ -176,6 +176,13 @@
   Product count are 65 and 63. Replay returned `already_complete`; excluded
   corrective Products remain draft with lifecycle `0/0/0/0`. See
   [publication closure](../reports/group-c-remediation-batch-2-publication-2026-08-02.md).
+- Group C remediation Batch 3 revision creation (2026-08-02): the closed
+  `group-c-batch-3-revision-creation-v1` operation created and replay-verified
+  seven immutable revision 1 records and Review Items. Published remains 63;
+  Decisions, Approvals and Publication Batches remain 63. The corporate generic
+  Review Queue contains the exact seven pending records. See
+  [revision evidence](../reports/group-c-remediation-batch-3-revision-creation-2026-08-02.md)
+  and [queue checkpoint](../reports/group-c-remediation-batch-3-review-queue-2026-08-02.md).
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).

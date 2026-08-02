@@ -254,6 +254,7 @@ authorize automatic lifecycle writes.
 | Create 13 Group C Batch 2 immutable revisions | Завершено | Нет |
 | Complete corporate Human Review and publication for Group C Batch 2 | Завершено — Production Published count 63 | Нет |
 | Correct swapped Гемос / Гемос-ПФ type characteristics | Backlog, narrow data corrective required | Нет |
+| Complete corporate Human Review for seven Group C Batch 3 revisions | Ready — queue contains exact seven | Нет |
 
 Production contains 63 Published and 16 Unpublished Products. Further catalog
 work follows the [Group C remediation queue](../reports/group-c-remediation-queue-2026-07-31.md)

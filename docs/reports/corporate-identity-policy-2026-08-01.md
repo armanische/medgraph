@@ -55,3 +55,10 @@ All 13 Batch 2 Decisions and Approvals were independently verified against the
 corporate admin UUID `7e90a993-8b30-4e0d-aff4-a257d5a4a179`. The closed
 publication runner required the same active corporate session. No new Decision
 or Approval used the legacy identity; historical bindings were unchanged.
+
+## Group C Batch 3 revision operation
+
+The Batch 3 runner required the exact corporate email, UUID, `admin` profile and
+active same-origin session. It created only seven immutable Revisions and seven
+Review Items. Decisions remain unchanged at 63; the legacy identity was not
+used and no Review, Approval or Publication action was available.

@@ -14,3 +14,6 @@
 
 All nine rows are outside the seven-Product revision-ready scope. No Product
 URL is present in the 63-Product sitemap.
+
+The Batch 3 revision operation reconfirmed all nine exclusions. None received a
+Revision or Review Item; their lifecycle remains `0/0/0/0`.

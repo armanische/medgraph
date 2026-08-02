@@ -38,3 +38,9 @@ Production remains `79/63/16`; lifecycle remains `63/63/63/63`; projection
 version/checksum remain `65` / `e37f2096713807ff966b25998ff383d788c5dc686de66a6ef0da434a4487298f`;
 the sitemap contains 63 Product URLs and no unpublished Batch 3 source UID.
 Revision RPCs were not called.
+
+## Revision handoff
+
+The subsequent closed operation created seven immutable revisions and matching
+Review Items without changing the patched Product content. Durable identifiers
+are recorded in the [revision creation report](./group-c-remediation-batch-3-revision-creation-2026-08-02.md).

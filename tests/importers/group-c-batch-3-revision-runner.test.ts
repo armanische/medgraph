@@ -24,7 +24,7 @@ test("Group C Batch 3 revision manifest is exact and digest-bound", async () => 
   assert.match(source, /^import "server-only";/u);
   assert.match(source, new RegExp(expectedManifestSha, "u"));
   assert.match(source, /group-c-batch-3-revision-creation-v1/u);
-  assert.equal((source.match(/productId: "/gu) ?? []).length, 7);
+  assert.equal((source.match(/productId: "/gu) ?? []).length, 14);
   assert.equal((source.match(/sourceUid: "/gu) ?? []).length, 7);
   assert.equal((source.match(/candidatePayloadChecksum:/gu) ?? []).length, 8);
   assert.equal((source.match(/payloadChecksum:/gu) ?? []).length, 8);
@@ -32,8 +32,8 @@ test("Group C Batch 3 revision manifest is exact and digest-bound", async () => 
   assert.equal((source.match(/rawSnapshotSha256:/gu) ?? []).length, 8);
   assert.match(source, /Object\.keys\(record\)\.length === 2/u);
   assert.doesNotMatch(source, /SUPABASE_SERVICE_ROLE_KEY|Authorization|Bearer/u);
-  assert.equal((source.match(/revisionId: "/gu) ?? []).length, 0);
-  assert.equal((source.match(/reviewItemId: "/gu) ?? []).length, 0);
+  assert.equal((source.match(/revisionId: "/gu) ?? []).length, 7);
+  assert.equal((source.match(/reviewItemId: "/gu) ?? []).length, 7);
 
   const runnable = ts.transpileModule(
     source.replace(/^import "server-only";\n\n/u, ""),
@@ -52,6 +52,29 @@ test("Group C Batch 3 revision manifest is exact and digest-bound", async () => 
   });
   const input = (runtimeModule.exports.groupCBatch3RevisionManifestDigestInput as () => unknown)();
   assert.equal(createHash("sha256").update(JSON.stringify(input)).digest("hex"), expectedManifestSha);
+});
+
+test("generic Review Queue contains the exact seven durable Batch 3 bindings", async () => {
+  const manifest = await readFile("lib/review/publication-revision-manifest.ts", "utf8");
+  const bindings = [
+    ["075ff1ca-ecdd-4f78-a2cf-904d9a28a6bf", "7ef0838d-0f4d-47ac-9a49-02e4edb262ac"],
+    ["e5ecef0b-8d13-4f01-9f51-080790d8f481", "b6665afb-4b8a-4763-a806-6805840f1cb0"],
+    ["af0233e6-71f9-4ade-a118-bff8c7b69446", "8a2344e2-1811-4923-a4fc-83abdef47c52"],
+    ["a0365bdb-2bbc-44ac-9e02-c920c3afba7f", "65feb6a5-21ef-4d48-a484-8a3f65a32c53"],
+    ["46222169-c0e4-446b-bb69-a6e52c553fbc", "b6cb6ef1-2e07-4644-a5af-cf5610ad680e"],
+    ["b4cafd0c-fc0c-4d64-91fc-e4065ae679a6", "0b22bed6-da14-470b-a8aa-933840a5f322"],
+    ["271c99e7-d6ff-45ab-86ef-81678a15a9ca", "9d400544-5705-479e-8c2f-759aefa72f78"],
+  ];
+  for (const [revisionId, reviewItemId] of bindings) {
+    assert.equal((manifest.match(new RegExp(revisionId, "gu")) ?? []).length, 1);
+    assert.equal((manifest.match(new RegExp(reviewItemId, "gu")) ?? []).length, 1);
+  }
+  for (const productId of excludedProductIds) {
+    assert.doesNotMatch(
+      manifest.slice(manifest.indexOf('revisionId: "075ff1ca-ecdd-4f78-a2cf-904d9a28a6bf"')),
+      new RegExp(productId, "u"),
+    );
+  }
 });
 
 test("Batch 3 revision runner uses only approved RPC and exact server scope", async () => {

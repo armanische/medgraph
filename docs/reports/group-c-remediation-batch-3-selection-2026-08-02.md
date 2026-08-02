@@ -36,3 +36,10 @@ characteristics, at least one media asset and lifecycle `0/0/0/0`.
 The six special exclusions were not substituted with other Products. The exact
 ten-Product queue remained frozen; three Product-specific stop conditions left
 seven eligible rows.
+
+## Revision checkpoint
+
+The seven revision-ready rows received exact immutable revision 1 and Review
+Item records through the closed corporate runner. The three Product-specific
+exclusions remain unchanged with lifecycle `0/0/0/0`. See the
+[revision creation evidence](./group-c-remediation-batch-3-revision-creation-2026-08-02.md).
