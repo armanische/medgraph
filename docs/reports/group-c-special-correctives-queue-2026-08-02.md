@@ -8,12 +8,18 @@
 | Гемос | `757604699272` | Correct swapped base type characteristic | Draft, `0/0/0/0` | Нет |
 | Combined УНИКОС-02/03 | `412668785772` | Product Owner exact-execution decision after primary evidence | Draft, `0/0/0/0` | Нет |
 | Instilar 1438 | `532456144899` | KEEP; obtain separate official model evidence | Draft, `0/0/0/0` | Нет |
-| ИДН-03 claim | `363181290312` | Prove exact IDН-03 identity; do not reuse IDН-02 registry evidence | Draft, `0/0/0/0` | Нет |
+| ИДН-03 | `363181290312` | Exact identity resolved from Rostec/Shvabe/UOMZ evidence; create a separate immutable revision only after authorization | Patched, draft, revision-ready, `0/0/0/0` | Нет |
 | HUGER FB-53A | `632825146024` | Remove conflicting rigid-instrument asset and confirm primary model evidence | Draft, `0/0/0/0` | Нет |
 | PRIMEDIC Defi-B | `754023648801` | Add/resolve PRIMEDIC/Metrax manufacturer reference through an approved corrective | Draft, `0/0/0/0` | Нет |
 
 All nine rows are outside the seven-Product publication scope. No Product URL
 is present in the 70-Product sitemap.
+
+The final-nine corrective pass resolved and patched only ИДН-03. Six rows
+remain technically blocked, combined УНИКОС requires one Product Owner choice,
+and Instilar 1438 is kept unpublished pending regulatory resolution. See the
+[corrective audit](./final-nine-special-correctives-2026-08-02.md) and
+[readiness report](./final-nine-publication-readiness-2026-08-02.md).
 
 The Batch 3 revision operation reconfirmed all nine exclusions. None received a
 Revision or Review Item; their lifecycle remains `0/0/0/0`.

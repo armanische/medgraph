@@ -14,7 +14,8 @@ Canonical Production inventory after Group C remediation Batch 3 publication:
 | Group C Batch 2 published | 13 |
 | Group C Batch 2 characteristic corrective | 2 |
 | Group C Batch 3 published | 7 |
-| Group C special correctives | 9 |
+| Group C special correctives unresolved | 8 |
+| Final-nine revision-ready | 1 |
 | Projection version | 72 |
 | Sitemap Product URLs | 70 |
 
@@ -37,6 +38,8 @@ excluded in the [dedup backlog](./instilar-1438-dedup-backlog-2026-07-31.md).
 The remaining nine Products are tracked in the
 [special correctives queue](./group-c-special-correctives-queue-2026-08-02.md).
 
-Batch 3 closed with seven corporate-reviewed Products published. The remaining
-scope is nine explicit technical/media/identity correctives; all remain draft
-with lifecycle `0/0/0/0` and none is exposed by the 70-URL sitemap.
+Batch 3 closed with seven corporate-reviewed Products published. The final-nine
+corrective pass subsequently patched ИДН-03 through the approved Catalog Admin
+boundary; it remains draft and revision-ready. Eight rows remain in controlled
+technical/owner/policy queues. All nine remain lifecycle `0/0/0/0`, and none is
+exposed by the 70-URL sitemap.

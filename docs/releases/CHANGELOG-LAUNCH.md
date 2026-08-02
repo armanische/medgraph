@@ -190,6 +190,13 @@
   Product count are 72 and 70. Replay returned `already_complete`; the nine
   special corrective Products remain draft with lifecycle `0/0/0/0`. See
   [publication closure](../reports/group-c-remediation-batch-3-publication-2026-08-02.md).
+- Final-nine special correctives (2026-08-02): all nine remaining draft
+  Products were re-audited. One stale-protected Catalog Admin patch resolved
+  ИДН-03 from official Rostec/Shvabe/UOMZ evidence, synchronized canonical
+  Russian content and added SEO. It remains draft with lifecycle `0/0/0/0` and
+  deterministic revision preflight PASS. No other Product, media,
+  characteristic, lifecycle record or public projection changed. See the
+  [corrective audit](../reports/final-nine-special-correctives-2026-08-02.md).
 
 See [Production Launch Baseline](../reports/production-launch-baseline-2026-07-29.md)
 and [Production Launch Evidence Index](../reports/production-launch-evidence-index-2026-07-29.md).

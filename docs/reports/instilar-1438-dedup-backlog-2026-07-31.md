@@ -46,3 +46,11 @@ the 50-URL sitemap.
 The Batch 3 guard reconfirmed `KEEP`, draft state, lifecycle `0/0/0/0`, unchanged
 `updatedAt` and absence from the 63-Product sitemap. No Batch 3 payload included
 this Product.
+
+The final-nine audit confirmed separate official DIXION model evidence for
+Instilar 1438. It also found the 2016 Roszdravnadzor notice describing a
+registration/name/configuration mismatch for an identified Instilar 1438
+device. The Product therefore remains separate and unpublished by policy until
+the exact Production configuration receives a regulatory mapping decision. No
+content or lifecycle write was performed; it remains absent from the 70-Product
+sitemap.
