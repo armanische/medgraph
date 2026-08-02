@@ -25,7 +25,7 @@ const expectedPaths = [
 ] as const;
 
 const profiles = [
-  { name: "iPhone portrait", viewport: { width: 390, height: 844 }, expectedVisibleCards: 1 },
+  { name: "iPhone portrait", viewport: { width: 390, height: 844 }, expectedVisibleCards: 2 },
   { name: "tablet", viewport: { width: 820, height: 1180 }, expectedVisibleCards: 2 },
   { name: "desktop", viewport: { width: 1440, height: 900 }, expectedVisibleCards: 4 },
 ] as const;
