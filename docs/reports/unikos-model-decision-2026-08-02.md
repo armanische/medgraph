@@ -7,3 +7,6 @@
 
 The УНИКОС-01 patch contains no УНИКОС-02 or УНИКОС-03 claims. The combined
 row remains excluded from every Batch 2 payload and lifecycle operation.
+
+The Batch 3 guard again left the combined row unchanged, draft, lifecycle
+`0/0/0/0` and outside the 63-Product sitemap.

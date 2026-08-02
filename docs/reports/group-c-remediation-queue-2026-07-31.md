@@ -75,3 +75,13 @@ returned `already_complete` without duplicate writes.
 | Special exclusions | 4 | Unchanged and unpublished | Separate media/identity decisions | Нет |
 
 See the [Batch 2 publication closure](./group-c-remediation-batch-2-publication-2026-08-02.md).
+
+## Batch 3 content checkpoint — 2026-08-02
+
+| Remaining stream | Count | State | Next action | Блокирует запуск |
+| --- | ---: | --- | --- | --- |
+| Batch 3 revision-ready | 7 | Patched, deterministic, lifecycle `0/0/0/0` | Controlled revision manifest | Нет |
+| Batch 3 Product-specific exclusions | 3 | Unchanged | Exact identity/media/manufacturer correctives | Нет |
+| Prior special exclusions | 6 | Unchanged | Separate narrow correctives/decisions | Нет |
+
+Production remains `79/63/16`; lifecycle remains `63/63/63/63`.

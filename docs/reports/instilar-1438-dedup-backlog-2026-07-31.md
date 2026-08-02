@@ -42,3 +42,7 @@ Production reached 42 Published Products. Instilar 1438 remains absent from the
 The Batch 2 guard independently reconfirmed the same unchanged lifecycle state
 after Production reached 50 Published Products. The Product remains absent from
 the 50-URL sitemap.
+
+The Batch 3 guard reconfirmed `KEEP`, draft state, lifecycle `0/0/0/0`, unchanged
+`updatedAt` and absence from the 63-Product sitemap. No Batch 3 payload included
+this Product.

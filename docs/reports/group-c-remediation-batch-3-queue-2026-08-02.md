@@ -30,3 +30,12 @@ Batch 2 publication completed 13/13 and increased the public inventory from 50
 to 63 Products. This exact ten-Product Batch 3 queue remains unchanged, draft,
 lifecycle `0/0/0/0` and absent from the 63-Product sitemap. It is the next
 recommended controlled content-preparation scope.
+
+## Batch 3 content checkpoint
+
+The scope stayed frozen at ten. Seven Products passed exact-model, media and
+atomic-patch guards and are revision-ready; ИДН-03, HUGER FB-53A and PRIMEDIC
+Defi-B were excluded by Product-specific stop conditions. See the
+[selection](./group-c-remediation-batch-3-selection-2026-08-02.md),
+[content](./group-c-remediation-batch-3-content-preparation-2026-08-02.md) and
+[patch](./group-c-remediation-batch-3-patch-2026-08-02.md) reports.

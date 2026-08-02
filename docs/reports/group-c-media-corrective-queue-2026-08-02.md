@@ -23,3 +23,11 @@ the Batch 2 revision manifest or Review Queue.
 Batch 2 publication preserved all four corrective records. Гемос, Гемос-ПФ,
 VME-5B and EPK-i7010 remain draft with lifecycle `0/0/0/0` and are absent from
 the 63-Product sitemap.
+
+## Batch 3 additions
+
+| Product | Source UID | Current blocker | Required action | Блокирует запуск |
+| --- | --- | --- | --- | --- |
+| HUGER FB-53A | `632825146024` | Second asset depicts a different rigid instrument | Remove the conflicting asset through a controlled media corrective | Нет |
+| ИДН-03 claim | `363181290312` | Official evidence found only for IDН-02 | Exact identity evidence before media/content approval | Нет |
+| PRIMEDIC Defi-B | `754023648801` | Images pass, but manufacturer is bound to Mindray | Resolve PRIMEDIC/Metrax reference before content patch | Нет |

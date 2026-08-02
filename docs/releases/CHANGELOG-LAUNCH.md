@@ -1,5 +1,14 @@
 # CyberMedica Launch Changelog
 
+## 2026-08-02 — Group C Batch 3 content preparation
+
+- Prepared and atomically patched seven exact draft Products through the
+  approved Catalog Admin boundary.
+- Deferred three Product-specific identity/media/manufacturer correctives and
+  preserved all six prior special exclusions.
+- Kept Production publication/lifecycle totals at `63/63/63/63` with no new
+  public URL.
+
 ## Corporate Auth/RBAC — 2026-08-01
 
 - `cybermedicaooo@gmail.com` закреплена как единственная default identity для
