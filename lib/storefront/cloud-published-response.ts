@@ -6,6 +6,7 @@ import {
 export type CloudPublishedCatalogErrorCode =
   | "configuration"
   | "transport"
+  | "upstream_rejected"
   | "invalid_payload"
   | "payload_too_large";
 
@@ -102,7 +103,13 @@ export async function loadValidatedPublishedCatalogProjection(
 
   if (!response.ok) {
     await response.body?.cancel().catch(() => undefined);
-    throw new CloudPublishedCatalogRepositoryError("transport");
+    const retryable = response.status === 408
+      || response.status === 425
+      || response.status === 429
+      || response.status >= 500;
+    throw new CloudPublishedCatalogRepositoryError(
+      retryable ? "transport" : "upstream_rejected",
+    );
   }
 
   let body: Uint8Array;

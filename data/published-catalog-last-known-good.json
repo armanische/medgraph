@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "projectionVersion": 72,
+  "projectionChecksum": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "projectionDocumentChecksum": "827f1b0e3d61d54c8cde2fda7aa19073bc1973b05486051bc03914f0a41ad219",
+  "capturedAt": "2026-08-02T00:00:00.000Z",
+  "projection": {
+    "schemaVersion": 1,
+    "generatedAt": "2026-08-02T00:00:00.000Z",
+    "products": [
+      {
+        "id": "catalog-resilience-seed",
+        "slug": "catalog-resilience-seed",
+        "title": "CyberMedica catalog resilience seed",
+        "model": "LKG",
+        "shortDescription": "Validated build-time resilience seed.",
+        "description": "Validated build-time resilience seed.",
+        "seoTitle": "CyberMedica catalog resilience",
+        "seoDescription": "Validated build-time resilience seed.",
+        "manufacturerId": "cybermedica-seed",
+        "categoryId": "medical-equipment-seed",
+        "status": "active",
+        "applicationAreas": [],
+        "keyFeatures": [],
+        "characteristicGroups": [],
+        "media": [],
+        "documents": [],
+        "registrations": [],
+        "createdAt": "2026-08-02T00:00:00.000Z",
+        "updatedAt": "2026-08-02T00:00:00.000Z"
+      }
+    ],
+    "manufacturers": [
+      {
+        "id": "cybermedica-seed",
+        "slug": "cybermedica-seed",
+        "name": "CyberMedica",
+        "description": "Build-time resilience seed.",
+        "countryCode": "RU",
+        "website": "https://cyber-medica.ru",
+        "createdAt": "2026-08-02T00:00:00.000Z",
+        "updatedAt": "2026-08-02T00:00:00.000Z"
+      }
+    ],
+    "categories": [
+      {
+        "id": "medical-equipment-seed",
+        "slug": "medical-equipment-seed",
+        "name": "Medical equipment",
+        "description": "Build-time resilience seed.",
+        "position": 0,
+        "createdAt": "2026-08-02T00:00:00.000Z",
+        "updatedAt": "2026-08-02T00:00:00.000Z"
+      }
+    ],
+    "applicationAreas": [],
+    "summary": {
+      "productCount": 1,
+      "manufacturerCount": 1,
+      "categoryCount": 1,
+      "applicationAreaCount": 0
+    }
+  }
+}
