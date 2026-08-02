@@ -1,5 +1,35 @@
 # RFC-025 — Homepage Information Architecture
 
+## 2026-08-02 Addendum — Visual and Conversion Polish
+
+The current homepage opens with a direct supply-and-selection proposition,
+primary Catalog and secondary Request actions. It retains published search and
+the exact eight-Product featured carousel, then provides eight canonical
+published-category deep links, manufacturer navigation, four neutral trust
+points, a compact company explanation and one focused final Request action.
+
+All dynamic entities still come through the existing resilient Published
+Catalog services. No second data fetch, draft source, client-rendered page shell
+or unsupported commercial claim was introduced. Category links use the
+existing `/catalog?category=<canonical-slug>` contract and fail closed when the
+published category is unavailable.
+
+The current section order is:
+
+1. Hero and conversion actions;
+2. Catalog search;
+3. Published featured carousel;
+4. Published category navigation;
+5. Manufacturers;
+6. Selection and supply support;
+7. Company credibility;
+8. Focused RFQ action.
+
+Responsive validation covers 1440, 1280, 820, 390 and 360 px. The page has one
+`h1`, no horizontal overflow and no WebKit blank-screen regression. This
+addendum supersedes older copy and order descriptions below while retaining
+their architectural history.
+
 ## 2026-08-02 Addendum — Published Featured Carousel
 
 The current Product section appears immediately after Hero and uses eight

@@ -5,6 +5,8 @@ Canonical origin: `https://cyber-medica.ru`
 | Surface | Expected | Verified |
 | --- | ---: | ---: |
 | Homepage | HTTP 200, visible server shell and featured carousel | PASS |
+| Homepage conversion | Catalog and Request hero actions plus final Request action | PASS |
+| Published categories | 8/8 canonical filtered Catalog links HTTP 200 | PASS |
 | Featured carousel | 8 exact Published Products | PASS |
 | Featured Product Detail links | 8/8 HTTP 200 | PASS |
 | Catalog | HTTP 200 | PASS |
@@ -15,6 +17,8 @@ Canonical origin: `https://cyber-medica.ru`
 | WebKit | 3 profiles × 5 routes, no blank screen/runtime error | PASS |
 | Responsive carousel | iPhone 1+preview; tablet 2; desktop 4 | PASS |
 | Page horizontal overflow | none | PASS |
+| Accessibility | one H1; no heading skip, duplicate ID, missing alt or empty link | PASS |
+| Legacy/personal navigation | no legacy-domain or personal-email links | PASS |
 
 The baseline uses the corporate synthetic identity label
 `cybermedicaooo@gmail.com`. It contains no credentials or private Product

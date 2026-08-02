@@ -1,5 +1,18 @@
 # CyberMedica Launch Changelog
 
+## 2026-08-02 — Homepage visual and conversion polish
+
+- Reframed Hero around medical-equipment selection and supply for healthcare
+  organizations, with direct Catalog and Request actions.
+- Added eight exact published-category deep links, four neutral trust points,
+  a compact company block and one focused final RFQ action.
+- Preserved the exact eight-Product carousel and resilient `cloud_published`
+  transport without adding client dependencies or public data fetches.
+- Passed five responsive homepage WebKit profiles, the three-profile carousel
+  regression and the general three-profile/five-route iOS smoke.
+- Preserved 79 Products, 71 Published, eight Unpublished, lifecycle
+  `71/71/71/71`, projection 73 and 71 sitemap Product URLs.
+
 ## 2026-08-02 — Clickable featured Products carousel
 
 - Replaced the static four-Product homepage grid with an accessible responsive

@@ -128,3 +128,17 @@ Baseline показал:
    компактными.
 6. Выполнить отдельный визуальный regression-проход после первого массового
    импорта, особенно для каталога, фильтров и comparison table.
+
+## 9. Homepage conversion and accessibility addendum — 2026-08-02
+
+После расширения каталога до 71 Published Products главная прошла отдельную
+визуальную полировку без смены UI-системы. Hero теперь объясняет подбор и
+поставку оборудования, сразу предлагает Catalog и Request, а финальный блок
+оставляет один RFQ-сценарий. Восемь category cards используют только реальные
+published filters; featured carousel сохранён без изменения состава.
+
+Проверка 1440, 1280, 820, 390 и 360 px подтвердила один `h1`, непрерывную
+heading hierarchy, корректные `alt`, отсутствие пустых ссылок и duplicate IDs,
+доступный keyboard focus, минимальную высоту основных controls 44 px и
+отсутствие горизонтального overflow. WebKit/iPhone smoke не выявил runtime,
+hydration или white-screen regression.
