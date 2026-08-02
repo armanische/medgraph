@@ -1,5 +1,17 @@
 # CyberMedica Launch Changelog
 
+## 2026-08-02 — Clickable featured Products carousel
+
+- Replaced the static four-Product homepage grid with an accessible responsive
+  carousel for eight exact Published Products.
+- Kept selection on the existing resilient `cloud_published` data path; missing
+  or non-public entries fail closed without substitution.
+- Added native swipe/scroll snap, 44 px controls, keyboard navigation,
+  reduced-motion support, whole-card canonical links and missing-image fallback.
+- Added a responsive WebKit Production gate and before/after visual evidence.
+- Preserved Production at 79 Products, 71 Published, eight Unpublished,
+  lifecycle `71/71/71/71`, projection 73 and 71 sitemap Product URLs.
+
 ## 2026-08-02 — Group C Batch 3 content preparation
 
 - Prepared and atomically patched seven exact draft Products through the

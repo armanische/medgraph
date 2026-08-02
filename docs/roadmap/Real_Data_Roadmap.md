@@ -36,6 +36,8 @@ has an explicit launch-blocking flag.
 | Search-engine indexing setup | completed — controlled Production contract | Нет |
 | Production monitoring and error review | completed — baseline recorded | Нет |
 | Published Catalog LKG, WebKit gate and synthetic monitoring | completed — 2026-08-02 | Нет |
+| Clickable featured Products carousel | completed — 8 Published Products, responsive WebKit PASS | Нет |
+| Final eight Product correctives | отложено по решению Product Owner | Нет |
 | RFQ POST verification on canonical domain | completed — test-only | Нет |
 | Mail delivery confirmation after DNS cutover | completed in pre-launch downstream gate | Нет |
 | Merge/reconcile deployed launch commits into canonical branch | completed — fast-forward | Нет |

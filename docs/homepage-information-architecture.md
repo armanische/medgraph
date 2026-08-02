@@ -1,5 +1,23 @@
 # RFC-025 — Homepage Information Architecture
 
+## 2026-08-02 Addendum — Published Featured Carousel
+
+The current Product section appears immediately after Hero and uses eight
+Product Owner-approved Published Products from the existing Storefront service.
+Selection is fail-closed against canonical public slugs: missing or non-public
+entries are omitted and never substituted with draft data.
+
+The Server Component supplies a minimal public presentation DTO to one small
+interactive carousel boundary. Native horizontal scrolling and CSS scroll snap
+support touch; buttons and arrow keys provide equivalent navigation. The full
+card is a canonical `/catalog/<slug>` link. Responsive presentation is one
+complete card plus a next-card preview on mobile, two complete cards on tablet
+and four complete cards on desktop.
+
+This addendum supersedes the older static featured-product description below.
+No second catalog fetch was introduced: the carousel remains inside the
+`cloud_published` and validated last-known-good transport contract.
+
 **Status:** Implemented  
 **RFC:** RFC-025  
 **Scope:** Public Storefront
@@ -43,7 +61,7 @@ The new homepage is:
 - based only on real active Storefront entities;
 - progressively navigable by catalog, manufacturer, category, and product;
 - conversion-oriented through repeated, distinct next actions;
-- server-rendered except for the search interaction.
+- server-rendered except for search and the small carousel controller.
 
 ## Information Architecture
 
