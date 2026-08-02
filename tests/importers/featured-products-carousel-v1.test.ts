@@ -3,7 +3,7 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 import {
-  FEATURED_PRODUCT_IDS,
+  FEATURED_PRODUCTS,
   selectPublishedFeaturedProducts,
 } from "../../lib/storefront/featured-products.ts";
 import type { Product } from "../../lib/storefront/types.ts";
@@ -12,14 +12,14 @@ async function source(path: string) {
   return readFile(path, "utf8");
 }
 
-function product(id: string, status: Product["status"] = "active"): Product {
+function product(slug: string, status: Product["status"] = "active"): Product {
   return {
-    id,
-    slug: `product-${id}`,
+    id: slug,
+    slug,
     manufacturerId: "manufacturer",
     categoryId: "category",
-    name: id,
-    model: id,
+    name: slug,
+    model: slug,
     shortDescription: "Описание",
     description: "Описание",
     status,
@@ -37,23 +37,24 @@ function product(id: string, status: Product["status"] = "active"): Product {
 }
 
 test("featured selection is exact, ordered, public-only and fail-closed", () => {
-  assert.equal(FEATURED_PRODUCT_IDS.length, 8);
-  assert.equal(new Set(FEATURED_PRODUCT_IDS).size, 8);
+  assert.equal(FEATURED_PRODUCTS.length, 8);
+  assert.equal(new Set(FEATURED_PRODUCTS.map(({ productId }) => productId)).size, 8);
+  assert.equal(new Set(FEATURED_PRODUCTS.map(({ slug }) => slug)).size, 8);
 
-  const reversed = [...FEATURED_PRODUCT_IDS].reverse().map((id) => product(id));
+  const reversed = [...FEATURED_PRODUCTS].reverse().map(({ slug }) => product(slug));
   const selected = selectPublishedFeaturedProducts([
     product("unapproved-public-product"),
     ...reversed,
   ]);
-  assert.deepEqual(selected.map(({ id }) => id), [...FEATURED_PRODUCT_IDS]);
+  assert.deepEqual(selected.map(({ slug }) => slug), FEATURED_PRODUCTS.map(({ slug }) => slug));
 
-  const hidden = product(FEATURED_PRODUCT_IDS[2], "hidden");
+  const hidden = product(FEATURED_PRODUCTS[2].slug, "hidden");
   const withoutHidden = selectPublishedFeaturedProducts([
-    ...reversed.filter(({ id }) => id !== hidden.id),
+    ...reversed.filter(({ slug }) => slug !== hidden.slug),
     hidden,
   ]);
-  assert.equal(withoutHidden.some(({ id }) => id === hidden.id), false);
-  assert.equal(withoutHidden.some(({ id }) => id === "unapproved-public-product"), false);
+  assert.equal(withoutHidden.some(({ slug }) => slug === hidden.slug), false);
+  assert.equal(withoutHidden.some(({ slug }) => slug === "unapproved-public-product"), false);
 });
 
 test("carousel cards use canonical Product URLs and expose no internal metadata", async () => {
