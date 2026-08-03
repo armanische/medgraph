@@ -213,8 +213,16 @@ test("Storefront source is resolved at request time for a reusable Preview artif
     readFile("app/manufacturers/[slug]/page.tsx", "utf8"),
   ]);
 
-  assert.match(layout, /import \{ connection \} from "next\/server"/u);
-  assert.match(layout, /await connection\(\)/u);
+  assert.match(
+    layout,
+    /from "@\/lib\/storefront\/data-source"/u,
+    "RootLayout must resolve preview mode through the lightweight data-source module",
+  );
+  assert.doesNotMatch(layout, /from "@\/lib\/storefront";/u);
+  assert.doesNotMatch(layout, /import \{ connection \} from "next\/server"/u);
+  assert.doesNotMatch(layout, /await connection\(\)/u);
+  assert.doesNotMatch(layout, /loadHomepageOverviewSources/u);
+  assert.doesNotMatch(layout, /export default async function RootLayout/u);
   assert.match(homepage, /productService\.getActiveProducts\(\)/u);
   assert.match(homepage, /manufacturerService\.getManufacturers\(\)/u);
   assert.match(homepage, /categoryService\.getCategories\(\)/u);

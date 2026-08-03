@@ -9,11 +9,15 @@ async function source(path: string) {
 test("root layout keeps the server-rendered shell visible when catalog transport fails", async () => {
   const layout = await source("app/layout.tsx");
 
-  assert.match(layout, /loadHomepageOverviewSources/u);
-  assert.match(layout, /products=\{products \?\? \[\]\}/u);
-  assert.match(layout, /manufacturers=\{manufacturers \?\? \[\]\}/u);
-  assert.match(layout, /categories=\{categories \?\? \[\]\}/u);
-  assert.doesNotMatch(layout, /const \[products, manufacturers, categories\] = await Promise\.all/u);
+  assert.match(layout, /import "\.\/globals\.css";/u);
+  assert.match(layout, /from "@\/lib\/storefront\/data-source"/u);
+  assert.match(layout, /products=\{\[\]\}/u);
+  assert.match(layout, /manufacturers=\{\[\]\}/u);
+  assert.match(layout, /categories=\{\[\]\}/u);
+  assert.doesNotMatch(layout, /loadHomepageOverviewSources/u);
+  assert.doesNotMatch(layout, /from "@\/lib\/storefront";/u);
+  assert.doesNotMatch(layout, /\bconnection\s*\(/u);
+  assert.doesNotMatch(layout, /export default async function RootLayout/u);
 });
 
 test("route and root errors are fail-visible and expose only sanitized telemetry", async () => {

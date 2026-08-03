@@ -394,8 +394,8 @@ test("absolute user paths are removed from generated report values", () => {
 
 test("generated research JSON contains no absolute user path", () => {
   const result = spawnSync(
-    "rg",
-    ["-l", "--glob", "*.json", "/Users/", "data/research"],
+    "grep",
+    ["-RIl", "--include=*.json", "/Users/", "data/research"],
     { encoding: "utf8" },
   );
   assert.equal(result.status, 1);

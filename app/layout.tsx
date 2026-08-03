@@ -1,17 +1,10 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
-import { connection } from "next/server";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/home/Footer";
 import CloudCatalogPreviewBanner from "@/components/storefront/CloudCatalogPreviewBanner";
-import {
-  categoryService,
-  isCloudPreviewCatalog,
-  manufacturerService,
-  productService,
-} from "@/lib/storefront";
-import { loadHomepageOverviewSources } from "@/lib/storefront/homepage-overview";
+import { isCloudPreviewCatalog } from "@/lib/storefront/data-source";
 import { isProductionIndexingEnvironment } from "@/lib/storefront/indexing";
 
 const allowIndexing = isProductionIndexingEnvironment();
@@ -63,33 +56,22 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // The same prebuilt artifact can run against static Production data or the
-  // Cloud Preview catalog. Resolve that boundary at request time so static
-  // prerendering cannot bake one environment's catalog into another.
-  await connection();
+  // The document shell must never wait for the remote catalog.
+  // Route-level components own catalog loading and failure handling.
   const cloudPreview = isCloudPreviewCatalog();
-  // Navigation enrichment must never take down the document shell. The same
-  // catalog is loaded again by route-level boundaries that can show a focused
-  // retry state, while the header remains useful during a transient upstream
-  // outage.
-  const { products, manufacturers, categories } = await loadHomepageOverviewSources({
-    products: () => productService.getActiveProducts(),
-    manufacturers: () => manufacturerService.getManufacturers(),
-    categories: () => categoryService.getCategories(),
-  });
 
   return (
     <html lang="ru">
       <body className="bg-cm-canvas text-cm-ink antialiased">
         <Header
-          products={products ?? []}
-          manufacturers={manufacturers ?? []}
-          categories={categories ?? []}
+          products={[]}
+          manufacturers={[]}
+          categories={[]}
         />
         <CloudCatalogPreviewBanner enabled={cloudPreview} />
         {children}
