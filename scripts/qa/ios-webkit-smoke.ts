@@ -63,7 +63,12 @@ try {
 
     page.on("pageerror", (error) => runtimeErrors.push(error.name));
     page.on("console", (message) => {
-      if (message.type() === "error") runtimeErrors.push("console:error");
+      if (message.type() !== "error") return;
+      const isVercelPreviewToolbarCsp = parsedOrigin.hostname.endsWith(".vercel.app")
+        && message.text().includes(
+          "https://vercel.live/_next-live/feedback/feedback.js",
+        );
+      if (!isVercelPreviewToolbarCsp) runtimeErrors.push("console:error");
     });
 
     for (const route of routes) {

@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import { readFile } from "node:fs/promises";
 
 import nextConfig from "../../next.config.ts";
 import {
@@ -56,4 +57,11 @@ test("Next config exposes one canonical fingerprint on every application route",
   assert.equal(headers.get("X-CyberMedica-Origin"), "medgraph");
   assert.ok(headers.has("X-CyberMedica-Deployment"));
   assert.ok(headers.has("X-CyberMedica-Release"));
+});
+
+test("WebKit smoke isolates only the Vercel Preview toolbar CSP diagnostic", async () => {
+  const source = await readFile("scripts/qa/ios-webkit-smoke.ts", "utf8");
+  assert.match(source, /parsedOrigin\.hostname\.endsWith\("\.vercel\.app"\)/u);
+  assert.match(source, /https:\/\/vercel\.live\/_next-live\/feedback\/feedback\.js/u);
+  assert.doesNotMatch(source, /runtimeErrors\s*=\s*\[\]/u);
 });
