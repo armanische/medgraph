@@ -1,12 +1,30 @@
 import type { NextConfig } from "next";
 
 import { APPROVED_PUBLIC_MEDIA_HOSTS } from "./lib/public-media-policy.ts";
+import {
+  CANONICAL_ORIGIN_FAMILY,
+  safeRoutingHeaderValue,
+} from "./lib/canonical-routing-gate.ts";
 
 const isDevelopment = process.env.NODE_ENV === "development";
 const isCloudPreview = process.env.CATALOG_DATA_SOURCE === "cloud_preview";
 const cloudMediaOrigins = APPROVED_PUBLIC_MEDIA_HOSTS
   .map((hostname) => `https://${hostname}`)
   .join(" ");
+const canonicalRoutingHeaders = [
+  {
+    key: "X-CyberMedica-Origin",
+    value: CANONICAL_ORIGIN_FAMILY,
+  },
+  {
+    key: "X-CyberMedica-Deployment",
+    value: safeRoutingHeaderValue(process.env.VERCEL_DEPLOYMENT_ID, "local"),
+  },
+  {
+    key: "X-CyberMedica-Release",
+    value: safeRoutingHeaderValue(process.env.VERCEL_GIT_COMMIT_SHA, "untracked"),
+  },
+] as const;
 
 export const runtimeResearchDatasetExcludes = [
   "./data/research/**/*",
@@ -117,7 +135,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/(.*)",
-        headers: [...securityHeaders],
+        headers: [...securityHeaders, ...canonicalRoutingHeaders],
       },
       {
         source: "/api/request",
