@@ -2,7 +2,7 @@
 
 ## Verdict
 
-**Prepared and evidence-grounded; not applied.** Hamilton-T1 remains published
+**Applied to the deterministic authoring draft; not republished.** Hamilton-T1 remains published
 from revision `8d48a2b5-0842-4796-803f-4e4daf6f6e17` and Publication Batch
 `16c78699-6041-45d8-9c18-2da57c72159d`. Its canonical URL remains HTTP 200.
 
@@ -55,5 +55,6 @@ weight, power inputs and dimensions. Values are grounded in the current
 The exact evidence location and configuration qualifier for every row are in
 the consolidated preview.
 
-No content change was sent to Production because the requested atomic wave
-cannot include characteristics through the approved patch boundary.
+The package was stored through the approved exact-scope contract. The current
+published revision and public projection remain unchanged until revision 2 is
+created, reviewed, approved and republished.

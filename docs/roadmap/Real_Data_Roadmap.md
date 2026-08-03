@@ -39,7 +39,7 @@ has an explicit launch-blocking flag.
 | Clickable featured Products carousel | completed — 8 Published Products, responsive WebKit PASS | Нет |
 | Homepage visual and conversion polish | completed — responsive WebKit, category and RFQ flow PASS | Нет |
 | Published Product Detail quality audit | completed — 71/71 HTTP 200 and WebKit PASS; writes 0 | Нет |
-| Characteristics Wave 1 | ready — 15 exact Published Products, preview-first content operation | Нет |
+| Characteristics Wave 1 | patched — 15 deterministic drafts / 150 rows; revision creation next | Нет |
 | Final eight Product correctives | отложено по решению Product Owner | Нет |
 | RFQ POST verification on canonical domain | completed — test-only | Нет |
 | Mail delivery confirmation after DNS cutover | completed in pre-launch downstream gate | Нет |

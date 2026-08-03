@@ -1,5 +1,17 @@
 # CyberMedica Launch Changelog
 
+## 2026-08-03 — Characteristics Wave 1 deterministic authoring
+
+- Added a service-only, stale-protected, exact-15 Catalog Admin characteristics
+  contract and a private projection-isolated candidate helper.
+- Verified a fresh Production backup and network-isolated restore before apply.
+- Applied 15/15 deterministic authoring drafts: 45 → 150 characteristics,
+  including the evidence-grounded Hamilton-T1 copy cleanup.
+- Preserved 79 Products, 71 Published, eight Unpublished, lifecycle
+  `71/71/71/71`, projection 73 and 71 sitemap Product URLs.
+- Produced 15 checksum triads with deterministic reads 10/10 and stopped before
+  revision creation.
+
 ## 2026-08-02 — Homepage visual and conversion polish
 
 - Reframed Hero around medical-equipment selection and supply for healthcare

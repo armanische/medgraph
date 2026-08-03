@@ -2,17 +2,15 @@
 
 ## Verdict
 
-**Preparation PASS; Production execution blocked before writes.** Exactly 15
+**Preparation and controlled execution PASS.** Exactly 15
 published Products received an authoritative, configuration-aware proposed
 package of seven new structured characteristics each. The consolidated preview
 contains 105 new rows, zero duplicate per-Product keys and no mutation payload.
 
-The stop is contractual, not evidentiary: the approved Production boundary
-`cloud_api.catalog_admin_patch_product(uuid,jsonb,text)` accepts content and
-reference fields but rejects `characteristics`. The only tracked structured
-characteristics writer also creates an immutable revision, which this task
-explicitly forbids. No migration, replacement endpoint or direct SQL write was
-introduced.
+The original stop was resolved by the exact-scope
+`cloud_api.catalog_admin_patch_product_characteristics_v1` boundary. All 15
+packages are now stored as deterministic authoring drafts; 105 new rows are
+ready for revision creation. Public revisions and lifecycle remain unchanged.
 
 ## Corporate and Production preflight
 
@@ -92,18 +90,14 @@ reuse.
 
 ## Required next operation
 
-Product Owner authorization is required for a narrowly scoped, separately
-reviewed characteristics patch boundary. It must accept exact Product ID,
-canonical `ru`, full deterministic characteristic set and `expectedUpdatedAt`,
-preserve source provenance, avoid lifecycle writes and fail closed. Only after
-that boundary passes migration/contract tests should this preview be refreshed
-with current tokens and executed.
+Create immutable revision number 2 for the exact 15 digest-bound candidates
+through a separate corporate, server-only revision runner, then stop for Human
+Review. The patch operation must not be repeated with a changed manifest.
 
 ## Validation
 
-- Full repository suite: 582/582 PASS when the loopback-dependent repository
-  test is run with its required local-listen permission (581/582 in the
-  restricted sandbox; the sole `EPERM` case passed 9/9 outside it).
+- Full repository suite after contract rollout: 590/590 PASS with the
+  loopback-dependent transport test run inside its approved local boundary.
 - Production WebKit smoke: PASS for iPhone Safari portrait, iPhone Chrome
   landscape and desktop Safari/WebKit across `/`, `/catalog`, `/request`, one
   stable Product Detail and `/internal/login` (15 route/profile checks).
@@ -111,4 +105,4 @@ with current tokens and executed.
   PASS.
 - Canonical link, unpublished-leak, legacy-domain, personal-email,
   secret/privacy and `git diff --check` scans: PASS.
-- Application build: not required because no runtime source changed.
+- Turbopack and Webpack Production builds: PASS.

@@ -2,8 +2,9 @@
 
 ## Result
 
-**NOT EXECUTED.** The operation stopped before Product writes because the
-approved Catalog Admin RPC has no characteristics mutation contract.
+**SUPERSEDED — EXECUTED 15/15.** The initial contract gap was closed by the
+exact-scope Characteristics Wave 1 RPC. See
+[`product-characteristics-wave-1-controlled-patch-2026-08-03.md`](./product-characteristics-wave-1-controlled-patch-2026-08-03.md).
 
 ## Proven contract mismatch
 
@@ -31,10 +32,10 @@ a surprise migration are likewise prohibited.
 
 | Check | Result |
 | --- | --- |
-| Patch calls attempted | 0 |
-| Successful Product patches | 0/15 |
+| Patch calls attempted | 15 |
+| Successful Product patches | 15/15 |
 | Stale retries | 0 |
-| Product writes | 0 |
+| Deterministic authoring drafts | 15 |
 | Revision / Decision / Approval / Batch writes | `0 / 0 / 0 / 0` |
 | Current published projection changed | No |
 | Product Detail smoke | 15/15 HTTP 200 |
@@ -48,10 +49,8 @@ and records blocker `CATALOG_ADMIN_CHARACTERISTICS_PATCH_UNSUPPORTED`.
 
 ## Revision readiness
 
-The 105 rows are content-ready but zero Products are Production-candidate-ready:
-the canonical Product records still contain the original three characteristics.
-Candidate checksum triads and deterministic reads cannot be truthfully computed
-until a compliant Product patch exists. Revision RPC was not called.
+The 105 new rows are applied. All 15 candidates passed deterministic reads
+10/10 and checksum-triad generation; revision RPC was not called.
 
 Required next state:
 

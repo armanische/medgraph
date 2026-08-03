@@ -18,11 +18,11 @@ write.
 
 | Queue | Scope | Status | Блокирует запуск |
 | --- | ---: | --- | --- |
-| Characteristics Wave 1 evidence | 15 Published Products / 105 rows | Завершено | Нет |
-| Hamilton-T1 corrective copy | 1 Published Product | Подготовлено, не применено | Нет |
-| Narrow characteristics patch boundary | Exact 15 only | Требует отдельного approval и contract review | Нет |
-| Wave 1 Production patch | 15 Published Products | Не выполнено: current RPC rejects characteristics | Нет |
-| Wave 1 revision readiness | 15 Published Products | Ожидает compliant Product patch | Нет |
+| Characteristics Wave 1 evidence | 15 Published Products / 105 new rows | Завершено | Нет |
+| Hamilton-T1 corrective copy | 1 Published Product | Применено в authoring draft; не republished | Нет |
+| Narrow characteristics patch boundary | Exact 15 only | Production PASS | Нет |
+| Wave 1 Production patch | 15 Published Products | 15/15 deterministic drafts | Нет |
+| Wave 1 revision readiness | 15 Published Products | 15/15, checksum triads 10/10 | Нет |
 
 The current Published projection remains the only public representation until a
 later reviewed republish. No lifecycle record was added.
