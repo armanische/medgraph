@@ -35,6 +35,8 @@
     "qa:homepage-polish": "node scripts/qa/homepage-polish-smoke.ts",
     "qa:catalog-reliability-gate": "node --test tests/importers/published-catalog-transport-resilience-v1.test.ts",
     "qa:catalog-production-synthetic": "node scripts/qa/catalog-production-synthetic.ts",
+    "qa:canonical-routing-gate": "node scripts/qa/canonical-routing-gate.ts",
+    "qa:canonical-routing-mobile": "node scripts/qa/canonical-routing-mobile-synthetic.ts",
     "supabase:health": "node scripts/qa/supabase-health.ts",
     "audit:evidence-integrity": "node scripts/importers/catalog/evidence-integrity.ts audit",
     "repair:evidence-references": "node scripts/importers/catalog/evidence-integrity.ts repair",

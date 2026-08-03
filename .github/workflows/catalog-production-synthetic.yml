@@ -2,7 +2,7 @@ name: Catalog production synthetic
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -15,7 +15,7 @@ concurrency:
 jobs:
   synthetic:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 12
     env:
       CYBERMEDICA_MONITOR_OWNER: cybermedicaooo@gmail.com
     steps:
@@ -25,4 +25,6 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci --ignore-scripts
-      - run: npm run qa:catalog-production-synthetic
+      - run: npx playwright install --with-deps webkit
+      - run: EXPECTED_PUBLISHED_PRODUCT_COUNT=71 npm run qa:canonical-routing-gate
+      - run: npm run qa:canonical-routing-mobile
