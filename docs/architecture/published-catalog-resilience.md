@@ -36,3 +36,8 @@ activation. It never returns Product payload, raw upstream error or secrets.
 gate adds WebKit/iPhone navigation with live transport forced unavailable.
 Production promotion additionally requires canonical Chromium/WebKit smoke and
 the scheduled corporate synthetic monitor.
+
+The canonical routing gate is a separate invariant: transport fallback may
+preserve published data, but it must never hide a non-Vercel or mismatched
+deployment origin. All public routes must share the exact `medgraph`
+deployment/release fingerprint.

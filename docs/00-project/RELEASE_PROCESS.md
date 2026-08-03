@@ -59,9 +59,17 @@
 - явное разрешение deploy.
 - Vercel/Git deployment identity и team прошли corporate identity preflight;
   каноническая identity — `cybermedicaooo@gmail.com`.
+- canonical external gate подтвердил один `medgraph` deployment/release
+  fingerprint для `/`, `/catalog`, `/request`, `/sitemap.xml` и Product Detail;
+- Git SHA из response fingerprint совпадает с exact `production` commit;
+- scheduled five-minute HTTP/WebKit synthetic включён и green;
+- ручной `vercel --prod` не используется для canonical promotion.
 
 Несовпадение deployment identity блокирует promotion с результатом
 `CORPORATE IDENTITY POLICY BLOCKED`.
+
+Любой Tilda/medvist page shell, legacy footer, mismatch route fingerprint или
+нетрассируемый Production artifact блокирует релиз как P0.
 
 ## 3. Data release
 

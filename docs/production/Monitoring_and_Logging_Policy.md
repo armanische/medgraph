@@ -120,10 +120,12 @@ Alert должен содержать только event ID, deployment, safe co
 Rollback возвращает предыдущий verified deployment. Он не запускает Wave 2, evidence repair, Review Queue, Verification, Publication или artifact migration.
 # Published Catalog synthetic monitoring
 
-The corporate-owned scheduled check runs every 15 minutes against the canonical
+The corporate-owned scheduled check runs every 5 minutes against the canonical
 domain. It verifies non-empty homepage/catalog/request/Product HTML, sitemap
 Product count and uniqueness, RFQ method behavior, absence of legacy Tilda page
-markers, bounded response time, and sanitized catalog health. Consecutive
+markers, bounded response time, sanitized catalog health, one matching Vercel
+deployment/release fingerprint, and clean iPhone WebKit rendering. Consecutive
 transport failures, prolonged LKG use, missing snapshot, count divergence,
-public 5xx and WebKit failures are alert conditions. The approved monitoring
-owner is `cybermedicaooo@gmail.com`.
+public 5xx, legacy shell, untracked release, route-family mismatch and WebKit
+failures are alert conditions. GitHub Actions failure is the corporate alert
+surface; the approved monitoring owner is `cybermedicaooo@gmail.com`.

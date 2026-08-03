@@ -38,6 +38,10 @@ Preferred flow:
 
 Never use `vercel --prod` for this workflow.
 
+Production aliases are promoted only by the Git integration from the protected
+`production` branch. Manual CLI Production deployments are never canonical,
+even when their rendered content currently matches the accepted release.
+
 ## 4. Opening and checking the Preview
 
 Use the exact HTTPS Preview URL reported by Vercel. Check `/`, `/catalog`,
@@ -65,7 +69,9 @@ the branch Preview alias when the deployment succeeds.
 
 Production promotion is a separate approved task. It requires visual approval,
 green checks, a reviewed merge into the production branch, a production smoke
-test, and a rollback decision. DNS and domain changes require explicit approval.
+test, the exact external canonical-routing fingerprint gate, a green clean-
+WebKit synthetic, and a rollback decision. DNS and domain changes require
+explicit approval.
 
 ## 8. Environment variables
 

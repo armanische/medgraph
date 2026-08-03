@@ -10,6 +10,8 @@
    confirm retry count, source and error class.
 5. Do not change DNS or aliases without independent routing evidence. Image
    assets from `static.tildacdn.com` are not evidence of Tilda page routing.
+   A Tilda incident requires a navigation response with a legacy page-shell
+   marker or an origin/deployment fingerprint mismatch.
 6. Verify the projection transport and metadata before changing application
    runtime. Never republish Products to repair a read outage.
 7. Roll back only when the deployed runtime itself is proven faulty and the

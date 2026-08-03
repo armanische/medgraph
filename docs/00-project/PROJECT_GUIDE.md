@@ -1,7 +1,7 @@
 # CyberMedica — руководство проекта
 
 **Статус:** нормативный документ  
-**Версия:** 1.1
+**Версия:** 1.2
 **Дата вступления в силу:** 1 августа 2026 года
 **Владелец:** владелец продукта и технический руководитель CyberMedica  
 **Область действия:** репозиторий, облачная инфраструктура, разработка, данные и релизы
@@ -41,6 +41,7 @@ PROJECT_GUIDE является конституцией CyberMedica и глав�
 15. [Corporate Identity and Account Policy](#15-corporate-identity-and-account-policy)
 16. [История проекта](#16-история-проекта)
 17. [Обновление руководства](#17-порядок-обновления-документа)
+18. [Canonical routing](#18-canonical-routing-invariant)
 
 ---
 
@@ -501,6 +502,36 @@ PROJECT_GUIDE обновляется при изменении product boundary,
 
 Опечатка не требует ADR. Изменение обязательного правила повышает minor version; изменение назначения, Source of Truth или governance — major version.
 
+---
+
+## 18. Canonical routing invariant
+
+`cyber-medica.ru/*` MUST resolve to one canonical Vercel project and one
+deployment family. Any Tilda, `medvist.ru`, legacy-origin content, untracked
+Production deployment, or mismatched route fingerprint is a P0 release blocker.
+
+The canonical project is `medgraph`. Public responses MUST expose the same
+sanitized `X-CyberMedica-Origin`, `X-CyberMedica-Deployment`, and
+`X-CyberMedica-Release` values across `/`, `/catalog`, `/request`,
+`/sitemap.xml`, and Product Detail routes.
+
+| Operational gate | Статус | Блокирует запуск |
+| --- | --- | --- |
+| External canonical-routing release gate | Обязателен | Да |
+| Five-minute canonical synthetic | Обязателен | Да |
+| Characteristics and Product backlog | Отложено на время P0 | Нет |
+
+Production promotion is Git-tracked and corporate-owned. Manual
+`vercel --prod` promotion is prohibited because it can move the canonical alias
+to an artifact without auditable commit metadata. The approved identity is
+`cybermedica <cybermedicaooo@gmail.com>` and the approved Vercel team is
+`medgraph`.
+
+Published media hosted on `static.tildacdn.com` is provenance, not proof of a
+Tilda page origin. Incident classification MUST use response headers, redirect
+chain, deployment fingerprint, and page-shell markers rather than image host
+strings alone.
+
 ## Связанные нормативные документы
 
 - [Архитектура](./ARCHITECTURE.md)
@@ -513,3 +544,5 @@ PROJECT_GUIDE обновляется при изменении product boundary,
 - [Frontend index](../03-frontend/README.md)
 - [Data index](../04-data/README.md)
 - [Operations index](../05-operations/README.md)
+- [Canonical domain routing](../architecture/canonical-domain-routing.md)
+- [Canonical routing P0 runbook](../runbooks/canonical-routing-incident.md)
