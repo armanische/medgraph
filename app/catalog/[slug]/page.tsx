@@ -102,13 +102,18 @@ export default async function StorefrontProductPage({
   const hasRegulatoryInformation =
     regulatoryRecords.length > 0 || registrationDocuments.length > 0;
   const hasDownloads = presentation.sections.documents && downloadDocuments.length > 0;
+  const featureSectionTitle = product.commercialPresentation?.source === "endomarket"
+    ? "Ключевые особенности"
+    : "Преимущества";
   const sectionLinks = [
     experience.description ? { href: "#description", label: "Описание" } : null,
     experience.manufacturer ? { href: "#manufacturer", label: "Производитель" } : null,
     hasCharacteristics
       ? { href: "#specifications", label: "Характеристики" }
       : null,
-    experience.advantages.length > 0 ? { href: "#advantages", label: "Преимущества" } : null,
+    experience.advantages.length > 0
+      ? { href: "#advantages", label: featureSectionTitle }
+      : null,
   ].filter((link): link is { href: string; label: string } => link !== null);
   const relatedProductsById = new Map(
     relatedProducts.map((relatedProduct) => [relatedProduct.id, relatedProduct]),
@@ -201,6 +206,27 @@ export default async function StorefrontProductPage({
                 </dl>
               ) : null}
 
+              {experience.applicationAreas.length > 0 ? (
+                <ul
+                  className="mt-3 flex flex-wrap gap-2"
+                  aria-label="Области применения"
+                >
+                  {experience.applicationAreas.slice(0, 2).map((area) => (
+                    <li
+                      key={area}
+                      className="rounded-full border border-[var(--cm-rule)] bg-cm-surface-low px-2.5 py-1 text-[11px] font-semibold text-cm-slate"
+                    >
+                      {area}
+                    </li>
+                  ))}
+                  {experience.applicationAreas.length > 2 ? (
+                    <li className="px-1.5 py-1 text-[11px] font-semibold text-cm-dim">
+                      +{experience.applicationAreas.length - 2}
+                    </li>
+                  ) : null}
+                </ul>
+              ) : null}
+
               {presentation.canRequestQuote ? (
                 <div className="mt-4 flex flex-wrap gap-2">
                   <Link
@@ -288,7 +314,7 @@ export default async function StorefrontProductPage({
         )}
 
         {experience.advantages.length > 0 && (
-          <Section id="advantages" title="Преимущества">
+          <Section id="advantages" title={featureSectionTitle}>
             <ul className="grid max-w-[68rem] gap-3 text-sm sm:grid-cols-2 lg:grid-cols-3">
               {experience.advantages.map((feature) => (
                 <li

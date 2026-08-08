@@ -7,12 +7,14 @@ export default function Equipment({
   products,
   manufacturers,
   categories,
+  minimumProductCount = 1,
 }: {
   products: readonly Product[] | null;
   manufacturers: readonly Manufacturer[];
   categories: readonly Category[];
+  minimumProductCount?: number;
 }) {
-  if (!products) return null;
+  if (!products || products.length < minimumProductCount) return null;
 
   const manufacturersById = new Map(
     manufacturers.map((manufacturer) => [manufacturer.id, manufacturer]),
@@ -34,15 +36,14 @@ export default function Equipment({
               Популярное медицинское оборудование
             </h2>
             <p className="mt-2 max-w-[42rem] text-sm leading-6 text-cm-slate">
-              Избранные решения для оснащения медицинских учреждений
+              Оборудование для эндоскопии, диагностики и оснащения клиник — в наличии и с рассрочкой 0%.
             </p>
           </div>
           <Link href="/catalog" className="cm-button-secondary !min-h-[44px] w-full sm:w-auto">
             Смотреть весь каталог
           </Link>
         </div>
-        {products.length > 0 ? (
-          <FeaturedProductsCarousel
+        <FeaturedProductsCarousel
             products={products.map((product) => ({
               id: product.id,
               slug: product.slug,
@@ -59,12 +60,7 @@ export default function Equipment({
                 return media ? { url: media.url, alt: media.alt } : null;
               })(),
             }))}
-          />
-        ) : (
-          <div className="mt-6 rounded-xl border border-[var(--cm-rule)] bg-cm-surface-low px-5 py-8 text-sm leading-6 text-cm-slate">
-            Избранные товары временно недоступны. Весь каталог и форма запроса остаются доступны.
-          </div>
-        )}
+        />
       </div>
     </section>
   );

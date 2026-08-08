@@ -22,6 +22,7 @@ export interface ProductDetailExperience {
   manufacturer: Manufacturer | null;
   category: Category | null;
   badges: readonly ProductDetailBadge[];
+  applicationAreas: readonly string[];
 }
 
 const TECHNICAL_METADATA_LABELS = new Set([
@@ -53,6 +54,12 @@ const NON_PUBLIC_REFERENCE_VALUES = new Set([
   "не указан",
   "неизвестно",
   "производитель не указан",
+]);
+
+const NON_PUBLIC_ADVANTAGES = new Set([
+  "профессиональное медицинское применение",
+  "надежное решение для медицинских учреждений",
+  "используется в клинической практике",
 ]);
 
 function plainText(value: string) {
@@ -122,7 +129,11 @@ function compactSummary(product: Product) {
 function explicitAdvantages(product: Product) {
   const values = product.keyFeatures
     .map((feature) => plainText(feature).replace(/[.;]+$/gu, ""))
-    .filter((feature) => feature.length >= 6 && feature.length <= 160);
+    .filter((feature) =>
+      feature.length >= 6 &&
+      feature.length <= 160 &&
+      !NON_PUBLIC_ADVANTAGES.has(feature.toLocaleLowerCase("ru-RU")),
+    );
   return [...new Set(values)].slice(0, 6);
 }
 
@@ -207,9 +218,6 @@ export function buildProductDetailExperience({
     });
   }
   if (publicCountry) badges.push({ label: "Страна", value: publicCountry });
-  if (applicationAreas.length > 0) {
-    badges.push({ label: "Применение", value: applicationAreas.join(" · ") });
-  }
   if (publicCategoryName) {
     badges.push({ label: "Категория", value: publicCategoryName });
   }
@@ -229,5 +237,6 @@ export function buildProductDetailExperience({
     manufacturer: manufacturer ?? null,
     category: category ?? null,
     badges,
+    applicationAreas,
   };
 }

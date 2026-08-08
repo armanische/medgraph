@@ -10,9 +10,9 @@ test("catalog cards use a single category presentation and retain stable alignme
   const catalog = await source("components/storefront/ProductCard.tsx");
 
   assert.match(catalog, /<span className="sr-only">Категория: <\/span>/u);
-  assert.match(catalog, /filter\(isTechnicalProductSpecification\)/u);
+  assert.doesNotMatch(catalog, /isTechnicalProductSpecification|cardSpecifications/u);
   assert.match(catalog, /line-clamp-2 min-h-10/u);
-  assert.match(catalog, /min-h-\[3\.625rem\]/u);
+  assert.match(catalog, /border-t border-\[var\(--cm-rule\)\]/u);
   assert.doesNotMatch(catalog, /Тип товара<\/dt>/u);
 });
 

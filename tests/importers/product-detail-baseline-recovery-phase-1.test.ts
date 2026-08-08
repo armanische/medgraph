@@ -135,9 +135,9 @@ test("metadata is value-only, complete and de-duplicates model and application a
       href: "/manufacturers/hamilton-medical",
     },
     { label: "Страна", value: "Швейцария" },
-    { label: "Применение", value: "Реанимация · Транспортировка" },
     { label: "Категория", value: "Аппараты ИВЛ" },
   ]);
+  assert.deepEqual(experience.applicationAreas, ["Реанимация", "Транспортировка"]);
   assert.equal(experience.badges.some(({ label }) => label === "Модель"), false);
 
   const distinctModel = buildProductDetailExperience({
@@ -148,6 +148,7 @@ test("metadata is value-only, complete and de-duplicates model and application a
     }),
   });
   assert.deepEqual(distinctModel.badges, [{ label: "Модель", value: "T1" }]);
+  assert.deepEqual(distinctModel.applicationAreas, []);
 });
 
 test("technical specifications use only explicit structured specifications", () => {

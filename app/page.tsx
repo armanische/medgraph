@@ -17,7 +17,10 @@ import {
 import { buildStorefrontMetadata } from "@/lib/storefront/seo";
 import { buildHomepageStructuredData } from "@/lib/storefront/structured-data";
 import { formatCountryForPublic } from "@/lib/storefront/country-presentation";
-import { selectPublishedFeaturedProducts } from "@/lib/storefront/featured-products";
+import {
+  selectEndoMarketStageFeaturedProducts,
+  selectPublishedFeaturedProducts,
+} from "@/lib/storefront/featured-products";
 import { loadHomepageOverviewSources } from "@/lib/storefront/homepage-overview";
 
 const homepageDescription =
@@ -97,7 +100,11 @@ export default async function Home() {
       left.name.localeCompare(right.name, "ru-RU"),
     )
     .slice(0, 8) : null;
-  const catalogEquipment = products ? selectPublishedFeaturedProducts(products) : null;
+  const catalogEquipment = products
+    ? storefrontDataSource === "cloud_preview"
+      ? selectEndoMarketStageFeaturedProducts(products)
+      : selectPublishedFeaturedProducts(products)
+    : null;
 
   return (
     <main className="min-h-screen bg-cm-canvas">
@@ -109,6 +116,7 @@ export default async function Home() {
         products={catalogEquipment}
         manufacturers={manufacturers ?? []}
         categories={categories ?? []}
+        minimumProductCount={storefrontDataSource === "cloud_preview" ? 4 : 1}
       />
       <Categories categories={categoryEntries} />
       <FeaturedManufacturers manufacturers={manufacturerEntries} />

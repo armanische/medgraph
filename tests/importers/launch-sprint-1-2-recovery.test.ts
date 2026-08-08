@@ -15,7 +15,7 @@ test("catalog cards reserve a stable title, manufacturer, description and detail
   assert.match(productCard, /line-clamp-2 min-h-10/u);
   assert.match(productCard, /min-h-7 text-xs/u);
   assert.match(productCard, /min-h-9/u);
-  assert.match(productCard, /min-h-\[3\.625rem\]/u);
+  assert.match(productCard, /border-t border-\[var\(--cm-rule\)\]/u);
   assert.match(catalog, /md:grid-cols-3 2xl:grid-cols-4/u);
   assert.match(productCard, /<span className="sr-only">Категория: <\/span>/u);
 });

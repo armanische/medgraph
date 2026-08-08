@@ -28,7 +28,7 @@ test("catalog cards expose required public list fields without unsafe specificat
   assert.match(productCard, /presentation\.shortDescription/);
   assert.match(productCard, /manufacturer\.name/);
   assert.match(productCard, /product\.applicationAreas\.slice\(0, 2\)/);
-  assert.match(productCard, /\.filter\(isTechnicalProductSpecification\)/);
+  assert.doesNotMatch(productCard, /isTechnicalProductSpecification|cardSpecifications/);
   assert.match(productCard, /const productHref = `\/catalog\/\$\{product\.slug\}`/);
   assert.match(productCard, /<ProductImage product=\{product\} href=\{productHref\} \/>/);
 });

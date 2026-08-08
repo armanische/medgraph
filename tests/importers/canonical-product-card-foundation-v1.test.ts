@@ -40,7 +40,7 @@ test("ProductCard remains fail-closed and avoids nested interactive elements", a
 
   assert.match(productCard, /presentation\.shortDescription &&/u);
   assert.match(productCard, /product\.applicationAreas\.length > 0/u);
-  assert.match(productCard, /cardSpecifications\.length > 0/u);
+  assert.doesNotMatch(productCard, /cardSpecifications|isTechnicalProductSpecification/u);
   assert.match(productCard, /compareEnabled && presentation\.canCompare/u);
   assert.doesNotMatch(productCard, /<Link[^>]*>\s*<Link/u);
   assert.doesNotMatch(productCard, /<button/iu);

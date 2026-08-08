@@ -11,7 +11,7 @@ test("Homepage selects the approved public products through a fail-closed select
   const equipment = await source("components/home/Equipment.tsx");
 
   assert.match(page, /selectPublishedFeaturedProducts\(products\)/u);
-  assert.match(equipment, /if \(!products\) return null/u);
+  assert.match(equipment, /if \(!products \|\| products\.length < minimumProductCount\) return null/u);
   assert.doesNotMatch(`${page}\n${equipment}`, /getFeaturedProducts|popularProducts|recommendedProducts|newestProducts/iu);
 });
 

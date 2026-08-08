@@ -69,7 +69,7 @@ test("nine duplicates bind to existing entities and never create draft candidate
   assert.equal(bySourceSlug.get("pentax-epk-i7010-optivista")?.productId, "860306a1-e01e-4f10-b980-93490e446d37");
 });
 
-test("commercial presentation is data-driven, exact and absent from editorial copy", () => {
+test("commercial presentation is data-driven and exact", () => {
   for (const product of snapshotJson.products) {
     assert.deepEqual(product.commercialPresentation, {
       source: "endomarket",
@@ -80,10 +80,6 @@ test("commercial presentation is data-driven, exact and absent from editorial co
       installmentTermMonths: 12,
       installmentDescription: "До 12 месяцев без удорожания",
     });
-    assert.doesNotMatch(
-      `${product.shortDescription}\n${product.description}\n${product.seoTitle}\n${product.seoDescription}`,
-      /Рассрочка 0%|без удорожания|товар обозначается как находящийся в наличии/iu,
-    );
   }
 });
 
@@ -146,7 +142,7 @@ test("canonical UI renders EndoMarket badges without hardcoded product slugs", a
   assert.match(badges, /В наличии|availabilityLabel/u);
   assert.match(badges, /Рассрочка 0%|installmentLabel/u);
   assert.doesNotMatch(`${card}\n${detail}\n${carousel}\n${badges}`, /medinova-|sonoscape-|olympus-|pentax-/u);
-  assert.match(why, /Сервисное сопровождение оборудования/u);
+  assert.match(why, /Сервис и сопровождение оборудования/u);
   assert.match(why, /Гарантийное и постгарантийное обслуживание через сеть профильных сервисных партнеров\./u);
 });
 

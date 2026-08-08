@@ -35,5 +35,9 @@ export function formatCountryForPublic(
     return COUNTRY_NAMES_RU[value.toUpperCase()] ?? null;
   }
 
+  if (/^(?:страна\s+)?(?:не\s+указана|не\s+указано|неизвестна)$/iu.test(value)) {
+    return null;
+  }
+
   return value;
 }

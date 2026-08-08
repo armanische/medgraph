@@ -16,8 +16,11 @@
     "existingDuplicateBindings": 9,
     "excludedInstrumentRows": 76,
     "excludedNonEquipmentConsumables": 3,
-    "mediaAssignments": 171,
-    "uniqueMediaAssets": 132
+    "mediaAssignments": 84,
+    "uniqueMediaAssets": 65,
+    "watermarkedMediaRemoved": 67,
+    "duplicateMediaRemoved": 0,
+    "hiddenFeatureSections": 12
   },
   "duplicateBindings": [
     {
@@ -690,7 +693,7 @@
       "manufacturerId": "sonoscape",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "existing_duplicate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "published"
     },
     {
@@ -701,7 +704,7 @@
       "manufacturerId": "sonoscape",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "existing_duplicate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "published"
     },
     {
@@ -712,7 +715,7 @@
       "manufacturerId": "sonoscape",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "existing_duplicate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "published"
     },
     {
@@ -723,7 +726,7 @@
       "manufacturerId": "olympus",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "existing_duplicate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "published"
     },
     {
@@ -734,7 +737,7 @@
       "manufacturerId": "olympus",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "existing_duplicate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "published"
     },
     {
@@ -745,7 +748,7 @@
       "manufacturerId": "olympus",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "existing_duplicate",
-      "mediaCount": 4,
+      "mediaCount": 3,
       "publicationStatus": "published"
     },
     {
@@ -756,7 +759,7 @@
       "manufacturerId": "pentax-medical",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "existing_duplicate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "published"
     },
     {
@@ -778,7 +781,7 @@
       "manufacturerId": "pentax-medical",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "existing_duplicate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "published"
     },
     {
@@ -789,7 +792,7 @@
       "manufacturerId": "medinova",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -800,7 +803,7 @@
       "manufacturerId": "medinova",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -811,7 +814,7 @@
       "manufacturerId": "medinova",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -822,7 +825,7 @@
       "manufacturerId": "medinova",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -833,7 +836,7 @@
       "manufacturerId": "medinova",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -844,7 +847,7 @@
       "manufacturerId": "medinova",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -855,7 +858,7 @@
       "manufacturerId": "medinova",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -866,7 +869,7 @@
       "manufacturerId": "medinova",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 3,
+      "mediaCount": 1,
       "publicationStatus": "draft"
     },
     {
@@ -877,7 +880,7 @@
       "manufacturerId": "medinova",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 3,
+      "mediaCount": 1,
       "publicationStatus": "draft"
     },
     {
@@ -921,7 +924,7 @@
       "manufacturerId": "medinova",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -943,7 +946,7 @@
       "manufacturerId": "sonoscape",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -954,7 +957,7 @@
       "manufacturerId": "sonoscape",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -965,7 +968,7 @@
       "manufacturerId": "sonoscape",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -976,7 +979,7 @@
       "manufacturerId": "sonoscape",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -987,7 +990,7 @@
       "manufacturerId": "sonoscape",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -998,7 +1001,7 @@
       "manufacturerId": "sonoscape",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -1009,7 +1012,7 @@
       "manufacturerId": "sonoscape",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -1020,7 +1023,7 @@
       "manufacturerId": "sonoscape",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -1042,7 +1045,7 @@
       "manufacturerId": "sonoscape",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -1053,7 +1056,7 @@
       "manufacturerId": "sonoscape",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -1064,7 +1067,7 @@
       "manufacturerId": "sonoscape",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -1075,7 +1078,7 @@
       "manufacturerId": "sonoscape",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -1086,7 +1089,7 @@
       "manufacturerId": "sonoscape",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -1097,7 +1100,7 @@
       "manufacturerId": "medinova",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -1108,7 +1111,7 @@
       "manufacturerId": "medinova",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 3,
+      "mediaCount": 1,
       "publicationStatus": "draft"
     },
     {
@@ -1119,7 +1122,7 @@
       "manufacturerId": "medinova",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -1130,7 +1133,7 @@
       "manufacturerId": "medinova",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -1141,7 +1144,7 @@
       "manufacturerId": "erbe",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -1152,7 +1155,7 @@
       "manufacturerId": "erbe",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 3,
+      "mediaCount": 1,
       "publicationStatus": "draft"
     },
     {
@@ -1163,7 +1166,7 @@
       "manufacturerId": "erbe",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 3,
+      "mediaCount": 1,
       "publicationStatus": "draft"
     },
     {
@@ -1174,7 +1177,7 @@
       "manufacturerId": "erbe",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -1185,7 +1188,7 @@
       "manufacturerId": "bowa",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -1196,7 +1199,7 @@
       "manufacturerId": "bowa",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -1207,7 +1210,7 @@
       "manufacturerId": "bowa",
       "categoryId": "ref-05cbefe84dab",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -1218,7 +1221,7 @@
       "manufacturerId": "ilivtouch",
       "categoryId": "ref-20397be263df",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -1229,7 +1232,7 @@
       "manufacturerId": "met",
       "categoryId": "ref-6a7a62494384",
       "entityOrigin": "new_candidate",
-      "mediaCount": 4,
+      "mediaCount": 2,
       "publicationStatus": "draft"
     },
     {
@@ -1250,5 +1253,30 @@
     "lifecycleWrites": 0,
     "migrations": 0,
     "publicApiAdded": false
+  },
+  "businessContentCorrective": {
+    "version": 2,
+    "productCount": 42,
+    "hiddenFeatureSections": 12,
+    "sourceFiles": [
+      {
+        "fileName": "endomarket-business-content-corrective-v2.json",
+        "sha256": "8b939de5d70330d980a2d876c1f66ea7c5e50d280e0138868f2406301add085f"
+      },
+      {
+        "fileName": "endomarket-text-replacements-v2.csv",
+        "sha256": "4868e52643aa6604a3c8bf83a7ac50304d14d8d7b8596ddb8a500e3a48d6b123"
+      }
+    ],
+    "csvJsonConsistency": "pass",
+    "media": {
+      "watermarkPolicy": "responsive source variants ending in w were visually verified as EM/EndoMarket watermarked",
+      "watermarkedAssignmentsRemoved": 87,
+      "watermarkedFilesRemoved": 67,
+      "duplicateAssignmentsRemoved": 0,
+      "duplicateFilesRemoved": 0,
+      "cleanAssignments": 84,
+      "cleanUniqueAssets": 65
+    }
   }
 }

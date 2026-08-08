@@ -12,6 +12,19 @@ export const FEATURED_PRODUCTS = [
   { productId: "48f7d071-c8e4-4bc9-96c4-fc12672ca183", slug: "767632362-446510199362-videoendoskopicheskaya-sistema-pentax-ep" },
 ] as const;
 
+export const ENDOMARKET_STAGE_FEATURED_MODELS = [
+  "EG-500",
+  "EC-500T",
+  "EB-500",
+  "BR-1231",
+  "ENDO CLEAN-1000",
+  "ENDO CLEAN-2000",
+  "EC-5BD",
+  "iLivTouch",
+  "VIO 3",
+  "ARC 350",
+] as const;
+
 /**
  * Resolves the Product Owner-approved homepage selection against the already
  * validated public catalog. Missing or non-public entries are omitted and are
@@ -30,4 +43,31 @@ export function selectPublishedFeaturedProducts(
     const product = publicProductsBySlug.get(slug);
     return product ? [product] : [];
   });
+}
+
+/**
+ * Resolves the Product Owner-approved EndoMarket Stage order. A candidate is
+ * eligible only when its local, cleaned image exists; no fallback or arbitrary
+ * replacement is introduced. The canonical published selector above remains
+ * unchanged and continues to fail closed for Production.
+ */
+export function selectEndoMarketStageFeaturedProducts(
+  products: readonly Product[],
+  desiredCount = 8,
+): Product[] {
+  const eligibleByModel = new Map(
+    products
+      .filter((product) =>
+        product.commercialPresentation?.source === "endomarket" &&
+        product.media.some(({ type, url }) =>
+          type === "image" && url.startsWith("/media/endomarket-wave1/"),
+        ),
+      )
+      .map((product) => [product.model, product]),
+  );
+
+  return ENDOMARKET_STAGE_FEATURED_MODELS.flatMap((model) => {
+    const product = eligibleByModel.get(model);
+    return product ? [product] : [];
+  }).slice(0, desiredCount);
 }
