@@ -49,8 +49,10 @@ EPK-3000 DEFINA.
 
 ## Media
 
-- assignments: **171**;
-- unique content-addressed files: **132**;
+- clean assignments after Business/Content Corrective v2: **84**;
+- unique clean content-addressed files: **65**;
+- removed watermark assignments/files: **87/67**;
+- removed exact or obvious clean duplicates: **0**;
 - Products with source media: **44**;
 - neutral missing-image fallback: **7** Products;
 - manifest rows missing alt or hero/gallery role: **0**;
@@ -60,6 +62,8 @@ Seven exact-model source pages did not expose attributable media: Medinova
 19-inch HD, 24-inch Full HD, 27-inch Full HD and 55-inch 4K, SonoScape EC-430T,
 ZERTS with one electromechanical drive, and the existing PENTAX EPK-i5000
 binding. No neighbouring-model image was substituted.
+
+The complete v2 evidence is recorded in [Business/Content Corrective v2](endomarket-business-content-corrective-v2-2026-08-08.md).
 
 ## Validation
 

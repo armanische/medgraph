@@ -36,7 +36,7 @@ for (const slug of detailProducts) {
   assert.ok(newProducts.some((product) => product.slug === slug), `${slug}: missing Stage Product.`);
 }
 
-const evidenceDir = "docs/reports/evidence/endomarket-stage-2026-08-05";
+const evidenceDir = "docs/reports/evidence/endomarket-business-content-corrective-v2-2026-08-08";
 const captureScreenshots = process.env.ENDOMARKET_STAGE_SCREENSHOTS === "1";
 if (captureScreenshots) await mkdir(evidenceDir, { recursive: true });
 
@@ -84,12 +84,25 @@ async function runProfile(
   try {
     await assertPage(page, "/", label);
     await page.getByRole("heading", {
-      name: "Сервисное сопровождение оборудования",
+      name: "Сервис и сопровождение оборудования",
     }).waitFor();
+    const popularSection = page.getByRole("region", {
+      name: "Популярное медицинское оборудование",
+    });
+    await popularSection.waitFor();
+    assert.equal(
+      await popularSection.getByRole("link", { name: /^Подробнее о /u }).count(),
+      8,
+      `${label}: homepage must render exactly eight clean featured cards.`,
+    );
+    await page.getByText(
+      "Оборудование для эндоскопии, диагностики и оснащения клиник — в наличии и с рассрочкой 0%.",
+      { exact: true },
+    ).waitFor();
 
     if (captureScreenshots && label === "chromium-desktop-1440") {
       await page.screenshot({ path: `${evidenceDir}/homepage-desktop-1440.png`, fullPage: true });
-      await page.getByRole("heading", { name: "Сервисное сопровождение оборудования" })
+      await page.getByRole("heading", { name: "Сервис и сопровождение оборудования" })
         .locator("..")
         .screenshot({ path: `${evidenceDir}/service-benefit-desktop.png` });
     }
@@ -107,6 +120,15 @@ async function runProfile(
     const bodyText = await page.locator("body").innerText();
     assert.doesNotMatch(bodyText, /Made on Tilda|medvist\.ru|publication_status|review_state/ui);
     assert.doesNotMatch(bodyText, /щипцы|клапан для эндоскопа|моющее средство/ui);
+    assert.doesNotMatch(
+      bodyText,
+      /Профессиональное медицинское применение|Надежное решение для медицинских учреждений|Используется в клинической практике/iu,
+    );
+    assert.equal(
+      await page.locator("article dl").count(),
+      0,
+      `${label}: catalog ProductCard must not render technical characteristics.`,
+    );
     assert.equal(
       await page.locator('img[src*="%2Fmedia%2Fendomarket-wave1%2F"]').count() > 0,
       true,
@@ -135,6 +157,10 @@ async function runProfile(
       assert.equal(await page.getByText(/^Рассрочка 0%/u).count() > 0, true, `${slug}: installment badge missing.`);
       assert.equal(await page.getByText("До 12 месяцев без удорожания", { exact: true }).count() > 0, true, `${slug}: installment description missing.`);
       assert.equal(await page.locator('a[href^="/request?"]').count() > 0, true, `${slug}: RFQ action missing.`);
+      assert.doesNotMatch(
+        await page.locator("body").innerText(),
+        /Страна не указана|Профессиональное медицинское применение|Надежное решение для медицинских учреждений|Используется в клинической практике/iu,
+      );
     }
 
     if (captureScreenshots && label === "chromium-desktop-1440") {

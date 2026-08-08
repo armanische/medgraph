@@ -1,5 +1,17 @@
 # CyberMedica Launch Changelog
 
+## 2026-08-08 — EndoMarket Business/Content Corrective v2 on Stage
+
+- Applied the supplied corrective JSON/CSV to all 42 Stage drafts without
+  generated marketing copy or Production writes.
+- Removed 67 EM/EndoMarket-watermarked files, retained 65 unique clean assets
+  and excluded unsafe fallback cards from the homepage featured selection.
+- Made catalog cards compact, split application tags, hid 12 empty Product
+  Detail feature sections and preserved the approved commercial badges.
+- Verified the exact eight featured Products and approved homepage/service copy
+  across Chromium and WebKit, including 390×844 mobile evidence.
+- Kept `main`, `production` and the Production deployment unchanged.
+
 ## 2026-08-05 — EndoMarket equipment catalog Stage integration
 
 - Added 42 Preview drafts and nine existing Product bindings through the
