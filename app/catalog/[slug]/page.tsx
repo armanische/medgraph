@@ -8,6 +8,7 @@ import BackToCatalog from "@/components/catalog/BackToCatalog";
 import BackToTop from "@/components/catalog/BackToTop";
 import ProductGallery from "@/components/catalog/ProductGallery";
 import ProductManufacturer from "@/components/catalog/ProductManufacturer";
+import ProductCommercialBadges from "@/components/storefront/ProductCommercialBadges";
 import SafeProductDescription from "@/components/catalog/SafeProductDescription";
 import { catalogRepository, productService, storefrontDataSource } from "@/lib/storefront";
 import { buildProductDetailExperience } from "@/lib/storefront/product-detail-experience";
@@ -173,6 +174,15 @@ export default async function StorefrontProductPage({
                   {experience.summary}
                 </p>
               )}
+
+              {product.commercialPresentation ? (
+                <div className="mt-4">
+                  <ProductCommercialBadges presentation={product.commercialPresentation} />
+                  <p className="mt-1.5 text-[11px] text-cm-dim">
+                    {product.commercialPresentation.installmentDescription}
+                  </p>
+                </div>
+              ) : null}
 
               {experience.badges.length > 0 ? (
                 <dl

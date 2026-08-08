@@ -39,6 +39,16 @@ export type ProductMediaType = (typeof PRODUCT_MEDIA_TYPES)[number];
 export type ProductDocumentKind = (typeof PRODUCT_DOCUMENT_KINDS)[number];
 export type CatalogQualityStatus = (typeof CATALOG_QUALITY_STATUSES)[number];
 
+export interface ProductCommercialPresentation {
+  source: "endomarket";
+  availabilityStatus: "in_stock";
+  availabilityLabel: string;
+  installmentEnabled: true;
+  installmentLabel: string;
+  installmentTermMonths: 12;
+  installmentDescription: string;
+}
+
 export interface Manufacturer {
   id: string;
   slug: string;
@@ -115,6 +125,7 @@ export interface Product {
   description: string;
   seoTitle?: string | null;
   seoDescription?: string | null;
+  commercialPresentation?: ProductCommercialPresentation;
   status: ProductStatus;
   catalogQualityStatus?: CatalogQualityStatus;
   featured: boolean;

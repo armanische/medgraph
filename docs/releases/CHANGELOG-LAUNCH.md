@@ -1,5 +1,14 @@
 # CyberMedica Launch Changelog
 
+## 2026-08-05 — EndoMarket equipment catalog Stage integration
+
+- Added 42 Preview drafts and nine existing Product bindings through the
+  existing Cloud Preview repository; excluded 76 instruments and three chemical
+  consumables.
+- Added typed availability/installment presentation, 132 content-addressed
+  source media files and the approved homepage partner-service benefit.
+- Preserved Production Products, lifecycle, deployment, aliases and DNS.
+
 ## 2026-08-02 — Homepage visual and conversion polish
 
 - Reframed Hero around medical-equipment selection and supply for healthcare

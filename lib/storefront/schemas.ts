@@ -116,6 +116,18 @@ export const productRegistrationSchema = z
   })
   .strict();
 
+export const productCommercialPresentationSchema = z
+  .object({
+    source: z.literal("endomarket"),
+    availabilityStatus: z.literal("in_stock"),
+    availabilityLabel: z.literal("В наличии"),
+    installmentEnabled: z.literal(true),
+    installmentLabel: z.literal("Рассрочка 0%"),
+    installmentTermMonths: z.literal(12),
+    installmentDescription: z.literal("До 12 месяцев без удорожания"),
+  })
+  .strict();
+
 export const productSchema = z
   .object({
     id: identifierSchema,
@@ -126,6 +138,9 @@ export const productSchema = z
     model: requiredTextSchema,
     shortDescription: requiredTextSchema,
     description: requiredTextSchema,
+    seoTitle: requiredTextSchema.nullable().optional(),
+    seoDescription: requiredTextSchema.nullable().optional(),
+    commercialPresentation: productCommercialPresentationSchema.optional(),
     status: z.enum(PRODUCT_STATUSES),
     catalogQualityStatus: z.enum(["READY", "REQUIRES_EDITOR_REVIEW"]).optional(),
     featured: z.boolean(),

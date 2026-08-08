@@ -1,0 +1,1254 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-04T16:26:57.016Z",
+  "source": {
+    "name": "EndoMarket",
+    "baseUrl": "https://endomarket.ru/",
+    "trustPolicy": "User-approved source of truth for this import task"
+  },
+  "input": {
+    "fileName": "endomarket_wave1_import_package.json",
+    "sha256": "8c2b4e72218193ebfe1d2db4c57fae7502746e223d7e572dd1b3192388e35864"
+  },
+  "counts": {
+    "normalizedEquipmentRows": 51,
+    "newDraftCandidates": 42,
+    "existingDuplicateBindings": 9,
+    "excludedInstrumentRows": 76,
+    "excludedNonEquipmentConsumables": 3,
+    "mediaAssignments": 171,
+    "uniqueMediaAssets": 132
+  },
+  "duplicateBindings": [
+    {
+      "sourceCandidateSlug": "sonoscape-hd-550",
+      "sourceModel": "HD-550",
+      "productId": "df001769-ac68-5890-827f-5977a723c5ed",
+      "sourceUid": "catalog-seed-videoendoskopicheskaya-sistema-sonoscape-hd-550",
+      "slug": "videoendoskopicheskaya-sistema-sonoscape-hd-550",
+      "title": "Видеоэндоскопическая система SonoScape HD-550",
+      "canonicalModel": "HD-550",
+      "evidence": "repository_catalog_seed",
+      "candidateCreated": false,
+      "commercialMetadataMerged": true
+    },
+    {
+      "sourceCandidateSlug": "sonoscape-hd-500",
+      "sourceModel": "HD-500",
+      "productId": "831f5d47-a765-4bc2-8d18-65691cae76e9",
+      "sourceUid": "697047413241",
+      "slug": "767632362-697047413241-videoendoskopicheskaya-sistema-sonoscape",
+      "title": "Видеопроцессор SonoScape HD-500",
+      "canonicalModel": "HD-500",
+      "evidence": "published_product_detail",
+      "candidateCreated": false,
+      "commercialMetadataMerged": true
+    },
+    {
+      "sourceCandidateSlug": "sonoscape-hd-350",
+      "sourceModel": "HD-350",
+      "productId": "721a2244-75a6-42b3-9370-7df148d8a51e",
+      "sourceUid": "776712772161",
+      "slug": "767632362-776712772161-videoendoskopicheskaya-sistema-sonoscape",
+      "title": "Видеопроцессор SonoScape HD-350",
+      "canonicalModel": "HD-350",
+      "evidence": "published_product_detail",
+      "candidateCreated": false,
+      "commercialMetadataMerged": true
+    },
+    {
+      "sourceCandidateSlug": "olympus-exera-iii",
+      "sourceModel": "Exera III",
+      "productId": "4e1a370b-4e53-4ee6-b590-823d1ad0e087",
+      "sourceUid": "304432044232",
+      "slug": "767632362-304432044232-videoendoskopicheskaya-sistema-olympus-c",
+      "title": "Видеоэндоскопическая система Olympus EVIS EXERA III CV-190",
+      "canonicalModel": "CV-190",
+      "evidence": "published_product_detail",
+      "candidateCreated": false,
+      "commercialMetadataMerged": true
+    },
+    {
+      "sourceCandidateSlug": "olympus-optera",
+      "sourceModel": "Optera",
+      "productId": "95af806c-3fbf-446e-a608-263aa290d548",
+      "sourceUid": "740658724462",
+      "slug": "767632362-740658724462-videoendoskopicheskaya-sistema-olympus-c",
+      "title": "Видеоэндоскопическая система Olympus CV-170",
+      "canonicalModel": "CV-170",
+      "evidence": "published_product_detail",
+      "candidateCreated": false,
+      "commercialMetadataMerged": true
+    },
+    {
+      "sourceCandidateSlug": "olympus-axeon",
+      "sourceModel": "Axeon",
+      "productId": "5143084e-5fe7-4094-bf8c-6cd8197b741e",
+      "sourceUid": "403689762041",
+      "slug": "767632362-403689762041-videoendoskopicheskaya-sistema-olympus-a",
+      "title": "Видеоэндоскопическая система Olympus AXEON",
+      "canonicalModel": "AXEON",
+      "evidence": "published_product_detail",
+      "candidateCreated": false,
+      "commercialMetadataMerged": true
+    },
+    {
+      "sourceCandidateSlug": "pentax-epk-i7010-optivista",
+      "sourceModel": "EPK-i7010 OPTIVISTA",
+      "productId": "860306a1-e01e-4f10-b980-93490e446d37",
+      "sourceUid": "529970599662",
+      "slug": "pentax-epk-i7010-optivista",
+      "title": "Видеопроцессор PENTAX Medical EPK-i7010 OPTIVISTA",
+      "canonicalModel": "EPK-i7010 OPTIVISTA",
+      "evidence": "tracked_corrective_report",
+      "candidateCreated": false,
+      "commercialMetadataMerged": true
+    },
+    {
+      "sourceCandidateSlug": "pentax-epk-i5000",
+      "sourceModel": "EPK-i5000",
+      "productId": "48f7d071-c8e4-4bc9-96c4-fc12672ca183",
+      "sourceUid": "446510199362",
+      "slug": "767632362-446510199362-videoendoskopicheskaya-sistema-pentax-ep",
+      "title": "Видеопроцессор PENTAX Medical EPK-i5000",
+      "canonicalModel": "EPK-i5000",
+      "evidence": "published_product_detail",
+      "candidateCreated": false,
+      "commercialMetadataMerged": true
+    },
+    {
+      "sourceCandidateSlug": "pentax-epk-3000-defina",
+      "sourceModel": "EPK-3000 DEFINA",
+      "productId": "ec3d6459-264c-43f6-841c-b092c7abeb06",
+      "sourceUid": "670271281172",
+      "slug": "767632362-670271281172-videoendoskopicheskaya-sistema-epk-3000",
+      "title": "Видеоэндоскопический процессор PENTAX Medical EPK-3000 DEFINA",
+      "canonicalModel": "EPK-3000 DEFINA",
+      "evidence": "published_product_detail",
+      "candidateCreated": false,
+      "commercialMetadataMerged": true
+    }
+  ],
+  "exclusions": {
+    "instruments": 76,
+    "nonEquipmentConsumables": 3,
+    "excludedFromStageProducts": true
+  },
+  "sourcePages": [
+    {
+      "url": "https://endomarket.ru/products/gibkij-videobronhoskop-medinova",
+      "status": 200,
+      "sha256": "228a53d8acf1426a1b046e0a1f5d7ec975a265bd8a53512a4bf4ec6e9572f130",
+      "discoveredProductMedia": 13
+    },
+    {
+      "url": "https://endomarket.ru/catalog/videobronhoskopy",
+      "status": 200,
+      "sha256": "043c359432c29b0b36fe16379a3c819469f93190681490adbed79d9ea5eeadbd",
+      "discoveredProductMedia": 5
+    },
+    {
+      "url": "https://endomarket.ru/products/gibkij-videouretroskop-medinova",
+      "status": 200,
+      "sha256": "e198a8f1de4bb4d34ef334dc35c31409593c94ad05d2556d8e4f67759594127e",
+      "discoveredProductMedia": 13
+    },
+    {
+      "url": "https://endomarket.ru/products/gibkij-videotsistonefroskop-medinova",
+      "status": 200,
+      "sha256": "02f04ea4dc5853ff55dcb58534eb7c47f78410ac0289f0eeac3db32b3152bad7",
+      "discoveredProductMedia": 10
+    },
+    {
+      "url": "https://endomarket.ru/catalog/oborudovanie-dlya-endoskopii?page=all",
+      "status": 200,
+      "sha256": "90e0c4e62beb42565015512529b16916e9532f536a280abc364c21f1e0af86cc",
+      "discoveredProductMedia": 33
+    },
+    {
+      "url": "https://endomarket.ru/products/meditsinskij-monitor-medinova-32-4k",
+      "status": 200,
+      "sha256": "1eff236087aa95468c121d6ff47646599181fb700c1e32e91f97a2487083d7b5",
+      "discoveredProductMedia": 19
+    },
+    {
+      "url": "https://endomarket.ru/catalog/videogastroskopy",
+      "status": 200,
+      "sha256": "8c66494b4bf48547dfac666109ceccb99d2590621d0155882f997a21346016bf",
+      "discoveredProductMedia": 6
+    },
+    {
+      "url": "https://endomarket.ru/products/videogastroskop-sonoscape-eg-500",
+      "status": 200,
+      "sha256": "35d508bf5c449037ec14dc84177ccd1d25b08ec20b1ff67bb34a8356c3365b57",
+      "discoveredProductMedia": 10
+    },
+    {
+      "url": "https://endomarket.ru/products/videogastroskop-sonoscape-eg-430",
+      "status": 200,
+      "sha256": "9044c4efb31223de4e011a58dde0d5e69418a02b0a64cc7ec70d5cda40cbbf13",
+      "discoveredProductMedia": 10
+    },
+    {
+      "url": "https://endomarket.ru/products/videokolonoskop-sonoscape-es-500t",
+      "status": 200,
+      "sha256": "7a69fcfb6726452cd952b6a7d28b5ff19e37cd74b0dbfb8dd7512ec87b30b091",
+      "discoveredProductMedia": 13
+    },
+    {
+      "url": "https://endomarket.ru/products/videokolonoskop-sonoscape-es-500lt",
+      "status": 200,
+      "sha256": "990c01c7dd9e0606a04f5ee81c3ab180e2a764e48604481a68412a3688519a98",
+      "discoveredProductMedia": 11
+    },
+    {
+      "url": "https://endomarket.ru/catalog/videokolonoskopy",
+      "status": 200,
+      "sha256": "efaf95712a1ee21b26deb41d49f0a143bb516d98e1c9064d6532941c7408fa12",
+      "discoveredProductMedia": 4
+    },
+    {
+      "url": "https://endomarket.ru/products/videobronhoskop-sonoscape-eb-500",
+      "status": 200,
+      "sha256": "9f3221406622d93d608b60e2c1cd110c2b8882fef9d64e842a1aa6199eac9811",
+      "discoveredProductMedia": 13
+    },
+    {
+      "url": "https://endomarket.ru/catalog/videoduodenoskopy",
+      "status": 200,
+      "sha256": "eaded8754f99faafb17514501126f950054bbe12f40a237818465447658fcb21",
+      "discoveredProductMedia": 1
+    },
+    {
+      "url": "https://endomarket.ru/products/ustanovka-dlya-mojki-i-dezinfektsii-endo-clean-1000-medinova",
+      "status": 200,
+      "sha256": "695857e6c561808add05e2bfab5a8c040565e828a9e2ce412bfd2986d8f2e001",
+      "discoveredProductMedia": 13
+    },
+    {
+      "url": "https://endomarket.ru/products/ustanovka-dlya-mojki-i-dezinfektsii-endo-clean-2000-medinova",
+      "status": 200,
+      "sha256": "438716eaba753cf652131146d9cf30cd6b7dfd7281f7839083808fb18d5cb5cb",
+      "discoveredProductMedia": 22
+    },
+    {
+      "url": "https://endomarket.ru/products/shkaf-dlya-sushki-i-hraneniya-endoskopov-ec-5bd",
+      "status": 200,
+      "sha256": "808ef4f264380e8eda08f84151f765042455528f9739bc78328dd9f1328f748b",
+      "discoveredProductMedia": 30
+    },
+    {
+      "url": "https://endomarket.ru/catalog/sistemy-hraneniya",
+      "status": 200,
+      "sha256": "2378f64bdfbacf60358e28e9e5f79f06cda01a1ad5eee28009bab2f57c45f886",
+      "discoveredProductMedia": 2
+    },
+    {
+      "url": "https://endomarket.ru/catalog/elektrohirurgicheskie-bloki",
+      "status": 200,
+      "sha256": "7d17144622bd6d06c5fe025be566d9a87ef2aefcbeba3d0649fd39e1545899d9",
+      "discoveredProductMedia": 7
+    },
+    {
+      "url": "https://endomarket.ru/catalog/prochee-oborudovanie",
+      "status": 200,
+      "sha256": "3124f84231e5c7c5c96e64d74da167d424a0db7be8b264b5bbf026d568d5724a",
+      "discoveredProductMedia": 6
+    },
+    {
+      "url": "https://endomarket.ru/catalog/videoendoskopicheskie-sistemy",
+      "status": 200,
+      "sha256": "98b9568704085c48f14fbc3cda41569dc8cb12873341e994be5e4def2f9a3e4a",
+      "discoveredProductMedia": 10
+    },
+    {
+      "url": "https://endomarket.ru/products/gibkij-videobronhoskop-medinova-af",
+      "status": 200,
+      "sha256": "44df7af11c6f1e0eb453c541e9d5a098931f7960041106362f3b8358d8abbb10",
+      "discoveredProductMedia": 19
+    },
+    {
+      "url": "https://endomarket.ru/products/videogastroskop-sonoscape-eg-ur5",
+      "status": 200,
+      "sha256": "a38c64767729bbd9fb786fdc1cc1cab1909b971ca1e16bcf20b02c55c08b39d7",
+      "discoveredProductMedia": 18
+    },
+    {
+      "url": "https://endomarket.ru/products/videogastroskop-sonoscape-eg-uc5t",
+      "status": 200,
+      "sha256": "416ec32b987d9d49ef802bc7e9c6a8eb55d14f400a811a97f5da21c5446b1d05",
+      "discoveredProductMedia": 15
+    },
+    {
+      "url": "https://endomarket.ru/products/videogastroskop-sonoscape-eg-500l",
+      "status": 200,
+      "sha256": "69cee87ba815f2f3c1e8d1985ff5d847582211b8054dd1650602dc62d5fa5e08",
+      "discoveredProductMedia": 7
+    },
+    {
+      "url": "https://endomarket.ru/products/videogastroskop-sonoscape-eg-430l",
+      "status": 200,
+      "sha256": "3d26270bd92cbd19398a2aabdf3900a496167430781d554769652e686a18a9d7",
+      "discoveredProductMedia": 10
+    },
+    {
+      "url": "https://endomarket.ru/products/videokolonoskop-sonoscape-ec-430lt",
+      "status": 200,
+      "sha256": "26ecb63b69bf40d152e9648ecc3261cf811bf5203229588d3c0ba630fb77a088",
+      "discoveredProductMedia": 14
+    },
+    {
+      "url": "https://endomarket.ru/products/videobronhoskop-sonoscape-eb-5h20",
+      "status": 200,
+      "sha256": "91322ffb4ce33c615034e13970cdbff751e7215d2cd27a519d99cef6c41d34cc",
+      "discoveredProductMedia": 15
+    },
+    {
+      "url": "https://endomarket.ru/products/videobronhoskop-sonoscape-eb-5t28",
+      "status": 200,
+      "sha256": "1630ee65bd8c5258cc11aca69e50d081e4796af557b0165ee760c701d013147c",
+      "discoveredProductMedia": 15
+    },
+    {
+      "url": "https://endomarket.ru/products/videoduodenoskop-sonoscape-ed-5gt",
+      "status": 200,
+      "sha256": "1ec8dab0f5e7f50f83c25207cba874250820d11aea32fb4bb7c0bb34e6a319b7",
+      "discoveredProductMedia": 14
+    },
+    {
+      "url": "https://endomarket.ru/products/shkaf-dlya-sushki-i-hraneniya-endoskopov-ec-10bd",
+      "status": 200,
+      "sha256": "3832574605a399aa358ba4a3e4b23bfefef5192aef753bb1c0017999c2271f28",
+      "discoveredProductMedia": 30
+    },
+    {
+      "url": "https://endomarket.ru/products/rabochaya-stantsiya-erbe-vio-s-argonovym-modulem-apc-2",
+      "status": 200,
+      "sha256": "c07c49cd2f79bfc6ebfeecb11beca30a5ff360c701dc491f7ee1ddf92b5e74c9",
+      "discoveredProductMedia": 7
+    },
+    {
+      "url": "https://endomarket.ru/products/koagulyator-erbe-vio-200-s",
+      "status": 200,
+      "sha256": "57bf1bc1e7de7cf1db0bfbf86dff67af02ba805e047111556953257fa8654ff6",
+      "discoveredProductMedia": 3
+    },
+    {
+      "url": "https://endomarket.ru/products/koagulyator-erbe-vio-200-d",
+      "status": 200,
+      "sha256": "1bcb6c56d7510a294e837cf9a158b7c37fd9910a73deeb9b367eba2e631e4eea",
+      "discoveredProductMedia": 3
+    },
+    {
+      "url": "https://endomarket.ru/products/koagulyator-erbe-vio-3",
+      "status": 200,
+      "sha256": "192a39b99ce268d662feef71ff414aa895ec1f649f75a8e12e5cc12d25d74c4d",
+      "discoveredProductMedia": 7
+    },
+    {
+      "url": "https://endomarket.ru/products/elektrohirurgicheskij-apparat-arc-303",
+      "status": 200,
+      "sha256": "4baf98b76ed9799f752ee110f22539495c793f249b4995a957049d55b148bfd9",
+      "discoveredProductMedia": 7
+    },
+    {
+      "url": "https://endomarket.ru/products/elektrohirurgicheskij-apparat-arc-350",
+      "status": 200,
+      "sha256": "f1e019685e6c166f84f9b6b316060ecfb16f27b3dcb8f1614a37139a68918ea6",
+      "discoveredProductMedia": 7
+    },
+    {
+      "url": "https://endomarket.ru/products/elektrohirurgicheskij-apparat-arc-400",
+      "status": 200,
+      "sha256": "7642e6dfc036a7598fdffbedec5a3965b969840a25924ef1fa8bc5a490d5e008",
+      "discoveredProductMedia": 10
+    },
+    {
+      "url": "https://endomarket.ru/products/apparat-dlya-diagnostiki-pecheni-ilivtouch",
+      "status": 200,
+      "sha256": "b3f0ae8a6e4fee41a7934c8d63f3c1afa30b410b0d70edef67efaa5b56fd983a",
+      "discoveredProductMedia": 7
+    },
+    {
+      "url": "https://endomarket.ru/products/smotrovoj-stol-met-ks-350",
+      "status": 200,
+      "sha256": "e7112d2c2f081485ad2693eb3d59783eab6af7354585b8a3a27035d82804b97d",
+      "discoveredProductMedia": 14
+    },
+    {
+      "url": "https://endomarket.ru/products/videoendoskopicheskaya-sistema-sonoscape-hd-550",
+      "status": 200,
+      "sha256": "5727c2ce4e0ef9baa383d03ab2c6ada1c9bd2794910ba2af9690f024fc429b31",
+      "discoveredProductMedia": 16
+    },
+    {
+      "url": "https://endomarket.ru/products/videoendoskopicheskaya-sistema-sonoscape-hd-500",
+      "status": 200,
+      "sha256": "5f86ae57c2af4d64cc8a160e84589f0b188dd2449749ce61842ce052fa0e21ee",
+      "discoveredProductMedia": 22
+    },
+    {
+      "url": "https://endomarket.ru/products/videoendoskopicheskaya-sistema-sonoscape-hd-350",
+      "status": 200,
+      "sha256": "a3d11b8e7b71c420cbfffb27c02d5edcccddd7023293bf99ba0fd4d24f879bf3",
+      "discoveredProductMedia": 22
+    },
+    {
+      "url": "https://endomarket.ru/products/endoskopichskaya-sistema-olympus-exera-iii",
+      "status": 200,
+      "sha256": "0b64c24e25798c0a9a312487ebd24dcd2330c7ff07a72f78bd67eadab74200b9",
+      "discoveredProductMedia": 17
+    },
+    {
+      "url": "https://endomarket.ru/products/endoskopichskaya-sistema-olympus-optera",
+      "status": 200,
+      "sha256": "618f07601d772624a49483a1c0e4772875d75c6e4b72689b7c804ee4b448b140",
+      "discoveredProductMedia": 14
+    },
+    {
+      "url": "https://endomarket.ru/products/endoskopichskaya-sistema-olympus-axeon",
+      "status": 200,
+      "sha256": "fd18d21ffed54015a6dac429bb56ff687ebbbb559c7c6f0a5498f89d7a2bd031",
+      "discoveredProductMedia": 7
+    },
+    {
+      "url": "https://endomarket.ru/products/videoprotsessor-pentax-epk-i7010-optivista",
+      "status": 200,
+      "sha256": "88414ccb1d9ffca1f95103eff336869eec3d3e26f31f3d8a713cada348f4fac3",
+      "discoveredProductMedia": 16
+    },
+    {
+      "url": "https://endomarket.ru/products/videoprotsessor-pentax-epk-3000-defina",
+      "status": 200,
+      "sha256": "d684ff6707e260437890edbdb56956096c8736ac7596ba7f2a666ec299b9a0f7",
+      "discoveredProductMedia": 16
+    }
+  ],
+  "resolvedProductPages": [
+    {
+      "productSlug": "medinova-hv-3101",
+      "sourceUrl": "https://endomarket.ru/products/gibkij-videobronhoskop-medinova",
+      "resolvedProductUrl": "https://endomarket.ru/products/gibkij-videobronhoskop-medinova"
+    },
+    {
+      "productSlug": "medinova-af",
+      "sourceUrl": "https://endomarket.ru/catalog/videobronhoskopy",
+      "resolvedProductUrl": "https://endomarket.ru/products/gibkij-videobronhoskop-medinova-af"
+    },
+    {
+      "productSlug": "medinova-br-1231",
+      "sourceUrl": "https://endomarket.ru/products/gibkij-videobronhoskop-medinova",
+      "resolvedProductUrl": "https://endomarket.ru/products/gibkij-videobronhoskop-medinova"
+    },
+    {
+      "productSlug": "medinova-br-1242",
+      "sourceUrl": "https://endomarket.ru/products/gibkij-videobronhoskop-medinova",
+      "resolvedProductUrl": "https://endomarket.ru/products/gibkij-videobronhoskop-medinova"
+    },
+    {
+      "productSlug": "medinova-br-1249",
+      "sourceUrl": "https://endomarket.ru/products/gibkij-videobronhoskop-medinova",
+      "resolvedProductUrl": "https://endomarket.ru/products/gibkij-videobronhoskop-medinova"
+    },
+    {
+      "productSlug": "medinova-br-1259",
+      "sourceUrl": "https://endomarket.ru/products/gibkij-videobronhoskop-medinova",
+      "resolvedProductUrl": "https://endomarket.ru/products/gibkij-videobronhoskop-medinova"
+    },
+    {
+      "productSlug": "medinova-ur-1328",
+      "sourceUrl": "https://endomarket.ru/products/gibkij-videouretroskop-medinova",
+      "resolvedProductUrl": "https://endomarket.ru/products/gibkij-videouretroskop-medinova"
+    },
+    {
+      "productSlug": "medinova-cy-1355",
+      "sourceUrl": "https://endomarket.ru/products/gibkij-videotsistonefroskop-medinova",
+      "resolvedProductUrl": "https://endomarket.ru/products/gibkij-videotsistonefroskop-medinova"
+    },
+    {
+      "productSlug": "medinova-cy-1356",
+      "sourceUrl": "https://endomarket.ru/products/gibkij-videotsistonefroskop-medinova",
+      "resolvedProductUrl": "https://endomarket.ru/products/gibkij-videotsistonefroskop-medinova"
+    },
+    {
+      "productSlug": "medinova-19-hd",
+      "sourceUrl": "https://endomarket.ru/catalog/oborudovanie-dlya-endoskopii?page=all",
+      "resolvedProductUrl": "https://endomarket.ru/catalog/oborudovanie-dlya-endoskopii?page=all"
+    },
+    {
+      "productSlug": "medinova-24-full-hd",
+      "sourceUrl": "https://endomarket.ru/catalog/oborudovanie-dlya-endoskopii?page=all",
+      "resolvedProductUrl": "https://endomarket.ru/catalog/oborudovanie-dlya-endoskopii?page=all"
+    },
+    {
+      "productSlug": "medinova-27-full-hd",
+      "sourceUrl": "https://endomarket.ru/catalog/oborudovanie-dlya-endoskopii?page=all",
+      "resolvedProductUrl": "https://endomarket.ru/catalog/oborudovanie-dlya-endoskopii?page=all"
+    },
+    {
+      "productSlug": "medinova-32-4k",
+      "sourceUrl": "https://endomarket.ru/products/meditsinskij-monitor-medinova-32-4k",
+      "resolvedProductUrl": "https://endomarket.ru/products/meditsinskij-monitor-medinova-32-4k"
+    },
+    {
+      "productSlug": "medinova-55-4k",
+      "sourceUrl": "https://endomarket.ru/catalog/oborudovanie-dlya-endoskopii?page=all",
+      "resolvedProductUrl": "https://endomarket.ru/catalog/oborudovanie-dlya-endoskopii?page=all"
+    },
+    {
+      "productSlug": "sonoscape-eg-ur5",
+      "sourceUrl": "https://endomarket.ru/catalog/videogastroskopy",
+      "resolvedProductUrl": "https://endomarket.ru/products/videogastroskop-sonoscape-eg-ur5"
+    },
+    {
+      "productSlug": "sonoscape-eg-uc5t",
+      "sourceUrl": "https://endomarket.ru/catalog/videogastroskopy",
+      "resolvedProductUrl": "https://endomarket.ru/products/videogastroskop-sonoscape-eg-uc5t"
+    },
+    {
+      "productSlug": "sonoscape-eg-500",
+      "sourceUrl": "https://endomarket.ru/products/videogastroskop-sonoscape-eg-500",
+      "resolvedProductUrl": "https://endomarket.ru/products/videogastroskop-sonoscape-eg-500"
+    },
+    {
+      "productSlug": "sonoscape-eg-500l",
+      "sourceUrl": "https://endomarket.ru/catalog/videogastroskopy",
+      "resolvedProductUrl": "https://endomarket.ru/products/videogastroskop-sonoscape-eg-500l"
+    },
+    {
+      "productSlug": "sonoscape-eg-430",
+      "sourceUrl": "https://endomarket.ru/products/videogastroskop-sonoscape-eg-430",
+      "resolvedProductUrl": "https://endomarket.ru/products/videogastroskop-sonoscape-eg-430"
+    },
+    {
+      "productSlug": "sonoscape-eg-430l",
+      "sourceUrl": "https://endomarket.ru/catalog/videogastroskopy",
+      "resolvedProductUrl": "https://endomarket.ru/products/videogastroskop-sonoscape-eg-430l"
+    },
+    {
+      "productSlug": "sonoscape-ec-500t",
+      "sourceUrl": "https://endomarket.ru/products/videokolonoskop-sonoscape-es-500t",
+      "resolvedProductUrl": "https://endomarket.ru/products/videokolonoskop-sonoscape-es-500t"
+    },
+    {
+      "productSlug": "sonoscape-ec-500l-t",
+      "sourceUrl": "https://endomarket.ru/products/videokolonoskop-sonoscape-es-500lt",
+      "resolvedProductUrl": "https://endomarket.ru/products/videokolonoskop-sonoscape-es-500lt"
+    },
+    {
+      "productSlug": "sonoscape-ec-430t",
+      "sourceUrl": "https://endomarket.ru/catalog/videokolonoskopy",
+      "resolvedProductUrl": "https://endomarket.ru/catalog/videokolonoskopy"
+    },
+    {
+      "productSlug": "sonoscape-ec-430l-t",
+      "sourceUrl": "https://endomarket.ru/catalog/videokolonoskopy",
+      "resolvedProductUrl": "https://endomarket.ru/products/videokolonoskop-sonoscape-ec-430lt"
+    },
+    {
+      "productSlug": "sonoscape-eb-5h20",
+      "sourceUrl": "https://endomarket.ru/catalog/videobronhoskopy",
+      "resolvedProductUrl": "https://endomarket.ru/products/videobronhoskop-sonoscape-eb-5h20"
+    },
+    {
+      "productSlug": "sonoscape-eb-5t28",
+      "sourceUrl": "https://endomarket.ru/catalog/videobronhoskopy",
+      "resolvedProductUrl": "https://endomarket.ru/products/videobronhoskop-sonoscape-eb-5t28"
+    },
+    {
+      "productSlug": "sonoscape-eb-500",
+      "sourceUrl": "https://endomarket.ru/products/videobronhoskop-sonoscape-eb-500",
+      "resolvedProductUrl": "https://endomarket.ru/products/videobronhoskop-sonoscape-eb-500"
+    },
+    {
+      "productSlug": "sonoscape-ed-5gt",
+      "sourceUrl": "https://endomarket.ru/catalog/videoduodenoskopy",
+      "resolvedProductUrl": "https://endomarket.ru/products/videoduodenoskop-sonoscape-ed-5gt"
+    },
+    {
+      "productSlug": "medinova-endo-clean-1000",
+      "sourceUrl": "https://endomarket.ru/products/ustanovka-dlya-mojki-i-dezinfektsii-endo-clean-1000-medinova",
+      "resolvedProductUrl": "https://endomarket.ru/products/ustanovka-dlya-mojki-i-dezinfektsii-endo-clean-1000-medinova"
+    },
+    {
+      "productSlug": "medinova-endo-clean-2000",
+      "sourceUrl": "https://endomarket.ru/products/ustanovka-dlya-mojki-i-dezinfektsii-endo-clean-2000-medinova",
+      "resolvedProductUrl": "https://endomarket.ru/products/ustanovka-dlya-mojki-i-dezinfektsii-endo-clean-2000-medinova"
+    },
+    {
+      "productSlug": "medinova-ec-5bd",
+      "sourceUrl": "https://endomarket.ru/products/shkaf-dlya-sushki-i-hraneniya-endoskopov-ec-5bd",
+      "resolvedProductUrl": "https://endomarket.ru/products/shkaf-dlya-sushki-i-hraneniya-endoskopov-ec-5bd"
+    },
+    {
+      "productSlug": "medinova-ec-10bd",
+      "sourceUrl": "https://endomarket.ru/catalog/sistemy-hraneniya",
+      "resolvedProductUrl": "https://endomarket.ru/products/shkaf-dlya-sushki-i-hraneniya-endoskopov-ec-10bd"
+    },
+    {
+      "productSlug": "erbe-vio-apc-2",
+      "sourceUrl": "https://endomarket.ru/catalog/elektrohirurgicheskie-bloki",
+      "resolvedProductUrl": "https://endomarket.ru/products/rabochaya-stantsiya-erbe-vio-s-argonovym-modulem-apc-2"
+    },
+    {
+      "productSlug": "erbe-vio-200-s",
+      "sourceUrl": "https://endomarket.ru/catalog/elektrohirurgicheskie-bloki",
+      "resolvedProductUrl": "https://endomarket.ru/products/koagulyator-erbe-vio-200-s"
+    },
+    {
+      "productSlug": "erbe-vio-200-d",
+      "sourceUrl": "https://endomarket.ru/catalog/elektrohirurgicheskie-bloki",
+      "resolvedProductUrl": "https://endomarket.ru/products/koagulyator-erbe-vio-200-d"
+    },
+    {
+      "productSlug": "erbe-vio-3",
+      "sourceUrl": "https://endomarket.ru/catalog/elektrohirurgicheskie-bloki",
+      "resolvedProductUrl": "https://endomarket.ru/products/koagulyator-erbe-vio-3"
+    },
+    {
+      "productSlug": "bowa-arc-303",
+      "sourceUrl": "https://endomarket.ru/catalog/elektrohirurgicheskie-bloki",
+      "resolvedProductUrl": "https://endomarket.ru/products/elektrohirurgicheskij-apparat-arc-303"
+    },
+    {
+      "productSlug": "bowa-arc-350",
+      "sourceUrl": "https://endomarket.ru/catalog/elektrohirurgicheskie-bloki",
+      "resolvedProductUrl": "https://endomarket.ru/products/elektrohirurgicheskij-apparat-arc-350"
+    },
+    {
+      "productSlug": "bowa-arc-400",
+      "sourceUrl": "https://endomarket.ru/catalog/elektrohirurgicheskie-bloki",
+      "resolvedProductUrl": "https://endomarket.ru/products/elektrohirurgicheskij-apparat-arc-400"
+    },
+    {
+      "productSlug": "ilivtouch-ilivtouch",
+      "sourceUrl": "https://endomarket.ru/catalog/prochee-oborudovanie",
+      "resolvedProductUrl": "https://endomarket.ru/products/apparat-dlya-diagnostiki-pecheni-ilivtouch"
+    },
+    {
+      "productSlug": "met-ks-350",
+      "sourceUrl": "https://endomarket.ru/catalog/prochee-oborudovanie",
+      "resolvedProductUrl": "https://endomarket.ru/products/smotrovoj-stol-met-ks-350"
+    },
+    {
+      "productSlug": "zerts-1",
+      "sourceUrl": "https://endomarket.ru/catalog/prochee-oborudovanie",
+      "resolvedProductUrl": "https://endomarket.ru/catalog/prochee-oborudovanie"
+    },
+    {
+      "productSlug": "sonoscape-hd-550",
+      "sourceUrl": "https://endomarket.ru/catalog/videoendoskopicheskie-sistemy",
+      "resolvedProductUrl": "https://endomarket.ru/products/videoendoskopicheskaya-sistema-sonoscape-hd-550"
+    },
+    {
+      "productSlug": "sonoscape-hd-500",
+      "sourceUrl": "https://endomarket.ru/catalog/videoendoskopicheskie-sistemy",
+      "resolvedProductUrl": "https://endomarket.ru/products/videoendoskopicheskaya-sistema-sonoscape-hd-500"
+    },
+    {
+      "productSlug": "sonoscape-hd-350",
+      "sourceUrl": "https://endomarket.ru/catalog/videoendoskopicheskie-sistemy",
+      "resolvedProductUrl": "https://endomarket.ru/products/videoendoskopicheskaya-sistema-sonoscape-hd-350"
+    },
+    {
+      "productSlug": "olympus-exera-iii",
+      "sourceUrl": "https://endomarket.ru/catalog/videoendoskopicheskie-sistemy",
+      "resolvedProductUrl": "https://endomarket.ru/products/endoskopichskaya-sistema-olympus-exera-iii"
+    },
+    {
+      "productSlug": "olympus-optera",
+      "sourceUrl": "https://endomarket.ru/catalog/videoendoskopicheskie-sistemy",
+      "resolvedProductUrl": "https://endomarket.ru/products/endoskopichskaya-sistema-olympus-optera"
+    },
+    {
+      "productSlug": "olympus-axeon",
+      "sourceUrl": "https://endomarket.ru/catalog/videoendoskopicheskie-sistemy",
+      "resolvedProductUrl": "https://endomarket.ru/products/endoskopichskaya-sistema-olympus-axeon"
+    },
+    {
+      "productSlug": "pentax-epk-i7010-optivista",
+      "sourceUrl": "https://endomarket.ru/catalog/videoendoskopicheskie-sistemy",
+      "resolvedProductUrl": "https://endomarket.ru/products/videoprotsessor-pentax-epk-i7010-optivista"
+    },
+    {
+      "productSlug": "pentax-epk-i5000",
+      "sourceUrl": "https://endomarket.ru/catalog/videoendoskopicheskie-sistemy",
+      "resolvedProductUrl": "https://endomarket.ru/catalog/videoendoskopicheskie-sistemy"
+    },
+    {
+      "productSlug": "pentax-epk-3000-defina",
+      "sourceUrl": "https://endomarket.ru/catalog/videoendoskopicheskie-sistemy",
+      "resolvedProductUrl": "https://endomarket.ru/products/videoprotsessor-pentax-epk-3000-defina"
+    }
+  ],
+  "products": [
+    {
+      "productId": "df001769-ac68-5890-827f-5977a723c5ed",
+      "sourceUid": "catalog-seed-videoendoskopicheskaya-sistema-sonoscape-hd-550",
+      "slug": "videoendoskopicheskaya-sistema-sonoscape-hd-550",
+      "model": "HD-550",
+      "manufacturerId": "sonoscape",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "existing_duplicate",
+      "mediaCount": 4,
+      "publicationStatus": "published"
+    },
+    {
+      "productId": "831f5d47-a765-4bc2-8d18-65691cae76e9",
+      "sourceUid": "697047413241",
+      "slug": "767632362-697047413241-videoendoskopicheskaya-sistema-sonoscape",
+      "model": "HD-500",
+      "manufacturerId": "sonoscape",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "existing_duplicate",
+      "mediaCount": 4,
+      "publicationStatus": "published"
+    },
+    {
+      "productId": "721a2244-75a6-42b3-9370-7df148d8a51e",
+      "sourceUid": "776712772161",
+      "slug": "767632362-776712772161-videoendoskopicheskaya-sistema-sonoscape",
+      "model": "HD-350",
+      "manufacturerId": "sonoscape",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "existing_duplicate",
+      "mediaCount": 4,
+      "publicationStatus": "published"
+    },
+    {
+      "productId": "4e1a370b-4e53-4ee6-b590-823d1ad0e087",
+      "sourceUid": "304432044232",
+      "slug": "767632362-304432044232-videoendoskopicheskaya-sistema-olympus-c",
+      "model": "CV-190",
+      "manufacturerId": "olympus",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "existing_duplicate",
+      "mediaCount": 4,
+      "publicationStatus": "published"
+    },
+    {
+      "productId": "95af806c-3fbf-446e-a608-263aa290d548",
+      "sourceUid": "740658724462",
+      "slug": "767632362-740658724462-videoendoskopicheskaya-sistema-olympus-c",
+      "model": "CV-170",
+      "manufacturerId": "olympus",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "existing_duplicate",
+      "mediaCount": 4,
+      "publicationStatus": "published"
+    },
+    {
+      "productId": "5143084e-5fe7-4094-bf8c-6cd8197b741e",
+      "sourceUid": "403689762041",
+      "slug": "767632362-403689762041-videoendoskopicheskaya-sistema-olympus-a",
+      "model": "AXEON",
+      "manufacturerId": "olympus",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "existing_duplicate",
+      "mediaCount": 4,
+      "publicationStatus": "published"
+    },
+    {
+      "productId": "860306a1-e01e-4f10-b980-93490e446d37",
+      "sourceUid": "529970599662",
+      "slug": "pentax-epk-i7010-optivista",
+      "model": "EPK-i7010 OPTIVISTA",
+      "manufacturerId": "pentax-medical",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "existing_duplicate",
+      "mediaCount": 4,
+      "publicationStatus": "published"
+    },
+    {
+      "productId": "48f7d071-c8e4-4bc9-96c4-fc12672ca183",
+      "sourceUid": "446510199362",
+      "slug": "767632362-446510199362-videoendoskopicheskaya-sistema-pentax-ep",
+      "model": "EPK-i5000",
+      "manufacturerId": "pentax-medical",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "existing_duplicate",
+      "mediaCount": 0,
+      "publicationStatus": "published"
+    },
+    {
+      "productId": "ec3d6459-264c-43f6-841c-b092c7abeb06",
+      "sourceUid": "670271281172",
+      "slug": "767632362-670271281172-videoendoskopicheskaya-sistema-epk-3000",
+      "model": "EPK-3000 DEFINA",
+      "manufacturerId": "pentax-medical",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "existing_duplicate",
+      "mediaCount": 4,
+      "publicationStatus": "published"
+    },
+    {
+      "productId": "492f7475-56b4-5a2e-bd9e-76d1a4191673",
+      "sourceUid": "endomarket-b6ddaa4e8c87d1c3b587",
+      "slug": "medinova-hv-3101",
+      "model": "HV-3101",
+      "manufacturerId": "medinova",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "8e5c9a3e-5f6d-5174-85a9-a74a4fbcd0ee",
+      "sourceUid": "endomarket-0bd845af563bbb932665",
+      "slug": "medinova-af",
+      "model": "AF",
+      "manufacturerId": "medinova",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "5b333fd2-763f-500a-8138-5d5f2cc1d531",
+      "sourceUid": "endomarket-a8dfb83069c868d2f16f",
+      "slug": "medinova-br-1231",
+      "model": "BR-1231",
+      "manufacturerId": "medinova",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "625b0514-c2d7-5940-9c8d-2e53793aa96a",
+      "sourceUid": "endomarket-a237f85959cd01bf2900",
+      "slug": "medinova-br-1242",
+      "model": "BR-1242",
+      "manufacturerId": "medinova",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "88284115-1b45-5660-a12d-05e6856164db",
+      "sourceUid": "endomarket-946306ed53b67d46a522",
+      "slug": "medinova-br-1249",
+      "model": "BR-1249",
+      "manufacturerId": "medinova",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "fe0ac882-1b38-5b7c-9892-8d8b2b6f6c5e",
+      "sourceUid": "endomarket-daff22e8a4299f87e953",
+      "slug": "medinova-br-1259",
+      "model": "BR-1259",
+      "manufacturerId": "medinova",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "63705465-45a0-5697-b749-eeccbe11895f",
+      "sourceUid": "endomarket-3bb1f12176e9a499b905",
+      "slug": "medinova-ur-1328",
+      "model": "UR-1328",
+      "manufacturerId": "medinova",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "1d63227c-1f5e-5bce-91f0-e60e10cc804a",
+      "sourceUid": "endomarket-58a3e3bd340af2aff0eb",
+      "slug": "medinova-cy-1355",
+      "model": "CY-1355",
+      "manufacturerId": "medinova",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 3,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "11a809ac-071d-502b-ad44-6fcd67ce400d",
+      "sourceUid": "endomarket-850b84f339326354e261",
+      "slug": "medinova-cy-1356",
+      "model": "CY-1356",
+      "manufacturerId": "medinova",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 3,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "db929220-3767-5a38-a5e5-32c746aac25b",
+      "sourceUid": "endomarket-9b0b88f18cb0ae8064ca",
+      "slug": "medinova-19-hd",
+      "model": "19 HD",
+      "manufacturerId": "medinova",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 0,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "f8ae3e2a-5baa-5ddd-a36a-3165df8c604c",
+      "sourceUid": "endomarket-e65ccd9c6269bb4686bc",
+      "slug": "medinova-24-full-hd",
+      "model": "24 Full HD",
+      "manufacturerId": "medinova",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 0,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "cdbe8f0d-ff6c-5a1b-a2ae-d8d33a1960d6",
+      "sourceUid": "endomarket-3495bfb945c77752c6bc",
+      "slug": "medinova-27-full-hd",
+      "model": "27 Full HD",
+      "manufacturerId": "medinova",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 0,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "4978cfe6-047f-59a8-a9e5-1b45c9583b52",
+      "sourceUid": "endomarket-1a5cbddebbf61a86e746",
+      "slug": "medinova-32-4k",
+      "model": "32 4K",
+      "manufacturerId": "medinova",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "a8dafbd9-eaf1-5170-8733-b19796c38abd",
+      "sourceUid": "endomarket-15d3a793b53b5e42ef8a",
+      "slug": "medinova-55-4k",
+      "model": "55 4K",
+      "manufacturerId": "medinova",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 0,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "4698d385-d61b-5ead-b0a1-3de09e0558b2",
+      "sourceUid": "endomarket-0dc02946adf53c88e613",
+      "slug": "sonoscape-eg-ur5",
+      "model": "EG-UR5",
+      "manufacturerId": "sonoscape",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "99747c2c-f8f3-5e9d-88be-55b1ac9a16d7",
+      "sourceUid": "endomarket-1018539845afc9e61f47",
+      "slug": "sonoscape-eg-uc5t",
+      "model": "EG-UC5T",
+      "manufacturerId": "sonoscape",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "88111db4-3918-51f3-81c1-0d1ec46d5cf8",
+      "sourceUid": "endomarket-ea19ab8878054d4724fb",
+      "slug": "sonoscape-eg-500",
+      "model": "EG-500",
+      "manufacturerId": "sonoscape",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "d341c796-df53-5cdc-a32a-b69a07aa785c",
+      "sourceUid": "endomarket-27b6ac705c49ea942bb6",
+      "slug": "sonoscape-eg-500l",
+      "model": "EG-500L",
+      "manufacturerId": "sonoscape",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "e7714457-0243-5bc2-b354-f7cb4da1f4c3",
+      "sourceUid": "endomarket-5782510befbc814ef9e5",
+      "slug": "sonoscape-eg-430",
+      "model": "EG-430",
+      "manufacturerId": "sonoscape",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "0dcbcb9e-a41e-508f-9d22-83cf26a85250",
+      "sourceUid": "endomarket-faff739689adce8cf76d",
+      "slug": "sonoscape-eg-430l",
+      "model": "EG-430L",
+      "manufacturerId": "sonoscape",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "7df4c0c0-1baf-5dd5-879b-98b5599f4c16",
+      "sourceUid": "endomarket-f60d7ddcee7197a3ad4e",
+      "slug": "sonoscape-ec-500t",
+      "model": "EC-500T",
+      "manufacturerId": "sonoscape",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "1f5ea387-9f9e-5e45-b2a2-7e52e3389ac8",
+      "sourceUid": "endomarket-00b195aa35d0802c569e",
+      "slug": "sonoscape-ec-500l-t",
+      "model": "EC-500L/T",
+      "manufacturerId": "sonoscape",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "a30b5630-a2f6-544b-aa82-3472d63dfa7a",
+      "sourceUid": "endomarket-bc6d5683e002ae9e821e",
+      "slug": "sonoscape-ec-430t",
+      "model": "EC-430T",
+      "manufacturerId": "sonoscape",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 0,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "9f8d400f-2060-548a-bd7c-84e989430bb0",
+      "sourceUid": "endomarket-4ac4b7103e8278f06bd7",
+      "slug": "sonoscape-ec-430l-t",
+      "model": "EC-430L/T",
+      "manufacturerId": "sonoscape",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "83034406-2c66-5bcb-9b0d-10771c36118f",
+      "sourceUid": "endomarket-fff4d70ca2f67c209407",
+      "slug": "sonoscape-eb-5h20",
+      "model": "EB-5H20",
+      "manufacturerId": "sonoscape",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "d3a495be-6056-5545-87ac-19ac561d49ab",
+      "sourceUid": "endomarket-c591a035f7cb2ac0914e",
+      "slug": "sonoscape-eb-5t28",
+      "model": "EB-5T28",
+      "manufacturerId": "sonoscape",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "9b544377-49eb-58a1-a595-6bf7ebc1006b",
+      "sourceUid": "endomarket-b3d85e63cef9a148122b",
+      "slug": "sonoscape-eb-500",
+      "model": "EB-500",
+      "manufacturerId": "sonoscape",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "3f162b99-c61b-5f0e-bb1b-f8b9fab1f2a0",
+      "sourceUid": "endomarket-7c27525009b80c43055d",
+      "slug": "sonoscape-ed-5gt",
+      "model": "ED-5GT",
+      "manufacturerId": "sonoscape",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "598bb29f-f5ca-5253-be7d-ae3887a708d2",
+      "sourceUid": "endomarket-e002e9b65d377ba299d9",
+      "slug": "medinova-endo-clean-1000",
+      "model": "ENDO CLEAN-1000",
+      "manufacturerId": "medinova",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "e541bffe-ad1d-5f0e-a84a-e39771497438",
+      "sourceUid": "endomarket-b7807016b0b88621e08a",
+      "slug": "medinova-endo-clean-2000",
+      "model": "ENDO CLEAN-2000",
+      "manufacturerId": "medinova",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 3,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "40385d54-1b6f-5324-8977-ed6dda2ac1d0",
+      "sourceUid": "endomarket-8c000b7bdc6d924c3782",
+      "slug": "medinova-ec-5bd",
+      "model": "EC-5BD",
+      "manufacturerId": "medinova",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "b69aba8d-0e4c-563f-b342-5282fd36c232",
+      "sourceUid": "endomarket-ab17c4c59f720c497b60",
+      "slug": "medinova-ec-10bd",
+      "model": "EC-10BD",
+      "manufacturerId": "medinova",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "576aacfb-d003-51a3-bb21-9847ea9e863a",
+      "sourceUid": "endomarket-378024368408fb208a9a",
+      "slug": "erbe-vio-apc-2",
+      "model": "VIO + APC 2",
+      "manufacturerId": "erbe",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "2a43d10d-1e8c-5f73-b230-be3e954bc7a5",
+      "sourceUid": "endomarket-08f303db912791f1f10f",
+      "slug": "erbe-vio-200-s",
+      "model": "VIO 200 S",
+      "manufacturerId": "erbe",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 3,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "0d7cb9c7-4560-5904-8ca1-6d6c309fb836",
+      "sourceUid": "endomarket-b5858b5a57ddb1d776bd",
+      "slug": "erbe-vio-200-d",
+      "model": "VIO 200 D",
+      "manufacturerId": "erbe",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 3,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "59a2d5cb-81d5-51ab-b654-00ce5c26a934",
+      "sourceUid": "endomarket-725c9892113843b172bf",
+      "slug": "erbe-vio-3",
+      "model": "VIO 3",
+      "manufacturerId": "erbe",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "766b6369-5558-5449-8af2-084114700ab2",
+      "sourceUid": "endomarket-0eabe8b13bb8490ec7d2",
+      "slug": "bowa-arc-303",
+      "model": "ARC 303",
+      "manufacturerId": "bowa",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "59bd4807-41f1-5db0-9c90-8e4bcb05be35",
+      "sourceUid": "endomarket-e95660a330cc84263fc2",
+      "slug": "bowa-arc-350",
+      "model": "ARC 350",
+      "manufacturerId": "bowa",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "994afd79-f81a-54df-9cc1-3e7702cf6d5b",
+      "sourceUid": "endomarket-81baeaecaee124138493",
+      "slug": "bowa-arc-400",
+      "model": "ARC 400",
+      "manufacturerId": "bowa",
+      "categoryId": "ref-05cbefe84dab",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "653872c6-5bf6-556f-a9a2-b93eeb9a496c",
+      "sourceUid": "endomarket-715e061864b6b37b00ee",
+      "slug": "ilivtouch-ilivtouch",
+      "model": "iLivTouch",
+      "manufacturerId": "ilivtouch",
+      "categoryId": "ref-20397be263df",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "2fa94eb5-7a68-5e3a-a269-29ebf8199ff9",
+      "sourceUid": "endomarket-35301063f442be157ae1",
+      "slug": "met-ks-350",
+      "model": "KS-350",
+      "manufacturerId": "met",
+      "categoryId": "ref-6a7a62494384",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 4,
+      "publicationStatus": "draft"
+    },
+    {
+      "productId": "f43d0e8f-9f7e-536c-966e-8817f939c9f3",
+      "sourceUid": "endomarket-5e5c259b0995e0726612",
+      "slug": "zerts-1",
+      "model": "1 электропривод",
+      "manufacturerId": "zerts",
+      "categoryId": "ref-6a7a62494384",
+      "entityOrigin": "new_candidate",
+      "mediaCount": 0,
+      "publicationStatus": "draft"
+    }
+  ],
+  "safety": {
+    "productionCredentialsUsed": false,
+    "productionWrites": 0,
+    "lifecycleWrites": 0,
+    "migrations": 0,
+    "publicApiAdded": false
+  }
+}

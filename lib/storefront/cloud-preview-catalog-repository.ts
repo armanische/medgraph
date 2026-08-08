@@ -2,6 +2,8 @@ import "server-only";
 
 import { cache } from "react";
 
+import endoMarketStageSnapshotJson from "../../data/import/endomarket-wave1-stage-catalog.json" with { type: "json" };
+
 import { createSupabaseServerClient } from "../supabase/index.ts";
 import type { CatalogRepository } from "./catalog-repository.ts";
 import {
@@ -9,10 +11,14 @@ import {
   type CloudPreviewCatalogSnapshot,
 } from "./cloud-preview-mapper.ts";
 import { filterProductsForSearch } from "./search-service.ts";
+import { isEndoMarketStagePreview } from "./data-source.ts";
 
 type SnapshotLoader = () => Promise<CloudPreviewCatalogSnapshot>;
 
 async function requestCloudPreviewSnapshot(): Promise<CloudPreviewCatalogSnapshot> {
+  if (isEndoMarketStagePreview()) {
+    return endoMarketStageSnapshotJson as unknown as CloudPreviewCatalogSnapshot;
+  }
   const response = await createSupabaseServerClient({ access: "service_role" }).request(
     "/rest/v1/rpc/cloud_storefront_preview_catalog",
     {

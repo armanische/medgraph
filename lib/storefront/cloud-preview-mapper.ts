@@ -2,6 +2,7 @@ import {
   CLOUD_PREVIEW_UNKNOWN_CATEGORY_ID,
   CLOUD_PREVIEW_UNKNOWN_MANUFACTURER_ID,
   PRODUCT_DOCUMENT_KINDS,
+  PUBLIC_PRODUCT_STATUSES,
   type CatalogSummary,
   type Category,
   type Manufacturer,
@@ -32,6 +33,8 @@ export interface CloudPreviewProductRow {
   model: string | null;
   shortDescription: string | null;
   description: string | null;
+  seoTitle?: string | null;
+  seoDescription?: string | null;
   manufacturerId: string | null;
   categoryId: string | null;
   publicationStatus: string;
@@ -54,7 +57,7 @@ export interface CloudPreviewProductRow {
       sortOrder: number;
     }>;
   }>;
-  media: Array<{ url: string; role: string; format: string | null }>;
+  media: Array<{ url: string; role: string; format: string | null; alt?: string | null }>;
   documents: Array<{
     title: string;
     kind: string;
@@ -67,6 +70,7 @@ export interface CloudPreviewProductRow {
     status: string;
     sourceUrl: string | null;
   }>;
+  commercialPresentation?: Product["commercialPresentation"];
 }
 
 export interface CloudPreviewCatalogSnapshot {
@@ -85,6 +89,11 @@ function safeHttpsUrl(value: string | null | undefined): string | null {
   } catch {
     return null;
   }
+}
+
+function safeMediaUrl(value: string | null | undefined): string | null {
+  if (value?.startsWith("/") && !value.startsWith("//")) return value;
+  return safeHttpsUrl(value);
 }
 
 export function storefrontPlainText(value: string | null | undefined): string {
@@ -185,12 +194,12 @@ function mapSpecifications(
 
 function mapMedia(row: CloudPreviewProductRow): ProductMedia[] {
   return row.media.flatMap((media, position) => {
-    const url = safeHttpsUrl(media.url);
+    const url = safeMediaUrl(media.url);
     if (!url) return [];
     return [{
       type: mediaType(media.format, url),
       url,
-      alt: `${row.title}, изображение ${position + 1}`,
+      alt: structuredPlainText(media.alt) ?? `${row.title}, изображение ${position + 1}`,
       position,
     } satisfies ProductMedia];
   });
@@ -236,7 +245,7 @@ export function mapCloudPreviewSnapshot(snapshot: CloudPreviewCatalogSnapshot) {
       ? "READY" as const
       : "REQUIRES_EDITOR_REVIEW" as const;
     return {
-      id: row.slug,
+      id: row.id,
       slug: row.slug,
       manufacturerId,
       categoryId,
@@ -244,7 +253,12 @@ export function mapCloudPreviewSnapshot(snapshot: CloudPreviewCatalogSnapshot) {
       model,
       shortDescription: storefrontPlainText(row.shortDescription || row.description) || "Описание добавляется.",
       description: row.description?.trim() || row.shortDescription?.trim() || "Описание добавляется.",
-      status: "preview_draft",
+      seoTitle: row.seoTitle?.trim() || null,
+      seoDescription: row.seoDescription?.trim() || null,
+      ...(row.commercialPresentation
+        ? { commercialPresentation: row.commercialPresentation }
+        : {}),
+      status: row.published ? "active" : "preview_draft",
       catalogQualityStatus,
       featured: false,
       applicationAreas: row.applicationAreas.map(({ name }) => name).filter(Boolean),
@@ -263,7 +277,7 @@ export function mapCloudPreviewSnapshot(snapshot: CloudPreviewCatalogSnapshot) {
     schemaVersion: 1,
     generatedAt: snapshot.generatedAt,
     productCount: products.length,
-    activeProductCount: products.length,
+    activeProductCount: products.filter(({ status }) => PUBLIC_PRODUCT_STATUSES.has(status)).length,
     manufacturerCount: manufacturers.length,
     categoryCount: categories.length,
   };

@@ -7,6 +7,7 @@ import { rememberCatalogReturn } from "@/components/catalog/BackToCatalog";
 import { isTechnicalProductSpecification } from "@/lib/storefront/product-detail-experience";
 import { getProductPresentation } from "@/lib/storefront/product-presentation";
 import type { Manufacturer, Product } from "@/lib/storefront/types";
+import ProductCommercialBadges from "@/components/storefront/ProductCommercialBadges";
 
 export interface ProductCardProps {
   product: Product;
@@ -72,6 +73,14 @@ export default function ProductCard({
             </p>
           )}
         </div>
+        {product.commercialPresentation ? (
+          <div className="mt-2.5 min-h-7">
+            <ProductCommercialBadges
+              presentation={product.commercialPresentation}
+              compact
+            />
+          </div>
+        ) : null}
         <div className="mt-2.5 min-h-7">
           {product.applicationAreas.length > 0 && (
             <ul

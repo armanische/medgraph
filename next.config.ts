@@ -5,9 +5,10 @@ import {
   CANONICAL_ORIGIN_FAMILY,
   safeRoutingHeaderValue,
 } from "./lib/canonical-routing-gate.ts";
+import { getStorefrontDataSource } from "./lib/storefront/data-source.ts";
 
 const isDevelopment = process.env.NODE_ENV === "development";
-const isCloudPreview = process.env.CATALOG_DATA_SOURCE === "cloud_preview";
+const isCloudPreview = getStorefrontDataSource(process.env) === "cloud_preview";
 const cloudMediaOrigins = APPROVED_PUBLIC_MEDIA_HOSTS
   .map((hostname) => `https://${hostname}`)
   .join(" ");

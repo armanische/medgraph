@@ -19,6 +19,11 @@ const items = [
     "Сопровождение поставки и документации",
     "Помогаем согласовать комплект поставки и доступный набор сопроводительных материалов.",
   ],
+  [
+    "service",
+    "Сервисное сопровождение оборудования",
+    "Гарантийное и постгарантийное обслуживание через сеть профильных сервисных партнеров.",
+  ],
 ] as const;
 
 type TrustIconKind = (typeof items)[number][0];
@@ -47,6 +52,12 @@ function TrustIcon({ kind }: { kind: TrustIconKind }) {
       <>
         <path d="M5.5 6.5h8l3 3v10h-11z" />
         <path d="M13.5 6.5v3h3M9 13h4m-4 3h4M9 3.5h8l2 2v10" />
+      </>
+    ),
+    service: (
+      <>
+        <path d="M12 3.5a4 4 0 0 0-3.8 5.2L4.7 12.2a2 2 0 0 0 2.8 2.8l3.5-3.5a4 4 0 0 0 5.3-3.8l-2.4 2.4-2-2z" />
+        <path d="m12.5 14.5 5.8 5.8M15.2 17.2l-2.7 2.7" />
       </>
     ),
   } as const;
@@ -86,7 +97,7 @@ export default function WhyCyberMedica() {
         <p className="mt-2 max-w-[42rem] text-sm leading-6 text-cm-slate">
           Практическая поддержка на пути от технической задачи до согласования комплектации.
         </p>
-        <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
           {items.map(([kind, title, text]) => (
             <div
               key={title}

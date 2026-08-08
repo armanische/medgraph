@@ -4,6 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef, type KeyboardEvent } from "react";
 
+import ProductCommercialBadges from "@/components/storefront/ProductCommercialBadges";
+import type { ProductCommercialPresentation } from "@/lib/storefront/types";
+
 export interface FeaturedCarouselProduct {
   id: string;
   slug: string;
@@ -11,6 +14,7 @@ export interface FeaturedCarouselProduct {
   model: string;
   manufacturer: string;
   summary: string;
+  commercialPresentation?: ProductCommercialPresentation;
   image: {
     url: string;
     alt: string;
@@ -87,6 +91,14 @@ export default function FeaturedProductsCarousel({
                 <p className="mt-3 line-clamp-3 text-sm leading-6 text-cm-slate">
                   {product.summary}
                 </p>
+                {product.commercialPresentation ? (
+                  <div className="mt-3">
+                    <ProductCommercialBadges
+                      presentation={product.commercialPresentation}
+                      compact
+                    />
+                  </div>
+                ) : null}
                 <span className="mt-auto pt-5 text-sm font-bold text-cm-teal">
                   Подробнее <span aria-hidden="true">→</span>
                 </span>

@@ -53,6 +53,7 @@ export default function Equipment({
                 product.shortDescription ||
                 categoryNamesById.get(product.categoryId) ||
                 "Медицинское оборудование для оснащения учреждений.",
+              commercialPresentation: product.commercialPresentation,
               image: (() => {
                 const media = product.media.find(({ type }) => type === "image");
                 return media ? { url: media.url, alt: media.alt } : null;
